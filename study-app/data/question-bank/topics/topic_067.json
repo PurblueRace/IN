@@ -1,0 +1,1813 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_067",
+    "sequence": 67,
+    "title": "자바스크립트와 파이썬 언어 개요",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 11,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_144",
+      "chapter_140",
+      "chapter_362",
+      "chapter_142"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_7996834a7a20580f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          17
+        ],
+        "page_span": {
+          "start_page": 17,
+          "end_page": 17
+        },
+        "source_explanation": "HRN(Highest Response-ratio Next) 기법의 우선순위 계산식은 (대기시간 + 서비스시간) / 서비스시간 이며, 이 값이 클수록 우선순위가 높습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 HRN에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "대기시간과 서비스시간을 이용하는 방법이다."
+          },
+          {
+            "label": "2",
+            "text": "대기 시간이 긴 프로세스일 경우 우선순위가 높다."
+          },
+          {
+            "label": "3",
+            "text": "우선순위 계산식 값이 낮을수록 우선순위가 높다."
+          },
+          {
+            "label": "4",
+            "text": "SJF 기법을 보완하기 위한 스케줄링 방법이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "우선순위 계산식 값이 낮을수록 우선순위가 높다."
+        ],
+        "answer_text": "우선순위 계산식 값이 낮을수록 우선순위가 높다."
+      },
+      "explanation": {
+        "source_text": "HRN(Highest Response-ratio Next) 기법의 우선순위 계산식은 (대기시간 + 서비스시간) / 서비스시간 이며, 이 값이 클수록 우선순위가 높습니다.",
+        "summary": "HRN 스케줄링 알고리즘의 특징과 우선순위 결정 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "HRN은 응답률(Response Ratio)이 '높은' 프로세스에게 우선순위를 부여합니다. 따라서 계산식 값이 클수록 우선순위가 높습니다."
+        ],
+        "why_others_wrong": [
+          "1번: 식에 대기시간과 서비스시간이 모두 포함됩니다.",
+          "2번: 대기시간이 분자에 있으므로 대기시간이 길수록 값이 커져 우선순위가 높아집니다(에이징 기법).",
+          "4번: SJF의 약점인 무한 대기(Starvation) 현상을 보완하기 위해 고안되었습니다."
+        ],
+        "key_concepts": [
+          "HRN (Highest Response-ratio Next)",
+          "우선순위 공식: (대기 + 서비스) / 서비스",
+          "에이징 (Aging)"
+        ],
+        "memory_cues": [
+          "HRN의 H는 Highest(가장 높은)의 약자임을 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "대기시간과 서비스시간을 이용하는 방법이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 우선순위 계산식 값이 낮을수록 우선순위가 높다.'인데 이 선택지는 '대기시간과 서비스시간을 이용하는 방법이다.'이므로 일치하지 않습니다. 1번: 식에 대기시간과 서비스시간이 모두 포함됩니다. 2번: 대기시간이 분자에 있으므로 대기시간이 길수록 값이 커져 우선순위가 높아집니다(에이징 기법)."
+          },
+          {
+            "label": "2",
+            "text": "대기 시간이 긴 프로세스일 경우 우선순위가 높다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 우선순위 계산식 값이 낮을수록 우선순위가 높다.'인데 이 선택지는 '대기 시간이 긴 프로세스일 경우 우선순위가 높다.'이므로 일치하지 않습니다. 1번: 식에 대기시간과 서비스시간이 모두 포함됩니다. 2번: 대기시간이 분자에 있으므로 대기시간이 길수록 값이 커져 우선순위가 높아집니다(에이징 기법)."
+          },
+          {
+            "label": "3",
+            "text": "우선순위 계산식 값이 낮을수록 우선순위가 높다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 우선순위 계산식 값이 낮을수록 우선순위가 높다.'와 일치합니다. HRN은 응답률(Response Ratio)이 '높은' 프로세스에게 우선순위를 부여합니다. 따라서 계산식 값이 클수록 우선순위가 높습니다."
+          },
+          {
+            "label": "4",
+            "text": "SJF 기법을 보완하기 위한 스케줄링 방법이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 우선순위 계산식 값이 낮을수록 우선순위가 높다.'인데 이 선택지는 'SJF 기법을 보완하기 위한 스케줄링 방법이다.'이므로 일치하지 않습니다. 1번: 식에 대기시간과 서비스시간이 모두 포함됩니다. 2번: 대기시간이 분자에 있으므로 대기시간이 길수록 값이 커져 우선순위가 높아집니다(에이징 기법)."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 HRN에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. HRN (Highest Response-ratio Next), 우선순위 공식: (대기 + 서비스) / 서비스, 에이징 (Aging)",
+          "정답 판단 근거를 적용합니다. HRN은 응답률(Response Ratio)이 '높은' 프로세스에게 우선순위를 부여합니다. 따라서 계산식 값이 클수록 우선순위가 높습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 식에 대기시간과 서비스시간이 모두 포함됩니다."
+        ],
+        "exam_traps": [
+          "1번: 식에 대기시간과 서비스시간이 모두 포함됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN (Highest Response-ratio Next)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '우선순위 공식: (대기 + 서비스) / 서비스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '에이징 (Aging)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HRN의 H는 Highest(가장 높은)의 약자임을 기억하세요."
+        ],
+        "detailed_summary": "HRN 스케줄링 알고리즘의 특징과 우선순위 결정 방식을 묻는 문제입니다. HRN(Highest Response-ratio Next) 기법의 우선순위 계산식은 (대기시간 + 서비스시간) / 서비스시간 이며, 이 값이 클수록 우선순위가 높습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 HRN에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 우선순위 계산식 값이 낮을수록 우선순위가 높다.'와 일치합니다. HRN은 응답률(Response Ratio)이 '높은' 프로세스에게 우선순위를 부여합니다. 따라서 계산식 값이 클수록 우선순위가 높습니다. 시험 포인트는 1번: 식에 대기시간과 서비스시간이 모두 포함됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "에이징",
+        "SJF"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b63bc924e2dba9ae",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          19
+        ],
+        "page_span": {
+          "start_page": 19,
+          "end_page": 19
+        },
+        "source_explanation": "스레드(Thread)가 프로세스 내에서 실행되는 흐름의 단위입니다. 프로세스는 독립된 주소 공간과 스택을 가집니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "프로세스와 스레드",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "프로세스와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "프로세스가 준비 상태에서 프로세서가 배당되어 실행 상태로 변화하는 것을 디스패치(Dispatch)라고 한다."
+          },
+          {
+            "label": "2",
+            "text": "프로세스 제어 블록(PCB, Process Control Block)은 프로세스 식별자, 프로세스 상태 등의 정보로 구성된다."
+          },
+          {
+            "label": "3",
+            "text": "이전 프로세스의 상태 레지스터 내용을 보관하고 다른 프로세스의 레지스터를 적재하는 과정을 문맥 교환(Context Switching)이라고 한다."
+          },
+          {
+            "label": "4",
+            "text": "프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다."
+        ],
+        "answer_text": "프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다."
+      },
+      "explanation": {
+        "source_text": "스레드(Thread)가 프로세스 내에서 실행되는 흐름의 단위입니다. 프로세스는 독립된 주소 공간과 스택을 가집니다.",
+        "summary": "프로세스와 스레드의 개념 및 운영체제의 프로세스 관리 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "설명이 반대로 되어 있습니다. 스레드가 프로세스 내부의 실행 단위이며, 프로세스는 고유의 자원(스택, 데이터 등)을 가집니다."
+        ],
+        "why_others_wrong": [
+          "1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다.",
+          "2번: PCB는 운영체제가 프로세스를 관리하기 위한 정보를 담은 구조체입니다.",
+          "3번: CPU가 다른 프로세스로 넘어갈 때 상태를 저장/복구하는 것이 문맥 교환입니다."
+        ],
+        "key_concepts": [
+          "프로세스 (실행 중인 프로그램)",
+          "스레드 (프로세스 내 실행 흐름)",
+          "Context Switching"
+        ],
+        "memory_cues": [
+          "프로세스는 '집', 스레드는 그 집에서 일하는 '사람'으로 비유할 수 있습니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "프로세스가 준비 상태에서 프로세서가 배당되어 실행 상태로 변화하는 것을 디스패치(Dispatch)라고 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.'인데 이 선택지는 '프로세스가 준비 상태에서 프로세서가 배당되어 실행 상태로 변화하는 것을 디스패치(Dispatch)라고 한다.'이므로 일치하지 않습니다. 1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다. 2번: PCB는 운영체제가 프로세스를 관리하기 위한 정보를 담은 구조체입니다."
+          },
+          {
+            "label": "2",
+            "text": "프로세스 제어 블록(PCB, Process Control Block)은 프로세스 식별자, 프로세스 상태 등의 정보로 구성된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.'인데 이 선택지는 '프로세스 제어 블록(PCB, Process Control Block)은 프로세스 식별자, 프로세스 상태 등의 정보로 구성된다.'이므로 일치하지 않습니다. 1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다. 2번: PCB는 운영체제가 프로세스를 관리하기 위한 정보를 담은 구조체입니다."
+          },
+          {
+            "label": "3",
+            "text": "이전 프로세스의 상태 레지스터 내용을 보관하고 다른 프로세스의 레지스터를 적재하는 과정을 문맥 교환(Context Switching)이라고 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.'인데 이 선택지는 '이전 프로세스의 상태 레지스터 내용을 보관하고 다른 프로세스의 레지스터를 적재하는 과정을 문맥 교환(Context Switching)이라고 한다.'이므로 일치하지 않습니다. 1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다. 2번: PCB는 운영체제가 프로세스를 관리하기 위한 정보를 담은 구조체입니다."
+          },
+          {
+            "label": "4",
+            "text": "프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.'와 일치합니다. 설명이 반대로 되어 있습니다. 스레드가 프로세스 내부의 실행 단위이며, 프로세스는 고유의 자원(스택, 데이터 등)을 가집니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 프로세스와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 프로세스 (실행 중인 프로그램), 스레드 (프로세스 내 실행 흐름), Context Switching",
+          "정답 판단 근거를 적용합니다. 설명이 반대로 되어 있습니다. 스레드가 프로세스 내부의 실행 단위이며, 프로세스는 고유의 자원(스택, 데이터 등)을 가집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다."
+        ],
+        "exam_traps": [
+          "1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '프로세스 (실행 중인 프로그램)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '스레드 (프로세스 내 실행 흐름)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Context Switching'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 프로세스는 '집', 스레드는 그 집에서 일하는 '사람'으로 비유할 수 있습니다."
+        ],
+        "detailed_summary": "프로세스와 스레드의 개념 및 운영체제의 프로세스 관리 방식을 묻는 문제입니다. 스레드(Thread)가 프로세스 내에서 실행되는 흐름의 단위입니다. 프로세스는 독립된 주소 공간과 스택을 가집니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 프로세스와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 프로세스는 스레드(Thread) 내에서 실행되는 흐름의 단위이며, 스레드와 달리 주소 공간에 실행 스택(Stack)이 없다.'와 일치합니다. 설명이 반대로 되어 있습니다. 스레드가 프로세스 내부의 실행 단위이며, 프로세스는 고유의 자원(스택, 데이터 등)을 가집니다. 시험 포인트는 1번: 준비 -> 실행 상태 전이를 디스패치라고 합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "프로세스",
+        "스레드",
+        "디스패치",
+        "PCB",
+        "문맥 교환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_db0759685a49e821",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          37
+        ],
+        "page_span": {
+          "start_page": 37,
+          "end_page": 37
+        },
+        "source_explanation": "HRN 우선순위 공식 = (대기 시간 + 서비스 시간) / 서비스 시간\nA: (5+20)/20 = 1.25\nB: (40+20)/20 = 3\nC: (15+45)/45 = 1.33\nD: (20+2)/2 = 11\n계산된 수치가 가장 큰 D가 우선순위가 가장 높습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은?\n| 작업 | 대기 시간 | 서비스(실행) 시간 |\n| :--- | :--- | :--- |\n| A | 5 | 20 |\n| B | 40 | 20 |\n| C | 15 | 45 |\n| D | 20 | 2 |",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "D"
+        ],
+        "answer_text": "D"
+      },
+      "explanation": {
+        "source_text": "HRN 우선순위 공식 = (대기 시간 + 서비스 시간) / 서비스 시간\nA: (5+20)/20 = 1.25\nB: (40+20)/20 = 3\nC: (15+45)/45 = 1.33\nD: (20+2)/2 = 11\n계산된 수치가 가장 큰 D가 우선순위가 가장 높습니다.",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링 우선순위 계산",
+        "why_correct": [
+          "공식에 대입했을 때 D의 응답률이 11로 가장 높기 때문에 가장 먼저 처리됩니다."
+        ],
+        "why_others_wrong": [
+          "A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "key_concepts": [
+          "HRN 공식",
+          "응답률 (Response Ratio)"
+        ],
+        "memory_cues": [
+          "(대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'A'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'B'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'C'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입했을 때 D의 응답률이 11로 가장 높기 때문에 가장 먼저 처리됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :--- | :--- | :--- | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 |",
+          "핵심 개념을 떠올립니다. HRN 공식, 응답률 (Response Ratio)",
+          "정답 판단 근거를 적용합니다. 공식에 대입했을 때 D의 응답률이 11로 가장 높기 때문에 가장 먼저 처리됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "exam_traps": [
+          "A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN 공식'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '응답률 (Response Ratio)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링 우선순위 계산 HRN 우선순위 공식 = (대기 시간 + 서비스 시간) / 서비스 시간 A: (5+20)/20 = 1.25 B: (40+20)/20 = 3 C: (15+45)/45 = 1.33 D: (20+2)/2 = 11 계산된 수치가 가장 큰 D가 우선순위가 가장 높습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :--- | :--- | :--- | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 | 정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입했을 때 D의 응답률이 11로 가장 높기 때문에 가장 먼저 처리됩니다. 시험 포인트는 A, B, C는 계산 결과가 D보다 작습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "운영체제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_921333303d2851f4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          56
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 56
+        },
+        "source_explanation": "문제에 제시된 내용은 파이썬(Python)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "프로그래밍 언어"
+        ],
+        "chapter_label": "프로그래밍 언어",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 프로그래밍 언어",
+        "chapter_id": "chapter_144"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "자바스크립트와 파이썬 언어 개요",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "73. 귀도 반 로섬(Guido van Rossum)이 발표한 언어로, 인터프리터 방식이자 객체지향적이며, 배우기 쉽고 이식성이 좋은 것이 특징인 스크립트 언어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "C++"
+          },
+          {
+            "label": "2",
+            "text": "JAVA"
+          },
+          {
+            "label": "3",
+            "text": "C#"
+          },
+          {
+            "label": "4",
+            "text": "Python"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Python"
+        ],
+        "answer_text": "Python"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 파이썬(Python)에 대한 설명입니다.",
+        "summary": "주요 프로그래밍 언어의 특징과 창시자를 연결하는 문제입니다.",
+        "why_correct": [
+          "파이썬은 귀도 반 로섬이 개발한 대표적인 인터프리터 방식의 객체지향 스크립트 언어입니다."
+        ],
+        "why_others_wrong": [
+          "C++은 컴파일 언어입니다.",
+          "JAVA는 썬 마이크로시스템즈에서 개발했습니다.",
+          "C#은 MS에서 개발한 .NET 프레임워크 기반 언어입니다."
+        ],
+        "key_concepts": [
+          "Python",
+          "인터프리터",
+          "객체지향"
+        ],
+        "memory_cues": [
+          "귀도 반 로섬 = 파이썬"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "C++",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Python'인데 이 선택지는 'C++'이므로 일치하지 않습니다. C++은 컴파일 언어입니다. JAVA는 썬 마이크로시스템즈에서 개발했습니다."
+          },
+          {
+            "label": "2",
+            "text": "JAVA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Python'인데 이 선택지는 'JAVA'이므로 일치하지 않습니다. C++은 컴파일 언어입니다. JAVA는 썬 마이크로시스템즈에서 개발했습니다."
+          },
+          {
+            "label": "3",
+            "text": "C#",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Python'인데 이 선택지는 'C#'이므로 일치하지 않습니다. C++은 컴파일 언어입니다. JAVA는 썬 마이크로시스템즈에서 개발했습니다."
+          },
+          {
+            "label": "4",
+            "text": "Python",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Python'와 일치합니다. 파이썬은 귀도 반 로섬이 개발한 대표적인 인터프리터 방식의 객체지향 스크립트 언어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 귀도 반 로섬(Guido van Rossum)이 발표한 언어로, 인터프리터 방식이자 객체지향적이며, 배우기 쉽고 이식성이 좋은 것이 특징인 스크립트 언어는?",
+          "핵심 개념을 떠올립니다. Python, 인터프리터, 객체지향",
+          "정답 판단 근거를 적용합니다. 파이썬은 귀도 반 로섬이 개발한 대표적인 인터프리터 방식의 객체지향 스크립트 언어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. C++은 컴파일 언어입니다."
+        ],
+        "exam_traps": [
+          "C++은 컴파일 언어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Python'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인터프리터'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '객체지향'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 귀도 반 로섬 = 파이썬"
+        ],
+        "detailed_summary": "주요 프로그래밍 언어의 특징과 창시자를 연결하는 문제입니다. 문제에 제시된 내용은 파이썬(Python)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 귀도 반 로섬(Guido van Rossum)이 발표한 언어로, 인터프리터 방식이자 객체지향적이며, 배우기 쉽고 이식성이 좋은 것이 특징인 스크립트 언어는? 정답입니다. 이 선택지는 실제 정답인 '4번 Python'와 일치합니다. 파이썬은 귀도 반 로섬이 개발한 대표적인 인터프리터 방식의 객체지향 스크립트 언어입니다. 시험 포인트는 C++은 컴파일 언어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "귀도 반 로섬",
+        "인터프리터",
+        "스크립트 언어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a12e88f26c8e4244",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          58
+        ],
+        "page_span": {
+          "start_page": 58,
+          "end_page": 58
+        },
+        "source_explanation": "HRN 우선순위 공식은 (대기 시간 + 서비스 시간) / 서비스 시간입니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_140"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "77. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은?\n| 작업 | 대기 시간 | 서비스(실행) 시간 |\n| :---: | :---: | :---: |\n| A | 5 | 20 |\n| B | 40 | 20 |\n| C | 15 | 45 |\n| D | 20 | 2 |",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "D"
+        ],
+        "answer_text": "D"
+      },
+      "explanation": {
+        "source_text": "HRN 우선순위 공식은 (대기 시간 + 서비스 시간) / 서비스 시간입니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다.",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 계산 문제입니다.",
+        "why_correct": [
+          "공식에 대입하면 D는 (20+2)/2 = 11로 가장 큰 값을 가집니다. HRN은 이 값이 클수록 우선순위가 높습니다."
+        ],
+        "why_others_wrong": [
+          "A: (5+20)/20 = 1.25",
+          "B: (40+20)/20 = 3",
+          "C: (15+45)/45 = 1.33"
+        ],
+        "key_concepts": [
+          "HRN 공식",
+          "비선점 스케줄링"
+        ],
+        "memory_cues": [
+          "HRN = (대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'A'이므로 일치하지 않습니다. A: (5+20)/20 = 1.25 B: (40+20)/20 = 3"
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'B'이므로 일치하지 않습니다. A: (5+20)/20 = 1.25 B: (40+20)/20 = 3"
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'C'이므로 일치하지 않습니다. A: (5+20)/20 = 1.25 B: (40+20)/20 = 3"
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입하면 D는 (20+2)/2 = 11로 가장 큰 값을 가집니다. HRN은 이 값이 클수록 우선순위가 높습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 |",
+          "핵심 개념을 떠올립니다. HRN 공식, 비선점 스케줄링",
+          "정답 판단 근거를 적용합니다. 공식에 대입하면 D는 (20+2)/2 = 11로 가장 큰 값을 가집니다. HRN은 이 값이 클수록 우선순위가 높습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. A: (5+20)/20 = 1.25"
+        ],
+        "exam_traps": [
+          "A: (5+20)/20 = 1.25"
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN 공식'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비선점 스케줄링'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HRN = (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 계산 문제입니다. HRN 우선순위 공식은 (대기 시간 + 서비스 시간) / 서비스 시간입니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 | 정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입하면 D는 (20+2)/2 = 11로 가장 큰 값을 가집니다. HRN은 이 값이 클수록 우선순위가 높습니다. 시험 포인트는 A: (5+20)/20 = 1.25"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "에이징"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8b5de033fc0fce3a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          75
+        ],
+        "page_span": {
+          "start_page": 75,
+          "end_page": 75
+        },
+        "source_explanation": "문제에 제시된 내용은 Time Sharing Processing System(시분할 처리 시스템)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "운영체제 개요"
+        ],
+        "chapter_label": "운영체제 개요",
+        "chapter_key": "프로그래밍 언어 활용 > 운영체제 개요",
+        "chapter_id": "chapter_362"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "운영체제 개요",
+        "match_score": 103.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "운영체제의 운용 기법 중 시스템은 일정 시간 단위로 CPU를 한 사용자에서 다음 사용자로 신속하게 전환함으로써 각각의 사용자들은 실제로 자신만이 컴퓨터를 사용하고 있는 것으로 여기게 하는 시스템을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Time Sharing Processing System"
+          },
+          {
+            "label": "2",
+            "text": "Batch Processing System"
+          },
+          {
+            "label": "3",
+            "text": "Real Time Processing System"
+          },
+          {
+            "label": "4",
+            "text": "Multi Programming System"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Time Sharing Processing System"
+        ],
+        "answer_text": "Time Sharing Processing System"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 Time Sharing Processing System(시분할 처리 시스템)에 대한 설명입니다.",
+        "summary": "운영체제의 여러 운용 기법 중 시분할 처리 시스템의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "Time Sharing(시분할)은 CPU 시간을 아주 작은 단위로 나누어 여러 사용자에게 배분함으로써 동시에 사용하는 듯한 효과를 줍니다."
+        ],
+        "why_others_wrong": [
+          "Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다.",
+          "Real Time: 데이터 발생 즉시 처리하는 방식입니다.",
+          "Multi Programming: 여러 프로그램을 메모리에 올려 CPU 유휴 시간을 줄이는 방식입니다."
+        ],
+        "key_concepts": [
+          "시분할 처리",
+          "라운드 로빈"
+        ],
+        "memory_cues": [
+          "시간을 나눈다 = Time Sharing"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Time Sharing Processing System",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Time Sharing Processing System'와 일치합니다. Time Sharing(시분할)은 CPU 시간을 아주 작은 단위로 나누어 여러 사용자에게 배분함으로써 동시에 사용하는 듯한 효과를 줍니다."
+          },
+          {
+            "label": "2",
+            "text": "Batch Processing System",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Time Sharing Processing System'인데 이 선택지는 'Batch Processing System'이므로 일치하지 않습니다. Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다. Real Time: 데이터 발생 즉시 처리하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "Real Time Processing System",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Time Sharing Processing System'인데 이 선택지는 'Real Time Processing System'이므로 일치하지 않습니다. Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다. Real Time: 데이터 발생 즉시 처리하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "Multi Programming System",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Time Sharing Processing System'인데 이 선택지는 'Multi Programming System'이므로 일치하지 않습니다. Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다. Real Time: 데이터 발생 즉시 처리하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 운영체제의 운용 기법 중 시스템은 일정 시간 단위로 CPU를 한 사용자에서 다음 사용자로 신속하게 전환함으로써 각각의 사용자들은 실제로 자신만이 컴퓨터를 사용하고 있는 것으로 여기게 하는 시스템을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. 시분할 처리, 라운드 로빈",
+          "정답 판단 근거를 적용합니다. Time Sharing(시분할)은 CPU 시간을 아주 작은 단위로 나누어 여러 사용자에게 배분함으로써 동시에 사용하는 듯한 효과를 줍니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다."
+        ],
+        "exam_traps": [
+          "Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '시분할 처리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '라운드 로빈'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 시간을 나눈다 = Time Sharing"
+        ],
+        "detailed_summary": "운영체제의 여러 운용 기법 중 시분할 처리 시스템의 정의를 묻는 문제입니다. 문제에 제시된 내용은 Time Sharing Processing System(시분할 처리 시스템)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 운영체제의 운용 기법 중 시스템은 일정 시간 단위로 CPU를 한 사용자에서 다음 사용자로 신속하게 전환함으로써 각각의 사용자들은 실제로 자신만이 컴퓨터를 사용하고 있는 것으로 여기게 하는 시스템을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Time Sharing Processing System'와 일치합니다. Time Sharing(시분할)은 CPU 시간을 아주 작은 단위로 나누어 여러 사용자에게 배분함으로써 동시에 사용하는 듯한 효과를 줍니다. 시험 포인트는 Batch Processing: 데이터를 모아서 한꺼번에 처리하는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "운영체제",
+        "시분할 시스템",
+        "Time Sharing",
+        "CPU 스케줄링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3669de2bca4e2d52",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 우선순위가 가장 높은 작업은 D입니다. HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'입니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11\n계산된 숫자가 클수록 우선순위가 높습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "67. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은?\n| 작업 | 대기 시간 | 서비스(실행) 시간 |\n| :---: | :---: | :---: |\n| A | 5 | 20 |\n| B | 40 | 20 |\n| C | 15 | 45 |\n| D | 20 | 2 |",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "D"
+        ],
+        "answer_text": "D"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 우선순위가 가장 높은 작업은 D입니다. HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'입니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11\n계산된 숫자가 클수록 우선순위가 높습니다.",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 결정 공식을 적용하는 문제입니다.",
+        "why_correct": [
+          "HRN 공식 (대기+서비스)/서비스에 따라 D 작업의 응답률이 11로 가장 높습니다."
+        ],
+        "why_others_wrong": [
+          "A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+        ],
+        "key_concepts": [
+          "HRN 스케줄링",
+          "응답률 공식"
+        ],
+        "memory_cues": [
+          "HRN = (대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'A'이므로 일치하지 않습니다. A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'B'이므로 일치하지 않습니다. A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'C'이므로 일치하지 않습니다. A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. HRN 공식 (대기+서비스)/서비스에 따라 D 작업의 응답률이 11로 가장 높습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 |",
+          "핵심 개념을 떠올립니다. HRN 스케줄링, 응답률 공식",
+          "정답 판단 근거를 적용합니다. HRN 공식 (대기+서비스)/서비스에 따라 D 작업의 응답률이 11로 가장 높습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+        ],
+        "exam_traps": [
+          "A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN 스케줄링'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '응답률 공식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HRN = (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 결정 공식을 적용하는 문제입니다. 전문가의 조언 | 우선순위가 가장 높은 작업은 D입니다. HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'입니다. • A 작업 : (5 + 20) / 20 = 1.25 • B 작업 : (40 + 20) / 20 = 3 • C 작업 : (15 + 45) / 45 = 1.33 • D 작업 : (20 + 2) / 2 = 11 계산된 숫자가 클수록 우선순위가 높습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? | 작업 | 대기 시간 | 서비스(실행) 시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 | 정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. HRN 공식 (대기+서비스)/서비스에 따라 D 작업의 응답률이 11로 가장 높습니다. 시험 포인트는 A(1.25), B(3), C(1.33)는 D(11)보다 응답률이 낮습니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "table dependency",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "HRN 스케줄링",
+        "우선순위 계산",
+        "대기 시간",
+        "서비스 시간"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0076",
+            "page_number": 76,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 921139,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0077",
+            "page_number": 77,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0077.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 917204,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0078",
+            "page_number": 78,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0078.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 955911,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0079",
+            "page_number": 79,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0079.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 1080141,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0080",
+            "page_number": 80,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0080.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 930727,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0081",
+            "page_number": 81,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0081.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 936783,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_436968c1f84efa55",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          93
+        ],
+        "page_span": {
+          "start_page": 93,
+          "end_page": 93
+        },
+        "source_explanation": "전문가의 조언 | 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은 ④번입니다.\n① 선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 있습니다.\n② 선점 스케줄링은 강제로 CPU를 빼앗아 사용할 수 있으므로 과부하가 많이 발생합니다.\n③ 비선점 스케줄링은 일괄 처리 시스템에 유용하고, 선점 스케줄링이 시분할 시스템에 유용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "69. 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없다."
+          },
+          {
+            "label": "2",
+            "text": "선점 스케줄링은 상대적으로 과부하가 적다."
+          },
+          {
+            "label": "3",
+            "text": "비선점 스케줄링은 시분할 시스템에 유용하다."
+          },
+          {
+            "label": "4",
+            "text": "비선점 스케줄링은 응답시간의 예측이 용이하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "비선점 스케줄링은 응답시간의 예측이 용이하다."
+        ],
+        "answer_text": "비선점 스케줄링은 응답시간의 예측이 용이하다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은 ④번입니다.\n① 선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 있습니다.\n② 선점 스케줄링은 강제로 CPU를 빼앗아 사용할 수 있으므로 과부하가 많이 발생합니다.\n③ 비선점 스케줄링은 일괄 처리 시스템에 유용하고, 선점 스케줄링이 시분할 시스템에 유용합니다.",
+        "summary": "선점형과 비선점형 스케줄링의 특징을 비교하는 문제입니다.",
+        "why_correct": [
+          "비선점 스케줄링은 프로세스가 CPU를 자발적으로 반납할 때까지 사용하므로, 실행 시간을 알면 응답 시간 예측이 상대적으로 쉽습니다."
+        ],
+        "why_others_wrong": [
+          "1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+        ],
+        "key_concepts": [
+          "선점(Preemptive)",
+          "비선점(Non-preemptive)",
+          "스케줄링"
+        ],
+        "memory_cues": [
+          "선점 = 뺏기 가능, 비선점 = 뺏기 불가"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 비선점 스케줄링은 응답시간의 예측이 용이하다.'인데 이 선택지는 '선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없다.'이므로 일치하지 않습니다. 1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+          },
+          {
+            "label": "2",
+            "text": "선점 스케줄링은 상대적으로 과부하가 적다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 비선점 스케줄링은 응답시간의 예측이 용이하다.'인데 이 선택지는 '선점 스케줄링은 상대적으로 과부하가 적다.'이므로 일치하지 않습니다. 1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+          },
+          {
+            "label": "3",
+            "text": "비선점 스케줄링은 시분할 시스템에 유용하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 비선점 스케줄링은 응답시간의 예측이 용이하다.'인데 이 선택지는 '비선점 스케줄링은 시분할 시스템에 유용하다.'이므로 일치하지 않습니다. 1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+          },
+          {
+            "label": "4",
+            "text": "비선점 스케줄링은 응답시간의 예측이 용이하다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 비선점 스케줄링은 응답시간의 예측이 용이하다.'와 일치합니다. 비선점 스케줄링은 프로세스가 CPU를 자발적으로 반납할 때까지 사용하므로, 실행 시간을 알면 응답 시간 예측이 상대적으로 쉽습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은?",
+          "핵심 개념을 떠올립니다. 선점(Preemptive), 비선점(Non-preemptive), 스케줄링",
+          "정답 판단 근거를 적용합니다. 비선점 스케줄링은 프로세스가 CPU를 자발적으로 반납할 때까지 사용하므로, 실행 시간을 알면 응답 시간 예측이 상대적으로 쉽습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+        ],
+        "exam_traps": [
+          "1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선점(Preemptive)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비선점(Non-preemptive)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '스케줄링'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 선점 = 뺏기 가능, 비선점 = 뺏기 불가"
+        ],
+        "detailed_summary": "선점형과 비선점형 스케줄링의 특징을 비교하는 문제입니다. 전문가의 조언 | 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은 ④번입니다. ① 선점 스케줄링은 이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 있습니다. ② 선점 스케줄링은 강제로 CPU를 빼앗아 사용할 수 있으므로 과부하가 많이 발생합니다. ③ 비선점 스케줄링은 일괄 처리 시스템에 유용하고, 선점 스케줄링이 시분할 시스템에 유용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 선점 스케줄링과 비선점 스케줄링에 대한 비교 설명 중 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 비선점 스케줄링은 응답시간의 예측이 용이하다.'와 일치합니다. 비선점 스케줄링은 프로세스가 CPU를 자발적으로 반납할 때까지 사용하므로, 실행 시간을 알면 응답 시간 예측이 상대적으로 쉽습니다. 시험 포인트는 1번: 선점은 강제로 뺏을 수 있음. 2번: 선점은 문맥 교환 등으로 과부하가 큼. 3번: 시분할 시스템에는 선점형이 적합함."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "운영체제",
+        "스케줄링",
+        "선점",
+        "비선점"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_12216237bbb1af67",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 151
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 JSON(JavaScript Object Notation)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "자바스크립트와 파이썬 언어 개요"
+        ],
+        "chapter_label": "자바스크립트와 파이썬 언어 개요",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 자바스크립트와 파이썬 언어 개요",
+        "chapter_id": "chapter_142"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "자바스크립트와 파이썬 언어 개요",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "39. 웹과 컴퓨터 프로그램에서 용량이 적은 데이터를 교환하기 위해 데이터 객체를 속성·값의 쌍 형태로 표현하는 형식으로, 자바 스크립트(JavaScript)를 토대로 개발되어진 형식은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Python"
+          },
+          {
+            "label": "2",
+            "text": "XML"
+          },
+          {
+            "label": "3",
+            "text": "JSON"
+          },
+          {
+            "label": "4",
+            "text": "WEB SEVER"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "JSON"
+        ],
+        "answer_text": "JSON"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 JSON(JavaScript Object Notation)에 대한 설명입니다.",
+        "summary": "데이터 교환 형식인 JSON의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "JSON은 JavaScript Object Notation의 약자로, 텍스트 기반의 경량 데이터 교환 표준이며 속성-값 쌍으로 이루어져 있습니다."
+        ],
+        "why_others_wrong": [
+          "Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+        ],
+        "key_concepts": [
+          "JSON",
+          "XML",
+          "데이터 직렬화"
+        ],
+        "memory_cues": [
+          "JS 토대 = JSON"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Python",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 JSON'인데 이 선택지는 'Python'이므로 일치하지 않습니다. Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+          },
+          {
+            "label": "2",
+            "text": "XML",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 JSON'인데 이 선택지는 'XML'이므로 일치하지 않습니다. Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+          },
+          {
+            "label": "3",
+            "text": "JSON",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 JSON'와 일치합니다. JSON은 JavaScript Object Notation의 약자로, 텍스트 기반의 경량 데이터 교환 표준이며 속성-값 쌍으로 이루어져 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "WEB SEVER",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 JSON'인데 이 선택지는 'WEB SEVER'이므로 일치하지 않습니다. Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 웹과 컴퓨터 프로그램에서 용량이 적은 데이터를 교환하기 위해 데이터 객체를 속성·값의 쌍 형태로 표현하는 형식으로, 자바 스크립트(JavaScript)를 토대로 개발되어진 형식은?",
+          "핵심 개념을 떠올립니다. JSON, XML, 데이터 직렬화",
+          "정답 판단 근거를 적용합니다. JSON은 JavaScript Object Notation의 약자로, 텍스트 기반의 경량 데이터 교환 표준이며 속성-값 쌍으로 이루어져 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+        ],
+        "exam_traps": [
+          "Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'JSON'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'XML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 직렬화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. JS 토대 = JSON"
+        ],
+        "detailed_summary": "데이터 교환 형식인 JSON의 정의를 묻는 문제입니다. 전문가의 조언 | 문제에 제시된 내용은 JSON(JavaScript Object Notation)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 웹과 컴퓨터 프로그램에서 용량이 적은 데이터를 교환하기 위해 데이터 객체를 속성·값의 쌍 형태로 표현하는 형식으로, 자바 스크립트(JavaScript)를 토대로 개발되어진 형식은? 정답입니다. 이 선택지는 실제 정답인 '3번 JSON'와 일치합니다. JSON은 JavaScript Object Notation의 약자로, 텍스트 기반의 경량 데이터 교환 표준이며 속성-값 쌍으로 이루어져 있습니다. 시험 포인트는 Python은 프로그래밍 언어, XML은 마크업 언어, Web Server는 하드웨어/소프트웨어 시스템입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "JSON",
+        "데이터 교환",
+        "JavaScript",
+        "속성-값 쌍"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f375db2f05d75144",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          151
+        ],
+        "page_span": {
+          "start_page": 151,
+          "end_page": 151
+        },
+        "source_explanation": "HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은?\n| 작업 | 대기 시간 | 서비스(실행)시간 |\n| :---: | :---: | :---: |\n| A | 5 | 20 |\n| B | 40 | 20 |\n| C | 15 | 45 |\n| D | 20 | 2 |",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A → B → C → D"
+          },
+          {
+            "label": "2",
+            "text": "A → C → B → D"
+          },
+          {
+            "label": "3",
+            "text": "D → B → C → A"
+          },
+          {
+            "label": "4",
+            "text": "D → A → B → C"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "D → B → C → A"
+        ],
+        "answer_text": "D → B → C → A"
+      },
+      "explanation": {
+        "source_text": "HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링 알고리즘에 따라 작업 우선순위를 계산하는 문제입니다.",
+        "why_correct": [
+          "공식 (대기시간 + 서비스시간) / 서비스시간에 따라 계산하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다."
+        ],
+        "why_others_wrong": [
+          "계산 결과에 따른 순서가 아니므로 오답입니다."
+        ],
+        "key_concepts": [
+          "HRN 스케줄링",
+          "응답률 공식"
+        ],
+        "memory_cues": [
+          "HRN = (대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A → B → C → D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'A → B → C → D'이므로 일치하지 않습니다. 계산 결과에 따른 순서가 아니므로 오답입니다."
+          },
+          {
+            "label": "2",
+            "text": "A → C → B → D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'A → C → B → D'이므로 일치하지 않습니다. 계산 결과에 따른 순서가 아니므로 오답입니다."
+          },
+          {
+            "label": "3",
+            "text": "D → B → C → A",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 D → B → C → A'와 일치합니다. 공식 (대기시간 + 서비스시간) / 서비스시간에 따라 계산하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다."
+          },
+          {
+            "label": "4",
+            "text": "D → A → B → C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'D → A → B → C'이므로 일치하지 않습니다. 계산 결과에 따른 순서가 아니므로 오답입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은? | 작업 | 대기 시간 | 서비스(실행)시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 |",
+          "핵심 개념을 떠올립니다. HRN 스케줄링, 응답률 공식",
+          "정답 판단 근거를 적용합니다. 공식 (대기시간 + 서비스시간) / 서비스시간에 따라 계산하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 결과에 따른 순서가 아니므로 오답입니다."
+        ],
+        "exam_traps": [
+          "계산 결과에 따른 순서가 아니므로 오답입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN 스케줄링'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '응답률 공식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HRN = (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링 알고리즘에 따라 작업 우선순위를 계산하는 문제입니다. HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다. • A 작업 : (5 + 20) / 20 = 1.25 • B 작업 : (40 + 20) / 20 = 3 • C 작업 : (15 + 45) / 45 = 1.33 • D 작업 : (20 + 2) / 2 = 11 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은? | 작업 | 대기 시간 | 서비스(실행)시간 | | :---: | :---: | :---: | | A | 5 | 20 | | B | 40 | 20 | | C | 15 | 45 | | D | 20 | 2 | 정답입니다. 이 선택지는 실제 정답인 '3번 D → B → C → A'와 일치합니다. 공식 (대기시간 + 서비스시간) / 서비스시간에 따라 계산하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다. 시험 포인트는 계산 결과에 따른 순서가 아니므로 오답입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "응답률"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_cf526e3529817ac1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          155
+        ],
+        "page_span": {
+          "start_page": 155,
+          "end_page": 155
+        },
+        "source_explanation": "Request는 프로세스 상태의 종류가 아닙니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_067",
+        "topic_title": "자바스크립트와 파이썬 언어 개요",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "프로세스와 스레드",
+        "match_score": 73.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "프로세스 상태의 종류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Ready"
+          },
+          {
+            "label": "2",
+            "text": "Running"
+          },
+          {
+            "label": "3",
+            "text": "Request"
+          },
+          {
+            "label": "4",
+            "text": "Exit"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Request"
+        ],
+        "answer_text": "Request"
+      },
+      "explanation": {
+        "source_text": "Request는 프로세스 상태의 종류가 아닙니다.",
+        "summary": "프로세스 생명주기에서의 주요 상태를 구분하는 문제입니다.",
+        "why_correct": [
+          "Request는 일반적인 프로세스 상태 전이도에 포함되는 표준 상태 명칭이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+        ],
+        "key_concepts": [
+          "프로세스 상태 전이",
+          "준비/실행/대기/종료"
+        ],
+        "memory_cues": [
+          "준실대종(준비, 실행, 대기, 종료)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Ready",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Request'인데 이 선택지는 'Ready'이므로 일치하지 않습니다. Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+          },
+          {
+            "label": "2",
+            "text": "Running",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Request'인데 이 선택지는 'Running'이므로 일치하지 않습니다. Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+          },
+          {
+            "label": "3",
+            "text": "Request",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Request'와 일치합니다. Request는 일반적인 프로세스 상태 전이도에 포함되는 표준 상태 명칭이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "Exit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Request'인데 이 선택지는 'Exit'이므로 일치하지 않습니다. Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 프로세스 상태의 종류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 프로세스 상태 전이, 준비/실행/대기/종료",
+          "정답 판단 근거를 적용합니다. Request는 일반적인 프로세스 상태 전이도에 포함되는 표준 상태 명칭이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+        ],
+        "exam_traps": [
+          "Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '프로세스 상태 전이'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '준비/실행/대기/종료'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 준실대종(준비, 실행, 대기, 종료)"
+        ],
+        "detailed_summary": "프로세스 생명주기에서의 주요 상태를 구분하는 문제입니다. Request는 프로세스 상태의 종류가 아닙니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 프로세스 상태의 종류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Request'와 일치합니다. Request는 일반적인 프로세스 상태 전이도에 포함되는 표준 상태 명칭이 아닙니다. 시험 포인트는 Ready(준비), Running(실행), Exit(종료)는 프로세스의 핵심 상태들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "운영체제",
+        "프로세스 상태",
+        "Ready",
+        "Running",
+        "Exit"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

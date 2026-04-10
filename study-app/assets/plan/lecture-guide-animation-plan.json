@@ -1,0 +1,491 @@
+{
+  "plan_version": "1.0.0",
+  "status": "queue_ready",
+  "created_at": "2026-04-03",
+  "project": {
+    "name": "information-processing-engineer-study-app",
+    "app_root": "study-app",
+    "plan_root": "study-app/assets"
+  },
+  "selected_model": {
+    "official_name": "Gemini 3.1 Flash Image",
+    "model_id": "gemini-3.1-flash-image-preview"
+  },
+  "feature": {
+    "id": "lecture-guide-professor-v2",
+    "goal": "frame-based professor animation for the lecture scene",
+    "notes": [
+      "Only the character should animate.",
+      "The background and stage must remain visually calm and mostly static.",
+      "The animation should feel like a lightweight 3D cartoon lecture mascot, not a floating UI sticker."
+    ]
+  },
+  "storage_layout": {
+    "plan_file": "study-app/assets/plan/lecture-guide-animation-plan.json",
+    "output_root": "study-app/assets/generated/characters/lecture-guide-professor-v2",
+    "manifest_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/frame-manifest.json"
+  },
+  "render_strategy": {
+    "type": "frame-sequence",
+    "notes": [
+      "Use multiple transparent PNG frames and swap them in JavaScript.",
+      "Keep the camera angle, scale, and silhouette stable between frames.",
+      "Do not generate speech bubbles or stage elements inside the character PNG."
+    ],
+    "app_slots": [
+      {
+        "file": "study-app/app.js",
+        "slot": "GUIDE_CHARACTER_FRAMES.idle"
+      },
+      {
+        "file": "study-app/app.js",
+        "slot": "GUIDE_CHARACTER_FRAMES.speaking"
+      },
+      {
+        "file": "study-app/app.js",
+        "slot": "GUIDE_CHARACTER_FRAMES.pointing"
+      }
+    ]
+  },
+  "visual_direction": {
+    "style_keywords": [
+      "cute 3D cartoon professor mascot",
+      "3-head chibi proportions",
+      "premium mobile app character",
+      "clean transparent PNG",
+      "consistent character design across frames"
+    ],
+    "palette": {
+      "primary_blue": "#3182F6",
+      "green": "#30C85E",
+      "orange": "#FF9500",
+      "violet": "#8B5CF6",
+      "red": "#F04452",
+      "neutral_bg": "#F8FAFC"
+    },
+    "global_constraints": [
+      "transparent background",
+      "single full-body professor only",
+      "no speech bubble",
+      "no background scene",
+      "same face, outfit, camera angle, and head-to-body ratio across all frames",
+      "big head, cute chibi body, Korean Trevor-like playful professor energy",
+      "navy cardigan or blazer, white shirt, warm tie, khaki or neutral pants, brown shoes",
+      "soft 3D render, not flat illustration, not photorealistic"
+    ]
+  },
+  "animation_sets": [
+    {
+      "id": "idle-loop",
+      "priority": 1,
+      "frame_total": 4,
+      "frame_duration_ms": 220,
+      "usage": "default waiting pose while no new line is being spoken"
+    },
+    {
+      "id": "speaking-loop",
+      "priority": 2,
+      "frame_total": 6,
+      "frame_duration_ms": 110,
+      "usage": "active explanation while a new dialogue line is on screen"
+    },
+    {
+      "id": "pointing-loop",
+      "priority": 3,
+      "frame_total": 4,
+      "frame_duration_ms": 140,
+      "usage": "subtopic transition or key-point emphasis"
+    }
+  ],
+  "assets_to_generate": [
+    {
+      "id": "guide-professor-idle-f01",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "animation_set": "idle-loop",
+      "frame_index": 1,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f01.png",
+      "display_role": "lecture guide professor idle frame 1",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in base idle pose",
+      "motion_note": "neutral centered pose, soft breathing, hands relaxed",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-idle-v1.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.idle[0]"
+        }
+      ],
+      "prompt_seed": "cute 3D cartoon Korean professor mascot, big head, friendly smile, neutral idle pose"
+    },
+    {
+      "id": "guide-professor-idle-f02",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "animation_set": "idle-loop",
+      "frame_index": 2,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f02.png",
+      "display_role": "lecture guide professor idle frame 2",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in idle pose leaning slightly left",
+      "motion_note": "slight left sway, tiny shoulder shift, same calm expression",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-idle-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f01.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.idle[1]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor, slight left sway frame for idle animation"
+    },
+    {
+      "id": "guide-professor-idle-f03",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "animation_set": "idle-loop",
+      "frame_index": 3,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f03.png",
+      "display_role": "lecture guide professor idle frame 3",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in idle pose leaning slightly right",
+      "motion_note": "slight right sway, tiny shoulder shift, same calm expression",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-idle-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f02.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.idle[2]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor, slight right sway frame for idle animation"
+    },
+    {
+      "id": "guide-professor-idle-f04",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "animation_set": "idle-loop",
+      "frame_index": 4,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f04.png",
+      "display_role": "lecture guide professor idle frame 4",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in idle pose with a light blink or head bob",
+      "motion_note": "small head bob or blink frame, return-to-center animation beat",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-idle-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/idle/guide-professor-idle-f03.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.idle[3]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor, blink or tiny head bob frame for idle loop"
+    },
+    {
+      "id": "guide-professor-speaking-f01",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 1,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f01.png",
+      "display_role": "lecture guide professor speaking frame 1",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot starting a lecture explanation",
+      "motion_note": "base speaking pose with mouth closed and slight hand lift",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[0]"
+        }
+      ],
+      "prompt_seed": "cute 3D cartoon professor lecture speaking frame, mouth closed start pose"
+    },
+    {
+      "id": "guide-professor-speaking-f02",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 2,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f02.png",
+      "display_role": "lecture guide professor speaking frame 2",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in speaking pose with a small mouth opening",
+      "motion_note": "small mouth opening, light head nod, speaking motion frame",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f01.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[1]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor speaking frame with small mouth opening"
+    },
+    {
+      "id": "guide-professor-speaking-f03",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 3,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f03.png",
+      "display_role": "lecture guide professor speaking frame 3",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in speaking pose with a wider mouth opening",
+      "motion_note": "wider mouth opening and slightly brighter expression",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f02.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[2]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor speaking frame with wider mouth opening"
+    },
+    {
+      "id": "guide-professor-speaking-f04",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 4,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f04.png",
+      "display_role": "lecture guide professor speaking frame 4",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in speaking pose leaning a little forward",
+      "motion_note": "slight forward emphasis, one hand subtly more open",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f03.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[3]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor speaking frame with slight forward emphasis"
+    },
+    {
+      "id": "guide-professor-speaking-f05",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 5,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f05.png",
+      "display_role": "lecture guide professor speaking frame 5",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in speaking pose with a return motion",
+      "motion_note": "returning from emphasis pose, medium mouth opening, balanced silhouette",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f04.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[4]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor speaking frame returning to center"
+    },
+    {
+      "id": "guide-professor-speaking-f06",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "animation_set": "speaking-loop",
+      "frame_index": 6,
+      "frame_total": 6,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f06.png",
+      "display_role": "lecture guide professor speaking frame 6",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in speaking pose closing the motion cycle",
+      "motion_note": "soft blink or softer mouth close, ending pose before loop restarts",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/speaking/guide-professor-speaking-f05.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.speaking[5]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor speaking frame ending loop softly"
+    },
+    {
+      "id": "guide-professor-pointing-f01",
+      "family": "characters",
+      "priority": 3,
+      "quantity": 1,
+      "animation_set": "pointing-loop",
+      "frame_index": 1,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f01.png",
+      "display_role": "lecture guide professor pointing frame 1",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot preparing to point",
+      "motion_note": "arm beginning to rise, anticipatory pose",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-pointing-v1.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.pointing[0]"
+        }
+      ],
+      "prompt_seed": "cute 3D cartoon professor pointing animation frame, arm beginning to rise"
+    },
+    {
+      "id": "guide-professor-pointing-f02",
+      "family": "characters",
+      "priority": 3,
+      "quantity": 1,
+      "animation_set": "pointing-loop",
+      "frame_index": 2,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f02.png",
+      "display_role": "lecture guide professor pointing frame 2",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot in active pointing motion",
+      "motion_note": "arm lifted higher, body slightly turning toward the point",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-pointing-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f01.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.pointing[1]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor pointing animation frame with stronger arm lift"
+    },
+    {
+      "id": "guide-professor-pointing-f03",
+      "family": "characters",
+      "priority": 3,
+      "quantity": 1,
+      "animation_set": "pointing-loop",
+      "frame_index": 3,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f03.png",
+      "display_role": "lecture guide professor pointing frame 3",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot at the strongest pointing pose",
+      "motion_note": "clear point gesture, confident expression, stable silhouette",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-pointing-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f02.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.pointing[2]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor pointing animation frame at peak gesture"
+    },
+    {
+      "id": "guide-professor-pointing-f04",
+      "family": "characters",
+      "priority": 3,
+      "quantity": 1,
+      "animation_set": "pointing-loop",
+      "frame_index": 4,
+      "frame_total": 4,
+      "output_file": "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f04.png",
+      "display_role": "lecture guide professor pointing frame 4",
+      "display_size_px": 320,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "full body professor mascot easing out from the point gesture",
+      "motion_note": "slight release from the peak point, ready to loop or return",
+      "continuity_note": "same professor identity and clothing as the reference image",
+      "reference_files": [
+        "study-app/assets/generated/characters/guide-professor-pointing-v1.png",
+        "study-app/assets/generated/characters/lecture-guide-professor-v2/pointing/guide-professor-pointing-f03.png"
+      ],
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "slot": "GUIDE_CHARACTER_FRAMES.pointing[3]"
+        }
+      ],
+      "prompt_seed": "same cute 3D cartoon professor pointing animation frame easing out"
+    }
+  ]
+}

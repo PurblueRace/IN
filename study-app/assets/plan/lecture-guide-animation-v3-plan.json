@@ -1,0 +1,164 @@
+{
+  "plan_version": "3.0.0",
+  "status": "ready_for_generation",
+  "created_at": "2026-04-03",
+  "project": {
+    "name": "information-processing-engineer-study-app",
+    "app_root": "study-app",
+    "plan_root": "study-app/assets"
+  },
+  "selected_model": {
+    "official_name": "Gemini 3.1 Flash Image",
+    "model_id": "gemini-3.1-flash-image-preview"
+  },
+  "feature": {
+    "id": "lecture-guide-professor-v3",
+    "goal": "single consistent grandfather professor cutout with smooth frame animation",
+    "hard_rules": [
+      "Only one professor character is allowed.",
+      "The character identity must remain fixed across all assets.",
+      "The final app should show only the professor cutout on the app background.",
+      "No speech bubble, stage, panel, or generated backdrop should remain in the final cutout assets."
+    ]
+  },
+  "storage_layout": {
+    "plan_file": "study-app/assets/plan/lecture-guide-animation-v3-plan.json",
+    "output_root": "study-app/assets/generated/characters/lecture-guide-professor-v3",
+    "manifest_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/frame-manifest.json"
+  },
+  "render_strategy": {
+    "type": "single_character_cutout_frames",
+    "placement": "study-app/app.js -> theory-footer above autoplay button",
+    "states": [
+      "idle",
+      "speaking",
+      "pointing"
+    ],
+    "interaction_rules": [
+      "Idle while no new line is being revealed.",
+      "Speaking when the user clicks next or when autoplay reveals a new line.",
+      "Pointing only during subtopic transition emphasis."
+    ]
+  },
+  "visual_direction": {
+    "character_brief": "cute 3-head chibi grandfather professor, warm and playful, Korean lecture mascot energy, rounded face, kind eyebrows, slightly elderly but charming, premium mobile app style",
+    "style_keywords": [
+      "cute 3D cartoon professor",
+      "3-head chibi proportions",
+      "cute grandfather professor",
+      "single character identity",
+      "mobile app mascot",
+      "clean cutout"
+    ],
+    "outfit": [
+      "navy blazer or cardigan",
+      "white shirt",
+      "warm orange or mustard tie",
+      "neutral brown or khaki pants",
+      "brown shoes"
+    ],
+    "global_constraints": [
+      "one single professor only",
+      "same face and same outfit across every frame",
+      "front-facing three-quarter classroom presenter angle",
+      "full-body visible in every frame",
+      "no props except subtle hand gesture changes",
+      "plain solid light mint background for extraction",
+      "soft 3D render, not photorealistic, not flat 2D",
+      "no text, no speech bubble, no scene background"
+    ],
+    "background_extraction": {
+      "generation_background": "#EAFBF7",
+      "mode": "corner_floodfill",
+      "tolerance": 42
+    }
+  },
+  "animation_sets": [
+    {
+      "id": "idle",
+      "kind": "sprite_sheet",
+      "priority": 1,
+      "frame_total": 12,
+      "rows": 3,
+      "cols": 4,
+      "frame_duration_ms": 150,
+      "usage": "default idle breathing and blinking loop"
+    },
+    {
+      "id": "speaking",
+      "kind": "sprite_sheet",
+      "priority": 2,
+      "frame_total": 16,
+      "rows": 4,
+      "cols": 4,
+      "frame_duration_ms": 90,
+      "usage": "smooth lecture talking loop"
+    },
+    {
+      "id": "pointing",
+      "kind": "sprite_sheet",
+      "priority": 3,
+      "frame_total": 8,
+      "rows": 2,
+      "cols": 4,
+      "frame_duration_ms": 120,
+      "usage": "subtopic transition emphasis"
+    }
+  ],
+  "generation_sequence": [
+    {
+      "id": "master-reference",
+      "type": "single_reference",
+      "output_raw_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/reference/master-reference-raw.png",
+      "output_cutout_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/reference/master-reference-cutout.png",
+      "display_role": "master reference professor cutout",
+      "concept": "single cute grandfather professor standing in relaxed neutral pose",
+      "prompt_seed": "cute 3D cartoon grandfather professor mascot, 3-head chibi proportions, kind smile, relaxed neutral pose, one character only"
+    },
+    {
+      "id": "idle-sheet",
+      "type": "sprite_sheet",
+      "state": "idle",
+      "reference_files": [
+        "study-app/assets/generated/characters/lecture-guide-professor-v3/reference/master-reference-cutout.png"
+      ],
+      "output_raw_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/idle-sheet-raw.png",
+      "output_cutout_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/idle-sheet-cutout.png",
+      "output_frames_dir": "study-app/assets/generated/characters/lecture-guide-professor-v3/idle",
+      "frame_prefix": "guide-professor-idle-v3",
+      "display_role": "idle sprite sheet",
+      "concept": "same professor repeated in 12 gentle idle poses with breathing, blinking, and tiny body sway",
+      "prompt_seed": "sprite sheet of the exact same professor character, subtle idle motion only, very consistent identity"
+    },
+    {
+      "id": "speaking-sheet",
+      "type": "sprite_sheet",
+      "state": "speaking",
+      "reference_files": [
+        "study-app/assets/generated/characters/lecture-guide-professor-v3/reference/master-reference-cutout.png"
+      ],
+      "output_raw_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/speaking-sheet-raw.png",
+      "output_cutout_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/speaking-sheet-cutout.png",
+      "output_frames_dir": "study-app/assets/generated/characters/lecture-guide-professor-v3/speaking",
+      "frame_prefix": "guide-professor-speaking-v3",
+      "display_role": "speaking sprite sheet",
+      "concept": "same professor repeated in 16 smooth lecture speaking poses with mouth and head motion",
+      "prompt_seed": "sprite sheet of the exact same professor character, smooth lecture talking motion, consistent face and outfit"
+    },
+    {
+      "id": "pointing-sheet",
+      "type": "sprite_sheet",
+      "state": "pointing",
+      "reference_files": [
+        "study-app/assets/generated/characters/lecture-guide-professor-v3/reference/master-reference-cutout.png"
+      ],
+      "output_raw_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/pointing-sheet-raw.png",
+      "output_cutout_file": "study-app/assets/generated/characters/lecture-guide-professor-v3/sheets/pointing-sheet-cutout.png",
+      "output_frames_dir": "study-app/assets/generated/characters/lecture-guide-professor-v3/pointing",
+      "frame_prefix": "guide-professor-pointing-v3",
+      "display_role": "pointing sprite sheet",
+      "concept": "same professor repeated in 8 clear pointing and presenting poses",
+      "prompt_seed": "sprite sheet of the exact same professor character, presenting and pointing motion, consistent identity"
+    }
+  ]
+}

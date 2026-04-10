@@ -1,0 +1,334 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_036",
+    "sequence": 36,
+    "title": "인터페이스 설계와 연계 방식",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 2,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_047"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_d6df7cc25dce2105",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 51
+        },
+        "source_explanation": "문제의 지문에서 설명하는 요소는 인터페이스(Interface)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_036",
+        "topic_title": "인터페이스 설계와 연계 방식",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "인터페이스 설계와 연계 방식",
+        "match_score": 124.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 관계있는 것은?\n• 소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨어를 실행하는 하드웨어\n• 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어\n• 순차적 연산에 의해 소프트웨어를 실행하는 절차",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기능(Function)"
+          },
+          {
+            "label": "2",
+            "text": "성능(Performance)"
+          },
+          {
+            "label": "3",
+            "text": "제약조건(Constraint)"
+          },
+          {
+            "label": "4",
+            "text": "인터페이스(Interface)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "인터페이스(Interface)"
+        ],
+        "answer_text": "인터페이스(Interface)"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에서 설명하는 요소는 인터페이스(Interface)입니다.",
+        "summary": "소프트웨어 프로젝트의 범위를 결정할 때 고려하는 인터페이스 요소에 대한 설명입니다.",
+        "why_correct": [
+          "하드웨어와의 연결, 타 소프트웨어와의 연결, 실행 절차 등은 모두 시스템 외부와의 접점인 인터페이스에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+        ],
+        "key_concepts": [
+          "인터페이스",
+          "소프트웨어 범위",
+          "연결성"
+        ],
+        "memory_cues": [
+          "연결하는 소프트웨어 = 인터페이스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기능(Function)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 인터페이스(Interface)'인데 이 선택지는 '기능(Function)'이므로 일치하지 않습니다. 기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+          },
+          {
+            "label": "2",
+            "text": "성능(Performance)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 인터페이스(Interface)'인데 이 선택지는 '성능(Performance)'이므로 일치하지 않습니다. 기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+          },
+          {
+            "label": "3",
+            "text": "제약조건(Constraint)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 인터페이스(Interface)'인데 이 선택지는 '제약조건(Constraint)'이므로 일치하지 않습니다. 기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+          },
+          {
+            "label": "4",
+            "text": "인터페이스(Interface)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 인터페이스(Interface)'와 일치합니다. 하드웨어와의 연결, 타 소프트웨어와의 연결, 실행 절차 등은 모두 시스템 외부와의 접점인 인터페이스에 해당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 관계있는 것은? • 소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨어를 실행하는 하드웨어 • 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어 • 순차적 연산에 의해 소프트웨어를 실행하는 절차",
+          "핵심 개념을 떠올립니다. 인터페이스, 소프트웨어 범위, 연결성",
+          "정답 판단 근거를 적용합니다. 하드웨어와의 연결, 타 소프트웨어와의 연결, 실행 절차 등은 모두 시스템 외부와의 접점인 인터페이스에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+        ],
+        "exam_traps": [
+          "기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인터페이스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '소프트웨어 범위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연결성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 연결하는 소프트웨어 = 인터페이스"
+        ],
+        "detailed_summary": "소프트웨어 프로젝트의 범위를 결정할 때 고려하는 인터페이스 요소에 대한 설명입니다. 문제의 지문에서 설명하는 요소는 인터페이스(Interface)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 개발 영역을 결정하는 요소 중 다음 사항과 관계있는 것은? • 소프트웨어에 의해 간접적으로 제어되는 장치와 소프트웨어를 실행하는 하드웨어 • 기존의 소프트웨어와 새로운 소프트웨어를 연결하는 소프트웨어 • 순차적 연산에 의해 소프트웨어를 실행하는 절차 정답입니다. 이 선택지는 실제 정답인 '4번 인터페이스(Interface)'와 일치합니다. 하드웨어와의 연결, 타 소프트웨어와의 연결, 실행 절차 등은 모두 시스템 외부와의 접점인 인터페이스에 해당합니다. 시험 포인트는 기능은 수행 업무, 성능은 속도/효율, 제약조건은 한계 사항입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "소프트웨어 범위",
+        "인터페이스",
+        "Interface",
+        "하드웨어 연결"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a599cd2031648f48",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          161
+        ],
+        "page_span": {
+          "start_page": 161,
+          "end_page": 161
+        },
+        "source_explanation": "EAI의 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus(ESB), Hybrid가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "시스템 인터페이스 설계",
+          "EAI"
+        ],
+        "chapter_label": "EAI",
+        "chapter_key": "1과목 소프트웨어 설계 > 시스템 인터페이스 설계 > EAI",
+        "chapter_id": "chapter_047"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_036",
+        "topic_title": "인터페이스 설계와 연계 방식",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "인터페이스 설계와 연계 방식",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "22. EAI(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Tree"
+          },
+          {
+            "label": "2",
+            "text": "Hub & Spoke"
+          },
+          {
+            "label": "3",
+            "text": "Message Bus"
+          },
+          {
+            "label": "4",
+            "text": "Point-to-Point"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Tree"
+        ],
+        "answer_text": "Tree"
+      },
+      "explanation": {
+        "source_text": "EAI의 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus(ESB), Hybrid가 있습니다.",
+        "summary": "기업 애플리케이션 통합(EAI)의 아키텍처 유형을 묻는 문제입니다.",
+        "why_correct": [
+          "Tree 구조는 EAI의 표준 구축 유형에 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+        ],
+        "key_concepts": [
+          "EAI (Enterprise Application Integration)"
+        ],
+        "memory_cues": [
+          "EAI 유형: P2P, Hub, Bus, Hybrid"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Tree",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Tree'와 일치합니다. Tree 구조는 EAI의 표준 구축 유형에 포함되지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "Hub & Spoke",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Hub & Spoke'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "Message Bus",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Message Bus'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "Point-to-Point",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Point-to-Point'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. EAI(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. EAI (Enterprise Application Integration)",
+          "정답 판단 근거를 적용합니다. Tree 구조는 EAI의 표준 구축 유형에 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+        ],
+        "exam_traps": [
+          "Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'EAI (Enterprise Application Integration)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. EAI 유형: P2P, Hub, Bus, Hybrid"
+        ],
+        "detailed_summary": "기업 애플리케이션 통합(EAI)의 아키텍처 유형을 묻는 문제입니다. EAI의 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus(ESB), Hybrid가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. EAI(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Tree'와 일치합니다. Tree 구조는 EAI의 표준 구축 유형에 포함되지 않습니다. 시험 포인트는 Point-to-Point는 1:1 연결, Hub & Spoke는 중앙 집중식, Message Bus는 미들웨어 기반 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "EAI",
+        "Hub & Spoke",
+        "Message Bus",
+        "Point-to-Point"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

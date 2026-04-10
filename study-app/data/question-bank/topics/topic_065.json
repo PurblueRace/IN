@@ -1,0 +1,1808 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_065",
+    "sequence": 65,
+    "title": "Python 입출력과 자료구조",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 11,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_134",
+      "chapter_129",
+      "chapter_350",
+      "chapter_135"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_4a57f14d36768d6a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          58
+        ],
+        "page_span": {
+          "start_page": 58,
+          "end_page": 58
+        },
+        "source_explanation": "input().split(\" \")으로 공백을 기준으로 나눈 뒤 int로 변환하여 a, b에 저장합니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "Python"
+        ],
+        "chapter_label": "Python",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > Python",
+        "chapter_id": "chapter_134"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "79. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는?\na, b = map(int, input().split(\" \"))\nprint(a, b)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "53 t 44"
+          },
+          {
+            "label": "2",
+            "text": "53t44"
+          },
+          {
+            "label": "3",
+            "text": "53 44"
+          },
+          {
+            "label": "4",
+            "text": "53, 44"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "53 44"
+        ],
+        "answer_text": "53 44"
+      },
+      "explanation": {
+        "source_text": "input().split(\" \")으로 공백을 기준으로 나눈 뒤 int로 변환하여 a, b에 저장합니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다.",
+        "summary": "파이썬의 입력 처리와 출력 형식을 이해하는 문제입니다.",
+        "why_correct": [
+          "입력받은 '53 44'를 공백 기준으로 나누어 정수 53과 44로 저장합니다. print 함수에서 콤마(,)로 구분된 인자들은 기본적으로 공백 하나를 사이에 두고 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다.",
+          "t와 같은 문자가 삽입될 근거가 없습니다."
+        ],
+        "key_concepts": [
+          "input().split()",
+          "map() 함수",
+          "print()의 sep 옵션"
+        ],
+        "memory_cues": [
+          "print(a, b) -> a b (공백 출력)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "53 t 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53 t 44'이므로 일치하지 않습니다. 파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다. t와 같은 문자가 삽입될 근거가 없습니다."
+          },
+          {
+            "label": "2",
+            "text": "53t44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53t44'이므로 일치하지 않습니다. 파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다. t와 같은 문자가 삽입될 근거가 없습니다."
+          },
+          {
+            "label": "3",
+            "text": "53 44",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. 입력받은 '53 44'를 공백 기준으로 나누어 정수 53과 44로 저장합니다. print 함수에서 콤마(,)로 구분된 인자들은 기본적으로 공백 하나를 사이에 두고 출력됩니다."
+          },
+          {
+            "label": "4",
+            "text": "53, 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53, 44'이므로 일치하지 않습니다. 파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다. t와 같은 문자가 삽입될 근거가 없습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 79. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\" \")) print(a, b)",
+          "핵심 개념을 떠올립니다. input().split(), map() 함수, print()의 sep 옵션",
+          "정답 판단 근거를 적용합니다. 입력받은 '53 44'를 공백 기준으로 나누어 정수 53과 44로 저장합니다. print 함수에서 콤마(,)로 구분된 인자들은 기본적으로 공백 하나를 사이에 두고 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다."
+        ],
+        "exam_traps": [
+          "파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'input().split()'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'map() 함수'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'print()의 sep 옵션'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. print(a, b) -> a b (공백 출력)"
+        ],
+        "detailed_summary": "파이썬의 입력 처리와 출력 형식을 이해하는 문제입니다. input().split(\" \")으로 공백을 기준으로 나눈 뒤 int로 변환하여 a, b에 저장합니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 79. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\" \")) print(a, b) 정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. 입력받은 '53 44'를 공백 기준으로 나누어 정수 53과 44로 저장합니다. print 함수에서 콤마(,)로 구분된 인자들은 기본적으로 공백 하나를 사이에 두고 출력됩니다. 시험 포인트는 파이썬 print는 기본적으로 콤마를 공백으로 치환하여 출력합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "input",
+        "split",
+        "map",
+        "print"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3903db7ad04dd311",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 저장된 내용을 변경할 수 없는 순차형 데이터 타입은 튜플(Tuple)입니다.\n• 리스트(list): 변경 가능한 순차형 타입\n• 사전(dict): 키와 값의 쌍으로 이루어진 타입\n• 복소수(complex): 수치형 타입"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "76. Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "복소수(complex) 타입"
+          },
+          {
+            "label": "2",
+            "text": "리스트(list) 타입"
+          },
+          {
+            "label": "3",
+            "text": "사전(dict) 타입"
+          },
+          {
+            "label": "4",
+            "text": "튜플(tuple) 타입"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "튜플(tuple) 타입"
+        ],
+        "answer_text": "튜플(tuple) 타입"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 저장된 내용을 변경할 수 없는 순차형 데이터 타입은 튜플(Tuple)입니다.\n• 리스트(list): 변경 가능한 순차형 타입\n• 사전(dict): 키와 값의 쌍으로 이루어진 타입\n• 복소수(complex): 수치형 타입",
+        "summary": "파이썬 자료형 중 순서가 있고 변경 불가능한(Immutable) 타입을 찾는 문제입니다.",
+        "why_correct": [
+          "튜플(tuple)은 리스트와 유사하게 순서가 있는 시퀀스 타입이지만, 한 번 생성되면 요소를 수정할 수 없는 불변 객체입니다."
+        ],
+        "why_others_wrong": [
+          "리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+        ],
+        "key_concepts": [
+          "Immutable",
+          "Sequence",
+          "Tuple"
+        ],
+        "memory_cues": [
+          "튜플 = 수정 불가 리스트"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "복소수(complex) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '복소수(complex) 타입'이므로 일치하지 않습니다. 리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+          },
+          {
+            "label": "2",
+            "text": "리스트(list) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '리스트(list) 타입'이므로 일치하지 않습니다. 리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+          },
+          {
+            "label": "3",
+            "text": "사전(dict) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '사전(dict) 타입'이므로 일치하지 않습니다. 리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+          },
+          {
+            "label": "4",
+            "text": "튜플(tuple) 타입",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 튜플(tuple) 타입'와 일치합니다. 튜플(tuple)은 리스트와 유사하게 순서가 있는 시퀀스 타입이지만, 한 번 생성되면 요소를 수정할 수 없는 불변 객체입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+          "핵심 개념을 떠올립니다. Immutable, Sequence, Tuple",
+          "정답 판단 근거를 적용합니다. 튜플(tuple)은 리스트와 유사하게 순서가 있는 시퀀스 타입이지만, 한 번 생성되면 요소를 수정할 수 없는 불변 객체입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+        ],
+        "exam_traps": [
+          "리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Immutable'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Sequence'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Tuple'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 튜플 = 수정 불가 리스트"
+        ],
+        "detailed_summary": "파이썬 자료형 중 순서가 있고 변경 불가능한(Immutable) 타입을 찾는 문제입니다. 전문가의 조언 | 저장된 내용을 변경할 수 없는 순차형 데이터 타입은 튜플(Tuple)입니다. • 리스트(list): 변경 가능한 순차형 타입 • 사전(dict): 키와 값의 쌍으로 이루어진 타입 • 복소수(complex): 수치형 타입 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 튜플(tuple) 타입'와 일치합니다. 튜플(tuple)은 리스트와 유사하게 순서가 있는 시퀀스 타입이지만, 한 번 생성되면 요소를 수정할 수 없는 불변 객체입니다. 시험 포인트는 리스트는 변경 가능(Mutable)하며, 사전은 시퀀스가 아닌 매핑 타입이고, 복소수는 단일 수치 타입입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "파이썬 자료형",
+        "튜플",
+        "시퀀스",
+        "불변성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5488ce473ffe3599",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 코드의 출력 결과로 옳은 것은 3번입니다.\n• input()으로 입력받은 '53 44'를 split(\" \")으로 분리하여 [\"53\", \"44\"] 리스트를 만들고, map(int, ...)를 통해 정수형으로 변환하여 a와 b에 각각 저장합니다.\n• print(a, b)는 두 값 사이에 공백을 하나 두고 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "73. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는?\na, b = map(int, input().split(\" \"))\nprint(a, b)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "53 t 44"
+          },
+          {
+            "label": "2",
+            "text": "53t44"
+          },
+          {
+            "label": "3",
+            "text": "53 44"
+          },
+          {
+            "label": "4",
+            "text": "53, 44"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "53 44"
+        ],
+        "answer_text": "53 44"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드의 출력 결과로 옳은 것은 3번입니다.\n• input()으로 입력받은 '53 44'를 split(\" \")으로 분리하여 [\"53\", \"44\"] 리스트를 만들고, map(int, ...)를 통해 정수형으로 변환하여 a와 b에 각각 저장합니다.\n• print(a, b)는 두 값 사이에 공백을 하나 두고 출력합니다.",
+        "summary": "파이썬의 표준 입력 처리와 출력 형식을 묻는 문제입니다.",
+        "why_correct": [
+          "print(a, b) 함수는 인자들 사이에 기본적으로 공백(space)을 넣어 출력하므로 '53 44'가 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+        ],
+        "key_concepts": [
+          "map 함수",
+          "split 메서드",
+          "print 함수 인자"
+        ],
+        "memory_cues": [
+          "print(a, b) -> a b (공백 포함)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "53 t 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53 t 44'이므로 일치하지 않습니다. 콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "53t44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53t44'이므로 일치하지 않습니다. 콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "53 44",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. print(a, b) 함수는 인자들 사이에 기본적으로 공백(space)을 넣어 출력하므로 '53 44'가 출력됩니다."
+          },
+          {
+            "label": "4",
+            "text": "53, 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53, 44'이므로 일치하지 않습니다. 콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\" \")) print(a, b)",
+          "핵심 개념을 떠올립니다. map 함수, split 메서드, print 함수 인자",
+          "정답 판단 근거를 적용합니다. print(a, b) 함수는 인자들 사이에 기본적으로 공백(space)을 넣어 출력하므로 '53 44'가 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+        ],
+        "exam_traps": [
+          "콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'map 함수'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'split 메서드'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'print 함수 인자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. print(a, b) -> a b (공백 포함)"
+        ],
+        "detailed_summary": "파이썬의 표준 입력 처리와 출력 형식을 묻는 문제입니다. 전문가의 조언 | 코드의 출력 결과로 옳은 것은 3번입니다. • input()으로 입력받은 '53 44'를 split(\" \")으로 분리하여 [\"53\", \"44\"] 리스트를 만들고, map(int, ...)를 통해 정수형으로 변환하여 a와 b에 각각 저장합니다. • print(a, b)는 두 값 사이에 공백을 하나 두고 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 파이썬 코드에서 '53 44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\" \")) print(a, b) 정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. print(a, b) 함수는 인자들 사이에 기본적으로 공백(space)을 넣어 출력하므로 '53 44'가 출력됩니다. 시험 포인트는 콤마(,)나 다른 문자가 자동으로 붙지 않으며, 공백 없이 붙어서 출력되지도 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "code block dependency",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "파이썬",
+        "input",
+        "split",
+        "map",
+        "print"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0076",
+            "page_number": 76,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 921139,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0077",
+            "page_number": 77,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0077.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 917204,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0078",
+            "page_number": 78,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0078.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 955911,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0079",
+            "page_number": 79,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0079.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 1080141,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0080",
+            "page_number": 80,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0080.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 930727,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0081",
+            "page_number": 81,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0081.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 936783,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_0a67eb4aa5726513",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          91
+        ],
+        "page_span": {
+          "start_page": 91,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 코드의 실행 결과로 옳은 것은 ③번입니다. 사용된 코드의 의미는 다음과 같습니다.\n- 5개의 요소를 갖는 리스트 k1을 선언하고 초기화한다.\n- 리스트 k1을 k2에 할당한다. 이제 k2는 k1과 동일한 리스트 객체를 참조하게 된다.\n- k2[3], 즉 리스트 k2의 네 번째 요소를 삭제한다.\n- 리스트 k1을 출력한다. k1과 k2는 동일한 리스트 객체를 참조하므로, 앞선 삭제 작업의 결과가 리스트 k1에도 적용된다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "63. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은?\nk1=[\"bob\", \"and\", \"cho\", \"tom\", \"jessy\"]\nk2=k1\ndel(k2[3])\nprint(k1)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "['bob']"
+          },
+          {
+            "label": "2",
+            "text": "['bob', 'and', 'cho']"
+          },
+          {
+            "label": "3",
+            "text": "['bob', 'and', 'cho', 'jessy']"
+          },
+          {
+            "label": "4",
+            "text": "['bob', 'and', 'cho', 'tom', 'jessy']"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "['bob', 'and', 'cho', 'jessy']"
+        ],
+        "answer_text": "['bob', 'and', 'cho', 'jessy']"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드의 실행 결과로 옳은 것은 ③번입니다. 사용된 코드의 의미는 다음과 같습니다.\n- 5개의 요소를 갖는 리스트 k1을 선언하고 초기화한다.\n- 리스트 k1을 k2에 할당한다. 이제 k2는 k1과 동일한 리스트 객체를 참조하게 된다.\n- k2[3], 즉 리스트 k2의 네 번째 요소를 삭제한다.\n- 리스트 k1을 출력한다. k1과 k2는 동일한 리스트 객체를 참조하므로, 앞선 삭제 작업의 결과가 리스트 k1에도 적용된다.",
+        "summary": "파이썬 리스트의 얕은 복사(참조)와 요소 삭제 동작을 이해하는 문제입니다.",
+        "why_correct": [
+          "k2=k1은 참조 복사이므로 k2의 요소를 삭제하면 k1도 영향을 받습니다. 인덱스 3인 'tom'이 삭제되어 ['bob', 'and', 'cho', 'jessy']가 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+        ],
+        "key_concepts": [
+          "참조(Reference)",
+          "del 키워드",
+          "인덱싱"
+        ],
+        "memory_cues": [
+          "파이썬 대입 연산은 주소값을 복사함"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "['bob']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ['bob', 'and', 'cho', 'jessy']'인데 이 선택지는 '['bob']'이므로 일치하지 않습니다. 1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+          },
+          {
+            "label": "2",
+            "text": "['bob', 'and', 'cho']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ['bob', 'and', 'cho', 'jessy']'인데 이 선택지는 '['bob', 'and', 'cho']'이므로 일치하지 않습니다. 1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+          },
+          {
+            "label": "3",
+            "text": "['bob', 'and', 'cho', 'jessy']",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ['bob', 'and', 'cho', 'jessy']'와 일치합니다. k2=k1은 참조 복사이므로 k2의 요소를 삭제하면 k1도 영향을 받습니다. 인덱스 3인 'tom'이 삭제되어 ['bob', 'and', 'cho', 'jessy']가 출력됩니다."
+          },
+          {
+            "label": "4",
+            "text": "['bob', 'and', 'cho', 'tom', 'jessy']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ['bob', 'and', 'cho', 'jessy']'인데 이 선택지는 '['bob', 'and', 'cho', 'tom', 'jessy']'이므로 일치하지 않습니다. 1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은? k1=[\"bob\", \"and\", \"cho\", \"tom\", \"jessy\"] k2=k1 del(k2[3]) print(k1)",
+          "핵심 개념을 떠올립니다. 참조(Reference), del 키워드, 인덱싱",
+          "정답 판단 근거를 적용합니다. k2=k1은 참조 복사이므로 k2의 요소를 삭제하면 k1도 영향을 받습니다. 인덱스 3인 'tom'이 삭제되어 ['bob', 'and', 'cho', 'jessy']가 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '참조(Reference)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'del 키워드'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인덱싱'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파이썬 대입 연산은 주소값을 복사함"
+        ],
+        "detailed_summary": "파이썬 리스트의 얕은 복사(참조)와 요소 삭제 동작을 이해하는 문제입니다. 전문가의 조언 | 코드의 실행 결과로 옳은 것은 ③번입니다. 사용된 코드의 의미는 다음과 같습니다. - 5개의 요소를 갖는 리스트 k1을 선언하고 초기화한다. - 리스트 k1을 k2에 할당한다. 이제 k2는 k1과 동일한 리스트 객체를 참조하게 된다. - k2[3], 즉 리스트 k2의 네 번째 요소를 삭제한다. - 리스트 k1을 출력한다. k1과 k2는 동일한 리스트 객체를 참조하므로, 앞선 삭제 작업의 결과가 리스트 k1에도 적용된다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은? k1=[\"bob\", \"and\", \"cho\", \"tom\", \"jessy\"] k2=k1 del(k2[3]) print(k1) 정답입니다. 이 선택지는 실제 정답인 '3번 ['bob', 'and', 'cho', 'jessy']'와 일치합니다. k2=k1은 참조 복사이므로 k2의 요소를 삭제하면 k1도 영향을 받습니다. 인덱스 3인 'tom'이 삭제되어 ['bob', 'and', 'cho', 'jessy']가 출력됩니다. 시험 포인트는 1, 2번은 리스트 전체가 아닌 일부만 남은 형태이며, 4번은 삭제가 반영되지 않은 상태입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "리스트",
+        "객체 참조",
+        "del"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_70e924530ee0b707",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          92
+        ],
+        "page_span": {
+          "start_page": 92,
+          "end_page": 92
+        },
+        "source_explanation": "전문가의 조언 | 코드의 실행 결과로 옳은 것은 ②번입니다. 사용된 코드의 의미는 다음과 같습니다.\n- k를 선언하고 \"Hello Python Programming Language\"로 초기화한다.\n- a를 선언하고 공백을 기준으로 k에 저장된 문자열을 구분한 값으로 초기화한다.\n- b를 선언하고 a의 1번째 위치에서 3-1번째 위치까지 5씩 증가하면서 가져온 값으로 초기화한다.\n※ 증가값이 5인데, a의 1번째 위치에서 5증가한 위치의 값이 없으므로 a의 1번째 위치에 저장된 값만 가져옵니다.\n- b를 출력한다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "65. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은?\nk=\"Hello Python Programming Language\"\na=k.split()\nb=a[1:3:5]\nprint(b)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "['Hello']"
+          },
+          {
+            "label": "2",
+            "text": "['Python']"
+          },
+          {
+            "label": "3",
+            "text": "['Programming']"
+          },
+          {
+            "label": "4",
+            "text": "['Language']"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "['Python']"
+        ],
+        "answer_text": "['Python']"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드의 실행 결과로 옳은 것은 ②번입니다. 사용된 코드의 의미는 다음과 같습니다.\n- k를 선언하고 \"Hello Python Programming Language\"로 초기화한다.\n- a를 선언하고 공백을 기준으로 k에 저장된 문자열을 구분한 값으로 초기화한다.\n- b를 선언하고 a의 1번째 위치에서 3-1번째 위치까지 5씩 증가하면서 가져온 값으로 초기화한다.\n※ 증가값이 5인데, a의 1번째 위치에서 5증가한 위치의 값이 없으므로 a의 1번째 위치에 저장된 값만 가져옵니다.\n- b를 출력한다.",
+        "summary": "파이썬의 split() 함수와 리스트 슬라이싱을 이해하는 문제입니다.",
+        "why_correct": [
+          "split() 결과 a는 ['Hello', 'Python', 'Programming', 'Language']가 됩니다. a[1:3:5]는 인덱스 1부터 2까지 5의 간격으로 추출하므로 인덱스 1인 'Python'만 포함됩니다."
+        ],
+        "why_others_wrong": [
+          "인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+        ],
+        "key_concepts": [
+          "split()",
+          "Slicing [start:stop:step]"
+        ],
+        "memory_cues": [
+          "슬라이싱 step이 범위를 넘으면 첫 요소만 추출"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "['Hello']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ['Python']'인데 이 선택지는 '['Hello']'이므로 일치하지 않습니다. 인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+          },
+          {
+            "label": "2",
+            "text": "['Python']",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 ['Python']'와 일치합니다. split() 결과 a는 ['Hello', 'Python', 'Programming', 'Language']가 됩니다. a[1:3:5]는 인덱스 1부터 2까지 5의 간격으로 추출하므로 인덱스 1인 'Python'만 포함됩니다."
+          },
+          {
+            "label": "3",
+            "text": "['Programming']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ['Python']'인데 이 선택지는 '['Programming']'이므로 일치하지 않습니다. 인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+          },
+          {
+            "label": "4",
+            "text": "['Language']",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ['Python']'인데 이 선택지는 '['Language']'이므로 일치하지 않습니다. 인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은? k=\"Hello Python Programming Language\" a=k.split() b=a[1:3:5] print(b)",
+          "핵심 개념을 떠올립니다. split(), Slicing [start:stop:step]",
+          "정답 판단 근거를 적용합니다. split() 결과 a는 ['Hello', 'Python', 'Programming', 'Language']가 됩니다. a[1:3:5]는 인덱스 1부터 2까지 5의 간격으로 추출하므로 인덱스 1인 'Python'만 포함됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+        ],
+        "exam_traps": [
+          "인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'split()'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Slicing [start:stop:step]'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 슬라이싱 step이 범위를 넘으면 첫 요소만 추출"
+        ],
+        "detailed_summary": "파이썬의 split() 함수와 리스트 슬라이싱을 이해하는 문제입니다. 전문가의 조언 | 코드의 실행 결과로 옳은 것은 ②번입니다. 사용된 코드의 의미는 다음과 같습니다. - k를 선언하고 \"Hello Python Programming Language\"로 초기화한다. - a를 선언하고 공백을 기준으로 k에 저장된 문자열을 구분한 값으로 초기화한다. - b를 선언하고 a의 1번째 위치에서 3-1번째 위치까지 5씩 증가하면서 가져온 값으로 초기화한다. ※ 증가값이 5인데, a의 1번째 위치에서 5증가한 위치의 값이 없으므로 a의 1번째 위치에 저장된 값만 가져옵니다. - b를 출력한다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. 다음 파이썬으로 구현된 프로그램의 실행 결과로 옳은 것은? k=\"Hello Python Programming Language\" a=k.split() b=a[1:3:5] print(b) 정답입니다. 이 선택지는 실제 정답인 '2번 ['Python']'와 일치합니다. split() 결과 a는 ['Hello', 'Python', 'Programming', 'Language']가 됩니다. a[1:3:5]는 인덱스 1부터 2까지 5의 간격으로 추출하므로 인덱스 1인 'Python'만 포함됩니다. 시험 포인트는 인덱스 0은 'Hello', 2는 'Programming', 3은 'Language'입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "split",
+        "슬라이싱",
+        "문자열"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_324044858f38e3cd",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          114
+        ],
+        "page_span": {
+          "start_page": 114,
+          "end_page": 114
+        },
+        "source_explanation": "파이썬 슬라이싱에서 string[0:3]은 인덱스 0, 1, 2의 처음 3글자를, string[-3:]은 뒤에서부터 3글자를 가져옵니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Python 입출력과 자료구조"
+        ],
+        "chapter_label": "Python 입출력과 자료구조",
+        "chapter_key": "프로그래밍 언어 활용 > Python 입출력과 자료구조",
+        "chapter_id": "chapter_350"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음은 사용자로부터 입력받은 문자열에서 처음과 끝의 3글자를 추출한 후 합쳐서 출력하는 파이썬 코드이다. ㉠에 들어갈 내용은?\nString = input(\"7문자 이상 문자열을 입력하시오: \")\nm = ( ㉠ )\nprint(m)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "string[1:3]+string[-3:]"
+          },
+          {
+            "label": "2",
+            "text": "string[:3]+string[:-3:-1]"
+          },
+          {
+            "label": "3",
+            "text": "string[0:3]+string[-3:]"
+          },
+          {
+            "label": "4",
+            "text": "string[0:]+string[:-1]"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "string[0:3]+string[-3:]"
+        ],
+        "answer_text": "string[0:3]+string[-3:]"
+      },
+      "explanation": {
+        "source_text": "파이썬 슬라이싱에서 string[0:3]은 인덱스 0, 1, 2의 처음 3글자를, string[-3:]은 뒤에서부터 3글자를 가져옵니다.",
+        "summary": "파이썬의 문자열 슬라이싱 기능을 활용하는 문제입니다.",
+        "why_correct": [
+          "string[0:3]은 0번부터 2번 인덱스까지(처음 3글자)를 의미하며, string[-3:]은 끝에서 3번째부터 끝까지(마지막 3글자)를 의미합니다."
+        ],
+        "why_others_wrong": [
+          "1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다.",
+          "2번은 끝의 3글자를 역순으로 가져오려 시도합니다.",
+          "4번은 전체 문자열과 마지막 한 글자를 제외한 문자열을 합칩니다."
+        ],
+        "key_concepts": [
+          "슬라이싱",
+          "음수 인덱스"
+        ],
+        "memory_cues": [
+          "[:n]은 앞의 n개, [-n:]은 뒤의 n개"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "string[1:3]+string[-3:]",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 string[0:3]+string[-3:]'인데 이 선택지는 'string[1:3]+string[-3:]'이므로 일치하지 않습니다. 1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다. 2번은 끝의 3글자를 역순으로 가져오려 시도합니다."
+          },
+          {
+            "label": "2",
+            "text": "string[:3]+string[:-3:-1]",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 string[0:3]+string[-3:]'인데 이 선택지는 'string[:3]+string[:-3:-1]'이므로 일치하지 않습니다. 1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다. 2번은 끝의 3글자를 역순으로 가져오려 시도합니다."
+          },
+          {
+            "label": "3",
+            "text": "string[0:3]+string[-3:]",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 string[0:3]+string[-3:]'와 일치합니다. string[0:3]은 0번부터 2번 인덱스까지(처음 3글자)를 의미하며, string[-3:]은 끝에서 3번째부터 끝까지(마지막 3글자)를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "string[0:]+string[:-1]",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 string[0:3]+string[-3:]'인데 이 선택지는 'string[0:]+string[:-1]'이므로 일치하지 않습니다. 1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다. 2번은 끝의 3글자를 역순으로 가져오려 시도합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 사용자로부터 입력받은 문자열에서 처음과 끝의 3글자를 추출한 후 합쳐서 출력하는 파이썬 코드이다. ㉠에 들어갈 내용은? String = input(\"7문자 이상 문자열을 입력하시오: \") m = ( ㉠ ) print(m)",
+          "핵심 개념을 떠올립니다. 슬라이싱, 음수 인덱스",
+          "정답 판단 근거를 적용합니다. string[0:3]은 0번부터 2번 인덱스까지(처음 3글자)를 의미하며, string[-3:]은 끝에서 3번째부터 끝까지(마지막 3글자)를 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다."
+        ],
+        "exam_traps": [
+          "1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '슬라이싱'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '음수 인덱스'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. [:n]은 앞의 n개, [-n:]은 뒤의 n개"
+        ],
+        "detailed_summary": "파이썬의 문자열 슬라이싱 기능을 활용하는 문제입니다. 파이썬 슬라이싱에서 string[0:3]은 인덱스 0, 1, 2의 처음 3글자를, string[-3:]은 뒤에서부터 3글자를 가져옵니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 사용자로부터 입력받은 문자열에서 처음과 끝의 3글자를 추출한 후 합쳐서 출력하는 파이썬 코드이다. ㉠에 들어갈 내용은? String = input(\"7문자 이상 문자열을 입력하시오: \") m = ( ㉠ ) print(m) 정답입니다. 이 선택지는 실제 정답인 '3번 string[0:3]+string[-3:]'와 일치합니다. string[0:3]은 0번부터 2번 인덱스까지(처음 3글자)를 의미하며, string[-3:]은 끝에서 3번째부터 끝까지(마지막 3글자)를 의미합니다. 시험 포인트는 1번은 1번 인덱스부터 시작하므로 처음 2글자만 가져옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "슬라이싱",
+        "문자열 추출",
+        "인덱싱"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ded257898baf10bb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          133
+        ],
+        "page_span": {
+          "start_page": 133,
+          "end_page": 133
+        },
+        "source_explanation": "저장된 내용을 변경할 수 없는 순서형 데이터 타입은 튜플(Tuple)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Python 입출력과 자료구조"
+        ],
+        "chapter_label": "Python 입출력과 자료구조",
+        "chapter_key": "프로그래밍 언어 활용 > Python 입출력과 자료구조",
+        "chapter_id": "chapter_350"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "복소수(complex) 타입"
+          },
+          {
+            "label": "2",
+            "text": "리스트(list) 타입"
+          },
+          {
+            "label": "3",
+            "text": "사전(dict) 타입"
+          },
+          {
+            "label": "4",
+            "text": "튜플(tuple) 타입"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "튜플(tuple) 타입"
+        ],
+        "answer_text": "튜플(tuple) 타입"
+      },
+      "explanation": {
+        "source_text": "저장된 내용을 변경할 수 없는 순서형 데이터 타입은 튜플(Tuple)입니다.",
+        "summary": "파이썬의 주요 자료구조 중 튜플의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "튜플은 리스트와 같이 순서가 있는 시퀀스이지만, 한 번 생성되면 요소를 수정할 수 없는 Immutable 특성을 가집니다."
+        ],
+        "why_others_wrong": [
+          "복소수는 수치형입니다.",
+          "리스트는 변경 가능한(Mutable) 시퀀스입니다.",
+          "사전은 키-값 쌍의 매핑 타입이며 순서가 보장되지 않는 비시퀀스 타입입니다."
+        ],
+        "key_concepts": [
+          "Tuple",
+          "Immutable",
+          "Sequence"
+        ],
+        "memory_cues": [
+          "튜플은 '틀'에 박혀서 못 바꾼다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "복소수(complex) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '복소수(complex) 타입'이므로 일치하지 않습니다. 복소수는 수치형입니다. 리스트는 변경 가능한(Mutable) 시퀀스입니다."
+          },
+          {
+            "label": "2",
+            "text": "리스트(list) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '리스트(list) 타입'이므로 일치하지 않습니다. 복소수는 수치형입니다. 리스트는 변경 가능한(Mutable) 시퀀스입니다."
+          },
+          {
+            "label": "3",
+            "text": "사전(dict) 타입",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 튜플(tuple) 타입'인데 이 선택지는 '사전(dict) 타입'이므로 일치하지 않습니다. 복소수는 수치형입니다. 리스트는 변경 가능한(Mutable) 시퀀스입니다."
+          },
+          {
+            "label": "4",
+            "text": "튜플(tuple) 타입",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 튜플(tuple) 타입'와 일치합니다. 튜플은 리스트와 같이 순서가 있는 시퀀스이지만, 한 번 생성되면 요소를 수정할 수 없는 Immutable 특성을 가집니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은?",
+          "핵심 개념을 떠올립니다. Tuple, Immutable, Sequence",
+          "정답 판단 근거를 적용합니다. 튜플은 리스트와 같이 순서가 있는 시퀀스이지만, 한 번 생성되면 요소를 수정할 수 없는 Immutable 특성을 가집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 복소수는 수치형입니다."
+        ],
+        "exam_traps": [
+          "복소수는 수치형입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Tuple'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Immutable'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Sequence'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 튜플은 '틀'에 박혀서 못 바꾼다"
+        ],
+        "detailed_summary": "파이썬의 주요 자료구조 중 튜플의 특징을 묻는 문제입니다. 저장된 내용을 변경할 수 없는 순서형 데이터 타입은 튜플(Tuple)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. Python 데이터 타입 중 시퀀스(Sequence) 데이터 타입에 해당하며 다양한 데이터 타입들을 주어진 순서에 따라 저장할 수 있으나 저장된 내용을 변경할 수 없는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 튜플(tuple) 타입'와 일치합니다. 튜플은 리스트와 같이 순서가 있는 시퀀스이지만, 한 번 생성되면 요소를 수정할 수 없는 Immutable 특성을 가집니다. 시험 포인트는 복소수는 수치형입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "시퀀스 타입",
+        "튜플",
+        "불변성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fe16ab8e37b9eff1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          149
+        ],
+        "page_span": {
+          "start_page": 149,
+          "end_page": 149
+        },
+        "source_explanation": "전문가의 조언 | 변수 이름의 중간에 공백을 사용할 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "Python 입출력과 자료구조"
+        ],
+        "chapter_label": "Python 입출력과 자료구조",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > Python 입출력과 자료구조",
+        "chapter_id": "chapter_135"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "67. 파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "첫 자리에 숫자를 사용할 수 없다."
+          },
+          {
+            "label": "2",
+            "text": "영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다."
+          },
+          {
+            "label": "3",
+            "text": "변수 이름의 중간에 공백을 사용할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "이미 사용되고 있는 예약어는 사용할 수 없다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "변수 이름의 중간에 공백을 사용할 수 있다."
+        ],
+        "answer_text": "변수 이름의 중간에 공백을 사용할 수 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 변수 이름의 중간에 공백을 사용할 수 없습니다.",
+        "summary": "파이썬 언어의 변수(식별자) 명명 규칙을 묻는 문제입니다.",
+        "why_correct": [
+          "대부분의 프로그래밍 언어와 마찬가지로 파이썬에서도 변수 이름 내에 공백(Space)을 포함할 수 없습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "식별자 규칙",
+          "예약어"
+        ],
+        "memory_cues": [
+          "변수 이름에 빈칸은 금지"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "첫 자리에 숫자를 사용할 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '첫 자리에 숫자를 사용할 수 없다.'이므로 일치하지 않습니다. 1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.'이므로 일치하지 않습니다. 1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "변수 이름의 중간에 공백을 사용할 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'와 일치합니다. 대부분의 프로그래밍 언어와 마찬가지로 파이썬에서도 변수 이름 내에 공백(Space)을 포함할 수 없습니다."
+          },
+          {
+            "label": "4",
+            "text": "이미 사용되고 있는 예약어는 사용할 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '이미 사용되고 있는 예약어는 사용할 수 없다.'이므로 일치하지 않습니다. 1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. 파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 식별자 규칙, 예약어",
+          "정답 판단 근거를 적용합니다. 대부분의 프로그래밍 언어와 마찬가지로 파이썬에서도 변수 이름 내에 공백(Space)을 포함할 수 없습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '식별자 규칙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '예약어'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 변수 이름에 빈칸은 금지"
+        ],
+        "detailed_summary": "파이썬 언어의 변수(식별자) 명명 규칙을 묻는 문제입니다. 전문가의 조언 | 변수 이름의 중간에 공백을 사용할 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. 파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'와 일치합니다. 대부분의 프로그래밍 언어와 마찬가지로 파이썬에서도 변수 이름 내에 공백(Space)을 포함할 수 없습니다. 시험 포인트는 1, 2, 4번은 숫자로 시작 불가, 특수문자는 언더바만 허용, 예약어 사용 불가라는 표준 명명 규칙을 잘 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파이썬",
+        "변수 명명 규칙",
+        "식별자",
+        "예약어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c96766ec77c5c527",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          151
+        ],
+        "page_span": {
+          "start_page": 151,
+          "end_page": 151
+        },
+        "source_explanation": "변수 이름의 중간에 공백을 사용할 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "첫 자리에 숫자를 사용할 수 없다."
+          },
+          {
+            "label": "2",
+            "text": "영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다."
+          },
+          {
+            "label": "3",
+            "text": "변수 이름의 중간에 공백을 사용할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "이미 사용되고 있는 예약어는 사용할 수 없다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "변수 이름의 중간에 공백을 사용할 수 있다."
+        ],
+        "answer_text": "변수 이름의 중간에 공백을 사용할 수 있다."
+      },
+      "explanation": {
+        "source_text": "변수 이름의 중간에 공백을 사용할 수 없습니다.",
+        "summary": "파이썬에서 변수 이름을 지을 때 지켜야 할 규칙(식별자 규칙) 중 틀린 것을 찾는 문제입니다.",
+        "why_correct": [
+          "변수 이름에는 공백을 포함할 수 없습니다. 공백이 들어가면 별개의 토큰으로 인식됩니다."
+        ],
+        "why_others_wrong": [
+          "숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+        ],
+        "key_concepts": [
+          "파이썬 변수 규칙",
+          "식별자"
+        ],
+        "memory_cues": [
+          "변수 이름은 한 단어처럼 붙여 써야 한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "첫 자리에 숫자를 사용할 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '첫 자리에 숫자를 사용할 수 없다.'이므로 일치하지 않습니다. 숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다.'이므로 일치하지 않습니다. 숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+          },
+          {
+            "label": "3",
+            "text": "변수 이름의 중간에 공백을 사용할 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'와 일치합니다. 변수 이름에는 공백을 포함할 수 없습니다. 공백이 들어가면 별개의 토큰으로 인식됩니다."
+          },
+          {
+            "label": "4",
+            "text": "이미 사용되고 있는 예약어는 사용할 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'인데 이 선택지는 '이미 사용되고 있는 예약어는 사용할 수 없다.'이므로 일치하지 않습니다. 숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 파이썬 변수 규칙, 식별자",
+          "정답 판단 근거를 적용합니다. 변수 이름에는 공백을 포함할 수 없습니다. 공백이 들어가면 별개의 토큰으로 인식됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+        ],
+        "exam_traps": [
+          "숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파이썬 변수 규칙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '식별자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 변수 이름은 한 단어처럼 붙여 써야 한다."
+        ],
+        "detailed_summary": "파이썬에서 변수 이름을 지을 때 지켜야 할 규칙(식별자 규칙) 중 틀린 것을 찾는 문제입니다. 변수 이름의 중간에 공백을 사용할 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 변수 이름의 중간에 공백을 사용할 수 있다.'와 일치합니다. 변수 이름에는 공백을 포함할 수 없습니다. 공백이 들어가면 별개의 토큰으로 인식됩니다. 시험 포인트는 숫자로 시작 불가, 영문/숫자/밑줄 조합 가능, 예약어 사용 불가 등은 모두 올바른 규칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "변수 명명 규칙",
+        "식별자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_15522754105a7c3b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          154
+        ],
+        "page_span": {
+          "start_page": 154,
+          "end_page": 154
+        },
+        "source_explanation": "list_data[0]은 리스트의 첫 번째 요소인 'a'를 출력하고, dict_data['a']는 딕셔너리에서 키 'a'에 해당하는 값인 90을 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 Python 프로그램이 실행되었을 때, 실행 결과는?\n```python\na = 100\nlist_data = ['a', 'b', 'c']\ndict_data = {'a': 90, 'b': 95}\nprint(list_data[0])\nprint(dict_data['a'])\n```",
+        "choices": [
+          {
+            "label": "1",
+            "text": "a\n90"
+          },
+          {
+            "label": "2",
+            "text": "100\n90"
+          },
+          {
+            "label": "3",
+            "text": "100\n100"
+          },
+          {
+            "label": "4",
+            "text": "a\na"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "a\n90"
+        ],
+        "answer_text": "a\n90"
+      },
+      "explanation": {
+        "source_text": "list_data[0]은 리스트의 첫 번째 요소인 'a'를 출력하고, dict_data['a']는 딕셔너리에서 키 'a'에 해당하는 값인 90을 출력합니다.",
+        "summary": "파이썬의 기본 자료구조인 리스트와 딕셔너리의 데이터 접근 방법을 묻는 문제입니다.",
+        "why_correct": [
+          "리스트는 인덱스(0부터 시작)로 접근하며, 딕셔너리는 키(Key) 값으로 접근합니다."
+        ],
+        "why_others_wrong": [
+          "변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+        ],
+        "key_concepts": [
+          "리스트 인덱싱",
+          "딕셔너리 키 접근"
+        ],
+        "memory_cues": [
+          "리스트는 번호표, 딕셔너리는 이름표"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "a 90",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 a 90'와 일치합니다. 리스트는 인덱스(0부터 시작)로 접근하며, 딕셔너리는 키(Key) 값으로 접근합니다."
+          },
+          {
+            "label": "2",
+            "text": "100 90",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a 90'인데 이 선택지는 '100 90'이므로 일치하지 않습니다. 변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "100 100",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a 90'인데 이 선택지는 '100 100'이므로 일치하지 않습니다. 변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "a a",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a 90'인데 이 선택지는 'a a'이므로 일치하지 않습니다. 변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 Python 프로그램이 실행되었을 때, 실행 결과는? ```python a = 100 list_data = ['a', 'b', 'c'] dict_data = {'a': 90, 'b': 95} print(list_data[0]) print(dict_data['a']) ```",
+          "핵심 개념을 떠올립니다. 리스트 인덱싱, 딕셔너리 키 접근",
+          "정답 판단 근거를 적용합니다. 리스트는 인덱스(0부터 시작)로 접근하며, 딕셔너리는 키(Key) 값으로 접근합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+        ],
+        "exam_traps": [
+          "변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '리스트 인덱싱'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '딕셔너리 키 접근'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 리스트는 번호표, 딕셔너리는 이름표"
+        ],
+        "detailed_summary": "파이썬의 기본 자료구조인 리스트와 딕셔너리의 데이터 접근 방법을 묻는 문제입니다. list_data[0]은 리스트의 첫 번째 요소인 'a'를 출력하고, dict_data['a']는 딕셔너리에서 키 'a'에 해당하는 값인 90을 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 Python 프로그램이 실행되었을 때, 실행 결과는? ```python a = 100 list_data = ['a', 'b', 'c'] dict_data = {'a': 90, 'b': 95} print(list_data[0]) print(dict_data['a']) ``` 정답입니다. 이 선택지는 실제 정답인 '1번 a 90'와 일치합니다. 리스트는 인덱스(0부터 시작)로 접근하며, 딕셔너리는 키(Key) 값으로 접근합니다. 시험 포인트는 변수 a=100은 출력에 사용되지 않았으며, 인덱스나 키를 혼동하면 오답이 됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "리스트",
+        "딕셔너리",
+        "인덱싱"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c5ee6e904c4ffe5d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0186_p0191"
+        ],
+        "source_pages": [
+          187
+        ],
+        "page_span": {
+          "start_page": 187,
+          "end_page": 187
+        },
+        "source_explanation": "input().split('t')는 입력받은 문자열을 't' 기준으로 분리하여 ['53', '44'] 리스트를 만듭니다. map(int, ...)는 이를 정수형으로 변환하여 a=53, b=44가 됩니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "Python 입출력과 자료구조"
+        ],
+        "chapter_label": "Python 입출력과 자료구조",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > Python 입출력과 자료구조",
+        "chapter_id": "chapter_135"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_065",
+        "topic_title": "Python 입출력과 자료구조",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Python 입출력과 자료구조",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 파이썬 코드에서 '53t44'를 입력했을 때 출력 결과는?\na, b = map(int, input().split(\"t\"))\nprint(a, b)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "53 t 44"
+          },
+          {
+            "label": "2",
+            "text": "53t44"
+          },
+          {
+            "label": "3",
+            "text": "53 44"
+          },
+          {
+            "label": "4",
+            "text": "53, 44"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "53 44"
+        ],
+        "answer_text": "53 44"
+      },
+      "explanation": {
+        "source_text": "input().split('t')는 입력받은 문자열을 't' 기준으로 분리하여 ['53', '44'] 리스트를 만듭니다. map(int, ...)는 이를 정수형으로 변환하여 a=53, b=44가 됩니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다.",
+        "summary": "파이썬의 문자열 분리 및 출력 형식을 묻는 문제입니다.",
+        "why_correct": [
+          "split('t')로 't'가 제거되고, print(a, b)는 기본적으로 콤마 자리에 공백을 넣어 출력합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+        ],
+        "key_concepts": [
+          "split()",
+          "map()",
+          "print() sep"
+        ],
+        "memory_cues": [
+          "print(a, b) -> a (공백) b"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "53 t 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53 t 44'이므로 일치하지 않습니다. 1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "53t44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53t44'이므로 일치하지 않습니다. 1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "53 44",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. split('t')로 't'가 제거되고, print(a, b)는 기본적으로 콤마 자리에 공백을 넣어 출력합니다."
+          },
+          {
+            "label": "4",
+            "text": "53, 44",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 53 44'인데 이 선택지는 '53, 44'이므로 일치하지 않습니다. 1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 파이썬 코드에서 '53t44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\"t\")) print(a, b)",
+          "핵심 개념을 떠올립니다. split(), map(), print() sep",
+          "정답 판단 근거를 적용합니다. split('t')로 't'가 제거되고, print(a, b)는 기본적으로 콤마 자리에 공백을 넣어 출력합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'split()'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'map()'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'print() sep'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. print(a, b) -> a (공백) b"
+        ],
+        "detailed_summary": "파이썬의 문자열 분리 및 출력 형식을 묻는 문제입니다. input().split('t')는 입력받은 문자열을 't' 기준으로 분리하여 ['53', '44'] 리스트를 만듭니다. map(int, ...)는 이를 정수형으로 변환하여 a=53, b=44가 됩니다. print(a, b)는 두 값을 공백으로 구분하여 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 파이썬 코드에서 '53t44'를 입력했을 때 출력 결과는? a, b = map(int, input().split(\"t\")) print(a, b) 정답입니다. 이 선택지는 실제 정답인 '3번 53 44'와 일치합니다. split('t')로 't'가 제거되고, print(a, b)는 기본적으로 콤마 자리에 공백을 넣어 출력합니다. 시험 포인트는 1, 2번은 't'가 남아있어 틀렸고, 4번은 파이썬 print 함수의 기본 출력 형식이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Python",
+        "split",
+        "map",
+        "print"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

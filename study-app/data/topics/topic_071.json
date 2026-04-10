@@ -1,0 +1,1025 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_071",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "source_count": 1,
+    "source_sequences": [
+      317
+    ],
+    "source_lecture_ids": [
+      "0317_317"
+    ],
+    "source_titles": [
+      "Java의 예외 처리"
+    ],
+    "keywords": [
+      "Java의",
+      "예외",
+      "처리"
+    ],
+    "highlight_keywords": [
+      "catch",
+      "try",
+      "예외",
+      "예외가 발생할 가능성이 있는 코드",
+      "try {"
+    ],
+    "secondary_keywords": [
+      "Java",
+      "Java의 예외 처리",
+      "finally {",
+      "실행",
+      "catch 블록 내 선언 변수의 유효 범위",
+      "try ~ catch 문의 기본 동작 원리"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0317_317",
+      "sequence": 317,
+      "number": "317",
+      "course_code": "350313",
+      "title": "Java의 예외 처리",
+      "duration_seconds": 276,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "segment_count": 13,
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "tokens": [
+            "catch"
+          ],
+          "score": 41,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "try",
+          "tokens": [
+            "try"
+          ],
+          "score": 41,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "예외",
+          "tokens": [
+            "예외"
+          ],
+          "score": 36,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "예외가 발생할 가능성이 있는 코드",
+          "tokens": [
+            "예외가",
+            "발생할",
+            "가능성이",
+            "있는",
+            "코드"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "try {",
+          "tokens": [
+            "try"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Java",
+          "tokens": [
+            "Java"
+          ],
+          "score": 19,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Java의 예외 처리",
+          "tokens": [
+            "Java",
+            "예외",
+            "처리"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "finally {",
+          "tokens": [
+            "finally"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "실행",
+          "tokens": [
+            "실행"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "catch 블록 내 선언 변수의 유효 범위",
+          "tokens": [
+            "catch",
+            "블록",
+            "선언",
+            "변수의",
+            "유효",
+            "범위"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "try ~ catch 문의 기본 동작 원리",
+          "tokens": [
+            "try",
+            "catch",
+            "문의",
+            "동작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_071-subtopic-001-source-seg-003::01",
+          "prompt": "try ~ ______ 문의 기본 동작 원리",
+          "answer": "catch",
+          "original": "try ~ catch 문의 기본 동작 원리",
+          "keyword": "catch",
+          "source_segment_id": "topic_071-subtopic-001-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'catch'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_071-subtopic-001-source-seg-003::02",
+          "prompt": "______ ~ catch 문의 기본 동작 원리",
+          "answer": "try",
+          "original": "try ~ catch 문의 기본 동작 원리",
+          "keyword": "try",
+          "source_segment_id": "topic_071-subtopic-001-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'try'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_071-subtopic-001-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______의 예외 처리에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "Java",
+          "original": "이번 시간에는 우리 Java의 예외 처리에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "Java",
+          "source_segment_id": "topic_071-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Java'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_071-subtopic-001-source-seg-001::04",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "Java의 예외 처리",
+          "original": "이번 시간에는 우리 Java의 예외 처리에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "Java의 예외 처리",
+          "source_segment_id": "topic_071-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Java의 예외 처리'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_071",
+    "sequence": 71,
+    "number": "71",
+    "title": "Java 예외 처리",
+    "title_raw": "Java 예외 처리",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "source_count": 1,
+    "source_sequences": [
+      317
+    ],
+    "source_titles": [
+      "Java의 예외 처리"
+    ],
+    "preview_text": "Java의 예외 처리",
+    "segment_count": 13,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 Java의 예외 처리을 중심으로 정리합니다. 프로그래밍 언어 활용 과목에서 함께 출제되는 핵심 개념 1개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 Java의 예외 처리을 중심으로 정리합니다.",
+      "프로그래밍 언어 활용 과목에서 함께 출제되는 핵심 개념 1개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 276,
+    "source_titles_preview": [
+      "Java의 예외 처리"
+    ],
+    "highlight_keywords": [
+      "catch",
+      "try",
+      "예외",
+      "예외가 발생할 가능성이 있는 코드",
+      "try {"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_071-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 도입 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 Java의 예외 처리에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 Java의 예외 처리에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "Java",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "Java의 예외 처리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 7,
+      "end_seconds": 32,
+      "duration_seconds": 25,
+      "timeline_summary": "Java 예외 처리의 특징과 패키지 설명",
+      "screen_text_lines": [
+        "Java는 예외를 객체로 취급하며, 예외와 관련된 클래스를 java.lang 패키지에서 제공함"
+      ],
+      "screen_text": "Java는 예외를 객체로 취급하며, 예외와 관련된 클래스를 java.lang 패키지에서 제공함",
+      "spoken_sentences": [
+        "Java에서 예외 처리하는 것도 하나의 객체로 취급을 하고요.",
+        "이 예외 처리하는 거를 우리 java.lang이라는 요 패키지에서 제공을 해 줍니다.",
+        "요 java.lang 요 패키지가 우리 Java에서 기본적으로 필요한 그런 인터페이스가 됐든 자료형이 됐든 예외 처리가 됐든 이런 기능을 전부 다 제공해 주는 패키지라고 했어요.",
+        "해서 얘가 가장 기본이 되는 그런 패키지이기 때문에 임포트문 없이도 사용할 수 있죠."
+      ],
+      "spoken_text": "Java에서 예외 처리하는 것도 하나의 객체로 취급을 하고요. 이 예외 처리하는 거를 우리 java.lang이라는 요 패키지에서 제공을 해 줍니다. 요 java.lang 요 패키지가 우리 Java에서 기본적으로 필요한 그런 인터페이스가 됐든 자료형이 됐든 예외 처리가 됐든 이런 기능을 전부 다 제공해 주는 패키지라고 했어요. 해서 얘가 가장 기본이 되는 그런 패키지이기 때문에 임포트문 없이도 사용할 수 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "Java",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 32,
+      "end_seconds": 58,
+      "duration_seconds": 26,
+      "timeline_summary": "try ~ catch 문의 기본 동작 원리",
+      "screen_text_lines": [
+        "Java는 예외를 객체로 취급하며, 예외와 관련된 클래스를 java.lang 패키지에서 제공함",
+        "Java에서는 try ~ catch 문을 이용해 예외를 처리함",
+        "try 블록 코드를 수행하다 예외가 발생하면 예외를 처리하는 catch 블록으로 이동하여 예외 처리 코드를 수행하므로 예외가 발생한 이후의 코드는 실행되지 않음"
+      ],
+      "screen_text": "Java는 예외를 객체로 취급하며, 예외와 관련된 클래스를 java.lang 패키지에서 제공함\nJava에서는 try ~ catch 문을 이용해 예외를 처리함\ntry 블록 코드를 수행하다 예외가 발생하면 예외를 처리하는 catch 블록으로 이동하여 예외 처리 코드를 수행하므로 예외가 발생한 이후의 코드는 실행되지 않음",
+      "spoken_sentences": [
+        "이때 예외 처리할 때 사용하는 명령어가 try ~ catch라는 요 명령어를 사용해서 우리가 예외 처리를 합니다.",
+        "해서 맨 처음에 try라고 먼저 써주고요.",
+        "그 뒤에다가 거기다 예외가 발생할 가능성이 높은 그런 코드 있죠.",
+        "그거를 써줘요.",
+        "써주면 그곳에 있는 코드를 먼저 수행하다가 만약에 예외가 발생했다라고 하게 되면 그 예외 처리하는 catch 블록으로 이동을 해요.",
+        "이동을 해서 예외 처리 코드를 수행합니다."
+      ],
+      "spoken_text": "이때 예외 처리할 때 사용하는 명령어가 try ~ catch라는 요 명령어를 사용해서 우리가 예외 처리를 합니다. 해서 맨 처음에 try라고 먼저 써주고요. 그 뒤에다가 거기다 예외가 발생할 가능성이 높은 그런 코드 있죠. 그거를 써줘요. 써주면 그곳에 있는 코드를 먼저 수행하다가 만약에 예외가 발생했다라고 하게 되면 그 예외 처리하는 catch 블록으로 이동을 해요. 이동을 해서 예외 처리 코드를 수행합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "Java",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 58,
+      "end_seconds": 70,
+      "duration_seconds": 12,
+      "timeline_summary": "예외 발생 시 이후 코드 실행 여부 설명",
+      "screen_text_lines": [
+        "try 블록 코드를 수행하다 예외가 발생하면 예외를 처리하는 catch 블록으로 이동하여 예외 처리 코드를 수행하므로 예외가 발생한 이후의 코드는 실행되지 않음"
+      ],
+      "screen_text": "try 블록 코드를 수행하다 예외가 발생하면 예외를 처리하는 catch 블록으로 이동하여 예외 처리 코드를 수행하므로 예외가 발생한 이후의 코드는 실행되지 않음",
+      "spoken_sentences": [
+        "그러면 try 블록에서 처리하던 그 코드에서 중간에 catch 블록 이동할 거 아니에요?",
+        "그 예외가 발생한 이후의 그런 코드들은 실행이 되지 않습니다."
+      ],
+      "spoken_text": "그러면 try 블록에서 처리하던 그 코드에서 중간에 catch 블록 이동할 거 아니에요? 그 예외가 발생한 이후의 그런 코드들은 실행이 되지 않습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:19",
+      "start_seconds": 70,
+      "end_seconds": 79,
+      "duration_seconds": 9,
+      "timeline_summary": "catch 블록 내 선언 변수의 유효 범위",
+      "screen_text_lines": [
+        "catch 블록에서 선언한 변수는 해당 catch 블록에서만 유효함"
+      ],
+      "screen_text": "catch 블록에서 선언한 변수는 해당 catch 블록에서만 유효함",
+      "spoken_sentences": [
+        "그리고 우리가 try라고 써주고 catch를 여러 개 작성할 수 있는데 그 catch 블록에서 선언한 그런 변수들 있죠.",
+        "그런 변수들은 해당 catch 블록에서만 유효해요.",
+        "그 안에서만 쓸 수 있다는 거고요."
+      ],
+      "spoken_text": "그리고 우리가 try라고 써주고 catch를 여러 개 작성할 수 있는데 그 catch 블록에서 선언한 그런 변수들 있죠. 그런 변수들은 해당 catch 블록에서만 유효해요. 그 안에서만 쓸 수 있다는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "catch 블록 내 선언 변수의 유효 범위",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:01:19",
+      "end_time_hms": "00:01:32",
+      "start_seconds": 79,
+      "end_seconds": 92,
+      "duration_seconds": 13,
+      "timeline_summary": "중첩 try ~ catch 문 사용 가능성",
+      "screen_text_lines": [
+        "try ~ catch 문 안에 또 다른 try ~ catch 문을 포함할 수 있음"
+      ],
+      "screen_text": "try ~ catch 문 안에 또 다른 try ~ catch 문을 포함할 수 있음",
+      "spoken_sentences": [
+        "그리고 우리가 if가 됐든 for처럼 if 안에다가 또 다른 if, for 안에다가 또 다른 for를 쓸 수 있듯이 이 try ~ catch도 마찬가지로 try ~ catch 요 안에다가 또 다른 try ~ catch를 또 쓸 수 있어요."
+      ],
+      "spoken_text": "그리고 우리가 if가 됐든 for처럼 if 안에다가 또 다른 if, for 안에다가 또 다른 for를 쓸 수 있듯이 이 try ~ catch도 마찬가지로 try ~ catch 요 안에다가 또 다른 try ~ catch를 또 쓸 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:01:32",
+      "end_time_hms": "00:01:57",
+      "start_seconds": 92,
+      "end_seconds": 117,
+      "duration_seconds": 25,
+      "timeline_summary": "중괄호({}) 사용 필수 규정 설명",
+      "screen_text_lines": [
+        "try ~ catch 문 안에서는 실행 코드가 한 줄이라도 중괄호({})를 생략할 수 없음"
+      ],
+      "screen_text": "try ~ catch 문 안에서는 실행 코드가 한 줄이라도 중괄호({})를 생략할 수 없음",
+      "spoken_sentences": [
+        "그리고 if가 됐든 for가 됐든 그런 곳에서 실행할 명령어가 여러 줄 있을 때 우리가 중괄호로 묶어준다 그랬는데 이 try ~ catch 같은 경우에는 실행 코드가 만약에 한 줄이에요.",
+        "한 줄이라도 이 중괄호로 반드시 묶어줘야 됩니다.",
+        "해서 try ~ catch에서는 중괄호를 생략할 수 있다 없다?",
+        "생략할 수가 없더라.",
+        "무조건 써야 되더라.",
+        "자, 예외 처리 요런 특징 잘 기억하고 계셔야 돼요.",
+        "자, 그럼 그 기본 형식 좀 보자고요."
+      ],
+      "spoken_text": "그리고 if가 됐든 for가 됐든 그런 곳에서 실행할 명령어가 여러 줄 있을 때 우리가 중괄호로 묶어준다 그랬는데 이 try ~ catch 같은 경우에는 실행 코드가 만약에 한 줄이에요. 한 줄이라도 이 중괄호로 반드시 묶어줘야 됩니다. 해서 try ~ catch에서는 중괄호를 생략할 수 있다 없다? 생략할 수가 없더라. 무조건 써야 되더라. 자, 예외 처리 요런 특징 잘 기억하고 계셔야 돼요. 자, 그럼 그 기본 형식 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:01:57",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 117,
+      "end_seconds": 141,
+      "duration_seconds": 24,
+      "timeline_summary": "try ~ catch 문의 기본 형식 구조 소개",
+      "screen_text_lines": [
+        "기본 형식",
+        "try {",
+        "예외가 발생할 가능성이 있는 코드",
+        "}"
+      ],
+      "screen_text": "기본 형식\ntry {\n예외가 발생할 가능성이 있는 코드\n}",
+      "spoken_sentences": [
+        "자 지금처럼 이렇게 기본 형식 요렇게 생겼어요.",
+        "맨 처음에 try로 시작하고요.",
+        "중간에 catch다 catch다 catch다 해서 예외 처리 어떤 예외가 발생했을 때 어떻게 해라, 어떤 예외 발생했을 때는 어떻게 해라라고 쭉 적어주고 마지막에 finally해서 얘로 끝나요.",
+        "자 요 생김새 보게 되면 우리 약간 switch문이랑 비슷하고요.",
+        "얘가 실제 실행되는 것도 switch랑 약간 비슷해요."
+      ],
+      "spoken_text": "자 지금처럼 이렇게 기본 형식 요렇게 생겼어요. 맨 처음에 try로 시작하고요. 중간에 catch다 catch다 catch다 해서 예외 처리 어떤 예외가 발생했을 때 어떻게 해라, 어떤 예외 발생했을 때는 어떻게 해라라고 쭉 적어주고 마지막에 finally해서 얘로 끝나요. 자 요 생김새 보게 되면 우리 약간 switch문이랑 비슷하고요. 얘가 실제 실행되는 것도 switch랑 약간 비슷해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "예외가 발생할 가능성이 있는 코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:02:21",
+      "end_time_hms": "00:02:55",
+      "start_seconds": 141,
+      "end_seconds": 175,
+      "duration_seconds": 34,
+      "timeline_summary": "여러 예외 객체별 처리 코드 작성 방법",
+      "screen_text_lines": [
+        "예외가 발생할 가능성이 있는 코드",
+        "catch ( 예외객체1 매개변수 ) {",
+        "예외객체1에 해당하는 예외 발생 시 처리 코드",
+        "}"
+      ],
+      "screen_text": "예외가 발생할 가능성이 있는 코드\ncatch ( 예외객체1 매개변수 ) {\n예외객체1에 해당하는 예외 발생 시 처리 코드\n}",
+      "spoken_sentences": [
+        "해서 try라고 써주고 예외가 발생할 가능성이 높은 코드 있죠?",
+        "그거를 요 자리에다 적어주면 됩니다.",
+        "해서 여기다 적어놓고 얘를 실행하다가 하드웨어 문제가 생겼을 때는 어떻게 해라, 그리고 운영 체제에서 설정을 실수했을 때는 어떻게 해라, 그리고 라이브러리에 만약에 손상이 생겼을 때는 어떻게 해라 요렇게 쭉 적어주고 만약에 이 코드를 실행하다가 예외가 발생하기는 했는데 얘도 아니고 얘도 아니고 얘도 아니다 그랬을 때는 무조건 여기 있는 거, 무조건 여기 있는 처리 코드를 실행하고 끝내라라고 그렇게 해주면 돼요."
+      ],
+      "spoken_text": "해서 try라고 써주고 예외가 발생할 가능성이 높은 코드 있죠? 그거를 요 자리에다 적어주면 됩니다. 해서 여기다 적어놓고 얘를 실행하다가 하드웨어 문제가 생겼을 때는 어떻게 해라, 그리고 운영 체제에서 설정을 실수했을 때는 어떻게 해라, 그리고 라이브러리에 만약에 손상이 생겼을 때는 어떻게 해라 요렇게 쭉 적어주고 만약에 이 코드를 실행하다가 예외가 발생하기는 했는데 얘도 아니고 얘도 아니고 얘도 아니다 그랬을 때는 무조건 여기 있는 거, 무조건 여기 있는 처리 코드를 실행하고 끝내라라고 그렇게 해주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "예외가 발생할 가능성이 있는 코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:02:55",
+      "end_time_hms": "00:03:06",
+      "start_seconds": 175,
+      "end_seconds": 186,
+      "duration_seconds": 11,
+      "timeline_summary": "finally 블록의 무조건 실행 원칙",
+      "screen_text_lines": [
+        "finally {",
+        "예외의 발생 여부와 관계없이 무조건 처리되는 코드; }"
+      ],
+      "screen_text": "finally {\n예외의 발생 여부와 관계없이 무조건 처리되는 코드; }",
+      "spoken_sentences": [
+        "그때 finally하고 여기다 코드를 쭉 적어주는데 여기다가 쓴 코드는 예외가 발생을 하든 안 하든 그런 거랑 관계없이 무조건 처리되는 그 코드예요."
+      ],
+      "spoken_text": "그때 finally하고 여기다 코드를 쭉 적어주는데 여기다가 쓴 코드는 예외가 발생을 하든 안 하든 그런 거랑 관계없이 무조건 처리되는 그 코드예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "finally {",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:03:06",
+      "end_time_hms": "00:03:35",
+      "start_seconds": 186,
+      "end_seconds": 215,
+      "duration_seconds": 29,
+      "timeline_summary": "예외 미발생 시 실행 순서 시뮬레이션",
+      "screen_text_lines": [
+        "try {",
+        "예외가 발생할 가능성이 있는 코드",
+        "}",
+        "finally {"
+      ],
+      "screen_text": "try {\n예외가 발생할 가능성이 있는 코드\n}\nfinally {",
+      "spoken_sentences": [
+        "해서 얘를 실행할 때 예외가 만약에 발생하지 않았어요.",
+        "여기다가 예외 발생할 수 있는 가능성이 높은 코드를 썼는데 그때 예외 상황이 발생하지 않고 그냥 쭉 실행이 돼 버렸습니다.",
+        "그때 찾아가는 순서가 맨 처음에 try라는 곳에 찾아가요.",
+        "찾아가서 거기 있는 코드를 막 실행합니다.",
+        "실행하고 다 끝났는데도 예외가 발생하지 않았어요.",
+        "그럴 때 요 finally 이쪽으로 이동이 돼서 여기다 써놓은 코드를 실행하고 끝나는 거고요."
+      ],
+      "spoken_text": "해서 얘를 실행할 때 예외가 만약에 발생하지 않았어요. 여기다가 예외 발생할 수 있는 가능성이 높은 코드를 썼는데 그때 예외 상황이 발생하지 않고 그냥 쭉 실행이 돼 버렸습니다. 그때 찾아가는 순서가 맨 처음에 try라는 곳에 찾아가요. 찾아가서 거기 있는 코드를 막 실행합니다. 실행하고 다 끝났는데도 예외가 발생하지 않았어요. 그럴 때 요 finally 이쪽으로 이동이 돼서 여기다 써놓은 코드를 실행하고 끝나는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "예외가 발생할 가능성이 있는 코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "try {",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:03:35",
+      "end_time_hms": "00:03:55",
+      "start_seconds": 215,
+      "end_seconds": 235,
+      "duration_seconds": 20,
+      "timeline_summary": "예외 발생 시 실행 순서 시뮬레이션",
+      "screen_text_lines": [
+        "try {",
+        "예외가 발생할 가능성이 있는 코드",
+        "}",
+        "catch ( 예외객체 매개변수 ) {"
+      ],
+      "screen_text": "try {\n예외가 발생할 가능성이 있는 코드\n}\ncatch ( 예외객체 매개변수 ) {",
+      "spoken_sentences": [
+        "만약에 중간에 예외가 발생했다, 그럼 맨 처음에 try 가서 코드를 실행하다가 예외가 발생했어요.",
+        "예외가 발생하게 되면 그때 해당되는 그 catch로 이동이 되겠죠?",
+        "해서 그 해당 catch로 이동을 했다가 그걸 실행해 주고 마지막에 finally로 이동이 돼서 그 코드를 실행하고 끝나는 거예요."
+      ],
+      "spoken_text": "만약에 중간에 예외가 발생했다, 그럼 맨 처음에 try 가서 코드를 실행하다가 예외가 발생했어요. 예외가 발생하게 되면 그때 해당되는 그 catch로 이동이 되겠죠? 해서 그 해당 catch로 이동을 했다가 그걸 실행해 주고 마지막에 finally로 이동이 돼서 그 코드를 실행하고 끝나는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "예외가 발생할 가능성이 있는 코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_071-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0317_317",
+      "subtopic_title": "Java의 예외 처리",
+      "subtopic_sequence": 317,
+      "subtopic_number": "317",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=w9lhcAdtMXs",
+      "start_time_hms": "00:03:55",
+      "end_time_hms": "00:04:36",
+      "start_seconds": 235,
+      "end_seconds": 276,
+      "duration_seconds": 41,
+      "timeline_summary": "강의 마무리 및 다음 내용 예고",
+      "screen_text_lines": [
+        "try -> finally",
+        "try -> catch -> finally"
+      ],
+      "screen_text": "try -> finally\ntry -> catch -> finally",
+      "spoken_sentences": [
+        "해서 예외 상황이 발생했을 때 안 했을 때 하든 안 하든 무조건 try로 시작하고 finally로 끝나더라.",
+        "그때 발생하면 해당 catch로 가는 거고 발생하지 않으면 catch 건너뛰고 그냥 finally로 가더라.",
+        "그렇게 해서 실행되는 순서 정확하게 여러분들 기억하고 계셔야 됩니다.",
+        "그때 요 중간에 catch하고 그 뒤에다가 예외 객체, 예외 객체를 쓸 수 있는데 요 예외 객체에는 어떤 것들을 쓸 수 있는지 다음 시간에 같이 공부할 거예요.",
+        "해서 이번 시간에는 요 예외 처리 특징이 있었어요.",
+        "그 특징 잘 기억하시고요.",
+        "그리고 여기 실행되는 순서 요거 잘 기억하시고 기본 형식 어떻게 생겼는지 그거 잘 기억하시고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 예외 상황이 발생했을 때 안 했을 때 하든 안 하든 무조건 try로 시작하고 finally로 끝나더라. 그때 발생하면 해당 catch로 가는 거고 발생하지 않으면 catch 건너뛰고 그냥 finally로 가더라. 그렇게 해서 실행되는 순서 정확하게 여러분들 기억하고 계셔야 됩니다. 그때 요 중간에 catch하고 그 뒤에다가 예외 객체, 예외 객체를 쓸 수 있는데 요 예외 객체에는 어떤 것들을 쓸 수 있는지 다음 시간에 같이 공부할 거예요. 해서 이번 시간에는 요 예외 처리 특징이 있었어요. 그 특징 잘 기억하시고요. 그리고 여기 실행되는 순서 요거 잘 기억하시고 기본 형식 어떻게 생겼는지 그거 잘 기억하시고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "catch",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "try",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "예외",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5739 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_024",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 4,
+    "source_sequences": [
+      113,
+      114,
+      115,
+      116
+    ],
+    "source_lecture_ids": [
+      "0113_113",
+      "0114_114",
+      "0115_115",
+      "0116_116"
+    ],
+    "source_titles": [
+      "방향/무방향 그래프의 최대 간선수",
+      "8 인접 행렬을 이용한 그래프 표현 방법",
+      "트리",
+      "트리의 운행법"
+    ],
+    "keywords": [
+      "방향",
+      "무방향",
+      "그래프의",
+      "최대",
+      "간선수"
+    ],
+    "highlight_keywords": [
+      "n-1",
+      "무방향",
+      "방향",
+      "n(n-1)",
+      "최대",
+      "Pij",
+      "방향 간선이 있으면 행렬의 Pij = 1",
+      "없으면 Pij = 0",
+      "그래프에서",
+      "트리"
+    ],
+    "secondary_keywords": [
+      "n(n-1)/2",
+      "간선",
+      "그래프의",
+      "방향/무방향 그래프의 최대 간선수",
+      "그래프",
+      "방향 그래프의 최대 간선 수",
+      "인접하지 않으면 Pij = 0",
+      "무방향",
+      "인접",
+      "가는",
+      "번으로",
+      "노드"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0113_113",
+      "sequence": 113,
+      "number": "113",
+      "course_code": "350113",
+      "title": "방향/무방향 그래프의 최대 간선수",
+      "duration_seconds": 183,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "tokens": [
+            "n-1"
+          ],
+          "score": 54,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "무방향",
+          "tokens": [
+            "무방향"
+          ],
+          "score": 54,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "방향",
+          "tokens": [
+            "방향"
+          ],
+          "score": 45,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "n(n-1)",
+          "tokens": [
+            "n-1"
+          ],
+          "score": 36,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "최대",
+          "tokens": [
+            "최대"
+          ],
+          "score": 32,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "n(n-1)/2",
+          "tokens": [
+            "n-1"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "간선",
+          "tokens": [
+            "간선"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "그래프의",
+          "tokens": [
+            "그래프의"
+          ],
+          "score": 22,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "방향/무방향 그래프의 최대 간선수",
+          "tokens": [
+            "방향",
+            "무방향",
+            "그래프의",
+            "최대",
+            "간선수"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "그래프",
+          "tokens": [
+            "그래프"
+          ],
+          "score": 18,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "방향 그래프의 최대 간선 수",
+          "tokens": [
+            "방향",
+            "그래프의",
+            "최대",
+            "간선"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_024-subtopic-001-source-seg-003::01",
+          "prompt": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(______)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "answer": "n-1",
+          "original": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(n-1)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "keyword": "n-1",
+          "source_segment_id": "topic_024-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'n-1'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-001-source-seg-001::02",
+          "prompt": "이번 시간에는 우리 방향, ______ 그래프의 최대 간선수에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "무방향",
+          "original": "이번 시간에는 우리 방향, 무방향 그래프의 최대 간선수에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "무방향",
+          "source_segment_id": "topic_024-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '무방향'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-001-source-seg-003::03",
+          "prompt": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 ______/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "answer": "n(n-1)",
+          "original": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(n-1)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "keyword": "n(n-1)",
+          "source_segment_id": "topic_024-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'n(n-1)'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-001-source-seg-003::04",
+          "prompt": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 ______이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "answer": "n(n-1)/2",
+          "original": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(n-1)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+          "keyword": "n(n-1)/2",
+          "source_segment_id": "topic_024-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'n(n-1)/2'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0114_114",
+      "sequence": 114,
+      "number": "114",
+      "course_code": "",
+      "title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "duration_seconds": 667,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "segment_count": 30,
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "tokens": [
+            "방향"
+          ],
+          "score": 106,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Pij",
+          "tokens": [
+            "Pij"
+          ],
+          "score": 100,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "tokens": [
+            "방향",
+            "간선이",
+            "있으면",
+            "행렬의",
+            "Pij"
+          ],
+          "score": 68,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "tokens": [
+            "없으면",
+            "Pij"
+          ],
+          "score": 68,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "그래프에서",
+          "tokens": [
+            "그래프에서"
+          ],
+          "score": 68,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "tokens": [
+            "인접하지",
+            "않으면",
+            "Pij"
+          ],
+          "score": 64,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "무방향",
+          "tokens": [
+            "무방향"
+          ],
+          "score": 52,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "인접",
+          "tokens": [
+            "인접"
+          ],
+          "score": 42,
+          "sources": [
+            "lecture_title",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "가는",
+          "tokens": [
+            "가는"
+          ],
+          "score": 38,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "번으로",
+          "tokens": [
+            "번으로"
+          ],
+          "score": 36,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "노드",
+          "tokens": [
+            "노드"
+          ],
+          "score": 35,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_024-subtopic-002-source-seg-002::01",
+          "prompt": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 ______라 할 때",
+          "answer": "Pij",
+          "original": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+          "keyword": "Pij",
+          "source_segment_id": "topic_024-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Pij'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-002-source-seg-002::02",
+          "prompt": "______, 없으면 Pij = 0",
+          "answer": "방향 간선이 있으면 행렬의 Pij = 1",
+          "original": "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "source_segment_id": "topic_024-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '방향 간선이 있으면 행렬의 Pij = 1'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-002-source-seg-002::03",
+          "prompt": "방향 간선이 있으면 행렬의 Pij = 1, ______",
+          "answer": "없으면 Pij = 0",
+          "original": "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+          "keyword": "없으면 Pij = 0",
+          "source_segment_id": "topic_024-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '없으면 Pij = 0'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-002-source-seg-002::04",
+          "prompt": "방향 ______ ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+          "answer": "그래프에서",
+          "original": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+          "keyword": "그래프에서",
+          "source_segment_id": "topic_024-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '그래프에서'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0115_115",
+      "sequence": 115,
+      "number": "115",
+      "course_code": "350114",
+      "title": "트리",
+      "duration_seconds": 495,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "segment_count": 23,
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "tokens": [
+            "트리"
+          ],
+          "score": 43,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "노드",
+          "tokens": [
+            "노드"
+          ],
+          "score": 42,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "디그리",
+          "tokens": [
+            "디그리"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Node",
+          "tokens": [
+            "Node"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트리의",
+          "tokens": [
+            "트리의"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "트리의 개요",
+          "tokens": [
+            "트리의",
+            "개요"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "노드와",
+          "tokens": [
+            "노드와"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "자식",
+          "tokens": [
+            "자식"
+          ],
+          "score": 18,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트리(Tree)",
+          "tokens": [
+            "트리",
+            "Tree"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Level",
+          "tokens": [
+            "Level"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "형제",
+          "tokens": [
+            "형제"
+          ],
+          "score": 16,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_024-subtopic-003-source-seg-017::01",
+          "prompt": "______(Degree)의 정의: 자식 노드의 수",
+          "answer": "디그리",
+          "original": "디그리(Degree)의 정의: 자식 노드의 수",
+          "keyword": "디그리",
+          "source_segment_id": "topic_024-subtopic-003-source-seg-017",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '디그리'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-003-source-seg-003::02",
+          "prompt": "트리는 정점(______, 노드)과 선분(Branch, 가지)을 이용하여 사이클을 이루지 않도록 구성한 그래프(Graph)의 특수한 형태임.",
+          "answer": "Node",
+          "original": "트리는 정점(Node, 노드)과 선분(Branch, 가지)을 이용하여 사이클을 이루지 않도록 구성한 그래프(Graph)의 특수한 형태임.",
+          "keyword": "Node",
+          "source_segment_id": "topic_024-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Node'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-003-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______ 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "트리의",
+          "original": "이번 시간에는 우리 트리의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "트리의",
+          "source_segment_id": "topic_024-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '트리의'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-003-source-seg-001::04",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "트리의 개요",
+          "original": "이번 시간에는 우리 트리의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "트리의 개요",
+          "source_segment_id": "topic_024-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '트리의 개요'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0116_116",
+      "sequence": 116,
+      "number": "116",
+      "course_code": "350115",
+      "title": "트리의 운행법",
+      "duration_seconds": 889,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "segment_count": 23,
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "tokens": [
+            "Postorder"
+          ],
+          "score": 51,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Preorder 운행",
+          "tokens": [
+            "Preorder"
+          ],
+          "score": 47,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Root",
+          "tokens": [
+            "Root"
+          ],
+          "score": 47,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Inorder 운행",
+          "tokens": [
+            "Inorder"
+          ],
+          "score": 42,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Right",
+          "tokens": [
+            "Right"
+          ],
+          "score": 38,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Left",
+          "tokens": [
+            "Left"
+          ],
+          "score": 38,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트리의",
+          "tokens": [
+            "트리의"
+          ],
+          "score": 24,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "루트",
+          "tokens": [
+            "루트"
+          ],
+          "score": 24,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트리",
+          "tokens": [
+            "트리"
+          ],
+          "score": 24,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "순으로",
+          "tokens": [
+            "순으로"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "운행함",
+          "tokens": [
+            "운행함"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_024-subtopic-004-source-seg-004::01",
+          "prompt": "______ : Left -> Right -> Root 순으로 운행함.",
+          "answer": "Postorder 운행",
+          "original": "Postorder 운행 : Left -> Right -> Root 순으로 운행함.",
+          "keyword": "Postorder 운행",
+          "source_segment_id": "topic_024-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Postorder 운행'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-004-source-seg-004::02",
+          "prompt": "______ : Root -> Left -> Right 순으로 운행함.",
+          "answer": "Preorder 운행",
+          "original": "Preorder 운행 : Root -> Left -> Right 순으로 운행함.",
+          "keyword": "Preorder 운행",
+          "source_segment_id": "topic_024-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Preorder 운행'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-004-source-seg-004::03",
+          "prompt": "______ 노드 위치에 따른 운행법 구분",
+          "answer": "Root",
+          "original": "Root 노드 위치에 따른 운행법 구분",
+          "keyword": "Root",
+          "source_segment_id": "topic_024-subtopic-004-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Root'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_024-subtopic-004-source-seg-004::04",
+          "prompt": "______ : Left -> Root -> Right 순으로 운행함.",
+          "answer": "Inorder 운행",
+          "original": "Inorder 운행 : Left -> Root -> Right 순으로 운행함.",
+          "keyword": "Inorder 운행",
+          "source_segment_id": "topic_024-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Inorder 운행'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_024",
+    "sequence": 24,
+    "number": "24",
+    "title": "그래프와 트리",
+    "title_raw": "그래프와 트리",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 4,
+    "source_sequences": [
+      113,
+      114,
+      115,
+      116
+    ],
+    "source_titles": [
+      "방향/무방향 그래프의 최대 간선수",
+      "8 인접 행렬을 이용한 그래프 표현 방법",
+      "트리",
+      "트리의 운행법"
+    ],
+    "preview_text": "방향/무방향 그래프의 최대 간선수, 8 인접 행렬을 이용한 그래프 표현 방법, 트리 등",
+    "segment_count": 84,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 방향/무방향 그래프의 최대 간선수, 8 인접 행렬을 이용한 그래프 표현 방법, 트리, 트리의 운행법을 중심으로 정리합니다. 소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 방향/무방향 그래프의 최대 간선수, 8 인접 행렬을 이용한 그래프 표현 방법, 트리, 트리의 운행법을 중심으로 정리합니다.",
+      "소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 2234,
+    "source_titles_preview": [
+      "방향/무방향 그래프의 최대 간선수",
+      "8 인접 행렬을 이용한 그래프 표현 방법",
+      "트리"
+    ],
+    "highlight_keywords": [
+      "n-1",
+      "무방향",
+      "방향",
+      "n(n-1)",
+      "최대",
+      "Pij",
+      "방향 간선이 있으면 행렬의 Pij = 1",
+      "없으면 Pij = 0",
+      "그래프에서",
+      "트리"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_024-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 방향, 무방향 그래프의 최대 간선수에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 방향, 무방향 그래프의 최대 간선수에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "최대",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "간선",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:35",
+      "start_seconds": 10,
+      "end_seconds": 35,
+      "duration_seconds": 25,
+      "timeline_summary": "간선의 정의 및 그래프 종류별 차이 언급",
+      "screen_text_lines": [
+        "방향",
+        "무방향"
+      ],
+      "screen_text": "방향\n무방향",
+      "spoken_sentences": [
+        "방향 무방향 그래프의 최대 간선수를 구해라, 그런 문제가 시험 문제로 나온 적이 있습니다.",
+        "여기서 간선이라는 거는 정점하고 정점을 서로서로 이어주는 그 선을 보고 우리가 간선이라고 하죠.",
+        "그때 여기에는 방향성 우리 그래프가 있고 무방향성 그래프가 있습니다.",
+        "방향이냐 무방향이냐에 따라서 간선수 구하는 게 조금 달라져요."
+      ],
+      "spoken_text": "방향 무방향 그래프의 최대 간선수를 구해라, 그런 문제가 시험 문제로 나온 적이 있습니다. 여기서 간선이라는 거는 정점하고 정점을 서로서로 이어주는 그 선을 보고 우리가 간선이라고 하죠. 그때 여기에는 방향성 우리 그래프가 있고 무방향성 그래프가 있습니다. 방향이냐 무방향이냐에 따라서 간선수 구하는 게 조금 달라져요.",
+      "highlight_keywords": [
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "최대",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "간선",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:00:35",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 35,
+      "end_seconds": 58,
+      "duration_seconds": 23,
+      "timeline_summary": "그래프 최대 간선 수 공식 설명",
+      "screen_text_lines": [
+        "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(n-1)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.",
+        "무방향",
+        "n(n-1)/2",
+        "n(n-1)"
+      ],
+      "screen_text": "n개의 정점으로 구성된 무방향 그래프에서 최대 간선 수는 n(n-1)/2이고, 방향 그래프에서 최대 간선 수는 n(n-1)입니다.\n무방향\nn(n-1)/2\nn(n-1)",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 n개의 정점, n개의 정점으로 구성된 그런 무방향 그래프에서는 최대 간선수를 구할 때 우리가 n(n-1)/2, 이런 공식에 우리가 대입을 시켜서 간선수를 구해주면 되는 거고요.",
+        "만약에 방향성, 방향성 그 그래프에서는 최대 간선수를 구하는 그 공식이 우리 n(n-1)입니다."
+      ],
+      "spoken_text": "지금 여기 보게 되면 n개의 정점, n개의 정점으로 구성된 그런 무방향 그래프에서는 최대 간선수를 구할 때 우리가 n(n-1)/2, 이런 공식에 우리가 대입을 시켜서 간선수를 구해주면 되는 거고요. 만약에 방향성, 방향성 그 그래프에서는 최대 간선수를 구하는 그 공식이 우리 n(n-1)입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "n(n-1)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:27",
+      "start_seconds": 58,
+      "end_seconds": 87,
+      "duration_seconds": 29,
+      "timeline_summary": "정점 4개인 무방향 그래프 예시 계산",
+      "screen_text_lines": [
+        "예 정점이 4개인 경우 무방향 그래프와 방향 그래프의 최대 간선 수는 다음과 같습니다.",
+        "무방향 그래프의 최대 간선 수 : 4(4-1)/2 = 6",
+        "무방향",
+        "n(n-1)/2"
+      ],
+      "screen_text": "예 정점이 4개인 경우 무방향 그래프와 방향 그래프의 최대 간선 수는 다음과 같습니다.\n무방향 그래프의 최대 간선 수 : 4(4-1)/2 = 6\n무방향\nn(n-1)/2",
+      "spoken_sentences": [
+        "해서 예를 들어서 지금 여기에 보게 되면 정점이 요렇게 네 개, 네 개인 무방향성, 무방향성 그래프에서 최대 간선수를 구해라.",
+        "만약에 그렇게 나온다면 우리가 무방향일 때는 그때 최대 간선수를 구하는 그 공식이 n(n-1)/2죠.",
+        "해서 지금 정점이 네 개다 그랬으니까 요 n이라는 것 대신에 우리가 4라는 값, 4라는 값을 집어넣어서 우리가 계산을 하게 되면 지금처럼 여섯 개 하고 요렇게 나와요."
+      ],
+      "spoken_text": "해서 예를 들어서 지금 여기에 보게 되면 정점이 요렇게 네 개, 네 개인 무방향성, 무방향성 그래프에서 최대 간선수를 구해라. 만약에 그렇게 나온다면 우리가 무방향일 때는 그때 최대 간선수를 구하는 그 공식이 n(n-1)/2죠. 해서 지금 정점이 네 개다 그랬으니까 요 n이라는 것 대신에 우리가 4라는 값, 4라는 값을 집어넣어서 우리가 계산을 하게 되면 지금처럼 여섯 개 하고 요렇게 나와요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "n(n-1)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:01:27",
+      "end_time_hms": "00:01:45",
+      "start_seconds": 87,
+      "end_seconds": 105,
+      "duration_seconds": 18,
+      "timeline_summary": "무방향 그래프 간선 개수 시각적 확인",
+      "screen_text_lines": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "screen_text": "A\nB\nC\nD",
+      "spoken_sentences": [
+        "그때 지금처럼 정점이 요렇게 네 개 있을 때 이 네 개간에 서로서로 우리가 선으로 연결시킬 수 있는 그 선의 개수요.",
+        "그때 여기에 하나 있죠?",
+        "여기 두 개 있고 여기 세 개 있고 여기 네 개 있고, 그리고 여기 다섯 개, 여기 여섯 개 해서 전체 여섯 개가 맞죠."
+      ],
+      "spoken_text": "그때 지금처럼 정점이 요렇게 네 개 있을 때 이 네 개간에 서로서로 우리가 선으로 연결시킬 수 있는 그 선의 개수요. 그때 여기에 하나 있죠? 여기 두 개 있고 여기 세 개 있고 여기 네 개 있고, 그리고 여기 다섯 개, 여기 여섯 개 해서 전체 여섯 개가 맞죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "간선",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "그래프",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:01:45",
+      "end_time_hms": "00:02:10",
+      "start_seconds": 105,
+      "end_seconds": 130,
+      "duration_seconds": 25,
+      "timeline_summary": "정점 4개인 방향 그래프 예시 계산",
+      "screen_text_lines": [
+        "방향 그래프의 최대 간선 수 : 4(4-1) = 12",
+        "n(n-1)",
+        "n",
+        "4(4-1) = 12"
+      ],
+      "screen_text": "방향 그래프의 최대 간선 수 : 4(4-1) = 12\nn(n-1)\nn\n4(4-1) = 12",
+      "spoken_sentences": [
+        "그 다음에 방향성, 방향 그래프의 최대 간선수를 구해라라고 하게 되면 그때 최대 간선수는 n(n-1), 요 공식에 대입해서 우리가 계산해 주면 됩니다.",
+        "여기서도 이 그림에서도 지금 보게 되면 정점이 총 네 개가 있죠?",
+        "해서 요 때 변수 n에다가 우리가 4라는 값을 집어넣어서 계산하게 되면 지금처럼 4(4-1), 요렇게 계산이 되는 거죠.",
+        "그러면 전체 12개가 나옵니다."
+      ],
+      "spoken_text": "그 다음에 방향성, 방향 그래프의 최대 간선수를 구해라라고 하게 되면 그때 최대 간선수는 n(n-1), 요 공식에 대입해서 우리가 계산해 주면 됩니다. 여기서도 이 그림에서도 지금 보게 되면 정점이 총 네 개가 있죠? 해서 요 때 변수 n에다가 우리가 4라는 값을 집어넣어서 계산하게 되면 지금처럼 4(4-1), 요렇게 계산이 되는 거죠. 그러면 전체 12개가 나옵니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "n(n-1)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "최대",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:02:10",
+      "end_time_hms": "00:02:23",
+      "start_seconds": 130,
+      "end_seconds": 143,
+      "duration_seconds": 13,
+      "timeline_summary": "방향 그래프 간선 개수 시각적 확인",
+      "screen_text_lines": [
+        "방향 그래프의 최대 간선 수 : 4(4-1) = 12"
+      ],
+      "screen_text": "방향 그래프의 최대 간선 수 : 4(4-1) = 12",
+      "spoken_sentences": [
+        "해서 얘는 방향이 정해져 있기 때문에 여기 두 개 있고요.",
+        "여기도 두 개가 있습니다.",
+        "여기 두 개 있고 여기 두 개 있고, 그리고 가운데도 여기 두 개, 여기 두 개 해서 전체 12개가 있는 거요."
+      ],
+      "spoken_text": "해서 얘는 방향이 정해져 있기 때문에 여기 두 개 있고요. 여기도 두 개가 있습니다. 여기 두 개 있고 여기 두 개 있고, 그리고 가운데도 여기 두 개, 여기 두 개 해서 전체 12개가 있는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "최대",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "간선",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "그래프의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0113_113",
+      "subtopic_title": "방향/무방향 그래프의 최대 간선수",
+      "subtopic_sequence": 113,
+      "subtopic_number": "113",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ryCeOor7HTM",
+      "start_time_hms": "00:02:23",
+      "end_time_hms": "00:03:03",
+      "start_seconds": 143,
+      "end_seconds": 183,
+      "duration_seconds": 40,
+      "timeline_summary": "공식 암기의 중요성 강조 및 마무리",
+      "screen_text_lines": [
+        "무방향 그래프의 최대 간선 수 : 4(4-1)/2 = 6",
+        "방향 그래프의 최대 간선 수 : 4(4-1) = 12",
+        "n(n-1)/2",
+        "n(n-1)"
+      ],
+      "screen_text": "무방향 그래프의 최대 간선 수 : 4(4-1)/2 = 6\n방향 그래프의 최대 간선 수 : 4(4-1) = 12\nn(n-1)/2\nn(n-1)",
+      "spoken_sentences": [
+        "만약에 실제 시험 문제로 이런 문제가 나왔을 때 우리가 그림을 그려놓고 막 선을 막 그려서, 그려서 선의 개수를 세도 되지만 그래도 우리는 문제를 빨리빨리 풀어야 되기 때문에 요 공식, 요 공식만 잘 기억하면 되겠죠.",
+        "그때 공식은 기억했는데 이게 방향성인지 무방향성인지 그게 헷갈리면 안 되니까 요 식 잘 기억하고 지나가셔야 돼요.",
+        "요렇게 우리 최대 간선수를 구하는 그 문제가 실제 시험 문제로 나온 적이 있거든요.",
+        "해서 이거는 내가 공식만 조금만 알고 있으면 쉽게 쉽게 맞출 수 있는 그런 문제잖아요.",
+        "해서 요 공식 잘 기억하세요."
+      ],
+      "spoken_text": "만약에 실제 시험 문제로 이런 문제가 나왔을 때 우리가 그림을 그려놓고 막 선을 막 그려서, 그려서 선의 개수를 세도 되지만 그래도 우리는 문제를 빨리빨리 풀어야 되기 때문에 요 공식, 요 공식만 잘 기억하면 되겠죠. 그때 공식은 기억했는데 이게 방향성인지 무방향성인지 그게 헷갈리면 안 되니까 요 식 잘 기억하고 지나가셔야 돼요. 요렇게 우리 최대 간선수를 구하는 그 문제가 실제 시험 문제로 나온 적이 있거든요. 해서 이거는 내가 공식만 조금만 알고 있으면 쉽게 쉽게 맞출 수 있는 그런 문제잖아요. 해서 요 공식 잘 기억하세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "무방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 54
+        },
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "n(n-1)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:11",
+      "start_seconds": 0,
+      "end_seconds": 11,
+      "duration_seconds": 11,
+      "timeline_summary": "강의 주제 소개: 인접 행렬을 이용한 그래프의 표현 방법",
+      "screen_text_lines": [
+        "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법"
+      ],
+      "screen_text": "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법",
+      "spoken_sentences": [
+        "이번 시간에는 우리 인접 행렬을 이용한 그래프 표현 방법에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 인접 행렬을 이용한 그래프 표현 방법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인접",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:00:11",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 11,
+      "end_seconds": 24,
+      "duration_seconds": 13,
+      "timeline_summary": "방향 그래프와 무방향 그래프의 인접 행렬 표현 예시 제시",
+      "screen_text_lines": [
+        "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법",
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법\n방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0\n무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "자, 지금 여기 보게 되면 그림을 봤을 때 우리 방향 그래프가 요렇게 있죠.",
+        "그리고 지금 여기 봤을 때 무방향 그래프가 요렇게 나왔습니다.",
+        "이거를 우리가 행렬로 표시 한번 해 보자고요."
+      ],
+      "spoken_text": "자, 지금 여기 보게 되면 그림을 봤을 때 우리 방향 그래프가 요렇게 있죠. 그리고 지금 여기 봤을 때 무방향 그래프가 요렇게 나왔습니다. 이거를 우리가 행렬로 표시 한번 해 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:42",
+      "start_seconds": 24,
+      "end_seconds": 42,
+      "duration_seconds": 18,
+      "timeline_summary": "방향 그래프의 인접 행렬 원리 설명 (간선 유무에 따른 1 또는 0)",
+      "screen_text_lines": [
+        "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법",
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법\n방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0\n무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "우리 방향 그래프에서는 방향의 간선이 있냐 없냐에 따라서 1이라는 값이 됐든 0이라는 값이 됐든 그것을 넣어 주면 돼요.",
+        "방향 간선이 있으면 1을 쓰면 되고요, 없으면 0을 써 주면 됩니다.",
+        "이게 무슨 말인지 직접 한번 보자고요."
+      ],
+      "spoken_text": "우리 방향 그래프에서는 방향의 간선이 있냐 없냐에 따라서 1이라는 값이 됐든 0이라는 값이 됐든 그것을 넣어 주면 돼요. 방향 간선이 있으면 1을 쓰면 되고요, 없으면 0을 써 주면 됩니다. 이게 무슨 말인지 직접 한번 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:00:42",
+      "end_time_hms": "00:01:05",
+      "start_seconds": 42,
+      "end_seconds": 65,
+      "duration_seconds": 23,
+      "timeline_summary": "방향 그래프 예시의 노드 구조 분석",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "지금 여기 예를 봤을 때 1, 2, 3, 4, 5 하고 요렇게 다섯 개, 다섯 개의 우리 노드, 노드가 요렇게 있는 거고요.",
+        "이 노드들을 봤을 때 1번 노드에서 2번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있고, 2에서 3으로 간다라고 해서 요렇게 간선이 있고, 요런 식으로 구성이 되어 있어요."
+      ],
+      "spoken_text": "지금 여기 예를 봤을 때 1, 2, 3, 4, 5 하고 요렇게 다섯 개, 다섯 개의 우리 노드, 노드가 요렇게 있는 거고요. 이 노드들을 봤을 때 1번 노드에서 2번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있고, 2에서 3으로 간다라고 해서 요렇게 간선이 있고, 요런 식으로 구성이 되어 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:01:05",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 65,
+      "end_seconds": 78,
+      "duration_seconds": 13,
+      "timeline_summary": "방향 그래프를 위한 5x5 행렬 틀 생성",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+        "1 2 3 4 5"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0\n1 2 3 4 5",
+      "spoken_sentences": [
+        "그러면 내가 지금 가지고 있는 이런 노드가 1, 2, 3, 4, 5 하고 요렇게 다섯 개가 있고, 이 각각의 노드들이 1, 2, 3, 4, 5 하고 요렇게 갈 수가 있겠죠.",
+        "그때 이것을 행렬로 표시 한번 해 보자고요."
+      ],
+      "spoken_text": "그러면 내가 지금 가지고 있는 이런 노드가 1, 2, 3, 4, 5 하고 요렇게 다섯 개가 있고, 이 각각의 노드들이 1, 2, 3, 4, 5 하고 요렇게 갈 수가 있겠죠. 그때 이것을 행렬로 표시 한번 해 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:49",
+      "start_seconds": 78,
+      "end_seconds": 109,
+      "duration_seconds": 31,
+      "timeline_summary": "노드 1에서 2로 가는 간선을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그러면 맨 처음에 1번에서 2번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있어요.",
+        "그때 방향 간선이 있으면 1, 1이라고 표시하고 방향 간선이 없을 때 0으로 표시한다 그랬어요.",
+        "그러면 맨 처음에 1에서 2번으로 갈 수 있다라고 방향 간선이 있으니까 내가 가지고 있는 이 1번에서 2번, 2번으로 갈 수 있다라고 해서 지금 여기 방향 간선이 있으니까 여기다 1, 1이라고 요렇게 써 주면 돼요."
+      ],
+      "spoken_text": "그러면 맨 처음에 1번에서 2번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있어요. 그때 방향 간선이 있으면 1, 1이라고 표시하고 방향 간선이 없을 때 0으로 표시한다 그랬어요. 그러면 맨 처음에 1에서 2번으로 갈 수 있다라고 방향 간선이 있으니까 내가 가지고 있는 이 1번에서 2번, 2번으로 갈 수 있다라고 해서 지금 여기 방향 간선이 있으니까 여기다 1, 1이라고 요렇게 써 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:01:49",
+      "end_time_hms": "00:02:11",
+      "start_seconds": 109,
+      "end_seconds": 131,
+      "duration_seconds": 22,
+      "timeline_summary": "노드 2에서 3으로 가는 간선을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 그 뒤에 보니까 2에서 3번이요.",
+        "2번에서 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 있죠.",
+        "그러면 내가 가지고 있는 이 2번에서, 2번에서 몇 번으로 갈 수 있다?",
+        "3번, 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있으니까 여기다가 1 하고 요렇게 써 주면 됩니다."
+      ],
+      "spoken_text": "그리고 그 뒤에 보니까 2에서 3번이요. 2번에서 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 있죠. 그러면 내가 가지고 있는 이 2번에서, 2번에서 몇 번으로 갈 수 있다? 3번, 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 있으니까 여기다가 1 하고 요렇게 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:02:11",
+      "end_time_hms": "00:02:28",
+      "start_seconds": 131,
+      "end_seconds": 148,
+      "duration_seconds": 17,
+      "timeline_summary": "노드 3에서 4로 가는 간선을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 그 뒤에 거 보니까 3번에서 4번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 표시가 되어 있죠?",
+        "그러면 내가 가지고 있는 이 3번은 몇 번으로 갈 수 있더라?",
+        "우리 4번으로 갈 수 있더라.",
+        "해서 그 위치 여기다 1 하고 요렇게 써 주면 돼요."
+      ],
+      "spoken_text": "그리고 그 뒤에 거 보니까 3번에서 4번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 표시가 되어 있죠? 그러면 내가 가지고 있는 이 3번은 몇 번으로 갈 수 있더라? 우리 4번으로 갈 수 있더라. 해서 그 위치 여기다 1 하고 요렇게 써 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:02:28",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 148,
+      "end_seconds": 165,
+      "duration_seconds": 17,
+      "timeline_summary": "노드 4에서 5로 가는 간선을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 그 뒤에 보니까 또 4번에서 5번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 표시가 되어 있죠.",
+        "해서 내가 가지고 있는 이 4번은 5번으로 갈 수 있다고요.",
+        "해서 요 위치에다가 지금처럼 1 하고 요렇게 써 주면 됩니다."
+      ],
+      "spoken_text": "그리고 그 뒤에 보니까 또 4번에서 5번으로 갈 수 있다라고 해서 요렇게 방향 간선이 또 표시가 되어 있죠. 해서 내가 가지고 있는 이 4번은 5번으로 갈 수 있다고요. 해서 요 위치에다가 지금처럼 1 하고 요렇게 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:02:45",
+      "end_time_hms": "00:03:06",
+      "start_seconds": 165,
+      "end_seconds": 186,
+      "duration_seconds": 21,
+      "timeline_summary": "노드 5에서 3으로 가는 간선을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 지금 여기 봤을 때 우리 5번이요.",
+        "5번에서 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 요렇게 표시가 되어 있죠.",
+        "해서 나는 지금 5, 5를 가지고 있는데 5번에서 3번으로 갈 수 있다고요.",
+        "3번이 지금 요 위치죠?",
+        "요 위치에다가 1 하고 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "그리고 지금 여기 봤을 때 우리 5번이요. 5번에서 3번으로 갈 수 있다라고 해서 요렇게 방향 간선이 요렇게 표시가 되어 있죠. 해서 나는 지금 5, 5를 가지고 있는데 5번에서 3번으로 갈 수 있다고요. 3번이 지금 요 위치죠? 요 위치에다가 1 하고 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:03:06",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 186,
+      "end_seconds": 218,
+      "duration_seconds": 32,
+      "timeline_summary": "나머지 빈칸을 0으로 채워 방향 그래프의 인접 행렬 완성",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 나머지, 나머지 빈칸에다가는 전부 다 간선이 없으니까 전부 다 0, 0으로 채워 주면 되겠죠.",
+        "그러면 지금 요만큼 표시한 거를 우리 깨끗하게 정리해 보면 간선이 있는 곳들마다 요렇게 각각 1이라고 다 표시해 주면 되고, 그리고 나머지 빈칸에는 전부 다 간선이 없었으니까 0으로 지금처럼 요렇게 채워 주면 됩니다.",
+        "해서 방향 그래프에서 요렇게 행렬로 표시하는 게 크게 어렵지 않죠."
+      ],
+      "spoken_text": "그리고 나머지, 나머지 빈칸에다가는 전부 다 간선이 없으니까 전부 다 0, 0으로 채워 주면 되겠죠. 그러면 지금 요만큼 표시한 거를 우리 깨끗하게 정리해 보면 간선이 있는 곳들마다 요렇게 각각 1이라고 다 표시해 주면 되고, 그리고 나머지 빈칸에는 전부 다 간선이 없었으니까 0으로 지금처럼 요렇게 채워 주면 됩니다. 해서 방향 그래프에서 요렇게 행렬로 표시하는 게 크게 어렵지 않죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:05",
+      "start_seconds": 218,
+      "end_seconds": 245,
+      "duration_seconds": 27,
+      "timeline_summary": "무방향 그래프의 인접 행렬 원리 설명 (상호 인접 관계에 따른 1 또는 0)",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 그 밑에 보니까 무방향 그래프요.",
+        "무방향 그래프에서는 Vi랑 Vj가 서로 인접하냐 안 하냐에 따라서 우리가 1을 쓰거나 0을 써 주면 됩니다.",
+        "해서 지금 여기 봤을 때 서로 인접하면 1이라고 표시하고요, 만약에 서로 인접하지 않다 그랬을 때는 0, 0으로 표시해 주면 됩니다.",
+        "그러면 지금 여기에는 우리 1, 2, 3, 4 하고 요렇게 네 가지가 있죠."
+      ],
+      "spoken_text": "그리고 그 밑에 보니까 무방향 그래프요. 무방향 그래프에서는 Vi랑 Vj가 서로 인접하냐 안 하냐에 따라서 우리가 1을 쓰거나 0을 써 주면 됩니다. 해서 지금 여기 봤을 때 서로 인접하면 1이라고 표시하고요, 만약에 서로 인접하지 않다 그랬을 때는 0, 0으로 표시해 주면 됩니다. 그러면 지금 여기에는 우리 1, 2, 3, 4 하고 요렇게 네 가지가 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:04:05",
+      "end_time_hms": "00:04:34",
+      "start_seconds": 245,
+      "end_seconds": 274,
+      "duration_seconds": 29,
+      "timeline_summary": "노드 1과 인접한 노드들(2, 3, 4)을 행렬에 1로 표시",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+        "1 2 3 4"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0\n1 2 3 4",
+      "spoken_sentences": [
+        "해서 내가 지금 1, 2, 3, 4 요렇게 가지고 있고, 그리고 각각 내가 가지고 있는 거에서 어떤 거랑 인접한지 그걸 표시해 줄 거예요.",
+        "그러면 지금 1번을 기준으로 봤을 때 인접하다 그 얘기는 지금처럼 요렇게 선으로 연결되어 있다 그 얘기예요.",
+        "그러면 1번에서 2번으로 선으로 연결돼 있고, 1번에서 3번으로, 그리고 1번에서 4번으로 요렇게 선으로 연결되어 있죠."
+      ],
+      "spoken_text": "해서 내가 지금 1, 2, 3, 4 요렇게 가지고 있고, 그리고 각각 내가 가지고 있는 거에서 어떤 거랑 인접한지 그걸 표시해 줄 거예요. 그러면 지금 1번을 기준으로 봤을 때 인접하다 그 얘기는 지금처럼 요렇게 선으로 연결되어 있다 그 얘기예요. 그러면 1번에서 2번으로 선으로 연결돼 있고, 1번에서 3번으로, 그리고 1번에서 4번으로 요렇게 선으로 연결되어 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:04:34",
+      "end_time_hms": "00:04:51",
+      "start_seconds": 274,
+      "end_seconds": 291,
+      "duration_seconds": 17,
+      "timeline_summary": "노드 1의 인접 정보를 1행에 1로 기록",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "요렇게 인접하면 1이라고 표시한다 그랬어요.",
+        "내가 지금 1을 가지고 있는데 1이랑 인접한 거는 2, 3, 4 요 세 가지가 인접한 거잖아요.",
+        "해서 1번일 때 2에, 3, 4 요렇게 세 가지가 인접하다라고 해서 지금처럼 1로 요렇게 표현해 주면 됩니다."
+      ],
+      "spoken_text": "요렇게 인접하면 1이라고 표시한다 그랬어요. 내가 지금 1을 가지고 있는데 1이랑 인접한 거는 2, 3, 4 요 세 가지가 인접한 거잖아요. 해서 1번일 때 2에, 3, 4 요렇게 세 가지가 인접하다라고 해서 지금처럼 1로 요렇게 표현해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:04:51",
+      "end_time_hms": "00:05:18",
+      "start_seconds": 291,
+      "end_seconds": 318,
+      "duration_seconds": 27,
+      "timeline_summary": "노드 2의 인접 정보(1, 3, 4)를 2행에 1로 기록",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그다음 2요.",
+        "2번을 기준으로 보자고요.",
+        "2번을 기준으로 지금 1번이랑도 연결돼 있고요, 우리 3번이랑도 그리고 4번이랑도 요렇게 연결돼 있습니다.",
+        "요렇게 1, 3, 4가 인접하니까 우리 2를 기준으로 봤을 때 1, 1은 인접하다.",
+        "그리고 3번도 인접하다.",
+        "그리고 4도 인접하다라고 해서 지금처럼 요렇게 표현해 주면 됩니다."
+      ],
+      "spoken_text": "그다음 2요. 2번을 기준으로 보자고요. 2번을 기준으로 지금 1번이랑도 연결돼 있고요, 우리 3번이랑도 그리고 4번이랑도 요렇게 연결돼 있습니다. 요렇게 1, 3, 4가 인접하니까 우리 2를 기준으로 봤을 때 1, 1은 인접하다. 그리고 3번도 인접하다. 그리고 4도 인접하다라고 해서 지금처럼 요렇게 표현해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:05:18",
+      "end_time_hms": "00:05:42",
+      "start_seconds": 318,
+      "end_seconds": 342,
+      "duration_seconds": 24,
+      "timeline_summary": "노드 3의 인접 정보(1, 2, 4)를 3행에 1로 기록",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 우리 3번이요.",
+        "3번을 기준으로 봤을 때 3번이랑 연결된 게 1, 1번이랑도 연결이 돼 있고요, 우리 2번이랑도 연결이 되어 있고, 우리 4번이랑도 연결이 돼 있죠.",
+        "해서 3번을 기준으로 봤을 때 1, 2, 4요.",
+        "1에 인접하다, 2도 인접하다, 그리고 4도 인접하다라고 해서 지금처럼 요렇게 표현해 주면 됩니다."
+      ],
+      "spoken_text": "그리고 우리 3번이요. 3번을 기준으로 봤을 때 3번이랑 연결된 게 1, 1번이랑도 연결이 돼 있고요, 우리 2번이랑도 연결이 되어 있고, 우리 4번이랑도 연결이 돼 있죠. 해서 3번을 기준으로 봤을 때 1, 2, 4요. 1에 인접하다, 2도 인접하다, 그리고 4도 인접하다라고 해서 지금처럼 요렇게 표현해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:05:42",
+      "end_time_hms": "00:06:05",
+      "start_seconds": 342,
+      "end_seconds": 365,
+      "duration_seconds": 23,
+      "timeline_summary": "노드 4의 인접 정보(1, 2, 3)를 4행에 1로 기록",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그다음 4번, 4번을 보자고요.",
+        "4번을 기준으로 봤을 때는 지금 이 4번은 1번, 1번이랑도 요렇게 연결이 되어 있고요, 2랑도 연결돼 있고, 3이랑도 요렇게 연결이 되어 있죠.",
+        "해서 4번을 기준으로 봤을 때는 1번 인접해, 2번도 인접하고, 3번도 인접하다라고 해서 지금처럼 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "그다음 4번, 4번을 보자고요. 4번을 기준으로 봤을 때는 지금 이 4번은 1번, 1번이랑도 요렇게 연결이 되어 있고요, 2랑도 연결돼 있고, 3이랑도 요렇게 연결이 되어 있죠. 해서 4번을 기준으로 봤을 때는 1번 인접해, 2번도 인접하고, 3번도 인접하다라고 해서 지금처럼 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:06:05",
+      "end_time_hms": "00:06:30",
+      "start_seconds": 365,
+      "end_seconds": 390,
+      "duration_seconds": 25,
+      "timeline_summary": "자기 자신과의 관계 등 인접하지 않은 곳을 0으로 채워 무방향 그래프 인접 행렬 완성",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그러면 지금 요만큼 한 거를 깨끗하게 정리해서 우리가 인접한 것만 1로 표시해 보면 지금처럼 요렇게 표시가 되는 거고, 그리고 인접하지 않은 거는 0을 쓴다 그랬죠.",
+        "우리가 1이라고 표시하지 않은 곳이요.",
+        "자기 자신을 보고 얘기하죠.",
+        "자기 자신은 인접한 게 아니기 때문에 그 위치에다가 전부 다 0을 쓰게 되면 지금처럼 요렇게 표현이 됩니다."
+      ],
+      "spoken_text": "그러면 지금 요만큼 한 거를 깨끗하게 정리해서 우리가 인접한 것만 1로 표시해 보면 지금처럼 요렇게 표시가 되는 거고, 그리고 인접하지 않은 거는 0을 쓴다 그랬죠. 우리가 1이라고 표시하지 않은 곳이요. 자기 자신을 보고 얘기하죠. 자기 자신은 인접한 게 아니기 때문에 그 위치에다가 전부 다 0을 쓰게 되면 지금처럼 요렇게 표현이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:06:30",
+      "end_time_hms": "00:06:56",
+      "start_seconds": 390,
+      "end_seconds": 416,
+      "duration_seconds": 26,
+      "timeline_summary": "역으로 행렬을 보고 방향 그래프 그리기 실습 시작",
+      "screen_text_lines": [
+        "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법",
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "인접행렬(Adjacency Matrix)을 이용한 그래프의 표현 방법\n방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0\n무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그러면 우리가 거꾸로도 한번 해 보자고요.",
+        "요렇게 행렬이 주어졌을 때 요렇게 그래프 형태로 만들라고 그렇게도 문제가 나올 수가 있겠죠.",
+        "그러면 그때는 지금처럼 우리가 행렬을 가지고 있을 때 이것을 그래프로 표시할 거예요.",
+        "그러면 지금 이곳을 봤을 때 1, 2, 3, 4, 5 하고 요렇게 다섯 개가 써져 있으니까 우리가 노드를 요렇게 1, 2, 3, 4, 5 하고 다섯 개를 만들어 주면 되겠죠."
+      ],
+      "spoken_text": "그러면 우리가 거꾸로도 한번 해 보자고요. 요렇게 행렬이 주어졌을 때 요렇게 그래프 형태로 만들라고 그렇게도 문제가 나올 수가 있겠죠. 그러면 그때는 지금처럼 우리가 행렬을 가지고 있을 때 이것을 그래프로 표시할 거예요. 그러면 지금 이곳을 봤을 때 1, 2, 3, 4, 5 하고 요렇게 다섯 개가 써져 있으니까 우리가 노드를 요렇게 1, 2, 3, 4, 5 하고 다섯 개를 만들어 주면 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:06:56",
+      "end_time_hms": "00:07:16",
+      "start_seconds": 416,
+      "end_seconds": 436,
+      "duration_seconds": 20,
+      "timeline_summary": "1행 2열의 1을 보고 1번에서 2번으로 가는 간선 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 그때 방향 간선이 있으면 1이라고 표시한다 그랬어요.",
+        "그러면 1일 때 2번에, 2번에 1하고 표시가 되어 있으니까 1번에서 2번으로 가는 그 간선, 그거 표시해 주면 되겠죠.",
+        "그리고 1번일 때 나머지는 전부 다 0이 써져 있다고요."
+      ],
+      "spoken_text": "그리고 그때 방향 간선이 있으면 1이라고 표시한다 그랬어요. 그러면 1일 때 2번에, 2번에 1하고 표시가 되어 있으니까 1번에서 2번으로 가는 그 간선, 그거 표시해 주면 되겠죠. 그리고 1번일 때 나머지는 전부 다 0이 써져 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:07:16",
+      "end_time_hms": "00:07:36",
+      "start_seconds": 436,
+      "end_seconds": 456,
+      "duration_seconds": 20,
+      "timeline_summary": "2행 3열의 1을 보고 2번에서 3번으로 가는 간선 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 2번일 때요.",
+        "2번일 때 여기에만 1하고 요렇게 표시가 되어 있는데 그때 노드를 보니까 3번이요.",
+        "그러면 2번에서 3번으로 가는 그 방향 간선을 지금 이곳에다가 표시해 주고 나머지는 전부 다 0이 써져 있으니까 더 이상 방향 간선을 우리가 표시할 필요가 없겠죠."
+      ],
+      "spoken_text": "그리고 2번일 때요. 2번일 때 여기에만 1하고 요렇게 표시가 되어 있는데 그때 노드를 보니까 3번이요. 그러면 2번에서 3번으로 가는 그 방향 간선을 지금 이곳에다가 표시해 주고 나머지는 전부 다 0이 써져 있으니까 더 이상 방향 간선을 우리가 표시할 필요가 없겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:07:36",
+      "end_time_hms": "00:07:57",
+      "start_seconds": 456,
+      "end_seconds": 477,
+      "duration_seconds": 21,
+      "timeline_summary": "3행 4열의 1을 보고 3번에서 4번으로 가는 간선 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 3번일 때요.",
+        "3번 노드에서는 우리 4번, 4번으로 가는 방향 간선이 있다.",
+        "여기에만 1이 표시돼 있어요.",
+        "그러면 3번에서 4번으로 가는 그 방향 간선을 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "그리고 3번일 때요. 3번 노드에서는 우리 4번, 4번으로 가는 방향 간선이 있다. 여기에만 1이 표시돼 있어요. 그러면 3번에서 4번으로 가는 그 방향 간선을 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:07:57",
+      "end_time_hms": "00:08:21",
+      "start_seconds": 477,
+      "end_seconds": 501,
+      "duration_seconds": 24,
+      "timeline_summary": "4행 5열의 1을 보고 4번에서 5번으로 가는 간선 표시",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 4번 노드를 봤을 때 지금 여기만, 여기만 지금처럼 1 하고 표시가 되어 있어요.",
+        "그때 1이라고 표시된 그 노드, 노드를 보니까 5번 노드죠.",
+        "해서 4번에서 5번 노드로 가는 그 방향 간선을 지금처럼 요렇게 표시해 주면 됩니다.",
+        "그리고 나머지는 0이 다 써져 있으니까 방향 간선을 4번에서는 더 이상 표시하지 않아도 되겠죠."
+      ],
+      "spoken_text": "그리고 4번 노드를 봤을 때 지금 여기만, 여기만 지금처럼 1 하고 표시가 되어 있어요. 그때 1이라고 표시된 그 노드, 노드를 보니까 5번 노드죠. 해서 4번에서 5번 노드로 가는 그 방향 간선을 지금처럼 요렇게 표시해 주면 됩니다. 그리고 나머지는 0이 다 써져 있으니까 방향 간선을 4번에서는 더 이상 표시하지 않아도 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:08:21",
+      "end_time_hms": "00:08:58",
+      "start_seconds": 501,
+      "end_seconds": 538,
+      "duration_seconds": 37,
+      "timeline_summary": "5행 3열의 1을 보고 5번에서 3번으로 가는 간선 표시 및 방향 그래프 복원 완료",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 노드가 5번일 때요.",
+        "5번 노드에서는 지금 여기만 1 하고 표시가 되어 있는데 그때 1이라고 표시된 그 노드를 보니까 우리 3번이죠, 3번.",
+        "그러면 5번에서 3번으로 이동이 되게끔 요렇게 방향 간선을 지금처럼 요렇게 표시해 주면 됩니다.",
+        "해서 지금처럼 요렇게 행렬이 있을 때 이걸 그래프로 표시해라 그렇게 나오면 지금 얘를 선택해 주면 되는 거예요."
+      ],
+      "spoken_text": "그리고 노드가 5번일 때요. 5번 노드에서는 지금 여기만 1 하고 표시가 되어 있는데 그때 1이라고 표시된 그 노드를 보니까 우리 3번이죠, 3번. 그러면 5번에서 3번으로 이동이 되게끔 요렇게 방향 간선을 지금처럼 요렇게 표시해 주면 됩니다. 해서 지금처럼 요렇게 행렬이 있을 때 이걸 그래프로 표시해라 그렇게 나오면 지금 얘를 선택해 주면 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:08:58",
+      "end_time_hms": "00:09:12",
+      "start_seconds": 538,
+      "end_seconds": 552,
+      "duration_seconds": 14,
+      "timeline_summary": "역으로 행렬을 보고 무방향 그래프 그리기 실습 시작",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그다음에 무방향 그래프요.",
+        "무방향 그래프에서 행렬이 지금처럼 요렇게 주어졌습니다.",
+        "그때 여기 보니까 1, 2, 3, 4, 1, 2, 3, 4 하고 요렇게 노드가 네 개밖에 없죠.",
+        "그러면 지금처럼 1, 2, 3, 4 하고 요렇게 표시해 주고"
+      ],
+      "spoken_text": "그다음에 무방향 그래프요. 무방향 그래프에서 행렬이 지금처럼 요렇게 주어졌습니다. 그때 여기 보니까 1, 2, 3, 4, 1, 2, 3, 4 하고 요렇게 노드가 네 개밖에 없죠. 그러면 지금처럼 1, 2, 3, 4 하고 요렇게 표시해 주고",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:09:12",
+      "end_time_hms": "00:09:38",
+      "start_seconds": 552,
+      "end_seconds": 578,
+      "duration_seconds": 26,
+      "timeline_summary": "1행의 1들을 보고 1번 노드와 인접한 노드들(2, 3, 4) 연결",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "1번, 1번이랑 인접한, 인접한 그 노드가 지금 여기 있다라고 해서 1이 전부 다 표시가 되어 있죠.",
+        "그때 노드를 봤을 때 2번, 3번, 4번이요.",
+        "그러면 1번에서 2번으로 가는 그 간선을 요렇게 표시해 주고 1번에서 또 3번으로 가는 그 간선을 요렇게 표시해 주고 1번에서 4번으로 가는 그 간선을 지금처럼 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "1번, 1번이랑 인접한, 인접한 그 노드가 지금 여기 있다라고 해서 1이 전부 다 표시가 되어 있죠. 그때 노드를 봤을 때 2번, 3번, 4번이요. 그러면 1번에서 2번으로 가는 그 간선을 요렇게 표시해 주고 1번에서 또 3번으로 가는 그 간선을 요렇게 표시해 주고 1번에서 4번으로 가는 그 간선을 지금처럼 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:09:38",
+      "end_time_hms": "00:10:02",
+      "start_seconds": 578,
+      "end_seconds": 602,
+      "duration_seconds": 24,
+      "timeline_summary": "2행의 1들을 보고 2번 노드와 인접한 노드들(1, 3, 4) 연결",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 노드가 2번일 때요.",
+        "2번일 때는 1번하고 3번하고 4번에 1이라고 다 표시가 되어 있죠.",
+        "해서 2번에서 1번으로 가는 거는 간선이 이미 표시가 되어 있고, 2번에서 3번으로 가는 게 없죠?",
+        "없으니까 여기다 간선을 요렇게 표시해 주면 되겠죠.",
+        "그리고 2번에서 4번으로 가는 그 간선도 지금처럼 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "그리고 노드가 2번일 때요. 2번일 때는 1번하고 3번하고 4번에 1이라고 다 표시가 되어 있죠. 해서 2번에서 1번으로 가는 거는 간선이 이미 표시가 되어 있고, 2번에서 3번으로 가는 게 없죠? 없으니까 여기다 간선을 요렇게 표시해 주면 되겠죠. 그리고 2번에서 4번으로 가는 그 간선도 지금처럼 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:10:02",
+      "end_time_hms": "00:10:24",
+      "start_seconds": 602,
+      "end_seconds": 624,
+      "duration_seconds": 22,
+      "timeline_summary": "3행의 1들을 보고 3번 노드와 인접한 노드들(1, 2, 4) 연결",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그다음 노드가 3번이요.",
+        "3번 노드에서는 1하고 2하고 4번에 요렇게 1이라고 표시가 되어 있어요.",
+        "3번에서 1번으로 가는 거는 이미 표시가 되어 있고, 2번으로 가는 것도 표시가 되어 있죠.",
+        "4번으로 가는 건 표시가 안 돼 있으니까 3번에서 4번으로 가는 그 간선을 요렇게 표시해 주면 됩니다."
+      ],
+      "spoken_text": "그다음 노드가 3번이요. 3번 노드에서는 1하고 2하고 4번에 요렇게 1이라고 표시가 되어 있어요. 3번에서 1번으로 가는 거는 이미 표시가 되어 있고, 2번으로 가는 것도 표시가 되어 있죠. 4번으로 가는 건 표시가 안 돼 있으니까 3번에서 4번으로 가는 그 간선을 요렇게 표시해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:10:24",
+      "end_time_hms": "00:10:48",
+      "start_seconds": 624,
+      "end_seconds": 648,
+      "duration_seconds": 24,
+      "timeline_summary": "4행의 1들을 확인하며 무방향 그래프 복원 완료",
+      "screen_text_lines": [
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "그리고 4번 노드에서는 여기에 지금 1, 1, 1 요렇게 써져 있죠.",
+        "그때 노드가 1, 2, 3이요.",
+        "4번에서 1번으로 가는 거 표시돼 있고, 2번으로 가는 거, 3번으로 가는 거 전부 다 간선으로 다 연결이 되어 있죠.",
+        "요렇게 해서 우리가 요런 행렬을 우리가 그래프로 표시하게 되면 지금처럼 요렇게 표시할 수 있는 거예요."
+      ],
+      "spoken_text": "그리고 4번 노드에서는 여기에 지금 1, 1, 1 요렇게 써져 있죠. 그때 노드가 1, 2, 3이요. 4번에서 1번으로 가는 거 표시돼 있고, 2번으로 가는 거, 3번으로 가는 거 전부 다 간선으로 다 연결이 되어 있죠. 요렇게 해서 우리가 요런 행렬을 우리가 그래프로 표시하게 되면 지금처럼 요렇게 표시할 수 있는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "그래프에서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "인접하지 않으면 Pij = 0",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 2,
+      "subtopic_id": "0114_114",
+      "subtopic_title": "8 인접 행렬을 이용한 그래프 표현 방법",
+      "subtopic_sequence": 114,
+      "subtopic_number": "114",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_YPaWxOARtE",
+      "start_time_hms": "00:10:48",
+      "end_time_hms": "00:11:07",
+      "start_seconds": 648,
+      "end_seconds": 667,
+      "duration_seconds": 19,
+      "timeline_summary": "강의 마무리 및 인접 행렬 학습 강조",
+      "screen_text_lines": [
+        "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때",
+        "방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0",
+        "무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0"
+      ],
+      "screen_text": "방향 그래프에서 ViVj 관계를 나타내는 행렬의 원소를 Pij라 할 때\n방향 간선이 있으면 행렬의 Pij = 1, 없으면 Pij = 0\n무방향 그래프에서 Vi와 Vj가 서로 인접하면 Pij = 1, 인접하지 않으면 Pij = 0",
+      "spoken_sentences": [
+        "해서 인접 행렬에 대해서 요렇게 시험 문제가 실제로 출제된 적이 있으니까 그래프를 가지고 행렬로 아니면 행렬을 가지고 그래프로 어떻게 표현이 되는지 정확하게 여러분들이 기억하고 지나가셔야 돼요."
+      ],
+      "spoken_text": "해서 인접 행렬에 대해서 요렇게 시험 문제가 실제로 출제된 적이 있으니까 그래프를 가지고 행렬로 아니면 행렬을 가지고 그래프로 어떻게 표현이 되는지 정확하게 여러분들이 기억하고 지나가셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "방향",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 106
+        },
+        {
+          "keyword": "Pij",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 100
+        },
+        {
+          "keyword": "방향 간선이 있으면 행렬의 Pij = 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "없으면 Pij = 0",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 시작 및 주제 소개",
+      "screen_text_lines": [
+        "트리의 개요"
+      ],
+      "screen_text": "트리의 개요",
+      "spoken_sentences": [
+        "이번 시간에는 우리 트리의 개요에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 트리의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "트리의 개요",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:52",
+      "start_seconds": 7,
+      "end_seconds": 52,
+      "duration_seconds": 45,
+      "timeline_summary": "자료구조의 분류: 선형 구조와 비선형 구조",
+      "screen_text_lines": [
+        "트리의 개요",
+        "선형 구조 (Linear Structure) - 배열(Array)",
+        "선형 구조 (Linear Structure) - 선형 리스트(Linear List) - 연속 리스트(Contiguous List)",
+        "선형 구조 (Linear Structure) - 선형 리스트(Linear List) - 연결 리스트(Linked List)"
+      ],
+      "screen_text": "트리의 개요\n선형 구조 (Linear Structure) - 배열(Array)\n선형 구조 (Linear Structure) - 선형 리스트(Linear List) - 연속 리스트(Contiguous List)\n선형 구조 (Linear Structure) - 선형 리스트(Linear List) - 연결 리스트(Linked List)",
+      "spoken_sentences": [
+        "자 자료 구조에 보게 되면 지금처럼 이렇게 선형 구조가 있고 비선형 구조가 있었습니다.",
+        "이 선형 구조에는 배열이다 리스트다 우리 스택이다 큐다 데크다 해서 이런 것들이 있었고 비선형 구조에 트리하고 그래프하고 이렇게 두 가지가 있었습니다.",
+        "자 우리 그래프 그래프랑 트리랑 거의 유사한데 트리와 그래프의 차이는 어떤 거라 그랬어요?",
+        "사이클이 이루어졌냐 안 이루어졌냐 고게 트리와 그래프의 차이라고 했습니다.",
+        "해서 사이클이 이루어지는 게 우리 그래프고요.",
+        "그다음에 트리라는 거는 사이클이 이루어지지 않는 그런 특수한 그래프를 보고 우리가 트리라고 해요.",
+        "자 그럼 트리에 대해서 좀 더 자세히 살펴보자고요."
+      ],
+      "spoken_text": "자 자료 구조에 보게 되면 지금처럼 이렇게 선형 구조가 있고 비선형 구조가 있었습니다. 이 선형 구조에는 배열이다 리스트다 우리 스택이다 큐다 데크다 해서 이런 것들이 있었고 비선형 구조에 트리하고 그래프하고 이렇게 두 가지가 있었습니다. 자 우리 그래프 그래프랑 트리랑 거의 유사한데 트리와 그래프의 차이는 어떤 거라 그랬어요? 사이클이 이루어졌냐 안 이루어졌냐 고게 트리와 그래프의 차이라고 했습니다. 해서 사이클이 이루어지는 게 우리 그래프고요. 그다음에 트리라는 거는 사이클이 이루어지지 않는 그런 특수한 그래프를 보고 우리가 트리라고 해요. 자 그럼 트리에 대해서 좀 더 자세히 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "트리의 개요",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:00:52",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 52,
+      "end_seconds": 68,
+      "duration_seconds": 16,
+      "timeline_summary": "트리의 정의: 노드와 가지를 이용한 사이클 없는 구조",
+      "screen_text_lines": [
+        "트리의 개요",
+        "트리는 정점(Node, 노드)과 선분(Branch, 가지)을 이용하여 사이클을 이루지 않도록 구성한 그래프(Graph)의 특수한 형태임."
+      ],
+      "screen_text": "트리의 개요\n트리는 정점(Node, 노드)과 선분(Branch, 가지)을 이용하여 사이클을 이루지 않도록 구성한 그래프(Graph)의 특수한 형태임.",
+      "spoken_sentences": [
+        "자 우리 트리라는 거요.",
+        "트리라는 거는 정점 정점 노드라는 거랑 선분 가지라는 거 이 두 가지를 이용해서 사이클이 이루어지지 않도록 그렇게 구성한 그런 그래프를 보고 우리가 트리 트리라고 합니다."
+      ],
+      "spoken_text": "자 우리 트리라는 거요. 트리라는 거는 정점 정점 노드라는 거랑 선분 가지라는 거 이 두 가지를 이용해서 사이클이 이루어지지 않도록 그렇게 구성한 그런 그래프를 보고 우리가 트리 트리라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 68,
+      "end_seconds": 78,
+      "duration_seconds": 10,
+      "timeline_summary": "노드와 링크의 개념 설명",
+      "screen_text_lines": [
+        "트리는 하나의 기억 공간을 노드(Node)라고 하며, 노드와 노드를 연결하는 선을 링크(Link)라고 함."
+      ],
+      "screen_text": "트리는 하나의 기억 공간을 노드(Node)라고 하며, 노드와 노드를 연결하는 선을 링크(Link)라고 함.",
+      "spoken_sentences": [
+        "해서 이 트리는 하나의 기억 공간을 노드 노드라고 하는데 이 노드와 노드를 연결하는 그 선 그 선을 보고 우리가 링크라고 합니다."
+      ],
+      "spoken_text": "해서 이 트리는 하나의 기억 공간을 노드 노드라고 하는데 이 노드와 노드를 연결하는 그 선 그 선을 보고 우리가 링크라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "노드와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:28",
+      "start_seconds": 78,
+      "end_seconds": 88,
+      "duration_seconds": 10,
+      "timeline_summary": "트리 구조의 활용 예시",
+      "screen_text_lines": [
+        "트리는 가족의 계보(족보), 조직도 등을 표현하기에 적합함."
+      ],
+      "screen_text": "트리는 가족의 계보(족보), 조직도 등을 표현하기에 적합함.",
+      "spoken_sentences": [
+        "보통 이 트리라는 거는 우리가 가족 가족들의 계보 족보를 나타내거나 아니면 조직도 이런 것들을 표현하기에 적합한 게 우리 트리 구조요."
+      ],
+      "spoken_text": "보통 이 트리라는 거는 우리가 가족 가족들의 계보 족보를 나타내거나 아니면 조직도 이런 것들을 표현하기에 적합한 게 우리 트리 구조요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:01:28",
+      "end_time_hms": "00:02:10",
+      "start_seconds": 88,
+      "end_seconds": 130,
+      "duration_seconds": 42,
+      "timeline_summary": "트리 관련 용어 설명을 위한 시각 자료 제시",
+      "screen_text_lines": [
+        "트리(Tree)",
+        "● 트리 관련 용어",
+        "A",
+        "B"
+      ],
+      "screen_text": "트리(Tree)\n● 트리 관련 용어\nA\nB",
+      "spoken_sentences": [
+        "우리 트리라는 게 지금처럼 이렇게 생긴 걸 보고 우리가 트리라고 해요.",
+        "지금 얘는 뭐 특정 사이클이 있다 없다 없다 얘는 순환되는 그런 구조가 아니잖아요.",
+        "자 요런 거 동그란 거 동그란 거 요런 거 하나 하나 하나 하나를 보고 우리가 정점 노드라고 그렇게 부르는 거고요.",
+        "중간중간에 이렇게 연결되어 있는 이런 선들 있죠?",
+        "이런 선들을 보고 우리가 선분이다 가지다 링크다 그런 식으로 얘기를 합니다.",
+        "해서 트리라는 거는 이렇게 정점이라는 거랑 우리 선분 가지 우리 링크라는 거 그걸 이용해서 지금처럼 이런 형태로 만들어진 게 우리 트리에요.",
+        "이 트리에서는 여러 가지 용어들이 나옵니다."
+      ],
+      "spoken_text": "우리 트리라는 게 지금처럼 이렇게 생긴 걸 보고 우리가 트리라고 해요. 지금 얘는 뭐 특정 사이클이 있다 없다 없다 얘는 순환되는 그런 구조가 아니잖아요. 자 요런 거 동그란 거 동그란 거 요런 거 하나 하나 하나 하나를 보고 우리가 정점 노드라고 그렇게 부르는 거고요. 중간중간에 이렇게 연결되어 있는 이런 선들 있죠? 이런 선들을 보고 우리가 선분이다 가지다 링크다 그런 식으로 얘기를 합니다. 해서 트리라는 거는 이렇게 정점이라는 거랑 우리 선분 가지 우리 링크라는 거 그걸 이용해서 지금처럼 이런 형태로 만들어진 게 우리 트리에요. 이 트리에서는 여러 가지 용어들이 나옵니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "트리(Tree)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:02:10",
+      "end_time_hms": "00:02:26",
+      "start_seconds": 130,
+      "end_seconds": 146,
+      "duration_seconds": 16,
+      "timeline_summary": "노드(Node)의 개념 정의",
+      "screen_text_lines": [
+        "트리(Tree)",
+        "A",
+        "B",
+        "C"
+      ],
+      "screen_text": "트리(Tree)\nA\nB\nC",
+      "spoken_sentences": [
+        "자 요런 거 하나 하나 하나 하나 하나를 보고 우리는 전부 다 노드라고 하는 거예요.",
+        "해서 여기는 E라는 노드 F라는 노드 G라는 노드 H라는 노드 해서 전부 다 이런 거 하나하나 동그라미 하나하나를 보고 우리는 전부 다 노드라고 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "자 요런 거 하나 하나 하나 하나 하나를 보고 우리는 전부 다 노드라고 하는 거예요. 해서 여기는 E라는 노드 F라는 노드 G라는 노드 H라는 노드 해서 전부 다 이런 거 하나하나 동그라미 하나하나를 보고 우리는 전부 다 노드라고 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "트리(Tree)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:02:26",
+      "end_time_hms": "00:02:55",
+      "start_seconds": 146,
+      "end_seconds": 175,
+      "duration_seconds": 29,
+      "timeline_summary": "근 노드(Root Node)의 정의",
+      "screen_text_lines": [
+        "A"
+      ],
+      "screen_text": "A",
+      "spoken_sentences": [
+        "그중에서 그중에서 제일 꼭대기에 맨 위에 있는 그 노드 있죠?",
+        "이 노드를 보고 우리가 근 노드 근 노드라고 그렇게 부릅니다.",
+        "그러면 이 트리에는 근 노드가 딱 몇 개밖에 없다?",
+        "딱 하나밖에 없더라 딱 하나밖에 없더라.",
+        "해서 근 노드라고 그렇게 불러요.",
+        "이거를 우리 가족 족보로 보게 되면 맨 위에 할아버지가 있는 거죠 할아버지가.",
+        "요런 거를 보고 우리가 근 노드라고 한다 그런 명칭들을 여러분들이 알고 계셔야 돼요."
+      ],
+      "spoken_text": "그중에서 그중에서 제일 꼭대기에 맨 위에 있는 그 노드 있죠? 이 노드를 보고 우리가 근 노드 근 노드라고 그렇게 부릅니다. 그러면 이 트리에는 근 노드가 딱 몇 개밖에 없다? 딱 하나밖에 없더라 딱 하나밖에 없더라. 해서 근 노드라고 그렇게 불러요. 이거를 우리 가족 족보로 보게 되면 맨 위에 할아버지가 있는 거죠 할아버지가. 요런 거를 보고 우리가 근 노드라고 한다 그런 명칭들을 여러분들이 알고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:02:55",
+      "end_time_hms": "00:03:17",
+      "start_seconds": 175,
+      "end_seconds": 197,
+      "duration_seconds": 22,
+      "timeline_summary": "단말 노드(Terminal Node) 또는 잎 노드(Leaf Node)의 정의",
+      "screen_text_lines": [
+        "K",
+        "L",
+        "M",
+        "F"
+      ],
+      "screen_text": "K\nL\nM\nF",
+      "spoken_sentences": [
+        "그리고 맨 밑에 있는 거 K다 L이다 M이다 해서 요렇게 세 개 그리고 F하고 G 그리고 I하고 J요.",
+        "요렇게 자식이 하나도 없는 그런 노드를 보고 자식이 없는 그런 노드를 보고 우리가 단말 노드 단말 노드라고 그렇게 불러요.",
+        "이런 단말 노드를 우리가 잎 노드 입 노드라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그리고 맨 밑에 있는 거 K다 L이다 M이다 해서 요렇게 세 개 그리고 F하고 G 그리고 I하고 J요. 요렇게 자식이 하나도 없는 그런 노드를 보고 자식이 없는 그런 노드를 보고 우리가 단말 노드 단말 노드라고 그렇게 불러요. 이런 단말 노드를 우리가 잎 노드 입 노드라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:03:17",
+      "end_time_hms": "00:03:33",
+      "start_seconds": 197,
+      "end_seconds": 213,
+      "duration_seconds": 16,
+      "timeline_summary": "근 노드와 단말 노드 용어 표기",
+      "screen_text_lines": [
+        "근노드",
+        "단말노드"
+      ],
+      "screen_text": "근노드\n단말노드",
+      "spoken_sentences": [
+        "해서 우리 A요 A 이거를 근 노드 근 노드라고 이렇게 부르는 거고 그다음에 자식이 하나도 없는 그런 노드들을 보고 우린 뭐라고 하더라 우리가 단말 노드 단말 노드라고 그렇게 부르더라."
+      ],
+      "spoken_text": "해서 우리 A요 A 이거를 근 노드 근 노드라고 이렇게 부르는 거고 그다음에 자식이 하나도 없는 그런 노드들을 보고 우린 뭐라고 하더라 우리가 단말 노드 단말 노드라고 그렇게 부르더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "노드와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:03:33",
+      "end_time_hms": "00:04:01",
+      "start_seconds": 213,
+      "end_seconds": 241,
+      "duration_seconds": 28,
+      "timeline_summary": "부모 노드와 자식 노드의 관계 (노드 B 중심)",
+      "screen_text_lines": [
+        "부모노드",
+        "자식노드"
+      ],
+      "screen_text": "부모노드\n자식노드",
+      "spoken_sentences": [
+        "그다음에 B B라는 이 노드를 기준으로 봤을 때 이거의 상위에는 A가 있죠?",
+        "해서 B를 기준으로 봤을 때 A가 자기 아버지예요 아버지.",
+        "이런 거를 보고 우리가 부모 노드 부모 노더라고 그렇게 부르는 거고요.",
+        "또 B를 기준으로 봤을 때 그 아래쪽에 E하고 F하고 이렇게 두 개가 연결이 돼 있죠?",
+        "이런 노드를 보고 우리가 자식 노드 자식 노드라고 합니다."
+      ],
+      "spoken_text": "그다음에 B B라는 이 노드를 기준으로 봤을 때 이거의 상위에는 A가 있죠? 해서 B를 기준으로 봤을 때 A가 자기 아버지예요 아버지. 이런 거를 보고 우리가 부모 노드 부모 노더라고 그렇게 부르는 거고요. 또 B를 기준으로 봤을 때 그 아래쪽에 E하고 F하고 이렇게 두 개가 연결이 돼 있죠? 이런 노드를 보고 우리가 자식 노드 자식 노드라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "노드와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:04:01",
+      "end_time_hms": "00:04:19",
+      "start_seconds": 241,
+      "end_seconds": 259,
+      "duration_seconds": 18,
+      "timeline_summary": "부모 노드와 자식 노드의 관계 (노드 D 중심)",
+      "screen_text_lines": [
+        "D",
+        "A",
+        "H",
+        "I"
+      ],
+      "screen_text": "D\nA\nH\nI",
+      "spoken_sentences": [
+        "그러면 이 부모 노드와 자식 노드는 뭐를 기준으로 보느냐에 따라서 계속해서 바뀌겠죠?",
+        "만약에 D라는 거를 기준으로 보게 되면 D의 부모 노드는 A가 될 거고요.",
+        "D를 기준으로 봤을 때 자식 노드는 H I J 요 세 개가 되겠죠?"
+      ],
+      "spoken_text": "그러면 이 부모 노드와 자식 노드는 뭐를 기준으로 보느냐에 따라서 계속해서 바뀌겠죠? 만약에 D라는 거를 기준으로 보게 되면 D의 부모 노드는 A가 될 거고요. D를 기준으로 봤을 때 자식 노드는 H I J 요 세 개가 되겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "노드와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:04:19",
+      "end_time_hms": "00:04:43",
+      "start_seconds": 259,
+      "end_seconds": 283,
+      "duration_seconds": 24,
+      "timeline_summary": "형제 노드(Sibling Node)의 정의 (노드 D의 자식들)",
+      "screen_text_lines": [
+        "H",
+        "I",
+        "J"
+      ],
+      "screen_text": "H\nI\nJ",
+      "spoken_sentences": [
+        "그다음에 형제 노드가 있습니다.",
+        "형제 노드라는 거는 말 그대로 형제예요.",
+        "아버지가 하나인 거.",
+        "만약에 이 D D를 봤을 때 이 D에는 자식이 이렇게 H I J 하고 이렇게 세 개가 있죠?",
+        "요 세 개 요 세 개가 전부 다 형제 노드가 되는 겁니다.",
+        "해서 H라는 거를 기준으로 봤을 때 형제 노드는 I하고 J가 되는 거예요."
+      ],
+      "spoken_text": "그다음에 형제 노드가 있습니다. 형제 노드라는 거는 말 그대로 형제예요. 아버지가 하나인 거. 만약에 이 D D를 봤을 때 이 D에는 자식이 이렇게 H I J 하고 이렇게 세 개가 있죠? 요 세 개 요 세 개가 전부 다 형제 노드가 되는 겁니다. 해서 H라는 거를 기준으로 봤을 때 형제 노드는 I하고 J가 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Node",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "형제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:04:43",
+      "end_time_hms": "00:05:01",
+      "start_seconds": 283,
+      "end_seconds": 301,
+      "duration_seconds": 18,
+      "timeline_summary": "형제 노드의 관계 (노드 B의 자식들 및 노드 G)",
+      "screen_text_lines": [
+        "E",
+        "F",
+        "G"
+      ],
+      "screen_text": "E\nF\nG",
+      "spoken_sentences": [
+        "그리고 E라는 이 노드를 기준으로 봤을 때 형제 노드는 F가 되겠죠?",
+        "그리고 G를 기준으로 보게 되면 형제 노드가 있다 없다?",
+        "없다 없다."
+      ],
+      "spoken_text": "그리고 E라는 이 노드를 기준으로 봤을 때 형제 노드는 F가 되겠죠? 그리고 G를 기준으로 보게 되면 형제 노드가 있다 없다? 없다 없다.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "형제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:05:01",
+      "end_time_hms": "00:05:15",
+      "start_seconds": 301,
+      "end_seconds": 315,
+      "duration_seconds": 14,
+      "timeline_summary": "형제 노드의 관계 (노드 C 기준)",
+      "screen_text_lines": [
+        "C",
+        "B",
+        "D"
+      ],
+      "screen_text": "C\nB\nD",
+      "spoken_sentences": [
+        "C를 기준으로 봤을 때 C를 기준으로 봤을 때 그때 형제 노드는 뭐가 된다?",
+        "B하고 D가 되겠죠?"
+      ],
+      "spoken_text": "C를 기준으로 봤을 때 C를 기준으로 봤을 때 그때 형제 노드는 뭐가 된다? B하고 D가 되겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "형제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:05:15",
+      "end_time_hms": "00:05:29",
+      "start_seconds": 315,
+      "end_seconds": 329,
+      "duration_seconds": 14,
+      "timeline_summary": "노드 간 관계 용어의 유동성과 생소한 용어 강조",
+      "screen_text_lines": [
+        "잎노드"
+      ],
+      "screen_text": "잎노드",
+      "spoken_sentences": [
+        "그렇게 뭐를 기준으로 보느냐에 따라서 자식 노드다 부모 노드다 형제 노드다 그런 것들이 계속해서 바뀝니다.",
+        "해서 부모 자식 형제다 그러면 그런 것들은 이 그림을 보고 여러분들이 금방금방 찾을 수 있습니다.",
+        "그런 말들은 어렵지 않은데 근 노드다 단말 노드다 이 단말 노드를 다른 말로 또 뭐라고 했어요?",
+        "우리가 잎 노드 입 노드라고 그렇게 부르더라.",
+        "이런 말들이 조금 생소한 거죠."
+      ],
+      "spoken_text": "그렇게 뭐를 기준으로 보느냐에 따라서 자식 노드다 부모 노드다 형제 노드다 그런 것들이 계속해서 바뀝니다. 해서 부모 자식 형제다 그러면 그런 것들은 이 그림을 보고 여러분들이 금방금방 찾을 수 있습니다. 그런 말들은 어렵지 않은데 근 노드다 단말 노드다 이 단말 노드를 다른 말로 또 뭐라고 했어요? 우리가 잎 노드 입 노드라고 그렇게 부르더라. 이런 말들이 조금 생소한 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "형제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:05:29",
+      "end_time_hms": "00:05:42",
+      "start_seconds": 329,
+      "end_seconds": 342,
+      "duration_seconds": 13,
+      "timeline_summary": "디그리(Degree)의 정의: 자식 노드의 수",
+      "screen_text_lines": [
+        "디그리"
+      ],
+      "screen_text": "디그리",
+      "spoken_sentences": [
+        "그리고 우리 디그리 디그리라는 용어가 있습니다.",
+        "디그리라는 건 뭘 얘기하냐?",
+        "각 노드에서 뻗어 나온 그 가지 수 그러니까 자식 수 얘기하는 거야 자식 수."
+      ],
+      "spoken_text": "그리고 우리 디그리 디그리라는 용어가 있습니다. 디그리라는 건 뭘 얘기하냐? 각 노드에서 뻗어 나온 그 가지 수 그러니까 자식 수 얘기하는 거야 자식 수.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:05:42",
+      "end_time_hms": "00:06:07",
+      "start_seconds": 342,
+      "end_seconds": 367,
+      "duration_seconds": 25,
+      "timeline_summary": "각 노드별 디그리 계산 사례 (A, B, C, D)",
+      "screen_text_lines": [
+        "3",
+        "2",
+        "1"
+      ],
+      "screen_text": "3\n2\n1",
+      "spoken_sentences": [
+        "그러면 A를 기준으로 봤을 때 A의 디그리는 얼마예요?",
+        "A의 디그리는 A 밑에 자식이 세 명 있죠?",
+        "해서 A를 기준으로 봤을 때 A의 디그리는 3이다 그렇게 얘기할 수 있는 거고요.",
+        "B를 기준으로 봤을 때 B는 디그리가 얼마예요?",
+        "두 개죠 두 개.",
+        "그리고 C는 디그리가 얼마다?",
+        "1이다.",
+        "자식이 한 명밖에 없잖아요.",
+        "D를 기준으로 봤을 때 디그리는 얼마다?",
+        "3이다 그렇게요."
+      ],
+      "spoken_text": "그러면 A를 기준으로 봤을 때 A의 디그리는 얼마예요? A의 디그리는 A 밑에 자식이 세 명 있죠? 해서 A를 기준으로 봤을 때 A의 디그리는 3이다 그렇게 얘기할 수 있는 거고요. B를 기준으로 봤을 때 B는 디그리가 얼마예요? 두 개죠 두 개. 그리고 C는 디그리가 얼마다? 1이다. 자식이 한 명밖에 없잖아요. D를 기준으로 봤을 때 디그리는 얼마다? 3이다 그렇게요.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:06:07",
+      "end_time_hms": "00:06:21",
+      "start_seconds": 367,
+      "end_seconds": 381,
+      "duration_seconds": 14,
+      "timeline_summary": "각 노드별 디그리 계산 사례 (E, H)",
+      "screen_text_lines": [
+        "2",
+        "1"
+      ],
+      "screen_text": "2\n1",
+      "spoken_sentences": [
+        "그리고 E를 기준으로 봤을 때 디그리는 얼마다?",
+        "디그리는 2가 되겠죠.",
+        "그리고 H를 기준으로 봤을 때 디그리는 얼마다?",
+        "1이다 1이다.",
+        "자식이 하나밖에 없잖아요."
+      ],
+      "spoken_text": "그리고 E를 기준으로 봤을 때 디그리는 얼마다? 디그리는 2가 되겠죠. 그리고 H를 기준으로 봤을 때 디그리는 얼마다? 1이다 1이다. 자식이 하나밖에 없잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:06:21",
+      "end_time_hms": "00:06:55",
+      "start_seconds": 381,
+      "end_seconds": 415,
+      "duration_seconds": 34,
+      "timeline_summary": "트리의 디그리(Degree of Tree) 정의: 최대 디그리",
+      "screen_text_lines": [
+        "트리의 디그리",
+        "3"
+      ],
+      "screen_text": "트리의 디그리\n3",
+      "spoken_sentences": [
+        "그렇게 디그리라는 거는 자식 수를 얘기합니다 자식 수를.",
+        "요렇게 자식 수를 얘기하는 게 디그리고요.",
+        "만약에 만약에 트리에 이 전체적인 트리의 디그리가 얼마냐 그렇게 물어볼 때도 있습니다.",
+        "트리의 디그리라는 거 뭘 얘기하냐?",
+        "이런 여러 가지 노드들 중에서 디그리가 가장 높은 거 그게 트리의 디그리에요.",
+        "여기서는 A의 디그리가 3이고 그리고 D의 디그리가 3이죠?",
+        "3이 제일 크잖아요 지금 현재는.",
+        "해서 트리의 디그리는 3이다 그렇게 얘기하는 거예요."
+      ],
+      "spoken_text": "그렇게 디그리라는 거는 자식 수를 얘기합니다 자식 수를. 요렇게 자식 수를 얘기하는 게 디그리고요. 만약에 만약에 트리에 이 전체적인 트리의 디그리가 얼마냐 그렇게 물어볼 때도 있습니다. 트리의 디그리라는 거 뭘 얘기하냐? 이런 여러 가지 노드들 중에서 디그리가 가장 높은 거 그게 트리의 디그리에요. 여기서는 A의 디그리가 3이고 그리고 D의 디그리가 3이죠? 3이 제일 크잖아요 지금 현재는. 해서 트리의 디그리는 3이다 그렇게 얘기하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:06:55",
+      "end_time_hms": "00:07:13",
+      "start_seconds": 415,
+      "end_seconds": 433,
+      "duration_seconds": 18,
+      "timeline_summary": "디그리와 트리의 디그리 구분 강조",
+      "screen_text_lines": [
+        "디그리"
+      ],
+      "screen_text": "디그리",
+      "spoken_sentences": [
+        "해서 그냥 디그리 그러면 어떤 특정 그 정점의 자식 수가 그냥 디그리고 트리의 디그리 그러면 이 전체적인 트리 중에서 디그리가 가장 많은 거 디그리가 가장 높은 거 그게 트리의 디그리가 됩니다."
+      ],
+      "spoken_text": "해서 그냥 디그리 그러면 어떤 특정 그 정점의 자식 수가 그냥 디그리고 트리의 디그리 그러면 이 전체적인 트리 중에서 디그리가 가장 많은 거 디그리가 가장 높은 거 그게 트리의 디그리가 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "자식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:07:13",
+      "end_time_hms": "00:07:31",
+      "start_seconds": 433,
+      "end_seconds": 451,
+      "duration_seconds": 18,
+      "timeline_summary": "트리의 레벨(Level)과 깊이(Depth) 설명",
+      "screen_text_lines": [
+        "Level 1",
+        "Level 2",
+        "Level 3",
+        "Level 4 -> Depth"
+      ],
+      "screen_text": "Level 1\nLevel 2\nLevel 3\nLevel 4 -> Depth",
+      "spoken_sentences": [
+        "그리고 지금 여기 보게 되면 여기 A부터 시작해서 레벨을 매겨 놨죠?",
+        "여기가 레벨 1 그다음 게 레벨 2 그다음 게 레벨 3 그다음 게 레벨 4 하고 그렇게 있습니다.",
+        "이런 레벨 1 2 3 4를 보고 우리가 트리의 깊이 깊이라고 그렇게 불러요."
+      ],
+      "spoken_text": "그리고 지금 여기 보게 되면 여기 A부터 시작해서 레벨을 매겨 놨죠? 여기가 레벨 1 그다음 게 레벨 2 그다음 게 레벨 3 그다음 게 레벨 4 하고 그렇게 있습니다. 이런 레벨 1 2 3 4를 보고 우리가 트리의 깊이 깊이라고 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "Level",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 3,
+      "subtopic_id": "0115_115",
+      "subtopic_title": "트리",
+      "subtopic_sequence": 115,
+      "subtopic_number": "115",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=zEwcQpvYEt0",
+      "start_time_hms": "00:07:31",
+      "end_time_hms": "00:08:15",
+      "start_seconds": 451,
+      "end_seconds": 495,
+      "duration_seconds": 44,
+      "timeline_summary": "트리 관련 용어의 중요성 강조 및 마무리",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 트리에서 사용되는 그런 용어들 이런 용어들이 뭐가 뭔지는 여러분들이 정확하게 구분할 수 있게 알고 계셔야 돼요 알고 계셔야 돼요.",
+        "트리의 디그리라고 그렇게 표현할 때랑 그냥 디그리라고 표현할 때랑 다르죠?",
+        "그거 잘 기억하시고 근 노드가 뭔지 단말 노드가 뭔지 그리고 잎 노드가 뭔지 자식 노드가 뭔지 부모 노드가 뭔지 형제 노드가 뭔지 그런 용어들 정확하게 여러분들이 파악하고 지나가셔야 돼요.",
+        "이 트리는 시험 문제에 자주 출제되는 그런 내용들입니다.",
+        "해서 어떤 게 뭔지는 정확하게 파악할 수 있게 잘 보고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 트리에서 사용되는 그런 용어들 이런 용어들이 뭐가 뭔지는 여러분들이 정확하게 구분할 수 있게 알고 계셔야 돼요 알고 계셔야 돼요. 트리의 디그리라고 그렇게 표현할 때랑 그냥 디그리라고 표현할 때랑 다르죠? 그거 잘 기억하시고 근 노드가 뭔지 단말 노드가 뭔지 그리고 잎 노드가 뭔지 자식 노드가 뭔지 부모 노드가 뭔지 형제 노드가 뭔지 그런 용어들 정확하게 여러분들이 파악하고 지나가셔야 돼요. 이 트리는 시험 문제에 자주 출제되는 그런 내용들입니다. 해서 어떤 게 뭔지는 정확하게 파악할 수 있게 잘 보고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "노드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "디그리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "트리 운행법의 정의",
+      "screen_text_lines": [
+        "트리를 구성하는 각 노드들을 찾아가는 방법을 운행법(Traversal)이라 함."
+      ],
+      "screen_text": "트리를 구성하는 각 노드들을 찾아가는 방법을 운행법(Traversal)이라 함.",
+      "spoken_sentences": [
+        "이번 시간에는 우리 트리의 운행법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+        "우리 트리 운행법이요.",
+        "트리 운행법이라는 거는 트리를 구성하고 있는 각 노드들 있죠?",
+        "그런 노드를 찾아가는 그 방법, 그걸 보고 우리가 운행법이라고 그렇게 부르는데"
+      ],
+      "spoken_text": "이번 시간에는 우리 트리의 운행법에 대해서 같이 한번 살펴보도록 하겠습니다. 우리 트리 운행법이요. 트리 운행법이라는 거는 트리를 구성하고 있는 각 노드들 있죠? 그런 노드를 찾아가는 그 방법, 그걸 보고 우리가 운행법이라고 그렇게 부르는데",
+      "highlight_keywords": [
+        {
+          "keyword": "트리의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 9,
+      "end_seconds": 33,
+      "duration_seconds": 24,
+      "timeline_summary": "이진 트리 운행과 산술식 표기법의 연관성",
+      "screen_text_lines": [
+        "이진 트리를 운행하는 방법은 산술식의 표기법과 연관성을 갖는다."
+      ],
+      "screen_text": "이진 트리를 운행하는 방법은 산술식의 표기법과 연관성을 갖는다.",
+      "spoken_sentences": [
+        "이 이진 트리를 운영하는 그 방법은 산술식 표기법과 연관성을 갖습니다.",
+        "우리가 산술식 표기법 이것도 우리가 다음 시간에 배워요.",
+        "배우니까 아 이거는 연관성이 있구나 그 정도만 기억하시면 돼요."
+      ],
+      "spoken_text": "이 이진 트리를 운영하는 그 방법은 산술식 표기법과 연관성을 갖습니다. 우리가 산술식 표기법 이것도 우리가 다음 시간에 배워요. 배우니까 아 이거는 연관성이 있구나 그 정도만 기억하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:00:45",
+      "start_seconds": 33,
+      "end_seconds": 45,
+      "duration_seconds": 12,
+      "timeline_summary": "이진 트리 운행법의 세 가지 종류",
+      "screen_text_lines": [
+        "이진 트리의 운행법은 다음 세 가지가 있음.",
+        "Preorder 운행",
+        "Inorder 운행",
+        "Postorder 운행"
+      ],
+      "screen_text": "이진 트리의 운행법은 다음 세 가지가 있음.\nPreorder 운행\nInorder 운행\nPostorder 운행",
+      "spoken_sentences": [
+        "우리가 이진 트리를 운영하는 그 운행법에는 지금처럼 이렇게 세 가지가 있습니다.",
+        "우리 프리오더(Preorder)라는 게 있고요.",
+        "인오더(Inorder)라는 게 있고 포스트오더(Postorder)라는 게 있고 이렇게 세 가지가 있습니다."
+      ],
+      "spoken_text": "우리가 이진 트리를 운영하는 그 운행법에는 지금처럼 이렇게 세 가지가 있습니다. 우리 프리오더(Preorder)라는 게 있고요. 인오더(Inorder)라는 게 있고 포스트오더(Postorder)라는 게 있고 이렇게 세 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "트리의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:00:45",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 45,
+      "end_seconds": 67,
+      "duration_seconds": 22,
+      "timeline_summary": "Root 노드 위치에 따른 운행법 구분",
+      "screen_text_lines": [
+        "Preorder 운행 : Root -> Left -> Right 순으로 운행함.",
+        "Inorder 운행 : Left -> Root -> Right 순으로 운행함.",
+        "Postorder 운행 : Left -> Right -> Root 순으로 운행함."
+      ],
+      "screen_text": "Preorder 운행 : Root -> Left -> Right 순으로 운행함.\nInorder 운행 : Left -> Root -> Right 순으로 운행함.\nPostorder 운행 : Left -> Right -> Root 순으로 운행함.",
+      "spoken_sentences": [
+        "얘네가 어떻게 운영되냐 그거는 레프트 라이트, 레프트 라이트, 왼쪽 오른쪽, 왼쪽 오른쪽 왼쪽부터 시작해서 오른쪽으로 가긴 가는데 그때 루트(Root)라는 게 앞에 있냐 아니면 루트가 중간에 들어가냐 아니면 루트가 마지막에 들어가냐 그 루트가 어디에 들어가냐에 따라서 이렇게 세 가지로 나눠지는 겁니다."
+      ],
+      "spoken_text": "얘네가 어떻게 운영되냐 그거는 레프트 라이트, 레프트 라이트, 왼쪽 오른쪽, 왼쪽 오른쪽 왼쪽부터 시작해서 오른쪽으로 가긴 가는데 그때 루트(Root)라는 게 앞에 있냐 아니면 루트가 중간에 들어가냐 아니면 루트가 마지막에 들어가냐 그 루트가 어디에 들어가냐에 따라서 이렇게 세 가지로 나눠지는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-066",
+      "segment_index": 66,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 67,
+      "end_seconds": 90,
+      "duration_seconds": 23,
+      "timeline_summary": "운행법별 순서 요약",
+      "screen_text_lines": [
+        "Preorder 운행 : Root -> Left -> Right 순으로 운행함.",
+        "Inorder 운행 : Left -> Root -> Right 순으로 운행함.",
+        "Postorder 운행 : Left -> Right -> Root 순으로 운행함."
+      ],
+      "screen_text": "Preorder 운행 : Root -> Left -> Right 순으로 운행함.\nInorder 운행 : Left -> Root -> Right 순으로 운행함.\nPostorder 운행 : Left -> Right -> Root 순으로 운행함.",
+      "spoken_sentences": [
+        "해서 루트 레프트 라이트 이렇게 가는 게 프리오더고요.",
+        "그다음에 레프트 루트 라이트 해서 루트가 중간에 끼어 있는 거 이게 인오더.",
+        "그다음에 포스트오더는 레프트 라이트를 먼저 가고 마지막에 루트 찾아가는 게 우리 포스트오더입니다.",
+        "이렇게 해서 루트의 위치에 따라서 우리 프리오더 인오더 포스트오더하고 이렇게 세 가지로 나눠져요."
+      ],
+      "spoken_text": "해서 루트 레프트 라이트 이렇게 가는 게 프리오더고요. 그다음에 레프트 루트 라이트 해서 루트가 중간에 끼어 있는 거 이게 인오더. 그다음에 포스트오더는 레프트 라이트를 먼저 가고 마지막에 루트 찾아가는 게 우리 포스트오더입니다. 이렇게 해서 루트의 위치에 따라서 우리 프리오더 인오더 포스트오더하고 이렇게 세 가지로 나눠져요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-067",
+      "segment_index": 67,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:02:09",
+      "start_seconds": 90,
+      "end_seconds": 129,
+      "duration_seconds": 39,
+      "timeline_summary": "단순 트리를 이용한 Preorder 운행 예시",
+      "screen_text_lines": [
+        "A, B, C",
+        "A"
+      ],
+      "screen_text": "A, B, C\nA",
+      "spoken_sentences": [
+        "자 지금처럼 이렇게 A B C 하고 이렇게 세 개의 노드가 있을 때 이거를 만약에 내가 프리오더로 프리오더로 내가 운행을 하겠다라고 했을 때는 맨 처음에 루트를 찾아간다 그랬죠?",
+        "루트 그럼 루트가 지금 현재는 A잖아요.",
+        "해서 A, A가 맨 처음에 나올 거고요.",
+        "그다음에 레프트 라이트 그 순서대로 간다 그랬죠?",
+        "자 루트 찾아왔으니까 레프트 가야죠?",
+        "자 A를 기준으로 왼쪽 그럼 B가 있습니다 B.",
+        "그래서 B가 나올 거고요.",
+        "그다음에 라이트 가면 되죠?",
+        "그럼 라이트 갔더니 뭐가 나온다 C가 나오더라.",
+        "해서 이렇게 해서 프리오더로 운행하게 되면 A B C 하고 이렇게 나타납니다."
+      ],
+      "spoken_text": "자 지금처럼 이렇게 A B C 하고 이렇게 세 개의 노드가 있을 때 이거를 만약에 내가 프리오더로 프리오더로 내가 운행을 하겠다라고 했을 때는 맨 처음에 루트를 찾아간다 그랬죠? 루트 그럼 루트가 지금 현재는 A잖아요. 해서 A, A가 맨 처음에 나올 거고요. 그다음에 레프트 라이트 그 순서대로 간다 그랬죠? 자 루트 찾아왔으니까 레프트 가야죠? 자 A를 기준으로 왼쪽 그럼 B가 있습니다 B. 그래서 B가 나올 거고요. 그다음에 라이트 가면 되죠? 그럼 라이트 갔더니 뭐가 나온다 C가 나오더라. 해서 이렇게 해서 프리오더로 운행하게 되면 A B C 하고 이렇게 나타납니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-068",
+      "segment_index": 68,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:02:09",
+      "end_time_hms": "00:02:40",
+      "start_seconds": 129,
+      "end_seconds": 160,
+      "duration_seconds": 31,
+      "timeline_summary": "단순 트리를 이용한 Inorder 운행 예시",
+      "screen_text_lines": [
+        "B, A, C"
+      ],
+      "screen_text": "B, A, C",
+      "spoken_sentences": [
+        "그다음에 인오더요.",
+        "인오더로 내가 만약에 이거를 운행하겠다 이거는 루트가 중간에 끼어 있는 거죠?",
+        "해서 맨 처음에 레프트를 먼저 찾아가고 그다음에 루트 라이트요.",
+        "레프트 루트 라이트.",
+        "해서 지금 요거를 기준으로 봤을 때 지금 B가 왼쪽에 있는 거죠?",
+        "해서 맨 처음에 B가 나오고 그다음에 루트요.",
+        "루트가 지금 현재 A니까 A가 나오고 그다음에 라이트, 라이트에 갔더니 뭐가 있다 C가 있더라.",
+        "그래서 B A C 하고 그렇게 나오는 게 우리 인오더요 인오더."
+      ],
+      "spoken_text": "그다음에 인오더요. 인오더로 내가 만약에 이거를 운행하겠다 이거는 루트가 중간에 끼어 있는 거죠? 해서 맨 처음에 레프트를 먼저 찾아가고 그다음에 루트 라이트요. 레프트 루트 라이트. 해서 지금 요거를 기준으로 봤을 때 지금 B가 왼쪽에 있는 거죠? 해서 맨 처음에 B가 나오고 그다음에 루트요. 루트가 지금 현재 A니까 A가 나오고 그다음에 라이트, 라이트에 갔더니 뭐가 있다 C가 있더라. 그래서 B A C 하고 그렇게 나오는 게 우리 인오더요 인오더.",
+      "highlight_keywords": [
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-069",
+      "segment_index": 69,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:02:40",
+      "end_time_hms": "00:03:12",
+      "start_seconds": 160,
+      "end_seconds": 192,
+      "duration_seconds": 32,
+      "timeline_summary": "단순 트리를 이용한 Postorder 운행 예시",
+      "screen_text_lines": [
+        "B, C, A"
+      ],
+      "screen_text": "B, C, A",
+      "spoken_sentences": [
+        "그다음에 포스트오더요.",
+        "포스트오더는 루트가 루트가 제일 마지막에 있습니다.",
+        "앞에서 먼저 레프트 라이트 루트 그 순서대로요.",
+        "해서 맨 처음에 얘네들 이렇게 세 개가 있을 때 맨 처음에 왼쪽 왼쪽을 찾아갔더니 B가 있죠?",
+        "해서 B가 나올 거고 그다음에 라이트 가래요.",
+        "라이트 갔더니 C가 있죠?",
+        "해서 C가 나오고 그다음에 마지막에 루트를 찾아가면 돼요.",
+        "해서 루트에 갔더니 A가 있습니다.",
+        "그래서 A 하고 이렇게 B C A 이런 식으로 운행되는 게 우리 포스트오더요."
+      ],
+      "spoken_text": "그다음에 포스트오더요. 포스트오더는 루트가 루트가 제일 마지막에 있습니다. 앞에서 먼저 레프트 라이트 루트 그 순서대로요. 해서 맨 처음에 얘네들 이렇게 세 개가 있을 때 맨 처음에 왼쪽 왼쪽을 찾아갔더니 B가 있죠? 해서 B가 나올 거고 그다음에 라이트 가래요. 라이트 갔더니 C가 있죠? 해서 C가 나오고 그다음에 마지막에 루트를 찾아가면 돼요. 해서 루트에 갔더니 A가 있습니다. 그래서 A 하고 이렇게 B C A 이런 식으로 운행되는 게 우리 포스트오더요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-070",
+      "segment_index": 70,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:03:12",
+      "end_time_hms": "00:03:28",
+      "start_seconds": 192,
+      "end_seconds": 208,
+      "duration_seconds": 16,
+      "timeline_summary": "Root 노드 방문 시점에 따른 분류 강조",
+      "screen_text_lines": [
+        "Preorder 운행 : Root -> Left -> Right 순으로 운행함.",
+        "Inorder 운행 : Left -> Root -> Right 순으로 운행함.",
+        "Postorder 운행 : Left -> Right -> Root 순으로 운행함."
+      ],
+      "screen_text": "Preorder 운행 : Root -> Left -> Right 순으로 운행함.\nInorder 운행 : Left -> Root -> Right 순으로 운행함.\nPostorder 운행 : Left -> Right -> Root 순으로 운행함.",
+      "spoken_sentences": [
+        "해서 루트를 언제 찾아가냐?",
+        "먼저 찾아가냐 아니면 중간에 찾아가냐 아니면 마지막에 찾아가냐에 따라서 프리오더 인오더 포스트오더하고 이렇게 세 가지로 나눠지는 겁니다.",
+        "자 그럼 예제 문제 좀 보자고요."
+      ],
+      "spoken_text": "해서 루트를 언제 찾아가냐? 먼저 찾아가냐 아니면 중간에 찾아가냐 아니면 마지막에 찾아가냐에 따라서 프리오더 인오더 포스트오더하고 이렇게 세 가지로 나눠지는 겁니다. 자 그럼 예제 문제 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-071",
+      "segment_index": 71,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:03:28",
+      "end_time_hms": "00:03:47",
+      "start_seconds": 208,
+      "end_seconds": 227,
+      "duration_seconds": 19,
+      "timeline_summary": "복잡한 트리 예제 소개",
+      "screen_text_lines": [
+        "예제) 다음 트리를 Inorder, Preorder, Postorder 방법으로 운행했을 때 각 노드를 방문한 순서는?"
+      ],
+      "screen_text": "예제) 다음 트리를 Inorder, Preorder, Postorder 방법으로 운행했을 때 각 노드를 방문한 순서는?",
+      "spoken_sentences": [
+        "자 우리 예제 문제 봤더니 지금처럼 트리가 정점 노드가 세 개만 있는 게 아니라 엄청나게 많죠?",
+        "자 얘네들을 가지고 이 트리를 가지고 인오더 프리오더 포스트오더 이 방법으로 각각 운행을 했을 때 각 노드의 방문 순서가 어떻게 되는지 세 가지 모두 다 구해라 그겁니다."
+      ],
+      "spoken_text": "자 우리 예제 문제 봤더니 지금처럼 트리가 정점 노드가 세 개만 있는 게 아니라 엄청나게 많죠? 자 얘네들을 가지고 이 트리를 가지고 인오더 프리오더 포스트오더 이 방법으로 각각 운행을 했을 때 각 노드의 방문 순서가 어떻게 되는지 세 가지 모두 다 구해라 그겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-072",
+      "segment_index": 72,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:03:47",
+      "end_time_hms": "00:04:10",
+      "start_seconds": 227,
+      "end_seconds": 250,
+      "duration_seconds": 23,
+      "timeline_summary": "복잡한 트리의 Preorder 운행 전략",
+      "screen_text_lines": [
+        "Preorder 운행 : Root -> Left -> Right"
+      ],
+      "screen_text": "Preorder 운행 : Root -> Left -> Right",
+      "spoken_sentences": [
+        "일단은 여기서는 프리오더 먼저 한번 해보자고요.",
+        "프리오더 할 때는 루트 루트를 먼저 찾아가요.",
+        "루트 레프트 라이트예요.",
+        "자 요 순서만 잘 기억하시면 됩니다.",
+        "아까 그림이 이 노드가 세 개만 있을 때는 되게 쉬웠는데 지금처럼 그림이 많아지면 조금씩 헷갈리기 시작한다고요.",
+        "그때 잘 보셔야 돼요."
+      ],
+      "spoken_text": "일단은 여기서는 프리오더 먼저 한번 해보자고요. 프리오더 할 때는 루트 루트를 먼저 찾아가요. 루트 레프트 라이트예요. 자 요 순서만 잘 기억하시면 됩니다. 아까 그림이 이 노드가 세 개만 있을 때는 되게 쉬웠는데 지금처럼 그림이 많아지면 조금씩 헷갈리기 시작한다고요. 그때 잘 보셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-073",
+      "segment_index": 73,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:04:10",
+      "end_time_hms": "00:04:47",
+      "start_seconds": 250,
+      "end_seconds": 287,
+      "duration_seconds": 37,
+      "timeline_summary": "복잡한 트리의 루트 및 서브트리 그룹화",
+      "screen_text_lines": [
+        "Preorder 운행 : Root -> Left -> Right"
+      ],
+      "screen_text": "Preorder 운행 : Root -> Left -> Right",
+      "spoken_sentences": [
+        "자 우리가 요 지금 맨 처음에 루트를 먼저 찾아가고 레프트 라이트를 찾아가야 되는데 얘네들 그림이 많을 때는 얘네들을 싹 다 묶어서 여러분들이 생각을 하셔야 돼요.",
+        "자 지금 얘 요게 루트죠?",
+        "A를 기준으로 보게 되면 요게 루트고 지금 A를 기준으로 봤을 때 지금 레프트 레프트는 지금 이만큼이 되는 거고요.",
+        "A를 기준으로 봤을 때 라이트 라이트는 지금 요만큼이 되는 거죠.",
+        "그러면 지금처럼 이렇게 크게 세 개가 있다라고 생각을 하시면 돼요."
+      ],
+      "spoken_text": "자 우리가 요 지금 맨 처음에 루트를 먼저 찾아가고 레프트 라이트를 찾아가야 되는데 얘네들 그림이 많을 때는 얘네들을 싹 다 묶어서 여러분들이 생각을 하셔야 돼요. 자 지금 얘 요게 루트죠? A를 기준으로 보게 되면 요게 루트고 지금 A를 기준으로 봤을 때 지금 레프트 레프트는 지금 이만큼이 되는 거고요. A를 기준으로 봤을 때 라이트 라이트는 지금 요만큼이 되는 거죠. 그러면 지금처럼 이렇게 크게 세 개가 있다라고 생각을 하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-074",
+      "segment_index": 74,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:04:47",
+      "end_time_hms": "00:05:23",
+      "start_seconds": 287,
+      "end_seconds": 323,
+      "duration_seconds": 36,
+      "timeline_summary": "Preorder 운행: 루트 A 방문 후 왼쪽 서브트리 진입",
+      "screen_text_lines": [
+        "A"
+      ],
+      "screen_text": "A",
+      "spoken_sentences": [
+        "해서 맨 처음에 얘는 루트를 먼저 찾아가니까 지금 이렇게 세 개가 있을 때 루트를 먼저 찾아가니까 맨 처음에 A가 나오겠죠?",
+        "그다음에 루트 끝났어요.",
+        "루트 끝 끝났고 그다음에 레프트를 가야 됩니다.",
+        "레프트에서 이쪽의 큰 동그라미 이쪽으로 갔더니 여기도 안에 여러 개가 들어 있죠?",
+        "그때 또 이것도 또 쪼개서 보면 돼요.",
+        "그때 B라는 거를 루트 루트로 봤을 때 지금 왼쪽에 레프트에는 지금 요만큼 요 세 개가 있고 그다음에 라이트에는 요거 하나밖에 없는 거예요."
+      ],
+      "spoken_text": "해서 맨 처음에 얘는 루트를 먼저 찾아가니까 지금 이렇게 세 개가 있을 때 루트를 먼저 찾아가니까 맨 처음에 A가 나오겠죠? 그다음에 루트 끝났어요. 루트 끝 끝났고 그다음에 레프트를 가야 됩니다. 레프트에서 이쪽의 큰 동그라미 이쪽으로 갔더니 여기도 안에 여러 개가 들어 있죠? 그때 또 이것도 또 쪼개서 보면 돼요. 그때 B라는 거를 루트 루트로 봤을 때 지금 왼쪽에 레프트에는 지금 요만큼 요 세 개가 있고 그다음에 라이트에는 요거 하나밖에 없는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-075",
+      "segment_index": 75,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:05:23",
+      "end_time_hms": "00:06:05",
+      "start_seconds": 323,
+      "end_seconds": 365,
+      "duration_seconds": 42,
+      "timeline_summary": "Preorder 운행: 왼쪽 서브트리 내부 순회 (B, D, H, I 방문)",
+      "screen_text_lines": [
+        "A, B, D, H, I"
+      ],
+      "screen_text": "A, B, D, H, I",
+      "spoken_sentences": [
+        "그러면 지금 A 하고 이쪽 오른쪽에 있는 거 있죠?",
+        "얘네들은 싹 다 없다고 생각하고 요만큼만 요만큼만 보셔야 돼요.",
+        "그때 루트 루트를 보게 되면 지금 현재 루트가 B가 되겠죠?",
+        "해서 그다음에 나오는 게 그다음에 B B라는 게 나올 거고요.",
+        "그러면 B를 기준으로 봤을 때 루트가 끝났으니까 레프트로 가야 돼요.",
+        "레프트로 갔더니 D H I 하고 요 세 개가 있습니다.",
+        "그럼 요 세 개는 다른 거 보지 말고 요 세 개만 보라고요.",
+        "그럼 요 세 개만 봤을 때 또 루트가 뭐가 되는 거예요?",
+        "우리 D가 되는 거죠 D.",
+        "해서 그다음에 나오는 게 D가 나올 거고요.",
+        "그다음에 D를 기준으로 봤을 때 레프트가 H고 라이트가 I가 되겠죠?",
+        "해서 루트가 끝났으니까 레프트 가고 그다음에 라이트 I 가면 됩니다.",
+        "해서 여기서 나오는 게 H가 먼저 나오고 그다음에 I가 나오는 거예요."
+      ],
+      "spoken_text": "그러면 지금 A 하고 이쪽 오른쪽에 있는 거 있죠? 얘네들은 싹 다 없다고 생각하고 요만큼만 요만큼만 보셔야 돼요. 그때 루트 루트를 보게 되면 지금 현재 루트가 B가 되겠죠? 해서 그다음에 나오는 게 그다음에 B B라는 게 나올 거고요. 그러면 B를 기준으로 봤을 때 루트가 끝났으니까 레프트로 가야 돼요. 레프트로 갔더니 D H I 하고 요 세 개가 있습니다. 그럼 요 세 개는 다른 거 보지 말고 요 세 개만 보라고요. 그럼 요 세 개만 봤을 때 또 루트가 뭐가 되는 거예요? 우리 D가 되는 거죠 D. 해서 그다음에 나오는 게 D가 나올 거고요. 그다음에 D를 기준으로 봤을 때 레프트가 H고 라이트가 I가 되겠죠? 해서 루트가 끝났으니까 레프트 가고 그다음에 라이트 I 가면 됩니다. 해서 여기서 나오는 게 H가 먼저 나오고 그다음에 I가 나오는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-076",
+      "segment_index": 76,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:06:05",
+      "end_time_hms": "00:06:33",
+      "start_seconds": 365,
+      "end_seconds": 393,
+      "duration_seconds": 28,
+      "timeline_summary": "Preorder 운행: 왼쪽 서브트리 마무리 및 오른쪽 서브트리 순회",
+      "screen_text_lines": [
+        "A, B, D, H, I, E, C, F, G"
+      ],
+      "screen_text": "A, B, D, H, I, E, C, F, G",
+      "spoken_sentences": [
+        "그러면 지금 이곳에 들어 있는 얘네들은 다 끝났습니다.",
+        "그러면 B를 기준으로 봤을 때 레프트가 끝난 거예요 레프트가 싹 다 끝난 거고 그다음에 레프트가 끝났으면 라이트로 가야죠?",
+        "라이트에 갔더니 요 E 하나밖에 없죠?",
+        "해서 그다음에 E가 나올 겁니다.",
+        "그러면 A라는 거를 기준으로 봤을 때 레프트가 다 끝난 거예요 레프트가 싹 다 끝난 거고 그다음에 A를 기준으로 봤을 때 얘가 루트고 얘가 레프트고 레프트가 다 끝났으니까 라이트로 찾아가야죠?",
+        "라이트로 찾아갔더니 요렇게 세 개가 있습니다.",
+        "그럼 또 다른 것들 다 없다고 생각하고 요 세 가지만 보는 거예요.",
+        "요 세 개만 봤을 때 루트가 C가 되겠죠?",
+        "해서 C가 나올 거고요.",
+        "그다음에 루트가 끝났으니까 레프트로 가야죠?",
+        "레프트 갔더니 지금 F가 있습니다.",
+        "해서 F가 나올 거고요.",
+        "레프트 끝나고 라이트 갔더니 G가 있죠?",
+        "해서 G하고 그렇게 나올 거예요."
+      ],
+      "spoken_text": "그러면 지금 이곳에 들어 있는 얘네들은 다 끝났습니다. 그러면 B를 기준으로 봤을 때 레프트가 끝난 거예요 레프트가 싹 다 끝난 거고 그다음에 레프트가 끝났으면 라이트로 가야죠? 라이트에 갔더니 요 E 하나밖에 없죠? 해서 그다음에 E가 나올 겁니다. 그러면 A라는 거를 기준으로 봤을 때 레프트가 다 끝난 거예요 레프트가 싹 다 끝난 거고 그다음에 A를 기준으로 봤을 때 얘가 루트고 얘가 레프트고 레프트가 다 끝났으니까 라이트로 찾아가야죠? 라이트로 찾아갔더니 요렇게 세 개가 있습니다. 그럼 또 다른 것들 다 없다고 생각하고 요 세 가지만 보는 거예요. 요 세 개만 봤을 때 루트가 C가 되겠죠? 해서 C가 나올 거고요. 그다음에 루트가 끝났으니까 레프트로 가야죠? 레프트 갔더니 지금 F가 있습니다. 해서 F가 나올 거고요. 레프트 끝나고 라이트 갔더니 G가 있죠? 해서 G하고 그렇게 나올 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "루트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "트리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-077",
+      "segment_index": 77,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:06:33",
+      "end_time_hms": "00:07:21",
+      "start_seconds": 393,
+      "end_seconds": 441,
+      "duration_seconds": 48,
+      "timeline_summary": "복잡한 트리의 Inorder 운행 전략 및 그룹화",
+      "screen_text_lines": [
+        "Inorder 운행 : Left -> Root -> Right"
+      ],
+      "screen_text": "Inorder 운행 : Left -> Root -> Right",
+      "spoken_sentences": [
+        "해서 우리가 이 트리를 요 트리를 우리가 프리오더로 운행을 하게 되면 그때 방문 순서는 지금처럼 요렇게 됩니다.",
+        "이게 프리오더 운행 해서 전부 다 방문 순서 다 구한 겁니다.",
+        "해서 지금처럼 이렇게 트리가 노드가 여러 개 존재하는 게 나오면 지금처럼 이렇게 크게 크게 묶어서 우리가 생각을 해야 돼요.",
+        "그다음에 이번에는 우리 인오더 인오더 한번 해보자고요.",
+        "인오더라는 거는 루트가 중간에 있는 거죠?",
+        "맨 처음에 레프트를 먼저 가고 레프트 갔다가 루트 갔다가 라이트로 가는 거예요.",
+        "그러면 지금 여기도 노드가 여러 개 있으니까 이거를 좀 잘라서 보자고요.",
+        "그러면 지금 우리 A라는 거를 기준으로 봤을 때 A라는 거를 기준으로 봤을 때 지금 얘네들이 전부 다 왼쪽 레프트가 되는 거고 그다음에 얘가 전부 다 요 세 개가 라이트가 되는 거죠."
+      ],
+      "spoken_text": "해서 우리가 이 트리를 요 트리를 우리가 프리오더로 운행을 하게 되면 그때 방문 순서는 지금처럼 요렇게 됩니다. 이게 프리오더 운행 해서 전부 다 방문 순서 다 구한 겁니다. 해서 지금처럼 이렇게 트리가 노드가 여러 개 존재하는 게 나오면 지금처럼 이렇게 크게 크게 묶어서 우리가 생각을 해야 돼요. 그다음에 이번에는 우리 인오더 인오더 한번 해보자고요. 인오더라는 거는 루트가 중간에 있는 거죠? 맨 처음에 레프트를 먼저 가고 레프트 갔다가 루트 갔다가 라이트로 가는 거예요. 그러면 지금 여기도 노드가 여러 개 있으니까 이거를 좀 잘라서 보자고요. 그러면 지금 우리 A라는 거를 기준으로 봤을 때 A라는 거를 기준으로 봤을 때 지금 얘네들이 전부 다 왼쪽 레프트가 되는 거고 그다음에 얘가 전부 다 요 세 개가 라이트가 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-078",
+      "segment_index": 78,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:07:21",
+      "end_time_hms": "00:08:18",
+      "start_seconds": 441,
+      "end_seconds": 498,
+      "duration_seconds": 57,
+      "timeline_summary": "Inorder 운행: 왼쪽 서브트리부터 시작하여 루트 A까지 순회",
+      "screen_text_lines": [
+        "Inorder 운행 : Left -> Root -> Right",
+        "H, D, I"
+      ],
+      "screen_text": "Inorder 운행 : Left -> Root -> Right\nH, D, I",
+      "spoken_sentences": [
+        "해서 지금 우리는 레프트를 먼저 가야 돼요.",
+        "해서 A를 기준으로 해서 레프트를 찾아갔더니 이만큼이 또 있습니다.",
+        "그럼 여기서도 또 쪼개야 되겠죠?",
+        "여러 개가 있으니까.",
+        "해서 B라는 거를 루트로 봤을 때 B라는 거를 기준으로 봤을 때 얘가 루트가 되는 거고 그다음에 D H I 요 세 개가 또 뭐가 돼요?",
+        "레프트가 되겠죠?",
+        "그리고 요 E 하나가 라이트가 되는 거고요.",
+        "그럼 맨 처음에 A를 기준으로 봤을 때 레프트를 찾아갔더니 이만큼이 있고 이만큼에서 또 B라는 거를 루트로 봤을 때 레프트 레프트를 찾아가야 되니까 레프트를 찾아갔더니 또 요 세 개가 있죠?",
+        "그러면 또 요 세 개를 기준으로 봤을 때 D가 D가 루트죠?",
+        "그럼 이 D를 기준으로 봤을 때 레프트 그럼 H죠.",
+        "해서 얘는 H가 제일 처음에 운행이 됩니다.",
+        "먼저 나와요.",
+        "H가 나오고 그다음에 얘 끝났으니까 루트로 가야 되겠죠?",
+        "루트로 올라갔더니 뭐가 있어요?",
+        "우리 D가 있죠 D.",
+        "해서 그 다음에 나오는 게 D.",
+        "그다음에 레프트 루트 끝났어요.",
+        "레프트 루트가 끝났으면 라이트로 찾아가야죠?",
+        "D를 기준으로 봤을 때 라이트로 찾아가니까 I가 있네요.",
+        "해서 I."
+      ],
+      "spoken_text": "해서 지금 우리는 레프트를 먼저 가야 돼요. 해서 A를 기준으로 해서 레프트를 찾아갔더니 이만큼이 또 있습니다. 그럼 여기서도 또 쪼개야 되겠죠? 여러 개가 있으니까. 해서 B라는 거를 루트로 봤을 때 B라는 거를 기준으로 봤을 때 얘가 루트가 되는 거고 그다음에 D H I 요 세 개가 또 뭐가 돼요? 레프트가 되겠죠? 그리고 요 E 하나가 라이트가 되는 거고요. 그럼 맨 처음에 A를 기준으로 봤을 때 레프트를 찾아갔더니 이만큼이 있고 이만큼에서 또 B라는 거를 루트로 봤을 때 레프트 레프트를 찾아가야 되니까 레프트를 찾아갔더니 또 요 세 개가 있죠? 그러면 또 요 세 개를 기준으로 봤을 때 D가 D가 루트죠? 그럼 이 D를 기준으로 봤을 때 레프트 그럼 H죠. 해서 얘는 H가 제일 처음에 운행이 됩니다. 먼저 나와요. H가 나오고 그다음에 얘 끝났으니까 루트로 가야 되겠죠? 루트로 올라갔더니 뭐가 있어요? 우리 D가 있죠 D. 해서 그 다음에 나오는 게 D. 그다음에 레프트 루트 끝났어요. 레프트 루트가 끝났으면 라이트로 찾아가야죠? D를 기준으로 봤을 때 라이트로 찾아가니까 I가 있네요. 해서 I.",
+      "highlight_keywords": [
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-079",
+      "segment_index": 79,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:08:18",
+      "end_time_hms": "00:09:30",
+      "start_seconds": 498,
+      "end_seconds": 570,
+      "duration_seconds": 72,
+      "timeline_summary": "Inorder 운행: 전체 트리 순회 완료 (H D I B E A F C G)",
+      "screen_text_lines": [
+        "Inorder 운행 : Left -> Root -> Right",
+        "H, D, I, B, E, A, F, C, G"
+      ],
+      "screen_text": "Inorder 운행 : Left -> Root -> Right\nH, D, I, B, E, A, F, C, G",
+      "spoken_sentences": [
+        "그러면 B를 기준으로 봤을 때 레프트가 다 끝난 거예요.",
+        "B를 기준으로.",
+        "그럼 레프트가 다 끝났으니까 루트로 가야 되겠죠?",
+        "해서 레프트 끝내고 루트를 봤더니 루트에는 뭐가 있다 B가 있더라.",
+        "해서 B로 찾아갈 거고요.",
+        "그다음에 이 B를 기준으로 봤을 때 레프트 끝났고 루트도 끝났습니다.",
+        "해서 라이트로 찾아갔더니 뭐가 있어요?",
+        "우리 E가 있는 거죠.",
+        "해서 그 다음에 방문되는 게 E.",
+        "그러면 A라는 거를 기준으로 봤을 때 이 레프트가 싹 다 끝난 거라고요.",
+        "레프트가 끝났으면 어디 찾아간다?",
+        "우리는 루트 찾아가더라.",
+        "해서 레프트가 끝나서 루트로 왔더니 뭐가 있다 A가 있더라.",
+        "해서 A.",
+        "그러면 A를 기준으로 봤을 때 레프트 끝났고 루트 끝났어요.",
+        "그럼 라이트로 찾아가야죠?",
+        "라이트로 찾아왔더니 요렇게 또 세 개가 있죠?",
+        "그러면 또 C라는 거를 루트로 보는 거예요.",
+        "그럼 우리는 맨 처음에 찾아갈 때 레프트를 먼저 찾아가야 되니까 이 C를 기준으로 봤을 때 레프트는 F가 되겠죠?",
+        "해서 F.",
+        "그러면 이 C를 기준으로 봤을 때 왼쪽이 끝났어요.",
+        "레프트가 끝났으니까 루트로 올라가야죠?",
+        "루트 갔더니 뭐예요?",
+        "C.",
+        "그다음에 C를 기준으로 봤을 때 레프트 끝났고 루트 끝났습니다.",
+        "그럼 라이트로 가야죠?",
+        "라이트로 왔더니 뭐가 있다 G가 있더라.",
+        "해서 지금처럼 요렇게 인오더 인오더로 우리가 방문을 하게 되면 그때 방문 순서가 지금처럼 요렇게 된다고요."
+      ],
+      "spoken_text": "그러면 B를 기준으로 봤을 때 레프트가 다 끝난 거예요. B를 기준으로. 그럼 레프트가 다 끝났으니까 루트로 가야 되겠죠? 해서 레프트 끝내고 루트를 봤더니 루트에는 뭐가 있다 B가 있더라. 해서 B로 찾아갈 거고요. 그다음에 이 B를 기준으로 봤을 때 레프트 끝났고 루트도 끝났습니다. 해서 라이트로 찾아갔더니 뭐가 있어요? 우리 E가 있는 거죠. 해서 그 다음에 방문되는 게 E. 그러면 A라는 거를 기준으로 봤을 때 이 레프트가 싹 다 끝난 거라고요. 레프트가 끝났으면 어디 찾아간다? 우리는 루트 찾아가더라. 해서 레프트가 끝나서 루트로 왔더니 뭐가 있다 A가 있더라. 해서 A. 그러면 A를 기준으로 봤을 때 레프트 끝났고 루트 끝났어요. 그럼 라이트로 찾아가야죠? 라이트로 찾아왔더니 요렇게 또 세 개가 있죠? 그러면 또 C라는 거를 루트로 보는 거예요. 그럼 우리는 맨 처음에 찾아갈 때 레프트를 먼저 찾아가야 되니까 이 C를 기준으로 봤을 때 레프트는 F가 되겠죠? 해서 F. 그러면 이 C를 기준으로 봤을 때 왼쪽이 끝났어요. 레프트가 끝났으니까 루트로 올라가야죠? 루트 갔더니 뭐예요? C. 그다음에 C를 기준으로 봤을 때 레프트 끝났고 루트 끝났습니다. 그럼 라이트로 가야죠? 라이트로 왔더니 뭐가 있다 G가 있더라. 해서 지금처럼 요렇게 인오더 인오더로 우리가 방문을 하게 되면 그때 방문 순서가 지금처럼 요렇게 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Inorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-080",
+      "segment_index": 80,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:09:30",
+      "end_time_hms": "00:10:37",
+      "start_seconds": 570,
+      "end_seconds": 637,
+      "duration_seconds": 67,
+      "timeline_summary": "복잡한 트리의 Postorder 운행 전략 및 그룹화",
+      "screen_text_lines": [
+        "Postorder 운행 : Left -> Right -> Root"
+      ],
+      "screen_text": "Postorder 운행 : Left -> Right -> Root",
+      "spoken_sentences": [
+        "해서 이 인오더 운행법은 레프트 루트 라이트다.",
+        "레프트 루트 라이트다.",
+        "요거 꼭 기억하셔야 돼요.",
+        "그다음에 지금처럼 요런 트리가 있을 때 이거를 포스트오더 포스트오더로 운행 한번 해보자고요.",
+        "포스트오더라는 거는 루트가 어디에 있다?",
+        "마지막에 있더라.",
+        "해서 레프트 라이트 루트 이 순서대로 방문을 합니다.",
+        "그러면 또 지금처럼 트리에 정점들이 많으니까 노드가 많으니까 이것도 쪼개보자고요.",
+        "그러면 지금 A라는 거를 기준으로 봤을 때 A라는 거를 기준으로 봤을 때 얘가 루트가 되는 거고 그러면 A를 기준으로 봤을 때 레프트 그럼 레프트에는 지금 요만큼이 들어 있는 거고 그리고 라이트에는 지금 요만큼 들어 있는 거죠.",
+        "그리고 B라는 거를 기준으로 봤을 때 B를 루트로 봤을 때 레프트가 지금 요 세 개가 있는 거고 라이트가 지금 요거 하나 있는 거죠."
+      ],
+      "spoken_text": "해서 이 인오더 운행법은 레프트 루트 라이트다. 레프트 루트 라이트다. 요거 꼭 기억하셔야 돼요. 그다음에 지금처럼 요런 트리가 있을 때 이거를 포스트오더 포스트오더로 운행 한번 해보자고요. 포스트오더라는 거는 루트가 어디에 있다? 마지막에 있더라. 해서 레프트 라이트 루트 이 순서대로 방문을 합니다. 그러면 또 지금처럼 트리에 정점들이 많으니까 노드가 많으니까 이것도 쪼개보자고요. 그러면 지금 A라는 거를 기준으로 봤을 때 A라는 거를 기준으로 봤을 때 얘가 루트가 되는 거고 그러면 A를 기준으로 봤을 때 레프트 그럼 레프트에는 지금 요만큼이 들어 있는 거고 그리고 라이트에는 지금 요만큼 들어 있는 거죠. 그리고 B라는 거를 기준으로 봤을 때 B를 루트로 봤을 때 레프트가 지금 요 세 개가 있는 거고 라이트가 지금 요거 하나 있는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-081",
+      "segment_index": 81,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:10:37",
+      "end_time_hms": "00:11:20",
+      "start_seconds": 637,
+      "end_seconds": 680,
+      "duration_seconds": 43,
+      "timeline_summary": "Postorder 운행: 왼쪽 서브트리의 가장 왼쪽 단말 노드부터 시작",
+      "screen_text_lines": [
+        "Postorder 운행 : Left -> Right -> Root",
+        "H, I"
+      ],
+      "screen_text": "Postorder 운행 : Left -> Right -> Root\nH, I",
+      "spoken_sentences": [
+        "자 지금 얘는 레프트 라이트 루트 순이에요.",
+        "A를 기준으로 봤을 때 맨 처음에 우리는 레프트 레프트를 먼저 찾아가야 됩니다.",
+        "A를 기준으로 봤을 때 레프트 갔더니 이만큼이 있고 이만큼에서 또 B라는 거를 루트로 봤을 때 맨 처음에 우리는 레프트를 먼저 찾아가야 되니까 레프트를 찾아갔더니 또 요 세 개가 있죠?",
+        "그러면 또 D라는 거를 또 기준으로 봤을 때 레프트를 먼저 가야 됩니다.",
+        "해서 맨 처음에 레프트를 찾아가게 되면 뭐가 있다?",
+        "우리 H가 있더라.",
+        "해서 맨 처음에 H 찾아갈 거고요.",
+        "그다음에 H가 끝나고 라이트로 넘어가야죠?",
+        "해서 H가 끝나고 라이트로 넘어갔더니 뭐가 있더라?",
+        "우리 I가 있더라.",
+        "I."
+      ],
+      "spoken_text": "자 지금 얘는 레프트 라이트 루트 순이에요. A를 기준으로 봤을 때 맨 처음에 우리는 레프트 레프트를 먼저 찾아가야 됩니다. A를 기준으로 봤을 때 레프트 갔더니 이만큼이 있고 이만큼에서 또 B라는 거를 루트로 봤을 때 맨 처음에 우리는 레프트를 먼저 찾아가야 되니까 레프트를 찾아갔더니 또 요 세 개가 있죠? 그러면 또 D라는 거를 또 기준으로 봤을 때 레프트를 먼저 가야 됩니다. 해서 맨 처음에 레프트를 찾아가게 되면 뭐가 있다? 우리 H가 있더라. 해서 맨 처음에 H 찾아갈 거고요. 그다음에 H가 끝나고 라이트로 넘어가야죠? 해서 H가 끝나고 라이트로 넘어갔더니 뭐가 있더라? 우리 I가 있더라. I.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-082",
+      "segment_index": 82,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:11:20",
+      "end_time_hms": "00:12:07",
+      "start_seconds": 680,
+      "end_seconds": 727,
+      "duration_seconds": 47,
+      "timeline_summary": "Postorder 운행: 왼쪽 서브트리 순회 완료 (H I D E B 방문)",
+      "screen_text_lines": [
+        "Postorder 운행 : Left -> Right -> Root",
+        "H, I, D, E, B"
+      ],
+      "screen_text": "Postorder 운행 : Left -> Right -> Root\nH, I, D, E, B",
+      "spoken_sentences": [
+        "그리고 레프트 라이트 끝났어요.",
+        "레프트 라이트 끝나고 어디로 간다?",
+        "루트로 가더라.",
+        "루트에 갔더니 뭐가 있더라?",
+        "우리 D가 있더라.",
+        "그러면 B를 기준으로 봤을 때 이 레프트가 싹 다 끝난 거예요.",
+        "레프트가 끝났으니까 어디 찾아가야 돼요?",
+        "우리 라이트 찾아가야죠?",
+        "라이트에 찾아갔더니 뭐가 있어요?",
+        "우리 E가 있죠?",
+        "해서 그 다음에 방문되는 곳이 우리 E요.",
+        "그러면 B를 기준으로 봤을 때 레프트 끝났고 라이트도 끝났습니다.",
+        "그럼 뭐해주면 돼요?",
+        "우리 루트로 찾아가면 되겠죠?",
+        "루트 갔더니 B가 있네요 B.",
+        "해서 B.",
+        "그럼 B도 끝났어요."
+      ],
+      "spoken_text": "그리고 레프트 라이트 끝났어요. 레프트 라이트 끝나고 어디로 간다? 루트로 가더라. 루트에 갔더니 뭐가 있더라? 우리 D가 있더라. 그러면 B를 기준으로 봤을 때 이 레프트가 싹 다 끝난 거예요. 레프트가 끝났으니까 어디 찾아가야 돼요? 우리 라이트 찾아가야죠? 라이트에 찾아갔더니 뭐가 있어요? 우리 E가 있죠? 해서 그 다음에 방문되는 곳이 우리 E요. 그러면 B를 기준으로 봤을 때 레프트 끝났고 라이트도 끝났습니다. 그럼 뭐해주면 돼요? 우리 루트로 찾아가면 되겠죠? 루트 갔더니 B가 있네요 B. 해서 B. 그럼 B도 끝났어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-083",
+      "segment_index": 83,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:12:07",
+      "end_time_hms": "00:13:30",
+      "start_seconds": 727,
+      "end_seconds": 810,
+      "duration_seconds": 83,
+      "timeline_summary": "Postorder 운행: 전체 트리 순회 완료 (H I D E B F G C A)",
+      "screen_text_lines": [
+        "Postorder 운행 : Left -> Right -> Root",
+        "H, I, D, E, B, F, G, C, A"
+      ],
+      "screen_text": "Postorder 운행 : Left -> Right -> Root\nH, I, D, E, B, F, G, C, A",
+      "spoken_sentences": [
+        "그러면 A를 기준으로 봤을 때 이 레프트가 싹 다 끝났다고요.",
+        "레프트가 끝났으니까 어디 찾아가야 돼요?",
+        "우리는 라이트 찾아가야 됩니다.",
+        "라이트에 찾아갔더니 요 C 요 C를 루트로 봤을 때 우리는 맨 처음에 레프트 라이트 루트 순으로 가야 되니까 우리가 맨 처음에 레프트 찾아가서 F를 만나겠죠?",
+        "해서 그다음에 F.",
+        "그다음에 레프트가 끝났으니까 라이트로 가야죠?",
+        "라이트로 왔더니 뭐가 있다?",
+        "G가 있더라.",
+        "그다음에 C를 기준으로 봤을 때 레프트 라이트 끝났고 루트로 가야죠?",
+        "루트에 갔더니 뭐가 있다?",
+        "우리 C가 있더라.",
+        "그러면 지금 A를 기준으로 봤을 때 레프트는 아까 끝났고 방금 라이트가 끝난 거죠.",
+        "해서 레프트 라이트 끝났으니까 마지막에 어디 찾아간다?",
+        "루트 찾아가더라.",
+        "해서 마지막으로 방문하는 게 우리 A요.",
+        "요렇게 해서 우리가 포스트오더로 운행을 했을 때 그때 방문되는 순서가 지금처럼 요렇게 됩니다."
+      ],
+      "spoken_text": "그러면 A를 기준으로 봤을 때 이 레프트가 싹 다 끝났다고요. 레프트가 끝났으니까 어디 찾아가야 돼요? 우리는 라이트 찾아가야 됩니다. 라이트에 찾아갔더니 요 C 요 C를 루트로 봤을 때 우리는 맨 처음에 레프트 라이트 루트 순으로 가야 되니까 우리가 맨 처음에 레프트 찾아가서 F를 만나겠죠? 해서 그다음에 F. 그다음에 레프트가 끝났으니까 라이트로 가야죠? 라이트로 왔더니 뭐가 있다? G가 있더라. 그다음에 C를 기준으로 봤을 때 레프트 라이트 끝났고 루트로 가야죠? 루트에 갔더니 뭐가 있다? 우리 C가 있더라. 그러면 지금 A를 기준으로 봤을 때 레프트는 아까 끝났고 방금 라이트가 끝난 거죠. 해서 레프트 라이트 끝났으니까 마지막에 어디 찾아간다? 루트 찾아가더라. 해서 마지막으로 방문하는 게 우리 A요. 요렇게 해서 우리가 포스트오더로 운행을 했을 때 그때 방문되는 순서가 지금처럼 요렇게 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Postorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_024-seg-084",
+      "segment_index": 84,
+      "subtopic_index": 4,
+      "subtopic_id": "0116_116",
+      "subtopic_title": "트리의 운행법",
+      "subtopic_sequence": 116,
+      "subtopic_number": "116",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-mBaSMb7IbY",
+      "start_time_hms": "00:13:30",
+      "end_time_hms": "00:14:49",
+      "start_seconds": 810,
+      "end_seconds": 889,
+      "duration_seconds": 79,
+      "timeline_summary": "트리 운행법 핵심 요약 및 학습 권장",
+      "screen_text_lines": [
+        "트리를 구성하는 각 노드들을 찾아가는 방법을 운행법(Traversal)이라 함.",
+        "이진 트리를 운행하는 방법은 산술식의 표기법과 연관성을 갖는다.",
+        "이진 트리의 운행법은 다음 세 가지가 있음.",
+        "Preorder 운행 : Root -> Left -> Right 순으로 운행함."
+      ],
+      "screen_text": "트리를 구성하는 각 노드들을 찾아가는 방법을 운행법(Traversal)이라 함.\n이진 트리를 운행하는 방법은 산술식의 표기법과 연관성을 갖는다.\n이진 트리의 운행법은 다음 세 가지가 있음.\nPreorder 운행 : Root -> Left -> Right 순으로 운행함.",
+      "spoken_sentences": [
+        "해서 우리 트리 운행법에는 프리오더 인오더 포스트오더하고 이렇게 세 가지가 있어요.",
+        "이 세 가지의 차이는 뭐다?",
+        "루트가 앞에 있냐 중간에 있냐 아니면 마지막에 있냐 그 순서예요 그 순서.",
+        "요 운행법 정확하게 여러분들 외우고 계셔야 돼요.",
+        "외우고 있어야 돼요.",
+        "만약에 그림 여러 개 정점 노드가 여러 개인 그런 트리를 주고 인오더로 운행을 했을 때 그때 순서가 어떻게 되냐?",
+        "물어봤는데 인오더가 어떻게 운행이 되는지 그 순서를 모르면 아예 손도 못 대잖아요 문제를.",
+        "해서 기본적으로 얘는 먼저 알고 계셔야 되고 그리고 지금 방금 우리가 문제 풀었듯이 지금처럼 이렇게 노드가 여러 개인 게 나오면 얘네들을 아까 제가 쪼갰던 것처럼 전부 다 다 쪼개라고요.",
+        "쪼개서 보면 쉽습니다.",
+        "강의가 끝나자마자 여러분들이 책에다가 책에다가 직접 인오더 프리오더 포스트오더 해서 직접 문제를 풀어보시고 지나가시길 바랍니다."
+      ],
+      "spoken_text": "해서 우리 트리 운행법에는 프리오더 인오더 포스트오더하고 이렇게 세 가지가 있어요. 이 세 가지의 차이는 뭐다? 루트가 앞에 있냐 중간에 있냐 아니면 마지막에 있냐 그 순서예요 그 순서. 요 운행법 정확하게 여러분들 외우고 계셔야 돼요. 외우고 있어야 돼요. 만약에 그림 여러 개 정점 노드가 여러 개인 그런 트리를 주고 인오더로 운행을 했을 때 그때 순서가 어떻게 되냐? 물어봤는데 인오더가 어떻게 운행이 되는지 그 순서를 모르면 아예 손도 못 대잖아요 문제를. 해서 기본적으로 얘는 먼저 알고 계셔야 되고 그리고 지금 방금 우리가 문제 풀었듯이 지금처럼 이렇게 노드가 여러 개인 게 나오면 얘네들을 아까 제가 쪼갰던 것처럼 전부 다 다 쪼개라고요. 쪼개서 보면 쉽습니다. 강의가 끝나자마자 여러분들이 책에다가 책에다가 직접 인오더 프리오더 포스트오더 해서 직접 문제를 풀어보시고 지나가시길 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Preorder 운행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Root",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Right",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "Left",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    }
+  ]
+}

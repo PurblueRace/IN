@@ -1,0 +1,3416 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_061",
+    "sequence": 61,
+    "title": "연산자와 우선순위",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 22,
+    "review_count": 7,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_346",
+      "chapter_360",
+      "chapter_132",
+      "chapter_139"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_1f41d50f30fedeee",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          16
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 16
+        },
+        "source_explanation": "r1은 (4 <= 4)가 참이므로 1, r2는 (3 > 0)과 (4 < 5)가 모두 참이므로 1, r3는 !2이므로 거짓(0)이 됩니다. 따라서 r1+r2+r3 = 1+1+0 = 2가 출력됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h>\nint main(void) {\nint a = 3, b = 4, c = 2;\nint r1, r2, r3;\nr1 = b <= 4 || c == 2;\nr2 = (a > 0) && (b < 5);\nr3 = !c;\nprintf(\"%d\", r1+r2+r3);\nreturn 0;\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "0"
+          },
+          {
+            "label": "2",
+            "text": "1"
+          },
+          {
+            "label": "3",
+            "text": "2"
+          },
+          {
+            "label": "4",
+            "text": "3"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "2"
+        ],
+        "answer_text": "2"
+      },
+      "explanation": {
+        "source_text": "r1은 (4 <= 4)가 참이므로 1, r2는 (3 > 0)과 (4 < 5)가 모두 참이므로 1, r3는 !2이므로 거짓(0)이 됩니다. 따라서 r1+r2+r3 = 1+1+0 = 2가 출력됩니다.",
+        "summary": "C언어의 관계 및 논리 연산 결과를 계산하는 문제입니다.",
+        "why_correct": [
+          "r1: b(4) <= 4는 참(1)이고, OR(||) 연산이므로 결과는 1입니다.",
+          "r2: a(3) > 0은 참(1)이고 b(4) < 5도 참(1)이므로 AND(&&) 연산 결과는 1입니다.",
+          "r3: !c(!2)는 0(거짓)입니다. 최종 합은 1+1+0 = 2입니다."
+        ],
+        "why_others_wrong": [
+          "0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+        ],
+        "key_concepts": [
+          "논리 연산자 (&&, ||, !)",
+          "관계 연산자 (<=, ==, >)",
+          "C언어에서 참은 1, 거짓은 0"
+        ],
+        "memory_cues": [
+          "논리 연산에서 참은 1, 거짓은 0으로 치환하여 계산하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 2'인데 이 선택지는 '0'이므로 일치하지 않습니다. 0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+          },
+          {
+            "label": "2",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 2'인데 이 선택지는 '1'이므로 일치하지 않습니다. 0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+          },
+          {
+            "label": "3",
+            "text": "2",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 2'와 일치합니다. r1: b(4) <= 4는 참(1)이고, OR(||) 연산이므로 결과는 1입니다. r2: a(3) > 0은 참(1)이고 b(4) < 5도 참(1)이므로 AND(&&) 연산 결과는 1입니다."
+          },
+          {
+            "label": "4",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 2'인데 이 선택지는 '3'이므로 일치하지 않습니다. 0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? #include <stdio.h> int main(void) { int a = 3, b = 4, c = 2; int r1, r2, r3; r1 = b <= 4 || c == 2; r2 = (a > 0) && (b < 5); r3 = !c; printf(\"%d\", r1+r2+r3); return 0; }",
+          "핵심 개념을 떠올립니다. 논리 연산자 (&&, ||, !), 관계 연산자 (<=, ==, >), C언어에서 참은 1, 거짓은 0",
+          "정답 판단 근거를 적용합니다. r1: b(4) <= 4는 참(1)이고, OR(||) 연산이므로 결과는 1입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+        ],
+        "exam_traps": [
+          "0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '논리 연산자 (&&, ||, !)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '관계 연산자 (<=, ==, >)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'C언어에서 참은 1, 거짓은 0'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 논리 연산에서 참은 1, 거짓은 0으로 치환하여 계산하세요."
+        ],
+        "detailed_summary": "C언어의 관계 및 논리 연산 결과를 계산하는 문제입니다. r1은 (4 <= 4)가 참이므로 1, r2는 (3 > 0)과 (4 < 5)가 모두 참이므로 1, r3는 !2이므로 거짓(0)이 됩니다. 따라서 r1+r2+r3 = 1+1+0 = 2가 출력됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? #include <stdio.h> int main(void) { int a = 3, b = 4, c = 2; int r1, r2, r3; r1 = b <= 4 || c == 2; r2 = (a > 0) && (b < 5); r3 = !c; printf(\"%d\", r1+r2+r3); return 0; } 정답입니다. 이 선택지는 실제 정답인 '3번 2'와 일치합니다. r1: b(4) <= 4는 참(1)이고, OR(||) 연산이므로 결과는 1입니다. r2: a(3) > 0은 참(1)이고 b(4) < 5도 참(1)이므로 AND(&&) 연산 결과는 1입니다. 시험 포인트는 0, 1, 3은 연산 결과의 합산 과정에서 논리값(참=1, 거짓=0)을 잘못 계산했을 때 나오는 오답입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "논리 연산자",
+        "관계 연산자",
+        "연산자 우선순위"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_bb5c373088008db4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          17
+        ],
+        "page_span": {
+          "start_page": 17,
+          "end_page": 17
+        },
+        "source_explanation": "C언어의 산술 연산자에는 +, -, *, /, %가 있습니다. =는 대입 연산자입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C언어에서 산술 연산자가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "%"
+          },
+          {
+            "label": "2",
+            "text": "*"
+          },
+          {
+            "label": "3",
+            "text": "/"
+          },
+          {
+            "label": "4",
+            "text": "="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "="
+        ],
+        "answer_text": "="
+      },
+      "explanation": {
+        "source_text": "C언어의 산술 연산자에는 +, -, *, /, %가 있습니다. =는 대입 연산자입니다.",
+        "summary": "C언어의 연산자 분류를 묻는 기초 문제입니다.",
+        "why_correct": [
+          "'='는 변수에 값을 저장하는 대입(할당) 연산자입니다."
+        ],
+        "why_others_wrong": [
+          "%는 나머지 연산자입니다.",
+          "*는 곱셈 연산자입니다.",
+          "/는 나눗셈 연산자입니다. 이들은 모두 산술 연산에 해당합니다."
+        ],
+        "key_concepts": [
+          "산술 연산자 (+, -, *, /, %)",
+          "대입 연산자 (=)"
+        ],
+        "memory_cues": [
+          "수학 계산에 쓰이는 기호는 산술, 값을 넣는 기호는 대입입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "%",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '%'이므로 일치하지 않습니다. %는 나머지 연산자입니다. *는 곱셈 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "*",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '*'이므로 일치하지 않습니다. %는 나머지 연산자입니다. *는 곱셈 연산자입니다."
+          },
+          {
+            "label": "3",
+            "text": "/",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '/'이므로 일치하지 않습니다. %는 나머지 연산자입니다. *는 곱셈 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "=",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. '='는 변수에 값을 저장하는 대입(할당) 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 산술 연산자가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 산술 연산자 (+, -, *, /, %), 대입 연산자 (=)",
+          "정답 판단 근거를 적용합니다. '='는 변수에 값을 저장하는 대입(할당) 연산자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. %는 나머지 연산자입니다."
+        ],
+        "exam_traps": [
+          "%는 나머지 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '산술 연산자 (+, -, *, /, %)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '대입 연산자 (=)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 수학 계산에 쓰이는 기호는 산술, 값을 넣는 기호는 대입입니다."
+        ],
+        "detailed_summary": "C언어의 연산자 분류를 묻는 기초 문제입니다. C언어의 산술 연산자에는 +, -, *, /, %가 있습니다. =는 대입 연산자입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 산술 연산자가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. '='는 변수에 값을 저장하는 대입(할당) 연산자입니다. 시험 포인트는 %는 나머지 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "산술 연산자",
+        "대입 연산자",
+        "C언어",
+        "연산자 종류"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d444ddfb992d607f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          17
+        ],
+        "page_span": {
+          "start_page": 17,
+          "end_page": 17
+        },
+        "source_explanation": "!a && !b는 드모르간 법칙에 의해 !(a || b)와 동일합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가?\n#include <stdio.h>\nmain() {\nint a, b;\nfor (a = 0; a < 2; a++)\nfor (b = 0; b < 2; b++)\nprintf(\"%d\", !a && !b);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "!a || !b"
+          },
+          {
+            "label": "2",
+            "text": "!(a || b)"
+          },
+          {
+            "label": "3",
+            "text": "a && b"
+          },
+          {
+            "label": "4",
+            "text": "a || b"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "!(a || b)"
+        ],
+        "answer_text": "!(a || b)"
+      },
+      "explanation": {
+        "source_text": "!a && !b는 드모르간 법칙에 의해 !(a || b)와 동일합니다.",
+        "summary": "논리 연산의 드모르간 법칙을 적용하는 문제입니다.",
+        "why_correct": [
+          "드모르간 법칙에 따르면 NOT A AND NOT B는 NOT (A OR B)와 같습니다."
+        ],
+        "why_others_wrong": [
+          "!a || !b는 !(a && b)와 같습니다.",
+          "a && b와 a || b는 부정 연산이 포함되지 않은 기본 연산입니다."
+        ],
+        "key_concepts": [
+          "드모르간 법칙 (De Morgan's laws)",
+          "논리 부정 (NOT)",
+          "논리곱 (AND)",
+          "논리합 (OR)"
+        ],
+        "memory_cues": [
+          "부정을 괄호 밖으로 빼면 연산자(AND/OR)가 뒤집힌다고 외우세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "!a || !b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 '!a || !b'이므로 일치하지 않습니다. !a || !b는 !(a && b)와 같습니다. a && b와 a || b는 부정 연산이 포함되지 않은 기본 연산입니다."
+          },
+          {
+            "label": "2",
+            "text": "!(a || b)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 !(a || b)'와 일치합니다. 드모르간 법칙에 따르면 NOT A AND NOT B는 NOT (A OR B)와 같습니다."
+          },
+          {
+            "label": "3",
+            "text": "a && b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 'a && b'이므로 일치하지 않습니다. !a || !b는 !(a && b)와 같습니다. a && b와 a || b는 부정 연산이 포함되지 않은 기본 연산입니다."
+          },
+          {
+            "label": "4",
+            "text": "a || b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 'a || b'이므로 일치하지 않습니다. !a || !b는 !(a && b)와 같습니다. a && b와 a || b는 부정 연산이 포함되지 않은 기본 연산입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가? #include <stdio.h> main() { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(\"%d\", !a && !b); }",
+          "핵심 개념을 떠올립니다. 드모르간 법칙 (De Morgan's laws), 논리 부정 (NOT), 논리곱 (AND), 논리합 (OR)",
+          "정답 판단 근거를 적용합니다. 드모르간 법칙에 따르면 NOT A AND NOT B는 NOT (A OR B)와 같습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. !a || !b는 !(a && b)와 같습니다."
+        ],
+        "exam_traps": [
+          "!a || !b는 !(a && b)와 같습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '드모르간 법칙 (De Morgan's laws)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리 부정 (NOT)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리곱 (AND)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리합 (OR)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 부정을 괄호 밖으로 빼면 연산자(AND/OR)가 뒤집힌다고 외우세요."
+        ],
+        "detailed_summary": "논리 연산의 드모르간 법칙을 적용하는 문제입니다. !a && !b는 드모르간 법칙에 의해 !(a || b)와 동일합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가? #include <stdio.h> main() { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(\"%d\", !a && !b); } 정답입니다. 이 선택지는 실제 정답인 '2번 !(a || b)'와 일치합니다. 드모르간 법칙에 따르면 NOT A AND NOT B는 NOT (A OR B)와 같습니다. 시험 포인트는 !a || !b는 !(a && b)와 같습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "드모르간 법칙",
+        "논리 연산",
+        "C언어",
+        "불 대수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_17edee66c706af71",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          36
+        ],
+        "page_span": {
+          "start_page": 36,
+          "end_page": 36
+        },
+        "source_explanation": "왼쪽 시프트 연산(<<)은 비트를 왼쪽으로 이동시킬 때마다 2배씩 증가합니다. 2비트 왼쪽으로 이동하면 2^2인 4를 곱한 것과 같습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 C언어에서 정수형 변수 a에 4를 곱한 결과와 같은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "a << 2"
+          },
+          {
+            "label": "2",
+            "text": "a >> 2"
+          },
+          {
+            "label": "3",
+            "text": "a ^ 2"
+          },
+          {
+            "label": "4",
+            "text": "a ** 2"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "a << 2"
+        ],
+        "answer_text": "a << 2"
+      },
+      "explanation": {
+        "source_text": "왼쪽 시프트 연산(<<)은 비트를 왼쪽으로 이동시킬 때마다 2배씩 증가합니다. 2비트 왼쪽으로 이동하면 2^2인 4를 곱한 것과 같습니다.",
+        "summary": "비트 시프트 연산을 이용한 곱셈 표현",
+        "why_correct": [
+          "왼쪽으로 n비트 시프트하면 2의 n승을 곱한 효과가 있습니다. 따라서 2비트 시프트는 4를 곱한 것과 같습니다."
+        ],
+        "why_others_wrong": [
+          ">> 2는 4로 나눈 결과입니다.",
+          "^는 XOR 비트 연산자입니다.",
+          "**는 C언어에서 사용되지 않는 연산자입니다(파이썬의 거듭제곱)."
+        ],
+        "key_concepts": [
+          "왼쪽 시프트 (<<)",
+          "오른쪽 시프트 (>>)",
+          "비트 연산"
+        ],
+        "memory_cues": [
+          "왼쪽으로 밀면 커지고(곱하기), 오른쪽으로 밀면 작아진다(나누기)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "a << 2",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 a << 2'와 일치합니다. 왼쪽으로 n비트 시프트하면 2의 n승을 곱한 효과가 있습니다. 따라서 2비트 시프트는 4를 곱한 것과 같습니다."
+          },
+          {
+            "label": "2",
+            "text": "a >> 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a << 2'인데 이 선택지는 'a >> 2'이므로 일치하지 않습니다. >> 2는 4로 나눈 결과입니다. ^는 XOR 비트 연산자입니다."
+          },
+          {
+            "label": "3",
+            "text": "a ^ 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a << 2'인데 이 선택지는 'a ^ 2'이므로 일치하지 않습니다. >> 2는 4로 나눈 결과입니다. ^는 XOR 비트 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "a ** 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 a << 2'인데 이 선택지는 'a ** 2'이므로 일치하지 않습니다. >> 2는 4로 나눈 결과입니다. ^는 XOR 비트 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 C언어에서 정수형 변수 a에 4를 곱한 결과와 같은 것은?",
+          "핵심 개념을 떠올립니다. 왼쪽 시프트 (<<), 오른쪽 시프트 (>>), 비트 연산",
+          "정답 판단 근거를 적용합니다. 왼쪽으로 n비트 시프트하면 2의 n승을 곱한 효과가 있습니다. 따라서 2비트 시프트는 4를 곱한 것과 같습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. >> 2는 4로 나눈 결과입니다."
+        ],
+        "exam_traps": [
+          ">> 2는 4로 나눈 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '왼쪽 시프트 (<<)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오른쪽 시프트 (>>)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비트 연산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 왼쪽으로 밀면 커지고(곱하기), 오른쪽으로 밀면 작아진다(나누기)."
+        ],
+        "detailed_summary": "비트 시프트 연산을 이용한 곱셈 표현 왼쪽 시프트 연산(<<)은 비트를 왼쪽으로 이동시킬 때마다 2배씩 증가합니다. 2비트 왼쪽으로 이동하면 2^2인 4를 곱한 것과 같습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 C언어에서 정수형 변수 a에 4를 곱한 결과와 같은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 a << 2'와 일치합니다. 왼쪽으로 n비트 시프트하면 2의 n승을 곱한 효과가 있습니다. 따라서 2비트 시프트는 4를 곱한 것과 같습니다. 시험 포인트는 >> 2는 4로 나눈 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "시프트 연산",
+        "비트 연산"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_57db1ab472562a51",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "page_span": {
+          "start_page": 36,
+          "end_page": 41
+        },
+        "source_explanation": "a++는 후치 증감 연산자로, 현재의 a 값(10)을 수식에 먼저 사용한 후 a를 1 증가시킵니다. 따라서 b = 10 + 2 = 12가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h>\nint main(int argc, char* argv[]) {\nint a = 10;\nint b = (a++)+2;\nprintf(\"%d\", b);\nreturn 0;\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "13"
+          },
+          {
+            "label": "2",
+            "text": "10"
+          },
+          {
+            "label": "3",
+            "text": "11"
+          },
+          {
+            "label": "4",
+            "text": "12"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "12"
+        ],
+        "answer_text": "12"
+      },
+      "explanation": {
+        "source_text": "a++는 후치 증감 연산자로, 현재의 a 값(10)을 수식에 먼저 사용한 후 a를 1 증가시킵니다. 따라서 b = 10 + 2 = 12가 됩니다.",
+        "summary": "후치 증감 연산자가 포함된 수식 계산 문제",
+        "why_correct": [
+          "a++는 해당 라인의 연산이 끝난 뒤에 값이 증가하므로, b 계산 시에는 기존 값인 10이 사용되어 10+2=12가 됩니다."
+        ],
+        "why_others_wrong": [
+          "13은 전치 연산(++a)일 경우의 결과입니다.",
+          "10과 11은 연산 과정에서 도출되지 않는 값입니다."
+        ],
+        "key_concepts": [
+          "후치 증감 연산자 (a++)",
+          "연산 우선순위"
+        ],
+        "memory_cues": [
+          "후치는 나중에, 전치는 먼저!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "13",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 12'인데 이 선택지는 '13'이므로 일치하지 않습니다. 13은 전치 연산(++a)일 경우의 결과입니다. 10과 11은 연산 과정에서 도출되지 않는 값입니다."
+          },
+          {
+            "label": "2",
+            "text": "10",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 12'인데 이 선택지는 '10'이므로 일치하지 않습니다. 13은 전치 연산(++a)일 경우의 결과입니다. 10과 11은 연산 과정에서 도출되지 않는 값입니다."
+          },
+          {
+            "label": "3",
+            "text": "11",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 12'인데 이 선택지는 '11'이므로 일치하지 않습니다. 13은 전치 연산(++a)일 경우의 결과입니다. 10과 11은 연산 과정에서 도출되지 않는 값입니다."
+          },
+          {
+            "label": "4",
+            "text": "12",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 12'와 일치합니다. a++는 해당 라인의 연산이 끝난 뒤에 값이 증가하므로, b 계산 시에는 기존 값인 10이 사용되어 10+2=12가 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는? #include <stdio.h> int main(int argc, char* argv[]) { int a = 10; int b = (a++)+2; printf(\"%d\", b); return 0; }",
+          "핵심 개념을 떠올립니다. 후치 증감 연산자 (a++), 연산 우선순위",
+          "정답 판단 근거를 적용합니다. a++는 해당 라인의 연산이 끝난 뒤에 값이 증가하므로, b 계산 시에는 기존 값인 10이 사용되어 10+2=12가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 13은 전치 연산(++a)일 경우의 결과입니다."
+        ],
+        "exam_traps": [
+          "13은 전치 연산(++a)일 경우의 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '후치 증감 연산자 (a++)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연산 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 후치는 나중에, 전치는 먼저!"
+        ],
+        "detailed_summary": "후치 증감 연산자가 포함된 수식 계산 문제 a++는 후치 증감 연산자로, 현재의 a 값(10)을 수식에 먼저 사용한 후 a를 1 증가시킵니다. 따라서 b = 10 + 2 = 12가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는? #include <stdio.h> int main(int argc, char* argv[]) { int a = 10; int b = (a++)+2; printf(\"%d\", b); return 0; } 정답입니다. 이 선택지는 실제 정답인 '4번 12'와 일치합니다. a++는 해당 라인의 연산이 끝난 뒤에 값이 증가하므로, b 계산 시에는 기존 값인 10이 사용되어 10+2=12가 됩니다. 시험 포인트는 13은 전치 연산(++a)일 경우의 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "C언어",
+        "증감 연산자",
+        "후치 연산"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8fc2b51e40809852",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "page_span": {
+          "start_page": 36,
+          "end_page": 41
+        },
+        "source_explanation": "0xA5는 2진수로 1010 0101이고, 0x0F는 0000 1111입니다. 두 값을 비트 AND(&) 연산하면 0000 0101이 되며, 이를 16진수로 출력하면 5입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램이 실행되었을 때, 실행 결과는?\n#include <stdio.h>\nint main(int argc, char* argv[]) {\nint a = 0xA5;\nint b = 0x0F;\nprintf(\"%x\", a&b);\nreturn 0;\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A5"
+          },
+          {
+            "label": "2",
+            "text": "0F"
+          },
+          {
+            "label": "3",
+            "text": "5"
+          },
+          {
+            "label": "4",
+            "text": "AF"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "5"
+        ],
+        "answer_text": "5"
+      },
+      "explanation": {
+        "source_text": "0xA5는 2진수로 1010 0101이고, 0x0F는 0000 1111입니다. 두 값을 비트 AND(&) 연산하면 0000 0101이 되며, 이를 16진수로 출력하면 5입니다.",
+        "summary": "C언어의 비트 AND 연산 결과 출력 문제",
+        "why_correct": [
+          "0xA5(10100101)와 0x0F(00001111)를 AND 연산하면 하위 4비트 중 1인 부분만 남아 00000101(5)이 됩니다."
+        ],
+        "why_others_wrong": [
+          "A5는 a의 값 자체입니다.",
+          "0F는 b의 값 자체입니다.",
+          "AF는 두 값의 OR 연산 결과입니다."
+        ],
+        "key_concepts": [
+          "비트 연산자 &",
+          "16진수 표기법 0x"
+        ],
+        "memory_cues": [
+          "AND 연산은 둘 다 1일 때만 1이다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 5'인데 이 선택지는 'A5'이므로 일치하지 않습니다. A5는 a의 값 자체입니다. 0F는 b의 값 자체입니다."
+          },
+          {
+            "label": "2",
+            "text": "0F",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 5'인데 이 선택지는 '0F'이므로 일치하지 않습니다. A5는 a의 값 자체입니다. 0F는 b의 값 자체입니다."
+          },
+          {
+            "label": "3",
+            "text": "5",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 5'와 일치합니다. 0xA5(10100101)와 0x0F(00001111)를 AND 연산하면 하위 4비트 중 1인 부분만 남아 00000101(5)이 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "AF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 5'인데 이 선택지는 'AF'이므로 일치하지 않습니다. A5는 a의 값 자체입니다. 0F는 b의 값 자체입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는? #include <stdio.h> int main(int argc, char* argv[]) { int a = 0xA5; int b = 0x0F; printf(\"%x\", a&b); return 0; }",
+          "핵심 개념을 떠올립니다. 비트 연산자 &, 16진수 표기법 0x",
+          "정답 판단 근거를 적용합니다. 0xA5(10100101)와 0x0F(00001111)를 AND 연산하면 하위 4비트 중 1인 부분만 남아 00000101(5)이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. A5는 a의 값 자체입니다."
+        ],
+        "exam_traps": [
+          "A5는 a의 값 자체입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비트 연산자 &'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '16진수 표기법 0x'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. AND 연산은 둘 다 1일 때만 1이다."
+        ],
+        "detailed_summary": "C언어의 비트 AND 연산 결과 출력 문제 0xA5는 2진수로 1010 0101이고, 0x0F는 0000 1111입니다. 두 값을 비트 AND(&) 연산하면 0000 0101이 되며, 이를 16진수로 출력하면 5입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때, 실행 결과는? #include <stdio.h> int main(int argc, char* argv[]) { int a = 0xA5; int b = 0x0F; printf(\"%x\", a&b); return 0; } 정답입니다. 이 선택지는 실제 정답인 '3번 5'와 일치합니다. 0xA5(10100101)와 0x0F(00001111)를 AND 연산하면 하위 4비트 중 1인 부분만 남아 00000101(5)이 됩니다. 시험 포인트는 A5는 a의 값 자체입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "C언어",
+        "비트 연산",
+        "AND 연산",
+        "16진수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3f36a37bc8a86fe2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 46
+        },
+        "source_explanation": "mx는 a < b ? b : a에 의해 2가 됩니다. mx가 1이 아니므로 else 문으로 이동하여 mn = b < mx ? d : c를 계산합니다. 2 < 2는 거짓이므로 mn은 c의 값인 3이 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class ovr {\npublic static void main(String[] args) {\nint a = 1, b = 2, c = 3, d = 4;\nint mx, mn;\nmx = a < b ? b : a;\nif (mx == 1) {\nmn = a > mx ? b : a;\n}\nelse {\nmn = b < mx ? d : c;\n}\nSystem.out.println(mn);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "2"
+          },
+          {
+            "label": "3",
+            "text": "3"
+          },
+          {
+            "label": "4",
+            "text": "4"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "3"
+        ],
+        "answer_text": "3"
+      },
+      "explanation": {
+        "source_text": "mx는 a < b ? b : a에 의해 2가 됩니다. mx가 1이 아니므로 else 문으로 이동하여 mn = b < mx ? d : c를 계산합니다. 2 < 2는 거짓이므로 mn은 c의 값인 3이 됩니다.",
+        "summary": "Java의 삼항 연산자와 if-else 조건문의 흐름을 파악하는 문제입니다.",
+        "why_correct": [
+          "mx = 1 < 2 ? 2 : 1 이므로 mx = 2입니다. mx == 1이 거짓이므로 else 블록이 실행됩니다. mn = 2 < 2 ? 4 : 3 에서 2 < 2는 거짓이므로 mn = 3이 됩니다."
+        ],
+        "why_others_wrong": [
+          "mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+        ],
+        "key_concepts": [
+          "삼항 연산자 (condition ? true : false)",
+          "if-else 제어 흐름"
+        ],
+        "memory_cues": [
+          "삼항 연산자는 '조건 ? 참일때 : 거짓일때' 순서임을 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '1'이므로 일치하지 않습니다. mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '2'이므로 일치하지 않습니다. mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "3",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 3'와 일치합니다. mx = 1 < 2 ? 2 : 1 이므로 mx = 2입니다. mx == 1이 거짓이므로 else 블록이 실행됩니다. mn = 2 < 2 ? 4 : 3 에서 2 < 2는 거짓이므로 mn = 3이 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '4'이므로 일치하지 않습니다. mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ? d : c; } System.out.println(mn); } }",
+          "핵심 개념을 떠올립니다. 삼항 연산자 (condition ? true : false), if-else 제어 흐름",
+          "정답 판단 근거를 적용합니다. mx = 1 < 2 ? 2 : 1 이므로 mx = 2입니다. mx == 1이 거짓이므로 else 블록이 실행됩니다. mn = 2 < 2 ? 4 : 3 에서 2 < 2는 거짓이므로 mn = 3이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+        ],
+        "exam_traps": [
+          "mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '삼항 연산자 (condition ? true : false)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'if-else 제어 흐름'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 삼항 연산자는 '조건 ? 참일때 : 거짓일때' 순서임을 기억하세요."
+        ],
+        "detailed_summary": "Java의 삼항 연산자와 if-else 조건문의 흐름을 파악하는 문제입니다. mx는 a < b ? b : a에 의해 2가 됩니다. mx가 1이 아니므로 else 문으로 이동하여 mn = b < mx ? d : c를 계산합니다. 2 < 2는 거짓이므로 mn은 c의 값인 3이 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ? d : c; } System.out.println(mn); } } 정답입니다. 이 선택지는 실제 정답인 '3번 3'와 일치합니다. mx = 1 < 2 ? 2 : 1 이므로 mx = 2입니다. mx == 1이 거짓이므로 else 블록이 실행됩니다. mn = 2 < 2 ? 4 : 3 에서 2 < 2는 거짓이므로 mn = 3이 됩니다. 시험 포인트는 mx가 1인 경우나 삼항 연산자의 조건이 참인 경우를 잘못 계산하면 다른 답이 나올 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "삼항 연산자",
+        "조건문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2425646d7dbcce98",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          55
+        ],
+        "page_span": {
+          "start_page": 55,
+          "end_page": 55
+        },
+        "source_explanation": "전문가의 조언 | • 보기에 제시된 연산자 중 우선 순위가 가장 높은 것은 %입니다.\n• 보기에 제시된 연산자를 우선 순위가 높은 것에서 낮은 것 순으로 나열하면, 산술 연산자(%) → 시프트 연산자(<<) → 관계 연산자(==) → 비트 연산자(^) 순입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "63. 다음 중 JAVA에서 우선 순위가 가장 높은 연산자는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "%"
+          },
+          {
+            "label": "2",
+            "text": "^"
+          },
+          {
+            "label": "3",
+            "text": "=="
+          },
+          {
+            "label": "4",
+            "text": "<<"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "%"
+        ],
+        "answer_text": "%"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | • 보기에 제시된 연산자 중 우선 순위가 가장 높은 것은 %입니다.\n• 보기에 제시된 연산자를 우선 순위가 높은 것에서 낮은 것 순으로 나열하면, 산술 연산자(%) → 시프트 연산자(<<) → 관계 연산자(==) → 비트 연산자(^) 순입니다.",
+        "summary": "Java 언어에서 여러 연산자가 섞여 있을 때의 실행 순서(우선순위)를 묻는 문제입니다.",
+        "why_correct": [
+          "산술 연산자(%, *, / 등)는 시프트, 관계, 비트 연산자보다 우선순위가 높습니다."
+        ],
+        "why_others_wrong": [
+          "시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+        ],
+        "key_concepts": [
+          "연산자 우선순위"
+        ],
+        "memory_cues": [
+          "산-시-관-비 (산술-시프트-관계-비트)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "%",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 %'와 일치합니다. 산술 연산자(%, *, / 등)는 시프트, 관계, 비트 연산자보다 우선순위가 높습니다."
+          },
+          {
+            "label": "2",
+            "text": "^",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %'인데 이 선택지는 '^'이므로 일치하지 않습니다. 시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+          },
+          {
+            "label": "3",
+            "text": "==",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %'인데 이 선택지는 '=='이므로 일치하지 않습니다. 시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+          },
+          {
+            "label": "4",
+            "text": "<<",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %'인데 이 선택지는 '<<'이므로 일치하지 않습니다. 시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 다음 중 JAVA에서 우선 순위가 가장 높은 연산자는?",
+          "핵심 개념을 떠올립니다. 연산자 우선순위",
+          "정답 판단 근거를 적용합니다. 산술 연산자(%, *, / 등)는 시프트, 관계, 비트 연산자보다 우선순위가 높습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+        ],
+        "exam_traps": [
+          "시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 산-시-관-비 (산술-시프트-관계-비트)"
+        ],
+        "detailed_summary": "Java 언어에서 여러 연산자가 섞여 있을 때의 실행 순서(우선순위)를 묻는 문제입니다. 전문가의 조언 | • 보기에 제시된 연산자 중 우선 순위가 가장 높은 것은 %입니다. • 보기에 제시된 연산자를 우선 순위가 높은 것에서 낮은 것 순으로 나열하면, 산술 연산자(%) → 시프트 연산자(<<) → 관계 연산자(==) → 비트 연산자(^) 순입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 다음 중 JAVA에서 우선 순위가 가장 높은 연산자는? 정답입니다. 이 선택지는 실제 정답인 '1번 %'와 일치합니다. 산술 연산자(%, *, / 등)는 시프트, 관계, 비트 연산자보다 우선순위가 높습니다. 시험 포인트는 시프트(<<), 관계(==), 비트(^) 연산자는 산술 연산자보다 낮은 순위를 가집니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "연산자 우선순위",
+        "산술 연산자",
+        "시프트 연산자",
+        "비트 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_57a84f6d352dda5e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          55
+        ],
+        "page_span": {
+          "start_page": 55,
+          "end_page": 55
+        },
+        "source_explanation": "전문가의 조언 | ||는 두 개의 논리값 중 하나라도 참이면 참을 결과로 얻는 논리 연산자입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "62. 다음 중 JAVA의 비교 연산자가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": ">"
+          },
+          {
+            "label": "2",
+            "text": "||"
+          },
+          {
+            "label": "3",
+            "text": "=="
+          },
+          {
+            "label": "4",
+            "text": "!="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "||"
+        ],
+        "answer_text": "||"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | ||는 두 개의 논리값 중 하나라도 참이면 참을 결과로 얻는 논리 연산자입니다.",
+        "summary": "Java 언어의 연산자 종류를 구분하는 문제입니다.",
+        "why_correct": [
+          "'||'는 논리 OR 연산자로, 두 피연산자의 논리합을 계산하는 논리 연산자입니다."
+        ],
+        "why_others_wrong": [
+          ">, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+        ],
+        "key_concepts": [
+          "비교 연산자",
+          "논리 연산자"
+        ],
+        "memory_cues": [
+          "|| = 논리 OR"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": ">",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ||'인데 이 선택지는 '>'이므로 일치하지 않습니다. >, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "||",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 ||'와 일치합니다. '||'는 논리 OR 연산자로, 두 피연산자의 논리합을 계산하는 논리 연산자입니다."
+          },
+          {
+            "label": "3",
+            "text": "==",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ||'인데 이 선택지는 '=='이므로 일치하지 않습니다. >, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "!=",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ||'인데 이 선택지는 '!='이므로 일치하지 않습니다. >, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 62. 다음 중 JAVA의 비교 연산자가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 비교 연산자, 논리 연산자",
+          "정답 판단 근거를 적용합니다. '||'는 논리 OR 연산자로, 두 피연산자의 논리합을 계산하는 논리 연산자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. >, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+        ],
+        "exam_traps": [
+          ">, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비교 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. || = 논리 OR"
+        ],
+        "detailed_summary": "Java 언어의 연산자 종류를 구분하는 문제입니다. 전문가의 조언 | ||는 두 개의 논리값 중 하나라도 참이면 참을 결과로 얻는 논리 연산자입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 62. 다음 중 JAVA의 비교 연산자가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 ||'와 일치합니다. '||'는 논리 OR 연산자로, 두 피연산자의 논리합을 계산하는 논리 연산자입니다. 시험 포인트는 >, ==, !=는 두 값의 크기나 일치 여부를 비교하는 비교(관계) 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "비교 연산자",
+        "논리 연산자",
+        "관계 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_83f5eacc4aed469f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          57
+        ],
+        "page_span": {
+          "start_page": 57,
+          "end_page": 57
+        },
+        "source_explanation": "y = x++에서 y에 5를 저장한 후 x가 6이 됩니다. z = --x에서 x를 5로 감소시킨 후 z에 5를 저장합니다. 따라서 x, y, z 모두 5입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "Java"
+        ],
+        "chapter_label": "Java",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > Java",
+        "chapter_id": "chapter_132"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "76. 다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class Operator {\npublic static void main(String[] args) {\nint x=5, y=0, z=0;\ny = x++;\nz = --x;\nSystem.out.print(x + \", \" + y + \", \" + z);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "5, 5, 5"
+          },
+          {
+            "label": "2",
+            "text": "5, 6, 5"
+          },
+          {
+            "label": "3",
+            "text": "6, 5, 5"
+          },
+          {
+            "label": "4",
+            "text": "5, 6, 4"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "5, 5, 5"
+        ],
+        "answer_text": "5, 5, 5"
+      },
+      "explanation": {
+        "source_text": "y = x++에서 y에 5를 저장한 후 x가 6이 됩니다. z = --x에서 x를 5로 감소시킨 후 z에 5를 저장합니다. 따라서 x, y, z 모두 5입니다.",
+        "summary": "Java의 증감 연산자(++, --)의 전위 및 후위 연산 순서를 묻는 문제입니다.",
+        "why_correct": [
+          "y = x++: y에 현재 x값(5)을 대입한 후 x를 6으로 증가시킵니다.",
+          "z = --x: x를 먼저 5로 감소시킨 후 z에 대입합니다. 최종적으로 x=5, y=5, z=5가 됩니다."
+        ],
+        "why_others_wrong": [
+          "전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+        ],
+        "key_concepts": [
+          "후위 증가(x++)",
+          "전위 감소(--x)"
+        ],
+        "memory_cues": [
+          "앞에 있으면 먼저 계산, 뒤에 있으면 나중에 계산"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "5, 5, 5",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 5, 5, 5'와 일치합니다. y = x++: y에 현재 x값(5)을 대입한 후 x를 6으로 증가시킵니다. z = --x: x를 먼저 5로 감소시킨 후 z에 대입합니다. 최종적으로 x=5, y=5, z=5가 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "5, 6, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 5, 5, 5'인데 이 선택지는 '5, 6, 5'이므로 일치하지 않습니다. 전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "6, 5, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 5, 5, 5'인데 이 선택지는 '6, 5, 5'이므로 일치하지 않습니다. 전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "5, 6, 4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 5, 5, 5'인데 이 선택지는 '5, 6, 4'이므로 일치하지 않습니다. 전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class Operator { public static void main(String[] args) { int x=5, y=0, z=0; y = x++; z = --x; System.out.print(x + \", \" + y + \", \" + z); } }",
+          "핵심 개념을 떠올립니다. 후위 증가(x++), 전위 감소(--x)",
+          "정답 판단 근거를 적용합니다. y = x++: y에 현재 x값(5)을 대입한 후 x를 6으로 증가시킵니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+        ],
+        "exam_traps": [
+          "전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '후위 증가(x++)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '전위 감소(--x)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 앞에 있으면 먼저 계산, 뒤에 있으면 나중에 계산"
+        ],
+        "detailed_summary": "Java의 증감 연산자(++, --)의 전위 및 후위 연산 순서를 묻는 문제입니다. y = x++에서 y에 5를 저장한 후 x가 6이 됩니다. z = --x에서 x를 5로 감소시킨 후 z에 5를 저장합니다. 따라서 x, y, z 모두 5입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class Operator { public static void main(String[] args) { int x=5, y=0, z=0; y = x++; z = --x; System.out.print(x + \", \" + y + \", \" + z); } } 정답입니다. 이 선택지는 실제 정답인 '1번 5, 5, 5'와 일치합니다. y = x++: y에 현재 x값(5)을 대입한 후 x를 6으로 증가시킵니다. z = --x: x를 먼저 5로 감소시킨 후 z에 대입합니다. 최종적으로 x=5, y=5, z=5가 됩니다. 시험 포인트는 전위/후위 연산 순서를 혼동하면 6이나 4가 포함된 결과가 나올 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "증감 연산자",
+        "전위 연산",
+        "후위 연산"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4daadeb49c72d510",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 보기에서는 대입 연산자인 =의 우선순위가 가장 낮습니다.\n• 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "70. 다음 중 JAVA에서 우선순위가 가장 낮은 연산자는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "--"
+          },
+          {
+            "label": "2",
+            "text": "%"
+          },
+          {
+            "label": "3",
+            "text": "&"
+          },
+          {
+            "label": "4",
+            "text": "="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "="
+        ],
+        "answer_text": "="
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 보기에서는 대입 연산자인 =의 우선순위가 가장 낮습니다.\n• 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순입니다.",
+        "summary": "자바 연산자들 간의 우선순위를 비교하는 문제입니다.",
+        "why_correct": [
+          "대입 연산자(=)는 거의 모든 연산자 중에서 우선순위가 가장 낮습니다."
+        ],
+        "why_others_wrong": [
+          "--는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+        ],
+        "key_concepts": [
+          "연산자 우선순위",
+          "대입 연산자"
+        ],
+        "memory_cues": [
+          "대입(=)은 항상 마지막에"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "--",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '--'이므로 일치하지 않습니다. --는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+          },
+          {
+            "label": "2",
+            "text": "%",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '%'이므로 일치하지 않습니다. --는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+          },
+          {
+            "label": "3",
+            "text": "&",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '&'이므로 일치하지 않습니다. --는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+          },
+          {
+            "label": "4",
+            "text": "=",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. 대입 연산자(=)는 거의 모든 연산자 중에서 우선순위가 가장 낮습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 70. 다음 중 JAVA에서 우선순위가 가장 낮은 연산자는?",
+          "핵심 개념을 떠올립니다. 연산자 우선순위, 대입 연산자",
+          "정답 판단 근거를 적용합니다. 대입 연산자(=)는 거의 모든 연산자 중에서 우선순위가 가장 낮습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. --는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+        ],
+        "exam_traps": [
+          "--는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '대입 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 대입(=)은 항상 마지막에"
+        ],
+        "detailed_summary": "자바 연산자들 간의 우선순위를 비교하는 문제입니다. 전문가의 조언 | 보기에서는 대입 연산자인 =의 우선순위가 가장 낮습니다. • 연산자의 우선순위는 높은 것부터 차례대로 단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입, 순서 연산자 순입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 70. 다음 중 JAVA에서 우선순위가 가장 낮은 연산자는? 정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. 대입 연산자(=)는 거의 모든 연산자 중에서 우선순위가 가장 낮습니다. 시험 포인트는 --는 단항 연산자, %는 산술 연산자, &는 비트 연산자로 대입 연산자보다 우선순위가 높습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "JAVA 연산자",
+        "연산자 우선순위",
+        "대입 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8f447ec9e115f47c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | =는 대입 연산자입니다.\n• C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "72. C 언어에서 산술 연산자가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "%"
+          },
+          {
+            "label": "2",
+            "text": "*"
+          },
+          {
+            "label": "3",
+            "text": "/"
+          },
+          {
+            "label": "4",
+            "text": "="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "="
+        ],
+        "answer_text": "="
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | =는 대입 연산자입니다.\n• C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다.",
+        "summary": "C언어의 연산자 분류 중 산술 연산자를 구분하는 문제입니다.",
+        "why_correct": [
+          "=는 변수에 값을 할당하는 대입 연산자입니다."
+        ],
+        "why_others_wrong": [
+          "%, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "key_concepts": [
+          "산술 연산자",
+          "대입 연산자"
+        ],
+        "memory_cues": [
+          "산술 = 사칙연산+나머지"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "%",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '%'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "*",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '*'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          },
+          {
+            "label": "3",
+            "text": "/",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ='인데 이 선택지는 '/'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "=",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. =는 변수에 값을 할당하는 대입 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 산술 연산자가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 산술 연산자, 대입 연산자",
+          "정답 판단 근거를 적용합니다. =는 변수에 값을 할당하는 대입 연산자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "exam_traps": [
+          "%, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '산술 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '대입 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 산술 = 사칙연산+나머지"
+        ],
+        "detailed_summary": "C언어의 연산자 분류 중 산술 연산자를 구분하는 문제입니다. 전문가의 조언 | =는 대입 연산자입니다. • C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 산술 연산자가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 ='와 일치합니다. =는 변수에 값을 할당하는 대입 연산자입니다. 시험 포인트는 %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "산술 연산자",
+        "대입 연산자",
+        "C언어 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a59ca92559cfba1f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "제시된 연산자 중 대입 연산자나 비교 연산자 계열이 우선순위가 낮습니다. 보기 중에서는 '=='(관계 연산자)가 가장 낮습니다. (참고: 실제로는 대입 연산자 '='가 가장 낮지만 보기에는 없음)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 JAVA에서 우선순위가 가장 낮은 연산자는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "--"
+          },
+          {
+            "label": "2",
+            "text": "%"
+          },
+          {
+            "label": "3",
+            "text": "&"
+          },
+          {
+            "label": "4",
+            "text": "=="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "=="
+        ],
+        "answer_text": "=="
+      },
+      "explanation": {
+        "source_text": "제시된 연산자 중 대입 연산자나 비교 연산자 계열이 우선순위가 낮습니다. 보기 중에서는 '=='(관계 연산자)가 가장 낮습니다. (참고: 실제로는 대입 연산자 '='가 가장 낮지만 보기에는 없음)",
+        "summary": "자바 연산자들의 우선순위를 비교하는 문제입니다.",
+        "why_correct": [
+          "단항(--) > 산술(%) > 비트(&) > 관계(==) 순으로 우선순위가 높으므로 '=='가 가장 낮습니다."
+        ],
+        "why_others_wrong": [
+          "--는 단항 연산자로 가장 높습니다.",
+          "%는 산술 연산자로 관계 연산자보다 높습니다.",
+          "&는 비트 연산자로 관계 연산자보다 높습니다."
+        ],
+        "key_concepts": [
+          "연산자 우선순위"
+        ],
+        "memory_cues": [
+          "단산시관비논조대 (단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "--",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 =='인데 이 선택지는 '--'이므로 일치하지 않습니다. --는 단항 연산자로 가장 높습니다. %는 산술 연산자로 관계 연산자보다 높습니다."
+          },
+          {
+            "label": "2",
+            "text": "%",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 =='인데 이 선택지는 '%'이므로 일치하지 않습니다. --는 단항 연산자로 가장 높습니다. %는 산술 연산자로 관계 연산자보다 높습니다."
+          },
+          {
+            "label": "3",
+            "text": "&",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 =='인데 이 선택지는 '&'이므로 일치하지 않습니다. --는 단항 연산자로 가장 높습니다. %는 산술 연산자로 관계 연산자보다 높습니다."
+          },
+          {
+            "label": "4",
+            "text": "==",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 =='와 일치합니다. 단항(--) > 산술(%) > 비트(&) > 관계(==) 순으로 우선순위가 높으므로 '=='가 가장 낮습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 JAVA에서 우선순위가 가장 낮은 연산자는?",
+          "핵심 개념을 떠올립니다. 연산자 우선순위",
+          "정답 판단 근거를 적용합니다. 단항(--) > 산술(%) > 비트(&) > 관계(==) 순으로 우선순위가 높으므로 '=='가 가장 낮습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. --는 단항 연산자로 가장 높습니다."
+        ],
+        "exam_traps": [
+          "--는 단항 연산자로 가장 높습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단산시관비논조대 (단항, 산술, 시프트, 관계, 비트, 논리, 조건, 대입)"
+        ],
+        "detailed_summary": "자바 연산자들의 우선순위를 비교하는 문제입니다. 제시된 연산자 중 대입 연산자나 비교 연산자 계열이 우선순위가 낮습니다. 보기 중에서는 '=='(관계 연산자)가 가장 낮습니다. (참고: 실제로는 대입 연산자 '='가 가장 낮지만 보기에는 없음) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 JAVA에서 우선순위가 가장 낮은 연산자는? 정답입니다. 이 선택지는 실제 정답인 '4번 =='와 일치합니다. 단항(--) > 산술(%) > 비트(&) > 관계(==) 순으로 우선순위가 높으므로 '=='가 가장 낮습니다. 시험 포인트는 --는 단항 연산자로 가장 높습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty in choice 4 label vs text"
+        ]
+      },
+      "keywords": [
+        "JAVA",
+        "연산자 우선순위",
+        "관계 연산자",
+        "산술 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b36d63f4a24deee3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열한 것은 1번입니다.\n• 연산자 우선순위는 괄호()가 가장 높고, 관계 연산자 중 (<, >)가 (==, !=)보다 높으며, 그 다음 논리 연산자(&&), 마지막으로 대입 연산자(=) 순입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "74. C 언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은?\n(ㄱ) ( )\n(ㄴ) ==\n(ㄷ) <\n(ㄹ) &&\n(ㅁ) =",
+        "choices": [
+          {
+            "label": "1",
+            "text": "(ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)"
+          },
+          {
+            "label": "2",
+            "text": "(ㄱ), (ㄴ), (ㄷ), (ㄹ), (ㅁ)"
+          },
+          {
+            "label": "3",
+            "text": "(ㄱ), (ㄹ), (ㅁ), (ㄷ), (ㄴ)"
+          },
+          {
+            "label": "4",
+            "text": "(ㄱ), (ㅁ), (ㄹ), (ㄴ), (ㄷ)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "(ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)"
+        ],
+        "answer_text": "(ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열한 것은 1번입니다.\n• 연산자 우선순위는 괄호()가 가장 높고, 관계 연산자 중 (<, >)가 (==, !=)보다 높으며, 그 다음 논리 연산자(&&), 마지막으로 대입 연산자(=) 순입니다.",
+        "summary": "C언어의 다양한 연산자들 간의 우선순위를 나열하는 문제입니다.",
+        "why_correct": [
+          "괄호 > 관계(<) > 동등(==) > 논리(&&) > 대입(=) 순서가 올바른 우선순위입니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+        ],
+        "key_concepts": [
+          "연산자 우선순위 계층"
+        ],
+        "memory_cues": [
+          "괄산시 관비논조대 (괄호, 산술, 시프트, 관계, 비트, 논리, 조건, 대입)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "(ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 (ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)'와 일치합니다. 괄호 > 관계(<) > 동등(==) > 논리(&&) > 대입(=) 순서가 올바른 우선순위입니다."
+          },
+          {
+            "label": "2",
+            "text": "(ㄱ), (ㄴ), (ㄷ), (ㄹ), (ㅁ)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 (ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)'인데 이 선택지는 '(ㄱ), (ㄴ), (ㄷ), (ㄹ), (ㅁ)'이므로 일치하지 않습니다. 다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+          },
+          {
+            "label": "3",
+            "text": "(ㄱ), (ㄹ), (ㅁ), (ㄷ), (ㄴ)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 (ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)'인데 이 선택지는 '(ㄱ), (ㄹ), (ㅁ), (ㄷ), (ㄴ)'이므로 일치하지 않습니다. 다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+          },
+          {
+            "label": "4",
+            "text": "(ㄱ), (ㅁ), (ㄹ), (ㄴ), (ㄷ)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 (ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)'인데 이 선택지는 '(ㄱ), (ㅁ), (ㄹ), (ㄴ), (ㄷ)'이므로 일치하지 않습니다. 다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. C 언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은? (ㄱ) ( ) (ㄴ) == (ㄷ) < (ㄹ) && (ㅁ) =",
+          "핵심 개념을 떠올립니다. 연산자 우선순위 계층",
+          "정답 판단 근거를 적용합니다. 괄호 > 관계(<) > 동등(==) > 논리(&&) > 대입(=) 순서가 올바른 우선순위입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '연산자 우선순위 계층'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 괄산시 관비논조대 (괄호, 산술, 시프트, 관계, 비트, 논리, 조건, 대입)"
+        ],
+        "detailed_summary": "C언어의 다양한 연산자들 간의 우선순위를 나열하는 문제입니다. 전문가의 조언 | 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열한 것은 1번입니다. • 연산자 우선순위는 괄호()가 가장 높고, 관계 연산자 중 (<, >)가 (==, !=)보다 높으며, 그 다음 논리 연산자(&&), 마지막으로 대입 연산자(=) 순입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. C 언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은? (ㄱ) ( ) (ㄴ) == (ㄷ) < (ㄹ) && (ㅁ) = 정답입니다. 이 선택지는 실제 정답인 '1번 (ㄱ), (ㄷ), (ㄴ), (ㄹ), (ㅁ)'와 일치합니다. 괄호 > 관계(<) > 동등(==) > 논리(&&) > 대입(=) 순서가 올바른 우선순위입니다. 시험 포인트는 다른 보기들은 관계 연산자 간의 선후 관계나 논리/대입 연산자의 위치가 잘못되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "연산자 우선순위",
+        "C언어",
+        "관계 연산자",
+        "논리 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4d0647ad6b5897ed",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          114
+        ],
+        "page_span": {
+          "start_page": 114,
+          "end_page": 114
+        },
+        "source_explanation": "<<는 비트 연산자(Shift)입니다. C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C 언어에서 산술 연산자가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "%"
+          },
+          {
+            "label": "2",
+            "text": "*"
+          },
+          {
+            "label": "3",
+            "text": "<<"
+          },
+          {
+            "label": "4",
+            "text": "/"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "<<"
+        ],
+        "answer_text": "<<"
+      },
+      "explanation": {
+        "source_text": "<<는 비트 연산자(Shift)입니다. C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다.",
+        "summary": "C언어의 연산자 분류를 묻는 기초 문제입니다.",
+        "why_correct": [
+          "'<<'는 비트 단위로 데이터를 이동시키는 비트 시프트 연산자입니다."
+        ],
+        "why_others_wrong": [
+          "%, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "key_concepts": [
+          "산술 연산자",
+          "비트 연산자"
+        ],
+        "memory_cues": [
+          "산술: 사칙연산 + 나머지(%)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "%",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 <<'인데 이 선택지는 '%'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "*",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 <<'인데 이 선택지는 '*'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          },
+          {
+            "label": "3",
+            "text": "<<",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 <<'와 일치합니다. '<<'는 비트 단위로 데이터를 이동시키는 비트 시프트 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "/",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 <<'인데 이 선택지는 '/'이므로 일치하지 않습니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C 언어에서 산술 연산자가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 산술 연산자, 비트 연산자",
+          "정답 판단 근거를 적용합니다. '<<'는 비트 단위로 데이터를 이동시키는 비트 시프트 연산자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "exam_traps": [
+          "%, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '산술 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비트 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 산술: 사칙연산 + 나머지(%)"
+        ],
+        "detailed_summary": "C언어의 연산자 분류를 묻는 기초 문제입니다. <<는 비트 연산자(Shift)입니다. C 언어의 산술 연산자에는 +, -, *, /, %가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C 언어에서 산술 연산자가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 <<'와 일치합니다. '<<'는 비트 단위로 데이터를 이동시키는 비트 시프트 연산자입니다. 시험 포인트는 %, *, /는 모두 수학적 계산을 수행하는 산술 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "산술 연산자",
+        "비트 연산자",
+        "시프트 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4e6051f5edeb25f7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "4(100)와 7(111)을 비트 OR(|) 연산하면 111이 되어 결과는 7입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\npublic static void main(String[] args) {\nint r = 4 | 7;\nSystem.out.print(r);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "0"
+          },
+          {
+            "label": "2",
+            "text": "2"
+          },
+          {
+            "label": "3",
+            "text": "4"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "7"
+        ],
+        "answer_text": "7"
+      },
+      "explanation": {
+        "source_text": "4(100)와 7(111)을 비트 OR(|) 연산하면 111이 되어 결과는 7입니다.",
+        "summary": "Java의 비트 단위 OR 연산 결과를 계산하는 문제입니다.",
+        "why_correct": [
+          "4는 2진수로 100, 7은 111입니다. 각 자릿수별로 하나라도 1이면 1이 되는 OR 연산을 수행하면 111이 나오며, 이는 10진수로 7입니다."
+        ],
+        "why_others_wrong": [
+          "AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+        ],
+        "key_concepts": [
+          "비트 연산자",
+          "OR 연산"
+        ],
+        "memory_cues": [
+          "100 | 111 = 111"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '0'이므로 일치하지 않습니다. AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '2'이므로 일치하지 않습니다. AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '4'이므로 일치하지 않습니다. AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 4는 2진수로 100, 7은 111입니다. 각 자릿수별로 하나라도 1이면 1이 되는 OR 연산을 수행하면 111이 나오며, 이는 10진수로 7입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { int r = 4 | 7; System.out.print(r); } }",
+          "핵심 개념을 떠올립니다. 비트 연산자, OR 연산",
+          "정답 판단 근거를 적용합니다. 4는 2진수로 100, 7은 111입니다. 각 자릿수별로 하나라도 1이면 1이 되는 OR 연산을 수행하면 111이 나오며, 이는 10진수로 7입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+        ],
+        "exam_traps": [
+          "AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비트 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OR 연산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 100 | 111 = 111"
+        ],
+        "detailed_summary": "Java의 비트 단위 OR 연산 결과를 계산하는 문제입니다. 4(100)와 7(111)을 비트 OR(|) 연산하면 111이 되어 결과는 7입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { int r = 4 | 7; System.out.print(r); } } 정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 4는 2진수로 100, 7은 111입니다. 각 자릿수별로 하나라도 1이면 1이 되는 OR 연산을 수행하면 111이 나오며, 이는 10진수로 7입니다. 시험 포인트는 AND(&) 연산이었다면 100(4)이 나왔을 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "비트 연산자",
+        "OR 연산",
+        "2진수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_be8558eb8759252f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          132
+        ],
+        "page_span": {
+          "start_page": 132,
+          "end_page": 132
+        },
+        "source_explanation": "비트 OR(|) 연산은 두 비트 중 하나라도 1이면 1이 되는 연산입니다. 4(0100)와 7(0111)을 OR 연산하면 0111이 되어 7이 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\npublic static void main(String[] args) {\nint r = 4 | 7;\nSystem.out.print(r);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "0"
+          },
+          {
+            "label": "2",
+            "text": "2"
+          },
+          {
+            "label": "3",
+            "text": "4"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "7"
+        ],
+        "answer_text": "7"
+      },
+      "explanation": {
+        "source_text": "비트 OR(|) 연산은 두 비트 중 하나라도 1이면 1이 되는 연산입니다. 4(0100)와 7(0111)을 OR 연산하면 0111이 되어 7이 됩니다.",
+        "summary": "자바의 비트 논리합(OR) 연산 결과를 묻는 문제입니다.",
+        "why_correct": [
+          "4는 이진수로 100, 7은 111입니다. 비트별 OR 연산을 수행하면 111이 되어 십진수 7이 됩니다."
+        ],
+        "why_others_wrong": [
+          "0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+        ],
+        "key_concepts": [
+          "비트 연산자",
+          "OR (|)"
+        ],
+        "memory_cues": [
+          "OR는 하나라도 1이면 1"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '0'이므로 일치하지 않습니다. 0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '2'이므로 일치하지 않습니다. 0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '4'이므로 일치하지 않습니다. 0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 4는 이진수로 100, 7은 111입니다. 비트별 OR 연산을 수행하면 111이 되어 십진수 7이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { int r = 4 | 7; System.out.print(r); } }",
+          "핵심 개념을 떠올립니다. 비트 연산자, OR (|)",
+          "정답 판단 근거를 적용합니다. 4는 이진수로 100, 7은 111입니다. 비트별 OR 연산을 수행하면 111이 되어 십진수 7이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+        ],
+        "exam_traps": [
+          "0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비트 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OR (|)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. OR는 하나라도 1이면 1"
+        ],
+        "detailed_summary": "자바의 비트 논리합(OR) 연산 결과를 묻는 문제입니다. 비트 OR(|) 연산은 두 비트 중 하나라도 1이면 1이 되는 연산입니다. 4(0100)와 7(0111)을 OR 연산하면 0111이 되어 7이 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { int r = 4 | 7; System.out.print(r); } } 정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 4는 이진수로 100, 7은 111입니다. 비트별 OR 연산을 수행하면 111이 되어 십진수 7이 됩니다. 시험 포인트는 0, 2, 4는 비트 연산 결과와 일치하지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "비트 연산",
+        "OR 연산",
+        "이진수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_35fbfeef21ab8411",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          133
+        ],
+        "page_span": {
+          "start_page": 133,
+          "end_page": 133
+        },
+        "source_explanation": "?는 조건 연산자(삼항 연산자)입니다. 비트 논리 연산자에는 &, |, ^, ~ 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C언어에서 비트 논리 연산자에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "^"
+          },
+          {
+            "label": "2",
+            "text": "?"
+          },
+          {
+            "label": "3",
+            "text": "&"
+          },
+          {
+            "label": "4",
+            "text": "~"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "?"
+        ],
+        "answer_text": "?"
+      },
+      "explanation": {
+        "source_text": "?는 조건 연산자(삼항 연산자)입니다. 비트 논리 연산자에는 &, |, ^, ~ 등이 있습니다.",
+        "summary": "C언어의 연산자 종류를 구분하는 문제입니다.",
+        "why_correct": [
+          "?는 조건에 따라 값을 선택하는 삼항 연산자이지 비트 단위 연산을 수행하는 연산자가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+        ],
+        "key_concepts": [
+          "비트 연산자",
+          "삼항 연산자"
+        ],
+        "memory_cues": [
+          "비트는 &, |, ^, ~, <<, >>"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "^",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ?'인데 이 선택지는 '^'이므로 일치하지 않습니다. ^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "?",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 ?'와 일치합니다. ?는 조건에 따라 값을 선택하는 삼항 연산자이지 비트 단위 연산을 수행하는 연산자가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "&",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ?'인데 이 선택지는 '&'이므로 일치하지 않습니다. ^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "~",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ?'인데 이 선택지는 '~'이므로 일치하지 않습니다. ^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 비트 논리 연산자에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 비트 연산자, 삼항 연산자",
+          "정답 판단 근거를 적용합니다. ?는 조건에 따라 값을 선택하는 삼항 연산자이지 비트 단위 연산을 수행하는 연산자가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+        ],
+        "exam_traps": [
+          "^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비트 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '삼항 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 비트는 &, |, ^, ~, <<, >>"
+        ],
+        "detailed_summary": "C언어의 연산자 종류를 구분하는 문제입니다. ?는 조건 연산자(삼항 연산자)입니다. 비트 논리 연산자에는 &, |, ^, ~ 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 비트 논리 연산자에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 ?'와 일치합니다. ?는 조건에 따라 값을 선택하는 삼항 연산자이지 비트 단위 연산을 수행하는 연산자가 아닙니다. 시험 포인트는 ^는 XOR, &는 AND, ~는 NOT 비트 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "비트 연산자",
+        "논리 연산자",
+        "삼항 연산자"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d57398248ed5e55a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          133
+        ],
+        "page_span": {
+          "start_page": 133,
+          "end_page": 133
+        },
+        "source_explanation": "하나라도 참이면 참을 반환하고, 둘 모두 거짓이어야 거짓을 반환하는 논리 연산자는 ||(논리 OR)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_360"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "자바에서 두 개의 논리 값 을 연산하여 하나라도 참(true)이면 참을 반환하고, 둘 모두 거짓(false)이어야 거짓을 반환하는 연산을 수행하는 연산자는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "=="
+          },
+          {
+            "label": "2",
+            "text": "&&"
+          },
+          {
+            "label": "3",
+            "text": "||"
+          },
+          {
+            "label": "4",
+            "text": "+="
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "||"
+        ],
+        "answer_text": "||"
+      },
+      "explanation": {
+        "source_text": "하나라도 참이면 참을 반환하고, 둘 모두 거짓이어야 거짓을 반환하는 논리 연산자는 ||(논리 OR)입니다.",
+        "summary": "논리 연산자 OR의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "|| 연산자는 논리합(OR)으로, 피연산자 중 하나만 true여도 결과가 true가 됩니다."
+        ],
+        "why_others_wrong": [
+          "==는 비교 연산자입니다.",
+          "&&는 논리곱(AND)으로 둘 다 참이어야 합니다.",
+          "+=는 복합 대입 연산자입니다."
+        ],
+        "key_concepts": [
+          "논리 연산자",
+          "OR (||)"
+        ],
+        "memory_cues": [
+          "OR는 '또는', 하나만 있어도 OK"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "==",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ||'인데 이 선택지는 '=='이므로 일치하지 않습니다. ==는 비교 연산자입니다. &&는 논리곱(AND)으로 둘 다 참이어야 합니다."
+          },
+          {
+            "label": "2",
+            "text": "&&",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ||'인데 이 선택지는 '&&'이므로 일치하지 않습니다. ==는 비교 연산자입니다. &&는 논리곱(AND)으로 둘 다 참이어야 합니다."
+          },
+          {
+            "label": "3",
+            "text": "||",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ||'와 일치합니다. || 연산자는 논리합(OR)으로, 피연산자 중 하나만 true여도 결과가 true가 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "+=",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ||'인데 이 선택지는 '+='이므로 일치하지 않습니다. ==는 비교 연산자입니다. &&는 논리곱(AND)으로 둘 다 참이어야 합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자바에서 두 개의 논리 값 을 연산하여 하나라도 참(true)이면 참을 반환하고, 둘 모두 거짓(false)이어야 거짓을 반환하는 연산을 수행하는 연산자는?",
+          "핵심 개념을 떠올립니다. 논리 연산자, OR (||)",
+          "정답 판단 근거를 적용합니다. || 연산자는 논리합(OR)으로, 피연산자 중 하나만 true여도 결과가 true가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ==는 비교 연산자입니다."
+        ],
+        "exam_traps": [
+          "==는 비교 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '논리 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OR (||)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. OR는 '또는', 하나만 있어도 OK"
+        ],
+        "detailed_summary": "논리 연산자 OR의 정의를 묻는 문제입니다. 하나라도 참이면 참을 반환하고, 둘 모두 거짓이어야 거짓을 반환하는 논리 연산자는 ||(논리 OR)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자바에서 두 개의 논리 값 을 연산하여 하나라도 참(true)이면 참을 반환하고, 둘 모두 거짓(false)이어야 거짓을 반환하는 연산을 수행하는 연산자는? 정답입니다. 이 선택지는 실제 정답인 '3번 ||'와 일치합니다. || 연산자는 논리합(OR)으로, 피연산자 중 하나만 true여도 결과가 true가 됩니다. 시험 포인트는 ==는 비교 연산자입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "논리 연산자",
+        "OR 연산",
+        "불리언"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_140d4c94a7d92532",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          155
+        ],
+        "page_span": {
+          "start_page": 155,
+          "end_page": 155
+        },
+        "source_explanation": "드모르강 법칙에 의해 !a && !b는 !(a || b)와 같습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가?\n```c\n#include <stdio.h>\nmain() {\nint a, b;\nfor (a = 0; a < 2; a++)\nfor (b = 0; b < 2; b++)\nprintf(\"%d\", !a && !b);\n}\n```\n(밑줄 친 부분: `!a && !b`)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "!a || !b"
+          },
+          {
+            "label": "2",
+            "text": "!(a || b)"
+          },
+          {
+            "label": "3",
+            "text": "a && b"
+          },
+          {
+            "label": "4",
+            "text": "a || b"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "!(a || b)"
+        ],
+        "answer_text": "!(a || b)"
+      },
+      "explanation": {
+        "source_text": "드모르강 법칙에 의해 !a && !b는 !(a || b)와 같습니다.",
+        "summary": "논리 연산의 드모르강 법칙을 이해하고 있는지 묻는 문제입니다.",
+        "why_correct": [
+          "드모르강 법칙에 따르면 'NOT A AND NOT B'는 'NOT (A OR B)'와 논리적으로 동일합니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+        ],
+        "key_concepts": [
+          "드모르강 법칙",
+          "논리 연산자"
+        ],
+        "memory_cues": [
+          "부정(!)을 밖으로 빼면 연산자(&& <-> ||)가 뒤집힌다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "!a || !b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 '!a || !b'이므로 일치하지 않습니다. 다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+          },
+          {
+            "label": "2",
+            "text": "!(a || b)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 !(a || b)'와 일치합니다. 드모르강 법칙에 따르면 'NOT A AND NOT B'는 'NOT (A OR B)'와 논리적으로 동일합니다."
+          },
+          {
+            "label": "3",
+            "text": "a && b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 'a && b'이므로 일치하지 않습니다. 다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+          },
+          {
+            "label": "4",
+            "text": "a || b",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 !(a || b)'인데 이 선택지는 'a || b'이므로 일치하지 않습니다. 다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가? ```c #include <stdio.h> main() { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(\"%d\", !a && !b); } ``` (밑줄 친 부분: `!a && !b`)",
+          "핵심 개념을 떠올립니다. 드모르강 법칙, 논리 연산자",
+          "정답 판단 근거를 적용합니다. 드모르강 법칙에 따르면 'NOT A AND NOT B'는 'NOT (A OR B)'와 논리적으로 동일합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '드모르강 법칙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 부정(!)을 밖으로 빼면 연산자(&& <-> ||)가 뒤집힌다."
+        ],
+        "detailed_summary": "논리 연산의 드모르강 법칙을 이해하고 있는지 묻는 문제입니다. 드모르강 법칙에 의해 !a && !b는 !(a || b)와 같습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분과 동일한 의미를 가지는 것은 어떤 것인가? ```c #include <stdio.h> main() { int a, b; for (a = 0; a < 2; a++) for (b = 0; b < 2; b++) printf(\"%d\", !a && !b); } ``` (밑줄 친 부분: `!a && !b`) 정답입니다. 이 선택지는 실제 정답인 '2번 !(a || b)'와 일치합니다. 드모르강 법칙에 따르면 'NOT A AND NOT B'는 'NOT (A OR B)'와 논리적으로 동일합니다. 시험 포인트는 다른 보기들은 논리적으로 동일하지 않은 연산식들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "논리 연산자",
+        "드모르강 법칙"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8975f86f51336b6e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          155
+        ],
+        "page_span": {
+          "start_page": 155,
+          "end_page": 155
+        },
+        "source_explanation": "비트를 n비트 왼쪽으로 이동시키면 기본값에 2^n을 곱한 것과 같고, 오른쪽으로 이동시키면 2^n으로 나눈 것과 같습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램에서 밑줄 친 부분의 의미를 올바르게 설명한 것은?\n```c\nr = r << n;\n```",
+        "choices": [
+          {
+            "label": "1",
+            "text": "r * 2^n을 의미한다."
+          },
+          {
+            "label": "2",
+            "text": "r + 2^n을 의미한다."
+          },
+          {
+            "label": "3",
+            "text": "r의 최댓값을 의미한다."
+          },
+          {
+            "label": "4",
+            "text": "r의 최솟값을 의미한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "r * 2^n을 의미한다."
+        ],
+        "answer_text": "r * 2^n을 의미한다."
+      },
+      "explanation": {
+        "source_text": "비트를 n비트 왼쪽으로 이동시키면 기본값에 2^n을 곱한 것과 같고, 오른쪽으로 이동시키면 2^n으로 나눈 것과 같습니다.",
+        "summary": "비트 시프트 연산자의 산술적 의미를 묻는 문제입니다.",
+        "why_correct": [
+          "왼쪽 시프트(<<) 연산은 비트를 왼쪽으로 밀면서 빈자리를 0으로 채우므로, 결과적으로 2의 거듭제곱을 곱하는 효과가 있습니다."
+        ],
+        "why_others_wrong": [
+          "덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+        ],
+        "key_concepts": [
+          "비트 시프트",
+          "왼쪽 시프트"
+        ],
+        "memory_cues": [
+          "왼쪽(<<)은 곱하기, 오른쪽(>>)은 나누기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "r * 2^n을 의미한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 r * 2^n을 의미한다.'와 일치합니다. 왼쪽 시프트(<<) 연산은 비트를 왼쪽으로 밀면서 빈자리를 0으로 채우므로, 결과적으로 2의 거듭제곱을 곱하는 효과가 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "r + 2^n을 의미한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 r * 2^n을 의미한다.'인데 이 선택지는 'r + 2^n을 의미한다.'이므로 일치하지 않습니다. 덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+          },
+          {
+            "label": "3",
+            "text": "r의 최댓값을 의미한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 r * 2^n을 의미한다.'인데 이 선택지는 'r의 최댓값을 의미한다.'이므로 일치하지 않습니다. 덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+          },
+          {
+            "label": "4",
+            "text": "r의 최솟값을 의미한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 r * 2^n을 의미한다.'인데 이 선택지는 'r의 최솟값을 의미한다.'이므로 일치하지 않습니다. 덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분의 의미를 올바르게 설명한 것은? ```c r = r << n; ```",
+          "핵심 개념을 떠올립니다. 비트 시프트, 왼쪽 시프트",
+          "정답 판단 근거를 적용합니다. 왼쪽 시프트(<<) 연산은 비트를 왼쪽으로 밀면서 빈자리를 0으로 채우므로, 결과적으로 2의 거듭제곱을 곱하는 효과가 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+        ],
+        "exam_traps": [
+          "덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '비트 시프트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '왼쪽 시프트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 왼쪽(<<)은 곱하기, 오른쪽(>>)은 나누기"
+        ],
+        "detailed_summary": "비트 시프트 연산자의 산술적 의미를 묻는 문제입니다. 비트를 n비트 왼쪽으로 이동시키면 기본값에 2^n을 곱한 것과 같고, 오른쪽으로 이동시키면 2^n으로 나눈 것과 같습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램에서 밑줄 친 부분의 의미를 올바르게 설명한 것은? ```c r = r << n; ``` 정답입니다. 이 선택지는 실제 정답인 '1번 r * 2^n을 의미한다.'와 일치합니다. 왼쪽 시프트(<<) 연산은 비트를 왼쪽으로 밀면서 빈자리를 0으로 채우므로, 결과적으로 2의 거듭제곱을 곱하는 효과가 있습니다. 시험 포인트는 덧셈이나 최댓값/최솟값과는 관련이 없습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "비트 연산자",
+        "시프트 연산",
+        "왼쪽 시프트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_234478a3181d38df",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0186_p0191"
+        ],
+        "source_pages": [
+          186
+        ],
+        "page_span": {
+          "start_page": 186,
+          "end_page": 186
+        },
+        "source_explanation": "r1 = (3 < 4) && (4 <= 4) = 1 && 1 = 1. r2 = (3 > 3) || (4 <= 5) = 0 || 1 = 1. r3 = !5 = 0. 결과 = 1 - 1 + 0 = 0."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "연산자와 우선순위"
+        ],
+        "chapter_label": "연산자와 우선순위",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 연산자와 우선순위",
+        "chapter_id": "chapter_139"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_061",
+        "topic_title": "연산자와 우선순위",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "연산자와 우선순위",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\nint a = 3, b = 4, c = 5;\nint r1, r2, r3;\nr1 = a < 4 && b <= 4;\nr2 = a > 3 || b <= 5;\nr3 = !c;\nprintf(\"%d\", r1 - r2 + r3);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "0"
+          },
+          {
+            "label": "2",
+            "text": "1"
+          },
+          {
+            "label": "3",
+            "text": "2"
+          },
+          {
+            "label": "4",
+            "text": "3"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "0"
+        ],
+        "answer_text": "0"
+      },
+      "explanation": {
+        "source_text": "r1 = (3 < 4) && (4 <= 4) = 1 && 1 = 1. r2 = (3 > 3) || (4 <= 5) = 0 || 1 = 1. r3 = !5 = 0. 결과 = 1 - 1 + 0 = 0.",
+        "summary": "C언어의 관계 연산자와 논리 연산자 계산 문제입니다.",
+        "why_correct": [
+          "r1은 참(1), r2는 참(1), r3은 거짓(0)이 되어 최종 연산 결과는 0입니다."
+        ],
+        "why_others_wrong": [
+          "연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+        ],
+        "key_concepts": [
+          "&& (AND)",
+          "|| (OR)",
+          "! (NOT)",
+          "참=1, 거짓=0"
+        ],
+        "memory_cues": [
+          "C언어에서 0이 아닌 모든 값은 참(True)으로 간주되지만, 논리 연산의 결과값 자체는 1 또는 0입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "0",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 0'와 일치합니다. r1은 참(1), r2는 참(1), r3은 거짓(0)이 되어 최종 연산 결과는 0입니다."
+          },
+          {
+            "label": "2",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 0'인데 이 선택지는 '1'이므로 일치하지 않습니다. 연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 0'인데 이 선택지는 '2'이므로 일치하지 않습니다. 연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+          },
+          {
+            "label": "4",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 0'인데 이 선택지는 '3'이므로 일치하지 않습니다. 연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { int a = 3, b = 4, c = 5; int r1, r2, r3; r1 = a < 4 && b <= 4; r2 = a > 3 || b <= 5; r3 = !c; printf(\"%d\", r1 - r2 + r3); }",
+          "핵심 개념을 떠올립니다. && (AND), || (OR), ! (NOT), 참=1, 거짓=0",
+          "정답 판단 근거를 적용합니다. r1은 참(1), r2는 참(1), r3은 거짓(0)이 되어 최종 연산 결과는 0입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+        ],
+        "exam_traps": [
+          "연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '&& (AND)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '|| (OR)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '! (NOT)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '참=1, 거짓=0'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. C언어에서 0이 아닌 모든 값은 참(True)으로 간주되지만, 논리 연산의 결과값 자체는 1 또는 0입니다."
+        ],
+        "detailed_summary": "C언어의 관계 연산자와 논리 연산자 계산 문제입니다. r1 = (3 < 4) && (4 <= 4) = 1 && 1 = 1. r2 = (3 > 3) || (4 <= 5) = 0 || 1 = 1. r3 = !5 = 0. 결과 = 1 - 1 + 0 = 0. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { int a = 3, b = 4, c = 5; int r1, r2, r3; r1 = a < 4 && b <= 4; r2 = a > 3 || b <= 5; r3 = !c; printf(\"%d\", r1 - r2 + r3); } 정답입니다. 이 선택지는 실제 정답인 '1번 0'와 일치합니다. r1은 참(1), r2는 참(1), r3은 거짓(0)이 되어 최종 연산 결과는 0입니다. 시험 포인트는 연산 우선순위나 논리값(0 이외의 숫자는 참)을 잘못 판단하면 오답이 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "논리 연산자",
+        "관계 연산자",
+        "우선순위"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

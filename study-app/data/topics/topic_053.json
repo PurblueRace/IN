@@ -1,0 +1,2314 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_053",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      240,
+      241
+    ],
+    "source_lecture_ids": [
+      "0240_240",
+      "0241_241"
+    ],
+    "source_titles": [
+      "ROLLBACK",
+      "COMMIT"
+    ],
+    "keywords": [
+      "ROLLBACK",
+      "COMMIT"
+    ],
+    "highlight_keywords": [
+      "ROLLBACK",
+      "commit",
+      "10 삭제",
+      "20 삭제",
+      "30 삭제",
+      "COMMIT",
+      "작업",
+      "트랜잭션",
+      "Auto"
+    ],
+    "secondary_keywords": [
+      "사원",
+      "ROLLBACK의 정의 설명",
+      "강의 도입 및 주제 소개",
+      "변경된",
+      "Inconsistency",
+      "내가",
+      "기능을",
+      "DML",
+      "해서",
+      "보조기억장치",
+      "false",
+      "true"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0240_240",
+      "sequence": 240,
+      "number": "240",
+      "course_code": "350238",
+      "title": "ROLLBACK",
+      "duration_seconds": 186,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "tokens": [
+            "ROLLBACK"
+          ],
+          "score": 41,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "commit",
+          "tokens": [
+            "commit"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "10 삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "20 삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "30 삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "사원",
+          "tokens": [
+            "사원"
+          ],
+          "score": 14,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "ROLLBACK의 정의 설명",
+          "tokens": [
+            "ROLLBACK"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "강의 도입 및 주제 소개",
+          "tokens": [
+            "강의",
+            "도입",
+            "주제",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "변경된",
+          "tokens": [
+            "변경된"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Inconsistency",
+          "tokens": [
+            "Inconsistency"
+          ],
+          "score": 6,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "내가",
+          "tokens": [
+            "내가"
+          ],
+          "score": 6,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_053-subtopic-001-source-seg-002::01",
+          "prompt": "______의 정의 설명",
+          "answer": "ROLLBACK",
+          "original": "ROLLBACK의 정의 설명",
+          "keyword": "ROLLBACK",
+          "source_segment_id": "topic_053-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'ROLLBACK'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_053-subtopic-001-source-seg-002::02",
+          "prompt": "ROLLBACK은 아직 COMMIT되지 않은 ______ 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어",
+          "answer": "변경된",
+          "original": "ROLLBACK은 아직 COMMIT되지 않은 변경된 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어",
+          "keyword": "변경된",
+          "source_segment_id": "topic_053-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '변경된'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_053-subtopic-001-source-seg-003::03",
+          "prompt": "트랜잭션 전체가 성공적으로 끝나지 못하면 일부 변경된 내용만 데이터베이스에 반영되는 비일 관성(______)인 상태를 가질 수 있기 때문에 일부 분만 완료된 트랜잭션은 롤백 (Rollback)되어야 함",
+          "answer": "Inconsistency",
+          "original": "트랜잭션 전체가 성공적으로 끝나지 못하면 일부 변경된 내용만 데이터베이스에 반영되는 비일 관성(Inconsistency)인 상태를 가질 수 있기 때문에 일부 분만 완료된 트랜잭션은 롤백 (Rollback)되어야 함",
+          "keyword": "Inconsistency",
+          "source_segment_id": "topic_053-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Inconsistency'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0241_241",
+      "sequence": 241,
+      "number": "241",
+      "course_code": "350239",
+      "title": "COMMIT",
+      "duration_seconds": 276,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "segment_count": 33,
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "tokens": [
+            "COMMIT"
+          ],
+          "score": 80,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "작업",
+          "tokens": [
+            "작업"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션",
+          "tokens": [
+            "트랜잭션"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "ROLLBACK",
+          "tokens": [
+            "ROLLBACK"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Auto",
+          "tokens": [
+            "Auto"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "기능을",
+          "tokens": [
+            "기능을"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DML",
+          "tokens": [
+            "DML"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "해서",
+          "tokens": [
+            "해서"
+          ],
+          "score": 14,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보조기억장치",
+          "tokens": [
+            "보조기억장치"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "false",
+          "tokens": [
+            "false"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "true",
+          "tokens": [
+            "true"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_053-subtopic-002-source-seg-001::01",
+          "prompt": "강의 제목 및 주제(______) 소개",
+          "answer": "COMMIT",
+          "original": "강의 제목 및 주제(COMMIT) 소개",
+          "keyword": "COMMIT",
+          "source_segment_id": "topic_053-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'COMMIT'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_053-subtopic-002-source-seg-002::02",
+          "prompt": "______(Transaction) 개념의 도입",
+          "answer": "트랜잭션",
+          "original": "트랜잭션(Transaction) 개념의 도입",
+          "keyword": "트랜잭션",
+          "source_segment_id": "topic_053-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '트랜잭션'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_053-subtopic-002-source-seg-002::03",
+          "prompt": "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ______이 되도록 Auto Commit 기능을 설정할 수 있음",
+          "answer": "ROLLBACK",
+          "original": "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음",
+          "keyword": "ROLLBACK",
+          "source_segment_id": "topic_053-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'ROLLBACK'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_053-subtopic-002-source-seg-002::04",
+          "prompt": "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ROLLBACK이 되도록 ______ Commit 기능을 설정할 수 있음",
+          "answer": "Auto",
+          "original": "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음",
+          "keyword": "Auto",
+          "source_segment_id": "topic_053-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Auto'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_053",
+    "sequence": 53,
+    "number": "53",
+    "title": "트랜잭션 제어문",
+    "title_raw": "트랜잭션 제어문",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      240,
+      241
+    ],
+    "source_titles": [
+      "ROLLBACK",
+      "COMMIT"
+    ],
+    "preview_text": "ROLLBACK, COMMIT",
+    "segment_count": 40,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 ROLLBACK, COMMIT을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 ROLLBACK, COMMIT을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 462,
+    "source_titles_preview": [
+      "ROLLBACK",
+      "COMMIT"
+    ],
+    "highlight_keywords": [
+      "ROLLBACK",
+      "commit",
+      "10 삭제",
+      "20 삭제",
+      "30 삭제",
+      "COMMIT",
+      "작업",
+      "트랜잭션",
+      "Auto"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_053-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:06",
+      "start_seconds": 0,
+      "end_seconds": 6,
+      "duration_seconds": 6,
+      "timeline_summary": "강의 도입 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 롤백에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 롤백에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "강의 도입 및 주제 소개",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:00:06",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 6,
+      "end_seconds": 20,
+      "duration_seconds": 14,
+      "timeline_summary": "ROLLBACK의 정의 설명",
+      "screen_text_lines": [
+        "ROLLBACK은 아직 COMMIT되지 않은 변경된 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어"
+      ],
+      "screen_text": "ROLLBACK은 아직 COMMIT되지 않은 변경된 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어",
+      "spoken_sentences": [
+        "롤백이라는 거는 아직 커미트되지 않은 그런 변경된 사항 모든 내용들이 있죠 그런 것들을 취소하고 데이터베이스를 이전 상태로 이전 상태로 되돌리는 그런 명령어를 보고 우리가 롤백이라고 합니다."
+      ],
+      "spoken_text": "롤백이라는 거는 아직 커미트되지 않은 그런 변경된 사항 모든 내용들이 있죠 그런 것들을 취소하고 데이터베이스를 이전 상태로 이전 상태로 되돌리는 그런 명령어를 보고 우리가 롤백이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "ROLLBACK의 정의 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        },
+        {
+          "keyword": "변경된",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 20,
+      "end_seconds": 41,
+      "duration_seconds": 21,
+      "timeline_summary": "비일관성 방지를 위한 ROLLBACK의 필요성",
+      "screen_text_lines": [
+        "ROLLBACK은 아직 COMMIT되지 않은 변경된 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어",
+        "트랜잭션 전체가 성공적으로 끝나지 못하면 일부 변경된 내용만 데이터베이스에 반영되는 비일 관성(Inconsistency)인 상태를 가질 수 있기 때문에 일부 분만 완료된 트랜잭션은 롤백 (Rollback)되어야 함"
+      ],
+      "screen_text": "ROLLBACK은 아직 COMMIT되지 않은 변경된 모든 내용들을 취소하고 데이터베이스를 이전 상 태로 되돌리는 명령어\n트랜잭션 전체가 성공적으로 끝나지 못하면 일부 변경된 내용만 데이터베이스에 반영되는 비일 관성(Inconsistency)인 상태를 가질 수 있기 때문에 일부 분만 완료된 트랜잭션은 롤백 (Rollback)되어야 함",
+      "spoken_sentences": [
+        "이 롤백이라는 거는 트랜잭션 전체가 성공적으로 끝나지 않았을 때 끝나지 않았을 때 그 일부의 변경된 내용만 데이터베이스 반영을 시키게 되면 데이터의 비일관성 상태를 가질 수 있습니다.",
+        "그래서 이 데이터의 일관성을 유지해야 되기 때문에 일부분만 그렇게 완료된 그런 트랜잭션은 반드시 롤백을 해줘야 돼요."
+      ],
+      "spoken_text": "이 롤백이라는 거는 트랜잭션 전체가 성공적으로 끝나지 않았을 때 끝나지 않았을 때 그 일부의 변경된 내용만 데이터베이스 반영을 시키게 되면 데이터의 비일관성 상태를 가질 수 있습니다. 그래서 이 데이터의 일관성을 유지해야 되기 때문에 일부분만 그렇게 완료된 그런 트랜잭션은 반드시 롤백을 해줘야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "변경된",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        },
+        {
+          "keyword": "Inconsistency",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 41,
+      "end_seconds": 70,
+      "duration_seconds": 29,
+      "timeline_summary": "예시: 사원 10번 삭제 후 COMMIT 시의 상황",
+      "screen_text_lines": [
+        "10 삭제",
+        "commit"
+      ],
+      "screen_text": "10 삭제\ncommit",
+      "spoken_sentences": [
+        "만약에 내가 사원 테이블 가지고 작업을 하는데 사원 테이블에서 사원 번호가 10번인 사람을 만약에 내가 삭제를 했습니다.",
+        "삭제를 하고 나서 내가 만약에 커미트라는 명령어를 썼다고 생각해 보세요.",
+        "커미트라고 쓰게 되면 이 사원 번호 10번 삭제한 게 완전히 보조기억장치까지 다 저장이 돼서 전체 데이터베이스에 반영이 되겠죠?",
+        "그러면 다른 사람들이 다른 사용자가 사원 번호 10번인 사람을 찾으면 있다 없다?",
+        "없다.",
+        "내가 커미트까지 완료했기 때문에 그 사람은 완전히 없어집니다."
+      ],
+      "spoken_text": "만약에 내가 사원 테이블 가지고 작업을 하는데 사원 테이블에서 사원 번호가 10번인 사람을 만약에 내가 삭제를 했습니다. 삭제를 하고 나서 내가 만약에 커미트라는 명령어를 썼다고 생각해 보세요. 커미트라고 쓰게 되면 이 사원 번호 10번 삭제한 게 완전히 보조기억장치까지 다 저장이 돼서 전체 데이터베이스에 반영이 되겠죠? 그러면 다른 사람들이 다른 사용자가 사원 번호 10번인 사람을 찾으면 있다 없다? 없다. 내가 커미트까지 완료했기 때문에 그 사람은 완전히 없어집니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "10 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "내가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 70,
+      "end_seconds": 128,
+      "duration_seconds": 58,
+      "timeline_summary": "예시: 사원 20번 삭제 후 COMMIT 전후의 차이",
+      "screen_text_lines": [
+        "10 삭제",
+        "commit",
+        "20 삭제"
+      ],
+      "screen_text": "10 삭제\ncommit\n20 삭제",
+      "spoken_sentences": [
+        "근데 내가 만약에 사원 번호 20번인 사람을 또 삭제했다고 생각해 보세요.",
+        "삭제하고 나서 이번에는 커미트를 안 했습니다.",
+        "안 하게 되면 내 컴퓨터에서는 이 사원 번호 20번이 삭제된 것처럼 그렇게 보여요.",
+        "왜 내가 이런 작업을 하게 되면 이런 작업들은 데이터베이스 데이터를 내 주기억장치로 올려서 처리를 합니다.",
+        "그래서 내 컴퓨터에서 20번이 삭제된 것처럼 보이지만 이때 나는 커미트 명령어를 아직 하지 않았기 때문에 데이터베이스에는 완전히 반영이 아직 안 됐단 말이에요.",
+        "그 상태에서 다른 사람이 사원 번호가 20번인 사람을 찾으면 그 사람은 보입니다.",
+        "내가 커미트를 해줘야 전체 데이터베이스에 전부 다 변경된 내용이 반영이 되는 거예요.",
+        "그래서 요 상태에서는 다른 사람이 사원 번호 20번을 찾으면 찾을 수 있더라.",
+        "근데 내가 이 상태에서 또 커미트를 해 버리면 커미트를 해 버리면 나도 20번 사용자를 못 찾는 거고 다른 사용자들도 사원 번호가 20번인 사람을 찾지 못합니다."
+      ],
+      "spoken_text": "근데 내가 만약에 사원 번호 20번인 사람을 또 삭제했다고 생각해 보세요. 삭제하고 나서 이번에는 커미트를 안 했습니다. 안 하게 되면 내 컴퓨터에서는 이 사원 번호 20번이 삭제된 것처럼 그렇게 보여요. 왜 내가 이런 작업을 하게 되면 이런 작업들은 데이터베이스 데이터를 내 주기억장치로 올려서 처리를 합니다. 그래서 내 컴퓨터에서 20번이 삭제된 것처럼 보이지만 이때 나는 커미트 명령어를 아직 하지 않았기 때문에 데이터베이스에는 완전히 반영이 아직 안 됐단 말이에요. 그 상태에서 다른 사람이 사원 번호가 20번인 사람을 찾으면 그 사람은 보입니다. 내가 커미트를 해줘야 전체 데이터베이스에 전부 다 변경된 내용이 반영이 되는 거예요. 그래서 요 상태에서는 다른 사람이 사원 번호 20번을 찾으면 찾을 수 있더라. 근데 내가 이 상태에서 또 커미트를 해 버리면 커미트를 해 버리면 나도 20번 사용자를 못 찾는 거고 다른 사용자들도 사원 번호가 20번인 사람을 찾지 못합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "10 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "20 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:42",
+      "start_seconds": 128,
+      "end_seconds": 162,
+      "duration_seconds": 34,
+      "timeline_summary": "예시: 사원 30번 삭제 후 ROLLBACK을 통한 복구",
+      "screen_text_lines": [
+        "10 삭제",
+        "commit",
+        "20 삭제",
+        "30 삭제"
+      ],
+      "screen_text": "10 삭제\ncommit\n20 삭제\n30 삭제",
+      "spoken_sentences": [
+        "그리고 나서 내가 사원 번호가 30번인 사람을 또 삭제했어요.",
+        "삭제라고 하게 됐는데 어 이거 잘못 삭제한 거 같아 그러면 우리는 뭘 해줘야 돼요?",
+        "롤백을 해줘야 되겠죠?",
+        "그래서 롤백을 하게 되면 다시 원래대로 다시 되돌아가더라.",
+        "롤백을 하게 되면 여기까지만 되돌아가는 거예요 30번 요거 삭제한 것만 다시 원래 상태로 다시 되돌아가는 거고 이렇게 커미트를 내가 완료한 상태 20번하고 20번은 다시 되돌릴 수 있다 없다?",
+        "없다.",
+        "롤백이라는 거는 커미트를 하기 전 상태로 만들어 주는 거예요."
+      ],
+      "spoken_text": "그리고 나서 내가 사원 번호가 30번인 사람을 또 삭제했어요. 삭제라고 하게 됐는데 어 이거 잘못 삭제한 거 같아 그러면 우리는 뭘 해줘야 돼요? 롤백을 해줘야 되겠죠? 그래서 롤백을 하게 되면 다시 원래대로 다시 되돌아가더라. 롤백을 하게 되면 여기까지만 되돌아가는 거예요 30번 요거 삭제한 것만 다시 원래 상태로 다시 되돌아가는 거고 이렇게 커미트를 내가 완료한 상태 20번하고 20번은 다시 되돌릴 수 있다 없다? 없다. 롤백이라는 거는 커미트를 하기 전 상태로 만들어 주는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "10 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "20 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0240_240",
+      "subtopic_title": "ROLLBACK",
+      "subtopic_sequence": 240,
+      "subtopic_number": "240",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z27K_eiTfFo",
+      "start_time_hms": "00:02:42",
+      "end_time_hms": "00:03:06",
+      "start_seconds": 162,
+      "end_seconds": 186,
+      "duration_seconds": 24,
+      "timeline_summary": "COMMIT과 ROLLBACK의 관계 정리 및 마무리",
+      "screen_text_lines": [
+        "10 삭제",
+        "commit",
+        "20 삭제",
+        "30 삭제"
+      ],
+      "screen_text": "10 삭제\ncommit\n20 삭제\n30 삭제",
+      "spoken_sentences": [
+        "내가 10번 데이터를 다시 되살리고 싶다 못합니다.",
+        "커미트를 했기 때문에 그래서 30번을 삭제하고 내가 커미트를 아직 안 했기 때문에 데이터베이스에 이 30번 삭제한 게 반영이 됐다 안 됐다?",
+        "안 됐다.",
+        "아직 반영이 안 됐기 때문에 롤백을 하면 이 30번이 다시 복원이 되더라.",
+        "그래서 커미트하고 롤백하고 그거 잘 기억하시고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "내가 10번 데이터를 다시 되살리고 싶다 못합니다. 커미트를 했기 때문에 그래서 30번을 삭제하고 내가 커미트를 아직 안 했기 때문에 데이터베이스에 이 30번 삭제한 게 반영이 됐다 안 됐다? 안 됐다. 아직 반영이 안 됐기 때문에 롤백을 하면 이 30번이 다시 복원이 되더라. 그래서 커미트하고 롤백하고 그거 잘 기억하시고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "commit",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "10 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "20 삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 제목 및 주제(COMMIT) 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 커미트(COMMIT)에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 커미트(COMMIT)에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:15",
+      "start_seconds": 7,
+      "end_seconds": 15,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션(Transaction) 개념의 도입",
+      "screen_text_lines": [
+        "트랜잭션이 성공적으로 끝나면 데이터베이스가 새로운 일관성(Consistency) 상태를 가지기 위해 변경된 모든 내용을 데이터베이스에 반영하여야 하는데, 이때 사용하는 명령어가 COMMIT 임",
+        "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음"
+      ],
+      "screen_text": "트랜잭션이 성공적으로 끝나면 데이터베이스가 새로운 일관성(Consistency) 상태를 가지기 위해 변경된 모든 내용을 데이터베이스에 반영하여야 하는데, 이때 사용하는 명령어가 COMMIT 임\nCOMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고, DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음",
+      "spoken_sentences": [
+        "자, 여기 보면 트랜잭션이라는 말이 나옵니다.",
+        "자, 이 트랜잭션이라는 말부터 좀 살펴보고 지나갈게요."
+      ],
+      "spoken_text": "자, 여기 보면 트랜잭션이라는 말이 나옵니다. 자, 이 트랜잭션이라는 말부터 좀 살펴보고 지나갈게요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "Auto",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:15",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 15,
+      "end_seconds": 23,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션의 정의: 논리적 기능을 수행하기 위한 연산 집합",
+      "screen_text_lines": [
+        "트랜잭션"
+      ],
+      "screen_text": "트랜잭션",
+      "spoken_sentences": [
+        "트랜잭션이라는 말이 나오는데, 이 트랜잭션이라는 거는 하나의 데이터베이스에서 하나의 논리적인 기능을 수행하기 위한 그런 연산의 집합, 그걸 보고 우리가 트랜잭션이라고 해요."
+      ],
+      "spoken_text": "트랜잭션이라는 말이 나오는데, 이 트랜잭션이라는 거는 하나의 데이터베이스에서 하나의 논리적인 기능을 수행하기 위한 그런 연산의 집합, 그걸 보고 우리가 트랜잭션이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:30",
+      "start_seconds": 23,
+      "end_seconds": 30,
+      "duration_seconds": 7,
+      "timeline_summary": "트랜잭션의 특성: 연산의 집합",
+      "screen_text_lines": [
+        "논리적 기능"
+      ],
+      "screen_text": "논리적 기능",
+      "spoken_sentences": [
+        "그래서 얘는 논리적인 기능, 논리적인 기능을 수행할 수 있게 해 주는 그런 연산의 집합이다."
+      ],
+      "spoken_text": "그래서 얘는 논리적인 기능, 논리적인 기능을 수행할 수 있게 해 주는 그런 연산의 집합이다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:30",
+      "end_time_hms": "00:00:38",
+      "start_seconds": 30,
+      "end_seconds": 38,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션의 정의: 작업 단위(Unit of Work)",
+      "screen_text_lines": [
+        "연산 집합"
+      ],
+      "screen_text": "연산 집합",
+      "spoken_sentences": [
+        "연산의 집합으로, 한 가지 일을 처리하는 데 사용되는 그런 작업 단위, 작업 단위를 보고 우리는 트랜잭션이라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "연산의 집합으로, 한 가지 일을 처리하는 데 사용되는 그런 작업 단위, 작업 단위를 보고 우리는 트랜잭션이라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:38",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 38,
+      "end_seconds": 46,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션은 작업 단위임을 강조",
+      "screen_text_lines": [
+        "작업 단위"
+      ],
+      "screen_text": "작업 단위",
+      "spoken_sentences": [
+        "해서 트랜잭션 그러면 '작업 단위다'라고 그렇게 기억하시면 돼요."
+      ],
+      "spoken_text": "해서 트랜잭션 그러면 '작업 단위다'라고 그렇게 기억하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 46,
+      "end_seconds": 54,
+      "duration_seconds": 8,
+      "timeline_summary": "예시를 통한 데이터 처리 과정 설명: 초기값 설정",
+      "screen_text_lines": [
+        "A",
+        "10"
+      ],
+      "screen_text": "A\n10",
+      "spoken_sentences": [
+        "만약에 A라는 거를 뭔가를 가지고 왔어요.",
+        "가지고 왔는데, 이곳에는 지금 10이라는 값이 들어 있거든요.",
+        "10이라는 값이 들어 있는데"
+      ],
+      "spoken_text": "만약에 A라는 거를 뭔가를 가지고 왔어요. 가지고 왔는데, 이곳에는 지금 10이라는 값이 들어 있거든요. 10이라는 값이 들어 있는데",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_053-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:02",
+      "start_seconds": 54,
+      "end_seconds": 62,
+      "duration_seconds": 8,
+      "timeline_summary": "연산 수행 후 결과값 변화 설명",
+      "screen_text_lines": [
+        "20"
+      ],
+      "screen_text": "20",
+      "spoken_sentences": [
+        "이거를 내가 만약에 뭔가를 연산을 했어요.",
+        "연산을 하고 나서 이거의 결과값이 20으로 요렇게 바뀌었습니다."
+      ],
+      "spoken_text": "이거를 내가 만약에 뭔가를 연산을 했어요. 연산을 하고 나서 이거의 결과값이 20으로 요렇게 바뀌었습니다.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_053-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:02",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 62,
+      "end_seconds": 70,
+      "duration_seconds": 8,
+      "timeline_summary": "변경된 값을 저장하기 위한 COMMIT 명령어 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그러면 기존에 가지고 있던 10은 없어지고, 20을 내가 정상적으로 저장을 시키고 싶어요.",
+        "그때 쓰는 명령어가 커미트입니다."
+      ],
+      "spoken_text": "그러면 기존에 가지고 있던 10은 없어지고, 20을 내가 정상적으로 저장을 시키고 싶어요. 그때 쓰는 명령어가 커미트입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 70,
+      "end_seconds": 78,
+      "duration_seconds": 8,
+      "timeline_summary": "COMMIT 명령어를 통한 최종 저장",
+      "screen_text_lines": [
+        "commit"
+      ],
+      "screen_text": "commit",
+      "spoken_sentences": [
+        "해서 커미트(commit)라고 요렇게 써야 이 20이라는 값이 정상적으로 A라는 곳에 들어가는 거고요."
+      ],
+      "spoken_text": "해서 커미트(commit)라고 요렇게 써야 이 20이라는 값이 정상적으로 A라는 곳에 들어가는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:26",
+      "start_seconds": 78,
+      "end_seconds": 86,
+      "duration_seconds": 8,
+      "timeline_summary": "원래대로 되돌리고 싶을 때의 상황 가정",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "만약에 뭔가 연산을 해서 20이 나왔는데, 아 이게 좀 이상한 거 같아요.",
+        "그래서 나는 원래대로 되돌리고 싶어요."
+      ],
+      "spoken_text": "만약에 뭔가 연산을 해서 20이 나왔는데, 아 이게 좀 이상한 거 같아요. 그래서 나는 원래대로 되돌리고 싶어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:26",
+      "end_time_hms": "00:01:34",
+      "start_seconds": 86,
+      "end_seconds": 94,
+      "duration_seconds": 8,
+      "timeline_summary": "롤백(Rollback) 명령어 소개: 이전 상태로 복구",
+      "screen_text_lines": [
+        "RollBack"
+      ],
+      "screen_text": "RollBack",
+      "spoken_sentences": [
+        "그래서 이 20이라는 거를 원래 값, 10으로 요렇게 되돌리는 걸 보고 우리는 롤백이라고 합니다."
+      ],
+      "spoken_text": "그래서 이 20이라는 거를 원래 값, 10으로 요렇게 되돌리는 걸 보고 우리는 롤백이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:34",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 94,
+      "end_seconds": 102,
+      "duration_seconds": 8,
+      "timeline_summary": "COMMIT과 ROLLBACK의 역할 요약",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 커미트라는 게 있고, 롤백이라는 게 있고 요렇게 두 가지가 있는데, 해서 커미트라는 거는 이 A라는 거에 대해서 뭔가 연산을 하고 20이 나왔을 때"
+      ],
+      "spoken_text": "해서 커미트라는 게 있고, 롤백이라는 게 있고 요렇게 두 가지가 있는데, 해서 커미트라는 거는 이 A라는 거에 대해서 뭔가 연산을 하고 20이 나왔을 때",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:42",
+      "end_time_hms": "00:01:50",
+      "start_seconds": 102,
+      "end_seconds": 110,
+      "duration_seconds": 8,
+      "timeline_summary": "연산 결과를 데이터베이스에 반영하는 COMMIT",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이 20이라고 이 연산의 결과를 데이터베이스에 반영시켜 주는 거, 데이터베이스에 반영시키는 게 우리 커미트고요."
+      ],
+      "spoken_text": "이 20이라고 이 연산의 결과를 데이터베이스에 반영시켜 주는 거, 데이터베이스에 반영시키는 게 우리 커미트고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:01:58",
+      "start_seconds": 110,
+      "end_seconds": 118,
+      "duration_seconds": 8,
+      "timeline_summary": "원래 상태로 되돌리는 ROLLBACK",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "만약에 좀 이상하다라고 해서 원래대로 다시 되돌리는 걸 보고 우리가 롤백이라고 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "만약에 좀 이상하다라고 해서 원래대로 다시 되돌리는 걸 보고 우리가 롤백이라고 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:01:58",
+      "end_time_hms": "00:02:06",
+      "start_seconds": 118,
+      "end_seconds": 126,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션 종료 시 필수 작업(COMMIT 또는 ROLLBACK)",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 하나의 트랜잭션, 작업이 끝나고 나면 커미트를 하거나 롤백을 하거나 둘 중의 하나는 반드시 해 줘야 되겠죠."
+      ],
+      "spoken_text": "해서 하나의 트랜잭션, 작업이 끝나고 나면 커미트를 하거나 롤백을 하거나 둘 중의 하나는 반드시 해 줘야 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:06",
+      "end_time_hms": "00:02:14",
+      "start_seconds": 126,
+      "end_seconds": 134,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터가 주기억장치에 로드되어 처리되는 과정",
+      "screen_text_lines": [
+        "데이터",
+        "주기억장치"
+      ],
+      "screen_text": "데이터\n주기억장치",
+      "spoken_sentences": [
+        "해서 내가 하나의 트랜잭션, 하나의 작업을 내가 하기 위해서 데이터베이스에서 데이터를 가지고 와요.",
+        "데이터를 가지고 오면 그거는 주기억장치에 저장이 됩니다."
+      ],
+      "spoken_text": "해서 내가 하나의 트랜잭션, 하나의 작업을 내가 하기 위해서 데이터베이스에서 데이터를 가지고 와요. 데이터를 가지고 오면 그거는 주기억장치에 저장이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:14",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 134,
+      "end_seconds": 142,
+      "duration_seconds": 8,
+      "timeline_summary": "COMMIT 시 보조기억장치에 최종 저장",
+      "screen_text_lines": [
+        "commit"
+      ],
+      "screen_text": "commit",
+      "spoken_sentences": [
+        "저장이 됐다가 내가 이 작업을 다 끝냈다, 끝냈다라고 해서 내가 커미트라는 요 명령어를 쓰게 되면, 커미트라고 쓰게 되면"
+      ],
+      "spoken_text": "저장이 됐다가 내가 이 작업을 다 끝냈다, 끝냈다라고 해서 내가 커미트라는 요 명령어를 쓰게 되면, 커미트라고 쓰게 되면",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "보조기억장치",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:31",
+      "start_seconds": 142,
+      "end_seconds": 151,
+      "duration_seconds": 9,
+      "timeline_summary": "보조기억장치 저장으로 작업 완료",
+      "screen_text_lines": [
+        "보조기억장치"
+      ],
+      "screen_text": "보조기억장치",
+      "spoken_sentences": [
+        "그때 이 데이터가 드디어 보조기억장치에 저장이 되는 거예요.",
+        "해서 보조기억장치에 저장이 돼야 완전히 작업이 끝나는 거죠."
+      ],
+      "spoken_text": "그때 이 데이터가 드디어 보조기억장치에 저장이 되는 거예요. 해서 보조기억장치에 저장이 돼야 완전히 작업이 끝나는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "보조기억장치",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:31",
+      "end_time_hms": "00:02:39",
+      "start_seconds": 151,
+      "end_seconds": 159,
+      "duration_seconds": 8,
+      "timeline_summary": "정상적인 완료를 의미하는 COMMIT",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 이 커미트라는 게 정상적인 완료, 정상적으로 내가 작업을 완료했습니다라고 했을 때 쓰는 명령어가 커미트고요."
+      ],
+      "spoken_text": "해서 이 커미트라는 게 정상적인 완료, 정상적으로 내가 작업을 완료했습니다라고 했을 때 쓰는 명령어가 커미트고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:39",
+      "end_time_hms": "00:02:47",
+      "start_seconds": 159,
+      "end_seconds": 167,
+      "duration_seconds": 8,
+      "timeline_summary": "작업 취소 및 복구를 의미하는 ROLLBACK",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "비정상이다, 나는 이거 저장하기 싫다라고 했을 때 원래 값으로 되돌리기 위해서 쓰는 게 롤백이라는 겁니다."
+      ],
+      "spoken_text": "비정상이다, 나는 이거 저장하기 싫다라고 했을 때 원래 값으로 되돌리기 위해서 쓰는 게 롤백이라는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:47",
+      "end_time_hms": "00:02:56",
+      "start_seconds": 167,
+      "end_seconds": 176,
+      "duration_seconds": 9,
+      "timeline_summary": "COMMIT의 정의: 새로운 일관성 상태를 위한 반영",
+      "screen_text_lines": [
+        "일관성(Consistency)"
+      ],
+      "screen_text": "일관성(Consistency)",
+      "spoken_sentences": [
+        "해서 하나의 트랜잭션이 성공적으로 끝나게 되면 데이터베이스가 새로운 일관성을 가지기 위해서 변경된 내용 있죠?",
+        "그 변경된 내용을"
+      ],
+      "spoken_text": "해서 하나의 트랜잭션이 성공적으로 끝나게 되면 데이터베이스가 새로운 일관성을 가지기 위해서 변경된 내용 있죠? 그 변경된 내용을",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:02:56",
+      "end_time_hms": "00:03:04",
+      "start_seconds": 176,
+      "end_seconds": 184,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터베이스 반영 명령어로서의 COMMIT",
+      "screen_text_lines": [
+        "변경된 모든 내용을 데이터베이스에 반영하여야 하는데, 이때 사용하는 명령어가 COMMIT 임"
+      ],
+      "screen_text": "변경된 모든 내용을 데이터베이스에 반영하여야 하는데, 이때 사용하는 명령어가 COMMIT 임",
+      "spoken_sentences": [
+        "데이터베이스에 반영을 시켜야죠.",
+        "그때 데이터에 반영을 시키기 위해서 사용하는 명령어가 커미트라는 요 명령어입니다."
+      ],
+      "spoken_text": "데이터베이스에 반영을 시켜야죠. 그때 데이터에 반영을 시키기 위해서 사용하는 명령어가 커미트라는 요 명령어입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:04",
+      "end_time_hms": "00:03:13",
+      "start_seconds": 184,
+      "end_seconds": 193,
+      "duration_seconds": 9,
+      "timeline_summary": "작업 완료 후 DBMS 종료 전 COMMIT의 중요성",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "내가 어떤 작업을 하고 나서 커미트라는 명령을 쓰고 나서 DBMS를 종료를 해야 되는데, 내가 작업은 다 끝냈는데 커미트라는 명령어를 안 썼어요."
+      ],
+      "spoken_text": "내가 어떤 작업을 하고 나서 커미트라는 명령을 쓰고 나서 DBMS를 종료를 해야 되는데, 내가 작업은 다 끝냈는데 커미트라는 명령어를 안 썼어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:13",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 193,
+      "end_seconds": 202,
+      "duration_seconds": 9,
+      "timeline_summary": "COMMIT을 생략할 경우의 문제점",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "안 쓰고 그냥 종료하게 되면은 그 내가 작업한 내용이 데이터베이스에 반영이 된다, 안 된다?",
+        "안 되더라."
+      ],
+      "spoken_text": "안 쓰고 그냥 종료하게 되면은 그 내가 작업한 내용이 데이터베이스에 반영이 된다, 안 된다? 안 되더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:22",
+      "end_time_hms": "00:03:31",
+      "start_seconds": 202,
+      "end_seconds": 211,
+      "duration_seconds": 9,
+      "timeline_summary": "오토 커미트(Auto Commit) 기능 소개",
+      "screen_text_lines": [
+        "Auto Commit 기능을 설정할 수 있음"
+      ],
+      "screen_text": "Auto Commit 기능을 설정할 수 있음",
+      "spoken_sentences": [
+        "해서 사용자가 실수로 커미트라는 이 명령어 쓰지 않고 바로 DBMS를 종료하는 경우가 있기 때문에 그걸 대비해서 DBMS 모든 DBMS 그런 프로그램들은 오토 커미트라는 그런 기능을 제공해 줍니다."
+      ],
+      "spoken_text": "해서 사용자가 실수로 커미트라는 이 명령어 쓰지 않고 바로 DBMS를 종료하는 경우가 있기 때문에 그걸 대비해서 DBMS 모든 DBMS 그런 프로그램들은 오토 커미트라는 그런 기능을 제공해 줍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Auto",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:31",
+      "end_time_hms": "00:03:39",
+      "start_seconds": 211,
+      "end_seconds": 219,
+      "duration_seconds": 8,
+      "timeline_summary": "DML 성공 시 자동 반영 기능",
+      "screen_text_lines": [
+        "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고"
+      ],
+      "screen_text": "COMMIT 명령을 실행하지 않아도 DML문이 성공적으로 완료되면 자동으로 COMMIT되고",
+      "spoken_sentences": [
+        "해서 사용자가 실수로 커미트라는 이 명령어를 실행하지 않아도 DML 이 명령문이 성공적으로 만약에 완료가 됐어요.",
+        "그러면 자동으로 커미트가 되도록"
+      ],
+      "spoken_text": "해서 사용자가 실수로 커미트라는 이 명령어를 실행하지 않아도 DML 이 명령문이 성공적으로 만약에 완료가 됐어요. 그러면 자동으로 커미트가 되도록",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "DML",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:39",
+      "end_time_hms": "00:03:48",
+      "start_seconds": 219,
+      "end_seconds": 228,
+      "duration_seconds": 9,
+      "timeline_summary": "DML 실패 시 자동 복구 기능",
+      "screen_text_lines": [
+        "DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음"
+      ],
+      "screen_text": "DML이 실패하면 자동으로 ROLLBACK이 되도록 Auto Commit 기능을 설정할 수 있음",
+      "spoken_sentences": [
+        "만약에 DML 문이 만약에 실패했어요.",
+        "실패하게 되면 자동으로 롤백이 되도록 오토 커미트라는 이런 기능을 우리가 따로 설정할 수 있습니다."
+      ],
+      "spoken_text": "만약에 DML 문이 만약에 실패했어요. 실패하게 되면 자동으로 롤백이 되도록 오토 커미트라는 이런 기능을 우리가 따로 설정할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "ROLLBACK",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "Auto",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:48",
+      "end_time_hms": "00:03:56",
+      "start_seconds": 228,
+      "end_seconds": 236,
+      "duration_seconds": 8,
+      "timeline_summary": "SET 명령어를 통한 Auto Commit 설정 방법",
+      "screen_text_lines": [
+        "set Auto commit"
+      ],
+      "screen_text": "set Auto commit",
+      "spoken_sentences": [
+        "대부분 오토 커미트라는 이런 기능을 설정할 때 우리가 앞에다가 SET 이라고 쓰고 오토 커미트(Auto commit)라고 써서"
+      ],
+      "spoken_text": "대부분 오토 커미트라는 이런 기능을 설정할 때 우리가 앞에다가 SET 이라고 쓰고 오토 커미트(Auto commit)라고 써서",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Auto",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:03:56",
+      "end_time_hms": "00:04:05",
+      "start_seconds": 236,
+      "end_seconds": 245,
+      "duration_seconds": 9,
+      "timeline_summary": "ON/OFF 옵션을 이용한 설정",
+      "screen_text_lines": [
+        "on",
+        "off"
+      ],
+      "screen_text": "on\noff",
+      "spoken_sentences": [
+        "요 뒤에다가 온(ON), 키겠다, 오프(OFF), 끄겠다, 설정하겠다, 해제하겠다, 아니면은 트루 펄스(True/False)"
+      ],
+      "spoken_text": "요 뒤에다가 온(ON), 키겠다, 오프(OFF), 끄겠다, 설정하겠다, 해제하겠다, 아니면은 트루 펄스(True/False)",
+      "highlight_keywords": [
+        {
+          "keyword": "false",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "true",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:04:05",
+      "end_time_hms": "00:04:13",
+      "start_seconds": 245,
+      "end_seconds": 253,
+      "duration_seconds": 8,
+      "timeline_summary": "True/False 옵션을 이용한 설정",
+      "screen_text_lines": [
+        "true",
+        "false"
+      ],
+      "screen_text": "true\nfalse",
+      "spoken_sentences": [
+        "트루(true)가 됐든 펄스(false)가 됐든 이런 것들을 써서 우리가 이 오토 커미트라는 이 기능을 설정도 하고 해제도 하고 할 수 있습니다."
+      ],
+      "spoken_text": "트루(true)가 됐든 펄스(false)가 됐든 이런 것들을 써서 우리가 이 오토 커미트라는 이 기능을 설정도 하고 해제도 하고 할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "false",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "true",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:04:13",
+      "end_time_hms": "00:04:21",
+      "start_seconds": 253,
+      "end_seconds": 261,
+      "duration_seconds": 8,
+      "timeline_summary": "COMMIT 명령어의 핵심 역할 복습",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 이 커미트라는 이 명령어는 우리가 작업한 그런 내용들 있죠?",
+        "그런 모든 변경된 모든 내용을 어떻게 한다?",
+        "데이터베이스에 반영을 시켜 주는 그런 명령어더라."
+      ],
+      "spoken_text": "해서 이 커미트라는 이 명령어는 우리가 작업한 그런 내용들 있죠? 그런 모든 변경된 모든 내용을 어떻게 한다? 데이터베이스에 반영을 시켜 주는 그런 명령어더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "작업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_053-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 2,
+      "subtopic_id": "0241_241",
+      "subtopic_title": "COMMIT",
+      "subtopic_sequence": 241,
+      "subtopic_number": "241",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=4N5oK9D59uo",
+      "start_time_hms": "00:04:21",
+      "end_time_hms": "00:04:30",
+      "start_seconds": 261,
+      "end_seconds": 270,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 요점 정리 및 마무리",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그리고 오토 커미트라는 이런 기능도 우리가 따로 설정할 수 있더라라고 그렇게 기억하고 지나가시면 됩니다."
+      ],
+      "spoken_text": "그리고 오토 커미트라는 이런 기능도 우리가 따로 설정할 수 있더라라고 그렇게 기억하고 지나가시면 됩니다.",
+      "highlight_keywords": []
+    }
+  ]
+}

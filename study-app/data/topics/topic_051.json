@@ -1,0 +1,2460 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_051",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 3,
+    "source_sequences": [
+      233,
+      234,
+      235
+    ],
+    "source_lecture_ids": [
+      "0233_233",
+      "0234_234",
+      "0235_235"
+    ],
+    "source_titles": [
+      "DDL",
+      "DML",
+      "DCL"
+    ],
+    "keywords": [
+      "DDL",
+      "DML",
+      "DCL"
+    ],
+    "highlight_keywords": [
+      "DDL",
+      "TABLE",
+      "DOMAIN",
+      "VIEW",
+      "데이터",
+      "SELECT",
+      "DML",
+      "DELETE",
+      "INSERT",
+      "UPDATE"
+    ],
+    "secondary_keywords": [
+      "명령어",
+      "기능",
+      "SQL의 분류",
+      "기능 SCHEMA",
+      "DDL의 주요 사용자(DBA, 설계자) 명시",
+      "DDL 명령어 중 CREATE의 기능 설명",
+      "명령어의",
+      "명령문",
+      "데이터",
+      "내부적으로",
+      "실행됨을",
+      "ROLLBACK"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0233_233",
+      "sequence": 233,
+      "number": "233",
+      "course_code": "350231",
+      "title": "DDL",
+      "duration_seconds": 154,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "tokens": [
+            "DDL"
+          ],
+          "score": 64,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "TABLE",
+          "tokens": [
+            "TABLE"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DOMAIN",
+          "tokens": [
+            "DOMAIN"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "VIEW",
+          "tokens": [
+            "VIEW"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "명령어",
+          "tokens": [
+            "명령어"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "SQL의 분류",
+          "tokens": [
+            "SQL",
+            "분류"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기능 SCHEMA",
+          "tokens": [
+            "기능",
+            "SCHEMA"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DDL의 주요 사용자(DBA, 설계자) 명시",
+          "tokens": [
+            "DDL",
+            "주요",
+            "사용자",
+            "DBA",
+            "설계자",
+            "명시"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DDL 명령어 중 CREATE의 기능 설명",
+          "tokens": [
+            "DDL",
+            "명령어",
+            "CREATE",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_051-subtopic-001-source-seg-001::01",
+          "prompt": "______(데이터 정의어)의 기본 정의 설명",
+          "answer": "DDL",
+          "original": "DDL(데이터 정의어)의 기본 정의 설명",
+          "keyword": "DDL",
+          "source_segment_id": "topic_051-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DDL'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-001-source-seg-002::02",
+          "prompt": "DDL은 SCHEMA, DOMAIN, ______, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "answer": "TABLE",
+          "original": "DDL은 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "keyword": "TABLE",
+          "source_segment_id": "topic_051-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'TABLE'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-001-source-seg-002::03",
+          "prompt": "DDL은 SCHEMA, ______, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "answer": "DOMAIN",
+          "original": "DDL은 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "keyword": "DOMAIN",
+          "source_segment_id": "topic_051-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'DOMAIN'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-001-source-seg-002::04",
+          "prompt": "DDL은 SCHEMA, DOMAIN, TABLE, ______, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "answer": "VIEW",
+          "original": "DDL은 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+          "keyword": "VIEW",
+          "source_segment_id": "topic_051-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'VIEW'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0234_234",
+      "sequence": 234,
+      "number": "234",
+      "course_code": "350232",
+      "title": "DML",
+      "duration_seconds": 171,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "tokens": [
+            "SELECT"
+          ],
+          "score": 69,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DML",
+          "tokens": [
+            "DML"
+          ],
+          "score": 57,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DELETE",
+          "tokens": [
+            "DELETE"
+          ],
+          "score": 46,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "INSERT",
+          "tokens": [
+            "INSERT"
+          ],
+          "score": 46,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "UPDATE",
+          "tokens": [
+            "UPDATE"
+          ],
+          "score": 36,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "명령어의",
+          "tokens": [
+            "명령어의"
+          ],
+          "score": 21,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "명령문",
+          "tokens": [
+            "명령문"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "내부적으로",
+          "tokens": [
+            "내부적으로"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "실행됨을",
+          "tokens": [
+            "실행됨을"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_051-subtopic-002-source-seg-005::01",
+          "prompt": "______ 명령어의 기능(검색) 설명",
+          "answer": "SELECT",
+          "original": "SELECT 명령어의 기능(검색) 설명",
+          "keyword": "SELECT",
+          "source_segment_id": "topic_051-subtopic-002-source-seg-005",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'SELECT'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-002-source-seg-001::02",
+          "prompt": "______(데이터 조작어)의 개념 학습 시작 및 인사",
+          "answer": "DML",
+          "original": "DML(데이터 조작어)의 개념 학습 시작 및 인사",
+          "keyword": "DML",
+          "source_segment_id": "topic_051-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DML'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-002-source-seg-007::03",
+          "prompt": "______ 명령어의 기능(삭제) 설명",
+          "answer": "DELETE",
+          "original": "DELETE 명령어의 기능(삭제) 설명",
+          "keyword": "DELETE",
+          "source_segment_id": "topic_051-subtopic-002-source-seg-007",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DELETE'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-002-source-seg-006::04",
+          "prompt": "______ 명령어의 기능(삽입) 설명",
+          "answer": "INSERT",
+          "original": "INSERT 명령어의 기능(삽입) 설명",
+          "keyword": "INSERT",
+          "source_segment_id": "topic_051-subtopic-002-source-seg-006",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'INSERT'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0235_235",
+      "sequence": 235,
+      "number": "235",
+      "course_code": "350233",
+      "title": "DCL",
+      "duration_seconds": 124,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "DCL",
+          "tokens": [
+            "DCL"
+          ],
+          "score": 48,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "COMMIT",
+          "tokens": [
+            "COMMIT"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "명령어의",
+          "tokens": [
+            "명령어의"
+          ],
+          "score": 15,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "ROLLBACK",
+          "tokens": [
+            "ROLLBACK"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "REVOKE",
+          "tokens": [
+            "REVOKE"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "GRANT",
+          "tokens": [
+            "GRANT"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "무결성",
+          "tokens": [
+            "무결성"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "회복",
+          "tokens": [
+            "회복"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_051-subtopic-003-source-seg-001::01",
+          "prompt": "______(데이터 제어어)의 기본 정의 설명",
+          "answer": "DCL",
+          "original": "DCL(데이터 제어어)의 기본 정의 설명",
+          "keyword": "DCL",
+          "source_segment_id": "topic_051-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DCL'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-003-source-seg-005::02",
+          "prompt": "______ 명령어의 상세 기능 및 작동 원리 설명",
+          "answer": "COMMIT",
+          "original": "COMMIT 명령어의 상세 기능 및 작동 원리 설명",
+          "keyword": "COMMIT",
+          "source_segment_id": "topic_051-subtopic-003-source-seg-005",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'COMMIT'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-003-source-seg-001::03",
+          "prompt": "얘는 말 그대로 ______를 제어할 때, 제어할 때 사용하는 그 언어가 우리 DCL 데이터 제어어 요.",
+          "answer": "데이터베이스",
+          "original": "얘는 말 그대로 데이터베이스를 제어할 때, 제어할 때 사용하는 그 언어가 우리 DCL 데이터 제어어 요.",
+          "keyword": "데이터베이스",
+          "source_segment_id": "topic_051-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_051-subtopic-003-source-seg-004::04",
+          "prompt": "DCL ______ 네 가지 종류 소개",
+          "answer": "명령어의",
+          "original": "DCL 명령어의 네 가지 종류 소개",
+          "keyword": "명령어의",
+          "source_segment_id": "topic_051-subtopic-003-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '명령어의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_051",
+    "sequence": 51,
+    "number": "51",
+    "title": "SQL 개요와 DDL·DML·DCL",
+    "title_raw": "SQL 개요와 DDL·DML·DCL",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 3,
+    "source_sequences": [
+      233,
+      234,
+      235
+    ],
+    "source_titles": [
+      "DDL",
+      "DML",
+      "DCL"
+    ],
+    "preview_text": "DDL, DML, DCL",
+    "segment_count": 32,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 DDL, DML, DCL을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 DDL, DML, DCL을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 449,
+    "source_titles_preview": [
+      "DDL",
+      "DML",
+      "DCL"
+    ],
+    "highlight_keywords": [
+      "DDL",
+      "TABLE",
+      "DOMAIN",
+      "VIEW",
+      "데이터",
+      "SELECT",
+      "DML",
+      "DELETE",
+      "INSERT",
+      "UPDATE"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_051-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:22",
+      "start_seconds": 7,
+      "end_seconds": 22,
+      "duration_seconds": 15,
+      "timeline_summary": "DDL(데이터 정의어)의 기본 정의 설명",
+      "screen_text_lines": [
+        "SQL의 분류",
+        "DDL(Data Define Language, 데이터 정의어)"
+      ],
+      "screen_text": "SQL의 분류\nDDL(Data Define Language, 데이터 정의어)",
+      "spoken_sentences": [
+        "자 우리 DDL이요.",
+        "DDL이라는 거는 데이터 정의어 그렇게 부르는 건데 얘는 말 그대로 데이터베이스에서 내가 뭔가 정의를 하고자 했을 때 그때 사용되는 그런 언어를 보고 우리가 DDL 데이터 정의어 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "자 우리 DDL이요. DDL이라는 거는 데이터 정의어 그렇게 부르는 건데 얘는 말 그대로 데이터베이스에서 내가 뭔가 정의를 하고자 했을 때 그때 사용되는 그런 언어를 보고 우리가 DDL 데이터 정의어 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "SQL의 분류",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:00:22",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 22,
+      "end_seconds": 43,
+      "duration_seconds": 21,
+      "timeline_summary": "DDL의 주요 대상(스키마, 도메인 등)과 사용 목적 설명",
+      "screen_text_lines": [
+        "DDL은 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어."
+      ],
+      "screen_text": "DDL은 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의하거나 변경 또는 삭제할 때 사용하는 언어.",
+      "spoken_sentences": [
+        "해서 이 DDL이라는 거는 우리가 데이터베이스에다가 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 우리가 직접 정의를 해요.",
+        "생성을 하거나 아니면 우리가 그거를 변경을 하거나 아니면 삭제할 때 그때 사용되는 그런 언어가 우리 DDL 데이터 정의어라는 거예요."
+      ],
+      "spoken_text": "해서 이 DDL이라는 거는 우리가 데이터베이스에다가 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 우리가 직접 정의를 해요. 생성을 하거나 아니면 우리가 그거를 변경을 하거나 아니면 삭제할 때 그때 사용되는 그런 언어가 우리 DDL 데이터 정의어라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "TABLE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "DOMAIN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "VIEW",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 43,
+      "end_seconds": 54,
+      "duration_seconds": 11,
+      "timeline_summary": "논리적 및 물리적 데이터 구조의 사상 정의 역할",
+      "screen_text_lines": [
+        "논리적 데이터 구조와 물리적 데이터 구조의 사상을 정의함."
+      ],
+      "screen_text": "논리적 데이터 구조와 물리적 데이터 구조의 사상을 정의함.",
+      "spoken_sentences": [
+        "해서 우리가 이 DDL을 이용해서 논리적 데이터의 구조와 물리적 데이터 구조의 사상, 사상을 직접 정의를 합니다."
+      ],
+      "spoken_text": "해서 우리가 이 DDL을 이용해서 논리적 데이터의 구조와 물리적 데이터 구조의 사상, 사상을 직접 정의를 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 54,
+      "end_seconds": 73,
+      "duration_seconds": 19,
+      "timeline_summary": "DDL의 주요 사용자(DBA, 설계자) 명시",
+      "screen_text_lines": [
+        "데이터베이스 관리자나 데이터베이스 설계자가 사용함."
+      ],
+      "screen_text": "데이터베이스 관리자나 데이터베이스 설계자가 사용함.",
+      "spoken_sentences": [
+        "그리고 이런 데이터베이스 정의어라는 거는 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 만들고 변경하고 삭제한다 그랬죠.",
+        "그런 것들을 실제로 해주는 우리 데이터베이스 관리자가 됐든 아니면 데이터베이스를 설계하는 사람 그런 사람들이 사용하는 그 언어가 우리 DDL 데이터 정의어예요."
+      ],
+      "spoken_text": "그리고 이런 데이터베이스 정의어라는 거는 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 만들고 변경하고 삭제한다 그랬죠. 그런 것들을 실제로 해주는 우리 데이터베이스 관리자가 됐든 아니면 데이터베이스를 설계하는 사람 그런 사람들이 사용하는 그 언어가 우리 DDL 데이터 정의어예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "DDL의 주요 사용자(DBA, 설계자) 명시",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:33",
+      "start_seconds": 73,
+      "end_seconds": 93,
+      "duration_seconds": 20,
+      "timeline_summary": "DDL 명령어 중 CREATE의 기능 설명",
+      "screen_text_lines": [
+        "DDL(데이터 정의어)의 세 가지 유형",
+        "명령어 CREATE",
+        "기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의함."
+      ],
+      "screen_text": "DDL(데이터 정의어)의 세 가지 유형\n명령어 CREATE\n기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의함.",
+      "spoken_sentences": [
+        "이 데이터 정의어에 보게 되면 크게 세 가지가 있습니다.",
+        "우리 크리에이트(CREATE)라는 게 있고요.",
+        "알터(ALTER)라는 게 있고 드롭(DROP)이라는 게 있고 이렇게 세 가지가 있습니다.",
+        "우리 크리에이트라는 이 명령어는 우리 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 정의할 때 만들 때 생성할 때 사용하는 그런 명령어고요."
+      ],
+      "spoken_text": "이 데이터 정의어에 보게 되면 크게 세 가지가 있습니다. 우리 크리에이트(CREATE)라는 게 있고요. 알터(ALTER)라는 게 있고 드롭(DROP)이라는 게 있고 이렇게 세 가지가 있습니다. 우리 크리에이트라는 이 명령어는 우리 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들을 정의할 때 만들 때 생성할 때 사용하는 그런 명령어고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "TABLE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "DOMAIN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "VIEW",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:01:33",
+      "end_time_hms": "00:01:49",
+      "start_seconds": 93,
+      "end_seconds": 109,
+      "duration_seconds": 16,
+      "timeline_summary": "DDL 명령어 중 ALTER의 기능 설명",
+      "screen_text_lines": [
+        "명령어 ALTER",
+        "기능 TABLE에 대한 정의를 변경하는 데 사용함."
+      ],
+      "screen_text": "명령어 ALTER\n기능 TABLE에 대한 정의를 변경하는 데 사용함.",
+      "spoken_sentences": [
+        "그리고 알터라는 이 명령어는 테이블에 대해서 테이블에 대해서 정의를 변경할 때 사용하는 그 명령어가 우리 알터라는 거예요.",
+        "해서 알터는 테이블의 구조를 변경할 때 정의를 변경할 때 그때 사용되는 그런 명령어고요."
+      ],
+      "spoken_text": "그리고 알터라는 이 명령어는 테이블에 대해서 테이블에 대해서 정의를 변경할 때 사용하는 그 명령어가 우리 알터라는 거예요. 해서 알터는 테이블의 구조를 변경할 때 정의를 변경할 때 그때 사용되는 그런 명령어고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "TABLE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "명령어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:01:49",
+      "end_time_hms": "00:02:05",
+      "start_seconds": 109,
+      "end_seconds": 125,
+      "duration_seconds": 16,
+      "timeline_summary": "DDL 명령어 중 DROP의 기능 설명",
+      "screen_text_lines": [
+        "명령어 DROP",
+        "기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제함."
+      ],
+      "screen_text": "명령어 DROP\n기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제함.",
+      "spoken_sentences": [
+        "그리고 드롭이라는 거는 우리가 만들었던 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들 있죠.",
+        "이런 것들을 우리가 삭제하고자 했을 때 그때 사용되는 그 명령어가 우리 드롭이라는 이 명령어예요."
+      ],
+      "spoken_text": "그리고 드롭이라는 거는 우리가 만들었던 스키마가 됐든 도메인이 됐든 테이블이 됐든 뷰가 됐든 인덱스가 됐든 이런 것들 있죠. 이런 것들을 우리가 삭제하고자 했을 때 그때 사용되는 그 명령어가 우리 드롭이라는 이 명령어예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "TABLE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "DOMAIN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "VIEW",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:02:05",
+      "end_time_hms": "00:02:19",
+      "start_seconds": 125,
+      "end_seconds": 139,
+      "duration_seconds": 14,
+      "timeline_summary": "DDL 명령어를 통한 데이터베이스 구축 및 관리 강조",
+      "screen_text_lines": [
+        "명령어 CREATE ALTER DROP",
+        "기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의함. TABLE에 대한 정의를 변경하는 데 사용함. SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제함."
+      ],
+      "screen_text": "명령어 CREATE ALTER DROP\n기능 SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 정의함. TABLE에 대한 정의를 변경하는 데 사용함. SCHEMA, DOMAIN, TABLE, VIEW, INDEX를 삭제함.",
+      "spoken_sentences": [
+        "해서 크리에이트다 알터다 드롭이다 이런 것들을 우리가 데이터베이스 관리자가 됐든 데이터베이스 설계자가 됐든 이런 사람들이 이런 명령어를 통해서 데이터베이스를 구축을 해 주는 겁니다."
+      ],
+      "spoken_text": "해서 크리에이트다 알터다 드롭이다 이런 것들을 우리가 데이터베이스 관리자가 됐든 데이터베이스 설계자가 됐든 이런 사람들이 이런 명령어를 통해서 데이터베이스를 구축을 해 주는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "TABLE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "DOMAIN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "VIEW",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0233_233",
+      "subtopic_title": "DDL",
+      "subtopic_sequence": 233,
+      "subtopic_number": "233",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=wqHGrqVeOU0",
+      "start_time_hms": "00:02:19",
+      "end_time_hms": "00:02:34",
+      "start_seconds": 139,
+      "end_seconds": 154,
+      "duration_seconds": 15,
+      "timeline_summary": "DDL의 정의와 기능에 대한 최종 요약",
+      "screen_text_lines": [
+        "SQL의 분류",
+        "DDL(Data Define Language, 데이터 정의어)"
+      ],
+      "screen_text": "SQL의 분류\nDDL(Data Define Language, 데이터 정의어)",
+      "spoken_sentences": [
+        "해서 우리 DDL 데이터 정의어라는 거는 우리 데이터베이스에 사용되는 스키마, 도메인, 테이블, 뷰, 인덱스 이런 것들을 만들고 변경하고 삭제할 때 사용되는 그런 명령어다 그렇게 기억하시면 됩니다."
+      ],
+      "spoken_text": "해서 우리 DDL 데이터 정의어라는 거는 우리 데이터베이스에 사용되는 스키마, 도메인, 테이블, 뷰, 인덱스 이런 것들을 만들고 변경하고 삭제할 때 사용되는 그런 명령어다 그렇게 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DDL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "명령어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "DML(데이터 조작어)의 개념 학습 시작 및 인사",
+      "screen_text_lines": [
+        "DML(Data Manipulation Language, 데이터 조작어)의 개념"
+      ],
+      "screen_text": "DML(Data Manipulation Language, 데이터 조작어)의 개념",
+      "spoken_sentences": [
+        "이번 시간에는 우리 DML 데이터 조작어의 개념에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 DML 데이터 조작어의 개념에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 9,
+      "end_seconds": 26,
+      "duration_seconds": 17,
+      "timeline_summary": "DML의 정의 및 용도 설명",
+      "screen_text_lines": [
+        "DML(Data Manipulation Language, 데이터 조작어)의 개념",
+        "DML(데이터 조작어)은 데이터베이스 사용자가 응용 프로그램이나 질의어를 통해 저장된 데이터를 실질적으로 관리하는데 사용되는 언어"
+      ],
+      "screen_text": "DML(Data Manipulation Language, 데이터 조작어)의 개념\nDML(데이터 조작어)은 데이터베이스 사용자가 응용 프로그램이나 질의어를 통해 저장된 데이터를 실질적으로 관리하는데 사용되는 언어",
+      "spoken_sentences": [
+        "DML 데이터 조작어다라고 하게 되면 얘는 데이터베이스에서 사용자가 응용 프로그램이 됐든 질의어가 됐든 이런 것들을 통해서 데이터베이스 저장된 데이터가 있잖아요.",
+        "그런 데이터를 실질적으로 관리하고 사용하는 데 이용되는 그런 언어를 보고 우리가 데이터 조작어 DML이라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "DML 데이터 조작어다라고 하게 되면 얘는 데이터베이스에서 사용자가 응용 프로그램이 됐든 질의어가 됐든 이런 것들을 통해서 데이터베이스 저장된 데이터가 있잖아요. 그런 데이터를 실질적으로 관리하고 사용하는 데 이용되는 그런 언어를 보고 우리가 데이터 조작어 DML이라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 26,
+      "end_seconds": 41,
+      "duration_seconds": 15,
+      "timeline_summary": "DML의 인터페이스 제공 기능 설명",
+      "screen_text_lines": [
+        "DML은 데이터베이스 사용자와 데이터베이스 관리 시스템 간의 인터페이스를 제공함"
+      ],
+      "screen_text": "DML은 데이터베이스 사용자와 데이터베이스 관리 시스템 간의 인터페이스를 제공함",
+      "spoken_sentences": [
+        "이 DML이라는 거는 데이터베이스 사용자랑 데이터베이스 관리 시스템 있죠 DBMS요 그들 간에 인터페이스를 제공해서 우리 데이터베이스 저장된 그런 내용들을 우리가 사용할 수 있게 그렇게 도와주는 언어가 데이터 조작어 DML입니다."
+      ],
+      "spoken_text": "이 DML이라는 거는 데이터베이스 사용자랑 데이터베이스 관리 시스템 있죠 DBMS요 그들 간에 인터페이스를 제공해서 우리 데이터베이스 저장된 그런 내용들을 우리가 사용할 수 있게 그렇게 도와주는 언어가 데이터 조작어 DML입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:00:49",
+      "start_seconds": 41,
+      "end_seconds": 49,
+      "duration_seconds": 8,
+      "timeline_summary": "DML의 4가지 주요 명령어 유형 제시",
+      "screen_text_lines": [
+        "DML의 유형",
+        "명령문",
+        "기능",
+        "SELECT"
+      ],
+      "screen_text": "DML의 유형\n명령문\n기능\nSELECT",
+      "spoken_sentences": [
+        "여기에는 명령어가 크게 네 가지가 있어요.",
+        "셀렉트라는 게 있고 인설트라는 게 있고 그리고 딜리트가 있고 그리고 업데이트가 있고 이렇게 네 가지가 있습니다."
+      ],
+      "spoken_text": "여기에는 명령어가 크게 네 가지가 있어요. 셀렉트라는 게 있고 인설트라는 게 있고 그리고 딜리트가 있고 그리고 업데이트가 있고 이렇게 네 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "명령문",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:49",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 49,
+      "end_seconds": 54,
+      "duration_seconds": 5,
+      "timeline_summary": "SELECT 명령어의 기능(검색) 설명",
+      "screen_text_lines": [
+        "SELECT",
+        "테이블에서 튜플을 검색함"
+      ],
+      "screen_text": "SELECT\n테이블에서 튜플을 검색함",
+      "spoken_sentences": [
+        "자 셀렉트다라고 하게 되면 얘는 데이터베이스에서 특정 내용을 우리가 검색할 때 사용하는 거고요."
+      ],
+      "spoken_text": "자 셀렉트다라고 하게 되면 얘는 데이터베이스에서 특정 내용을 우리가 검색할 때 사용하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:00:59",
+      "start_seconds": 54,
+      "end_seconds": 59,
+      "duration_seconds": 5,
+      "timeline_summary": "INSERT 명령어의 기능(삽입) 설명",
+      "screen_text_lines": [
+        "INSERT",
+        "테이블에 새로운 튜플을 삽입함"
+      ],
+      "screen_text": "INSERT\n테이블에 새로운 튜플을 삽입함",
+      "spoken_sentences": [
+        "인설트다라고 하게 되면 새로운 거를 삽입할 때 그때 사용하는 거고."
+      ],
+      "spoken_text": "인설트다라고 하게 되면 새로운 거를 삽입할 때 그때 사용하는 거고.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:00:59",
+      "end_time_hms": "00:01:04",
+      "start_seconds": 59,
+      "end_seconds": 64,
+      "duration_seconds": 5,
+      "timeline_summary": "DELETE 명령어의 기능(삭제) 설명",
+      "screen_text_lines": [
+        "DELETE",
+        "테이블에서 튜플을 삭제함"
+      ],
+      "screen_text": "DELETE\n테이블에서 튜플을 삭제함",
+      "spoken_sentences": [
+        "그다음에 딜리트다라고 하게 되면 특정 튜플을 우리가 삭제할 때 그때 사용하는 거고요."
+      ],
+      "spoken_text": "그다음에 딜리트다라고 하게 되면 특정 튜플을 우리가 삭제할 때 그때 사용하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:04",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 64,
+      "end_seconds": 70,
+      "duration_seconds": 6,
+      "timeline_summary": "UPDATE 명령어의 기능(갱신) 설명",
+      "screen_text_lines": [
+        "UPDATE",
+        "테이블에서 튜플의 내용을 갱신함"
+      ],
+      "screen_text": "UPDATE\n테이블에서 튜플의 내용을 갱신함",
+      "spoken_sentences": [
+        "그다음에 업데이트다라고 하게 되면 특정 튜플의 내용을 우리가 갱신할 때 수정할 때 사용하는 게 업데이트요."
+      ],
+      "spoken_text": "그다음에 업데이트다라고 하게 되면 특정 튜플의 내용을 우리가 갱신할 때 수정할 때 사용하는 게 업데이트요.",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:28",
+      "start_seconds": 70,
+      "end_seconds": 88,
+      "duration_seconds": 18,
+      "timeline_summary": "DML 명령어의 실생활 예시(게시판 글 남기기)",
+      "screen_text_lines": [
+        "명령문",
+        "SELECT",
+        "INSERT",
+        "DELETE"
+      ],
+      "screen_text": "명령문\nSELECT\nINSERT\nDELETE",
+      "spoken_sentences": [
+        "해서 검색하고 삽입하고 삭제하고 갱신할 때 쓰는 명령어가 이렇게 네 가지가 있습니다.",
+        "우리가 인터넷 상에서 응용 프로그램을 이용해서 우리가 게시판에서 글을 남기잖아요.",
+        "글을 남기고 우리가 저장 버튼만 누르면 자동으로 내가 게시한 글이 올라가죠.",
+        "삽입이 되는 거죠."
+      ],
+      "spoken_text": "해서 검색하고 삽입하고 삭제하고 갱신할 때 쓰는 명령어가 이렇게 네 가지가 있습니다. 우리가 인터넷 상에서 응용 프로그램을 이용해서 우리가 게시판에서 글을 남기잖아요. 글을 남기고 우리가 저장 버튼만 누르면 자동으로 내가 게시한 글이 올라가죠. 삽입이 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:28",
+      "end_time_hms": "00:01:34",
+      "start_seconds": 88,
+      "end_seconds": 94,
+      "duration_seconds": 6,
+      "timeline_summary": "글 저장 시 내부적으로 INSERT 명령이 실행됨을 설명",
+      "screen_text_lines": [
+        "INSERT"
+      ],
+      "screen_text": "INSERT",
+      "spoken_sentences": [
+        "그때 우리는 저장 버튼만 누르면 되지만 실제로는 인설트 명령어 얘가 실행이 돼서 그렇게 게시판의 글이 삽입이 되는 거예요."
+      ],
+      "spoken_text": "그때 우리는 저장 버튼만 누르면 되지만 실제로는 인설트 명령어 얘가 실행이 돼서 그렇게 게시판의 글이 삽입이 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "내부적으로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "실행됨을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:34",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 94,
+      "end_seconds": 103,
+      "duration_seconds": 9,
+      "timeline_summary": "글 삭제 시 내부적으로 DELETE 명령이 실행됨을 설명",
+      "screen_text_lines": [
+        "DELETE"
+      ],
+      "screen_text": "DELETE",
+      "spoken_sentences": [
+        "그리고 내가 게시한 글을 삭제하겠다 그러면 삭제 버튼만 눌러주면 되잖아요.",
+        "근데 실제로는 딜리트라는 요 명령어가 실행이 되면서 삭제가 되는 거고요."
+      ],
+      "spoken_text": "그리고 내가 게시한 글을 삭제하겠다 그러면 삭제 버튼만 눌러주면 되잖아요. 근데 실제로는 딜리트라는 요 명령어가 실행이 되면서 삭제가 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "내부적으로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "실행됨을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:01:51",
+      "start_seconds": 103,
+      "end_seconds": 111,
+      "duration_seconds": 8,
+      "timeline_summary": "글 수정 시 내부적으로 UPDATE 명령이 실행됨을 설명",
+      "screen_text_lines": [
+        "UPDATE"
+      ],
+      "screen_text": "UPDATE",
+      "spoken_sentences": [
+        "그리고 내가 게시한 글을 일부를 수정하겠다라고 했을 때 우리는 수정 버튼 누르고 저장 버튼만 누르면 되지만 실제로는 이 업데이트 명령문이 실행이 되는 겁니다."
+      ],
+      "spoken_text": "그리고 내가 게시한 글을 일부를 수정하겠다라고 했을 때 우리는 수정 버튼 누르고 저장 버튼만 누르면 되지만 실제로는 이 업데이트 명령문이 실행이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "명령문",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        },
+        {
+          "keyword": "내부적으로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "실행됨을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:01:51",
+      "end_time_hms": "00:02:05",
+      "start_seconds": 111,
+      "end_seconds": 125,
+      "duration_seconds": 14,
+      "timeline_summary": "포털 사이트 검색 시 내부적으로 SELECT 명령이 실행됨을 설명",
+      "screen_text_lines": [
+        "SELECT"
+      ],
+      "screen_text": "SELECT",
+      "spoken_sentences": [
+        "그리고 우리가 네이버가 됐든 뭐 다음이 됐든 그런 포털 사이트에서 특정 내용을 주로 검색을 제일 많이 하잖아요.",
+        "우리는 그냥 어떤 특정 내용을 쓰고 검색 버튼만 누르면 되는데 실제로는 그때 셀렉트라는 요 명령문이 실행이 되는 겁니다."
+      ],
+      "spoken_text": "그리고 우리가 네이버가 됐든 뭐 다음이 됐든 그런 포털 사이트에서 특정 내용을 주로 검색을 제일 많이 하잖아요. 우리는 그냥 어떤 특정 내용을 쓰고 검색 버튼만 누르면 되는데 실제로는 그때 셀렉트라는 요 명령문이 실행이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "명령문",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        },
+        {
+          "keyword": "내부적으로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "실행됨을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:02:05",
+      "end_time_hms": "00:02:23",
+      "start_seconds": 125,
+      "end_seconds": 143,
+      "duration_seconds": 18,
+      "timeline_summary": "시험에서 SELECT 명령어의 중요성 강조",
+      "screen_text_lines": [
+        "SELECT"
+      ],
+      "screen_text": "SELECT",
+      "spoken_sentences": [
+        "우리가 인터넷 사이트 같은 데서도 우리가 검색을 제일 많이 하듯이 우리 데이터베이스 이 안에서도 우리가 제일 많이 쓰는 게 요 셀렉트 구문이요.",
+        "해서 이 셀렉트 구문이 시험 문제에 엄청나게 많이 나올 거예요.",
+        "다른 것들에 비해서 많이 나올 거니까 요 셀렉트문 위주로 해서 여러분들이 정확하게 기억하고 계셔야 됩니다."
+      ],
+      "spoken_text": "우리가 인터넷 사이트 같은 데서도 우리가 검색을 제일 많이 하듯이 우리 데이터베이스 이 안에서도 우리가 제일 많이 쓰는 게 요 셀렉트 구문이요. 해서 이 셀렉트 구문이 시험 문제에 엄청나게 많이 나올 거예요. 다른 것들에 비해서 많이 나올 거니까 요 셀렉트문 위주로 해서 여러분들이 정확하게 기억하고 계셔야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0234_234",
+      "subtopic_title": "DML",
+      "subtopic_sequence": 234,
+      "subtopic_number": "234",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gRlkAKCH1rk",
+      "start_time_hms": "00:02:23",
+      "end_time_hms": "00:02:51",
+      "start_seconds": 143,
+      "end_seconds": 171,
+      "duration_seconds": 28,
+      "timeline_summary": "모든 DML 명령어의 기능 숙지 당부 및 마무리",
+      "screen_text_lines": [
+        "SELECT",
+        "INSERT",
+        "DELETE",
+        "UPDATE"
+      ],
+      "screen_text": "SELECT\nINSERT\nDELETE\nUPDATE",
+      "spoken_sentences": [
+        "그렇다고 해서 뭐 인설트다 딜리트다 업데이트다 이런 거를 아예 공부 안 한다 그건 아니에요.",
+        "물론 공부는 해야죠.",
+        "나오니까 하긴 해야 되는데 그중에서도 우리가 실질적으로 제일 많이 사용하는 게 셀렉트다.",
+        "해서 셀렉트가 아무래도 시험 문제 가장 많이 나올 가능성이 높습니다.",
+        "해서 DML이 이런 거다 그 정도 여러분들이 개념 잡으시고요.",
+        "그다음에 얘네들 이런 명령어들이 뭘 하는 명령어인지 정확하게 그 기능 기억하고 계셔야 돼요."
+      ],
+      "spoken_text": "그렇다고 해서 뭐 인설트다 딜리트다 업데이트다 이런 거를 아예 공부 안 한다 그건 아니에요. 물론 공부는 해야죠. 나오니까 하긴 해야 되는데 그중에서도 우리가 실질적으로 제일 많이 사용하는 게 셀렉트다. 해서 셀렉트가 아무래도 시험 문제 가장 많이 나올 가능성이 높습니다. 해서 DML이 이런 거다 그 정도 여러분들이 개념 잡으시고요. 그다음에 얘네들 이런 명령어들이 뭘 하는 명령어인지 정확하게 그 기능 기억하고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SELECT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 69
+        },
+        {
+          "keyword": "DML",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:00:05",
+      "end_time_hms": "00:00:18",
+      "start_seconds": 5,
+      "end_seconds": 18,
+      "duration_seconds": 13,
+      "timeline_summary": "DCL(데이터 제어어)의 기본 정의 설명",
+      "screen_text_lines": [
+        "SQL의 분류",
+        "DCL(Data Control Language, 데이터 제어어)",
+        "DCL은 데이터의 보안, 무결성, 회복, 병행 수행 제어 등을 정의하는 데 사용되는 언어."
+      ],
+      "screen_text": "SQL의 분류\nDCL(Data Control Language, 데이터 제어어)\nDCL은 데이터의 보안, 무결성, 회복, 병행 수행 제어 등을 정의하는 데 사용되는 언어.",
+      "spoken_sentences": [
+        "그다음에 DCL이요.",
+        "DCL은 우리가 데이터 제어, 그렇게 부르는 거요.",
+        "얘는 말 그대로 데이터베이스를 제어할 때, 제어할 때 사용하는 그 언어가 우리 DCL 데이터 제어어 요."
+      ],
+      "spoken_text": "그다음에 DCL이요. DCL은 우리가 데이터 제어, 그렇게 부르는 거요. 얘는 말 그대로 데이터베이스를 제어할 때, 제어할 때 사용하는 그 언어가 우리 DCL 데이터 제어어 요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DCL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "무결성",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:00:18",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 18,
+      "end_seconds": 32,
+      "duration_seconds": 14,
+      "timeline_summary": "데이터베이스 관리자(DBA)의 사용 목적 설명",
+      "screen_text_lines": [
+        "데이터베이스 관리자가 데이터 관리를 목적으로 사용함."
+      ],
+      "screen_text": "데이터베이스 관리자가 데이터 관리를 목적으로 사용함.",
+      "spoken_sentences": [
+        "해서 이 DCL은 데이터베이스 관리자가 사용을 하는데, 이 데이터베이스 관리자가 데이터베이스에 들어 있는 그런 데이터들을 관리할 그 목적으로 사용하는 그런 언어가 우리 DCL 데이터 제어어 요."
+      ],
+      "spoken_text": "해서 이 DCL은 데이터베이스 관리자가 사용을 하는데, 이 데이터베이스 관리자가 데이터베이스에 들어 있는 그런 데이터들을 관리할 그 목적으로 사용하는 그런 언어가 우리 DCL 데이터 제어어 요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DCL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 32,
+      "end_seconds": 43,
+      "duration_seconds": 11,
+      "timeline_summary": "DCL을 통해 정의하는 구체적인 항목들 나열",
+      "screen_text_lines": [
+        "DCL은 데이터의 보안, 무결성, 회복, 병행 수행 제어 등을 정의하는 데 사용되는 언어."
+      ],
+      "screen_text": "DCL은 데이터의 보안, 무결성, 회복, 병행 수행 제어 등을 정의하는 데 사용되는 언어.",
+      "spoken_sentences": [
+        "해서 이 DCL 데이터 제어를 통해서 데이터의 보안이 됐든 무결성이 됐든 회복이 됐든 병행 수행 제어가 됐든 그런 것들을 정의할 때 사용되는 그런 언어입니다."
+      ],
+      "spoken_text": "해서 이 DCL 데이터 제어를 통해서 데이터의 보안이 됐든 무결성이 됐든 회복이 됐든 병행 수행 제어가 됐든 그런 것들을 정의할 때 사용되는 그런 언어입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DCL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "무결성",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "회복",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 43,
+      "end_seconds": 54,
+      "duration_seconds": 11,
+      "timeline_summary": "DCL 명령어의 네 가지 종류 소개",
+      "screen_text_lines": [
+        "DCL(데이터 제어어)의 종류",
+        "명령어",
+        "기능",
+        "COMMIT"
+      ],
+      "screen_text": "DCL(데이터 제어어)의 종류\n명령어\n기능\nCOMMIT",
+      "spoken_sentences": [
+        "우리 DCL 데이터 제어의 종류에 보게 되면 커밋이라는 것도 있고요, 그다음에 롤백이라는 것도 있고, 그랜트라는 것도 있고, 리보크도 있고 이렇게 종류가 총 네 가지가 있습니다."
+      ],
+      "spoken_text": "우리 DCL 데이터 제어의 종류에 보게 되면 커밋이라는 것도 있고요, 그다음에 롤백이라는 것도 있고, 그랜트라는 것도 있고, 리보크도 있고 이렇게 종류가 총 네 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DCL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:17",
+      "start_seconds": 54,
+      "end_seconds": 77,
+      "duration_seconds": 23,
+      "timeline_summary": "COMMIT 명령어의 상세 기능 및 작동 원리 설명",
+      "screen_text_lines": [
+        "COMMIT",
+        "명령에 의해 수행된 결과를 실제 물리적 디스크로 저장하고, 데이터베이스 조작 작업이 정상적으로 완료되었음을 관리자에게 알려줌."
+      ],
+      "screen_text": "COMMIT\n명령에 의해 수행된 결과를 실제 물리적 디스크로 저장하고, 데이터베이스 조작 작업이 정상적으로 완료되었음을 관리자에게 알려줌.",
+      "spoken_sentences": [
+        "이 커밋이라는 거는 명령에 의해서 수행된 그 결과, 그 결과를 실제 물리적인 그런 디스크에다가 저장해 주는 그런 명령어예요.",
+        "해서 우리 명령에 의해서 수행된 그 결과를 저장한다.",
+        "그 얘기는 그 해당 작업이 정상적으로 완료됐다.",
+        "그걸 관리자한테 알려줄 때 우리가 커밋, 커밋이라는 걸 하는 거예요."
+      ],
+      "spoken_text": "이 커밋이라는 거는 명령에 의해서 수행된 그 결과, 그 결과를 실제 물리적인 그런 디스크에다가 저장해 주는 그런 명령어예요. 해서 우리 명령에 의해서 수행된 그 결과를 저장한다. 그 얘기는 그 해당 작업이 정상적으로 완료됐다. 그걸 관리자한테 알려줄 때 우리가 커밋, 커밋이라는 걸 하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "COMMIT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:01:17",
+      "end_time_hms": "00:01:36",
+      "start_seconds": 77,
+      "end_seconds": 96,
+      "duration_seconds": 19,
+      "timeline_summary": "ROLLBACK 명령어의 기능 및 트랜잭션과의 관계 언급",
+      "screen_text_lines": [
+        "ROLLBACK",
+        "데이터베이스 조작 작업이 비정상적으로 종료되었을 때 원래의 상태로 복구함."
+      ],
+      "screen_text": "ROLLBACK\n데이터베이스 조작 작업이 비정상적으로 종료되었을 때 원래의 상태로 복구함.",
+      "spoken_sentences": [
+        "그리고 우리 데이터베이스 조작 작업이 만약에 비정상적으로 만약에 종료가 됐다.",
+        "그랬을 때는 원래 상태대로 다시 우리가 복구를 해야 되겠죠.",
+        "그때 사용하는 그 명령어가 우리 롤백이요.",
+        "해서 커밋이다, 우리 롤백이다.",
+        "이거는 우리가 트랜잭션에서도 공부했던 그 내용이죠."
+      ],
+      "spoken_text": "그리고 우리 데이터베이스 조작 작업이 만약에 비정상적으로 만약에 종료가 됐다. 그랬을 때는 원래 상태대로 다시 우리가 복구를 해야 되겠죠. 그때 사용하는 그 명령어가 우리 롤백이요. 해서 커밋이다, 우리 롤백이다. 이거는 우리가 트랜잭션에서도 공부했던 그 내용이죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:01:36",
+      "end_time_hms": "00:01:46",
+      "start_seconds": 96,
+      "end_seconds": 106,
+      "duration_seconds": 10,
+      "timeline_summary": "GRANT 명령어의 권한 부여 기능 설명",
+      "screen_text_lines": [
+        "GRANT",
+        "데이터베이스 사용자에게 사용 권한을 부여함."
+      ],
+      "screen_text": "GRANT\n데이터베이스 사용자에게 사용 권한을 부여함.",
+      "spoken_sentences": [
+        "그다음에 그랜트라는 거요.",
+        "그랜트라는 거는 데이터베이스 사용자한테 사용 권한을 부여할 때, 부여할 때 그때 쓰는 명령어가 우리 그랜트고요."
+      ],
+      "spoken_text": "그다음에 그랜트라는 거요. 그랜트라는 거는 데이터베이스 사용자한테 사용 권한을 부여할 때, 부여할 때 그때 쓰는 명령어가 우리 그랜트고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_051-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0235_235",
+      "subtopic_title": "DCL",
+      "subtopic_sequence": 235,
+      "subtopic_number": "235",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ejYb9eyejuo",
+      "start_time_hms": "00:01:46",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 106,
+      "end_seconds": 124,
+      "duration_seconds": 18,
+      "timeline_summary": "REVOKE 명령어의 권한 취소 기능 설명 및 마무리",
+      "screen_text_lines": [
+        "REVOKE",
+        "데이터베이스 사용자의 사용 권한을 취소함."
+      ],
+      "screen_text": "REVOKE\n데이터베이스 사용자의 사용 권한을 취소함.",
+      "spoken_sentences": [
+        "그리고 데이터베이스 사용자의 사용 권한을 취소시키는 거, 취소시키는 그 명령어가 우리 리보크라는 이 명령어입니다.",
+        "해서 우리 커밋이다 롤백이다 그다음에 그랜트다 리보크다 해서 요 네 가지 명령어가 우리 데이터 제어어요."
+      ],
+      "spoken_text": "그리고 데이터베이스 사용자의 사용 권한을 취소시키는 거, 취소시키는 그 명령어가 우리 리보크라는 이 명령어입니다. 해서 우리 커밋이다 롤백이다 그다음에 그랜트다 리보크다 해서 요 네 가지 명령어가 우리 데이터 제어어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "명령어의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    }
+  ]
+}

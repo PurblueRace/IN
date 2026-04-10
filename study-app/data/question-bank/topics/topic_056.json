@@ -1,0 +1,1245 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_056",
+    "sequence": 56,
+    "title": "하위 질의·그룹 함수·조인",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 7,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_198",
+      "chapter_225",
+      "chapter_113",
+      "chapter_127"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_f328942924c88818",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          15
+        ],
+        "page_span": {
+          "start_page": 15,
+          "end_page": 15
+        },
+        "source_explanation": "하위 질의(Subquery)에서 '김수철'의 학번인 1004를 먼저 찾습니다. 그 후 메인 쿼리에서 학번 1004에 해당하는 학과인 '전기과'를 결과로 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "하위 질의"
+        ],
+        "chapter_label": "하위 질의",
+        "chapter_key": "데이터베이스 구축 > SQL > 하위 질의",
+        "chapter_id": "chapter_198"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 235.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 SQL문의 실행 결과는?\nSelect 학과 From 학과 Where 학번 In\n(Select 학번 From 학생 Where 이름 = \"김수철\");",
+        "choices": [
+          {
+            "label": "1",
+            "text": "데이터베이스"
+          },
+          {
+            "label": "2",
+            "text": "AI응용"
+          },
+          {
+            "label": "3",
+            "text": "AI분석"
+          },
+          {
+            "label": "4",
+            "text": "전기과"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "전기과"
+        ],
+        "answer_text": "전기과"
+      },
+      "explanation": {
+        "source_text": "하위 질의(Subquery)에서 '김수철'의 학번인 1004를 먼저 찾습니다. 그 후 메인 쿼리에서 학번 1004에 해당하는 학과인 '전기과'를 결과로 출력합니다.",
+        "summary": "중첩된 SQL 질의문의 실행 순서와 결과를 도출하는 문제입니다.",
+        "why_correct": [
+          "안쪽 쿼리(학생 테이블)에서 김수철의 학번 1004를 반환하고, 바깥쪽 쿼리(학과 테이블)에서 학번 1004의 학과명인 '전기과'를 찾습니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+        ],
+        "key_concepts": [
+          "하위 질의(Subquery)",
+          "IN 연산자"
+        ],
+        "memory_cues": [
+          "안쪽 괄호부터 해결하고 밖으로 나오기!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "데이터베이스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 '데이터베이스'이므로 일치하지 않습니다. 다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+          },
+          {
+            "label": "2",
+            "text": "AI응용",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 'AI응용'이므로 일치하지 않습니다. 다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+          },
+          {
+            "label": "3",
+            "text": "AI분석",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 'AI분석'이므로 일치하지 않습니다. 다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+          },
+          {
+            "label": "4",
+            "text": "전기과",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 전기과'와 일치합니다. 안쪽 쿼리(학생 테이블)에서 김수철의 학번 1004를 반환하고, 바깥쪽 쿼리(학과 테이블)에서 학번 1004의 학과명인 '전기과'를 찾습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과는? Select 학과 From 학과 Where 학번 In (Select 학번 From 학생 Where 이름 = \"김수철\");",
+          "핵심 개념을 떠올립니다. 하위 질의(Subquery), IN 연산자",
+          "정답 판단 근거를 적용합니다. 안쪽 쿼리(학생 테이블)에서 김수철의 학번 1004를 반환하고, 바깥쪽 쿼리(학과 테이블)에서 학번 1004의 학과명인 '전기과'를 찾습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "다른 보기들은 다른 학번(1001~1003)에 해당하는 학과명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '하위 질의(Subquery)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IN 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 안쪽 괄호부터 해결하고 밖으로 나오기!"
+        ],
+        "detailed_summary": "중첩된 SQL 질의문의 실행 순서와 결과를 도출하는 문제입니다. 하위 질의(Subquery)에서 '김수철'의 학번인 1004를 먼저 찾습니다. 그 후 메인 쿼리에서 학번 1004에 해당하는 학과인 '전기과'를 결과로 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과는? Select 학과 From 학과 Where 학번 In (Select 학번 From 학생 Where 이름 = \"김수철\"); 정답입니다. 이 선택지는 실제 정답인 '4번 전기과'와 일치합니다. 안쪽 쿼리(학생 테이블)에서 김수철의 학번 1004를 반환하고, 바깥쪽 쿼리(학과 테이블)에서 학번 1004의 학과명인 '전기과'를 찾습니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "하위 질의",
+        "Subquery",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          15
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0015",
+            "page_number": 15,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0015.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1385,
+            "file_size_bytes": 991793,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0015",
+          "page_number": 15,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0015.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1385,
+          "file_size_bytes": 991793,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0015",
+          "page_number": 15,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0015.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1385,
+          "file_size_bytes": 991793,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_c3dc9c91d73a5ac8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          54
+        ],
+        "page_span": {
+          "start_page": 54,
+          "end_page": 54
+        },
+        "source_explanation": "전문가의 조언 | HAVING은 특정 속성을 기준으로 그룹화하여 검색할 때 그 그룹에 대한 조건을 지정하는 절로 GROUP BY와 함께 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "하위 질의·그룹 함수·조인"
+        ],
+        "chapter_label": "하위 질의·그룹 함수·조인",
+        "chapter_key": "데이터베이스 구축 > 하위 질의·그룹 함수·조인",
+        "chapter_id": "chapter_225"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "58. SQL 구문에서 \"having\" 절은 반드시 어떤 구문과 사용되어야 하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "GROUP BY"
+          },
+          {
+            "label": "2",
+            "text": "ORDER BY"
+          },
+          {
+            "label": "3",
+            "text": "UPDATE"
+          },
+          {
+            "label": "4",
+            "text": "JOIN"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "GROUP BY"
+        ],
+        "answer_text": "GROUP BY"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | HAVING은 특정 속성을 기준으로 그룹화하여 검색할 때 그 그룹에 대한 조건을 지정하는 절로 GROUP BY와 함께 사용합니다.",
+        "summary": "SQL에서 그룹화된 결과에 조건을 부여하는 HAVING 절의 사용법을 묻는 문제입니다.",
+        "why_correct": [
+          "HAVING 절은 GROUP BY 절에 의해 생성된 그룹들에 대해 필터링 조건을 적용할 때 사용됩니다."
+        ],
+        "why_others_wrong": [
+          "ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+        ],
+        "key_concepts": [
+          "HAVING 절",
+          "GROUP BY 절"
+        ],
+        "memory_cues": [
+          "그해 (GROUP BY - HAVING)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "GROUP BY",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 GROUP BY'와 일치합니다. HAVING 절은 GROUP BY 절에 의해 생성된 그룹들에 대해 필터링 조건을 적용할 때 사용됩니다."
+          },
+          {
+            "label": "2",
+            "text": "ORDER BY",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 GROUP BY'인데 이 선택지는 'ORDER BY'이므로 일치하지 않습니다. ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "UPDATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 GROUP BY'인데 이 선택지는 'UPDATE'이므로 일치하지 않습니다. ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "JOIN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 GROUP BY'인데 이 선택지는 'JOIN'이므로 일치하지 않습니다. ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. SQL 구문에서 \"having\" 절은 반드시 어떤 구문과 사용되어야 하는가?",
+          "핵심 개념을 떠올립니다. HAVING 절, GROUP BY 절",
+          "정답 판단 근거를 적용합니다. HAVING 절은 GROUP BY 절에 의해 생성된 그룹들에 대해 필터링 조건을 적용할 때 사용됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "ORDER BY는 정렬, UPDATE는 수정, JOIN은 결합을 위한 구문으로 HAVING과 직접적인 필수 관계가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HAVING 절'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'GROUP BY 절'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 그해 (GROUP BY - HAVING)"
+        ],
+        "detailed_summary": "SQL에서 그룹화된 결과에 조건을 부여하는 HAVING 절의 사용법을 묻는 문제입니다. 전문가의 조언 | HAVING은 특정 속성을 기준으로 그룹화하여 검색할 때 그 그룹에 대한 조건을 지정하는 절로 GROUP BY와 함께 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. SQL 구문에서 \"having\" 절은 반드시 어떤 구문과 사용되어야 하는가? 정답입니다. 이 선택지는 실제 정답인 '1번 GROUP BY'와 일치합니다. HAVING 절은 GROUP BY 절에 의해 생성된 그룹들에 대해 필터링 조건을 적용할 때 사용됩니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "HAVING",
+        "GROUP BY",
+        "그룹 조건"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c6d1a19d1052e657",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          73
+        ],
+        "page_span": {
+          "start_page": 73,
+          "end_page": 73
+        },
+        "source_explanation": "문제의 질의문은 하위 질의가 있는 질의문으로 먼저 WHERE 조건에 지정된 하위 질의의 SELECT문을 검색합니다. '정도일'의 팀코드를 먼저 찾아서 메인 쿼리에 전달해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "하위 질의·그룹 함수·조인"
+        ],
+        "chapter_label": "하위 질의·그룹 함수·조인",
+        "chapter_key": "데이터베이스 구축 > 하위 질의·그룹 함수·조인",
+        "chapter_id": "chapter_225"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에 들어갈 내용으로 옳은 것은? (단, '팀코드' 및 '이름'은 속성이며, '직원'은 테이블이다.)\n[조건]\n이름이 '정도일'인 팀원이 소속된 팀코드를 이용하여 해당 팀에 소속된 팀원들의 이름을 출력하는 SQL문 작성\n[SQL문]\nSELECT 이름\nFROM 직원\nWHERE 팀코드 = ( );",
+        "choices": [
+          {
+            "label": "1",
+            "text": "WHERE 이름='정도일'"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 팀코드 FROM 이름 WHERE 직원='정도일'"
+          },
+          {
+            "label": "3",
+            "text": "WHERE 직원='정도일'"
+          },
+          {
+            "label": "4",
+            "text": "SELECT 팀코드 FROM 직원 WHERE 이름='정도일'"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "SELECT 팀코드 FROM 직원 WHERE 이름='정도일'"
+        ],
+        "answer_text": "SELECT 팀코드 FROM 직원 WHERE 이름='정도일'"
+      },
+      "explanation": {
+        "source_text": "문제의 질의문은 하위 질의가 있는 질의문으로 먼저 WHERE 조건에 지정된 하위 질의의 SELECT문을 검색합니다. '정도일'의 팀코드를 먼저 찾아서 메인 쿼리에 전달해야 합니다.",
+        "summary": "서브쿼리(하위 질의)를 사용하여 특정 조건을 만족하는 데이터를 조회하는 SQL 작성 문제입니다.",
+        "why_correct": [
+          "괄호 안의 서브쿼리가 '정도일'의 팀코드를 반환해야 하므로 'SELECT 팀코드 FROM 직원 WHERE 이름='정도일''이 적절합니다."
+        ],
+        "why_others_wrong": [
+          "1, 3: SELECT 절이 없는 불완전한 문장입니다.",
+          "2: FROM 절에 테이블명이 아닌 속성명이 왔습니다."
+        ],
+        "key_concepts": [
+          "서브쿼리",
+          "WHERE 절"
+        ],
+        "memory_cues": [
+          "서브쿼리는 괄호 안에 SELECT문 전체를 쓴다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "WHERE 이름='정도일'",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SELECT 팀코드 FROM 직원 WHERE 이름='정도일''인데 이 선택지는 'WHERE 이름='정도일''이므로 일치하지 않습니다. 1, 3: SELECT 절이 없는 불완전한 문장입니다. 2: FROM 절에 테이블명이 아닌 속성명이 왔습니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 팀코드 FROM 이름 WHERE 직원='정도일'",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SELECT 팀코드 FROM 직원 WHERE 이름='정도일''인데 이 선택지는 'SELECT 팀코드 FROM 이름 WHERE 직원='정도일''이므로 일치하지 않습니다. 1, 3: SELECT 절이 없는 불완전한 문장입니다. 2: FROM 절에 테이블명이 아닌 속성명이 왔습니다."
+          },
+          {
+            "label": "3",
+            "text": "WHERE 직원='정도일'",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SELECT 팀코드 FROM 직원 WHERE 이름='정도일''인데 이 선택지는 'WHERE 직원='정도일''이므로 일치하지 않습니다. 1, 3: SELECT 절이 없는 불완전한 문장입니다. 2: FROM 절에 테이블명이 아닌 속성명이 왔습니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT 팀코드 FROM 직원 WHERE 이름='정도일'",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 SELECT 팀코드 FROM 직원 WHERE 이름='정도일''와 일치합니다. 괄호 안의 서브쿼리가 '정도일'의 팀코드를 반환해야 하므로 'SELECT 팀코드 FROM 직원 WHERE 이름='정도일''이 적절합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에 들어갈 내용으로 옳은 것은? (단, '팀코드' 및 '이름'은 속성이며, '직원'은 테이블이다.) [조건] 이름이 '정도일'인 팀원이 소속된 팀코드를 이용하여 해당 팀에 소속된 팀원들의 이름을 출력하는 SQL문 작성 [SQL문] SELECT 이름 FROM 직원 WHERE 팀코드 = ( );",
+          "핵심 개념을 떠올립니다. 서브쿼리, WHERE 절",
+          "정답 판단 근거를 적용합니다. 괄호 안의 서브쿼리가 '정도일'의 팀코드를 반환해야 하므로 'SELECT 팀코드 FROM 직원 WHERE 이름='정도일''이 적절합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3: SELECT 절이 없는 불완전한 문장입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 3: SELECT 절이 없는 불완전한 문장입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '서브쿼리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'WHERE 절'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 서브쿼리는 괄호 안에 SELECT문 전체를 쓴다."
+        ],
+        "detailed_summary": "서브쿼리(하위 질의)를 사용하여 특정 조건을 만족하는 데이터를 조회하는 SQL 작성 문제입니다. 문제의 질의문은 하위 질의가 있는 질의문으로 먼저 WHERE 조건에 지정된 하위 질의의 SELECT문을 검색합니다. '정도일'의 팀코드를 먼저 찾아서 메인 쿼리에 전달해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 [조건]에 부합하는 SQL문을 작성하고자 할 때, [SQL문]의 빈칸에 들어갈 내용으로 옳은 것은? (단, '팀코드' 및 '이름'은 속성이며, '직원'은 테이블이다.) [조건] 이름이 '정도일'인 팀원이 소속된 팀코드를 이용하여 해당 팀에 소속된 팀원들의 이름을 출력하는 SQL문 작성 [SQL문] SELECT 이름 FROM 직원 WHERE 팀코드 = ( ); 정답입니다. 이 선택지는 실제 정답인 '4번 SELECT 팀코드 FROM 직원 WHERE 이름='정도일''와 일치합니다. 괄호 안의 서브쿼리가 '정도일'의 팀코드를 반환해야 하므로 'SELECT 팀코드 FROM 직원 WHERE 이름='정도일''이 적절합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "하위 질의",
+        "Subquery",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ea4d8752565b998b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          89
+        ],
+        "page_span": {
+          "start_page": 89,
+          "end_page": 89
+        },
+        "source_explanation": "전문가의 조언 | 속성의 값을 집계할 때 사용하는 집계(그룹) 함수에는 COUNT, SUM, AVG, MAX, MIN 등이 있습니다. CREATE는 테이블이나 뷰를 생성하는 DDL 명령어입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "84섹션 1빌드"
+        ],
+        "chapter_label": "84섹션 1빌드",
+        "chapter_key": "3과목 데이터베이스 구축 > 84섹션 1빌드",
+        "chapter_id": "chapter_113"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "53. 다음 중 SQL의 집계 함수(Aggregation Function)가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "AVG"
+          },
+          {
+            "label": "2",
+            "text": "COUNT"
+          },
+          {
+            "label": "3",
+            "text": "SUM"
+          },
+          {
+            "label": "4",
+            "text": "CREATE"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "CREATE"
+        ],
+        "answer_text": "CREATE"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 속성의 값을 집계할 때 사용하는 집계(그룹) 함수에는 COUNT, SUM, AVG, MAX, MIN 등이 있습니다. CREATE는 테이블이나 뷰를 생성하는 DDL 명령어입니다.",
+        "summary": "SQL에서 여러 행의 값을 요약하여 하나의 값을 반환하는 집계 함수를 구분하는 문제입니다.",
+        "why_correct": [
+          "CREATE는 데이터베이스 객체를 생성하는 데이터 정의어(DDL)이지 집계 함수가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+        ],
+        "key_concepts": [
+          "집계 함수",
+          "DDL",
+          "DML"
+        ],
+        "memory_cues": [
+          "집계는 계산하는 것, CREATE는 만드는 것!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "AVG",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 CREATE'인데 이 선택지는 'AVG'이므로 일치하지 않습니다. AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+          },
+          {
+            "label": "2",
+            "text": "COUNT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 CREATE'인데 이 선택지는 'COUNT'이므로 일치하지 않습니다. AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+          },
+          {
+            "label": "3",
+            "text": "SUM",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 CREATE'인데 이 선택지는 'SUM'이므로 일치하지 않습니다. AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+          },
+          {
+            "label": "4",
+            "text": "CREATE",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 CREATE'와 일치합니다. CREATE는 데이터베이스 객체를 생성하는 데이터 정의어(DDL)이지 집계 함수가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 53. 다음 중 SQL의 집계 함수(Aggregation Function)가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 집계 함수, DDL, DML",
+          "정답 판단 근거를 적용합니다. CREATE는 데이터베이스 객체를 생성하는 데이터 정의어(DDL)이지 집계 함수가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "AVG(평균), COUNT(개수), SUM(합계)은 모두 대표적인 SQL 집계 함수입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '집계 함수'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DDL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 집계는 계산하는 것, CREATE는 만드는 것!"
+        ],
+        "detailed_summary": "SQL에서 여러 행의 값을 요약하여 하나의 값을 반환하는 집계 함수를 구분하는 문제입니다. 전문가의 조언 | 속성의 값을 집계할 때 사용하는 집계(그룹) 함수에는 COUNT, SUM, AVG, MAX, MIN 등이 있습니다. CREATE는 테이블이나 뷰를 생성하는 DDL 명령어입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 53. 다음 중 SQL의 집계 함수(Aggregation Function)가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 CREATE'와 일치합니다. CREATE는 데이터베이스 객체를 생성하는 데이터 정의어(DDL)이지 집계 함수가 아닙니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "집계 함수",
+        "SQL",
+        "AVG",
+        "COUNT",
+        "CREATE"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ae2dacfbc57be973",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          110,
+          111
+        ],
+        "page_span": {
+          "start_page": 110,
+          "end_page": 111
+        },
+        "source_explanation": "전문가의 조언 | (R2) 테이블에서 '과목번호'가 'C100'인 튜플의 '학번'을 검색하면 1000, 3000, 4000입니다. (R1) 테이블에서 이 학번들에 해당하는 '이름'을 찾으면 '홍길동', '강남길', '오말자'입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "하위 질의·그룹 함수·조인"
+        ],
+        "chapter_label": "하위 질의·그룹 함수·조인",
+        "chapter_key": "데이터베이스 구축 > 하위 질의·그룹 함수·조인",
+        "chapter_id": "chapter_225"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "52. 다음 SQL문의 실행 결과는?\n[SQL 문]\nSELECT 이름\nFROM R1\nWHERE 학번 IN\n(SELECT 학번\nFROM R2\nWHERE 과목번호 = 'C100');",
+        "choices": [
+          {
+            "label": "1",
+            "text": "이름: 홍길동, 강남길, 장미화"
+          },
+          {
+            "label": "2",
+            "text": "이름: 홍길동, 강남길, 오말자"
+          },
+          {
+            "label": "3",
+            "text": "이름: 홍길동, 김철수, 강남길, 오말자, 장미화"
+          },
+          {
+            "label": "4",
+            "text": "이름: 홍길동, 김철수"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "이름: 홍길동, 강남길, 오말자"
+        ],
+        "answer_text": "이름: 홍길동, 강남길, 오말자"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | (R2) 테이블에서 '과목번호'가 'C100'인 튜플의 '학번'을 검색하면 1000, 3000, 4000입니다. (R1) 테이블에서 이 학번들에 해당하는 '이름'을 찾으면 '홍길동', '강남길', '오말자'입니다.",
+        "summary": "중첩 서브쿼리를 포함한 SQL문의 실행 결과를 예측하는 문제입니다.",
+        "why_correct": [
+          "안쪽 쿼리에서 과목번호 C100을 수강하는 학번(1000, 3000, 4000)을 추출하고, 바깥쪽 쿼리에서 해당 학번의 이름을 R1에서 찾으면 홍길동, 강남길, 오말자가 나옵니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+        ],
+        "key_concepts": [
+          "서브쿼리",
+          "IN 연산자"
+        ],
+        "memory_cues": [
+          "안쪽부터 풀기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "이름: 홍길동, 강남길, 장미화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 이름: 홍길동, 강남길, 오말자'인데 이 선택지는 '이름: 홍길동, 강남길, 장미화'이므로 일치하지 않습니다. 다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+          },
+          {
+            "label": "2",
+            "text": "이름: 홍길동, 강남길, 오말자",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 이름: 홍길동, 강남길, 오말자'와 일치합니다. 안쪽 쿼리에서 과목번호 C100을 수강하는 학번(1000, 3000, 4000)을 추출하고, 바깥쪽 쿼리에서 해당 학번의 이름을 R1에서 찾으면 홍길동, 강남길, 오말자가 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "이름: 홍길동, 김철수, 강남길, 오말자, 장미화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 이름: 홍길동, 강남길, 오말자'인데 이 선택지는 '이름: 홍길동, 김철수, 강남길, 오말자, 장미화'이므로 일치하지 않습니다. 다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+          },
+          {
+            "label": "4",
+            "text": "이름: 홍길동, 김철수",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 이름: 홍길동, 강남길, 오말자'인데 이 선택지는 '이름: 홍길동, 김철수'이므로 일치하지 않습니다. 다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 SQL문의 실행 결과는? [SQL 문] SELECT 이름 FROM R1 WHERE 학번 IN (SELECT 학번 FROM R2 WHERE 과목번호 = 'C100');",
+          "핵심 개념을 떠올립니다. 서브쿼리, IN 연산자",
+          "정답 판단 근거를 적용합니다. 안쪽 쿼리에서 과목번호 C100을 수강하는 학번(1000, 3000, 4000)을 추출하고, 바깥쪽 쿼리에서 해당 학번의 이름을 R1에서 찾으면 홍길동, 강남길, 오말자가 나옵니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "다른 보기들은 조건에 맞지 않는 학번의 이름이 포함되어 있거나 필요한 이름이 누락되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '서브쿼리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IN 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 안쪽부터 풀기"
+        ],
+        "detailed_summary": "중첩 서브쿼리를 포함한 SQL문의 실행 결과를 예측하는 문제입니다. 전문가의 조언 | (R2) 테이블에서 '과목번호'가 'C100'인 튜플의 '학번'을 검색하면 1000, 3000, 4000입니다. (R1) 테이블에서 이 학번들에 해당하는 '이름'을 찾으면 '홍길동', '강남길', '오말자'입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 SQL문의 실행 결과는? [SQL 문] SELECT 이름 FROM R1 WHERE 학번 IN (SELECT 학번 FROM R2 WHERE 과목번호 = 'C100'); 정답입니다. 이 선택지는 실제 정답인 '2번 이름: 홍길동, 강남길, 오말자'와 일치합니다. 안쪽 쿼리에서 과목번호 C100을 수강하는 학번(1000, 3000, 4000)을 추출하고, 바깥쪽 쿼리에서 해당 학번의 이름을 R1에서 찾으면 홍길동, 강남길, 오말자가 나옵니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "테이블 R1, R2의 데이터 확인이 필수적임"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "서브쿼리",
+        "IN 연산자",
+        "데이터 검색"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          110,
+          111
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0110",
+            "page_number": 110,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0110.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1383,
+            "file_size_bytes": 917093,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0111",
+            "page_number": 111,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0111.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1385,
+            "file_size_bytes": 999623,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0110",
+          "page_number": 110,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0110.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1383,
+          "file_size_bytes": 917093,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0110",
+          "page_number": 110,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0110.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1383,
+          "file_size_bytes": 917093,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_7e50a814d274245a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          147
+        ],
+        "page_span": {
+          "start_page": 147,
+          "end_page": 147
+        },
+        "source_explanation": "전문가의 조언 | 하위 질의에서 '김수철'의 학번인 1004를 찾고, 학과 테이블에서 학번 1004에 해당하는 학과인 '전기과'를 검색합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "하위 질의·그룹 함수·조인"
+        ],
+        "chapter_label": "하위 질의·그룹 함수·조인",
+        "chapter_key": "3과목 데이터베이스 구축 > 하위 질의·그룹 함수·조인",
+        "chapter_id": "chapter_127"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "52. 다음 SQL문의 실행 결과는?\nSelect 학과 From 학과 Where 학번 In\n(Select 학번 From 학생 Where 이름 = \"김수철\");\n<학생> 테이블\n이름: 이미래, 박인수, 정경미, 김수철\n학번: 1001, 1002, 1003, 1004\n<학과> 테이블\n학번: 1001, 1002, 1003, 1004\n학과: 데이터베이스, AI응용, AI분석, 전기과",
+        "choices": [
+          {
+            "label": "1",
+            "text": "데이터베이스"
+          },
+          {
+            "label": "2",
+            "text": "AI응용"
+          },
+          {
+            "label": "3",
+            "text": "AI분석"
+          },
+          {
+            "label": "4",
+            "text": "전기과"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "전기과"
+        ],
+        "answer_text": "전기과"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 하위 질의에서 '김수철'의 학번인 1004를 찾고, 학과 테이블에서 학번 1004에 해당하는 학과인 '전기과'를 검색합니다.",
+        "summary": "서브쿼리가 포함된 SQL문의 실행 결과를 도출하는 문제입니다.",
+        "why_correct": [
+          "서브쿼리 (SELECT 학번 FROM 학생 WHERE 이름 = '김수철')의 결과는 1004입니다. 메인 쿼리에서 학번이 1004인 학과를 찾으면 '전기과'가 나옵니다."
+        ],
+        "why_others_wrong": [
+          "다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+        ],
+        "key_concepts": [
+          "서브쿼리",
+          "IN"
+        ],
+        "memory_cues": [
+          "안쪽 괄호부터 해결하자"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "데이터베이스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 '데이터베이스'이므로 일치하지 않습니다. 다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "AI응용",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 'AI응용'이므로 일치하지 않습니다. 다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "AI분석",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 전기과'인데 이 선택지는 'AI분석'이므로 일치하지 않습니다. 다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "전기과",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 전기과'와 일치합니다. 서브쿼리 (SELECT 학번 FROM 학생 WHERE 이름 = '김수철')의 결과는 1004입니다. 메인 쿼리에서 학번이 1004인 학과를 찾으면 '전기과'가 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 SQL문의 실행 결과는? Select 학과 From 학과 Where 학번 In (Select 학번 From 학생 Where 이름 = \"김수철\"); <학생> 테이블 이름: 이미래, 박인수, 정경미, 김수철 학번: 1001, 1002, 1003, 1004 <학과> 테이블 학번: 1001, 1002, 1003, 1004 학과: 데이터베이스, AI응용, AI분석, 전기과",
+          "핵심 개념을 떠올립니다. 서브쿼리, IN",
+          "정답 판단 근거를 적용합니다. 서브쿼리 (SELECT 학번 FROM 학생 WHERE 이름 = '김수철')의 결과는 1004입니다. 메인 쿼리에서 학번이 1004인 학과를 찾으면 '전기과'가 나옵니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "다른 학과들은 김수철이 아닌 다른 학생들의 학번과 연결되어 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '서브쿼리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IN'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 안쪽 괄호부터 해결하자"
+        ],
+        "detailed_summary": "서브쿼리가 포함된 SQL문의 실행 결과를 도출하는 문제입니다. 전문가의 조언 | 하위 질의에서 '김수철'의 학번인 1004를 찾고, 학과 테이블에서 학번 1004에 해당하는 학과인 '전기과'를 검색합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 SQL문의 실행 결과는? Select 학과 From 학과 Where 학번 In (Select 학번 From 학생 Where 이름 = \"김수철\"); <학생> 테이블 이름: 이미래, 박인수, 정경미, 김수철 학번: 1001, 1002, 1003, 1004 <학과> 테이블 학번: 1001, 1002, 1003, 1004 학과: 데이터베이스, AI응용, AI분석, 전기과 정답입니다. 이 선택지는 실제 정답인 '4번 전기과'와 일치합니다. 서브쿼리 (SELECT 학번 FROM 학생 WHERE 이름 = '김수철')의 결과는 1004입니다. 메인 쿼리에서 학번이 1004인 학과를 찾으면 '전기과'가 나옵니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "서브쿼리",
+        "IN 연산자",
+        "데이터 검색"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          147
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0147",
+            "page_number": 147,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0147.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1039546,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0147",
+          "page_number": 147,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0147.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1039546,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0147",
+          "page_number": 147,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0147.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1039546,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_bc0caa2ad1b7b361",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0166_p0171"
+        ],
+        "source_pages": [
+          166
+        ],
+        "page_span": {
+          "start_page": 166,
+          "end_page": 166
+        },
+        "source_explanation": "전문가의 조언 | SQL문의 실행 결과로 옳은 것은 4번입니다. 문제에 제시된 질의문은 집합 연산자 UNION ALL을 이용한 통합 질의로, 여러 테이블의 필드 값을 통합하여 표시하되 중복된 레코드도 그대로 표시합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "하위 질의·그룹 함수·조인"
+        ],
+        "chapter_label": "하위 질의·그룹 함수·조인",
+        "chapter_key": "데이터베이스 구축 > 하위 질의·그룹 함수·조인",
+        "chapter_id": "chapter_225"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_056",
+        "topic_title": "하위 질의·그룹 함수·조인",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "하위 질의·그룹 함수·조인",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "테이블 R과 S에 대한 다음의 SQL문이 실행되었을 때, 실행 결과로 옳은 것은?\n[R 테이블]\nA | B\n1 | A\n3 | B\n[S 테이블]\nA | B\n1 | A\n2 | B\nSELECT A FROM R\nUNION ALL\nSELECT A FROM S;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "3, 2 (세로 나열)"
+          },
+          {
+            "label": "3",
+            "text": "1, 3, 2 (세로 나열)"
+          },
+          {
+            "label": "4",
+            "text": "1, 3, 1, 2 (세로 나열)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "1, 3, 1, 2 (세로 나열)"
+        ],
+        "answer_text": "1, 3, 1, 2 (세로 나열)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | SQL문의 실행 결과로 옳은 것은 4번입니다. 문제에 제시된 질의문은 집합 연산자 UNION ALL을 이용한 통합 질의로, 여러 테이블의 필드 값을 통합하여 표시하되 중복된 레코드도 그대로 표시합니다.",
+        "summary": "UNION ALL 연산자의 결과를 예측하는 문제입니다.",
+        "why_correct": [
+          "UNION ALL은 두 셀렉트 문의 결과를 합치되, 중복된 행을 제거하지 않고 모두 보여줍니다. R의 A열(1, 3)과 S의 A열(1, 2)을 합치면 1, 3, 1, 2가 됩니다."
+        ],
+        "why_others_wrong": [
+          "UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+        ],
+        "key_concepts": [
+          "UNION",
+          "UNION ALL",
+          "중복 제거 여부"
+        ],
+        "memory_cues": [
+          "UNION ALL = ALL(전부 다) 보여준다(중복 포함)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1, 3, 1, 2 (세로 나열)'인데 이 선택지는 '1'이므로 일치하지 않습니다. UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "3, 2 (세로 나열)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1, 3, 1, 2 (세로 나열)'인데 이 선택지는 '3, 2 (세로 나열)'이므로 일치하지 않습니다. UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "1, 3, 2 (세로 나열)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1, 3, 1, 2 (세로 나열)'인데 이 선택지는 '1, 3, 2 (세로 나열)'이므로 일치하지 않습니다. UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "1, 3, 1, 2 (세로 나열)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 1, 3, 1, 2 (세로 나열)'와 일치합니다. UNION ALL은 두 셀렉트 문의 결과를 합치되, 중복된 행을 제거하지 않고 모두 보여줍니다. R의 A열(1, 3)과 S의 A열(1, 2)을 합치면 1, 3, 1, 2가 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테이블 R과 S에 대한 다음의 SQL문이 실행되었을 때, 실행 결과로 옳은 것은? [R 테이블] A | B 1 | A 3 | B [S 테이블] A | B 1 | A 2 | B SELECT A FROM R UNION ALL SELECT A FROM S;",
+          "핵심 개념을 떠올립니다. UNION, UNION ALL, 중복 제거 여부",
+          "정답 판단 근거를 적용합니다. UNION ALL은 두 셀렉트 문의 결과를 합치되, 중복된 행을 제거하지 않고 모두 보여줍니다. R의 A열(1, 3)과 S의 A열(1, 2)을 합치면 1, 3, 1, 2가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+        ],
+        "exam_traps": [
+          "UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'UNION'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'UNION ALL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '중복 제거 여부'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. UNION ALL = ALL(전부 다) 보여준다(중복 포함)."
+        ],
+        "detailed_summary": "UNION ALL 연산자의 결과를 예측하는 문제입니다. 전문가의 조언 | SQL문의 실행 결과로 옳은 것은 4번입니다. 문제에 제시된 질의문은 집합 연산자 UNION ALL을 이용한 통합 질의로, 여러 테이블의 필드 값을 통합하여 표시하되 중복된 레코드도 그대로 표시합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테이블 R과 S에 대한 다음의 SQL문이 실행되었을 때, 실행 결과로 옳은 것은? [R 테이블] A | B 1 | A 3 | B [S 테이블] A | B 1 | A 2 | B SELECT A FROM R UNION ALL SELECT A FROM S; 정답입니다. 이 선택지는 실제 정답인 '4번 1, 3, 1, 2 (세로 나열)'와 일치합니다. UNION ALL은 두 셀렉트 문의 결과를 합치되, 중복된 행을 제거하지 않고 모두 보여줍니다. R의 A열(1, 3)과 S의 A열(1, 2)을 합치면 1, 3, 1, 2가 됩니다. 시험 포인트는 UNION(ALL 없음)을 사용했다면 중복인 1이 제거되어 1, 3, 2가 되었을 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR might struggle with table formatting, but the logic is clear."
+        ]
+      },
+      "keywords": [
+        "UNION ALL",
+        "집합 연산자",
+        "중복 허용",
+        "SQL 결과"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          166
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0166",
+            "page_number": 166,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1000648,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0166",
+          "page_number": 166,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1000648,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0166",
+          "page_number": 166,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1000648,
+          "render_scale": 2.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2407 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_006",
+    "sequence": 6,
+    "title": "자료 흐름도와 구조적 분석 도구",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 15,
+    "review_count": 5,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_051",
+      "chapter_286",
+      "chapter_036",
+      "chapter_259",
+      "chapter_028",
+      "chapter_268"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_f8b895184e5899b5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          7
+        ],
+        "page_span": {
+          "start_page": 7,
+          "end_page": 7
+        },
+        "source_explanation": "전문가의 조언 | 자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "13. 자료 흐름도(DFD)를 작성하는 데 지침이 될 수 없는 항목은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다."
+          },
+          {
+            "label": "2",
+            "text": "어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+          },
+          {
+            "label": "4",
+            "text": "상위 단계의 처리(Process)와 하위 자료 흐름도의 자료 흐름은 서로 일치되어야 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+        ],
+        "answer_text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다.",
+        "summary": "DFD는 시스템 내의 자료 흐름을 시각적으로 표현하는 도구입니다.",
+        "why_correct": [
+          "자료 저장소(Data Store)는 데이터를 단순히 저장하거나 수정하기만 할 수도 있으므로, 입력이 있다고 해서 반드시 출력이 즉시 발생해야 하는 것은 아닙니다."
+        ],
+        "why_others_wrong": [
+          "처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다.",
+          "입력 없이 출력이 나올 수 없습니다(Black Hole 방지).",
+          "상하위 단계 간의 일관성(Balancing) 유지는 필수입니다."
+        ],
+        "key_concepts": [
+          "DFD 작성 원칙",
+          "자료 저장소"
+        ],
+        "memory_cues": [
+          "저장소는 넣기만 할 수도 있다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다.'이므로 일치하지 않습니다. 처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다. 입력 없이 출력이 나올 수 없습니다(Black Hole 방지)."
+          },
+          {
+            "label": "2",
+            "text": "어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다.'이므로 일치하지 않습니다. 처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다. 입력 없이 출력이 나올 수 없습니다(Black Hole 방지)."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'와 일치합니다. 자료 저장소(Data Store)는 데이터를 단순히 저장하거나 수정하기만 할 수도 있으므로, 입력이 있다고 해서 반드시 출력이 즉시 발생해야 하는 것은 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "상위 단계의 처리(Process)와 하위 자료 흐름도의 자료 흐름은 서로 일치되어야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '상위 단계의 처리(Process)와 하위 자료 흐름도의 자료 흐름은 서로 일치되어야 한다.'이므로 일치하지 않습니다. 처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다. 입력 없이 출력이 나올 수 없습니다(Black Hole 방지)."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 13. 자료 흐름도(DFD)를 작성하는 데 지침이 될 수 없는 항목은?",
+          "핵심 개념을 떠올립니다. DFD 작성 원칙, 자료 저장소",
+          "정답 판단 근거를 적용합니다. 자료 저장소(Data Store)는 데이터를 단순히 저장하거나 수정하기만 할 수도 있으므로, 입력이 있다고 해서 반드시 출력이 즉시 발생해야 하는 것은 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다."
+        ],
+        "exam_traps": [
+          "처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD 작성 원칙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자료 저장소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 저장소는 넣기만 할 수도 있다"
+        ],
+        "detailed_summary": "DFD는 시스템 내의 자료 흐름을 시각적으로 표현하는 도구입니다. 전문가의 조언 | 자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 13. 자료 흐름도(DFD)를 작성하는 데 지침이 될 수 없는 항목은? 정답입니다. 이 선택지는 실제 정답인 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'와 일치합니다. 자료 저장소(Data Store)는 데이터를 단순히 저장하거나 수정하기만 할 수도 있으므로, 입력이 있다고 해서 반드시 출력이 즉시 발생해야 하는 것은 아닙니다. 시험 포인트는 처리를 거치면 자료의 성격이 변하므로 새 이름을 부여하는 것이 원칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "구조적 분석",
+        "자료 저장소"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1503f67daaadf602",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0026_p0031"
+        ],
+        "source_pages": [
+          28
+        ],
+        "page_span": {
+          "start_page": 28,
+          "end_page": 28
+        },
+        "source_explanation": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "자료 흐름도와 구조적 분석 도구"
+        ],
+        "chapter_label": "자료 흐름도와 구조적 분석 도구",
+        "chapter_key": "1과목 소프트웨어 설계 > 자료 흐름도와 구조적 분석 도구",
+        "chapter_id": "chapter_051"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "8. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process : 원"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표"
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형"
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Data Store : 삼각형"
+        ],
+        "answer_text": "Data Store : 삼각형"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다.",
+        "summary": "자료 흐름도(DFD)의 구성 요소와 그에 따른 기호 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "Data Store(자료 저장소)는 삼각형이 아니라 평행선(=)으로 표기합니다."
+        ],
+        "why_others_wrong": [
+          "Process는 원(Circle)으로 표기합니다.",
+          "Data Flow는 화살표(Arrow)로 표기합니다.",
+          "Terminator(단말)는 사각형(Rectangle)으로 표기합니다."
+        ],
+        "key_concepts": [
+          "DFD 구성 요소: Process, Data Flow, Data Store, Terminator"
+        ],
+        "memory_cues": [
+          "저장소는 물건을 쌓아두는 선반(평행선) 모양이라고 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process : 원",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Process : 원'이므로 일치하지 않습니다. Process는 원(Circle)으로 표기합니다. Data Flow는 화살표(Arrow)로 표기합니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Data Flow : 화살표'이므로 일치하지 않습니다. Process는 원(Circle)으로 표기합니다. Data Flow는 화살표(Arrow)로 표기합니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. Data Store(자료 저장소)는 삼각형이 아니라 평행선(=)으로 표기합니다."
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Terminator : 사각형'이므로 일치하지 않습니다. Process는 원(Circle)으로 표기합니다. Data Flow는 화살표(Arrow)로 표기합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 8. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. DFD 구성 요소: Process, Data Flow, Data Store, Terminator",
+          "정답 판단 근거를 적용합니다. Data Store(자료 저장소)는 삼각형이 아니라 평행선(=)으로 표기합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Process는 원(Circle)으로 표기합니다."
+        ],
+        "exam_traps": [
+          "Process는 원(Circle)으로 표기합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD 구성 요소: Process, Data Flow, Data Store, Terminator'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 저장소는 물건을 쌓아두는 선반(평행선) 모양이라고 기억하세요."
+        ],
+        "detailed_summary": "자료 흐름도(DFD)의 구성 요소와 그에 따른 기호 표기법을 묻는 문제입니다. 전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 8. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. Data Store(자료 저장소)는 삼각형이 아니라 평행선(=)으로 표기합니다. 시험 포인트는 Process는 원(Circle)으로 표기합니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "Data Store",
+        "Process",
+        "Terminator"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          28
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0028",
+            "page_number": 28,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0028.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 876794,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0028",
+          "page_number": 28,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0028.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 876794,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0028",
+          "page_number": 28,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0028.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 876794,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_17b9827a4b47026b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          44
+        ],
+        "page_span": {
+          "start_page": 44,
+          "end_page": 44
+        },
+        "source_explanation": "데이터 사전(Data Dictionary)은 DFD의 구성 요소가 아니라 DFD에 나타난 데이터를 정의한 별도의 문서입니다. DFD의 구성 요소는 Process, Data Flow, Data Store, Terminator입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "자료 흐름도와 구조적 분석 도구"
+        ],
+        "chapter_label": "자료 흐름도와 구조적 분석 도구",
+        "chapter_key": "소프트웨어 설계 > 자료 흐름도와 구조적 분석 도구",
+        "chapter_id": "chapter_286"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow"
+          },
+          {
+            "label": "3",
+            "text": "Data Store"
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Data Dictionary"
+        ],
+        "answer_text": "Data Dictionary"
+      },
+      "explanation": {
+        "source_text": "데이터 사전(Data Dictionary)은 DFD의 구성 요소가 아니라 DFD에 나타난 데이터를 정의한 별도의 문서입니다. DFD의 구성 요소는 Process, Data Flow, Data Store, Terminator입니다.",
+        "summary": "구조적 분석 도구인 DFD의 4가지 구성 요소를 묻는 문제입니다.",
+        "why_correct": [
+          "데이터 사전은 DFD를 보조하는 도구이지 DFD 다이어그램 자체를 구성하는 기호가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+        ],
+        "key_concepts": [
+          "DFD 구성 요소"
+        ],
+        "memory_cues": [
+          "프흐저단 (프로세스, 흐름, 저장소, 단말)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Process'이므로 일치하지 않습니다. 1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Flow'이므로 일치하지 않습니다. 1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Store'이므로 일치하지 않습니다. 1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. 데이터 사전은 DFD를 보조하는 도구이지 DFD 다이어그램 자체를 구성하는 기호가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+          "핵심 개념을 떠올립니다. DFD 구성 요소",
+          "정답 판단 근거를 적용합니다. 데이터 사전은 DFD를 보조하는 도구이지 DFD 다이어그램 자체를 구성하는 기호가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD 구성 요소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 프흐저단 (프로세스, 흐름, 저장소, 단말)"
+        ],
+        "detailed_summary": "구조적 분석 도구인 DFD의 4가지 구성 요소를 묻는 문제입니다. 데이터 사전(Data Dictionary)은 DFD의 구성 요소가 아니라 DFD에 나타난 데이터를 정의한 별도의 문서입니다. DFD의 구성 요소는 Process, Data Flow, Data Store, Terminator입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. 데이터 사전은 DFD를 보조하는 도구이지 DFD 다이어그램 자체를 구성하는 기호가 아닙니다. 시험 포인트는 1, 2, 3번과 단말(Terminator)이 DFD의 4대 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "Data Flow Diagram",
+        "Process",
+        "Data Dictionary"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4f509bbed67ed423",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 51
+        },
+        "source_explanation": "Data Dictionary(자료 사전)는 데이터(자료) 흐름도의 구성 요소가 아닙니다. 데이터 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow"
+          },
+          {
+            "label": "3",
+            "text": "Data Store"
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Data Dictionary"
+        ],
+        "answer_text": "Data Dictionary"
+      },
+      "explanation": {
+        "source_text": "Data Dictionary(자료 사전)는 데이터(자료) 흐름도의 구성 요소가 아닙니다. 데이터 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다.",
+        "summary": "데이터 흐름도(DFD)의 4대 구성 요소를 구분하는 문제입니다.",
+        "why_correct": [
+          "자료 사전(Data Dictionary)은 DFD의 구성 요소를 설명하는 보조 도구이지 DFD 자체의 구성 요소는 아닙니다."
+        ],
+        "why_others_wrong": [
+          "Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "DFD",
+          "Process",
+          "Data Flow",
+          "Data Store",
+          "Terminator"
+        ],
+        "memory_cues": [
+          "프흐저단(프로세스, 흐름, 저장소, 단말)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Process'이므로 일치하지 않습니다. Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Flow'이므로 일치하지 않습니다. Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Store'이므로 일치하지 않습니다. Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. 자료 사전(Data Dictionary)은 DFD의 구성 요소를 설명하는 보조 도구이지 DFD 자체의 구성 요소는 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+          "핵심 개념을 떠올립니다. DFD, Process, Data Flow, Data Store",
+          "정답 판단 근거를 적용합니다. 자료 사전(Data Dictionary)은 DFD의 구성 요소를 설명하는 보조 도구이지 DFD 자체의 구성 요소는 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Process'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Flow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 프흐저단(프로세스, 흐름, 저장소, 단말)"
+        ],
+        "detailed_summary": "데이터 흐름도(DFD)의 4대 구성 요소를 구분하는 문제입니다. Data Dictionary(자료 사전)는 데이터(자료) 흐름도의 구성 요소가 아닙니다. 데이터 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. 자료 사전(Data Dictionary)은 DFD의 구성 요소를 설명하는 보조 도구이지 DFD 자체의 구성 요소는 아닙니다. 시험 포인트는 Process, Data Flow, Data Store는 Terminator와 함께 DFD의 핵심 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "DFD",
+        "데이터 흐름도",
+        "프로세스",
+        "자료 사전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_74fc5b1b683ae931",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 51
+        },
+        "source_explanation": "HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+          },
+          {
+            "label": "2",
+            "text": "HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다."
+          },
+          {
+            "label": "3",
+            "text": "기능과 자료의 의존 관계를 동시에 표현할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "보기 쉽고 이해하기 쉽다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+        ],
+        "answer_text": "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+      },
+      "explanation": {
+        "source_text": "HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다.",
+        "summary": "HIPO 기법의 특징과 설계 방향을 묻는 문제입니다.",
+        "why_correct": [
+          "HIPO는 기본적으로 하향식(Top-down) 개발 방식을 따릅니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "HIPO",
+          "하향식(Top-down)",
+          "가시적 도표"
+        ],
+        "memory_cues": [
+          "HIPO는 하향식(H-H)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'와 일치합니다. HIPO는 기본적으로 하향식(Top-down) 개발 방식을 따릅니다."
+          },
+          {
+            "label": "2",
+            "text": "HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 'HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다.'이므로 일치하지 않습니다. 2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 '기능과 자료의 의존 관계를 동시에 표현할 수 있다.'이므로 일치하지 않습니다. 2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "보기 쉽고 이해하기 쉽다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 '보기 쉽고 이해하기 쉽다.'이므로 일치하지 않습니다. 2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. HIPO, 하향식(Top-down), 가시적 도표",
+          "정답 판단 근거를 적용합니다. HIPO는 기본적으로 하향식(Top-down) 개발 방식을 따릅니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HIPO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '하향식(Top-down)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가시적 도표'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HIPO는 하향식(H-H)"
+        ],
+        "detailed_summary": "HIPO 기법의 특징과 설계 방향을 묻는 문제입니다. HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'와 일치합니다. HIPO는 기본적으로 하향식(Top-down) 개발 방식을 따릅니다. 시험 포인트는 2, 3, 4번은 HIPO의 구성 요소 및 장점에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "HIPO",
+        "하향식 설계",
+        "문서화 도구",
+        "가시적 도표"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e456531d2280da14",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          63
+        ],
+        "page_span": {
+          "start_page": 63,
+          "end_page": 63
+        },
+        "source_explanation": "전문가의 조언 | 자료 흐름도(DFD)는 럼바우(Rumbaugh)의 객체지향 분석 기법 중 기능 모델링에서 주로 이용됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "객체지향 분석"
+        ],
+        "chapter_label": "객체지향 분석",
+        "chapter_key": "1과목 소프트웨어 설계 > 객체지향 분석",
+        "chapter_id": "chapter_036"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 229.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "5. 럼바우(Rumbaugh)의 객체지향 분석 기법 중 자료 흐름도(DFD)를 주로 이용하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기능 모델링"
+          },
+          {
+            "label": "2",
+            "text": "동적 모델링"
+          },
+          {
+            "label": "3",
+            "text": "객체 모델링"
+          },
+          {
+            "label": "4",
+            "text": "정적 모델링"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "기능 모델링"
+        ],
+        "answer_text": "기능 모델링"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 흐름도(DFD)는 럼바우(Rumbaugh)의 객체지향 분석 기법 중 기능 모델링에서 주로 이용됩니다.",
+        "summary": "럼바우 분석 기법의 3가지 모델링과 각각 사용하는 도구를 연결하는 문제입니다.",
+        "why_correct": [
+          "기능 모델링(Functional Modeling)은 자료 흐름도(DFD)를 사용하여 시스템의 처리 과정을 표현합니다."
+        ],
+        "why_others_wrong": [
+          "2번: 동적 모델링은 상태 다이어그램을 사용합니다.",
+          "3번: 객체 모델링은 객체 다이어그램(클래스 다이어그램)을 사용합니다.",
+          "4번: 정적 모델링은 객체 모델링의 다른 이름으로 쓰이기도 하지만 럼바우의 3대 모델링 명칭은 아닙니다."
+        ],
+        "key_concepts": [
+          "럼바우 분석 기법",
+          "객체/동적/기능 모델링"
+        ],
+        "memory_cues": [
+          "객동기 (객체-다이어그램, 동적-상태, 기능-DFD)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기능 모델링",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 기능 모델링'와 일치합니다. 기능 모델링(Functional Modeling)은 자료 흐름도(DFD)를 사용하여 시스템의 처리 과정을 표현합니다."
+          },
+          {
+            "label": "2",
+            "text": "동적 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기능 모델링'인데 이 선택지는 '동적 모델링'이므로 일치하지 않습니다. 2번: 동적 모델링은 상태 다이어그램을 사용합니다. 3번: 객체 모델링은 객체 다이어그램(클래스 다이어그램)을 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "객체 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기능 모델링'인데 이 선택지는 '객체 모델링'이므로 일치하지 않습니다. 2번: 동적 모델링은 상태 다이어그램을 사용합니다. 3번: 객체 모델링은 객체 다이어그램(클래스 다이어그램)을 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "정적 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기능 모델링'인데 이 선택지는 '정적 모델링'이므로 일치하지 않습니다. 2번: 동적 모델링은 상태 다이어그램을 사용합니다. 3번: 객체 모델링은 객체 다이어그램(클래스 다이어그램)을 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. 럼바우(Rumbaugh)의 객체지향 분석 기법 중 자료 흐름도(DFD)를 주로 이용하는 것은?",
+          "핵심 개념을 떠올립니다. 럼바우 분석 기법, 객체/동적/기능 모델링",
+          "정답 판단 근거를 적용합니다. 기능 모델링(Functional Modeling)은 자료 흐름도(DFD)를 사용하여 시스템의 처리 과정을 표현합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 동적 모델링은 상태 다이어그램을 사용합니다."
+        ],
+        "exam_traps": [
+          "2번: 동적 모델링은 상태 다이어그램을 사용합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '럼바우 분석 기법'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '객체/동적/기능 모델링'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 객동기 (객체-다이어그램, 동적-상태, 기능-DFD)"
+        ],
+        "detailed_summary": "럼바우 분석 기법의 3가지 모델링과 각각 사용하는 도구를 연결하는 문제입니다. 전문가의 조언 | 자료 흐름도(DFD)는 럼바우(Rumbaugh)의 객체지향 분석 기법 중 기능 모델링에서 주로 이용됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. 럼바우(Rumbaugh)의 객체지향 분석 기법 중 자료 흐름도(DFD)를 주로 이용하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 기능 모델링'와 일치합니다. 기능 모델링(Functional Modeling)은 자료 흐름도(DFD)를 사용하여 시스템의 처리 과정을 표현합니다. 시험 포인트는 2번: 동적 모델링은 상태 다이어그램을 사용합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "럼바우",
+        "객체지향 분석",
+        "기능 모델링",
+        "DFD"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2533fe698d94436f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          64
+        ],
+        "page_span": {
+          "start_page": 64,
+          "end_page": 64
+        },
+        "source_explanation": "전문가의 조언 | 럼바우 분석 기법의 분석 활동에는 객체 모델링, 동적 모델링, 기능 모델링이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "객체지향 분석"
+        ],
+        "chapter_label": "객체지향 분석",
+        "chapter_key": "1과목 소프트웨어 설계 > 객체지향 분석",
+        "chapter_id": "chapter_036"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 229.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "10. 그래픽 표기법을 이용하여 소프트웨어 구성 요소를 모델링하는 럼바우 분석 기법에 포함되지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "객체 모델링"
+          },
+          {
+            "label": "2",
+            "text": "기능 모델링"
+          },
+          {
+            "label": "3",
+            "text": "동적 모델링"
+          },
+          {
+            "label": "4",
+            "text": "블랙박스 분석 모델링"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "블랙박스 분석 모델링"
+        ],
+        "answer_text": "블랙박스 분석 모델링"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 럼바우 분석 기법의 분석 활동에는 객체 모델링, 동적 모델링, 기능 모델링이 있습니다.",
+        "summary": "럼바우(OMT) 분석 기법의 3대 모델링 요소를 묻는 문제입니다.",
+        "why_correct": [
+          "럼바우 분석 기법은 객체(Object), 동적(Dynamic), 기능(Functional) 모델링의 3단계로 구성됩니다. 블랙박스 분석은 테스트 기법 중 하나입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+        ],
+        "key_concepts": [
+          "럼바우(OMT) 3대 모델링"
+        ],
+        "memory_cues": [
+          "객동기 (객체, 동적, 기능)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "객체 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 블랙박스 분석 모델링'인데 이 선택지는 '객체 모델링'이므로 일치하지 않습니다. 1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "기능 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 블랙박스 분석 모델링'인데 이 선택지는 '기능 모델링'이므로 일치하지 않습니다. 1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "동적 모델링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 블랙박스 분석 모델링'인데 이 선택지는 '동적 모델링'이므로 일치하지 않습니다. 1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "블랙박스 분석 모델링",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 블랙박스 분석 모델링'와 일치합니다. 럼바우 분석 기법은 객체(Object), 동적(Dynamic), 기능(Functional) 모델링의 3단계로 구성됩니다. 블랙박스 분석은 테스트 기법 중 하나입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 10. 그래픽 표기법을 이용하여 소프트웨어 구성 요소를 모델링하는 럼바우 분석 기법에 포함되지 않는 것은?",
+          "핵심 개념을 떠올립니다. 럼바우(OMT) 3대 모델링",
+          "정답 판단 근거를 적용합니다. 럼바우 분석 기법은 객체(Object), 동적(Dynamic), 기능(Functional) 모델링의 3단계로 구성됩니다. 블랙박스 분석은 테스트 기법 중 하나입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '럼바우(OMT) 3대 모델링'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 객동기 (객체, 동적, 기능)"
+        ],
+        "detailed_summary": "럼바우(OMT) 분석 기법의 3대 모델링 요소를 묻는 문제입니다. 전문가의 조언 | 럼바우 분석 기법의 분석 활동에는 객체 모델링, 동적 모델링, 기능 모델링이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 10. 그래픽 표기법을 이용하여 소프트웨어 구성 요소를 모델링하는 럼바우 분석 기법에 포함되지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 블랙박스 분석 모델링'와 일치합니다. 럼바우 분석 기법은 객체(Object), 동적(Dynamic), 기능(Functional) 모델링의 3단계로 구성됩니다. 블랙박스 분석은 테스트 기법 중 하나입니다. 시험 포인트는 1, 2, 3번은 럼바우 분석의 핵심 3요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "럼바우",
+        "객체 모델링",
+        "동적 모델링",
+        "기능 모델링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4420ef64092cad25",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          84
+        ],
+        "page_span": {
+          "start_page": 84,
+          "end_page": 84
+        },
+        "source_explanation": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계"
+        ],
+        "chapter_label": "소프트웨어 설계",
+        "chapter_key": "소프트웨어 설계",
+        "chapter_id": "chapter_259"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process : 원"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표"
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형"
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Data Store : 삼각형"
+        ],
+        "answer_text": "Data Store : 삼각형"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다.",
+        "summary": "구조적 분석 도구인 DFD의 구성 요소 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "Data Store(자료 저장소)는 일반적으로 평행선(직사각형의 양옆이 뚫린 형태)으로 표기합니다. 삼각형은 사용되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+        ],
+        "key_concepts": [
+          "DFD",
+          "프로세스",
+          "자료 흐름",
+          "자료 저장소",
+          "단말"
+        ],
+        "memory_cues": [
+          "DFD: 원(P), 화살표(F), 평행선(S), 사각형(T)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process : 원",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Process : 원'이므로 일치하지 않습니다. Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Data Flow : 화살표'이므로 일치하지 않습니다. Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. Data Store(자료 저장소)는 일반적으로 평행선(직사각형의 양옆이 뚫린 형태)으로 표기합니다. 삼각형은 사용되지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Terminator : 사각형'이므로 일치하지 않습니다. Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. DFD, 프로세스, 자료 흐름, 자료 저장소",
+          "정답 판단 근거를 적용합니다. Data Store(자료 저장소)는 일반적으로 평행선(직사각형의 양옆이 뚫린 형태)으로 표기합니다. 삼각형은 사용되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+        ],
+        "exam_traps": [
+          "Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '프로세스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자료 흐름'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자료 저장소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DFD: 원(P), 화살표(F), 평행선(S), 사각형(T)"
+        ],
+        "detailed_summary": "구조적 분석 도구인 DFD의 구성 요소 표기법을 묻는 문제입니다. 전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. Data Store(자료 저장소)는 일반적으로 평행선(직사각형의 양옆이 뚫린 형태)으로 표기합니다. 삼각형은 사용되지 않습니다. 시험 포인트는 Process(원), Data Flow(화살표), Terminator(사각형)는 DFD의 표준 표기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "구조적 분석",
+        "표기법"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_98934099dc3f6f0c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "7섹션 3빌드"
+        ],
+        "chapter_label": "7섹션 3빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 7섹션 3빌드",
+        "chapter_id": "chapter_028"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "19. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process : 원"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표"
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형"
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Data Store : 삼각형"
+        ],
+        "answer_text": "Data Store : 삼각형"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다.",
+        "summary": "자료 흐름도(DFD)의 구성 요소와 그에 따른 표기 기호를 묻는 문제입니다.",
+        "why_correct": [
+          "자료 저장소(Data Store)는 삼각형이 아니라 평행선(=)으로 표기합니다."
+        ],
+        "why_others_wrong": [
+          "Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+        ],
+        "key_concepts": [
+          "Process(프로세스)",
+          "Data Flow(자료 흐름)",
+          "Data Store(자료 저장소)",
+          "Terminator(단말)"
+        ],
+        "memory_cues": [
+          "저장소는 물건을 쌓아두는 선(=) 모양이라고 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process : 원",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Process : 원'이므로 일치하지 않습니다. Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow : 화살표",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Data Flow : 화살표'이므로 일치하지 않습니다. Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store : 삼각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. 자료 저장소(Data Store)는 삼각형이 아니라 평행선(=)으로 표기합니다."
+          },
+          {
+            "label": "4",
+            "text": "Terminator : 사각형",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Data Store : 삼각형'인데 이 선택지는 'Terminator : 사각형'이므로 일치하지 않습니다. Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. Process(프로세스), Data Flow(자료 흐름), Data Store(자료 저장소), Terminator(단말)",
+          "정답 판단 근거를 적용합니다. 자료 저장소(Data Store)는 삼각형이 아니라 평행선(=)으로 표기합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+        ],
+        "exam_traps": [
+          "Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Process(프로세스)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Flow(자료 흐름)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store(자료 저장소)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Terminator(단말)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 저장소는 물건을 쌓아두는 선(=) 모양이라고 기억하세요."
+        ],
+        "detailed_summary": "자료 흐름도(DFD)의 구성 요소와 그에 따른 표기 기호를 묻는 문제입니다. 전문가의 조언 | 자료 저장소(Data Store)는 평행선(=) 안에 자료 저장소 이름을 기입합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Data Store : 삼각형'와 일치합니다. 자료 저장소(Data Store)는 삼각형이 아니라 평행선(=)으로 표기합니다. 시험 포인트는 Process는 원(또는 둥근 사각형), Data Flow는 화살표, Terminator는 사각형으로 표기하는 것이 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "Process",
+        "Data Store",
+        "Terminator"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4ce889a879418e7e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 101
+        },
+        "source_explanation": "화살표를 사용하여 논리적인 제어구조로 흐름을 표현하는 표기법은 흐름도(Flowchart)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "12. N-S(Nassi-Schneiderman) Chart에 대한 설명으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "논리의 기술에 중점을 둔 도형식 표현 방법이다."
+          },
+          {
+            "label": "2",
+            "text": "연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조로 표현한다."
+          },
+          {
+            "label": "3",
+            "text": "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다."
+          },
+          {
+            "label": "4",
+            "text": "조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하는데 적합하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다."
+        ],
+        "answer_text": "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다."
+      },
+      "explanation": {
+        "source_text": "화살표를 사용하여 논리적인 제어구조로 흐름을 표현하는 표기법은 흐름도(Flowchart)입니다.",
+        "summary": "구조적 프로그래밍을 위한 시각적 도구인 N-S 차트의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "N-S 차트는 화살표를 사용하지 않고 상자(Box) 형태의 중첩 구조로만 논리를 표현하는 것이 가장 큰 특징입니다."
+        ],
+        "why_others_wrong": [
+          "논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+        ],
+        "key_concepts": [
+          "Nassi-Schneiderman Chart",
+          "Structured Programming",
+          "No arrows"
+        ],
+        "memory_cues": [
+          "N-S 차트는 '화살표가 없는' 박스형 차트입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "논리의 기술에 중점을 둔 도형식 표현 방법이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.'인데 이 선택지는 '논리의 기술에 중점을 둔 도형식 표현 방법이다.'이므로 일치하지 않습니다. 논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+          },
+          {
+            "label": "2",
+            "text": "연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조로 표현한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.'인데 이 선택지는 '연속, 선택 및 다중 선택, 반복 등의 제어 논리 구조로 표현한다.'이므로 일치하지 않습니다. 논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+          },
+          {
+            "label": "3",
+            "text": "주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.'와 일치합니다. N-S 차트는 화살표를 사용하지 않고 상자(Box) 형태의 중첩 구조로만 논리를 표현하는 것이 가장 큰 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하는데 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.'인데 이 선택지는 '조건이 복합되어 있는 곳의 처리를 시각적으로 명확히 식별하는데 적합하다.'이므로 일치하지 않습니다. 논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 12. N-S(Nassi-Schneiderman) Chart에 대한 설명으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. Nassi-Schneiderman Chart, Structured Programming, No arrows",
+          "정답 판단 근거를 적용합니다. N-S 차트는 화살표를 사용하지 않고 상자(Box) 형태의 중첩 구조로만 논리를 표현하는 것이 가장 큰 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+        ],
+        "exam_traps": [
+          "논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Nassi-Schneiderman Chart'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Structured Programming'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'No arrows'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. N-S 차트는 '화살표가 없는' 박스형 차트입니다."
+        ],
+        "detailed_summary": "구조적 프로그래밍을 위한 시각적 도구인 N-S 차트의 특징을 묻는 문제입니다. 화살표를 사용하여 논리적인 제어구조로 흐름을 표현하는 표기법은 흐름도(Flowchart)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 12. N-S(Nassi-Schneiderman) Chart에 대한 설명으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 주로 화살표를 사용하여 논리적인 제어 구조로 흐름을 표현한다.'와 일치합니다. N-S 차트는 화살표를 사용하지 않고 상자(Box) 형태의 중첩 구조로만 논리를 표현하는 것이 가장 큰 특징입니다. 시험 포인트는 논리 기술 중점, 기본 제어 구조(순차, 선택, 반복) 표현, 복합 조건 식별 용이성은 N-S 차트의 장점입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "N-S 차트",
+        "구조적 분석",
+        "도형식 표기법",
+        "제어 구조"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ac10977594ded2fc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 106
+        },
+        "source_explanation": "HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "5. HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+          },
+          {
+            "label": "2",
+            "text": "HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다."
+          },
+          {
+            "label": "3",
+            "text": "기능과 자료의 의존 관계를 동시에 표현할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "보기 쉽고 이해하기 쉽다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+        ],
+        "answer_text": "상향식 소프트웨어 개발을 위한 문서화 도구이다."
+      },
+      "explanation": {
+        "source_text": "HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다.",
+        "summary": "시스템의 입력, 처리, 출력을 계층적으로 표현하는 HIPO 기법의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "HIPO는 계층 구조를 기반으로 하므로 '하향식(Top-down)' 설계 및 문서화 도구입니다. 상향식이라는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+        ],
+        "key_concepts": [
+          "HIPO",
+          "Top-down design",
+          "Visual Table of Contents"
+        ],
+        "memory_cues": [
+          "Hierarchy(계층)라는 단어에서 하향식(Top-down)을 연상하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "상향식 소프트웨어 개발을 위한 문서화 도구이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'와 일치합니다. HIPO는 계층 구조를 기반으로 하므로 '하향식(Top-down)' 설계 및 문서화 도구입니다. 상향식이라는 설명은 틀렸습니다."
+          },
+          {
+            "label": "2",
+            "text": "HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 'HIPO 차트 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다.'이므로 일치하지 않습니다. 가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "기능과 자료의 의존 관계를 동시에 표현할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 '기능과 자료의 의존 관계를 동시에 표현할 수 있다.'이므로 일치하지 않습니다. 가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "보기 쉽고 이해하기 쉽다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'인데 이 선택지는 '보기 쉽고 이해하기 쉽다.'이므로 일치하지 않습니다. 가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. HIPO, Top-down design, Visual Table of Contents",
+          "정답 판단 근거를 적용합니다. HIPO는 계층 구조를 기반으로 하므로 '하향식(Top-down)' 설계 및 문서화 도구입니다. 상향식이라는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+        ],
+        "exam_traps": [
+          "가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HIPO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Top-down design'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Visual Table of Contents'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Hierarchy(계층)라는 단어에서 하향식(Top-down)을 연상하세요."
+        ],
+        "detailed_summary": "시스템의 입력, 처리, 출력을 계층적으로 표현하는 HIPO 기법의 특징을 묻는 문제입니다. HIPO는 시스템의 분석 및 설계나 문서화할 때 사용되는 기법으로, 하향식 소프트웨어 개발을 위한 문서화 도구입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. HIPO(Hierarchy Input Process Output)에 대한 설명으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 상향식 소프트웨어 개발을 위한 문서화 도구이다.'와 일치합니다. HIPO는 계층 구조를 기반으로 하므로 '하향식(Top-down)' 설계 및 문서화 도구입니다. 상향식이라는 설명은 틀렸습니다. 시험 포인트는 가시적/총체적/세부적 도표로 구성되며, 기능과 데이터의 관계를 직관적으로 보여주어 이해하기 쉽다는 장점이 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "HIPO",
+        "하향식 설계",
+        "문서화 도구",
+        "가시적 도표"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e61343436a593279",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 106
+        },
+        "source_explanation": "데이터(자료) 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Process"
+          },
+          {
+            "label": "2",
+            "text": "Data Flow"
+          },
+          {
+            "label": "3",
+            "text": "Data Store"
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Data Dictionary"
+        ],
+        "answer_text": "Data Dictionary"
+      },
+      "explanation": {
+        "source_text": "데이터(자료) 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다.",
+        "summary": "구조적 분석 기법인 DFD를 구성하는 4가지 기본 요소를 묻는 문제입니다.",
+        "why_correct": [
+          "Data Dictionary(자료 사전)는 DFD에 나타난 데이터를 정의하는 별도의 도구이지, DFD 다이어그램 자체의 구성 요소는 아닙니다."
+        ],
+        "why_others_wrong": [
+          "Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "DFD Components",
+          "Process",
+          "Data Flow",
+          "Data Store",
+          "Terminator"
+        ],
+        "memory_cues": [
+          "DFD 4요소: 처흐저단 (처리, 흐름, 저장소, 단말)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Process",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Process'이므로 일치하지 않습니다. Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "Data Flow",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Flow'이므로 일치하지 않습니다. Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "Data Store",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Data Dictionary'인데 이 선택지는 'Data Store'이므로 일치하지 않습니다. Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "Data Dictionary",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. Data Dictionary(자료 사전)는 DFD에 나타난 데이터를 정의하는 별도의 도구이지, DFD 다이어그램 자체의 구성 요소는 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은?",
+          "핵심 개념을 떠올립니다. DFD Components, Process, Data Flow, Data Store",
+          "정답 판단 근거를 적용합니다. Data Dictionary(자료 사전)는 DFD에 나타난 데이터를 정의하는 별도의 도구이지, DFD 다이어그램 자체의 구성 요소는 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD Components'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Process'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Flow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DFD 4요소: 처흐저단 (처리, 흐름, 저장소, 단말)"
+        ],
+        "detailed_summary": "구조적 분석 기법인 DFD를 구성하는 4가지 기본 요소를 묻는 문제입니다. 데이터(자료) 흐름도의 구성 요소에는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 데이터 흐름도(DFD)의 구성 요소에 포함되지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Data Dictionary'와 일치합니다. Data Dictionary(자료 사전)는 DFD에 나타난 데이터를 정의하는 별도의 도구이지, DFD 다이어그램 자체의 구성 요소는 아닙니다. 시험 포인트는 Process(처리), Data Flow(흐름), Data Store(저장소)는 DFD의 핵심 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "DFD",
+        "데이터 흐름도",
+        "구성 요소",
+        "자료 사전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4d94f88ee886c1d2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          119
+        ],
+        "page_span": {
+          "start_page": 119,
+          "end_page": 119
+        },
+        "source_explanation": "자료 흐름도에서 단말(Terminator)은 사각형으로 표기합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "자료 흐름도와 구조적 분석 도구"
+        ],
+        "chapter_label": "자료 흐름도와 구조적 분석 도구",
+        "chapter_key": "소프트웨어 설계 > 자료 흐름도와 구조적 분석 도구",
+        "chapter_id": "chapter_286"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "자료 흐름(Data Flow) : 화살표"
+          },
+          {
+            "label": "2",
+            "text": "처리(Process) : 원"
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소(Data Store) : 직선(평행선)"
+          },
+          {
+            "label": "4",
+            "text": "단말(Terminator) : 오각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "단말(Terminator) : 오각형"
+        ],
+        "answer_text": "단말(Terminator) : 오각형"
+      },
+      "explanation": {
+        "source_text": "자료 흐름도에서 단말(Terminator)은 사각형으로 표기합니다.",
+        "summary": "DFD 구성 요소의 기호를 묻는 문제입니다.",
+        "why_correct": [
+          "단말(외부 엔티티)은 사각형으로 그립니다. 오각형은 틀린 설명입니다."
+        ],
+        "why_others_wrong": [
+          "자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+        ],
+        "key_concepts": [
+          "DFD Symbols",
+          "Process",
+          "Data Flow",
+          "Data Store",
+          "Terminator"
+        ],
+        "memory_cues": [
+          "단사처원 (단말-사각형, 처리-원)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "자료 흐름(Data Flow) : 화살표",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '자료 흐름(Data Flow) : 화살표'이므로 일치하지 않습니다. 자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+          },
+          {
+            "label": "2",
+            "text": "처리(Process) : 원",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '처리(Process) : 원'이므로 일치하지 않습니다. 자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소(Data Store) : 직선(평행선)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '자료 저장소(Data Store) : 직선(평행선)'이므로 일치하지 않습니다. 자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+          },
+          {
+            "label": "4",
+            "text": "단말(Terminator) : 오각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 단말(Terminator) : 오각형'와 일치합니다. 단말(외부 엔티티)은 사각형으로 그립니다. 오각형은 틀린 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. DFD Symbols, Process, Data Flow, Data Store",
+          "정답 판단 근거를 적용합니다. 단말(외부 엔티티)은 사각형으로 그립니다. 오각형은 틀린 설명입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+        ],
+        "exam_traps": [
+          "자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD Symbols'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Process'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Flow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단사처원 (단말-사각형, 처리-원)"
+        ],
+        "detailed_summary": "DFD 구성 요소의 기호를 묻는 문제입니다. 자료 흐름도에서 단말(Terminator)은 사각형으로 표기합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 단말(Terminator) : 오각형'와 일치합니다. 단말(외부 엔티티)은 사각형으로 그립니다. 오각형은 틀린 설명입니다. 시험 포인트는 자료 흐름은 화살표, 처리는 원(또는 둥근 사각형), 자료 저장소는 평행선으로 나타내는 것이 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "표기법",
+        "구조적 분석"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_325ad85cc1a91e16",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          121
+        ],
+        "page_span": {
+          "start_page": 121,
+          "end_page": 121
+        },
+        "source_explanation": "전문가의 조언 | 자료 흐름도에서 단말(Terminator)은 사각형 안에 이름을 기입합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "7섹션 3빌드"
+        ],
+        "chapter_label": "7섹션 3빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 7섹션 3빌드",
+        "chapter_id": "chapter_028"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "자료 흐름(Data Flow) : 화살표"
+          },
+          {
+            "label": "2",
+            "text": "처리(Process) : 원"
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소(Data Store) : 직선(평행선)"
+          },
+          {
+            "label": "4",
+            "text": "단말(Terminator) : 오각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "단말(Terminator) : 오각형"
+        ],
+        "answer_text": "단말(Terminator) : 오각형"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자료 흐름도에서 단말(Terminator)은 사각형 안에 이름을 기입합니다.",
+        "summary": "자료 흐름도(DFD)의 구성 요소와 그 기호를 묻는 문제입니다.",
+        "why_correct": [
+          "단말(Terminator)은 오각형이 아니라 사각형(Rectangle)으로 표기합니다."
+        ],
+        "why_others_wrong": [
+          "1번: 자료 흐름은 화살표로 나타냅니다.",
+          "2번: 처리는 원(Bubble)으로 나타냅니다.",
+          "3번: 자료 저장소는 평행선으로 나타냅니다."
+        ],
+        "key_concepts": [
+          "DFD 구성 요소",
+          "Process",
+          "Data Flow",
+          "Data Store",
+          "Terminator"
+        ],
+        "memory_cues": [
+          "처원 흐화 저평 단사: 처리-원, 흐름-화살표, 저장소-평행선, 단말-사각형"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "자료 흐름(Data Flow) : 화살표",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '자료 흐름(Data Flow) : 화살표'이므로 일치하지 않습니다. 1번: 자료 흐름은 화살표로 나타냅니다. 2번: 처리는 원(Bubble)으로 나타냅니다."
+          },
+          {
+            "label": "2",
+            "text": "처리(Process) : 원",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '처리(Process) : 원'이므로 일치하지 않습니다. 1번: 자료 흐름은 화살표로 나타냅니다. 2번: 처리는 원(Bubble)으로 나타냅니다."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소(Data Store) : 직선(평행선)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 단말(Terminator) : 오각형'인데 이 선택지는 '자료 저장소(Data Store) : 직선(평행선)'이므로 일치하지 않습니다. 1번: 자료 흐름은 화살표로 나타냅니다. 2번: 처리는 원(Bubble)으로 나타냅니다."
+          },
+          {
+            "label": "4",
+            "text": "단말(Terminator) : 오각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 단말(Terminator) : 오각형'와 일치합니다. 단말(Terminator)은 오각형이 아니라 사각형(Rectangle)으로 표기합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. DFD 구성 요소, Process, Data Flow, Data Store",
+          "정답 판단 근거를 적용합니다. 단말(Terminator)은 오각형이 아니라 사각형(Rectangle)으로 표기합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 자료 흐름은 화살표로 나타냅니다."
+        ],
+        "exam_traps": [
+          "1번: 자료 흐름은 화살표로 나타냅니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD 구성 요소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Process'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Flow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 처원 흐화 저평 단사: 처리-원, 흐름-화살표, 저장소-평행선, 단말-사각형"
+        ],
+        "detailed_summary": "자료 흐름도(DFD)의 구성 요소와 그 기호를 묻는 문제입니다. 전문가의 조언 | 자료 흐름도에서 단말(Terminator)은 사각형 안에 이름을 기입합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 자료 흐름도(DFD)의 각 요소별 표기 형태의 연결이 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 단말(Terminator) : 오각형'와 일치합니다. 단말(Terminator)은 오각형이 아니라 사각형(Rectangle)으로 표기합니다. 시험 포인트는 1번: 자료 흐름은 화살표로 나타냅니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "프로세스",
+        "데이터 스토어",
+        "터미네이터"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9ce07f0eb91a788e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          158
+        ],
+        "page_span": {
+          "start_page": 158,
+          "end_page": 158
+        },
+        "source_explanation": "자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "구조적 분석"
+        ],
+        "chapter_label": "구조적 분석",
+        "chapter_key": "소프트웨어 설계 > 구조적 분석",
+        "chapter_id": "chapter_268"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_006",
+        "topic_title": "자료 흐름도와 구조적 분석 도구",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "자료 흐름도와 구조적 분석 도구",
+        "match_score": 235.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "4. 자료 흐름도(DFD)를 작성하는데 지침이 될 수 없는 항목은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다."
+          },
+          {
+            "label": "2",
+            "text": "어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+          },
+          {
+            "label": "4",
+            "text": "상위 단계의 처리(Process)와 하위 자료 흐름의 자료 흐름은 서로 일치되어야 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+        ],
+        "answer_text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다."
+      },
+      "explanation": {
+        "source_text": "자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다.",
+        "summary": "구조적 분석 도구인 DFD 작성 규칙에 대해 묻는 문제입니다.",
+        "why_correct": [
+          "자료 저장소(Data Store)는 데이터를 저장만 하고 읽지 않을 수도 있으므로, 입력이 있다고 반드시 출력이 있어야 하는 것은 아닙니다."
+        ],
+        "why_others_wrong": [
+          "변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+        ],
+        "key_concepts": [
+          "DFD",
+          "Data Store",
+          "Balancing"
+        ],
+        "memory_cues": [
+          "저장소는 창고와 같다. 넣기만 하고 안 꺼낼 수도 있다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '자료 흐름은 처리(Process)를 거쳐 변환될 때마다 새로운 이름을 부여한다.'이므로 일치하지 않습니다. 변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '어떤 처리(Process)가 출력 자료를 산출하기 위해서는 반드시 입력 자료가 발생해야 한다.'이므로 일치하지 않습니다. 변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+          },
+          {
+            "label": "3",
+            "text": "자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'와 일치합니다. 자료 저장소(Data Store)는 데이터를 저장만 하고 읽지 않을 수도 있으므로, 입력이 있다고 반드시 출력이 있어야 하는 것은 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "상위 단계의 처리(Process)와 하위 자료 흐름의 자료 흐름은 서로 일치되어야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'인데 이 선택지는 '상위 단계의 처리(Process)와 하위 자료 흐름의 자료 흐름은 서로 일치되어야 한다.'이므로 일치하지 않습니다. 변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 자료 흐름도(DFD)를 작성하는데 지침이 될 수 없는 항목은?",
+          "핵심 개념을 떠올립니다. DFD, Data Store, Balancing",
+          "정답 판단 근거를 적용합니다. 자료 저장소(Data Store)는 데이터를 저장만 하고 읽지 않을 수도 있으므로, 입력이 있다고 반드시 출력이 있어야 하는 것은 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+        ],
+        "exam_traps": [
+          "변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DFD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Store'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Balancing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 저장소는 창고와 같다. 넣기만 하고 안 꺼낼 수도 있다."
+        ],
+        "detailed_summary": "구조적 분석 도구인 DFD 작성 규칙에 대해 묻는 문제입니다. 자료 저장소의 입력 화살표는 데이터의 입력 및 수정을 의미하는 것으로, 입력 화살표가 있다고 하여 반드시 출력 화살표가 있어야 하는 것은 아닙니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 자료 흐름도(DFD)를 작성하는데 지침이 될 수 없는 항목은? 정답입니다. 이 선택지는 실제 정답인 '3번 자료 저장소에 입력 화살표가 있으면 반드시 출력 화살표도 표시되어야 한다.'와 일치합니다. 자료 저장소(Data Store)는 데이터를 저장만 하고 읽지 않을 수도 있으므로, 입력이 있다고 반드시 출력이 있어야 하는 것은 아닙니다. 시험 포인트는 변환 시 명칭 변경, 입력 기반 출력 산출, 상하위 단계 일관성(Balancing)은 DFD의 기본 원칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DFD",
+        "자료 흐름도",
+        "자료 저장소",
+        "프로세스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

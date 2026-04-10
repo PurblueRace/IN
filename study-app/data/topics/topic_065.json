@@ -1,0 +1,4630 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_065",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "source_count": 4,
+    "source_sequences": [
+      300,
+      301,
+      302,
+      303
+    ],
+    "source_lecture_ids": [
+      "0300_300",
+      "0301_301",
+      "0302_302",
+      "0303_303"
+    ],
+    "source_titles": [
+      "Python의 데이터 입출력 함수",
+      "입력 값의 형변환",
+      "리스트/딕셔너리",
+      "슬라이스"
+    ],
+    "keywords": [
+      "Python의",
+      "데이터",
+      "입출력",
+      "함수",
+      "입력"
+    ],
+    "highlight_keywords": [
+      "input",
+      "함수",
+      "print",
+      "형식",
+      "Python의 데이터 입출력 함수",
+      "int",
+      "map",
+      "input().split())",
+      "형변환",
+      "리스트(List)"
+    ],
+    "secondary_keywords": [
+      "함수의",
+      "서식",
+      "input() 함수",
+      "출력",
+      "입력",
+      "출력문자",
+      "입력 값의 형변환",
+      "데이터가",
+      "변환할",
+      "입력 값의 형변환(Casting)",
+      "변환할 데이터가 2개 이상일 때",
+      "변환할 데이터가 1개일 때"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0300_300",
+      "sequence": 300,
+      "number": "300",
+      "course_code": "350297",
+      "title": "Python의 데이터 입출력 함수",
+      "duration_seconds": 424,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "segment_count": 14,
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "tokens": [
+            "input"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "함수",
+          "tokens": [
+            "함수"
+          ],
+          "score": 26,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "print",
+          "tokens": [
+            "print"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "형식",
+          "tokens": [
+            "형식"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Python의 데이터 입출력 함수",
+          "tokens": [
+            "Python",
+            "데이터",
+            "입출력",
+            "함수"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "함수의",
+          "tokens": [
+            "함수의"
+          ],
+          "score": 18,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "서식",
+          "tokens": [
+            "서식"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "input() 함수",
+          "tokens": [
+            "input",
+            "함수"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "출력",
+          "tokens": [
+            "출력"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "입력",
+          "tokens": [
+            "입력"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "출력문자",
+          "tokens": [
+            "출력문자"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_065-subtopic-001-source-seg-002::01",
+          "prompt": "______() 함수의 기본 개념 설명",
+          "answer": "input",
+          "original": "input() 함수의 기본 개념 설명",
+          "keyword": "input",
+          "source_segment_id": "topic_065-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'input'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-001-source-seg-009::02",
+          "prompt": "______() 함수의 형식 1 (출력 및 옵션) 설명",
+          "answer": "print",
+          "original": "print() 함수의 형식 1 (출력 및 옵션) 설명",
+          "keyword": "print",
+          "source_segment_id": "topic_065-subtopic-001-source-seg-009",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'print'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-001-source-seg-002::03",
+          "prompt": "input() ______ 기본 개념 설명",
+          "answer": "함수의",
+          "original": "input() 함수의 기본 개념 설명",
+          "keyword": "함수의",
+          "source_segment_id": "topic_065-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '함수의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-001-source-seg-002::04",
+          "prompt": "______의 기본 개념 설명",
+          "answer": "input() 함수",
+          "original": "input() 함수의 기본 개념 설명",
+          "keyword": "input() 함수",
+          "source_segment_id": "topic_065-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'input() 함수'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0301_301",
+      "sequence": 301,
+      "number": "301",
+      "course_code": "350298",
+      "title": "입력 값의 형변환",
+      "duration_seconds": 321,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "tokens": [
+            "input"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "int",
+          "tokens": [
+            "int"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "map",
+          "tokens": [
+            "map"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "input().split())",
+          "tokens": [
+            "input",
+            "split"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "형변환",
+          "tokens": [
+            "형변환"
+          ],
+          "score": 20,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "입력 값의 형변환",
+          "tokens": [
+            "입력",
+            "값의",
+            "형변환"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터가",
+          "tokens": [
+            "데이터가"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "변환할",
+          "tokens": [
+            "변환할"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "입력 값의 형변환(Casting)",
+          "tokens": [
+            "입력",
+            "값의",
+            "형변환",
+            "Casting"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "변환할 데이터가 2개 이상일 때",
+          "tokens": [
+            "변환할",
+            "데이터가",
+            "이상일"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "변환할 데이터가 1개일 때",
+          "tokens": [
+            "변환할",
+            "데이터가",
+            "개일"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_065-subtopic-002-source-seg-002::01",
+          "prompt": "______() 함수의 특징과 형변환의 필요성 설명",
+          "answer": "input",
+          "original": "input() 함수의 특징과 형변환의 필요성 설명",
+          "keyword": "input",
+          "source_segment_id": "topic_065-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'input'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-002-source-seg-003::02",
+          "prompt": "변수 = ______(input())",
+          "answer": "int",
+          "original": "변수 = int(input())",
+          "keyword": "int",
+          "source_segment_id": "topic_065-subtopic-002-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'int'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-002-source-seg-006::03",
+          "prompt": "변환할 데이터가 2개 이상일 때 ______() 함수 사용법 설명",
+          "answer": "map",
+          "original": "변환할 데이터가 2개 이상일 때 map() 함수 사용법 설명",
+          "keyword": "map",
+          "source_segment_id": "topic_065-subtopic-002-source-seg-006",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'map'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-002-source-seg-006::04",
+          "prompt": "map(자료형, ______",
+          "answer": "input().split())",
+          "original": "map(자료형, input().split())",
+          "keyword": "input().split())",
+          "source_segment_id": "topic_065-subtopic-002-source-seg-006",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'input().split())'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0302_302",
+      "sequence": 302,
+      "number": "302",
+      "course_code": "350299",
+      "title": "리스트/딕셔너리",
+      "duration_seconds": 675,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "segment_count": 26,
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "tokens": [
+            "리스트",
+            "List"
+          ],
+          "score": 80,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "형식",
+          "tokens": [
+            "형식"
+          ],
+          "score": 52,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "딕셔너리",
+          "tokens": [
+            "딕셔너리"
+          ],
+          "score": 51,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "우리가",
+          "tokens": [
+            "우리가"
+          ],
+          "score": 41,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "tokens": [
+            "리스트명"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Dictionary",
+          "tokens": [
+            "Dictionary"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "리스트의",
+          "tokens": [
+            "리스트의"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "a['이름'] a['나이'] a['주소']",
+          "tokens": [
+            "이름",
+            "나이",
+            "주소"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "딕셔너리(Dictionary)",
+          "tokens": [
+            "딕셔너리",
+            "Dictionary"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "지금처럼",
+          "tokens": [
+            "지금처럼"
+          ],
+          "score": 23,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "해서",
+          "tokens": [
+            "해서"
+          ],
+          "score": 22,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_065-subtopic-003-source-seg-016::01",
+          "prompt": "______(Dictionary)의 개념과 리스트와의 차이",
+          "answer": "딕셔너리",
+          "original": "딕셔너리(Dictionary)의 개념과 리스트와의 차이",
+          "keyword": "딕셔너리",
+          "source_segment_id": "topic_065-subtopic-003-source-seg-016",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '딕셔너리'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-003-source-seg-001::02",
+          "prompt": "______ C언어가 됐든 자바가 됐든 이런 곳에서는 우리가 여러 요소값들을 하나의 이름으로 처리를 할 때 우리가 배열, 배열이라는 거를 사용을 했습니다.",
+          "answer": "우리가",
+          "original": "우리가 C언어가 됐든 자바가 됐든 이런 곳에서는 우리가 여러 요소값들을 하나의 이름으로 처리를 할 때 우리가 배열, 배열이라는 거를 사용을 했습니다.",
+          "keyword": "우리가",
+          "source_segment_id": "topic_065-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '우리가'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-003-source-seg-016::03",
+          "prompt": "딕셔너리(______)의 개념과 리스트와의 차이",
+          "answer": "Dictionary",
+          "original": "딕셔너리(Dictionary)의 개념과 리스트와의 차이",
+          "keyword": "Dictionary",
+          "source_segment_id": "topic_065-subtopic-003-source-seg-016",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Dictionary'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-003-source-seg-001::04",
+          "prompt": "______ 개념과 C/Java 배열과의 차이점",
+          "answer": "리스트의",
+          "original": "리스트의 개념과 C/Java 배열과의 차이점",
+          "keyword": "리스트의",
+          "source_segment_id": "topic_065-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '리스트의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0303_303",
+      "sequence": 303,
+      "number": "303",
+      "course_code": "350300",
+      "title": "슬라이스",
+      "duration_seconds": 345,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "tokens": [
+            "슬라이스",
+            "Slice"
+          ],
+          "score": 120,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "형식",
+          "tokens": [
+            "형식"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "tokens": [
+            "슬라이스는",
+            "일부",
+            "인수를",
+            "생략하여",
+            "사용할",
+            "있음"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "객체명[",
+          "tokens": [
+            "객체명"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "• 형식",
+          "tokens": [
+            "형식"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "요소들을",
+          "tokens": [
+            "요소들을"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "규칙",
+          "tokens": [
+            "규칙"
+          ],
+          "score": 15,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "번째",
+          "tokens": [
+            "번째"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "최종",
+          "tokens": [
+            "최종"
+          ],
+          "score": 13,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "객체명[초기위치",
+          "tokens": [
+            "객체명",
+            "초기위치"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "slicing",
+          "tokens": [
+            "slicing"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_065-subtopic-004-source-seg-004::01",
+          "prompt": "______초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+          "answer": "객체명[",
+          "original": "객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+          "keyword": "객체명[",
+          "source_segment_id": "topic_065-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '객체명['입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-004-source-seg-004::02",
+          "prompt": "객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 ______ 가져옴",
+          "answer": "요소들을",
+          "original": "객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+          "keyword": "요소들을",
+          "source_segment_id": "topic_065-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '요소들을'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-004-source-seg-004::03",
+          "prompt": "______:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+          "answer": "객체명[초기위치",
+          "original": "객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+          "keyword": "객체명[초기위치",
+          "source_segment_id": "topic_065-subtopic-004-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '객체명[초기위치'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_065-subtopic-004-source-seg-002::04",
+          "prompt": "• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(______) 반환하는 기능",
+          "answer": "slicing",
+          "original": "• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(slicing) 반환하는 기능",
+          "keyword": "slicing",
+          "source_segment_id": "topic_065-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'slicing'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_065",
+    "sequence": 65,
+    "number": "65",
+    "title": "Python 입출력과 자료구조",
+    "title_raw": "Python 입출력과 자료구조",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "source_count": 4,
+    "source_sequences": [
+      300,
+      301,
+      302,
+      303
+    ],
+    "source_titles": [
+      "Python의 데이터 입출력 함수",
+      "입력 값의 형변환",
+      "리스트/딕셔너리",
+      "슬라이스"
+    ],
+    "preview_text": "Python의 데이터 입출력 함수, 입력 값의 형변환, 리스트/딕셔너리 등",
+    "segment_count": 65,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 Python의 데이터 입출력 함수, 입력 값의 형변환, 리스트/딕셔너리, 슬라이스을 중심으로 정리합니다. 프로그래밍 언어 활용 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 Python의 데이터 입출력 함수, 입력 값의 형변환, 리스트/딕셔너리, 슬라이스을 중심으로 정리합니다.",
+      "프로그래밍 언어 활용 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1765,
+    "source_titles_preview": [
+      "Python의 데이터 입출력 함수",
+      "입력 값의 형변환",
+      "리스트/딕셔너리"
+    ],
+    "highlight_keywords": [
+      "input",
+      "함수",
+      "print",
+      "형식",
+      "Python의 데이터 입출력 함수",
+      "int",
+      "map",
+      "input().split())",
+      "형변환",
+      "리스트(List)"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_065-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 파이썬의 데이터 입출력 함수에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 파이썬의 데이터 입출력 함수에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "출력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 9,
+      "end_seconds": 20,
+      "duration_seconds": 11,
+      "timeline_summary": "input() 함수의 기본 개념 설명",
+      "screen_text_lines": [
+        "Input() 함수",
+        "input() 함수",
+        "• input() 함수는 Python의 표준 입력 함수로, 키보드로 입력받아 변수에 저장하는 함수"
+      ],
+      "screen_text": "Input() 함수\ninput() 함수\n• input() 함수는 Python의 표준 입력 함수로, 키보드로 입력받아 변수에 저장하는 함수",
+      "spoken_sentences": [
+        "자, input 함수다 라고 하게 되면 input 함수는 우리가 키보드로 뭔가 사용자한테 입력받아 가지고 그거를 변수에다가 저장하는 그런 함수를 보고 우리가 input 함수라고 해요."
+      ],
+      "spoken_text": "자, input 함수다 라고 하게 되면 input 함수는 우리가 키보드로 뭔가 사용자한테 입력받아 가지고 그거를 변수에다가 저장하는 그런 함수를 보고 우리가 input 함수라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "input() 함수",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 20,
+      "end_seconds": 41,
+      "duration_seconds": 21,
+      "timeline_summary": "입력 값의 문자열 취급 강조",
+      "screen_text_lines": [
+        "• 입력되는 값은 문자열로 취급되어 저장됨"
+      ],
+      "screen_text": "• 입력되는 값은 문자열로 취급되어 저장됨",
+      "spoken_sentences": [
+        "해서 그때 사용자가 키보드로 숫자를 쓰든 문자를 쓰든 뭘 쓰든 간에 입력되는 그 값은 input 함수를 거치게 되면 전부 다 문자열로 그렇게 취급되어 저장됩니다.",
+        "여기서 중요한 말이 전부 다 문자열로 취급된다 그 말이 중요한 말이죠."
+      ],
+      "spoken_text": "해서 그때 사용자가 키보드로 숫자를 쓰든 문자를 쓰든 뭘 쓰든 간에 입력되는 그 값은 input 함수를 거치게 되면 전부 다 문자열로 그렇게 취급되어 저장됩니다. 여기서 중요한 말이 전부 다 문자열로 취급된다 그 말이 중요한 말이죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "입력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:12",
+      "start_seconds": 41,
+      "end_seconds": 72,
+      "duration_seconds": 31,
+      "timeline_summary": "input() 함수의 기본 형식 1 설명",
+      "screen_text_lines": [
+        "• 형식1",
+        "변수 = input(출력문자)"
+      ],
+      "screen_text": "• 형식1\n변수 = input(출력문자)",
+      "spoken_sentences": [
+        "내가 숫자를 썼다고 해서 숫자로 저장되는 게 아니에요.",
+        "그것들은 전부 다 문자열로 그렇게 취급이 됩니다.",
+        "그때 우리가 input이라는 함수를 쓸 때 지금처럼 기본 형식이 요렇게 생겼어요.",
+        "앞에다가 변수 명을 먼저 써주고요.",
+        "그리고 뒤에다가 input 하고 출력할 문자 화면상에 표시하고자 하는 그 문자를 써 주면 됩니다.",
+        "요렇게 쓰게 되면 여기서 출력할 문자에다가 내가 쓴 문자 있죠.",
+        "고게 화면에 나타나면서 데이터 입력할 수 있게끔 그렇게 뜹니다.",
+        "그럼 내가 거기다가 10을 집어넣든 A를 집어넣든 뭘 집어넣으면 그때 내가 입력한 그 값이 요 변수 내가 지정한 요 변수에 그 값이 입력이 되는 거예요."
+      ],
+      "spoken_text": "내가 숫자를 썼다고 해서 숫자로 저장되는 게 아니에요. 그것들은 전부 다 문자열로 그렇게 취급이 됩니다. 그때 우리가 input이라는 함수를 쓸 때 지금처럼 기본 형식이 요렇게 생겼어요. 앞에다가 변수 명을 먼저 써주고요. 그리고 뒤에다가 input 하고 출력할 문자 화면상에 표시하고자 하는 그 문자를 써 주면 됩니다. 요렇게 쓰게 되면 여기서 출력할 문자에다가 내가 쓴 문자 있죠. 고게 화면에 나타나면서 데이터 입력할 수 있게끔 그렇게 뜹니다. 그럼 내가 거기다가 10을 집어넣든 A를 집어넣든 뭘 집어넣으면 그때 내가 입력한 그 값이 요 변수 내가 지정한 요 변수에 그 값이 입력이 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:01:12",
+      "end_time_hms": "00:01:38",
+      "start_seconds": 72,
+      "end_seconds": 98,
+      "duration_seconds": 26,
+      "timeline_summary": "input() 함수 예시 및 문자열 변환 설명",
+      "screen_text_lines": [
+        "예) a = input('입력하세요.')"
+      ],
+      "screen_text": "예) a = input('입력하세요.')",
+      "spoken_sentences": [
+        "해서 예를 들어서 지금처럼 a는 input 입력하세요 라고 이렇게 하게 되면 화면상에 입력하세요 라는 요 글자가 보여요.",
+        "보이고 내가 거기다가 숫자 100을 입력했다라고 했을 때 그 100이라는 그 값이 a라는 변수에 저장이 돼요.",
+        "그때 숫자 100을 내가 입력했지만 이 a라는 변수에 저장이 될 때는 뭘로 취급된다 문자열로 취급돼서 저장이 된다라고 그렇게 기억하시면 됩니다."
+      ],
+      "spoken_text": "해서 예를 들어서 지금처럼 a는 input 입력하세요 라고 이렇게 하게 되면 화면상에 입력하세요 라는 요 글자가 보여요. 보이고 내가 거기다가 숫자 100을 입력했다라고 했을 때 그 100이라는 그 값이 a라는 변수에 저장이 돼요. 그때 숫자 100을 내가 입력했지만 이 a라는 변수에 저장이 될 때는 뭘로 취급된다 문자열로 취급돼서 저장이 된다라고 그렇게 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "input() 함수",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "입력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:01:38",
+      "end_time_hms": "00:02:06",
+      "start_seconds": 98,
+      "end_seconds": 126,
+      "duration_seconds": 28,
+      "timeline_summary": "input() 함수의 형식 2 (복수 입력) 설명",
+      "screen_text_lines": [
+        "• 형식2",
+        "변수1, 변수2, … = input(출력문자).split(분리문자)"
+      ],
+      "screen_text": "• 형식2\n변수1, 변수2, … = input(출력문자).split(분리문자)",
+      "spoken_sentences": [
+        "그 다음에 입력을 할 때 input 함수에서 입력을 할 때 우리가 변수를 여러 개 써서 여러 개의 값을 한꺼번에 도 입력을 받을 수 있어요.",
+        "그때 변수 여러 개 쭉 써주고요 거기다 는 이라고 이렇게 표시해주고 그 뒤에서 출력할 문자 고 거 지정해주고 고 뒤에다가 점이라고 찍고 split 해서 분리 문자 여러 개의 값을 동시에 입력하니까 중간 중간에 어떤 걸로 구분이 되는지 그 구분할 그 문자를 우리가 split 에다가 써주면 됩니다."
+      ],
+      "spoken_text": "그 다음에 입력을 할 때 input 함수에서 입력을 할 때 우리가 변수를 여러 개 써서 여러 개의 값을 한꺼번에 도 입력을 받을 수 있어요. 그때 변수 여러 개 쭉 써주고요 거기다 는 이라고 이렇게 표시해주고 그 뒤에서 출력할 문자 고 거 지정해주고 고 뒤에다가 점이라고 찍고 split 해서 분리 문자 여러 개의 값을 동시에 입력하니까 중간 중간에 어떤 걸로 구분이 되는지 그 구분할 그 문자를 우리가 split 에다가 써주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:02:06",
+      "end_time_hms": "00:02:49",
+      "start_seconds": 126,
+      "end_seconds": 169,
+      "duration_seconds": 43,
+      "timeline_summary": "split()을 이용한 입력 예시 설명",
+      "screen_text_lines": [
+        "예) x, y = input().split('-') 입력데이터 : “gilbut-sinagong”"
+      ],
+      "screen_text": "예) x, y = input().split('-') 입력데이터 : “gilbut-sinagong”",
+      "spoken_sentences": [
+        "자 예를 들어서 x y 하고 이렇게 두 개의 변수 값을 입력을 받을 거예요 input 함수로.",
+        "근데 input 함수 요 가로 안에는 아무것도 없죠.",
+        "그러면 입력할 때 입력하세요 요런 말이 안 떠요.",
+        "안 뜨는데 그때 내가 만약에 입력한 데이터가 요렇게 돼 있다라고 했을 때 여기서 split 이라고 해놓고 여기 하이픈 입력했죠.",
+        "그럼 요 하이픈 앞엣거는 x 에다가 저장해라 구요.",
+        "하이픈 뒤엣거는 y 라는 변수에 저장해라 그거예요.",
+        "해서 여기서 요렇게 데이터를 입력했다면 요 하이픈을 기점으로 해서 앞에 있는 거 이 길벗이라는 요 글자는 x 라는 변수에 저장이 될 거고요.",
+        "그리고 이라는 이 글자는 y 라는 변수에 저장이 될 겁니다."
+      ],
+      "spoken_text": "자 예를 들어서 x y 하고 이렇게 두 개의 변수 값을 입력을 받을 거예요 input 함수로. 근데 input 함수 요 가로 안에는 아무것도 없죠. 그러면 입력할 때 입력하세요 요런 말이 안 떠요. 안 뜨는데 그때 내가 만약에 입력한 데이터가 요렇게 돼 있다라고 했을 때 여기서 split 이라고 해놓고 여기 하이픈 입력했죠. 그럼 요 하이픈 앞엣거는 x 에다가 저장해라 구요. 하이픈 뒤엣거는 y 라는 변수에 저장해라 그거예요. 해서 여기서 요렇게 데이터를 입력했다면 요 하이픈을 기점으로 해서 앞에 있는 거 이 길벗이라는 요 글자는 x 라는 변수에 저장이 될 거고요. 그리고 이라는 이 글자는 y 라는 변수에 저장이 될 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "입력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:02:49",
+      "end_time_hms": "00:03:08",
+      "start_seconds": 169,
+      "end_seconds": 188,
+      "duration_seconds": 19,
+      "timeline_summary": "input() 함수 요약 정리",
+      "screen_text_lines": [
+        "input() 함수",
+        "• input() 함수는 Python의 표준 입력 함수로, 키보드로 입력받아 변수에 저장하는 함수",
+        "• 입력되는 값은 문자열로 취급되어 저장됨"
+      ],
+      "screen_text": "input() 함수\n• input() 함수는 Python의 표준 입력 함수로, 키보드로 입력받아 변수에 저장하는 함수\n• 입력되는 값은 문자열로 취급되어 저장됨",
+      "spoken_sentences": [
+        "요렇게 해서 input 함수를 가지고 한 번에 한 개의 값만 입력도 받을 수 있고 한 번에 여러 개의 값도 우리가 입력을 받을 수 있더라.",
+        "그때 입력 받은 것들은 전부 다 뭘로 취급된다 문자열로 취급된다.",
+        "요거 잘 기억하시기 바랍니다.",
+        "요렇게 해서 input 함수 기본 형식에 대해서 살펴봤습니다."
+      ],
+      "spoken_text": "요렇게 해서 input 함수를 가지고 한 번에 한 개의 값만 입력도 받을 수 있고 한 번에 여러 개의 값도 우리가 입력을 받을 수 있더라. 그때 입력 받은 것들은 전부 다 뭘로 취급된다 문자열로 취급된다. 요거 잘 기억하시기 바랍니다. 요렇게 해서 input 함수 기본 형식에 대해서 살펴봤습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "input() 함수",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:03:08",
+      "end_time_hms": "00:03:42",
+      "start_seconds": 188,
+      "end_seconds": 222,
+      "duration_seconds": 34,
+      "timeline_summary": "print() 함수의 형식 1 (출력 및 옵션) 설명",
+      "screen_text_lines": [
+        "print( ) 함수",
+        "• 형식1",
+        "print(출력값1, 출력값2, …, sep = 분리문자, end = 종료문자)"
+      ],
+      "screen_text": "print( ) 함수\n• 형식1\nprint(출력값1, 출력값2, …, sep = 분리문자, end = 종료문자)",
+      "spoken_sentences": [
+        "자 우리 C가 됐든 Java가 됐든 거기서는 우리가 출력을 하고자 할 때 printf 라는 명령어를 썼는데 이 파이썬에서는 우리가 print 라고 요렇게만 써주면 돼요.",
+        "자 그래서 첫 번째 형식 먼저 보자구요.",
+        "print 라고 쓰게 되면 출력해라 그 뜻이에요.",
+        "출력하긴 출력하는데 뭘 출력하냐 여기 있는 거랑 여기 있는 거랑 이걸 출력해라.",
+        "출력하긴 출력하는데 그때 첫 번째 값이라 두 번째 값이랑 그 사이에 분리 문자를 얘를 써라 라고 그렇게 지정해주고요.",
+        "그리고 끝날 때 이 두 개의 값을 출력하고 마지막에 어떤 걸로 끝나 라 라고 요렇게 써 준 거에요."
+      ],
+      "spoken_text": "자 우리 C가 됐든 Java가 됐든 거기서는 우리가 출력을 하고자 할 때 printf 라는 명령어를 썼는데 이 파이썬에서는 우리가 print 라고 요렇게만 써주면 돼요. 자 그래서 첫 번째 형식 먼저 보자구요. print 라고 쓰게 되면 출력해라 그 뜻이에요. 출력하긴 출력하는데 뭘 출력하냐 여기 있는 거랑 여기 있는 거랑 이걸 출력해라. 출력하긴 출력하는데 그때 첫 번째 값이라 두 번째 값이랑 그 사이에 분리 문자를 얘를 써라 라고 그렇게 지정해주고요. 그리고 끝날 때 이 두 개의 값을 출력하고 마지막에 어떤 걸로 끝나 라 라고 요렇게 써 준 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "print",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:03:42",
+      "end_time_hms": "00:04:22",
+      "start_seconds": 222,
+      "end_seconds": 262,
+      "duration_seconds": 40,
+      "timeline_summary": "print() 함수의 매개변수 활용 예시",
+      "screen_text_lines": [
+        "예) print(82, 24, sep = '-', end = ',')"
+      ],
+      "screen_text": "예) print(82, 24, sep = '-', end = ',')",
+      "spoken_sentences": [
+        "해서 예를 보게 되면 82 라는 숫자랑 24 랑 요 두 개를 출력을 해라.",
+        "출력하긴 출력하는데 이 두 개를 서로 이 하이픈으로 구분하고 이것들을 다 출력하고 마지막에 콤마 얘를 찍어라 라고 그렇게 했습니다.",
+        "그렇게 하게 되면 일단은 82 라고 먼저 출력하고 그리고 분리 문자 분리 문자가 지금 하이픈이 사용 됐죠.",
+        "첫 번째 데이터 찍고 하이픈 찍고 그리고 24 라고 요렇게 찍고 다 출력하고 나서 마지막에 종료 문자 콤마 찍어라 라고 해서 여기 맨 뒤에 콤마가 요렇게 들어갈 겁니다.",
+        "요렇게 해서 출력돼요.",
+        "요렇게 해서 우리 파이썬에서 print 문에서는 분리 문자랑 종료 문자랑 요런 거를 더 쓸 수 있더라."
+      ],
+      "spoken_text": "해서 예를 보게 되면 82 라는 숫자랑 24 랑 요 두 개를 출력을 해라. 출력하긴 출력하는데 이 두 개를 서로 이 하이픈으로 구분하고 이것들을 다 출력하고 마지막에 콤마 얘를 찍어라 라고 그렇게 했습니다. 그렇게 하게 되면 일단은 82 라고 먼저 출력하고 그리고 분리 문자 분리 문자가 지금 하이픈이 사용 됐죠. 첫 번째 데이터 찍고 하이픈 찍고 그리고 24 라고 요렇게 찍고 다 출력하고 나서 마지막에 종료 문자 콤마 찍어라 라고 해서 여기 맨 뒤에 콤마가 요렇게 들어갈 겁니다. 요렇게 해서 출력돼요. 요렇게 해서 우리 파이썬에서 print 문에서는 분리 문자랑 종료 문자랑 요런 거를 더 쓸 수 있더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "print",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "출력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:04:22",
+      "end_time_hms": "00:04:54",
+      "start_seconds": 262,
+      "end_seconds": 294,
+      "duration_seconds": 32,
+      "timeline_summary": "print() 함수의 형식 2 (서식 지정) 설명",
+      "screen_text_lines": [
+        "• 형식2",
+        "print(서식 문자열 % (출력값1, 출력값2, …))"
+      ],
+      "screen_text": "• 형식2\nprint(서식 문자열 % (출력값1, 출력값2, …))",
+      "spoken_sentences": [
+        "그 다음에 형식 2번에 보니까 print 이라고 써놓고 여기서는 서식 집어넣은 거요.",
+        "해서 서식 문자열을 요렇게 써주고 뒤에다가 퍼센트 요렇게 찍어주고요.",
+        "그리고 그 뒤에다가 출력할 값들을 쭉 적어주면 됩니다.",
+        "만약에 출력할 값이 한 개다 라고 하게 되면 요런 가로는 생략할 수 있는 거고요.",
+        "출력값이 여러 개일 때 지금처럼 이렇게 가로로 묶어서 출력값을 써주면 됩니다.",
+        "그때 여기서 좀 다른 게 서식 문자열이랑 출력값이랑 서로 그 중간에 구분할 때 콤마로 구분하는 게 아니라 지금처럼 이렇게 퍼센트로 구분한다는 거요."
+      ],
+      "spoken_text": "그 다음에 형식 2번에 보니까 print 이라고 써놓고 여기서는 서식 집어넣은 거요. 해서 서식 문자열을 요렇게 써주고 뒤에다가 퍼센트 요렇게 찍어주고요. 그리고 그 뒤에다가 출력할 값들을 쭉 적어주면 됩니다. 만약에 출력할 값이 한 개다 라고 하게 되면 요런 가로는 생략할 수 있는 거고요. 출력값이 여러 개일 때 지금처럼 이렇게 가로로 묶어서 출력값을 써주면 됩니다. 그때 여기서 좀 다른 게 서식 문자열이랑 출력값이랑 서로 그 중간에 구분할 때 콤마로 구분하는 게 아니라 지금처럼 이렇게 퍼센트로 구분한다는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "print",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "함수의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:04:54",
+      "end_time_hms": "00:05:37",
+      "start_seconds": 294,
+      "end_seconds": 337,
+      "duration_seconds": 43,
+      "timeline_summary": "서식 문자열을 이용한 출력 예시 및 퍼센트 기호의 의미",
+      "screen_text_lines": [
+        "예) print('%-8.2f' % 200.2); -> 200.20",
+        "▶ % : 서식 문자임을 지정"
+      ],
+      "screen_text": "예) print('%-8.2f' % 200.2); -> 200.20\n▶ % : 서식 문자임을 지정",
+      "spoken_sentences": [
+        "해서 여기 예시를 보게 되면 print 출력해라.",
+        "뭘 출력해라 200.2 라는 요 데이터를 출력해라.",
+        "그때 여기 퍼센트가 나왔죠.",
+        "요 퍼센트 앞에 있는 게 서식 문자열이다 라고 요렇게 써 준 거에요.",
+        "해서 서식 문자열이랑 출력값이랑 서로 구분할 때 지금처럼 이렇게 퍼센트를 붙이더라.",
+        "해서 print 문에 퍼센트가 한 개라도 나오게 되면 아 서식이 지정되어 있구나 라고 그렇게 기억하시면 됩니다.",
+        "해서 형식 1에서는 퍼센트가 없었으니까 앞에 있는 값들을 출력하는데 분리 문자 이거 다 종료 문자 이거 다 라고 그렇게 지정해 준 거구요.",
+        "퍼센트가 나오는 순간 아 퍼센트 앞에 있는 게 서식 문자열이구나 그렇게 구분해서 보셔야 돼요."
+      ],
+      "spoken_text": "해서 여기 예시를 보게 되면 print 출력해라. 뭘 출력해라 200.2 라는 요 데이터를 출력해라. 그때 여기 퍼센트가 나왔죠. 요 퍼센트 앞에 있는 게 서식 문자열이다 라고 요렇게 써 준 거에요. 해서 서식 문자열이랑 출력값이랑 서로 구분할 때 지금처럼 이렇게 퍼센트를 붙이더라. 해서 print 문에 퍼센트가 한 개라도 나오게 되면 아 서식이 지정되어 있구나 라고 그렇게 기억하시면 됩니다. 해서 형식 1에서는 퍼센트가 없었으니까 앞에 있는 값들을 출력하는데 분리 문자 이거 다 종료 문자 이거 다 라고 그렇게 지정해 준 거구요. 퍼센트가 나오는 순간 아 퍼센트 앞에 있는 게 서식 문자열이구나 그렇게 구분해서 보셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "print",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "서식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "출력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:05:37",
+      "end_time_hms": "00:06:18",
+      "start_seconds": 337,
+      "end_seconds": 378,
+      "duration_seconds": 41,
+      "timeline_summary": "서식 코드 상세 분석 (마이너스, 숫자 의미)",
+      "screen_text_lines": [
+        "▶ - : 왼쪽부터 출력",
+        "▶ 8 : 출력 자릿수를 8자리로 지정",
+        "▶ 2 : 소수점 이하를 2자리로 지정",
+        "▶ f : 실수로 출력"
+      ],
+      "screen_text": "▶ - : 왼쪽부터 출력\n▶ 8 : 출력 자릿수를 8자리로 지정\n▶ 2 : 소수점 이하를 2자리로 지정\n▶ f : 실수로 출력",
+      "spoken_sentences": [
+        "해서 여기서 사용되는 이 서식 문자는 우리 앞에서 배웠던 거랑 똑같습니다.",
+        "해서 맨 앞에 여기서 써준 요 퍼센트는 서식 문자가 여기서 시작합니다 라고 지정해 준 거고요.",
+        "그리고 여기서 마이너스가 붙었는데 마이너스는 출력할 자릿수가 여러 개 있을 때 왼쪽부터 채워서 출력해라 구요.",
+        "여기서 요 8 이라는 숫자는 전체 출력 자릿수요.",
+        "해서 전체 여덟 자리로 그렇게 출력을 해라.",
+        "그때 왼쪽부터 채워서 출력해라.",
+        "그때 지정된 서식이 f 니까 실수, 실수로 그렇게 출력하라는 거죠.",
+        "그때 소수점 두 번째 자리까지 출력하라고.2 하고 이렇게 써져 있는 거에요."
+      ],
+      "spoken_text": "해서 여기서 사용되는 이 서식 문자는 우리 앞에서 배웠던 거랑 똑같습니다. 해서 맨 앞에 여기서 써준 요 퍼센트는 서식 문자가 여기서 시작합니다 라고 지정해 준 거고요. 그리고 여기서 마이너스가 붙었는데 마이너스는 출력할 자릿수가 여러 개 있을 때 왼쪽부터 채워서 출력해라 구요. 여기서 요 8 이라는 숫자는 전체 출력 자릿수요. 해서 전체 여덟 자리로 그렇게 출력을 해라. 그때 왼쪽부터 채워서 출력해라. 그때 지정된 서식이 f 니까 실수, 실수로 그렇게 출력하라는 거죠. 그때 소수점 두 번째 자리까지 출력하라고.2 하고 이렇게 써져 있는 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "서식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "출력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0300_300",
+      "subtopic_title": "Python의 데이터 입출력 함수",
+      "subtopic_sequence": 300,
+      "subtopic_number": "300",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WTk4962Wf0s",
+      "start_time_hms": "00:06:18",
+      "end_time_hms": "00:07:04",
+      "start_seconds": 378,
+      "end_seconds": 424,
+      "duration_seconds": 46,
+      "timeline_summary": "최종 출력 결과 분석 및 강의 마무리",
+      "screen_text_lines": [
+        "예) print('%-8.2f' % 200.2); -> 200.20"
+      ],
+      "screen_text": "예) print('%-8.2f' % 200.2); -> 200.20",
+      "spoken_sentences": [
+        "요렇게 쓰게 되면 자릿수가 전체 여덟 자리, 여덟 자리가 잡힐 거고요.",
+        "그 여덟 자리 중에서 마이너스가 붙었으니까 왼쪽부터 출력하겠죠.",
+        "그래서 200.",
+        "하고 이렇게 출력이 되고 여기서는 우리 데이터 가지고 있는 게 소수점이 첫 번째 자리까지 밖에 없지만 여기서 서식에서 두 번째 자리까지 출력해라 라고 했기 때문에 2 0 하고 요렇게 붙은 겁니다.",
+        "이게 파이썬에서 출력할 때 사용하는 print 함수요.",
+        "해서 요 형식 있죠 형식이 좀 많이 달라요.",
+        "앞에서 배운 거랑 많이 다르니까 요 두 개 형식 정확하게 기억하셔야 됩니다.",
+        "그리고 만약에 서식 문자열을 잘 모르겠다 라고 하게 되면 우리 앞으로 넘어가서 서식 문자열 그거 다시 공부하고 오셔야 돼요."
+      ],
+      "spoken_text": "요렇게 쓰게 되면 자릿수가 전체 여덟 자리, 여덟 자리가 잡힐 거고요. 그 여덟 자리 중에서 마이너스가 붙었으니까 왼쪽부터 출력하겠죠. 그래서 200. 하고 이렇게 출력이 되고 여기서는 우리 데이터 가지고 있는 게 소수점이 첫 번째 자리까지 밖에 없지만 여기서 서식에서 두 번째 자리까지 출력해라 라고 했기 때문에 2 0 하고 요렇게 붙은 겁니다. 이게 파이썬에서 출력할 때 사용하는 print 함수요. 해서 요 형식 있죠 형식이 좀 많이 달라요. 앞에서 배운 거랑 많이 다르니까 요 두 개 형식 정확하게 기억하셔야 됩니다. 그리고 만약에 서식 문자열을 잘 모르겠다 라고 하게 되면 우리 앞으로 넘어가서 서식 문자열 그거 다시 공부하고 오셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "함수",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "print",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "서식",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:11",
+      "start_seconds": 0,
+      "end_seconds": 11,
+      "duration_seconds": 11,
+      "timeline_summary": "영상 제목 및 주제 소개",
+      "screen_text_lines": [
+        "입력 값의 형변환(Casting)"
+      ],
+      "screen_text": "입력 값의 형변환(Casting)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 입력 값의 형 변환에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 입력 값의 형 변환에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "형변환",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "입력 값의 형변환",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "입력 값의 형변환(Casting)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:00:11",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 11,
+      "end_seconds": 58,
+      "duration_seconds": 47,
+      "timeline_summary": "input() 함수의 특징과 형변환의 필요성 설명",
+      "screen_text_lines": [
+        "입력 값의 형변환(Casting)",
+        "input() 함수는 입력되는 값을 무조건 문자열로 저장하므로, 숫자로 사용하기 위해서는 형을 변환해야 함."
+      ],
+      "screen_text": "입력 값의 형변환(Casting)\ninput() 함수는 입력되는 값을 무조건 문자열로 저장하므로, 숫자로 사용하기 위해서는 형을 변환해야 함.",
+      "spoken_sentences": [
+        "자 우리 파이썬에서는 우리 input이라는 그 함수를 이용해서 우리가 사용자로부터 데이터를 입력을 받는데 그때 입력되는 그 값을 무조건 무조건 문자열로 싹 다 저장을 해버립니다.",
+        "근데 우리가 실제로 입력을 받을 때 문자값을 입력받을 때도 있지만 우리가 숫자값을 입력받을 때도 있다고요.",
+        "근데 그렇게 숫자값을 만약에 입력을 받아도 이 input이라는 함수가 무조건 입력되는 그 데이터를 싹 다 무조건 문자열로 싹 다 저장을 해버리기 때문에 우리가 형 변환이라는 걸 그걸 해줘야 돼요.",
+        "해서 내가 input이라는 그 함수로 입력되는 그 값을 내가 숫자로 사용하겠다 그랬을 때는 우리가 형 변환 형 변환이라는 걸 꼭 해줘야 되더라."
+      ],
+      "spoken_text": "자 우리 파이썬에서는 우리 input이라는 그 함수를 이용해서 우리가 사용자로부터 데이터를 입력을 받는데 그때 입력되는 그 값을 무조건 무조건 문자열로 싹 다 저장을 해버립니다. 근데 우리가 실제로 입력을 받을 때 문자값을 입력받을 때도 있지만 우리가 숫자값을 입력받을 때도 있다고요. 근데 그렇게 숫자값을 만약에 입력을 받아도 이 input이라는 함수가 무조건 입력되는 그 데이터를 싹 다 무조건 문자열로 싹 다 저장을 해버리기 때문에 우리가 형 변환이라는 걸 그걸 해줘야 돼요. 해서 내가 input이라는 그 함수로 입력되는 그 값을 내가 숫자로 사용하겠다 그랬을 때는 우리가 형 변환 형 변환이라는 걸 꼭 해줘야 되더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "형변환",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "입력 값의 형변환",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "입력 값의 형변환(Casting)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:23",
+      "start_seconds": 58,
+      "end_seconds": 83,
+      "duration_seconds": 25,
+      "timeline_summary": "변환할 데이터가 1개일 때의 문법 설명",
+      "screen_text_lines": [
+        "변환할 데이터가 1개일 때",
+        "변수 = int(input())",
+        "변수 = float(input())"
+      ],
+      "screen_text": "변환할 데이터가 1개일 때\n변수 = int(input())\n변수 = float(input())",
+      "spoken_sentences": [
+        "그때 변환할 그 데이터가 한 개일 때가 있고 두 개 이상일 때가 있고 이렇게 두 가지 방법이 있어요.",
+        "만약에 입력받을 그 데이터가 만약에 한 개다.",
+        "한 개일 때 지금처럼 이렇게 우리가 input이라는 그 함수를 이용하는데 이 input이라는 함수 자체를 이렇게 int다 아니면 float이다 요런 걸로 묶어서 우리가 사용을 해주면 됩니다."
+      ],
+      "spoken_text": "그때 변환할 그 데이터가 한 개일 때가 있고 두 개 이상일 때가 있고 이렇게 두 가지 방법이 있어요. 만약에 입력받을 그 데이터가 만약에 한 개다. 한 개일 때 지금처럼 이렇게 우리가 input이라는 그 함수를 이용하는데 이 input이라는 함수 자체를 이렇게 int다 아니면 float이다 요런 걸로 묶어서 우리가 사용을 해주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "int",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "데이터가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "변환할",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:01:23",
+      "end_time_hms": "00:01:38",
+      "start_seconds": 83,
+      "end_seconds": 98,
+      "duration_seconds": 15,
+      "timeline_summary": "정수형(int) 형변환 실제 사용 예제",
+      "screen_text_lines": [
+        "예) a = int(input())"
+      ],
+      "screen_text": "예) a = int(input())",
+      "spoken_sentences": [
+        "해서 예를 들어서 지금처럼 이렇게 이렇게 쓰게 되면 내가 입력받는 그 값을 그 값을 int 정수형으로 바꿔서 그 정수형으로 바뀐 그 데이터를 a라는 변수에 넣어달라 그런 뜻으로 사용이 되는 거죠."
+      ],
+      "spoken_text": "해서 예를 들어서 지금처럼 이렇게 이렇게 쓰게 되면 내가 입력받는 그 값을 그 값을 int 정수형으로 바꿔서 그 정수형으로 바뀐 그 데이터를 a라는 변수에 넣어달라 그런 뜻으로 사용이 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "int",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "형변환",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:01:38",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 98,
+      "end_seconds": 142,
+      "duration_seconds": 44,
+      "timeline_summary": "실수형(float) 형변환 및 안내 메시지 사용 예제",
+      "screen_text_lines": [
+        "예) a = float(input('입력하세요.'))"
+      ],
+      "screen_text": "예) a = float(input('입력하세요.'))",
+      "spoken_sentences": [
+        "그리고 만약에 내가 지금처럼 이렇게 만약에 우리가 입력을 했다면 그때 여기서 입력하세요라고 해서 출력 메시지를 입력을 해줬죠?",
+        "그러면 화면상에 입력하세요 요렇게 메시지가 출력이 되고 그 뒤에서 커서가 깜빡깜빡거리고 있는데 거기다 어떤 우리가 특정 숫자를 썼어요.",
+        "그러면 그 숫자를 우리 형 변환을 해서 뭘로 바꿔달라 우리 float 실수값으로 바꿔달라.",
+        "그렇게 실수값으로 형 변환을 해주고 그 값을 어디다가 저장해라 우리 a라는 그 변수에 저장해 주세요 그런 뜻으로 사용이 된 겁니다.",
+        "그렇게 우리가 변환할 데이터가 한 개일 때는 지금처럼 요런 형태로 우리가 쓰면 되는 거예요."
+      ],
+      "spoken_text": "그리고 만약에 내가 지금처럼 이렇게 만약에 우리가 입력을 했다면 그때 여기서 입력하세요라고 해서 출력 메시지를 입력을 해줬죠? 그러면 화면상에 입력하세요 요렇게 메시지가 출력이 되고 그 뒤에서 커서가 깜빡깜빡거리고 있는데 거기다 어떤 우리가 특정 숫자를 썼어요. 그러면 그 숫자를 우리 형 변환을 해서 뭘로 바꿔달라 우리 float 실수값으로 바꿔달라. 그렇게 실수값으로 형 변환을 해주고 그 값을 어디다가 저장해라 우리 a라는 그 변수에 저장해 주세요 그런 뜻으로 사용이 된 겁니다. 그렇게 우리가 변환할 데이터가 한 개일 때는 지금처럼 요런 형태로 우리가 쓰면 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "형변환",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "데이터가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "변환할",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:03:13",
+      "start_seconds": 142,
+      "end_seconds": 193,
+      "duration_seconds": 51,
+      "timeline_summary": "변환할 데이터가 2개 이상일 때 map() 함수 사용법 설명",
+      "screen_text_lines": [
+        "변환할 데이터가 2개 이상일 때",
+        "map(자료형, input().split())"
+      ],
+      "screen_text": "변환할 데이터가 2개 이상일 때\nmap(자료형, input().split())",
+      "spoken_sentences": [
+        "근데 내가 만약에 변환할 그 데이터가 만약에 두 개 이상이다.",
+        "내가 input이라는 그 함수를 통해서 내가 여러 가지 입력값을 받을 수 있잖아요.",
+        "그렇게 여러 개를 입력을 받아서 그 데이터들을 싹 다 내가 형 변환하겠다 그랬을 때는 우리가 map이라는 함수를 사용을 해야 됩니다.",
+        "요 map이라는 요 함수는 두 개 이상의 값을 우리가 입력을 받아서 그거에 대한 그 자료형을 우리가 변환할 때 사용하는 그 함수가 지금처럼 map이라는 요 함수요.",
+        "그때 요 map이 생긴 게 지금처럼 요렇게 생긴 거예요.",
+        "해서 우리가 여러 개의 값을 입력받을 때 input하고 split을 이용하죠?",
+        "여기서 입력받는 그 값을 어떤 특정 자료형으로 바꿔달라 그렇게 해서 지금처럼 요런 형태로 쓰면 되는 겁니다."
+      ],
+      "spoken_text": "근데 내가 만약에 변환할 그 데이터가 만약에 두 개 이상이다. 내가 input이라는 그 함수를 통해서 내가 여러 가지 입력값을 받을 수 있잖아요. 그렇게 여러 개를 입력을 받아서 그 데이터들을 싹 다 내가 형 변환하겠다 그랬을 때는 우리가 map이라는 함수를 사용을 해야 됩니다. 요 map이라는 요 함수는 두 개 이상의 값을 우리가 입력을 받아서 그거에 대한 그 자료형을 우리가 변환할 때 사용하는 그 함수가 지금처럼 map이라는 요 함수요. 그때 요 map이 생긴 게 지금처럼 요렇게 생긴 거예요. 해서 우리가 여러 개의 값을 입력받을 때 input하고 split을 이용하죠? 여기서 입력받는 그 값을 어떤 특정 자료형으로 바꿔달라 그렇게 해서 지금처럼 요런 형태로 쓰면 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "map",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "input().split())",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "데이터가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:03:13",
+      "end_time_hms": "00:03:46",
+      "start_seconds": 193,
+      "end_seconds": 226,
+      "duration_seconds": 33,
+      "timeline_summary": "여러 변수에 동시에 값을 할당하는 map() 함수 형식",
+      "screen_text_lines": [
+        "봀수1, 봀수2, … = map(int, input().split())",
+        "봀수1, 봀수2, … = map(float, input().split())"
+      ],
+      "screen_text": "봀수1, 봀수2, … = map(int, input().split())\n봀수1, 봀수2, … = map(float, input().split())",
+      "spoken_sentences": [
+        "해서 우리가 변수를 여러 개를 앞에다가 쭉쭉쭉 전부 다 적어주고 그 뒤에서 그 뒤에서 우리가 input split 이걸 이용해서 여러 가지 값을 입력을 받겠죠?",
+        "그 입력받는 그 값들을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔주세요 그런 뜻이요.",
+        "그리고 지금 여기서도 input split을 이용해서 여러 개의 값을 입력을 받는데 그 입력받는 그 값들을 싹 다 뭘로 바꿔달라 우리 실수 실수로 변환해서 각각 변수에다 넣어주세요 그렇게 사용이 되는 겁니다."
+      ],
+      "spoken_text": "해서 우리가 변수를 여러 개를 앞에다가 쭉쭉쭉 전부 다 적어주고 그 뒤에서 그 뒤에서 우리가 input split 이걸 이용해서 여러 가지 값을 입력을 받겠죠? 그 입력받는 그 값들을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔주세요 그런 뜻이요. 그리고 지금 여기서도 input split을 이용해서 여러 개의 값을 입력을 받는데 그 입력받는 그 값들을 싹 다 뭘로 바꿔달라 우리 실수 실수로 변환해서 각각 변수에다 넣어주세요 그렇게 사용이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "int",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "map",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "input().split())",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:03:46",
+      "end_time_hms": "00:04:06",
+      "start_seconds": 226,
+      "end_seconds": 246,
+      "duration_seconds": 20,
+      "timeline_summary": "두 변수에 정수형 값을 입력받는 예제 설명",
+      "screen_text_lines": [
+        "예) a, b = map(int, input().split())"
+      ],
+      "screen_text": "예) a, b = map(int, input().split())",
+      "spoken_sentences": [
+        "해서 예를 들어서 만약에 지금처럼 요렇게 사용이 됐어요.",
+        "그러면 input split을 이용해서 뭔가 데이터를 입력을 받겠죠?",
+        "그 입력받은 그 값을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔서 그 값들을 각각 a라는 변수 b라는 변수에 저장해 달라 고거요."
+      ],
+      "spoken_text": "해서 예를 들어서 만약에 지금처럼 요렇게 사용이 됐어요. 그러면 input split을 이용해서 뭔가 데이터를 입력을 받겠죠? 그 입력받은 그 값을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔서 그 값들을 각각 a라는 변수 b라는 변수에 저장해 달라 고거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "int",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "map",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "input().split())",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:04:06",
+      "end_time_hms": "00:04:47",
+      "start_seconds": 246,
+      "end_seconds": 287,
+      "duration_seconds": 41,
+      "timeline_summary": "split() 함수에 구분자를 지정하여 입력받는 예제 설명",
+      "screen_text_lines": [
+        "예) a, b = map(int, input().split(\"a\"))"
+      ],
+      "screen_text": "예) a, b = map(int, input().split(\"a\"))",
+      "spoken_sentences": [
+        "그리고 만약에 지금처럼 만약에 요렇게 썼다면 그때 input하고 split하고 a라고 요렇게 써져 있죠?",
+        "그러면 만약에 사용자가 30이라고 요렇게 입력을 하고 중간에 a a라고 요렇게 써서 만약에 뒤에다 40하고 요렇게 입력을 했다 그러면 요 앞에 30이라는 값이 있고 40이라는 값이 있죠?",
+        "그 두 개 값을 입력을 받는데 그때 이 두 개 값을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔라.",
+        "바꿔서 30은 a의 a라는 그 변수에 저장이 되게 그리고 40이라는 요 값은 b에 b에 저장이 되게 그렇게 해달라 그렇게 사용이 되는 거예요."
+      ],
+      "spoken_text": "그리고 만약에 지금처럼 만약에 요렇게 썼다면 그때 input하고 split하고 a라고 요렇게 써져 있죠? 그러면 만약에 사용자가 30이라고 요렇게 입력을 하고 중간에 a a라고 요렇게 써서 만약에 뒤에다 40하고 요렇게 입력을 했다 그러면 요 앞에 30이라는 값이 있고 40이라는 값이 있죠? 그 두 개 값을 입력을 받는데 그때 이 두 개 값을 싹 다 뭘로 바꿔달라 우리 int 정수형으로 바꿔라. 바꿔서 30은 a의 a라는 그 변수에 저장이 되게 그리고 40이라는 요 값은 b에 b에 저장이 되게 그렇게 해달라 그렇게 사용이 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "int",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "map",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0301_301",
+      "subtopic_title": "입력 값의 형변환",
+      "subtopic_sequence": 301,
+      "subtopic_number": "301",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g0ZgQEgQ6O4",
+      "start_time_hms": "00:04:47",
+      "end_time_hms": "00:05:21",
+      "start_seconds": 287,
+      "end_seconds": 321,
+      "duration_seconds": 34,
+      "timeline_summary": "데이터 개수에 따른 형변환 방식 차이점 최종 정리",
+      "screen_text_lines": [
+        "변환할 데이터가 1개일 때",
+        "변환할 데이터가 2개 이상일 때",
+        "map(자료형, input().split())"
+      ],
+      "screen_text": "변환할 데이터가 1개일 때\n변환할 데이터가 2개 이상일 때\nmap(자료형, input().split())",
+      "spoken_sentences": [
+        "해서 우리가 형 변환을 할 때도 형 변환 한 개만 할 거냐 아니면 두 개 두 개 이상을 할 거냐 거기에 따라서 지금처럼 요렇게 달라지는 거요.",
+        "우리 map이라는 요 함수는 언제 사용한다?",
+        "우리 변환할 그 데이터가 두 개 이상일 때 그때 map 요 함수를 쓰더라.",
+        "해서 변환할 데이터의 그 개수에 따라서 지금처럼 요렇게 사용하는 그 방식이 달라지기 때문에 요 형식 여러분들이 정확하게 알고 지나가셔야 돼요."
+      ],
+      "spoken_text": "해서 우리가 형 변환을 할 때도 형 변환 한 개만 할 거냐 아니면 두 개 두 개 이상을 할 거냐 거기에 따라서 지금처럼 요렇게 달라지는 거요. 우리 map이라는 요 함수는 언제 사용한다? 우리 변환할 그 데이터가 두 개 이상일 때 그때 map 요 함수를 쓰더라. 해서 변환할 데이터의 그 개수에 따라서 지금처럼 요렇게 사용하는 그 방식이 달라지기 때문에 요 형식 여러분들이 정확하게 알고 지나가셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "input",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "map",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "input().split())",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "형변환",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 0,
+      "end_seconds": 23,
+      "duration_seconds": 23,
+      "timeline_summary": "리스트의 개념과 C/Java 배열과의 차이점",
+      "screen_text_lines": [
+        "리스트(List)",
+        "C와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함."
+      ],
+      "screen_text": "리스트(List)\nC와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함.",
+      "spoken_sentences": [
+        "이번 시간에는 우리 리스트에 대해서 같이 한번 살펴보도록 하겠습니다.",
+        "우리가 C언어가 됐든 자바가 됐든 이런 곳에서는 우리가 여러 요소값들을 하나의 이름으로 처리를 할 때 우리가 배열, 배열이라는 거를 사용을 했습니다.",
+        "근데 이 파이썬에서는 우리가 배열 대신에 리스트라는 거를 사용을 해요."
+      ],
+      "spoken_text": "이번 시간에는 우리 리스트에 대해서 같이 한번 살펴보도록 하겠습니다. 우리가 C언어가 됐든 자바가 됐든 이런 곳에서는 우리가 여러 요소값들을 하나의 이름으로 처리를 할 때 우리가 배열, 배열이라는 거를 사용을 했습니다. 근데 이 파이썬에서는 우리가 배열 대신에 리스트라는 거를 사용을 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 23,
+      "end_seconds": 48,
+      "duration_seconds": 25,
+      "timeline_summary": "배열과 리스트의 크기 지정 방식 차이",
+      "screen_text_lines": [
+        "리스트(List)",
+        "C와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함."
+      ],
+      "screen_text": "리스트(List)\nC와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함.",
+      "spoken_sentences": [
+        "우리가 C언어가 됐든 자바가 됐든 그런 데서 우리가 배열을 선언할 때 우리가 자료형을, 자료형을 만약에 INT, INT를 붙였어요.",
+        "그러면 그 배열에는, 그 배열에는 정숫값만 저장할 수 있죠?",
+        "그리고 만약에 CHAR, 그걸 붙이게 되면 우리가 그 배열에는 문잣값만 저장 시킬 수가 있습니다.",
+        "그리고 우리가 배열을 선언할 때 그때 내가 기억장소 몇 개 쓰겠다, 그렇게 개수를 지정할 수도 있죠?"
+      ],
+      "spoken_text": "우리가 C언어가 됐든 자바가 됐든 그런 데서 우리가 배열을 선언할 때 우리가 자료형을, 자료형을 만약에 INT, INT를 붙였어요. 그러면 그 배열에는, 그 배열에는 정숫값만 저장할 수 있죠? 그리고 만약에 CHAR, 그걸 붙이게 되면 우리가 그 배열에는 문잣값만 저장 시킬 수가 있습니다. 그리고 우리가 배열을 선언할 때 그때 내가 기억장소 몇 개 쓰겠다, 그렇게 개수를 지정할 수도 있죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 48,
+      "end_seconds": 73,
+      "duration_seconds": 25,
+      "timeline_summary": "고정된 배열 크기와 유연한 리스트 크기",
+      "screen_text_lines": [
+        "리스트(List)",
+        "리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음."
+      ],
+      "screen_text": "리스트(List)\n리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음.",
+      "spoken_sentences": [
+        "그 기억장소 크기를 다섯 개, 다섯 개라고 그렇게 적어 놨어요.",
+        "그러면 그 배열에 대해서 기억장소를 딱 다섯 개만 쓸 수가 있는 거죠?",
+        "내가 만약에 그 다섯 개짜리로 만들어서 내가 배열을 사용하다가 내가 그거를 열 개짜리, 열 개짜리로 만들고 싶어요.",
+        "그러면 우리가 코드를 또 수정을 해줘야 된다고요."
+      ],
+      "spoken_text": "그 기억장소 크기를 다섯 개, 다섯 개라고 그렇게 적어 놨어요. 그러면 그 배열에 대해서 기억장소를 딱 다섯 개만 쓸 수가 있는 거죠? 내가 만약에 그 다섯 개짜리로 만들어서 내가 배열을 사용하다가 내가 그거를 열 개짜리, 열 개짜리로 만들고 싶어요. 그러면 우리가 코드를 또 수정을 해줘야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:38",
+      "start_seconds": 73,
+      "end_seconds": 98,
+      "duration_seconds": 25,
+      "timeline_summary": "리스트의 동적 크기 조절 기능",
+      "screen_text_lines": [
+        "리스트(List)",
+        "리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음."
+      ],
+      "screen_text": "리스트(List)\n리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음.",
+      "spoken_sentences": [
+        "근데 이 리스트라는 거는 우리가 필요에 따라서, 필요에 따라서 개수를 늘리거나 줄일 수가 있습니다.",
+        "해서 우리가 이 리스트라는 거를 사용할 때는 크기를 따로 적지 않아요.",
+        "적지 않고 그냥 그 리스트에다가 내가 어떤 값을 집어넣어 달라, 그렇게 하게 되면 크기가 알아서 늘어납니다."
+      ],
+      "spoken_text": "근데 이 리스트라는 거는 우리가 필요에 따라서, 필요에 따라서 개수를 늘리거나 줄일 수가 있습니다. 해서 우리가 이 리스트라는 거를 사용할 때는 크기를 따로 적지 않아요. 적지 않고 그냥 그 리스트에다가 내가 어떤 값을 집어넣어 달라, 그렇게 하게 되면 크기가 알아서 늘어납니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:01:38",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 98,
+      "end_seconds": 120,
+      "duration_seconds": 22,
+      "timeline_summary": "리스트에서 다양한 자료형의 혼합 저장",
+      "screen_text_lines": [
+        "리스트(List)",
+        "배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음."
+      ],
+      "screen_text": "리스트(List)\n배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음.",
+      "spoken_sentences": [
+        "그리고 우리가 리스트에서 특정 값을 삭제하게 되면 그만큼 크기가 줄어드는 거예요.",
+        "그리고 내가 C언어가 됐든 자바가 됐든 그런 곳에서 배열을 만들 때 내가 만약에 INT를 붙이게 되면 그곳에는 정수형 그 데이터만 저장을 시킬 수가 있다고요."
+      ],
+      "spoken_text": "그리고 우리가 리스트에서 특정 값을 삭제하게 되면 그만큼 크기가 줄어드는 거예요. 그리고 내가 C언어가 됐든 자바가 됐든 그런 곳에서 배열을 만들 때 내가 만약에 INT를 붙이게 되면 그곳에는 정수형 그 데이터만 저장을 시킬 수가 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:25",
+      "start_seconds": 120,
+      "end_seconds": 145,
+      "duration_seconds": 25,
+      "timeline_summary": "리스트 생성 예시 및 자료형 혼합",
+      "screen_text_lines": [
+        "리스트(List)",
+        "배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음.",
+        "a 5 ab 1.5 6 cd",
+        "0 1 2 3 4"
+      ],
+      "screen_text": "리스트(List)\n배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음.\na 5 ab 1.5 6 cd\n0 1 2 3 4",
+      "spoken_sentences": [
+        "근데 이 리스트라는 거는 하나의 리스트에다가 우리가 정수다, 실수다, 문자열이다.",
+        "이런 다양한 그런 자료형들을 우리가 섞어서 저장을 해 줄 수가 있습니다.",
+        "그때 예를 들어서 내가 만약에 a라는 그 리스트를 하나 만들었어요.",
+        "만들어놓고 값을 지금처럼 정수도 집어넣을 수 있고요, 문자도 집어넣을 수 있고 그리고 우리가 지금처럼 이렇게 실수, 이런 것도 집어넣을 수 있습니다."
+      ],
+      "spoken_text": "근데 이 리스트라는 거는 하나의 리스트에다가 우리가 정수다, 실수다, 문자열이다. 이런 다양한 그런 자료형들을 우리가 섞어서 저장을 해 줄 수가 있습니다. 그때 예를 들어서 내가 만약에 a라는 그 리스트를 하나 만들었어요. 만들어놓고 값을 지금처럼 정수도 집어넣을 수 있고요, 문자도 집어넣을 수 있고 그리고 우리가 지금처럼 이렇게 실수, 이런 것도 집어넣을 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:02:25",
+      "end_time_hms": "00:02:49",
+      "start_seconds": 145,
+      "end_seconds": 169,
+      "duration_seconds": 24,
+      "timeline_summary": "리스트의 인덱스 시작 위치(0부터 시작)",
+      "screen_text_lines": [
+        "리스트(List)",
+        "Python에서 리스트의 위치는 0부터 시작함.",
+        "a 5 ab 1.5 6 cd",
+        "0 1 2 3 4"
+      ],
+      "screen_text": "리스트(List)\nPython에서 리스트의 위치는 0부터 시작함.\na 5 ab 1.5 6 cd\n0 1 2 3 4",
+      "spoken_sentences": [
+        "이렇게 해서 하나의 리스트에 다양한, 다양한 자료형들을 섞어서 우리가 저장을 시킬 수가 있습니다.",
+        "그리고 이 리스트라는 것도 우리 배열처럼, 배열처럼 이 특정 기억장소의 위치를 나타낼 때 우리가 숫자, 숫잣값을 쓸 수 있는데 이런 숫잣값은 똑같이 0부터, 0부터 이렇게 시작을 해요."
+      ],
+      "spoken_text": "이렇게 해서 하나의 리스트에 다양한, 다양한 자료형들을 섞어서 우리가 저장을 시킬 수가 있습니다. 그리고 이 리스트라는 것도 우리 배열처럼, 배열처럼 이 특정 기억장소의 위치를 나타낼 때 우리가 숫자, 숫잣값을 쓸 수 있는데 이런 숫잣값은 똑같이 0부터, 0부터 이렇게 시작을 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:02:49",
+      "end_time_hms": "00:03:14",
+      "start_seconds": 169,
+      "end_seconds": 194,
+      "duration_seconds": 25,
+      "timeline_summary": "리스트의 기본 선언 형식 1",
+      "screen_text_lines": [
+        "리스트(List)",
+        "형식",
+        "리스트명 = [ 값1, 값2, ... ]",
+        "리스트명 = list([ 값1, 값2, ... ])"
+      ],
+      "screen_text": "리스트(List)\n형식\n리스트명 = [ 값1, 값2, ... ]\n리스트명 = list([ 값1, 값2, ... ])",
+      "spoken_sentences": [
+        "해서 그때 우리가 리스트를 만들 때 쓰는 그때 형식이 지금처럼 이렇게요.",
+        "앞에다가 리스트명, 우리가 배열의 이름 붙이듯이 리스트명도 사용자가 임의로 그냥 적어주면 되는 거고요.",
+        "그 뒤에다가 이렇게 대괄호로 묶어서 우리가 값들을 쭉쭉쭉 써 주면 됩니다."
+      ],
+      "spoken_text": "해서 그때 우리가 리스트를 만들 때 쓰는 그때 형식이 지금처럼 이렇게요. 앞에다가 리스트명, 우리가 배열의 이름 붙이듯이 리스트명도 사용자가 임의로 그냥 적어주면 되는 거고요. 그 뒤에다가 이렇게 대괄호로 묶어서 우리가 값들을 쭉쭉쭉 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:03:14",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 194,
+      "end_seconds": 218,
+      "duration_seconds": 24,
+      "timeline_summary": "리스트의 기본 선언 형식 2 (list() 함수 사용)",
+      "screen_text_lines": [
+        "리스트(List)",
+        "형식",
+        "리스트명 = [ 값1, 값2, ... ]",
+        "리스트명 = list([ 값1, 값2, ... ])"
+      ],
+      "screen_text": "리스트(List)\n형식\n리스트명 = [ 값1, 값2, ... ]\n리스트명 = list([ 값1, 값2, ... ])",
+      "spoken_sentences": [
+        "내가 만약에 여기다가 값을 세 개 쓰게 되면 기억장소 세 개를 가진 그 리스트가 생성이 되는 거예요.",
+        "만약에 값을 내가 열 개를 썼다, 그러면 기억장소 열 개짜리가 만들어지면서 그 값들이 전부 다 리스트에 전부 다 저장이 된다고요.",
+        "이렇게 해서 우리가 리스트를 만들어 되는 거고 아니면 앞에다가 리스트명을 써 주고 뒤에다가 지금처럼 리스트다라고 해서 이렇게 써 주고 값들을 입력할 때는 지금처럼 또 똑같이 이렇게 대괄호로 묶어서 우리가 입력을 해 주면 된다고요.",
+        "그때 첫 번째 값, 두 번째 값, 세 번째 값 이런 것들을 우리가 서로서로 구분할 때는 지금처럼 쉼표, 중간중간에 쉼표를 찍어서 우리가 구분해서 입력을 해 주면 됩니다."
+      ],
+      "spoken_text": "내가 만약에 여기다가 값을 세 개 쓰게 되면 기억장소 세 개를 가진 그 리스트가 생성이 되는 거예요. 만약에 값을 내가 열 개를 썼다, 그러면 기억장소 열 개짜리가 만들어지면서 그 값들이 전부 다 리스트에 전부 다 저장이 된다고요. 이렇게 해서 우리가 리스트를 만들어 되는 거고 아니면 앞에다가 리스트명을 써 주고 뒤에다가 지금처럼 리스트다라고 해서 이렇게 써 주고 값들을 입력할 때는 지금처럼 또 똑같이 이렇게 대괄호로 묶어서 우리가 입력을 해 주면 된다고요. 그때 첫 번째 값, 두 번째 값, 세 번째 값 이런 것들을 우리가 서로서로 구분할 때는 지금처럼 쉼표, 중간중간에 쉼표를 찍어서 우리가 구분해서 입력을 해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:03",
+      "start_seconds": 218,
+      "end_seconds": 243,
+      "duration_seconds": 25,
+      "timeline_summary": "리스트 생성 방법의 실제 예시",
+      "screen_text_lines": [
+        "예) 방법1 : a = [ 10, 'mike', 23.45 ]",
+        "방법2 : a = list([ 10, 'mike', 23.45 ])"
+      ],
+      "screen_text": "예) 방법1 : a = [ 10, 'mike', 23.45 ]\n방법2 : a = list([ 10, 'mike', 23.45 ])",
+      "spoken_sentences": [
+        "자, 그럼 예시 좀 잠깐 보자고요.",
+        "자, 지금처럼 만약에 지금처럼 a라는 그 리스트를 만들겠대요.",
+        "그때 a라는 리스트를 만들 때 그때 첫 번째 값은 10이다, 두 번째 값은 마이크다, 세 번째 값은 23.45다 해서 이렇게 우리 정수가 됐든 문자열이 됐든 아니면 실숫값이 됐든",
+        "이렇게 다양하게 우리가 자료형들을 막 섞어서 하나의 이름으로, a라는 그 이름에 우리가 리스트를 생성할 수 있다고요."
+      ],
+      "spoken_text": "자, 그럼 예시 좀 잠깐 보자고요. 자, 지금처럼 만약에 지금처럼 a라는 그 리스트를 만들겠대요. 그때 a라는 리스트를 만들 때 그때 첫 번째 값은 10이다, 두 번째 값은 마이크다, 세 번째 값은 23.45다 해서 이렇게 우리 정수가 됐든 문자열이 됐든 아니면 실숫값이 됐든 이렇게 다양하게 우리가 자료형들을 막 섞어서 하나의 이름으로, a라는 그 이름에 우리가 리스트를 생성할 수 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:04:03",
+      "end_time_hms": "00:04:25",
+      "start_seconds": 243,
+      "end_seconds": 265,
+      "duration_seconds": 22,
+      "timeline_summary": "대괄호와 list()를 활용한 생성 결과",
+      "screen_text_lines": [
+        "예) 방법1 : a = [ 10, 'mike', 23.45 ]",
+        "방법2 : a = list([ 10, 'mike', 23.45 ])"
+      ],
+      "screen_text": "예) 방법1 : a = [ 10, 'mike', 23.45 ]\n방법2 : a = list([ 10, 'mike', 23.45 ])",
+      "spoken_sentences": [
+        "그때 지금처럼 이렇게 써도 되는 거고 아니면 리스트다라고 해서 이렇게 괄호로 묶어서 우리가 지금처럼 이렇게 리스트를 우리가 만들어도 돼요.",
+        "그때 값을 입력할 때는 지금 이 첫 번째 방법처럼 이렇게 대괄호로 묶어서 값들을 싹 다 입력을 해 주면 됩니다.",
+        "이렇게 해서 우리가 리스트를 생성하게 되면 지금처럼 이렇게 a라는 그 리스트가 이렇게 만들어져요."
+      ],
+      "spoken_text": "그때 지금처럼 이렇게 써도 되는 거고 아니면 리스트다라고 해서 이렇게 괄호로 묶어서 우리가 지금처럼 이렇게 리스트를 우리가 만들어도 돼요. 그때 값을 입력할 때는 지금 이 첫 번째 방법처럼 이렇게 대괄호로 묶어서 값들을 싹 다 입력을 해 주면 됩니다. 이렇게 해서 우리가 리스트를 생성하게 되면 지금처럼 이렇게 a라는 그 리스트가 이렇게 만들어져요.",
+      "highlight_keywords": [
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:04:25",
+      "end_time_hms": "00:04:59",
+      "start_seconds": 265,
+      "end_seconds": 299,
+      "duration_seconds": 34,
+      "timeline_summary": "리스트의 인덱싱 표현 (a[0], a[1], a[2])",
+      "screen_text_lines": [
+        "결과 리스트 a 10 mike 23.45",
+        "a[0] a[1] a[2]"
+      ],
+      "screen_text": "결과 리스트 a 10 mike 23.45\na[0] a[1] a[2]",
+      "spoken_sentences": [
+        "그때 우리가 값을 세 개를 집어넣었기 때문에 지금처럼 이렇게 세 개의 기억장소를 가진 그 리스트 a, a라는 그 리스트가 이렇게 생성이 되는 거예요.",
+        "그때 각각의 그 기억장소의 위치, 위치를 표현할 때는 우리가 배열처럼, 배열처럼 a의 0번째 위치다, a의 1번 위치다, a의 2번 위치다라고 해서 이렇게 우리가 사용을 한다고요."
+      ],
+      "spoken_text": "그때 우리가 값을 세 개를 집어넣었기 때문에 지금처럼 이렇게 세 개의 기억장소를 가진 그 리스트 a, a라는 그 리스트가 이렇게 생성이 되는 거예요. 그때 각각의 그 기억장소의 위치, 위치를 표현할 때는 우리가 배열처럼, 배열처럼 a의 0번째 위치다, a의 1번 위치다, a의 2번 위치다라고 해서 이렇게 우리가 사용을 한다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:04:59",
+      "end_time_hms": "00:05:28",
+      "start_seconds": 299,
+      "end_seconds": 328,
+      "duration_seconds": 29,
+      "timeline_summary": "리스트 요소의 값 변경 예시",
+      "screen_text_lines": [
+        "예) a[0] = 1",
+        "결과 리스트 a 10 mike 23.45",
+        "a[0] a[1] a[2]",
+        "결과 리스트 a 1 mike 23.45"
+      ],
+      "screen_text": "예) a[0] = 1\n결과 리스트 a 10 mike 23.45\na[0] a[1] a[2]\n결과 리스트 a 1 mike 23.45",
+      "spoken_sentences": [
+        "그때 내가 만약에 a의 0번 위치에 지금 현재 10이라는 값이 들어 있죠?",
+        "10이라는 값이 지금처럼 이렇게 들어 있는데 만약에 a의 0번 그 위치에다가 1을 집어넣어라.",
+        "그렇게 쓰게 되면 이곳에 a라는 그 리스트에 a의 0번째 그 위치에 있던 그 10, 10이라는 값이 우리 없어지면서 그 위치에 1이라는 값이 들어갈 거예요.",
+        "해서 지금처럼 a의 0번 위치에 들어있던 그 10이 없어지고 a의 0번 위치에 이렇게 1, 1이 들어갑니다."
+      ],
+      "spoken_text": "그때 내가 만약에 a의 0번 위치에 지금 현재 10이라는 값이 들어 있죠? 10이라는 값이 지금처럼 이렇게 들어 있는데 만약에 a의 0번 그 위치에다가 1을 집어넣어라. 그렇게 쓰게 되면 이곳에 a라는 그 리스트에 a의 0번째 그 위치에 있던 그 10, 10이라는 값이 우리 없어지면서 그 위치에 1이라는 값이 들어갈 거예요. 해서 지금처럼 a의 0번 위치에 들어있던 그 10이 없어지고 a의 0번 위치에 이렇게 1, 1이 들어갑니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:05:28",
+      "end_time_hms": "00:05:47",
+      "start_seconds": 328,
+      "end_seconds": 347,
+      "duration_seconds": 19,
+      "timeline_summary": "리스트의 특정 기억 장소 접근 방식 정리",
+      "screen_text_lines": [
+        "결과 리스트 a 1 mike 23.45",
+        "a[0] a[1] a[2]"
+      ],
+      "screen_text": "결과 리스트 a 1 mike 23.45\na[0] a[1] a[2]",
+      "spoken_sentences": [
+        "이렇게 해서 우리가 이 리스트에서도 어떤 특정 기억장소에 우리가 접근을 할 때는 우리 배열처럼 똑같이, 똑같이 여기에 리스트 이름 써 주고 그 위치를 쓰고 그 뒤에, 그 뒤에다가 어떤 값을 넣어 달라.",
+        "요런 형태로 우리가 접근을 해 주면 되는 거예요."
+      ],
+      "spoken_text": "이렇게 해서 우리가 이 리스트에서도 어떤 특정 기억장소에 우리가 접근을 할 때는 우리 배열처럼 똑같이, 똑같이 여기에 리스트 이름 써 주고 그 위치를 쓰고 그 뒤에, 그 뒤에다가 어떤 값을 넣어 달라. 요런 형태로 우리가 접근을 해 주면 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:05:47",
+      "end_time_hms": "00:06:26",
+      "start_seconds": 347,
+      "end_seconds": 386,
+      "duration_seconds": 39,
+      "timeline_summary": "리스트 학습의 중요성 강조",
+      "screen_text_lines": [
+        "리스트(List)",
+        "C와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함.",
+        "리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음.",
+        "배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음."
+      ],
+      "screen_text": "리스트(List)\nC와 Java에서는 여러 요소들을 하나의 이름으로 처리할 때 배열을 사용했는데 Python에서는 리스트를 사용함.\n리스트는 필요에 따라 개수를 늘리거나 줄일 수 있기 때문에 리스트를 선언할 때 크기를 적지 않음.\n배열과 달리 하나의 리스트에 정수, 실수, 문자열 등 다양한 자료형을 섞어서 저장할 수 있음.",
+      "spoken_sentences": [
+        "해서 우리가 지금 필기시험을 준비하고 있기 때문에 이런 특징들도 여러분들이 정확하게 알고 계셔야 돼요.",
+        "다음 중 리스트에 대한 설명이다, 틀린 거 찾아라 그렇게 문제가 나올 수도 있잖아요.",
+        "해서 이런 이론적인 것도 물론 알아야 되지만 우리가 리스트를 어떻게 생성을 하는지, 그리고 그 해당 기억장소의 접근하는 방법은 어떻게 되는지 그런 것도 여러분들이 꼭 같이 기억을 해 두셔야 돼요.",
+        "이 리스트에 대해서는 물론 필기시험에도 시험 문제가 나오지만 실제로도 실기시험 문제로 이 리스트가 나온 적이 있습니다.",
+        "자, 그럼 요 내용 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 우리가 지금 필기시험을 준비하고 있기 때문에 이런 특징들도 여러분들이 정확하게 알고 계셔야 돼요. 다음 중 리스트에 대한 설명이다, 틀린 거 찾아라 그렇게 문제가 나올 수도 있잖아요. 해서 이런 이론적인 것도 물론 알아야 되지만 우리가 리스트를 어떻게 생성을 하는지, 그리고 그 해당 기억장소의 접근하는 방법은 어떻게 되는지 그런 것도 여러분들이 꼭 같이 기억을 해 두셔야 돼요. 이 리스트에 대해서는 물론 필기시험에도 시험 문제가 나오지만 실제로도 실기시험 문제로 이 리스트가 나온 적이 있습니다. 자, 그럼 요 내용 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "리스트(List)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:06:26",
+      "end_time_hms": "00:06:57",
+      "start_seconds": 386,
+      "end_seconds": 417,
+      "duration_seconds": 31,
+      "timeline_summary": "딕셔너리(Dictionary)의 개념과 리스트와의 차이",
+      "screen_text_lines": [
+        "딕셔너리(Dictionary)",
+        "딕셔너리는 연관된 값을 묶어서 저장하는 용도로 사용함."
+      ],
+      "screen_text": "딕셔너리(Dictionary)\n딕셔너리는 연관된 값을 묶어서 저장하는 용도로 사용함.",
+      "spoken_sentences": [
+        "자, 우리 딕셔너리라는 거는 우리 리스트처럼 연관된 그런 값들을 묶어서, 묶어서 저장하기 위한 그런 용도로 사용되는 게 우리 딕셔너리에요.",
+        "자, 예를 들어서 지금처럼 이렇게 리스트, 리스트가 하나 있을 때 내가 이 첫 번째 기억장소에 내가 접근하고 싶다, 그랬을 때는 지금처럼 이렇게 0이다, 1이다, 2다 해서 이런 각각의 기억장소의 위치를 나타내는 이런 번호, 이런 번호를 이용해서 우리가 이런 기억장소에 접근을 했죠."
+      ],
+      "spoken_text": "자, 우리 딕셔너리라는 거는 우리 리스트처럼 연관된 그런 값들을 묶어서, 묶어서 저장하기 위한 그런 용도로 사용되는 게 우리 딕셔너리에요. 자, 예를 들어서 지금처럼 이렇게 리스트, 리스트가 하나 있을 때 내가 이 첫 번째 기억장소에 내가 접근하고 싶다, 그랬을 때는 지금처럼 이렇게 0이다, 1이다, 2다 해서 이런 각각의 기억장소의 위치를 나타내는 이런 번호, 이런 번호를 이용해서 우리가 이런 기억장소에 접근을 했죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Dictionary",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "딕셔너리(Dictionary)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:06:57",
+      "end_time_hms": "00:07:20",
+      "start_seconds": 417,
+      "end_seconds": 440,
+      "duration_seconds": 23,
+      "timeline_summary": "딕셔너리의 키(Key)와 위치 번호의 차이",
+      "screen_text_lines": [
+        "리스트 a 10 mike 23.45",
+        "a[0] a[1] a[2]",
+        "a '홍길동' 25 '서울'",
+        "a['이름'] a['나이'] a['주소']"
+      ],
+      "screen_text": "리스트 a 10 mike 23.45\na[0] a[1] a[2]\na '홍길동' 25 '서울'\na['이름'] a['나이'] a['주소']",
+      "spoken_sentences": [
+        "근데 이 딕셔너리라는 거는 지금처럼 이렇게 생긴 걸 보고 얘기해요.",
+        "해서 우리가 이런 값들을 각각 저장을 할 때, 저장을 할 때 우리가 키값, 키값을 같이 설정을 해줄 수 있는데 그 키값이 요런 제목이다, 그렇게 생각하시면 돼요.",
+        "해서 우리가 지금처럼 이렇게 키값을 우리가 지정을 해 주면 우리가 좀 더 자료에 쉽게 쉽게 빠르게 접근할 수 있겠죠?"
+      ],
+      "spoken_text": "근데 이 딕셔너리라는 거는 지금처럼 이렇게 생긴 걸 보고 얘기해요. 해서 우리가 이런 값들을 각각 저장을 할 때, 저장을 할 때 우리가 키값, 키값을 같이 설정을 해줄 수 있는데 그 키값이 요런 제목이다, 그렇게 생각하시면 돼요. 해서 우리가 지금처럼 이렇게 키값을 우리가 지정을 해 주면 우리가 좀 더 자료에 쉽게 쉽게 빠르게 접근할 수 있겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "a['이름'] a['나이'] a['주소']",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:07:20",
+      "end_time_hms": "00:07:43",
+      "start_seconds": 440,
+      "end_seconds": 463,
+      "duration_seconds": 23,
+      "timeline_summary": "리스트와 딕셔너리의 데이터 접근 방식 비교",
+      "screen_text_lines": [
+        "딕셔너리(Dictionary)",
+        "리스트는 저장된 요소에 접근하기 위한 키로 위치에 해당하는 0, 1, 2 등의 숫자를 사용하지만 딕셔너리는 사용자가 원하는 값을 키로 지정해 사용함."
+      ],
+      "screen_text": "딕셔너리(Dictionary)\n리스트는 저장된 요소에 접근하기 위한 키로 위치에 해당하는 0, 1, 2 등의 숫자를 사용하지만 딕셔너리는 사용자가 원하는 값을 키로 지정해 사용함.",
+      "spoken_sentences": [
+        "해서 우리 리스트라는 거는 저장된 그런 요소에 접근하기 위해서 우리가 그 위치, 위치값을 나타내는 0이다, 1이다, 2다.",
+        "이런 숫자를 사용하지만 우리 딕셔너리라는 거는 사용자가 원하는 그 값을 키로, 키로 직접 지정해서 우리가 사용할 수 있는 게 우리 딕셔너리라는 거."
+      ],
+      "spoken_text": "해서 우리 리스트라는 거는 저장된 그런 요소에 접근하기 위해서 우리가 그 위치, 위치값을 나타내는 0이다, 1이다, 2다. 이런 숫자를 사용하지만 우리 딕셔너리라는 거는 사용자가 원하는 그 값을 키로, 키로 직접 지정해서 우리가 사용할 수 있는 게 우리 딕셔너리라는 거.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Dictionary",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "딕셔너리(Dictionary)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:07:43",
+      "end_time_hms": "00:08:05",
+      "start_seconds": 463,
+      "end_seconds": 485,
+      "duration_seconds": 22,
+      "timeline_summary": "딕셔너리 접근 시 대괄호와 키 지정",
+      "screen_text_lines": [
+        "딕셔너리(Dictionary)",
+        "딕셔너리에 접근할 때는 딕셔너리 뒤에 대괄호()를 사용하며, 대괄호()안에 키를 지정함."
+      ],
+      "screen_text": "딕셔너리(Dictionary)\n딕셔너리에 접근할 때는 딕셔너리 뒤에 대괄호()를 사용하며, 대괄호()안에 키를 지정함.",
+      "spoken_sentences": [
+        "해서 우리 리스트에서는 어떤 특정 데이터에 접근할 때 a의 0번째다, a의 1번째다라고 해서 이렇게 그 위치를 우리가 대괄호로 묶어서 지금처럼 이렇게 써 줬는데",
+        "우리가 딕셔너리, 딕셔너리라는 곳에서 우리가 특정 데이터에 접근할 때는 지금처럼 이렇게 대괄호로 묶어서, 대괄호로 묶어서 우리가 그 안에다가 키를 지정해서 우리가 해당 위치에 접근할 수 있습니다."
+      ],
+      "spoken_text": "해서 우리 리스트에서는 어떤 특정 데이터에 접근할 때 a의 0번째다, a의 1번째다라고 해서 이렇게 그 위치를 우리가 대괄호로 묶어서 지금처럼 이렇게 써 줬는데 우리가 딕셔너리, 딕셔너리라는 곳에서 우리가 특정 데이터에 접근할 때는 지금처럼 이렇게 대괄호로 묶어서, 대괄호로 묶어서 우리가 그 안에다가 키를 지정해서 우리가 해당 위치에 접근할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Dictionary",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "딕셔너리(Dictionary)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:08:05",
+      "end_time_hms": "00:08:35",
+      "start_seconds": 485,
+      "end_seconds": 515,
+      "duration_seconds": 30,
+      "timeline_summary": "딕셔너리 생성 형식 (중괄호 사용)",
+      "screen_text_lines": [
+        "리스트명 = [ 값1, 값2, ... ]",
+        "리스트명 = list([ 값1, 값2, ... ])",
+        "형식",
+        "딕셔너리명 = { 키1:값1, 키2:값2, ... }"
+      ],
+      "screen_text": "리스트명 = [ 값1, 값2, ... ]\n리스트명 = list([ 값1, 값2, ... ])\n형식\n딕셔너리명 = { 키1:값1, 키2:값2, ... }",
+      "spoken_sentences": [
+        "해서 우리가 딕셔너리라는 거를 만들어 줄 때 지금처럼 이렇게 쓰는 거예요.",
+        "우리가 리스트 같은 경우에는 지금처럼 이렇게 만들었죠?",
+        "앞에다가 리스트명을 써 주고 그 값들을 쓸 때 전부 다 쉼표, 쉼표로 구분해서 대괄호로 묶어서 써 줬다고요.",
+        "아니면 우리가 앞에다가 리스트, 리스트라고 써 주고 이렇게 괄호를 열어주고 그 안에다가 우리가 값들을 전부 다 쉼표로 구분해서 대괄호로 묶어서 이렇게 써 주면 리스트가 생성이 됐다고요."
+      ],
+      "spoken_text": "해서 우리가 딕셔너리라는 거를 만들어 줄 때 지금처럼 이렇게 쓰는 거예요. 우리가 리스트 같은 경우에는 지금처럼 이렇게 만들었죠? 앞에다가 리스트명을 써 주고 그 값들을 쓸 때 전부 다 쉼표, 쉼표로 구분해서 대괄호로 묶어서 써 줬다고요. 아니면 우리가 앞에다가 리스트, 리스트라고 써 주고 이렇게 괄호를 열어주고 그 안에다가 우리가 값들을 전부 다 쉼표로 구분해서 대괄호로 묶어서 이렇게 써 주면 리스트가 생성이 됐다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:08:35",
+      "end_time_hms": "00:09:03",
+      "start_seconds": 515,
+      "end_seconds": 543,
+      "duration_seconds": 28,
+      "timeline_summary": "딕셔너리 생성 형식 (키와 값의 콜론 구분)",
+      "screen_text_lines": [
+        "형식",
+        "딕셔너리명 = { 키1:값1, 키2:값2, ... }",
+        "딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })"
+      ],
+      "screen_text": "형식\n딕셔너리명 = { 키1:값1, 키2:값2, ... }\n딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })",
+      "spoken_sentences": [
+        "근데 우리가 딕셔너리라는 거를 만들어 줄 때는 지금처럼 중괄호로, 중괄호로 묶어서 키랑 그 값이랑 콜론으로 우리가 구분해서 이렇게 우리가 입력을 해 주면 됩니다.",
+        "아니면 앞에다가 DICT라고 이렇게 써서 괄호로 묶은 다음에 그 키랑 값이랑 그것들을 싹 다 중괄호로 묶어서 지금처럼 이렇게 입력을 해 주면 됩니다."
+      ],
+      "spoken_text": "근데 우리가 딕셔너리라는 거를 만들어 줄 때는 지금처럼 중괄호로, 중괄호로 묶어서 키랑 그 값이랑 콜론으로 우리가 구분해서 이렇게 우리가 입력을 해 주면 됩니다. 아니면 앞에다가 DICT라고 이렇게 써서 괄호로 묶은 다음에 그 키랑 값이랑 그것들을 싹 다 중괄호로 묶어서 지금처럼 이렇게 입력을 해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:09:03",
+      "end_time_hms": "00:09:23",
+      "start_seconds": 543,
+      "end_seconds": 563,
+      "duration_seconds": 20,
+      "timeline_summary": "리스트와 딕셔너리의 괄호 차이점 강조",
+      "screen_text_lines": [
+        "리스트명 = [ 값1, 값2, ... ]",
+        "리스트명 = list([ 값1, 값2, ... ])",
+        "딕셔너리명 = { 키1:값1, 키2:값2, ... }",
+        "딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })"
+      ],
+      "screen_text": "리스트명 = [ 값1, 값2, ... ]\n리스트명 = list([ 값1, 값2, ... ])\n딕셔너리명 = { 키1:값1, 키2:값2, ... }\n딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })",
+      "spoken_sentences": [
+        "해서 우리가 리스트가 됐든 딕셔너리가 됐든 이런 것들 생성할 때 지금처럼 이런 형태로, 이런 형태로 만들어 주면 우리가 쉽게 쉽게 알아볼 수 있겠죠?",
+        "이 앞에 딕셔너리의 약자 DICT가 붙든 아니면 리스트가 붙어 있으니까 아 이게 리스트네, 이게 딕셔너리네 그렇게 쉽게 쉽게 구분할 수 있는데 만약에 지금처럼 이런 형태로 만들었다고 생각을 해 보세요.",
+        "그러면 우리가 리스트하고 딕셔너리 구분할 수 있는 방법은 요 괄호요.",
+        "괄호로 구분을 해야 된다고요."
+      ],
+      "spoken_text": "해서 우리가 리스트가 됐든 딕셔너리가 됐든 이런 것들 생성할 때 지금처럼 이런 형태로, 이런 형태로 만들어 주면 우리가 쉽게 쉽게 알아볼 수 있겠죠? 이 앞에 딕셔너리의 약자 DICT가 붙든 아니면 리스트가 붙어 있으니까 아 이게 리스트네, 이게 딕셔너리네 그렇게 쉽게 쉽게 구분할 수 있는데 만약에 지금처럼 이런 형태로 만들었다고 생각을 해 보세요. 그러면 우리가 리스트하고 딕셔너리 구분할 수 있는 방법은 요 괄호요. 괄호로 구분을 해야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:09:23",
+      "end_time_hms": "00:09:42",
+      "start_seconds": 563,
+      "end_seconds": 582,
+      "duration_seconds": 19,
+      "timeline_summary": "리스트(대괄호) vs 딕셔너리(중괄호) 구분",
+      "screen_text_lines": [
+        "리스트명 = [ 값1, 값2, ... ]",
+        "리스트명 = list([ 값1, 값2, ... ])",
+        "딕셔너리명 = { 키1:값1, 키2:값2, ... }",
+        "딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })"
+      ],
+      "screen_text": "리스트명 = [ 값1, 값2, ... ]\n리스트명 = list([ 값1, 값2, ... ])\n딕셔너리명 = { 키1:값1, 키2:값2, ... }\n딕셔너리명 = dict({ 키1:값1, 키2:값2, ... })",
+      "spoken_sentences": [
+        "해서 우리가 리스트를 만들 때는 대괄호로 묶어서 우리가 생성을 하지만 딕셔너리는 중괄호로 묶어서 우리가 만들어 주더라.",
+        "요 괄호 차이 정확하게 기억하셔야 됩니다."
+      ],
+      "spoken_text": "해서 우리가 리스트를 만들 때는 대괄호로 묶어서 우리가 생성을 하지만 딕셔너리는 중괄호로 묶어서 우리가 만들어 주더라. 요 괄호 차이 정확하게 기억하셔야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "리스트명 = [ 값1, 값2, ... ]",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:09:42",
+      "end_time_hms": "00:10:19",
+      "start_seconds": 582,
+      "end_seconds": 619,
+      "duration_seconds": 37,
+      "timeline_summary": "딕셔너리 실제 생성 예시 (이름, 나이, 주소)",
+      "screen_text_lines": [
+        "예) 방법1 : a = {'이름':'홍길동', '나이':25, '주소':'서울'}",
+        "방법2 : a = dict({'이름':'홍길동', '나이':25, '주소':'서울'})"
+      ],
+      "screen_text": "예) 방법1 : a = {'이름':'홍길동', '나이':25, '주소':'서울'}\n방법2 : a = dict({'이름':'홍길동', '나이':25, '주소':'서울'})",
+      "spoken_sentences": [
+        "자, 예를 들어서 지금처럼 우리가 딕셔너리라는 거 만들 거예요.",
+        "만들 때 지금처럼 이렇게 중괄호로 묶어서, 중괄호로 묶어서 우리가 키하고 값하고 그런 것들을 입력을 해 주면 되는데",
+        "그때 키하고 값을 서로서로 구분하는 거는 뭘로 중간에 구분한다, 우리 콜론, 콜론으로 전부 다 키하고 값 그것들을 서로서로 구분해서 우리가 입력을 하는데",
+        "그때 첫 번째 거, 두 번째 거, 세 번째 거 그렇게 구분할 때는 리스트와 동일하게 똑같이 우리가 쉼표를 찍어서 우리가 구분을 해서 지금처럼 이렇게 우리가 딕셔너리 요거를 만들어 주면 돼요.",
+        "이렇게 해서 우리가 딕셔너리를 만들게 되면 지금처럼 이렇게 a라는 그 이름으로, 그 이름으로 딕셔너리가 이렇게 생성이 된다고요."
+      ],
+      "spoken_text": "자, 예를 들어서 지금처럼 우리가 딕셔너리라는 거 만들 거예요. 만들 때 지금처럼 이렇게 중괄호로 묶어서, 중괄호로 묶어서 우리가 키하고 값하고 그런 것들을 입력을 해 주면 되는데 그때 키하고 값을 서로서로 구분하는 거는 뭘로 중간에 구분한다, 우리 콜론, 콜론으로 전부 다 키하고 값 그것들을 서로서로 구분해서 우리가 입력을 하는데 그때 첫 번째 거, 두 번째 거, 세 번째 거 그렇게 구분할 때는 리스트와 동일하게 똑같이 우리가 쉼표를 찍어서 우리가 구분을 해서 지금처럼 이렇게 우리가 딕셔너리 요거를 만들어 주면 돼요. 이렇게 해서 우리가 딕셔너리를 만들게 되면 지금처럼 이렇게 a라는 그 이름으로, 그 이름으로 딕셔너리가 이렇게 생성이 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:10:19",
+      "end_time_hms": "00:10:42",
+      "start_seconds": 619,
+      "end_seconds": 642,
+      "duration_seconds": 23,
+      "timeline_summary": "딕셔너리 값 변경 예시 (이름 변경)",
+      "screen_text_lines": [
+        "결과 a '홍길동' 25 '서울'",
+        "a['이름'] a['나이'] a['주소']",
+        "예) a['이름'] = '이순신'"
+      ],
+      "screen_text": "결과 a '홍길동' 25 '서울'\na['이름'] a['나이'] a['주소']\n예) a['이름'] = '이순신'",
+      "spoken_sentences": [
+        "해서 지금처럼 이렇게 우리 a라는 그 딕셔너리가 하나 만들어졌을 때 내가 만약에 이 사람의 이름, 지금 홍길동, 홍길동으로 그렇게 입력이 되어 있는데 이 값을 내가 바꾸고 싶다.",
+        "그러면 이 해당 위치에 우리가 접근을 해야 되겠죠?",
+        "그때 접근할 때 지금처럼 이런 형태로 접근을 하는 거예요.",
+        "해서 a라는 딕셔너리에 우리 이름, 이름이라는 곳이 있다.",
+        "그곳에다가 뭘 집어넣어라 우리 이순신, 이순신을 넣어주세요."
+      ],
+      "spoken_text": "해서 지금처럼 이렇게 우리 a라는 그 딕셔너리가 하나 만들어졌을 때 내가 만약에 이 사람의 이름, 지금 홍길동, 홍길동으로 그렇게 입력이 되어 있는데 이 값을 내가 바꾸고 싶다. 그러면 이 해당 위치에 우리가 접근을 해야 되겠죠? 그때 접근할 때 지금처럼 이런 형태로 접근을 하는 거예요. 해서 a라는 딕셔너리에 우리 이름, 이름이라는 곳이 있다. 그곳에다가 뭘 집어넣어라 우리 이순신, 이순신을 넣어주세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "a['이름'] a['나이'] a['주소']",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 3,
+      "subtopic_id": "0302_302",
+      "subtopic_title": "리스트/딕셔너리",
+      "subtopic_sequence": 302,
+      "subtopic_number": "302",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=OtzFIwf-PaE",
+      "start_time_hms": "00:10:42",
+      "end_time_hms": "00:11:15",
+      "start_seconds": 642,
+      "end_seconds": 675,
+      "duration_seconds": 33,
+      "timeline_summary": "딕셔너리 값 변경 결과 확인 및 마무리",
+      "screen_text_lines": [
+        "예) a['이름'] = '이순신'",
+        "결과 a '이순신' 25 '서울'",
+        "a['이름'] a['나이'] a['주소']"
+      ],
+      "screen_text": "예) a['이름'] = '이순신'\n결과 a '이순신' 25 '서울'\na['이름'] a['나이'] a['주소']",
+      "spoken_sentences": [
+        "그렇게 해서 우리가 a라는 그 딕셔너리에 접근해서 값을 우리가 변경을 시키게 되면 지금처럼 이렇게 변경이 된다고요.",
+        "해서 우리 리스트와 딕셔너리 요 차이점 정확하게 기억하셔야 돼요.",
+        "자, 그럼 요 내용 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "그렇게 해서 우리가 a라는 그 딕셔너리에 접근해서 값을 우리가 변경을 시키게 되면 지금처럼 이렇게 변경이 된다고요. 해서 우리 리스트와 딕셔너리 요 차이점 정확하게 기억하셔야 돼요. 자, 그럼 요 내용 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "딕셔너리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "a['이름'] a['나이'] a['주소']",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "지금처럼",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 도입 및 슬라이스 기능 소개",
+      "screen_text_lines": [
+        "슬라이스(Slice)"
+      ],
+      "screen_text": "슬라이스(Slice)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 슬라이스에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 슬라이스에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:35",
+      "start_seconds": 7,
+      "end_seconds": 35,
+      "duration_seconds": 28,
+      "timeline_summary": "슬라이스의 정의와 순차형 객체 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(slicing) 반환하는 기능",
+        "• 형식"
+      ],
+      "screen_text": "슬라이스(Slice)\n• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(slicing) 반환하는 기능\n• 형식",
+      "spoken_sentences": [
+        "슬라이스다라고 하게 되면 슬라이스가 뭘 얘기하냐면은 우리가 만약에 문자열이 됐든 리스트가 됐든 이런 것들을 내가 만약에 저장을 하게 되면 그곳에 있는 데이터들이 어딘가의 메모리에 순차적으로, 순서대로 데이터가 전부 다 저장이 될 겁니다.",
+        "그런 구조를 보고 우리가 순차형 객체라고 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "슬라이스다라고 하게 되면 슬라이스가 뭘 얘기하냐면은 우리가 만약에 문자열이 됐든 리스트가 됐든 이런 것들을 내가 만약에 저장을 하게 되면 그곳에 있는 데이터들이 어딘가의 메모리에 순차적으로, 순서대로 데이터가 전부 다 저장이 될 겁니다. 그런 구조를 보고 우리가 순차형 객체라고 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "• 형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "slicing",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:00:35",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 35,
+      "end_seconds": 54,
+      "duration_seconds": 19,
+      "timeline_summary": "슬라이싱 기능의 핵심 개념 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(slicing) 반환하는 기능",
+        "• 형식"
+      ],
+      "screen_text": "슬라이스(Slice)\n• 슬라이스는 문자열이나 리스트와 같은 순차형 객체에서 일부를 잘라(slicing) 반환하는 기능\n• 형식",
+      "spoken_sentences": [
+        "그렇게 순차적으로 저장된 그런 데이터가 있을 때 그 부분에서 일부분만 내가 가지고 오는 그런 기능을 보고 우리가 슬라이스라고 해요."
+      ],
+      "spoken_text": "그렇게 순차적으로 저장된 그런 데이터가 있을 때 그 부분에서 일부분만 내가 가지고 오는 그런 기능을 보고 우리가 슬라이스라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "• 형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "slicing",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:16",
+      "start_seconds": 54,
+      "end_seconds": 76,
+      "duration_seconds": 22,
+      "timeline_summary": "슬라이스의 기본 형식 및 최종 위치 규칙 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "• 형식",
+        "객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴"
+      ],
+      "screen_text": "슬라이스(Slice)\n• 형식\n객체명[초기위치:최종위치] '초기위치'에서 '최종위치'-1까지의 요소들을 가져옴",
+      "spoken_sentences": [
+        "해서 슬라이스를 쓰는 방법은 지금처럼 요렇게요.",
+        "객체명을 앞에다가 먼저 써 주고요.",
+        "그 뒤에다가 대괄호로 묶어서 초기 위치 지정해 주고 그다음에 최종 위치를 지정해 주면 되는데 여기서 최종 위치는 우리 레인지랑 똑같이 -1이요, -1.",
+        "여기다 쓴 숫자 -1까지 그 사이에 있는 요소들을 전부 다 가지고 와라 그거예요."
+      ],
+      "spoken_text": "해서 슬라이스를 쓰는 방법은 지금처럼 요렇게요. 객체명을 앞에다가 먼저 써 주고요. 그 뒤에다가 대괄호로 묶어서 초기 위치 지정해 주고 그다음에 최종 위치를 지정해 주면 되는데 여기서 최종 위치는 우리 레인지랑 똑같이 -1이요, -1. 여기다 쓴 숫자 -1까지 그 사이에 있는 요소들을 전부 다 가지고 와라 그거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "• 형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:01:16",
+      "end_time_hms": "00:01:49",
+      "start_seconds": 76,
+      "end_seconds": 109,
+      "duration_seconds": 33,
+      "timeline_summary": "증가값을 포함한 슬라이스 형식 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "• 형식",
+        "객체명[초기위치:최종위치:증가값] • '초기위치'에서 '최종위치'-1까지 '증가값'만큼 증가하면서 해당 위치의 요소들을 가져옴",
+        "• '증가값'이 음수인 경우 '초기위치'에서 '최종위치'+1까지 '증가값'만큼 감소하면서 해당 위치의 요소들을 가져옴"
+      ],
+      "screen_text": "슬라이스(Slice)\n• 형식\n객체명[초기위치:최종위치:증가값] • '초기위치'에서 '최종위치'-1까지 '증가값'만큼 증가하면서 해당 위치의 요소들을 가져옴\n• '증가값'이 음수인 경우 '초기위치'에서 '최종위치'+1까지 '증가값'만큼 감소하면서 해당 위치의 요소들을 가져옴",
+      "spoken_sentences": [
+        "두 번째 방법은 앞에다가 객체명 써 주고 그리고 초기값 지정해 주고요.",
+        "그다음에 최종 위치 지정해 주고 그리고 증가값을 지정을 해 줘요.",
+        "여기서 증가값도 마찬가지로 그때 증가값이 양수냐 음수냐에 따라서 요 최종 위치는 바뀌겠죠.",
+        "요 최종 위치는 증가값이 양수일 때는 -1을 해 주면 되고요.",
+        "음수다라고 하게 되면 +1을 해서 최종 위치를 그렇게 생각하시면 됩니다."
+      ],
+      "spoken_text": "두 번째 방법은 앞에다가 객체명 써 주고 그리고 초기값 지정해 주고요. 그다음에 최종 위치 지정해 주고 그리고 증가값을 지정을 해 줘요. 여기서 증가값도 마찬가지로 그때 증가값이 양수냐 음수냐에 따라서 요 최종 위치는 바뀌겠죠. 요 최종 위치는 증가값이 양수일 때는 -1을 해 주면 되고요. 음수다라고 하게 되면 +1을 해서 최종 위치를 그렇게 생각하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "• 형식",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:01:49",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 109,
+      "end_seconds": 120,
+      "duration_seconds": 11,
+      "timeline_summary": "슬라이스 인수의 생략 가능성 언급",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음"
+      ],
+      "screen_text": "슬라이스(Slice)\n슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+      "spoken_sentences": [
+        "해서 리스트에 여러 개의 데이터가 있을 때 몇 번째 거부터 몇 번째 거까지 가지고 와라.",
+        "그런 식으로 쓰는 거예요.",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음."
+      ],
+      "spoken_text": "해서 리스트에 여러 개의 데이터가 있을 때 몇 번째 거부터 몇 번째 거까지 가지고 와라. 그런 식으로 쓰는 거예요. 슬라이스는 일부 인수를 생략하여 사용할 수 있음.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:30",
+      "start_seconds": 120,
+      "end_seconds": 150,
+      "duration_seconds": 30,
+      "timeline_summary": "인수 전체 생략 시 모든 요소 반환 규칙",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+        "객체명[:] 또는 객체명[::] 객체의 모든 요소를 반환함"
+      ],
+      "screen_text": "슬라이스(Slice)\n슬라이스는 일부 인수를 생략하여 사용할 수 있음\n객체명[:] 또는 객체명[::] 객체의 모든 요소를 반환함",
+      "spoken_sentences": [
+        "처음에 초기 위치 지정해 주고 그다음에 최종 위치, 그다음에 증가값 그 순서대로 쓴다 그랬죠.",
+        "그런 인수들을 우리가 일부를 생략해서도 우리가 사용할 수 있어요.",
+        "그냥 내가 객체명이라고 써 주고 아무것도 안 쓰고 지금처럼 요렇게 쓰거나 아니면 객체명을 써 주고 요렇게 쓰거나 요렇게 했을 때 얘 뜻은 그 해당 객체에 들어 있는 모든 요소를 다 가지고 와라 그런 뜻이에요."
+      ],
+      "spoken_text": "처음에 초기 위치 지정해 주고 그다음에 최종 위치, 그다음에 증가값 그 순서대로 쓴다 그랬죠. 그런 인수들을 우리가 일부를 생략해서도 우리가 사용할 수 있어요. 그냥 내가 객체명이라고 써 주고 아무것도 안 쓰고 지금처럼 요렇게 쓰거나 아니면 객체명을 써 주고 요렇게 쓰거나 요렇게 했을 때 얘 뜻은 그 해당 객체에 들어 있는 모든 요소를 다 가지고 와라 그런 뜻이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "규칙",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:02:30",
+      "end_time_hms": "00:02:40",
+      "start_seconds": 150,
+      "end_seconds": 160,
+      "duration_seconds": 10,
+      "timeline_summary": "초기 위치만 지정한 경우의 반환 규칙",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+        "객체명[:] 또는 객체명[::] 객체의 모든 요소를 반환함"
+      ],
+      "screen_text": "슬라이스(Slice)\n슬라이스는 일부 인수를 생략하여 사용할 수 있음\n객체명[:] 또는 객체명[::] 객체의 모든 요소를 반환함",
+      "spoken_sentences": [
+        "해서 여기서 초기 위치도 없고 최종값도 없죠.",
+        "여기서는 콜론이 두 개 들어갔어요.",
+        "해서 맨 앞에 원래 우리 초기 위치 써 주고 두 번째 최종 위치 써 주고 마지막에 증가값을 써 주는데 아무것도 안 썼잖아요.",
+        "아무것도 안 쓰게 되면 모든 요소 그 객체에 있는 거 전부 다 가지고 와라 그거고요."
+      ],
+      "spoken_text": "해서 여기서 초기 위치도 없고 최종값도 없죠. 여기서는 콜론이 두 개 들어갔어요. 해서 맨 앞에 원래 우리 초기 위치 써 주고 두 번째 최종 위치 써 주고 마지막에 증가값을 써 주는데 아무것도 안 썼잖아요. 아무것도 안 쓰게 되면 모든 요소 그 객체에 있는 거 전부 다 가지고 와라 그거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "규칙",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:02:40",
+      "end_time_hms": "00:03:12",
+      "start_seconds": 160,
+      "end_seconds": 192,
+      "duration_seconds": 32,
+      "timeline_summary": "최종 위치만 지정한 경우의 반환 규칙",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+        "객체명[초기위치:] 객체의 '초기위치'에서 마지막 위치까지의 요소들을 반환함",
+        "객체명[:최종위치] 객체의 0번째 위치에서 '최종위치'-1까지의 요소들을 반환함"
+      ],
+      "screen_text": "슬라이스(Slice)\n슬라이스는 일부 인수를 생략하여 사용할 수 있음\n객체명[초기위치:] 객체의 '초기위치'에서 마지막 위치까지의 요소들을 반환함\n객체명[:최종위치] 객체의 0번째 위치에서 '최종위치'-1까지의 요소들을 반환함",
+      "spoken_sentences": [
+        "그다음에 객체명을 요렇게 써 주고 초기 위치만 지정했을 때요.",
+        "초기 위치만 지정하게 되면 그 초기 위치부터 시작해서 전부 다 가지고 와라 그거예요.",
+        "그다음에 객체명을 쓰고 최종 위치만 썼습니다.",
+        "증가값이 없죠.",
+        "증가값이 없을 때는 그냥 1씩 증가한다라고 생각을 하면 되겠죠?"
+      ],
+      "spoken_text": "그다음에 객체명을 요렇게 써 주고 초기 위치만 지정했을 때요. 초기 위치만 지정하게 되면 그 초기 위치부터 시작해서 전부 다 가지고 와라 그거예요. 그다음에 객체명을 쓰고 최종 위치만 썼습니다. 증가값이 없죠. 증가값이 없을 때는 그냥 1씩 증가한다라고 생각을 하면 되겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "요소들을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:03:12",
+      "end_time_hms": "00:03:53",
+      "start_seconds": 192,
+      "end_seconds": 233,
+      "duration_seconds": 41,
+      "timeline_summary": "증가값만 지정한 경우의 반환 규칙 및 정리",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+        "객체명[:최종위치] 객체의 0번째 위치에서 '최종위치'-1까지의 요소들을 반환함",
+        "객체명[::증가값] 객체의 0번째 위치에서 마지막 위치까지 '증가값'만큼 증가하면서 해당 위치의 요소들을 반환함"
+      ],
+      "screen_text": "슬라이스(Slice)\n슬라이스는 일부 인수를 생략하여 사용할 수 있음\n객체명[:최종위치] 객체의 0번째 위치에서 '최종위치'-1까지의 요소들을 반환함\n객체명[::증가값] 객체의 0번째 위치에서 마지막 위치까지 '증가값'만큼 증가하면서 해당 위치의 요소들을 반환함",
+      "spoken_sentences": [
+        "해서 요 최종 위치는 -1.",
+        "여기다 쓴 수치 -1이라고 했습니다.",
+        "해서 초기값을 안 썼기 때문에 여기서 초기값은 0으로 그렇게 생각을 하면 돼요.",
+        "그래서 0번째 위치부터 시작해서 최종 위치 -1까지 그 사이에 있는 데이터들을 전부 다 가지고 와라.",
+        "그러니까 쉽게 얘기하면 처음부터 어디까지 가지고 와라라고 지정할 때 사용하는 거고요.",
+        "그 다음 거 보니까 객체명을 써 주고 그 앞에다가 초기값하고 그다음에 최종값을 그걸 안 썼어요.",
+        "안 쓰고 그냥 증가값만 썼습니다.",
+        "요렇게 하게 되면 초기값이 없을 때는 0번째 위치라고 생각하면 된다 그랬죠.",
+        "해서 0번째 위치부터 시작해서 증가값만큼 증가시키면서 그 위치에 있는 거를 가지고 와라 그거예요."
+      ],
+      "spoken_text": "해서 요 최종 위치는 -1. 여기다 쓴 수치 -1이라고 했습니다. 해서 초기값을 안 썼기 때문에 여기서 초기값은 0으로 그렇게 생각을 하면 돼요. 그래서 0번째 위치부터 시작해서 최종 위치 -1까지 그 사이에 있는 데이터들을 전부 다 가지고 와라. 그러니까 쉽게 얘기하면 처음부터 어디까지 가지고 와라라고 지정할 때 사용하는 거고요. 그 다음 거 보니까 객체명을 써 주고 그 앞에다가 초기값하고 그다음에 최종값을 그걸 안 썼어요. 안 쓰고 그냥 증가값만 썼습니다. 요렇게 하게 되면 초기값이 없을 때는 0번째 위치라고 생각하면 된다 그랬죠. 해서 0번째 위치부터 시작해서 증가값만큼 증가시키면서 그 위치에 있는 거를 가지고 와라 그거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "슬라이스는 일부 인수를 생략하여 사용할 수 있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "객체명[",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "요소들을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:03:53",
+      "end_time_hms": "00:04:21",
+      "start_seconds": 233,
+      "end_seconds": 261,
+      "duration_seconds": 28,
+      "timeline_summary": "리스트 슬라이싱 예제 및 인덱스 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "예) a = ['a', 'b', 'c', 'd', 'e']일 때"
+      ],
+      "screen_text": "슬라이스(Slice)\n예) a = ['a', 'b', 'c', 'd', 'e']일 때",
+      "spoken_sentences": [
+        "해서 내가 만약에 여기서 증가값을 2라고 쓰게 되면 0번 위치부터 시작해서 2씩 증가하면서 그 위치에 있는 것 가지고 와라.",
+        "결국에는 쉽게 얘기하면 0부터 시작해서 짝수 번째 위치에 있는 것들 가지고 와라 그거죠.",
+        "요런 식으로 슬라이스라는 명령어를 쓸 때 인수를 우리가 일부 생략해서도 사용할 수 있다라는 거 기억하시면 됩니다.",
+        "자, 여기 예제를 보니까 a라는 리스트가 있대요.",
+        "그 a라는 리스트에 a, b, c, d, e 하고 요렇게 데이터가 저장이 돼 있대요."
+      ],
+      "spoken_text": "해서 내가 만약에 여기서 증가값을 2라고 쓰게 되면 0번 위치부터 시작해서 2씩 증가하면서 그 위치에 있는 것 가지고 와라. 결국에는 쉽게 얘기하면 0부터 시작해서 짝수 번째 위치에 있는 것들 가지고 와라 그거죠. 요런 식으로 슬라이스라는 명령어를 쓸 때 인수를 우리가 일부 생략해서도 사용할 수 있다라는 거 기억하시면 됩니다. 자, 여기 예제를 보니까 a라는 리스트가 있대요. 그 a라는 리스트에 a, b, c, d, e 하고 요렇게 데이터가 저장이 돼 있대요.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:04:21",
+      "end_time_hms": "00:04:39",
+      "start_seconds": 261,
+      "end_seconds": 279,
+      "duration_seconds": 18,
+      "timeline_summary": "예제 1: a[1:3] 슬라이싱 결과 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "예) a = ['a', 'b', 'c', 'd', 'e']일 때",
+        "a[1:3] → ['b', 'c']"
+      ],
+      "screen_text": "슬라이스(Slice)\n예) a = ['a', 'b', 'c', 'd', 'e']일 때\na[1:3] → ['b', 'c']",
+      "spoken_sentences": [
+        "그때 실행을 했을 때 결과값 어떻게 나오나 보자고요.",
+        "그때 리스트에서도 해당 자료의 위치를 나타낼 때 0번부터 시작한다 그랬죠?",
+        "해서 여기가 0번째, 여기가 1번째, 여기가 2번째, 여기가 3번째, 여기가 4번째요.",
+        "해서 a라는 리스트에 요렇게 다섯 개의 데이터가 저장돼 있습니다.",
+        "그때 지금처럼 a라고 객체 이름, a라는 리스트다라고 해서 객체 이름 써 주고요.",
+        "그리고 1 땡땡 3이라고 썼습니다.",
+        "요렇게 쓰게 되면 맨 앞에 있는 얘가 1이 우리 초기값 얘기하는 거죠.",
+        "초기값을 얘기하는 거고 그다음에 두 번째 있는 얘가 최종값을 얘기하는 거죠."
+      ],
+      "spoken_text": "그때 실행을 했을 때 결과값 어떻게 나오나 보자고요. 그때 리스트에서도 해당 자료의 위치를 나타낼 때 0번부터 시작한다 그랬죠? 해서 여기가 0번째, 여기가 1번째, 여기가 2번째, 여기가 3번째, 여기가 4번째요. 해서 a라는 리스트에 요렇게 다섯 개의 데이터가 저장돼 있습니다. 그때 지금처럼 a라고 객체 이름, a라는 리스트다라고 해서 객체 이름 써 주고요. 그리고 1 땡땡 3이라고 썼습니다. 요렇게 쓰게 되면 맨 앞에 있는 얘가 1이 우리 초기값 얘기하는 거죠. 초기값을 얘기하는 거고 그다음에 두 번째 있는 얘가 최종값을 얘기하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "최종",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:04:39",
+      "end_time_hms": "00:05:09",
+      "start_seconds": 279,
+      "end_seconds": 309,
+      "duration_seconds": 30,
+      "timeline_summary": "예제 2: a[0:5:2] 슬라이싱 결과 설명",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "예) a = ['a', 'b', 'c', 'd', 'e']일 때",
+        "a[0:5:2] → ['a', 'c', 'e']"
+      ],
+      "screen_text": "슬라이스(Slice)\n예) a = ['a', 'b', 'c', 'd', 'e']일 때\na[0:5:2] → ['a', 'c', 'e']",
+      "spoken_sentences": [
+        "그때 증가값이 없으니까 1씩 증가하면 되는데 어디까지 증가하는 거예요?",
+        "최종값 -1.",
+        "해서 1번 위치부터 시작해서 1씩 증가하면서 두 번째 위치까지 그 요소들을 출력해라 그거죠.",
+        "그럼 얘를 그냥 쉽게 쓰면 1부터 시작해서 2까지, 2까지 그 데이터를 가지고 와라.",
+        "우리 위치 중에 1번 위치에 b가 들어 있고 2번 위치에는 c가 들어 있죠.",
+        "해서 b하고 c가 요렇게 나오는 거예요.",
+        "그다음에 두 번째 거 보니까 0, 5, 2 하고 요렇게 써 있습니다.",
+        "맨 앞의 게 초기값, 두 번째 게 최종값, 마지막 게 증가값이죠."
+      ],
+      "spoken_text": "그때 증가값이 없으니까 1씩 증가하면 되는데 어디까지 증가하는 거예요? 최종값 -1. 해서 1번 위치부터 시작해서 1씩 증가하면서 두 번째 위치까지 그 요소들을 출력해라 그거죠. 그럼 얘를 그냥 쉽게 쓰면 1부터 시작해서 2까지, 2까지 그 데이터를 가지고 와라. 우리 위치 중에 1번 위치에 b가 들어 있고 2번 위치에는 c가 들어 있죠. 해서 b하고 c가 요렇게 나오는 거예요. 그다음에 두 번째 거 보니까 0, 5, 2 하고 요렇게 써 있습니다. 맨 앞의 게 초기값, 두 번째 게 최종값, 마지막 게 증가값이죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "요소들을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "최종",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:05:09",
+      "end_time_hms": "00:05:32",
+      "start_seconds": 309,
+      "end_seconds": 332,
+      "duration_seconds": 23,
+      "timeline_summary": "다양한 인수 생략 예제 설명 (a[3:], a[:3], a[::3])",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "예) a = ['a', 'b', 'c', 'd', 'e']일 때",
+        "a[3:] → ['d', 'e']",
+        "a[:3] → ['a', 'b', 'c']"
+      ],
+      "screen_text": "슬라이스(Slice)\n예) a = ['a', 'b', 'c', 'd', 'e']일 때\na[3:] → ['d', 'e']\na[:3] → ['a', 'b', 'c']",
+      "spoken_sentences": [
+        "근데 증가값이 양수로 나왔으니까 최종값은 -1을 해 줘야죠.",
+        "해서 다시 써서 보게 되면 0, 4, 2요.",
+        "0번째 위치부터 시작해서 4번째 위치까지 가는데 2씩 증가하면서 가라 그거예요.",
+        "0번째 먼저 출력되겠죠?",
+        "그래서 a라는 것 출력될 거고요.",
+        "그다음에 2 증가시켜서 c가 출력될 거고 그다음에 또 2 증가해서 알파벳 e, 네 번째 위치에 있는 e가 출력될 겁니다.",
+        "해서 a하고 c하고 e가 요렇게 출력될 거예요.",
+        "그 다음 거 보니까 3이라고만 쓰고 뒤에다가 아무것도 안 썼어요.",
+        "그럼 맨 앞에 있는 얘가 초기값이 되겠죠.",
+        "해서 초기값만 지정했을 때 초기값을 3으로 지정하게 되면 세 번째 위치부터 시작해서 다 가지고 와라 그거죠."
+      ],
+      "spoken_text": "근데 증가값이 양수로 나왔으니까 최종값은 -1을 해 줘야죠. 해서 다시 써서 보게 되면 0, 4, 2요. 0번째 위치부터 시작해서 4번째 위치까지 가는데 2씩 증가하면서 가라 그거예요. 0번째 먼저 출력되겠죠? 그래서 a라는 것 출력될 거고요. 그다음에 2 증가시켜서 c가 출력될 거고 그다음에 또 2 증가해서 알파벳 e, 네 번째 위치에 있는 e가 출력될 겁니다. 해서 a하고 c하고 e가 요렇게 출력될 거예요. 그 다음 거 보니까 3이라고만 쓰고 뒤에다가 아무것도 안 썼어요. 그럼 맨 앞에 있는 얘가 초기값이 되겠죠. 해서 초기값만 지정했을 때 초기값을 3으로 지정하게 되면 세 번째 위치부터 시작해서 다 가지고 와라 그거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "최종",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_065-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 4,
+      "subtopic_id": "0303_303",
+      "subtopic_title": "슬라이스",
+      "subtopic_sequence": 303,
+      "subtopic_number": "303",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=EdfBxAYWWVY",
+      "start_time_hms": "00:05:32",
+      "end_time_hms": "00:05:45",
+      "start_seconds": 332,
+      "end_seconds": 345,
+      "duration_seconds": 13,
+      "timeline_summary": "학습 마무리 및 요약",
+      "screen_text_lines": [
+        "슬라이스(Slice)",
+        "예) a = ['a', 'b', 'c', 'd', 'e']일 때",
+        "a[3:] → ['d', 'e']",
+        "a[:3] → ['a', 'b', 'c']"
+      ],
+      "screen_text": "슬라이스(Slice)\n예) a = ['a', 'b', 'c', 'd', 'e']일 때\na[3:] → ['d', 'e']\na[:3] → ['a', 'b', 'c']",
+      "spoken_sentences": [
+        "세 번째 위치에는 d가 있고 거기서부터 시작해서 다 가지고 와라 그러면은 그 뒤에 하나밖에 없네요, e.",
+        "해서 d하고 e가 요렇게 나오는 거고요.",
+        "그 다음 거 보니까 땡땡 하고 3이라고 요렇게 써 있어요.",
+        "요렇게 쓰게 되면 얘가 최종값을 얘기하는 거죠.",
+        "최종값.",
+        "최종값은 어떻게 해라?",
+        "1 해라.",
+        "그러면 여기 써 있는 숫자가 3이니까 2까지 가는 거죠.",
+        "그때 초기값이 없으니까 0번째 위치부터 시작해서 가지고 오는 거죠.",
+        "어디까지 가지고 와라?",
+        "3-1 하게 되면 2번 위치까지.",
+        "해서 0, 1, 2 하고 0번에 a가 들어 있고 1번에 b가 들어 있고 2번에 c가 들어 있죠?",
+        "그래서 a, b, c 하고 요렇게 나옵니다.",
+        "그 다음 거 보니까 초기값 없고요, 최종값 없고 마지막에 증가값만 요렇게 써 있습니다."
+      ],
+      "spoken_text": "세 번째 위치에는 d가 있고 거기서부터 시작해서 다 가지고 와라 그러면은 그 뒤에 하나밖에 없네요, e. 해서 d하고 e가 요렇게 나오는 거고요. 그 다음 거 보니까 땡땡 하고 3이라고 요렇게 써 있어요. 요렇게 쓰게 되면 얘가 최종값을 얘기하는 거죠. 최종값. 최종값은 어떻게 해라? 1 해라. 그러면 여기 써 있는 숫자가 3이니까 2까지 가는 거죠. 그때 초기값이 없으니까 0번째 위치부터 시작해서 가지고 오는 거죠. 어디까지 가지고 와라? 3-1 하게 되면 2번 위치까지. 해서 0, 1, 2 하고 0번에 a가 들어 있고 1번에 b가 들어 있고 2번에 c가 들어 있죠? 그래서 a, b, c 하고 요렇게 나옵니다. 그 다음 거 보니까 초기값 없고요, 최종값 없고 마지막에 증가값만 요렇게 써 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "슬라이스(Slice)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 120
+        },
+        {
+          "keyword": "번째",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "최종",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2661 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_026",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 3,
+    "source_sequences": [
+      123,
+      124,
+      125
+    ],
+    "source_lecture_ids": [
+      "0123_123",
+      "0124_124",
+      "0125_125"
+    ],
+    "source_titles": [
+      "이분 검색",
+      "해싱 함수Hashing Function",
+      "Collision(충돌 현상) 해결 방법"
+    ],
+    "keywords": [
+      "이분",
+      "검색",
+      "해싱",
+      "함수Hashing",
+      "Function"
+    ],
+    "highlight_keywords": [
+      "이분",
+      "검색",
+      "이분 검색",
+      "중간",
+      "레코드",
+      "해싱",
+      "Mid-Square",
+      "Division",
+      "해싱 함수Hashing Function",
+      "주소로"
+    ],
+    "secondary_keywords": [
+      "검색의",
+      "데이터",
+      "이분 검색 과정의 시각적 예시 설명 시작",
+      "이분 검색의 전제 조건: 순서화된 파일",
+      "중간 레코드 번호(M) 계산 공식 설명",
+      "중간 위치 계산 예시 및 소수점 처리",
+      "삼는",
+      "제곱법(Mid-Square)",
+      "재산법(Division)",
+      "Random",
+      "값을",
+      "Folding"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0123_123",
+      "sequence": 123,
+      "number": "123",
+      "course_code": "350122",
+      "title": "이분 검색",
+      "duration_seconds": 351,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "segment_count": 12,
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "tokens": [
+            "이분"
+          ],
+          "score": 44,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "검색",
+          "tokens": [
+            "검색"
+          ],
+          "score": 32,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "이분 검색",
+          "tokens": [
+            "이분",
+            "검색"
+          ],
+          "score": 23,
+          "sources": [
+            "lecture_title",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "중간",
+          "tokens": [
+            "중간"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "레코드",
+          "tokens": [
+            "레코드"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "검색의",
+          "tokens": [
+            "검색의"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 12,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "이분 검색 과정의 시각적 예시 설명 시작",
+          "tokens": [
+            "이분",
+            "검색",
+            "과정의",
+            "시각적",
+            "시작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "이분 검색의 전제 조건: 순서화된 파일",
+          "tokens": [
+            "이분",
+            "검색의",
+            "전제",
+            "조건",
+            "순서화된",
+            "파일"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "중간 레코드 번호(M) 계산 공식 설명",
+          "tokens": [
+            "중간",
+            "레코드",
+            "번호",
+            "계산",
+            "공식"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "중간 위치 계산 예시 및 소수점 처리",
+          "tokens": [
+            "중간",
+            "위치",
+            "계산",
+            "소수점",
+            "처리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_026-subtopic-001-source-seg-001::01",
+          "prompt": "강의 주제 소개: ______",
+          "answer": "이분 검색",
+          "original": "강의 주제 소개: 이분 검색",
+          "keyword": "이분 검색",
+          "source_segment_id": "topic_026-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '이분 검색'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-001-source-seg-002::02",
+          "prompt": "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key ______를 검색하는 방식.",
+          "answer": "레코드",
+          "original": "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방식.",
+          "keyword": "레코드",
+          "source_segment_id": "topic_026-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '레코드'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-001-source-seg-002::03",
+          "prompt": "이분 ______ 정의 및 방식 설명",
+          "answer": "검색의",
+          "original": "이분 검색의 정의 및 방식 설명",
+          "keyword": "검색의",
+          "source_segment_id": "topic_026-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '검색의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-001-source-seg-004::04",
+          "prompt": "자 이게 무슨 말이냐 자 예를 들어서 지금처럼 이런 ______가 있다라고 가정을 한번 해보자고요.",
+          "answer": "데이터",
+          "original": "자 이게 무슨 말이냐 자 예를 들어서 지금처럼 이런 데이터가 있다라고 가정을 한번 해보자고요.",
+          "keyword": "데이터",
+          "source_segment_id": "topic_026-subtopic-001-source-seg-004",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0124_124",
+      "sequence": 124,
+      "number": "124",
+      "course_code": "350123",
+      "title": "해싱 함수Hashing Function",
+      "duration_seconds": 205,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "해싱",
+          "tokens": [
+            "해싱"
+          ],
+          "score": 36,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Mid-Square",
+          "tokens": [
+            "Mid-Square"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Division",
+          "tokens": [
+            "Division"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "해싱 함수Hashing Function",
+          "tokens": [
+            "해싱",
+            "함수",
+            "Hashing",
+            "Function"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "주소로",
+          "tokens": [
+            "주소로"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "삼는",
+          "tokens": [
+            "삼는"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "제곱법(Mid-Square)",
+          "tokens": [
+            "제곱법",
+            "Mid-Square"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "재산법(Division)",
+          "tokens": [
+            "재산법",
+            "Division"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Random",
+          "tokens": [
+            "Random"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "값을",
+          "tokens": [
+            "값을"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Folding",
+          "tokens": [
+            "Folding"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_026-subtopic-002-source-seg-002::01",
+          "prompt": "제곱법(______)",
+          "answer": "Mid-Square",
+          "original": "제곱법(Mid-Square)",
+          "keyword": "Mid-Square",
+          "source_segment_id": "topic_026-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Mid-Square'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-002-source-seg-002::02",
+          "prompt": "재산법(______)",
+          "answer": "Division",
+          "original": "재산법(Division)",
+          "keyword": "Division",
+          "source_segment_id": "topic_026-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Division'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-002-source-seg-003::03",
+          "prompt": "레코드 키(K)를 해시표(Hash Table)의 크기보다 큰 수 중에서 가장 작은 소수(Prime, Q)로 나눈 나머지를 홈 ______ 삼는 방식, 즉 h(K) = K mod Q.",
+          "answer": "주소로",
+          "original": "레코드 키(K)를 해시표(Hash Table)의 크기보다 큰 수 중에서 가장 작은 소수(Prime, Q)로 나눈 나머지를 홈 주소로 삼는 방식, 즉 h(K) = K mod Q.",
+          "keyword": "주소로",
+          "source_segment_id": "topic_026-subtopic-002-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '주소로'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-002-source-seg-003::04",
+          "prompt": "______의 정의 설명",
+          "answer": "재산법(Division)",
+          "original": "재산법(Division)의 정의 설명",
+          "keyword": "재산법(Division)",
+          "source_segment_id": "topic_026-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '재산법(Division)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0125_125",
+      "sequence": 125,
+      "number": "125",
+      "course_code": "350124",
+      "title": "Collision(충돌 현상) 해결 방법",
+      "duration_seconds": 285,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "tokens": [
+            "Collision"
+          ],
+          "score": 49,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "충돌",
+          "tokens": [
+            "충돌"
+          ],
+          "score": 28,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Rehashing",
+          "tokens": [
+            "Rehashing"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Chaining",
+          "tokens": [
+            "Chaining"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "해결",
+          "tokens": [
+            "해결"
+          ],
+          "score": 26,
+          "sources": [
+            "lecture_title",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Bucket",
+          "tokens": [
+            "Bucket"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Slot",
+          "tokens": [
+            "Slot"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "주소를",
+          "tokens": [
+            "주소를"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "충돌 현상",
+          "tokens": [
+            "충돌",
+            "현상"
+          ],
+          "score": 21,
+          "sources": [
+            "lecture_title",
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Hashing",
+          "tokens": [
+            "Hashing"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Collision(충돌 현상) 해결 방법",
+          "tokens": [
+            "Collision",
+            "충돌",
+            "현상",
+            "해결"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_026-subtopic-003-source-seg-002::01",
+          "prompt": "체이닝(Chaining) : ______이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+          "answer": "Collision",
+          "original": "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+          "keyword": "Collision",
+          "source_segment_id": "topic_026-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Collision'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-003-source-seg-002::02",
+          "prompt": "재해싱(______) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법",
+          "answer": "Rehashing",
+          "original": "재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법",
+          "keyword": "Rehashing",
+          "source_segment_id": "topic_026-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Rehashing'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-003-source-seg-002::03",
+          "prompt": "체이닝(______) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+          "answer": "Chaining",
+          "original": "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+          "keyword": "Chaining",
+          "source_segment_id": "topic_026-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Chaining'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_026-subtopic-003-source-seg-005::04",
+          "prompt": "버킷(______) - 하나의 주소를 갖는 파일의 한 구역을 의미.",
+          "answer": "Bucket",
+          "original": "버킷(Bucket) - 하나의 주소를 갖는 파일의 한 구역을 의미.",
+          "keyword": "Bucket",
+          "source_segment_id": "topic_026-subtopic-003-source-seg-005",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Bucket'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_026",
+    "sequence": 26,
+    "number": "26",
+    "title": "검색과 해싱",
+    "title_raw": "검색과 해싱",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 3,
+    "source_sequences": [
+      123,
+      124,
+      125
+    ],
+    "source_titles": [
+      "이분 검색",
+      "해싱 함수Hashing Function",
+      "Collision(충돌 현상) 해결 방법"
+    ],
+    "preview_text": "이분 검색, 해싱 함수Hashing Function, Collision(충돌 현상) 해결 방법",
+    "segment_count": 37,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 이분 검색, 해싱 함수Hashing Function, Collision(충돌 현상) 해결 방법을 중심으로 정리합니다. 소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 이분 검색, 해싱 함수Hashing Function, Collision(충돌 현상) 해결 방법을 중심으로 정리합니다.",
+      "소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 841,
+    "source_titles_preview": [
+      "이분 검색",
+      "해싱 함수Hashing Function",
+      "Collision(충돌 현상) 해결 방법"
+    ],
+    "highlight_keywords": [
+      "이분",
+      "검색",
+      "이분 검색",
+      "중간",
+      "레코드",
+      "해싱",
+      "Mid-Square",
+      "Division",
+      "해싱 함수Hashing Function",
+      "주소로"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_026-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 주제 소개: 이분 검색",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 이분 검색에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 이분 검색에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:31",
+      "start_seconds": 8,
+      "end_seconds": 31,
+      "duration_seconds": 23,
+      "timeline_summary": "이분 검색의 정의 및 방식 설명",
+      "screen_text_lines": [
+        "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방식."
+      ],
+      "screen_text": "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방식.",
+      "spoken_sentences": [
+        "자 우리 이분 검색이요.",
+        "이분 검색이라는 거는 다른 말로 우리가 이진 검색 그렇게 부르는 거고요.",
+        "이분 검색 이진 검색이라는 거는 뭔가 특정 데이터를 찾을 때 전체 파일을 전체 파일을 두 개의 서브 파일로 분리해가면서 키값 키의 레코드를 검색하는 그런 방식을 보고 우리가 이분 검색 이진 검색 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "자 우리 이분 검색이요. 이분 검색이라는 거는 다른 말로 우리가 이진 검색 그렇게 부르는 거고요. 이분 검색 이진 검색이라는 거는 뭔가 특정 데이터를 찾을 때 전체 파일을 전체 파일을 두 개의 서브 파일로 분리해가면서 키값 키의 레코드를 검색하는 그런 방식을 보고 우리가 이분 검색 이진 검색 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "레코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:00:31",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 31,
+      "end_seconds": 41,
+      "duration_seconds": 10,
+      "timeline_summary": "이분 검색의 전제 조건: 순서화된 파일",
+      "screen_text_lines": [
+        "• 이분 검색은 반드시 순서화된 파일이어야 검색할 수 있음."
+      ],
+      "screen_text": "• 이분 검색은 반드시 순서화된 파일이어야 검색할 수 있음.",
+      "spoken_sentences": [
+        "이렇게 우리가 이분 검색을 하려면 반드시 순서화된 그 파일이 있어야 우리가 검색을 할 수가 있습니다."
+      ],
+      "spoken_text": "이렇게 우리가 이분 검색을 하려면 반드시 순서화된 그 파일이 있어야 우리가 검색을 할 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "검색의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:15",
+      "start_seconds": 41,
+      "end_seconds": 75,
+      "duration_seconds": 34,
+      "timeline_summary": "이분 검색 과정의 시각적 예시 설명 시작",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10",
+      "spoken_sentences": [
+        "자 이게 무슨 말이냐 자 예를 들어서 지금처럼 이런 데이터가 있다라고 가정을 한번 해보자고요.",
+        "이 데이터를 보니까 10부터 시작해서 100까지 이렇게 데이터가 쭉쭉쭉 들어 있죠.",
+        "이렇게 데이터가 들어있는 이 상태에서 내가 만약에 30이라는 이 값을 내가 만약에 찾고자 했을 때 그때 이 30이라는 이 값을 어떻게 찾느냐 맨 처음에 지금 여기 보게 되면 여기가 1번 레코드가 되겠죠 여기가 2번 레코드가 될 거고 여기가 3번 레코드 여기가 4번 레코드 여기가 5번 6번 7번 8번 9번 10번 하고 이렇게 10개의 데이터가 있다고요."
+      ],
+      "spoken_text": "자 이게 무슨 말이냐 자 예를 들어서 지금처럼 이런 데이터가 있다라고 가정을 한번 해보자고요. 이 데이터를 보니까 10부터 시작해서 100까지 이렇게 데이터가 쭉쭉쭉 들어 있죠. 이렇게 데이터가 들어있는 이 상태에서 내가 만약에 30이라는 이 값을 내가 만약에 찾고자 했을 때 그때 이 30이라는 이 값을 어떻게 찾느냐 맨 처음에 지금 여기 보게 되면 여기가 1번 레코드가 되겠죠 여기가 2번 레코드가 될 거고 여기가 3번 레코드 여기가 4번 레코드 여기가 5번 6번 7번 8번 9번 10번 하고 이렇게 10개의 데이터가 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "레코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:01:15",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 75,
+      "end_seconds": 107,
+      "duration_seconds": 32,
+      "timeline_summary": "중간값과 찾는 값 비교 및 검색 범위 축소 과정",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10",
+      "spoken_sentences": [
+        "그 중에서 우리 중간값이요 만약에 중간값이 만약에 지금처럼 50이라면 이 50이랑 내가 찾고자 하는 요 30이랑 서로서로 비교를 합니다.",
+        "30이랑 50을 비교했을 때 30은 30은 50보다 작죠 작다 그 얘기는 내가 찾고자 하는 그 값은 50 앞에 있다 그 얘기예요.",
+        "그러면 그 뒤에 있는 50부터 시작해서 100까지는 여기서는 데이터를 내가 30이라는 데이터가 있어 있어 있어 있어 있어 그렇게 우리가 검색할 필요가 있다 없다 없더라 없더라."
+      ],
+      "spoken_text": "그 중에서 우리 중간값이요 만약에 중간값이 만약에 지금처럼 50이라면 이 50이랑 내가 찾고자 하는 요 30이랑 서로서로 비교를 합니다. 30이랑 50을 비교했을 때 30은 30은 50보다 작죠 작다 그 얘기는 내가 찾고자 하는 그 값은 50 앞에 있다 그 얘기예요. 그러면 그 뒤에 있는 50부터 시작해서 100까지는 여기서는 데이터를 내가 30이라는 데이터가 있어 있어 있어 있어 있어 그렇게 우리가 검색할 필요가 있다 없다 없더라 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:41",
+      "start_seconds": 107,
+      "end_seconds": 161,
+      "duration_seconds": 54,
+      "timeline_summary": "이분 검색의 효율성 강조",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10",
+      "spoken_sentences": [
+        "해서 우리가 한 번만 딱 비교를 했는데도 불구하고 지금 이 10개의 데이터 중에서 6개의 데이터가 없어졌다고요.",
+        "저는 지금 여기서 10개라고 이렇게 데이터를 가지고 있지만 만약에 이런 데이터가 만약에 1000건이 있다고 생각해보세요 만약에 1000건의 데이터가 있는데 내가 중간값이랑 어떤 특정 값을 찾고자 해서 비교를 했어요 비교를 했더니 그 중간값보다 내가 찾고자 하는 값이 더 작아요 그러면 그 중간값부터 시작해서 그 이후에 있는 그런 데이터들에서는 내가 찾을 필요가 없죠 왜 내가 어차피 데이터를 가지고 있을 때 나는 순서화된 그런 데이터를 가지고 있다고요 그러면 1000개 중에 벌써 501개가 날아간 거예요 그러면 그 501개 빼고 나머지 그 데이터들만 가지고 내가 데이터를 비교를 해주면 된다고요."
+      ],
+      "spoken_text": "해서 우리가 한 번만 딱 비교를 했는데도 불구하고 지금 이 10개의 데이터 중에서 6개의 데이터가 없어졌다고요. 저는 지금 여기서 10개라고 이렇게 데이터를 가지고 있지만 만약에 이런 데이터가 만약에 1000건이 있다고 생각해보세요 만약에 1000건의 데이터가 있는데 내가 중간값이랑 어떤 특정 값을 찾고자 해서 비교를 했어요 비교를 했더니 그 중간값보다 내가 찾고자 하는 값이 더 작아요 그러면 그 중간값부터 시작해서 그 이후에 있는 그런 데이터들에서는 내가 찾을 필요가 없죠 왜 내가 어차피 데이터를 가지고 있을 때 나는 순서화된 그런 데이터를 가지고 있다고요 그러면 1000개 중에 벌써 501개가 날아간 거예요 그러면 그 501개 빼고 나머지 그 데이터들만 가지고 내가 데이터를 비교를 해주면 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:02:41",
+      "end_time_hms": "00:03:34",
+      "start_seconds": 161,
+      "end_seconds": 214,
+      "duration_seconds": 53,
+      "timeline_summary": "남은 범위에서 검색 반복 및 최종 데이터 발견",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10",
+      "spoken_sentences": [
+        "그러면 지금 이 상태에서 30이라는 요 데이터를 찾을 건데 지금 나는 10 20 30 40 하고 4개의 값을 가지고 있죠 그때 중간값 중간값이 만약에 지금처럼 20이라면 그 20이랑 30이라는 값을 비교하겠죠 그러면 30이라는 그 데이터가 더 크니까 요 앞에 요 앞에 있는 데이터는 더 이상 찾아볼 필요가 없는 거죠 그러면 3번째 데이터 4번째 데이터 해서 이렇게 두 개의 데이터가 있습니다 그 중에서 중간값 찾아라 그렇게 하게 되면 요 30 30이 들어있는 요 위치를 찾을 거고 이 위치에 들어있는 값이 30이랑 똑같아 그렇게 물어보게 되면 30이랑 똑같죠 그렇게 해서 요 30이라는 요 데이터를 찾아주는 겁니다 이런 식으로 중간값이랑 내가 찾고자 하는 그 값을 서로서로 비교해서 내가 데이터를 검색하는 거 고게 우리 이분 검색이요."
+      ],
+      "spoken_text": "그러면 지금 이 상태에서 30이라는 요 데이터를 찾을 건데 지금 나는 10 20 30 40 하고 4개의 값을 가지고 있죠 그때 중간값 중간값이 만약에 지금처럼 20이라면 그 20이랑 30이라는 값을 비교하겠죠 그러면 30이라는 그 데이터가 더 크니까 요 앞에 요 앞에 있는 데이터는 더 이상 찾아볼 필요가 없는 거죠 그러면 3번째 데이터 4번째 데이터 해서 이렇게 두 개의 데이터가 있습니다 그 중에서 중간값 찾아라 그렇게 하게 되면 요 30 30이 들어있는 요 위치를 찾을 거고 이 위치에 들어있는 값이 30이랑 똑같아 그렇게 물어보게 되면 30이랑 똑같죠 그렇게 해서 요 30이라는 요 데이터를 찾아주는 겁니다 이런 식으로 중간값이랑 내가 찾고자 하는 그 값을 서로서로 비교해서 내가 데이터를 검색하는 거 고게 우리 이분 검색이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:03:34",
+      "end_time_hms": "00:04:01",
+      "start_seconds": 214,
+      "end_seconds": 241,
+      "duration_seconds": 27,
+      "timeline_summary": "이분 검색의 특징: 중간 레코드 비교 및 데이터 수 감소",
+      "screen_text_lines": [
+        "• 찾고자 하는 Key 값을 파일의 중간 레코드 Key 값과 비교하면서 검색함.",
+        "• 비교 횟수를 거듭할 때마다 검색 대상이 되는 데이터의 수가 절반으로 줄어들므로 탐색 효율이 좋고 탐색 시간이 적게 소요됨."
+      ],
+      "screen_text": "• 찾고자 하는 Key 값을 파일의 중간 레코드 Key 값과 비교하면서 검색함.\n• 비교 횟수를 거듭할 때마다 검색 대상이 되는 데이터의 수가 절반으로 줄어들므로 탐색 효율이 좋고 탐색 시간이 적게 소요됨.",
+      "spoken_sentences": [
+        "해서 요 이분 검색이라는 거는 내가 찾고자 하는 그 키값을 그 키값을 파일의 중간 레코드 키값과 서로서로 비교해가면서 검색을 하는 거요 이렇게 비교 횟수를 우리가 거듭할 때마다 검색 대상이 되는 그 데이터의 수가 어떻게 된다 절반으로 줄어들더라 그리고 얘네 탐색 효율이 좋고요 탐색 시간이 적게 소요되는 게 장점이에요."
+      ],
+      "spoken_text": "해서 요 이분 검색이라는 거는 내가 찾고자 하는 그 키값을 그 키값을 파일의 중간 레코드 키값과 서로서로 비교해가면서 검색을 하는 거요 이렇게 비교 횟수를 우리가 거듭할 때마다 검색 대상이 되는 그 데이터의 수가 어떻게 된다 절반으로 줄어들더라 그리고 얘네 탐색 효율이 좋고요 탐색 시간이 적게 소요되는 게 장점이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:04:01",
+      "end_time_hms": "00:04:42",
+      "start_seconds": 241,
+      "end_seconds": 282,
+      "duration_seconds": 41,
+      "timeline_summary": "중간 레코드 번호(M) 계산 공식 설명",
+      "screen_text_lines": [
+        "• 중간 레코드 번호 M = (F + L) / 2 (단, F: 첫 번째 레코드 번호, L: 마지막 레코드 번호)"
+      ],
+      "screen_text": "• 중간 레코드 번호 M = (F + L) / 2 (단, F: 첫 번째 레코드 번호, L: 마지막 레코드 번호)",
+      "spoken_sentences": [
+        "그때 중간값을 찾는다 그랬는데 그때 중간값을 찾는 그 공식이 지금처럼 요렇게 되어 있습니다 우리 중간값이 M인데 M을 구할 때는 우리 F+L 요거를 먼저 계산해주고 그거를 반으로 나눠요 2로 나눠서 그 중간값을 결정을 하는 겁니다 근데 지금 여기 보게 되면 F다 L이다 요런 말이 사용이 됐죠 여기서 F가 퍼스트 요 L이 라스트 그렇게요 해서 요 F라는 게 우리 첫 번째 레코드의 번호요 첫 번째 레코드의 위치가 우리 F가 되는 거고 마지막 그 레코드의 번호가 L L이 되는 겁니다."
+      ],
+      "spoken_text": "그때 중간값을 찾는다 그랬는데 그때 중간값을 찾는 그 공식이 지금처럼 요렇게 되어 있습니다 우리 중간값이 M인데 M을 구할 때는 우리 F+L 요거를 먼저 계산해주고 그거를 반으로 나눠요 2로 나눠서 그 중간값을 결정을 하는 겁니다 근데 지금 여기 보게 되면 F다 L이다 요런 말이 사용이 됐죠 여기서 F가 퍼스트 요 L이 라스트 그렇게요 해서 요 F라는 게 우리 첫 번째 레코드의 번호요 첫 번째 레코드의 위치가 우리 F가 되는 거고 마지막 그 레코드의 번호가 L L이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "레코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "중간 레코드 번호(M) 계산 공식 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:04:42",
+      "end_time_hms": "00:05:03",
+      "start_seconds": 282,
+      "end_seconds": 303,
+      "duration_seconds": 21,
+      "timeline_summary": "데이터 번호 매기기 예시",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10",
+      "spoken_sentences": [
+        "해서 지금처럼 이렇게 10개의 데이터가 있을 때 그때 레코드 번호를 매겨보면 1번부터 시작해서 10번까지 요렇게 있겠죠."
+      ],
+      "spoken_text": "해서 지금처럼 이렇게 10개의 데이터가 있을 때 그때 레코드 번호를 매겨보면 1번부터 시작해서 10번까지 요렇게 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "레코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:05:03",
+      "end_time_hms": "00:05:30",
+      "start_seconds": 303,
+      "end_seconds": 330,
+      "duration_seconds": 27,
+      "timeline_summary": "중간 위치 계산 예시 및 소수점 처리",
+      "screen_text_lines": [
+        "10 20 30 40 50 60 70 80 90 100",
+        "1 2 3 4 5 6 7 8 9 10",
+        "M = (1 + 10) / 2 = 11 / 2 = 5.5 -> 5"
+      ],
+      "screen_text": "10 20 30 40 50 60 70 80 90 100\n1 2 3 4 5 6 7 8 9 10\nM = (1 + 10) / 2 = 11 / 2 = 5.5 -> 5",
+      "spoken_sentences": [
+        "그때 맨 처음에 내가 30이라는 값을 찾겠다 그랬을 때는 그때 이곳에 가지고 있는 그 레코드 번호 중에 우리 1번 1번이 첫 번째 데이터죠 그리고 마지막 그 레코드 번호가 우리 10번이죠 그러면 요 F에다가 1을 집어넣고 그다음에 L에다가 10을 집어넣고 계산하는 거예요 계산할 때 11하고 그렇게 나오겠죠 11이 나오면 그 11을 그 11을 2로 나눠주면 됩니다 그러면 11 나누기 2를 하게 되면 5.5 하고 나오는데 5.5 하고 요렇게 소수점이 나왔을 때는 소수점은 버려버리고 정수값만 취합니다 그래서 M 중간의 위치는 몇 번이다 5번이다 그렇게 해서 중간 위치가 요렇게 계산이 되는 거예요."
+      ],
+      "spoken_text": "그때 맨 처음에 내가 30이라는 값을 찾겠다 그랬을 때는 그때 이곳에 가지고 있는 그 레코드 번호 중에 우리 1번 1번이 첫 번째 데이터죠 그리고 마지막 그 레코드 번호가 우리 10번이죠 그러면 요 F에다가 1을 집어넣고 그다음에 L에다가 10을 집어넣고 계산하는 거예요 계산할 때 11하고 그렇게 나오겠죠 11이 나오면 그 11을 그 11을 2로 나눠주면 됩니다 그러면 11 나누기 2를 하게 되면 5.5 하고 나오는데 5.5 하고 요렇게 소수점이 나왔을 때는 소수점은 버려버리고 정수값만 취합니다 그래서 M 중간의 위치는 몇 번이다 5번이다 그렇게 해서 중간 위치가 요렇게 계산이 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "레코드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "중간 위치 계산 예시 및 소수점 처리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0123_123",
+      "subtopic_title": "이분 검색",
+      "subtopic_sequence": 123,
+      "subtopic_number": "123",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=QTY5LxAzyP8",
+      "start_time_hms": "00:05:30",
+      "end_time_hms": "00:05:51",
+      "start_seconds": 330,
+      "end_seconds": 351,
+      "duration_seconds": 21,
+      "timeline_summary": "이분 검색 요약 및 마무리",
+      "screen_text_lines": [
+        "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방식.",
+        "• 이분 검색은 반드시 순서화된 파일이어야 검색할 수 있음."
+      ],
+      "screen_text": "• 이분 검색(이진 검색, Binary Search)은 전체 파일을 두 개의 서브파일로 분리해 가면서 Key 레코드를 검색하는 방식.\n• 이분 검색은 반드시 순서화된 파일이어야 검색할 수 있음.",
+      "spoken_sentences": [
+        "그러면 다섯 번째 요 데이터 그 위치를 중간값으로 찾은 다음에 그때 중간에 들어있는 그 레코드의 값은 50이죠 그럼 30하고 50하고 둘이 비교하는 거예요 비교를 해보니까 우리 30이 더 작죠 내가 찾고자 하는 값이 작다 그 얘기는 50 내가 중간값이랑 비교했을 때 이 중간값부터 시작해서 이후에는 내가 찾고자 하는 데이터가 있다 없다 없다 없다 해서 우리 이분 검색이라는 거는 다른 말로 뭐라고 부른다 우리 이진 검색 바이너리 서치하고 그렇게 부르더라 얘는 전체 파일을 두 개의 서브 파일로 분리해가면서 우리가 키값을 검색하는 그 방식 그 방식이 우리 이분 검색 이진 검색이요 얘는 이분 검색이나 이진 검색을 할 때는 반드시 내가 가지고 있는 그 데이터가 어떻게 돼 있어야 된다 순서대로 정렬이 되어 있어야 우리가 검색을 할 수 있는 거예요 만약에 이 값들이 막 섞여 있다 그러면 그때는 이분 검색을 할 수가 없어요."
+      ],
+      "spoken_text": "그러면 다섯 번째 요 데이터 그 위치를 중간값으로 찾은 다음에 그때 중간에 들어있는 그 레코드의 값은 50이죠 그럼 30하고 50하고 둘이 비교하는 거예요 비교를 해보니까 우리 30이 더 작죠 내가 찾고자 하는 값이 작다 그 얘기는 50 내가 중간값이랑 비교했을 때 이 중간값부터 시작해서 이후에는 내가 찾고자 하는 데이터가 있다 없다 없다 없다 해서 우리 이분 검색이라는 거는 다른 말로 뭐라고 부른다 우리 이진 검색 바이너리 서치하고 그렇게 부르더라 얘는 전체 파일을 두 개의 서브 파일로 분리해가면서 우리가 키값을 검색하는 그 방식 그 방식이 우리 이분 검색 이진 검색이요 얘는 이분 검색이나 이진 검색을 할 때는 반드시 내가 가지고 있는 그 데이터가 어떻게 돼 있어야 된다 순서대로 정렬이 되어 있어야 우리가 검색을 할 수 있는 거예요 만약에 이 값들이 막 섞여 있다 그러면 그때는 이분 검색을 할 수가 없어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이분",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "이분 검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "중간",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:06",
+      "start_seconds": 0,
+      "end_seconds": 6,
+      "duration_seconds": 6,
+      "timeline_summary": "해싱 학습 시작 안내",
+      "screen_text_lines": [
+        "해싱"
+      ],
+      "screen_text": "해싱",
+      "spoken_sentences": [
+        "이번 시간에는 우리 해싱에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 해싱에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "해싱",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:00:06",
+      "end_time_hms": "00:00:22",
+      "start_seconds": 6,
+      "end_seconds": 22,
+      "duration_seconds": 16,
+      "timeline_summary": "다양한 해싱 함수의 종류 소개",
+      "screen_text_lines": [
+        "해싱",
+        "해싱 함수(Hashing Function)",
+        "재산법(Division)",
+        "제곱법(Mid-Square)"
+      ],
+      "screen_text": "해싱\n해싱 함수(Hashing Function)\n재산법(Division)\n제곱법(Mid-Square)",
+      "spoken_sentences": [
+        "해싱 함수라고 해서 해싱 함수가 뭐 한가지 종류만 있는게 아니라 종류가 되게 여러가지가 있습니다.",
+        "그때 재산법이라는 것도 있고 그다음에 제곱법이라는 것도 있고 그다음에 폴딩법도 있고 그다음에 기수 변환법도 있고 더 있어요 뒤에."
+      ],
+      "spoken_text": "해싱 함수라고 해서 해싱 함수가 뭐 한가지 종류만 있는게 아니라 종류가 되게 여러가지가 있습니다. 그때 재산법이라는 것도 있고 그다음에 제곱법이라는 것도 있고 그다음에 폴딩법도 있고 그다음에 기수 변환법도 있고 더 있어요 뒤에.",
+      "highlight_keywords": [
+        {
+          "keyword": "해싱",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "Mid-Square",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Division",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "제곱법(Mid-Square)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:00:22",
+      "end_time_hms": "00:00:42",
+      "start_seconds": 22,
+      "end_seconds": 42,
+      "duration_seconds": 20,
+      "timeline_summary": "재산법(Division)의 정의 설명",
+      "screen_text_lines": [
+        "재산법(Division)",
+        "레코드 키(K)를 해시표(Hash Table)의 크기보다 큰 수 중에서 가장 작은 소수(Prime, Q)로 나눈 나머지를 홈 주소로 삼는 방식, 즉 h(K) = K mod Q."
+      ],
+      "screen_text": "재산법(Division)\n레코드 키(K)를 해시표(Hash Table)의 크기보다 큰 수 중에서 가장 작은 소수(Prime, Q)로 나눈 나머지를 홈 주소로 삼는 방식, 즉 h(K) = K mod Q.",
+      "spoken_sentences": [
+        "일단은 우리 재산법부터 좀 보자고요.",
+        "재산법이라는 거는 말 그대로 나누기를 하는 겁니다.",
+        "얘는 레코드 키를 해시표의 크기보다 큰 수 중에서 가장 작은 그 소수, 가장 작은 그 소수로 나눈 그 나머지를 홈 주소로 삼는 그런 방식을 보고 얘기해요."
+      ],
+      "spoken_text": "일단은 우리 재산법부터 좀 보자고요. 재산법이라는 거는 말 그대로 나누기를 하는 겁니다. 얘는 레코드 키를 해시표의 크기보다 큰 수 중에서 가장 작은 그 소수, 가장 작은 그 소수로 나눈 그 나머지를 홈 주소로 삼는 그런 방식을 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Division",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "재산법(Division)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:00:42",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 42,
+      "end_seconds": 73,
+      "duration_seconds": 31,
+      "timeline_summary": "재산법의 홈 주소 결정 방식 상술",
+      "screen_text_lines": [
+        "나머지",
+        "홈 주소",
+        "h(K) = K mod Q."
+      ],
+      "screen_text": "나머지\n홈 주소\nh(K) = K mod Q.",
+      "spoken_sentences": [
+        "해서 우리 재산법이라는 거는 어떤 값을 가지고 우리가 홈 주소로 삼는다?",
+        "우리 나머지 값이요.",
+        "나머지 값을 이용해서 우리가 홈 주소를 결정하는 그런 방식 그게 재산법이에요.",
+        "해서 우리 해시 테이블에, 해시라는 그 테이블에 우리 키, 키 주소는 어떻게 계산한다?",
+        "레코드의 키값, 키값을 우리가 Q라는 걸로 나눴을 때 모드 나머지 값을 구해달라 그렇게 해서 주소를 구하는 그런 방식이 우리 재산법이요."
+      ],
+      "spoken_text": "해서 우리 재산법이라는 거는 어떤 값을 가지고 우리가 홈 주소로 삼는다? 우리 나머지 값이요. 나머지 값을 이용해서 우리가 홈 주소를 결정하는 그런 방식 그게 재산법이에요. 해서 우리 해시 테이블에, 해시라는 그 테이블에 우리 키, 키 주소는 어떻게 계산한다? 레코드의 키값, 키값을 우리가 Q라는 걸로 나눴을 때 모드 나머지 값을 구해달라 그렇게 해서 주소를 구하는 그런 방식이 우리 재산법이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "값을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:26",
+      "start_seconds": 73,
+      "end_seconds": 86,
+      "duration_seconds": 13,
+      "timeline_summary": "제곱법(Mid-Square) 설명",
+      "screen_text_lines": [
+        "제곱법(Mid-Square)",
+        "레코드 키 값(K)을 제곱한 후 그 중간 부분의 값을 홈 주소로 삼는 방식."
+      ],
+      "screen_text": "제곱법(Mid-Square)\n레코드 키 값(K)을 제곱한 후 그 중간 부분의 값을 홈 주소로 삼는 방식.",
+      "spoken_sentences": [
+        "그다음에 제곱법이라고 있습니다.",
+        "요 제곱법이라는 거는 우리 레코드의 키값 있죠 그 키값을 제곱을 해요.",
+        "제곱을 한 후에 그 중간 부분의 값을 홈 주소로 삼는 방식.",
+        "그 방식이 우리 제곱법이고요."
+      ],
+      "spoken_text": "그다음에 제곱법이라고 있습니다. 요 제곱법이라는 거는 우리 레코드의 키값 있죠 그 키값을 제곱을 해요. 제곱을 한 후에 그 중간 부분의 값을 홈 주소로 삼는 방식. 그 방식이 우리 제곱법이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Mid-Square",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "제곱법(Mid-Square)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:01:26",
+      "end_time_hms": "00:01:45",
+      "start_seconds": 86,
+      "end_seconds": 105,
+      "duration_seconds": 19,
+      "timeline_summary": "폴딩법(Folding) 설명",
+      "screen_text_lines": [
+        "폴딩법(Folding)",
+        "레코드 키 값(K)을 여러 부분으로 나눈 후 각 부분의 값을 더하거나 XOR(배타적 논리합)한 값을 홈 주소로 삼는 방식."
+      ],
+      "screen_text": "폴딩법(Folding)\n레코드 키 값(K)을 여러 부분으로 나눈 후 각 부분의 값을 더하거나 XOR(배타적 논리합)한 값을 홈 주소로 삼는 방식.",
+      "spoken_sentences": [
+        "그다음에 폴딩법이라고 있습니다.",
+        "얘는 레코드 키값이 있을 때 그 레코드 키값을 여러 부분으로 일단 나눠요.",
+        "나눈 다음에 각 부분, 각 부분마다 그 값들을 더하거나 아니면 XOR 배타적 논리합의 값 그 값을 홈 주소로 삼는 그 방식이 우리 폴딩법이요."
+      ],
+      "spoken_text": "그다음에 폴딩법이라고 있습니다. 얘는 레코드 키값이 있을 때 그 레코드 키값을 여러 부분으로 일단 나눠요. 나눈 다음에 각 부분, 각 부분마다 그 값들을 더하거나 아니면 XOR 배타적 논리합의 값 그 값을 홈 주소로 삼는 그 방식이 우리 폴딩법이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "값을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "Folding",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:01:45",
+      "end_time_hms": "00:02:07",
+      "start_seconds": 105,
+      "end_seconds": 127,
+      "duration_seconds": 22,
+      "timeline_summary": "기수 변환법(Radix) 설명",
+      "screen_text_lines": [
+        "기수 변환법(Radix)",
+        "키 숫자의 진수를 다른 진수로 변환시켜 주소 크기를 초과한 높은 자릿수는 절단하고, 이를 다시 주소 범위에 맞게 조정하는 방법."
+      ],
+      "screen_text": "기수 변환법(Radix)\n키 숫자의 진수를 다른 진수로 변환시켜 주소 크기를 초과한 높은 자릿수는 절단하고, 이를 다시 주소 범위에 맞게 조정하는 방법.",
+      "spoken_sentences": [
+        "그다음에 기수 변환법이요.",
+        "기수 변환법이라는 거는 키 숫자를 우리 다른 진수로 변환을 시켜요.",
+        "진수 변환을 한 다음에 주소 크기를 초과한 그런 높은 자릿수는 전부 다 싹 다 절단해서 없애버리고 이를 다시 가지고 우리가 주소 범위에 맞게 다시 조정하는 그런 방법을 우리가 기수 변환법 그렇게 불러요."
+      ],
+      "spoken_text": "그다음에 기수 변환법이요. 기수 변환법이라는 거는 키 숫자를 우리 다른 진수로 변환을 시켜요. 진수 변환을 한 다음에 주소 크기를 초과한 그런 높은 자릿수는 전부 다 싹 다 절단해서 없애버리고 이를 다시 가지고 우리가 주소 범위에 맞게 다시 조정하는 그런 방법을 우리가 기수 변환법 그렇게 불러요.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_026-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:02:07",
+      "end_time_hms": "00:02:33",
+      "start_seconds": 127,
+      "end_seconds": 153,
+      "duration_seconds": 26,
+      "timeline_summary": "대수적 코딩법(Algebraic Coding) 설명",
+      "screen_text_lines": [
+        "대수적 코딩법(Algebraic Coding)",
+        "키 값을 이루고 있는 각 자리의 비트 수를 한 다항식의 계수로 간주하고, 이 다항식을 해시표의 크기에 의해 정의된 다항식으로 나누어 얻은 나머지 다항식의 계수를 홈 주소로 삼는 방식."
+      ],
+      "screen_text": "대수적 코딩법(Algebraic Coding)\n키 값을 이루고 있는 각 자리의 비트 수를 한 다항식의 계수로 간주하고, 이 다항식을 해시표의 크기에 의해 정의된 다항식으로 나누어 얻은 나머지 다항식의 계수를 홈 주소로 삼는 방식.",
+      "spoken_sentences": [
+        "그다음에 대수적 코딩법이요.",
+        "대수적 코딩법이라는 거는 키값을 이루고 있는 각 자리의 비트수를 한 다항식의 계수로 간주를 합니다.",
+        "한 계수로 간주를 해서 이 다항식을 해시표의 크기에 의해서 정의된 그런 다항식으로 나눠요.",
+        "나눠서 그때 얻은 나머지 그 나머지 나머지 다항식의 계수를 우리가 홈 주소로 삼는 그 방식을 우리가 대수적 코딩법 그렇게 부르고요."
+      ],
+      "spoken_text": "그다음에 대수적 코딩법이요. 대수적 코딩법이라는 거는 키값을 이루고 있는 각 자리의 비트수를 한 다항식의 계수로 간주를 합니다. 한 계수로 간주를 해서 이 다항식을 해시표의 크기에 의해서 정의된 그런 다항식으로 나눠요. 나눠서 그때 얻은 나머지 그 나머지 나머지 다항식의 계수를 우리가 홈 주소로 삼는 그 방식을 우리가 대수적 코딩법 그렇게 부르고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "값을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:02:33",
+      "end_time_hms": "00:02:55",
+      "start_seconds": 153,
+      "end_seconds": 175,
+      "duration_seconds": 22,
+      "timeline_summary": "숫자 분석법(Digit Analysis) 설명",
+      "screen_text_lines": [
+        "숫자 분석법(Digit Analysis, 계수 분석법)",
+        "키 값을 이루는 숫자의 분포를 분석하여 비교적 고른 자리를 필요한 만큼 택해서 홈 주소로 삼는 방식."
+      ],
+      "screen_text": "숫자 분석법(Digit Analysis, 계수 분석법)\n키 값을 이루는 숫자의 분포를 분석하여 비교적 고른 자리를 필요한 만큼 택해서 홈 주소로 삼는 방식.",
+      "spoken_sentences": [
+        "그다음에 숫자 분석법이라고 있습니다.",
+        "얘를 다른 말로 우리가 계수 분석법 그렇게 부르는데 얘는 키값을 이루고 있는 그 숫자들의 분포, 분포를 분석을 해요.",
+        "분석을 한 다음에 비교적 고른 자리를 필요한 만큼 선택해서 그걸 우리가 홈 주소로 삼는 그 방식을 우리가 숫자 분석법, 계수 분석법 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그다음에 숫자 분석법이라고 있습니다. 얘를 다른 말로 우리가 계수 분석법 그렇게 부르는데 얘는 키값을 이루고 있는 그 숫자들의 분포, 분포를 분석을 해요. 분석을 한 다음에 비교적 고른 자리를 필요한 만큼 선택해서 그걸 우리가 홈 주소로 삼는 그 방식을 우리가 숫자 분석법, 계수 분석법 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "값을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0124_124",
+      "subtopic_title": "해싱 함수Hashing Function",
+      "subtopic_sequence": 124,
+      "subtopic_number": "124",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=o7tOJjleuVo",
+      "start_time_hms": "00:02:55",
+      "end_time_hms": "00:03:25",
+      "start_seconds": 175,
+      "end_seconds": 205,
+      "duration_seconds": 30,
+      "timeline_summary": "무작위법(Random) 및 학습 마무리",
+      "screen_text_lines": [
+        "무작위법(Random)",
+        "난수(Random Number)를 발생시켜 나온 값을 홈 주소로 삼는 방식."
+      ],
+      "screen_text": "무작위법(Random)\n난수(Random Number)를 발생시켜 나온 값을 홈 주소로 삼는 방식.",
+      "spoken_sentences": [
+        "그다음에 무작위법이다라고 하게 되면 얘는 난수, 난수라는 거를 발생을 시켜서 그때 나온 그 값을 홈 주소로 삼는 방식을 보고 우리가 무작위법 그렇게 부릅니다.",
+        "이렇게 우리가 해시 함수에서 사용할 수 있는 그런 방식이 여러 가지 방식이 있어요.",
+        "해서 요런 방식들마다 각각 뭐가 뭔지는 여러분들이 구분할 수 있도록 여러분들이 잘 보고 지나가셔야 돼요."
+      ],
+      "spoken_text": "그다음에 무작위법이다라고 하게 되면 얘는 난수, 난수라는 거를 발생을 시켜서 그때 나온 그 값을 홈 주소로 삼는 방식을 보고 우리가 무작위법 그렇게 부릅니다. 이렇게 우리가 해시 함수에서 사용할 수 있는 그런 방식이 여러 가지 방식이 있어요. 해서 요런 방식들마다 각각 뭐가 뭔지는 여러분들이 구분할 수 있도록 여러분들이 잘 보고 지나가셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "삼는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "Random",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "값을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 컬리전 해결 방법에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 컬리전 해결 방법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "해결",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 10,
+      "end_seconds": 26,
+      "duration_seconds": 16,
+      "timeline_summary": "충돌 해결 방법의 세 가지 종류 소개",
+      "screen_text_lines": [
+        "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+        "개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법",
+        "재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법"
+      ],
+      "screen_text": "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법\n개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법\n재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법",
+      "spoken_sentences": [
+        "우리 컬리전 우리 해결 방법에 보게 되면 우리 체이닝이라는 것도 있고요.",
+        "우리 개방 주소법이라는 것도 있고 재해싱이라는 것도 있고 이렇게 크게 세 가지가 있습니다.",
+        "일단은 우리가 해싱, 해싱이 뭔지 그것부터 잠깐 살펴보자고요."
+      ],
+      "spoken_text": "우리 컬리전 우리 해결 방법에 보게 되면 우리 체이닝이라는 것도 있고요. 우리 개방 주소법이라는 것도 있고 재해싱이라는 것도 있고 이렇게 크게 세 가지가 있습니다. 일단은 우리가 해싱, 해싱이 뭔지 그것부터 잠깐 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Rehashing",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "Chaining",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:50",
+      "start_seconds": 26,
+      "end_seconds": 50,
+      "duration_seconds": 24,
+      "timeline_summary": "해싱(Hashing)의 정의 설명",
+      "screen_text_lines": [
+        "※ 해싱(Hashing)은 해시 테이블(Hash Table)이라는 기억공간을 할당하고, 해시 함수(Hash Function)를 이용하여 레코드 키에 대한 해시 테이블 내의 홈 주소(Home Address)를 계산한 후 주어진 레코드를 해당 기억장소에 저장하거나 검색 작업을 수행하는 방식"
+      ],
+      "screen_text": "※ 해싱(Hashing)은 해시 테이블(Hash Table)이라는 기억공간을 할당하고, 해시 함수(Hash Function)를 이용하여 레코드 키에 대한 해시 테이블 내의 홈 주소(Home Address)를 계산한 후 주어진 레코드를 해당 기억장소에 저장하거나 검색 작업을 수행하는 방식",
+      "spoken_sentences": [
+        "우리 해싱이라는 거요.",
+        "해싱이라는 거는 우리 해시 테이블이라는 그 기억 공간을 할당을 하고 해시 함수라는 거를 이용해서 레코드 키에 대한 해시 테이블 내의 홈 주소를 계산을 해요.",
+        "계산한 다음에 주어진 그 레코드를 해당 기억 장소에 저장하거나 검색 작업을 수행하는 그 방식을 보고 우리가 해싱이다 그렇게 불러요."
+      ],
+      "spoken_text": "우리 해싱이라는 거요. 해싱이라는 거는 우리 해시 테이블이라는 그 기억 공간을 할당을 하고 해시 함수라는 거를 이용해서 레코드 키에 대한 해시 테이블 내의 홈 주소를 계산을 해요. 계산한 다음에 주어진 그 레코드를 해당 기억 장소에 저장하거나 검색 작업을 수행하는 그 방식을 보고 우리가 해싱이다 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "Hashing",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:00:51",
+      "end_time_hms": "00:01:14",
+      "start_seconds": 51,
+      "end_seconds": 74,
+      "duration_seconds": 23,
+      "timeline_summary": "해시 테이블(Hash Table)의 정의 설명",
+      "screen_text_lines": [
+        "※ 해싱(Hashing)은 해시 테이블(Hash Table)이라는 기억공간을 할당하고, 해시 함수(Hash Function)를 이용하여 레코드 키에 대한 해시 테이블 내의 홈 주소(Home Address)를 계산한 후 주어진 레코드를 해당 기억장소에 저장하거나 검색 작업을 수행하는 방식",
+        "※ 해시 테이블(Hash Table) - 레코드를 한 개 이상 보관할 수 있는 버킷들로 구성된 기억공간으로, 보조기억장치에 구성할 수도 있고 주기억장치에 구성할 수도 있음."
+      ],
+      "screen_text": "※ 해싱(Hashing)은 해시 테이블(Hash Table)이라는 기억공간을 할당하고, 해시 함수(Hash Function)를 이용하여 레코드 키에 대한 해시 테이블 내의 홈 주소(Home Address)를 계산한 후 주어진 레코드를 해당 기억장소에 저장하거나 검색 작업을 수행하는 방식\n※ 해시 테이블(Hash Table) - 레코드를 한 개 이상 보관할 수 있는 버킷들로 구성된 기억공간으로, 보조기억장치에 구성할 수도 있고 주기억장치에 구성할 수도 있음.",
+      "spoken_sentences": [
+        "그때 지금 여기 봤을 때 우리 해시 테이블이라는 게 났는데 해시 테이블이라는 기억 공간을 할당한다 그랬죠.",
+        "그때 해시 테이블이라는 거는 레코드를 한 개 이상 보관할 수 있는 그런 버킷들로 구성된 기억 공간을 보고 우리가 해시 테이블이다 그렇게 불러요.",
+        "이 해시 테이블은 우리가 보조 기억 장치에 구성도 할 수 있고요.",
+        "우리가 주기억 장치로도 구성을 해 줄 수 있어요."
+      ],
+      "spoken_text": "그때 지금 여기 봤을 때 우리 해시 테이블이라는 게 났는데 해시 테이블이라는 기억 공간을 할당한다 그랬죠. 그때 해시 테이블이라는 거는 레코드를 한 개 이상 보관할 수 있는 그런 버킷들로 구성된 기억 공간을 보고 우리가 해시 테이블이다 그렇게 불러요. 이 해시 테이블은 우리가 보조 기억 장치에 구성도 할 수 있고요. 우리가 주기억 장치로도 구성을 해 줄 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Hashing",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:01:15",
+      "end_time_hms": "00:01:24",
+      "start_seconds": 75,
+      "end_seconds": 84,
+      "duration_seconds": 9,
+      "timeline_summary": "해시 테이블 관련 용어 소개",
+      "screen_text_lines": [
+        "버킷(Bucket) - 하나의 주소를 갖는 파일의 한 구역을 의미.",
+        "슬롯(Slot) - 한 개의 레코드를 저장할 수 있는 공간으로 n개의 슬롯이 모여 하나의 버킷을 형성함.",
+        "Collision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상.",
+        "Synonym - 충돌로 인해 같은 Home Address를 갖는 레코드들의 집합."
+      ],
+      "screen_text": "버킷(Bucket) - 하나의 주소를 갖는 파일의 한 구역을 의미.\n슬롯(Slot) - 한 개의 레코드를 저장할 수 있는 공간으로 n개의 슬롯이 모여 하나의 버킷을 형성함.\nCollision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상.\nSynonym - 충돌로 인해 같은 Home Address를 갖는 레코드들의 집합.",
+      "spoken_sentences": [
+        "그때 이 해시 테이블에 보게 되면 버킷이다, 슬롯이다, 우리 컬리전이다, 우리 시노님이다, 우리 오버플로우다 해서 이렇게 다섯 가지 그 용어가 나옵니다."
+      ],
+      "spoken_text": "그때 이 해시 테이블에 보게 되면 버킷이다, 슬롯이다, 우리 컬리전이다, 우리 시노님이다, 우리 오버플로우다 해서 이렇게 다섯 가지 그 용어가 나옵니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Bucket",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "Slot",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:31",
+      "start_seconds": 85,
+      "end_seconds": 91,
+      "duration_seconds": 6,
+      "timeline_summary": "버킷(Bucket)의 정의 설명",
+      "screen_text_lines": [
+        "버킷(Bucket) - 하나의 주소를 갖는 파일의 한 구역을 의미."
+      ],
+      "screen_text": "버킷(Bucket) - 하나의 주소를 갖는 파일의 한 구역을 의미.",
+      "spoken_sentences": [
+        "여기서 버킷이라는 거는 하나의 주소를 갖는 그 파일의 한 구역을 보고 우리가 버킷이다 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "여기서 버킷이라는 거는 하나의 주소를 갖는 그 파일의 한 구역을 보고 우리가 버킷이다 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Bucket",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:01:32",
+      "end_time_hms": "00:01:49",
+      "start_seconds": 92,
+      "end_seconds": 109,
+      "duration_seconds": 17,
+      "timeline_summary": "슬롯(Slot)의 정의 설명",
+      "screen_text_lines": [
+        "슬롯(Slot) - 한 개의 레코드를 저장할 수 있는 공간으로 n개의 슬롯이 모여 하나의 버킷을 형성함."
+      ],
+      "screen_text": "슬롯(Slot) - 한 개의 레코드를 저장할 수 있는 공간으로 n개의 슬롯이 모여 하나의 버킷을 형성함.",
+      "spoken_sentences": [
+        "우리 슬롯이라는 거요.",
+        "이 슬롯이라는 거는 한 개의 그 레코드를 저장할 수 있는 그 공간을 보고 얘기하는데 얘는 n개의 그 슬롯이 모여서 하나의 버킷이 형성이 되는 거예요.",
+        "해서 우리 버킷이라는 거는 이 슬롯들의 구성이다 그렇게 생각을 해도 되겠죠."
+      ],
+      "spoken_text": "우리 슬롯이라는 거요. 이 슬롯이라는 거는 한 개의 그 레코드를 저장할 수 있는 그 공간을 보고 얘기하는데 얘는 n개의 그 슬롯이 모여서 하나의 버킷이 형성이 되는 거예요. 해서 우리 버킷이라는 거는 이 슬롯들의 구성이다 그렇게 생각을 해도 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Slot",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:02:13",
+      "start_seconds": 110,
+      "end_seconds": 133,
+      "duration_seconds": 23,
+      "timeline_summary": "컬리전(Collision)의 정의 설명",
+      "screen_text_lines": [
+        "Collision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상."
+      ],
+      "screen_text": "Collision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상.",
+      "spoken_sentences": [
+        "그리고 우리 컬리전이라는 거는 우리 충돌 현상을 보고 얘기하는데 얘는 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는 그런 현상을 보고 얘기해요.",
+        "예를 들어서 사람이 두 명이 있는데 이 두 명은 서로서로 아예 모르는 사람이에요.",
+        "근데 집 주소가 똑같아요.",
+        "그러면 안 되겠죠.",
+        "그런 현상을 보고 우리가 컬리전, 충돌 현상이다 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그리고 우리 컬리전이라는 거는 우리 충돌 현상을 보고 얘기하는데 얘는 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는 그런 현상을 보고 얘기해요. 예를 들어서 사람이 두 명이 있는데 이 두 명은 서로서로 아예 모르는 사람이에요. 근데 집 주소가 똑같아요. 그러면 안 되겠죠. 그런 현상을 보고 우리가 컬리전, 충돌 현상이다 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "충돌 현상",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:02:14",
+      "end_time_hms": "00:02:38",
+      "start_seconds": 134,
+      "end_seconds": 158,
+      "duration_seconds": 24,
+      "timeline_summary": "시노님(Synonym)의 정의 설명",
+      "screen_text_lines": [
+        "Synonym - 충돌로 인해 같은 Home Address를 갖는 레코드들의 집합."
+      ],
+      "screen_text": "Synonym - 충돌로 인해 같은 Home Address를 갖는 레코드들의 집합.",
+      "spoken_sentences": [
+        "그리고 우리 시노님이라는 거요.",
+        "이 시노님이라는 거는 우리 충돌, 충돌로 인해서라고 했어요.",
+        "우리 충돌 현상이 발생하게 되면 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는다 그랬죠.",
+        "해서 충돌이 발생해서 같은 그런 홈 어드레스를 갖는 그런 레코드가 있을 때 그 레코드들의 집합을 보고 우리가 시노님 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그리고 우리 시노님이라는 거요. 이 시노님이라는 거는 우리 충돌, 충돌로 인해서라고 했어요. 우리 충돌 현상이 발생하게 되면 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는다 그랬죠. 해서 충돌이 발생해서 같은 그런 홈 어드레스를 갖는 그런 레코드가 있을 때 그 레코드들의 집합을 보고 우리가 시노님 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "충돌 현상",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:02:39",
+      "end_time_hms": "00:03:03",
+      "start_seconds": 159,
+      "end_seconds": 183,
+      "duration_seconds": 24,
+      "timeline_summary": "오버플로우(Overflow)의 정의 설명",
+      "screen_text_lines": [
+        "Overflow - 계산된 Home Address의 Bucket 내에 저장할 기억공간이 없는 상태, Bucket을 구성하는 Slot이 여러 개일 때 Collision은 발생해도 Overflow는 발생하지 않을 수 있음."
+      ],
+      "screen_text": "Overflow - 계산된 Home Address의 Bucket 내에 저장할 기억공간이 없는 상태, Bucket을 구성하는 Slot이 여러 개일 때 Collision은 발생해도 Overflow는 발생하지 않을 수 있음.",
+      "spoken_sentences": [
+        "그다음에 오버플로우라는 거요.",
+        "오버플로우라는 거는 계산된 그 홈 어드레스의 버킷 내에 버킷 내에 저장할 기억 장소, 기억 공간이 없는 그 상태를 보고 우리가 오버플로우다 그렇게 불러요.",
+        "그때 버킷을 구성하는 그런 슬롯이 만약에 여러 개다 그랬을 때는 컬리전, 컬리전이 발생을 해도 오버플로우는 발생하지 않을 수 있습니다."
+      ],
+      "spoken_text": "그다음에 오버플로우라는 거요. 오버플로우라는 거는 계산된 그 홈 어드레스의 버킷 내에 버킷 내에 저장할 기억 장소, 기억 공간이 없는 그 상태를 보고 우리가 오버플로우다 그렇게 불러요. 그때 버킷을 구성하는 그런 슬롯이 만약에 여러 개다 그랬을 때는 컬리전, 컬리전이 발생을 해도 오버플로우는 발생하지 않을 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "Bucket",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "Slot",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:03:04",
+      "end_time_hms": "00:03:24",
+      "start_seconds": 184,
+      "end_seconds": 204,
+      "duration_seconds": 20,
+      "timeline_summary": "충돌(Collision)의 의미 재강조",
+      "screen_text_lines": [
+        "Collision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상."
+      ],
+      "screen_text": "Collision(충돌 현상) - 서로 다른 두 개 이상의 레코드가 같은 주소를 갖는 현상.",
+      "spoken_sentences": [
+        "그때 지금 우리 컬리전, 우리 충돌 현상에 대해서 나온 거죠.",
+        "이 충돌 현상이라는 거는 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는 그 현상이라 그랬어요.",
+        "해서 전혀 모르는 사람인데 집 주소가 똑같으면 안 된다 그렇게 얘기를 했었는데 그런 현상이 발생했을 때 그때 해결 방법요."
+      ],
+      "spoken_text": "그때 지금 우리 컬리전, 우리 충돌 현상에 대해서 나온 거죠. 이 충돌 현상이라는 거는 서로 다른 두 개 이상의 그 레코드가 같은 주소를 갖는 그 현상이라 그랬어요. 해서 전혀 모르는 사람인데 집 주소가 똑같으면 안 된다 그렇게 얘기를 했었는데 그런 현상이 발생했을 때 그때 해결 방법요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "해결",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:03:25",
+      "end_time_hms": "00:03:39",
+      "start_seconds": 205,
+      "end_seconds": 219,
+      "duration_seconds": 14,
+      "timeline_summary": "체이닝(Chaining) 해결 방법 상세 설명",
+      "screen_text_lines": [
+        "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법"
+      ],
+      "screen_text": "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+      "spoken_sentences": [
+        "그때 첫 번째 체이닝요.",
+        "체이닝이라는 거는 컬리전이 발생을 했어요.",
+        "발생하게 되면 버킷에 할당된 그런 연결 리스트, 링크드 그 리스트에다가 데이터를 저장해 주면 우리 충돌 현상을 해결할 수가 있습니다."
+      ],
+      "spoken_text": "그때 첫 번째 체이닝요. 체이닝이라는 거는 컬리전이 발생을 했어요. 발생하게 되면 버킷에 할당된 그런 연결 리스트, 링크드 그 리스트에다가 데이터를 저장해 주면 우리 충돌 현상을 해결할 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Chaining",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "해결",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:03:40",
+      "end_time_hms": "00:03:53",
+      "start_seconds": 220,
+      "end_seconds": 233,
+      "duration_seconds": 13,
+      "timeline_summary": "개방 주소법(Open Addressing) 해결 방법 상세 설명",
+      "screen_text_lines": [
+        "개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법"
+      ],
+      "screen_text": "개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법",
+      "spoken_sentences": [
+        "그럼 두 번째 방법은 개방 주소법이라는 요 방식요.",
+        "얘는 컬리전에 발생을 했을 때 그때 순차적으로 그 다음 빈 버킷을 찾아서 그곳에다가 데이터를 저장하는 그 방식요."
+      ],
+      "spoken_text": "그럼 두 번째 방법은 개방 주소법이라는 요 방식요. 얘는 컬리전에 발생을 했을 때 그때 순차적으로 그 다음 빈 버킷을 찾아서 그곳에다가 데이터를 저장하는 그 방식요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "해결",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:03:54",
+      "end_time_hms": "00:04:05",
+      "start_seconds": 234,
+      "end_seconds": 245,
+      "duration_seconds": 11,
+      "timeline_summary": "재해싱(Rehashing) 해결 방법 상세 설명",
+      "screen_text_lines": [
+        "재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법"
+      ],
+      "screen_text": "재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법",
+      "spoken_sentences": [
+        "그다음에 세 번째 방법은 재해싱요.",
+        "얘는 컬리전이 발생을 했을 때 새로운 해싱 함수를 새로운 주소 새로운 홈 주소를 다시 계산하는 그 방식입니다."
+      ],
+      "spoken_text": "그다음에 세 번째 방법은 재해싱요. 얘는 컬리전이 발생을 했을 때 새로운 해싱 함수를 새로운 주소 새로운 홈 주소를 다시 계산하는 그 방식입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "Rehashing",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "해결",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "주소를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_026-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 3,
+      "subtopic_id": "0125_125",
+      "subtopic_title": "Collision(충돌 현상) 해결 방법",
+      "subtopic_sequence": 125,
+      "subtopic_number": "125",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R_fnE-rbznc",
+      "start_time_hms": "00:04:06",
+      "end_time_hms": "00:04:45",
+      "start_seconds": 246,
+      "end_seconds": 285,
+      "duration_seconds": 39,
+      "timeline_summary": "충돌 해결 세 가지 방법 최종 정리",
+      "screen_text_lines": [
+        "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법",
+        "개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법",
+        "재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법"
+      ],
+      "screen_text": "체이닝(Chaining) : Collision이 발생하면 버킷에 할당된 연결 리스트(Linked List)에 데이터를 저장하는 방법\n개방 주소법(Open Addressing) : Collision이 발생하면 순차적으로 그 다음 빈 버킷을 찾아 데이터를 저장하는 방법\n재해싱(Rehashing) : Collision이 발생하면 새로운 해싱 함수로 새로운 홈 주소를 구하는 방법",
+      "spoken_sentences": [
+        "해서 지금처럼 이렇게 컬리전이 발생했을 때 그때 해결 방법에는 이렇게 세 가지가 있는데 우리 체이닝이라는 거 뭐다?",
+        "버킷에 할당된 그 링크드 리스트요.",
+        "거기다가 우리 데이터를 저장하는 그 방법이 있고 그리고 개방 주소법이라는 거는 컬리전이 발생했을 때 순차적으로 그 다음 빈 버킷을 버킷을 찾아서 그곳에다가 데이터를 저장하는 그 방법이더라.",
+        "그리고 우리 재해싱이라는 거는 새로운 해싱 함수를 적용시켜서 새로운 홈 주소를 계산하는 그 방식요.",
+        "자 요 내용 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 지금처럼 이렇게 컬리전이 발생했을 때 그때 해결 방법에는 이렇게 세 가지가 있는데 우리 체이닝이라는 거 뭐다? 버킷에 할당된 그 링크드 리스트요. 거기다가 우리 데이터를 저장하는 그 방법이 있고 그리고 개방 주소법이라는 거는 컬리전이 발생했을 때 순차적으로 그 다음 빈 버킷을 버킷을 찾아서 그곳에다가 데이터를 저장하는 그 방법이더라. 그리고 우리 재해싱이라는 거는 새로운 해싱 함수를 적용시켜서 새로운 홈 주소를 계산하는 그 방식요. 자 요 내용 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Collision",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "충돌",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Rehashing",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "Chaining",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2373 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_081",
+    "sequence": 81,
+    "title": "TCP/IP와 네트워크 프로토콜",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 15,
+    "review_count": 11,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_352",
+      "chapter_318",
+      "chapter_321",
+      "chapter_290",
+      "chapter_348",
+      "chapter_145",
+      "chapter_292"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_c6db5a4e05cf34f1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          37
+        ],
+        "page_span": {
+          "start_page": 37,
+          "end_page": 37
+        },
+        "source_explanation": "ARP는 논리적 주소(IP)를 물리적 주소(MAC)로 변환하는 역할을 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)"
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)"
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)"
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "ARP(Address Resolution Protocol)"
+        ],
+        "answer_text": "ARP(Address Resolution Protocol)"
+      },
+      "explanation": {
+        "source_text": "ARP는 논리적 주소(IP)를 물리적 주소(MAC)로 변환하는 역할을 합니다.",
+        "summary": "주소 결정 프로토콜(ARP)의 기능",
+        "why_correct": [
+          "IP 주소를 알고 있을 때 해당 장비의 하드웨어 주소(MAC)를 알아내기 위해 ARP를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "ICMP는 오류 보고 및 진단용입니다.",
+          "IGMP는 멀티캐스트 그룹 관리용입니다.",
+          "SNMP는 네트워크 장비 관리용입니다."
+        ],
+        "key_concepts": [
+          "ARP",
+          "RARP (반대 기능)"
+        ],
+        "memory_cues": [
+          "IP to MAC = ARP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. IP 주소를 알고 있을 때 해당 장비의 하드웨어 주소(MAC)를 알아내기 위해 ARP를 사용합니다."
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'ICMP(Internet Control Message Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단용입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'IGMP(Internet Group Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단용입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'SNMP(Simple Network Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단용입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+          "핵심 개념을 떠올립니다. ARP, RARP (반대 기능)",
+          "정답 판단 근거를 적용합니다. IP 주소를 알고 있을 때 해당 장비의 하드웨어 주소(MAC)를 알아내기 위해 ARP를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ICMP는 오류 보고 및 진단용입니다."
+        ],
+        "exam_traps": [
+          "ICMP는 오류 보고 및 진단용입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RARP (반대 기능)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IP to MAC = ARP"
+        ],
+        "detailed_summary": "주소 결정 프로토콜(ARP)의 기능 ARP는 논리적 주소(IP)를 물리적 주소(MAC)로 변환하는 역할을 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. IP 주소를 알고 있을 때 해당 장비의 하드웨어 주소(MAC)를 알아내기 위해 ARP를 사용합니다. 시험 포인트는 ICMP는 오류 보고 및 진단용입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ARP",
+        "IP 주소",
+        "MAC 주소",
+        "프로토콜"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_10c661139c5e6e1a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "전문가의 조언 | 프레임의 전송 및 오류 제어는 데이터 링크 계층의 프로토콜인 HDLC, LAPB, LLC, MAC 등이 수행합니다. TCP는 패킷의 전송 및 오류를 제어하는 전송 계층 프로토콜입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "79. TCP 프로토콜과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다."
+          },
+          {
+            "label": "2",
+            "text": "흐름 제어(Flow Control)의 기능을 수행한다."
+          },
+          {
+            "label": "3",
+            "text": "전이중(Full Duplex) 방식의 양방향 가상회선을 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "전송 데이터와 응답 데이터를 함께 전송할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "인접한 노드 사이의 프레임 전송 및 오류를 제어한다."
+        ],
+        "answer_text": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 프레임의 전송 및 오류 제어는 데이터 링크 계층의 프로토콜인 HDLC, LAPB, LLC, MAC 등이 수행합니다. TCP는 패킷의 전송 및 오류를 제어하는 전송 계층 프로토콜입니다.",
+        "summary": "TCP 프로토콜의 특징과 데이터 링크 계층의 역할을 구분하는 문제입니다.",
+        "why_correct": [
+          "'인접한 노드 사이의 프레임 전송'은 2계층(데이터 링크 계층)의 역할이며, TCP는 4계층(전송 계층)에서 종단 간(End-to-End) 신뢰성 있는 전송을 담당합니다."
+        ],
+        "why_others_wrong": [
+          "TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+        ],
+        "key_concepts": [
+          "TCP 특징",
+          "OSI 7계층 역할"
+        ],
+        "memory_cues": [
+          "TCP = 4계층(종단간), 프레임 = 2계층(노드간)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 인접한 노드 사이의 프레임 전송 및 오류를 제어한다.'와 일치합니다. '인접한 노드 사이의 프레임 전송'은 2계층(데이터 링크 계층)의 역할이며, TCP는 4계층(전송 계층)에서 종단 간(End-to-End) 신뢰성 있는 전송을 담당합니다."
+          },
+          {
+            "label": "2",
+            "text": "흐름 제어(Flow Control)의 기능을 수행한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 인접한 노드 사이의 프레임 전송 및 오류를 제어한다.'인데 이 선택지는 '흐름 제어(Flow Control)의 기능을 수행한다.'이므로 일치하지 않습니다. TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+          },
+          {
+            "label": "3",
+            "text": "전이중(Full Duplex) 방식의 양방향 가상회선을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 인접한 노드 사이의 프레임 전송 및 오류를 제어한다.'인데 이 선택지는 '전이중(Full Duplex) 방식의 양방향 가상회선을 제공한다.'이므로 일치하지 않습니다. TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+          },
+          {
+            "label": "4",
+            "text": "전송 데이터와 응답 데이터를 함께 전송할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 인접한 노드 사이의 프레임 전송 및 오류를 제어한다.'인데 이 선택지는 '전송 데이터와 응답 데이터를 함께 전송할 수 있다.'이므로 일치하지 않습니다. TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 79. TCP 프로토콜과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. TCP 특징, OSI 7계층 역할",
+          "정답 판단 근거를 적용합니다. '인접한 노드 사이의 프레임 전송'은 2계층(데이터 링크 계층)의 역할이며, TCP는 4계층(전송 계층)에서 종단 간(End-to-End) 신뢰성 있는 전송을 담당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+        ],
+        "exam_traps": [
+          "TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TCP 특징'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OSI 7계층 역할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TCP = 4계층(종단간), 프레임 = 2계층(노드간)"
+        ],
+        "detailed_summary": "TCP 프로토콜의 특징과 데이터 링크 계층의 역할을 구분하는 문제입니다. 전문가의 조언 | 프레임의 전송 및 오류 제어는 데이터 링크 계층의 프로토콜인 HDLC, LAPB, LLC, MAC 등이 수행합니다. TCP는 패킷의 전송 및 오류를 제어하는 전송 계층 프로토콜입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 79. TCP 프로토콜과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 인접한 노드 사이의 프레임 전송 및 오류를 제어한다.'와 일치합니다. '인접한 노드 사이의 프레임 전송'은 2계층(데이터 링크 계층)의 역할이며, TCP는 4계층(전송 계층)에서 종단 간(End-to-End) 신뢰성 있는 전송을 담당합니다. 시험 포인트는 TCP는 흐름 제어, 전이중 통신, 피기배킹(응답 데이터 동시 전송) 기능을 모두 제공합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "TCP",
+        "전송 계층",
+        "흐름 제어",
+        "전이중 방식"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_57f0bd3d14206e86",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          91
+        ],
+        "page_span": {
+          "start_page": 91,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | HTTP의 잘 알려진(Well Known) 포트 번호는 80입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "61. HTTP의 잘 알려진(Well Known) 포트 번호는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "23"
+          },
+          {
+            "label": "2",
+            "text": "80"
+          },
+          {
+            "label": "3",
+            "text": "53"
+          },
+          {
+            "label": "4",
+            "text": "443"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "80"
+        ],
+        "answer_text": "80"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | HTTP의 잘 알려진(Well Known) 포트 번호는 80입니다.",
+        "summary": "HTTP 프로토콜의 표준 포트 번호를 묻는 문제입니다.",
+        "why_correct": [
+          "HTTP의 기본 Well-known 포트 번호는 80번입니다."
+        ],
+        "why_others_wrong": [
+          "23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+        ],
+        "key_concepts": [
+          "Well-known Port",
+          "HTTP"
+        ],
+        "memory_cues": [
+          "HTTP는 80, HTTPS는 443"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "23",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 80'인데 이 선택지는 '23'이므로 일치하지 않습니다. 23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+          },
+          {
+            "label": "2",
+            "text": "80",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 80'와 일치합니다. HTTP의 기본 Well-known 포트 번호는 80번입니다."
+          },
+          {
+            "label": "3",
+            "text": "53",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 80'인데 이 선택지는 '53'이므로 일치하지 않습니다. 23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+          },
+          {
+            "label": "4",
+            "text": "443",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 80'인데 이 선택지는 '443'이므로 일치하지 않습니다. 23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 61. HTTP의 잘 알려진(Well Known) 포트 번호는?",
+          "핵심 개념을 떠올립니다. Well-known Port, HTTP",
+          "정답 판단 근거를 적용합니다. HTTP의 기본 Well-known 포트 번호는 80번입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+        ],
+        "exam_traps": [
+          "23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Well-known Port'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'HTTP'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HTTP는 80, HTTPS는 443"
+        ],
+        "detailed_summary": "HTTP 프로토콜의 표준 포트 번호를 묻는 문제입니다. 전문가의 조언 | HTTP의 잘 알려진(Well Known) 포트 번호는 80입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 61. HTTP의 잘 알려진(Well Known) 포트 번호는? 정답입니다. 이 선택지는 실제 정답인 '2번 80'와 일치합니다. HTTP의 기본 Well-known 포트 번호는 80번입니다. 시험 포인트는 23번은 Telnet, 53번은 DNS, 443번은 HTTPS 포트입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HTTP",
+        "포트 번호",
+        "Well Known Port",
+        "네트워크"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_234cffd43009c3e3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "ARP(Address Resolution Protocol)는 IP 주소(논리 주소)를 MAC 주소(물리 주소)로 변환하는 프로토콜입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_352"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "78. TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "TCP"
+          },
+          {
+            "label": "2",
+            "text": "ARP"
+          },
+          {
+            "label": "3",
+            "text": "FTP"
+          },
+          {
+            "label": "4",
+            "text": "IP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "ARP"
+        ],
+        "answer_text": "ARP"
+      },
+      "explanation": {
+        "source_text": "ARP(Address Resolution Protocol)는 IP 주소(논리 주소)를 MAC 주소(물리 주소)로 변환하는 프로토콜입니다.",
+        "summary": "네트워크 계층에서 주소 변환을 담당하는 프로토콜을 묻는 문제입니다.",
+        "why_correct": [
+          "ARP는 상대방의 IP 주소를 알고 있을 때 그에 해당하는 하드웨어 주소(MAC)를 알아내기 위해 사용됩니다."
+        ],
+        "why_others_wrong": [
+          "1번 TCP는 전송 계층 프로토콜입니다.",
+          "3번 FTP는 파일 전송 프로토콜입니다.",
+          "4번 IP는 데이터그램 전송을 담당하는 네트워크 계층 프로토콜입니다."
+        ],
+        "key_concepts": [
+          "ARP",
+          "RARP",
+          "MAC Address"
+        ],
+        "memory_cues": [
+          "ARP: IP -> MAC, RARP: MAC -> IP (Reverse)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "TCP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ARP'인데 이 선택지는 'TCP'이므로 일치하지 않습니다. 1번 TCP는 전송 계층 프로토콜입니다. 3번 FTP는 파일 전송 프로토콜입니다."
+          },
+          {
+            "label": "2",
+            "text": "ARP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 ARP'와 일치합니다. ARP는 상대방의 IP 주소를 알고 있을 때 그에 해당하는 하드웨어 주소(MAC)를 알아내기 위해 사용됩니다."
+          },
+          {
+            "label": "3",
+            "text": "FTP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ARP'인데 이 선택지는 'FTP'이므로 일치하지 않습니다. 1번 TCP는 전송 계층 프로토콜입니다. 3번 FTP는 파일 전송 프로토콜입니다."
+          },
+          {
+            "label": "4",
+            "text": "IP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ARP'인데 이 선택지는 'IP'이므로 일치하지 않습니다. 1번 TCP는 전송 계층 프로토콜입니다. 3번 FTP는 파일 전송 프로토콜입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는 프로토콜은?",
+          "핵심 개념을 떠올립니다. ARP, RARP, MAC Address",
+          "정답 판단 근거를 적용합니다. ARP는 상대방의 IP 주소를 알고 있을 때 그에 해당하는 하드웨어 주소(MAC)를 알아내기 위해 사용됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 TCP는 전송 계층 프로토콜입니다."
+        ],
+        "exam_traps": [
+          "1번 TCP는 전송 계층 프로토콜입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RARP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MAC Address'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. ARP: IP -> MAC, RARP: MAC -> IP (Reverse)"
+        ],
+        "detailed_summary": "네트워크 계층에서 주소 변환을 담당하는 프로토콜을 묻는 문제입니다. ARP(Address Resolution Protocol)는 IP 주소(논리 주소)를 MAC 주소(물리 주소)로 변환하는 프로토콜입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. TCP/IP에서 사용되는 논리 주소를 물리 주소로 변환시켜 주는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '2번 ARP'와 일치합니다. ARP는 상대방의 IP 주소를 알고 있을 때 그에 해당하는 하드웨어 주소(MAC)를 알아내기 위해 사용됩니다. 시험 포인트는 1번 TCP는 전송 계층 프로토콜입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "ARP",
+        "IP 주소",
+        "MAC 주소",
+        "주소 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_64fbbb90a109b39d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "TCP 헤더에서 윈도우 크기 필드는 16비트이므로 최대 크기는 65,535(2^16-1) Byte입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_352"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "76. TCP 헤더와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "순서 번호(Sequence Number)는 전달하는 바이트마다 번호가 부여된다."
+          },
+          {
+            "label": "2",
+            "text": "수신 번호 확인(Acknowledgement Number)은 상대편 호스트에서 받으려는 바이트의 번호를 정의한다."
+          },
+          {
+            "label": "3",
+            "text": "체크섬(Checksum)은 데이터를 포함한 세그먼트의 오류를 검사한다."
+          },
+          {
+            "label": "4",
+            "text": "윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다."
+        ],
+        "answer_text": "윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다."
+      },
+      "explanation": {
+        "source_text": "TCP 헤더에서 윈도우 크기 필드는 16비트이므로 최대 크기는 65,535(2^16-1) Byte입니다.",
+        "summary": "TCP 프로토콜 헤더의 각 필드 역할을 묻는 문제입니다.",
+        "why_correct": [
+          "윈도우 크기 필드는 16비트로 구성되어 있어 최대 65,535 바이트까지 표현 가능합니다. 문제의 32767bit는 틀린 설명입니다."
+        ],
+        "why_others_wrong": [
+          "1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다.",
+          "2번: ACK 번호는 다음에 받기를 기대하는 바이트 번호를 의미합니다.",
+          "3번: 체크섬은 헤더와 데이터의 무결성을 검사합니다."
+        ],
+        "key_concepts": [
+          "TCP Header",
+          "Window Size",
+          "Sequence Number"
+        ],
+        "memory_cues": [
+          "TCP 윈도우는 16비트 -> 65535!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "순서 번호(Sequence Number)는 전달하는 바이트마다 번호가 부여된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.'인데 이 선택지는 '순서 번호(Sequence Number)는 전달하는 바이트마다 번호가 부여된다.'이므로 일치하지 않습니다. 1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다. 2번: ACK 번호는 다음에 받기를 기대하는 바이트 번호를 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "수신 번호 확인(Acknowledgement Number)은 상대편 호스트에서 받으려는 바이트의 번호를 정의한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.'인데 이 선택지는 '수신 번호 확인(Acknowledgement Number)은 상대편 호스트에서 받으려는 바이트의 번호를 정의한다.'이므로 일치하지 않습니다. 1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다. 2번: ACK 번호는 다음에 받기를 기대하는 바이트 번호를 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "체크섬(Checksum)은 데이터를 포함한 세그먼트의 오류를 검사한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.'인데 이 선택지는 '체크섬(Checksum)은 데이터를 포함한 세그먼트의 오류를 검사한다.'이므로 일치하지 않습니다. 1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다. 2번: ACK 번호는 다음에 받기를 기대하는 바이트 번호를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.'와 일치합니다. 윈도우 크기 필드는 16비트로 구성되어 있어 최대 65,535 바이트까지 표현 가능합니다. 문제의 32767bit는 틀린 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. TCP 헤더와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. TCP Header, Window Size, Sequence Number",
+          "정답 판단 근거를 적용합니다. 윈도우 크기 필드는 16비트로 구성되어 있어 최대 65,535 바이트까지 표현 가능합니다. 문제의 32767bit는 틀린 설명입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다."
+        ],
+        "exam_traps": [
+          "1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TCP Header'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Window Size'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Sequence Number'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TCP 윈도우는 16비트 -> 65535!"
+        ],
+        "detailed_summary": "TCP 프로토콜 헤더의 각 필드 역할을 묻는 문제입니다. TCP 헤더에서 윈도우 크기 필드는 16비트이므로 최대 크기는 65,535(2^16-1) Byte입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. TCP 헤더와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 윈도우 크기는 송수신 측의 버퍼 크기로 최대 크기는 32767bit이다.'와 일치합니다. 윈도우 크기 필드는 16비트로 구성되어 있어 최대 65,535 바이트까지 표현 가능합니다. 문제의 32767bit는 틀린 설명입니다. 시험 포인트는 1번: TCP는 바이트 스트림 서비스로 바이트마다 순서 번호를 매깁니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "TCP 헤더",
+        "윈도우 크기",
+        "흐름 제어",
+        "체크섬"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5c26422b6c7ea96c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 106
+        },
+        "source_explanation": "MQTT(Message Queuing Telemetry Transport): TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용됨"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리"
+        ],
+        "chapter_label": "정보시스템 구축관리",
+        "chapter_key": "정보시스템 구축관리",
+        "chapter_id": "chapter_318"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "100. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MLFQ"
+          },
+          {
+            "label": "2",
+            "text": "MQTT"
+          },
+          {
+            "label": "3",
+            "text": "Zigbee"
+          },
+          {
+            "label": "4",
+            "text": "MTSP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "MQTT"
+        ],
+        "answer_text": "MQTT"
+      },
+      "explanation": {
+        "source_text": "MQTT(Message Queuing Telemetry Transport): TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용됨",
+        "summary": "IoT 환경에서 널리 쓰이는 발행-구독 기반의 가벼운 프로토콜을 찾는 문제입니다.",
+        "why_correct": [
+          "MQTT는 저전력, 저대역폭 환경에 최적화된 발행-구독(Publish-Subscribe) 방식의 메시징 프로토콜입니다."
+        ],
+        "why_others_wrong": [
+          "MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+        ],
+        "key_concepts": [
+          "MQTT",
+          "Publish-Subscribe",
+          "IoT Protocol"
+        ],
+        "memory_cues": [
+          "IoT 메시징 = MQTT"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MLFQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MLFQ'이므로 일치하지 않습니다. MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+          },
+          {
+            "label": "2",
+            "text": "MQTT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 저전력, 저대역폭 환경에 최적화된 발행-구독(Publish-Subscribe) 방식의 메시징 프로토콜입니다."
+          },
+          {
+            "label": "3",
+            "text": "Zigbee",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'Zigbee'이므로 일치하지 않습니다. MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+          },
+          {
+            "label": "4",
+            "text": "MTSP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MTSP'이므로 일치하지 않습니다. MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+          "핵심 개념을 떠올립니다. MQTT, Publish-Subscribe, IoT Protocol",
+          "정답 판단 근거를 적용합니다. MQTT는 저전력, 저대역폭 환경에 최적화된 발행-구독(Publish-Subscribe) 방식의 메시징 프로토콜입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+        ],
+        "exam_traps": [
+          "MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MQTT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Publish-Subscribe'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IoT Protocol'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IoT 메시징 = MQTT"
+        ],
+        "detailed_summary": "IoT 환경에서 널리 쓰이는 발행-구독 기반의 가벼운 프로토콜을 찾는 문제입니다. MQTT(Message Queuing Telemetry Transport): TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용됨 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 저전력, 저대역폭 환경에 최적화된 발행-구독(Publish-Subscribe) 방식의 메시징 프로토콜입니다. 시험 포인트는 MLFQ는 스케줄링 기법이며, Zigbee는 근거리 무선 통신 표준(물리/데이터링크 계층 위주)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "Subject name inferred from context",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "MQTT",
+        "IoT",
+        "발행-구독",
+        "메시징 프로토콜"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ef7631b55e579926",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          115
+        ],
+        "page_span": {
+          "start_page": 115,
+          "end_page": 115
+        },
+        "source_explanation": "자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 존재하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "정보시스템 구축관리 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_321"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Stop-and-wait ARQ"
+          },
+          {
+            "label": "2",
+            "text": "Go-back-N ARQ"
+          },
+          {
+            "label": "3",
+            "text": "Selective-Repeat ARQ"
+          },
+          {
+            "label": "4",
+            "text": "Non-Acknowledge ARQ"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Non-Acknowledge ARQ"
+        ],
+        "answer_text": "Non-Acknowledge ARQ"
+      },
+      "explanation": {
+        "source_text": "자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 존재하지 않습니다.",
+        "summary": "데이터 전송 중 오류 제어를 위한 ARQ 기법의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "Non-Acknowledge ARQ는 표준적인 ARQ 기법이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "Stop-and-wait는 하나 보내고 확인받는 방식입니다.",
+          "Go-back-N은 오류 발생 이후 모든 프레임을 재전송합니다.",
+          "Selective-Repeat은 오류가 난 프레임만 선택적으로 재전송합니다."
+        ],
+        "key_concepts": [
+          "ARQ",
+          "오류 제어"
+        ],
+        "memory_cues": [
+          "스고셀 (Stop-and-wait, Go-back-N, Selective-Repeat)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Stop-and-wait ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Stop-and-wait ARQ'이므로 일치하지 않습니다. Stop-and-wait는 하나 보내고 확인받는 방식입니다. Go-back-N은 오류 발생 이후 모든 프레임을 재전송합니다."
+          },
+          {
+            "label": "2",
+            "text": "Go-back-N ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Go-back-N ARQ'이므로 일치하지 않습니다. Stop-and-wait는 하나 보내고 확인받는 방식입니다. Go-back-N은 오류 발생 이후 모든 프레임을 재전송합니다."
+          },
+          {
+            "label": "3",
+            "text": "Selective-Repeat ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Selective-Repeat ARQ'이므로 일치하지 않습니다. Stop-and-wait는 하나 보내고 확인받는 방식입니다. Go-back-N은 오류 발생 이후 모든 프레임을 재전송합니다."
+          },
+          {
+            "label": "4",
+            "text": "Non-Acknowledge ARQ",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Non-Acknowledge ARQ'와 일치합니다. Non-Acknowledge ARQ는 표준적인 ARQ 기법이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+          "핵심 개념을 떠올립니다. ARQ, 오류 제어",
+          "정답 판단 근거를 적용합니다. Non-Acknowledge ARQ는 표준적인 ARQ 기법이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Stop-and-wait는 하나 보내고 확인받는 방식입니다."
+        ],
+        "exam_traps": [
+          "Stop-and-wait는 하나 보내고 확인받는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARQ'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오류 제어'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스고셀 (Stop-and-wait, Go-back-N, Selective-Repeat)"
+        ],
+        "detailed_summary": "데이터 전송 중 오류 제어를 위한 ARQ 기법의 종류를 묻는 문제입니다. 자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 존재하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Non-Acknowledge ARQ'와 일치합니다. Non-Acknowledge ARQ는 표준적인 ARQ 기법이 아닙니다. 시험 포인트는 Stop-and-wait는 하나 보내고 확인받는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ARQ",
+        "오류 제어",
+        "Stop-and-wait",
+        "Go-back-N"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f5f9dfb26cbbb74c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "정보시스템 구축관리 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_321"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)"
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)"
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)"
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "ARP(Address Resolution Protocol)"
+        ],
+        "answer_text": "ARP(Address Resolution Protocol)"
+      },
+      "explanation": {
+        "source_text": "IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다.",
+        "summary": "네트워크 계층에서 주소 변환을 담당하는 프로토콜을 묻는 문제입니다.",
+        "why_correct": [
+          "ARP는 논리적 주소인 IP를 물리적 주소인 MAC 주소로 매핑해주는 역할을 합니다."
+        ],
+        "why_others_wrong": [
+          "ICMP는 오류 보고 및 진단 메시지 전송용입니다.",
+          "IGMP는 멀티캐스트 그룹 관리를 위해 사용됩니다.",
+          "SNMP는 네트워크 장비 관리용 프로토콜입니다."
+        ],
+        "key_concepts": [
+          "ARP",
+          "RARP"
+        ],
+        "memory_cues": [
+          "IP -> MAC = ARP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. ARP는 논리적 주소인 IP를 물리적 주소인 MAC 주소로 매핑해주는 역할을 합니다."
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'ICMP(Internet Control Message Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 메시지 전송용입니다. IGMP는 멀티캐스트 그룹 관리를 위해 사용됩니다."
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'IGMP(Internet Group Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 메시지 전송용입니다. IGMP는 멀티캐스트 그룹 관리를 위해 사용됩니다."
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'SNMP(Simple Network Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 메시지 전송용입니다. IGMP는 멀티캐스트 그룹 관리를 위해 사용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+          "핵심 개념을 떠올립니다. ARP, RARP",
+          "정답 판단 근거를 적용합니다. ARP는 논리적 주소인 IP를 물리적 주소인 MAC 주소로 매핑해주는 역할을 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ICMP는 오류 보고 및 진단 메시지 전송용입니다."
+        ],
+        "exam_traps": [
+          "ICMP는 오류 보고 및 진단 메시지 전송용입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RARP'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IP -> MAC = ARP"
+        ],
+        "detailed_summary": "네트워크 계층에서 주소 변환을 담당하는 프로토콜을 묻는 문제입니다. IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. ARP는 논리적 주소인 IP를 물리적 주소인 MAC 주소로 매핑해주는 역할을 합니다. 시험 포인트는 ICMP는 오류 보고 및 진단 메시지 전송용입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ARP",
+        "IP 주소",
+        "MAC 주소",
+        "주소 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a202e66d5fbf05b2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          118
+        ],
+        "page_span": {
+          "start_page": 118,
+          "end_page": 118
+        },
+        "source_explanation": "MQTT(Message Queuing Telemetry Transport)는 발행-구독 기반의 가벼운 메시징 프로토콜로 IoT 환경에 최적화되어 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "정보시스템 구축 관리 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_290"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MLFQ"
+          },
+          {
+            "label": "2",
+            "text": "MQTT"
+          },
+          {
+            "label": "3",
+            "text": "Zigbee"
+          },
+          {
+            "label": "4",
+            "text": "MTSP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "MQTT"
+        ],
+        "answer_text": "MQTT"
+      },
+      "explanation": {
+        "source_text": "MQTT(Message Queuing Telemetry Transport)는 발행-구독 기반의 가벼운 메시징 프로토콜로 IoT 환경에 최적화되어 있습니다.",
+        "summary": "IoT 환경에서 널리 쓰이는 메시징 프로토콜인 MQTT에 관한 문제입니다.",
+        "why_correct": [
+          "MQTT는 Publish/Subscribe 모델을 사용하여 저전력, 저대역폭 환경에서 효율적으로 동작합니다."
+        ],
+        "why_others_wrong": [
+          "MLFQ는 운영체제의 스케줄링 기법입니다.",
+          "Zigbee는 근거리 무선 통신 표준입니다.",
+          "MTSP는 일반적인 네트워크 프로토콜 용어가 아닙니다."
+        ],
+        "key_concepts": [
+          "MQTT",
+          "Publish-Subscribe"
+        ],
+        "memory_cues": [
+          "IoT 메시징 = MQTT"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MLFQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MLFQ'이므로 일치하지 않습니다. MLFQ는 운영체제의 스케줄링 기법입니다. Zigbee는 근거리 무선 통신 표준입니다."
+          },
+          {
+            "label": "2",
+            "text": "MQTT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 Publish/Subscribe 모델을 사용하여 저전력, 저대역폭 환경에서 효율적으로 동작합니다."
+          },
+          {
+            "label": "3",
+            "text": "Zigbee",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'Zigbee'이므로 일치하지 않습니다. MLFQ는 운영체제의 스케줄링 기법입니다. Zigbee는 근거리 무선 통신 표준입니다."
+          },
+          {
+            "label": "4",
+            "text": "MTSP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MTSP'이므로 일치하지 않습니다. MLFQ는 운영체제의 스케줄링 기법입니다. Zigbee는 근거리 무선 통신 표준입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+          "핵심 개념을 떠올립니다. MQTT, Publish-Subscribe",
+          "정답 판단 근거를 적용합니다. MQTT는 Publish/Subscribe 모델을 사용하여 저전력, 저대역폭 환경에서 효율적으로 동작합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. MLFQ는 운영체제의 스케줄링 기법입니다."
+        ],
+        "exam_traps": [
+          "MLFQ는 운영체제의 스케줄링 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MQTT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Publish-Subscribe'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IoT 메시징 = MQTT"
+        ],
+        "detailed_summary": "IoT 환경에서 널리 쓰이는 메시징 프로토콜인 MQTT에 관한 문제입니다. MQTT(Message Queuing Telemetry Transport)는 발행-구독 기반의 가벼운 메시징 프로토콜로 IoT 환경에 최적화되어 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 Publish/Subscribe 모델을 사용하여 저전력, 저대역폭 환경에서 효율적으로 동작합니다. 시험 포인트는 MLFQ는 운영체제의 스케줄링 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "MQTT",
+        "발행-구독",
+        "IoT 프로토콜",
+        "메시징"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_21b8cbc84bd1b260",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          129
+        ],
+        "page_span": {
+          "start_page": 129,
+          "end_page": 129
+        },
+        "source_explanation": "전문가의 조언 | 자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 없습니다.\n- 자동 반복 요청 방식의 오류 제어에는 Stop-and-Wait(정지-대기) ARQ, Go-Back-N ARQ, Selective-Repeat(선택적 재전송) ARQ, Adaptive(적응적) ARQ가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_352"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "64. 오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Stop-and-wait ARQ"
+          },
+          {
+            "label": "2",
+            "text": "Go-back-N ARQ"
+          },
+          {
+            "label": "3",
+            "text": "Selective-Repeat ARQ"
+          },
+          {
+            "label": "4",
+            "text": "Non-Acknowledge ARQ"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Non-Acknowledge ARQ"
+        ],
+        "answer_text": "Non-Acknowledge ARQ"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 없습니다.\n- 자동 반복 요청 방식의 오류 제어에는 Stop-and-Wait(정지-대기) ARQ, Go-Back-N ARQ, Selective-Repeat(선택적 재전송) ARQ, Adaptive(적응적) ARQ가 있습니다.",
+        "summary": "데이터 통신에서 오류 제어를 위해 사용되는 ARQ 방식의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "Non-Acknowledge ARQ는 표준적인 ARQ 방식에 포함되지 않는 용어입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+        ],
+        "key_concepts": [
+          "ARQ(Automatic Repeat Request): 수신 측에서 오류 발견 시 재전송을 요청하는 방식"
+        ],
+        "memory_cues": [
+          "ARQ 종류: 정지대기, 고백엔, 선택적재전송"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Stop-and-wait ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Stop-and-wait ARQ'이므로 일치하지 않습니다. 1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+          },
+          {
+            "label": "2",
+            "text": "Go-back-N ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Go-back-N ARQ'이므로 일치하지 않습니다. 1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+          },
+          {
+            "label": "3",
+            "text": "Selective-Repeat ARQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Non-Acknowledge ARQ'인데 이 선택지는 'Selective-Repeat ARQ'이므로 일치하지 않습니다. 1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+          },
+          {
+            "label": "4",
+            "text": "Non-Acknowledge ARQ",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Non-Acknowledge ARQ'와 일치합니다. Non-Acknowledge ARQ는 표준적인 ARQ 방식에 포함되지 않는 용어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. 오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은?",
+          "핵심 개념을 떠올립니다. ARQ(Automatic Repeat Request): 수신 측에서 오류 발견 시 재전송을 요청하는 방식",
+          "정답 판단 근거를 적용합니다. Non-Acknowledge ARQ는 표준적인 ARQ 방식에 포함되지 않는 용어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARQ(Automatic Repeat Request): 수신 측에서 오류 발견 시 재전송을 요청하는 방식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. ARQ 종류: 정지대기, 고백엔, 선택적재전송"
+        ],
+        "detailed_summary": "데이터 통신에서 오류 제어를 위해 사용되는 ARQ 방식의 종류를 묻는 문제입니다. 전문가의 조언 | 자동 반복 요청 방식(ARQ) 중 Non-Acknowledge ARQ라는 방식은 없습니다. - 자동 반복 요청 방식의 오류 제어에는 Stop-and-Wait(정지-대기) ARQ, Go-Back-N ARQ, Selective-Repeat(선택적 재전송) ARQ, Adaptive(적응적) ARQ가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. 오류 제어에 사용되는 자동 반복 요청 방식(ARQ)이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Non-Acknowledge ARQ'와 일치합니다. Non-Acknowledge ARQ는 표준적인 ARQ 방식에 포함되지 않는 용어입니다. 시험 포인트는 1, 2, 3번은 모두 실제 사용되는 대표적인 ARQ 오류 제어 기법들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "ARQ",
+        "오류 제어",
+        "Stop-and-wait",
+        "Go-back-N"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9995d8f9d554c242",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          131
+        ],
+        "page_span": {
+          "start_page": 131,
+          "end_page": 131
+        },
+        "source_explanation": "IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "OSI 7계층과 네트워크 장비",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > OSI 7계층과 네트워크 장비 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_348"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)"
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)"
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)"
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "ARP(Address Resolution Protocol)"
+        ],
+        "answer_text": "ARP(Address Resolution Protocol)"
+      },
+      "explanation": {
+        "source_text": "IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다.",
+        "summary": "논리적 주소를 물리적 주소로 변환하는 프로토콜을 찾는 문제입니다.",
+        "why_correct": [
+          "ARP는 IP 주소를 기반으로 해당 장비의 MAC 주소를 찾아내는 프로토콜입니다."
+        ],
+        "why_others_wrong": [
+          "ICMP는 오류 보고 및 진단 프로토콜입니다.",
+          "IGMP는 멀티캐스트 그룹 관리용입니다.",
+          "SNMP는 네트워크 관리용 프로토콜입니다."
+        ],
+        "key_concepts": [
+          "ARP",
+          "MAC 주소",
+          "IP 주소"
+        ],
+        "memory_cues": [
+          "A-R-P: Address(IP)를 Real(MAC)로 P(풀어준다)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ARP(Address Resolution Protocol)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. ARP는 IP 주소를 기반으로 해당 장비의 MAC 주소를 찾아내는 프로토콜입니다."
+          },
+          {
+            "label": "2",
+            "text": "ICMP(Internet Control Message Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'ICMP(Internet Control Message Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 프로토콜입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          },
+          {
+            "label": "3",
+            "text": "IGMP(Internet Group Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'IGMP(Internet Group Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 프로토콜입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          },
+          {
+            "label": "4",
+            "text": "SNMP(Simple Network Management Protocol)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ARP(Address Resolution Protocol)'인데 이 선택지는 'SNMP(Simple Network Management Protocol)'이므로 일치하지 않습니다. ICMP는 오류 보고 및 진단 프로토콜입니다. IGMP는 멀티캐스트 그룹 관리용입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은?",
+          "핵심 개념을 떠올립니다. ARP, MAC 주소, IP 주소",
+          "정답 판단 근거를 적용합니다. ARP는 IP 주소를 기반으로 해당 장비의 MAC 주소를 찾아내는 프로토콜입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ICMP는 오류 보고 및 진단 프로토콜입니다."
+        ],
+        "exam_traps": [
+          "ICMP는 오류 보고 및 진단 프로토콜입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MAC 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IP 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A-R-P: Address(IP)를 Real(MAC)로 P(풀어준다)"
+        ],
+        "detailed_summary": "논리적 주소를 물리적 주소로 변환하는 프로토콜을 찾는 문제입니다. IP 주소를 호스트와 연결된 네트워크 접속 장치의 물리적 주소(MAC)로 변환하는 것은 ARP의 기능입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 동일한 네트워크에 있는 목적지 호스트로 IP 패킷을 직접 전달할 수 있도록 IP 주소를 MAC 주소로 변환하는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '1번 ARP(Address Resolution Protocol)'와 일치합니다. ARP는 IP 주소를 기반으로 해당 장비의 MAC 주소를 찾아내는 프로토콜입니다. 시험 포인트는 ICMP는 오류 보고 및 진단 프로토콜입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "ARP",
+        "IP 주소",
+        "MAC 주소",
+        "주소 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_dd9370457e9ed793",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          131
+        ],
+        "page_span": {
+          "start_page": 131,
+          "end_page": 131
+        },
+        "source_explanation": "TCP 프로토콜은 패킷 단위의 스트림(Stream) 전송 기능을 제공합니다. (실제 전송 단위는 세그먼트입니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "OSI 7계층과 네트워크 장비",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > OSI 7계층과 네트워크 장비 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_348"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "TCP에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "프레임을 전송 단위로 한다."
+          },
+          {
+            "label": "2",
+            "text": "요청과 응답을 동시에 주고 받는 전이중 연결 방식을 사용한다."
+          },
+          {
+            "label": "3",
+            "text": "순서 제어, 오류 제어, 흐름 제어 기능을 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "투명성이 보장되는 통신을 제공한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "프레임을 전송 단위로 한다."
+        ],
+        "answer_text": "프레임을 전송 단위로 한다."
+      },
+      "explanation": {
+        "source_text": "TCP 프로토콜은 패킷 단위의 스트림(Stream) 전송 기능을 제공합니다. (실제 전송 단위는 세그먼트입니다.)",
+        "summary": "TCP 프로토콜의 주요 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "TCP의 전송 단위는 세그먼트(Segment)입니다. 프레임(Frame)은 데이터 링크 계층의 전송 단위입니다."
+        ],
+        "why_others_wrong": [
+          "TCP는 전이중(Full-Duplex) 방식입니다.",
+          "신뢰성 있는 전송을 위해 순서, 오류, 흐름 제어를 수행합니다.",
+          "상위 계층에 통신 세부 사항을 숨기는 투명성을 제공합니다."
+        ],
+        "key_concepts": [
+          "TCP",
+          "세그먼트",
+          "전이중"
+        ],
+        "memory_cues": [
+          "T-S (TCP-Segment), D-F (DataLink-Frame)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "프레임을 전송 단위로 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 프레임을 전송 단위로 한다.'와 일치합니다. TCP의 전송 단위는 세그먼트(Segment)입니다. 프레임(Frame)은 데이터 링크 계층의 전송 단위입니다."
+          },
+          {
+            "label": "2",
+            "text": "요청과 응답을 동시에 주고 받는 전이중 연결 방식을 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 프레임을 전송 단위로 한다.'인데 이 선택지는 '요청과 응답을 동시에 주고 받는 전이중 연결 방식을 사용한다.'이므로 일치하지 않습니다. TCP는 전이중(Full-Duplex) 방식입니다. 신뢰성 있는 전송을 위해 순서, 오류, 흐름 제어를 수행합니다."
+          },
+          {
+            "label": "3",
+            "text": "순서 제어, 오류 제어, 흐름 제어 기능을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 프레임을 전송 단위로 한다.'인데 이 선택지는 '순서 제어, 오류 제어, 흐름 제어 기능을 제공한다.'이므로 일치하지 않습니다. TCP는 전이중(Full-Duplex) 방식입니다. 신뢰성 있는 전송을 위해 순서, 오류, 흐름 제어를 수행합니다."
+          },
+          {
+            "label": "4",
+            "text": "투명성이 보장되는 통신을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 프레임을 전송 단위로 한다.'인데 이 선택지는 '투명성이 보장되는 통신을 제공한다.'이므로 일치하지 않습니다. TCP는 전이중(Full-Duplex) 방식입니다. 신뢰성 있는 전송을 위해 순서, 오류, 흐름 제어를 수행합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. TCP, 세그먼트, 전이중",
+          "정답 판단 근거를 적용합니다. TCP의 전송 단위는 세그먼트(Segment)입니다. 프레임(Frame)은 데이터 링크 계층의 전송 단위입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. TCP는 전이중(Full-Duplex) 방식입니다."
+        ],
+        "exam_traps": [
+          "TCP는 전이중(Full-Duplex) 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TCP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '세그먼트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '전이중'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. T-S (TCP-Segment), D-F (DataLink-Frame)"
+        ],
+        "detailed_summary": "TCP 프로토콜의 주요 특징을 묻는 문제입니다. TCP 프로토콜은 패킷 단위의 스트림(Stream) 전송 기능을 제공합니다. (실제 전송 단위는 세그먼트입니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 프레임을 전송 단위로 한다.'와 일치합니다. TCP의 전송 단위는 세그먼트(Segment)입니다. 프레임(Frame)은 데이터 링크 계층의 전송 단위입니다. 시험 포인트는 TCP는 전이중(Full-Duplex) 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "TCP",
+        "전송 단위",
+        "세그먼트",
+        "전이중"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ba75b87c5989404d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "문제에 제시된 내용은 MQTT(Message Queuing Telemetry Transport)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MLFQ"
+          },
+          {
+            "label": "2",
+            "text": "MQTT"
+          },
+          {
+            "label": "3",
+            "text": "Zigbee"
+          },
+          {
+            "label": "4",
+            "text": "MTSP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "MQTT"
+        ],
+        "answer_text": "MQTT"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 MQTT(Message Queuing Telemetry Transport)에 대한 설명입니다.",
+        "summary": "IoT 환경에서 저전력, 저대역폭 통신을 위해 널리 쓰이는 메시징 프로토콜을 묻는 문제입니다.",
+        "why_correct": [
+          "MQTT는 발행-구독(Publish-Subscribe) 모델을 사용하는 가벼운 메시징 프로토콜로 IoT 기기 간 통신에 최적화되어 있습니다."
+        ],
+        "why_others_wrong": [
+          "MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+        ],
+        "key_concepts": [
+          "MQTT",
+          "발행-구독 모델",
+          "IoT 프로토콜"
+        ],
+        "memory_cues": [
+          "IoT 메시징 -> MQTT"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MLFQ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MLFQ'이므로 일치하지 않습니다. MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+          },
+          {
+            "label": "2",
+            "text": "MQTT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 발행-구독(Publish-Subscribe) 모델을 사용하는 가벼운 메시징 프로토콜로 IoT 기기 간 통신에 최적화되어 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "Zigbee",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'Zigbee'이므로 일치하지 않습니다. MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+          },
+          {
+            "label": "4",
+            "text": "MTSP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 MQTT'인데 이 선택지는 'MTSP'이므로 일치하지 않습니다. MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은?",
+          "핵심 개념을 떠올립니다. MQTT, 발행-구독 모델, IoT 프로토콜",
+          "정답 판단 근거를 적용합니다. MQTT는 발행-구독(Publish-Subscribe) 모델을 사용하는 가벼운 메시징 프로토콜로 IoT 기기 간 통신에 최적화되어 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+        ],
+        "exam_traps": [
+          "MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MQTT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '발행-구독 모델'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IoT 프로토콜'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IoT 메시징 -> MQTT"
+        ],
+        "detailed_summary": "IoT 환경에서 저전력, 저대역폭 통신을 위해 널리 쓰이는 메시징 프로토콜을 묻는 문제입니다. 문제에 제시된 내용은 MQTT(Message Queuing Telemetry Transport)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 기반 네트워크에서 동작하는 발행-구독 기반의 메시징 프로토콜로 최근 IoT 환경에서 자주 사용되고 있는 프로토콜은? 정답입니다. 이 선택지는 실제 정답인 '2번 MQTT'와 일치합니다. MQTT는 발행-구독(Publish-Subscribe) 모델을 사용하는 가벼운 메시징 프로토콜로 IoT 기기 간 통신에 최적화되어 있습니다. 시험 포인트는 MLFQ는 스케줄링 알고리즘, Zigbee는 근거리 무선 통신 기술 표준입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "MQTT",
+        "IoT",
+        "발행-구독",
+        "메시징 프로토콜"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_60f0cbdf9b404887",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          157
+        ],
+        "page_span": {
+          "start_page": 157,
+          "end_page": 157
+        },
+        "source_explanation": "UTP 53번 포트는 DNS에서 사용하는 포트입니다. (SNMP는 일반적으로 UDP 161, 162번 포트를 사용합니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "네트워크"
+        ],
+        "chapter_label": "네트워크",
+        "chapter_key": "정보시스템 구축 관리 > 네트워크",
+        "chapter_id": "chapter_292"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 94.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "99. 다음에 제시된 프로토콜과 포트의 연결이 잘못된 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "UTP 53 포트 - SNMP"
+          },
+          {
+            "label": "2",
+            "text": "TCP 23 포트 - Telnet"
+          },
+          {
+            "label": "3",
+            "text": "UDP 69 포트 - TFTP"
+          },
+          {
+            "label": "4",
+            "text": "UTP 111 포트 - RPC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "UTP 53 포트 - SNMP"
+        ],
+        "answer_text": "UTP 53 포트 - SNMP"
+      },
+      "explanation": {
+        "source_text": "UTP 53번 포트는 DNS에서 사용하는 포트입니다. (SNMP는 일반적으로 UDP 161, 162번 포트를 사용합니다.)",
+        "summary": "주요 네트워크 서비스의 표준 포트 번호를 묻는 문제입니다.",
+        "why_correct": [
+          "53번 포트는 DNS(Domain Name System)를 위한 포트이며, SNMP는 161/162번을 사용합니다."
+        ],
+        "why_others_wrong": [
+          "Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+        ],
+        "key_concepts": [
+          "Well-known Ports",
+          "DNS",
+          "SNMP"
+        ],
+        "memory_cues": [
+          "DNS = 53 (오삼불고기 먹으며 도메인 검색)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "UTP 53 포트 - SNMP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 UTP 53 포트 - SNMP'와 일치합니다. 53번 포트는 DNS(Domain Name System)를 위한 포트이며, SNMP는 161/162번을 사용합니다."
+          },
+          {
+            "label": "2",
+            "text": "TCP 23 포트 - Telnet",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UTP 53 포트 - SNMP'인데 이 선택지는 'TCP 23 포트 - Telnet'이므로 일치하지 않습니다. Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+          },
+          {
+            "label": "3",
+            "text": "UDP 69 포트 - TFTP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UTP 53 포트 - SNMP'인데 이 선택지는 'UDP 69 포트 - TFTP'이므로 일치하지 않습니다. Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+          },
+          {
+            "label": "4",
+            "text": "UTP 111 포트 - RPC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UTP 53 포트 - SNMP'인데 이 선택지는 'UTP 111 포트 - RPC'이므로 일치하지 않습니다. Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 다음에 제시된 프로토콜과 포트의 연결이 잘못된 것은?",
+          "핵심 개념을 떠올립니다. Well-known Ports, DNS, SNMP",
+          "정답 판단 근거를 적용합니다. 53번 포트는 DNS(Domain Name System)를 위한 포트이며, SNMP는 161/162번을 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+        ],
+        "exam_traps": [
+          "Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Well-known Ports'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DNS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SNMP'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DNS = 53 (오삼불고기 먹으며 도메인 검색)"
+        ],
+        "detailed_summary": "주요 네트워크 서비스의 표준 포트 번호를 묻는 문제입니다. UTP 53번 포트는 DNS에서 사용하는 포트입니다. (SNMP는 일반적으로 UDP 161, 162번 포트를 사용합니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 다음에 제시된 프로토콜과 포트의 연결이 잘못된 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 UTP 53 포트 - SNMP'와 일치합니다. 53번 포트는 DNS(Domain Name System)를 위한 포트이며, SNMP는 161/162번을 사용합니다. 시험 포인트는 Telnet(23), TFTP(69), RPC(111)의 포트 연결은 표준 규격에 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty: 'UTP' in the choices is likely a typo for 'UDP' in the original source text.",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "프로토콜",
+        "포트 번호",
+        "DNS",
+        "SNMP",
+        "Telnet"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5bb05327e01b6844",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          173
+        ],
+        "page_span": {
+          "start_page": 173,
+          "end_page": 173
+        },
+        "source_explanation": "TCP(Transmission Control Protocol)는 전송(Transport) 계층의 대표적인 프로토콜입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "TCP/IP와 네트워크 프로토콜"
+        ],
+        "chapter_label": "TCP/IP와 네트워크 프로토콜",
+        "chapter_key": "프로그래밍 언어 활용 > TCP/IP와 네트워크 프로토콜",
+        "chapter_id": "chapter_352"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_081",
+        "topic_title": "TCP/IP와 네트워크 프로토콜",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "TCP/IP와 네트워크 프로토콜",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "TCP/IP 프로토콜에서 TCP가 해당하는 계층은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "데이터 링크 계층"
+          },
+          {
+            "label": "2",
+            "text": "네트워크 계층"
+          },
+          {
+            "label": "3",
+            "text": "트랜스포트 계층"
+          },
+          {
+            "label": "4",
+            "text": "세션 계층"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "트랜스포트 계층"
+        ],
+        "answer_text": "트랜스포트 계층"
+      },
+      "explanation": {
+        "source_text": "TCP(Transmission Control Protocol)는 전송(Transport) 계층의 대표적인 프로토콜입니다.",
+        "summary": "TCP/IP 4계층 모델에서 특정 프로토콜의 위치를 묻는 기초 문제입니다.",
+        "why_correct": [
+          "TCP는 종단 간 신뢰성 있는 데이터 전송을 담당하는 전송(Transport) 계층 프로토콜입니다."
+        ],
+        "why_others_wrong": [
+          "데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+        ],
+        "key_concepts": [
+          "TCP/IP 계층 구조",
+          "전송 계층"
+        ],
+        "memory_cues": [
+          "TCP의 T는 Transport의 T"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "데이터 링크 계층",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 트랜스포트 계층'인데 이 선택지는 '데이터 링크 계층'이므로 일치하지 않습니다. 데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+          },
+          {
+            "label": "2",
+            "text": "네트워크 계층",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 트랜스포트 계층'인데 이 선택지는 '네트워크 계층'이므로 일치하지 않습니다. 데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+          },
+          {
+            "label": "3",
+            "text": "트랜스포트 계층",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 트랜스포트 계층'와 일치합니다. TCP는 종단 간 신뢰성 있는 데이터 전송을 담당하는 전송(Transport) 계층 프로토콜입니다."
+          },
+          {
+            "label": "4",
+            "text": "세션 계층",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 트랜스포트 계층'인데 이 선택지는 '세션 계층'이므로 일치하지 않습니다. 데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 프로토콜에서 TCP가 해당하는 계층은?",
+          "핵심 개념을 떠올립니다. TCP/IP 계층 구조, 전송 계층",
+          "정답 판단 근거를 적용합니다. TCP는 종단 간 신뢰성 있는 데이터 전송을 담당하는 전송(Transport) 계층 프로토콜입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+        ],
+        "exam_traps": [
+          "데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TCP/IP 계층 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '전송 계층'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TCP의 T는 Transport의 T"
+        ],
+        "detailed_summary": "TCP/IP 4계층 모델에서 특정 프로토콜의 위치를 묻는 기초 문제입니다. TCP(Transmission Control Protocol)는 전송(Transport) 계층의 대표적인 프로토콜입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. TCP/IP 프로토콜에서 TCP가 해당하는 계층은? 정답입니다. 이 선택지는 실제 정답인 '3번 트랜스포트 계층'와 일치합니다. TCP는 종단 간 신뢰성 있는 데이터 전송을 담당하는 전송(Transport) 계층 프로토콜입니다. 시험 포인트는 데이터 링크 계층은 이더넷 등, 네트워크 계층은 IP, 세션 계층은 OSI 7계층 모델의 상위 계층입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "TCP",
+        "TCP/IP",
+        "전송 계층",
+        "Transport Layer"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

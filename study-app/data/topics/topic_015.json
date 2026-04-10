@@ -1,0 +1,2932 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_015",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 4,
+    "source_sequences": [
+      59,
+      60,
+      61,
+      62
+    ],
+    "source_lecture_ids": [
+      "0059_59",
+      "0060_60",
+      "0061_61",
+      "0062_62"
+    ],
+    "source_titles": [
+      "상위 설계와 하위 설계",
+      "모듈화",
+      "추상화의 유형",
+      "정보은닉"
+    ],
+    "keywords": [
+      "상위",
+      "설계와",
+      "하위",
+      "설계",
+      "모듈화"
+    ],
+    "highlight_keywords": [
+      "설계",
+      "상위",
+      "하위",
+      "별칭",
+      "상위 설계와 하위 설계",
+      "모듈화(Modularity)",
+      "모듈",
+      "기능들을",
+      "너무",
+      "공통"
+    ],
+    "secondary_keywords": [
+      "상위 설계",
+      "하위 설계",
+      "구조",
+      "상위 설계의 특징과 세부 목록",
+      "하위 설계의 특징과 세부 목록",
+      "소프트웨어 설계 단계의 구분",
+      "작게",
+      "크게",
+      "재사용",
+      "시스템의",
+      "나누는",
+      "단위로"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0059_59",
+      "sequence": 59,
+      "number": "59",
+      "course_code": "350059",
+      "title": "상위 설계와 하위 설계",
+      "duration_seconds": 82,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=tUhw-Uj96Jw",
+      "segment_count": 4,
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "tokens": [
+            "설계"
+          ],
+          "score": 31,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "상위",
+          "tokens": [
+            "상위"
+          ],
+          "score": 23,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "하위",
+          "tokens": [
+            "하위"
+          ],
+          "score": 22,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "별칭",
+          "tokens": [
+            "별칭"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "상위 설계와 하위 설계",
+          "tokens": [
+            "상위",
+            "설계와",
+            "하위",
+            "설계"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "상위 설계",
+          "tokens": [
+            "상위",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "하위 설계",
+          "tokens": [
+            "하위",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "구조",
+          "tokens": [
+            "구조"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "상위 설계의 특징과 세부 목록",
+          "tokens": [
+            "상위",
+            "설계의",
+            "특징과",
+            "세부",
+            "목록"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "하위 설계의 특징과 세부 목록",
+          "tokens": [
+            "하위",
+            "설계의",
+            "특징과",
+            "세부",
+            "목록"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "소프트웨어 설계 단계의 구분",
+          "tokens": [
+            "소프트웨어",
+            "설계",
+            "단계의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_015-subtopic-001-source-seg-001::01",
+          "prompt": "소프트웨어 개발의 설계 단계는 크게 ______로 구분할 수 있음",
+          "answer": "상위 설계와 하위 설계",
+          "original": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음",
+          "keyword": "상위 설계와 하위 설계",
+          "source_segment_id": "topic_015-subtopic-001-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '상위 설계와 하위 설계'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-001-source-seg-001::02",
+          "prompt": "소프트웨어 개발의 설계 단계는 크게 ______와 하위 설계로 구분할 수 있음",
+          "answer": "상위 설계",
+          "original": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음",
+          "keyword": "상위 설계",
+          "source_segment_id": "topic_015-subtopic-001-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '상위 설계'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-001-source-seg-001::03",
+          "prompt": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 ______로 구분할 수 있음",
+          "answer": "하위 설계",
+          "original": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음",
+          "keyword": "하위 설계",
+          "source_segment_id": "topic_015-subtopic-001-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '하위 설계'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0060_60",
+      "sequence": 60,
+      "number": "60",
+      "course_code": "350060",
+      "title": "모듈화",
+      "duration_seconds": 232,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "segment_count": 11,
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "tokens": [
+            "모듈화",
+            "Modularity"
+          ],
+          "score": 88,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "모듈",
+          "tokens": [
+            "모듈"
+          ],
+          "score": 58,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능들을",
+          "tokens": [
+            "기능들을"
+          ],
+          "score": 43,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "너무",
+          "tokens": [
+            "너무"
+          ],
+          "score": 31,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "공통",
+          "tokens": [
+            "공통"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "작게",
+          "tokens": [
+            "작게"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "크게",
+          "tokens": [
+            "크게"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "재사용",
+          "tokens": [
+            "재사용"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시스템의",
+          "tokens": [
+            "시스템의"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "나누는",
+          "tokens": [
+            "나누는"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단위로",
+          "tokens": [
+            "단위로"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_015-subtopic-002-source-seg-002::01",
+          "prompt": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 ______ 모듈 단위로 나누는 것을 의미함.",
+          "answer": "기능들을",
+          "original": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "keyword": "기능들을",
+          "source_segment_id": "topic_015-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '기능들을'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-002-source-seg-002::02",
+          "prompt": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 ______, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "answer": "재사용",
+          "original": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "keyword": "재사용",
+          "source_segment_id": "topic_015-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '재사용'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-002-source-seg-002::03",
+          "prompt": "모듈화란 소프트웨어의 성능을 향상시키거나 ______ 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "answer": "시스템의",
+          "original": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "keyword": "시스템의",
+          "source_segment_id": "topic_015-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '시스템의'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-002-source-seg-002::04",
+          "prompt": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 ______ 것을 의미함.",
+          "answer": "나누는",
+          "original": "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+          "keyword": "나누는",
+          "source_segment_id": "topic_015-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '나누는'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0061_61",
+      "sequence": 61,
+      "number": "61",
+      "course_code": "350061",
+      "title": "추상화의 유형",
+      "duration_seconds": 216,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "segment_count": 11,
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "tokens": [
+            "추상화"
+          ],
+          "score": 49,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "추상화(Abstraction)",
+          "tokens": [
+            "추상화",
+            "Abstraction"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터 추상화",
+          "tokens": [
+            "데이터",
+            "추상화"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "제어 추상화",
+          "tokens": [
+            "제어",
+            "추상화"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "추상화의 유형",
+          "tokens": [
+            "추상화의",
+            "유형"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "과정 추상화",
+          "tokens": [
+            "과정",
+            "추상화"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "추상화는",
+          "tokens": [
+            "추상화는"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "추상화 유형 암기 팁 (과, 데, 제)",
+          "tokens": [
+            "추상화",
+            "유형",
+            "암기"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비유를 통한 추상화 정의 재확인",
+          "tokens": [
+            "비유를",
+            "통한",
+            "추상화",
+            "재확인"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "최소 비용 대처 및 시스템 파악",
+          "tokens": [
+            "최소",
+            "비용",
+            "대처",
+            "시스템",
+            "파악"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "유사 모델을 통한 요인 테스트",
+          "tokens": [
+            "유사",
+            "모델을",
+            "통한",
+            "요인",
+            "테스트"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_015-subtopic-003-source-seg-001::01",
+          "prompt": "______ 단원 시작",
+          "answer": "추상화",
+          "original": "추상화 단원 시작",
+          "keyword": "추상화",
+          "source_segment_id": "topic_015-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '추상화'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-003-source-seg-008::02",
+          "prompt": "______다라고 하게 되면, 데이터 추상화는 그냥 구조다 그렇게 생각하시면 돼요.",
+          "answer": "데이터 추상화",
+          "original": "데이터 추상화다라고 하게 되면, 데이터 추상화는 그냥 구조다 그렇게 생각하시면 돼요.",
+          "keyword": "데이터 추상화",
+          "source_segment_id": "topic_015-subtopic-003-source-seg-008",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터 추상화'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-003-source-seg-009::03",
+          "prompt": "그 다음에 ______다라고 하게 되면, 얘는 그냥 이벤트다 그렇게 생각하시면 돼요.",
+          "answer": "제어 추상화",
+          "original": "그 다음에 제어 추상화다라고 하게 되면, 얘는 그냥 이벤트다 그렇게 생각하시면 돼요.",
+          "keyword": "제어 추상화",
+          "source_segment_id": "topic_015-subtopic-003-source-seg-009",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '제어 추상화'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-003-source-seg-011::04",
+          "prompt": "다음 중 ______이 아닌 거 찾아라 그렇게 나왔거든요.",
+          "answer": "추상화의 유형",
+          "original": "다음 중 추상화의 유형이 아닌 거 찾아라 그렇게 나왔거든요.",
+          "keyword": "추상화의 유형",
+          "source_segment_id": "topic_015-subtopic-003-source-seg-011",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '추상화의 유형'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0062_62",
+      "sequence": 62,
+      "number": "62",
+      "course_code": "350062",
+      "title": "정보은닉",
+      "duration_seconds": 174,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "tokens": [
+            "정보"
+          ],
+          "score": 52,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "정보은닉",
+          "tokens": [
+            "정보은닉"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "은닉",
+          "tokens": [
+            "은닉"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "tokens": [
+            "정보",
+            "은닉",
+            "Information",
+            "Hiding"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Information Hiding",
+          "tokens": [
+            "Information",
+            "Hiding"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "모듈이",
+          "tokens": [
+            "모듈이"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "다른",
+          "tokens": [
+            "다른"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "모듈",
+          "tokens": [
+            "모듈"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정보 은닉의 장점 (독립성 및 유지보수성)",
+          "tokens": [
+            "정보",
+            "은닉의",
+            "장점",
+            "독립성",
+            "유지보수성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "모듈 간 커뮤니케이션과 인터페이스의 역할",
+          "tokens": [
+            "모듈",
+            "커뮤니케이션과",
+            "인터페이스의",
+            "역할"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "강의 마무리 및 시험 출제 포인트 강조",
+          "tokens": [
+            "강의",
+            "마무리",
+            "출제",
+            "포인트",
+            "강조"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_015-subtopic-004-source-seg-001::01",
+          "prompt": "정보 은닉(______)",
+          "answer": "Information Hiding",
+          "original": "정보 은닉(Information Hiding)",
+          "keyword": "Information Hiding",
+          "source_segment_id": "topic_015-subtopic-004-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Information Hiding'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_015-subtopic-004-source-seg-002::02",
+          "prompt": "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 ______ 접근하거나 변경하지 못하도록 하는 기법.",
+          "answer": "모듈이",
+          "original": "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법.",
+          "keyword": "모듈이",
+          "source_segment_id": "topic_015-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '모듈이'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_015",
+    "sequence": 15,
+    "number": "15",
+    "title": "상위·하위 설계와 모듈화",
+    "title_raw": "상위·하위 설계와 모듈화",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 4,
+    "source_sequences": [
+      59,
+      60,
+      61,
+      62
+    ],
+    "source_titles": [
+      "상위 설계와 하위 설계",
+      "모듈화",
+      "추상화의 유형",
+      "정보은닉"
+    ],
+    "preview_text": "상위 설계와 하위 설계, 모듈화, 추상화의 유형 등",
+    "segment_count": 35,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 상위 설계와 하위 설계, 모듈화, 추상화의 유형, 정보은닉을 중심으로 정리합니다. 소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 상위 설계와 하위 설계, 모듈화, 추상화의 유형, 정보은닉을 중심으로 정리합니다.",
+      "소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 704,
+    "source_titles_preview": [
+      "상위 설계와 하위 설계",
+      "모듈화",
+      "추상화의 유형"
+    ],
+    "highlight_keywords": [
+      "설계",
+      "상위",
+      "하위",
+      "별칭",
+      "상위 설계와 하위 설계",
+      "모듈화(Modularity)",
+      "모듈",
+      "기능들을",
+      "너무",
+      "공통"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_015-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0059_59",
+      "subtopic_title": "상위 설계와 하위 설계",
+      "subtopic_sequence": 59,
+      "subtopic_number": "59",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=tUhw-Uj96Jw",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 10,
+      "end_seconds": 20,
+      "duration_seconds": 10,
+      "timeline_summary": "소프트웨어 설계 단계의 구분",
+      "screen_text_lines": [
+        "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음",
+        "상위 설계",
+        "하위 설계",
+        "별칭"
+      ],
+      "screen_text": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음\n상위 설계\n하위 설계\n별칭",
+      "spoken_sentences": [
+        "상위 설계 하위 설계요.",
+        "얘는 소프트웨어를 개발할 때 그 전체적인 설계 단계 있죠.",
+        "그 설계 단계를 상위하고 하위하고 크게 두 가지로 구분할 수 있습니다."
+      ],
+      "spoken_text": "상위 설계 하위 설계요. 얘는 소프트웨어를 개발할 때 그 전체적인 설계 단계 있죠. 그 설계 단계를 상위하고 하위하고 크게 두 가지로 구분할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "상위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "하위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "별칭",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0059_59",
+      "subtopic_title": "상위 설계와 하위 설계",
+      "subtopic_sequence": 59,
+      "subtopic_number": "59",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=tUhw-Uj96Jw",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:40",
+      "start_seconds": 20,
+      "end_seconds": 40,
+      "duration_seconds": 20,
+      "timeline_summary": "상위 설계의 특징과 세부 목록",
+      "screen_text_lines": [
+        "아키텍처 설계, 예비 설계",
+        "시스템의 전체적인 구조",
+        "구조, DB, 인터페이스"
+      ],
+      "screen_text": "아키텍처 설계, 예비 설계\n시스템의 전체적인 구조\n구조, DB, 인터페이스",
+      "spoken_sentences": [
+        "그때 상위 설계는 아키텍처 설계하는 거, 예비 설계한다 그렇게 다른 말로 부르기도 하고요.",
+        "얘는 시스템 전체적인 그 구조를 설계하는 거, 그걸 보고 우리가 상위 설계라고 해요.",
+        "그때 세부 목록에 보게 되면 구조, 어떤 구조로 만들 거냐, DB는 어떻게 할 거냐, 인터페이스는 어떻게 할 거냐, 그런 것들을 우리가 설계하는 게 상위 설계고요."
+      ],
+      "spoken_text": "그때 상위 설계는 아키텍처 설계하는 거, 예비 설계한다 그렇게 다른 말로 부르기도 하고요. 얘는 시스템 전체적인 그 구조를 설계하는 거, 그걸 보고 우리가 상위 설계라고 해요. 그때 세부 목록에 보게 되면 구조, 어떤 구조로 만들 거냐, DB는 어떻게 할 거냐, 인터페이스는 어떻게 할 거냐, 그런 것들을 우리가 설계하는 게 상위 설계고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "상위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "상위 설계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "구조",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0059_59",
+      "subtopic_title": "상위 설계와 하위 설계",
+      "subtopic_sequence": 59,
+      "subtopic_number": "59",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=tUhw-Uj96Jw",
+      "start_time_hms": "00:00:40",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 40,
+      "end_seconds": 67,
+      "duration_seconds": 27,
+      "timeline_summary": "하위 설계의 특징과 세부 목록",
+      "screen_text_lines": [
+        "모듈 설계, 상세 설계",
+        "시스템의 내부 구조 및 행위",
+        "컴포넌트, 자료 구조, 알고리즘"
+      ],
+      "screen_text": "모듈 설계, 상세 설계\n시스템의 내부 구조 및 행위\n컴포넌트, 자료 구조, 알고리즘",
+      "spoken_sentences": [
+        "하위 설계다라고 하게 되면 얘는 다른 말로 모듈 설계한다, 상세 설계한다, 그렇게 불러요.",
+        "여기서는 실제 설계 대상이 되는 게 시스템 내부의 구조, 그리고 내부에서 어떻게 움직이게 할 건지, 그런 것들을 설계하는 게 우리 하위 설계요.",
+        "여기 세부 목록에 보게 되면 컴포넌트다, 자료 구조는 어떻게 할 거냐, 알고리즘은 어떤 알고리즘 쓸 거냐, 그런 것들이요.",
+        "그게 하위 설계요."
+      ],
+      "spoken_text": "하위 설계다라고 하게 되면 얘는 다른 말로 모듈 설계한다, 상세 설계한다, 그렇게 불러요. 여기서는 실제 설계 대상이 되는 게 시스템 내부의 구조, 그리고 내부에서 어떻게 움직이게 할 건지, 그런 것들을 설계하는 게 우리 하위 설계요. 여기 세부 목록에 보게 되면 컴포넌트다, 자료 구조는 어떻게 할 거냐, 알고리즘은 어떤 알고리즘 쓸 거냐, 그런 것들이요. 그게 하위 설계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "하위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "하위 설계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "구조",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0059_59",
+      "subtopic_title": "상위 설계와 하위 설계",
+      "subtopic_sequence": 59,
+      "subtopic_number": "59",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=tUhw-Uj96Jw",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:22",
+      "start_seconds": 67,
+      "end_seconds": 82,
+      "duration_seconds": 15,
+      "timeline_summary": "시험 출제 방식 안내",
+      "screen_text_lines": [
+        "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음",
+        "상위 설계",
+        "하위 설계",
+        "별칭"
+      ],
+      "screen_text": "소프트웨어 개발의 설계 단계는 크게 상위 설계와 하위 설계로 구분할 수 있음\n상위 설계\n하위 설계\n별칭",
+      "spoken_sentences": [
+        "해서 상위 설계, 하위 설계하고 얘네들을 막 섞어놓고 상위 설계에 해당하는 거 골라내라, 하위 설계에 해당하는 거 골라내라, 그렇게 나올 수 있겠죠."
+      ],
+      "spoken_text": "해서 상위 설계, 하위 설계하고 얘네들을 막 섞어놓고 상위 설계에 해당하는 거 골라내라, 하위 설계에 해당하는 거 골라내라, 그렇게 나올 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "상위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "하위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "별칭",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 인트로 및 모듈화 주제 소개",
+      "screen_text_lines": [
+        "모듈화(Modularity)"
+      ],
+      "screen_text": "모듈화(Modularity)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 모듈화에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 모듈화에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "모듈화의 기본 개념 설명",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "우리 아키텍처는 기본적으로 모듈을 기반으로 해서 설계를 해요.",
+        "모듈이 아까 부품이라 그랬죠.",
+        "우리가 뭔가를 하나 만들 때 부품이 너무 많아지게 되면 조립이 힘들겠죠."
+      ],
+      "spoken_text": "우리 아키텍처는 기본적으로 모듈을 기반으로 해서 설계를 해요. 모듈이 아까 부품이라 그랬죠. 우리가 뭔가를 하나 만들 때 부품이 너무 많아지게 되면 조립이 힘들겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:35",
+      "start_seconds": 23,
+      "end_seconds": 35,
+      "duration_seconds": 12,
+      "timeline_summary": "모듈 크기 조율의 필요성 도입",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "그렇다고 해서 부품이 너무 작으면 부품을 생산하는 그 자체에 자원이 너무 많이 들어가겠죠.",
+        "해서 우리 모듈의 크기를 크게 할 건지 작게 할 건지 조율이 필요합니다."
+      ],
+      "spoken_text": "그렇다고 해서 부품이 너무 작으면 부품을 생산하는 그 자체에 자원이 너무 많이 들어가겠죠. 해서 우리 모듈의 크기를 크게 할 건지 작게 할 건지 조율이 필요합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:00:35",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 35,
+      "end_seconds": 54,
+      "duration_seconds": 19,
+      "timeline_summary": "화면의 모듈화 정의 낭독 및 강조",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "여기서 모듈화라는 거는 소프트웨어 성능을 향상시키거나 아니면 우리 시스템의 수정, 아니면 재사용, 아니면 유지 관리 이런 것들이 용이하도록 용이하도록 시스템의 기능, 시스템의 기능들을 모듈 단위로, 모듈 단위로 나누는 거, 그걸 보고 우리가 모듈화 그렇게 부릅니다."
+      ],
+      "spoken_text": "여기서 모듈화라는 거는 소프트웨어 성능을 향상시키거나 아니면 우리 시스템의 수정, 아니면 재사용, 아니면 유지 관리 이런 것들이 용이하도록 용이하도록 시스템의 기능, 시스템의 기능들을 모듈 단위로, 모듈 단위로 나누는 거, 그걸 보고 우리가 모듈화 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:26",
+      "start_seconds": 54,
+      "end_seconds": 86,
+      "duration_seconds": 32,
+      "timeline_summary": "웹사이트 인증 기능을 통한 모듈화 예시",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "해서 모듈화는 뭐다?",
+        "시스템의 기능들을 모듈 단위로, 모듈 단위로 나누는 걸 보고 얘기하더라.",
+        "해서 우리가 어떤 특정 홈페이지 같은 데 들어갔을 때 우리 로그인하는 기능 있죠.",
+        "그리고 회원 가입하는 기능도 있고요.",
+        "아이디 찾기하는 그런 기능도 있고 비밀번호 찾기하는 그런 기능도 있습니다.",
+        "그런 각각의 기능들을 따로따로 모듈별로 만들 수도 있는 거고요.",
+        "아니면 그 4가지를 묶어서 하나의 인증 기능이다 그렇게 해서 하나의 모듈로도 우리가 묶을 수 있어요."
+      ],
+      "spoken_text": "해서 모듈화는 뭐다? 시스템의 기능들을 모듈 단위로, 모듈 단위로 나누는 걸 보고 얘기하더라. 해서 우리가 어떤 특정 홈페이지 같은 데 들어갔을 때 우리 로그인하는 기능 있죠. 그리고 회원 가입하는 기능도 있고요. 아이디 찾기하는 그런 기능도 있고 비밀번호 찾기하는 그런 기능도 있습니다. 그런 각각의 기능들을 따로따로 모듈별로 만들 수도 있는 거고요. 아니면 그 4가지를 묶어서 하나의 인증 기능이다 그렇게 해서 하나의 모듈로도 우리가 묶을 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:01:26",
+      "end_time_hms": "00:01:45",
+      "start_seconds": 86,
+      "end_seconds": 105,
+      "duration_seconds": 19,
+      "timeline_summary": "공통 모듈 구성을 통한 재사용성 향상",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "해서 우리가 자주 사용되는 그런 계산식이 됐든 사용자 인증이 됐든 그런 기능들, 그런 기능들을 공통 모듈로 구성을 해서 프로젝트의 재사용성을 향상시킬 수도 있습니다.",
+        "해서 그 4가지 기능을 싹 다 묶어서 사용자 인증 기능이다, 그렇게 해서 하나의 공통 모듈로 개발을 해 놨어요."
+      ],
+      "spoken_text": "해서 우리가 자주 사용되는 그런 계산식이 됐든 사용자 인증이 됐든 그런 기능들, 그런 기능들을 공통 모듈로 구성을 해서 프로젝트의 재사용성을 향상시킬 수도 있습니다. 해서 그 4가지 기능을 싹 다 묶어서 사용자 인증 기능이다, 그렇게 해서 하나의 공통 모듈로 개발을 해 놨어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:01:45",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 105,
+      "end_seconds": 140,
+      "duration_seconds": 35,
+      "timeline_summary": "다른 프로젝트에서의 공통 모듈 재사용 예시",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "그러면 내가 만든 걸 가지고 나중에 다른 소프트웨어를 개발을 할 때도 그걸 가져다가 쓸 수도 있겠죠.",
+        "그리고 자주 사용되는 계산식 같은 것들이 있어요.",
+        "그런 것도 하나의 공통 모듈로 우리가 작성을 해 놓으면 나중에 그런 것들을 다른 프로그램을 또 개발을 할 때도 우리가 또 사용할 수도 있다고요.",
+        "해서 재사용성을 향상시킬 수 있습니다."
+      ],
+      "spoken_text": "그러면 내가 만든 걸 가지고 나중에 다른 소프트웨어를 개발을 할 때도 그걸 가져다가 쓸 수도 있겠죠. 그리고 자주 사용되는 계산식 같은 것들이 있어요. 그런 것도 하나의 공통 모듈로 우리가 작성을 해 놓으면 나중에 그런 것들을 다른 프로그램을 또 개발을 할 때도 우리가 또 사용할 수도 있다고요. 해서 재사용성을 향상시킬 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:02:20",
+      "end_time_hms": "00:02:34",
+      "start_seconds": 140,
+      "end_seconds": 154,
+      "duration_seconds": 14,
+      "timeline_summary": "모듈을 너무 작게 나누었을 때의 단점",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "그때 모듈 크기를 정해야 되는데, 모듈 크기를 너무 작게 나누게 되면 개수가 너무 많아져요.",
+        "너무 많아져서 모듈 간의 나중에 통합 비용이 너무 많이 들고요."
+      ],
+      "spoken_text": "그때 모듈 크기를 정해야 되는데, 모듈 크기를 너무 작게 나누게 되면 개수가 너무 많아져요. 너무 많아져서 모듈 간의 나중에 통합 비용이 너무 많이 들고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:02:34",
+      "end_time_hms": "00:02:46",
+      "start_seconds": 154,
+      "end_seconds": 166,
+      "duration_seconds": 12,
+      "timeline_summary": "모듈을 너무 크게 나누었을 때의 단점",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "그렇다고 해서 너무 크게 나누게 되면 일단 모듈의 개수는 적겠죠.",
+        "모듈의 개수가 작으니까 통합 비용은 적게 들겠지만 모듈 하나 개발할 때 개발 비용이 많이 듭니다."
+      ],
+      "spoken_text": "그렇다고 해서 너무 크게 나누게 되면 일단 모듈의 개수는 적겠죠. 모듈의 개수가 작으니까 통합 비용은 적게 들겠지만 모듈 하나 개발할 때 개발 비용이 많이 듭니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:02:46",
+      "end_time_hms": "00:03:23",
+      "start_seconds": 166,
+      "end_seconds": 203,
+      "duration_seconds": 37,
+      "timeline_summary": "프린터 기능 예시를 통한 적절한 모듈 크기 조율",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "해서 우리가 적당한 크기로 모듈화라는 거를 시켜야 돼요.",
+        "해서 조율이 필요한 거예요.",
+        "해서 예를 들어서 인쇄하는 기능이다라고 하게 되면 인쇄하러 딱 우리가 어떤 특정 프로그램에서 딱 들어가게 되면 그 안에서 우리가 프린터도 어떤 걸로 인쇄할지 선택할 수 있는 그런 기능도 있고요.",
+        "그리고 매수를 지정하는 기능도 있고, 그리고 단면으로 찍을지 양면으로 찍을지, 몇 페이지부터 몇 페이지까지 찍을지 내가 작성한 게 어떻게 인쇄가 되는지 미리 보여주는 그런 기능도 있고 여러 가지 기능들이 있어요.",
+        "그거를 하나로 묶을래 말래, 그런 거를 조율해서 우리가 모듈 단위로 나누는 거 그게 모듈화라는 거예요."
+      ],
+      "spoken_text": "해서 우리가 적당한 크기로 모듈화라는 거를 시켜야 돼요. 해서 조율이 필요한 거예요. 해서 예를 들어서 인쇄하는 기능이다라고 하게 되면 인쇄하러 딱 우리가 어떤 특정 프로그램에서 딱 들어가게 되면 그 안에서 우리가 프린터도 어떤 걸로 인쇄할지 선택할 수 있는 그런 기능도 있고요. 그리고 매수를 지정하는 기능도 있고, 그리고 단면으로 찍을지 양면으로 찍을지, 몇 페이지부터 몇 페이지까지 찍을지 내가 작성한 게 어떻게 인쇄가 되는지 미리 보여주는 그런 기능도 있고 여러 가지 기능들이 있어요. 그거를 하나로 묶을래 말래, 그런 거를 조율해서 우리가 모듈 단위로 나누는 거 그게 모듈화라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0060_60",
+      "subtopic_title": "모듈화",
+      "subtopic_sequence": 60,
+      "subtopic_number": "60",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=hRc7PbiCTIE",
+      "start_time_hms": "00:03:23",
+      "end_time_hms": "00:03:52",
+      "start_seconds": 203,
+      "end_seconds": 232,
+      "duration_seconds": 29,
+      "timeline_summary": "모듈화의 목적과 요약 정리",
+      "screen_text_lines": [
+        "모듈화(Modularity)",
+        "모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.",
+        "자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.",
+        "모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다."
+      ],
+      "screen_text": "모듈화(Modularity)\n모듈화란 소프트웨어의 성능을 향상시키거나 시스템의 수정 및 재사용, 유지 관리 등이 용이하도록 시스템의 기능들을 모듈 단위로 나누는 것을 의미함.\n자주 사용되는 계산식이나 사용자 인증과 같은 기능들을 공통 모듈로 구성하여 프로젝트의 재사용성을 향상시킬 수 있음.\n모듈의 크기를 너무 작게 나누면 개수가 많아져 모듈 간의 통합 비용이 많이 들고, 너무 크게 나누면 개수가 적어 통합 비용은 적게 들지만 모듈 하나의 개발 비용이 많이 든다.",
+      "spoken_sentences": [
+        "해서 우리 모듈화라는 거는 시스템의 기능을 시스템의 기능을 모듈 단위로 나누는 걸 보고 얘기하는데, 그때 모듈 단위로 나눌 때 뭐에 따라 결정한다?",
+        "성능을 향상시키거나 아니면 우리가 시스템을 수정할 때 재사용할 때 유지 관리할 때 최대한 편한 크기로 우리가 모듈화라는 거를 해야 됩니다."
+      ],
+      "spoken_text": "해서 우리 모듈화라는 거는 시스템의 기능을 시스템의 기능을 모듈 단위로 나누는 걸 보고 얘기하는데, 그때 모듈 단위로 나눌 때 뭐에 따라 결정한다? 성능을 향상시키거나 아니면 우리가 시스템을 수정할 때 재사용할 때 유지 관리할 때 최대한 편한 크기로 우리가 모듈화라는 거를 해야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "모듈화(Modularity)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "기능들을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "너무",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "추상화 단원 시작",
+      "screen_text_lines": [
+        "추상화(Abstraction)"
+      ],
+      "screen_text": "추상화(Abstraction)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 추상화에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 추상화에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화(Abstraction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 9,
+      "end_seconds": 20,
+      "duration_seconds": 11,
+      "timeline_summary": "추상화의 기본 개념 설명",
+      "screen_text_lines": [
+        "추상화(Abstraction)",
+        "추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것."
+      ],
+      "screen_text": "추상화(Abstraction)\n추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것.",
+      "spoken_sentences": [
+        "우리 추상화다 그러면 우리 불필요한 거는 전부 다 싹 다 제외를 시키고 필요한 부분만 가지고 모델화 시키는 걸 보고 우리가 추상화 그렇게 얘기를 해요."
+      ],
+      "spoken_text": "우리 추상화다 그러면 우리 불필요한 거는 전부 다 싹 다 제외를 시키고 필요한 부분만 가지고 모델화 시키는 걸 보고 우리가 추상화 그렇게 얘기를 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화(Abstraction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 20,
+      "end_seconds": 48,
+      "duration_seconds": 28,
+      "timeline_summary": "추상화를 옷 정리에 비유",
+      "screen_text_lines": [
+        "추상화(Abstraction)",
+        "추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것."
+      ],
+      "screen_text": "추상화(Abstraction)\n추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것.",
+      "spoken_sentences": [
+        "그냥 쉽게 생각하면은 그냥 우리가 옷 정리한다 그렇게 생각하시면 돼요.",
+        "내가 이사한 다음에 옷 정리를 할 거예요.",
+        "그럼 그 옷에는 봄에 입는 거 여름에 입는 거 겨울에 입는 거 가을에 입는 거 다 섞여 있겠죠.",
+        "그럼 맨 처음에 옷 정리할 때 어떻게 해요.",
+        "일단은 여름옷 겨울옷 크게 그렇게 일단 나누죠.",
+        "그 여름옷들 중에서 반바지다 긴바지다 분류하고 색깔별로 또 분류하고 분류해서 우리가 옷 정리를 하잖아요."
+      ],
+      "spoken_text": "그냥 쉽게 생각하면은 그냥 우리가 옷 정리한다 그렇게 생각하시면 돼요. 내가 이사한 다음에 옷 정리를 할 거예요. 그럼 그 옷에는 봄에 입는 거 여름에 입는 거 겨울에 입는 거 가을에 입는 거 다 섞여 있겠죠. 그럼 맨 처음에 옷 정리할 때 어떻게 해요. 일단은 여름옷 겨울옷 크게 그렇게 일단 나누죠. 그 여름옷들 중에서 반바지다 긴바지다 분류하고 색깔별로 또 분류하고 분류해서 우리가 옷 정리를 하잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화(Abstraction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 48,
+      "end_seconds": 73,
+      "duration_seconds": 25,
+      "timeline_summary": "비유를 통한 추상화 정의 재확인",
+      "screen_text_lines": [
+        "추상화(Abstraction)",
+        "추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것."
+      ],
+      "screen_text": "추상화(Abstraction)\n추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것.",
+      "spoken_sentences": [
+        "그래서 이 추상화라는 거는 일단 크게 먼저 뭔가로 나눠놓고 거기서 세부적으로 다시 분류하는 거 그게 추상화에요 추상화.",
+        "그래서 이 추상화라는 거는 문제 전체적이고 포괄적인 그런 개념을 먼저 설계를 해요.",
+        "먼저 설계해놓고 거기에 맞춰서 차례대로 세분화해서 구체화 시켜 나가는 거.",
+        "그걸 보고 우리가 추상화 그렇게 부릅니다."
+      ],
+      "spoken_text": "그래서 이 추상화라는 거는 일단 크게 먼저 뭔가로 나눠놓고 거기서 세부적으로 다시 분류하는 거 그게 추상화에요 추상화. 그래서 이 추상화라는 거는 문제 전체적이고 포괄적인 그런 개념을 먼저 설계를 해요. 먼저 설계해놓고 거기에 맞춰서 차례대로 세분화해서 구체화 시켜 나가는 거. 그걸 보고 우리가 추상화 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화(Abstraction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        },
+        {
+          "keyword": "비유를 통한 추상화 정의 재확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 73,
+      "end_seconds": 90,
+      "duration_seconds": 17,
+      "timeline_summary": "유사 모델을 통한 요인 테스트",
+      "screen_text_lines": [
+        "인간이 복잡한 문제를 다룰 때 가장 기본적으로 사용하는 방법으로, 완전한 시스템을 구축하기 전에 그 시스템과 유사한 모델을 만들어서 여러 가지 요인들을 테스트할 수 있음."
+      ],
+      "screen_text": "인간이 복잡한 문제를 다룰 때 가장 기본적으로 사용하는 방법으로, 완전한 시스템을 구축하기 전에 그 시스템과 유사한 모델을 만들어서 여러 가지 요인들을 테스트할 수 있음.",
+      "spoken_sentences": [
+        "그래서 우리 인간이 복잡한 문제를 다룰 때 가장 기본적으로 사용하는 그런 방법인데, 얘는 완전한 시스템을 구축하기 전에 완전하게 시스템을 구축하기 전에 그 시스템이랑 유사한 그런 모델을 만들어요.",
+        "만들어서 여러 가지 요인들을 우리가 테스트할 수 있게끔 하는 게 우리 추상화입니다."
+      ],
+      "spoken_text": "그래서 우리 인간이 복잡한 문제를 다룰 때 가장 기본적으로 사용하는 그런 방법인데, 얘는 완전한 시스템을 구축하기 전에 완전하게 시스템을 구축하기 전에 그 시스템이랑 유사한 그런 모델을 만들어요. 만들어서 여러 가지 요인들을 우리가 테스트할 수 있게끔 하는 게 우리 추상화입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "유사 모델을 통한 요인 테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 90,
+      "end_seconds": 103,
+      "duration_seconds": 13,
+      "timeline_summary": "최소 비용 대처 및 시스템 파악",
+      "screen_text_lines": [
+        "추상화는 최소의 비용으로 실제 상황에 대처할 수 있고, 시스템의 구조 및 구성을 대략적으로 파악할 수 있게 해줌."
+      ],
+      "screen_text": "추상화는 최소의 비용으로 실제 상황에 대처할 수 있고, 시스템의 구조 및 구성을 대략적으로 파악할 수 있게 해줌.",
+      "spoken_sentences": [
+        "그래서 우리가 추상화를 하게 되면 최소의 비용으로 실제 상황에 대처를 할 수 있고요, 시스템의 구조가 됐든 구성이 됐든 그런 것들을 대략적으로, 대략적으로 파악할 수 있게 해줍니다."
+      ],
+      "spoken_text": "그래서 우리가 추상화를 하게 되면 최소의 비용으로 실제 상황에 대처를 할 수 있고요, 시스템의 구조가 됐든 구성이 됐든 그런 것들을 대략적으로, 대략적으로 파악할 수 있게 해줍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        },
+        {
+          "keyword": "최소 비용 대처 및 시스템 파악",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:02:03",
+      "start_seconds": 103,
+      "end_seconds": 123,
+      "duration_seconds": 20,
+      "timeline_summary": "과정 추상화 설명",
+      "screen_text_lines": [
+        "과정 추상화",
+        "자세한 수행 과정을 정의하지 않고, 전반적인 흐름만 파악할 수 있게 설계하는 방법",
+        "데이터 추상화",
+        "제어 추상화"
+      ],
+      "screen_text": "과정 추상화\n자세한 수행 과정을 정의하지 않고, 전반적인 흐름만 파악할 수 있게 설계하는 방법\n데이터 추상화\n제어 추상화",
+      "spoken_sentences": [
+        "그때 추상화를 할 때 추상화 유형에는 지금처럼 이렇게 세 가지가 있어요.",
+        "과정이 있고요 우리 데이터가 있고 우리 제어가 있고 이렇게 세 가지가 있습니다.",
+        "과정이라는 거는 자세한 수행 과정은 정의하지 않아요.",
+        "수행 안 하고 그냥 전반적인 그 흐름만 파악할 수 있게 설계하는 걸 보고 우리가 과정 추상화 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "그때 추상화를 할 때 추상화 유형에는 지금처럼 이렇게 세 가지가 있어요. 과정이 있고요 우리 데이터가 있고 우리 제어가 있고 이렇게 세 가지가 있습니다. 과정이라는 거는 자세한 수행 과정은 정의하지 않아요. 수행 안 하고 그냥 전반적인 그 흐름만 파악할 수 있게 설계하는 걸 보고 우리가 과정 추상화 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "데이터 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "제어 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "과정 추상화",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:02:03",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 123,
+      "end_seconds": 141,
+      "duration_seconds": 18,
+      "timeline_summary": "데이터 추상화 설명",
+      "screen_text_lines": [
+        "데이터 추상화",
+        "데이터의 세부적인 속성이나 용도를 정의하지 않고, 데이터 구조를 대표할 수 있는 표현으로 대체하는 방법"
+      ],
+      "screen_text": "데이터 추상화\n데이터의 세부적인 속성이나 용도를 정의하지 않고, 데이터 구조를 대표할 수 있는 표현으로 대체하는 방법",
+      "spoken_sentences": [
+        "데이터 추상화다라고 하게 되면, 데이터 추상화는 그냥 구조다 그렇게 생각하시면 돼요.",
+        "해서 데이터의 세부적인 그런 속성이나 용도 같은 거는 정의 안 해요.",
+        "정의 안 하고 데이터의 구조, 데이터의 구조를 대표할 수 있는 그런 표현 방법으로 대체하는 그런 방법을 보고 우리가 데이터 추상화 그렇게 부르는 거고"
+      ],
+      "spoken_text": "데이터 추상화다라고 하게 되면, 데이터 추상화는 그냥 구조다 그렇게 생각하시면 돼요. 해서 데이터의 세부적인 그런 속성이나 용도 같은 거는 정의 안 해요. 정의 안 하고 데이터의 구조, 데이터의 구조를 대표할 수 있는 그런 표현 방법으로 대체하는 그런 방법을 보고 우리가 데이터 추상화 그렇게 부르는 거고",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "데이터 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:02:21",
+      "end_time_hms": "00:02:42",
+      "start_seconds": 141,
+      "end_seconds": 162,
+      "duration_seconds": 21,
+      "timeline_summary": "제어 추상화 설명",
+      "screen_text_lines": [
+        "제어 추상화",
+        "이벤트 발생의 정확한 절차나 방법을 정의하지 않고, 대표할 수 있는 표현으로 대체하는 방법"
+      ],
+      "screen_text": "제어 추상화\n이벤트 발생의 정확한 절차나 방법을 정의하지 않고, 대표할 수 있는 표현으로 대체하는 방법",
+      "spoken_sentences": [
+        "그 다음에 제어 추상화다라고 하게 되면, 얘는 그냥 이벤트다 그렇게 생각하시면 돼요.",
+        "특정 이벤트가 발생했을 때, 이거를 어떻게 처리할 건지 정확한 절차나 방법 그런 것들은 정의 안 해요.",
+        "정의 안 하고 대표할 수 있는 그런 표현 방법으로 대체하는 그런 방법을 보고 우리가 제어 추상화 그렇게 부릅니다."
+      ],
+      "spoken_text": "그 다음에 제어 추상화다라고 하게 되면, 얘는 그냥 이벤트다 그렇게 생각하시면 돼요. 특정 이벤트가 발생했을 때, 이거를 어떻게 처리할 건지 정확한 절차나 방법 그런 것들은 정의 안 해요. 정의 안 하고 대표할 수 있는 그런 표현 방법으로 대체하는 그런 방법을 보고 우리가 제어 추상화 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "제어 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:02:42",
+      "end_time_hms": "00:03:03",
+      "start_seconds": 162,
+      "end_seconds": 183,
+      "duration_seconds": 21,
+      "timeline_summary": "추상화의 전체 흐름 요약",
+      "screen_text_lines": [
+        "추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것."
+      ],
+      "screen_text": "추상화는 문제의 전체적이고 포괄적인 개념을 설계한 후 차례로 세분화하여 구체화시켜 나가는 것.",
+      "spoken_sentences": [
+        "그래서 이 추상화라는 거는 우리가 옷 정리 하듯이 여름 겨울을 먼저 크게 나누고 그 다음에 세부적으로 다시 분류한다 그랬죠.",
+        "그거처럼 문제를 전체적이고 포괄적인 그런 개념 개념을 먼저 설계를 해요.",
+        "그리고 나서 그 개념에 맞춰서 세부적으로 세분화해서 우리가 구체화 시켜 나가는 걸 보고 우리가 추상화라고 하더라."
+      ],
+      "spoken_text": "그래서 이 추상화라는 거는 우리가 옷 정리 하듯이 여름 겨울을 먼저 크게 나누고 그 다음에 세부적으로 다시 분류한다 그랬죠. 그거처럼 문제를 전체적이고 포괄적인 그런 개념 개념을 먼저 설계를 해요. 그리고 나서 그 개념에 맞춰서 세부적으로 세분화해서 우리가 구체화 시켜 나가는 걸 보고 우리가 추상화라고 하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "추상화는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0061_61",
+      "subtopic_title": "추상화의 유형",
+      "subtopic_sequence": 61,
+      "subtopic_number": "61",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=n5oIGORVqlA",
+      "start_time_hms": "00:03:03",
+      "end_time_hms": "00:03:36",
+      "start_seconds": 183,
+      "end_seconds": 216,
+      "duration_seconds": 33,
+      "timeline_summary": "추상화 유형 암기 팁 (과, 데, 제)",
+      "screen_text_lines": [
+        "과정 추상화",
+        "데이터 추상화",
+        "제어 추상화"
+      ],
+      "screen_text": "과정 추상화\n데이터 추상화\n제어 추상화",
+      "spoken_sentences": [
+        "이 추상화 유형에는 요렇게 세 가지가 있는데 요 세 가지가 실제 시험 문제로 나온 적이 있어요.",
+        "다음 중 추상화의 유형이 아닌 거 찾아라 그렇게 나왔거든요.",
+        "그래서 추상화 유형에는 과정 데이터 우리 제어 요렇게 세 가지가 있습니다.",
+        "요거를 기억하실 때 첫 번째 글자만 따서 기억 좀 하세요.",
+        "저 옆에 친구가 한 명 있어요 걔가 누구냐 우리 학교 과대에요 과대.",
+        "해서 쟤는 과대다 과대다 쟤가 과대야 그렇게 기억 좀 하세요."
+      ],
+      "spoken_text": "이 추상화 유형에는 요렇게 세 가지가 있는데 요 세 가지가 실제 시험 문제로 나온 적이 있어요. 다음 중 추상화의 유형이 아닌 거 찾아라 그렇게 나왔거든요. 그래서 추상화 유형에는 과정 데이터 우리 제어 요렇게 세 가지가 있습니다. 요거를 기억하실 때 첫 번째 글자만 따서 기억 좀 하세요. 저 옆에 친구가 한 명 있어요 걔가 누구냐 우리 학교 과대에요 과대. 해서 쟤는 과대다 과대다 쟤가 과대야 그렇게 기억 좀 하세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "데이터 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "제어 추상화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "추상화의 유형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "정보 은닉 강의 시작",
+      "screen_text_lines": [
+        "정보 은닉(Information Hiding)"
+      ],
+      "screen_text": "정보 은닉(Information Hiding)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 정보 은닉에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 정보 은닉에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Information Hiding",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 9,
+      "end_seconds": 26,
+      "duration_seconds": 17,
+      "timeline_summary": "정보 은닉의 기본 개념 설명",
+      "screen_text_lines": [
+        "정보 은닉(Information Hiding)",
+        "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법."
+      ],
+      "screen_text": "정보 은닉(Information Hiding)\n정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법.",
+      "spoken_sentences": [
+        "우리 정보 은닉이요.",
+        "자, 여기 보니까 지금 은닉이라는 말이 들어갔죠.",
+        "자, 요 정보 은닉이라는 거는 각각의 모듈들이 서로서로 접근할 수 없게 그렇게 차단하는 그런 개념을 보고 우리가 정보 은닉이라고 합니다."
+      ],
+      "spoken_text": "우리 정보 은닉이요. 자, 여기 보니까 지금 은닉이라는 말이 들어갔죠. 자, 요 정보 은닉이라는 거는 각각의 모듈들이 서로서로 접근할 수 없게 그렇게 차단하는 그런 개념을 보고 우리가 정보 은닉이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Information Hiding",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 26,
+      "end_seconds": 46,
+      "duration_seconds": 20,
+      "timeline_summary": "캡슐약 비유를 통한 정보 은닉 설명",
+      "screen_text_lines": [
+        "정보 은닉(Information Hiding)",
+        "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법."
+      ],
+      "screen_text": "정보 은닉(Information Hiding)\n정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법.",
+      "spoken_sentences": [
+        "우리 캡슐로 된 그 감기약 있죠?",
+        "그 감기약을 보게 되면 그 캡슐 안에는 어떤 재료가 들어있는지 우리는 몰라요.",
+        "모르는데 감기가 걸렸을 때 그 약을 먹으면 감기가 낫는다.",
+        "괜찮아진다.",
+        "그것만 알고 복용하는 거죠.",
+        "그거랑 같은 의미가 우리 정보 은닉이요."
+      ],
+      "spoken_text": "우리 캡슐로 된 그 감기약 있죠? 그 감기약을 보게 되면 그 캡슐 안에는 어떤 재료가 들어있는지 우리는 몰라요. 모르는데 감기가 걸렸을 때 그 약을 먹으면 감기가 낫는다. 괜찮아진다. 그것만 알고 복용하는 거죠. 그거랑 같은 의미가 우리 정보 은닉이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Information Hiding",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 46,
+      "end_seconds": 68,
+      "duration_seconds": 22,
+      "timeline_summary": "엑셀 함수 비유를 통한 정보 은닉 설명",
+      "screen_text_lines": [
+        "정보 은닉(Information Hiding)",
+        "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법."
+      ],
+      "screen_text": "정보 은닉(Information Hiding)\n정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법.",
+      "spoken_sentences": [
+        "해서 좀 더 예를 들자면 우리의 엑셀에 보게 되면 여러 가지 함수들이 있는데, 그중에 표준 편차를 구해주는 그런 함수들이 있습니다.",
+        "그 함수 사용법을 보고 우리가 필요한 정보만 딱딱딱딱 찍어주면 자동으로 지가 알아서 전부 다 표준 편차를 다 구해주잖아요.",
+        "실제 컴퓨터 안에서 어떻게 계산되는지 우린 몰라요.",
+        "그런 게 정보 은닉이에요."
+      ],
+      "spoken_text": "해서 좀 더 예를 들자면 우리의 엑셀에 보게 되면 여러 가지 함수들이 있는데, 그중에 표준 편차를 구해주는 그런 함수들이 있습니다. 그 함수 사용법을 보고 우리가 필요한 정보만 딱딱딱딱 찍어주면 자동으로 지가 알아서 전부 다 표준 편차를 다 구해주잖아요. 실제 컴퓨터 안에서 어떻게 계산되는지 우린 몰라요. 그런 게 정보 은닉이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Information Hiding",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:23",
+      "start_seconds": 68,
+      "end_seconds": 83,
+      "duration_seconds": 15,
+      "timeline_summary": "정보 은닉의 정의 재강조",
+      "screen_text_lines": [
+        "정보 은닉(Information Hiding)",
+        "정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법."
+      ],
+      "screen_text": "정보 은닉(Information Hiding)\n정보 은닉은 한 모듈 내부에 포함된 절차와 자료들의 정보가 감추어져 다른 모듈이 접근하거나 변경하지 못하도록 하는 기법.",
+      "spoken_sentences": [
+        "해서 정보 은닉이라는 거는 우리 모듈 내부에 포함된 그런 절차가 됐든 자료가 됐든 그런 것들은 전부 다 감춰져 있어요.",
+        "해서 다른 모듈이 접근하거나 변경하지 못하도록 하는 그런 기법을 보고 우리가 정보 은닉이라고 하는 겁니다."
+      ],
+      "spoken_text": "해서 정보 은닉이라는 거는 우리 모듈 내부에 포함된 그런 절차가 됐든 자료가 됐든 그런 것들은 전부 다 감춰져 있어요. 해서 다른 모듈이 접근하거나 변경하지 못하도록 하는 그런 기법을 보고 우리가 정보 은닉이라고 하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "정보 은닉(Information Hiding)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "Information Hiding",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:01:23",
+      "end_time_hms": "00:01:52",
+      "start_seconds": 83,
+      "end_seconds": 112,
+      "duration_seconds": 29,
+      "timeline_summary": "식당 주문 비유를 통한 인터페이스 설명",
+      "screen_text_lines": [
+        "어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 기능이 있어 정보 은닉 된 모듈과 커뮤니케이션할 필요가 있을 때는 필요한 정보만 인터페이스를 통해 주고 받음."
+      ],
+      "screen_text": "어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 기능이 있어 정보 은닉 된 모듈과 커뮤니케이션할 필요가 있을 때는 필요한 정보만 인터페이스를 통해 주고 받음.",
+      "spoken_sentences": [
+        "그리고 우리가 식당에 갔을 때, 내가 예를 들어서 뭐 음식을 하나 주문했어요.",
+        "근데 그걸 좀 나는 싱겁게 먹고 싶어요.",
+        "그럼 내가 직접 주방에 가서 뭔가 요리를 하는 게 아니죠.",
+        "요리하는 주방장이 따로 있잖아요.",
+        "그러면 나는 싱겁게 먹고 싶으면 어떻게 해요?",
+        "거기에 있는 직원한테 음식을 주문하면서 조금만 싱겁게 해주세요라고 하게 되면 주방에서 알아서 그렇게 요리를 해서 가지고 올 거라고요.",
+        "해서 내가 직접 주방에 들어간다, 안 들어간다?",
+        "안 들어가더라."
+      ],
+      "spoken_text": "그리고 우리가 식당에 갔을 때, 내가 예를 들어서 뭐 음식을 하나 주문했어요. 근데 그걸 좀 나는 싱겁게 먹고 싶어요. 그럼 내가 직접 주방에 가서 뭔가 요리를 하는 게 아니죠. 요리하는 주방장이 따로 있잖아요. 그러면 나는 싱겁게 먹고 싶으면 어떻게 해요? 거기에 있는 직원한테 음식을 주문하면서 조금만 싱겁게 해주세요라고 하게 되면 주방에서 알아서 그렇게 요리를 해서 가지고 올 거라고요. 해서 내가 직접 주방에 들어간다, 안 들어간다? 안 들어가더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "모듈이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:01:52",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 112,
+      "end_seconds": 141,
+      "duration_seconds": 29,
+      "timeline_summary": "모듈 간 커뮤니케이션과 인터페이스의 역할",
+      "screen_text_lines": [
+        "어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 기능이 있어 정보 은닉 된 모듈과 커뮤니케이션할 필요가 있을 때는 필요한 정보만 인터페이스를 통해 주고 받음."
+      ],
+      "screen_text": "어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 기능이 있어 정보 은닉 된 모듈과 커뮤니케이션할 필요가 있을 때는 필요한 정보만 인터페이스를 통해 주고 받음.",
+      "spoken_sentences": [
+        "그거처럼 어떤 모듈이, 어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 그런 기능이 있어요.",
+        "해서 정보 은닉된 그런 모듈이랑 커뮤니케이션이 필요할 때, 커뮤니케이션이 필요할 때는 필요한 정보만 인터페이스를 통해서 주고받습니다.",
+        "해서 우리가 주방에 직접 들어가는 게 아니라, 거기서 일하시는 그 직원 분을 통해서 우리가 그렇게 필요한 정보만 조금만 싱겁게 해주세요라는 그런 정보만 주고받고, 주고받고 하는 거예요."
+      ],
+      "spoken_text": "그거처럼 어떤 모듈이, 어떤 모듈이 소프트웨어 기능을 수행하는데 반드시 필요한 그런 기능이 있어요. 해서 정보 은닉된 그런 모듈이랑 커뮤니케이션이 필요할 때, 커뮤니케이션이 필요할 때는 필요한 정보만 인터페이스를 통해서 주고받습니다. 해서 우리가 주방에 직접 들어가는 게 아니라, 거기서 일하시는 그 직원 분을 통해서 우리가 그렇게 필요한 정보만 조금만 싱겁게 해주세요라는 그런 정보만 주고받고, 주고받고 하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "모듈이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:02:21",
+      "end_time_hms": "00:02:39",
+      "start_seconds": 141,
+      "end_seconds": 159,
+      "duration_seconds": 18,
+      "timeline_summary": "정보 은닉의 장점 (독립성 및 유지보수성)",
+      "screen_text_lines": [
+        "정보 은닉을 통해 모듈을 독립적으로 수행할 수 있고, 하나의 모듈이 변경되더라도 다른 모듈에 영향을 주지 않으므로 수정, 시험, 유지보수가 용이함."
+      ],
+      "screen_text": "정보 은닉을 통해 모듈을 독립적으로 수행할 수 있고, 하나의 모듈이 변경되더라도 다른 모듈에 영향을 주지 않으므로 수정, 시험, 유지보수가 용이함.",
+      "spoken_sentences": [
+        "해서 우리가 정보 은닉을 하게 되면 모듈을 독립적으로 전부 다 수행할 수 있고요.",
+        "하나의 모듈이 변경이 되더라도 다른 모듈에 영향을 준다 안 준다?",
+        "영향을 주지 않더라.",
+        "해서 우리 수정, 시험, 유지 보수 이런 게 용이하더라.",
+        "요런 게 정보 은닉이요."
+      ],
+      "spoken_text": "해서 우리가 정보 은닉을 하게 되면 모듈을 독립적으로 전부 다 수행할 수 있고요. 하나의 모듈이 변경이 되더라도 다른 모듈에 영향을 준다 안 준다? 영향을 주지 않더라. 해서 우리 수정, 시험, 유지 보수 이런 게 용이하더라. 요런 게 정보 은닉이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "모듈이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "다른",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_015-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 4,
+      "subtopic_id": "0062_62",
+      "subtopic_title": "정보은닉",
+      "subtopic_sequence": 62,
+      "subtopic_number": "62",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=0wJ9PJYC49U",
+      "start_time_hms": "00:02:39",
+      "end_time_hms": "00:02:54",
+      "start_seconds": 159,
+      "end_seconds": 174,
+      "duration_seconds": 15,
+      "timeline_summary": "강의 마무리 및 시험 출제 포인트 강조",
+      "screen_text_lines": [
+        "정보 은닉을 통해 모듈을 독립적으로 수행할 수 있고, 하나의 모듈이 변경되더라도 다른 모듈에 영향을 주지 않으므로 수정, 시험, 유지보수가 용이함."
+      ],
+      "screen_text": "정보 은닉을 통해 모듈을 독립적으로 수행할 수 있고, 하나의 모듈이 변경되더라도 다른 모듈에 영향을 주지 않으므로 수정, 시험, 유지보수가 용이함.",
+      "spoken_sentences": [
+        "해서 정보 은닉 같은 경우에는 정보 은닉의 특징을 묻는 문제가 출제된 적이 있어요.",
+        "출제된 적이 있으니까 이 특징들 잘 기억하고 지나가세요."
+      ],
+      "spoken_text": "해서 정보 은닉 같은 경우에는 정보 은닉의 특징을 묻는 문제가 출제된 적이 있어요. 출제된 적이 있으니까 이 특징들 잘 기억하고 지나가세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "정보",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "은닉",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "모듈이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "다른",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    }
+  ]
+}

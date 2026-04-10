@@ -4,6 +4,30 @@
 
 // ─── CONFIG ─────────────────────────────────────────────────
 const DATA_BUNDLE = './data/topics-bundle.json';
+const EMBEDDED_DATA_BUNDLE_KEY = '__STUDY_TOPIC_BUNDLE__';
+const PRACTICE_BUNDLE = './data/subtopic-practice-bundle.json';
+const EMBEDDED_PRACTICE_BUNDLE_KEY = '__STUDY_SUBTOPIC_PRACTICE_BUNDLE__';
+const QUESTION_BANK_ROOT = './data/question-bank/';
+const GUIDE_CHARACTER_FRAMES = {
+  idle: Array.from({ length: 12 }, (_, i) =>
+    `./assets/generated/characters/lecture-guide-professor-v3/idle/guide-professor-idle-v3-f${String(i + 1).padStart(2, '0')}.png`
+  ),
+  speaking: Array.from({ length: 16 }, (_, i) =>
+    `./assets/generated/characters/lecture-guide-professor-v3/speaking/guide-professor-speaking-v3-f${String(i + 1).padStart(2, '0')}.png`
+  ),
+  pointing: Array.from({ length: 8 }, (_, i) =>
+    `./assets/generated/characters/lecture-guide-professor-v3/pointing/guide-professor-pointing-v3-f${String(i + 1).padStart(2, '0')}.png`
+  ),
+};
+const GUIDE_FRAME_DURATION_MS = {
+  idle: 170,
+  speaking: 92,
+  pointing: 118,
+};
+const GUIDE_TALK_WINDOW_MS = 1650;
+const AUTH_STORAGE_KEY = 'study_auth_v1';
+const AUTH_SESSION_KEY = 'study_auth_session_v1';
+const USER_PROGRESS_STORAGE_KEY = 'study_user_progress_v1';
 
 const SUBJECTS = [
   { id: 1, name: '소프트웨어 설계', emoji: '📐', color: '#3182F6' },
@@ -25,11 +49,19 @@ const state = {
   shownSentences: [],
   autoPlay: false,
   autoPlayTimer: null,
+  guideFrameTimer: null,
+  guideSceneTimer: null,
+  guideFrameMode: 'idle',
+  guideFrameIndex: 0,
+  lastRevealAt: 0,
+  lastRevealText: '',
 
   quizQuestions: [],
   quizIndex: 0,
   quizRevealed: false,
-  quizScore: { knew: 0, didnt: 0 },
+  quizScore: { correct: 0, incorrect: 0 },
+  quizSelectedChoiceLabel: null,
+  quizSubmission: null,
 
   completedLectures: new Set(),
   lastLectureId: null,
@@ -37,41 +69,323 @@ const state = {
   lectureFilter: null,
   searchQuery: '',
   topicMap: {},
+  subtopicPracticeMap: {},
+  questionBankTopicCache: {},
+  quizContext: null,
+  currentUser: null,
+  authError: '',
 };
 
 // ─── STORAGE ────────────────────────────────────────────────
 const STORAGE_KEY = 'study_topics_v2';
 
-function loadStorage() {
+function readJsonStorage(key, fallbackValue) {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return;
-    const data = JSON.parse(raw);
-    state.completedLectures = new Set(data.completedLectures || []);
-    state.lastLectureId = data.lastLectureId || null;
+    const raw = localStorage.getItem(key);
+    if (!raw) return fallbackValue;
+    return JSON.parse(raw);
   } catch (e) {
-    console.warn('Storage load failed', e);
+    console.warn(`Storage read failed: ${key}`, e);
+    return fallbackValue;
   }
 }
 
-function saveStorage() {
+function writeJsonStorage(key, value) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      completedLectures: [...state.completedLectures],
-      lastLectureId: state.lastLectureId,
-    }));
+    localStorage.setItem(key, JSON.stringify(value));
   } catch (e) {
-    console.warn('Storage save failed', e);
+    console.warn(`Storage write failed: ${key}`, e);
   }
+}
+
+function createEmptyProgress() {
+  return {
+    completedLectures: [],
+    lastLectureId: null,
+    updatedAt: null,
+  };
+}
+
+function applyProgressState(progress) {
+  const safeProgress = progress || createEmptyProgress();
+  state.completedLectures = new Set(safeProgress.completedLectures || []);
+  state.lastLectureId = safeProgress.lastLectureId || null;
+}
+
+function normalizeUsername(value) {
+  return String(value || '')
+    .normalize('NFKC')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .slice(0, 20);
+}
+
+function normalizeDisplayName(value) {
+  return normalizeUsername(value);
+}
+
+function buildUserLookupKey(value) {
+  return normalizeUsername(value).toLocaleLowerCase();
+}
+
+function hashCredential(value) {
+  const input = String(value || '');
+  let hash = 2166136261;
+  for (let i = 0; i < input.length; i += 1) {
+    hash ^= input.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return `h${(hash >>> 0).toString(16)}`;
+}
+
+function sanitizeUser(user) {
+  if (!user) return null;
+  return {
+    user_id: user.user_id,
+    username: user.username,
+    display_name: user.display_name || user.username,
+  };
+}
+
+function readAuthStore() {
+  const store = readJsonStorage(AUTH_STORAGE_KEY, { users: [] });
+  return {
+    users: Array.isArray(store?.users) ? store.users : [],
+  };
+}
+
+function writeAuthStore(store) {
+  writeJsonStorage(AUTH_STORAGE_KEY, {
+    users: Array.isArray(store?.users) ? store.users : [],
+  });
+}
+
+function readProgressStore() {
+  const store = readJsonStorage(USER_PROGRESS_STORAGE_KEY, { by_user_id: {} });
+  return {
+    by_user_id: store?.by_user_id || {},
+  };
+}
+
+function writeProgressStore(store) {
+  writeJsonStorage(USER_PROGRESS_STORAGE_KEY, {
+    by_user_id: store?.by_user_id || {},
+  });
+}
+
+function getStoredProgressForUser(userId) {
+  if (!userId) return createEmptyProgress();
+  const store = readProgressStore();
+  return store.by_user_id[userId] || createEmptyProgress();
+}
+
+function loadSessionUser() {
+  const session = readJsonStorage(AUTH_SESSION_KEY, null);
+  if (!session?.user_id) return null;
+  const authStore = readAuthStore();
+  return sanitizeUser(authStore.users.find(user => user.user_id === session.user_id));
+}
+
+function persistSessionUser(user) {
+  if (!user?.user_id) return;
+  writeJsonStorage(AUTH_SESSION_KEY, { user_id: user.user_id });
+}
+
+function clearSessionUser() {
+  try {
+    localStorage.removeItem(AUTH_SESSION_KEY);
+  } catch (e) {
+    console.warn('Session clear failed', e);
+  }
+}
+
+function loadStorage() {
+  if (!state.currentUser?.user_id) {
+    applyProgressState(createEmptyProgress());
+    return;
+  }
+
+  const progress = getStoredProgressForUser(state.currentUser.user_id);
+  const hasUserProgress = (progress.completedLectures || []).length > 0 || !!progress.lastLectureId;
+  if (!hasUserProgress) {
+    const legacyProgress = readJsonStorage(STORAGE_KEY, null);
+    if (legacyProgress?.completedLectures || legacyProgress?.lastLectureId) {
+      const migrated = {
+        completedLectures: legacyProgress.completedLectures || [],
+        lastLectureId: legacyProgress.lastLectureId || null,
+        updatedAt: new Date().toISOString(),
+      };
+      const store = readProgressStore();
+      store.by_user_id[state.currentUser.user_id] = migrated;
+      writeProgressStore(store);
+      applyProgressState(migrated);
+      return;
+    }
+  }
+
+  applyProgressState(progress);
+}
+
+function saveStorage() {
+  if (!state.currentUser?.user_id) return;
+
+  const payload = {
+    completedLectures: [...state.completedLectures],
+    lastLectureId: state.lastLectureId,
+    updatedAt: new Date().toISOString(),
+  };
+  const store = readProgressStore();
+  store.by_user_id[state.currentUser.user_id] = payload;
+  writeProgressStore(store);
+  writeJsonStorage(STORAGE_KEY, payload);
+}
+
+function createUserAccount(displayName, username, password) {
+  const normalizedUsername = normalizeUsername(username);
+  const normalizedDisplayName = normalizeDisplayName(displayName) || normalizedUsername;
+  const trimmedPassword = String(password || '').trim();
+
+  if (normalizedUsername.length < 3) {
+    throw new Error('아이디는 3자 이상으로 입력해 주세요.');
+  }
+  if (trimmedPassword.length < 4) {
+    throw new Error('비밀번호는 4자 이상으로 입력해 주세요.');
+  }
+
+  const authStore = readAuthStore();
+  if (authStore.users.some(user => user.username === normalizedUsername)) {
+    throw new Error('이미 사용 중인 아이디입니다.');
+  }
+
+  const user = {
+    user_id: `user_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
+    username: normalizedUsername,
+    display_name: normalizedDisplayName,
+    password_hash: hashCredential(trimmedPassword),
+    created_at: new Date().toISOString(),
+  };
+  authStore.users.push(user);
+  writeAuthStore(authStore);
+  return sanitizeUser(user);
+}
+
+function signInUser(username, password) {
+  const normalizedUsername = normalizeUsername(username);
+  const trimmedPassword = String(password || '').trim();
+  const authStore = readAuthStore();
+  const user = authStore.users.find(item => item.username === normalizedUsername);
+  if (!user || user.password_hash !== hashCredential(trimmedPassword)) {
+    throw new Error('아이디 또는 비밀번호가 맞지 않습니다.');
+  }
+  return sanitizeUser(user);
+}
+
+function findUserByLookupKey(authStore, lookupKey) {
+  return authStore.users.find((user) => {
+    const candidates = [
+      user.lookup_key,
+      user.username,
+      user.display_name,
+    ];
+    return candidates.some(candidate => buildUserLookupKey(candidate) === lookupKey);
+  });
+}
+
+function signInOrCreateUser(name) {
+  const normalizedName = normalizeDisplayName(name);
+  if (normalizedName.length < 2) {
+    throw new Error('이름은 2자 이상 입력해 주세요.');
+  }
+
+  const authStore = readAuthStore();
+  const lookupKey = buildUserLookupKey(normalizedName);
+  let user = findUserByLookupKey(authStore, lookupKey);
+  let didChangeStore = false;
+
+  if (!user) {
+    user = {
+      user_id: `user_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
+      username: lookupKey,
+      lookup_key: lookupKey,
+      display_name: normalizedName,
+      created_at: new Date().toISOString(),
+    };
+    authStore.users.push(user);
+    didChangeStore = true;
+  } else {
+    if (!user.lookup_key) {
+      user.lookup_key = lookupKey;
+      didChangeStore = true;
+    }
+    if (!user.username) {
+      user.username = lookupKey;
+      didChangeStore = true;
+    }
+    if (!user.display_name) {
+      user.display_name = normalizedName;
+      didChangeStore = true;
+    }
+  }
+
+  if (didChangeStore) {
+    writeAuthStore(authStore);
+  }
+
+  return sanitizeUser(user);
+}
+
+function completeLogin(user) {
+  state.currentUser = sanitizeUser(user);
+  state.authError = '';
+  persistSessionUser(state.currentUser);
+  loadStorage();
+}
+
+function logoutCurrentUser() {
+  saveStorage();
+  clearSessionUser();
+  state.currentUser = null;
+  state.authError = '';
+  applyProgressState(createEmptyProgress());
+  state.currentLecture = null;
+  state.currentLectureId = null;
+  state.currentSegIdx = 0;
+  state.currentSentIdx = 0;
+  state.shownSentences = [];
+  state.quizQuestions = [];
+  state.quizIndex = 0;
+  state.quizRevealed = false;
+  state.quizSelectedChoiceLabel = null;
+  state.quizSubmission = null;
+  navigate('auth');
 }
 
 // ─── DATA API ───────────────────────────────────────────────
 async function fetchManifest() {
+  const embeddedBundle = window[EMBEDDED_DATA_BUNDLE_KEY];
+  if (embeddedBundle) {
+    state.topicMap = embeddedBundle.topics || {};
+    return (embeddedBundle.manifest?.items || []).filter(item => item.status === 'success');
+  }
+
   const resp = await fetch(DATA_BUNDLE);
   if (!resp.ok) throw new Error('Failed to load topic bundle');
   const data = await resp.json();
   state.topicMap = data.topics || {};
   return (data.manifest?.items || []).filter(item => item.status === 'success');
+}
+
+async function fetchPracticeBundle() {
+  const embeddedBundle = window[EMBEDDED_PRACTICE_BUNDLE_KEY];
+  if (embeddedBundle) {
+    return embeddedBundle;
+  }
+
+  const resp = await fetch(PRACTICE_BUNDLE);
+  if (!resp.ok) {
+    return { items: [] };
+  }
+  return resp.json();
 }
 
 async function fetchLecture(lectureId) {
@@ -80,9 +394,182 @@ async function fetchLecture(lectureId) {
   return lecture;
 }
 
+async function fetchQuestionBankTopic(topicFile) {
+  if (state.questionBankTopicCache[topicFile]) {
+    return state.questionBankTopicCache[topicFile];
+  }
+
+  const resp = await fetch(`${QUESTION_BANK_ROOT}${topicFile}`);
+  if (!resp.ok) throw new Error(`문제 JSON을 불러오지 못했어요: ${topicFile}`);
+  const data = await resp.json();
+  state.questionBankTopicCache[topicFile] = data;
+  return data;
+}
+
 // ─── HELPERS ────────────────────────────────────────────────
 function getSubjectForItem(item) {
   return SUBJECTS.find(s => s.id === item.subject_id) || SUBJECTS[0];
+}
+
+function buildSubtopicPracticeKey(lectureId, subtopicIndex) {
+  return `${lectureId}::${subtopicIndex}`;
+}
+
+function buildSubtopicPracticeMap(items) {
+  const map = {};
+  for (const item of (items || [])) {
+    const lectureId = item?.lecture_topic_id;
+    const subtopicIndex = item?.subtopic_index;
+    if (!lectureId || !subtopicIndex) continue;
+    map[buildSubtopicPracticeKey(lectureId, subtopicIndex)] = item;
+  }
+  return map;
+}
+
+function getSubtopicPractice(lectureId, subtopicIndex) {
+  return state.subtopicPracticeMap[buildSubtopicPracticeKey(lectureId, subtopicIndex)] || null;
+}
+
+function buildQuestionBankAssetUrl(relativePath) {
+  if (!relativePath) return '';
+  return `${QUESTION_BANK_ROOT}${relativePath}`;
+}
+
+function escapeRegExp(value) {
+  return String(value || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function normalizeHighlightKeyword(keyword) {
+  if (!keyword) return null;
+  if (typeof keyword === 'string') {
+    return {
+      keyword,
+      emphasis: 'secondary',
+      color_token: 'secondary',
+    };
+  }
+  if (!keyword.keyword) return null;
+  return keyword;
+}
+
+function mergeHighlightKeywords(...groups) {
+  const mergedByKey = new Map();
+  for (const group of groups) {
+    for (const item of (group || [])) {
+      const normalized = normalizeHighlightKeyword(item);
+      const keyword = normalized?.keyword?.trim();
+      if (!keyword) continue;
+      const key = keyword.toLowerCase();
+      const existing = mergedByKey.get(key);
+      if (!existing) {
+        mergedByKey.set(key, {
+          ...normalized,
+          keyword,
+        });
+        continue;
+      }
+
+      const shouldPromoteToPrimary =
+        existing.emphasis !== 'primary' && normalized.emphasis === 'primary';
+      if (shouldPromoteToPrimary) {
+        mergedByKey.set(key, {
+          ...existing,
+          ...normalized,
+          keyword,
+        });
+      }
+    }
+  }
+  return Array.from(mergedByKey.values());
+}
+
+function renderHighlightedText(text, highlightKeywords = []) {
+  const rawText = String(text || '');
+  const normalizedKeywords = mergeHighlightKeywords(highlightKeywords)
+    .sort((left, right) => right.keyword.length - left.keyword.length);
+
+  if (!rawText || !normalizedKeywords.length) {
+    return escapeHtml(rawText);
+  }
+
+  const keywordMap = new Map(normalizedKeywords.map(item => [item.keyword.toLowerCase(), item]));
+  const pattern = new RegExp(`(${normalizedKeywords.map(item => escapeRegExp(item.keyword)).join('|')})`, 'gi');
+  const highlightedOnce = new Set();
+
+  return rawText.split(pattern).map(fragment => {
+    const matched = keywordMap.get(fragment.toLowerCase());
+    if (!matched) {
+      return escapeHtml(fragment);
+    }
+    const matchedKey = matched.keyword.toLowerCase();
+    if (highlightedOnce.has(matchedKey)) {
+      return escapeHtml(fragment);
+    }
+    highlightedOnce.add(matchedKey);
+    const toneClass = matched.emphasis === 'primary'
+      ? 'keyword-mark keyword-mark-primary'
+      : 'keyword-mark keyword-mark-secondary';
+    return `<span class="${toneClass}">${escapeHtml(fragment)}</span>`;
+  }).join('');
+}
+
+function getSubtopicHighlightKeywords(subtopic) {
+  return mergeHighlightKeywords(subtopic?.highlight_keywords, subtopic?.secondary_keywords);
+}
+
+function buildFallbackSubtopicPractice(lectureId, subtopic) {
+  const blankCandidates = subtopic?.blank_quiz_candidates || [];
+  if (!blankCandidates.length) return null;
+  return {
+    mapping_id: `${lectureId}__subtopic_${String(subtopic.subtopic_index).padStart(3, '0')}__fallback`,
+    lecture_topic_id: lectureId,
+    lecture_topic_title: subtopic.title,
+    subtopic_index: subtopic.subtopic_index,
+    subtopic_lecture_id: subtopic.lecture_id,
+    subtopic_title: subtopic.title,
+    trigger: 'after_subtopic',
+    activities: blankCandidates.slice(0, 2).map((candidate, index) => ({
+      activity_id: `${lectureId}__subtopic_${String(subtopic.subtopic_index).padStart(3, '0')}__blank_${String(index + 1).padStart(2, '0')}`,
+      kind: 'fill_blank',
+      type_label: '빈칸 추론 문제',
+      prompt: candidate.prompt,
+      answer: candidate.answer,
+      original: candidate.original || candidate.prompt,
+      explanation: candidate.explanation || '',
+    })),
+  };
+}
+
+function getSubtopicPracticeForContext(lectureId, subtopic) {
+  return getSubtopicPractice(lectureId, subtopic?.subtopic_index) || buildFallbackSubtopicPractice(lectureId, subtopic);
+}
+
+function buildObjectiveQuestionPayload(baseQuestion, asset, sourceRef = {}) {
+  const explanation = baseQuestion?.explanation || {};
+  return {
+    id: sourceRef.activity_id || sourceRef.question_id || baseQuestion?.question_id || '',
+    kind: 'objective',
+    type: sourceRef.type_label || '객관식 문제',
+    question: baseQuestion?.question?.stem || sourceRef.question || '',
+    choices: baseQuestion?.question?.choices || sourceRef.choices || [],
+    answer: buildObjectiveAnswerText(baseQuestion),
+    correctLabels: baseQuestion?.answer?.correct_labels || sourceRef.correct_labels || [],
+    detailedSummary: explanation.detailed_summary || explanation.summary || explanation.source_text || sourceRef.explanation || '',
+    explanation: explanation.summary || sourceRef.explanation || '',
+    explanationSource: explanation.source_text || sourceRef.explanationSource || '',
+    choiceAnalysis: explanation.choice_analysis || sourceRef.choice_analysis || [],
+    solvingSteps: explanation.solving_steps || sourceRef.solving_steps || [],
+    examTraps: explanation.exam_traps || sourceRef.exam_traps || [],
+    answerChecklist: explanation.answer_checklist || sourceRef.answer_checklist || [],
+    memoryCues: explanation.memory_cues || sourceRef.memory_cues || [],
+    figure: asset?.relative_path ? {
+      src: buildQuestionBankAssetUrl(asset.relative_path),
+      alt: sourceRef.figure_alt || `${baseQuestion?.question?.stem || sourceRef.question || '문제'} 관련 그림`,
+      width: asset.width,
+      height: asset.height,
+    } : null,
+    sourceRef,
+  };
 }
 
 function getSubjectLectures(subjectId) {
@@ -106,100 +593,510 @@ function getTotalProgress() {
 
 // ─── QUIZ GENERATION ────────────────────────────────────────
 function generateQuiz(lecture) {
-  const desiredCount = Math.min(20, Math.max(12, (lecture.subtopics?.length || 1) * 4));
+  const desiredCount = Math.min(16, Math.max(6, lecture.subtopics?.length || 1));
   const questions = [];
-  const seenQuestionKeys = new Set();
-  const seenSourceTexts = new Set();
-
-  function addQuestion(question, answer, original, type = '빈칸 채우기') {
-    const q = (question || '').trim();
-    const a = (answer || '').trim();
-    const o = (original || '').trim();
-    if (!q || !a || a.length < 2) return;
-    if (q === a) return;
-    const key = `${q}|||${a}`;
-    if (seenQuestionKeys.has(key)) return;
-    seenQuestionKeys.add(key);
-    questions.push({ question: q, answer: a, original: o || q, type });
-  }
-
-  function addQuestionsFromText(text, type = '빈칸 채우기') {
-    const trimmed = (text || '').trim();
-    if (trimmed.length < 8) return;
-    if (seenSourceTexts.has(trimmed)) return;
-    seenSourceTexts.add(trimmed);
-
-    const parenMatch = trimmed.match(/\(([A-Za-z][A-Za-z0-9\s\/;:+-]+)\)/);
-    if (parenMatch) {
-      addQuestion(trimmed.replace(parenMatch[0], '(________)'), parenMatch[1].trim(), trimmed, type);
-    }
-
-    const engMatch = trimmed.match(/\b([A-Z]{2,}|[A-Z][a-zA-Z]{2,})\b/);
-    if (engMatch) {
-      addQuestion(trimmed.replace(engMatch[0], '________'), engMatch[1], trimmed, type);
-    }
-
-    const colonMatch = trimmed.match(/[:：]\s*(.{2,20}?)(?:[,，.。을를이가은는]|$)/);
-    if (colonMatch) {
-      addQuestion(trimmed.replace(colonMatch[1], '________'), colonMatch[1].trim(), trimmed, type);
-    }
-
-    const quoteMatch = trimmed.match(/['"]([^'"]{2,20})['"]/);
-    if (quoteMatch) {
-      addQuestion(trimmed.replace(quoteMatch[1], '________'), quoteMatch[1].trim(), trimmed, type);
-    }
-
-    const termAtStart = trimmed.match(/^(?:우리\s*)?([A-Za-z가-힣0-9\/+.-]{2,18}?)(?:은|는|이|가)\s/);
-    if (termAtStart) {
-      addQuestion(trimmed.replace(termAtStart[1], '________'), termAtStart[1].trim(), trimmed, type);
-    }
-
-    const calledMatch = trimmed.match(/(?:보고|를|을)\s*(.{2,18}?)(?:라고|이라고)\s*(?:부른다|부릅니다|불러요|한다)/);
-    if (calledMatch) {
-      addQuestion(trimmed.replace(calledMatch[1], '________'), calledMatch[1].trim(), trimmed, type);
-    }
-  }
-
-  for (const seg of lecture.segments) {
-    for (const line of (seg.screen_text_lines || [])) {
-      if ((line || '').trim().startsWith('포함 소주제')) continue;
-      addQuestionsFromText(line, '핵심 문장');
-    }
-  }
-
-  for (const seg of lecture.segments) {
-    for (const sent of (seg.spoken_sentences || [])) {
-      if ((sent || '').trim().length < 14) continue;
-      addQuestionsFromText(sent, '강의 대사');
-    }
-  }
+  const seenKeys = new Set();
 
   for (const subtopic of (lecture.subtopics || [])) {
-    const summaryLine = `${subtopic.title} 소주제를 복습합니다.`;
-    addQuestion('이 주제에서 복습 중인 소주제는 ______ 입니다.', subtopic.title, summaryLine, '소주제 확인');
+    for (const candidate of (subtopic.blank_quiz_candidates || [])) {
+      const question = (candidate.prompt || '').trim();
+      const answer = (candidate.answer || '').trim();
+      if (!question || !answer) continue;
+      const dedupeKey = `${question}|||${answer}`;
+      if (seenKeys.has(dedupeKey)) continue;
+      seenKeys.add(dedupeKey);
+      questions.push({
+        id: candidate.candidate_id || `${lecture.lecture.lecture_id}-${subtopic.subtopic_index}-${questions.length + 1}`,
+        kind: 'fill_blank',
+        type: '빈칸 추론 문제',
+        question,
+        answer,
+        original: candidate.original || question,
+        explanation: candidate.explanation || '',
+        sourceType: candidate.source_type || 'lecture_keyword',
+        highlightKeyword: candidate.keyword || answer,
+      });
+      break;
+    }
+    if (questions.length >= desiredCount) break;
   }
 
-  const unique = [];
-  const seenAnswers = new Set();
-  for (const q of questions) {
-    const answerKey = q.answer.toLowerCase();
-    if (seenAnswers.has(answerKey)) continue;
-    seenAnswers.add(answerKey);
-    unique.push(q);
-    if (unique.length >= desiredCount) break;
-  }
-
-  return unique.length > 0 ? unique : [{
-    question: '이 주제의 핵심 키워드는 무엇인가요?',
+  return questions.length > 0 ? questions : [{
+    id: `${lecture.lecture.lecture_id}-fallback`,
+    kind: 'fill_blank',
+    type: '빈칸 추론 문제',
+    question: '이 주제의 핵심 키워드는 ______ 입니다.',
     answer: lecture.lecture.title,
-    original: lecture.summary.overall_summary,
-    type: '주제 확인',
+    original: lecture.summary?.overall_summary || lecture.lecture.title,
+    explanation: '정답은 현재 학습 중인 주제 제목입니다.',
   }];
+}
+
+function getCurrentTheoryContext() {
+  const lecture = state.currentLecture;
+  if (!lecture) return null;
+
+  const segments = lecture.segments || [];
+  const subtopics = lecture.subtopics || [];
+  const currentSeg = segments[state.currentSegIdx];
+  if (!currentSeg) return null;
+
+  const sentences = currentSeg.spoken_sentences || [];
+  const currentSubtopic = subtopics.find(sub => sub.subtopic_index === currentSeg.subtopic_index)
+    || { subtopic_index: currentSeg.subtopic_index || 1, title: currentSeg.subtopic_title || lecture.lecture.title, youtube_url_normalized: currentSeg.youtube_url_normalized || '' };
+  const nextSeg = segments[state.currentSegIdx + 1] || null;
+  const isLastSentence = state.currentSentIdx >= sentences.length;
+  const isLastSegment = state.currentSegIdx >= segments.length - 1;
+  const isSubtopicBoundary = isLastSentence && (!nextSeg || nextSeg.subtopic_index !== currentSubtopic.subtopic_index);
+
+  return {
+    lecture,
+    segments,
+    subtopics,
+    currentSeg,
+    currentSubtopic,
+    nextSeg,
+    nextSegmentIndex: nextSeg ? state.currentSegIdx + 1 : null,
+    isLastSentence,
+    isLastSegment,
+    isSubtopicBoundary,
+  };
+}
+
+function buildObjectiveAnswerText(question) {
+  const label = question.answer?.correct_labels?.[0];
+  const text = question.answer?.answer_text || question.answer?.correct_choice_texts?.[0] || '';
+  if (label && text) return `${label}번 · ${text}`;
+  return text || (label ? `${label}번` : '');
+}
+
+function pickPreferredDisplayAsset(visualAssets, preferredAssetId = '') {
+  if (!visualAssets) return null;
+  const crops = visualAssets.question_figure_crops || [];
+  if (preferredAssetId) {
+    const exact = crops.find(asset => asset.asset_id === preferredAssetId)
+      || (visualAssets.page_images || []).find(asset => asset.asset_id === preferredAssetId);
+    if (exact) return exact;
+  }
+  return visualAssets.preferred_display_asset || crops[0] || visualAssets.primary_image || (visualAssets.page_images || [])[0] || null;
+}
+
+async function resolvePracticeActivities(practice) {
+  const resolved = [];
+
+  for (const activity of (practice?.activities || [])) {
+    if (activity.kind === 'fill_blank') {
+      resolved.push({
+        id: activity.activity_id,
+        kind: 'fill_blank',
+        type: activity.type_label || '빈칸 추론',
+        question: activity.prompt,
+        answer: activity.answer,
+        original: activity.original || activity.prompt,
+        explanation: activity.explanation || '',
+        highlightKeyword: activity.answer,
+      });
+      continue;
+    }
+
+    if (activity.kind !== 'question_bank_ref') continue;
+
+    let liveQuestion = null;
+    if (activity.question_bank_topic_file && activity.question_id) {
+      try {
+        const topicData = await fetchQuestionBankTopic(activity.question_bank_topic_file);
+        liveQuestion = (topicData.questions || []).find(item => item.question_id === activity.question_id) || null;
+      } catch (err) {
+        console.warn('Question bank fetch failed, falling back to resolved snapshot', err);
+      }
+    }
+
+    if (liveQuestion) {
+      const asset = pickPreferredDisplayAsset(liveQuestion.visual_assets, activity.preferred_figure_asset_id);
+      resolved.push(buildObjectiveQuestionPayload(
+        liveQuestion,
+        asset,
+        {
+          activity_id: activity.activity_id || liveQuestion.question_id,
+          type_label: activity.type_label,
+          question_id: liveQuestion.question_id,
+          question_bank_topic_id: liveQuestion.exam_taxonomy?.topic_id || activity.question_bank_topic_id,
+          question_bank_topic_file: activity.question_bank_topic_file,
+          lecture_topic_id: practice.lecture_topic_id,
+          subtopic_index: practice.subtopic_index,
+          figure_alt: `${liveQuestion.question?.stem || ''} 관련 그림`,
+        },
+      ));
+      continue;
+    }
+
+    if (!activity.resolved_question) continue;
+
+    const fallbackAsset = activity.resolved_question.figure_relative_path ? {
+      relative_path: activity.resolved_question.figure_relative_path,
+    } : null;
+    resolved.push({
+      id: activity.activity_id || activity.question_id,
+      kind: 'objective',
+      type: activity.type_label || '객관식 문제',
+      question: activity.resolved_question.question,
+      choices: activity.resolved_question.choices || [],
+      answer: activity.resolved_question.answer,
+      correctLabels: activity.resolved_question.correct_labels || [],
+      detailedSummary: activity.resolved_question.detailed_summary || activity.resolved_question.explanation || '',
+      explanation: activity.resolved_question.explanation || '',
+      explanationSource: activity.resolved_question.explanation || '',
+      choiceAnalysis: activity.resolved_question.choice_analysis || [],
+      solvingSteps: activity.resolved_question.solving_steps || [],
+      examTraps: activity.resolved_question.exam_traps || [],
+      answerChecklist: activity.resolved_question.answer_checklist || [],
+      memoryCues: activity.resolved_question.memory_cues || [],
+      figure: fallbackAsset ? {
+        src: buildQuestionBankAssetUrl(fallbackAsset.relative_path),
+        alt: activity.resolved_question.figure_alt || `${activity.resolved_question.question} 관련 그림`,
+      } : null,
+      sourceRef: {
+        question_id: activity.question_id,
+        question_bank_topic_id: activity.question_bank_topic_id,
+        question_bank_topic_file: activity.question_bank_topic_file,
+        lecture_topic_id: practice.lecture_topic_id,
+        subtopic_index: practice.subtopic_index,
+      },
+    });
+  }
+
+  return resolved;
+}
+
+function resumeLectureAtSegment(segmentIndex) {
+  if (!state.currentLecture) return navigate('home');
+  state.currentSegIdx = segmentIndex;
+  state.currentSentIdx = 0;
+  state.shownSentences = [];
+  state.guideFrameMode = 'idle';
+  state.guideFrameIndex = 0;
+  state.lastRevealAt = 0;
+  state.lastRevealText = '';
+  revealNextSentence();
+  navigate('theory');
+}
+
+function markCurrentLectureComplete() {
+  if (!state.currentLectureId) return;
+  state.completedLectures.add(state.currentLectureId);
+  saveStorage();
+}
+
+function getQuizPrimaryActionLabel() {
+  if (state.quizContext?.mode === 'subtopic_practice' && Number.isInteger(state.quizContext.resumeSegIdx)) {
+    return '다음 소주제로 →';
+  }
+  return '다음 주제 →';
+}
+
+function handleQuizPrimaryAction() {
+  if (state.quizContext?.mode === 'subtopic_practice' && Number.isInteger(state.quizContext.resumeSegIdx)) {
+    const targetIndex = state.quizContext.resumeSegIdx;
+    state.quizContext = null;
+    resumeLectureAtSegment(targetIndex);
+    return;
+  }
+  state.quizContext = null;
+  goToNextLectureOrHome();
+}
+
+function showSubtopicCheckpoint(context, practice) {
+  clearAutoPlayTimer();
+  clearGuideTimers();
+  if (context.isLastSegment) {
+    markCurrentLectureComplete();
+  }
+
+  app.innerHTML = `
+    <div class="theory-complete">
+      <div class="complete-emoji">🧩</div>
+      <div class="complete-title">소주제 학습 완료!</div>
+      <div class="complete-sub">
+        <strong>${escapeHtml(context.currentSubtopic.title)}</strong> 학습이 끝났어요.<br/>
+        핵심 키워드 빈칸 문제와 연결된 객관식 문제를 바로 풀어볼까요?
+      </div>
+      <button class="btn-quiz" id="btn-start-subtopic-practice">소주제 문제 풀기 →</button>
+      <button class="btn-skip-quiz" id="btn-skip-subtopic-practice">${context.isLastSegment ? '다음 주제로' : '다음 소주제로'}</button>
+    </div>
+  `;
+
+  document.getElementById('btn-start-subtopic-practice').addEventListener('click', async () => {
+    app.innerHTML = `
+      <div class="loading-screen">
+        <div class="loading-logo">🧠</div>
+        <div class="loading-text">소주제 문제를 준비하는 중...</div>
+      </div>
+    `;
+
+    try {
+      const questions = await resolvePracticeActivities(practice);
+      if (!questions.length) {
+        if (context.nextSegmentIndex !== null) resumeLectureAtSegment(context.nextSegmentIndex);
+        else goToNextLectureOrHome();
+        return;
+      }
+
+      state.quizQuestions = questions;
+      state.quizIndex = 0;
+      state.quizRevealed = false;
+      state.quizScore = { correct: 0, incorrect: 0 };
+      state.quizSelectedChoiceLabel = null;
+      state.quizSubmission = null;
+      state.quizContext = {
+        mode: 'subtopic_practice',
+        lectureId: state.currentLectureId,
+        subtopicIndex: context.currentSubtopic.subtopic_index,
+        subtopicTitle: context.currentSubtopic.title,
+        resumeSegIdx: context.nextSegmentIndex,
+      };
+      navigate('quiz');
+    } catch (err) {
+      console.error('Failed to build subtopic practice', err);
+      app.innerHTML = `
+        <div class="empty-state" style="height:100dvh">
+          <div class="empty-emoji">😵</div>
+          <div class="empty-text">소주제 문제를 준비하지 못했어요<br/><small style="color:var(--text-tertiary)">${escapeHtml(err.message)}</small></div>
+        </div>
+      `;
+    }
+  });
+
+  document.getElementById('btn-skip-subtopic-practice').addEventListener('click', () => {
+    if (context.nextSegmentIndex !== null) {
+      resumeLectureAtSegment(context.nextSegmentIndex);
+    } else {
+      goToNextLectureOrHome();
+    }
+  });
+}
+
+function renderQuizPrompt(q) {
+  if (q.kind !== 'objective') {
+    const emphasisKeywords = q.highlightKeyword ? [{ keyword: q.highlightKeyword, emphasis: 'primary' }] : [];
+    return state.quizRevealed
+      ? formatQuizRevealed(q)
+      : renderHighlightedText(q.question, emphasisKeywords);
+  }
+
+  const figureHtml = q.figure ? `
+    <div class="quiz-figure-wrap">
+      <img class="quiz-figure-image" src="${q.figure.src}" alt="${escapeHtml(q.figure.alt || '문제 그림')}" />
+    </div>
+  ` : '';
+
+  const choicesHtml = `
+    <div class="quiz-choice-list">
+      ${(q.choices || []).map(choice => {
+        const isSelected = state.quizSelectedChoiceLabel === choice.label;
+        const isCorrect = (q.correctLabels || []).includes(choice.label);
+        const isSubmittedWrong = state.quizRevealed && state.quizSubmission?.selectedLabel === choice.label && !isCorrect;
+        return `
+          <button
+            type="button"
+            class="quiz-choice-item ${isSelected ? 'selected' : ''} ${state.quizRevealed && isCorrect ? 'correct' : ''} ${isSubmittedWrong ? 'incorrect' : ''}"
+            data-choice="${escapeHtml(choice.label)}"
+            ${state.quizRevealed ? 'disabled' : ''}
+          >
+            <span class="choice-label">${escapeHtml(choice.label)}</span>
+            <span class="choice-text">${escapeHtml(choice.text)}</span>
+          </button>
+        `;
+      }).join('')}
+    </div>
+  `;
+
+  return `
+    <div class="quiz-objective-prompt">${escapeHtml(q.question)}</div>
+    ${figureHtml}
+    ${choicesHtml}
+  `;
+}
+
+function renderExplanationList(title, items, listClass = '') {
+  if (!items || !items.length) return '';
+  return `
+    <div class="quiz-explanation-block ${listClass}">
+      <div class="quiz-explanation-title">${escapeHtml(title)}</div>
+      <ul class="quiz-explanation-list">
+        ${items.map(item => `<li>${escapeHtml(item)}</li>`).join('')}
+      </ul>
+    </div>
+  `;
+}
+
+function renderChoiceAnalysisList(choiceAnalysis = []) {
+  if (!choiceAnalysis.length) return '';
+  return `
+    <div class="quiz-explanation-block">
+      <div class="quiz-explanation-title">보기별 해설</div>
+      <div class="quiz-choice-analysis-list">
+        ${choiceAnalysis.map(item => `
+          <div class="quiz-choice-analysis-item ${item.is_correct ? 'correct' : 'incorrect'}">
+            <div class="quiz-choice-analysis-head">
+              <span class="choice-label">${escapeHtml(item.label)}</span>
+              <span class="quiz-choice-analysis-text">${escapeHtml(item.text)}</span>
+            </div>
+            <div class="quiz-choice-analysis-body">${escapeHtml(item.analysis)}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderQuizRevealPanel(q) {
+  if (q.kind !== 'objective') {
+    const explanation = q.explanation || q.explanationSource || q.original || '';
+    return `
+      <div class="quiz-answer-card">
+        <div class="quiz-answer-label">정답</div>
+        <div class="quiz-answer-text">${escapeHtml(q.answer)}</div>
+        ${explanation ? `<div class="quiz-answer-explanation">${escapeHtml(explanation)}</div>` : ''}
+      </div>
+    `;
+  }
+
+  const selectedLabel = state.quizSubmission?.selectedLabel || state.quizSelectedChoiceLabel || '';
+  const selectedChoice = (q.choices || []).find(choice => choice.label === selectedLabel);
+  const isCorrect = !!state.quizSubmission?.isCorrect;
+  const selectedText = selectedChoice ? `${selectedChoice.label}번 ${selectedChoice.text}` : '선택하지 않음';
+  const explanation = q.detailedSummary || q.explanation || q.explanationSource || q.original || '';
+
+  return `
+    <div class="quiz-answer-card ${isCorrect ? 'is-correct' : 'is-incorrect'}">
+      <div class="quiz-answer-label">채점 결과</div>
+      <div class="quiz-answer-status">${escapeHtml(isCorrect ? '정답입니다' : '정답을 다시 확인해 보세요')}</div>
+      <div class="quiz-answer-selected">선택한 답: ${escapeHtml(selectedText)}</div>
+      <div class="quiz-answer-selected">정답: ${escapeHtml(q.answer)}</div>
+      ${explanation ? `<div class="quiz-answer-explanation">${escapeHtml(explanation)}</div>` : ''}
+    </div>
+    ${renderExplanationList('풀이 순서', q.solvingSteps || [])}
+    ${renderChoiceAnalysisList(q.choiceAnalysis || [])}
+    ${renderExplanationList('실수 포인트', q.examTraps || [])}
+    ${renderExplanationList('마무리 체크', q.answerChecklist || [])}
+    ${renderExplanationList('암기 포인트', q.memoryCues || [], 'compact')}
+  `;
+}
+
+function handleObjectiveChoiceSelect(choiceLabel) {
+  state.quizSelectedChoiceLabel = choiceLabel;
+  renderQuiz();
+}
+
+function submitObjectiveAnswer(question) {
+  if (!state.quizSelectedChoiceLabel) return;
+  const isCorrect = (question.correctLabels || []).includes(state.quizSelectedChoiceLabel);
+  state.quizSubmission = {
+    selectedLabel: state.quizSelectedChoiceLabel,
+    isCorrect,
+  };
+  if (isCorrect) {
+    state.quizScore.correct++;
+  } else {
+    state.quizScore.incorrect++;
+  }
+  state.quizRevealed = true;
+  renderQuiz();
+}
+
+function markFillBlankResult(isCorrect) {
+  if (isCorrect) {
+    state.quizScore.correct++;
+  } else {
+    state.quizScore.incorrect++;
+  }
+  nextQuizQuestion();
+}
+
+function getQuizSubmitDisabled(q) {
+  return q.kind === 'objective' && !state.quizSelectedChoiceLabel;
+}
+
+function getQuizSubmitLabel(q) {
+  return q.kind === 'objective' ? '선택한 답 제출하기' : '정답 확인하기';
+}
+
+function getQuizPostRevealActions(q) {
+  if (q.kind === 'objective') {
+    return `
+      <div class="quiz-actions">
+        <button class="btn-quiz-action next" id="btn-next-question">다음 문제</button>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="quiz-actions">
+      <button class="btn-quiz-action knew" id="btn-knew">맞았어요 ✓</button>
+      <button class="btn-quiz-action didnt-know" id="btn-didnt">틀렸어요 ✕</button>
+    </div>
+  `;
+}
+
+function bindQuizPromptEvents(q) {
+  if (q.kind !== 'objective' || state.quizRevealed) return;
+  document.querySelectorAll('.quiz-choice-item[data-choice]').forEach(button => {
+    button.addEventListener('click', () => {
+      handleObjectiveChoiceSelect(button.dataset.choice);
+    });
+  });
+}
+
+function bindQuizActionEvents(q) {
+  if (!state.quizRevealed) {
+    if (q.kind === 'objective') {
+      const submitButton = document.getElementById('btn-reveal');
+      if (submitButton) {
+        submitButton.textContent = getQuizSubmitLabel(q);
+        submitButton.disabled = getQuizSubmitDisabled(q);
+      }
+      submitButton?.addEventListener('click', () => {
+        submitObjectiveAnswer(q);
+      });
+      return;
+    }
+
+    document.getElementById('btn-reveal').addEventListener('click', () => {
+      state.quizRevealed = true;
+      renderQuiz();
+    });
+    return;
+  }
+
+  if (q.kind === 'objective') {
+    const primaryButton = document.getElementById('btn-knew');
+    const secondaryButton = document.getElementById('btn-didnt');
+    if (primaryButton) {
+      primaryButton.textContent = '다음 문제';
+      primaryButton.classList.remove('knew');
+      primaryButton.classList.add('next');
+    }
+    if (secondaryButton) {
+      secondaryButton.style.display = 'none';
+    }
+    primaryButton?.addEventListener('click', () => {
+      nextQuizQuestion();
+    });
+    return;
+  }
+
+  document.getElementById('btn-knew').addEventListener('click', () => {
+    markFillBlankResult(true);
+  });
+  document.getElementById('btn-didnt').addEventListener('click', () => {
+    markFillBlankResult(false);
+  });
 }
 
 // ─── ROUTER ─────────────────────────────────────────────────
 function navigate(page, params = {}) {
   clearAutoPlayTimer();
+  clearGuideTimers();
   state.currentPage = page;
   Object.assign(state, params);
   render();
@@ -210,17 +1107,157 @@ function navigate(page, params = {}) {
 const app = document.getElementById('app');
 
 function render() {
+  if (!state.currentUser) {
+    state.currentPage = 'auth';
+  }
   switch (state.currentPage) {
+    case 'auth':     renderSimpleAuth(); break;
     case 'home':     renderHome(); break;
     case 'lectures': renderLectures(); break;
     case 'theory':   renderTheory(); break;
     case 'quiz':     renderQuiz(); break;
     case 'stats':    renderStats(); break;
-    default:         renderHome();
+    default:         state.currentUser ? renderHome() : renderSimpleAuth();
   }
 }
 
 // ─── HOME PAGE ──────────────────────────────────────────────
+function renderAuth() {
+  renderSimpleAuth();
+  return;
+  const isSignup = state.authMode === 'signup';
+  const errorHtml = state.authError
+    ? `<div class="auth-error">${escapeHtml(state.authError)}</div>`
+    : '';
+
+  app.innerHTML = `
+    <div class="auth-page">
+      <div class="auth-shell">
+        <div class="auth-hero">
+          <div class="auth-eyebrow">Study Login</div>
+          <h1 class="auth-title">학습 상황을 계정별로 저장해요</h1>
+          <p class="auth-subtitle">간단한 로컬 로그인으로 같은 기기 안에서 사용자별 진도와 이어보기를 따로 보관합니다.</p>
+        </div>
+
+        <div class="auth-card">
+          <div class="auth-tabs">
+            <button class="auth-tab ${!isSignup ? 'active' : ''}" id="btn-auth-login">로그인</button>
+            <button class="auth-tab ${isSignup ? 'active' : ''}" id="btn-auth-signup">회원가입</button>
+          </div>
+
+          <form class="auth-form" id="auth-form">
+            ${isSignup ? `
+              <label class="auth-field">
+                <span class="auth-label">표시 이름</span>
+                <input class="auth-input" id="auth-display-name" type="text" maxlength="20" placeholder="예: 민수" />
+              </label>
+            ` : ''}
+            <label class="auth-field">
+              <span class="auth-label">아이디</span>
+              <input class="auth-input" id="auth-username" type="text" autocomplete="username" placeholder="영문/숫자 3자 이상" required />
+            </label>
+            <label class="auth-field">
+              <span class="auth-label">비밀번호</span>
+              <input class="auth-input" id="auth-password" type="password" autocomplete="${isSignup ? 'new-password' : 'current-password'}" placeholder="4자 이상" required />
+            </label>
+            ${errorHtml}
+            <button class="auth-submit" type="submit">${isSignup ? '계정 만들고 시작하기' : '로그인하고 이어서 학습하기'}</button>
+          </form>
+
+          <div class="auth-note">
+            현재 브라우저의 저장소를 사용하므로, 같은 기기에서는 계정별로 학습 상황이 따로 저장됩니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('btn-auth-login')?.addEventListener('click', () => {
+    state.authMode = 'login';
+    state.authError = '';
+    renderAuth();
+  });
+
+  document.getElementById('btn-auth-signup')?.addEventListener('click', () => {
+    state.authMode = 'signup';
+    state.authError = '';
+    renderAuth();
+  });
+
+  document.getElementById('auth-form')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('auth-username')?.value || '';
+    const password = document.getElementById('auth-password')?.value || '';
+    const displayName = document.getElementById('auth-display-name')?.value || '';
+
+    try {
+      const user = isSignup
+        ? createUserAccount(displayName, username, password)
+        : signInUser(username, password);
+      completeLogin(user);
+      navigate('home');
+    } catch (error) {
+      state.authError = error.message || '로그인 처리 중 문제가 발생했습니다.';
+      renderAuth();
+    }
+  });
+}
+
+function renderSimpleAuth() {
+  const errorHtml = state.authError
+    ? `<div class="auth-error">${escapeHtml(state.authError)}</div>`
+    : '';
+
+  app.innerHTML = `
+    <div class="auth-page">
+      <div class="auth-shell">
+        <div class="auth-hero">
+          <div class="auth-eyebrow">Study Login</div>
+          <h1 class="auth-title">이름만 입력하고 바로 학습 시작</h1>
+          <p class="auth-subtitle">같은 이름으로 다시 들어오면 이어서 학습하고, 처음 입력한 이름이면 새 학습 기록이 자동으로 만들어집니다.</p>
+        </div>
+
+        <div class="auth-card">
+          <form class="auth-form" id="auth-form-simple">
+            <label class="auth-field">
+              <span class="auth-label">사용자 이름</span>
+              <input
+                class="auth-input"
+                id="auth-username-simple"
+                type="text"
+                autocomplete="nickname"
+                maxlength="20"
+                placeholder="예: 김민수"
+                required
+              />
+            </label>
+            ${errorHtml}
+            <button class="auth-submit" type="submit">이 이름으로 시작하기</button>
+          </form>
+
+          <div class="auth-note">
+            비밀번호 없이 이 기기 브라우저에만 저장됩니다. 같은 이름이면 기존 기록을 이어서 불러오고, 로그아웃하면 다른 이름으로도 바로 들어올 수 있어요.
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('auth-form-simple')?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('auth-username-simple')?.value || '';
+
+    try {
+      const user = signInOrCreateUser(username);
+      completeLogin(user);
+      navigate('home');
+    } catch (error) {
+      state.authError = error.message || '로그인 처리 중 문제가 생겼습니다.';
+      renderSimpleAuth();
+    }
+  });
+}
+
 function renderHome() {
   const prog = getTotalProgress();
   const lastLecture = state.lastLectureId
@@ -229,7 +1266,18 @@ function renderHome() {
 
   const hours = new Date().getHours();
   const greetMap = { morning: '좋은 아침이에요 ☀️', afternoon: '오후도 화이팅! 💪', evening: '밤에도 열공! 🌙' };
+  const currentUser = state.currentUser;
   const greeting = hours < 12 ? greetMap.morning : hours < 18 ? greetMap.afternoon : greetMap.evening;
+  const accountCard = currentUser ? `
+    <div class="account-card">
+      <div class="account-info">
+        <div class="account-label">현재 사용자</div>
+        <div class="account-name">${escapeHtml(currentUser.display_name)}</div>
+        <div class="account-sub">학습 기록이 이 이름으로 저장되고 있어요</div>
+      </div>
+      <button class="account-logout" id="btn-logout">로그아웃</button>
+    </div>
+  ` : '';
 
   app.innerHTML = `
     <div class="page" id="page-home">
@@ -239,6 +1287,8 @@ function renderHome() {
           <span class="highlight">정보처리기사</span>,<br/>주제별로 압축 학습해요
         </h1>
       </div>
+
+      ${accountCard}
 
       <div class="progress-card">
         <div class="progress-label">전체 주제 학습 진행률</div>
@@ -284,6 +1334,10 @@ function renderHome() {
   document.getElementById('btn-continue')?.addEventListener('click', (e) => {
     const id = e.currentTarget.dataset.id;
     startLecture(id);
+  });
+
+  document.getElementById('btn-logout')?.addEventListener('click', () => {
+    logoutCurrentUser();
   });
 
   document.querySelectorAll('.subject-card').forEach(btn => {
@@ -373,6 +1427,7 @@ function renderLectures() {
 // ─── START TOPIC ────────────────────────────────────────────
 async function startLecture(lectureId) {
   clearAutoPlayTimer();
+  clearGuideTimers();
   app.innerHTML = `
     <div class="loading-screen">
       <div class="loading-logo">📖</div>
@@ -384,10 +1439,15 @@ async function startLecture(lectureId) {
     const lecture = await fetchLecture(lectureId);
     state.currentLecture = lecture;
     state.currentLectureId = lectureId;
+    state.quizContext = null;
     state.currentSegIdx = 0;
     state.currentSentIdx = 0;
     state.shownSentences = [];
     state.autoPlay = false;
+    state.guideFrameMode = 'idle';
+    state.guideFrameIndex = 0;
+    state.lastRevealAt = 0;
+    state.lastRevealText = '';
     revealNextSentence();
     state.lastLectureId = lectureId;
     saveStorage();
@@ -411,6 +1471,102 @@ function clearAutoPlayTimer() {
   }
 }
 
+function clearGuideFrameTimer() {
+  if (state.guideFrameTimer) {
+    clearTimeout(state.guideFrameTimer);
+    state.guideFrameTimer = null;
+  }
+}
+
+function clearGuideSceneTimer() {
+  if (state.guideSceneTimer) {
+    clearTimeout(state.guideSceneTimer);
+    state.guideSceneTimer = null;
+  }
+}
+
+function clearGuideTimers() {
+  clearGuideFrameTimer();
+  clearGuideSceneTimer();
+}
+
+function getGuideTalkWindowMs(text = '') {
+  const weighted = GUIDE_TALK_WINDOW_MS + ((text || '').trim().length * 28);
+  return Math.max(920, Math.min(weighted, 2400));
+}
+
+function getGuideCharacterMode(isLastSentence, isLastSegment) {
+  const now = Date.now();
+  const talking = state.lastRevealAt > 0
+    && (now - state.lastRevealAt) < getGuideTalkWindowMs(state.lastRevealText);
+
+  if (talking) return 'speaking';
+  if (isLastSentence && !isLastSegment) return 'pointing';
+  return 'idle';
+}
+
+function getGuideFrameConfig(mode) {
+  const normalizedMode = GUIDE_CHARACTER_FRAMES[mode] ? mode : 'idle';
+  return {
+    mode: normalizedMode,
+    frames: GUIDE_CHARACTER_FRAMES[normalizedMode],
+    duration: GUIDE_FRAME_DURATION_MS[normalizedMode] || GUIDE_FRAME_DURATION_MS.idle,
+  };
+}
+
+function getGuideFrameSrc(mode) {
+  const config = getGuideFrameConfig(mode);
+  if (state.guideFrameMode !== config.mode) {
+    state.guideFrameMode = config.mode;
+    state.guideFrameIndex = 0;
+  }
+
+  const frameCount = config.frames.length || 1;
+  if (state.guideFrameIndex >= frameCount) {
+    state.guideFrameIndex = 0;
+  }
+  return config.frames[state.guideFrameIndex] || config.frames[0] || '';
+}
+
+function scheduleGuideSceneRerender(delayMs) {
+  clearGuideSceneTimer();
+  if (!delayMs || delayMs < 40) return;
+  state.guideSceneTimer = setTimeout(() => {
+    if (state.currentPage === 'theory') {
+      renderTheory();
+    }
+  }, delayMs);
+}
+
+function scheduleGuideFrameAdvance(mode) {
+  clearGuideFrameTimer();
+  const stageEl = document.querySelector('.guide-dock-stage');
+  const frameEl = document.getElementById('guide-character-frame');
+  if (!stageEl || !frameEl || state.currentPage !== 'theory') return;
+
+  const config = getGuideFrameConfig(mode);
+  if (state.guideFrameMode !== config.mode) {
+    state.guideFrameMode = config.mode;
+    state.guideFrameIndex = 0;
+    frameEl.src = config.frames[0] || '';
+  }
+
+  stageEl.classList.remove('guide-dock-stage--idle', 'guide-dock-stage--speaking', 'guide-dock-stage--pointing');
+  stageEl.classList.add(`guide-dock-stage--${config.mode}`);
+
+  const tick = () => {
+    const currentFrameEl = document.getElementById('guide-character-frame');
+    const currentStageEl = document.querySelector('.guide-dock-stage');
+    if (!currentFrameEl || !currentStageEl || state.currentPage !== 'theory') return;
+
+    state.guideFrameIndex = (state.guideFrameIndex + 1) % config.frames.length;
+    currentFrameEl.src = config.frames[state.guideFrameIndex] || config.frames[0] || '';
+    state.guideFrameTimer = setTimeout(tick, config.duration);
+  };
+
+  state.guideFrameTimer = setTimeout(tick, config.duration);
+}
+
 function getAutoPlayDelay(text = '') {
   const base = 900 + (text.length * 55);
   return Math.max(1400, Math.min(base, 3600));
@@ -431,9 +1587,14 @@ function jumpToSubtopic(subtopicIndex) {
   if (targetIndex < 0) return;
 
   clearAutoPlayTimer();
+  clearGuideTimers();
   state.currentSegIdx = targetIndex;
   state.currentSentIdx = 0;
   state.shownSentences = [];
+  state.guideFrameMode = 'idle';
+  state.guideFrameIndex = 0;
+  state.lastRevealAt = 0;
+  state.lastRevealText = '';
   revealNextSentence();
   renderTheory();
 }
@@ -462,13 +1623,24 @@ function revealNextSentence() {
   if (!lecture) return false;
 
   const segments = lecture.segments || [];
+  const subtopics = lecture.subtopics || [];
   while (state.currentSegIdx < segments.length) {
     const currentSeg = segments[state.currentSegIdx];
     const sentences = currentSeg?.spoken_sentences || [];
+    const currentSubtopic = subtopics.find(sub => sub.subtopic_index === currentSeg?.subtopic_index) || null;
 
     if (state.currentSentIdx < sentences.length) {
-      state.shownSentences.push(sentences[state.currentSentIdx]);
+      const nextSentence = sentences[state.currentSentIdx];
+      state.shownSentences.push({
+        text: nextSentence,
+        highlightKeywords: mergeHighlightKeywords(
+          currentSeg?.highlight_keywords,
+          getSubtopicHighlightKeywords(currentSubtopic),
+        ),
+      });
       state.currentSentIdx++;
+      state.lastRevealAt = Date.now();
+      state.lastRevealText = nextSentence || '';
       return true;
     }
 
@@ -488,40 +1660,66 @@ function renderTheory() {
   const lecture = state.currentLecture;
   if (!lecture) return navigate('home');
 
-  const segments = lecture.segments || [];
-  const subtopics = lecture.subtopics || [];
-  const currentSeg = segments[state.currentSegIdx];
+  const theoryContext = getCurrentTheoryContext();
+  if (!theoryContext) {
+    showTheoryComplete();
+    return;
+  }
+
+  const {
+    segments,
+    subtopics,
+    currentSeg,
+    currentSubtopic,
+    nextSeg,
+    isLastSentence,
+    isLastSegment,
+    isSubtopicBoundary,
+  } = theoryContext;
+  const practice = isSubtopicBoundary
+    ? getSubtopicPracticeForContext(state.currentLectureId, currentSubtopic)
+    : null;
   if (!currentSeg) {
     showTheoryComplete();
     return;
   }
 
   const sentences = currentSeg.spoken_sentences || [];
-  const currentSubtopic = subtopics.find(sub => sub.subtopic_index === currentSeg.subtopic_index)
-    || { subtopic_index: currentSeg.subtopic_index || 1, title: currentSeg.subtopic_title || lecture.lecture.title, youtube_url_normalized: currentSeg.youtube_url_normalized || '' };
   const progressPct = segments.length > 0
     ? Math.round(((state.currentSegIdx + (state.currentSentIdx >= sentences.length ? 1 : 0)) / segments.length) * 100)
     : 0;
   const currentSourceUrl = currentSeg.youtube_url_normalized || currentSubtopic.youtube_url_normalized || '';
 
-  const sentencesHtml = state.shownSentences.map((s, i) => {
+  const sentencesHtml = state.shownSentences.map((entry, i) => {
     const isLatest = i === state.shownSentences.length - 1;
-    return `<div class="speech-bubble ${isLatest ? 'latest' : ''}">${escapeHtml(s)}</div>`;
+    const text = typeof entry === 'string' ? entry : entry?.text || '';
+    const highlightKeywords = typeof entry === 'string' ? [] : entry?.highlightKeywords || [];
+    return `<div class="speech-bubble ${isLatest ? 'latest' : ''}">${renderHighlightedText(text, highlightKeywords)}</div>`;
   }).join('');
 
-  const isLastSentence = state.currentSentIdx >= sentences.length;
-  const isLastSegment = state.currentSegIdx >= segments.length - 1;
+  const guideMode = getGuideCharacterMode(isLastSentence, isLastSegment);
+  const guideFrameSrc = getGuideFrameSrc(guideMode);
+  const currentHighlightKeywords = getSubtopicHighlightKeywords(currentSubtopic);
+  const currentSegmentKeywords = mergeHighlightKeywords(currentSeg.highlight_keywords, currentHighlightKeywords).slice(0, 6);
+  const keywordChipsHtml = currentSegmentKeywords.length ? `
+    <div class="lecture-keyword-row">
+      ${currentSegmentKeywords.map(keyword => `
+        <span class="lecture-keyword-chip ${keyword.emphasis === 'primary' ? 'primary' : 'secondary'}">
+          ${escapeHtml(keyword.keyword)}
+        </span>
+      `).join('')}
+    </div>
+  ` : '';
 
   let btnText = '다음 문장 →';
   let btnClass = '';
   if (isLastSentence && isLastSegment) {
-    btnText = '주제 학습 완료! 🎉';
+    btnText = practice ? '소주제 문제로 →' : '주제 학습 완료! 🎉';
     btnClass = 'complete';
   } else if (isLastSentence) {
-    const nextSeg = segments[state.currentSegIdx + 1];
     const nextSubtopicIndex = nextSeg?.subtopic_index;
     btnText = nextSubtopicIndex && nextSubtopicIndex !== currentSubtopic.subtopic_index
-      ? '다음 소주제로 →'
+      ? (practice ? '소주제 문제로 →' : '다음 소주제로 →')
       : '다음 장면으로 →';
   } else {
     btnText = '다음 대사 →';
@@ -567,6 +1765,7 @@ function renderTheory() {
             실제 강의 대사 진행 중
             ${currentSeg.start_time_hms ? ` · ${escapeHtml(currentSeg.start_time_hms)}` : ''}
           </div>
+          ${keywordChipsHtml}
         </div>
 
         <div class="speech-area" id="speech-area">
@@ -575,6 +1774,16 @@ function renderTheory() {
       </div>
 
       <div class="theory-footer">
+        <div class="guide-dock" aria-hidden="true">
+          <div class="guide-dock-stage guide-dock-stage--${guideMode}">
+            <img
+              id="guide-character-frame"
+              class="guide-character-frame"
+              src="${guideFrameSrc}"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="theory-footer-tools">
           <button class="btn-secondary" id="btn-toggle-play">
             ${state.autoPlay ? '연속 재생 끄기' : '연속 재생 켜기'}
@@ -586,6 +1795,13 @@ function renderTheory() {
   `;
 
   setTimeout(positionLatestBubble, 50);
+  scheduleGuideFrameAdvance(guideMode);
+  if (guideMode === 'speaking') {
+    const remaining = Math.max(120, getGuideTalkWindowMs(state.lastRevealText) - (Date.now() - state.lastRevealAt));
+    scheduleGuideSceneRerender(remaining + 40);
+  } else {
+    clearGuideSceneTimer();
+  }
 
   document.getElementById('btn-theory-back').addEventListener('click', () => {
     state.autoPlay = false;
@@ -615,6 +1831,15 @@ function renderTheory() {
 }
 
 function handleTheoryNext() {
+  const theoryContext = getCurrentTheoryContext();
+  if (theoryContext?.isSubtopicBoundary) {
+    const practice = getSubtopicPracticeForContext(state.currentLectureId, theoryContext.currentSubtopic);
+    if (practice) {
+      showSubtopicCheckpoint(theoryContext, practice);
+      return;
+    }
+  }
+
   if (revealNextSentence()) {
     renderTheory();
   } else {
@@ -625,8 +1850,9 @@ function handleTheoryNext() {
 function showTheoryComplete() {
   const lecture = state.currentLecture;
   clearAutoPlayTimer();
-  state.completedLectures.add(state.currentLectureId);
-  saveStorage();
+  clearGuideTimers();
+  markCurrentLectureComplete();
+  state.quizContext = null;
 
   app.innerHTML = `
     <div class="theory-complete">
@@ -646,7 +1872,10 @@ function showTheoryComplete() {
     state.quizQuestions = questions;
     state.quizIndex = 0;
     state.quizRevealed = false;
-    state.quizScore = { knew: 0, didnt: 0 };
+    state.quizScore = { correct: 0, incorrect: 0 };
+    state.quizSelectedChoiceLabel = null;
+    state.quizSubmission = null;
+    state.quizContext = null;
     navigate('quiz');
   });
 
@@ -696,7 +1925,7 @@ function renderQuiz() {
         <div class="quiz-card">
           <div class="quiz-type">📝 ${q.type}</div>
           <div class="quiz-question" id="quiz-q">
-            ${state.quizRevealed ? formatQuizRevealed(q) : escapeHtml(q.question)}
+            ${renderQuizPrompt(q)}
           </div>
 
           ${!state.quizRevealed ? `
@@ -704,9 +1933,7 @@ function renderQuiz() {
               <button class="btn-quiz-action reveal" id="btn-reveal">정답 확인하기</button>
             </div>
           ` : `
-            <div style="margin-bottom:16px;padding:14px 18px;background:var(--green-50);border-radius:var(--r-lg);font-size:15px;font-weight:600;color:var(--green-500);">
-              정답: ${escapeHtml(q.answer)}
-            </div>
+            ${renderQuizRevealPanel(q)}
             <div class="quiz-actions">
               <button class="btn-quiz-action knew" id="btn-knew">알고 있었어요 ✓</button>
               <button class="btn-quiz-action didnt-know" id="btn-didnt">몰랐어요 ✗</button>
@@ -717,21 +1944,8 @@ function renderQuiz() {
     </div>
   `;
 
-  if (!state.quizRevealed) {
-    document.getElementById('btn-reveal').addEventListener('click', () => {
-      state.quizRevealed = true;
-      renderQuiz();
-    });
-  } else {
-    document.getElementById('btn-knew').addEventListener('click', () => {
-      state.quizScore.knew++;
-      nextQuizQuestion();
-    });
-    document.getElementById('btn-didnt').addEventListener('click', () => {
-      state.quizScore.didnt++;
-      nextQuizQuestion();
-    });
-  }
+  bindQuizPromptEvents(q);
+  bindQuizActionEvents(q);
 }
 
 function formatQuizRevealed(q) {
@@ -744,12 +1958,14 @@ function formatQuizRevealed(q) {
 function nextQuizQuestion() {
   state.quizIndex++;
   state.quizRevealed = false;
+  state.quizSelectedChoiceLabel = null;
+  state.quizSubmission = null;
   renderQuiz();
 }
 
 function renderQuizResult() {
-  const total = state.quizScore.knew + state.quizScore.didnt;
-  const pct = total > 0 ? Math.round((state.quizScore.knew / total) * 100) : 0;
+  const total = state.quizScore.correct + state.quizScore.incorrect;
+  const pct = total > 0 ? Math.round((state.quizScore.correct / total) * 100) : 0;
 
   let emoji;
   let message;
@@ -766,16 +1982,22 @@ function renderQuizResult() {
       <div class="result-detail">
         ${total}문제 중 ${state.quizScore.knew}문제를 알고 있었어요
       </div>
-      <button class="btn-home" id="btn-next-lecture">다음 주제 →</button>
+      <button class="btn-home" id="btn-next-lecture">${getQuizPrimaryActionLabel()}</button>
       <button class="btn-skip-quiz" id="btn-quiz-home" style="margin-top:8px">홈으로</button>
     </div>
   `;
 
+  const resultDetail = document.querySelector('.result-detail');
+  if (resultDetail) {
+    resultDetail.textContent = `${total}문제 중 ${state.quizScore.correct}문제를 맞혔어요`;
+  }
+
   document.getElementById('btn-next-lecture').addEventListener('click', () => {
-    goToNextLectureOrHome();
+    handleQuizPrimaryAction();
   });
 
   document.getElementById('btn-quiz-home').addEventListener('click', () => {
+    state.quizContext = null;
     navigate('home');
   });
 }
@@ -871,10 +2093,16 @@ function escapeHtml(str) {
 
 // ─── INIT ───────────────────────────────────────────────────
 async function init() {
+  state.currentUser = loadSessionUser();
   loadStorage();
 
   try {
-    state.manifest = await fetchManifest();
+    const [manifest, practiceBundle] = await Promise.all([
+      fetchManifest(),
+      fetchPracticeBundle(),
+    ]);
+    state.manifest = manifest;
+    state.subtopicPracticeMap = buildSubtopicPracticeMap(practiceBundle?.items || []);
     render();
   } catch (err) {
     console.error('Failed to initialize', err);
@@ -888,5 +2116,8 @@ async function init() {
 }
 
 window.navigate = navigate;
+window.addEventListener('beforeunload', () => {
+  saveStorage();
+});
 
 init();

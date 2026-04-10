@@ -1,0 +1,935 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_033",
+    "sequence": 33,
+    "title": "테스트 케이스와 오라클",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 6,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_253",
+      "chapter_055",
+      "chapter_257",
+      "chapter_092"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_89c3a7c072cb5e2a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          32
+        ],
+        "page_span": {
+          "start_page": 32,
+          "end_page": 32
+        },
+        "source_explanation": "테스트 케이스는 테스트의 목표와 방법을 결정한 후 작성합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트",
+          "테스트 케이스"
+        ],
+        "chapter_label": "테스트 케이스",
+        "chapter_key": "소프트웨어 개발 > 테스트 > 테스트 케이스",
+        "chapter_id": "chapter_253"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "테스트 케이스와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다."
+          },
+          {
+            "label": "2",
+            "text": "프로그램에 결함이 있더라도 입력에 대해 정상적인 결과를 낼 수 있기 때문에 결함을 검사할 수 있는 테스트 케이스를 찾는 것이 중요하다."
+          },
+          {
+            "label": "3",
+            "text": "개발된 서비스가 정의된 요구 사항을 준수하는지 확인하기 위한 입력 값과 실행 조건, 예상 결과의 집합으로 볼 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 케이스 실행이 통과되었는지 실패하였는지 판단하기 위한 기준을 테스트 오라클(Test Oracle)이라고 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다."
+        ],
+        "answer_text": "테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다."
+      },
+      "explanation": {
+        "source_text": "테스트 케이스는 테스트의 목표와 방법을 결정한 후 작성합니다.",
+        "summary": "테스트 케이스의 정의와 작성 절차에 대한 이해를 묻는 문제입니다.",
+        "why_correct": [
+          "테스트 케이스는 무엇을 어떻게 테스트할지(목표와 방법)가 먼저 정해진 후에 그에 맞춰 구체적인 입력값과 예상 결과를 설계하는 것입니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "테스트 케이스",
+          "테스트 오라클"
+        ],
+        "memory_cues": [
+          "계획(목표/방법) -> 설계(케이스)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.'와 일치합니다. 테스트 케이스는 무엇을 어떻게 테스트할지(목표와 방법)가 먼저 정해진 후에 그에 맞춰 구체적인 입력값과 예상 결과를 설계하는 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "프로그램에 결함이 있더라도 입력에 대해 정상적인 결과를 낼 수 있기 때문에 결함을 검사할 수 있는 테스트 케이스를 찾는 것이 중요하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.'인데 이 선택지는 '프로그램에 결함이 있더라도 입력에 대해 정상적인 결과를 낼 수 있기 때문에 결함을 검사할 수 있는 테스트 케이스를 찾는 것이 중요하다.'이므로 일치하지 않습니다. 2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "개발된 서비스가 정의된 요구 사항을 준수하는지 확인하기 위한 입력 값과 실행 조건, 예상 결과의 집합으로 볼 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.'인데 이 선택지는 '개발된 서비스가 정의된 요구 사항을 준수하는지 확인하기 위한 입력 값과 실행 조건, 예상 결과의 집합으로 볼 수 있다.'이므로 일치하지 않습니다. 2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 케이스 실행이 통과되었는지 실패하였는지 판단하기 위한 기준을 테스트 오라클(Test Oracle)이라고 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.'인데 이 선택지는 '테스트 케이스 실행이 통과되었는지 실패하였는지 판단하기 위한 기준을 테스트 오라클(Test Oracle)이라고 한다.'이므로 일치하지 않습니다. 2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테스트 케이스와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 테스트 케이스, 테스트 오라클",
+          "정답 판단 근거를 적용합니다. 테스트 케이스는 무엇을 어떻게 테스트할지(목표와 방법)가 먼저 정해진 후에 그에 맞춰 구체적인 입력값과 예상 결과를 설계하는 것입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트 케이스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '테스트 오라클'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 계획(목표/방법) -> 설계(케이스)"
+        ],
+        "detailed_summary": "테스트 케이스의 정의와 작성 절차에 대한 이해를 묻는 문제입니다. 테스트 케이스는 테스트의 목표와 방법을 결정한 후 작성합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테스트 케이스와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 테스트의 목표 및 테스트 방법을 결정하기 전에 테스트 케이스를 작성해야 한다.'와 일치합니다. 테스트 케이스는 무엇을 어떻게 테스트할지(목표와 방법)가 먼저 정해진 후에 그에 맞춰 구체적인 입력값과 예상 결과를 설계하는 것입니다. 시험 포인트는 2, 3, 4번은 테스트 케이스의 중요성, 정의, 오라클에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 케이스",
+        "테스트 오라클",
+        "테스트 계획"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ff9fe2b78d384999",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          47
+        ],
+        "page_span": {
+          "start_page": 47,
+          "end_page": 47
+        },
+        "source_explanation": "테스트 오라클의 종류에는 참(True), 샘플링(Sampling), 추정(Heuristic), 일관성(Consistent) 검사 오라클이 있습니다. 토탈 오라클은 해당하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 테스트 오라클의 종류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "샘플링 오라클"
+          },
+          {
+            "label": "2",
+            "text": "일관성 검사 오라클"
+          },
+          {
+            "label": "3",
+            "text": "토탈 오라클"
+          },
+          {
+            "label": "4",
+            "text": "휴리스틱 오라클"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "토탈 오라클"
+        ],
+        "answer_text": "토탈 오라클"
+      },
+      "explanation": {
+        "source_text": "테스트 오라클의 종류에는 참(True), 샘플링(Sampling), 추정(Heuristic), 일관성(Consistent) 검사 오라클이 있습니다. 토탈 오라클은 해당하지 않습니다.",
+        "summary": "테스트 결과의 정답 여부를 판단하는 테스트 오라클의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "토탈 오라클이라는 용어는 테스트 오라클의 분류에 존재하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+        ],
+        "key_concepts": [
+          "True Oracle",
+          "Sampling Oracle",
+          "Heuristic Oracle",
+          "Consistent Oracle"
+        ],
+        "memory_cues": [
+          "참샘추일 (참, 샘플링, 추정/휴리스틱, 일관성)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "샘플링 오라클",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 토탈 오라클'인데 이 선택지는 '샘플링 오라클'이므로 일치하지 않습니다. 참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+          },
+          {
+            "label": "2",
+            "text": "일관성 검사 오라클",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 토탈 오라클'인데 이 선택지는 '일관성 검사 오라클'이므로 일치하지 않습니다. 참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+          },
+          {
+            "label": "3",
+            "text": "토탈 오라클",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 토탈 오라클'와 일치합니다. 토탈 오라클이라는 용어는 테스트 오라클의 분류에 존재하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "휴리스틱 오라클",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 토탈 오라클'인데 이 선택지는 '휴리스틱 오라클'이므로 일치하지 않습니다. 참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 테스트 오라클의 종류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. True Oracle, Sampling Oracle, Heuristic Oracle, Consistent Oracle",
+          "정답 판단 근거를 적용합니다. 토탈 오라클이라는 용어는 테스트 오라클의 분류에 존재하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+        ],
+        "exam_traps": [
+          "참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'True Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Sampling Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Heuristic Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Consistent Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 참샘추일 (참, 샘플링, 추정/휴리스틱, 일관성)"
+        ],
+        "detailed_summary": "테스트 결과의 정답 여부를 판단하는 테스트 오라클의 종류를 묻는 문제입니다. 테스트 오라클의 종류에는 참(True), 샘플링(Sampling), 추정(Heuristic), 일관성(Consistent) 검사 오라클이 있습니다. 토탈 오라클은 해당하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 테스트 오라클의 종류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 토탈 오라클'와 일치합니다. 토탈 오라클이라는 용어는 테스트 오라클의 분류에 존재하지 않습니다. 시험 포인트는 참, 샘플링, 휴리스틱, 일관성 검사 오라클은 대표적인 4대 오라클입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 오라클",
+        "참 오라클",
+        "샘플링 오라클",
+        "휴리스틱 오라클"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8b9eb126781ec4f7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          104
+        ],
+        "page_span": {
+          "start_page": 104,
+          "end_page": 104
+        },
+        "source_explanation": "테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "테스트 오라클"
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오"
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스"
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "테스트 오라클"
+        ],
+        "answer_text": "테스트 오라클"
+      },
+      "explanation": {
+        "source_text": "테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다.",
+        "summary": "테스트 수행 결과가 성공인지 실패인지 판별해주는 기준을 묻는 문제입니다.",
+        "why_correct": [
+          "테스트 오라클(Test Oracle)은 기대 결과(참값)를 미리 준비하여 실제 결과와 비교하는 도구 또는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+        ],
+        "key_concepts": [
+          "Test Oracle",
+          "Expected Result",
+          "True Oracle"
+        ],
+        "memory_cues": [
+          "정답을 알려주는 신탁(Oracle)!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "테스트 오라클",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클(Test Oracle)은 기대 결과(참값)를 미리 준비하여 실제 결과와 비교하는 도구 또는 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 시나리오'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 케이스'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 데이터'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+          "핵심 개념을 떠올립니다. Test Oracle, Expected Result, True Oracle",
+          "정답 판단 근거를 적용합니다. 테스트 오라클(Test Oracle)은 기대 결과(참값)를 미리 준비하여 실제 결과와 비교하는 도구 또는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+        ],
+        "exam_traps": [
+          "테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Test Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Expected Result'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'True Oracle'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정답을 알려주는 신탁(Oracle)!"
+        ],
+        "detailed_summary": "테스트 수행 결과가 성공인지 실패인지 판별해주는 기준을 묻는 문제입니다. 테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클(Test Oracle)은 기대 결과(참값)를 미리 준비하여 실제 결과와 비교하는 도구 또는 기법입니다. 시험 포인트는 테스트 케이스는 입력값과 절차, 시나리오는 케이스의 묶음, 데이터는 테스트에 쓰이는 값 자체를 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 오라클",
+        "Test Oracle",
+        "참값",
+        "결과 판단"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_58c651c95130ad9e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          106
+        ],
+        "page_span": {
+          "start_page": 106,
+          "end_page": 106
+        },
+        "source_explanation": "전문가의 조언 | 테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 케이스와 오라클"
+        ],
+        "chapter_label": "테스트 케이스와 오라클",
+        "chapter_key": "소프트웨어 개발 > 테스트 케이스와 오라클",
+        "chapter_id": "chapter_257"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "테스트 오라클"
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오"
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스"
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "테스트 오라클"
+        ],
+        "answer_text": "테스트 오라클"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다.",
+        "summary": "테스트 결과의 정답 여부를 확인하는 도구에 관한 문제입니다.",
+        "why_correct": [
+          "테스트 오라클은 테스트 수행 결과가 기대한 결과와 일치하는지 판단하기 위한 기준(참 값)을 제공합니다."
+        ],
+        "why_others_wrong": [
+          "테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+        ],
+        "key_concepts": [
+          "테스트 오라클",
+          "참 오라클",
+          "샘플링 오라클"
+        ],
+        "memory_cues": [
+          "오라클 = 정답지"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "테스트 오라클",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클은 테스트 수행 결과가 기대한 결과와 일치하는지 판단하기 위한 기준(참 값)을 제공합니다."
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 시나리오'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 케이스'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 데이터'이므로 일치하지 않습니다. 테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+          "핵심 개념을 떠올립니다. 테스트 오라클, 참 오라클, 샘플링 오라클",
+          "정답 판단 근거를 적용합니다. 테스트 오라클은 테스트 수행 결과가 기대한 결과와 일치하는지 판단하기 위한 기준(참 값)을 제공합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+        ],
+        "exam_traps": [
+          "테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트 오라클'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '참 오라클'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '샘플링 오라클'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 오라클 = 정답지"
+        ],
+        "detailed_summary": "테스트 결과의 정답 여부를 확인하는 도구에 관한 문제입니다. 전문가의 조언 | 테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클은 테스트 수행 결과가 기대한 결과와 일치하는지 판단하기 위한 기준(참 값)을 제공합니다. 시험 포인트는 테스트 케이스는 입력값과 예상 결과의 집합이며, 시나리오는 테스트 순서, 데이터는 실제 입력되는 값입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 오라클",
+        "참 값",
+        "결과 판단"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5e39de2f2d16958c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          163
+        ],
+        "page_span": {
+          "start_page": 163,
+          "end_page": 163
+        },
+        "source_explanation": "테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "애플리케이션 테스트 관리",
+          "테스트 오라클"
+        ],
+        "chapter_label": "테스트 오라클",
+        "chapter_key": "2과목 소프트웨어 개발 > 애플리케이션 테스트 관리 > 테스트 오라클",
+        "chapter_id": "chapter_092"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "32. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "테스트 오라클"
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오"
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스"
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "테스트 오라클"
+        ],
+        "answer_text": "테스트 오라클"
+      },
+      "explanation": {
+        "source_text": "테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다.",
+        "summary": "테스트 결과의 정답 여부를 판별하는 기준을 묻는 문제입니다.",
+        "why_correct": [
+          "테스트 오라클은 기대 결과와 실제 결과를 비교하여 성공 여부를 판단하는 기준입니다."
+        ],
+        "why_others_wrong": [
+          "시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+        ],
+        "key_concepts": [
+          "테스트 오라클 (Test Oracle)"
+        ],
+        "memory_cues": [
+          "오라클 = 정답 판독기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "테스트 오라클",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클은 기대 결과와 실제 결과를 비교하여 성공 여부를 판단하는 기준입니다."
+          },
+          {
+            "label": "2",
+            "text": "테스트 시나리오",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 시나리오'이므로 일치하지 않습니다. 시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 케이스'이므로 일치하지 않습니다. 시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트 오라클'인데 이 선택지는 '테스트 데이터'이므로 일치하지 않습니다. 시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은?",
+          "핵심 개념을 떠올립니다. 테스트 오라클 (Test Oracle)",
+          "정답 판단 근거를 적용합니다. 테스트 오라클은 기대 결과와 실제 결과를 비교하여 성공 여부를 판단하는 기준입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+        ],
+        "exam_traps": [
+          "시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트 오라클 (Test Oracle)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 오라클 = 정답 판독기"
+        ],
+        "detailed_summary": "테스트 결과의 정답 여부를 판별하는 기준을 묻는 문제입니다. 테스트 결과가 올바른지 판단하기 위해 사전에 정의된 참 값을 대입하여 비교하는 기법 및 활동을 테스트 오라클(Test Oracle)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 테스트 결과가 올바른지 판단하기 위해 사용되는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 테스트 오라클'와 일치합니다. 테스트 오라클은 기대 결과와 실제 결과를 비교하여 성공 여부를 판단하는 기준입니다. 시험 포인트는 시나리오는 절차, 케이스는 항목 명세, 데이터는 입력값입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 오라클",
+        "참 값",
+        "테스트 결과 검증"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0743f892ff58d803",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          182
+        ],
+        "page_span": {
+          "start_page": 182,
+          "end_page": 182
+        },
+        "source_explanation": "모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클은 참 오라클입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 케이스와 오라클"
+        ],
+        "chapter_label": "테스트 케이스와 오라클",
+        "chapter_key": "소프트웨어 개발 > 테스트 케이스와 오라클",
+        "chapter_id": "chapter_257"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_033",
+        "topic_title": "테스트 케이스와 오라클",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 케이스와 오라클",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 테스트 오라클에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "샘플링 오라클 : 특정한 몇몇 테스트 케이스의 입력 값들에 대해서만 기대하는 결과를 제공하는 오라클이다."
+          },
+          {
+            "label": "2",
+            "text": "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다."
+          },
+          {
+            "label": "3",
+            "text": "휴리스틱 오라클 : 특정 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하고, 나머지 입력 값들에 대해서는 추정으로 처리하는 오라클이다."
+          },
+          {
+            "label": "4",
+            "text": "일관성 검사 오라클 : 애플리케이션의 변경이 있을 경우 테스트 케이스의 수행 전과 후의 결과 값이 동일한지를 확인하는 오라클이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다."
+        ],
+        "answer_text": "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다."
+      },
+      "explanation": {
+        "source_text": "모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클은 참 오라클입니다.",
+        "summary": "테스트 오라클의 종류와 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "모든 입력 값에 대해 정답을 제공하는 오라클은 '참 오라클(True Oracle)'이며, '토탈 오라클'이라는 용어는 적절하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+        ],
+        "key_concepts": [
+          "테스트 오라클의 종류"
+        ],
+        "memory_cues": [
+          "참(True)은 모든 것을 안다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "샘플링 오라클 : 특정한 몇몇 테스트 케이스의 입력 값들에 대해서만 기대하는 결과를 제공하는 오라클이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.'인데 이 선택지는 '샘플링 오라클 : 특정한 몇몇 테스트 케이스의 입력 값들에 대해서만 기대하는 결과를 제공하는 오라클이다.'이므로 일치하지 않습니다. 샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+          },
+          {
+            "label": "2",
+            "text": "토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.'와 일치합니다. 모든 입력 값에 대해 정답을 제공하는 오라클은 '참 오라클(True Oracle)'이며, '토탈 오라클'이라는 용어는 적절하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "휴리스틱 오라클 : 특정 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하고, 나머지 입력 값들에 대해서는 추정으로 처리하는 오라클이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.'인데 이 선택지는 '휴리스틱 오라클 : 특정 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하고, 나머지 입력 값들에 대해서는 추정으로 처리하는 오라클이다.'이므로 일치하지 않습니다. 샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+          },
+          {
+            "label": "4",
+            "text": "일관성 검사 오라클 : 애플리케이션의 변경이 있을 경우 테스트 케이스의 수행 전과 후의 결과 값이 동일한지를 확인하는 오라클이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.'인데 이 선택지는 '일관성 검사 오라클 : 애플리케이션의 변경이 있을 경우 테스트 케이스의 수행 전과 후의 결과 값이 동일한지를 확인하는 오라클이다.'이므로 일치하지 않습니다. 샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 테스트 오라클에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 테스트 오라클의 종류",
+          "정답 판단 근거를 적용합니다. 모든 입력 값에 대해 정답을 제공하는 오라클은 '참 오라클(True Oracle)'이며, '토탈 오라클'이라는 용어는 적절하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+        ],
+        "exam_traps": [
+          "샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트 오라클의 종류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 참(True)은 모든 것을 안다"
+        ],
+        "detailed_summary": "테스트 오라클의 종류와 정의를 묻는 문제입니다. 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클은 참 오라클입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 테스트 오라클에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 토탈 오라클 : 모든 테스트 케이스의 입력 값에 대해 기대하는 결과를 제공하는 오라클이다.'와 일치합니다. 모든 입력 값에 대해 정답을 제공하는 오라클은 '참 오라클(True Oracle)'이며, '토탈 오라클'이라는 용어는 적절하지 않습니다. 시험 포인트는 샘플링, 휴리스틱, 일관성 검사 오라클은 각각 제시된 정의가 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 오라클",
+        "참 오라클",
+        "샘플링 오라클",
+        "휴리스틱 오라클"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

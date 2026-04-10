@@ -1,0 +1,2717 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_004",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 3,
+    "source_sequences": [
+      13,
+      14,
+      15
+    ],
+    "source_lecture_ids": [
+      "0013_13",
+      "0014_14",
+      "0015_15"
+    ],
+    "source_titles": [
+      "현행 시스템 파악 절차",
+      "DBMS 분석 시 고려사항",
+      "웹애플리케이션서버"
+    ],
+    "keywords": [
+      "현행",
+      "시스템",
+      "파악",
+      "절차",
+      "DBMS"
+    ],
+    "highlight_keywords": [
+      "1단계",
+      "시스템",
+      "소프트웨어",
+      "하드웨어",
+      "파악",
+      "고려사항",
+      "가용성",
+      "비용",
+      "성능",
+      "DBMS 분석 시 고려사항"
+    ],
+    "secondary_keywords": [
+      "구성",
+      "기능",
+      "시스템 구성 파악",
+      "시스템 간의 전달 정보",
+      "• 시스템 구성 파악",
+      "• 시스템 기능 파악",
+      "측면의",
+      "지원",
+      "DBMS 요구사항 식별 시 고려사항 개요",
+      "구축 비용 측면의 고려사항 및 마무리",
+      "비용 기반 질의 최적화 설명",
+      "기술 지원 측면의 고려사항"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0013_13",
+      "sequence": 13,
+      "number": "13",
+      "course_code": "350013",
+      "title": "현행 시스템 파악 절차",
+      "duration_seconds": 499,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "segment_count": 19,
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "tokens": [
+            "단계"
+          ],
+          "score": 164,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "시스템",
+          "tokens": [
+            "시스템"
+          ],
+          "score": 153,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "소프트웨어",
+          "tokens": [
+            "소프트웨어"
+          ],
+          "score": 116,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "하드웨어",
+          "tokens": [
+            "하드웨어"
+          ],
+          "score": 114,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "파악",
+          "tokens": [
+            "파악"
+          ],
+          "score": 113,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "구성",
+          "tokens": [
+            "구성"
+          ],
+          "score": 100,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 81,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시스템 구성 파악",
+          "tokens": [
+            "시스템",
+            "구성",
+            "파악"
+          ],
+          "score": 77,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시스템 간의 전달 정보",
+          "tokens": [
+            "시스템",
+            "간의",
+            "전달",
+            "정보"
+          ],
+          "score": 72,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "• 시스템 구성 파악",
+          "tokens": [
+            "시스템",
+            "구성",
+            "파악"
+          ],
+          "score": 72,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "• 시스템 기능 파악",
+          "tokens": [
+            "시스템",
+            "기능",
+            "파악"
+          ],
+          "score": 72,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_004-subtopic-001-source-seg-010::01",
+          "prompt": "______: 시스템 구성 파악",
+          "answer": "1단계",
+          "original": "1단계: 시스템 구성 파악",
+          "keyword": "1단계",
+          "source_segment_id": "topic_004-subtopic-001-source-seg-010",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '1단계'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-001-source-seg-001::02",
+          "prompt": "이번 시간에는 우리 현행 ______ 파악 절차에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "시스템",
+          "original": "이번 시간에는 우리 현행 시스템 파악 절차에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "시스템",
+          "source_segment_id": "topic_004-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '시스템'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-001-source-seg-002::03",
+          "prompt": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, ______, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+          "answer": "소프트웨어",
+          "original": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+          "keyword": "소프트웨어",
+          "source_segment_id": "topic_004-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '소프트웨어'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-001-source-seg-002::04",
+          "prompt": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, ______, 그리고 네트워크의 구성 등을 파악함.",
+          "answer": "하드웨어",
+          "original": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+          "keyword": "하드웨어",
+          "source_segment_id": "topic_004-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '하드웨어'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0014_14",
+      "sequence": 14,
+      "number": "14",
+      "course_code": "350014",
+      "title": "DBMS 분석 시 고려사항",
+      "duration_seconds": 216,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "tokens": [
+            "고려사항"
+          ],
+          "score": 27,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "가용성",
+          "tokens": [
+            "가용성"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "비용",
+          "tokens": [
+            "비용"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "성능",
+          "tokens": [
+            "성능"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DBMS 분석 시 고려사항",
+          "tokens": [
+            "DBMS",
+            "분석",
+            "고려사항"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "측면의",
+          "tokens": [
+            "측면의"
+          ],
+          "score": 15,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "지원",
+          "tokens": [
+            "지원"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DBMS 요구사항 식별 시 고려사항 개요",
+          "tokens": [
+            "DBMS",
+            "요구사항",
+            "식별",
+            "고려사항",
+            "개요"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "구축 비용 측면의 고려사항 및 마무리",
+          "tokens": [
+            "구축",
+            "비용",
+            "측면의",
+            "고려사항",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비용 기반 질의 최적화 설명",
+          "tokens": [
+            "비용",
+            "기반",
+            "질의",
+            "최적화"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기술 지원 측면의 고려사항",
+          "tokens": [
+            "기술",
+            "지원",
+            "측면의",
+            "고려사항"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_004-subtopic-002-source-seg-001::01",
+          "prompt": "DBMS 요구사항 식별 시 ______ 개요",
+          "answer": "고려사항",
+          "original": "DBMS 요구사항 식별 시 고려사항 개요",
+          "keyword": "고려사항",
+          "source_segment_id": "topic_004-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '고려사항'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-002-source-seg-001::02",
+          "prompt": "여기 보니까 ______이다, 그리고 성능이다, 그리고 기술 지원이다, 그리고 주변 기기, 그리고 구축 비용하고 이렇게 나왔죠.",
+          "answer": "가용성",
+          "original": "여기 보니까 가용성이다, 그리고 성능이다, 그리고 기술 지원이다, 그리고 주변 기기, 그리고 구축 비용하고 이렇게 나왔죠.",
+          "keyword": "가용성",
+          "source_segment_id": "topic_004-subtopic-002-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '가용성'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-002-source-seg-002::03",
+          "prompt": "가용성 ______ 고려사항",
+          "answer": "측면의",
+          "original": "가용성 측면의 고려사항",
+          "keyword": "측면의",
+          "source_segment_id": "topic_004-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '측면의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0015_15",
+      "sequence": 15,
+      "number": "15",
+      "course_code": "350015",
+      "title": "웹애플리케이션서버",
+      "duration_seconds": 162,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "tokens": [
+            "애플리케이션"
+          ],
+          "score": 44,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "웹애플리케이션서버",
+          "tokens": [
+            "웹애플리케이션서버"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "WAS",
+          "tokens": [
+            "WAS"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "콘텐츠",
+          "tokens": [
+            "콘텐츠"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "서버",
+          "tokens": [
+            "서버"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "서버와",
+          "tokens": [
+            "서버와"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "동적인",
+          "tokens": [
+            "동적인"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "처리를",
+          "tokens": [
+            "처리를"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Application",
+          "tokens": [
+            "Application"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Server",
+          "tokens": [
+            "Server"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Web",
+          "tokens": [
+            "Web"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_004-subtopic-003-source-seg-001::01",
+          "prompt": "웹 ______ 서버 소개",
+          "answer": "애플리케이션",
+          "original": "웹 애플리케이션 서버 소개",
+          "keyword": "애플리케이션",
+          "source_segment_id": "topic_004-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '애플리케이션'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-003-source-seg-001::02",
+          "prompt": "(______; Web Application Server)",
+          "answer": "WAS",
+          "original": "(WAS; Web Application Server)",
+          "keyword": "WAS",
+          "source_segment_id": "topic_004-subtopic-003-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'WAS'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-003-source-seg-002::03",
+          "prompt": "WAS의 개념 및 동적 ______ 처리",
+          "answer": "콘텐츠",
+          "original": "WAS의 개념 및 동적 콘텐츠 처리",
+          "keyword": "콘텐츠",
+          "source_segment_id": "topic_004-subtopic-003-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '콘텐츠'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_004-subtopic-003-source-seg-002::04",
+          "prompt": "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 ______ 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+          "answer": "서버와",
+          "original": "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+          "keyword": "서버와",
+          "source_segment_id": "topic_004-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '서버와'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_004",
+    "sequence": 4,
+    "number": "04",
+    "title": "현행 시스템 파악",
+    "title_raw": "현행 시스템 파악",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 3,
+    "source_sequences": [
+      13,
+      14,
+      15
+    ],
+    "source_titles": [
+      "현행 시스템 파악 절차",
+      "DBMS 분석 시 고려사항",
+      "웹애플리케이션서버"
+    ],
+    "preview_text": "현행 시스템 파악 절차, DBMS 분석 시 고려사항, 웹애플리케이션서버",
+    "segment_count": 33,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 현행 시스템 파악 절차, DBMS 분석 시 고려사항, 웹애플리케이션서버을 중심으로 정리합니다. 소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 현행 시스템 파악 절차, DBMS 분석 시 고려사항, 웹애플리케이션서버을 중심으로 정리합니다.",
+      "소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 877,
+    "source_titles_preview": [
+      "현행 시스템 파악 절차",
+      "DBMS 분석 시 고려사항",
+      "웹애플리케이션서버"
+    ],
+    "highlight_keywords": [
+      "1단계",
+      "시스템",
+      "소프트웨어",
+      "하드웨어",
+      "파악",
+      "고려사항",
+      "가용성",
+      "비용",
+      "성능",
+      "DBMS 분석 시 고려사항"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_004-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 현행 시스템 파악 절차에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 현행 시스템 파악 절차에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "파악",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 113
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:34",
+      "start_seconds": 9,
+      "end_seconds": 34,
+      "duration_seconds": 25,
+      "timeline_summary": "현행 시스템 파악의 개념 및 개발 의뢰 예시",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "자 현행 시스템 파악이요.",
+        "현행 시스템을 파악한다 이 얘기는 무슨 말이냐.",
+        "예를 들어서 어떤 회사에서 프로그램을 하나 개발하겠다고 의뢰가 들어왔습니다.",
+        "의뢰가 들어오면 내가 그냥 내 사무실에서 그 얘기를 듣고 그냥 프로그램을 만들면 안 돼요.",
+        "왜 안 되냐, 내가 프로그램을 만들 때 최신 기술을 이용해서 용량을 어마어마하게 크게 해서 첨단 기술을 사용해서 제가 만들었어요."
+      ],
+      "spoken_text": "자 현행 시스템 파악이요. 현행 시스템을 파악한다 이 얘기는 무슨 말이냐. 예를 들어서 어떤 회사에서 프로그램을 하나 개발하겠다고 의뢰가 들어왔습니다. 의뢰가 들어오면 내가 그냥 내 사무실에서 그 얘기를 듣고 그냥 프로그램을 만들면 안 돼요. 왜 안 되냐, 내가 프로그램을 만들 때 최신 기술을 이용해서 용량을 어마어마하게 크게 해서 첨단 기술을 사용해서 제가 만들었어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:00:34",
+      "end_time_hms": "00:00:53",
+      "start_seconds": 34,
+      "end_seconds": 53,
+      "duration_seconds": 19,
+      "timeline_summary": "기존 환경과의 호환성 문제",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "만들었더니 그쪽 회사에다가 줬어요.",
+        "줬더니 그쪽 회사는 컴퓨터 가지고 있는 게 최신 게 아니라 예전 예전 컴퓨터들이 대부분이에요.",
+        "그러면 그 컴퓨터에서 내가 만든 프로그램이 잘 돌아갈까요?",
+        "제대로 동작을 하지 않겠죠."
+      ],
+      "spoken_text": "만들었더니 그쪽 회사에다가 줬어요. 줬더니 그쪽 회사는 컴퓨터 가지고 있는 게 최신 게 아니라 예전 예전 컴퓨터들이 대부분이에요. 그러면 그 컴퓨터에서 내가 만든 프로그램이 잘 돌아갈까요? 제대로 동작을 하지 않겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:00:53",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 53,
+      "end_seconds": 70,
+      "duration_seconds": 17,
+      "timeline_summary": "개발 전 현장 방문의 필요성",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그래서 뭔가 프로그램을 개발하려면 일단 그 현장에 가서 봐야 돼요.",
+        "그 회사에 가서 그 회사 현재 상태를 알아야 될 거 아니에요.",
+        "그 회사에 컴퓨터가 도대체 어떻게 구성이 되어 있는지 그리고 서버는 어떻게 구성돼 있고 데이터베이스는 어떻게 적용이 되고 있는지 거기에 맞춰서 제가 소프트웨어를 개발해야 되겠죠."
+      ],
+      "spoken_text": "그래서 뭔가 프로그램을 개발하려면 일단 그 현장에 가서 봐야 돼요. 그 회사에 가서 그 회사 현재 상태를 알아야 될 거 아니에요. 그 회사에 컴퓨터가 도대체 어떻게 구성이 되어 있는지 그리고 서버는 어떻게 구성돼 있고 데이터베이스는 어떻게 적용이 되고 있는지 거기에 맞춰서 제가 소프트웨어를 개발해야 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:26",
+      "start_seconds": 70,
+      "end_seconds": 86,
+      "duration_seconds": 16,
+      "timeline_summary": "현행 시스템 파악의 의미",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그래서 내가 개발하기 전에 먼저 현장에 가서 그 회사에서 도대체 어떤 업무를 처리하고 있는지 그런 것부터 시작해서 컴퓨터는 어떻게 구성돼 있고 네트워크는 어떻게 구성되는지 그런 것들을 싹 다 일단 파악을 먼저 해야 돼요.",
+        "그게 현행 시스템 파악이라는 겁니다."
+      ],
+      "spoken_text": "그래서 내가 개발하기 전에 먼저 현장에 가서 그 회사에서 도대체 어떤 업무를 처리하고 있는지 그런 것부터 시작해서 컴퓨터는 어떻게 구성돼 있고 네트워크는 어떻게 구성되는지 그런 것들을 싹 다 일단 파악을 먼저 해야 돼요. 그게 현행 시스템 파악이라는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:01:26",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 86,
+      "end_seconds": 107,
+      "duration_seconds": 21,
+      "timeline_summary": "건축 비유를 통한 파악 과정 설명 (1)",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "자 예를 들어서 어떤 사람이 나한테 집을 지어달라고 찾아왔어요.",
+        "그러면 집을 지을 때도 집의 종류가 되게 많죠.",
+        "빌라를 지을 건지 아파트를 지을 건지 아니면 단독 주택을 지을지 아니면 한옥집으로 지을지 어떻게 지을지 그걸 먼저 알아야 되겠죠.",
+        "그러면 그거는 그 사람이랑 얘기를 통해서 내가 확인할 수 있지만"
+      ],
+      "spoken_text": "자 예를 들어서 어떤 사람이 나한테 집을 지어달라고 찾아왔어요. 그러면 집을 지을 때도 집의 종류가 되게 많죠. 빌라를 지을 건지 아파트를 지을 건지 아니면 단독 주택을 지을지 아니면 한옥집으로 지을지 어떻게 지을지 그걸 먼저 알아야 되겠죠. 그러면 그거는 그 사람이랑 얘기를 통해서 내가 확인할 수 있지만",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:14",
+      "start_seconds": 107,
+      "end_seconds": 134,
+      "duration_seconds": 27,
+      "timeline_summary": "건축 비유를 통한 파악 과정 설명 (2)",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그 사람이 땅을 샀을 때 그 땅에 이미 건물이 지어져 있는 상태에서 그 건물을 전부 다 다 부시고 집을 지을 건지 아니면 그 건물이 있는 상태로 리모델링을 해서 건물을 지을 건지 그런 것도 따져봐야 되겠죠.",
+        "그리고 그 사람이 땅을 샀는데 땅에 빈 땅인지 아니면 언덕이 있는지 뭐가 있는지 실제 현장에 가서 그런 걸 먼저 파악을 해야 되겠죠.",
+        "그런 거를 보고 우리가 현행 시스템 파악 그렇게 부르는 거요."
+      ],
+      "spoken_text": "그 사람이 땅을 샀을 때 그 땅에 이미 건물이 지어져 있는 상태에서 그 건물을 전부 다 다 부시고 집을 지을 건지 아니면 그 건물이 있는 상태로 리모델링을 해서 건물을 지을 건지 그런 것도 따져봐야 되겠죠. 그리고 그 사람이 땅을 샀는데 땅에 빈 땅인지 아니면 언덕이 있는지 뭐가 있는지 실제 현장에 가서 그런 걸 먼저 파악을 해야 되겠죠. 그런 거를 보고 우리가 현행 시스템 파악 그렇게 부르는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:02:14",
+      "end_time_hms": "00:02:40",
+      "start_seconds": 134,
+      "end_seconds": 160,
+      "duration_seconds": 26,
+      "timeline_summary": "현행 시스템 파악의 정의 정리",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "해서 현행 시스템 파악이라는 거는 새로 개발하려는 그 시스템에 개발 범위, 개발 범위를 명확하게 설정하기 위해서 현행 시스템의 구성과 제공 기능 그리고 시스템 간의 전달 정보는 어떻게 되는지 사용되는 기술 요소는 어떤 건지 하드웨어 소프트웨어는 어떻게 돼 있는지 네트워크 구성은 어떻게 돼 있는지 그런 것들을 싹 다 파악하는 게 우리 현행 시스템 파악이라는 거요."
+      ],
+      "spoken_text": "해서 현행 시스템 파악이라는 거는 새로 개발하려는 그 시스템에 개발 범위, 개발 범위를 명확하게 설정하기 위해서 현행 시스템의 구성과 제공 기능 그리고 시스템 간의 전달 정보는 어떻게 되는지 사용되는 기술 요소는 어떤 건지 하드웨어 소프트웨어는 어떻게 돼 있는지 네트워크 구성은 어떻게 돼 있는지 그런 것들을 싹 다 파악하는 게 우리 현행 시스템 파악이라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:02:40",
+      "end_time_hms": "00:03:04",
+      "start_seconds": 160,
+      "end_seconds": 184,
+      "duration_seconds": 24,
+      "timeline_summary": "시스템 파악 3단계 도입",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "우리 현행 시스템 파악 같은 경우는 요렇게 3단계를 거쳐서 현행 시스템을 전부 다 파악을 합니다.",
+        "예를 들어서 한 회사에서 소프트웨어 개발 의뢰가 들어왔어요.",
+        "의뢰가 들어왔는데 그 회사에서 지금 현재 쓰고 있는 시스템이 20년 전에 20년 전에 개발된 그 소프트웨어래요.",
+        "이거를 최신 걸로 전부 다 바꾸면서 기능 같은 것도 좀 추가시키고 추가시키고 하고 싶대요."
+      ],
+      "spoken_text": "우리 현행 시스템 파악 같은 경우는 요렇게 3단계를 거쳐서 현행 시스템을 전부 다 파악을 합니다. 예를 들어서 한 회사에서 소프트웨어 개발 의뢰가 들어왔어요. 의뢰가 들어왔는데 그 회사에서 지금 현재 쓰고 있는 시스템이 20년 전에 20년 전에 개발된 그 소프트웨어래요. 이거를 최신 걸로 전부 다 바꾸면서 기능 같은 것도 좀 추가시키고 추가시키고 하고 싶대요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:03:04",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 184,
+      "end_seconds": 218,
+      "duration_seconds": 34,
+      "timeline_summary": "1단계: 시스템 구성 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그러면 일단은 제가 먼저 그 회사에 먼저 가야 되겠죠.",
+        "가서 제일 처음에 하는 게 우리 시스템 구성을 먼저 파악해야 돼요.",
+        "그 회사가 수출하는 업체인지 아니면 수입을 하는 업체인지 아니면은 그냥 국내에서만 활동하는 그런 업체인지 그 회사에서 도대체 어떤 업무를 보고 있는지 그런 것들을 제가 알아야 거기에 맞게 프로그램을 개발을 하겠죠.",
+        "해서 그 회사에서 주요 업무를 담당하는 기간 업무가 뭔지 그리고 그거를 지원해 주는 업무가 뭔지 그런 것들 업무를 먼저 파악을 먼저 해요.",
+        "그게 시스템 구성 파악이고요."
+      ],
+      "spoken_text": "그러면 일단은 제가 먼저 그 회사에 먼저 가야 되겠죠. 가서 제일 처음에 하는 게 우리 시스템 구성을 먼저 파악해야 돼요. 그 회사가 수출하는 업체인지 아니면 수입을 하는 업체인지 아니면은 그냥 국내에서만 활동하는 그런 업체인지 그 회사에서 도대체 어떤 업무를 보고 있는지 그런 것들을 제가 알아야 거기에 맞게 프로그램을 개발을 하겠죠. 해서 그 회사에서 주요 업무를 담당하는 기간 업무가 뭔지 그리고 그거를 지원해 주는 업무가 뭔지 그런 것들 업무를 먼저 파악을 먼저 해요. 그게 시스템 구성 파악이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:09",
+      "start_seconds": 218,
+      "end_seconds": 249,
+      "duration_seconds": 31,
+      "timeline_summary": "1단계: 시스템 기능 파악의 개념",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그다음에 두 번째로 하는 게 우리 시스템 기능을 파악을 해야 돼요.",
+        "얘는 단위 업무 시스템이 현재 제공하고 있는 그런 기능들이 뭔지 주요 기능하고 하부 기능 세부 기능 그렇게 세분화해서 기능을 먼저 싹 다 파악을 해야 됩니다.",
+        "예를 들어서 뭐 물건을 포장을 해요.",
+        "포장을 할 때는 컴퓨터 가지고 하지 않죠.",
+        "그러니까 컴퓨터는 상관없는 일이잖아요.",
+        "해서 컴퓨터를 이용해서 어떤 일들을 처리하고 어떤 기능을 제공해 주면 되는지 그걸 파악하는 겁니다."
+      ],
+      "spoken_text": "그다음에 두 번째로 하는 게 우리 시스템 기능을 파악을 해야 돼요. 얘는 단위 업무 시스템이 현재 제공하고 있는 그런 기능들이 뭔지 주요 기능하고 하부 기능 세부 기능 그렇게 세분화해서 기능을 먼저 싹 다 파악을 해야 됩니다. 예를 들어서 뭐 물건을 포장을 해요. 포장을 할 때는 컴퓨터 가지고 하지 않죠. 그러니까 컴퓨터는 상관없는 일이잖아요. 해서 컴퓨터를 이용해서 어떤 일들을 처리하고 어떤 기능을 제공해 주면 되는지 그걸 파악하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:04:09",
+      "end_time_hms": "00:04:21",
+      "start_seconds": 249,
+      "end_seconds": 261,
+      "duration_seconds": 12,
+      "timeline_summary": "1단계: 시스템 기능 파악의 구성",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "해서 주요 기능이 뭔지 하부 기능이 뭔지 세부 기능이 뭔지 그렇게 각각 전부 다 세분화 시켜서 그거를 조직도 형태로 계층형으로 전부 다 표시해 주는 게 우리 시스템 기능 파악이요."
+      ],
+      "spoken_text": "해서 주요 기능이 뭔지 하부 기능이 뭔지 세부 기능이 뭔지 그렇게 각각 전부 다 세분화 시켜서 그거를 조직도 형태로 계층형으로 전부 다 표시해 주는 게 우리 시스템 기능 파악이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:04:21",
+      "end_time_hms": "00:04:54",
+      "start_seconds": 261,
+      "end_seconds": 294,
+      "duration_seconds": 33,
+      "timeline_summary": "1단계: 시스템 인터페이스 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그다음에 세 번째로 하는 게 시스템 인터페이스를 파악을 합니다.",
+        "예를 들어서 한 회사에는 여러 개 부서가 있겠죠.",
+        "그 부서들끼리 데이터를 주고받고 주고받고 하는데 어떻게 주고받는지.",
+        "회사 내에서 개발해 놓은 그 프로그램을 이용해서 데이터를 꼭 주고받는지 아니면 그냥 개인의 이메일을 이용해서 데이터를 주고받고 주고받고 하는지.",
+        "또 다른 회사랑 우리 회사랑 데이터를 주고받을 때 어떻게 주고받고 정보의 종류는 어떻게 되고 정보의 형식은 어떻게 되는지 그런 것들을 파악하는 게 우리 인터페이스 파악이요."
+      ],
+      "spoken_text": "그다음에 세 번째로 하는 게 시스템 인터페이스를 파악을 합니다. 예를 들어서 한 회사에는 여러 개 부서가 있겠죠. 그 부서들끼리 데이터를 주고받고 주고받고 하는데 어떻게 주고받는지. 회사 내에서 개발해 놓은 그 프로그램을 이용해서 데이터를 꼭 주고받는지 아니면 그냥 개인의 이메일을 이용해서 데이터를 주고받고 주고받고 하는지. 또 다른 회사랑 우리 회사랑 데이터를 주고받을 때 어떻게 주고받고 정보의 종류는 어떻게 되고 정보의 형식은 어떻게 되는지 그런 것들을 파악하는 게 우리 인터페이스 파악이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:04:54",
+      "end_time_hms": "00:05:21",
+      "start_seconds": 294,
+      "end_seconds": 321,
+      "duration_seconds": 27,
+      "timeline_summary": "2단계: 아키텍처 구성 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "요렇게 세 가지가 1단계 1단계에서 우리가 파악해야 되는 그 내용들이요.",
+        "그다음에 2단계로 넘어오게 되면 아키텍처 구성을 파악한다라고 되어 있는데 얘는 회사에서 하는 주요 업무를 기준으로 각 시스템이 어떤 원리로 동작을 하는지 어떤 기술 요소들이 사용이 되는지 최상위 수준에서 계층별로 표현한 아키텍처 구성도를 작성하는 게 우리 아키텍처 구성 파악이요."
+      ],
+      "spoken_text": "요렇게 세 가지가 1단계 1단계에서 우리가 파악해야 되는 그 내용들이요. 그다음에 2단계로 넘어오게 되면 아키텍처 구성을 파악한다라고 되어 있는데 얘는 회사에서 하는 주요 업무를 기준으로 각 시스템이 어떤 원리로 동작을 하는지 어떤 기술 요소들이 사용이 되는지 최상위 수준에서 계층별로 표현한 아키텍처 구성도를 작성하는 게 우리 아키텍처 구성 파악이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:05:21",
+      "end_time_hms": "00:05:54",
+      "start_seconds": 321,
+      "end_seconds": 354,
+      "duration_seconds": 33,
+      "timeline_summary": "2단계: 소프트웨어 구성 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그다음에 소프트웨어 구성 파악을 합니다.",
+        "소프트웨어 구성 파악이라는 거는 현재 그 회사에 설치돼 있는 소프트웨어 같은 것들을 전부 다 파악하는 거예요.",
+        "해서 각각의 소프트웨어에 용도가 됐든 아니면 라이선스 라이선스 적용 방식이 됐든 아니면 라이선스가 몇 개 있는지 그 개수가 됐든 아니면 그 라이선스가 일부만 사용할 수 있는지 아니면 전체를 사용할 수 있는지 아니면 상업적인 목적으로 사용할 수 있는지 없는지 소프트웨어 재구성은 가능한지 그런 것들을 파악하는 게 우리 소프트웨어 구성 파악이고요."
+      ],
+      "spoken_text": "그다음에 소프트웨어 구성 파악을 합니다. 소프트웨어 구성 파악이라는 거는 현재 그 회사에 설치돼 있는 소프트웨어 같은 것들을 전부 다 파악하는 거예요. 해서 각각의 소프트웨어에 용도가 됐든 아니면 라이선스 라이선스 적용 방식이 됐든 아니면 라이선스가 몇 개 있는지 그 개수가 됐든 아니면 그 라이선스가 일부만 사용할 수 있는지 아니면 전체를 사용할 수 있는지 아니면 상업적인 목적으로 사용할 수 있는지 없는지 소프트웨어 재구성은 가능한지 그런 것들을 파악하는 게 우리 소프트웨어 구성 파악이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:05:54",
+      "end_time_hms": "00:06:31",
+      "start_seconds": 354,
+      "end_seconds": 391,
+      "duration_seconds": 37,
+      "timeline_summary": "3단계: 하드웨어 구성 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "요 두 개 아키텍처 구성 파악이랑 소프트웨어 구성 파악이 2단계에서 진행되는 그런 파악이요.",
+        "그다음에 3단계에서는 하드웨어 구성 파악이랑 네트워크 구성 파악을 합니다.",
+        "하드웨어 구성 파악이라는 거는 시스템이 운영되는 서버가 있을 거 아니에요.",
+        "그 서버에 주요 사양이 됐든 수량이 됐든 아니면은 이중화 이중화 적용 여부 같은 것들 그런 것들을 파악하는 게 우리 하드웨어 구성 파악이요.",
+        "해서 서버의 주요 스펙은 어떻게 되는지 백업은 어떻게 이루어지고 있는지 데이터베이스 서버가 따로 있는지 그런 것들을 파악하는 게 우리 하드웨어 구성 파악이고요."
+      ],
+      "spoken_text": "요 두 개 아키텍처 구성 파악이랑 소프트웨어 구성 파악이 2단계에서 진행되는 그런 파악이요. 그다음에 3단계에서는 하드웨어 구성 파악이랑 네트워크 구성 파악을 합니다. 하드웨어 구성 파악이라는 거는 시스템이 운영되는 서버가 있을 거 아니에요. 그 서버에 주요 사양이 됐든 수량이 됐든 아니면은 이중화 이중화 적용 여부 같은 것들 그런 것들을 파악하는 게 우리 하드웨어 구성 파악이요. 해서 서버의 주요 스펙은 어떻게 되는지 백업은 어떻게 이루어지고 있는지 데이터베이스 서버가 따로 있는지 그런 것들을 파악하는 게 우리 하드웨어 구성 파악이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:06:31",
+      "end_time_hms": "00:07:11",
+      "start_seconds": 391,
+      "end_seconds": 431,
+      "duration_seconds": 40,
+      "timeline_summary": "3단계: 네트워크 구성 파악",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "그다음에 네트워크 구성 파악이라고 되어 있는데 이 네트워크 구성 파악이라는 거는 회사에 컴퓨터가 어떻게 구성이 되어 있는지 인터넷은 어떻게 연결돼 있는지 서버랑은 어떻게 연결이 되어 있는지 그런 네트워크 구성을 파악할 수 있게 서버 위치가 됐든 컴퓨터들의 물리적인 위치가 됐든 컴퓨터 네트워크의 물리적인 위치 같은 것들을 파악할 수 있게 해주는 게 우리 네트워크 구성 파악이요.",
+        "이 네트워크 구성 파악을 하게 되면 보안 취약점 같은 것들을 우리가 분석을 해서 적절하게 대응도 할 수 있고요.",
+        "그리고 네트워크 장애가 발생했을 때도 그 발생 원인 같은 것들을 찾아서 유지보수 할 수 있게 그렇게 활용할 수 있는 게 우리 네트워크 구성 파악이요."
+      ],
+      "spoken_text": "그다음에 네트워크 구성 파악이라고 되어 있는데 이 네트워크 구성 파악이라는 거는 회사에 컴퓨터가 어떻게 구성이 되어 있는지 인터넷은 어떻게 연결돼 있는지 서버랑은 어떻게 연결이 되어 있는지 그런 네트워크 구성을 파악할 수 있게 서버 위치가 됐든 컴퓨터들의 물리적인 위치가 됐든 컴퓨터 네트워크의 물리적인 위치 같은 것들을 파악할 수 있게 해주는 게 우리 네트워크 구성 파악이요. 이 네트워크 구성 파악을 하게 되면 보안 취약점 같은 것들을 우리가 분석을 해서 적절하게 대응도 할 수 있고요. 그리고 네트워크 장애가 발생했을 때도 그 발생 원인 같은 것들을 찾아서 유지보수 할 수 있게 그렇게 활용할 수 있는 게 우리 네트워크 구성 파악이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:07:11",
+      "end_time_hms": "00:07:31",
+      "start_seconds": 431,
+      "end_seconds": 451,
+      "duration_seconds": 20,
+      "timeline_summary": "현행 시스템 파악 절차 요약",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "요렇게 현행 시스템 파악 절차에는 지금처럼 요렇게 3개의 단계로 나눠서 나눠서 진행이 됩니다.",
+        "해서 1단계에서 뭘 하고 2단계에서 뭘 하는지 3단계에서 뭘 하는지 여러분들이 알고 계셔야 돼요.",
+        "제가 이걸 기억할 때는 여기서 앞글자만 따서 제가 따로 기억을 했거든요."
+      ],
+      "spoken_text": "요렇게 현행 시스템 파악 절차에는 지금처럼 요렇게 3개의 단계로 나눠서 나눠서 진행이 됩니다. 해서 1단계에서 뭘 하고 2단계에서 뭘 하는지 3단계에서 뭘 하는지 여러분들이 알고 계셔야 돼요. 제가 이걸 기억할 때는 여기서 앞글자만 따서 제가 따로 기억을 했거든요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 1,
+      "subtopic_id": "0013_13",
+      "subtopic_title": "현행 시스템 파악 절차",
+      "subtopic_sequence": 13,
+      "subtopic_number": "13",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ttu-kQGDy8A",
+      "start_time_hms": "00:07:31",
+      "end_time_hms": "00:08:19",
+      "start_seconds": 451,
+      "end_seconds": 499,
+      "duration_seconds": 48,
+      "timeline_summary": "단계별 암기법 설명",
+      "screen_text_lines": [
+        "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.",
+        "1단계",
+        "• 시스템 구성 파악",
+        "• 시스템 기능 파악"
+      ],
+      "screen_text": "새로 개발하려는 시스템의 개발 범위를 명확히 설정하기 위해 현행 시스템의 구성과 제공 기능, 시스템 간의 전달 정보, 사용되는 기술 요소, 소프트웨어, 하드웨어, 그리고 네트워크의 구성 등을 파악함.\n1단계\n• 시스템 구성 파악\n• 시스템 기능 파악",
+      "spoken_sentences": [
+        "해서 1단계에서 하는 게 구기인이라는 친구가 있습니다.",
+        "구기인이라는 그 친구한테 제가 뭔가를 부탁을 했어요.",
+        "부탁을 했더니 그 친구가 나한테 알았어 알았어 알았어 하네.",
+        "그렇게 해서 저는 기억하고 있거든요.",
+        "그렇게 해서 앞글자만 따서 그렇게 기억하시면 좀 더 편하게 기억할 수 있을 것 같아요.",
+        "해서 구기인이라는 친구가 있다.",
+        "그 친구한테 뭔가 부탁을 했더니 알았어 알았어 하네 알았어 하네 그렇게 기억하시면 됩니다.",
+        "구기인 알았어 하네 구기인 알았어 하네.",
+        "해서 구기인이 1단계 알았어가 2단계 하네가 3단계요."
+      ],
+      "spoken_text": "해서 1단계에서 하는 게 구기인이라는 친구가 있습니다. 구기인이라는 그 친구한테 제가 뭔가를 부탁을 했어요. 부탁을 했더니 그 친구가 나한테 알았어 알았어 알았어 하네. 그렇게 해서 저는 기억하고 있거든요. 그렇게 해서 앞글자만 따서 그렇게 기억하시면 좀 더 편하게 기억할 수 있을 것 같아요. 해서 구기인이라는 친구가 있다. 그 친구한테 뭔가 부탁을 했더니 알았어 알았어 하네 알았어 하네 그렇게 기억하시면 됩니다. 구기인 알았어 하네 구기인 알았어 하네. 해서 구기인이 1단계 알았어가 2단계 하네가 3단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "1단계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 164
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 153
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 116
+        },
+        {
+          "keyword": "하드웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 114
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:19",
+      "start_seconds": 0,
+      "end_seconds": 19,
+      "duration_seconds": 19,
+      "timeline_summary": "DBMS 요구사항 식별 시 고려사항 개요",
+      "screen_text_lines": [
+        "DBMS 관련 요구사항 식별 시 고려사항",
+        "구분",
+        "내용",
+        "가용성"
+      ],
+      "screen_text": "DBMS 관련 요구사항 식별 시 고려사항\n구분\n내용\n가용성",
+      "spoken_sentences": [
+        "이번 시간에는 우리 DBMS 관련 요구사항 식별 시 고려할 사항에 대해서 같이 한번 살펴보도록 하겠습니다.",
+        "우리 DBMS와 관련해서 요구사항 식별할 때 다음과 같은 사항을 전부 다 고려를 해야 됩니다.",
+        "여기 보니까 가용성이다, 그리고 성능이다, 그리고 기술 지원이다, 그리고 주변 기기, 그리고 구축 비용하고 이렇게 나왔죠."
+      ],
+      "spoken_text": "이번 시간에는 우리 DBMS 관련 요구사항 식별 시 고려할 사항에 대해서 같이 한번 살펴보도록 하겠습니다. 우리 DBMS와 관련해서 요구사항 식별할 때 다음과 같은 사항을 전부 다 고려를 해야 됩니다. 여기 보니까 가용성이다, 그리고 성능이다, 그리고 기술 지원이다, 그리고 주변 기기, 그리고 구축 비용하고 이렇게 나왔죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "가용성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "비용",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "성능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:00:19",
+      "end_time_hms": "00:00:55",
+      "start_seconds": 19,
+      "end_seconds": 55,
+      "duration_seconds": 36,
+      "timeline_summary": "가용성 측면의 고려사항",
+      "screen_text_lines": [
+        "가용성",
+        "시스템의 장시간 운영으로 인해 발생할 수 있는 운영체제 고유의 장애 발생 가능성",
+        "DBMS의 결함 등으로 인한 패치 설치를 위한 재가동",
+        "백업이나 복구의 편의성"
+      ],
+      "screen_text": "가용성\n시스템의 장시간 운영으로 인해 발생할 수 있는 운영체제 고유의 장애 발생 가능성\nDBMS의 결함 등으로 인한 패치 설치를 위한 재가동\n백업이나 복구의 편의성",
+      "spoken_sentences": [
+        "자, 첫 번째 거 보니까 시스템 장시간 운영으로 인해서 발생할 수 있는, 장시간 운영으로 인해서 발생할 수 있는 운영체제 고유 장애 발생 가능성도 우리가 따져봐야 되고요.",
+        "DBMS의 결함으로 인해서 패치 설치를 해야 되잖아요.",
+        "패치 설치를 하기 위한 그 재가동, 재가동도 우리가 고려해 봐야 되고, 백업이나 복구 얼마나 편하게 할 수 있냐 그런 것도 따져봐야 되고요.",
+        "DBMS 이중화, 복제 지원은 어떻게 되는지 그런 것도 따져봐야 됩니다."
+      ],
+      "spoken_text": "자, 첫 번째 거 보니까 시스템 장시간 운영으로 인해서 발생할 수 있는, 장시간 운영으로 인해서 발생할 수 있는 운영체제 고유 장애 발생 가능성도 우리가 따져봐야 되고요. DBMS의 결함으로 인해서 패치 설치를 해야 되잖아요. 패치 설치를 하기 위한 그 재가동, 재가동도 우리가 고려해 봐야 되고, 백업이나 복구 얼마나 편하게 할 수 있냐 그런 것도 따져봐야 되고요. DBMS 이중화, 복제 지원은 어떻게 되는지 그런 것도 따져봐야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "가용성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "측면의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "지원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:00:55",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 55,
+      "end_seconds": 78,
+      "duration_seconds": 23,
+      "timeline_summary": "성능 측면의 고려사항",
+      "screen_text_lines": [
+        "성능",
+        "대규모 데이터 처리 성능(분할 테이블 지원 여부)",
+        "대용량 트랜잭션 처리 성능",
+        "튜닝 옵션의 다양한 지원"
+      ],
+      "screen_text": "성능\n대규모 데이터 처리 성능(분할 테이블 지원 여부)\n대용량 트랜잭션 처리 성능\n튜닝 옵션의 다양한 지원",
+      "spoken_sentences": [
+        "그리고 성능.",
+        "성능 면에서는 대규모 데이터가 처리할 수 있냐 없냐.",
+        "대용량 트랜잭션 처리를 우리 할 수 있냐 없냐.",
+        "그런 것도 따져봐야 되고요.",
+        "그리고 튜닝 옵션 같은 것도 다양하게 지원하는지 안 하는지 그런 것도 따져봐야 되고요.",
+        "그리고 최소화된 설정과 비용 기반 질의 최적화 지원도 하는지 안 하는지 따져봐야 됩니다."
+      ],
+      "spoken_text": "그리고 성능. 성능 면에서는 대규모 데이터가 처리할 수 있냐 없냐. 대용량 트랜잭션 처리를 우리 할 수 있냐 없냐. 그런 것도 따져봐야 되고요. 그리고 튜닝 옵션 같은 것도 다양하게 지원하는지 안 하는지 그런 것도 따져봐야 되고요. 그리고 최소화된 설정과 비용 기반 질의 최적화 지원도 하는지 안 하는지 따져봐야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "비용",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "성능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "측면의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:50",
+      "start_seconds": 78,
+      "end_seconds": 110,
+      "duration_seconds": 32,
+      "timeline_summary": "비용 기반 질의 최적화 설명",
+      "screen_text_lines": [
+        "최소화된 설정과 비용 기반 질의 최적화 지원"
+      ],
+      "screen_text": "최소화된 설정과 비용 기반 질의 최적화 지원",
+      "spoken_sentences": [
+        "여기서 질의 최적화 지원을 하는지 안 하는지 따져본다 그랬는데 얘는 사용자의 질의에 대해서 최적의 실행 방법을 결정하는 거.",
+        "그걸 보고 우리가 질의 최적화라고 하는 거고, 여기서 비용 기반이라고 나왔죠.",
+        "얘는 비용 추정은 실행에 필요한 소요 시간, 그리고 자원 사용량, 그런 것들을 기준으로 해서 우리가 비용을 추정을 합니다.",
+        "그렇게 추정된 그 비용이 가장 최소인 그 방법을 선택하면 되겠죠.",
+        "그런 것도 지원하는지 안 하는지 우리가 따져봐야 되고요."
+      ],
+      "spoken_text": "여기서 질의 최적화 지원을 하는지 안 하는지 따져본다 그랬는데 얘는 사용자의 질의에 대해서 최적의 실행 방법을 결정하는 거. 그걸 보고 우리가 질의 최적화라고 하는 거고, 여기서 비용 기반이라고 나왔죠. 얘는 비용 추정은 실행에 필요한 소요 시간, 그리고 자원 사용량, 그런 것들을 기준으로 해서 우리가 비용을 추정을 합니다. 그렇게 추정된 그 비용이 가장 최소인 그 방법을 선택하면 되겠죠. 그런 것도 지원하는지 안 하는지 우리가 따져봐야 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비용",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "지원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "비용 기반 질의 최적화 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:02:31",
+      "start_seconds": 110,
+      "end_seconds": 151,
+      "duration_seconds": 41,
+      "timeline_summary": "기술 지원 측면의 고려사항",
+      "screen_text_lines": [
+        "기술 지원",
+        "제작업체의 안정적인 기술 지원",
+        "오픈 소스 여부",
+        "여러 사용자들 간의 정보 공유"
+      ],
+      "screen_text": "기술 지원\n제작업체의 안정적인 기술 지원\n오픈 소스 여부\n여러 사용자들 간의 정보 공유",
+      "spoken_sentences": [
+        "그다음에 제작업체에 안정적인 기술 지원을 해주는지, 오픈 소스 여부도 확인해 봐야 되고요.",
+        "그리고 여러 사용자들과 정보 공유를 할 수 있는지 없는지.",
+        "만약에 내가 DBMS를 하나 구입을 했어요.",
+        "구입을 했는데 이번에 처음 신생 회사에서 만들어진 DBMS예요.",
+        "근데 다른 회사에서는 이 DBMS를 아무도 쓰고 있지 않아요.",
+        "근데 나 혼자 내가 최초로 내가 처음으로 이 DBMS를 사서 내가 사용을 합니다.",
+        "그러면 다른 사용자들과 정보 공유가 가능해요, 안 해?",
+        "안 하겠죠.",
+        "못 하겠죠.",
+        "왜?",
+        "나만 쓰고 있으니까.",
+        "해서 그런 것도 따져봐야 된다는 거예요."
+      ],
+      "spoken_text": "그다음에 제작업체에 안정적인 기술 지원을 해주는지, 오픈 소스 여부도 확인해 봐야 되고요. 그리고 여러 사용자들과 정보 공유를 할 수 있는지 없는지. 만약에 내가 DBMS를 하나 구입을 했어요. 구입을 했는데 이번에 처음 신생 회사에서 만들어진 DBMS예요. 근데 다른 회사에서는 이 DBMS를 아무도 쓰고 있지 않아요. 근데 나 혼자 내가 최초로 내가 처음으로 이 DBMS를 사서 내가 사용을 합니다. 그러면 다른 사용자들과 정보 공유가 가능해요, 안 해? 안 하겠죠. 못 하겠죠. 왜? 나만 쓰고 있으니까. 해서 그런 것도 따져봐야 된다는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "측면의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "지원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "기술 지원 측면의 고려사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:02:31",
+      "end_time_hms": "00:03:02",
+      "start_seconds": 151,
+      "end_seconds": 182,
+      "duration_seconds": 31,
+      "timeline_summary": "주변 기기 측면의 고려사항 및 인터페이스 설명",
+      "screen_text_lines": [
+        "주변 기기",
+        "설치 가능한 운영체제의 종류",
+        "JDBC, ODBC 와의 호환 여부"
+      ],
+      "screen_text": "주변 기기\n설치 가능한 운영체제의 종류\nJDBC, ODBC 와의 호환 여부",
+      "spoken_sentences": [
+        "그리고 주변 기기.",
+        "설치 가능한 운영체제의 종류가 어떤 건지 그런 것도 따져봐야 되고요.",
+        "그리고 JDBC, ODBC 이런 거랑 호환할 수 있냐 없냐 그런 것도 따져봐야 됩니다.",
+        "여기서 JDBC라고 나오는데 JDBC는 자바랑 데이터베이스랑 연결해주는 그 인터페이스를 얘기하는 거고, ODBC다 라고 하게 되면 ODBC는 응용 프로그램이랑 DB랑 연결해주는 표준 인터페이스를 보고 얘기해요.",
+        "해서 이런 것들에 호환 여부도 우리가 따져봐야 되고"
+      ],
+      "spoken_text": "그리고 주변 기기. 설치 가능한 운영체제의 종류가 어떤 건지 그런 것도 따져봐야 되고요. 그리고 JDBC, ODBC 이런 거랑 호환할 수 있냐 없냐 그런 것도 따져봐야 됩니다. 여기서 JDBC라고 나오는데 JDBC는 자바랑 데이터베이스랑 연결해주는 그 인터페이스를 얘기하는 거고, ODBC다 라고 하게 되면 ODBC는 응용 프로그램이랑 DB랑 연결해주는 표준 인터페이스를 보고 얘기해요. 해서 이런 것들에 호환 여부도 우리가 따져봐야 되고",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "측면의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0014_14",
+      "subtopic_title": "DBMS 분석 시 고려사항",
+      "subtopic_sequence": 14,
+      "subtopic_number": "14",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JclY5yd7-RQ",
+      "start_time_hms": "00:03:02",
+      "end_time_hms": "00:03:36",
+      "start_seconds": 182,
+      "end_seconds": 216,
+      "duration_seconds": 34,
+      "timeline_summary": "구축 비용 측면의 고려사항 및 마무리",
+      "screen_text_lines": [
+        "구축 비용",
+        "라이선스정책 및 비용",
+        "유지관리 비용",
+        "총 소유 비용(TCO)"
+      ],
+      "screen_text": "구축 비용\n라이선스정책 및 비용\n유지관리 비용\n총 소유 비용(TCO)",
+      "spoken_sentences": [
+        "구축 비용이다 그러면 라이선스 정책이나 비용 같은 것도 우리가 따져봐야 되죠.",
+        "유지 관리 비용도 생각을 해봐야 되고요.",
+        "총 소유 비용도 우리가 생각을 해 봐야 됩니다.",
+        "요렇게 해서 DBMS 관련 요구사항 식별 시 고려사항에 대해서 살펴봤는데, 이 내용은 실제 시험 문제로 나온 적이 있어요.",
+        "요구사항 식별할 때 고려할 사항에는 가용성이다, 성능이다, 기술 지원이다, 주변 기기다, 구축 비용이다 해서 요렇게 5가지가 있다라는 거 꼭 기억하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "구축 비용이다 그러면 라이선스 정책이나 비용 같은 것도 우리가 따져봐야 되죠. 유지 관리 비용도 생각을 해봐야 되고요. 총 소유 비용도 우리가 생각을 해 봐야 됩니다. 요렇게 해서 DBMS 관련 요구사항 식별 시 고려사항에 대해서 살펴봤는데, 이 내용은 실제 시험 문제로 나온 적이 있어요. 요구사항 식별할 때 고려할 사항에는 가용성이다, 성능이다, 기술 지원이다, 주변 기기다, 구축 비용이다 해서 요렇게 5가지가 있다라는 거 꼭 기억하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고려사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "가용성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "비용",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "성능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "웹 애플리케이션 서버 소개",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버",
+        "(WAS; Web Application Server)"
+      ],
+      "screen_text": "웹 애플리케이션 서버\n(WAS; Web Application Server)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 웹 애플리케이션 서버에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 웹 애플리케이션 서버에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Application",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:36",
+      "start_seconds": 10,
+      "end_seconds": 36,
+      "duration_seconds": 26,
+      "timeline_summary": "WAS의 개념 및 동적 콘텐츠 처리",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+      "spoken_sentences": [
+        "웹 애플리케이션 서버라는 게 나오는데, 얘를 웹 애플리케이션 서버의 약자 따서 WAS, 그렇게 부르기도 해요.",
+        "얘는 정적인 콘텐츠 처리하는 웹 서버와는 달리 사용자 요구에 따라 변하는, 변하는 그런 동적인 콘텐츠를 처리하기 위해서 사용되는 그런 미들웨어를 보고 우리가 웹 애플리케이션 서버라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "웹 애플리케이션 서버라는 게 나오는데, 얘를 웹 애플리케이션 서버의 약자 따서 WAS, 그렇게 부르기도 해요. 얘는 정적인 콘텐츠 처리하는 웹 서버와는 달리 사용자 요구에 따라 변하는, 변하는 그런 동적인 콘텐츠를 처리하기 위해서 사용되는 그런 미들웨어를 보고 우리가 웹 애플리케이션 서버라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:00:36",
+      "end_time_hms": "00:00:53",
+      "start_seconds": 36,
+      "end_seconds": 53,
+      "duration_seconds": 17,
+      "timeline_summary": "미들웨어의 역할 및 정적 콘텐츠의 정의",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+      "spoken_sentences": [
+        "이 웹 애플리케이션 서버 같은 경우에는 서버와 클라이언트 그 사이에서 작동하기 때문에 미들웨어, 미들웨어라고 그렇게 부르기도 하는 거고요.",
+        "우리 정적인 콘텐츠, 텍스트가 됐든 이미지가 됐든 그런 거를 보고 우리가 정적 콘텐츠라고 그렇게 부르는 거죠."
+      ],
+      "spoken_text": "이 웹 애플리케이션 서버 같은 경우에는 서버와 클라이언트 그 사이에서 작동하기 때문에 미들웨어, 미들웨어라고 그렇게 부르기도 하는 거고요. 우리 정적인 콘텐츠, 텍스트가 됐든 이미지가 됐든 그런 거를 보고 우리가 정적 콘텐츠라고 그렇게 부르는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:00:53",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 53,
+      "end_seconds": 81,
+      "duration_seconds": 28,
+      "timeline_summary": "정적 및 동적 콘텐츠의 차이점",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+      "spoken_sentences": [
+        "우리가 특정 웹사이트에 접속하게 되면 웹 서버에서는 데이터베이스에 접속을 해요.",
+        "접속을 해서 해당 사이트에 포함된 각종 콘텐츠 같은 것들을 다 보여줍니다.",
+        "근데 그때 정적 콘텐츠도 있고 동적 콘텐츠도 있다고요.",
+        "그때 동적 콘텐츠다라고 얘기하게 되면 실시간으로 변하는 데이터들이 있어요.",
+        "우리 주식 정보라든지 날씨 정보라든지 그런 것들은 실시간으로 변동이 되잖아요.",
+        "그런 데이터를 보고 우리가 동적 콘텐츠라고 하는데"
+      ],
+      "spoken_text": "우리가 특정 웹사이트에 접속하게 되면 웹 서버에서는 데이터베이스에 접속을 해요. 접속을 해서 해당 사이트에 포함된 각종 콘텐츠 같은 것들을 다 보여줍니다. 근데 그때 정적 콘텐츠도 있고 동적 콘텐츠도 있다고요. 그때 동적 콘텐츠다라고 얘기하게 되면 실시간으로 변하는 데이터들이 있어요. 우리 주식 정보라든지 날씨 정보라든지 그런 것들은 실시간으로 변동이 되잖아요. 그런 데이터를 보고 우리가 동적 콘텐츠라고 하는데",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:45",
+      "start_seconds": 81,
+      "end_seconds": 105,
+      "duration_seconds": 24,
+      "timeline_summary": "웹 애플리케이션 서버의 동작 과정",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+      "spoken_sentences": [
+        "그런 동적인 자료는 웹 서버에서 직접 처리를 할 수 없기 때문에 동적인 자료 처리를 위해서 우리가 웹 애플리케이션 서버한테 요청을 하는 거예요.",
+        "그러면 애플리케이션 서버에서는 동적인 이런 자료를 전부 다 처리를 해요.",
+        "처리를 해서 해당 정보를 웹 서버로 보내면 그 웹 서버는 우리한테 클라이언트한테 그 데이터를 보내 주는 거예요."
+      ],
+      "spoken_text": "그런 동적인 자료는 웹 서버에서 직접 처리를 할 수 없기 때문에 동적인 자료 처리를 위해서 우리가 웹 애플리케이션 서버한테 요청을 하는 거예요. 그러면 애플리케이션 서버에서는 동적인 이런 자료를 전부 다 처리를 해요. 처리를 해서 해당 정보를 웹 서버로 보내면 그 웹 서버는 우리한테 클라이언트한테 그 데이터를 보내 주는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:01:45",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 105,
+      "end_seconds": 124,
+      "duration_seconds": 19,
+      "timeline_summary": "데이터베이스 연동 및 제공 라이브러리",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+        "• 데이터 접근, 세션 관리, 트랜잭션 관리 등을 위한 라이브러리를 제공함.",
+        "• 주로 데이터베이스 서버와 연동해서 사용함."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.\n• 데이터 접근, 세션 관리, 트랜잭션 관리 등을 위한 라이브러리를 제공함.\n• 주로 데이터베이스 서버와 연동해서 사용함.",
+      "spoken_sentences": [
+        "그때 우리가 주로 데이터베이스 서버랑 연동해서 이 웹 애플리케이션 서버라는 거를 사용을 해요.",
+        "이 웹 애플리케이션 서버에서 제공해 주는 게 데이터의 접근, 그리고 세션 관리, 그리고 트랜잭션 관리 이런 것들을 위해서 라이브러리, 라이브러리를 제공해 주고요."
+      ],
+      "spoken_text": "그때 우리가 주로 데이터베이스 서버랑 연동해서 이 웹 애플리케이션 서버라는 거를 사용을 해요. 이 웹 애플리케이션 서버에서 제공해 주는 게 데이터의 접근, 그리고 세션 관리, 그리고 트랜잭션 관리 이런 것들을 위해서 라이브러리, 라이브러리를 제공해 주고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_004-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0015_15",
+      "subtopic_title": "웹애플리케이션서버",
+      "subtopic_sequence": 15,
+      "subtopic_number": "15",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=jws-FhMyDsE",
+      "start_time_hms": "00:02:04",
+      "end_time_hms": "00:02:42",
+      "start_seconds": 124,
+      "end_seconds": 162,
+      "duration_seconds": 38,
+      "timeline_summary": "웹 애플리케이션 서버의 종류 및 출제 포인트",
+      "screen_text_lines": [
+        "웹 애플리케이션 서버(WAS; Web Application Server)",
+        "웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.",
+        "• 데이터 접근, 세션 관리, 트랜잭션 관리 등을 위한 라이브러리를 제공함.",
+        "• 주로 데이터베이스 서버와 연동해서 사용함."
+      ],
+      "screen_text": "웹 애플리케이션 서버(WAS; Web Application Server)\n웹 애플리케이션 서버는 정적인 콘텐츠 처리를 하는 웹 서버와 달리 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어.\n• 데이터 접근, 세션 관리, 트랜잭션 관리 등을 위한 라이브러리를 제공함.\n• 주로 데이터베이스 서버와 연동해서 사용함.",
+      "spoken_sentences": [
+        "요렇게 사용되는 웹 애플리케이션 서버의 종류에 보게 되면 Tomcat 이라는 것도 있고요.",
+        "GlassFish 라는 것도 있고 JBoss 라는 것도 있고요, Jetty 라는 것도 있고, JEUS 라는 것도 있고, Resin 이라는 것도 있고요.",
+        "WebLogic 이라는 것도 있고, WebSphere 라는 것도 있고 요런 것들이 있습니다.",
+        "요 내용이 실제 시험 문제 나올 때 웹 애플리케이션 서버의 종류가 아닌 거 찾아라, 그런 식으로 해서 시험 문제가 나온 적이 있거든요.",
+        "나온 적이 있으니까 이 종류 잘 기억하시고 요 특징도 한 번 더 눈여겨 보시고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "요렇게 사용되는 웹 애플리케이션 서버의 종류에 보게 되면 Tomcat 이라는 것도 있고요. GlassFish 라는 것도 있고 JBoss 라는 것도 있고요, Jetty 라는 것도 있고, JEUS 라는 것도 있고, Resin 이라는 것도 있고요. WebLogic 이라는 것도 있고, WebSphere 라는 것도 있고 요런 것들이 있습니다. 요 내용이 실제 시험 문제 나올 때 웹 애플리케이션 서버의 종류가 아닌 거 찾아라, 그런 식으로 해서 시험 문제가 나온 적이 있거든요. 나온 적이 있으니까 이 종류 잘 기억하시고 요 특징도 한 번 더 눈여겨 보시고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "애플리케이션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "WAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "콘텐츠",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "서버",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    }
+  ]
+}
