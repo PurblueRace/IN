@@ -1,0 +1,5701 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_095",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 9,
+    "source_sequences": [
+      426,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435
+    ],
+    "source_lecture_ids": [
+      "0426_426",
+      "0428_428",
+      "0429_429",
+      "0430_430",
+      "0431_431",
+      "0432_432",
+      "0433_433",
+      "0434_434",
+      "0435_435"
+    ],
+    "source_titles": [
+      "비트로커",
+      "OWASP",
+      "TCP 래퍼",
+      "허니팟",
+      "DPI",
+      "고가용성 솔루션",
+      "앤 스크린",
+      "Secure OS",
+      "Secure OS의 보안 기능"
+    ],
+    "keywords": [
+      "Secure",
+      "비트로커",
+      "OWASP",
+      "TCP",
+      "래퍼"
+    ],
+    "highlight_keywords": [
+      "비트로커",
+      "TPM",
+      "BitLocker",
+      "Module",
+      "Trusted Platform Module",
+      "용어",
+      "OWASP",
+      "보안 관련 용어",
+      "의미",
+      "오픈 웹 애플리케이션 보안 프로젝트)"
+    ],
+    "secondary_keywords": [
+      "암호화",
+      "TPM의 역할과 데이터 보호 기능 상세 설명",
+      "비트로커의 암호화 단위 및 적용 대상 설명",
+      "비트로커가 사용하는 암호화 알고리즘 언급",
+      "비트로커 주요 특징 재정리 및 마무리",
+      "강의 도입 및 비트로커 소개 시작",
+      "OWASP의 정의 및 주요 연구 대상 설명",
+      "OWASP 비영리 단체에 대한 최종 정리",
+      "강의 도입 및 보안 관련 용어 학습 안내",
+      "Application",
+      "Security",
+      "Project"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0426_426",
+      "sequence": 426,
+      "number": "426",
+      "course_code": "350422",
+      "title": "비트로커",
+      "duration_seconds": 141,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "tokens": [
+            "비트로커"
+          ],
+          "score": 39,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "TPM",
+          "tokens": [
+            "TPM"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "BitLocker",
+          "tokens": [
+            "BitLocker"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Module",
+          "tokens": [
+            "Module"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Trusted Platform Module",
+          "tokens": [
+            "Trusted",
+            "Platform",
+            "Module"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "암호화",
+          "tokens": [
+            "암호화"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "TPM의 역할과 데이터 보호 기능 상세 설명",
+          "tokens": [
+            "TPM",
+            "역할과",
+            "데이터",
+            "보호",
+            "기능",
+            "상세"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비트로커의 암호화 단위 및 적용 대상 설명",
+          "tokens": [
+            "비트로커의",
+            "암호화",
+            "단위",
+            "적용",
+            "대상"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비트로커가 사용하는 암호화 알고리즘 언급",
+          "tokens": [
+            "비트로커가",
+            "사용하는",
+            "암호화",
+            "알고리즘",
+            "언급"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비트로커 주요 특징 재정리 및 마무리",
+          "tokens": [
+            "비트로커",
+            "주요",
+            "재정리",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "강의 도입 및 비트로커 소개 시작",
+          "tokens": [
+            "강의",
+            "도입",
+            "비트로커",
+            "소개",
+            "시작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-001-source-seg-001::01",
+          "prompt": "강의 도입 및 ______ 소개 시작",
+          "answer": "비트로커",
+          "original": "강의 도입 및 비트로커 소개 시작",
+          "keyword": "비트로커",
+          "source_segment_id": "topic_095-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '비트로커'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-001-source-seg-004::02",
+          "prompt": "______(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+          "answer": "TPM",
+          "original": "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+          "keyword": "TPM",
+          "source_segment_id": "topic_095-subtopic-001-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'TPM'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-001-source-seg-002::03",
+          "prompt": "비트로커(______)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.",
+          "answer": "BitLocker",
+          "original": "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.",
+          "keyword": "BitLocker",
+          "source_segment_id": "topic_095-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'BitLocker'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-001-source-seg-004::04",
+          "prompt": "TPM(Trusted Platform ______)과 AES-128 알고리즘을 사용함.",
+          "answer": "Module",
+          "original": "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+          "keyword": "Module",
+          "source_segment_id": "topic_095-subtopic-001-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Module'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0428_428",
+      "sequence": 428,
+      "number": "428",
+      "course_code": "350424",
+      "title": "OWASP",
+      "duration_seconds": 48,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "tokens": [
+            "용어"
+          ],
+          "score": 56,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "OWASP",
+          "tokens": [
+            "OWASP"
+          ],
+          "score": 44,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "tokens": [
+            "보안",
+            "관련",
+            "용어"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "의미",
+          "tokens": [
+            "의미"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "오픈 웹 애플리케이션 보안 프로젝트)",
+          "tokens": [
+            "오픈",
+            "애플리케이션",
+            "보안",
+            "프로젝트"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "OWASP의 정의 및 주요 연구 대상 설명",
+          "tokens": [
+            "OWASP",
+            "주요",
+            "연구",
+            "대상"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "OWASP 비영리 단체에 대한 최종 정리",
+          "tokens": [
+            "OWASP",
+            "비영리",
+            "단체에",
+            "최종"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "강의 도입 및 보안 관련 용어 학습 안내",
+          "tokens": [
+            "강의",
+            "도입",
+            "보안",
+            "관련",
+            "용어",
+            "학습",
+            "안내"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Application",
+          "tokens": [
+            "Application"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Security",
+          "tokens": [
+            "Security"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Project",
+          "tokens": [
+            "Project"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-002-source-seg-002::01",
+          "prompt": "______(오픈 웹 애플리케이션 보안 프로젝트) 용어 소개",
+          "answer": "OWASP",
+          "original": "OWASP(오픈 웹 애플리케이션 보안 프로젝트) 용어 소개",
+          "keyword": "OWASP",
+          "source_segment_id": "topic_095-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'OWASP'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-002-source-seg-001::02",
+          "prompt": "강의 도입 및 ______ 학습 안내",
+          "answer": "보안 관련 용어",
+          "original": "강의 도입 및 보안 관련 용어 학습 안내",
+          "keyword": "보안 관련 용어",
+          "source_segment_id": "topic_095-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '보안 관련 용어'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-002-source-seg-002::03",
+          "prompt": "OWASP(______ 용어 소개",
+          "answer": "오픈 웹 애플리케이션 보안 프로젝트)",
+          "original": "OWASP(오픈 웹 애플리케이션 보안 프로젝트) 용어 소개",
+          "keyword": "오픈 웹 애플리케이션 보안 프로젝트)",
+          "source_segment_id": "topic_095-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '오픈 웹 애플리케이션 보안 프로젝트)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-002-source-seg-002::04",
+          "prompt": "OWASP(the Open Web ______ Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+          "answer": "Application",
+          "original": "OWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+          "keyword": "Application",
+          "source_segment_id": "topic_095-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Application'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0429_429",
+      "sequence": 429,
+      "number": "429",
+      "course_code": "350425",
+      "title": "TCP 래퍼",
+      "duration_seconds": 85,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "segment_count": 6,
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "tokens": [
+            "용어"
+          ],
+          "score": 65,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "의미",
+          "tokens": [
+            "의미"
+          ],
+          "score": 50,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "tokens": [
+            "보안",
+            "관련",
+            "용어"
+          ],
+          "score": 48,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "tokens": [
+            "TCP",
+            "래퍼",
+            "Wrapper"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "TCP Wrapper",
+          "tokens": [
+            "TCP",
+            "Wrapper"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "TCP 래퍼",
+          "tokens": [
+            "TCP",
+            "래퍼"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "네트워크 접속 시 사용자 정보 노출 위험",
+          "tokens": [
+            "네트워크",
+            "접속",
+            "사용자",
+            "정보",
+            "노출",
+            "위험"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정보 유출 방지를 위한 방화벽 기능 요약",
+          "tokens": [
+            "정보",
+            "유출",
+            "방지를",
+            "위한",
+            "방화벽",
+            "기능",
+            "요약"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "외부 컴퓨터 접속 인가 점검 기능",
+          "tokens": [
+            "외부",
+            "컴퓨터",
+            "접속",
+            "인가",
+            "점검",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "TCP 래퍼의 방화벽 역할 설명",
+          "tokens": [
+            "TCP",
+            "래퍼의",
+            "방화벽",
+            "역할"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "TCP 래퍼의 정의와 기능",
+          "tokens": [
+            "TCP",
+            "래퍼의",
+            "정의와",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-003-source-seg-001::01",
+          "prompt": "______ 학습 안내",
+          "answer": "보안 관련 용어",
+          "original": "보안 관련 용어 학습 안내",
+          "keyword": "보안 관련 용어",
+          "source_segment_id": "topic_095-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '보안 관련 용어'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-003-source-seg-002::02",
+          "prompt": "TCP 래퍼 (______)",
+          "answer": "TCP Wrapper",
+          "original": "TCP 래퍼 (TCP Wrapper)",
+          "keyword": "TCP Wrapper",
+          "source_segment_id": "topic_095-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'TCP Wrapper'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-003-source-seg-002::03",
+          "prompt": "______의 정의와 기능",
+          "answer": "TCP 래퍼",
+          "original": "TCP 래퍼의 정의와 기능",
+          "keyword": "TCP 래퍼",
+          "source_segment_id": "topic_095-subtopic-003-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'TCP 래퍼'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0430_430",
+      "sequence": 430,
+      "number": "430",
+      "course_code": "350426",
+      "title": "허니팟",
+      "duration_seconds": 86,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "tokens": [
+            "허니팟"
+          ],
+          "score": 35,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "용어",
+          "tokens": [
+            "용어"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "허니팟 (Honeypot)",
+          "tokens": [
+            "허니팟",
+            "Honeypot"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "tokens": [
+            "보안",
+            "관련",
+            "용어"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "의미",
+          "tokens": [
+            "의미"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+          "tokens": [
+            "비정상적인",
+            "접근을",
+            "탐지하기",
+            "위해",
+            "설치해",
+            "시스템"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사이버 테러 방지 기술로서의 허니팟",
+          "tokens": [
+            "사이버",
+            "테러",
+            "방지",
+            "기술로서의",
+            "허니팟"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "공격 기법 정보 수집 및 마무리",
+          "tokens": [
+            "공격",
+            "기법",
+            "정보",
+            "수집",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비정상적 접근 탐지 시스템 정의",
+          "tokens": [
+            "비정상적",
+            "접근",
+            "탐지",
+            "시스템"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "일반적인 해커의 해킹 과정 설명",
+          "tokens": [
+            "일반적인",
+            "해커의",
+            "해킹",
+            "과정"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "취약점을 노출시켜 해커 유인",
+          "tokens": [
+            "취약점을",
+            "노출시켜",
+            "해커",
+            "유인"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-004-source-seg-002::01",
+          "prompt": "______의 명칭 의미",
+          "answer": "허니팟",
+          "original": "허니팟의 명칭 의미",
+          "keyword": "허니팟",
+          "source_segment_id": "topic_095-subtopic-004-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '허니팟'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-004-source-seg-001::02",
+          "prompt": "______ 학습 시작",
+          "answer": "보안 관련 용어",
+          "original": "보안 관련 용어 학습 시작",
+          "keyword": "보안 관련 용어",
+          "source_segment_id": "topic_095-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '보안 관련 용어'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    },
+    {
+      "subtopic_index": 5,
+      "lecture_id": "0431_431",
+      "sequence": 431,
+      "number": "431",
+      "course_code": "350427",
+      "title": "DPI",
+      "duration_seconds": 102,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "tokens": [
+            "DPI"
+          ],
+          "score": 53,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "패킷",
+          "tokens": [
+            "패킷"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "tokens": [
+            "DPI",
+            "Deep",
+            "Packet",
+            "Inspection"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "tokens": [
+            "Deep",
+            "Packet",
+            "Inspection"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트래픽을 조정하기 위한 패킷 분석 기술.",
+          "tokens": [
+            "트래픽을",
+            "조정하기",
+            "위한",
+            "패킷",
+            "분석",
+            "기술"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "해킹 등을 탐지하고",
+          "tokens": [
+            "해킹",
+            "등을",
+            "탐지하고"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "용어",
+          "tokens": [
+            "용어"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "tokens": [
+            "보안",
+            "관련",
+            "용어"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "OSI",
+          "tokens": [
+            "OSI"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "콘텐츠를",
+          "tokens": [
+            "콘텐츠를"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "계층의",
+          "tokens": [
+            "계층의"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-005-source-seg-002::01",
+          "prompt": "______(심층 패킷 분석)의 정의",
+          "answer": "DPI",
+          "original": "DPI(심층 패킷 분석)의 정의",
+          "keyword": "DPI",
+          "source_segment_id": "topic_095-subtopic-005-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DPI'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-005-source-seg-003::02",
+          "prompt": "DPI (______)",
+          "answer": "Deep Packet Inspection",
+          "original": "DPI (Deep Packet Inspection)",
+          "keyword": "Deep Packet Inspection",
+          "source_segment_id": "topic_095-subtopic-005-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Deep Packet Inspection'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-005-source-seg-003::03",
+          "prompt": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, ______",
+          "answer": "트래픽을 조정하기 위한 패킷 분석 기술.",
+          "original": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+          "keyword": "트래픽을 조정하기 위한 패킷 분석 기술.",
+          "source_segment_id": "topic_095-subtopic-005-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '트래픽을 조정하기 위한 패킷 분석 기술.'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-005-source-seg-003::04",
+          "prompt": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, ______, 트래픽을 조정하기 위한 패킷 분석 기술.",
+          "answer": "해킹 등을 탐지하고",
+          "original": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+          "keyword": "해킹 등을 탐지하고",
+          "source_segment_id": "topic_095-subtopic-005-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '해킹 등을 탐지하고'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 6,
+      "lecture_id": "0432_432",
+      "sequence": 432,
+      "number": "432",
+      "course_code": "350428",
+      "title": "고가용성 솔루션",
+      "duration_seconds": 233,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "segment_count": 16,
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "tokens": [
+            "고가용성",
+            "솔루션",
+            "HACMP"
+          ],
+          "score": 128,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "있음",
+          "tokens": [
+            "있음"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "서버의",
+          "tokens": [
+            "서버의"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "서버를",
+          "tokens": [
+            "서버를"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "장애",
+          "tokens": [
+            "장애"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "고가용성 솔루션",
+          "tokens": [
+            "고가용성",
+            "솔루션"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "안정성을",
+          "tokens": [
+            "안정성을"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "운영을",
+          "tokens": [
+            "운영을"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "서버",
+          "tokens": [
+            "서버"
+          ],
+          "score": 18,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "연결하는",
+          "tokens": [
+            "연결하는"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "이중화를",
+          "tokens": [
+            "이중화를"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-006-source-seg-001::01",
+          "prompt": "______ 학습 안내",
+          "answer": "고가용성 솔루션(HACMP)",
+          "original": "고가용성 솔루션(HACMP) 학습 안내",
+          "keyword": "고가용성 솔루션(HACMP)",
+          "source_segment_id": "topic_095-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '고가용성 솔루션(HACMP)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-006-source-seg-004::02",
+          "prompt": "컴퓨터와 ______ 가용성 차이",
+          "answer": "서버의",
+          "original": "컴퓨터와 서버의 가용성 차이",
+          "keyword": "서버의",
+          "source_segment_id": "topic_095-subtopic-006-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '서버의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-006-source-seg-009::03",
+          "prompt": "• 2개의 ______ 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+          "answer": "서버를",
+          "original": "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+          "keyword": "서버를",
+          "source_segment_id": "topic_095-subtopic-006-source-seg-009",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '서버를'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-006-source-seg-001::04",
+          "prompt": "______(HACMP) 학습 안내",
+          "answer": "고가용성 솔루션",
+          "original": "고가용성 솔루션(HACMP) 학습 안내",
+          "keyword": "고가용성 솔루션",
+          "source_segment_id": "topic_095-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '고가용성 솔루션'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 7,
+      "lecture_id": "0433_433",
+      "sequence": 433,
+      "number": "433",
+      "course_code": "350429",
+      "title": "앤 스크린",
+      "duration_seconds": 64,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "tokens": [
+            "스크린",
+            "N-Screen"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "콘텐츠를",
+          "tokens": [
+            "콘텐츠를"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "이용할",
+          "tokens": [
+            "이용할"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "있는",
+          "tokens": [
+            "있는"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "TV",
+          "tokens": [
+            "TV"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "동일한",
+          "tokens": [
+            "동일한"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "개의",
+          "tokens": [
+            "개의"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "앤 스크린 정의의 핵심 키워드 강조",
+          "tokens": [
+            "스크린",
+            "정의의",
+            "핵심",
+            "키워드",
+            "강조"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "앤 스크린의 기본 정의 설명",
+          "tokens": [
+            "스크린의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "끊김",
+          "tokens": [
+            "끊김"
+          ],
+          "score": 9,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "없이",
+          "tokens": [
+            "없이"
+          ],
+          "score": 9,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-007-source-seg-001::01",
+          "prompt": "강의 주제인 '______' 소개",
+          "answer": "앤 스크린(N-Screen)",
+          "original": "강의 주제인 '앤 스크린(N-Screen)' 소개",
+          "keyword": "앤 스크린(N-Screen)",
+          "source_segment_id": "topic_095-subtopic-007-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '앤 스크린(N-Screen)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-007-source-seg-002::02",
+          "prompt": "앤 스크린은 N개의 서로 다른 단말기에서 동일한 ______ 자유롭게 이용할 수 있는 서비스를 말함.",
+          "answer": "콘텐츠를",
+          "original": "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+          "keyword": "콘텐츠를",
+          "source_segment_id": "topic_095-subtopic-007-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '콘텐츠를'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-007-source-seg-002::03",
+          "prompt": "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 ______ 수 있는 서비스를 말함.",
+          "answer": "이용할",
+          "original": "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+          "keyword": "이용할",
+          "source_segment_id": "topic_095-subtopic-007-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '이용할'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-007-source-seg-002::04",
+          "prompt": "앤 스크린은 N개의 서로 다른 단말기에서 ______ 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+          "answer": "동일한",
+          "original": "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+          "keyword": "동일한",
+          "source_segment_id": "topic_095-subtopic-007-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '동일한'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 8,
+      "lecture_id": "0434_434",
+      "sequence": 434,
+      "number": "434",
+      "course_code": "350430",
+      "title": "Secure OS",
+      "duration_seconds": 133,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "OS",
+          "tokens": [
+            "OS"
+          ],
+          "score": 29,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분리",
+          "tokens": [
+            "분리"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Secure OS",
+          "tokens": [
+            "Secure",
+            "OS"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보호",
+          "tokens": [
+            "보호"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보안",
+          "tokens": [
+            "보안"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "커널(Kernel)의 특징과 역할 설명",
+          "tokens": [
+            "커널",
+            "Kernel",
+            "특징과",
+            "역할"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보호 방법 중 논리적 분리 방식 설명",
+          "tokens": [
+            "보호",
+            "논리적",
+            "분리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보호 방법 중 시간적 분리 방식 설명",
+          "tokens": [
+            "보호",
+            "시간적",
+            "분리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보호 방법 중 암호적 분리 방식 설명",
+          "tokens": [
+            "보호",
+            "암호적",
+            "분리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Secure OS 강의 개요 안내",
+          "tokens": [
+            "Secure",
+            "OS",
+            "강의",
+            "개요",
+            "안내"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Secure OS의 개념 및 정의",
+          "tokens": [
+            "Secure",
+            "OS",
+            "개념"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-008-source-seg-001::01",
+          "prompt": "______ 강의 개요 안내",
+          "answer": "Secure OS",
+          "original": "Secure OS 강의 개요 안내",
+          "keyword": "Secure OS",
+          "source_segment_id": "topic_095-subtopic-008-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Secure OS'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 1
+      }
+    },
+    {
+      "subtopic_index": 9,
+      "lecture_id": "0435_435",
+      "sequence": 435,
+      "number": "435",
+      "course_code": "350431",
+      "title": "Secure OS의 보안 기능",
+      "duration_seconds": 27,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g1C69YRbXjs",
+      "segment_count": 4,
+      "highlight_keywords": [
+        {
+          "keyword": "Secure OS의 보안 기능",
+          "tokens": [
+            "Secure",
+            "OS",
+            "보안",
+            "기능"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Secure OS",
+          "tokens": [
+            "Secure",
+            "OS"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "식별 및 인증",
+          "tokens": [
+            "식별",
+            "인증"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "객체 재사용 보호 및 완전한 조정 기능 설명",
+          "tokens": [
+            "객체",
+            "재사용",
+            "보호",
+            "완전한",
+            "조정",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Secure OS 강의 도입 및 제목 소개",
+          "tokens": [
+            "Secure",
+            "OS",
+            "강의",
+            "도입",
+            "제목",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "신뢰 경로 및 감사 기록 축소 기능 설명",
+          "tokens": [
+            "신뢰",
+            "경로",
+            "감사",
+            "기록",
+            "축소",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "식별 및 인증, 접근 통제 기능 설명",
+          "tokens": [
+            "식별",
+            "인증",
+            "접근",
+            "통제",
+            "기능"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "감사 및 감사기록 축소 등",
+          "tokens": [
+            "감사",
+            "감사기록",
+            "축소"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "임의적/강제적 접근통제",
+          "tokens": [
+            "임의적",
+            "강제적",
+            "접근통제"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "객체 재사용 보호",
+          "tokens": [
+            "객체",
+            "재사용",
+            "보호"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "완전한 조정",
+          "tokens": [
+            "완전한",
+            "조정"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_095-subtopic-009-source-seg-001::01",
+          "prompt": "______ 강의 도입 및 제목 소개",
+          "answer": "Secure OS",
+          "original": "Secure OS 강의 도입 및 제목 소개",
+          "keyword": "Secure OS",
+          "source_segment_id": "topic_095-subtopic-009-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Secure OS'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-009-source-seg-002::02",
+          "prompt": "______, 접근 통제 기능 설명",
+          "answer": "식별 및 인증",
+          "original": "식별 및 인증, 접근 통제 기능 설명",
+          "keyword": "식별 및 인증",
+          "source_segment_id": "topic_095-subtopic-009-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '식별 및 인증'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-009-source-seg-003::03",
+          "prompt": "______ 및 완전한 조정 기능 설명",
+          "answer": "객체 재사용 보호",
+          "original": "객체 재사용 보호 및 완전한 조정 기능 설명",
+          "keyword": "객체 재사용 보호",
+          "source_segment_id": "topic_095-subtopic-009-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '객체 재사용 보호'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_095-subtopic-009-source-seg-003::04",
+          "prompt": "객체 재사용 보호 및 ______ 기능 설명",
+          "answer": "완전한 조정",
+          "original": "객체 재사용 보호 및 완전한 조정 기능 설명",
+          "keyword": "완전한 조정",
+          "source_segment_id": "topic_095-subtopic-009-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '완전한 조정'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_095",
+    "sequence": 95,
+    "number": "95",
+    "title": "보안 솔루션과 Secure OS",
+    "title_raw": "보안 솔루션과 Secure OS",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 9,
+    "source_sequences": [
+      426,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435
+    ],
+    "source_titles": [
+      "비트로커",
+      "OWASP",
+      "TCP 래퍼",
+      "허니팟",
+      "DPI",
+      "고가용성 솔루션",
+      "앤 스크린",
+      "Secure OS",
+      "Secure OS의 보안 기능"
+    ],
+    "preview_text": "비트로커, OWASP, TCP 래퍼 등",
+    "segment_count": 67,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 비트로커, OWASP, TCP 래퍼, 허니팟 등을 중심으로 정리합니다. 정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 9개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 비트로커, OWASP, TCP 래퍼, 허니팟 등을 중심으로 정리합니다.",
+      "정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 9개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 919,
+    "source_titles_preview": [
+      "비트로커",
+      "OWASP",
+      "TCP 래퍼"
+    ],
+    "highlight_keywords": [
+      "비트로커",
+      "TPM",
+      "BitLocker",
+      "Module",
+      "Trusted Platform Module",
+      "용어",
+      "OWASP",
+      "보안 관련 용어",
+      "의미",
+      "오픈 웹 애플리케이션 보안 프로젝트)"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_095-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 도입 및 비트로커 소개 시작",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 비트로커에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 비트로커에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "강의 도입 및 비트로커 소개 시작",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 8,
+      "end_seconds": 23,
+      "duration_seconds": 15,
+      "timeline_summary": "비트로커의 정의와 지원 버전 설명",
+      "screen_text_lines": [
+        "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능."
+      ],
+      "screen_text": "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.",
+      "spoken_sentences": [
+        "우리 비트로커라는 거요.",
+        "비트로커라는 거는 우리 윈도우 전용의 볼륨 암호화 그 기능을 보고 우리가 비트로커 그렇게 부릅니다.",
+        "이 비트로커라는 거는 윈도우 7부터 지원되기 시작을 했어요."
+      ],
+      "spoken_text": "우리 비트로커라는 거요. 비트로커라는 거는 우리 윈도우 전용의 볼륨 암호화 그 기능을 보고 우리가 비트로커 그렇게 부릅니다. 이 비트로커라는 거는 윈도우 7부터 지원되기 시작을 했어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "BitLocker",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "암호화",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 23,
+      "end_seconds": 48,
+      "duration_seconds": 25,
+      "timeline_summary": "비트로커의 암호화 단위 및 적용 대상 설명",
+      "screen_text_lines": [
+        "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능."
+      ],
+      "screen_text": "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.",
+      "spoken_sentences": [
+        "해서 이 비트로커라는 거는 볼륨 전체 암호화를 제공을 해서 자료를 보호하도록 그렇게 설계돼 있는 게 우리 비트로커인데 얘는 우리 드라이브 단위로 그렇게 우리 암호화를 시킬 수가 있습니다.",
+        "해서 우리 C 드라이브다, D 드라이브다 그런 하드디스크뿐만 아니라 우리가 사용하고 있는 그런 이동식 디스크 있죠?",
+        "그런 이동식 드라이브를 암호화하는 그런 기능도 있습니다."
+      ],
+      "spoken_text": "해서 이 비트로커라는 거는 볼륨 전체 암호화를 제공을 해서 자료를 보호하도록 그렇게 설계돼 있는 게 우리 비트로커인데 얘는 우리 드라이브 단위로 그렇게 우리 암호화를 시킬 수가 있습니다. 해서 우리 C 드라이브다, D 드라이브다 그런 하드디스크뿐만 아니라 우리가 사용하고 있는 그런 이동식 디스크 있죠? 그런 이동식 드라이브를 암호화하는 그런 기능도 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "BitLocker",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "암호화",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "비트로커의 암호화 단위 및 적용 대상 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 48,
+      "end_seconds": 60,
+      "duration_seconds": 12,
+      "timeline_summary": "비트로커가 사용하는 암호화 알고리즘 언급",
+      "screen_text_lines": [
+        "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함."
+      ],
+      "screen_text": "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+      "spoken_sentences": [
+        "그때 이 비트로커라는 게 암호화를 시킬 때 그때 AES-128.",
+        "128비트의 키를 가지고 AES 그 암호화 알고리즘을 사용해서 전부 다 암호화를 시켜줍니다."
+      ],
+      "spoken_text": "그때 이 비트로커라는 게 암호화를 시킬 때 그때 AES-128. 128비트의 키를 가지고 AES 그 암호화 알고리즘을 사용해서 전부 다 암호화를 시켜줍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "TPM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Trusted Platform Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:01:00",
+      "end_time_hms": "00:01:29",
+      "start_seconds": 60,
+      "end_seconds": 89,
+      "duration_seconds": 29,
+      "timeline_summary": "TPM(신뢰 플랫폼 모듈)의 정의와 성격 설명",
+      "screen_text_lines": [
+        "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+        "Module"
+      ],
+      "screen_text": "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.\nModule",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 TPM이다 하고 나왔죠?",
+        "이 TPM이라는 거는 우리 트러스티드 플랫폼 모듈의 약자인데 얘를 바로 그냥 해석해버리면 얘는 신뢰할 수 있는 그 플랫폼 모듈이다 그런 뜻을 가지고 있죠.",
+        "얘는 하나의 모듈로 되어 있기 때문에 얘는 소프트웨어가 아니라 하드웨어예요.",
+        "하드웨어."
+      ],
+      "spoken_text": "지금 여기 보게 되면 TPM이다 하고 나왔죠? 이 TPM이라는 거는 우리 트러스티드 플랫폼 모듈의 약자인데 얘를 바로 그냥 해석해버리면 얘는 신뢰할 수 있는 그 플랫폼 모듈이다 그런 뜻을 가지고 있죠. 얘는 하나의 모듈로 되어 있기 때문에 얘는 소프트웨어가 아니라 하드웨어예요. 하드웨어.",
+      "highlight_keywords": [
+        {
+          "keyword": "TPM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Trusted Platform Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:01:29",
+      "end_time_hms": "00:01:56",
+      "start_seconds": 89,
+      "end_seconds": 116,
+      "duration_seconds": 27,
+      "timeline_summary": "TPM의 역할과 데이터 보호 기능 상세 설명",
+      "screen_text_lines": [
+        "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+        "TPM"
+      ],
+      "screen_text": "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.\nTPM",
+      "spoken_sentences": [
+        "해서 이 TPM이라는 거는 하드웨어 쪽으로 다양한 보안 기능을 제공해주는 그런 모듈을 보고 우리가 TPM 그렇게 부르는데 우리가 암호화를 할 때 생성된 그 키가 있겠죠?",
+        "그런 암호화 키를 안전하게 보관해주는 그런 금고 같은 그런 역할을 수행해주는 게 우리 TPM이다 그렇게 생각하시면 돼요.",
+        "만약에 내가 노트북을 사용하는데 내 노트북을 비트로커 이걸로 전부 다 암호화를 시켜놨습니다.",
+        "그러면 내가 노트북을 잊어버리더라도 중요한 그런 데이터 같은 것들 그런 게 유출이 된다 안 된다?",
+        "안 되더라."
+      ],
+      "spoken_text": "해서 이 TPM이라는 거는 하드웨어 쪽으로 다양한 보안 기능을 제공해주는 그런 모듈을 보고 우리가 TPM 그렇게 부르는데 우리가 암호화를 할 때 생성된 그 키가 있겠죠? 그런 암호화 키를 안전하게 보관해주는 그런 금고 같은 그런 역할을 수행해주는 게 우리 TPM이다 그렇게 생각하시면 돼요. 만약에 내가 노트북을 사용하는데 내 노트북을 비트로커 이걸로 전부 다 암호화를 시켜놨습니다. 그러면 내가 노트북을 잊어버리더라도 중요한 그런 데이터 같은 것들 그런 게 유출이 된다 안 된다? 안 되더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "TPM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Trusted Platform Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0426_426",
+      "subtopic_title": "비트로커",
+      "subtopic_sequence": 426,
+      "subtopic_number": "426",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=uhqwVdgPAL0",
+      "start_time_hms": "00:01:56",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 116,
+      "end_seconds": 141,
+      "duration_seconds": 25,
+      "timeline_summary": "비트로커 주요 특징 재정리 및 마무리",
+      "screen_text_lines": [
+        "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.",
+        "TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함."
+      ],
+      "screen_text": "비트로커(BitLocker)는 Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능.\nTPM(Trusted Platform Module)과 AES-128 알고리즘을 사용함.",
+      "spoken_sentences": [
+        "해서 우리 비트로커라는 거는 윈도우 7부터 지원되기 시작한 그런 윈도우 전용의 우리 볼륨 암호화 그 기능을 보고 우리가 비트로커라고 하더라.",
+        "그리고 얘는 이 비트로커는 암호화를 할 때 우리 TPM이라는 거랑 우리 AES-128 요 알고리즘을 사용한다 요 내용 정확하게 기억하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 우리 비트로커라는 거는 윈도우 7부터 지원되기 시작한 그런 윈도우 전용의 우리 볼륨 암호화 그 기능을 보고 우리가 비트로커라고 하더라. 그리고 얘는 이 비트로커는 암호화를 할 때 우리 TPM이라는 거랑 우리 AES-128 요 알고리즘을 사용한다 요 내용 정확하게 기억하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "비트로커",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "TPM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "BitLocker",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Module",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 2,
+      "subtopic_id": "0428_428",
+      "subtopic_title": "OWASP",
+      "subtopic_sequence": 428,
+      "subtopic_number": "428",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 도입 및 보안 관련 용어 학습 안내",
+      "screen_text_lines": [
+        "보안 관련 용어"
+      ],
+      "screen_text": "보안 관련 용어",
+      "spoken_sentences": [
+        "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "강의 도입 및 보안 관련 용어 학습 안내",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0428_428",
+      "subtopic_title": "OWASP",
+      "subtopic_sequence": 428,
+      "subtopic_number": "428",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:13",
+      "start_seconds": 7,
+      "end_seconds": 13,
+      "duration_seconds": 6,
+      "timeline_summary": "OWASP(오픈 웹 애플리케이션 보안 프로젝트) 용어 소개",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "OWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nOWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+      "spoken_sentences": [
+        "그다음에 OWASP요.",
+        "얘는 우리말로 하게 되면 오픈 웹 애플리케이션 보안 프로젝트라고 그렇게 부르는데."
+      ],
+      "spoken_text": "그다음에 OWASP요. 얘는 우리말로 하게 되면 오픈 웹 애플리케이션 보안 프로젝트라고 그렇게 부르는데.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "OWASP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0428_428",
+      "subtopic_title": "OWASP",
+      "subtopic_sequence": 428,
+      "subtopic_number": "428",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "start_time_hms": "00:00:13",
+      "end_time_hms": "00:00:25",
+      "start_seconds": 13,
+      "end_seconds": 25,
+      "duration_seconds": 12,
+      "timeline_summary": "OWASP의 정의 및 주요 연구 대상 설명",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "OWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nOWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+      "spoken_sentences": [
+        "얘는 주로 웹에 대한 그런 정보 노출이 됐든 아니면 악성 코드가 됐든 아니면 스크립트나 보안이 취약한 그런 부분에 대해서 연구하는 그런 비영리 단체를 보고 우리가 얘기합니다."
+      ],
+      "spoken_text": "얘는 주로 웹에 대한 그런 정보 노출이 됐든 아니면 악성 코드가 됐든 아니면 스크립트나 보안이 취약한 그런 부분에 대해서 연구하는 그런 비영리 단체를 보고 우리가 얘기합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "OWASP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0428_428",
+      "subtopic_title": "OWASP",
+      "subtopic_sequence": 428,
+      "subtopic_number": "428",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "start_time_hms": "00:00:25",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 25,
+      "end_seconds": 41,
+      "duration_seconds": 16,
+      "timeline_summary": "10대 웹 애플리케이션 취약점 발표 주기와 선정 기준",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "OWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nOWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+      "spoken_sentences": [
+        "얘는 보안의 취약점 중에서, 취약점 중에서 빈도가 많이 발생하고 보안상 영향을 크게 줄 수 있는 그런 열 가지, 열 가지를 선정을 해서 10대 웹 애플리케이션 취약점을 3~4년에 한 번씩 그렇게 발표하고 있습니다."
+      ],
+      "spoken_text": "얘는 보안의 취약점 중에서, 취약점 중에서 빈도가 많이 발생하고 보안상 영향을 크게 줄 수 있는 그런 열 가지, 열 가지를 선정을 해서 10대 웹 애플리케이션 취약점을 3~4년에 한 번씩 그렇게 발표하고 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "OWASP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0428_428",
+      "subtopic_title": "OWASP",
+      "subtopic_sequence": 428,
+      "subtopic_number": "428",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=xMel71PKnA0",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 41,
+      "end_seconds": 48,
+      "duration_seconds": 7,
+      "timeline_summary": "OWASP 비영리 단체에 대한 최종 정리",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "OWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nOWASP(the Open Web Application Security Project, 오픈 웹 애플리케이션 보안 프로젝트)",
+      "spoken_sentences": [
+        "해서 이런 비영리 단체를 보고 우리가 OWASP, 그렇게 부르는 거요."
+      ],
+      "spoken_text": "해서 이런 비영리 단체를 보고 우리가 OWASP, 그렇게 부르는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "OWASP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "보안 관련 용어 학습 안내",
+      "screen_text_lines": [
+        "보안 관련 용어"
+      ],
+      "screen_text": "보안 관련 용어",
+      "spoken_sentences": [
+        "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:21",
+      "start_seconds": 8,
+      "end_seconds": 21,
+      "duration_seconds": 13,
+      "timeline_summary": "TCP 래퍼의 정의와 기능",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "TCP 래퍼 (TCP Wrapper)",
+        "의미"
+      ],
+      "screen_text": "보안 관련 용어\n용어\nTCP 래퍼 (TCP Wrapper)\n의미",
+      "spoken_sentences": [
+        "그 다음에 우리 TCP 래퍼라는 거요.",
+        "TCP 래퍼라는 거는 우리 유닉스 서버의 침입 차단 서비스를 제공하는 컴퓨터 프로그램을 보고 우리가 TCP 래퍼 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그 다음에 우리 TCP 래퍼라는 거요. TCP 래퍼라는 거는 우리 유닉스 서버의 침입 차단 서비스를 제공하는 컴퓨터 프로그램을 보고 우리가 TCP 래퍼 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:00:21",
+      "end_time_hms": "00:00:36",
+      "start_seconds": 21,
+      "end_seconds": 36,
+      "duration_seconds": 15,
+      "timeline_summary": "네트워크 접속 시 사용자 정보 노출 위험",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "TCP 래퍼 (TCP Wrapper)",
+        "의미"
+      ],
+      "screen_text": "보안 관련 용어\n용어\nTCP 래퍼 (TCP Wrapper)\n의미",
+      "spoken_sentences": [
+        "유닉스 컴퓨터가 만약에 네트워크에 접속을 하게 되면 다른 컴퓨터 사용자한테 노출이 됩니다.",
+        "해서 서버에 로그인한 그런 사용자의 아이디가 됐든 인터넷 사용 흔적 그런 것들을 알아낼 수 있고 그런 것들을 악용할 수가 있습니다."
+      ],
+      "spoken_text": "유닉스 컴퓨터가 만약에 네트워크에 접속을 하게 되면 다른 컴퓨터 사용자한테 노출이 됩니다. 해서 서버에 로그인한 그런 사용자의 아이디가 됐든 인터넷 사용 흔적 그런 것들을 알아낼 수 있고 그런 것들을 악용할 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:00:36",
+      "end_time_hms": "00:00:55",
+      "start_seconds": 36,
+      "end_seconds": 55,
+      "duration_seconds": 19,
+      "timeline_summary": "TCP 래퍼의 방화벽 역할 설명",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "TCP 래퍼 (TCP Wrapper)",
+        "의미"
+      ],
+      "screen_text": "보안 관련 용어\n용어\nTCP 래퍼 (TCP Wrapper)\n의미",
+      "spoken_sentences": [
+        "해서 이거를 방지하기 위해서 들어오는 패킷들을 전부 다 감시를 해요.",
+        "감시를 해서 어떤 외부 컴퓨터가 접속이 되면 그 접속 인가 여부를 확인해서 인가된 경우에만 접속을 허용하고 인가되지 않았을 때는 거부하는 그런 방화벽 역할을 수행하는 걸 보고 우리가 TCP 래퍼 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "해서 이거를 방지하기 위해서 들어오는 패킷들을 전부 다 감시를 해요. 감시를 해서 어떤 외부 컴퓨터가 접속이 되면 그 접속 인가 여부를 확인해서 인가된 경우에만 접속을 허용하고 인가되지 않았을 때는 거부하는 그런 방화벽 역할을 수행하는 걸 보고 우리가 TCP 래퍼 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:00:55",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 55,
+      "end_seconds": 67,
+      "duration_seconds": 12,
+      "timeline_summary": "외부 컴퓨터 접속 인가 점검 기능",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "TCP 래퍼 (TCP Wrapper)",
+        "의미"
+      ],
+      "screen_text": "보안 관련 용어\n용어\nTCP 래퍼 (TCP Wrapper)\n의미",
+      "spoken_sentences": [
+        "해서 외부 컴퓨터의 접속 인가 접속 인가 여부를 점검을 해서 접속을 허용하고 거부하는 그런 보안용 도구를 보고 우리가 TCP 래퍼 그렇게 부르는 거요."
+      ],
+      "spoken_text": "해서 외부 컴퓨터의 접속 인가 접속 인가 여부를 점검을 해서 접속을 허용하고 거부하는 그런 보안용 도구를 보고 우리가 TCP 래퍼 그렇게 부르는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0429_429",
+      "subtopic_title": "TCP 래퍼",
+      "subtopic_sequence": 429,
+      "subtopic_number": "429",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Q03XGMXCxQU",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 67,
+      "end_seconds": 85,
+      "duration_seconds": 18,
+      "timeline_summary": "정보 유출 방지를 위한 방화벽 기능 요약",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "TCP 래퍼 (TCP Wrapper)",
+        "의미"
+      ],
+      "screen_text": "보안 관련 용어\n용어\nTCP 래퍼 (TCP Wrapper)\n의미",
+      "spoken_sentences": [
+        "해서 네트워크에 접속을 하게 되면 로그인한 다른 컴퓨터 사용자의 아이디가 됐든 로그가 됐든 그런 것들을 조회를 해서 그런 것들이 악용이 가능한데 이걸 방지하기 위한 그런 방화벽 역할을 수행해 주는 걸 우리가 TCP 래퍼 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 네트워크에 접속을 하게 되면 로그인한 다른 컴퓨터 사용자의 아이디가 됐든 로그가 됐든 그런 것들을 조회를 해서 그런 것들이 악용이 가능한데 이걸 방지하기 위한 그런 방화벽 역할을 수행해 주는 걸 우리가 TCP 래퍼 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 65
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "TCP 래퍼 (TCP Wrapper)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:04",
+      "start_seconds": 0,
+      "end_seconds": 4,
+      "duration_seconds": 4,
+      "timeline_summary": "보안 관련 용어 학습 시작",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:15",
+      "start_seconds": 8,
+      "end_seconds": 15,
+      "duration_seconds": 7,
+      "timeline_summary": "허니팟의 명칭 의미",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "TCP 래퍼 (TCP Wrapper)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nTCP 래퍼 (TCP Wrapper)",
+      "spoken_sentences": [
+        "허니팟이라는 거요.",
+        "허니팟이라는 건 뭘 얘기하냐?",
+        "얘는 우리 허니팟이라는 거의 뜻이 해커를 잡는 덫이다.",
+        "아니면 해커를 잡는 유혹의 꿀단지다.",
+        "그런 의미를 가지고 있습니다."
+      ],
+      "spoken_text": "허니팟이라는 거요. 허니팟이라는 건 뭘 얘기하냐? 얘는 우리 허니팟이라는 거의 뜻이 해커를 잡는 덫이다. 아니면 해커를 잡는 유혹의 꿀단지다. 그런 의미를 가지고 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "의미",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:15",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 15,
+      "end_seconds": 23,
+      "duration_seconds": 8,
+      "timeline_summary": "사이버 테러 방지 기술로서의 허니팟",
+      "screen_text_lines": [
+        "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+        "침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함."
+      ],
+      "screen_text": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.\n침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함.",
+      "spoken_sentences": [
+        "얘는 해커의 공격에 대응할 수 있는 그런 시간을 벌고 해커의 움직임을 면밀히 파악하면서 사이버 테러를 방지하는 그런 신기술을 보고 우리가 허니팟 그렇게 부르는데"
+      ],
+      "spoken_text": "얘는 해커의 공격에 대응할 수 있는 그런 시간을 벌고 해커의 움직임을 면밀히 파악하면서 사이버 테러를 방지하는 그런 신기술을 보고 우리가 허니팟 그렇게 부르는데",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "사이버 테러 방지 기술로서의 허니팟",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 23,
+      "end_seconds": 33,
+      "duration_seconds": 10,
+      "timeline_summary": "일반적인 해커의 해킹 과정 설명",
+      "screen_text_lines": [
+        "허니팟 (Honeypot)",
+        "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템."
+      ],
+      "screen_text": "허니팟 (Honeypot)\n비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+      "spoken_sentences": [
+        "보통 해커들이 수많은 컴퓨터들을 막 뒤져요.",
+        "뒤져서 취약점을 찾습니다.",
+        "그리고 취약점을 가지고 있는 그런 컴퓨터를 해킹을 해서 그 컴퓨터에 들어 있는 정보를 유출한다거나 아니면 변조를 하는데요"
+      ],
+      "spoken_text": "보통 해커들이 수많은 컴퓨터들을 막 뒤져요. 뒤져서 취약점을 찾습니다. 그리고 취약점을 가지고 있는 그런 컴퓨터를 해킹을 해서 그 컴퓨터에 들어 있는 정보를 유출한다거나 아니면 변조를 하는데요",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "허니팟 (Honeypot)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "일반적인 해커의 해킹 과정 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 33,
+      "end_seconds": 43,
+      "duration_seconds": 10,
+      "timeline_summary": "취약점을 노출시켜 해커 유인",
+      "screen_text_lines": [
+        "침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함."
+      ],
+      "screen_text": "침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함.",
+      "spoken_sentences": [
+        "허니팟이라는 거는 일부러 취약점을 드러내요.",
+        "드러내서 해커를 유인합니다.",
+        "유인해서 그 해커가 허니팟을 막 공격을 하잖아요?",
+        "공격을 하게 되면"
+      ],
+      "spoken_text": "허니팟이라는 거는 일부러 취약점을 드러내요. 드러내서 해커를 유인합니다. 유인해서 그 해커가 허니팟을 막 공격을 하잖아요? 공격을 하게 되면",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "취약점을 노출시켜 해커 유인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 43,
+      "end_seconds": 58,
+      "duration_seconds": 15,
+      "timeline_summary": "해커의 위치 및 수법 역추적",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "허니팟 (Honeypot)"
+      ],
+      "screen_text": "보안 관련 용어\n허니팟 (Honeypot)",
+      "spoken_sentences": [
+        "허니팟을 공격하는 그런 해커들의 해킹 경로나 아니면 해킹 수법 아니면 해킹하고 있는 그 위치 그런 정보를 수집해서 역추적하는 걸 보고 우리가 허니팟 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "허니팟을 공격하는 그런 해커들의 해킹 경로나 아니면 해킹 수법 아니면 해킹하고 있는 그 위치 그런 정보를 수집해서 역추적하는 걸 보고 우리가 허니팟 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "허니팟 (Honeypot)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 58,
+      "end_seconds": 73,
+      "duration_seconds": 15,
+      "timeline_summary": "비정상적 접근 탐지 시스템 정의",
+      "screen_text_lines": [
+        "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템."
+      ],
+      "screen_text": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+      "spoken_sentences": [
+        "해서 비정상적인 그런 접근을 탐지하기 위해서 설치해 둔 그런 시스템을 보고 얘기하더라.",
+        "얘는 침입자 해커들을 속여서 실제로 공격을 당하는 것처럼 그렇게 보여줘요.",
+        "보여주고"
+      ],
+      "spoken_text": "해서 비정상적인 그런 접근을 탐지하기 위해서 설치해 둔 그런 시스템을 보고 얘기하더라. 얘는 침입자 해커들을 속여서 실제로 공격을 당하는 것처럼 그렇게 보여줘요. 보여주고",
+      "highlight_keywords": [
+        {
+          "keyword": "비정상적인 접근을 탐지하기 위해 설치해 둔 시스템.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "비정상적 접근 탐지 시스템 정의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 4,
+      "subtopic_id": "0430_430",
+      "subtopic_title": "허니팟",
+      "subtopic_sequence": 430,
+      "subtopic_number": "430",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=-4-9p79fHBI",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:26",
+      "start_seconds": 73,
+      "end_seconds": 86,
+      "duration_seconds": 13,
+      "timeline_summary": "공격 기법 정보 수집 및 마무리",
+      "screen_text_lines": [
+        "침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함."
+      ],
+      "screen_text": "침입자를 속여 실제 공격을 당하는 것처럼 보여줌으로써 추적 및 공격기법에 대한 정보를 수집함.",
+      "spoken_sentences": [
+        "추적이나 공격 기법 그런 것들에 대한 그런 정보를 수집하는 걸 보고 우리가 허니팟 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "추적이나 공격 기법 그런 것들에 대한 그런 정보를 수집하는 걸 보고 우리가 허니팟 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "허니팟",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "공격 기법 정보 수집 및 마무리",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "보안 관련 용어 학습 안내",
+      "screen_text_lines": [
+        "보안 관련 용어"
+      ],
+      "screen_text": "보안 관련 용어",
+      "spoken_sentences": [
+        "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 보안 관련 용어에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "용어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:17",
+      "start_seconds": 8,
+      "end_seconds": 17,
+      "duration_seconds": 9,
+      "timeline_summary": "DPI(심층 패킷 분석)의 정의",
+      "screen_text_lines": [
+        "보안 관련 용어",
+        "용어",
+        "의미",
+        "TCP 래퍼 (TCP Wrapper)"
+      ],
+      "screen_text": "보안 관련 용어\n용어\n의미\nTCP 래퍼 (TCP Wrapper)",
+      "spoken_sentences": [
+        "그다음에 우리 DPI, 우리 딥 패킷 인스펙션이요.",
+        "얘를 우리말로 하게 되면 심층 패킷 분석, 그렇게 부르는데 얘가 뭘 하는 거냐."
+      ],
+      "spoken_text": "그다음에 우리 DPI, 우리 딥 패킷 인스펙션이요. 얘를 우리말로 하게 되면 심층 패킷 분석, 그렇게 부르는데 얘가 뭘 하는 거냐.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "용어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "보안 관련 용어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:17",
+      "end_time_hms": "00:00:29",
+      "start_seconds": 17,
+      "end_seconds": 29,
+      "duration_seconds": 12,
+      "timeline_summary": "기본적인 패킷 전송 정보 분석",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "우리가 인터넷상에서 데이터를 송수신하게 되면 그때 그 데이터가 패킷 단위로 전송이 되는데 그때 그 패킷의 출발지가 어디인지, 목적지가 어디인지 그런 정보만 보고 우리가 출발지에서 목적지로 보내주게 되는데"
+      ],
+      "spoken_text": "우리가 인터넷상에서 데이터를 송수신하게 되면 그때 그 데이터가 패킷 단위로 전송이 되는데 그때 그 패킷의 출발지가 어디인지, 목적지가 어디인지 그런 정보만 보고 우리가 출발지에서 목적지로 보내주게 되는데",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:29",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 29,
+      "end_seconds": 48,
+      "duration_seconds": 19,
+      "timeline_summary": "DPI의 패킷 내부 콘텐츠 정밀 분석",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "그런 정보만 분석을 하는 게 아니라 우리 패킷에 어떤 내용이 들어 있는지 그 내부에 들어 있는 그런 콘텐츠까지 싹 다 분석하는 그런 기술을 보고 우리가 DPI, 우리 심층 패킷 분석, 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그런 정보만 분석을 하는 게 아니라 우리 패킷에 어떤 내용이 들어 있는지 그 내부에 들어 있는 그런 콘텐츠까지 싹 다 분석하는 그런 기술을 보고 우리가 DPI, 우리 심층 패킷 분석, 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 48,
+      "end_seconds": 58,
+      "duration_seconds": 10,
+      "timeline_summary": "콘텐츠 분석을 통한 공격 여부 식별",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "그렇게 내부에 들어 있는 그런 콘텐츠까지 싹 다 분석을 하게 되면 이 데이터가 웜인지 해킹인지 그런 공격 여부를 우리가 식별할 수 있어요."
+      ],
+      "spoken_text": "그렇게 내부에 들어 있는 그런 콘텐츠까지 싹 다 분석을 하게 되면 이 데이터가 웜인지 해킹인지 그런 공격 여부를 우리가 식별할 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 58,
+      "end_seconds": 68,
+      "duration_seconds": 10,
+      "timeline_summary": "일반 우편 배달에 비유한 설명",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "우리 이거를 우편물로 비유하자면 원래 우편물을 배달하시는 그런 배달원들이 우리 편지 봉투에 적혀 있는 그런 내용들만 확인을 하죠."
+      ],
+      "spoken_text": "우리 이거를 우편물로 비유하자면 원래 우편물을 배달하시는 그런 배달원들이 우리 편지 봉투에 적혀 있는 그런 내용들만 확인을 하죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 68,
+      "end_seconds": 81,
+      "duration_seconds": 13,
+      "timeline_summary": "우편물 내용물 확인에 비유한 DPI의 특징",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "근데 심층 패킷 분석을 하게 되면 그 봉투에 적혀 있는 것뿐만 아니라 그 안에 어떤 내용들이 들어 있는지 그런 내용물까지 싹 다 확인하는 걸 보고 우리가 DPI, 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "근데 심층 패킷 분석을 하게 되면 그 봉투에 적혀 있는 것뿐만 아니라 그 안에 어떤 내용들이 들어 있는지 그런 내용물까지 싹 다 확인하는 걸 보고 우리가 DPI, 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 5,
+      "subtopic_id": "0431_431",
+      "subtopic_title": "DPI",
+      "subtopic_sequence": 431,
+      "subtopic_number": "431",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=TstfrYEgZss",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 81,
+      "end_seconds": 102,
+      "duration_seconds": 21,
+      "timeline_summary": "DPI의 기술적 세부 정의 및 용도 정리",
+      "screen_text_lines": [
+        "DPI (Deep Packet Inspection)",
+        "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도",
+        "해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술."
+      ],
+      "screen_text": "DPI (Deep Packet Inspection)\nOSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도\n해킹 등을 탐지하고, 트래픽을 조정하기 위한 패킷 분석 기술.",
+      "spoken_sentences": [
+        "해서 이 DPI라는 거는 OSI 7계층 그 전 계층의 프로토콜이나 패킷의 내부, 그런 것들의 콘텐츠를 전부 다 파악을 해서 우리가 침입 시도를 한다 아니면 해킹을 한다 이런 것들을 탐지하고 트래픽을 조정하기 위한 그런 패킷 분석 기술을 보고 우리가 DPI, 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 이 DPI라는 거는 OSI 7계층 그 전 계층의 프로토콜이나 패킷의 내부, 그런 것들의 콘텐츠를 전부 다 파악을 해서 우리가 침입 시도를 한다 아니면 해킹을 한다 이런 것들을 탐지하고 트래픽을 조정하기 위한 그런 패킷 분석 기술을 보고 우리가 DPI, 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DPI",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "패킷",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "DPI (Deep Packet Inspection)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Deep Packet Inspection",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "고가용성 솔루션(HACMP) 학습 안내",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)"
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 고가용성 솔루션에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 고가용성 솔루션에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:28",
+      "start_seconds": 9,
+      "end_seconds": 28,
+      "duration_seconds": 19,
+      "timeline_summary": "고가용성 솔루션(HACMP)의 정의",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "우리 고가용성 솔루션이요.",
+        "우리 고가용성 솔루션은 우리가 영어 약자로 HACMP 그렇게 부릅니다.",
+        "지금 여기 보게 되면 고가용성 고가용성이라는 그 말이 들어가는데 이 고가용성이라는 거는 가용성이 높다 그 얘기에요."
+      ],
+      "spoken_text": "우리 고가용성 솔루션이요. 우리 고가용성 솔루션은 우리가 영어 약자로 HACMP 그렇게 부릅니다. 지금 여기 보게 되면 고가용성 고가용성이라는 그 말이 들어가는데 이 고가용성이라는 거는 가용성이 높다 그 얘기에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "운영을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:00:28",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 28,
+      "end_seconds": 41,
+      "duration_seconds": 13,
+      "timeline_summary": "고가용성의 개념: 높은 가용성",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "해서 우리 가용성이라는 게 내가 사용하고 싶을 때 언제든지 쓸 수 있나 없나 그걸 뜻하는 건데 이 고가용성이라는 거는 가용성이 높아서 절대로 고장 나지 않는다 그런 의미를 가진 그런 용어에요."
+      ],
+      "spoken_text": "해서 우리 가용성이라는 게 내가 사용하고 싶을 때 언제든지 쓸 수 있나 없나 그걸 뜻하는 건데 이 고가용성이라는 거는 가용성이 높아서 절대로 고장 나지 않는다 그런 의미를 가진 그런 용어에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "운영을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:02",
+      "start_seconds": 41,
+      "end_seconds": 62,
+      "duration_seconds": 21,
+      "timeline_summary": "컴퓨터와 서버의 가용성 차이",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "우리가 일반적으로 사용하는 이런 컴퓨터들은 그냥 내가 컴퓨터를 쓰고 싶을 때 껐다 켰다 껐다 켰다 해서 쓰죠.",
+        "근데 우리가 인터넷상에서 사용하는 이런 서버 같은 것들은 꺼지면 돼요, 안 돼요?",
+        "안 되잖아요."
+      ],
+      "spoken_text": "우리가 일반적으로 사용하는 이런 컴퓨터들은 그냥 내가 컴퓨터를 쓰고 싶을 때 껐다 켰다 껐다 켰다 해서 쓰죠. 근데 우리가 인터넷상에서 사용하는 이런 서버 같은 것들은 꺼지면 돼요, 안 돼요? 안 되잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:01:02",
+      "end_time_hms": "00:01:22",
+      "start_seconds": 62,
+      "end_seconds": 82,
+      "duration_seconds": 20,
+      "timeline_summary": "서버의 24시간 상시 운영 필요성",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "그 서버에 언제 어디서 누가 접속할지 아무도 모르잖아요.",
+        "해서 24시간 항상 켜져 있어야 됩니다.",
+        "그렇게 긴 시간 동안, 긴 시간 동안 안정적인 그런 서비스를 운영하기 위해서 장애가 만약에 혹시나 발생을 하게 되면"
+      ],
+      "spoken_text": "그 서버에 언제 어디서 누가 접속할지 아무도 모르잖아요. 해서 24시간 항상 켜져 있어야 됩니다. 그렇게 긴 시간 동안, 긴 시간 동안 안정적인 그런 서비스를 운영하기 위해서 장애가 만약에 혹시나 발생을 하게 되면",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:01:22",
+      "end_time_hms": "00:01:40",
+      "start_seconds": 82,
+      "end_seconds": 100,
+      "duration_seconds": 18,
+      "timeline_summary": "장애 발생 시 즉각적인 대체 시스템 가동",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "그 즉시 다른 시스템으로 대체를 해서 서비스를 계속해서 제공하는 그런 환경, 그런 환경을 구축하는 그런 메커니즘을 우리가 고가용성 솔루션 그렇게 부르는 거예요.",
+        "근데 우리가 집에서 사용하는 이런 컴퓨터는 나 혼자 써요.",
+        "나 혼자 써도 고장이 나잖아요."
+      ],
+      "spoken_text": "그 즉시 다른 시스템으로 대체를 해서 서비스를 계속해서 제공하는 그런 환경, 그런 환경을 구축하는 그런 메커니즘을 우리가 고가용성 솔루션 그렇게 부르는 거예요. 근데 우리가 집에서 사용하는 이런 컴퓨터는 나 혼자 써요. 나 혼자 써도 고장이 나잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "운영을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:01:40",
+      "end_time_hms": "00:01:53",
+      "start_seconds": 100,
+      "end_seconds": 113,
+      "duration_seconds": 13,
+      "timeline_summary": "고가용성 솔루션의 핵심 목적",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+      "spoken_sentences": [
+        "그러면 서버라는 그 컴퓨터는 나 혼자 쓰는 게 아니라 수십 명, 수백 명, 수천 명의 사람들이 같이 사용한다고요.",
+        "그러면 그런 컴퓨터는 고장이 나요 안 나?",
+        "고장이 나요.",
+        "고장이 안 날 수가 없잖아요.",
+        "그러면 그 해당 서버가 고장이 나면 서비스를 제공을 못 할 거 아니에요."
+      ],
+      "spoken_text": "그러면 서버라는 그 컴퓨터는 나 혼자 쓰는 게 아니라 수십 명, 수백 명, 수천 명의 사람들이 같이 사용한다고요. 그러면 그런 컴퓨터는 고장이 나요 안 나? 고장이 나요. 고장이 안 날 수가 없잖아요. 그러면 그 해당 서버가 고장이 나면 서비스를 제공을 못 할 거 아니에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "운영을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:01:53",
+      "end_time_hms": "00:02:02",
+      "start_seconds": 113,
+      "end_seconds": 122,
+      "duration_seconds": 9,
+      "timeline_summary": "시스템 장애 대처 및 클러스터링 활용",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.",
+      "spoken_sentences": [
+        "해서 그런 것들, 고장이 났을 때 어떻게 대처를 하냐 그게 우리 고가용성 솔루션이라는 겁니다.",
+        "그때 각 시스템 간에 공유 디스크를 중심으로 해서 클러스터링, 클러스터링으로 엮어서"
+      ],
+      "spoken_text": "해서 그런 것들, 고장이 났을 때 어떻게 대처를 하냐 그게 우리 고가용성 솔루션이라는 겁니다. 그때 각 시스템 간에 공유 디스크를 중심으로 해서 클러스터링, 클러스터링으로 엮어서",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "장애",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "고가용성 솔루션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:02:02",
+      "end_time_hms": "00:02:11",
+      "start_seconds": 122,
+      "end_seconds": 131,
+      "duration_seconds": 9,
+      "timeline_summary": "다수 시스템의 동시 연결 방식",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "다수의 시스템을 동시에 연결하는 그런 방식도 있고요.",
+        "2개의 서버를 연결해서 우리가 이중화, 이중화를 통해서 서버의 안정성을 높일 수 있는 이런 방법들이 있습니다."
+      ],
+      "spoken_text": "다수의 시스템을 동시에 연결하는 그런 방식도 있고요. 2개의 서버를 연결해서 우리가 이중화, 이중화를 통해서 서버의 안정성을 높일 수 있는 이런 방법들이 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:02:11",
+      "end_time_hms": "00:02:24",
+      "start_seconds": 131,
+      "end_seconds": 144,
+      "duration_seconds": 13,
+      "timeline_summary": "서버 이중화와 안정성 제고",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 이중화라는 말이 나왔죠.",
+        "이중화라는 거는 우리가 앞에서 우리 데이터베이스 이중화 서버 클러스터링 그런 거에서 우리가 배웠던 그런 내용이에요."
+      ],
+      "spoken_text": "지금 여기 보게 되면 이중화라는 말이 나왔죠. 이중화라는 거는 우리가 앞에서 우리 데이터베이스 이중화 서버 클러스터링 그런 거에서 우리가 배웠던 그런 내용이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:02:24",
+      "end_time_hms": "00:02:34",
+      "start_seconds": 144,
+      "end_seconds": 154,
+      "duration_seconds": 10,
+      "timeline_summary": "이중화: 동일 데이터를 가진 복제 서버 구축",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "우리 이중화다 그러면 이중화라는 거는 서버를 하나 만들어 놓고 그 서버를 운영할 때 그거랑 똑같은 데이터를 가진 그런 서버를 똑같이 복제를 해서 하나 더 만들어 놓는 거예요."
+      ],
+      "spoken_text": "우리 이중화다 그러면 이중화라는 거는 서버를 하나 만들어 놓고 그 서버를 운영할 때 그거랑 똑같은 데이터를 가진 그런 서버를 똑같이 복제를 해서 하나 더 만들어 놓는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:02:34",
+      "end_time_hms": "00:02:51",
+      "start_seconds": 154,
+      "end_seconds": 171,
+      "duration_seconds": 17,
+      "timeline_summary": "서버 A와 B를 활용한 가동 방식",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "해서 A라는 서버, B라는 서버 그렇게 똑같은 내용을 가진 그런 서버를 두 개를 만들어 놓고 하나를, A를 먼저 가지고 사용하다가 만약에 A가 고장 났다.",
+        "그러면 B가 계속해서 똑같은 내용을 가지고 있으니까"
+      ],
+      "spoken_text": "해서 A라는 서버, B라는 서버 그렇게 똑같은 내용을 가진 그런 서버를 두 개를 만들어 놓고 하나를, A를 먼저 가지고 사용하다가 만약에 A가 고장 났다. 그러면 B가 계속해서 똑같은 내용을 가지고 있으니까",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:02:51",
+      "end_time_hms": "00:03:02",
+      "start_seconds": 171,
+      "end_seconds": 182,
+      "duration_seconds": 11,
+      "timeline_summary": "서버 B를 통한 중단 없는 서비스 제공",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "그 B라는 서버를 이용해서 계속해서 서비스를 제공해 주면 되잖아요.",
+        "그러면 B가 서비스를 제공하고 있는 동안 A는 AS가 되겠죠.",
+        "그런 식으로 운영이 되는 게 우리가 이중화, 이중화해서 운영하는 그런 방식이고요."
+      ],
+      "spoken_text": "그 B라는 서버를 이용해서 계속해서 서비스를 제공해 주면 되잖아요. 그러면 B가 서비스를 제공하고 있는 동안 A는 AS가 되겠죠. 그런 식으로 운영이 되는 게 우리가 이중화, 이중화해서 운영하는 그런 방식이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:03:02",
+      "end_time_hms": "00:03:14",
+      "start_seconds": 182,
+      "end_seconds": 194,
+      "duration_seconds": 12,
+      "timeline_summary": "클러스터링의 정의",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "클러스터링이다라고 하게 되면 클러스터링이라는 건 뭘 얘기하냐 두 대 이상의 서버를 마치 하나의 서버처럼 그렇게 운영하는 그런 기술을 우리가 클러스터링 그렇게 부릅니다."
+      ],
+      "spoken_text": "클러스터링이다라고 하게 되면 클러스터링이라는 건 뭘 얘기하냐 두 대 이상의 서버를 마치 하나의 서버처럼 그렇게 운영하는 그런 기술을 우리가 클러스터링 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:03:14",
+      "end_time_hms": "00:03:36",
+      "start_seconds": 194,
+      "end_seconds": 216,
+      "duration_seconds": 22,
+      "timeline_summary": "다수 서버 운영을 통한 안정성 증대",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "해서 우리 클러스터링이 됐든 이중화가 됐든 이런 것들을 통해서 우리 서버가 서버를 한 대만 가지고 우리가 운영을 하는 게 아니라 두 대 이상을 가지고 운영을 하다가 어느 한쪽이 고장이 나도 서비스를 계속해서 이용할 수 있게 서비스를 계속해서 제공해 줄 수 있게끔 그렇게 해주는 거"
+      ],
+      "spoken_text": "해서 우리 클러스터링이 됐든 이중화가 됐든 이런 것들을 통해서 우리 서버가 서버를 한 대만 가지고 우리가 운영을 하는 게 아니라 두 대 이상을 가지고 운영을 하다가 어느 한쪽이 고장이 나도 서비스를 계속해서 이용할 수 있게 서비스를 계속해서 제공해 줄 수 있게끔 그렇게 해주는 거",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 6,
+      "subtopic_id": "0432_432",
+      "subtopic_title": "고가용성 솔루션",
+      "subtopic_sequence": 432,
+      "subtopic_number": "432",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=52H2SeiLZzY",
+      "start_time_hms": "00:03:36",
+      "end_time_hms": "00:03:53",
+      "start_seconds": 216,
+      "end_seconds": 233,
+      "duration_seconds": 17,
+      "timeline_summary": "고가용성 솔루션의 핵심 가치",
+      "screen_text_lines": [
+        "고가용성 솔루션(HACMP)",
+        "고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.",
+        "• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.",
+        "• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음."
+      ],
+      "screen_text": "고가용성 솔루션(HACMP)\n고가용성 솔루션(HACMP; High Availability Clustering Multi Processing)은 긴 시간동안 안정적인 서비스 운영을 위해 장애 발생 시 즉시 다른 시스템으로 대체 가능한 환경을 구축하는 메커니즘을 의미함.\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있음.\n• 2개의 서버를 연결하는 이중화를 통해 서버의 안정성을 높일 수 있음.",
+      "spoken_sentences": [
+        "그게 우리 고가용성 솔루션이라는 거예요.",
+        "해서 우리 고가용성 솔루션이라는 거는 뭘 위해서 한다?",
+        "우리 서버의 안정성, 안정성을 높이기 위해서 사용되는 게 우리 고가용성 솔루션이라는 거요."
+      ],
+      "spoken_text": "그게 우리 고가용성 솔루션이라는 거예요. 해서 우리 고가용성 솔루션이라는 거는 뭘 위해서 한다? 우리 서버의 안정성, 안정성을 높이기 위해서 사용되는 게 우리 고가용성 솔루션이라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고가용성 솔루션(HACMP)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 128
+        },
+        {
+          "keyword": "있음",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "서버의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "서버를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 7,
+      "subtopic_id": "0433_433",
+      "subtopic_title": "앤 스크린",
+      "subtopic_sequence": 433,
+      "subtopic_number": "433",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "start_time_hms": "00:00:01",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 1,
+      "end_seconds": 8,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 주제인 '앤 스크린(N-Screen)' 소개",
+      "screen_text_lines": [
+        "앤 스크린(N-Screen)"
+      ],
+      "screen_text": "앤 스크린(N-Screen)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 앤 스크린에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 앤 스크린에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 7,
+      "subtopic_id": "0433_433",
+      "subtopic_title": "앤 스크린",
+      "subtopic_sequence": 433,
+      "subtopic_number": "433",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 8,
+      "end_seconds": 23,
+      "duration_seconds": 15,
+      "timeline_summary": "앤 스크린의 기본 정의 설명",
+      "screen_text_lines": [
+        "앤 스크린(N-Screen)",
+        "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함."
+      ],
+      "screen_text": "앤 스크린(N-Screen)\n앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+      "spoken_sentences": [
+        "우리 앤 스크린이요.",
+        "스크린이 우리 화면이죠, 화면.",
+        "해서 하나의 콘텐츠를 우리가 n개, n개의 스크린으로 우리가 볼 수 있다, 그런 서비스를 보고 우리가 앤 스크린 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "우리 앤 스크린이요. 스크린이 우리 화면이죠, 화면. 해서 하나의 콘텐츠를 우리가 n개, n개의 스크린으로 우리가 볼 수 있다, 그런 서비스를 보고 우리가 앤 스크린 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "콘텐츠를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "이용할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "있는",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 7,
+      "subtopic_id": "0433_433",
+      "subtopic_title": "앤 스크린",
+      "subtopic_sequence": 433,
+      "subtopic_number": "433",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:35",
+      "start_seconds": 23,
+      "end_seconds": 35,
+      "duration_seconds": 12,
+      "timeline_summary": "앤 스크린 정의의 핵심 키워드 강조",
+      "screen_text_lines": [
+        "앤 스크린(N-Screen)",
+        "앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함."
+      ],
+      "screen_text": "앤 스크린(N-Screen)\n앤 스크린은 N개의 서로 다른 단말기에서 동일한 콘텐츠를 자유롭게 이용할 수 있는 서비스를 말함.",
+      "spoken_sentences": [
+        "해서 앤 스크린이라는 거는 n개의 서로 다른 단말기에서 동일한 콘텐츠를, 동일한 콘텐츠를 자유롭게 이용할 수 있는 그런 서비스를 보고 우리가 앤 스크린 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 앤 스크린이라는 거는 n개의 서로 다른 단말기에서 동일한 콘텐츠를, 동일한 콘텐츠를 자유롭게 이용할 수 있는 그런 서비스를 보고 우리가 앤 스크린 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "콘텐츠를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "이용할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "있는",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 7,
+      "subtopic_id": "0433_433",
+      "subtopic_title": "앤 스크린",
+      "subtopic_sequence": 433,
+      "subtopic_number": "433",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "start_time_hms": "00:00:35",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 35,
+      "end_seconds": 46,
+      "duration_seconds": 11,
+      "timeline_summary": "앤 스크린을 이용할 수 있는 단말기 종류 예시",
+      "screen_text_lines": [
+        "앤 스크린(N-Screen)",
+        "앤 스크린은 PC, TV, 휴대폰에서 동일한 콘텐츠를 끊김 없이 이용할 수 있는 것은 물론 사용자가 가지고 있는 여러 개의 단말기에서도 동일한 콘텐츠를 끊김 없이 이용할 수 있음."
+      ],
+      "screen_text": "앤 스크린(N-Screen)\n앤 스크린은 PC, TV, 휴대폰에서 동일한 콘텐츠를 끊김 없이 이용할 수 있는 것은 물론 사용자가 가지고 있는 여러 개의 단말기에서도 동일한 콘텐츠를 끊김 없이 이용할 수 있음.",
+      "spoken_sentences": [
+        "이 앤 스크린이라는 거는 우리 PC가 됐든 아니면 우리 TV가 됐든 아니면 우리가 사용하고 있는 여러 가지 태블릿 PC 아니면 스마트폰 아니면 노트북 그런 곳에서"
+      ],
+      "spoken_text": "이 앤 스크린이라는 거는 우리 PC가 됐든 아니면 우리 TV가 됐든 아니면 우리가 사용하고 있는 여러 가지 태블릿 PC 아니면 스마트폰 아니면 노트북 그런 곳에서",
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "콘텐츠를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "이용할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "있는",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 7,
+      "subtopic_id": "0433_433",
+      "subtopic_title": "앤 스크린",
+      "subtopic_sequence": 433,
+      "subtopic_number": "433",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=VdawZFxFfDg",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:04",
+      "start_seconds": 46,
+      "end_seconds": 64,
+      "duration_seconds": 18,
+      "timeline_summary": "여러 단말기에서 콘텐츠를 끊김 없이 이용하는 특징 설명",
+      "screen_text_lines": [
+        "앤 스크린(N-Screen)",
+        "앤 스크린은 PC, TV, 휴대폰에서 동일한 콘텐츠를 끊김 없이 이용할 수 있는 것은 물론 사용자가 가지고 있는 여러 개의 단말기에서도 동일한 콘텐츠를 끊김 없이 이용할 수 있음."
+      ],
+      "screen_text": "앤 스크린(N-Screen)\n앤 스크린은 PC, TV, 휴대폰에서 동일한 콘텐츠를 끊김 없이 이용할 수 있는 것은 물론 사용자가 가지고 있는 여러 개의 단말기에서도 동일한 콘텐츠를 끊김 없이 이용할 수 있음.",
+      "spoken_sentences": [
+        "동일한 콘텐츠를, 동일한 콘텐츠를 끊김 없이 이용할 수도 있고요.",
+        "그리고 여러 개의 단말기에서도 우리가 동일한 콘텐츠를 끊김 없이 이용할 수 있는 거, 그걸 보고 우리가 앤 스크린 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "동일한 콘텐츠를, 동일한 콘텐츠를 끊김 없이 이용할 수도 있고요. 그리고 여러 개의 단말기에서도 우리가 동일한 콘텐츠를 끊김 없이 이용할 수 있는 거, 그걸 보고 우리가 앤 스크린 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "앤 스크린(N-Screen)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "콘텐츠를",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "이용할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "있는",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "Secure OS 강의 개요 안내",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 시큐어 OS에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 시큐어 OS에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Secure OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Secure OS 강의 개요 안내",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:30",
+      "start_seconds": 9,
+      "end_seconds": 30,
+      "duration_seconds": 21,
+      "timeline_summary": "Secure OS의 개념 및 정의",
+      "screen_text_lines": [
+        "Secure OS는 기존의 운영체제(OS)에 내재된 보안 취약점을 해소하기 위해 보안 기능을 갖춘 커널을 이식하여 외부의 침입으로부터 시스템 자원을 보호하는 운영체제를 의미함"
+      ],
+      "screen_text": "Secure OS는 기존의 운영체제(OS)에 내재된 보안 취약점을 해소하기 위해 보안 기능을 갖춘 커널을 이식하여 외부의 침입으로부터 시스템 자원을 보호하는 운영체제를 의미함",
+      "spoken_sentences": [
+        "우리 시큐어 OS다 라고 하게 되면 우리가 기존에 사용하고 있던 운영 체제 있죠?",
+        "이런 운영 체제 내재되어 있는 그런 보안 취약점을 해소하기 위해서 보안 기능을 갖추고 있는 그런 커널을 이식을 해요.",
+        "커널을 이식해서 외부 침입으로부터 시스템 자원을 보호하는 그런 운영 체제를 보고 우리가 시큐어 OS라고 합니다."
+      ],
+      "spoken_text": "우리 시큐어 OS다 라고 하게 되면 우리가 기존에 사용하고 있던 운영 체제 있죠? 이런 운영 체제 내재되어 있는 그런 보안 취약점을 해소하기 위해서 보안 기능을 갖추고 있는 그런 커널을 이식을 해요. 커널을 이식해서 외부 침입으로부터 시스템 자원을 보호하는 그런 운영 체제를 보고 우리가 시큐어 OS라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Secure OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:00:30",
+      "end_time_hms": "00:00:51",
+      "start_seconds": 30,
+      "end_seconds": 51,
+      "duration_seconds": 21,
+      "timeline_summary": "커널(Kernel)의 특징과 역할 설명",
+      "screen_text_lines": [
+        "Secure OS는 기존의 운영체제(OS)에 내재된 보안 취약점을 해소하기 위해 보안 기능을 갖춘 커널을 이식하여 외부의 침입으로부터 시스템 자원을 보호하는 운영체제를 의미함"
+      ],
+      "screen_text": "Secure OS는 기존의 운영체제(OS)에 내재된 보안 취약점을 해소하기 위해 보안 기능을 갖춘 커널을 이식하여 외부의 침입으로부터 시스템 자원을 보호하는 운영체제를 의미함",
+      "spoken_sentences": [
+        "여기서 커널을 이식한다 그랬는데 여기서 커널이라는 게 뭘 얘기하냐면은 컴퓨터가 부팅될 때 주 기억 장치 맨 처음에 적재가 돼요.",
+        "적재가 된 다음에 실행된 상태로 계속해서 상주를 합니다.",
+        "메모리에 계속 상주를 해서 하드웨어를 보호하고요.",
+        "하드웨어와 프로그램 간의 인터페이스 역할을 담당해 주는 걸 보고 우리가 커널이라고 해요."
+      ],
+      "spoken_text": "여기서 커널을 이식한다 그랬는데 여기서 커널이라는 게 뭘 얘기하냐면은 컴퓨터가 부팅될 때 주 기억 장치 맨 처음에 적재가 돼요. 적재가 된 다음에 실행된 상태로 계속해서 상주를 합니다. 메모리에 계속 상주를 해서 하드웨어를 보호하고요. 하드웨어와 프로그램 간의 인터페이스 역할을 담당해 주는 걸 보고 우리가 커널이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Secure OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:00:51",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 51,
+      "end_seconds": 81,
+      "duration_seconds": 30,
+      "timeline_summary": "보안 커널 및 TCB의 개념 설명",
+      "screen_text_lines": [
+        "보안 커널은 보안 기능을 갖춘 커널을 의미하며, TCB를 기반으로 참조 모니터의 개념을 구현하고 집행함"
+      ],
+      "screen_text": "보안 커널은 보안 기능을 갖춘 커널을 의미하며, TCB를 기반으로 참조 모니터의 개념을 구현하고 집행함",
+      "spoken_sentences": [
+        "그래서 여기서 얘기하는 보안 커널이라는 거는 보안 기능을 갖춘 그런 커널, 그런 커널을 보고 우리가 보안 커널이라고 하는 거고 얘는 TCB를 기반으로 해서 참조 모니터 개념을 구현하고 집행하는 거 그걸 보고 우리가 시큐어 OS라고 해요.",
+        "여기서 TCB라고 나왔는데 TCB라는 거는 컴퓨터 시스템 내에 들어 있는 모든 장치들 있죠?",
+        "그 모든 장치가 보안 정책을 따르도록 그렇게 설계해 놓은 보호 메커니즘을 보고 우리가 TCB라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그래서 여기서 얘기하는 보안 커널이라는 거는 보안 기능을 갖춘 그런 커널, 그런 커널을 보고 우리가 보안 커널이라고 하는 거고 얘는 TCB를 기반으로 해서 참조 모니터 개념을 구현하고 집행하는 거 그걸 보고 우리가 시큐어 OS라고 해요. 여기서 TCB라고 나왔는데 TCB라는 거는 컴퓨터 시스템 내에 들어 있는 모든 장치들 있죠? 그 모든 장치가 보안 정책을 따르도록 그렇게 설계해 놓은 보호 메커니즘을 보고 우리가 TCB라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:34",
+      "start_seconds": 81,
+      "end_seconds": 94,
+      "duration_seconds": 13,
+      "timeline_summary": "보호 방법 중 암호적 분리 방식 설명",
+      "screen_text_lines": [
+        "보호 방법을 구현하기 복잡한 것부터 차례로 분류하면 다음과 같다.",
+        "암호적 분리(Cryptographic Separation) : 내부 정보를 암호화하는 방법"
+      ],
+      "screen_text": "보호 방법을 구현하기 복잡한 것부터 차례로 분류하면 다음과 같다.\n암호적 분리(Cryptographic Separation) : 내부 정보를 암호화하는 방법",
+      "spoken_sentences": [
+        "여기 보게 되면 암호적 분리라는 것도 있고 논리적 분리라는 것도 있고 시간적 분리라는 것도 있고요.",
+        "물리적 분리도 있고 이렇게 여러 가지가 있어요.",
+        "여기서 암호적 분리라는 거는 내부의 정보를 전부 다 암호화하는 그런 방법을 보고 우리가 암호적 분리라고 하는 거고요."
+      ],
+      "spoken_text": "여기 보게 되면 암호적 분리라는 것도 있고 논리적 분리라는 것도 있고 시간적 분리라는 것도 있고요. 물리적 분리도 있고 이렇게 여러 가지가 있어요. 여기서 암호적 분리라는 거는 내부의 정보를 전부 다 암호화하는 그런 방법을 보고 우리가 암호적 분리라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보호 방법 중 암호적 분리 방식 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:01:34",
+      "end_time_hms": "00:01:45",
+      "start_seconds": 94,
+      "end_seconds": 105,
+      "duration_seconds": 11,
+      "timeline_summary": "보호 방법 중 논리적 분리 방식 설명",
+      "screen_text_lines": [
+        "논리적 분리(Logical Separation) : 프로세스의 논리적 구역을 지정하여 구역을 벗어나는 행위를 제한하는 방법"
+      ],
+      "screen_text": "논리적 분리(Logical Separation) : 프로세스의 논리적 구역을 지정하여 구역을 벗어나는 행위를 제한하는 방법",
+      "spoken_sentences": [
+        "논리적 분리다 라고 하게 되면 프로세스의 논리적인 구역을 지정을 해요.",
+        "그 구역을 지정해 놓고 그 구역을 벗어나지 못하게 하는 그런 방법을 보고 우리가 논리적 분리라고 해요."
+      ],
+      "spoken_text": "논리적 분리다 라고 하게 되면 프로세스의 논리적인 구역을 지정을 해요. 그 구역을 지정해 놓고 그 구역을 벗어나지 못하게 하는 그런 방법을 보고 우리가 논리적 분리라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보호 방법 중 논리적 분리 방식 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:01:45",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 105,
+      "end_seconds": 120,
+      "duration_seconds": 15,
+      "timeline_summary": "보호 방법 중 시간적 분리 방식 설명",
+      "screen_text_lines": [
+        "시간적 분리(Temporal Separation) : 동일 시간에 하나의 프로세스만 수행되도록 하여 동시 실행으로 발생하는 보안 취약점을 제거하는 방법"
+      ],
+      "screen_text": "시간적 분리(Temporal Separation) : 동일 시간에 하나의 프로세스만 수행되도록 하여 동시 실행으로 발생하는 보안 취약점을 제거하는 방법",
+      "spoken_sentences": [
+        "그다음에 시간적 분리다 라고 하게 되면 동일 시간에, 동일한 시간에 하나의 프로세스만 수행되도록 그렇게 해요.",
+        "우리가 동시에 실행할 때 발생하는 그런 보안 취약점 있죠?",
+        "그런 것들을 제거하는 방법을 보고 우리가 시간적 분리라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그다음에 시간적 분리다 라고 하게 되면 동일 시간에, 동일한 시간에 하나의 프로세스만 수행되도록 그렇게 해요. 우리가 동시에 실행할 때 발생하는 그런 보안 취약점 있죠? 그런 것들을 제거하는 방법을 보고 우리가 시간적 분리라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "보호 방법 중 시간적 분리 방식 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 8,
+      "subtopic_id": "0434_434",
+      "subtopic_title": "Secure OS",
+      "subtopic_sequence": 434,
+      "subtopic_number": "434",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sTU8HJUrMpU",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:13",
+      "start_seconds": 120,
+      "end_seconds": 133,
+      "duration_seconds": 13,
+      "timeline_summary": "보호 방법 중 물리적 분리 방식 설명 및 마무리",
+      "screen_text_lines": [
+        "물리적 분리(Physical Separation) : 사용자별로 특정 장비만 사용하도록 제한하는 방법"
+      ],
+      "screen_text": "물리적 분리(Physical Separation) : 사용자별로 특정 장비만 사용하도록 제한하는 방법",
+      "spoken_sentences": [
+        "그다음 물리적 분리다 라고 하게 되면 사용자별로 특정 장비만 사용할 수 있게 그렇게 제한하는 방법을 보고 우리가 물리적 분리라고 해요.",
+        "이렇게 보호 방법은 이렇게 네 가지가 있어요."
+      ],
+      "spoken_text": "그다음 물리적 분리다 라고 하게 되면 사용자별로 특정 장비만 사용할 수 있게 그렇게 제한하는 방법을 보고 우리가 물리적 분리라고 해요. 이렇게 보호 방법은 이렇게 네 가지가 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "보호",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 9,
+      "subtopic_id": "0435_435",
+      "subtopic_title": "Secure OS의 보안 기능",
+      "subtopic_sequence": 435,
+      "subtopic_number": "435",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g1C69YRbXjs",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "Secure OS 강의 도입 및 제목 소개",
+      "screen_text_lines": [
+        "Secure OS"
+      ],
+      "screen_text": "Secure OS",
+      "spoken_sentences": [
+        "이번 시간에는 우리 시큐어 OS에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 시큐어 OS에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Secure OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "Secure OS 강의 도입 및 제목 소개",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 9,
+      "subtopic_id": "0435_435",
+      "subtopic_title": "Secure OS의 보안 기능",
+      "subtopic_sequence": 435,
+      "subtopic_number": "435",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g1C69YRbXjs",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:15",
+      "start_seconds": 8,
+      "end_seconds": 15,
+      "duration_seconds": 7,
+      "timeline_summary": "식별 및 인증, 접근 통제 기능 설명",
+      "screen_text_lines": [
+        "Secure OS",
+        "식별 및 인증",
+        "임의적/강제적 접근통제"
+      ],
+      "screen_text": "Secure OS\n식별 및 인증\n임의적/강제적 접근통제",
+      "spoken_sentences": [
+        "시큐어 OS의 보안 기능이요.",
+        "보안 기능.",
+        "자, 식별 및 인증이라는 것도 있고요.",
+        "그다음에 임의적, 강제적 접근 통제라는 것도 있고."
+      ],
+      "spoken_text": "시큐어 OS의 보안 기능이요. 보안 기능. 자, 식별 및 인증이라는 것도 있고요. 그다음에 임의적, 강제적 접근 통제라는 것도 있고.",
+      "highlight_keywords": [
+        {
+          "keyword": "Secure OS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "식별 및 인증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "식별 및 인증, 접근 통제 기능 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        },
+        {
+          "keyword": "임의적/강제적 접근통제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-066",
+      "segment_index": 66,
+      "subtopic_index": 9,
+      "subtopic_id": "0435_435",
+      "subtopic_title": "Secure OS의 보안 기능",
+      "subtopic_sequence": 435,
+      "subtopic_number": "435",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g1C69YRbXjs",
+      "start_time_hms": "00:00:15",
+      "end_time_hms": "00:00:21",
+      "start_seconds": 15,
+      "end_seconds": 21,
+      "duration_seconds": 6,
+      "timeline_summary": "객체 재사용 보호 및 완전한 조정 기능 설명",
+      "screen_text_lines": [
+        "객체 재사용 보호",
+        "완전한 조정"
+      ],
+      "screen_text": "객체 재사용 보호\n완전한 조정",
+      "spoken_sentences": [
+        "객체 재사용 보호라는 것도 있고요.",
+        "완전한 조정이라는 것도 있고."
+      ],
+      "spoken_text": "객체 재사용 보호라는 것도 있고요. 완전한 조정이라는 것도 있고.",
+      "highlight_keywords": [
+        {
+          "keyword": "객체 재사용 보호 및 완전한 조정 기능 설명",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 10
+        },
+        {
+          "keyword": "객체 재사용 보호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        },
+        {
+          "keyword": "완전한 조정",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_095-seg-067",
+      "segment_index": 67,
+      "subtopic_index": 9,
+      "subtopic_id": "0435_435",
+      "subtopic_title": "Secure OS의 보안 기능",
+      "subtopic_sequence": 435,
+      "subtopic_number": "435",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=g1C69YRbXjs",
+      "start_time_hms": "00:00:21",
+      "end_time_hms": "00:00:27",
+      "start_seconds": 21,
+      "end_seconds": 27,
+      "duration_seconds": 6,
+      "timeline_summary": "신뢰 경로 및 감사 기록 축소 기능 설명",
+      "screen_text_lines": [
+        "신뢰 경로",
+        "감사 및 감사기록 축소 등"
+      ],
+      "screen_text": "신뢰 경로\n감사 및 감사기록 축소 등",
+      "spoken_sentences": [
+        "신뢰 경로라는 것도 있고요.",
+        "감사 및 감사기록 축소라는 것도 있고요.",
+        "이렇게 여러 가지가 있습니다."
+      ],
+      "spoken_text": "신뢰 경로라는 것도 있고요. 감사 및 감사기록 축소라는 것도 있고요. 이렇게 여러 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "신뢰 경로 및 감사 기록 축소 기능 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        },
+        {
+          "keyword": "감사 및 감사기록 축소 등",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 8
+        }
+      ]
+    }
+  ]
+}

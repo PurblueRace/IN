@@ -1,0 +1,2659 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_098",
+    "sequence": 98,
+    "title": "암호화와 해시",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 17,
+    "review_count": 6,
+    "source_chapter_ids": [
+      "chapter_337",
+      "chapter_313",
+      "chapter_172",
+      "chapter_145",
+      "chapter_156",
+      "chapter_155",
+      "chapter_312",
+      "chapter_182"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_1e06f6a52b815fd0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          23
+        ],
+        "page_span": {
+          "start_page": 23,
+          "end_page": 23
+        },
+        "source_explanation": "복호화(Decryption)는 암호문을 다시 평문으로 바꾸는 과정입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축관리 > 암호화와 해시",
+        "chapter_id": "chapter_337"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "83. 정보보호를 위한 암호화에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "평문 - 암호화되기 전의 원본 메시지"
+          },
+          {
+            "label": "2",
+            "text": "암호문 - 암호화가 적용된 메시지"
+          },
+          {
+            "label": "3",
+            "text": "복호화 - 평문을 암호문으로 바꾸는 작업"
+          },
+          {
+            "label": "4",
+            "text": "키(Key) - 적절한 암호화를 위하여 사용하는 값"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "복호화 - 평문을 암호문으로 바꾸는 작업"
+        ],
+        "answer_text": "복호화 - 평문을 암호문으로 바꾸는 작업"
+      },
+      "explanation": {
+        "source_text": "복호화(Decryption)는 암호문을 다시 평문으로 바꾸는 과정입니다.",
+        "summary": "암호화 관련 기본 용어의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "복호화는 암호문을 평문으로 되돌리는 작업입니다. 보기의 설명은 암호화(Encryption)에 대한 설명이므로 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+        ],
+        "key_concepts": [
+          "암호화: 평문 -> 암호문",
+          "복호화: 암호문 -> 평문"
+        ],
+        "memory_cues": [
+          "복(復)호화는 '다시 원래대로(평문으로) 복구'하는 것!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "평문 - 암호화되기 전의 원본 메시지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 복호화 - 평문을 암호문으로 바꾸는 작업'인데 이 선택지는 '평문 - 암호화되기 전의 원본 메시지'이므로 일치하지 않습니다. 1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "암호문 - 암호화가 적용된 메시지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 복호화 - 평문을 암호문으로 바꾸는 작업'인데 이 선택지는 '암호문 - 암호화가 적용된 메시지'이므로 일치하지 않습니다. 1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+          },
+          {
+            "label": "3",
+            "text": "복호화 - 평문을 암호문으로 바꾸는 작업",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 복호화 - 평문을 암호문으로 바꾸는 작업'와 일치합니다. 복호화는 암호문을 평문으로 되돌리는 작업입니다. 보기의 설명은 암호화(Encryption)에 대한 설명이므로 틀렸습니다."
+          },
+          {
+            "label": "4",
+            "text": "키(Key) - 적절한 암호화를 위하여 사용하는 값",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 복호화 - 평문을 암호문으로 바꾸는 작업'인데 이 선택지는 '키(Key) - 적절한 암호화를 위하여 사용하는 값'이므로 일치하지 않습니다. 1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보보호를 위한 암호화에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 암호화: 평문 -> 암호문, 복호화: 암호문 -> 평문",
+          "정답 판단 근거를 적용합니다. 복호화는 암호문을 평문으로 되돌리는 작업입니다. 보기의 설명은 암호화(Encryption)에 대한 설명이므로 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '암호화: 평문 -> 암호문'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '복호화: 암호문 -> 평문'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 복(復)호화는 '다시 원래대로(평문으로) 복구'하는 것!"
+        ],
+        "detailed_summary": "암호화 관련 기본 용어의 정의를 묻는 문제입니다. 복호화(Decryption)는 암호문을 다시 평문으로 바꾸는 과정입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보보호를 위한 암호화에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 복호화 - 평문을 암호문으로 바꾸는 작업'와 일치합니다. 복호화는 암호문을 평문으로 되돌리는 작업입니다. 보기의 설명은 암호화(Encryption)에 대한 설명이므로 틀렸습니다. 시험 포인트는 1, 2, 4번은 각각 평문, 암호문, 키에 대한 올바른 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "암호화",
+        "복호화",
+        "평문",
+        "암호문",
+        "키"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c3f9ea56dfa4928d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          23
+        ],
+        "page_span": {
+          "start_page": 23,
+          "end_page": 23
+        },
+        "source_explanation": "RSA는 큰 숫자의 소인수 분해가 어렵다는 점을 이용한 대표적인 공개키 암호 알고리즘입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축관리 > 암호화와 해시",
+        "chapter_id": "chapter_337"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "85. 소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "RSA"
+          },
+          {
+            "label": "2",
+            "text": "DES"
+          },
+          {
+            "label": "3",
+            "text": "ARIA"
+          },
+          {
+            "label": "4",
+            "text": "SEED"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "RSA"
+        ],
+        "answer_text": "RSA"
+      },
+      "explanation": {
+        "source_text": "RSA는 큰 숫자의 소인수 분해가 어렵다는 점을 이용한 대표적인 공개키 암호 알고리즘입니다.",
+        "summary": "공개키 암호 알고리즘의 원리를 묻는 문제입니다.",
+        "why_correct": [
+          "RSA는 소인수 분해의 어려움을 기반으로 하는 가장 대표적인 공개키(비대칭) 암호화 방식입니다."
+        ],
+        "why_others_wrong": [
+          "2번 DES는 대칭키 암호 방식입니다.",
+          "3번 ARIA와 4번 SEED는 국내에서 개발된 대칭키 블록 암호 방식입니다."
+        ],
+        "key_concepts": [
+          "공개키 암호: 암호화 키와 복호화 키가 다름",
+          "RSA: Rivest, Shamir, Adleman의 약자"
+        ],
+        "memory_cues": [
+          "소인수분해 = RSA (글자 수가 3개로 같음)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "RSA",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 RSA'와 일치합니다. RSA는 소인수 분해의 어려움을 기반으로 하는 가장 대표적인 공개키(비대칭) 암호화 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "DES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RSA'인데 이 선택지는 'DES'이므로 일치하지 않습니다. 2번 DES는 대칭키 암호 방식입니다. 3번 ARIA와 4번 SEED는 국내에서 개발된 대칭키 블록 암호 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "ARIA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RSA'인데 이 선택지는 'ARIA'이므로 일치하지 않습니다. 2번 DES는 대칭키 암호 방식입니다. 3번 ARIA와 4번 SEED는 국내에서 개발된 대칭키 블록 암호 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "SEED",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RSA'인데 이 선택지는 'SEED'이므로 일치하지 않습니다. 2번 DES는 대칭키 암호 방식입니다. 3번 ARIA와 4번 SEED는 국내에서 개발된 대칭키 블록 암호 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘 기법은?",
+          "핵심 개념을 떠올립니다. 공개키 암호: 암호화 키와 복호화 키가 다름, RSA: Rivest, Shamir, Adleman의 약자",
+          "정답 판단 근거를 적용합니다. RSA는 소인수 분해의 어려움을 기반으로 하는 가장 대표적인 공개키(비대칭) 암호화 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번 DES는 대칭키 암호 방식입니다."
+        ],
+        "exam_traps": [
+          "2번 DES는 대칭키 암호 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '공개키 암호: 암호화 키와 복호화 키가 다름'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RSA: Rivest, Shamir, Adleman의 약자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 소인수분해 = RSA (글자 수가 3개로 같음)"
+        ],
+        "detailed_summary": "공개키 암호 알고리즘의 원리를 묻는 문제입니다. RSA는 큰 숫자의 소인수 분해가 어렵다는 점을 이용한 대표적인 공개키 암호 알고리즘입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 소인수 분해 문제를 이용한 공개키 암호화 기법에 널리 사용되는 암호 알고리즘 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 RSA'와 일치합니다. RSA는 소인수 분해의 어려움을 기반으로 하는 가장 대표적인 공개키(비대칭) 암호화 방식입니다. 시험 포인트는 2번 DES는 대칭키 암호 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "RSA",
+        "공개키 암호",
+        "소인수 분해",
+        "비대칭 암호"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_152fa6ee0ac1c3fe",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          25
+        ],
+        "page_span": {
+          "start_page": 25,
+          "end_page": 25
+        },
+        "source_explanation": "솔트(Salt)는 해시 함수를 돌리기 전에 평문에 추가하는 임의의 문자열로, 동일한 패스워드라도 다른 해시값이 나오게 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축관리 > 암호화와 해시",
+        "chapter_id": "chapter_337"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "93. 시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Pass flag"
+          },
+          {
+            "label": "2",
+            "text": "Bucket"
+          },
+          {
+            "label": "3",
+            "text": "Opcode"
+          },
+          {
+            "label": "4",
+            "text": "Salt"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Salt"
+        ],
+        "answer_text": "Salt"
+      },
+      "explanation": {
+        "source_text": "솔트(Salt)는 해시 함수를 돌리기 전에 평문에 추가하는 임의의 문자열로, 동일한 패스워드라도 다른 해시값이 나오게 합니다.",
+        "summary": "패스워드 해시 보안을 강화하기 위한 기법인 솔트에 대한 문제입니다.",
+        "why_correct": [
+          "Salt는 같은 비밀번호라도 사용자마다 다른 해시값을 갖게 하여 레인보우 테이블 공격 등을 방어합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+        ],
+        "key_concepts": [
+          "Salt: 해시값의 다양성을 위해 추가하는 임의의 값"
+        ],
+        "memory_cues": [
+          "음식에 소금(Salt)을 쳐서 맛을 다르게 하듯, 암호에 소금을 쳐서 값을 다르게 한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Pass flag",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Pass flag'이므로 일치하지 않습니다. 1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+          },
+          {
+            "label": "2",
+            "text": "Bucket",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Bucket'이므로 일치하지 않습니다. 1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+          },
+          {
+            "label": "3",
+            "text": "Opcode",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Opcode'이므로 일치하지 않습니다. 1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+          },
+          {
+            "label": "4",
+            "text": "Salt",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Salt'와 일치합니다. Salt는 같은 비밀번호라도 사용자마다 다른 해시값을 갖게 하여 레인보우 테이블 공격 등을 방어합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. Salt: 해시값의 다양성을 위해 추가하는 임의의 값",
+          "정답 판단 근거를 적용합니다. Salt는 같은 비밀번호라도 사용자마다 다른 해시값을 갖게 하여 레인보우 테이블 공격 등을 방어합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Salt: 해시값의 다양성을 위해 추가하는 임의의 값'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 음식에 소금(Salt)을 쳐서 맛을 다르게 하듯, 암호에 소금을 쳐서 값을 다르게 한다."
+        ],
+        "detailed_summary": "패스워드 해시 보안을 강화하기 위한 기법인 솔트에 대한 문제입니다. 솔트(Salt)는 해시 함수를 돌리기 전에 평문에 추가하는 임의의 문자열로, 동일한 패스워드라도 다른 해시값이 나오게 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Salt'와 일치합니다. Salt는 같은 비밀번호라도 사용자마다 다른 해시값을 갖게 하여 레인보우 테이블 공격 등을 방어합니다. 시험 포인트는 1, 2, 3번은 패스워드 암호화 추가 값과 관련이 없는 용어들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "솔트",
+        "Salt",
+        "해시",
+        "패스워드 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_27ef6445ad1c529b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          43
+        ],
+        "page_span": {
+          "start_page": 43,
+          "end_page": 43
+        },
+        "source_explanation": "DES(Data Encryption Standard)의 블록 크기는 64비트입니다. (키 길이는 56비트)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축 관리 > 암호화와 해시",
+        "chapter_id": "chapter_313"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 76.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "96. DES는 몇 비트의 암호화 알고리즘인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "8"
+          },
+          {
+            "label": "2",
+            "text": "24"
+          },
+          {
+            "label": "3",
+            "text": "64"
+          },
+          {
+            "label": "4",
+            "text": "132"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "64"
+        ],
+        "answer_text": "64"
+      },
+      "explanation": {
+        "source_text": "DES(Data Encryption Standard)의 블록 크기는 64비트입니다. (키 길이는 56비트)",
+        "summary": "대칭키 암호화 방식인 DES의 블록 크기를 묻는 문제입니다.",
+        "why_correct": [
+          "DES는 64비트 평문 블록을 64비트 암호문 블록으로 변환하는 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+        ],
+        "key_concepts": [
+          "DES",
+          "블록 암호"
+        ],
+        "memory_cues": [
+          "DES = 64비트 블록, 56비트 키"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 64'인데 이 선택지는 '8'이므로 일치하지 않습니다. 나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "24",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 64'인데 이 선택지는 '24'이므로 일치하지 않습니다. 나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "64",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 64'와 일치합니다. DES는 64비트 평문 블록을 64비트 암호문 블록으로 변환하는 알고리즘입니다."
+          },
+          {
+            "label": "4",
+            "text": "132",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 64'인데 이 선택지는 '132'이므로 일치하지 않습니다. 나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. DES는 몇 비트의 암호화 알고리즘인가?",
+          "핵심 개념을 떠올립니다. DES, 블록 암호",
+          "정답 판단 근거를 적용합니다. DES는 64비트 평문 블록을 64비트 암호문 블록으로 변환하는 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+        ],
+        "exam_traps": [
+          "나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DES'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블록 암호'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DES = 64비트 블록, 56비트 키"
+        ],
+        "detailed_summary": "대칭키 암호화 방식인 DES의 블록 크기를 묻는 문제입니다. DES(Data Encryption Standard)의 블록 크기는 64비트입니다. (키 길이는 56비트) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. DES는 몇 비트의 암호화 알고리즘인가? 정답입니다. 이 선택지는 실제 정답인 '3번 64'와 일치합니다. DES는 64비트 평문 블록을 64비트 암호문 블록으로 변환하는 알고리즘입니다. 시험 포인트는 나머지 숫자는 DES의 표준 블록 크기가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "DES",
+        "Block Cipher",
+        "Encryption Bit"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2dade9a6398ed3bc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          43
+        ],
+        "page_span": {
+          "start_page": 43,
+          "end_page": 43
+        },
+        "source_explanation": "공개키 방식은 사용자가 늘어나도 각 사용자당 한 쌍의 키만 있으면 되므로 대칭키 방식에 비해 관리해야 할 키의 수가 적습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축 관리 > 암호화와 해시",
+        "chapter_id": "chapter_313"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 76.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "100. 공개키 암호화 방식에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "대표적으로 RSA 기법이 있다."
+          },
+          {
+            "label": "2",
+            "text": "키의 분배가 용이하다."
+          },
+          {
+            "label": "3",
+            "text": "사용자가 증가할수록 관리해야 할 키의 수가 많아진다."
+          },
+          {
+            "label": "4",
+            "text": "알고리즘이 복잡하고 암호화와 복호화 속도가 느리다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "사용자가 증가할수록 관리해야 할 키의 수가 많아진다."
+        ],
+        "answer_text": "사용자가 증가할수록 관리해야 할 키의 수가 많아진다."
+      },
+      "explanation": {
+        "source_text": "공개키 방식은 사용자가 늘어나도 각 사용자당 한 쌍의 키만 있으면 되므로 대칭키 방식에 비해 관리해야 할 키의 수가 적습니다.",
+        "summary": "비대칭키(공개키) 암호화 방식의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "공개키 방식은 n명의 사용자가 있을 때 2n개의 키만 필요합니다. 반면 대칭키 방식은 n(n-1)/2개의 키가 필요하여 사용자가 늘수록 키 관리가 기하급수적으로 어려워집니다."
+        ],
+        "why_others_wrong": [
+          "1번: RSA는 가장 유명한 공개키 알고리즘임",
+          "2번: 공개키는 공개해도 되므로 분배가 쉬움",
+          "4번: 수학적 계산이 복잡하여 대칭키보다 느림"
+        ],
+        "key_concepts": [
+          "공개키 암호화",
+          "비대칭키"
+        ],
+        "memory_cues": [
+          "공개키 = 키 관리 용이, 속도 느림"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "대표적으로 RSA 기법이 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 사용자가 증가할수록 관리해야 할 키의 수가 많아진다.'인데 이 선택지는 '대표적으로 RSA 기법이 있다.'이므로 일치하지 않습니다. 1번: RSA는 가장 유명한 공개키 알고리즘임 2번: 공개키는 공개해도 되므로 분배가 쉬움"
+          },
+          {
+            "label": "2",
+            "text": "키의 분배가 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 사용자가 증가할수록 관리해야 할 키의 수가 많아진다.'인데 이 선택지는 '키의 분배가 용이하다.'이므로 일치하지 않습니다. 1번: RSA는 가장 유명한 공개키 알고리즘임 2번: 공개키는 공개해도 되므로 분배가 쉬움"
+          },
+          {
+            "label": "3",
+            "text": "사용자가 증가할수록 관리해야 할 키의 수가 많아진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 사용자가 증가할수록 관리해야 할 키의 수가 많아진다.'와 일치합니다. 공개키 방식은 n명의 사용자가 있을 때 2n개의 키만 필요합니다. 반면 대칭키 방식은 n(n-1)/2개의 키가 필요하여 사용자가 늘수록 키 관리가 기하급수적으로 어려워집니다."
+          },
+          {
+            "label": "4",
+            "text": "알고리즘이 복잡하고 암호화와 복호화 속도가 느리다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 사용자가 증가할수록 관리해야 할 키의 수가 많아진다.'인데 이 선택지는 '알고리즘이 복잡하고 암호화와 복호화 속도가 느리다.'이므로 일치하지 않습니다. 1번: RSA는 가장 유명한 공개키 알고리즘임 2번: 공개키는 공개해도 되므로 분배가 쉬움"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 공개키 암호화 방식에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 공개키 암호화, 비대칭키",
+          "정답 판단 근거를 적용합니다. 공개키 방식은 n명의 사용자가 있을 때 2n개의 키만 필요합니다. 반면 대칭키 방식은 n(n-1)/2개의 키가 필요하여 사용자가 늘수록 키 관리가 기하급수적으로 어려워집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: RSA는 가장 유명한 공개키 알고리즘임"
+        ],
+        "exam_traps": [
+          "1번: RSA는 가장 유명한 공개키 알고리즘임"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '공개키 암호화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비대칭키'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 공개키 = 키 관리 용이, 속도 느림"
+        ],
+        "detailed_summary": "비대칭키(공개키) 암호화 방식의 특징을 묻는 문제입니다. 공개키 방식은 사용자가 늘어나도 각 사용자당 한 쌍의 키만 있으면 되므로 대칭키 방식에 비해 관리해야 할 키의 수가 적습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 공개키 암호화 방식에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 사용자가 증가할수록 관리해야 할 키의 수가 많아진다.'와 일치합니다. 공개키 방식은 n명의 사용자가 있을 때 2n개의 키만 필요합니다. 반면 대칭키 방식은 n(n-1)/2개의 키가 필요하여 사용자가 늘수록 키 관리가 기하급수적으로 어려워집니다. 시험 포인트는 1번: RSA는 가장 유명한 공개키 알고리즘임"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Public Key Encryption",
+        "Asymmetric Encryption",
+        "RSA",
+        "Key Management"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ad035ab8248be5d1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          59
+        ],
+        "page_span": {
+          "start_page": 59,
+          "end_page": 59
+        },
+        "source_explanation": "DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_172"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "86. 다음 설명에 해당하는 암호화 알고리즘은?\n- DES의 보안 문제를 해결하기 위해 개발되었다.\n- NIST에서 개발한 개인키 암호화 알고리즘이다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ARIA"
+          },
+          {
+            "label": "2",
+            "text": "AES"
+          },
+          {
+            "label": "3",
+            "text": "DSA"
+          },
+          {
+            "label": "4",
+            "text": "SEED"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "AES"
+        ],
+        "answer_text": "AES"
+      },
+      "explanation": {
+        "source_text": "DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다.",
+        "summary": "표준 대칭키 암호화 알고리즘인 AES의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "AES는 노후화된 DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 공모를 통해 선정한 표준 암호화 방식입니다."
+        ],
+        "why_others_wrong": [
+          "ARIA, SEED는 한국에서 개발한 알고리즘입니다.",
+          "DSA는 디지털 서명 알고리즘(공개키 방식)입니다."
+        ],
+        "key_concepts": [
+          "AES",
+          "대칭키 암호",
+          "NIST 표준"
+        ],
+        "memory_cues": [
+          "DES 대체 = AES"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ARIA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'ARIA'이므로 일치하지 않습니다. ARIA, SEED는 한국에서 개발한 알고리즘입니다. DSA는 디지털 서명 알고리즘(공개키 방식)입니다."
+          },
+          {
+            "label": "2",
+            "text": "AES",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 AES'와 일치합니다. AES는 노후화된 DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 공모를 통해 선정한 표준 암호화 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "DSA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'DSA'이므로 일치하지 않습니다. ARIA, SEED는 한국에서 개발한 알고리즘입니다. DSA는 디지털 서명 알고리즘(공개키 방식)입니다."
+          },
+          {
+            "label": "4",
+            "text": "SEED",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'SEED'이므로 일치하지 않습니다. ARIA, SEED는 한국에서 개발한 알고리즘입니다. DSA는 디지털 서명 알고리즘(공개키 방식)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 86. 다음 설명에 해당하는 암호화 알고리즘은? - DES의 보안 문제를 해결하기 위해 개발되었다. - NIST에서 개발한 개인키 암호화 알고리즘이다.",
+          "핵심 개념을 떠올립니다. AES, 대칭키 암호, NIST 표준",
+          "정답 판단 근거를 적용합니다. AES는 노후화된 DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 공모를 통해 선정한 표준 암호화 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ARIA, SEED는 한국에서 개발한 알고리즘입니다."
+        ],
+        "exam_traps": [
+          "ARIA, SEED는 한국에서 개발한 알고리즘입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'AES'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '대칭키 암호'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NIST 표준'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DES 대체 = AES"
+        ],
+        "detailed_summary": "표준 대칭키 암호화 알고리즘인 AES의 특징을 묻는 문제입니다. DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 86. 다음 설명에 해당하는 암호화 알고리즘은? - DES의 보안 문제를 해결하기 위해 개발되었다. - NIST에서 개발한 개인키 암호화 알고리즘이다. 정답입니다. 이 선택지는 실제 정답인 '2번 AES'와 일치합니다. AES는 노후화된 DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 공모를 통해 선정한 표준 암호화 방식입니다. 시험 포인트는 ARIA, SEED는 한국에서 개발한 알고리즘입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "AES",
+        "DES",
+        "NIST",
+        "대칭키 암호화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b7f7f999cdb68dcb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          78
+        ],
+        "page_span": {
+          "start_page": 78,
+          "end_page": 78
+        },
+        "source_explanation": "전문가의 조언 | 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 만들어진 암호화 알고리즘은 RSA입니다.\n• DES: 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘\n• ARIA: 2004년 국가정보원과 산학연 협회가 개발한 블록 암호 알고리즘\n• SEED: 1999년 한국인터넷진흥원(KISA)에서 개발한 블록 암호 알고리즘"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "89. 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 1978년 MIT에 의해 제안된 공개키 암호화 알고리즘은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DES"
+          },
+          {
+            "label": "2",
+            "text": "ARIA"
+          },
+          {
+            "label": "3",
+            "text": "SEED"
+          },
+          {
+            "label": "4",
+            "text": "RSA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "RSA"
+        ],
+        "answer_text": "RSA"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 만들어진 암호화 알고리즘은 RSA입니다.\n• DES: 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘\n• ARIA: 2004년 국가정보원과 산학연 협회가 개발한 블록 암호 알고리즘\n• SEED: 1999년 한국인터넷진흥원(KISA)에서 개발한 블록 암호 알고리즘",
+        "summary": "공개키 암호화 방식의 대표적인 알고리즘인 RSA의 원리를 묻는 문제입니다.",
+        "why_correct": [
+          "RSA는 매우 큰 두 소수의 곱을 소인수 분해하는 것이 수학적으로 어렵다는 점을 이용한 비대칭키 암호화 방식입니다."
+        ],
+        "why_others_wrong": [
+          "DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+        ],
+        "key_concepts": [
+          "RSA",
+          "소인수 분해",
+          "공개키 암호"
+        ],
+        "memory_cues": [
+          "RSA = 소인수분해"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RSA'인데 이 선택지는 'DES'이므로 일치하지 않습니다. DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "ARIA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RSA'인데 이 선택지는 'ARIA'이므로 일치하지 않습니다. DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "SEED",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RSA'인데 이 선택지는 'SEED'이므로 일치하지 않습니다. DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "RSA",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 RSA'와 일치합니다. RSA는 매우 큰 두 소수의 곱을 소인수 분해하는 것이 수학적으로 어렵다는 점을 이용한 비대칭키 암호화 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 89. 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 1978년 MIT에 의해 제안된 공개키 암호화 알고리즘은?",
+          "핵심 개념을 떠올립니다. RSA, 소인수 분해, 공개키 암호",
+          "정답 판단 근거를 적용합니다. RSA는 매우 큰 두 소수의 곱을 소인수 분해하는 것이 수학적으로 어렵다는 점을 이용한 비대칭키 암호화 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+        ],
+        "exam_traps": [
+          "DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'RSA'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '소인수 분해'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '공개키 암호'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. RSA = 소인수분해"
+        ],
+        "detailed_summary": "공개키 암호화 방식의 대표적인 알고리즘인 RSA의 원리를 묻는 문제입니다. 전문가의 조언 | 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 만들어진 암호화 알고리즘은 RSA입니다. • DES: 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘 • ARIA: 2004년 국가정보원과 산학연 협회가 개발한 블록 암호 알고리즘 • SEED: 1999년 한국인터넷진흥원(KISA)에서 개발한 블록 암호 알고리즘 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 89. 큰 숫자를 소인수 분해하기 어렵다는 것에 기반하여 1978년 MIT에 의해 제안된 공개키 암호화 알고리즘은? 정답입니다. 이 선택지는 실제 정답인 '4번 RSA'와 일치합니다. RSA는 매우 큰 두 소수의 곱을 소인수 분해하는 것이 수학적으로 어렵다는 점을 이용한 비대칭키 암호화 방식입니다. 시험 포인트는 DES, ARIA, SEED는 모두 대칭키(개인키) 암호화 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "RSA",
+        "공개키 암호화",
+        "소인수 분해",
+        "비대칭 암호"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b0ad5679d5287faf",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          79
+        ],
+        "page_span": {
+          "start_page": 79,
+          "end_page": 79
+        },
+        "source_explanation": "전문가의 조언 | DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "97. 다음 설명에 해당하는 암호화 알고리즘은?\n• DES의 보안 문제를 해결하기 위해 개발되었다.\n• NIST에서 개발한 개인키 암호화 알고리즘이다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ARIA"
+          },
+          {
+            "label": "2",
+            "text": "AES"
+          },
+          {
+            "label": "3",
+            "text": "DSA"
+          },
+          {
+            "label": "4",
+            "text": "SEED"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "AES"
+        ],
+        "answer_text": "AES"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다.",
+        "summary": "DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 채택한 표준 암호화 알고리즘을 묻는 문제입니다.",
+        "why_correct": [
+          "AES는 DES의 짧은 키 길이 문제를 해결하기 위해 공모를 통해 선정된 차세대 표준 대칭키 암호화 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+        ],
+        "key_concepts": [
+          "AES",
+          "Symmetric Key Encryption"
+        ],
+        "memory_cues": [
+          "AES = Advanced(진보된) DES 대체"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ARIA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'ARIA'이므로 일치하지 않습니다. ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+          },
+          {
+            "label": "2",
+            "text": "AES",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 AES'와 일치합니다. AES는 DES의 짧은 키 길이 문제를 해결하기 위해 공모를 통해 선정된 차세대 표준 대칭키 암호화 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "DSA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'DSA'이므로 일치하지 않습니다. ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+          },
+          {
+            "label": "4",
+            "text": "SEED",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AES'인데 이 선택지는 'SEED'이므로 일치하지 않습니다. ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 다음 설명에 해당하는 암호화 알고리즘은? • DES의 보안 문제를 해결하기 위해 개발되었다. • NIST에서 개발한 개인키 암호화 알고리즘이다.",
+          "핵심 개념을 떠올립니다. AES, Symmetric Key Encryption",
+          "정답 판단 근거를 적용합니다. AES는 DES의 짧은 키 길이 문제를 해결하기 위해 공모를 통해 선정된 차세대 표준 대칭키 암호화 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+        ],
+        "exam_traps": [
+          "ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'AES'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Symmetric Key Encryption'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. AES = Advanced(진보된) DES 대체"
+        ],
+        "detailed_summary": "DES를 대체하기 위해 미국 표준 기술 연구소(NIST)에서 채택한 표준 암호화 알고리즘을 묻는 문제입니다. 전문가의 조언 | DES의 보안 문제 해결을 위해 NIST에서 개발한 개인키 암호화 알고리즘은 AES(Advanced Encryption Standard)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 다음 설명에 해당하는 암호화 알고리즘은? • DES의 보안 문제를 해결하기 위해 개발되었다. • NIST에서 개발한 개인키 암호화 알고리즘이다. 정답입니다. 이 선택지는 실제 정답인 '2번 AES'와 일치합니다. AES는 DES의 짧은 키 길이 문제를 해결하기 위해 공모를 통해 선정된 차세대 표준 대칭키 암호화 알고리즘입니다. 시험 포인트는 ARIA와 SEED는 한국 주도 알고리즘이며, DSA는 디지털 서명 알고리즘입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "AES",
+        "NIST",
+        "대칭키 암호",
+        "DES 대체"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b9894cf47bc8e96c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 96
+        },
+        "source_explanation": "SHA(Secure Hash Algorithm)는 암호화 기법이 아니라 데이터의 무결성을 검증하기 위해 사용하는 해시 함수입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축관리 > 암호화와 해시",
+        "chapter_id": "chapter_337"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "81. 다음 중 암호화 기법이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "AES"
+          },
+          {
+            "label": "2",
+            "text": "DES"
+          },
+          {
+            "label": "3",
+            "text": "RSA"
+          },
+          {
+            "label": "4",
+            "text": "SHA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "SHA"
+        ],
+        "answer_text": "SHA"
+      },
+      "explanation": {
+        "source_text": "SHA(Secure Hash Algorithm)는 암호화 기법이 아니라 데이터의 무결성을 검증하기 위해 사용하는 해시 함수입니다.",
+        "summary": "암호화 알고리즘과 해시 알고리즘을 구분하는 문제입니다.",
+        "why_correct": [
+          "SHA는 단방향 해시 알고리즘으로, 복호화가 불가능하며 무결성 확인에 쓰입니다. 암호화 기법과는 성격이 다릅니다."
+        ],
+        "why_others_wrong": [
+          "AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+        ],
+        "key_concepts": [
+          "Encryption vs Hashing",
+          "Symmetric Key",
+          "Asymmetric Key"
+        ],
+        "memory_cues": [
+          "SHA는 해시(Hash)의 H가 들어감!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "AES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SHA'인데 이 선택지는 'AES'이므로 일치하지 않습니다. AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "DES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SHA'인데 이 선택지는 'DES'이므로 일치하지 않습니다. AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "RSA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 SHA'인데 이 선택지는 'RSA'이므로 일치하지 않습니다. AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "SHA",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 SHA'와 일치합니다. SHA는 단방향 해시 알고리즘으로, 복호화가 불가능하며 무결성 확인에 쓰입니다. 암호화 기법과는 성격이 다릅니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 81. 다음 중 암호화 기법이 아닌 것은?",
+          "핵심 개념을 떠올립니다. Encryption vs Hashing, Symmetric Key, Asymmetric Key",
+          "정답 판단 근거를 적용합니다. SHA는 단방향 해시 알고리즘으로, 복호화가 불가능하며 무결성 확인에 쓰입니다. 암호화 기법과는 성격이 다릅니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+        ],
+        "exam_traps": [
+          "AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Encryption vs Hashing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Symmetric Key'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Asymmetric Key'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SHA는 해시(Hash)의 H가 들어감!"
+        ],
+        "detailed_summary": "암호화 알고리즘과 해시 알고리즘을 구분하는 문제입니다. SHA(Secure Hash Algorithm)는 암호화 기법이 아니라 데이터의 무결성을 검증하기 위해 사용하는 해시 함수입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 81. 다음 중 암호화 기법이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 SHA'와 일치합니다. SHA는 단방향 해시 알고리즘으로, 복호화가 불가능하며 무결성 확인에 쓰입니다. 암호화 기법과는 성격이 다릅니다. 시험 포인트는 AES, DES는 대칭키 암호화 방식이며, RSA는 공개키(비대칭키) 암호화 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "암호화",
+        "해시 함수",
+        "SHA",
+        "AES",
+        "RSA"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_45a2bcabe3c7a771",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          97
+        ],
+        "page_span": {
+          "start_page": 97,
+          "end_page": 97
+        },
+        "source_explanation": "ECC는 타원곡선, Rabin은 소인수 분해 암호 알고리즘의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축관리 > 암호화와 해시",
+        "chapter_id": "chapter_337"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "90. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은?\n- ( ㉠ ): 이산 대수 문제 를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘\n- ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+        "choices": [
+          {
+            "label": "1",
+            "text": "㉠: ECC, ㉡: Rabin"
+          },
+          {
+            "label": "2",
+            "text": "㉠: DES, ㉡: Rabin"
+          },
+          {
+            "label": "3",
+            "text": "㉠: ECC, ㉡: SHA"
+          },
+          {
+            "label": "4",
+            "text": "㉠: DES, ㉡: SHA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "㉠: ECC, ㉡: Rabin"
+        ],
+        "answer_text": "㉠: ECC, ㉡: Rabin"
+      },
+      "explanation": {
+        "source_text": "ECC는 타원곡선, Rabin은 소인수 분해 암호 알고리즘의 특징입니다.",
+        "summary": "주요 공개키 암호화 알고리즘의 수학적 원리를 묻는 문제입니다.",
+        "why_correct": [
+          "ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움을 이용합니다."
+        ],
+        "why_others_wrong": [
+          "DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+        ],
+        "key_concepts": [
+          "ECC",
+          "Rabin",
+          "Public Key Cryptography"
+        ],
+        "memory_cues": [
+          "타원곡선 = ECC, 소인수분해 = RSA, Rabin"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "㉠: ECC, ㉡: Rabin",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ㉠: ECC, ㉡: Rabin'와 일치합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움을 이용합니다."
+          },
+          {
+            "label": "2",
+            "text": "㉠: DES, ㉡: Rabin",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: DES, ㉡: Rabin'이므로 일치하지 않습니다. DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "㉠: ECC, ㉡: SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: ECC, ㉡: SHA'이므로 일치하지 않습니다. DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+          },
+          {
+            "label": "4",
+            "text": "㉠: DES, ㉡: SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: DES, ㉡: SHA'이므로 일치하지 않습니다. DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? - ( ㉠ ): 이산 대수 문제 를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 - ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+          "핵심 개념을 떠올립니다. ECC, Rabin, Public Key Cryptography",
+          "정답 판단 근거를 적용합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움을 이용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+        ],
+        "exam_traps": [
+          "DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ECC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Rabin'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Public Key Cryptography'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 타원곡선 = ECC, 소인수분해 = RSA, Rabin"
+        ],
+        "detailed_summary": "주요 공개키 암호화 알고리즘의 수학적 원리를 묻는 문제입니다. ECC는 타원곡선, Rabin은 소인수 분해 암호 알고리즘의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? - ( ㉠ ): 이산 대수 문제 를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 - ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘 정답입니다. 이 선택지는 실제 정답인 '1번 ㉠: ECC, ㉡: Rabin'와 일치합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움을 이용합니다. 시험 포인트는 DES는 대칭키 암호이며, SHA는 해시 알고리즘입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ECC",
+        "Rabin",
+        "암호화 알고리즘",
+        "타원곡선",
+        "소인수분해"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1bb852065d8bd3d8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 솔트(Salt)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축 관리 > 암호화와 해시",
+        "chapter_id": "chapter_313"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Pass flag"
+          },
+          {
+            "label": "2",
+            "text": "Bucket"
+          },
+          {
+            "label": "3",
+            "text": "Opcode"
+          },
+          {
+            "label": "4",
+            "text": "Salt"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Salt"
+        ],
+        "answer_text": "Salt"
+      },
+      "explanation": {
+        "source_text": "암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 솔트(Salt)라고 합니다.",
+        "summary": "패스워드 보안을 강화하기 위해 해시 함수에 추가로 입력하는 임의의 값을 묻는 문제입니다.",
+        "why_correct": [
+          "Salt는 동일한 비밀번호라도 해시 결과값이 다르게 나오도록 하여 레인보우 테이블 공격 등을 방어하는 데 사용됩니다."
+        ],
+        "why_others_wrong": [
+          "Pass flag는 일반적인 보안 용어가 아닙니다.",
+          "Bucket은 데이터 저장 단위나 해싱의 충돌 해결 시 사용되는 용어입니다.",
+          "Opcode는 명령어의 동작 코드를 의미합니다."
+        ],
+        "key_concepts": [
+          "Salt",
+          "Hash",
+          "Rainbow Table"
+        ],
+        "memory_cues": [
+          "소금(Salt)을 쳐서 맛(결과)을 다르게 함"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Pass flag",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Pass flag'이므로 일치하지 않습니다. Pass flag는 일반적인 보안 용어가 아닙니다. Bucket은 데이터 저장 단위나 해싱의 충돌 해결 시 사용되는 용어입니다."
+          },
+          {
+            "label": "2",
+            "text": "Bucket",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Bucket'이므로 일치하지 않습니다. Pass flag는 일반적인 보안 용어가 아닙니다. Bucket은 데이터 저장 단위나 해싱의 충돌 해결 시 사용되는 용어입니다."
+          },
+          {
+            "label": "3",
+            "text": "Opcode",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Salt'인데 이 선택지는 'Opcode'이므로 일치하지 않습니다. Pass flag는 일반적인 보안 용어가 아닙니다. Bucket은 데이터 저장 단위나 해싱의 충돌 해결 시 사용되는 용어입니다."
+          },
+          {
+            "label": "4",
+            "text": "Salt",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Salt'와 일치합니다. Salt는 동일한 비밀번호라도 해시 결과값이 다르게 나오도록 하여 레인보우 테이블 공격 등을 방어하는 데 사용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. Salt, Hash, Rainbow Table",
+          "정답 판단 근거를 적용합니다. Salt는 동일한 비밀번호라도 해시 결과값이 다르게 나오도록 하여 레인보우 테이블 공격 등을 방어하는 데 사용됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Pass flag는 일반적인 보안 용어가 아닙니다."
+        ],
+        "exam_traps": [
+          "Pass flag는 일반적인 보안 용어가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Salt'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Hash'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Rainbow Table'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 소금(Salt)을 쳐서 맛(결과)을 다르게 함"
+        ],
+        "detailed_summary": "패스워드 보안을 강화하기 위해 해시 함수에 추가로 입력하는 임의의 값을 묻는 문제입니다. 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 솔트(Salt)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시스템에 저장되는 패스워드들은 Hash 또는 암호화 알고리즘의 결과 값으로 저장된다. 이때 암호 공격을 막기 위해 똑같은 패스워드들이 다른 암호 값으로 저장되도록 추가되는 값을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Salt'와 일치합니다. Salt는 동일한 비밀번호라도 해시 결과값이 다르게 나오도록 하여 레인보우 테이블 공격 등을 방어하는 데 사용됩니다. 시험 포인트는 Pass flag는 일반적인 보안 용어가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Salt",
+        "솔트",
+        "패스워드 암호화",
+        "해시",
+        "보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_50c965208cb83967",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          117
+        ],
+        "page_span": {
+          "start_page": 117,
+          "end_page": 117
+        },
+        "source_explanation": "㉠은 타원곡선 암호(ECC)이며, ㉡은 소인수 분해 기반의 Rabin 암호 알고리즘입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "정보시스템 구축 관리 > 암호화와 해시",
+        "chapter_id": "chapter_313"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은?\n- ( ㉠ ): 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘\n- ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+        "choices": [
+          {
+            "label": "1",
+            "text": "㉠: ECC, ㉡: Rabin"
+          },
+          {
+            "label": "2",
+            "text": "㉠: DES, ㉡: Rabin"
+          },
+          {
+            "label": "3",
+            "text": "㉠: ECC, ㉡: SHA"
+          },
+          {
+            "label": "4",
+            "text": "㉠: DES, ㉡: SHA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "㉠: ECC, ㉡: Rabin"
+        ],
+        "answer_text": "㉠: ECC, ㉡: Rabin"
+      },
+      "explanation": {
+        "source_text": "㉠은 타원곡선 암호(ECC)이며, ㉡은 소인수 분해 기반의 Rabin 암호 알고리즘입니다.",
+        "summary": "주요 암호화 알고리즘의 수학적 원리를 묻는 문제입니다.",
+        "why_correct": [
+          "ECC는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 마찬가지로 소인수 분해의 어려움을 이용합니다."
+        ],
+        "why_others_wrong": [
+          "DES는 대칭키 암호 방식입니다.",
+          "SHA는 해시 알고리즘입니다."
+        ],
+        "key_concepts": [
+          "ECC",
+          "Rabin",
+          "이산대수",
+          "소인수 분해"
+        ],
+        "memory_cues": [
+          "타원곡선 = ECC",
+          "소인수분해 = RSA, Rabin"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "㉠: ECC, ㉡: Rabin",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ㉠: ECC, ㉡: Rabin'와 일치합니다. ECC는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 마찬가지로 소인수 분해의 어려움을 이용합니다."
+          },
+          {
+            "label": "2",
+            "text": "㉠: DES, ㉡: Rabin",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: DES, ㉡: Rabin'이므로 일치하지 않습니다. DES는 대칭키 암호 방식입니다. SHA는 해시 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "㉠: ECC, ㉡: SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: ECC, ㉡: SHA'이므로 일치하지 않습니다. DES는 대칭키 암호 방식입니다. SHA는 해시 알고리즘입니다."
+          },
+          {
+            "label": "4",
+            "text": "㉠: DES, ㉡: SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠: ECC, ㉡: Rabin'인데 이 선택지는 '㉠: DES, ㉡: SHA'이므로 일치하지 않습니다. DES는 대칭키 암호 방식입니다. SHA는 해시 알고리즘입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? - ( ㉠ ): 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 - ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+          "핵심 개념을 떠올립니다. ECC, Rabin, 이산대수, 소인수 분해",
+          "정답 판단 근거를 적용합니다. ECC는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 마찬가지로 소인수 분해의 어려움을 이용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DES는 대칭키 암호 방식입니다."
+        ],
+        "exam_traps": [
+          "DES는 대칭키 암호 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ECC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Rabin'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '이산대수'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '소인수 분해'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 타원곡선 = ECC",
+          "암기 포인트를 떠올립니다. 소인수분해 = RSA, Rabin"
+        ],
+        "detailed_summary": "주요 암호화 알고리즘의 수학적 원리를 묻는 문제입니다. ㉠은 타원곡선 암호(ECC)이며, ㉡은 소인수 분해 기반의 Rabin 암호 알고리즘입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? - ( ㉠ ): 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 - ( ㉡ ): 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘 정답입니다. 이 선택지는 실제 정답인 '1번 ㉠: ECC, ㉡: Rabin'와 일치합니다. ECC는 타원곡선 이산대수 문제를 이용하며, Rabin은 RSA와 마찬가지로 소인수 분해의 어려움을 이용합니다. 시험 포인트는 DES는 대칭키 암호 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ECC",
+        "Rabin",
+        "암호 알고리즘",
+        "타원곡선",
+        "소인수 분해"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9072dcee5a95b7f8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 136
+        },
+        "source_explanation": "전문가의 조언 | DES는 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 해시 암호화 방식과 관계가 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "152섹션 4필드"
+        ],
+        "chapter_label": "152섹션 4필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 152섹션 4필드",
+        "chapter_id": "chapter_156"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 64.0,
+        "match_confidence": "medium"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "블록 암호화 방식과 해시 암호화 방식을 나열한 것이다. 다음 중 유형이 다른 하나는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DES"
+          },
+          {
+            "label": "2",
+            "text": "SNEFRU"
+          },
+          {
+            "label": "3",
+            "text": "MD5"
+          },
+          {
+            "label": "4",
+            "text": "SHA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DES"
+        ],
+        "answer_text": "DES"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | DES는 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 해시 암호화 방식과 관계가 없습니다.",
+        "summary": "암호화 방식의 분류(블록 암호 vs 해시 함수)를 묻는 문제입니다.",
+        "why_correct": [
+          "DES는 대칭키 블록 암호 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+        ],
+        "key_concepts": [
+          "블록 암호",
+          "해시 함수"
+        ],
+        "memory_cues": [
+          "DES = 대칭키",
+          "나머지 = 해시"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DES",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DES'와 일치합니다. DES는 대칭키 블록 암호 알고리즘입니다."
+          },
+          {
+            "label": "2",
+            "text": "SNEFRU",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DES'인데 이 선택지는 'SNEFRU'이므로 일치하지 않습니다. SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+          },
+          {
+            "label": "3",
+            "text": "MD5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DES'인데 이 선택지는 'MD5'이므로 일치하지 않습니다. SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+          },
+          {
+            "label": "4",
+            "text": "SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DES'인데 이 선택지는 'SHA'이므로 일치하지 않습니다. SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블록 암호화 방식과 해시 암호화 방식을 나열한 것이다. 다음 중 유형이 다른 하나는?",
+          "핵심 개념을 떠올립니다. 블록 암호, 해시 함수",
+          "정답 판단 근거를 적용합니다. DES는 대칭키 블록 암호 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+        ],
+        "exam_traps": [
+          "SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '블록 암호'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '해시 함수'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DES = 대칭키",
+          "암기 포인트를 떠올립니다. 나머지 = 해시"
+        ],
+        "detailed_summary": "암호화 방식의 분류(블록 암호 vs 해시 함수)를 묻는 문제입니다. 전문가의 조언 | DES는 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 해시 암호화 방식과 관계가 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블록 암호화 방식과 해시 암호화 방식을 나열한 것이다. 다음 중 유형이 다른 하나는? 정답입니다. 이 선택지는 실제 정답인 '1번 DES'와 일치합니다. DES는 대칭키 블록 암호 알고리즘입니다. 시험 포인트는 SNEFRU, MD5, SHA는 모두 일방향 해시 함수입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "DES",
+        "해시 함수",
+        "블록 암호",
+        "MD5",
+        "SHA"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e6df47b0afdd0a43",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 136
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에 제시된 내용 중 ㉠은 ECC, ㉡은 Rabin 암호화 알고리즘의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "152섹션 3필드"
+        ],
+        "chapter_label": "152섹션 3필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 152섹션 3필드",
+        "chapter_id": "chapter_155"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 64.0,
+        "match_confidence": "medium"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은?\n• ( ㉠ ) : 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘\n• ( ㉡ ) : 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+        "choices": [
+          {
+            "label": "1",
+            "text": "㉠ : ECC, ㉡ : Rabin"
+          },
+          {
+            "label": "2",
+            "text": "㉠ : DES, ㉡ : Rabin"
+          },
+          {
+            "label": "3",
+            "text": "㉠ : ECC, ㉡ : SHA"
+          },
+          {
+            "label": "4",
+            "text": "㉠ : DES, ㉡ : SHA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "㉠ : ECC, ㉡ : Rabin"
+        ],
+        "answer_text": "㉠ : ECC, ㉡ : Rabin"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에 제시된 내용 중 ㉠은 ECC, ㉡은 Rabin 암호화 알고리즘의 특징입니다.",
+        "summary": "암호화 알고리즘의 수학적 기반을 묻는 문제입니다.",
+        "why_correct": [
+          "ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제에 기반하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움에 기반합니다."
+        ],
+        "why_others_wrong": [
+          "DES는 대칭키 블록 암호입니다.",
+          "SHA는 해시 함수입니다."
+        ],
+        "key_concepts": [
+          "ECC",
+          "Rabin",
+          "공개키 암호"
+        ],
+        "memory_cues": [
+          "타원곡선 = ECC",
+          "소인수분해 = RSA, Rabin"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "㉠ : ECC, ㉡ : Rabin",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ㉠ : ECC, ㉡ : Rabin'와 일치합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제에 기반하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움에 기반합니다."
+          },
+          {
+            "label": "2",
+            "text": "㉠ : DES, ㉡ : Rabin",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠ : ECC, ㉡ : Rabin'인데 이 선택지는 '㉠ : DES, ㉡ : Rabin'이므로 일치하지 않습니다. DES는 대칭키 블록 암호입니다. SHA는 해시 함수입니다."
+          },
+          {
+            "label": "3",
+            "text": "㉠ : ECC, ㉡ : SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠ : ECC, ㉡ : Rabin'인데 이 선택지는 '㉠ : ECC, ㉡ : SHA'이므로 일치하지 않습니다. DES는 대칭키 블록 암호입니다. SHA는 해시 함수입니다."
+          },
+          {
+            "label": "4",
+            "text": "㉠ : DES, ㉡ : SHA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ㉠ : ECC, ㉡ : Rabin'인데 이 선택지는 '㉠ : DES, ㉡ : SHA'이므로 일치하지 않습니다. DES는 대칭키 블록 암호입니다. SHA는 해시 함수입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? • ( ㉠ ) : 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 • ( ㉡ ) : 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘",
+          "핵심 개념을 떠올립니다. ECC, Rabin, 공개키 암호",
+          "정답 판단 근거를 적용합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제에 기반하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움에 기반합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DES는 대칭키 블록 암호입니다."
+        ],
+        "exam_traps": [
+          "DES는 대칭키 블록 암호입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ECC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Rabin'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '공개키 암호'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 타원곡선 = ECC",
+          "암기 포인트를 떠올립니다. 소인수분해 = RSA, Rabin"
+        ],
+        "detailed_summary": "암호화 알고리즘의 수학적 기반을 묻는 문제입니다. 전문가의 조언 | 문제의 지문에 제시된 내용 중 ㉠은 ECC, ㉡은 Rabin 암호화 알고리즘의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에서 괄호(㉠, ㉡)에 들어갈 알맞은 암호화 알고리즘은? • ( ㉠ ) : 이산 대수 문제를 타원곡선으로 옮겨 기밀성과 효율성을 높인 암호화 알고리즘 • ( ㉡ ) : 소인수 분해의 어려움에 안전성의 근거를 둔 암호화 알고리즘 정답입니다. 이 선택지는 실제 정답인 '1번 ㉠ : ECC, ㉡ : Rabin'와 일치합니다. ECC(Elliptic Curve Cryptography)는 타원곡선 이산대수 문제에 기반하며, Rabin은 RSA와 유사하게 소인수 분해의 어려움에 기반합니다. 시험 포인트는 DES는 대칭키 블록 암호입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "ECC",
+        "Rabin",
+        "암호화 알고리즘",
+        "타원곡선",
+        "소인수 분해"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9584fed9e926e372",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "암호화키와 복호화키가 동일한 것은 대칭 암호화 기법이라고 하고 암호화키와 복호화키가 다른 것을 비대칭 암호화 기법이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화"
+        ],
+        "chapter_label": "암호화",
+        "chapter_key": "정보시스템 구축 관리 > 암호화",
+        "chapter_id": "chapter_312"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 64.0,
+        "match_confidence": "medium"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "92. 다음에서 설명하는 암호화는?\n- 암호화/복호화 속도가 빠르다.\n- 알고리즘이 단순하다.\n- 암호화키와 복호화키가 동일하다.\n- 사용자의 증가에 따라 관리해야 할 키의 수가 상대적으로 많아진다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "단방향 암호화 기법"
+          },
+          {
+            "label": "2",
+            "text": "비대칭 암호화 기법"
+          },
+          {
+            "label": "3",
+            "text": "대칭 암호화 기법"
+          },
+          {
+            "label": "4",
+            "text": "해시 암호화 기법"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "대칭 암호화 기법"
+        ],
+        "answer_text": "대칭 암호화 기법"
+      },
+      "explanation": {
+        "source_text": "암호화키와 복호화키가 동일한 것은 대칭 암호화 기법이라고 하고 암호화키와 복호화키가 다른 것을 비대칭 암호화 기법이라고 합니다.",
+        "summary": "암호화와 복호화에 같은 키를 사용하는 대칭 키 암호화 방식의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "대칭 키 방식은 키가 동일하여 속도가 빠르지만, 사용자 수에 따라 필요한 키의 개수가 기하급수적으로 늘어나는 단점이 있습니다."
+        ],
+        "why_others_wrong": [
+          "비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+        ],
+        "key_concepts": [
+          "Symmetric Encryption",
+          "Private Key"
+        ],
+        "memory_cues": [
+          "대칭 = 같다 = 빠르다 = 키 관리 힘들다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "단방향 암호화 기법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 대칭 암호화 기법'인데 이 선택지는 '단방향 암호화 기법'이므로 일치하지 않습니다. 비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "비대칭 암호화 기법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 대칭 암호화 기법'인데 이 선택지는 '비대칭 암호화 기법'이므로 일치하지 않습니다. 비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "대칭 암호화 기법",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 대칭 암호화 기법'와 일치합니다. 대칭 키 방식은 키가 동일하여 속도가 빠르지만, 사용자 수에 따라 필요한 키의 개수가 기하급수적으로 늘어나는 단점이 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "해시 암호화 기법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 대칭 암호화 기법'인데 이 선택지는 '해시 암호화 기법'이므로 일치하지 않습니다. 비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 92. 다음에서 설명하는 암호화는? - 암호화/복호화 속도가 빠르다. - 알고리즘이 단순하다. - 암호화키와 복호화키가 동일하다. - 사용자의 증가에 따라 관리해야 할 키의 수가 상대적으로 많아진다.",
+          "핵심 개념을 떠올립니다. Symmetric Encryption, Private Key",
+          "정답 판단 근거를 적용합니다. 대칭 키 방식은 키가 동일하여 속도가 빠르지만, 사용자 수에 따라 필요한 키의 개수가 기하급수적으로 늘어나는 단점이 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+        ],
+        "exam_traps": [
+          "비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Symmetric Encryption'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Private Key'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 대칭 = 같다 = 빠르다 = 키 관리 힘들다"
+        ],
+        "detailed_summary": "암호화와 복호화에 같은 키를 사용하는 대칭 키 암호화 방식의 특징을 묻는 문제입니다. 암호화키와 복호화키가 동일한 것은 대칭 암호화 기법이라고 하고 암호화키와 복호화키가 다른 것을 비대칭 암호화 기법이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 92. 다음에서 설명하는 암호화는? - 암호화/복호화 속도가 빠르다. - 알고리즘이 단순하다. - 암호화키와 복호화키가 동일하다. - 사용자의 증가에 따라 관리해야 할 키의 수가 상대적으로 많아진다. 정답입니다. 이 선택지는 실제 정답인 '3번 대칭 암호화 기법'와 일치합니다. 대칭 키 방식은 키가 동일하여 속도가 빠르지만, 사용자 수에 따라 필요한 키의 개수가 기하급수적으로 늘어나는 단점이 있습니다. 시험 포인트는 비대칭 키는 키가 서로 다르며 속도가 느립니다. 단방향/해시는 복호화가 불가능한 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "대칭 암호화",
+        "비대칭 암호화",
+        "암호 키",
+        "속도"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_28bf85f3d7a4279d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          157
+        ],
+        "page_span": {
+          "start_page": 157,
+          "end_page": 157
+        },
+        "source_explanation": "문제의 지문에서 설명한 암호화 알고리즘은 ARIA입니다.\n- DES(Data Encryption Standard): 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 블록 크기는 64비트이며, 키 길이는 56비트임\n- AES(Advanced Encryption Standard): 2001년 미국 표준 기술 연구소(NIST)에서 발표한 차세대 암호화 알고리즘으로, 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됨\n- RSA(Rivest Shamir Adleman): 1978년 MIT의 라이베스트(Rivest), 샤미르(Shamir), 애들먼(Adleman)에 의해 제안된 공개키 암호화 알고리즘으로, 큰 숫자를 소인수분해 하기 어렵다는 것에 기반하여 만들어졌음"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "암호화"
+        ],
+        "chapter_label": "암호화",
+        "chapter_key": "정보시스템 구축 관리 > 암호화",
+        "chapter_id": "chapter_312"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 64.0,
+        "match_confidence": "medium"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "93. 다음에서 설명하는 암호화 알고리즘은?\n- 2004년 국가정보원과 산학연협회가 개발한 블록 암호화 알고리즘이다.\n- 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됩니다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DES"
+          },
+          {
+            "label": "2",
+            "text": "AES"
+          },
+          {
+            "label": "3",
+            "text": "ARIA"
+          },
+          {
+            "label": "4",
+            "text": "RSA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ARIA"
+        ],
+        "answer_text": "ARIA"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에서 설명한 암호화 알고리즘은 ARIA입니다.\n- DES(Data Encryption Standard): 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 블록 크기는 64비트이며, 키 길이는 56비트임\n- AES(Advanced Encryption Standard): 2001년 미국 표준 기술 연구소(NIST)에서 발표한 차세대 암호화 알고리즘으로, 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됨\n- RSA(Rivest Shamir Adleman): 1978년 MIT의 라이베스트(Rivest), 샤미르(Shamir), 애들먼(Adleman)에 의해 제안된 공개키 암호화 알고리즘으로, 큰 숫자를 소인수분해 하기 어렵다는 것에 기반하여 만들어졌음",
+        "summary": "대한민국 국가정보원에서 개발한 표준 블록 암호 알고리즘을 찾는 문제입니다.",
+        "why_correct": [
+          "ARIA는 2004년 국정원과 학계가 공동 개발한 대칭 키 블록 암호 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+        ],
+        "key_concepts": [
+          "ARIA",
+          "Block Cipher",
+          "NIS"
+        ],
+        "memory_cues": [
+          "국정원 개발 = ARIA, SEED"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ARIA'인데 이 선택지는 'DES'이므로 일치하지 않습니다. DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+          },
+          {
+            "label": "2",
+            "text": "AES",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ARIA'인데 이 선택지는 'AES'이므로 일치하지 않습니다. DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "ARIA",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ARIA'와 일치합니다. ARIA는 2004년 국정원과 학계가 공동 개발한 대칭 키 블록 암호 알고리즘입니다."
+          },
+          {
+            "label": "4",
+            "text": "RSA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ARIA'인데 이 선택지는 'RSA'이므로 일치하지 않습니다. DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 다음에서 설명하는 암호화 알고리즘은? - 2004년 국가정보원과 산학연협회가 개발한 블록 암호화 알고리즘이다. - 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됩니다.",
+          "핵심 개념을 떠올립니다. ARIA, Block Cipher, NIS",
+          "정답 판단 근거를 적용합니다. ARIA는 2004년 국정원과 학계가 공동 개발한 대칭 키 블록 암호 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+        ],
+        "exam_traps": [
+          "DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ARIA'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Block Cipher'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NIS'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 국정원 개발 = ARIA, SEED"
+        ],
+        "detailed_summary": "대한민국 국가정보원에서 개발한 표준 블록 암호 알고리즘을 찾는 문제입니다. 문제의 지문에서 설명한 암호화 알고리즘은 ARIA입니다. - DES(Data Encryption Standard): 1975년 미국 NBS에서 발표한 개인키 암호화 알고리즘으로, 블록 크기는 64비트이며, 키 길이는 56비트임 - AES(Advanced Encryption Standard): 2001년 미국 표준 기술 연구소(NIST)에서 발표한 차세대 암호화 알고리즘으로, 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됨 - RSA(Rivest Shamir Adleman): 1978년 MIT의 라이베스트(Rivest), 샤미르(Shamir), 애들먼(Adleman)에 의해 제안된 공개키 암호화 알고리즘으로, 큰 숫자를 소인수분해 하기 어렵다는 것에 기반하여 만들어졌음 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 다음에서 설명하는 암호화 알고리즘은? - 2004년 국가정보원과 산학연협회가 개발한 블록 암호화 알고리즘이다. - 블록 크기는 128비트이며, 키 길이에 따라 128, 192, 256으로 분류됩니다. 정답입니다. 이 선택지는 실제 정답인 '3번 ARIA'와 일치합니다. ARIA는 2004년 국정원과 학계가 공동 개발한 대칭 키 블록 암호 알고리즘입니다. 시험 포인트는 DES와 AES는 미국 표준이며, RSA는 비대칭 키(공개 키) 암호 알고리즘입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "ARIA",
+        "블록 암호",
+        "국가정보원",
+        "암호화 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5de6096588676155",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0191_p0196"
+        ],
+        "source_pages": [
+          192
+        ],
+        "page_span": {
+          "start_page": 192,
+          "end_page": 192
+        },
+        "source_explanation": "AES는 개인키 암호 알고리즘이고, MD4, MD5, SHA-1은 해시 알고리즘입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "암호화와 해시"
+        ],
+        "chapter_label": "암호화와 해시",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 암호화와 해시",
+        "chapter_id": "chapter_182"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_098",
+        "topic_title": "암호화와 해시",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "암호화와 해시",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "96. 다음 암호 알고리즘 중 성격이 다른 하나는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MD4"
+          },
+          {
+            "label": "2",
+            "text": "MD5"
+          },
+          {
+            "label": "3",
+            "text": "SHA-1"
+          },
+          {
+            "label": "4",
+            "text": "AES"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "AES"
+        ],
+        "answer_text": "AES"
+      },
+      "explanation": {
+        "source_text": "AES는 개인키 암호 알고리즘이고, MD4, MD5, SHA-1은 해시 알고리즘입니다.",
+        "summary": "암호화 알고리즘과 해시 알고리즘을 구분하는 문제입니다.",
+        "why_correct": [
+          "AES는 대칭키(개인키) 방식의 양방향 암호화 알고리즘입니다. 반면 MD4, MD5, SHA-1은 단방향 암호화인 해시 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+        ],
+        "key_concepts": [
+          "대칭키 암호화(AES)",
+          "해시 함수(MD, SHA)"
+        ],
+        "memory_cues": [
+          "AES = 암호화(양방향)",
+          "MD/SHA = 해시(단방향)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MD4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 AES'인데 이 선택지는 'MD4'이므로 일치하지 않습니다. MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+          },
+          {
+            "label": "2",
+            "text": "MD5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 AES'인데 이 선택지는 'MD5'이므로 일치하지 않습니다. MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+          },
+          {
+            "label": "3",
+            "text": "SHA-1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 AES'인데 이 선택지는 'SHA-1'이므로 일치하지 않습니다. MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+          },
+          {
+            "label": "4",
+            "text": "AES",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 AES'와 일치합니다. AES는 대칭키(개인키) 방식의 양방향 암호화 알고리즘입니다. 반면 MD4, MD5, SHA-1은 단방향 암호화인 해시 알고리즘입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 다음 암호 알고리즘 중 성격이 다른 하나는?",
+          "핵심 개념을 떠올립니다. 대칭키 암호화(AES), 해시 함수(MD, SHA)",
+          "정답 판단 근거를 적용합니다. AES는 대칭키(개인키) 방식의 양방향 암호화 알고리즘입니다. 반면 MD4, MD5, SHA-1은 단방향 암호화인 해시 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+        ],
+        "exam_traps": [
+          "MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '대칭키 암호화(AES)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '해시 함수(MD, SHA)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. AES = 암호화(양방향)",
+          "암기 포인트를 떠올립니다. MD/SHA = 해시(단방향)"
+        ],
+        "detailed_summary": "암호화 알고리즘과 해시 알고리즘을 구분하는 문제입니다. AES는 개인키 암호 알고리즘이고, MD4, MD5, SHA-1은 해시 알고리즘입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 다음 암호 알고리즘 중 성격이 다른 하나는? 정답입니다. 이 선택지는 실제 정답인 '4번 AES'와 일치합니다. AES는 대칭키(개인키) 방식의 양방향 암호화 알고리즘입니다. 반면 MD4, MD5, SHA-1은 단방향 암호화인 해시 알고리즘입니다. 시험 포인트는 MD4, MD5, SHA-1은 모두 입력값에 대해 고정된 길이의 출력값을 생성하는 해시 함수군에 속합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "암호 알고리즘",
+        "AES",
+        "해시 함수",
+        "MD5",
+        "SHA-1"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

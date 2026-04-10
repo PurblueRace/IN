@@ -1,0 +1,1873 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_100",
+    "sequence": 100,
+    "title": "악성코드와 인증·보안 운영",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 12,
+    "review_count": 5,
+    "source_chapter_ids": [
+      "chapter_336",
+      "chapter_311",
+      "chapter_145",
+      "chapter_159",
+      "chapter_160",
+      "chapter_299"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_6712256629379f26",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          23
+        ],
+        "page_span": {
+          "start_page": 23,
+          "end_page": 23
+        },
+        "source_explanation": "사용자의 신원을 확인하고 증명하는 과정을 인증(Authentication)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_336"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "86. 시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은?\n- 자신의 신원(identity)을 시스템에 증명하는 과정이다.\n- 아이디와 패스워드를 입력하는 과정이 가장 일반적인 예시라고 볼 수 있다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Aging"
+          },
+          {
+            "label": "2",
+            "text": "Accounting"
+          },
+          {
+            "label": "3",
+            "text": "Authorization"
+          },
+          {
+            "label": "4",
+            "text": "Authentication"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Authentication"
+        ],
+        "answer_text": "Authentication"
+      },
+      "explanation": {
+        "source_text": "사용자의 신원을 확인하고 증명하는 과정을 인증(Authentication)이라고 합니다.",
+        "summary": "보안의 기본 요소 중 인증의 개념을 묻는 문제입니다.",
+        "why_correct": [
+          "Authentication(인증)은 사용자가 누구인지 신원을 확인하는 절차입니다."
+        ],
+        "why_others_wrong": [
+          "1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다.",
+          "2번 Accounting은 자원 사용 정보를 기록하는 계정 관리입니다.",
+          "3번 Authorization은 인증된 사용자에게 권한을 부여하는 인가 과정입니다."
+        ],
+        "key_concepts": [
+          "AAA: Authentication(인증), Authorization(인가), Accounting(계정)"
+        ],
+        "memory_cues": [
+          "ID/PW 입력 = 나임을 증명 = 인증(Authentication)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Aging",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Authentication'인데 이 선택지는 'Aging'이므로 일치하지 않습니다. 1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다. 2번 Accounting은 자원 사용 정보를 기록하는 계정 관리입니다."
+          },
+          {
+            "label": "2",
+            "text": "Accounting",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Authentication'인데 이 선택지는 'Accounting'이므로 일치하지 않습니다. 1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다. 2번 Accounting은 자원 사용 정보를 기록하는 계정 관리입니다."
+          },
+          {
+            "label": "3",
+            "text": "Authorization",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Authentication'인데 이 선택지는 'Authorization'이므로 일치하지 않습니다. 1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다. 2번 Accounting은 자원 사용 정보를 기록하는 계정 관리입니다."
+          },
+          {
+            "label": "4",
+            "text": "Authentication",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Authentication'와 일치합니다. Authentication(인증)은 사용자가 누구인지 신원을 확인하는 절차입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 86. 시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은? - 자신의 신원(identity)을 시스템에 증명하는 과정이다. - 아이디와 패스워드를 입력하는 과정이 가장 일반적인 예시라고 볼 수 있다.",
+          "핵심 개념을 떠올립니다. AAA: Authentication(인증), Authorization(인가), Accounting(계정)",
+          "정답 판단 근거를 적용합니다. Authentication(인증)은 사용자가 누구인지 신원을 확인하는 절차입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다."
+        ],
+        "exam_traps": [
+          "1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'AAA: Authentication(인증), Authorization(인가), Accounting(계정)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. ID/PW 입력 = 나임을 증명 = 인증(Authentication)"
+        ],
+        "detailed_summary": "보안의 기본 요소 중 인증의 개념을 묻는 문제입니다. 사용자의 신원을 확인하고 증명하는 과정을 인증(Authentication)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 86. 시스템의 사용자가 로그인하여 명령을 내리는 과정에 대한 시스템의 동작 중 다음 설명에 해당하는 것은? - 자신의 신원(identity)을 시스템에 증명하는 과정이다. - 아이디와 패스워드를 입력하는 과정이 가장 일반적인 예시라고 볼 수 있다. 정답입니다. 이 선택지는 실제 정답인 '4번 Authentication'와 일치합니다. Authentication(인증)은 사용자가 누구인지 신원을 확인하는 절차입니다. 시험 포인트는 1번 Aging은 데이터나 프로세스의 노후화를 관리하는 개념입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인증",
+        "Authentication",
+        "보안",
+        "신원 증명"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_efa6500ff0cd3b5b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          24
+        ],
+        "page_span": {
+          "start_page": 24,
+          "end_page": 24
+        },
+        "source_explanation": "패스워드는 사용자가 기억하고 있는 지식을 이용하므로 Something You Know(지식 기반 인증)에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_336"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "87. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Something You Have"
+          },
+          {
+            "label": "2",
+            "text": "Something You Are"
+          },
+          {
+            "label": "3",
+            "text": "Something You Know"
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Something You Know"
+        ],
+        "answer_text": "Something You Know"
+      },
+      "explanation": {
+        "source_text": "패스워드는 사용자가 기억하고 있는 지식을 이용하므로 Something You Know(지식 기반 인증)에 해당합니다.",
+        "summary": "인증의 4가지 주요 유형 중 패스워드의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "패스워드, PIN 번호 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 스마트카드, OTP 등 소유 기반입니다.",
+          "2번은 지문, 홍채 등 생체 기반입니다.",
+          "4번은 접속 위치 기반입니다."
+        ],
+        "key_concepts": [
+          "지식 기반: 아는 것 (PW)",
+          "소유 기반: 가진 것 (Key)",
+          "생체 기반: 본인의 특징 (지문)"
+        ],
+        "memory_cues": [
+          "패스워드는 내가 '아는(Know)' 것!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Something You Have",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Have'이므로 일치하지 않습니다. 1번은 스마트카드, OTP 등 소유 기반입니다. 2번은 지문, 홍채 등 생체 기반입니다."
+          },
+          {
+            "label": "2",
+            "text": "Something You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Are'이므로 일치하지 않습니다. 1번은 스마트카드, OTP 등 소유 기반입니다. 2번은 지문, 홍채 등 생체 기반입니다."
+          },
+          {
+            "label": "3",
+            "text": "Something You Know",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드, PIN 번호 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다."
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Somewhere You Are'이므로 일치하지 않습니다. 1번은 스마트카드, OTP 등 소유 기반입니다. 2번은 지문, 홍채 등 생체 기반입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 87. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+          "핵심 개념을 떠올립니다. 지식 기반: 아는 것 (PW), 소유 기반: 가진 것 (Key), 생체 기반: 본인의 특징 (지문)",
+          "정답 판단 근거를 적용합니다. 패스워드, PIN 번호 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 스마트카드, OTP 등 소유 기반입니다."
+        ],
+        "exam_traps": [
+          "1번은 스마트카드, OTP 등 소유 기반입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '지식 기반: 아는 것 (PW)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '소유 기반: 가진 것 (Key)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '생체 기반: 본인의 특징 (지문)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 패스워드는 내가 '아는(Know)' 것!"
+        ],
+        "detailed_summary": "인증의 4가지 주요 유형 중 패스워드의 분류를 묻는 문제입니다. 패스워드는 사용자가 기억하고 있는 지식을 이용하므로 Something You Know(지식 기반 인증)에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 87. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은? 정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드, PIN 번호 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다. 시험 포인트는 1번은 스마트카드, OTP 등 소유 기반입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인증 유형",
+        "지식 기반 인증",
+        "Something You Know",
+        "패스워드"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_05a1c4345a33b62d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 46
+        },
+        "source_explanation": "신분증, OTP 등 사용자가 소유하고 있는 것을 기반으로 인증을 수행하는 것은 소유 기반 인증입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축 관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_311"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 신분증, OTP(One Time Password)와 관련된 인증 유형은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "생체 기반 인증(Something You Are)"
+          },
+          {
+            "label": "2",
+            "text": "위치 기반 인증(Somewhere You Are)"
+          },
+          {
+            "label": "3",
+            "text": "소유 기반 인증(Something You Have)"
+          },
+          {
+            "label": "4",
+            "text": "지식 기반 인증(Something You Know)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "소유 기반 인증(Something You Have)"
+        ],
+        "answer_text": "소유 기반 인증(Something You Have)"
+      },
+      "explanation": {
+        "source_text": "신분증, OTP 등 사용자가 소유하고 있는 것을 기반으로 인증을 수행하는 것은 소유 기반 인증입니다.",
+        "summary": "사용자 인증의 4가지 유형 중 소유 기반 인증에 대해 묻는 문제입니다.",
+        "why_correct": [
+          "사용자가 물리적으로 가지고 있는 물건(신분증, 스마트카드, OTP 토큰 등)을 이용하는 방식이 소유 기반 인증입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 지문, 홍채 등 신체 특징 이용",
+          "2번: 접속 위치 이용",
+          "4번: 비밀번호, PIN 등 기억하고 있는 정보 이용"
+        ],
+        "key_concepts": [
+          "인증의 4요소",
+          "소유 기반 인증"
+        ],
+        "memory_cues": [
+          "Have = 소유 (물건)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "생체 기반 인증(Something You Are)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 소유 기반 인증(Something You Have)'인데 이 선택지는 '생체 기반 인증(Something You Are)'이므로 일치하지 않습니다. 1번: 지문, 홍채 등 신체 특징 이용 2번: 접속 위치 이용"
+          },
+          {
+            "label": "2",
+            "text": "위치 기반 인증(Somewhere You Are)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 소유 기반 인증(Something You Have)'인데 이 선택지는 '위치 기반 인증(Somewhere You Are)'이므로 일치하지 않습니다. 1번: 지문, 홍채 등 신체 특징 이용 2번: 접속 위치 이용"
+          },
+          {
+            "label": "3",
+            "text": "소유 기반 인증(Something You Have)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 소유 기반 인증(Something You Have)'와 일치합니다. 사용자가 물리적으로 가지고 있는 물건(신분증, 스마트카드, OTP 토큰 등)을 이용하는 방식이 소유 기반 인증입니다."
+          },
+          {
+            "label": "4",
+            "text": "지식 기반 인증(Something You Know)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 소유 기반 인증(Something You Have)'인데 이 선택지는 '지식 기반 인증(Something You Know)'이므로 일치하지 않습니다. 1번: 지문, 홍채 등 신체 특징 이용 2번: 접속 위치 이용"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 신분증, OTP(One Time Password)와 관련된 인증 유형은?",
+          "핵심 개념을 떠올립니다. 인증의 4요소, 소유 기반 인증",
+          "정답 판단 근거를 적용합니다. 사용자가 물리적으로 가지고 있는 물건(신분증, 스마트카드, OTP 토큰 등)을 이용하는 방식이 소유 기반 인증입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 지문, 홍채 등 신체 특징 이용"
+        ],
+        "exam_traps": [
+          "1번: 지문, 홍채 등 신체 특징 이용"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인증의 4요소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '소유 기반 인증'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Have = 소유 (물건)"
+        ],
+        "detailed_summary": "사용자 인증의 4가지 유형 중 소유 기반 인증에 대해 묻는 문제입니다. 신분증, OTP 등 사용자가 소유하고 있는 것을 기반으로 인증을 수행하는 것은 소유 기반 인증입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 신분증, OTP(One Time Password)와 관련된 인증 유형은? 정답입니다. 이 선택지는 실제 정답인 '3번 소유 기반 인증(Something You Have)'와 일치합니다. 사용자가 물리적으로 가지고 있는 물건(신분증, 스마트카드, OTP 토큰 등)을 이용하는 방식이 소유 기반 인증입니다. 시험 포인트는 1번: 지문, 홍채 등 신체 특징 이용"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Authentication",
+        "OTP",
+        "Something You Have",
+        "Security"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_92b6220c23ecbf26",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "전문가의 조언 | '존재'라는 사용자 인증 유형은 없습니다. 패턴은 지식 기반 인증에, QR은 소유 기반 인증에 속합니다. 보통 '존재' 대신 생체(Biometrics) 기반 인증을 사용하며 이는 지문, 홍채 등 신체적 특징을 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "81. 각 사용자 인증의 유형에 대한 설명으로 가장 적절하지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "지식 : 주체는 '그가 알고 있는 것'을 보여주며 예시로는 패스워드, PIN 등이 있다."
+          },
+          {
+            "label": "2",
+            "text": "소유 : 주체는 '그가 가지고 있는 것'을 보여주며 예시로는 토큰, 스마트 카드 등이 있다."
+          },
+          {
+            "label": "3",
+            "text": "존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다."
+          },
+          {
+            "label": "4",
+            "text": "행위 : 주체는 '그가 하는 것'을 보여주며 예시로는 서명, 움직임, 음성 등이 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다."
+        ],
+        "answer_text": "존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | '존재'라는 사용자 인증 유형은 없습니다. 패턴은 지식 기반 인증에, QR은 소유 기반 인증에 속합니다. 보통 '존재' 대신 생체(Biometrics) 기반 인증을 사용하며 이는 지문, 홍채 등 신체적 특징을 의미합니다.",
+        "summary": "사용자 인증의 4가지 주요 요소(지식, 소유, 생체, 행위)를 구분하는 문제입니다.",
+        "why_correct": [
+          "'존재'라는 용어 설정과 그 예시(패턴, QR)가 부적절합니다. 패턴은 지식, QR은 소유에 가깝고, 신체적 특징을 이용하는 것은 생체 기반 인증입니다."
+        ],
+        "why_others_wrong": [
+          "지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+        ],
+        "key_concepts": [
+          "인증의 4요소"
+        ],
+        "memory_cues": [
+          "지식(Know), 소유(Have), 생체(Are), 행위(Do)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "지식 : 주체는 '그가 알고 있는 것'을 보여주며 예시로는 패스워드, PIN 등이 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.'인데 이 선택지는 '지식 : 주체는 '그가 알고 있는 것'을 보여주며 예시로는 패스워드, PIN 등이 있다.'이므로 일치하지 않습니다. 지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "소유 : 주체는 '그가 가지고 있는 것'을 보여주며 예시로는 토큰, 스마트 카드 등이 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.'인데 이 선택지는 '소유 : 주체는 '그가 가지고 있는 것'을 보여주며 예시로는 토큰, 스마트 카드 등이 있다.'이므로 일치하지 않습니다. 지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+          },
+          {
+            "label": "3",
+            "text": "존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.'와 일치합니다. '존재'라는 용어 설정과 그 예시(패턴, QR)가 부적절합니다. 패턴은 지식, QR은 소유에 가깝고, 신체적 특징을 이용하는 것은 생체 기반 인증입니다."
+          },
+          {
+            "label": "4",
+            "text": "행위 : 주체는 '그가 하는 것'을 보여주며 예시로는 서명, 움직임, 음성 등이 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.'인데 이 선택지는 '행위 : 주체는 '그가 하는 것'을 보여주며 예시로는 서명, 움직임, 음성 등이 있다.'이므로 일치하지 않습니다. 지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 81. 각 사용자 인증의 유형에 대한 설명으로 가장 적절하지 않은 것은?",
+          "핵심 개념을 떠올립니다. 인증의 4요소",
+          "정답 판단 근거를 적용합니다. '존재'라는 용어 설정과 그 예시(패턴, QR)가 부적절합니다. 패턴은 지식, QR은 소유에 가깝고, 신체적 특징을 이용하는 것은 생체 기반 인증입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+        ],
+        "exam_traps": [
+          "지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인증의 4요소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 지식(Know), 소유(Have), 생체(Are), 행위(Do)"
+        ],
+        "detailed_summary": "사용자 인증의 4가지 주요 요소(지식, 소유, 생체, 행위)를 구분하는 문제입니다. 전문가의 조언 | '존재'라는 사용자 인증 유형은 없습니다. 패턴은 지식 기반 인증에, QR은 소유 기반 인증에 속합니다. 보통 '존재' 대신 생체(Biometrics) 기반 인증을 사용하며 이는 지문, 홍채 등 신체적 특징을 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 81. 각 사용자 인증의 유형에 대한 설명으로 가장 적절하지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 존재 : 주체는 '그를 대체하는 것'을 보여주며 예시로는 패턴, QR 등이 있다.'와 일치합니다. '존재'라는 용어 설정과 그 예시(패턴, QR)가 부적절합니다. 패턴은 지식, QR은 소유에 가깝고, 신체적 특징을 이용하는 것은 생체 기반 인증입니다. 시험 포인트는 지식(Password), 소유(Token), 행위(Signature)에 대한 설명은 표준적인 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "사용자 인증",
+        "지식 기반",
+        "소유 기반",
+        "생체 기반",
+        "행위 기반"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2dfdb3d953c9515d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          78
+        ],
+        "page_span": {
+          "start_page": 78,
+          "end_page": 78
+        },
+        "source_explanation": "전문가의 조언 | 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 SSO(Single Sign On)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "92. 시스템이 몇 대가 되어도 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SOS"
+          },
+          {
+            "label": "2",
+            "text": "SBO"
+          },
+          {
+            "label": "3",
+            "text": "SSO"
+          },
+          {
+            "label": "4",
+            "text": "SOA"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "SSO"
+        ],
+        "answer_text": "SSO"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 SSO(Single Sign On)라고 합니다.",
+        "summary": "한 번의 로그인으로 여러 시스템을 이용할 수 있게 하는 통합 인증 체계에 대한 문제입니다.",
+        "why_correct": [
+          "SSO(Single Sign On)는 여러 개의 독립적인 소프트웨어 시스템에서 한 번의 로그인으로 모든 시스템에 접속할 수 있게 해주는 기술입니다."
+        ],
+        "why_others_wrong": [
+          "SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+        ],
+        "key_concepts": [
+          "SSO",
+          "Authentication"
+        ],
+        "memory_cues": [
+          "SSO = Single(한번) Sign On(로그인)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SOS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SSO'인데 이 선택지는 'SOS'이므로 일치하지 않습니다. SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+          },
+          {
+            "label": "2",
+            "text": "SBO",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SSO'인데 이 선택지는 'SBO'이므로 일치하지 않습니다. SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+          },
+          {
+            "label": "3",
+            "text": "SSO",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 SSO'와 일치합니다. SSO(Single Sign On)는 여러 개의 독립적인 소프트웨어 시스템에서 한 번의 로그인으로 모든 시스템에 접속할 수 있게 해주는 기술입니다."
+          },
+          {
+            "label": "4",
+            "text": "SOA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SSO'인데 이 선택지는 'SOA'이므로 일치하지 않습니다. SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 92. 시스템이 몇 대가 되어도 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. SSO, Authentication",
+          "정답 판단 근거를 적용합니다. SSO(Single Sign On)는 여러 개의 독립적인 소프트웨어 시스템에서 한 번의 로그인으로 모든 시스템에 접속할 수 있게 해주는 기술입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+        ],
+        "exam_traps": [
+          "SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SSO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Authentication'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SSO = Single(한번) Sign On(로그인)"
+        ],
+        "detailed_summary": "한 번의 로그인으로 여러 시스템을 이용할 수 있게 하는 통합 인증 체계에 대한 문제입니다. 전문가의 조언 | 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 SSO(Single Sign On)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 92. 시스템이 몇 대가 되어도 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 얻는 시스템을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 SSO'와 일치합니다. SSO(Single Sign On)는 여러 개의 독립적인 소프트웨어 시스템에서 한 번의 로그인으로 모든 시스템에 접속할 수 있게 해주는 기술입니다. 시험 포인트는 SOA는 서비스 지향 아키텍처이며, SOS와 SBO는 해당 정의와 무관한 약어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SSO",
+        "Single Sign On",
+        "통합 인증",
+        "사용자 편의성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3154d7108ddbfd96",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 96
+        },
+        "source_explanation": "지문은 생체 기반 인증(Something You Are)에 속합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_336"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "82. 다음 중 소유 기반 인증(Something You Have)에 속하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "지문"
+          },
+          {
+            "label": "2",
+            "text": "마그네틱 카드"
+          },
+          {
+            "label": "3",
+            "text": "신분증"
+          },
+          {
+            "label": "4",
+            "text": "OTP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "지문"
+        ],
+        "answer_text": "지문"
+      },
+      "explanation": {
+        "source_text": "지문은 생체 기반 인증(Something You Are)에 속합니다.",
+        "summary": "사용자 인증의 4가지 요소(지식, 소유, 존재, 행위) 중 소유 기반 인증을 구분하는 문제입니다.",
+        "why_correct": [
+          "지문은 신체적 특징을 이용하므로 '존재(생체) 기반 인증'입니다."
+        ],
+        "why_others_wrong": [
+          "카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+        ],
+        "key_concepts": [
+          "Authentication Factors",
+          "Biometrics"
+        ],
+        "memory_cues": [
+          "Have(소유)는 물건, Are(생체)는 몸의 일부!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "지문",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 지문'와 일치합니다. 지문은 신체적 특징을 이용하므로 '존재(생체) 기반 인증'입니다."
+          },
+          {
+            "label": "2",
+            "text": "마그네틱 카드",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 지문'인데 이 선택지는 '마그네틱 카드'이므로 일치하지 않습니다. 카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+          },
+          {
+            "label": "3",
+            "text": "신분증",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 지문'인데 이 선택지는 '신분증'이므로 일치하지 않습니다. 카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+          },
+          {
+            "label": "4",
+            "text": "OTP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 지문'인데 이 선택지는 'OTP'이므로 일치하지 않습니다. 카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 82. 다음 중 소유 기반 인증(Something You Have)에 속하지 않는 것은?",
+          "핵심 개념을 떠올립니다. Authentication Factors, Biometrics",
+          "정답 판단 근거를 적용합니다. 지문은 신체적 특징을 이용하므로 '존재(생체) 기반 인증'입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+        ],
+        "exam_traps": [
+          "카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Authentication Factors'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Biometrics'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Have(소유)는 물건, Are(생체)는 몸의 일부!"
+        ],
+        "detailed_summary": "사용자 인증의 4가지 요소(지식, 소유, 존재, 행위) 중 소유 기반 인증을 구분하는 문제입니다. 지문은 생체 기반 인증(Something You Are)에 속합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 82. 다음 중 소유 기반 인증(Something You Have)에 속하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 지문'와 일치합니다. 지문은 신체적 특징을 이용하므로 '존재(생체) 기반 인증'입니다. 시험 포인트는 카드, 신분증, OTP 기기는 사용자가 물리적으로 가지고 있는 것이므로 '소유 기반 인증'이 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인증",
+        "소유 기반 인증",
+        "생체 인증",
+        "보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3d17d8bf0b2105b9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          98
+        ],
+        "page_span": {
+          "start_page": 98,
+          "end_page": 98
+        },
+        "source_explanation": "네트워크를 통해 연속적으로 자신을 복제하는 악성코드는 웜(Worm)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_336"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "93. 악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하거나 메일로 전파되며 스스로를 증식하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Worm"
+          },
+          {
+            "label": "2",
+            "text": "Rogue Ware"
+          },
+          {
+            "label": "3",
+            "text": "Adware"
+          },
+          {
+            "label": "4",
+            "text": "Reflection Attack"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Worm"
+        ],
+        "answer_text": "Worm"
+      },
+      "explanation": {
+        "source_text": "네트워크를 통해 연속적으로 자신을 복제하는 악성코드는 웜(Worm)입니다.",
+        "summary": "악성코드 중 자기 복제 및 전파 특성을 가진 유형을 묻는 문제입니다.",
+        "why_correct": [
+          "웜은 숙주 파일 없이도 스스로 복제하여 네트워크를 통해 전파되는 특징이 있습니다."
+        ],
+        "why_others_wrong": [
+          "Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다.",
+          "Adware는 광고를 보여주는 소프트웨어입니다.",
+          "Reflection Attack은 반사 공격 기법입니다."
+        ],
+        "key_concepts": [
+          "Worm vs Virus",
+          "Malware"
+        ],
+        "memory_cues": [
+          "스스로 꿈틀대며 퍼지는 벌레 = 웜(Worm)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Worm",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Worm'와 일치합니다. 웜은 숙주 파일 없이도 스스로 복제하여 네트워크를 통해 전파되는 특징이 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "Rogue Ware",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Worm'인데 이 선택지는 'Rogue Ware'이므로 일치하지 않습니다. Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다. Adware는 광고를 보여주는 소프트웨어입니다."
+          },
+          {
+            "label": "3",
+            "text": "Adware",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Worm'인데 이 선택지는 'Adware'이므로 일치하지 않습니다. Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다. Adware는 광고를 보여주는 소프트웨어입니다."
+          },
+          {
+            "label": "4",
+            "text": "Reflection Attack",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Worm'인데 이 선택지는 'Reflection Attack'이므로 일치하지 않습니다. Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다. Adware는 광고를 보여주는 소프트웨어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하거나 메일로 전파되며 스스로를 증식하는 것은?",
+          "핵심 개념을 떠올립니다. Worm vs Virus, Malware",
+          "정답 판단 근거를 적용합니다. 웜은 숙주 파일 없이도 스스로 복제하여 네트워크를 통해 전파되는 특징이 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다."
+        ],
+        "exam_traps": [
+          "Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Worm vs Virus'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Malware'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스스로 꿈틀대며 퍼지는 벌레 = 웜(Worm)"
+        ],
+        "detailed_summary": "악성코드 중 자기 복제 및 전파 특성을 가진 유형을 묻는 문제입니다. 네트워크를 통해 연속적으로 자신을 복제하는 악성코드는 웜(Worm)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 악성코드의 유형 중 다른 컴퓨터의 취약점을 이용하여 스스로 전파하거나 메일로 전파되며 스스로를 증식하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Worm'와 일치합니다. 웜은 숙주 파일 없이도 스스로 복제하여 네트워크를 통해 전파되는 특징이 있습니다. 시험 포인트는 Rogue Ware는 가짜 백신 등을 가장한 악성코드입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Worm",
+        "웜",
+        "악성코드",
+        "자기 복제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_25e1923e40b48684",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          118
+        ],
+        "page_span": {
+          "start_page": 118,
+          "end_page": 118
+        },
+        "source_explanation": "패스워드는 사용자가 기억하고 있는 지식을 기반으로 인증하는 Something You Know 방식입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "악성코드와 인증·보안 운영"
+        ],
+        "chapter_label": "악성코드와 인증·보안 운영",
+        "chapter_key": "정보시스템 구축 관리 > 악성코드와 인증·보안 운영",
+        "chapter_id": "chapter_311"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Something You Have"
+          },
+          {
+            "label": "2",
+            "text": "Something You Are"
+          },
+          {
+            "label": "3",
+            "text": "Something You Know"
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Something You Know"
+        ],
+        "answer_text": "Something You Know"
+      },
+      "explanation": {
+        "source_text": "패스워드는 사용자가 기억하고 있는 지식을 기반으로 인증하는 Something You Know 방식입니다.",
+        "summary": "사용자 인증 방식의 4가지 유형 중 패스워드의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "패스워드나 PIN 번호는 사용자가 알고 있는 정보이므로 지식 기반(Something You Know) 인증에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "Something You Have는 소유 기반(OTP, 스마트카드 등)입니다.",
+          "Something You Are는 생체 기반(지문, 홍채 등)입니다.",
+          "Somewhere You Are는 위치 기반(IP, GPS 등)입니다."
+        ],
+        "key_concepts": [
+          "Authentication Factors",
+          "Something You Know"
+        ],
+        "memory_cues": [
+          "Know = 알고 있는 것(패스워드)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Something You Have",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Have'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 스마트카드 등)입니다. Something You Are는 생체 기반(지문, 홍채 등)입니다."
+          },
+          {
+            "label": "2",
+            "text": "Something You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Are'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 스마트카드 등)입니다. Something You Are는 생체 기반(지문, 홍채 등)입니다."
+          },
+          {
+            "label": "3",
+            "text": "Something You Know",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드나 PIN 번호는 사용자가 알고 있는 정보이므로 지식 기반(Something You Know) 인증에 해당합니다."
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Somewhere You Are'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 스마트카드 등)입니다. Something You Are는 생체 기반(지문, 홍채 등)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+          "핵심 개념을 떠올립니다. Authentication Factors, Something You Know",
+          "정답 판단 근거를 적용합니다. 패스워드나 PIN 번호는 사용자가 알고 있는 정보이므로 지식 기반(Something You Know) 인증에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Something You Have는 소유 기반(OTP, 스마트카드 등)입니다."
+        ],
+        "exam_traps": [
+          "Something You Have는 소유 기반(OTP, 스마트카드 등)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Authentication Factors'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Something You Know'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Know = 알고 있는 것(패스워드)"
+        ],
+        "detailed_summary": "사용자 인증 방식의 4가지 유형 중 패스워드의 분류를 묻는 문제입니다. 패스워드는 사용자가 기억하고 있는 지식을 기반으로 인증하는 Something You Know 방식입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은? 정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드나 PIN 번호는 사용자가 알고 있는 정보이므로 지식 기반(Something You Know) 인증에 해당합니다. 시험 포인트는 Something You Have는 소유 기반(OTP, 스마트카드 등)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인증 유형",
+        "지식 기반 인증",
+        "Something You Know",
+        "패스워드"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_56829fad42fb0c8b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          137
+        ],
+        "page_span": {
+          "start_page": 137,
+          "end_page": 137
+        },
+        "source_explanation": "전문가의 조언 | 백도어 탐지 방법 중 하나는 닫힌 포트 확인이 아니라 열린 포트 확인입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "153섹션 9필드"
+        ],
+        "chapter_label": "153섹션 9필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 153섹션 9필드",
+        "chapter_id": "chapter_159"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 112.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "백도어 탐지 방법으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "무결성 검사"
+          },
+          {
+            "label": "2",
+            "text": "닫힌 포트 확인"
+          },
+          {
+            "label": "3",
+            "text": "로그 분석"
+          },
+          {
+            "label": "4",
+            "text": "SetUID 파일 검사"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "닫힌 포트 확인"
+        ],
+        "answer_text": "닫힌 포트 확인"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 백도어 탐지 방법 중 하나는 닫힌 포트 확인이 아니라 열린 포트 확인입니다.",
+        "summary": "백도어를 탐지하는 올바른 방법을 묻는 문제입니다.",
+        "why_correct": [
+          "백도어는 외부 통신을 위해 특정 포트를 열어두므로 '열린 포트'를 확인해야 합니다. '닫힌 포트' 확인은 의미가 없습니다."
+        ],
+        "why_others_wrong": [
+          "무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+        ],
+        "key_concepts": [
+          "백도어 탐지",
+          "열린 포트"
+        ],
+        "memory_cues": [
+          "백도어 = 열린 문(Port) 찾기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "무결성 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 닫힌 포트 확인'인데 이 선택지는 '무결성 검사'이므로 일치하지 않습니다. 무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+          },
+          {
+            "label": "2",
+            "text": "닫힌 포트 확인",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 닫힌 포트 확인'와 일치합니다. 백도어는 외부 통신을 위해 특정 포트를 열어두므로 '열린 포트'를 확인해야 합니다. '닫힌 포트' 확인은 의미가 없습니다."
+          },
+          {
+            "label": "3",
+            "text": "로그 분석",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 닫힌 포트 확인'인데 이 선택지는 '로그 분석'이므로 일치하지 않습니다. 무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+          },
+          {
+            "label": "4",
+            "text": "SetUID 파일 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 닫힌 포트 확인'인데 이 선택지는 'SetUID 파일 검사'이므로 일치하지 않습니다. 무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 백도어 탐지 방법으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 백도어 탐지, 열린 포트",
+          "정답 판단 근거를 적용합니다. 백도어는 외부 통신을 위해 특정 포트를 열어두므로 '열린 포트'를 확인해야 합니다. '닫힌 포트' 확인은 의미가 없습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+        ],
+        "exam_traps": [
+          "무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '백도어 탐지'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '열린 포트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 백도어 = 열린 문(Port) 찾기"
+        ],
+        "detailed_summary": "백도어를 탐지하는 올바른 방법을 묻는 문제입니다. 전문가의 조언 | 백도어 탐지 방법 중 하나는 닫힌 포트 확인이 아니라 열린 포트 확인입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 백도어 탐지 방법으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 닫힌 포트 확인'와 일치합니다. 백도어는 외부 통신을 위해 특정 포트를 열어두므로 '열린 포트'를 확인해야 합니다. '닫힌 포트' 확인은 의미가 없습니다. 시험 포인트는 무결성 검사(파일 변조 확인), 로그 분석(비정상 접속 확인), SetUID 검사(권한 상승 확인)는 모두 유효한 탐지 방법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "백도어",
+        "Backdoor",
+        "포트 확인",
+        "무결성 검사"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e1f76764679e3fa0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          137
+        ],
+        "page_span": {
+          "start_page": 137,
+          "end_page": 137
+        },
+        "source_explanation": "전문가의 조언 | 패스워드를 기억해서 사용하는 것이므로 Something You Know(지식 기반 인증)에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "154섹션 3필드"
+        ],
+        "chapter_label": "154섹션 3필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 154섹션 3필드",
+        "chapter_id": "chapter_160"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 112.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Something You Have"
+          },
+          {
+            "label": "2",
+            "text": "Something You Are"
+          },
+          {
+            "label": "3",
+            "text": "Something You Know"
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Something You Know"
+        ],
+        "answer_text": "Something You Know"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 패스워드를 기억해서 사용하는 것이므로 Something You Know(지식 기반 인증)에 해당합니다.",
+        "summary": "인증의 4가지 요소 중 패스워드의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "패스워드, PIN 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다."
+        ],
+        "why_others_wrong": [
+          "Something You Have는 소유 기반(OTP, 신분증)입니다.",
+          "Something You Are는 생체 기반(지문, 홍채)입니다.",
+          "Somewhere You Are는 위치 기반(IP, GPS)입니다."
+        ],
+        "key_concepts": [
+          "인증 4요소"
+        ],
+        "memory_cues": [
+          "Know = 머릿속 지식 = 패스워드"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Something You Have",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Have'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 신분증)입니다. Something You Are는 생체 기반(지문, 홍채)입니다."
+          },
+          {
+            "label": "2",
+            "text": "Something You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Something You Are'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 신분증)입니다. Something You Are는 생체 기반(지문, 홍채)입니다."
+          },
+          {
+            "label": "3",
+            "text": "Something You Know",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드, PIN 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다."
+          },
+          {
+            "label": "4",
+            "text": "Somewhere You Are",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Something You Know'인데 이 선택지는 'Somewhere You Are'이므로 일치하지 않습니다. Something You Have는 소유 기반(OTP, 신분증)입니다. Something You Are는 생체 기반(지문, 홍채)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은?",
+          "핵심 개념을 떠올립니다. 인증 4요소",
+          "정답 판단 근거를 적용합니다. 패스워드, PIN 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Something You Have는 소유 기반(OTP, 신분증)입니다."
+        ],
+        "exam_traps": [
+          "Something You Have는 소유 기반(OTP, 신분증)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인증 4요소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Know = 머릿속 지식 = 패스워드"
+        ],
+        "detailed_summary": "인증의 4가지 요소 중 패스워드의 분류를 묻는 문제입니다. 전문가의 조언 | 패스워드를 기억해서 사용하는 것이므로 Something You Know(지식 기반 인증)에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인증의 유형 중에서 패스워드를 사용하는 경우에 해당하는 인증 유형은? 정답입니다. 이 선택지는 실제 정답인 '3번 Something You Know'와 일치합니다. 패스워드, PIN 등은 사용자가 머릿속에 알고 있는 정보이므로 '지식 기반(Something You Know)' 인증입니다. 시험 포인트는 Something You Have는 소유 기반(OTP, 신분증)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "인증 유형",
+        "지식 기반 인증",
+        "Something You Know",
+        "패스워드"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_433491df860aaf96",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          157
+        ],
+        "page_span": {
+          "start_page": 157,
+          "end_page": 157
+        },
+        "source_explanation": "문제에 제시된 내용은 Pharming의 개념입니다.\n- 랜섬웨어(Ransomware): 인터넷 사용자의 컴퓨터에 잠입해 내부 문서나 파일 등을 암호화해 사용자가 열지 못하게 하는 프로그램으로, 암호 해독용 프로그램의 전달을 조건으로 사용자에게 돈을 요구하기도 함\n- 피싱(Phishing): 낚시라는 뜻의 은어로, 허위 웹 사이트를 내세워 사용자의 개인 신용 정보를 빼내는 수법을 의미함\n- 크로스사이트 스크립팅(XSS): 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취하거나, 비정상적인 기능 수행을 유발하는 보안 약점"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "96. 합법적으로 소유하고 있던 사용자의 도메인을 탈취하거나 DNS 이름을 속여 사용자들이 진짜 사이트로 오인하도록 유도하여 개인 정보를 훔치는 공격 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Ransomware"
+          },
+          {
+            "label": "2",
+            "text": "Pharming"
+          },
+          {
+            "label": "3",
+            "text": "Phishing"
+          },
+          {
+            "label": "4",
+            "text": "XSS"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Pharming"
+        ],
+        "answer_text": "Pharming"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 Pharming의 개념입니다.\n- 랜섬웨어(Ransomware): 인터넷 사용자의 컴퓨터에 잠입해 내부 문서나 파일 등을 암호화해 사용자가 열지 못하게 하는 프로그램으로, 암호 해독용 프로그램의 전달을 조건으로 사용자에게 돈을 요구하기도 함\n- 피싱(Phishing): 낚시라는 뜻의 은어로, 허위 웹 사이트를 내세워 사용자의 개인 신용 정보를 빼내는 수법을 의미함\n- 크로스사이트 스크립팅(XSS): 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취하거나, 비정상적인 기능 수행을 유발하는 보안 약점",
+        "summary": "사용자가 올바른 주소를 입력해도 가짜 사이트로 접속되게 만드는 공격 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "Pharming은 DNS 정보를 변조하거나 도메인을 탈취하여 사용자를 속이는 고도화된 사기 수법입니다."
+        ],
+        "why_others_wrong": [
+          "Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+        ],
+        "key_concepts": [
+          "Pharming",
+          "DNS Spoofing"
+        ],
+        "memory_cues": [
+          "팜(Farm) = 농장 전체를 가짜로 꾸며놓고 기다림"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Ransomware",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Pharming'인데 이 선택지는 'Ransomware'이므로 일치하지 않습니다. Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+          },
+          {
+            "label": "2",
+            "text": "Pharming",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Pharming'와 일치합니다. Pharming은 DNS 정보를 변조하거나 도메인을 탈취하여 사용자를 속이는 고도화된 사기 수법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Phishing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Pharming'인데 이 선택지는 'Phishing'이므로 일치하지 않습니다. Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+          },
+          {
+            "label": "4",
+            "text": "XSS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Pharming'인데 이 선택지는 'XSS'이므로 일치하지 않습니다. Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 합법적으로 소유하고 있던 사용자의 도메인을 탈취하거나 DNS 이름을 속여 사용자들이 진짜 사이트로 오인하도록 유도하여 개인 정보를 훔치는 공격 기법은?",
+          "핵심 개념을 떠올립니다. Pharming, DNS Spoofing",
+          "정답 판단 근거를 적용합니다. Pharming은 DNS 정보를 변조하거나 도메인을 탈취하여 사용자를 속이는 고도화된 사기 수법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+        ],
+        "exam_traps": [
+          "Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Pharming'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DNS Spoofing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 팜(Farm) = 농장 전체를 가짜로 꾸며놓고 기다림"
+        ],
+        "detailed_summary": "사용자가 올바른 주소를 입력해도 가짜 사이트로 접속되게 만드는 공격 기법을 묻는 문제입니다. 문제에 제시된 내용은 Pharming의 개념입니다. - 랜섬웨어(Ransomware): 인터넷 사용자의 컴퓨터에 잠입해 내부 문서나 파일 등을 암호화해 사용자가 열지 못하게 하는 프로그램으로, 암호 해독용 프로그램의 전달을 조건으로 사용자에게 돈을 요구하기도 함 - 피싱(Phishing): 낚시라는 뜻의 은어로, 허위 웹 사이트를 내세워 사용자의 개인 신용 정보를 빼내는 수법을 의미함 - 크로스사이트 스크립팅(XSS): 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취하거나, 비정상적인 기능 수행을 유발하는 보안 약점 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 합법적으로 소유하고 있던 사용자의 도메인을 탈취하거나 DNS 이름을 속여 사용자들이 진짜 사이트로 오인하도록 유도하여 개인 정보를 훔치는 공격 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 Pharming'와 일치합니다. Pharming은 DNS 정보를 변조하거나 도메인을 탈취하여 사용자를 속이는 고도화된 사기 수법입니다. 시험 포인트는 Phishing은 주로 이메일 링크를 이용하며, Ransomware는 파일 암호화 후 금전 요구, XSS는 웹 스크립트 삽입 공격입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Pharming",
+        "DNS 스푸핑",
+        "도메인 탈취",
+        "보안 공격"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_edc67f011ff2ac5b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          157
+        ],
+        "page_span": {
+          "start_page": 157,
+          "end_page": 157
+        },
+        "source_explanation": "3번은 인가(Authorization)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_100",
+        "topic_title": "악성코드와 인증·보안 운영",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "악성코드와 인증·보안 운영",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "97. 인증(Authentication)과 인가(Authorization)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인증은 자신의 신원(Identity)을 시스템에 증명하는 과정이다."
+          },
+          {
+            "label": "2",
+            "text": "인가는 어떤 동작을 수행할 수 있는지 검증하는 것이다."
+          },
+          {
+            "label": "3",
+            "text": "인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다."
+          },
+          {
+            "label": "4",
+            "text": "인가는 어떤 자원에 접근할 수 있는지 검증하는 것이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다."
+        ],
+        "answer_text": "인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다."
+      },
+      "explanation": {
+        "source_text": "3번은 인가(Authorization)에 대한 설명입니다.",
+        "summary": "보안의 핵심 개념인 인증과 인가의 차이점을 묻는 문제입니다.",
+        "why_correct": [
+          "사용 권한을 부여하는 것은 인증(누구인지 확인)이 아니라 인가(무엇을 할 수 있는지 허가)의 역할입니다."
+        ],
+        "why_others_wrong": [
+          "인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+        ],
+        "key_concepts": [
+          "Authentication",
+          "Authorization"
+        ],
+        "memory_cues": [
+          "인증 = ID/PW 확인",
+          "인가 = 권한(Permission) 부여"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인증은 자신의 신원(Identity)을 시스템에 증명하는 과정이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.'인데 이 선택지는 '인증은 자신의 신원(Identity)을 시스템에 증명하는 과정이다.'이므로 일치하지 않습니다. 인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+          },
+          {
+            "label": "2",
+            "text": "인가는 어떤 동작을 수행할 수 있는지 검증하는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.'인데 이 선택지는 '인가는 어떤 동작을 수행할 수 있는지 검증하는 것이다.'이므로 일치하지 않습니다. 인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+          },
+          {
+            "label": "3",
+            "text": "인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.'와 일치합니다. 사용 권한을 부여하는 것은 인증(누구인지 확인)이 아니라 인가(무엇을 할 수 있는지 허가)의 역할입니다."
+          },
+          {
+            "label": "4",
+            "text": "인가는 어떤 자원에 접근할 수 있는지 검증하는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.'인데 이 선택지는 '인가는 어떤 자원에 접근할 수 있는지 검증하는 것이다.'이므로 일치하지 않습니다. 인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 인증(Authentication)과 인가(Authorization)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. Authentication, Authorization",
+          "정답 판단 근거를 적용합니다. 사용 권한을 부여하는 것은 인증(누구인지 확인)이 아니라 인가(무엇을 할 수 있는지 허가)의 역할입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+        ],
+        "exam_traps": [
+          "인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Authentication'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Authorization'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인증 = ID/PW 확인",
+          "암기 포인트를 떠올립니다. 인가 = 권한(Permission) 부여"
+        ],
+        "detailed_summary": "보안의 핵심 개념인 인증과 인가의 차이점을 묻는 문제입니다. 3번은 인가(Authorization)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 인증(Authentication)과 인가(Authorization)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 인증은 클라이언트로부터 요청된 정보에 대한 사용 권한을 부여하는 것이다.'와 일치합니다. 사용 권한을 부여하는 것은 인증(누구인지 확인)이 아니라 인가(무엇을 할 수 있는지 허가)의 역할입니다. 시험 포인트는 인증은 신원 확인 과정이며, 인가는 권한 검증 과정이라는 설명은 모두 옳습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "인증",
+        "인가",
+        "Authentication",
+        "Authorization"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,5669 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_049",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 6,
+    "source_sequences": [
+      221,
+      222,
+      223,
+      224,
+      225,
+      226
+    ],
+    "source_lecture_ids": [
+      "0221_221",
+      "0222_222",
+      "0223_223",
+      "0224_224",
+      "0225_225",
+      "0226_226"
+    ],
+    "source_titles": [
+      "뷰",
+      "파티션의 종류",
+      "분산 데이터베이스",
+      "분산 데이터베이스의 목표",
+      "분산 데이터베이스의 장·단점",
+      "분산 데이터베이스 설계 방법 분할"
+    ],
+    "keywords": [
+      "분산",
+      "데이터베이스",
+      "데이터베이스의",
+      "파티션의",
+      "종류"
+    ],
+    "highlight_keywords": [
+      "회원",
+      "상품",
+      "뷰(View)의 특징",
+      "테이블 1",
+      "테이블 2",
+      "분할",
+      "해시",
+      "범위",
+      "판매일자",
+      "테이블"
+    ],
+    "secondary_keywords": [
+      "데이터의 논리적 독립성을 제공할 수 있음.",
+      "뷰를",
+      "삭제",
+      "뷰의",
+      "뷰는",
+      "테이블의",
+      "Partitioning",
+      "분할의",
+      "조합",
+      "Hash Partitioning",
+      "라운드",
+      "로빈"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0221_221",
+      "sequence": 221,
+      "number": "221",
+      "course_code": "350219",
+      "title": "뷰",
+      "duration_seconds": 470,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "segment_count": 21,
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "tokens": [
+            "회원"
+          ],
+          "score": 108,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "상품",
+          "tokens": [
+            "상품"
+          ],
+          "score": 107,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "뷰(View)의 특징",
+          "tokens": [
+            "View"
+          ],
+          "score": 88,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테이블 1",
+          "tokens": [
+            "테이블"
+          ],
+          "score": 80,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테이블 2",
+          "tokens": [
+            "테이블"
+          ],
+          "score": 80,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "tokens": [
+            "데이터의",
+            "논리적",
+            "독립성을",
+            "제공할",
+            "있음"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "뷰를",
+          "tokens": [
+            "뷰를"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 35,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "뷰의",
+          "tokens": [
+            "뷰의"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "뷰는",
+          "tokens": [
+            "뷰는"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "테이블의",
+          "tokens": [
+            "테이블의"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-001-source-seg-019::01",
+          "prompt": "그리고 이 뷰 A를 내가 만들 때 ______번이다 2번이다 3번이다 해서 요 세 개 테이블을 가지고 만들었죠.",
+          "answer": "테이블 1",
+          "original": "그리고 이 뷰 A를 내가 만들 때 테이블 1번이다 2번이다 3번이다 해서 요 세 개 테이블을 가지고 만들었죠.",
+          "keyword": "테이블 1",
+          "source_segment_id": "topic_049-subtopic-001-source-seg-019",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '테이블 1'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-001-source-seg-004::02",
+          "prompt": "뷰의 조작 방식과 가상 ______ 의미 설명",
+          "answer": "테이블의",
+          "original": "뷰의 조작 방식과 가상 테이블의 의미 설명",
+          "keyword": "테이블의",
+          "source_segment_id": "topic_049-subtopic-001-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '테이블의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0222_222",
+      "sequence": 222,
+      "number": "222",
+      "course_code": "350220",
+      "title": "파티션의 종류",
+      "duration_seconds": 422,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "segment_count": 19,
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "tokens": [
+            "분할"
+          ],
+          "score": 57,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "해시",
+          "tokens": [
+            "해시"
+          ],
+          "score": 47,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "범위",
+          "tokens": [
+            "범위"
+          ],
+          "score": 41,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "판매일자",
+          "tokens": [
+            "판매일자"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테이블",
+          "tokens": [
+            "테이블"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Partitioning",
+          "tokens": [
+            "Partitioning"
+          ],
+          "score": 37,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분할의",
+          "tokens": [
+            "분할의"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "조합",
+          "tokens": [
+            "조합"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Hash Partitioning",
+          "tokens": [
+            "Hash",
+            "Partitioning"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "라운드",
+          "tokens": [
+            "라운드"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "로빈",
+          "tokens": [
+            "로빈"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-002-source-seg-004::01",
+          "prompt": "이 범위 분할이라는 거는 지금처럼 하나의 ______이 있을 때 만약에 판매 일자라는 그 필드가 있어요.",
+          "answer": "테이블",
+          "original": "이 범위 분할이라는 거는 지금처럼 하나의 테이블이 있을 때 만약에 판매 일자라는 그 필드가 있어요.",
+          "keyword": "테이블",
+          "source_segment_id": "topic_049-subtopic-002-source-seg-004",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '테이블'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-002-source-seg-003::02",
+          "prompt": "범위 분할(Range ______)의 개념 설명",
+          "answer": "Partitioning",
+          "original": "범위 분할(Range Partitioning)의 개념 설명",
+          "keyword": "Partitioning",
+          "source_segment_id": "topic_049-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Partitioning'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-002-source-seg-004::03",
+          "prompt": "범위 ______ 시각적 예시",
+          "answer": "분할의",
+          "original": "범위 분할의 시각적 예시",
+          "keyword": "분할의",
+          "source_segment_id": "topic_049-subtopic-002-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '분할의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-002-source-seg-006::04",
+          "prompt": "해시 분할(______) 개념 도입",
+          "answer": "Hash Partitioning",
+          "original": "해시 분할(Hash Partitioning) 개념 도입",
+          "keyword": "Hash Partitioning",
+          "source_segment_id": "topic_049-subtopic-002-source-seg-006",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Hash Partitioning'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0223_223",
+      "sequence": 223,
+      "number": "223",
+      "course_code": "350221",
+      "title": "분산 데이터베이스",
+      "duration_seconds": 102,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "segment_count": 6,
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "tokens": [
+            "분산"
+          ],
+          "score": 41,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산 처리기",
+          "tokens": [
+            "분산",
+            "처리기"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산 데이터베이스",
+          "tokens": [
+            "분산",
+            "데이터베이스"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "구성",
+          "tokens": [
+            "구성"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산 데이터베이스의 구성 요소",
+          "tokens": [
+            "분산",
+            "데이터베이스의",
+            "구성",
+            "요소"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "통신 네트워크",
+          "tokens": [
+            "통신",
+            "네트워크"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산되어",
+          "tokens": [
+            "분산되어"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "있는",
+          "tokens": [
+            "있는"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 구성 요소 요약 및 마무리",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "구성",
+            "요소",
+            "요약",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스의 정의 및 특성 설명",
+          "tokens": [
+            "분산",
+            "데이터베이스의",
+            "특성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "통신 네트워크의 정의 및 역할 설명",
+          "tokens": [
+            "통신",
+            "네트워크의",
+            "역할"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-003-source-seg-002::01",
+          "prompt": "여기에 구성 요소에는 지금처럼 ______라는 것도 있고요, 분산 데이터베이스라는 것도 있고, 통신 네트워크라는 것도 있고 요렇게 세 가지가 있습니다.",
+          "answer": "분산 처리기",
+          "original": "여기에 구성 요소에는 지금처럼 분산 처리기라는 것도 있고요, 분산 데이터베이스라는 것도 있고, 통신 네트워크라는 것도 있고 요렇게 세 가지가 있습니다.",
+          "keyword": "분산 처리기",
+          "source_segment_id": "topic_049-subtopic-003-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '분산 처리기'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-003-source-seg-001::02",
+          "prompt": "강의 도입 및 ______ 구성 요소 학습 안내",
+          "answer": "분산 데이터베이스",
+          "original": "강의 도입 및 분산 데이터베이스 구성 요소 학습 안내",
+          "keyword": "분산 데이터베이스",
+          "source_segment_id": "topic_049-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '분산 데이터베이스'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-003-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "분산 데이터베이스의 구성 요소",
+          "original": "이번 시간에는 우리 분산 데이터베이스의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "분산 데이터베이스의 구성 요소",
+          "source_segment_id": "topic_049-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '분산 데이터베이스의 구성 요소'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-003-source-seg-002::04",
+          "prompt": "여기에 구성 요소에는 지금처럼 분산 처리기라는 것도 있고요, 분산 데이터베이스라는 것도 있고, ______라는 것도 있고 요렇게 세 가지가 있습니다.",
+          "answer": "통신 네트워크",
+          "original": "여기에 구성 요소에는 지금처럼 분산 처리기라는 것도 있고요, 분산 데이터베이스라는 것도 있고, 통신 네트워크라는 것도 있고 요렇게 세 가지가 있습니다.",
+          "keyword": "통신 네트워크",
+          "source_segment_id": "topic_049-subtopic-003-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '통신 네트워크'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0224_224",
+      "sequence": 224,
+      "number": "224",
+      "course_code": "350222",
+      "title": "분산 데이터베이스의 목표",
+      "duration_seconds": 136,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "tokens": [
+            "투명성"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산",
+          "tokens": [
+            "분산"
+          ],
+          "score": 28,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산 데이터베이스의 목표",
+          "tokens": [
+            "분산",
+            "데이터베이스의",
+            "목표"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Transparency",
+          "tokens": [
+            "Transparency"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분산 데이터베이스 설계",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "중복",
+          "tokens": [
+            "중복"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Replication Transparency",
+          "tokens": [
+            "Replication",
+            "Transparency"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스에서 '투명성'의 개념 정의",
+          "tokens": [
+            "분산",
+            "데이터베이스에서",
+            "투명성",
+            "개념"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스의 4대 목표 정리 및 강조",
+          "tokens": [
+            "분산",
+            "데이터베이스의",
+            "목표",
+            "강조"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "병행 투명성과 트랜잭션의 일관성 유지 설명",
+          "tokens": [
+            "병행",
+            "투명성과",
+            "트랜잭션의",
+            "일관성",
+            "유지"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 단원 시작 및 도입",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "설계",
+            "단원",
+            "시작",
+            "도입"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-004-source-seg-002::01",
+          "prompt": "분산 데이터베이스에서 '______'의 개념 정의",
+          "answer": "투명성",
+          "original": "분산 데이터베이스에서 '투명성'의 개념 정의",
+          "keyword": "투명성",
+          "source_segment_id": "topic_049-subtopic-004-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '투명성'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-004-source-seg-002::02",
+          "prompt": "그 다음에 ______요.",
+          "answer": "분산 데이터베이스의 목표",
+          "original": "그 다음에 분산 데이터베이스의 목표요.",
+          "keyword": "분산 데이터베이스의 목표",
+          "source_segment_id": "topic_049-subtopic-004-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '분산 데이터베이스의 목표'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-004-source-seg-003::03",
+          "prompt": "위치 투명성(Location ______) : 액세스하려는 데이터베이스의 실제 위치를 알 필요 없이 단지 데이터베이스의 논리적인 명칭만으로 액세스할 수 있음",
+          "answer": "Transparency",
+          "original": "위치 투명성(Location Transparency) : 액세스하려는 데이터베이스의 실제 위치를 알 필요 없이 단지 데이터베이스의 논리적인 명칭만으로 액세스할 수 있음",
+          "keyword": "Transparency",
+          "source_segment_id": "topic_049-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Transparency'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-004-source-seg-001::04",
+          "prompt": "______ 단원 시작 및 도입",
+          "answer": "분산 데이터베이스 설계",
+          "original": "분산 데이터베이스 설계 단원 시작 및 도입",
+          "keyword": "분산 데이터베이스 설계",
+          "source_segment_id": "topic_049-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '분산 데이터베이스 설계'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 5,
+      "lecture_id": "0225_225",
+      "sequence": 225,
+      "number": "225",
+      "course_code": "350223",
+      "title": "분산 데이터베이스의 장·단점",
+      "duration_seconds": 165,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "segment_count": 13,
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "tokens": [
+            "분산"
+          ],
+          "score": 36,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "단점",
+          "tokens": [
+            "단점"
+          ],
+          "score": 32,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "그리고",
+          "tokens": [
+            "그리고"
+          ],
+          "score": 12,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "시스템",
+          "tokens": [
+            "시스템"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "분산 데이터베이스 단점 재정리 및 마무리",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "단점",
+            "재정리",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "효용성, 융통성, 신뢰성 및 가용성 설명",
+          "tokens": [
+            "효용성",
+            "융통성",
+            "신뢰성",
+            "가용성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "중앙 컴퓨터 장애 시 영향 최소화 설명",
+          "tokens": [
+            "중앙",
+            "컴퓨터",
+            "장애",
+            "영향",
+            "최소화"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 제어 및 자료 공유성 향상 설명",
+          "tokens": [
+            "분산",
+            "제어",
+            "자료",
+            "공유성",
+            "향상"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 장단점 학습 시작",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "장단점",
+            "학습",
+            "시작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 장점의 특징 개요",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "장점의",
+            "개요"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-005-source-seg-001::01",
+          "prompt": "분산 ______ 장단점 학습 시작",
+          "answer": "데이터베이스",
+          "original": "분산 데이터베이스 장단점 학습 시작",
+          "keyword": "데이터베이스",
+          "source_segment_id": "topic_049-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-005-source-seg-004::02",
+          "prompt": "______ 분산 제어가 가능하죠.",
+          "answer": "그리고",
+          "original": "그리고 분산 제어가 가능하죠.",
+          "keyword": "그리고",
+          "source_segment_id": "topic_049-subtopic-005-source-seg-004",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '그리고'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-005-source-seg-005::03",
+          "prompt": "______ 성능 향상에 관한 설명",
+          "answer": "시스템",
+          "original": "시스템 성능 향상에 관한 설명",
+          "keyword": "시스템",
+          "source_segment_id": "topic_049-subtopic-005-source-seg-005",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '시스템'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 6,
+      "lecture_id": "0226_226",
+      "sequence": 226,
+      "number": "226",
+      "course_code": "350805",
+      "title": "분산 데이터베이스 설계 방법 분할",
+      "duration_seconds": 186,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "tokens": [
+            "사원번호",
+            "사원이름",
+            "부서",
+            "입사일자",
+            "나이"
+          ],
+          "score": 56,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "영업부",
+          "tokens": [
+            "영업부"
+          ],
+          "score": 42,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분할",
+          "tokens": [
+            "분할"
+          ],
+          "score": 37,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "tokens": [
+            "S001",
+            "홍길동",
+            "영업부"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "S002 장길산 영업부 2017.08.05 28",
+          "tokens": [
+            "S002",
+            "장길산",
+            "영업부"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "S003 김말자 영업부 2019.11.03 35",
+          "tokens": [
+            "S003",
+            "김말자",
+            "영업부"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 방법 분할",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "설계",
+            "분할"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "수평",
+          "tokens": [
+            "수평"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 방법 - 분할",
+          "tokens": [
+            "분산",
+            "데이터베이스",
+            "설계",
+            "분할"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "수직",
+          "tokens": [
+            "수직"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Fragment",
+          "tokens": [
+            "Fragment"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_049-subtopic-006-source-seg-004::01",
+          "prompt": "S001 홍길동 ______ 2018.05.09 30",
+          "answer": "영업부",
+          "original": "S001 홍길동 영업부 2018.05.09 30",
+          "keyword": "영업부",
+          "source_segment_id": "topic_049-subtopic-006-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '영업부'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_049-subtopic-006-source-seg-002::02",
+          "prompt": "분할(______)의 정의",
+          "answer": "Fragment",
+          "original": "분할(Fragment)의 정의",
+          "keyword": "Fragment",
+          "source_segment_id": "topic_049-subtopic-006-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Fragment'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_049",
+    "sequence": 49,
+    "number": "49",
+    "title": "뷰·파티션·분산 데이터베이스",
+    "title_raw": "뷰·파티션·분산 데이터베이스",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 6,
+    "source_sequences": [
+      221,
+      222,
+      223,
+      224,
+      225,
+      226
+    ],
+    "source_titles": [
+      "뷰",
+      "파티션의 종류",
+      "분산 데이터베이스",
+      "분산 데이터베이스의 목표",
+      "분산 데이터베이스의 장·단점",
+      "분산 데이터베이스 설계 방법 분할"
+    ],
+    "preview_text": "뷰, 파티션의 종류, 분산 데이터베이스 등",
+    "segment_count": 77,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 뷰, 파티션의 종류, 분산 데이터베이스, 분산 데이터베이스의 목표 등을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 6개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 뷰, 파티션의 종류, 분산 데이터베이스, 분산 데이터베이스의 목표 등을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 6개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1481,
+    "source_titles_preview": [
+      "뷰",
+      "파티션의 종류",
+      "분산 데이터베이스"
+    ],
+    "highlight_keywords": [
+      "회원",
+      "상품",
+      "뷰(View)의 특징",
+      "테이블 1",
+      "테이블 2",
+      "분할",
+      "해시",
+      "범위",
+      "판매일자",
+      "테이블"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_049-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 제목 및 주제 소개",
+      "screen_text_lines": [
+        "뷰(View)의 특징"
+      ],
+      "screen_text": "뷰(View)의 특징",
+      "spoken_sentences": [
+        "이번 시간에는 우리 뷰의 특징에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 뷰의 특징에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 7,
+      "end_seconds": 20,
+      "duration_seconds": 13,
+      "timeline_summary": "뷰의 정의 및 기본 테이블과의 관계 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.",
+        "뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.",
+        "데이터의 논리적 독립성을 제공할 수 있음."
+      ],
+      "screen_text": "뷰(View)의 특징\n뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.\n뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.\n데이터의 논리적 독립성을 제공할 수 있음.",
+      "spoken_sentences": [
+        "우리 뷰라는 거는 하나 이상의 기본 테이블로부터 유도된 그런 가상의 테이블을 보고 우리가 뷰라고 했죠.",
+        "해서 우리 뷰라는 거는 가상 테이블입니다."
+      ],
+      "spoken_text": "우리 뷰라는 거는 하나 이상의 기본 테이블로부터 유도된 그런 가상의 테이블을 보고 우리가 뷰라고 했죠. 해서 우리 뷰라는 거는 가상 테이블입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "뷰는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:31",
+      "start_seconds": 20,
+      "end_seconds": 31,
+      "duration_seconds": 11,
+      "timeline_summary": "뷰의 형태 및 구조적 특징 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.",
+        "뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.",
+        "데이터의 논리적 독립성을 제공할 수 있음."
+      ],
+      "screen_text": "뷰(View)의 특징\n뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.\n뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.\n데이터의 논리적 독립성을 제공할 수 있음.",
+      "spoken_sentences": [
+        "얘는 여기 이름에도 써져 있듯이 테이블이라는 말이 들어갔죠.",
+        "해서 이 뷰의 그 형태가 우리 기본 테이블과 같은 형태의 구조를 사용을 합니다."
+      ],
+      "spoken_text": "얘는 여기 이름에도 써져 있듯이 테이블이라는 말이 들어갔죠. 해서 이 뷰의 그 형태가 우리 기본 테이블과 같은 형태의 구조를 사용을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "뷰는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:00:31",
+      "end_time_hms": "00:00:42",
+      "start_seconds": 31,
+      "end_seconds": 42,
+      "duration_seconds": 11,
+      "timeline_summary": "뷰의 조작 방식과 가상 테이블의 의미 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.",
+        "뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.",
+        "데이터의 논리적 독립성을 제공할 수 있음."
+      ],
+      "screen_text": "뷰(View)의 특징\n뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.\n뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.\n데이터의 논리적 독립성을 제공할 수 있음.",
+      "spoken_sentences": [
+        "해서 이 뷰도 하나의 테이블이다 그렇게 생각하시면 돼요.",
+        "근데 앞에 가상이라는 말이 붙었으니까 진짜 테이블이다 가짜 테이블이다?",
+        "가짜 테이블이더라."
+      ],
+      "spoken_text": "해서 이 뷰도 하나의 테이블이다 그렇게 생각하시면 돼요. 근데 앞에 가상이라는 말이 붙었으니까 진짜 테이블이다 가짜 테이블이다? 가짜 테이블이더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "뷰는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:00:42",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 42,
+      "end_seconds": 68,
+      "duration_seconds": 26,
+      "timeline_summary": "뷰의 조작성 및 물리적 구현 여부 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.",
+        "뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.",
+        "데이터의 논리적 독립성을 제공할 수 있음."
+      ],
+      "screen_text": "뷰(View)의 특징\n뷰는 기본 테이블로부터 유도된 테이블이기 때문에 기본 테이블과 같은 형태의 구조를 사용하며, 조작도 기본 테이블과 거의 같음.\n뷰는 가상 테이블이기 때문에 물리적으로 구현되어 있지 않음.\n데이터의 논리적 독립성을 제공할 수 있음.",
+      "spoken_sentences": [
+        "해서 이 뷰라는 거를 우리가 조작하는 것도 기본 테이블, 기본 테이블과 거의 같아요.",
+        "해서 얘는 말 그대로 가상이기 때문에 실제로, 실제로 물리적으로 구현이 된다 안 된다?",
+        "되지 않더라.",
+        "요런 게 우리 가상 테이블 뷰라는 거요."
+      ],
+      "spoken_text": "해서 이 뷰라는 거를 우리가 조작하는 것도 기본 테이블, 기본 테이블과 거의 같아요. 해서 얘는 말 그대로 가상이기 때문에 실제로, 실제로 물리적으로 구현이 된다 안 된다? 되지 않더라. 요런 게 우리 가상 테이블 뷰라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "뷰는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 68,
+      "end_seconds": 85,
+      "duration_seconds": 17,
+      "timeline_summary": "쇼핑몰 데이터베이스 예시 도입",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "예를 들어서 내가 쇼핑몰을 운영하는데 지금처럼 회원 테이블이다, 상품 테이블이다, 주문 테이블이다 해서 요렇게 세 개의 테이블을 만들었습니다."
+      ],
+      "spoken_text": "예를 들어서 내가 쇼핑몰을 운영하는데 지금처럼 회원 테이블이다, 상품 테이블이다, 주문 테이블이다 해서 요렇게 세 개의 테이블을 만들었습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:41",
+      "start_seconds": 85,
+      "end_seconds": 101,
+      "duration_seconds": 16,
+      "timeline_summary": "회원 테이블의 데이터 저장 구조 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "그러면 우리 쇼핑몰에 들어와서 사람들이 막 회원 가입을 할 거예요.",
+        "그러면 그때 회원 가입할 때 그때 사용자들이 입력했던 그런 데이터들은 싹 다 우리 회원이라는 요 테이블에 저장이 되겠죠."
+      ],
+      "spoken_text": "그러면 우리 쇼핑몰에 들어와서 사람들이 막 회원 가입을 할 거예요. 그러면 그때 회원 가입할 때 그때 사용자들이 입력했던 그런 데이터들은 싹 다 우리 회원이라는 요 테이블에 저장이 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:01:41",
+      "end_time_hms": "00:02:02",
+      "start_seconds": 101,
+      "end_seconds": 122,
+      "duration_seconds": 21,
+      "timeline_summary": "상품 테이블의 데이터 저장 구조 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "해서 뭐 회원의 아이디다 비밀번호다 주소다 전화번호다 해서 그런 회원들에 대한 그런 정보들이 전부 다 회원 테이블에 싹 다 저장이 될 거고, 그리고 내가 쇼핑몰에서 뭔가 상품을 팔아야 되는데 그때 상품들에 대한 그런 정보들은 싹 다 상품 테이블에 들어 있을 거예요."
+      ],
+      "spoken_text": "해서 뭐 회원의 아이디다 비밀번호다 주소다 전화번호다 해서 그런 회원들에 대한 그런 정보들이 전부 다 회원 테이블에 싹 다 저장이 될 거고, 그리고 내가 쇼핑몰에서 뭔가 상품을 팔아야 되는데 그때 상품들에 대한 그런 정보들은 싹 다 상품 테이블에 들어 있을 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:02:02",
+      "end_time_hms": "00:02:23",
+      "start_seconds": 122,
+      "end_seconds": 143,
+      "duration_seconds": 21,
+      "timeline_summary": "주문 테이블의 데이터 저장 구조 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "해서 상품에 대한 그런 사진이 됐든 아니면 가격이 됐든 수량이 됐든 아니면 상품에 대한 그런 여러 가지 세부 정보들 있죠?",
+        "그런 것들이 싹 다 상품 테이블에 다 저장이 될 거고, 그리고 어떤 특정 회원이 내가 지금 판매하고 있는 그 상품이 마음에 들어서 만약에 주문을 했습니다."
+      ],
+      "spoken_text": "해서 상품에 대한 그런 사진이 됐든 아니면 가격이 됐든 수량이 됐든 아니면 상품에 대한 그런 여러 가지 세부 정보들 있죠? 그런 것들이 싹 다 상품 테이블에 다 저장이 될 거고, 그리고 어떤 특정 회원이 내가 지금 판매하고 있는 그 상품이 마음에 들어서 만약에 주문을 했습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:02:23",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 143,
+      "end_seconds": 165,
+      "duration_seconds": 22,
+      "timeline_summary": "주문내역 조회를 위한 마이페이지 시나리오 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "그러면 주문했을 때 몇 월 며칠 몇 시에 어떤 상품을 몇 개를 주문을 하고 어떻게 결제를 했는지 그때 배송지 주소는 어떻게 되는지 그런 내용들이 싹 다 주문 테이블에 다 저장이 될 거라구요.",
+        "그러고 나서 특정 회원이 물건을 주문하고 하루 이틀 정도 지난 다음에 자기 물건이 어디까지 배송됐는지 그게 궁금한 거예요."
+      ],
+      "spoken_text": "그러면 주문했을 때 몇 월 며칠 몇 시에 어떤 상품을 몇 개를 주문을 하고 어떻게 결제를 했는지 그때 배송지 주소는 어떻게 되는지 그런 내용들이 싹 다 주문 테이블에 다 저장이 될 거라구요. 그러고 나서 특정 회원이 물건을 주문하고 하루 이틀 정도 지난 다음에 자기 물건이 어디까지 배송됐는지 그게 궁금한 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:02:45",
+      "end_time_hms": "00:03:11",
+      "start_seconds": 165,
+      "end_seconds": 191,
+      "duration_seconds": 26,
+      "timeline_summary": "뷰를 통한 주문내역 통합 정보 제공 과정 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "해서 우리 홈페이지에 실제로 들어와서 마이페이지라는 곳에 이동하게 되면 그곳에 보면 주문 내역을 볼 수 있게끔 그렇게 되어 있죠.",
+        "그러면 이 주문 내역을 땅 하고 클릭을 했을 때 그때 회원 테이블에서 자기의 정보를 싹 다 가져갈 거고 상품 테이블에서 자기가 주문했던 그 상품에 대한 정보를 가져갈 거고 그리고 주문이라는 이 테이블에서 몇 월 며칠 몇 시에 어떤 제품을 어떻게 몇 개를 주문을 했는지 그런 것들을 싹 다 주문 테이블에서 다 가져갈 거라구요."
+      ],
+      "spoken_text": "해서 우리 홈페이지에 실제로 들어와서 마이페이지라는 곳에 이동하게 되면 그곳에 보면 주문 내역을 볼 수 있게끔 그렇게 되어 있죠. 그러면 이 주문 내역을 땅 하고 클릭을 했을 때 그때 회원 테이블에서 자기의 정보를 싹 다 가져갈 거고 상품 테이블에서 자기가 주문했던 그 상품에 대한 정보를 가져갈 거고 그리고 주문이라는 이 테이블에서 몇 월 며칠 몇 시에 어떤 제품을 어떻게 몇 개를 주문을 했는지 그런 것들을 싹 다 주문 테이블에서 다 가져갈 거라구요.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:03:11",
+      "end_time_hms": "00:03:39",
+      "start_seconds": 191,
+      "end_seconds": 219,
+      "duration_seconds": 28,
+      "timeline_summary": "뷰를 통한 데이터 접근의 제한성과 보안성 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "그렇게 가져가서 이 주문 내역에 그런 정보들을 싹 다 한꺼번에 보여준다고요.",
+        "그런 게 우리 뷰, 뷰라고 했습니다.",
+        "해서 어떤 특정 회원이 우리 쇼핑몰에 들어와서 물건을 주문한 지 벌써 한 4년 5년 됐어요.",
+        "그러면 자기가 작년에, 작년에 주문했던 그런 내역들을 보고 싶다 그러면 이 주문 내역을 통해서 우리가 검색도 할 수 있겠죠."
+      ],
+      "spoken_text": "그렇게 가져가서 이 주문 내역에 그런 정보들을 싹 다 한꺼번에 보여준다고요. 그런 게 우리 뷰, 뷰라고 했습니다. 해서 어떤 특정 회원이 우리 쇼핑몰에 들어와서 물건을 주문한 지 벌써 한 4년 5년 됐어요. 그러면 자기가 작년에, 작년에 주문했던 그런 내역들을 보고 싶다 그러면 이 주문 내역을 통해서 우리가 검색도 할 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:03:39",
+      "end_time_hms": "00:04:05",
+      "start_seconds": 219,
+      "end_seconds": 245,
+      "duration_seconds": 26,
+      "timeline_summary": "일반 사용자의 데이터 접근 범위 제한 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "해서 실제 사용자들이 이런 내역을 볼 때 이 뷰를 통해서 검색을 해서 그런 정보들을 전부 다 본다구요.",
+        "그때 이 회원이라는 이 테이블에 보게 되면 수없이 많은 그 사람들의 회원들의 정보가 싹 다 들어 있는데 그런 정보는 사용자가, 일반 사용자가 볼 수 있다 없다?",
+        "없더라 없더라.",
+        "그리고 우리 쇼핑몰에서 판매되고 있는 그런 상품들에 대한 그런 내역을 이 뷰를 통해서 전부 다 볼 수 있다 없다?"
+      ],
+      "spoken_text": "해서 실제 사용자들이 이런 내역을 볼 때 이 뷰를 통해서 검색을 해서 그런 정보들을 전부 다 본다구요. 그때 이 회원이라는 이 테이블에 보게 되면 수없이 많은 그 사람들의 회원들의 정보가 싹 다 들어 있는데 그런 정보는 사용자가, 일반 사용자가 볼 수 있다 없다? 없더라 없더라. 그리고 우리 쇼핑몰에서 판매되고 있는 그런 상품들에 대한 그런 내역을 이 뷰를 통해서 전부 다 볼 수 있다 없다?",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:04:05",
+      "end_time_hms": "00:04:18",
+      "start_seconds": 245,
+      "end_seconds": 258,
+      "duration_seconds": 13,
+      "timeline_summary": "사용자별 허용된 자료 제공 도구로서의 뷰 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "그리고 다른 회원이 주문한 그런 내역은 볼 수가 있다 없다?",
+        "없더라 없더라.",
+        "해서 이 뷰를 통해서는 자기 자신의 그런 데이터만 볼 수 있다구요.",
+        "그렇게 사용자에게 접근이 허용된 그런 자료만 제한적으로 보여주는 게 우리 뷰라구요 뷰."
+      ],
+      "spoken_text": "그리고 다른 회원이 주문한 그런 내역은 볼 수가 있다 없다? 없더라 없더라. 해서 이 뷰를 통해서는 자기 자신의 그런 데이터만 볼 수 있다구요. 그렇게 사용자에게 접근이 허용된 그런 자료만 제한적으로 보여주는 게 우리 뷰라구요 뷰.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:04:18",
+      "end_time_hms": "00:04:48",
+      "start_seconds": 258,
+      "end_seconds": 288,
+      "duration_seconds": 30,
+      "timeline_summary": "뷰의 논리적 독립성 및 관리 효율성 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "데이터의 논리적 독립성을 제공할 수 있음.",
+        "필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이하고 명령문이 간단해짐.",
+        "뷰를 통해서만 데이터에 접근하게 하면 뷰에 나타나지 않는 데이터를 안전하게 보호하는 효율적인 기법으로 사용할 수 있음."
+      ],
+      "screen_text": "뷰(View)의 특징\n데이터의 논리적 독립성을 제공할 수 있음.\n필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이하고 명령문이 간단해짐.\n뷰를 통해서만 데이터에 접근하게 하면 뷰에 나타나지 않는 데이터를 안전하게 보호하는 효율적인 기법으로 사용할 수 있음.",
+      "spoken_sentences": [
+        "해서 이 뷰라는 거는 데이터 논리적 독립성을 전부 다 제공해 줘요.",
+        "제공해 주고, 그리고 필요한 그 데이터만 필요한 그 데이터만 뷰로 정의를 해서 처리할 수 있기 때문에 관리가 용이하고 명령문이 간단해지는 거예요.",
+        "그리고 뷰를 통해서만 데이터 자기 자신의 데이터한테 접근할 수 있겠죠."
+      ],
+      "spoken_text": "해서 이 뷰라는 거는 데이터 논리적 독립성을 전부 다 제공해 줘요. 제공해 주고, 그리고 필요한 그 데이터만 필요한 그 데이터만 뷰로 정의를 해서 처리할 수 있기 때문에 관리가 용이하고 명령문이 간단해지는 거예요. 그리고 뷰를 통해서만 데이터 자기 자신의 데이터한테 접근할 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "데이터의 논리적 독립성을 제공할 수 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:04:48",
+      "end_time_hms": "00:05:07",
+      "start_seconds": 288,
+      "end_seconds": 307,
+      "duration_seconds": 19,
+      "timeline_summary": "기본 테이블과 정의 테이블의 개념 설명",
+      "screen_text_lines": [
+        "회원",
+        "테이블 1",
+        "상품",
+        "테이블 2"
+      ],
+      "screen_text": "회원\n테이블 1\n상품\n테이블 2",
+      "spoken_sentences": [
+        "그러면 이 뷰에 나타나지 않는 그런 데이터들은 안전하게 우리가 보호도 해 줄 수 있다구요.",
+        "그때 이 뷰 A라는 거를 우리가 만들어줄 때 이런 기본 테이블로부터 만들었다고요.",
+        "해서 뷰 A 입장에서 보게 되면 이 뷰를 만들기 위해서 유도된 이런 기본 테이블 있죠?",
+        "이런 기본 테이블을 보고 우리가 다른 말로 정의 테이블 그렇게 부르기도 합니다."
+      ],
+      "spoken_text": "그러면 이 뷰에 나타나지 않는 그런 데이터들은 안전하게 우리가 보호도 해 줄 수 있다구요. 그때 이 뷰 A라는 거를 우리가 만들어줄 때 이런 기본 테이블로부터 만들었다고요. 해서 뷰 A 입장에서 보게 되면 이 뷰를 만들기 위해서 유도된 이런 기본 테이블 있죠? 이런 기본 테이블을 보고 우리가 다른 말로 정의 테이블 그렇게 부르기도 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "회원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 108
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 107
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "테이블 2",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:05:07",
+      "end_time_hms": "00:05:31",
+      "start_seconds": 307,
+      "end_seconds": 331,
+      "duration_seconds": 24,
+      "timeline_summary": "뷰 구성을 통한 데이터 조작 연산 가능 조건 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.",
+        "일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.",
+        "뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨."
+      ],
+      "screen_text": "뷰(View)의 특징\n기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.\n일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.\n뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨.",
+      "spoken_sentences": [
+        "그리고 기본 테이블에 보게 되면 기본키가 포함된 그런 속성이 있을 거 아니에요?",
+        "그런 속성들의 집합으로 뷰를 구성해야만 우리가 삽입 삭제 갱신 이런 연산이 가능합니다.",
+        "만약에 가상 테이블을 만드는데 기본키로 설정된 그런 열이 하나도 없어요.",
+        "그럴 때는 이 뷰를 통해서 우리가 데이터를 삽입 삭제 갱신 그런 게 불가능하다구요."
+      ],
+      "spoken_text": "그리고 기본 테이블에 보게 되면 기본키가 포함된 그런 속성이 있을 거 아니에요? 그런 속성들의 집합으로 뷰를 구성해야만 우리가 삽입 삭제 갱신 이런 연산이 가능합니다. 만약에 가상 테이블을 만드는데 기본키로 설정된 그런 열이 하나도 없어요. 그럴 때는 이 뷰를 통해서 우리가 데이터를 삽입 삭제 갱신 그런 게 불가능하다구요.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 35
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:05:31",
+      "end_time_hms": "00:06:09",
+      "start_seconds": 331,
+      "end_seconds": 369,
+      "duration_seconds": 38,
+      "timeline_summary": "기본키 포함 유무에 따른 뷰 조작 및 뷰 간 상속 관계 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.",
+        "일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.",
+        "뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨."
+      ],
+      "screen_text": "뷰(View)의 특징\n기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.\n일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.\n뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨.",
+      "spoken_sentences": [
+        "해서 우리가 이 뷰를 통해서 삽입 삭제 갱신 이런 것들을 우리가 하기 위해서는 반드시, 반드시 어떻게 돼야 된다?",
+        "기본키를 포함한 그 속성의 집합으로 우리가 뷰를 구성을 해 줘야 되더라.",
+        "그리고 지금 이 뷰 A라는 거를 이미 만들어놨잖아요?",
+        "이 뷰 A라는 걸 통해서, 통해서 우리가 뷰 B라는 것도 우리가 만들어줄 수 있습니다.",
+        "해서 우리가 뷰를 생성할 때는 우리가 기본 테이블로부터 만들 수도 있지만 내가 이미 생성해 놓은 이 뷰를 통해서 뷰 A를 통해서 뷰 B를 생성도 할 수가 있더라."
+      ],
+      "spoken_text": "해서 우리가 이 뷰를 통해서 삽입 삭제 갱신 이런 것들을 우리가 하기 위해서는 반드시, 반드시 어떻게 돼야 된다? 기본키를 포함한 그 속성의 집합으로 우리가 뷰를 구성을 해 줘야 되더라. 그리고 지금 이 뷰 A라는 거를 이미 만들어놨잖아요? 이 뷰 A라는 걸 통해서, 통해서 우리가 뷰 B라는 것도 우리가 만들어줄 수 있습니다. 해서 우리가 뷰를 생성할 때는 우리가 기본 테이블로부터 만들 수도 있지만 내가 이미 생성해 놓은 이 뷰를 통해서 뷰 A를 통해서 뷰 B를 생성도 할 수가 있더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 35
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:06:09",
+      "end_time_hms": "00:06:36",
+      "start_seconds": 369,
+      "end_seconds": 396,
+      "duration_seconds": 27,
+      "timeline_summary": "정의된 뷰의 상호 의존성 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.",
+        "일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.",
+        "뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨."
+      ],
+      "screen_text": "뷰(View)의 특징\n기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.\n일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.\n뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨.",
+      "spoken_sentences": [
+        "해서 정의된 그런 뷰는 다른 뷰의, 다른 뷰의 정의에 기초가 될 수도 있고요.",
+        "그리고 이 뷰 A를 내가 만들 때 테이블 1번이다 2번이다 3번이다 해서 요 세 개 테이블을 가지고 만들었죠.",
+        "근데 내가 만약에 이 테이블 1번 2번 3번 이 기본 테이블을 싹 다 삭제를 했습니다.",
+        "삭제를 하게 되면 이 뷰 A라는 것도 같이 삭제가 된다구요."
+      ],
+      "spoken_text": "해서 정의된 그런 뷰는 다른 뷰의, 다른 뷰의 정의에 기초가 될 수도 있고요. 그리고 이 뷰 A를 내가 만들 때 테이블 1번이다 2번이다 3번이다 해서 요 세 개 테이블을 가지고 만들었죠. 근데 내가 만약에 이 테이블 1번 2번 3번 이 기본 테이블을 싹 다 삭제를 했습니다. 삭제를 하게 되면 이 뷰 A라는 것도 같이 삭제가 된다구요.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테이블 1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 35
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:06:36",
+      "end_time_hms": "00:07:13",
+      "start_seconds": 396,
+      "end_seconds": 433,
+      "duration_seconds": 37,
+      "timeline_summary": "기본 테이블 삭제 시 뷰의 자동 삭제 매커니즘 설명",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.",
+        "일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.",
+        "뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨."
+      ],
+      "screen_text": "뷰(View)의 특징\n기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.\n일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.\n뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨.",
+      "spoken_sentences": [
+        "그리고 B라는 이 뷰를 우리가 만들 때 A라는 뷰를 기초로 해서 만들었다구요.",
+        "근데 이 뷰 A라는 거 요거를 내가 만약에 삭제를 했습니다.",
+        "삭제를 하게 되면 B라는 요 뷰도 같이 자동으로 삭제가 돼요.",
+        "해서 뷰를 정의할 때 그때 우리가 기본 테이블을 사용하거나 아니면 뷰, 뷰를 사용하잖아요.",
+        "근데 그런 기본 테이블이 됐든 뷰가 됐든 그런 거를 삭제하게 되면 그 테이블이 됐든 뷰가 됐든 그런 거를 기초로 해서 정의한 그런 다른 뷰들도 자동으로, 자동으로 같이 삭제가 된다는 거예요."
+      ],
+      "spoken_text": "그리고 B라는 이 뷰를 우리가 만들 때 A라는 뷰를 기초로 해서 만들었다구요. 근데 이 뷰 A라는 거 요거를 내가 만약에 삭제를 했습니다. 삭제를 하게 되면 B라는 요 뷰도 같이 자동으로 삭제가 돼요. 해서 뷰를 정의할 때 그때 우리가 기본 테이블을 사용하거나 아니면 뷰, 뷰를 사용하잖아요. 근데 그런 기본 테이블이 됐든 뷰가 됐든 그런 거를 삭제하게 되면 그 테이블이 됐든 뷰가 됐든 그런 거를 기초로 해서 정의한 그런 다른 뷰들도 자동으로, 자동으로 같이 삭제가 된다는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 35
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 1,
+      "subtopic_id": "0221_221",
+      "subtopic_title": "뷰",
+      "subtopic_sequence": 221,
+      "subtopic_number": "221",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IJEK38fD3j4",
+      "start_time_hms": "00:07:13",
+      "end_time_hms": "00:07:50",
+      "start_seconds": 433,
+      "end_seconds": 470,
+      "duration_seconds": 37,
+      "timeline_summary": "뷰 정의 및 제거 시 사용되는 SQL 명령문 소개",
+      "screen_text_lines": [
+        "뷰(View)의 특징",
+        "기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.",
+        "일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.",
+        "뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨."
+      ],
+      "screen_text": "뷰(View)의 특징\n기본 테이블의 기본키를 포함한 속성(열) 집합으로 뷰를 구성해야만 삽입, 삭제, 갱신 연산이 가능함.\n일단 정의된 뷰는 다른 뷰의 정의에 기초가 될 수 있음.\n뷰가 정의된 기본 테이블이나 뷰를 삭제하면 그 테이블이나 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됨.",
+      "spoken_sentences": [
+        "그때 우리가 뷰를 생성할 때 뷰를 만들 때 사용하는 그 명령문이 우리 CREATE라는 이 명령문이 있고요.",
+        "그리고 뷰를 내가 만약에 제거하겠다 그랬을 때 사용되는 그 명령문이 우리 DROP이라는 이 명령어가 있어요.",
+        "해서 CREATE, DROP 이런 걸 이용해서 우리가 뷰를 생성하고 제거를 합니다.",
+        "요런 게 우리 뷰예요 뷰.",
+        "해서 이 뷰의 특징에 대해서는 실제라도 시험 문제가 자주 출제가 되고 있습니다.",
+        "해서 이 특징 정확하게 여러분들이 이해하고 계셔야 돼요."
+      ],
+      "spoken_text": "그때 우리가 뷰를 생성할 때 뷰를 만들 때 사용하는 그 명령문이 우리 CREATE라는 이 명령문이 있고요. 그리고 뷰를 내가 만약에 제거하겠다 그랬을 때 사용되는 그 명령문이 우리 DROP이라는 이 명령어가 있어요. 해서 CREATE, DROP 이런 걸 이용해서 우리가 뷰를 생성하고 제거를 합니다. 요런 게 우리 뷰예요 뷰. 해서 이 뷰의 특징에 대해서는 실제라도 시험 문제가 자주 출제가 되고 있습니다. 해서 이 특징 정확하게 여러분들이 이해하고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "뷰(View)의 특징",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "뷰를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 35
+        },
+        {
+          "keyword": "뷰의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 도입부 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 파티션의 종류에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 파티션의 종류에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_049-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:25",
+      "start_seconds": 8,
+      "end_seconds": 25,
+      "duration_seconds": 17,
+      "timeline_summary": "파티션 종류의 분류 소개",
+      "screen_text_lines": [
+        "파티션의 종류는 파티셔닝 방식에 따라 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할 등으로 나뉨."
+      ],
+      "screen_text": "파티션의 종류는 파티셔닝 방식에 따라 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할 등으로 나뉨.",
+      "spoken_sentences": [
+        "우리 파티션의 종류에는 파티셔닝 그 방식에 따라서 범위 분할이다, 그리고 해시 분할이다, 그리고 조합 분할이다, 그리고 목록 분할이다, 그리고 라운드 로빈 분할이다 해서 이렇게 여러 가지로 나눠서 볼 수 있습니다."
+      ],
+      "spoken_text": "우리 파티션의 종류에는 파티셔닝 그 방식에 따라서 범위 분할이다, 그리고 해시 분할이다, 그리고 조합 분할이다, 그리고 목록 분할이다, 그리고 라운드 로빈 분할이다 해서 이렇게 여러 가지로 나눠서 볼 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "조합",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:00:25",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 25,
+      "end_seconds": 41,
+      "duration_seconds": 16,
+      "timeline_summary": "범위 분할(Range Partitioning)의 개념 설명",
+      "screen_text_lines": [
+        "범위 분할 (Range Partitioning): 지정한 열의 값을 기준으로 분할함 / 예) 일별, 월별, 분기별 등"
+      ],
+      "screen_text": "범위 분할 (Range Partitioning): 지정한 열의 값을 기준으로 분할함 / 예) 일별, 월별, 분기별 등",
+      "spoken_sentences": [
+        "그때 범위 분할이라는 거는 지정한 그 열의 값을 기준으로 해서 분할하는 걸 보고 얘기하는데 얘는 일별로 분할하거나 월별로 분할을 하는 거 아니면 분기별로 분할하는 거 그런 걸 보고 우리가 범위 분할 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그때 범위 분할이라는 거는 지정한 그 열의 값을 기준으로 해서 분할하는 걸 보고 얘기하는데 얘는 일별로 분할하거나 월별로 분할을 하는 거 아니면 분기별로 분할하는 거 그런 걸 보고 우리가 범위 분할 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:14",
+      "start_seconds": 41,
+      "end_seconds": 74,
+      "duration_seconds": 33,
+      "timeline_summary": "범위 분할의 시각적 예시",
+      "screen_text_lines": [
+        "예 범위 분할",
+        "테이블",
+        "판매일자",
+        "2018"
+      ],
+      "screen_text": "예 범위 분할\n테이블\n판매일자\n2018",
+      "spoken_sentences": [
+        "이 범위 분할이라는 거는 지금처럼 하나의 테이블이 있을 때 만약에 판매 일자라는 그 필드가 있어요.",
+        "그 판매 일자에는 판매된 그 날짜가 쭉쭉쭉 들어 있겠죠.",
+        "그때 이 판매 일자에 보니까 2018년의 데이터, 2019년도 데이터, 2020년의 데이터가 이렇게 쭉쭉쭉 들어 있을 때 얘네들을 판매 일자 연도에 따라서 2018년의 데이터, 2019년의 데이터, 2020년의 데이터 이렇게 연도별로 구분해서 나눠서 사용하는 걸 보고 우리가 범위 분할 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "이 범위 분할이라는 거는 지금처럼 하나의 테이블이 있을 때 만약에 판매 일자라는 그 필드가 있어요. 그 판매 일자에는 판매된 그 날짜가 쭉쭉쭉 들어 있겠죠. 그때 이 판매 일자에 보니까 2018년의 데이터, 2019년도 데이터, 2020년의 데이터가 이렇게 쭉쭉쭉 들어 있을 때 얘네들을 판매 일자 연도에 따라서 2018년의 데이터, 2019년의 데이터, 2020년의 데이터 이렇게 연도별로 구분해서 나눠서 사용하는 걸 보고 우리가 범위 분할 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "판매일자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "테이블",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:01:14",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 74,
+      "end_seconds": 81,
+      "duration_seconds": 7,
+      "timeline_summary": "범위 분할의 특징 요약",
+      "screen_text_lines": [
+        "범위 분할 (Range Partitioning): 지정한 열의 값을 기준으로 분할함 / 예) 일별, 월별, 분기별 등"
+      ],
+      "screen_text": "범위 분할 (Range Partitioning): 지정한 열의 값을 기준으로 분할함 / 예) 일별, 월별, 분기별 등",
+      "spoken_sentences": [
+        "해서 우리 범위 분할이라는 거는 지정한 그 열의 값을, 값을 기준으로 해서 분할하는 걸 보고 얘기하더라."
+      ],
+      "spoken_text": "해서 우리 범위 분할이라는 거는 지정한 그 열의 값을, 값을 기준으로 해서 분할하는 걸 보고 얘기하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:29",
+      "start_seconds": 81,
+      "end_seconds": 89,
+      "duration_seconds": 8,
+      "timeline_summary": "해시 분할(Hash Partitioning) 개념 도입",
+      "screen_text_lines": [
+        "해시 분할 (Hash Partitioning)"
+      ],
+      "screen_text": "해시 분할 (Hash Partitioning)",
+      "spoken_sentences": [
+        "그다음에 해시 분할이요.",
+        "해시 분할이라는 거는 해시 함수라는 거를 적용을 시키는 겁니다.",
+        "자 이게 뭔지 좀 보자고요."
+      ],
+      "spoken_text": "그다음에 해시 분할이요. 해시 분할이라는 거는 해시 함수라는 거를 적용을 시키는 겁니다. 자 이게 뭔지 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "Hash Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:01:29",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 89,
+      "end_seconds": 120,
+      "duration_seconds": 31,
+      "timeline_summary": "해시 분할의 작동 방식 설명",
+      "screen_text_lines": [
+        "예 해시 분할",
+        "테이블",
+        "판매일자",
+        "2018"
+      ],
+      "screen_text": "예 해시 분할\n테이블\n판매일자\n2018",
+      "spoken_sentences": [
+        "자 지금처럼 테이블이 하나가 있고 그중에서 판매 일자라는 그 필드가 있을 때 그 필드에, 그 필드에 그때 각각 판매 일자를 다 가지고 있겠죠.",
+        "그 판매 일자를 우리가 해시 함수로, 해시 함수에 적용을 시키는 거예요.",
+        "그러면 그 함수가 그 판매 일자를 가지고 뭔가 계산하고 처리를 하겠죠.",
+        "그때 나온 그 결괏값에 따라서, 그 결괏값에 따라서 우리가 파티션을 나눠주는 거 그걸 보고 우리가 해시 분할이라고 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "자 지금처럼 테이블이 하나가 있고 그중에서 판매 일자라는 그 필드가 있을 때 그 필드에, 그 필드에 그때 각각 판매 일자를 다 가지고 있겠죠. 그 판매 일자를 우리가 해시 함수로, 해시 함수에 적용을 시키는 거예요. 그러면 그 함수가 그 판매 일자를 가지고 뭔가 계산하고 처리를 하겠죠. 그때 나온 그 결괏값에 따라서, 그 결괏값에 따라서 우리가 파티션을 나눠주는 거 그걸 보고 우리가 해시 분할이라고 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "판매일자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "테이블",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:37",
+      "start_seconds": 120,
+      "end_seconds": 157,
+      "duration_seconds": 37,
+      "timeline_summary": "범위 분할의 단점과 해시 분할의 필요성",
+      "screen_text_lines": [
+        "예 범위 분할",
+        "테이블",
+        "판매일자",
+        "2018"
+      ],
+      "screen_text": "예 범위 분할\n테이블\n판매일자\n2018",
+      "spoken_sentences": [
+        "그러면 우리가 범위 분할을 했을 때는 만약에 내가 쇼핑몰을 운영을 하는데 2018년 6월 달에, 6월 달에 만약에 쇼핑몰을 오픈했다고 생각해보세요.",
+        "그러면 2018년의 데이터는 몇 개 안 될 거예요.",
+        "그리고 자리 잡는 데 시간이 어느 정도 걸리기 때문에 2019년도의 데이터도 별로 없을 겁니다.",
+        "그러고 나서 자리 잡고 2020년부터 장사가 엄청나게 잘 됐어요.",
+        "그러면 우리가 범위 분할로 파티션을 했을 때 어디에는 데이터가 많고 어디에는 데이터가 적고 그렇게 되겠죠.",
+        "그런 단점을 보완해서 만들어놓은 게 우리 해시 분할이에요."
+      ],
+      "spoken_text": "그러면 우리가 범위 분할을 했을 때는 만약에 내가 쇼핑몰을 운영을 하는데 2018년 6월 달에, 6월 달에 만약에 쇼핑몰을 오픈했다고 생각해보세요. 그러면 2018년의 데이터는 몇 개 안 될 거예요. 그리고 자리 잡는 데 시간이 어느 정도 걸리기 때문에 2019년도의 데이터도 별로 없을 겁니다. 그러고 나서 자리 잡고 2020년부터 장사가 엄청나게 잘 됐어요. 그러면 우리가 범위 분할로 파티션을 했을 때 어디에는 데이터가 많고 어디에는 데이터가 적고 그렇게 되겠죠. 그런 단점을 보완해서 만들어놓은 게 우리 해시 분할이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "판매일자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:02:37",
+      "end_time_hms": "00:03:06",
+      "start_seconds": 157,
+      "end_seconds": 186,
+      "duration_seconds": 29,
+      "timeline_summary": "해시 분할의 특징 및 데이터 분산의 유용성",
+      "screen_text_lines": [
+        "해시 분할 (Hash Partitioning)",
+        "해시 함수를 적용한 결과 값에 따라 데이터를 분할함",
+        "특정 파티션에 데이터가 집중되는 범위 분할의 단점을 보완한 것으로, 데이터를 고르게 분산할 때 유용함"
+      ],
+      "screen_text": "해시 분할 (Hash Partitioning)\n해시 함수를 적용한 결과 값에 따라 데이터를 분할함\n특정 파티션에 데이터가 집중되는 범위 분할의 단점을 보완한 것으로, 데이터를 고르게 분산할 때 유용함",
+      "spoken_sentences": [
+        "해서 우리 해시 분할이라는 거는 해시 함수라는 거를 적용을 시켜서 그 결괏값에, 그 결괏값에 따라서 데이터를 분할하는 걸 보고 얘기하더라.",
+        "그때 특정 파티션에 데이터가 집중되는 그런 범위 분할, 범위 분할의 단점을 보완하기 위해서 만들어놓은 게 우리 해시 분할인데 이 해시 분할은 해시 함수의 결괏값에 따라서 데이터를 분할하기 때문에 데이터가 고르게 그렇게 분산할 때 유용하게 사용되는 게 우리 해시 분할이요."
+      ],
+      "spoken_text": "해서 우리 해시 분할이라는 거는 해시 함수라는 거를 적용을 시켜서 그 결괏값에, 그 결괏값에 따라서 데이터를 분할하는 걸 보고 얘기하더라. 그때 특정 파티션에 데이터가 집중되는 그런 범위 분할, 범위 분할의 단점을 보완하기 위해서 만들어놓은 게 우리 해시 분할인데 이 해시 분할은 해시 함수의 결괏값에 따라서 데이터를 분할하기 때문에 데이터가 고르게 그렇게 분산할 때 유용하게 사용되는 게 우리 해시 분할이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:03:06",
+      "end_time_hms": "00:03:16",
+      "start_seconds": 186,
+      "end_seconds": 196,
+      "duration_seconds": 10,
+      "timeline_summary": "해시 분할의 단점: 데이터 위치 판단 불가",
+      "screen_text_lines": [
+        "해시 분할 (Hash Partitioning)",
+        "특정 데이터가 어디에 있는지 판단할 수 없음"
+      ],
+      "screen_text": "해시 분할 (Hash Partitioning)\n특정 데이터가 어디에 있는지 판단할 수 없음",
+      "spoken_sentences": [
+        "근데 이렇게 해시 분할로 우리가 분할하게 되면 그때 특정 데이터를 찾고자 했을 때 그 특정 데이터가 어디에 있는지 판단할 수가 없습니다."
+      ],
+      "spoken_text": "근데 이렇게 해시 분할로 우리가 분할하게 되면 그때 특정 데이터를 찾고자 했을 때 그 특정 데이터가 어디에 있는지 판단할 수가 없습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:03:16",
+      "end_time_hms": "00:03:40",
+      "start_seconds": 196,
+      "end_seconds": 220,
+      "duration_seconds": 24,
+      "timeline_summary": "해시 분할이 효과적인 경우",
+      "screen_text_lines": [
+        "해시 분할 (Hash Partitioning)",
+        "고객번호, 주민번호 등과 같이 데이터가 고른 컬럼에 효과적임"
+      ],
+      "screen_text": "해시 분할 (Hash Partitioning)\n고객번호, 주민번호 등과 같이 데이터가 고른 컬럼에 효과적임",
+      "spoken_sentences": [
+        "해서 요 해시 분할이라는 거는 고객 번호가 됐든 주민 번호가 됐든 요런 데이터가 고른 그런 컬럼에 효과적으로 사용되는 게 우리 해시 분할이요.",
+        "고객 번호다, 주민 번호다 그러면 이런 것들은 중복되는 데이터가 없죠.",
+        "그렇게 데이터가 고르게 분포된 그런 데이터에 효과적으로 적용시킬 수 있는 게 우리 해시 분할이요."
+      ],
+      "spoken_text": "해서 요 해시 분할이라는 거는 고객 번호가 됐든 주민 번호가 됐든 요런 데이터가 고른 그런 컬럼에 효과적으로 사용되는 게 우리 해시 분할이요. 고객 번호다, 주민 번호다 그러면 이런 것들은 중복되는 데이터가 없죠. 그렇게 데이터가 고르게 분포된 그런 데이터에 효과적으로 적용시킬 수 있는 게 우리 해시 분할이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "Hash Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:03:40",
+      "end_time_hms": "00:04:03",
+      "start_seconds": 220,
+      "end_seconds": 243,
+      "duration_seconds": 23,
+      "timeline_summary": "조합 분할(Composite Partitioning) 개념 설명",
+      "screen_text_lines": [
+        "조합 분할 (Composite Partitioning): 범위 분할로 분할한 다음 해시 함수를 적용하여 다시 분할하는 방식"
+      ],
+      "screen_text": "조합 분할 (Composite Partitioning): 범위 분할로 분할한 다음 해시 함수를 적용하여 다시 분할하는 방식",
+      "spoken_sentences": [
+        "그다음에 조합 분할이라는 거는 말 그대로 우리 범위 분할과 우리 해시 분할 이 두 가지를 조합해서 만들어놓은 게 우리 조합 분할입니다.",
+        "해서 일단은 우리가 범위 분할로 먼저 분할을 해요.",
+        "분할을 한 다음에 그걸 가지고 다시 해시 함수를 적용시켜서 다시 분할하는 그런 방식을 보고 우리가 조합 분할 그렇게 불러요."
+      ],
+      "spoken_text": "그다음에 조합 분할이라는 거는 말 그대로 우리 범위 분할과 우리 해시 분할 이 두 가지를 조합해서 만들어놓은 게 우리 조합 분할입니다. 해서 일단은 우리가 범위 분할로 먼저 분할을 해요. 분할을 한 다음에 그걸 가지고 다시 해시 함수를 적용시켜서 다시 분할하는 그런 방식을 보고 우리가 조합 분할 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:04:03",
+      "end_time_hms": "00:04:43",
+      "start_seconds": 243,
+      "end_seconds": 283,
+      "duration_seconds": 40,
+      "timeline_summary": "조합 분할의 작동 방식 예시",
+      "screen_text_lines": [
+        "예 조합 분할",
+        "테이블",
+        "판매일자",
+        "2018"
+      ],
+      "screen_text": "예 조합 분할\n테이블\n판매일자\n2018",
+      "spoken_sentences": [
+        "해서 우리 조합 분할이라는 거는 일단은 이 테이블에서 우리가 판매 일자를 기준으로 해서 우리가 파티션을 할 거예요.",
+        "그때 각각 연도별로, 연도별로 2018년의 데이터, 2019년의 데이터, 2020년의 데이터 하고 일단은 우리가 범위 분할로 먼저 분할을 한 다음에 그때 2018년의 데이터에 대해서 다시 해시 함수를 적용을 해서 다시 또 분할하는 거예요.",
+        "그리고 2019년의 데이터도 우리가 해시 함수를 적용시켜서 또다시 분할하고 2020년의 이런 데이터도 우리가 해시 함수를 적용을 시켜서 또다시 해시 분할을 하는 걸 보고 우리가 조합 분할 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "해서 우리 조합 분할이라는 거는 일단은 이 테이블에서 우리가 판매 일자를 기준으로 해서 우리가 파티션을 할 거예요. 그때 각각 연도별로, 연도별로 2018년의 데이터, 2019년의 데이터, 2020년의 데이터 하고 일단은 우리가 범위 분할로 먼저 분할을 한 다음에 그때 2018년의 데이터에 대해서 다시 해시 함수를 적용을 해서 다시 또 분할하는 거예요. 그리고 2019년의 데이터도 우리가 해시 함수를 적용시켜서 또다시 분할하고 2020년의 이런 데이터도 우리가 해시 함수를 적용을 시켜서 또다시 해시 분할을 하는 걸 보고 우리가 조합 분할 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "해시",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 47
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "판매일자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:04:43",
+      "end_time_hms": "00:05:06",
+      "start_seconds": 283,
+      "end_seconds": 306,
+      "duration_seconds": 23,
+      "timeline_summary": "조합 분할의 유용성",
+      "screen_text_lines": [
+        "조합 분할 (Composite Partitioning)",
+        "범위 분할한 파티션이 너무 커서 관리가 어려울 때 유용함"
+      ],
+      "screen_text": "조합 분할 (Composite Partitioning)\n범위 분할한 파티션이 너무 커서 관리가 어려울 때 유용함",
+      "spoken_sentences": [
+        "해서 이 조합 분할이라는 거는 범위 분할로 분할을 했을 때 그때 파티션의 크기가 너무 커서 관리가 어려울 때, 어려울 때 유용하게 사용되는 그런 방식이 우리 조합 분할이요."
+      ],
+      "spoken_text": "해서 이 조합 분할이라는 거는 범위 분할로 분할을 했을 때 그때 파티션의 크기가 너무 커서 관리가 어려울 때, 어려울 때 유용하게 사용되는 그런 방식이 우리 조합 분할이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:05:06",
+      "end_time_hms": "00:05:40",
+      "start_seconds": 306,
+      "end_seconds": 340,
+      "duration_seconds": 34,
+      "timeline_summary": "목록 분할(List Partitioning) 개념 및 예시",
+      "screen_text_lines": [
+        "목록 분할 (List Partitioning): 지정한 열 값에 대한 목록을 만들어 이를 기준으로 분할함.",
+        "예) '국가'라는 열에 '한국', '미국', '일본'이 있는 경우 '미국'을 제외할 목적으로 '아시아'라는 목록을 만들어 분할함"
+      ],
+      "screen_text": "목록 분할 (List Partitioning): 지정한 열 값에 대한 목록을 만들어 이를 기준으로 분할함.\n예) '국가'라는 열에 '한국', '미국', '일본'이 있는 경우 '미국'을 제외할 목적으로 '아시아'라는 목록을 만들어 분할함",
+      "spoken_sentences": [
+        "그다음에 목록 분할이요.",
+        "얘는 말 그대로 목록을 가지고 분할하는 걸 보고 얘기하는데 얘는 지정한 그 열 값에 대해서 목록을 만들어요.",
+        "목록을 만들어서 그걸 기준으로 우리가 분할하는 거를 목록 분할 그렇게 부릅니다.",
+        "예를 들어서 국가라는 그 필드가 있는데 그 필드에는 한국이다, 미국이다, 일본이다 요렇게 데이터가 들어 있어요.",
+        "그때 미국을 제외할 그 목적으로 아시아라는 그 목록을, 그 목록을 만들어서 분할을 해버리는 거를 우리가 목록 분할 그렇게 부르는 거요."
+      ],
+      "spoken_text": "그다음에 목록 분할이요. 얘는 말 그대로 목록을 가지고 분할하는 걸 보고 얘기하는데 얘는 지정한 그 열 값에 대해서 목록을 만들어요. 목록을 만들어서 그걸 기준으로 우리가 분할하는 거를 목록 분할 그렇게 부릅니다. 예를 들어서 국가라는 그 필드가 있는데 그 필드에는 한국이다, 미국이다, 일본이다 요렇게 데이터가 들어 있어요. 그때 미국을 제외할 그 목적으로 아시아라는 그 목록을, 그 목록을 만들어서 분할을 해버리는 거를 우리가 목록 분할 그렇게 부르는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:05:40",
+      "end_time_hms": "00:05:55",
+      "start_seconds": 340,
+      "end_seconds": 355,
+      "duration_seconds": 15,
+      "timeline_summary": "라운드 로빈 분할(Round Robin Partitioning) 개념 설명",
+      "screen_text_lines": [
+        "라운드 로빈 분할 (Round Robin Partitioning)",
+        "레코드를 균일하게 분배하는 방식."
+      ],
+      "screen_text": "라운드 로빈 분할 (Round Robin Partitioning)\n레코드를 균일하게 분배하는 방식.",
+      "spoken_sentences": [
+        "그다음에 라운드 로빈 분할이다라고 하게 되면 얘는 레코드를 균일하게 분배하는 그런 방식을 보고 얘기합니다.",
+        "예를 들어서 우리 파티셔닝, 파티셔닝을 해서 만약에 요렇게 세 개 파티션이 만들어졌다면"
+      ],
+      "spoken_text": "그다음에 라운드 로빈 분할이다라고 하게 되면 얘는 레코드를 균일하게 분배하는 그런 방식을 보고 얘기합니다. 예를 들어서 우리 파티셔닝, 파티셔닝을 해서 만약에 요렇게 세 개 파티션이 만들어졌다면",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "라운드",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        },
+        {
+          "keyword": "로빈",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:05:55",
+      "end_time_hms": "00:06:15",
+      "start_seconds": 355,
+      "end_seconds": 375,
+      "duration_seconds": 20,
+      "timeline_summary": "라운드 로빈 분할의 작동 방식 예시",
+      "screen_text_lines": [
+        "1 4 7",
+        "2 5 8",
+        "3 6 9"
+      ],
+      "screen_text": "1 4 7\n2 5 8\n3 6 9",
+      "spoken_sentences": [
+        "그때 이 라운드 로빈 분할이라는 거는 1번 레코드가 여기에 저장되고요, 2번 레코드는 여기에, 3번 레코드는 여기에, 그다음에 4번 레코드는 여기에, 5번 레코드는 여기에, 6번 레코드는 여기에, 그다음에 7번 레코드는 여기에, 8번 레코드는 여기에, 9번 레코드는 여기에 요런 식으로 각 레코드가 순차적으로 돌아가면서 분배가 되는 게 우리 라운드 로빈 분할입니다."
+      ],
+      "spoken_text": "그때 이 라운드 로빈 분할이라는 거는 1번 레코드가 여기에 저장되고요, 2번 레코드는 여기에, 3번 레코드는 여기에, 그다음에 4번 레코드는 여기에, 5번 레코드는 여기에, 6번 레코드는 여기에, 그다음에 7번 레코드는 여기에, 8번 레코드는 여기에, 9번 레코드는 여기에 요런 식으로 각 레코드가 순차적으로 돌아가면서 분배가 되는 게 우리 라운드 로빈 분할입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "라운드",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        },
+        {
+          "keyword": "로빈",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:06:15",
+      "end_time_hms": "00:06:34",
+      "start_seconds": 375,
+      "end_seconds": 394,
+      "duration_seconds": 19,
+      "timeline_summary": "라운드 로빈 분할의 특징 요약",
+      "screen_text_lines": [
+        "라운드 로빈 분할 (Round Robin Partitioning)",
+        "각 레코드가 순차적으로 분배되며, 기본키가 필요없음."
+      ],
+      "screen_text": "라운드 로빈 분할 (Round Robin Partitioning)\n각 레코드가 순차적으로 분배되며, 기본키가 필요없음.",
+      "spoken_sentences": [
+        "해서 이 라운드 로빈 분할 같은 경우에는 별도의 기본키가 따로 필요 없어요.",
+        "해서 각 레코드가 순차적으로 분배되는 그런 방식을 보고 우리 라운드 로빈 분할 그렇게 부르는 거고 얘는 레코드를, 레코드를 균일하게, 균일하게 그렇게 분배하는 그런 방식을 보고 얘기하는 거예요."
+      ],
+      "spoken_text": "해서 이 라운드 로빈 분할 같은 경우에는 별도의 기본키가 따로 필요 없어요. 해서 각 레코드가 순차적으로 분배되는 그런 방식을 보고 우리 라운드 로빈 분할 그렇게 부르는 거고 얘는 레코드를, 레코드를 균일하게, 균일하게 그렇게 분배하는 그런 방식을 보고 얘기하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "Partitioning",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 37
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "라운드",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 2,
+      "subtopic_id": "0222_222",
+      "subtopic_title": "파티션의 종류",
+      "subtopic_sequence": 222,
+      "subtopic_number": "222",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T08uxtIur30",
+      "start_time_hms": "00:06:34",
+      "end_time_hms": "00:07:02",
+      "start_seconds": 394,
+      "end_seconds": 422,
+      "duration_seconds": 28,
+      "timeline_summary": "학습 마무리 및 당부 사항",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "요렇게 파티션의 종류에는 여러 가지가 있는데 파티션의 종류랑 우리 범위 분할의 특징에 대해서 묻는 문제가 실제 시험 문제로 출제된 적이 있습니다.",
+        "그렇다고 해서 우리가 범위 분할 그것만 알고 지나가면 안 되겠죠?",
+        "해서 파티션의 종류는 요렇게 크게 다섯 가지로 나눠지니까 요 다섯 가지 파티션의 종류에 대해서 각각 뭐가 뭔지는 구분할 수 있게 여러분들이 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "요렇게 파티션의 종류에는 여러 가지가 있는데 파티션의 종류랑 우리 범위 분할의 특징에 대해서 묻는 문제가 실제 시험 문제로 출제된 적이 있습니다. 그렇다고 해서 우리가 범위 분할 그것만 알고 지나가면 안 되겠죠? 해서 파티션의 종류는 요렇게 크게 다섯 가지로 나눠지니까 요 다섯 가지 파티션의 종류에 대해서 각각 뭐가 뭔지는 구분할 수 있게 여러분들이 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 57
+        },
+        {
+          "keyword": "범위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분할의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "강의 도입 및 분산 데이터베이스 구성 요소 학습 안내",
+      "screen_text_lines": [
+        "분산 데이터베이스의 구성 요소"
+      ],
+      "screen_text": "분산 데이터베이스의 구성 요소",
+      "spoken_sentences": [
+        "이번 시간에는 우리 분산 데이터베이스의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 분산 데이터베이스의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "분산 데이터베이스의 구성 요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 10,
+      "end_seconds": 32,
+      "duration_seconds": 22,
+      "timeline_summary": "분산 데이터베이스의 개념 및 구성 요소 종류 제시",
+      "screen_text_lines": [
+        "분산 데이터베이스의 구성 요소",
+        "분산 처리기",
+        "자체적으로 처리 능력을 가지며, 지리적으로 분산되어 있는 컴퓨터 시스템을 말함.",
+        "지리적으로 분산되어 있는 데이터베이스로서 해당 지역의 특성에 맞게 데이터베이스가 구성됨."
+      ],
+      "screen_text": "분산 데이터베이스의 구성 요소\n분산 처리기\n자체적으로 처리 능력을 가지며, 지리적으로 분산되어 있는 컴퓨터 시스템을 말함.\n지리적으로 분산되어 있는 데이터베이스로서 해당 지역의 특성에 맞게 데이터베이스가 구성됨.",
+      "spoken_sentences": [
+        "우리 분산 데이터베이스라는 게 여러 개로 분산되어 있는 그런 데이터베이스를 하나의 데이터베이스처럼 사용하는 그런 시스템을 보고 우리가 분산 데이터베이스 그렇게 불렀죠.",
+        "여기에 구성 요소에는 지금처럼 분산 처리기라는 것도 있고요, 분산 데이터베이스라는 것도 있고, 통신 네트워크라는 것도 있고 요렇게 세 가지가 있습니다."
+      ],
+      "spoken_text": "우리 분산 데이터베이스라는 게 여러 개로 분산되어 있는 그런 데이터베이스를 하나의 데이터베이스처럼 사용하는 그런 시스템을 보고 우리가 분산 데이터베이스 그렇게 불렀죠. 여기에 구성 요소에는 지금처럼 분산 처리기라는 것도 있고요, 분산 데이터베이스라는 것도 있고, 통신 네트워크라는 것도 있고 요렇게 세 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 처리기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분산 데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:47",
+      "start_seconds": 32,
+      "end_seconds": 47,
+      "duration_seconds": 15,
+      "timeline_summary": "분산 처리기의 정의 및 특징 설명",
+      "screen_text_lines": [
+        "분산 처리기",
+        "자체적으로 처리 능력을 가지며, 지리적으로 분산되어 있는 컴퓨터 시스템을 말함."
+      ],
+      "screen_text": "분산 처리기\n자체적으로 처리 능력을 가지며, 지리적으로 분산되어 있는 컴퓨터 시스템을 말함.",
+      "spoken_sentences": [
+        "우리 첫 번째 분산 처리기라는 거는 자체적으로, 자체적으로 뭔가 처리 능력을 가지고 있는 거를 보고 얘기하는데 얘는 지리적으로 분산되어 있는 그런 컴퓨터 시스템, 컴퓨터 시스템을 보고 우리가 분산 처리기 그렇게 불러요."
+      ],
+      "spoken_text": "우리 첫 번째 분산 처리기라는 거는 자체적으로, 자체적으로 뭔가 처리 능력을 가지고 있는 거를 보고 얘기하는데 얘는 지리적으로 분산되어 있는 그런 컴퓨터 시스템, 컴퓨터 시스템을 보고 우리가 분산 처리기 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 처리기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분산되어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "있는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:00:47",
+      "end_time_hms": "00:01:03",
+      "start_seconds": 47,
+      "end_seconds": 63,
+      "duration_seconds": 16,
+      "timeline_summary": "분산 데이터베이스의 정의 및 특성 설명",
+      "screen_text_lines": [
+        "지리적으로 분산되어 있는 데이터베이스로서 해당 지역의 특성에 맞게 데이터베이스가 구성됨."
+      ],
+      "screen_text": "지리적으로 분산되어 있는 데이터베이스로서 해당 지역의 특성에 맞게 데이터베이스가 구성됨.",
+      "spoken_sentences": [
+        "그다음에 분산 데이터베이스다라고 하게 되면 얘는 지리적으로 그렇게 분산되어 있는 그런 데이터베이스를 보고 얘기하는데 얘는 해당 지역의 특성에 맞게 데이터베이스가 구성이 된 거 그걸 보고 우리가 분산 데이터베이스 그렇게 얘기하는 거예요."
+      ],
+      "spoken_text": "그다음에 분산 데이터베이스다라고 하게 되면 얘는 지리적으로 그렇게 분산되어 있는 그런 데이터베이스를 보고 얘기하는데 얘는 해당 지역의 특성에 맞게 데이터베이스가 구성이 된 거 그걸 보고 우리가 분산 데이터베이스 그렇게 얘기하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "분산되어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:01:03",
+      "end_time_hms": "00:01:22",
+      "start_seconds": 63,
+      "end_seconds": 82,
+      "duration_seconds": 19,
+      "timeline_summary": "통신 네트워크의 정의 및 역할 설명",
+      "screen_text_lines": [
+        "통신 네트워크",
+        "분산 처리기들을 통신망으로 연결하여 논리적으로 하나의 시스템처럼 작동할 수 있도록 하는 통신 네트워크를 말함."
+      ],
+      "screen_text": "통신 네트워크\n분산 처리기들을 통신망으로 연결하여 논리적으로 하나의 시스템처럼 작동할 수 있도록 하는 통신 네트워크를 말함.",
+      "spoken_sentences": [
+        "그다음에 통신 네트워크다라고 하게 되면 분산되어 있는 그런 처리기들 있죠?",
+        "여러 곳으로 분산되어 있는 그런 분산 처리기들을 통신망으로 연결해서 논리적으로 우리가 하나의 시스템처럼 그렇게 작동할 수 있도록 해주는 그런 통신 네트워크를 보고 통신 네트워크 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그다음에 통신 네트워크다라고 하게 되면 분산되어 있는 그런 처리기들 있죠? 여러 곳으로 분산되어 있는 그런 분산 처리기들을 통신망으로 연결해서 논리적으로 우리가 하나의 시스템처럼 그렇게 작동할 수 있도록 해주는 그런 통신 네트워크를 보고 통신 네트워크 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 처리기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "통신 네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "분산되어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 3,
+      "subtopic_id": "0223_223",
+      "subtopic_title": "분산 데이터베이스",
+      "subtopic_sequence": 223,
+      "subtopic_number": "223",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=LQ6DyOxp0dM",
+      "start_time_hms": "00:01:22",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 82,
+      "end_seconds": 102,
+      "duration_seconds": 20,
+      "timeline_summary": "분산 데이터베이스 구성 요소 요약 및 마무리",
+      "screen_text_lines": [
+        "분산 처리기",
+        "통신 네트워크"
+      ],
+      "screen_text": "분산 처리기\n통신 네트워크",
+      "spoken_sentences": [
+        "그래서 우리 분산 데이터베이스 구성 요소에는 이렇게 세 가지가 있는데 얘네들은 서로서로 구분하는 거는 크게 어렵지 않죠?",
+        "그래서 구성 요소에 요렇게 세 가지가 있다.",
+        "각각 뭐가 뭔지 구분할 수 있게 그것만 잘 정리하고 지나가시면 됩니다."
+      ],
+      "spoken_text": "그래서 우리 분산 데이터베이스 구성 요소에는 이렇게 세 가지가 있는데 얘네들은 서로서로 구분하는 거는 크게 어렵지 않죠? 그래서 구성 요소에 요렇게 세 가지가 있다. 각각 뭐가 뭔지 구분할 수 있게 그것만 잘 정리하고 지나가시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "분산 처리기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분산 데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "분산 데이터베이스 설계 단원 시작 및 도입",
+      "screen_text_lines": [
+        "분산 데이터베이스 설계"
+      ],
+      "screen_text": "분산 데이터베이스 설계",
+      "spoken_sentences": [
+        "이번 시간에는 우리 분산 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 분산 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "분산 데이터베이스 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 단원 시작 및 도입",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:25",
+      "start_seconds": 8,
+      "end_seconds": 25,
+      "duration_seconds": 17,
+      "timeline_summary": "분산 데이터베이스에서 '투명성'의 개념 정의",
+      "screen_text_lines": [
+        "분산 데이터베이스 설계",
+        "● 분산 데이터베이스의 목표"
+      ],
+      "screen_text": "분산 데이터베이스 설계\n● 분산 데이터베이스의 목표",
+      "spoken_sentences": [
+        "그 다음에 분산 데이터베이스의 목표요.",
+        "목표에는 투명성이 있는데 그 투명성에 보게 되면 지금처럼 이렇게 여러 개의 투명성이 있습니다.",
+        "여기서 얘기하는 투명성이 뭘 얘기하냐면은 우리가 사람이 직접 확인하거나 알 필요 없이 그냥 알아서 다 처리해 준다.",
+        "그런 뜻이에요."
+      ],
+      "spoken_text": "그 다음에 분산 데이터베이스의 목표요. 목표에는 투명성이 있는데 그 투명성에 보게 되면 지금처럼 이렇게 여러 개의 투명성이 있습니다. 여기서 얘기하는 투명성이 뭘 얘기하냐면은 우리가 사람이 직접 확인하거나 알 필요 없이 그냥 알아서 다 처리해 준다. 그런 뜻이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "분산 데이터베이스의 목표",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분산 데이터베이스 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:00:25",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 25,
+      "end_seconds": 43,
+      "duration_seconds": 18,
+      "timeline_summary": "구글 서버 사례를 통한 위치 투명성 설명",
+      "screen_text_lines": [
+        "위치 투명성(Location Transparency) : 액세스하려는 데이터베이스의 실제 위치를 알 필요 없이 단지 데이터베이스의 논리적인 명칭만으로 액세스할 수 있음"
+      ],
+      "screen_text": "위치 투명성(Location Transparency) : 액세스하려는 데이터베이스의 실제 위치를 알 필요 없이 단지 데이터베이스의 논리적인 명칭만으로 액세스할 수 있음",
+      "spoken_sentences": [
+        "내가 만약에 구글 사이트에 들어갔어요.",
+        "그러면 그 구글 서버가 어디 건지 우리가 확인해요?",
+        "안 하잖아요.",
+        "우리가 구글 서버가 어디 어디 어디 어디에 위치해 있는지 알 필요가 있어요?",
+        "없잖아요.",
+        "없는데 알아서 다 알아서 처리해 주잖아요.",
+        "그런 걸 보고 우리 투명성이라고 합니다.",
+        "그때 위치 투명성이다라고 하게 되면 그 내가 접속하려는 그 데이터베이스의 실제 위치요.",
+        "실제 위치를 우리가 알 필요가 있다 없다?",
+        "없다.",
+        "그냥 우리는 데이터베이스의 논리적인 그 명칭만으로 우리가 액세스를 할 수 있다.",
+        "우리가 그 해당 사이트 주소만 가지고 우리가 액세스를 할 수 있다.",
+        "그 뜻이에요.",
+        "그래서 실제 위치를 우리가 알 필요가 없다.",
+        "그게 위치 투명성인 거고요."
+      ],
+      "spoken_text": "내가 만약에 구글 사이트에 들어갔어요. 그러면 그 구글 서버가 어디 건지 우리가 확인해요? 안 하잖아요. 우리가 구글 서버가 어디 어디 어디 어디에 위치해 있는지 알 필요가 있어요? 없잖아요. 없는데 알아서 다 알아서 처리해 주잖아요. 그런 걸 보고 우리 투명성이라고 합니다. 그때 위치 투명성이다라고 하게 되면 그 내가 접속하려는 그 데이터베이스의 실제 위치요. 실제 위치를 우리가 알 필요가 있다 없다? 없다. 그냥 우리는 데이터베이스의 논리적인 그 명칭만으로 우리가 액세스를 할 수 있다. 우리가 그 해당 사이트 주소만 가지고 우리가 액세스를 할 수 있다. 그 뜻이에요. 그래서 실제 위치를 우리가 알 필요가 없다. 그게 위치 투명성인 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:01:09",
+      "start_seconds": 43,
+      "end_seconds": 69,
+      "duration_seconds": 26,
+      "timeline_summary": "중복 투명성의 개념 설명",
+      "screen_text_lines": [
+        "중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함"
+      ],
+      "screen_text": "중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함",
+      "spoken_sentences": [
+        "그 다음에 중복 투명성이다라고 하게 되면 각 지역마다 여러 개 서버를 났어요.",
+        "그때 동일한 데이터가 여러 곳에 중복되어 있을 수도 있죠?",
+        "그래도 사용자는 마치 하나의 데이터만 존재하는 것처럼 그렇게 사용하는 거예요."
+      ],
+      "spoken_text": "그 다음에 중복 투명성이다라고 하게 되면 각 지역마다 여러 개 서버를 났어요. 그때 동일한 데이터가 여러 곳에 중복되어 있을 수도 있죠? 그래도 사용자는 마치 하나의 데이터만 존재하는 것처럼 그렇게 사용하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "중복",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "Replication Transparency",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:01:09",
+      "end_time_hms": "00:01:24",
+      "start_seconds": 69,
+      "end_seconds": 84,
+      "duration_seconds": 15,
+      "timeline_summary": "중복 투명성 시 시스템의 자동 작업 처리 기능",
+      "screen_text_lines": [
+        "중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함"
+      ],
+      "screen_text": "중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함",
+      "spoken_sentences": [
+        "시스템은 자동으로 여러 자료에 대한 작업을 수행함."
+      ],
+      "spoken_text": "시스템은 자동으로 여러 자료에 대한 작업을 수행함.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "중복",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "Replication Transparency",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:01:24",
+      "end_time_hms": "00:01:44",
+      "start_seconds": 84,
+      "end_seconds": 104,
+      "duration_seconds": 20,
+      "timeline_summary": "병행 투명성과 트랜잭션의 일관성 유지 설명",
+      "screen_text_lines": [
+        "병행 투명성(Concurrency Transparency) : 분산 데이터베이스와 관련된 다수의 트랜잭션들이 동시에 실현되더라도 그 트랜잭션의 결과는 영향을 받지 않음"
+      ],
+      "screen_text": "병행 투명성(Concurrency Transparency) : 분산 데이터베이스와 관련된 다수의 트랜잭션들이 동시에 실현되더라도 그 트랜잭션의 결과는 영향을 받지 않음",
+      "spoken_sentences": [
+        "그 다음에 병행 투명성이요.",
+        "병행 투명성이라는 거는 분산 데이터베이스와 관련된 그 다수의 트랜잭션들이 있죠?",
+        "그 트랜잭션들이 동시에 만약에 실행이 돼도 그 트랜잭션의 결과는 일관성을 유지한다.",
+        "트랜잭션의 결과는 영향을 받는다 받지 않는다?",
+        "받지 않더라.",
+        "일관성을 유지하더라.",
+        "고게 병행 투명성이요."
+      ],
+      "spoken_text": "그 다음에 병행 투명성이요. 병행 투명성이라는 거는 분산 데이터베이스와 관련된 그 다수의 트랜잭션들이 있죠? 그 트랜잭션들이 동시에 만약에 실행이 돼도 그 트랜잭션의 결과는 일관성을 유지한다. 트랜잭션의 결과는 영향을 받는다 받지 않는다? 받지 않더라. 일관성을 유지하더라. 고게 병행 투명성이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "병행 투명성과 트랜잭션의 일관성 유지 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:01:44",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 104,
+      "end_seconds": 128,
+      "duration_seconds": 24,
+      "timeline_summary": "장애 투명성과 데이터 무결성 보장 설명",
+      "screen_text_lines": [
+        "장애 투명성(Failure Transparency) : 트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도 불구하고 트랜잭션을 정확하게 처리함"
+      ],
+      "screen_text": "장애 투명성(Failure Transparency) : 트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도 불구하고 트랜잭션을 정확하게 처리함",
+      "spoken_sentences": [
+        "그 다음에 장애 투명성 그러면 말 그대로 장애요 장애.",
+        "장애가 발생한 거예요.",
+        "트랜잭션이 됐든 DBMS가 됐든 네트워크가 됐든 컴퓨터가 됐든 이런 곳에 장애가 발생을 해도 그 트랜잭션은 정확하게 처리가 된다.",
+        "쉽게 얘기해서 데이터 무결성을 보장해 준다.",
+        "그 얘기죠."
+      ],
+      "spoken_text": "그 다음에 장애 투명성 그러면 말 그대로 장애요 장애. 장애가 발생한 거예요. 트랜잭션이 됐든 DBMS가 됐든 네트워크가 됐든 컴퓨터가 됐든 이런 곳에 장애가 발생을 해도 그 트랜잭션은 정확하게 처리가 된다. 쉽게 얘기해서 데이터 무결성을 보장해 준다. 그 얘기죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 4,
+      "subtopic_id": "0224_224",
+      "subtopic_title": "분산 데이터베이스의 목표",
+      "subtopic_sequence": 224,
+      "subtopic_number": "224",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=bpVh_yqhye0",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:16",
+      "start_seconds": 128,
+      "end_seconds": 136,
+      "duration_seconds": 8,
+      "timeline_summary": "분산 데이터베이스의 4대 목표 정리 및 강조",
+      "screen_text_lines": [
+        "위치 투명성(Location Transparency)",
+        "중복 투명성(Replication Transparency)",
+        "병행 투명성(Concurrency Transparency)",
+        "장애 투명성(Failure Transparency)"
+      ],
+      "screen_text": "위치 투명성(Location Transparency)\n중복 투명성(Replication Transparency)\n병행 투명성(Concurrency Transparency)\n장애 투명성(Failure Transparency)",
+      "spoken_sentences": [
+        "해서 분산 데이터베이스의 목표에는 이렇게 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성하고 이렇게 네 가지가 있어요.",
+        "이것들이 각각 뭐가 뭔지는 여러분들이 정확하게 구분할 수 있게 여러분들이 알고 계셔야 돼요."
+      ],
+      "spoken_text": "해서 분산 데이터베이스의 목표에는 이렇게 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성하고 이렇게 네 가지가 있어요. 이것들이 각각 뭐가 뭔지는 여러분들이 정확하게 구분할 수 있게 여러분들이 알고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "투명성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "분산 데이터베이스의 목표",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "Transparency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "분산 데이터베이스 장단점 학습 시작",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간 우리 분산 데이터베이스의 장단점에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간 우리 분산 데이터베이스의 장단점에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "단점",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "분산 데이터베이스 장단점 학습 시작",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "분산 데이터베이스 장점의 특징 개요",
+      "screen_text_lines": [
+        "장점",
+        "단점",
+        "· 지역 자치성이 높다.",
+        "· 자료의 공유성이 향상됨."
+      ],
+      "screen_text": "장점\n단점\n· 지역 자치성이 높다.\n· 자료의 공유성이 향상됨.",
+      "spoken_sentences": [
+        "우리 분산 데이터베이스 이 장단점은 크게 뭐 어렵지 않아요.",
+        "분산 데이터베이스가 뭔지만 조금만 개념만 잡고 있어도 쉽게 쉽게 알 수 있는 그런 내용들입니다.",
+        "자 우리 첫 번째 거 보니까 지역 자치성이 높다 라고 했죠."
+      ],
+      "spoken_text": "우리 분산 데이터베이스 이 장단점은 크게 뭐 어렵지 않아요. 분산 데이터베이스가 뭔지만 조금만 개념만 잡고 있어도 쉽게 쉽게 알 수 있는 그런 내용들입니다. 자 우리 첫 번째 거 보니까 지역 자치성이 높다 라고 했죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "단점",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "분산 데이터베이스 장점의 특징 개요",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:38",
+      "start_seconds": 23,
+      "end_seconds": 38,
+      "duration_seconds": 15,
+      "timeline_summary": "높은 지역 자치성에 대한 설명",
+      "screen_text_lines": [
+        "· 지역 자치성이 높다."
+      ],
+      "screen_text": "· 지역 자치성이 높다.",
+      "spoken_sentences": [
+        "우리 분산 데이터베이스는 데이터 처리가 됐든 이용이 많은 그런 지역에다가 데이터베이스를 위치를 시키는 거죠.",
+        "위치를 시켜서 그 해당 지역에서 데이터 처리가 해결될 수 있도록 그렇게 하기 때문에 지역 자치성이 높고요."
+      ],
+      "spoken_text": "우리 분산 데이터베이스는 데이터 처리가 됐든 이용이 많은 그런 지역에다가 데이터베이스를 위치를 시키는 거죠. 위치를 시켜서 그 해당 지역에서 데이터 처리가 해결될 수 있도록 그렇게 하기 때문에 지역 자치성이 높고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:38",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 38,
+      "end_seconds": 48,
+      "duration_seconds": 10,
+      "timeline_summary": "분산 제어 및 자료 공유성 향상 설명",
+      "screen_text_lines": [
+        "· 자료의 공유성이 향상됨.",
+        "· 분산 제어가 가능함."
+      ],
+      "screen_text": "· 자료의 공유성이 향상됨.\n· 분산 제어가 가능함.",
+      "spoken_sentences": [
+        "그리고 분산 제어가 가능하죠.",
+        "그리고 데이터들을 우리가 분산 데이터베이스에 저장해서 전부 다 관리하고 사용하기 때문에 자료의 공유성도 향상이 됩니다."
+      ],
+      "spoken_text": "그리고 분산 제어가 가능하죠. 그리고 데이터들을 우리가 분산 데이터베이스에 저장해서 전부 다 관리하고 사용하기 때문에 자료의 공유성도 향상이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "분산 제어 및 자료 공유성 향상 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:00:59",
+      "start_seconds": 48,
+      "end_seconds": 59,
+      "duration_seconds": 11,
+      "timeline_summary": "시스템 성능 향상에 관한 설명",
+      "screen_text_lines": [
+        "· 시스템 성능이 향상됨."
+      ],
+      "screen_text": "· 시스템 성능이 향상됨.",
+      "spoken_sentences": [
+        "그리고 뭔가 데이터 처리하는 게 한 곳에서만 이루어지는 게 아니라 분산 처리기를 이용해서 여러 곳에서 같이 처리가 되기 때문에 시스템 성능이 향상이 되고요."
+      ],
+      "spoken_text": "그리고 뭔가 데이터 처리하는 게 한 곳에서만 이루어지는 게 아니라 분산 처리기를 이용해서 여러 곳에서 같이 처리가 되기 때문에 시스템 성능이 향상이 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:00:59",
+      "end_time_hms": "00:01:06",
+      "start_seconds": 59,
+      "end_seconds": 66,
+      "duration_seconds": 7,
+      "timeline_summary": "중앙 컴퓨터 장애 시 영향 최소화 설명",
+      "screen_text_lines": [
+        "· 중앙 컴퓨터의 장애가 전체 시스템에 영향을 끼치지 않음."
+      ],
+      "screen_text": "· 중앙 컴퓨터의 장애가 전체 시스템에 영향을 끼치지 않음.",
+      "spoken_sentences": [
+        "그리고 중앙 컴퓨터의 장애가 만약에 발생을 해도 전체 시스템에 영향을 끼친다 안 끼친다?",
+        "끼치지 않더라."
+      ],
+      "spoken_text": "그리고 중앙 컴퓨터의 장애가 만약에 발생을 해도 전체 시스템에 영향을 끼친다 안 끼친다? 끼치지 않더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "중앙 컴퓨터 장애 시 영향 최소화 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:01:06",
+      "end_time_hms": "00:01:12",
+      "start_seconds": 66,
+      "end_seconds": 72,
+      "duration_seconds": 6,
+      "timeline_summary": "효용성, 융통성, 신뢰성 및 가용성 설명",
+      "screen_text_lines": [
+        "· 효용성과 융통성이 높다.",
+        "· 신뢰성 및 가용성이 높다."
+      ],
+      "screen_text": "· 효용성과 융통성이 높다.\n· 신뢰성 및 가용성이 높다.",
+      "spoken_sentences": [
+        "그리고 효용성이다 융통성이다 그다음에 신뢰성이다 가용성이다 해서 이런 것들이 전부 다 높고요."
+      ],
+      "spoken_text": "그리고 효용성이다 융통성이다 그다음에 신뢰성이다 가용성이다 해서 이런 것들이 전부 다 높고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "효용성, 융통성, 신뢰성 및 가용성 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:01:12",
+      "end_time_hms": "00:01:34",
+      "start_seconds": 72,
+      "end_seconds": 94,
+      "duration_seconds": 22,
+      "timeline_summary": "시스템 용량 확장의 용이성 설명",
+      "screen_text_lines": [
+        "· 점진적 시스템 용량 확장이 용이함."
+      ],
+      "screen_text": "· 점진적 시스템 용량 확장이 용이함.",
+      "spoken_sentences": [
+        "그리고 점진적 시스템 용량 확장이 용이해요.",
+        "만약에 내가 용량을 더 확장하고 싶다 그러면 우리가 분산 데이터베이스를 특정 지역에다가 한 대 더 설치해 버리는 거예요.",
+        "그러면 그만큼 용량이 또 증가하겠죠."
+      ],
+      "spoken_text": "그리고 점진적 시스템 용량 확장이 용이해요. 만약에 내가 용량을 더 확장하고 싶다 그러면 우리가 분산 데이터베이스를 특정 지역에다가 한 대 더 설치해 버리는 거예요. 그러면 그만큼 용량이 또 증가하겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:01:34",
+      "end_time_hms": "00:01:52",
+      "start_seconds": 94,
+      "end_seconds": 112,
+      "duration_seconds": 18,
+      "timeline_summary": "분산 데이터베이스 단점 - DBMS 기능의 복잡성",
+      "screen_text_lines": [
+        "· DBMS가 수행할 기능이 복잡함."
+      ],
+      "screen_text": "· DBMS가 수행할 기능이 복잡함.",
+      "spoken_sentences": [
+        "그렇게 해서 장점에 보게 되면 전부 다 다 좋은 말들만 써져 있어요.",
+        "근데 이 단점을 여러분들이 잘 구분해야 돼요.",
+        "우리 분산 데이터베이스라는 게 여러 개로 분산돼 있는 그런 데이터베이스를 하나의 데이터베이스처럼 그렇게 사용하는 시스템이라 그랬죠.",
+        "해서 이런 데이터베이스를 관리해 주는 DBMS가 DBMS가 수행해야 되는 그런 기능들이 복잡합니다."
+      ],
+      "spoken_text": "그렇게 해서 장점에 보게 되면 전부 다 다 좋은 말들만 써져 있어요. 근데 이 단점을 여러분들이 잘 구분해야 돼요. 우리 분산 데이터베이스라는 게 여러 개로 분산돼 있는 그런 데이터베이스를 하나의 데이터베이스처럼 그렇게 사용하는 시스템이라 그랬죠. 해서 이런 데이터베이스를 관리해 주는 DBMS가 DBMS가 수행해야 되는 그런 기능들이 복잡합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "단점",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:01:52",
+      "end_time_hms": "00:01:55",
+      "start_seconds": 112,
+      "end_seconds": 115,
+      "duration_seconds": 3,
+      "timeline_summary": "분산 데이터베이스 설계의 어려움",
+      "screen_text_lines": [
+        "· 데이터베이스 설계가 어렵다."
+      ],
+      "screen_text": "· 데이터베이스 설계가 어렵다.",
+      "spoken_sentences": [
+        "그리고 데이터베이스 설계 자체가 어렵고요."
+      ],
+      "spoken_text": "그리고 데이터베이스 설계 자체가 어렵고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:01:55",
+      "end_time_hms": "00:02:05",
+      "start_seconds": 115,
+      "end_seconds": 125,
+      "duration_seconds": 10,
+      "timeline_summary": "개발 및 처리 비용의 증가 설명",
+      "screen_text_lines": [
+        "· 소프트웨어 개발 비용이 증가함.",
+        "· 처리 비용이 증가함."
+      ],
+      "screen_text": "· 소프트웨어 개발 비용이 증가함.\n· 처리 비용이 증가함.",
+      "spoken_sentences": [
+        "그리고 소프트웨어 개발하는 그런 비용도 많이 증가가 되겠죠.",
+        "그리고 처리 비용도 증가가 되고요."
+      ],
+      "spoken_text": "그리고 소프트웨어 개발하는 그런 비용도 많이 증가가 되겠죠. 그리고 처리 비용도 증가가 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-066",
+      "segment_index": 66,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:02:05",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 125,
+      "end_seconds": 142,
+      "duration_seconds": 17,
+      "timeline_summary": "잠재적 오류 증가 가능성 설명",
+      "screen_text_lines": [
+        "· 잠재적 오류가 증가함."
+      ],
+      "screen_text": "· 잠재적 오류가 증가함.",
+      "spoken_sentences": [
+        "그리고 잠재적 오류가 증가할 수밖에 없겠죠.",
+        "왜?",
+        "데이터베이스에 들어 있는 그런 데이터들을 한 곳에서 그냥 처리를 다 하고 관리를 한다면 오류가 많이 발생하지 않겠지만 얘가 분산된 그런 환경에서 데이터베이스가 운영이 되다 보니까 잠재적 오류가 증가할 수밖에 없습니다."
+      ],
+      "spoken_text": "그리고 잠재적 오류가 증가할 수밖에 없겠죠. 왜? 데이터베이스에 들어 있는 그런 데이터들을 한 곳에서 그냥 처리를 다 하고 관리를 한다면 오류가 많이 발생하지 않겠지만 얘가 분산된 그런 환경에서 데이터베이스가 운영이 되다 보니까 잠재적 오류가 증가할 수밖에 없습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-067",
+      "segment_index": 67,
+      "subtopic_index": 5,
+      "subtopic_id": "0225_225",
+      "subtopic_title": "분산 데이터베이스의 장·단점",
+      "subtopic_sequence": 225,
+      "subtopic_number": "225",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=lcQl-m6nuIc",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 142,
+      "end_seconds": 165,
+      "duration_seconds": 23,
+      "timeline_summary": "분산 데이터베이스 단점 재정리 및 마무리",
+      "screen_text_lines": [
+        "· DBMS가 수행할 기능이 복잡함.",
+        "· 데이터베이스 설계가 어렵다.",
+        "· 소프트웨어 개발 비용이 증가함.",
+        "· 처리 비용이 증가함."
+      ],
+      "screen_text": "· DBMS가 수행할 기능이 복잡함.\n· 데이터베이스 설계가 어렵다.\n· 소프트웨어 개발 비용이 증가함.\n· 처리 비용이 증가함.",
+      "spoken_sentences": [
+        "그때 단점을 다시 정리해 보면 기능이 복잡하더라.",
+        "그리고 데이터베이스 설계가 어렵더라.",
+        "그리고 소프트웨어 개발 비용도 증가가 되고 처리 비용도 증가가 되더라.",
+        "그리고 잠재적 오류 오류가 증가가 되더라.",
+        "요런 단점을 가지고 있다라는 거 요거 정확하게 기억하셔야 돼요."
+      ],
+      "spoken_text": "그때 단점을 다시 정리해 보면 기능이 복잡하더라. 그리고 데이터베이스 설계가 어렵더라. 그리고 소프트웨어 개발 비용도 증가가 되고 처리 비용도 증가가 되더라. 그리고 잠재적 오류 오류가 증가가 되더라. 요런 단점을 가지고 있다라는 거 요거 정확하게 기억하셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "단점",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "그리고",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-068",
+      "segment_index": 68,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [
+        "분산 데이터베이스 설계 방법 - 분할"
+      ],
+      "screen_text": "분산 데이터베이스 설계 방법 - 분할",
+      "spoken_sentences": [
+        "이번 시간엔 우리 분산 데이터베이스 설계 방법 중에서 우리 분할에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간엔 우리 분산 데이터베이스 설계 방법 중에서 우리 분할에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 방법 - 분할",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-069",
+      "segment_index": 69,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 10,
+      "end_seconds": 23,
+      "duration_seconds": 13,
+      "timeline_summary": "분할(Fragment)의 정의",
+      "screen_text_lines": [
+        "분산 데이터베이스 설계 방법 - 분할",
+        "· 분할(Fragment)은 테이블의 데이터를 분할하여 분산시키는 것."
+      ],
+      "screen_text": "분산 데이터베이스 설계 방법 - 분할\n· 분할(Fragment)은 테이블의 데이터를 분할하여 분산시키는 것.",
+      "spoken_sentences": [
+        "자 우리 분할이라는 거요.",
+        "분할이라는 거는 말 그대로 쪼개는 걸 보고 얘기하죠.",
+        "얘는 테이블에 들어있는 그 데이터들을 분할해서, 분할해서 분산시키는 걸 보고 우리가 분할이다 그렇게 불러요."
+      ],
+      "spoken_text": "자 우리 분할이라는 거요. 분할이라는 거는 말 그대로 쪼개는 걸 보고 얘기하죠. 얘는 테이블에 들어있는 그 데이터들을 분할해서, 분할해서 분산시키는 걸 보고 우리가 분할이다 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "분산 데이터베이스 설계 방법 - 분할",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "Fragment",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-070",
+      "segment_index": 70,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 23,
+      "end_seconds": 43,
+      "duration_seconds": 20,
+      "timeline_summary": "수평 분할과 수직 분할의 구분",
+      "screen_text_lines": [
+        "· 수평 분할 : 특정 속성의 값을 기준으로 행(Row) 단위로 분할",
+        "· 수직 분할 : 데이터 컬럼(속성) 단위로 분할"
+      ],
+      "screen_text": "· 수평 분할 : 특정 속성의 값을 기준으로 행(Row) 단위로 분할\n· 수직 분할 : 데이터 컬럼(속성) 단위로 분할",
+      "spoken_sentences": [
+        "그때 우리 분할하는 그 방법에 보게 되면 수평 분할이다, 수직 분할이다 하고 이렇게 두 가지로 나눠서 볼 수 있습니다.",
+        "수평 분할이라는 건 말 그대로 행 단위로 테이블을 분할하는 걸 보고 얘기하는 거고, 수직 분할이라는 건 컬럼, 속성 단위로 분할하는 그 방식을 보고 얘기해요."
+      ],
+      "spoken_text": "그때 우리 분할하는 그 방법에 보게 되면 수평 분할이다, 수직 분할이다 하고 이렇게 두 가지로 나눠서 볼 수 있습니다. 수평 분할이라는 건 말 그대로 행 단위로 테이블을 분할하는 걸 보고 얘기하는 거고, 수직 분할이라는 건 컬럼, 속성 단위로 분할하는 그 방식을 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "수평",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "수직",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-071",
+      "segment_index": 71,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 43,
+      "end_seconds": 67,
+      "duration_seconds": 24,
+      "timeline_summary": "테이블 예시를 통한 분할 개념 시각화",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "예를 들어서 지금처럼 이런 테이블이 있습니다.",
+        "이런 테이블을 우리가 수평 분할을 할 거예요.",
+        "수평 분할 할 때 지금 여기서 이렇게 분할하는 거, 이렇게 행 단위로 분할하는 걸 보고 우리가 수평 분할이다 그렇게 부르는 거고, 수직 분할이라는 건 지금처럼 이렇게 테이블이 있을 때 이거를 수직으로 우리 속성 단위로 이렇게 분할하는 그 방식을 보고 얘기해요."
+      ],
+      "spoken_text": "예를 들어서 지금처럼 이런 테이블이 있습니다. 이런 테이블을 우리가 수평 분할을 할 거예요. 수평 분할 할 때 지금 여기서 이렇게 분할하는 거, 이렇게 행 단위로 분할하는 걸 보고 우리가 수평 분할이다 그렇게 부르는 거고, 수직 분할이라는 건 지금처럼 이렇게 테이블이 있을 때 이거를 수직으로 우리 속성 단위로 이렇게 분할하는 그 방식을 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-072",
+      "segment_index": 72,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:27",
+      "start_seconds": 67,
+      "end_seconds": 87,
+      "duration_seconds": 20,
+      "timeline_summary": "수평 분할 상세 설명 (부서 기준)",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "그러면 우리가 수평 분할 된 걸 보게 되면 지금 여기는 부서를 보니까 전부 다 영업부의 데이터가 위쪽에 있고 아래쪽에 총무부의 그 데이터가 있죠.",
+        "해서 지금 이 테이블을 우리가 부서 필드가 영업부인 그 테이블, 그리고 총무부인 테이블 그렇게 두 개로 이렇게 분할을 한 겁니다."
+      ],
+      "spoken_text": "그러면 우리가 수평 분할 된 걸 보게 되면 지금 여기는 부서를 보니까 전부 다 영업부의 데이터가 위쪽에 있고 아래쪽에 총무부의 그 데이터가 있죠. 해서 지금 이 테이블을 우리가 부서 필드가 영업부인 그 테이블, 그리고 총무부인 테이블 그렇게 두 개로 이렇게 분할을 한 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-073",
+      "segment_index": 73,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:01:27",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 87,
+      "end_seconds": 102,
+      "duration_seconds": 15,
+      "timeline_summary": "수직 분할 상세 설명 (속성 기준)",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "그다음에 우리 수직 분할은 사원 번호하고 사원 이름 이렇게 두 개 필드로 구성된 그 테이블 한 개와 부서다, 입사일자다, 나이다 이렇게 세 가지 필드로 구성된 그 테이블로 이렇게 분할을 한 거예요."
+      ],
+      "spoken_text": "그다음에 우리 수직 분할은 사원 번호하고 사원 이름 이렇게 두 개 필드로 구성된 그 테이블 한 개와 부서다, 입사일자다, 나이다 이렇게 세 가지 필드로 구성된 그 테이블로 이렇게 분할을 한 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-074",
+      "segment_index": 74,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:01:42",
+      "end_time_hms": "00:01:58",
+      "start_seconds": 102,
+      "end_seconds": 118,
+      "duration_seconds": 16,
+      "timeline_summary": "분할의 대상 및 재구성 가능성 조건",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "그때 이런 분할을 할 때에는 우리가 전체 데이터를 대상으로 우리가 분할을 해야 되는 거고요.",
+        "그리고 이렇게 분할된 그 데이터는 관계 연산 활용해서 원래 데이터로 재구성을 할 수가 있어야 돼요."
+      ],
+      "spoken_text": "그때 이런 분할을 할 때에는 우리가 전체 데이터를 대상으로 우리가 분할을 해야 되는 거고요. 그리고 이렇게 분할된 그 데이터는 관계 연산 활용해서 원래 데이터로 재구성을 할 수가 있어야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-075",
+      "segment_index": 75,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:01:58",
+      "end_time_hms": "00:02:25",
+      "start_seconds": 118,
+      "end_seconds": 145,
+      "duration_seconds": 27,
+      "timeline_summary": "분할 항목 간의 비중복 원칙 (수평 분할 예시)",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "그리고 이렇게 분할된 그 데이터들은 서로 다른 분할의 항목에 속하지 않아야 됩니다.",
+        "그 말이 무슨 말이냐, 우리 수평 분할을 만약에 했어요.",
+        "그때 각각 분할에 포함된 그런 튜플들이 상호 중복되면 안 됩니다.",
+        "지금 여기 보게 되면 김말자라는 그 사원, 그 사원의 데이터가 이렇게 들어 있는데 이렇게 쪼갰을 때 김말자가 아래쪽에도 포함이 되어 있으면 안 되겠죠."
+      ],
+      "spoken_text": "그리고 이렇게 분할된 그 데이터들은 서로 다른 분할의 항목에 속하지 않아야 됩니다. 그 말이 무슨 말이냐, 우리 수평 분할을 만약에 했어요. 그때 각각 분할에 포함된 그런 튜플들이 상호 중복되면 안 됩니다. 지금 여기 보게 되면 김말자라는 그 사원, 그 사원의 데이터가 이렇게 들어 있는데 이렇게 쪼갰을 때 김말자가 아래쪽에도 포함이 되어 있으면 안 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-076",
+      "segment_index": 76,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:02:25",
+      "end_time_hms": "00:02:53",
+      "start_seconds": 145,
+      "end_seconds": 173,
+      "duration_seconds": 28,
+      "timeline_summary": "분할 항목 간의 비중복 원칙 (수직 분할 예시)",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "그리고 수직 분할을 했을 때는 이런 각각의 속성들이 중복이 되면 안 됩니다.",
+        "하나의 테이블은 사원 번호다, 사원 이름이다 요렇게 두 개 필드만 가지고 있어야 되고, 그리고 또 다른 테이블은 부서다, 입사 일자다, 나이다 이렇게 세 개만 가지고 있어야 된다고요.",
+        "근데 이 두 번째 테이블에 사원의 이름이 만약에 포함돼 있어요.",
+        "그렇게 중복된 속성이 있으면 안 된다 그 얘기예요."
+      ],
+      "spoken_text": "그리고 수직 분할을 했을 때는 이런 각각의 속성들이 중복이 되면 안 됩니다. 하나의 테이블은 사원 번호다, 사원 이름이다 요렇게 두 개 필드만 가지고 있어야 되고, 그리고 또 다른 테이블은 부서다, 입사 일자다, 나이다 이렇게 세 개만 가지고 있어야 된다고요. 근데 이 두 번째 테이블에 사원의 이름이 만약에 포함돼 있어요. 그렇게 중복된 속성이 있으면 안 된다 그 얘기예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_049-seg-077",
+      "segment_index": 77,
+      "subtopic_index": 6,
+      "subtopic_id": "0226_226",
+      "subtopic_title": "분산 데이터베이스 설계 방법 분할",
+      "subtopic_sequence": 226,
+      "subtopic_number": "226",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Ce8sLGUW3eA",
+      "start_time_hms": "00:02:53",
+      "end_time_hms": "00:03:06",
+      "start_seconds": 173,
+      "end_seconds": 186,
+      "duration_seconds": 13,
+      "timeline_summary": "강의 마무리 및 요약",
+      "screen_text_lines": [
+        "사원번호 사원이름 부서 입사일자 나이",
+        "S001 홍길동 영업부 2018.05.09 30",
+        "S002 장길산 영업부 2017.08.05 28",
+        "S003 김말자 영업부 2019.11.03 35"
+      ],
+      "screen_text": "사원번호 사원이름 부서 입사일자 나이\nS001 홍길동 영업부 2018.05.09 30\nS002 장길산 영업부 2017.08.05 28\nS003 김말자 영업부 2019.11.03 35",
+      "spoken_sentences": [
+        "이렇게 테이블의 데이터를 분할해서 분산시키는 거 이걸 보고 우리가 분할이라고 하더라.",
+        "요거 정확하게 잘 기억하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "이렇게 테이블의 데이터를 분할해서 분산시키는 거 이걸 보고 우리가 분할이라고 하더라. 요거 정확하게 잘 기억하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "사원번호 사원이름 부서 입사일자 나이",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "분할",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "S001 홍길동 영업부 2018.05.09 30",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        }
+      ]
+    }
+  ]
+}

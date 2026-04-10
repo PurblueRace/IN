@@ -1,0 +1,969 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_073",
+    "sequence": 73,
+    "title": "Windows·UNIX와 파일 시스템 기초",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 6,
+    "review_count": 5,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_354",
+      "chapter_322",
+      "chapter_140",
+      "chapter_145"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_305cb493973ec460",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          19
+        ],
+        "page_span": {
+          "start_page": 19,
+          "end_page": 19
+        },
+        "source_explanation": "순차 파일(Sequential File)에서 레코드를 삽입, 삭제, 수정하려면 파일 전체를 다시 작성(재구성)해야 하는 번거로움이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "순차 파일에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "3",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+        ],
+        "answer_text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+      },
+      "explanation": {
+        "source_text": "순차 파일(Sequential File)에서 레코드를 삽입, 삭제, 수정하려면 파일 전체를 다시 작성(재구성)해야 하는 번거로움이 있습니다.",
+        "summary": "파일 구조 중 순차 파일(Sequential File)의 특징과 단점을 묻는 문제입니다.",
+        "why_correct": [
+          "순차 파일은 레코드가 물리적으로 연속되어 있어 중간에 데이터를 끼워 넣거나 삭제하려면 파일 전체를 새로 복사하여 재구성해야 합니다."
+        ],
+        "why_others_wrong": [
+          "1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다.",
+          "2번: 빈 공간 없이 꽉 채워 저장하므로 저장 공간 효율이 좋습니다.",
+          "3번: 자기 테이프 등 순차 접근만 가능한 매체에서도 사용 가능합니다."
+        ],
+        "key_concepts": [
+          "순차 파일 (Sequential File)",
+          "일괄 처리 (Batch Processing)",
+          "파일 재구성"
+        ],
+        "memory_cues": [
+          "순차 파일은 '줄 서기'와 같습니다. 중간에 끼어들려면 뒤 사람들이 다 움직여야 합니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.'이므로 일치하지 않습니다. 1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다. 2번: 빈 공간 없이 꽉 채워 저장하므로 저장 공간 효율이 좋습니다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다. 2번: 빈 공간 없이 꽉 채워 저장하므로 저장 공간 효율이 좋습니다."
+          },
+          {
+            "label": "3",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.'이므로 일치하지 않습니다. 1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다. 2번: 빈 공간 없이 꽉 채워 저장하므로 저장 공간 효율이 좋습니다."
+          },
+          {
+            "label": "4",
+            "text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'와 일치합니다. 순차 파일은 레코드가 물리적으로 연속되어 있어 중간에 데이터를 끼워 넣거나 삭제하려면 파일 전체를 새로 복사하여 재구성해야 합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 순차 파일 (Sequential File), 일괄 처리 (Batch Processing), 파일 재구성",
+          "정답 판단 근거를 적용합니다. 순차 파일은 레코드가 물리적으로 연속되어 있어 중간에 데이터를 끼워 넣거나 삭제하려면 파일 전체를 새로 복사하여 재구성해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다."
+        ],
+        "exam_traps": [
+          "1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순차 파일 (Sequential File)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '일괄 처리 (Batch Processing)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '파일 재구성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 파일은 '줄 서기'와 같습니다. 중간에 끼어들려면 뒤 사람들이 다 움직여야 합니다."
+        ],
+        "detailed_summary": "파일 구조 중 순차 파일(Sequential File)의 특징과 단점을 묻는 문제입니다. 순차 파일(Sequential File)에서 레코드를 삽입, 삭제, 수정하려면 파일 전체를 다시 작성(재구성)해야 하는 번거로움이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순차 파일에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'와 일치합니다. 순차 파일은 레코드가 물리적으로 연속되어 있어 중간에 데이터를 끼워 넣거나 삭제하려면 파일 전체를 새로 복사하여 재구성해야 합니다. 시험 포인트는 1번: 처음부터 끝까지 순서대로 읽으므로 일괄 처리에 매우 효율적입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "순차 파일",
+        "일괄 처리",
+        "파일 시스템",
+        "SAM"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2b3044923eecc6d9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          21
+        ],
+        "page_span": {
+          "start_page": 21,
+          "end_page": 21
+        },
+        "source_explanation": "순차 파일에서 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성해야 하므로 파일 전체를 복사해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Windows·UNIX와 파일 시스템 기초"
+        ],
+        "chapter_label": "Windows·UNIX와 파일 시스템 기초",
+        "chapter_key": "프로그래밍 언어 활용 > Windows·UNIX와 파일 시스템 기초",
+        "chapter_id": "chapter_354"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 166.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "78. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "3",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+        ],
+        "answer_text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다."
+      },
+      "explanation": {
+        "source_text": "순차 파일에서 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성해야 하므로 파일 전체를 복사해야 합니다.",
+        "summary": "순차 파일(Sequential File)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "순차 파일은 레코드가 물리적으로 연속되어 저장되므로, 중간에 데이터를 삽입하거나 삭제할 경우 파일 전체를 다시 써야(재구성) 합니다."
+        ],
+        "why_others_wrong": [
+          "1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다.",
+          "2번은 빈 공간 없이 저장되므로 공간 효율이 좋다는 장점입니다.",
+          "3번은 테이프 등 모든 매체에서 사용 가능함을 의미합니다."
+        ],
+        "key_concepts": [
+          "순차 파일: 레코드를 기록 순서대로 저장",
+          "장점: 공간 효율성, 일괄 처리 적합",
+          "단점: 삽입/삭제 시 파일 재구성 필요"
+        ],
+        "memory_cues": [
+          "순차 파일은 줄 서 있는 것과 같아서 중간에 끼어들려면(삽입) 뒤 사람들을 다 옮겨야 한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.'이므로 일치하지 않습니다. 1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다. 2번은 빈 공간 없이 저장되므로 공간 효율이 좋다는 장점입니다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다. 2번은 빈 공간 없이 저장되므로 공간 효율이 좋다는 장점입니다."
+          },
+          {
+            "label": "3",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'인데 이 선택지는 '매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.'이므로 일치하지 않습니다. 1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다. 2번은 빈 공간 없이 저장되므로 공간 효율이 좋다는 장점입니다."
+          },
+          {
+            "label": "4",
+            "text": "필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'와 일치합니다. 순차 파일은 레코드가 물리적으로 연속되어 저장되므로, 중간에 데이터를 삽입하거나 삭제할 경우 파일 전체를 다시 써야(재구성) 합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 순차 파일: 레코드를 기록 순서대로 저장, 장점: 공간 효율성, 일괄 처리 적합, 단점: 삽입/삭제 시 파일 재구성 필요",
+          "정답 판단 근거를 적용합니다. 순차 파일은 레코드가 물리적으로 연속되어 저장되므로, 중간에 데이터를 삽입하거나 삭제할 경우 파일 전체를 다시 써야(재구성) 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다."
+        ],
+        "exam_traps": [
+          "1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순차 파일: 레코드를 기록 순서대로 저장'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '장점: 공간 효율성, 일괄 처리 적합'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '단점: 삽입/삭제 시 파일 재구성 필요'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 파일은 줄 서 있는 것과 같아서 중간에 끼어들려면(삽입) 뒤 사람들을 다 옮겨야 한다."
+        ],
+        "detailed_summary": "순차 파일(Sequential File)의 특징을 묻는 문제입니다. 순차 파일에서 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성해야 하므로 파일 전체를 복사해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. 순차 파일에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 필요한 레코드를 삽입, 삭제, 수정하는 경우 파일을 재구성할 필요가 없으므로 파일 전체를 복사하지 않아도 된다.'와 일치합니다. 순차 파일은 레코드가 물리적으로 연속되어 저장되므로, 중간에 데이터를 삽입하거나 삭제할 경우 파일 전체를 다시 써야(재구성) 합니다. 시험 포인트는 1번은 순차 처리의 특성상 일괄 처리에 유리함을 설명합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "순차 파일",
+        "일괄 처리",
+        "파일 시스템",
+        "SAM"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_89331d78288abbfa",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          56
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 56
+        },
+        "source_explanation": "전문가의 조언 | • 순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다.\n• DASD(Direct Access Storage Device)를 사용하는 것은 직접 파일입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "Windows·UNIX와 파일 시스템 기초"
+        ],
+        "chapter_label": "Windows·UNIX와 파일 시스템 기초",
+        "chapter_key": "정보시스템 구축관리 > Windows·UNIX와 파일 시스템 기초",
+        "chapter_id": "chapter_322"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "66. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+          },
+          {
+            "label": "2",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+        ],
+        "answer_text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | • 순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다.\n• DASD(Direct Access Storage Device)를 사용하는 것은 직접 파일입니다.",
+        "summary": "파일 구조 중 순차 파일(Sequential File)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "순차 파일은 레코드를 순서대로 읽어야 하므로 특정 주소를 통한 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 DASD를 사용하는 직접 파일의 특징입니다."
+        ],
+        "why_others_wrong": [
+          "순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+        ],
+        "key_concepts": [
+          "순차 파일",
+          "SASD",
+          "직접 접근"
+        ],
+        "memory_cues": [
+          "순차 = 줄 서기 (중간에 못 끼어듦)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 특정 주소를 통한 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 DASD를 사용하는 직접 파일의 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.'이므로 일치하지 않습니다. 순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.'이므로 일치하지 않습니다. 순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 순차 파일, SASD, 직접 접근",
+          "정답 판단 근거를 적용합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 특정 주소를 통한 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 DASD를 사용하는 직접 파일의 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+        ],
+        "exam_traps": [
+          "순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순차 파일'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SASD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '직접 접근'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 = 줄 서기 (중간에 못 끼어듦)"
+        ],
+        "detailed_summary": "파일 구조 중 순차 파일(Sequential File)의 특징을 묻는 문제입니다. 전문가의 조언 | • 순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. • DASD(Direct Access Storage Device)를 사용하는 것은 직접 파일입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 순차 파일에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 특정 주소를 통한 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 DASD를 사용하는 직접 파일의 특징입니다. 시험 포인트는 순차 파일은 일괄 처리에 효율적이며, 빈 공간 없이 저장되어 공간 효율이 좋고, 테이프 등 다양한 매체에 적용 가능합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "순차 파일",
+        "Sequential File",
+        "SASD",
+        "DASD",
+        "일괄 처리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e76baf06a143fd96",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 61
+        },
+        "source_explanation": "순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_140"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "66. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+          },
+          {
+            "label": "2",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+        ],
+        "answer_text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+      },
+      "explanation": {
+        "source_text": "순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다.",
+        "summary": "순차 파일(Sequential File)의 특징과 접근 방식에 대한 문제입니다.",
+        "why_correct": [
+          "순차 파일은 레코드를 처음부터 순서대로 읽어야 하므로 물리적 주소를 통한 직접 접근(Direct Access)이 불가능합니다."
+        ],
+        "why_others_wrong": [
+          "순차 처리는 일괄 처리에 효율적입니다.",
+          "레코드 간 빈 공간이 없어 저장 효율이 높습니다.",
+          "자기 테이프 등 다양한 매체에 적용 가능합니다."
+        ],
+        "key_concepts": [
+          "순차 파일(Sequential File)",
+          "SASD",
+          "DASD"
+        ],
+        "memory_cues": [
+          "순차 = 처음부터 차례대로 (SASD)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 처음부터 순서대로 읽어야 하므로 물리적 주소를 통한 직접 접근(Direct Access)이 불가능합니다."
+          },
+          {
+            "label": "2",
+            "text": "레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '레코드들이 순차적으로 처리되므로 대화식 처리보다 일괄 처리에 적합하다.'이므로 일치하지 않습니다. 순차 처리는 일괄 처리에 효율적입니다. 레코드 간 빈 공간이 없어 저장 효율이 높습니다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 순차 처리는 일괄 처리에 효율적입니다. 레코드 간 빈 공간이 없어 저장 효율이 높습니다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.'이므로 일치하지 않습니다. 순차 처리는 일괄 처리에 효율적입니다. 레코드 간 빈 공간이 없어 저장 효율이 높습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 순차 파일(Sequential File), SASD, DASD",
+          "정답 판단 근거를 적용합니다. 순차 파일은 레코드를 처음부터 순서대로 읽어야 하므로 물리적 주소를 통한 직접 접근(Direct Access)이 불가능합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 순차 처리는 일괄 처리에 효율적입니다."
+        ],
+        "exam_traps": [
+          "순차 처리는 일괄 처리에 효율적입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순차 파일(Sequential File)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SASD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DASD'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 = 처음부터 차례대로 (SASD)"
+        ],
+        "detailed_summary": "순차 파일(Sequential File)의 특징과 접근 방식에 대한 문제입니다. 순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 순차 파일에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 처음부터 순서대로 읽어야 하므로 물리적 주소를 통한 직접 접근(Direct Access)이 불가능합니다. 시험 포인트는 순차 처리는 일괄 처리에 효율적입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "순차 파일",
+        "SASD",
+        "DASD",
+        "일괄 처리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d2de7a659be815aa",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          75
+        ],
+        "page_span": {
+          "start_page": 75,
+          "end_page": 75
+        },
+        "source_explanation": "순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Windows·UNIX와 파일 시스템 기초"
+        ],
+        "chapter_label": "Windows·UNIX와 파일 시스템 기초",
+        "chapter_key": "프로그래밍 언어 활용 > Windows·UNIX와 파일 시스템 기초",
+        "chapter_id": "chapter_354"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 166.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "순차 파일에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+        ],
+        "answer_text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다."
+      },
+      "explanation": {
+        "source_text": "순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다.",
+        "summary": "순차 파일(Sequential File)의 특징과 접근 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "순차 파일은 레코드를 순서대로 읽어야 하므로 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 직접 파일(Direct File)의 특징입니다."
+        ],
+        "why_others_wrong": [
+          "2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다.",
+          "4: 테이프, 디스크 등 다양한 매체에서 구현이 용이합니다."
+        ],
+        "key_concepts": [
+          "순차 접근",
+          "공간 효율성"
+        ],
+        "memory_cues": [
+          "순차 파일 = 줄 서서 기다리기 (직접 가기 안 됨)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 직접 파일(Direct File)의 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다. 4: 테이프, 디스크 등 다양한 매체에서 구현이 용이합니다."
+          },
+          {
+            "label": "3",
+            "text": "연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '연속적인 레코드의 저장에 의해 레코드 사이에 빈 공간이 존재하지 않으므로 기억 장치의 효율적인 이용이 가능하다.'이므로 일치하지 않습니다. 2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다. 4: 테이프, 디스크 등 다양한 매체에서 구현이 용이합니다."
+          },
+          {
+            "label": "4",
+            "text": "매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'인데 이 선택지는 '매체 변환이 쉬워 어떠한 매체에도 적용할 수 있다.'이므로 일치하지 않습니다. 2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다. 4: 테이프, 디스크 등 다양한 매체에서 구현이 용이합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순차 파일에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 순차 접근, 공간 효율성",
+          "정답 판단 근거를 적용합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 직접 파일(Direct File)의 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다."
+        ],
+        "exam_traps": [
+          "2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순차 접근'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '공간 효율성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 파일 = 줄 서서 기다리기 (직접 가기 안 됨)"
+        ],
+        "detailed_summary": "순차 파일(Sequential File)의 특징과 접근 방식을 묻는 문제입니다. 순차 파일은 SASD(Sequential Access Storage Device)를 사용하여 원하는 레코드에 접근하기 위해 처음부터 순서대로 접근합니다. DASD를 사용하는 것은 직접 파일입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순차 파일에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 DASD(Direct Access Storage Device)의 물리적 주소를 통하여 파일의 각 레코드에 직접 접근한다.'와 일치합니다. 순차 파일은 레코드를 순서대로 읽어야 하므로 직접 접근(Direct Access)이 불가능합니다. 직접 접근은 직접 파일(Direct File)의 특징입니다. 시험 포인트는 2, 3: 레코드를 촘촘히 저장하므로 공간 효율이 좋습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty in choice 2 and 3 (they look identical in the text)",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "순차 파일",
+        "Sequential File",
+        "SASD",
+        "DASD",
+        "파일 시스템"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_738f0f3ef0259455",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          137
+        ],
+        "page_span": {
+          "start_page": 137,
+          "end_page": 137
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 SAMBA의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_073",
+        "topic_title": "Windows·UNIX와 파일 시스템 기초",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "Windows·UNIX와 파일 시스템 기초",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 내용이 설명하는 것은?\n• 인트라넷이나 인터넷에서 서버의 파일 및 프린터를 사용할 수 있는 프리웨어 프로그램이다.\n• 리눅스, 유닉스, OpenVMS, OS/2 등 다양한 운영 체제에 설치되는 클라이언트/서버 프로토콜 기반의 프로그램이다.\n• 이 프로그램을 사용하여 다른 컴퓨터에 파일, 프린터, 기타 자원의 접근 요구를 할 수 있고, 다른 컴퓨터는 그 요구에 응하여 가부간 응답을 보낸다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SAMBA"
+          },
+          {
+            "label": "2",
+            "text": "SDN"
+          },
+          {
+            "label": "3",
+            "text": "IoT"
+          },
+          {
+            "label": "4",
+            "text": "Ransomware"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SAMBA"
+        ],
+        "answer_text": "SAMBA"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 SAMBA의 특징입니다.",
+        "summary": "서로 다른 운영체제 간 자원 공유를 가능하게 하는 SAMBA에 대한 설명입니다.",
+        "why_correct": [
+          "SAMBA는 SMB 프로토콜을 구현하여 리눅스/유닉스 환경에서 윈도우 시스템과 파일/프린터를 공유하게 해줍니다."
+        ],
+        "why_others_wrong": [
+          "SDN은 소프트웨어 정의 네트워크입니다.",
+          "IoT는 사물인터넷입니다.",
+          "Ransomware는 악성코드입니다."
+        ],
+        "key_concepts": [
+          "SAMBA",
+          "SMB"
+        ],
+        "memory_cues": [
+          "리눅스-윈도우 공유 = SAMBA"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SAMBA",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SAMBA'와 일치합니다. SAMBA는 SMB 프로토콜을 구현하여 리눅스/유닉스 환경에서 윈도우 시스템과 파일/프린터를 공유하게 해줍니다."
+          },
+          {
+            "label": "2",
+            "text": "SDN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAMBA'인데 이 선택지는 'SDN'이므로 일치하지 않습니다. SDN은 소프트웨어 정의 네트워크입니다. IoT는 사물인터넷입니다."
+          },
+          {
+            "label": "3",
+            "text": "IoT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAMBA'인데 이 선택지는 'IoT'이므로 일치하지 않습니다. SDN은 소프트웨어 정의 네트워크입니다. IoT는 사물인터넷입니다."
+          },
+          {
+            "label": "4",
+            "text": "Ransomware",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAMBA'인데 이 선택지는 'Ransomware'이므로 일치하지 않습니다. SDN은 소프트웨어 정의 네트워크입니다. IoT는 사물인터넷입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 것은? • 인트라넷이나 인터넷에서 서버의 파일 및 프린터를 사용할 수 있는 프리웨어 프로그램이다. • 리눅스, 유닉스, OpenVMS, OS/2 등 다양한 운영 체제에 설치되는 클라이언트/서버 프로토콜 기반의 프로그램이다. • 이 프로그램을 사용하여 다른 컴퓨터에 파일, 프린터, 기타 자원의 접근 요구를 할 수 있고, 다른 컴퓨터는 그 요구에 응하여 가부간 응답을 보낸다.",
+          "핵심 개념을 떠올립니다. SAMBA, SMB",
+          "정답 판단 근거를 적용합니다. SAMBA는 SMB 프로토콜을 구현하여 리눅스/유닉스 환경에서 윈도우 시스템과 파일/프린터를 공유하게 해줍니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SDN은 소프트웨어 정의 네트워크입니다."
+        ],
+        "exam_traps": [
+          "SDN은 소프트웨어 정의 네트워크입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SAMBA'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SMB'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 리눅스-윈도우 공유 = SAMBA"
+        ],
+        "detailed_summary": "서로 다른 운영체제 간 자원 공유를 가능하게 하는 SAMBA에 대한 설명입니다. 전문가의 조언 | 문제에 제시된 내용은 SAMBA의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 것은? • 인트라넷이나 인터넷에서 서버의 파일 및 프린터를 사용할 수 있는 프리웨어 프로그램이다. • 리눅스, 유닉스, OpenVMS, OS/2 등 다양한 운영 체제에 설치되는 클라이언트/서버 프로토콜 기반의 프로그램이다. • 이 프로그램을 사용하여 다른 컴퓨터에 파일, 프린터, 기타 자원의 접근 요구를 할 수 있고, 다른 컴퓨터는 그 요구에 응하여 가부간 응답을 보낸다. 정답입니다. 이 선택지는 실제 정답인 '1번 SAMBA'와 일치합니다. SAMBA는 SMB 프로토콜을 구현하여 리눅스/유닉스 환경에서 윈도우 시스템과 파일/프린터를 공유하게 해줍니다. 시험 포인트는 SDN은 소프트웨어 정의 네트워크입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "SAMBA",
+        "파일 공유",
+        "프린터 공유",
+        "이기종 OS"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

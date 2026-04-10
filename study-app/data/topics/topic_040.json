@@ -1,0 +1,2428 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_040",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      126,
+      127
+    ],
+    "source_lecture_ids": [
+      "0126_126",
+      "0127_127"
+    ],
+    "source_titles": [
+      "DBMS",
+      "스키마"
+    ],
+    "keywords": [
+      "DBMS",
+      "스키마"
+    ],
+    "highlight_keywords": [
+      "DBMS",
+      "기능",
+      "제어 기능",
+      "데이터베이스",
+      "조작 기능",
+      "스키마",
+      "Schema",
+      "개념 스키마",
+      "수량",
+      "상품"
+    ],
+    "secondary_keywords": [
+      "Control",
+      "정의 기능",
+      "데이터베이스를",
+      "삽입",
+      "데이터베이스를 관리해 주는 소프트웨어.",
+      "사용자와",
+      "사진",
+      "제약",
+      "ID, PW, 이름, 전화, 주소",
+      "사진, 설명, 가격, 수량",
+      "Specification",
+      "Description"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0126_126",
+      "sequence": 126,
+      "number": "126",
+      "course_code": "350125",
+      "title": "DBMS",
+      "duration_seconds": 484,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "segment_count": 19,
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "tokens": [
+            "DBMS"
+          ],
+          "score": 96,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 61,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "제어 기능",
+          "tokens": [
+            "제어",
+            "기능"
+          ],
+          "score": 48,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "조작 기능",
+          "tokens": [
+            "조작",
+            "기능"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Control",
+          "tokens": [
+            "Control"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정의 기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스를",
+          "tokens": [
+            "데이터베이스를"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "삽입",
+          "tokens": [
+            "삽입"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "tokens": [
+            "데이터베이스를",
+            "관리해",
+            "주는",
+            "소프트웨어"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사용자와",
+          "tokens": [
+            "사용자와"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_040-subtopic-001-source-seg-001::01",
+          "prompt": "강의 주제인 ______(데이터베이스 관리 시스템) 소개",
+          "answer": "DBMS",
+          "original": "강의 주제인 DBMS(데이터베이스 관리 시스템) 소개",
+          "keyword": "DBMS",
+          "source_segment_id": "topic_040-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DBMS'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-001-source-seg-010::02",
+          "prompt": "조작 기능이라는 게 있고 우리 ______이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다.",
+          "answer": "제어 기능",
+          "original": "조작 기능이라는 게 있고 우리 제어 기능이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다.",
+          "keyword": "제어 기능",
+          "source_segment_id": "topic_040-subtopic-001-source-seg-010",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '제어 기능'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-001-source-seg-001::03",
+          "prompt": "강의 주제인 DBMS(______ 관리 시스템) 소개",
+          "answer": "데이터베이스",
+          "original": "강의 주제인 DBMS(데이터베이스 관리 시스템) 소개",
+          "keyword": "데이터베이스",
+          "source_segment_id": "topic_040-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-001-source-seg-010::04",
+          "prompt": "______이라는 게 있고 우리 제어 기능이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다.",
+          "answer": "조작 기능",
+          "original": "조작 기능이라는 게 있고 우리 제어 기능이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다.",
+          "keyword": "조작 기능",
+          "source_segment_id": "topic_040-subtopic-001-source-seg-010",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '조작 기능'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0127_127",
+      "sequence": 127,
+      "number": "127",
+      "course_code": "350126",
+      "title": "스키마",
+      "duration_seconds": 667,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "tokens": [
+            "스키마"
+          ],
+          "score": 67,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Schema",
+          "tokens": [
+            "Schema"
+          ],
+          "score": 41,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개념 스키마",
+          "tokens": [
+            "개념",
+            "스키마"
+          ],
+          "score": 36,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "수량",
+          "tokens": [
+            "수량"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "상품",
+          "tokens": [
+            "상품"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "사진",
+          "tokens": [
+            "사진"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "제약",
+          "tokens": [
+            "제약"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "ID, PW, 이름, 전화, 주소",
+          "tokens": [
+            "ID",
+            "PW",
+            "이름",
+            "전화",
+            "주소"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사진, 설명, 가격, 수량",
+          "tokens": [
+            "사진",
+            "가격",
+            "수량"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Specification",
+          "tokens": [
+            "Specification"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Description",
+          "tokens": [
+            "Description"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_040-subtopic-002-source-seg-001::01",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "스키마",
+          "original": "이번 시간에는 우리 스키마에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "스키마",
+          "source_segment_id": "topic_040-subtopic-002-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '스키마'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-002-source-seg-002::02",
+          "prompt": "스키마(______)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+          "answer": "Schema",
+          "original": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+          "keyword": "Schema",
+          "source_segment_id": "topic_040-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Schema'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-002-source-seg-002::03",
+          "prompt": "• 스키마는 사용자의 관점에 따라 외부 스키마, ______, 내부 스키마로 나누어 짐.",
+          "answer": "개념 스키마",
+          "original": "• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐.",
+          "keyword": "개념 스키마",
+          "source_segment_id": "topic_040-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '개념 스키마'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_040-subtopic-002-source-seg-002::04",
+          "prompt": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(______)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+          "answer": "Specification",
+          "original": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+          "keyword": "Specification",
+          "source_segment_id": "topic_040-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Specification'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_040",
+    "sequence": 40,
+    "number": "40",
+    "title": "DBMS와 스키마",
+    "title_raw": "DBMS와 스키마",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      126,
+      127
+    ],
+    "source_titles": [
+      "DBMS",
+      "스키마"
+    ],
+    "preview_text": "DBMS, 스키마",
+    "segment_count": 34,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 DBMS, 스키마을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 DBMS, 스키마을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1151,
+    "source_titles_preview": [
+      "DBMS",
+      "스키마"
+    ],
+    "highlight_keywords": [
+      "DBMS",
+      "기능",
+      "제어 기능",
+      "데이터베이스",
+      "조작 기능",
+      "스키마",
+      "Schema",
+      "개념 스키마",
+      "수량",
+      "상품"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_040-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제인 DBMS(데이터베이스 관리 시스템) 소개",
+      "screen_text_lines": [
+        "DBMS(DataBase Management System; 데이터베이스 관리 시스템)"
+      ],
+      "screen_text": "DBMS(DataBase Management System; 데이터베이스 관리 시스템)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 DBMS 데이터베이스 관리 시스템에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 DBMS 데이터베이스 관리 시스템에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 9,
+      "end_seconds": 32,
+      "duration_seconds": 23,
+      "timeline_summary": "DBMS의 기본 개념 및 데이터베이스의 목적 설명",
+      "screen_text_lines": [
+        "DBMS(DataBase Management System; 데이터베이스 관리 시스템)",
+        "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어."
+      ],
+      "screen_text": "DBMS(DataBase Management System; 데이터베이스 관리 시스템)\nDBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어.",
+      "spoken_sentences": [
+        "DBMS요.",
+        "DBMS가 우리 데이터베이스 관리 시스템을 보고 우리가 DBMS라고 합니다.",
+        "우리 데이터베이스라는 게 있었죠?",
+        "이 데이터베이스는 특정 조직의 업무를 수행하는 데 필요한 관련된 그런 데이터들을 싹 다 한곳에 모아놓은 거 그걸 보고 우리가 데이터베이스라고 했죠."
+      ],
+      "spoken_text": "DBMS요. DBMS가 우리 데이터베이스 관리 시스템을 보고 우리가 DBMS라고 합니다. 우리 데이터베이스라는 게 있었죠? 이 데이터베이스는 특정 조직의 업무를 수행하는 데 필요한 관련된 그런 데이터들을 싹 다 한곳에 모아놓은 거 그걸 보고 우리가 데이터베이스라고 했죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 32,
+      "end_seconds": 60,
+      "duration_seconds": 28,
+      "timeline_summary": "데이터베이스의 중복성 및 종속성 문제 가능성 언급",
+      "screen_text_lines": [
+        "DBMS(DataBase Management System; 데이터베이스 관리 시스템)",
+        "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어."
+      ],
+      "screen_text": "DBMS(DataBase Management System; 데이터베이스 관리 시스템)\nDBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어.",
+      "spoken_sentences": [
+        "그러면 A라는 사람도 데이터베이스에 뭔가 저장을 할 거고요.",
+        "B라는 사람도 저장하고 C라는 사람도 저장하고 D라는 사람도 저장하고 엄청나게 많은 사람들이 그 데이터베이스에다가 막 파일 같은 것들을 막 저장을 시킬 거예요.",
+        "그러다 보면은 똑같은 파일이 여러 개 중복적으로 저장이 될 수도 있죠.",
+        "그리고 각각의 파일들마다 종속성도 생길 수가 있는 거고 파일이 막 엉망진창으로 막 그렇게 보관이 될 거란 말이에요."
+      ],
+      "spoken_text": "그러면 A라는 사람도 데이터베이스에 뭔가 저장을 할 거고요. B라는 사람도 저장하고 C라는 사람도 저장하고 D라는 사람도 저장하고 엄청나게 많은 사람들이 그 데이터베이스에다가 막 파일 같은 것들을 막 저장을 시킬 거예요. 그러다 보면은 똑같은 파일이 여러 개 중복적으로 저장이 될 수도 있죠. 그리고 각각의 파일들마다 종속성도 생길 수가 있는 거고 파일이 막 엉망진창으로 막 그렇게 보관이 될 거란 말이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:01:00",
+      "end_time_hms": "00:01:31",
+      "start_seconds": 60,
+      "end_seconds": 91,
+      "duration_seconds": 31,
+      "timeline_summary": "사용자와 데이터베이스 사이에서 DBMS의 역할 시각화 설명",
+      "screen_text_lines": [
+        "DBMS(DataBase Management System; 데이터베이스 관리 시스템)",
+        "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어."
+      ],
+      "screen_text": "DBMS(DataBase Management System; 데이터베이스 관리 시스템)\nDBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어.",
+      "spoken_sentences": [
+        "어떤 데이터베이스가 있고 그리고 우리 사용자 일반 사용자들이 여기 있을 때 그때 이 데이터베이스와 사용자 그 사이에 그 사이에다가 우리가 DBMS라는 거를 우리가 설치를 합니다.",
+        "설치해서 이 데이터베이스 관리 시스템 얘가 우리 데이터베이스와 사용자 사이에서 이 데이터베이스를 효율적으로 쉽게 그렇게 사용할 수 있게 중간에서 도와주는 그런 역할을 해주는 게 우리 DBMS예요."
+      ],
+      "spoken_text": "어떤 데이터베이스가 있고 그리고 우리 사용자 일반 사용자들이 여기 있을 때 그때 이 데이터베이스와 사용자 그 사이에 그 사이에다가 우리가 DBMS라는 거를 우리가 설치를 합니다. 설치해서 이 데이터베이스 관리 시스템 얘가 우리 데이터베이스와 사용자 사이에서 이 데이터베이스를 효율적으로 쉽게 그렇게 사용할 수 있게 중간에서 도와주는 그런 역할을 해주는 게 우리 DBMS예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:01:31",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 91,
+      "end_seconds": 124,
+      "duration_seconds": 33,
+      "timeline_summary": "DBMS를 통한 데이터 관리의 중요성 설명",
+      "screen_text_lines": [
+        "DBMS(DataBase Management System; 데이터베이스 관리 시스템)",
+        "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어."
+      ],
+      "screen_text": "DBMS(DataBase Management System; 데이터베이스 관리 시스템)\nDBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어.",
+      "spoken_sentences": [
+        "해서 이 데이터베이스라는 곳에는 파일이 엄청나게 많이 들어 있잖아요.",
+        "근데 어떤 특정 사용자가 어떤 특정 데이터를 찾아달래요.",
+        "그랬을 때 그 데이터를 빨리빨리 효과적으로 우리가 찾아줘야 된다고요.",
+        "그리고 이 데이터베이스라는 곳에는 우리 회사에서 사용하는 모든 데이터들이 싹 다 다 들어있기 때문에 그곳에는 뭐 신입사원들이 보면 안 되는 그런 자료들도 있을 거고 회사의 기밀 자료도 있을 거고 회계 자료도 있고 엄청나게 많은 데이터들이 막 들어있단 말이에요.",
+        "그런 것들을 아무나 막 볼 수 있게 해주면 안 되겠죠."
+      ],
+      "spoken_text": "해서 이 데이터베이스라는 곳에는 파일이 엄청나게 많이 들어 있잖아요. 근데 어떤 특정 사용자가 어떤 특정 데이터를 찾아달래요. 그랬을 때 그 데이터를 빨리빨리 효과적으로 우리가 찾아줘야 된다고요. 그리고 이 데이터베이스라는 곳에는 우리 회사에서 사용하는 모든 데이터들이 싹 다 다 들어있기 때문에 그곳에는 뭐 신입사원들이 보면 안 되는 그런 자료들도 있을 거고 회사의 기밀 자료도 있을 거고 회계 자료도 있고 엄청나게 많은 데이터들이 막 들어있단 말이에요. 그런 것들을 아무나 막 볼 수 있게 해주면 안 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:02:04",
+      "end_time_hms": "00:02:23",
+      "start_seconds": 124,
+      "end_seconds": 143,
+      "duration_seconds": 19,
+      "timeline_summary": "DBMS 정의 요약",
+      "screen_text_lines": [
+        "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어."
+      ],
+      "screen_text": "DBMS란 사용자와 데이터베이스 사이에서 사용자의 요구에 따라 정보를 생성해주고, 데이터베이스를 관리해 주는 소프트웨어.",
+      "spoken_sentences": [
+        "해서 이 DBMS라는 거는 우리 사용자와 데이터베이스 그 사이에서 사용자의 요구에 따라서 정보를 생성도 해주고요.",
+        "데이터베이스를 관리도 관리도 해주는 그런 소프트웨어, 그런 프로그램을 보고 우리가 DBMS라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 이 DBMS라는 거는 우리 사용자와 데이터베이스 그 사이에서 사용자의 요구에 따라서 정보를 생성도 해주고요. 데이터베이스를 관리도 관리도 해주는 그런 소프트웨어, 그런 프로그램을 보고 우리가 DBMS라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터베이스를 관리해 주는 소프트웨어.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:02:23",
+      "end_time_hms": "00:02:56",
+      "start_seconds": 143,
+      "end_seconds": 176,
+      "duration_seconds": 33,
+      "timeline_summary": "기존 파일 시스템의 문제를 해결하기 위한 DBMS 제안 목적",
+      "screen_text_lines": [
+        "DBMS는 기존의 파일 시스템이 갖는 데이터의 종속성과 중복성의 문제를 해결하기 위해 제안된 시스템으로, 모든 응용 프로그램들이 데이터베이스를 공유할 수 있도록 관리해 준다."
+      ],
+      "screen_text": "DBMS는 기존의 파일 시스템이 갖는 데이터의 종속성과 중복성의 문제를 해결하기 위해 제안된 시스템으로, 모든 응용 프로그램들이 데이터베이스를 공유할 수 있도록 관리해 준다.",
+      "spoken_sentences": [
+        "이 DBMS는 기존의 파일 시스템이 갖는 데이터 종속성, 중복성 이런 문제를 해결하기 위해서 제안된 그런 시스템을 보고 우리가 DBMS 그렇게 부르는 거예요.",
+        "해서 우리 사용자들도 이런 데이터베이스를 사용하지만 우리 컴퓨터 안에 들어 있는 다른 응용 프로그램들이 있죠.",
+        "그런 응용 프로그램에서도 이 데이터베이스에 접근해서 필요한 데이터를 가져다가 사용자한테 줘야 될 거 아니에요.",
+        "해서 응용 프로그램들이 이런 데이터베이스를 공유할 수 있도록 그렇게 관리해 주는 그런 역할도 우리가 DBMS가 해줍니다."
+      ],
+      "spoken_text": "이 DBMS는 기존의 파일 시스템이 갖는 데이터 종속성, 중복성 이런 문제를 해결하기 위해서 제안된 그런 시스템을 보고 우리가 DBMS 그렇게 부르는 거예요. 해서 우리 사용자들도 이런 데이터베이스를 사용하지만 우리 컴퓨터 안에 들어 있는 다른 응용 프로그램들이 있죠. 그런 응용 프로그램에서도 이 데이터베이스에 접근해서 필요한 데이터를 가져다가 사용자한테 줘야 될 거 아니에요. 해서 응용 프로그램들이 이런 데이터베이스를 공유할 수 있도록 그렇게 관리해 주는 그런 역할도 우리가 DBMS가 해줍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:02:56",
+      "end_time_hms": "00:03:13",
+      "start_seconds": 176,
+      "end_seconds": 193,
+      "duration_seconds": 17,
+      "timeline_summary": "데이터베이스 구성 및 유지관리에 대한 DBMS의 책임",
+      "screen_text_lines": [
+        "DBMS는 데이터베이스의 구성, 접근 방법, 유지관리에 대한 모든 책임을 진다."
+      ],
+      "screen_text": "DBMS는 데이터베이스의 구성, 접근 방법, 유지관리에 대한 모든 책임을 진다.",
+      "spoken_sentences": [
+        "그때 이 DBMS라는 아이는 우리 데이터베이스를 구성을 해주고 그리고 접근 방법이 됐든 유지관리에 대한 모든 책임을 전부 다 DBMS가 다 져요.",
+        "그러면 우리가 데이터베이스를 사용할 때는 DBMS가 꼭 필요하겠죠."
+      ],
+      "spoken_text": "그때 이 DBMS라는 아이는 우리 데이터베이스를 구성을 해주고 그리고 접근 방법이 됐든 유지관리에 대한 모든 책임을 전부 다 DBMS가 다 져요. 그러면 우리가 데이터베이스를 사용할 때는 DBMS가 꼭 필요하겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:03:13",
+      "end_time_hms": "00:03:47",
+      "start_seconds": 193,
+      "end_seconds": 227,
+      "duration_seconds": 34,
+      "timeline_summary": "데이터 표준화 및 일관성, 보안 유지 기능 설명",
+      "screen_text_lines": [
+        "DBMS는 데이터베이스의 구성, 접근 방법, 유지관리에 대한 모든 책임을 진다."
+      ],
+      "screen_text": "DBMS는 데이터베이스의 구성, 접근 방법, 유지관리에 대한 모든 책임을 진다.",
+      "spoken_sentences": [
+        "그리고 하나의 데이터베이스에다가 뭔가 데이터 같은 것들을 저장을 할 때 저장을 할 때는 우리가 표준화된 그런 형식을 이용해서 우리가 표준화된 데이터를 전부 다 저장을 해야 돼요.",
+        "그리고 이 데이터베이스는 항상 최신의 데이터를 유지할 수 있게끔 요 데이터베이스 관리 시스템이 데이터를 전부 다 관리를 해주고요.",
+        "일관성이 됐든 무결성이 됐든 그런 것도 유지할 수 있습니다.",
+        "그리고 이 DBMS가 이 데이터베이스에 대해서 보안도 유지할 수 있게 그런 기능들도 다 제공을 해줘요."
+      ],
+      "spoken_text": "그리고 하나의 데이터베이스에다가 뭔가 데이터 같은 것들을 저장을 할 때 저장을 할 때는 우리가 표준화된 그런 형식을 이용해서 우리가 표준화된 데이터를 전부 다 저장을 해야 돼요. 그리고 이 데이터베이스는 항상 최신의 데이터를 유지할 수 있게끔 요 데이터베이스 관리 시스템이 데이터를 전부 다 관리를 해주고요. 일관성이 됐든 무결성이 됐든 그런 것도 유지할 수 있습니다. 그리고 이 DBMS가 이 데이터베이스에 대해서 보안도 유지할 수 있게 그런 기능들도 다 제공을 해줘요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:03:47",
+      "end_time_hms": "00:04:08",
+      "start_seconds": 227,
+      "end_seconds": 248,
+      "duration_seconds": 21,
+      "timeline_summary": "DBMS의 3대 필수 기능 소개",
+      "screen_text_lines": [
+        "DBMS의 필수 기능에는 정의(Definition), 조작(Manipulation), 제어(Control) 기능이 있다."
+      ],
+      "screen_text": "DBMS의 필수 기능에는 정의(Definition), 조작(Manipulation), 제어(Control) 기능이 있다.",
+      "spoken_sentences": [
+        "자 이런 DBMS에 보게 되면 필수 기능이 크게 세 가지가 있습니다.",
+        "우리 정의 기능이라는 게 있고요.",
+        "조작 기능이라는 게 있고 우리 제어 기능이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다.",
+        "자 그러면 정의 기능이 뭔지 조작 기능이 뭔지 우리 제어 기능이 뭔지 요것 좀 살펴보자고요."
+      ],
+      "spoken_text": "자 이런 DBMS에 보게 되면 필수 기능이 크게 세 가지가 있습니다. 우리 정의 기능이라는 게 있고요. 조작 기능이라는 게 있고 우리 제어 기능이라는 게 있고 이렇게 크게 세 가지 기능으로 우리가 나눠서 볼 수 있습니다. 자 그러면 정의 기능이 뭔지 조작 기능이 뭔지 우리 제어 기능이 뭔지 요것 좀 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "조작 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:04:08",
+      "end_time_hms": "00:04:39",
+      "start_seconds": 248,
+      "end_seconds": 279,
+      "duration_seconds": 31,
+      "timeline_summary": "정의 기능(Definition)의 상세 설명",
+      "screen_text_lines": [
+        "정의 기능 : 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터의 형(Type)과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능."
+      ],
+      "screen_text": "정의 기능 : 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터의 형(Type)과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능.",
+      "spoken_sentences": [
+        "우리 정의 기능요.",
+        "정의 기능이라는 거는 모든 응용 프로그램들이 데이터베이스를 공유할 수 있는데 그때 모든 응용 프로그램들이 요구하는 그런 데이터 구조가 있을 거 아니에요.",
+        "그런 구조 같은 것들을 지원하기 위해서 데이터베이스에 저장될 그런 데이터의 타입이 됐든 구조가 됐든 그런 것도 전부 다 정의를 할 수가 있습니다.",
+        "그리고 데이터를 이용하는 이용 방식도 우리가 정의할 수 있고요.",
+        "제약 조건 같은 것도 우리가 명시할 수 있는 그런 기능을 제공해 주는 게 우리 정의 기능이요."
+      ],
+      "spoken_text": "우리 정의 기능요. 정의 기능이라는 거는 모든 응용 프로그램들이 데이터베이스를 공유할 수 있는데 그때 모든 응용 프로그램들이 요구하는 그런 데이터 구조가 있을 거 아니에요. 그런 구조 같은 것들을 지원하기 위해서 데이터베이스에 저장될 그런 데이터의 타입이 됐든 구조가 됐든 그런 것도 전부 다 정의를 할 수가 있습니다. 그리고 데이터를 이용하는 이용 방식도 우리가 정의할 수 있고요. 제약 조건 같은 것도 우리가 명시할 수 있는 그런 기능을 제공해 주는 게 우리 정의 기능이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "정의 기능",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        },
+        {
+          "keyword": "데이터베이스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:04:39",
+      "end_time_hms": "00:05:05",
+      "start_seconds": 279,
+      "end_seconds": 305,
+      "duration_seconds": 26,
+      "timeline_summary": "조작 기능(Manipulation)의 상세 설명",
+      "screen_text_lines": [
+        "조작 기능 : 데이터 검색, 갱신, 삽입, 삭제 등을 체계적으로 처리하기 위해 사용자와 데이터베이스 사이의 인터페이스 수단을 제공하는 기능."
+      ],
+      "screen_text": "조작 기능 : 데이터 검색, 갱신, 삽입, 삭제 등을 체계적으로 처리하기 위해 사용자와 데이터베이스 사이의 인터페이스 수단을 제공하는 기능.",
+      "spoken_sentences": [
+        "그다음에 조작 기능요.",
+        "우리 조작 기능이라는 거는 우리 데이터베이스에 보게 되면 데이터가 엄청나게 많을 거 아니에요.",
+        "그런 데이터들을 내가 원하는 원하는 그런 데이터들을 내가 검색할 수 있게 갱신할 수 있게 삽입할 수 있게 삭제할 수 있게 이런 작업들을 체계적으로 처리하기 위해서 사용자와 데이터베이스 사이에서 인터페이스 수단을 제공해 주는 그런 기능을 보고 우리가 조작 기능이라고 합니다."
+      ],
+      "spoken_text": "그다음에 조작 기능요. 우리 조작 기능이라는 거는 우리 데이터베이스에 보게 되면 데이터가 엄청나게 많을 거 아니에요. 그런 데이터들을 내가 원하는 원하는 그런 데이터들을 내가 검색할 수 있게 갱신할 수 있게 삽입할 수 있게 삭제할 수 있게 이런 작업들을 체계적으로 처리하기 위해서 사용자와 데이터베이스 사이에서 인터페이스 수단을 제공해 주는 그런 기능을 보고 우리가 조작 기능이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "조작 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "삽입",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:05:05",
+      "end_time_hms": "00:05:32",
+      "start_seconds": 305,
+      "end_seconds": 332,
+      "duration_seconds": 27,
+      "timeline_summary": "조작 기능의 특징 재강조",
+      "screen_text_lines": [
+        "조작 기능 : 데이터 검색, 갱신, 삽입, 삭제 등을 체계적으로 처리하기 위해 사용자와 데이터베이스 사이의 인터페이스 수단을 제공하는 기능."
+      ],
+      "screen_text": "조작 기능 : 데이터 검색, 갱신, 삽입, 삭제 등을 체계적으로 처리하기 위해 사용자와 데이터베이스 사이의 인터페이스 수단을 제공하는 기능.",
+      "spoken_sentences": [
+        "해서 이 조작 기능이라는 거는 일반 사용자들이 사용하는 그런 기능이에요.",
+        "해서 데이터베이스에 엄청나게 많은 그런 데이터들이 저장이 되어 있을 때 사용자들은 그 데이터베이스에 접근해서 원하는 데이터를 검색하거나 아니면 갱신하거나 아니면 데이터를 삽입을 하거나 아니면 삭제를 하거나 그런 것들을 할 수 있잖아요.",
+        "그런 것들을 체계적으로 처리하기 위한 그런 인터페이스 수단을 제공하는 그런 기능을 보고 우리가 조작 기능 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 이 조작 기능이라는 거는 일반 사용자들이 사용하는 그런 기능이에요. 해서 데이터베이스에 엄청나게 많은 그런 데이터들이 저장이 되어 있을 때 사용자들은 그 데이터베이스에 접근해서 원하는 데이터를 검색하거나 아니면 갱신하거나 아니면 데이터를 삽입을 하거나 아니면 삭제를 하거나 그런 것들을 할 수 있잖아요. 그런 것들을 체계적으로 처리하기 위한 그런 인터페이스 수단을 제공하는 그런 기능을 보고 우리가 조작 기능 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "조작 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "삽입",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:05:32",
+      "end_time_hms": "00:06:02",
+      "start_seconds": 332,
+      "end_seconds": 362,
+      "duration_seconds": 30,
+      "timeline_summary": "제어 기능(Control) - 데이터 무결성 유지",
+      "screen_text_lines": [
+        "제어 기능",
+        "▶ 데이터베이스를 접근하는 갱신, 삽입, 삭제 작업이 정확하게 수행되어 데이터의 무결성이 유지되도록 제어해야 한다."
+      ],
+      "screen_text": "제어 기능\n▶ 데이터베이스를 접근하는 갱신, 삽입, 삭제 작업이 정확하게 수행되어 데이터의 무결성이 유지되도록 제어해야 한다.",
+      "spoken_sentences": [
+        "그다음에 제어 기능요.",
+        "이 제어 기능이라는 거는 데이터의 정확성하고 보안성을 유지하기 위해서 데이터의 무결성이 됐든 보안이 됐든 권한 검사가 됐든 병행 제어가 됐든 이런 기능들을 정의하는 그런 기능을 보고 우리가 제어 기능이라고 그렇게 부릅니다.",
+        "해서 지금 여기 내용에 보게 되면 데이터베이스를 접근하는 우리 갱신, 삽입, 삭제 이런 작업이 정확하게 수행돼서 데이터의 무결성, 무결성이 유지되도록 그렇게 제어를 해줘야 되고요."
+      ],
+      "spoken_text": "그다음에 제어 기능요. 이 제어 기능이라는 거는 데이터의 정확성하고 보안성을 유지하기 위해서 데이터의 무결성이 됐든 보안이 됐든 권한 검사가 됐든 병행 제어가 됐든 이런 기능들을 정의하는 그런 기능을 보고 우리가 제어 기능이라고 그렇게 부릅니다. 해서 지금 여기 내용에 보게 되면 데이터베이스를 접근하는 우리 갱신, 삽입, 삭제 이런 작업이 정확하게 수행돼서 데이터의 무결성, 무결성이 유지되도록 그렇게 제어를 해줘야 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Control",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:06:02",
+      "end_time_hms": "00:06:31",
+      "start_seconds": 362,
+      "end_seconds": 391,
+      "duration_seconds": 29,
+      "timeline_summary": "제어 기능(Control) - 보안 및 권한 검사",
+      "screen_text_lines": [
+        "제어 기능",
+        "▶ 정당한 사용자가 허가된 데이터만 접근할 수 있도록 보안(Security)을 유지하고 권한(Authority)을 검사할 수 있어야 한다."
+      ],
+      "screen_text": "제어 기능\n▶ 정당한 사용자가 허가된 데이터만 접근할 수 있도록 보안(Security)을 유지하고 권한(Authority)을 검사할 수 있어야 한다.",
+      "spoken_sentences": [
+        "그리고 정당한 사용자가 허가된 데이터만 접근할 수 있도록 보안, 보안을 유지해야 되고요.",
+        "그리고 권한 같은 것도 전부 다 계속해서 검사를 할 수 있어야죠.",
+        "우리 데이터베이스에는 회사에서 사용하는 모든 데이터가 다 모여 있는데 신입 사원들이 그 데이터를 다 봐야 된다 그건 아니잖아요.",
+        "해서 회사에서 기밀 자료 같은 것도 있기 때문에 어떤 사람들은 이거를 볼 수 있게 어떤 사람은 이런 것들을 못 보게 그런 식으로 만들어야 된다고요."
+      ],
+      "spoken_text": "그리고 정당한 사용자가 허가된 데이터만 접근할 수 있도록 보안, 보안을 유지해야 되고요. 그리고 권한 같은 것도 전부 다 계속해서 검사를 할 수 있어야죠. 우리 데이터베이스에는 회사에서 사용하는 모든 데이터가 다 모여 있는데 신입 사원들이 그 데이터를 다 봐야 된다 그건 아니잖아요. 해서 회사에서 기밀 자료 같은 것도 있기 때문에 어떤 사람들은 이거를 볼 수 있게 어떤 사람은 이런 것들을 못 보게 그런 식으로 만들어야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Control",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:06:31",
+      "end_time_hms": "00:06:50",
+      "start_seconds": 391,
+      "end_seconds": 410,
+      "duration_seconds": 19,
+      "timeline_summary": "제어 기능(Control) - 병행 제어",
+      "screen_text_lines": [
+        "제어 기능",
+        "▶ 여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처리할 때 처리 결과가 항상 정확성을 유지하도록 병행 제어(Concurrency Control)를 할 수 있어야 한다."
+      ],
+      "screen_text": "제어 기능\n▶ 여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처리할 때 처리 결과가 항상 정확성을 유지하도록 병행 제어(Concurrency Control)를 할 수 있어야 한다.",
+      "spoken_sentences": [
+        "그리고 여러 사용자가 데이터베이스에 동시에 접근해서 데이터를 처리할 때 처리 결과가 처리 결과가 항상 정확하게 정확성을 유지할 수 있도록 우리가 병행 제어를 할 수 있어야 됩니다.",
+        "해서 이런 기능을 제공하는 걸 보고 우리가 제어 기능이라고 해요."
+      ],
+      "spoken_text": "그리고 여러 사용자가 데이터베이스에 동시에 접근해서 데이터를 처리할 때 처리 결과가 처리 결과가 항상 정확하게 정확성을 유지할 수 있도록 우리가 병행 제어를 할 수 있어야 됩니다. 해서 이런 기능을 제공하는 걸 보고 우리가 제어 기능이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Control",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:06:50",
+      "end_time_hms": "00:07:13",
+      "start_seconds": 410,
+      "end_seconds": 433,
+      "duration_seconds": 23,
+      "timeline_summary": "DBMS 필수 기능 요약 및 시험 출제 가능성",
+      "screen_text_lines": [
+        "정의 기능",
+        "조작 기능",
+        "제어 기능"
+      ],
+      "screen_text": "정의 기능\n조작 기능\n제어 기능",
+      "spoken_sentences": [
+        "해서 우리 데이터베이스 관리 시스템에 보게 되면 크게 요렇게 세 가지요.",
+        "정의 기능, 조작 기능, 제어 기능하고 요렇게 세 가지가 있습니다.",
+        "이게 딱 세 개가 있다 보니까 시험 문제 내기가 참 좋죠.",
+        "DBMS의 우리 기능이 아닌 거 찾아라 그런 식으로도 문제가 나올 수도 있는 거고요.",
+        "아니면 이런 여러 가지 특징 같은 것들을 써놓고 이게 어떤 기능에 해당하냐 그렇게도 물어볼 수 있는 거고요."
+      ],
+      "spoken_text": "해서 우리 데이터베이스 관리 시스템에 보게 되면 크게 요렇게 세 가지요. 정의 기능, 조작 기능, 제어 기능하고 요렇게 세 가지가 있습니다. 이게 딱 세 개가 있다 보니까 시험 문제 내기가 참 좋죠. DBMS의 우리 기능이 아닌 거 찾아라 그런 식으로도 문제가 나올 수도 있는 거고요. 아니면 이런 여러 가지 특징 같은 것들을 써놓고 이게 어떤 기능에 해당하냐 그렇게도 물어볼 수 있는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:07:13",
+      "end_time_hms": "00:07:44",
+      "start_seconds": 433,
+      "end_seconds": 464,
+      "duration_seconds": 31,
+      "timeline_summary": "DBMS 3대 필수 기능 암기 팁 전수",
+      "screen_text_lines": [
+        "정의 기능",
+        "조작 기능",
+        "제어 기능"
+      ],
+      "screen_text": "정의 기능\n조작 기능\n제어 기능",
+      "spoken_sentences": [
+        "해서 요 세 가지 우리 데이터베이스의 필수 기능 요 세 가지를 기억하실 때 요 앞에 있는 글자만 따서 기억 좀 하세요.",
+        "자 저 구석에 친구가 한 명 있습니다.",
+        "제가 혼자서 맨날 놀아요.",
+        "해서 저 친구도 내가 같이 놀고 싶어요.",
+        "그러면 걔한테 내가 뭘 주면 돼요?",
+        "정을 주면 되겠죠.",
+        "해서 걔한테 걔한테 걔한테 정 조라 정을 조라 그렇게 기억 좀 하세요.",
+        "해서 제 정 조 제 정 조 하고 그렇게 기억하시면 됩니다."
+      ],
+      "spoken_text": "해서 요 세 가지 우리 데이터베이스의 필수 기능 요 세 가지를 기억하실 때 요 앞에 있는 글자만 따서 기억 좀 하세요. 자 저 구석에 친구가 한 명 있습니다. 제가 혼자서 맨날 놀아요. 해서 저 친구도 내가 같이 놀고 싶어요. 그러면 걔한테 내가 뭘 주면 돼요? 정을 주면 되겠죠. 해서 걔한테 걔한테 걔한테 정 조라 정을 조라 그렇게 기억 좀 하세요. 해서 제 정 조 제 정 조 하고 그렇게 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 1,
+      "subtopic_id": "0126_126",
+      "subtopic_title": "DBMS",
+      "subtopic_sequence": 126,
+      "subtopic_number": "126",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qKYL0azzVJI",
+      "start_time_hms": "00:07:44",
+      "end_time_hms": "00:08:04",
+      "start_seconds": 464,
+      "end_seconds": 484,
+      "duration_seconds": 20,
+      "timeline_summary": "강의 마무리 및 학습 당부",
+      "screen_text_lines": [
+        "정의 기능",
+        "조작 기능",
+        "제어 기능"
+      ],
+      "screen_text": "정의 기능\n조작 기능\n제어 기능",
+      "spoken_sentences": [
+        "해서 우리가 데이터베이스를 사용하는 데 있어서 이 DBMS라는 거는 필수죠 필수 무조건 있어야죠.",
+        "해서 DBMS의 특징 잘 기억하시고요.",
+        "요 세 가지 기능 서로서로 구분할 수 있게 잘 보고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 우리가 데이터베이스를 사용하는 데 있어서 이 DBMS라는 거는 필수죠 필수 무조건 있어야죠. 해서 DBMS의 특징 잘 기억하시고요. 요 세 가지 기능 서로서로 구분할 수 있게 잘 보고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "제어 기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 도입 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 스키마에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 스키마에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 8,
+      "end_seconds": 54,
+      "duration_seconds": 46,
+      "timeline_summary": "쇼핑몰 예시를 통한 스키마의 이해 시작",
+      "screen_text_lines": [
+        "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+        "• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.",
+        "• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐."
+      ],
+      "screen_text": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.\n• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.\n• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐.",
+      "spoken_sentences": [
+        "우리 스키마요.",
+        "자 스키마를 먼저 알아보기 전에 뭔가 하나만 좀 보자고요.",
+        "자 예를 들어서 제가 쇼핑몰을 운영한다고 한번 생각을 해 보세요.",
+        "그러면 이 쇼핑몰에 사람들이 들어와서 회원가입을 하겠죠?",
+        "회원가입을 할 때 이름이다, 주소다, 전화번호다, 뭐 나이다, 성별이다 해서 이런 것들을 쭉 적어서 회원가입을 할 겁니다.",
+        "그리고 그 사람이 들어와서 회원가입을 하고 로그인을 하게 되면 로그인을 하고 나서 우리 쇼핑몰에서 판매하는 그런 상품들을 구경을 하겠죠?",
+        "구경을 하고 마음에 드는 상품이 있으면 그 상품을 선택을 하고 주문을 할 거예요.",
+        "주문을 하면서 결제를 하고 배송지가 어디인지 그런 것들을 다 적어 줄 겁니다.",
+        "자 고런 구조 한번 잠깐 보자고요."
+      ],
+      "spoken_text": "우리 스키마요. 자 스키마를 먼저 알아보기 전에 뭔가 하나만 좀 보자고요. 자 예를 들어서 제가 쇼핑몰을 운영한다고 한번 생각을 해 보세요. 그러면 이 쇼핑몰에 사람들이 들어와서 회원가입을 하겠죠? 회원가입을 할 때 이름이다, 주소다, 전화번호다, 뭐 나이다, 성별이다 해서 이런 것들을 쭉 적어서 회원가입을 할 겁니다. 그리고 그 사람이 들어와서 회원가입을 하고 로그인을 하게 되면 로그인을 하고 나서 우리 쇼핑몰에서 판매하는 그런 상품들을 구경을 하겠죠? 구경을 하고 마음에 드는 상품이 있으면 그 상품을 선택을 하고 주문을 할 거예요. 주문을 하면서 결제를 하고 배송지가 어디인지 그런 것들을 다 적어 줄 겁니다. 자 고런 구조 한번 잠깐 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 54,
+      "end_seconds": 70,
+      "duration_seconds": 16,
+      "timeline_summary": "쇼핑몰 운영에 필요한 세 가지 테이블 설명",
+      "screen_text_lines": [
+        "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+        "• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.",
+        "• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐."
+      ],
+      "screen_text": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.\n• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.\n• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐.",
+      "spoken_sentences": [
+        "그때 쇼핑몰을 운영할 때는 크게 보게 되면 세 개의 테이블이 필요합니다.",
+        "일단은 사람들이 회원들이 내 쇼핑몰에 와서 일단은 물건을 일단 구경을 먼저 하겠죠?"
+      ],
+      "spoken_text": "그때 쇼핑몰을 운영할 때는 크게 보게 되면 세 개의 테이블이 필요합니다. 일단은 사람들이 회원들이 내 쇼핑몰에 와서 일단은 물건을 일단 구경을 먼저 하겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 70,
+      "end_seconds": 102,
+      "duration_seconds": 32,
+      "timeline_summary": "상품 테이블의 구성 요소 설명",
+      "screen_text_lines": [
+        "상품",
+        "사진, 설명, 가격, 수량"
+      ],
+      "screen_text": "상품\n사진, 설명, 가격, 수량",
+      "spoken_sentences": [
+        "그러면 그 사람들이 그 내가 판매하고자 하는 그런 상품에 대해서 뭔가를 데이터들을 볼 수 있게끔 내가 상품 테이블을 하나 만들어요.",
+        "만들어서 상품들마다 사진이 됐든 아니면 설명이 됐든 그런 것들을 쭉쭉 제가 이 상품 테이블에다가 다 집어넣을 거예요.",
+        "그리고 가격은 얼마인지 그런 것도 집어넣고 그리고 수량이 몇 개가 있는지 그런 것도 관리를 해 줘야 되겠죠?",
+        "해서 상품 테이블에다가 이런 것들을 전부 다 집어넣을 거고요."
+      ],
+      "spoken_text": "그러면 그 사람들이 그 내가 판매하고자 하는 그런 상품에 대해서 뭔가를 데이터들을 볼 수 있게끔 내가 상품 테이블을 하나 만들어요. 만들어서 상품들마다 사진이 됐든 아니면 설명이 됐든 그런 것들을 쭉쭉 제가 이 상품 테이블에다가 다 집어넣을 거예요. 그리고 가격은 얼마인지 그런 것도 집어넣고 그리고 수량이 몇 개가 있는지 그런 것도 관리를 해 줘야 되겠죠? 해서 상품 테이블에다가 이런 것들을 전부 다 집어넣을 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "수량",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "사진",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "사진, 설명, 가격, 수량",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:01:42",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 102,
+      "end_seconds": 142,
+      "duration_seconds": 40,
+      "timeline_summary": "회원 테이블의 구성 요소 및 로그인 과정 설명",
+      "screen_text_lines": [
+        "회원",
+        "ID, PW, 이름, 전화, 주소"
+      ],
+      "screen_text": "회원\nID, PW, 이름, 전화, 주소",
+      "spoken_sentences": [
+        "어떤 사람이 와서 내 상품을 보고 어 마음에 드는 게 있나 봐요.",
+        "그래서 물건을 주문하려고 주문하기를 딱 누르니까 뭐가 나타나요?",
+        "로그인해라 그렇게 나타나겠죠?",
+        "해서 우리가 회원을 관리할 수 있는 그 회원 테이블도 하나 필요해요.",
+        "해서 내 쇼핑몰에서는 회원가입을 할 때 일단 아이디 먼저 적어 줘야죠.",
+        "아이디 뭘로 쓸 거냐?",
+        "그리고 패스워드 비밀번호는 뭘로 할 거냐?",
+        "그리고 이름은 뭔지 그리고 전화번호는 어떻게 되는지 그리고 주소는 어떻게 되는지 그런 것들을 전부 다 입력을 받아서 내가 요 회원 테이블에다가 전부 다 저장을 해 놓을 거예요."
+      ],
+      "spoken_text": "어떤 사람이 와서 내 상품을 보고 어 마음에 드는 게 있나 봐요. 그래서 물건을 주문하려고 주문하기를 딱 누르니까 뭐가 나타나요? 로그인해라 그렇게 나타나겠죠? 해서 우리가 회원을 관리할 수 있는 그 회원 테이블도 하나 필요해요. 해서 내 쇼핑몰에서는 회원가입을 할 때 일단 아이디 먼저 적어 줘야죠. 아이디 뭘로 쓸 거냐? 그리고 패스워드 비밀번호는 뭘로 할 거냐? 그리고 이름은 뭔지 그리고 전화번호는 어떻게 되는지 그리고 주소는 어떻게 되는지 그런 것들을 전부 다 입력을 받아서 내가 요 회원 테이블에다가 전부 다 저장을 해 놓을 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "ID, PW, 이름, 전화, 주소",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 142,
+      "end_seconds": 165,
+      "duration_seconds": 23,
+      "timeline_summary": "주문 테이블의 구성 요소 설명",
+      "screen_text_lines": [
+        "주문",
+        "일자, 상품, 수량, 결제, 배송지"
+      ],
+      "screen_text": "주문\n일자, 상품, 수량, 결제, 배송지",
+      "spoken_sentences": [
+        "그렇게 해서 회원가입이 끝나고 나면 그 사람은 해당 상품 자기가 원하는 상품을 선택하고 주문을 하겠죠?",
+        "그러면 그 주문과 관련된 그런 테이블도 하나가 필요합니다.",
+        "해서 이 주문 테이블에다가는 이 회원이 몇 월 며칠 몇 시에 어떤 상품을 주문했는지 그때 상품을 몇 개를 주문했고 결제는 어떻게 했는지 그리고 배송지는 어떻게 되는지 그런 것들 싹 다 저장이 되게끔 이 주문 테이블을 만들어 줄 거예요."
+      ],
+      "spoken_text": "그렇게 해서 회원가입이 끝나고 나면 그 사람은 해당 상품 자기가 원하는 상품을 선택하고 주문을 하겠죠? 그러면 그 주문과 관련된 그런 테이블도 하나가 필요합니다. 해서 이 주문 테이블에다가는 이 회원이 몇 월 며칠 몇 시에 어떤 상품을 주문했는지 그때 상품을 몇 개를 주문했고 결제는 어떻게 했는지 그리고 배송지는 어떻게 되는지 그런 것들 싹 다 저장이 되게끔 이 주문 테이블을 만들어 줄 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "수량",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:02:45",
+      "end_time_hms": "00:03:36",
+      "start_seconds": 165,
+      "end_seconds": 216,
+      "duration_seconds": 51,
+      "timeline_summary": "각 테이블 필드에 대한 제약 조건 설명",
+      "screen_text_lines": [
+        "ID, PW, 이름, 전화, 주소",
+        "영문, 숫자, 혼합",
+        "필수 입력"
+      ],
+      "screen_text": "ID, PW, 이름, 전화, 주소\n영문, 숫자, 혼합\n필수 입력",
+      "spoken_sentences": [
+        "그때 회원 테이블에서 아이디를 입력받을 때는 뭐 숫자하고 영어하고 혼합해서 쓸 수 있게 그리고 최대 몇 글자까지만 써라 그렇게 제한도 걸 수 있겠죠?",
+        "그리고 패스워드 패스워드를 입력할 때는 막 숫자로만 써서 패스워드를 만들면 안 되겠죠?",
+        "해서 영문하고 숫자하고 특수문자하고 그런 것들을 섞어서 몇 자 이내로 써라 그렇게 제약 조건을 우리가 걸 수 있다고요.",
+        "그리고 이름도 몇 글자까지만 입력이 되게 그렇게도 할 수 있겠죠?",
+        "막 장난으로 회원가입 못 하게 그렇게 할 거라고요.",
+        "그리고 전화번호 같은 경우에도 핸드폰 번호 요새 핸드폰이 없는 사람이 없기 때문에 핸드폰 번호는 필수로 입력이 되게끔 그리고 여기는 쇼핑몰이기 때문에 물건을 주문하면 우리가 물건을 보내 줘야 되기 때문에 주소를 반드시 필수 항목으로 입력을 하게끔 그렇게 만들어 줄 거예요."
+      ],
+      "spoken_text": "그때 회원 테이블에서 아이디를 입력받을 때는 뭐 숫자하고 영어하고 혼합해서 쓸 수 있게 그리고 최대 몇 글자까지만 써라 그렇게 제한도 걸 수 있겠죠? 그리고 패스워드 패스워드를 입력할 때는 막 숫자로만 써서 패스워드를 만들면 안 되겠죠? 해서 영문하고 숫자하고 특수문자하고 그런 것들을 섞어서 몇 자 이내로 써라 그렇게 제약 조건을 우리가 걸 수 있다고요. 그리고 이름도 몇 글자까지만 입력이 되게 그렇게도 할 수 있겠죠? 막 장난으로 회원가입 못 하게 그렇게 할 거라고요. 그리고 전화번호 같은 경우에도 핸드폰 번호 요새 핸드폰이 없는 사람이 없기 때문에 핸드폰 번호는 필수로 입력이 되게끔 그리고 여기는 쇼핑몰이기 때문에 물건을 주문하면 우리가 물건을 보내 줘야 되기 때문에 주소를 반드시 필수 항목으로 입력을 하게끔 그렇게 만들어 줄 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "제약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "ID, PW, 이름, 전화, 주소",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:03:36",
+      "end_time_hms": "00:04:11",
+      "start_seconds": 216,
+      "end_seconds": 251,
+      "duration_seconds": 35,
+      "timeline_summary": "사진, 수량 등의 제약 조건 및 스키마의 정의 요약",
+      "screen_text_lines": [
+        "사진, 설명, 가격, 수량",
+        "크기",
+        "숫자만"
+      ],
+      "screen_text": "사진, 설명, 가격, 수량\n크기\n숫자만",
+      "spoken_sentences": [
+        "그리고 쇼핑몰 같은 데 딱 들어갔을 때 어떤 상품을 찍었을 때 상품을 찍을 때마다 만약에 그 상품들의 사진이 크기가 막 다르면 안 되겠죠?",
+        "해서 사진의 크기 같은 것도 우리가 제약 조건으로 우리 걸 수 있는 거고요.",
+        "설명이나 가격이나 수량 이런 것들은 내가 마음대로 입력할 수 있게끔 그렇게 해 주면 되겠죠?",
+        "그리고 가격이나 수량 같은 경우에는 여기다가 내가 오타가 날 수도 있기 때문에 숫자만 입력이 딱 되게끔 그렇게 만들어 줄 수 있습니다.",
+        "해서 지금 방금 제가 설명한 그 내용들이 전부 다 스키마예요 스키마."
+      ],
+      "spoken_text": "그리고 쇼핑몰 같은 데 딱 들어갔을 때 어떤 상품을 찍었을 때 상품을 찍을 때마다 만약에 그 상품들의 사진이 크기가 막 다르면 안 되겠죠? 해서 사진의 크기 같은 것도 우리가 제약 조건으로 우리 걸 수 있는 거고요. 설명이나 가격이나 수량 이런 것들은 내가 마음대로 입력할 수 있게끔 그렇게 해 주면 되겠죠? 그리고 가격이나 수량 같은 경우에는 여기다가 내가 오타가 날 수도 있기 때문에 숫자만 입력이 딱 되게끔 그렇게 만들어 줄 수 있습니다. 해서 지금 방금 제가 설명한 그 내용들이 전부 다 스키마예요 스키마.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "수량",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "사진",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:04:11",
+      "end_time_hms": "00:05:04",
+      "start_seconds": 251,
+      "end_seconds": 304,
+      "duration_seconds": 53,
+      "timeline_summary": "스키마(Schema)의 공식 정의 및 구성 요소",
+      "screen_text_lines": [
+        "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+        "ID, PW, 이름, 전화, 주소",
+        "사진, 설명, 가격, 수량",
+        "일자, 상품, 수량, 결제, 배송지"
+      ],
+      "screen_text": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.\nID, PW, 이름, 전화, 주소\n사진, 설명, 가격, 수량\n일자, 상품, 수량, 결제, 배송지",
+      "spoken_sentences": [
+        "해서 우리 이 스키마라는 거는 데이터베이스의 데이터베이스에 대해서 구조가 됐든 제약 조건이 됐든 이런 것들에 관한 전반적인 그런 명세를 기술한 기술한 그런 메타 데이터 메타 데이터의 집합을 보고 우리가 스키마라고 그렇게 부릅니다.",
+        "여기서 메타 데이터라는 건 데이터의 데이터죠?",
+        "해서 아이디라는 데이터가 있는데 거기에 대해서 내가 제약 조건 같은 걸 걸었어요.",
+        "그 제약 조건은 이 아이디에 대한 아이디라는 이 데이터에 대한 데이터죠?",
+        "해서 그런 데이터를 보고 우리가 메타 데이터라고 그렇게 부릅니다.",
+        "해서 이 스키마라는 거는 우리가 또 다른 말로 다른 말로 스킴 그렇게 부르기도 해요.",
+        "해서 스킴 스키마라는 거는 데이터베이스에 관한 전반적인 그런 구조를 기술한 거 그걸 보고 우리가 스키마라고 합니다.",
+        "그때 데이터베이스를 구성하고 있는 데이터의 개체, 개체다 그러면 지금 아이디다 패스워드다 이름이다 뭐 전화번호다 뭐 주소다 회원 테이블이다 이런 것들이 전부 다 하나의 개체가 되는 거죠?",
+        "이런 개체가 됐든 아니면은 이런 것들마다 각각의 속성들이 있죠?",
+        "그런 속성이 됐든."
+      ],
+      "spoken_text": "해서 우리 이 스키마라는 거는 데이터베이스의 데이터베이스에 대해서 구조가 됐든 제약 조건이 됐든 이런 것들에 관한 전반적인 그런 명세를 기술한 기술한 그런 메타 데이터 메타 데이터의 집합을 보고 우리가 스키마라고 그렇게 부릅니다. 여기서 메타 데이터라는 건 데이터의 데이터죠? 해서 아이디라는 데이터가 있는데 거기에 대해서 내가 제약 조건 같은 걸 걸었어요. 그 제약 조건은 이 아이디에 대한 아이디라는 이 데이터에 대한 데이터죠? 해서 그런 데이터를 보고 우리가 메타 데이터라고 그렇게 부릅니다. 해서 이 스키마라는 거는 우리가 또 다른 말로 다른 말로 스킴 그렇게 부르기도 해요. 해서 스킴 스키마라는 거는 데이터베이스에 관한 전반적인 그런 구조를 기술한 거 그걸 보고 우리가 스키마라고 합니다. 그때 데이터베이스를 구성하고 있는 데이터의 개체, 개체다 그러면 지금 아이디다 패스워드다 이름이다 뭐 전화번호다 뭐 주소다 회원 테이블이다 이런 것들이 전부 다 하나의 개체가 되는 거죠? 이런 개체가 됐든 아니면은 이런 것들마다 각각의 속성들이 있죠? 그런 속성이 됐든.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "수량",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:05:04",
+      "end_time_hms": "00:06:23",
+      "start_seconds": 304,
+      "end_seconds": 383,
+      "duration_seconds": 79,
+      "timeline_summary": "테이블 간의 관계와 스키마의 세 가지 분류",
+      "screen_text_lines": [
+        "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.",
+        "• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.",
+        "• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐."
+      ],
+      "screen_text": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세(Specification)를 기술(Description)한 메타데이터(Meta-Data)의 집합.\n• 스키마는 데이터베이스를 구성하는 데이터 개체(Entity), 속성(Attribute), 관계(Relationship) 및 데이터 조작 시 데이터 값들이 갖는 제약 조건 등에 관해 전반적으로 정의함.\n• 스키마는 사용자의 관점에 따라 외부 스키마, 개념 스키마, 내부 스키마로 나누어 짐.",
+      "spoken_sentences": [
+        "아니면은 이런 각각의 테이블마다 관계가 있을 거 아니에요?",
+        "어떤 특정 회원이 로그인을 해서 상품을 뭔가를 골랐습니다.",
+        "그리고 주문 버튼을 딱 하고 누르는 순간 그 회원 테이블에서 그 사람의 데이터랑 어떤 상품을 선택했는지 그리고 수량은 몇 개를 선택했는지 그런 것들이 전부 다 주문 테이블로 다 넘어와야 돼요.",
+        "해서 이런 각각의 테이블들은 따로따로 노는 게 아니라 서로서로 상호작용하면서 이 주문 테이블에 하나의 데이터로 전부 다 기록이 남아야 되겠죠?",
+        "그런 관계 같은 것들.",
+        "그리고 데이터를 조작할 때 데이터 값들이 갖는 데이터 값들이 갖는 그런 제약 조건 같은 것들 있죠?",
+        "그런 것들에 대해서 전반적으로 정의해 놓은 걸 보고 우리가 스키마라고 그렇게 부르는 거예요.",
+        "이런 스키마는 사용자 관점에 따라서 누구 입장에서 보느냐에 따라서 외부 스키마라는 것도 있고요, 개념 스키마라는 것도 있고, 내부 스키마라는 것도 있고, 요렇게 크게 세 가지로 세 가지로 나눠집니다."
+      ],
+      "spoken_text": "아니면은 이런 각각의 테이블마다 관계가 있을 거 아니에요? 어떤 특정 회원이 로그인을 해서 상품을 뭔가를 골랐습니다. 그리고 주문 버튼을 딱 하고 누르는 순간 그 회원 테이블에서 그 사람의 데이터랑 어떤 상품을 선택했는지 그리고 수량은 몇 개를 선택했는지 그런 것들이 전부 다 주문 테이블로 다 넘어와야 돼요. 해서 이런 각각의 테이블들은 따로따로 노는 게 아니라 서로서로 상호작용하면서 이 주문 테이블에 하나의 데이터로 전부 다 기록이 남아야 되겠죠? 그런 관계 같은 것들. 그리고 데이터를 조작할 때 데이터 값들이 갖는 데이터 값들이 갖는 그런 제약 조건 같은 것들 있죠? 그런 것들에 대해서 전반적으로 정의해 놓은 걸 보고 우리가 스키마라고 그렇게 부르는 거예요. 이런 스키마는 사용자 관점에 따라서 누구 입장에서 보느냐에 따라서 외부 스키마라는 것도 있고요, 개념 스키마라는 것도 있고, 내부 스키마라는 것도 있고, 요렇게 크게 세 가지로 세 가지로 나눠집니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "수량",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:06:23",
+      "end_time_hms": "00:06:44",
+      "start_seconds": 383,
+      "end_seconds": 404,
+      "duration_seconds": 21,
+      "timeline_summary": "외부 스키마(External Schema)의 정의",
+      "screen_text_lines": [
+        "외부 스키마",
+        "사용자나 응용 프로그래머가 각 개인의 입장에서 필요로 하는 데이터베이스의 논리적 구조를 정의한 것."
+      ],
+      "screen_text": "외부 스키마\n사용자나 응용 프로그래머가 각 개인의 입장에서 필요로 하는 데이터베이스의 논리적 구조를 정의한 것.",
+      "spoken_sentences": [
+        "자 스키마에 보게 되면 지금처럼 외부, 내부, 개념 하고 이렇게 세 가지 스키마가 있는데 외부 스키마라는 거는 사용자나 응용 프로그래머 그 사람들 입장에서 본 그런 스키마를 보고 우리가 외부 스키마라고 합니다.",
+        "해서 외부 스키마는 누구 입장에서 본 거다?",
+        "사용자나 응용 프로그래머 그 사람들 입장에서 본 스키마를 보고 얘기하는 거고."
+      ],
+      "spoken_text": "자 스키마에 보게 되면 지금처럼 외부, 내부, 개념 하고 이렇게 세 가지 스키마가 있는데 외부 스키마라는 거는 사용자나 응용 프로그래머 그 사람들 입장에서 본 그런 스키마를 보고 우리가 외부 스키마라고 합니다. 해서 외부 스키마는 누구 입장에서 본 거다? 사용자나 응용 프로그래머 그 사람들 입장에서 본 스키마를 보고 얘기하는 거고.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:06:44",
+      "end_time_hms": "00:07:24",
+      "start_seconds": 404,
+      "end_seconds": 444,
+      "duration_seconds": 40,
+      "timeline_summary": "개념 스키마(Conceptual Schema)의 논리적 구조 설명",
+      "screen_text_lines": [
+        "개념 스키마",
+        "• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함."
+      ],
+      "screen_text": "개념 스키마\n• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함.",
+      "spoken_sentences": [
+        "그다음에 이 개념 스키마요.",
+        "이 개념 스키마는 전체 데이터베이스의 전체적인 그런 논리 구조를 보고 우리가 개념 스키마라고 하는데 얘는 기간이 됐든 조직체가 됐든 그런 관점에서 본 스키마입니다.",
+        "이게 무슨 말이냐면은 외부 스키마라는 거는 뭘 얘기하냐면은 내가 만약에 쇼핑몰에서 물건을 하나 주문했어요 주문하고 나서 결제까지 다 끝났어요 끝났는데 이 물건이 언제쯤 도착하는지 그걸 알고 싶어요.",
+        "그럼 로그인해서 주문 내역에 들어가서 보면 그런 데이터들이 나타나겠죠?",
+        "그때 다른 사람 거는 보여요 안 보여요?",
+        "안 보여요.",
+        "자기 것만 보이잖아요.",
+        "고런 게 외부 스키마예요 외부 스키마."
+      ],
+      "spoken_text": "그다음에 이 개념 스키마요. 이 개념 스키마는 전체 데이터베이스의 전체적인 그런 논리 구조를 보고 우리가 개념 스키마라고 하는데 얘는 기간이 됐든 조직체가 됐든 그런 관점에서 본 스키마입니다. 이게 무슨 말이냐면은 외부 스키마라는 거는 뭘 얘기하냐면은 내가 만약에 쇼핑몰에서 물건을 하나 주문했어요 주문하고 나서 결제까지 다 끝났어요 끝났는데 이 물건이 언제쯤 도착하는지 그걸 알고 싶어요. 그럼 로그인해서 주문 내역에 들어가서 보면 그런 데이터들이 나타나겠죠? 그때 다른 사람 거는 보여요 안 보여요? 안 보여요. 자기 것만 보이잖아요. 고런 게 외부 스키마예요 외부 스키마.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:07:24",
+      "end_time_hms": "00:08:17",
+      "start_seconds": 444,
+      "end_seconds": 497,
+      "duration_seconds": 53,
+      "timeline_summary": "개념 스키마의 단일성과 관리 주체(DBA)",
+      "screen_text_lines": [
+        "개념 스키마",
+        "• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함.",
+        "• 개체 간의 관계와 제약 조건을 나타내고, 데이터베이스의 접근 권한, 보안 및 무결성 규칙에 관한 명세를 정의함."
+      ],
+      "screen_text": "개념 스키마\n• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함.\n• 개체 간의 관계와 제약 조건을 나타내고, 데이터베이스의 접근 권한, 보안 및 무결성 규칙에 관한 명세를 정의함.",
+      "spoken_sentences": [
+        "그리고 개념 스키마라는 거는 전체적인 그 논리적인 구조를 보고 얘기합니다.",
+        "해서 만약에 쇼핑몰, 쇼핑몰을 제가 운영할 때 저 혼자 운영하는 게 아니라 만약에 직원이 다섯 명이 있어요.",
+        "그럼 그 직원들은 그 모든 직원들은 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블 전체를 다 같이 볼 수 있겠죠?",
+        "해서 이 개념 스키마는 기관이나 조직체 관점에서 본 그런 스키마를 보고 얘기합니다.",
+        "해서 데이터베이스의 전체적인 그런 논리 구조 논리 구조를 보고 우리가 개념 스키마라고 하더라.",
+        "그러면 우리가 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블들을 만들고 각 필드들마다 제약 조건 같은 것들을 우리가 걸 수 있겠죠?",
+        "그런 것들의 실제를 해 주는 역할을 하는 그 사람이 우리 데이터베이스 관리자예요.",
+        "해서 이 개념 스키마는 데이터베이스 관리자에 의해서 구성이 되는 겁니다."
+      ],
+      "spoken_text": "그리고 개념 스키마라는 거는 전체적인 그 논리적인 구조를 보고 얘기합니다. 해서 만약에 쇼핑몰, 쇼핑몰을 제가 운영할 때 저 혼자 운영하는 게 아니라 만약에 직원이 다섯 명이 있어요. 그럼 그 직원들은 그 모든 직원들은 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블 전체를 다 같이 볼 수 있겠죠? 해서 이 개념 스키마는 기관이나 조직체 관점에서 본 그런 스키마를 보고 얘기합니다. 해서 데이터베이스의 전체적인 그런 논리 구조 논리 구조를 보고 우리가 개념 스키마라고 하더라. 그러면 우리가 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블들을 만들고 각 필드들마다 제약 조건 같은 것들을 우리가 걸 수 있겠죠? 그런 것들의 실제를 해 주는 역할을 하는 그 사람이 우리 데이터베이스 관리자예요. 해서 이 개념 스키마는 데이터베이스 관리자에 의해서 구성이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:08:17",
+      "end_time_hms": "00:09:17",
+      "start_seconds": 497,
+      "end_seconds": 557,
+      "duration_seconds": 60,
+      "timeline_summary": "내부 스키마(Internal Schema)의 물리적 구조 정의",
+      "screen_text_lines": [
+        "내부 스키마",
+        "물리적 저장장치의 입장에서 본 데이터베이스 구조로서, 실제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순서 등을 나타냄."
+      ],
+      "screen_text": "내부 스키마\n물리적 저장장치의 입장에서 본 데이터베이스 구조로서, 실제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순서 등을 나타냄.",
+      "spoken_sentences": [
+        "그다음에 내부 스키마요.",
+        "내가 쇼핑몰을 운영할 때 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블들을 만들었죠?",
+        "만들고 나서 회원들이 전부 다 우리 사이트에 들어와서 회원가입을 하고 물건들을 주문하고 막 올렸어요 올리면 그런 데이터들, 그런 전체적인 그런 데이터들이 어딘가에 저장이 될 겁니다.",
+        "그런 물리적인 그런 저장장치 입장에서 본 그 데이터베이스 구조를 보고 우리가 내부 스키마, 내부 스키마라고 그렇게 부르는 거예요.",
+        "해서 얘는 실제로 데이터베이스에 저장될 그 레코드의 형식 같은 것들을 정의하고 저장 데이터 항목의 표현 방법이나 아니면 내부 레코드의 물리적인 그런 순서 같은 것들 그런 것들, 저장과 관련된 그런 것들을 나타내는 게 우리 내부 스키마예요."
+      ],
+      "spoken_text": "그다음에 내부 스키마요. 내가 쇼핑몰을 운영할 때 회원 테이블이다 상품 테이블이다 주문 테이블이다 해서 그런 테이블들을 만들었죠? 만들고 나서 회원들이 전부 다 우리 사이트에 들어와서 회원가입을 하고 물건들을 주문하고 막 올렸어요 올리면 그런 데이터들, 그런 전체적인 그런 데이터들이 어딘가에 저장이 될 겁니다. 그런 물리적인 그런 저장장치 입장에서 본 그 데이터베이스 구조를 보고 우리가 내부 스키마, 내부 스키마라고 그렇게 부르는 거예요. 해서 얘는 실제로 데이터베이스에 저장될 그 레코드의 형식 같은 것들을 정의하고 저장 데이터 항목의 표현 방법이나 아니면 내부 레코드의 물리적인 그런 순서 같은 것들 그런 것들, 저장과 관련된 그런 것들을 나타내는 게 우리 내부 스키마예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "Schema",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "상품",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_040-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0127_127",
+      "subtopic_title": "스키마",
+      "subtopic_sequence": 127,
+      "subtopic_number": "127",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AipUsxYoC64",
+      "start_time_hms": "00:09:17",
+      "end_time_hms": "00:11:07",
+      "start_seconds": 557,
+      "end_seconds": 667,
+      "duration_seconds": 110,
+      "timeline_summary": "스키마 요약 및 시험 대비 강조 사항",
+      "screen_text_lines": [
+        "외부 스키마",
+        "사용자나 응용 프로그래머가 각 개인의 입장에서 필요로 하는 데이터베이스의 논리적 구조를 정의한 것.",
+        "개념 스키마",
+        "• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함."
+      ],
+      "screen_text": "외부 스키마\n사용자나 응용 프로그래머가 각 개인의 입장에서 필요로 하는 데이터베이스의 논리적 구조를 정의한 것.\n개념 스키마\n• 데이터베이스의 전체적인 논리 구조로서, 모든 응용 프로그램이나 사용자들이 필요로 하는 데이터를 종합한 조직 전체의 데이터베이스로, 하나만 존재함.",
+      "spoken_sentences": [
+        "해서 이 스키마 세 가지를 보면 누구 관점이냐 거기에 따라서 이렇게 세 가지로 나눠지는 겁니다.",
+        "일반 사용자나 응용 프로그램의 입장에서 본 게 우리 외부 스키마고요.",
+        "그다음에 기간, 조직체 그 입장에서 본 거 해서 데이터베이스의 전체적인 그런 논리 구조를 나타낸 게 우리 개념 스키마고요.",
+        "그리고 내부 스키마다 그러면 실제로 저장되는 저장장치 입장에서 본 그 스키마를 보고 우리가 내부 스키마라고 했습니다.",
+        "해서 이 외부 스키마라는 거는 사용자나 응용 프로그래머가 각 개인의 각 개인의 입장에서 필요로 하는 그 데이터베이스의 논리적인 그런 구조 같은 것들을 정의한 걸 보고 우리가 외부 스키마 부르는 거고요.",
+        "그리고 개념 스키마다 그러면 개념 스키마라는 거는 기간이나 조직체 관점에서 본 그 스키마를 보고 얘기하는데 모든 응용 프로그램이나 사용자들이 필요로 하는 그런 데이터를 종합한 종합한 조직 전체의 데이터베이스 그걸 보고 우리가 개념 스키마 그렇게 부릅니다.",
+        "이 전체적인 그런 조직의 데이터베이스는 하나만 존재하겠죠?",
+        "그리고 이 개념 스키마라는 아이는 개체 간의 관계가 됐든 제약 조건 이런 것들을 나타내고요 데이터베이스에 대해서 접근 권한이나 보안 그리고 무결성 규칙 이런 것들에 대해서 명세를 정의한 게 우리 개념 스키마요.",
+        "그다음에 내부 스키마다 그러면 내부 스키마는 물리적인 저장장치의 입장에서 물리적인 저장장치 입장에서 본 그 데이터베이스 구조로서 실제로 데이터베이스에 저장될 그 레코드의 형식 같은 것들을 정의하고 저장 데이터 항목의 표현 방법이나 아니면 내부 레코드의 물리적인 그런 순서 같은 것들 그런 것들을 나타냅니다.",
+        "해서 지금처럼 이렇게 스키마에는 내부 외부 개념 하고 이렇게 세 가지가 있습니다.",
+        "요 스키마에 대해서는 우리 필기 시험에도 물론 나오지만 이게 나중에 실기 시험에 넘어가서도 이게 스키마가 시험 문제로 나온 적이 있습니다.",
+        "있기 때문에 이 스키마는 여러분들이 정확하게 알고 지나가셔야 돼요.",
+        "외부 스키마가 뭘 얘기하는지 개념 스키마가 뭘 얘기하는지 내부 스키마가 뭘 얘기하는지 정확하게 알고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 이 스키마 세 가지를 보면 누구 관점이냐 거기에 따라서 이렇게 세 가지로 나눠지는 겁니다. 일반 사용자나 응용 프로그램의 입장에서 본 게 우리 외부 스키마고요. 그다음에 기간, 조직체 그 입장에서 본 거 해서 데이터베이스의 전체적인 그런 논리 구조를 나타낸 게 우리 개념 스키마고요. 그리고 내부 스키마다 그러면 실제로 저장되는 저장장치 입장에서 본 그 스키마를 보고 우리가 내부 스키마라고 했습니다. 해서 이 외부 스키마라는 거는 사용자나 응용 프로그래머가 각 개인의 각 개인의 입장에서 필요로 하는 그 데이터베이스의 논리적인 그런 구조 같은 것들을 정의한 걸 보고 우리가 외부 스키마 부르는 거고요. 그리고 개념 스키마다 그러면 개념 스키마라는 거는 기간이나 조직체 관점에서 본 그 스키마를 보고 얘기하는데 모든 응용 프로그램이나 사용자들이 필요로 하는 그런 데이터를 종합한 종합한 조직 전체의 데이터베이스 그걸 보고 우리가 개념 스키마 그렇게 부릅니다. 이 전체적인 그런 조직의 데이터베이스는 하나만 존재하겠죠? 그리고 이 개념 스키마라는 아이는 개체 간의 관계가 됐든 제약 조건 이런 것들을 나타내고요 데이터베이스에 대해서 접근 권한이나 보안 그리고 무결성 규칙 이런 것들에 대해서 명세를 정의한 게 우리 개념 스키마요. 그다음에 내부 스키마다 그러면 내부 스키마는 물리적인 저장장치의 입장에서 물리적인 저장장치 입장에서 본 그 데이터베이스 구조로서 실제로 데이터베이스에 저장될 그 레코드의 형식 같은 것들을 정의하고 저장 데이터 항목의 표현 방법이나 아니면 내부 레코드의 물리적인 그런 순서 같은 것들 그런 것들을 나타냅니다. 해서 지금처럼 이렇게 스키마에는 내부 외부 개념 하고 이렇게 세 가지가 있습니다. 요 스키마에 대해서는 우리 필기 시험에도 물론 나오지만 이게 나중에 실기 시험에 넘어가서도 이게 스키마가 시험 문제로 나온 적이 있습니다. 있기 때문에 이 스키마는 여러분들이 정확하게 알고 지나가셔야 돼요. 외부 스키마가 뭘 얘기하는지 개념 스키마가 뭘 얘기하는지 내부 스키마가 뭘 얘기하는지 정확하게 알고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 67
+        },
+        {
+          "keyword": "개념 스키마",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4353 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_027",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 5,
+    "source_sequences": [
+      128,
+      129,
+      130,
+      131,
+      132
+    ],
+    "source_lecture_ids": [
+      "0128_128",
+      "0129_129",
+      "0130_130",
+      "0131_131",
+      "0132_132"
+    ],
+    "source_titles": [
+      "테스트와 디버깅의 목적",
+      "단위 모듈",
+      "IPC",
+      "단위 모듈 테스트",
+      "테스트 케이스의 구성 요소"
+    ],
+    "keywords": [
+      "단위",
+      "모듈",
+      "테스트",
+      "테스트와",
+      "디버깅의"
+    ],
+    "highlight_keywords": [
+      "SQL",
+      "절차형",
+      "절차형 SQL의 테스트와 디버깅",
+      "통해",
+      "테스트와 디버깅의 목적",
+      "단위",
+      "모듈",
+      "단위 모듈",
+      "모듈의",
+      "기능"
+    ],
+    "secondary_keywords": [
+      "테스트",
+      "우리가",
+      "오류",
+      "결과를",
+      "여부를",
+      "적합성",
+      "단위 모듈(Unit Module)의 개요",
+      "단위 기능 명세서 작성",
+      "알고리즘 구현",
+      "기능을",
+      "단위 모듈 구현 순서 요약 및 마무리",
+      "단위 모듈 구현을 위한 3단계 절차"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0128_128",
+      "sequence": 128,
+      "number": "128",
+      "course_code": "350127",
+      "title": "테스트와 디버깅의 목적",
+      "duration_seconds": 202,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "tokens": [
+            "SQL"
+          ],
+          "score": 52,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "절차형",
+          "tokens": [
+            "절차형"
+          ],
+          "score": 46,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "tokens": [
+            "절차형",
+            "SQL",
+            "테스트와",
+            "디버깅"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "통해",
+          "tokens": [
+            "통해"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테스트와 디버깅의 목적",
+          "tokens": [
+            "테스트와",
+            "디버깅의",
+            "목적"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "테스트",
+          "tokens": [
+            "테스트"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "우리가",
+          "tokens": [
+            "우리가"
+          ],
+          "score": 14,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "오류",
+          "tokens": [
+            "오류"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "결과를",
+          "tokens": [
+            "결과를"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "여부를",
+          "tokens": [
+            "여부를"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "적합성",
+          "tokens": [
+            "적합성"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_027-subtopic-001-source-seg-001::01",
+          "prompt": "강의 주제 '절차형 ______의 테스트와 디버깅' 소개",
+          "answer": "SQL",
+          "original": "강의 주제 '절차형 SQL의 테스트와 디버깅' 소개",
+          "keyword": "SQL",
+          "source_segment_id": "topic_027-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'SQL'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-001-source-seg-001::02",
+          "prompt": "강의 주제 '______ SQL의 테스트와 디버깅' 소개",
+          "answer": "절차형",
+          "original": "강의 주제 '절차형 SQL의 테스트와 디버깅' 소개",
+          "keyword": "절차형",
+          "source_segment_id": "topic_027-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '절차형'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-001-source-seg-001::03",
+          "prompt": "강의 주제 '______' 소개",
+          "answer": "절차형 SQL의 테스트와 디버깅",
+          "original": "강의 주제 '절차형 SQL의 테스트와 디버깅' 소개",
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "source_segment_id": "topic_027-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '절차형 SQL의 테스트와 디버깅'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-001-source-seg-001::04",
+          "prompt": "강의 주제 '절차형 SQL의 ______와 디버깅' 소개",
+          "answer": "테스트",
+          "original": "강의 주제 '절차형 SQL의 테스트와 디버깅' 소개",
+          "keyword": "테스트",
+          "source_segment_id": "topic_027-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '테스트'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0129_129",
+      "sequence": 129,
+      "number": "129",
+      "course_code": "350128",
+      "title": "단위 모듈",
+      "duration_seconds": 147,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "tokens": [
+            "단위"
+          ],
+          "score": 70,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "모듈",
+          "tokens": [
+            "모듈"
+          ],
+          "score": 19,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "단위 모듈",
+          "tokens": [
+            "단위",
+            "모듈"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "모듈의",
+          "tokens": [
+            "모듈의"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "단위 모듈(Unit Module)의 개요",
+          "tokens": [
+            "단위",
+            "모듈",
+            "Unit",
+            "Module",
+            "개요"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단위 기능 명세서 작성",
+          "tokens": [
+            "단위",
+            "기능",
+            "명세서",
+            "작성"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "알고리즘 구현",
+          "tokens": [
+            "알고리즘",
+            "구현"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기능을",
+          "tokens": [
+            "기능을"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단위 모듈 구현 순서 요약 및 마무리",
+          "tokens": [
+            "단위",
+            "모듈",
+            "구현",
+            "요약",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단위 모듈 구현을 위한 3단계 절차",
+          "tokens": [
+            "단위",
+            "모듈",
+            "구현을",
+            "위한",
+            "단계",
+            "절차"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_027-subtopic-002-source-seg-001::01",
+          "prompt": "______의 개요에 대한 강의 시작",
+          "answer": "단위 모듈",
+          "original": "단위 모듈의 개요에 대한 강의 시작",
+          "keyword": "단위 모듈",
+          "source_segment_id": "topic_027-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '단위 모듈'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-002-source-seg-001::02",
+          "prompt": "단위 ______ 개요에 대한 강의 시작",
+          "answer": "모듈의",
+          "original": "단위 모듈의 개요에 대한 강의 시작",
+          "keyword": "모듈의",
+          "source_segment_id": "topic_027-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '모듈의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-002-source-seg-009::03",
+          "prompt": "자, 그러면 ______하는 거부터 시작해서 알고리즘 구현하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요.",
+          "answer": "단위 기능 명세서 작성",
+          "original": "자, 그러면 단위 기능 명세서 작성하는 거부터 시작해서 알고리즘 구현하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요.",
+          "keyword": "단위 기능 명세서 작성",
+          "source_segment_id": "topic_027-subtopic-002-source-seg-009",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '단위 기능 명세서 작성'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-002-source-seg-009::04",
+          "prompt": "자, 그러면 단위 기능 명세서 작성하는 거부터 시작해서 ______하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요.",
+          "answer": "알고리즘 구현",
+          "original": "자, 그러면 단위 기능 명세서 작성하는 거부터 시작해서 알고리즘 구현하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요.",
+          "keyword": "알고리즘 구현",
+          "source_segment_id": "topic_027-subtopic-002-source-seg-009",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '알고리즘 구현'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0130_130",
+      "sequence": 130,
+      "number": "130",
+      "course_code": "350129",
+      "title": "IPC",
+      "duration_seconds": 121,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "IPC",
+          "tokens": [
+            "IPC"
+          ],
+          "score": 46,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "메소드",
+          "tokens": [
+            "메소드"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Semaphores",
+          "tokens": [
+            "Semaphores"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Socket",
+          "tokens": [
+            "Socket"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "통신을",
+          "tokens": [
+            "통신을"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "프로세스",
+          "tokens": [
+            "프로세스"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Shared Memory 메소드 설명",
+          "tokens": [
+            "Shared",
+            "Memory",
+            "메소드"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "IPC의 대표 메소드 5가지 소개",
+          "tokens": [
+            "IPC",
+            "대표",
+            "메소드",
+            "가지",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Semaphores 메소드 설명",
+          "tokens": [
+            "Semaphores",
+            "메소드"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "IPC에 대한 학습 시작 안내",
+          "tokens": [
+            "IPC",
+            "학습",
+            "시작",
+            "안내"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Socket 메소드 설명",
+          "tokens": [
+            "Socket",
+            "메소드"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_027-subtopic-003-source-seg-001::01",
+          "prompt": "______에 대한 학습 시작 안내",
+          "answer": "IPC",
+          "original": "IPC에 대한 학습 시작 안내",
+          "keyword": "IPC",
+          "source_segment_id": "topic_027-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'IPC'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-003-source-seg-003::02",
+          "prompt": "IPC의 대표 ______ 5가지 소개",
+          "answer": "메소드",
+          "original": "IPC의 대표 메소드 5가지 소개",
+          "keyword": "메소드",
+          "source_segment_id": "topic_027-subtopic-003-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '메소드'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-003-source-seg-006::03",
+          "prompt": "______ 메소드 설명",
+          "answer": "Semaphores",
+          "original": "Semaphores 메소드 설명",
+          "keyword": "Semaphores",
+          "source_segment_id": "topic_027-subtopic-003-source-seg-006",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Semaphores'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-003-source-seg-004::04",
+          "prompt": "다수의 프로세스가 공유 가능한 메모리를 구성하여 프로세스 간 ______ 수행함.",
+          "answer": "통신을",
+          "original": "다수의 프로세스가 공유 가능한 메모리를 구성하여 프로세스 간 통신을 수행함.",
+          "keyword": "통신을",
+          "source_segment_id": "topic_027-subtopic-003-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '통신을'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0131_131",
+      "sequence": 131,
+      "number": "131",
+      "course_code": "350130",
+      "title": "단위 모듈 테스트",
+      "duration_seconds": 197,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "segment_count": 16,
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "tokens": [
+            "단위"
+          ],
+          "score": 97,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "모듈",
+          "tokens": [
+            "모듈"
+          ],
+          "score": 77,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테스트",
+          "tokens": [
+            "테스트"
+          ],
+          "score": 51,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "tokens": [
+            "단위",
+            "모듈",
+            "테스트의",
+            "개요"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Unit Test",
+          "tokens": [
+            "Unit",
+            "Test"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "블랙박스",
+          "tokens": [
+            "블랙박스"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "화이트박스",
+          "tokens": [
+            "화이트박스"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "테스트는",
+          "tokens": [
+            "테스트는"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "테스트를",
+          "tokens": [
+            "테스트를"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단위 모듈 테스트",
+          "tokens": [
+            "단위",
+            "모듈",
+            "테스트"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "모듈을",
+          "tokens": [
+            "모듈을"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_027-subtopic-004-source-seg-001::01",
+          "prompt": "강의 주제인 '단위 모듈 ______의 개요' 소개",
+          "answer": "테스트",
+          "original": "강의 주제인 '단위 모듈 테스트의 개요' 소개",
+          "keyword": "테스트",
+          "source_segment_id": "topic_027-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '테스트'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-004-source-seg-001::02",
+          "prompt": "강의 주제인 '______' 소개",
+          "answer": "단위 모듈 테스트의 개요",
+          "original": "강의 주제인 '단위 모듈 테스트의 개요' 소개",
+          "keyword": "단위 모듈 테스트의 개요",
+          "source_segment_id": "topic_027-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '단위 모듈 테스트의 개요'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-004-source-seg-002::03",
+          "prompt": "단위 모듈 테스트는 단위 테스트(______)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+          "answer": "Unit Test",
+          "original": "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+          "keyword": "Unit Test",
+          "source_segment_id": "topic_027-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Unit Test'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-004-source-seg-002::04",
+          "prompt": "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 ______ 테스트 기법을 사용함.",
+          "answer": "블랙박스",
+          "original": "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+          "keyword": "블랙박스",
+          "source_segment_id": "topic_027-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '블랙박스'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 5,
+      "lecture_id": "0132_132",
+      "sequence": 132,
+      "number": "132",
+      "course_code": "350131",
+      "title": "테스트 케이스의 구성 요소",
+      "duration_seconds": 195,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "segment_count": 14,
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "tokens": [
+            "테스트"
+          ],
+          "score": 88,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "tokens": [
+            "테스트",
+            "케이스",
+            "Test",
+            "Case"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "구성",
+          "tokens": [
+            "구성"
+          ],
+          "score": 37,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요소",
+          "tokens": [
+            "요소"
+          ],
+          "score": 29,
+          "sources": [
+            "lecture_title",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "명세",
+          "tokens": [
+            "명세"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "테스트 항목(Test Item)",
+          "tokens": [
+            "테스트",
+            "항목",
+            "Test",
+            "Item"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "식별자(Identifier)",
+          "tokens": [
+            "식별자",
+            "Identifier"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Test Case",
+          "tokens": [
+            "Test",
+            "Case"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "입력",
+          "tokens": [
+            "입력"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "케이스의",
+          "tokens": [
+            "케이스의"
+          ],
+          "score": 19,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "테스트 케이스의 구성 요소",
+          "tokens": [
+            "테스트",
+            "케이스의",
+            "구성",
+            "요소"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_027-subtopic-005-source-seg-001::01",
+          "prompt": "______ 케이스 학습 시작 안내",
+          "answer": "테스트",
+          "original": "테스트 케이스 학습 시작 안내",
+          "keyword": "테스트",
+          "source_segment_id": "topic_027-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '테스트'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-005-source-seg-009::02",
+          "prompt": "구성 요소 2: ______",
+          "answer": "테스트 항목(Test Item)",
+          "original": "구성 요소 2: 테스트 항목(Test Item)",
+          "keyword": "테스트 항목(Test Item)",
+          "source_segment_id": "topic_027-subtopic-005-source-seg-009",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '테스트 항목(Test Item)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-005-source-seg-008::03",
+          "prompt": "구성 요소 1: ______",
+          "answer": "식별자(Identifier)",
+          "original": "구성 요소 1: 식별자(Identifier)",
+          "keyword": "식별자(Identifier)",
+          "source_segment_id": "topic_027-subtopic-005-source-seg-008",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '식별자(Identifier)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_027-subtopic-005-source-seg-001::04",
+          "prompt": "테스트 케이스(______)",
+          "answer": "Test Case",
+          "original": "테스트 케이스(Test Case)",
+          "keyword": "Test Case",
+          "source_segment_id": "topic_027-subtopic-005-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Test Case'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_027",
+    "sequence": 27,
+    "number": "27",
+    "title": "단위 모듈 구현과 테스트",
+    "title_raw": "단위 모듈 구현과 테스트",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "source_count": 5,
+    "source_sequences": [
+      128,
+      129,
+      130,
+      131,
+      132
+    ],
+    "source_titles": [
+      "테스트와 디버깅의 목적",
+      "단위 모듈",
+      "IPC",
+      "단위 모듈 테스트",
+      "테스트 케이스의 구성 요소"
+    ],
+    "preview_text": "테스트와 디버깅의 목적, 단위 모듈, IPC 등",
+    "segment_count": 57,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 테스트와 디버깅의 목적, 단위 모듈, IPC, 단위 모듈 테스트 등을 중심으로 정리합니다. 소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 5개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 테스트와 디버깅의 목적, 단위 모듈, IPC, 단위 모듈 테스트 등을 중심으로 정리합니다.",
+      "소프트웨어 개발 과목에서 함께 출제되는 핵심 개념 5개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 862,
+    "source_titles_preview": [
+      "테스트와 디버깅의 목적",
+      "단위 모듈",
+      "IPC"
+    ],
+    "highlight_keywords": [
+      "SQL",
+      "절차형",
+      "절차형 SQL의 테스트와 디버깅",
+      "통해",
+      "테스트와 디버깅의 목적",
+      "단위",
+      "모듈",
+      "단위 모듈",
+      "모듈의",
+      "기능"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_027-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:00:02",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 2,
+      "end_seconds": 9,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 주제 '절차형 SQL의 테스트와 디버깅' 소개",
+      "screen_text_lines": [
+        "절차형 SQL의 테스트와 디버깅"
+      ],
+      "screen_text": "절차형 SQL의 테스트와 디버깅",
+      "spoken_sentences": [
+        "이번 시간에는 우리 절차형 SQL의 테스트와 디버깅에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 절차형 SQL의 테스트와 디버깅에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:22",
+      "start_seconds": 9,
+      "end_seconds": 22,
+      "duration_seconds": 13,
+      "timeline_summary": "절차형 SQL 기능 구현 후 테스트의 필요성 설명",
+      "screen_text_lines": [
+        "절차형 SQL의 테스트와 디버깅",
+        "절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함."
+      ],
+      "screen_text": "절차형 SQL의 테스트와 디버깅\n절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함.",
+      "spoken_sentences": [
+        "우리가 절차형 SQL을 통해서 뭔가 데이터베이스 사용할 기능을 하나 만들었습니다.",
+        "그러면 그게 정상적으로 실행이 되는지 안 되는지 우리가 확인을 해야 되겠죠."
+      ],
+      "spoken_text": "우리가 절차형 SQL을 통해서 뭔가 데이터베이스 사용할 기능을 하나 만들었습니다. 그러면 그게 정상적으로 실행이 되는지 안 되는지 우리가 확인을 해야 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:00:22",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 22,
+      "end_seconds": 48,
+      "duration_seconds": 26,
+      "timeline_summary": "테스트와 디버깅의 정의 및 차이점 설명",
+      "screen_text_lines": [
+        "절차형 SQL의 테스트와 디버깅",
+        "절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함."
+      ],
+      "screen_text": "절차형 SQL의 테스트와 디버깅\n절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함.",
+      "spoken_sentences": [
+        "그래서 우리가 테스트라는 거를 하는데 이 테스트라는 거는 실행을 통해 그 결과를 확인하는 게 우리 테스트예요.",
+        "뭔가 데이터를 집어넣고 우리가 테스트를 했을 때 그 실행 결과가 정확하게 나오는지 안 나오는지 그런 거를 확인하는 게 우리 테스트고요.",
+        "그런 걸 확인했더니 만약에 오류가 있어요.",
+        "그러면 그 오류를 우리가 찾아야 되겠죠.",
+        "그렇게 오류를 찾아 나가는 그 작업을 보고 우리가 디버깅, 디버깅이라고 하는 겁니다."
+      ],
+      "spoken_text": "그래서 우리가 테스트라는 거를 하는데 이 테스트라는 거는 실행을 통해 그 결과를 확인하는 게 우리 테스트예요. 뭔가 데이터를 집어넣고 우리가 테스트를 했을 때 그 실행 결과가 정확하게 나오는지 안 나오는지 그런 거를 확인하는 게 우리 테스트고요. 그런 걸 확인했더니 만약에 오류가 있어요. 그러면 그 오류를 우리가 찾아야 되겠죠. 그렇게 오류를 찾아 나가는 그 작업을 보고 우리가 디버깅, 디버깅이라고 하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:01:05",
+      "start_seconds": 48,
+      "end_seconds": 65,
+      "duration_seconds": 17,
+      "timeline_summary": "디버깅과 테스트를 통한 적합성 검증 및 결과 확인",
+      "screen_text_lines": [
+        "절차형 SQL의 테스트와 디버깅",
+        "절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함."
+      ],
+      "screen_text": "절차형 SQL의 테스트와 디버깅\n절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함.",
+      "spoken_sentences": [
+        "해서 우리 절차형 SQL은 디버깅, 디버깅 작업을 통해서 기능의 적합성 그런 것들을 우리가 검증을 하고요.",
+        "실행을 통해서, 실행을 통해서 결과를 확인하는 테스트, 테스트 과정을 수행하는 거, 그걸 보고 얘기하는 거예요."
+      ],
+      "spoken_text": "해서 우리 절차형 SQL은 디버깅, 디버깅 작업을 통해서 기능의 적합성 그런 것들을 우리가 검증을 하고요. 실행을 통해서, 실행을 통해서 결과를 확인하는 테스트, 테스트 과정을 수행하는 거, 그걸 보고 얘기하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:01:05",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 65,
+      "end_seconds": 78,
+      "duration_seconds": 13,
+      "timeline_summary": "테스트 전 구문 오류 및 참조 오류 존재 여부 확인",
+      "screen_text_lines": [
+        "절차형 SQL은 테스트 전에 생성을 통해 구문 오류(Syntax Error)나 참조 오류의 존재 여부를 확인함."
+      ],
+      "screen_text": "절차형 SQL은 테스트 전에 생성을 통해 구문 오류(Syntax Error)나 참조 오류의 존재 여부를 확인함.",
+      "spoken_sentences": [
+        "절차형 SQL은 테스트 전에 생성을 통해, 생성이라는 걸 통해서 구문 오류가 됐든 참조 오류가 됐든 그런 것들이 있는지 없는지 그 존재 여부를 우리가 확인해 주면 되는 거고요."
+      ],
+      "spoken_text": "절차형 SQL은 테스트 전에 생성을 통해, 생성이라는 걸 통해서 구문 오류가 됐든 참조 오류가 됐든 그런 것들이 있는지 없는지 그 존재 여부를 우리가 확인해 주면 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:46",
+      "start_seconds": 78,
+      "end_seconds": 106,
+      "duration_seconds": 28,
+      "timeline_summary": "상세 오류 확인을 위한 SHOW 명령어 활용법",
+      "screen_text_lines": [
+        "많은 코드로 구성된 절차형 SQL의 특성상 오류 및 경고 메시지가 상세히 출력되지 않으므로 SHOW 명령어를 통해 내용을 확인하고 문제를 수정함."
+      ],
+      "screen_text": "많은 코드로 구성된 절차형 SQL의 특성상 오류 및 경고 메시지가 상세히 출력되지 않으므로 SHOW 명령어를 통해 내용을 확인하고 문제를 수정함.",
+      "spoken_sentences": [
+        "많은 코드로 구성된 그런 SQL의 특성상 오류가 됐든 경고 메시지가 상세하게 출력되지 않습니다.",
+        "이런 게 상세하게 출력되지 않기 때문에 우리가 SHOW라는 이 명령어를 통해서 우리가 내용을 확인하고 문제를 수정을 해야 돼요.",
+        "여기서 SHOW라는 그 명령어가 나왔는데 이 SHOW라는 명령어가 데이터베이스가 됐든 우리 테이블이 됐든 컬럼이 됐든 아니면 상태 정보가 됐든 이런 것들을 쉽게 볼 수 있게끔 해 주는 그런 명령어입니다."
+      ],
+      "spoken_text": "많은 코드로 구성된 그런 SQL의 특성상 오류가 됐든 경고 메시지가 상세하게 출력되지 않습니다. 이런 게 상세하게 출력되지 않기 때문에 우리가 SHOW라는 이 명령어를 통해서 우리가 내용을 확인하고 문제를 수정을 해야 돼요. 여기서 SHOW라는 그 명령어가 나왔는데 이 SHOW라는 명령어가 데이터베이스가 됐든 우리 테이블이 됐든 컬럼이 됐든 아니면 상태 정보가 됐든 이런 것들을 쉽게 볼 수 있게끔 해 주는 그런 명령어입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:01:46",
+      "end_time_hms": "00:01:58",
+      "start_seconds": 106,
+      "end_seconds": 118,
+      "duration_seconds": 12,
+      "timeline_summary": "생성된 절차형 SQL의 로직 검증 및 최종 확인 과정",
+      "screen_text_lines": [
+        "정상적으로 생성된 절차형 SQL은 디버깅을 통해 로직을 검증하고, 결과를 통해 최종적으로 확인함."
+      ],
+      "screen_text": "정상적으로 생성된 절차형 SQL은 디버깅을 통해 로직을 검증하고, 결과를 통해 최종적으로 확인함.",
+      "spoken_sentences": [
+        "정상적으로 생성된 그런 절차형 SQL은 우리가 디버깅, 디버깅이라는 걸 통해서 우리가 로직을 검증을 해 주고요.",
+        "그 결과를 통해서 우리가 최종적으로 확인해 주면 돼요."
+      ],
+      "spoken_text": "정상적으로 생성된 그런 절차형 SQL은 우리가 디버깅, 디버깅이라는 걸 통해서 우리가 로직을 검증을 해 주고요. 그 결과를 통해서 우리가 최종적으로 확인해 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:01:58",
+      "end_time_hms": "00:02:24",
+      "start_seconds": 118,
+      "end_seconds": 144,
+      "duration_seconds": 26,
+      "timeline_summary": "디버깅 시 DB 변화를 주는 SQL문의 주석 처리 및 출력 확인",
+      "screen_text_lines": [
+        "절차형 SQL의 디버깅은 실제로 데이터베이스에 변화를 줄 수 있는 삽입 및 변경 관련 SQL문을 주석으로 처리하고, 출력문을 이용하여 화면에 출력하여 확인함."
+      ],
+      "screen_text": "절차형 SQL의 디버깅은 실제로 데이터베이스에 변화를 줄 수 있는 삽입 및 변경 관련 SQL문을 주석으로 처리하고, 출력문을 이용하여 화면에 출력하여 확인함.",
+      "spoken_sentences": [
+        "그리고 우리가 뭔가 SQL로 만들었으면 이거를 테스트를 해야 되는데 그때 데이터베이스에 변화를 줄 수 있는 그런 명령들이 있죠.",
+        "만약에 어떤 데이터를 삽입을 하거나 변경과 관련된 그런 SQL문요.",
+        "그런 것들은 싹 다 주석으로 우리가 처리를 하고 출력물을 이용해서 화면에 출력해서 우리가 확인을 해 주면 됩니다.",
+        "여기서 주석으로 처리한다라고 했는데 이 주석이라는 거는 우리가 어떤 특정 코드에 대해서 설명을 쓰는 그 부분을 보고 우리가 주석이라고 해요."
+      ],
+      "spoken_text": "그리고 우리가 뭔가 SQL로 만들었으면 이거를 테스트를 해야 되는데 그때 데이터베이스에 변화를 줄 수 있는 그런 명령들이 있죠. 만약에 어떤 데이터를 삽입을 하거나 변경과 관련된 그런 SQL문요. 그런 것들은 싹 다 주석으로 우리가 처리를 하고 출력물을 이용해서 화면에 출력해서 우리가 확인을 해 주면 됩니다. 여기서 주석으로 처리한다라고 했는데 이 주석이라는 거는 우리가 어떤 특정 코드에 대해서 설명을 쓰는 그 부분을 보고 우리가 주석이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:02:24",
+      "end_time_hms": "00:03:07",
+      "start_seconds": 144,
+      "end_seconds": 187,
+      "duration_seconds": 43,
+      "timeline_summary": "주석의 개념과 디버깅 시 활용 목적 설명",
+      "screen_text_lines": [
+        "절차형 SQL의 디버깅은 실제로 데이터베이스에 변화를 줄 수 있는 삽입 및 변경 관련 SQL문을 주석으로 처리하고, 출력문을 이용하여 화면에 출력하여 확인함."
+      ],
+      "screen_text": "절차형 SQL의 디버깅은 실제로 데이터베이스에 변화를 줄 수 있는 삽입 및 변경 관련 SQL문을 주석으로 처리하고, 출력문을 이용하여 화면에 출력하여 확인함.",
+      "spoken_sentences": [
+        "우리가 어떤 내용을 주석으로 처리하게 되면 그 주석이라는 거는 사람만 볼 수 있는 그런 내용입니다.",
+        "실제로 이거를 실행을 시켜도 주석에다가 우리가 쓴 그런 내용들은 컴파일이 되지 않아요.",
+        "컴파일이 되지 않다 그 얘기는 실행이 안 된다는 얘기죠.",
+        "그래서 삽입과 변경과 관련된 그런 것들은 주석으로 처리해서 아예 실행이 안 되게 그렇게 만들어 놓고 우리가 디버깅을 하더라 그렇게 기억하시면 됩니다.",
+        "만약에 내가 테스트하는 건데 만약에 이런 것들을 주석으로 처리 안 해 봐요.",
+        "안 하면 우리 데이터베이스에 삽입이 됐든 변경이 됐든 이런 것들이 적용이 돼 버리겠죠."
+      ],
+      "spoken_text": "우리가 어떤 내용을 주석으로 처리하게 되면 그 주석이라는 거는 사람만 볼 수 있는 그런 내용입니다. 실제로 이거를 실행을 시켜도 주석에다가 우리가 쓴 그런 내용들은 컴파일이 되지 않아요. 컴파일이 되지 않다 그 얘기는 실행이 안 된다는 얘기죠. 그래서 삽입과 변경과 관련된 그런 것들은 주석으로 처리해서 아예 실행이 안 되게 그렇게 만들어 놓고 우리가 디버깅을 하더라 그렇게 기억하시면 됩니다. 만약에 내가 테스트하는 건데 만약에 이런 것들을 주석으로 처리 안 해 봐요. 안 하면 우리 데이터베이스에 삽입이 됐든 변경이 됐든 이런 것들이 적용이 돼 버리겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "우리가",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0128_128",
+      "subtopic_title": "테스트와 디버깅의 목적",
+      "subtopic_sequence": 128,
+      "subtopic_number": "128",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ySyDG9Teqg4",
+      "start_time_hms": "00:03:07",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 187,
+      "end_seconds": 202,
+      "duration_seconds": 15,
+      "timeline_summary": "테스트와 디버깅의 핵심 목적 요약",
+      "screen_text_lines": [
+        "절차형 SQL의 테스트와 디버깅",
+        "절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함.",
+        "절차형 SQL은 테스트 전에 생성을 통해 구문 오류(Syntax Error)나 참조 오류의 존재 여부를 확인함.",
+        "많은 코드로 구성된 절차형 SQL의 특성상 오류 및 경고 메시지가 상세히 출력되지 않으므로 SHOW 명령어를 통해 내용을 확인하고 문제를 수정함."
+      ],
+      "screen_text": "절차형 SQL의 테스트와 디버깅\n절차형 SQL은 디버깅을 통해 기능의 적합성 여부를 검증하고, 실행을 통해 결과를 확인하는 테스트 과정을 수행함.\n절차형 SQL은 테스트 전에 생성을 통해 구문 오류(Syntax Error)나 참조 오류의 존재 여부를 확인함.\n많은 코드로 구성된 절차형 SQL의 특성상 오류 및 경고 메시지가 상세히 출력되지 않으므로 SHOW 명령어를 통해 내용을 확인하고 문제를 수정함.",
+      "spoken_sentences": [
+        "요런 게 우리 테스트와 디버깅이요.",
+        "테스트라는 거는 오류를 찾는 거를 보고 우리가 테스트라고 하는 거고 그다음에 디버깅은 오류를 수정한다.",
+        "잊어버리시면 안 돼요."
+      ],
+      "spoken_text": "요런 게 우리 테스트와 디버깅이요. 테스트라는 거는 오류를 찾는 거를 보고 우리가 테스트라고 하는 거고 그다음에 디버깅은 오류를 수정한다. 잊어버리시면 안 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SQL",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "절차형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "절차형 SQL의 테스트와 디버깅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "통해",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "단위 모듈의 개요에 대한 강의 시작",
+      "screen_text_lines": [
+        "단위 모듈(Unit Module)의 개요"
+      ],
+      "screen_text": "단위 모듈(Unit Module)의 개요",
+      "spoken_sentences": [
+        "이번 시간에는 우리 단위 모듈의 개요에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 단위 모듈의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "모듈의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:30",
+      "start_seconds": 9,
+      "end_seconds": 30,
+      "duration_seconds": 21,
+      "timeline_summary": "단위 모듈의 정의 설명",
+      "screen_text_lines": [
+        "단위 모듈(Unit Module)의 개요",
+        "단위 모듈은 소프트웨어 구현에 필요한 여러 동작 중 한 가지 동작을 수행하는 기능을 모듈로 구현한 것."
+      ],
+      "screen_text": "단위 모듈(Unit Module)의 개요\n단위 모듈은 소프트웨어 구현에 필요한 여러 동작 중 한 가지 동작을 수행하는 기능을 모듈로 구현한 것.",
+      "spoken_sentences": [
+        "우리 단위 모듈이요.",
+        "이 단위 모듈이라는 거는 우리가 소프트웨어를 구현을 할 때 여러 가지 여러 가지 동작을 하겠죠?",
+        "그 중에서 그 중에서 한 가지 동작을 수행하는 그런 기능, 그런 기능을 우리가 모듈로 구현한 것.",
+        "그걸 보고 우리가 단위 모듈이라고 합니다."
+      ],
+      "spoken_text": "우리 단위 모듈이요. 이 단위 모듈이라는 거는 우리가 소프트웨어를 구현을 할 때 여러 가지 여러 가지 동작을 하겠죠? 그 중에서 그 중에서 한 가지 동작을 수행하는 그런 기능, 그런 기능을 우리가 모듈로 구현한 것. 그걸 보고 우리가 단위 모듈이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "모듈의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:00:30",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 30,
+      "end_seconds": 43,
+      "duration_seconds": 13,
+      "timeline_summary": "단위 모듈의 결합과 기능 구현",
+      "screen_text_lines": [
+        "• 두 개의 단위 모듈이 합쳐질 경우 두 개의 기능을 구현할 수 있음."
+      ],
+      "screen_text": "• 두 개의 단위 모듈이 합쳐질 경우 두 개의 기능을 구현할 수 있음.",
+      "spoken_sentences": [
+        "그러면 단위 모듈이 하나가 있으면 한 가지 동작을 할 거고 단위 모듈이 만약에 두 개가 있다, 그럼 두 가지 기능을 하겠죠?",
+        "해서 두 개의 단위 모듈이 합쳐질 경우에는 두 개의 기능을 구현할 수도 있더라."
+      ],
+      "spoken_text": "그러면 단위 모듈이 하나가 있으면 한 가지 동작을 할 거고 단위 모듈이 만약에 두 개가 있다, 그럼 두 가지 기능을 하겠죠? 해서 두 개의 단위 모듈이 합쳐질 경우에는 두 개의 기능을 구현할 수도 있더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "모듈의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:00:50",
+      "start_seconds": 43,
+      "end_seconds": 50,
+      "duration_seconds": 7,
+      "timeline_summary": "단위 기능의 정의",
+      "screen_text_lines": [
+        "• 단위 모듈로 구현되는 하나의 기능을 단위 기능이라고 부른다."
+      ],
+      "screen_text": "• 단위 모듈로 구현되는 하나의 기능을 단위 기능이라고 부른다.",
+      "spoken_sentences": [
+        "그렇게 단위 모듈로 구현되는 하나의 기능을 우리가 다른 말로 단위 기능, 단위 기능이라고 그렇게 부르기도 합니다."
+      ],
+      "spoken_text": "그렇게 단위 모듈로 구현되는 하나의 기능을 우리가 다른 말로 단위 기능, 단위 기능이라고 그렇게 부르기도 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:00:50",
+      "end_time_hms": "00:01:01",
+      "start_seconds": 50,
+      "end_seconds": 61,
+      "duration_seconds": 11,
+      "timeline_summary": "단위 모듈과 외부 값의 상호작용",
+      "screen_text_lines": [
+        "• 단위 모듈은 사용자나 다른 모듈로부터 값을 전달받아 시작되는 작은 프로그램을 의미하기도 함."
+      ],
+      "screen_text": "• 단위 모듈은 사용자나 다른 모듈로부터 값을 전달받아 시작되는 작은 프로그램을 의미하기도 함.",
+      "spoken_sentences": [
+        "해서 이 단위 모듈은 사용자가 됐든 아니면 다른 모듈, 다른 모듈로부터 값을 전달받아서 시작되는 그 작은 프로그램을 의미하기도 해요."
+      ],
+      "spoken_text": "해서 이 단위 모듈은 사용자가 됐든 아니면 다른 모듈, 다른 모듈로부터 값을 전달받아서 시작되는 그 작은 프로그램을 의미하기도 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:01:01",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 61,
+      "end_seconds": 71,
+      "duration_seconds": 10,
+      "timeline_summary": "단위 모듈의 구성 요소",
+      "screen_text_lines": [
+        "• 단위 모듈의 구성 요소에는 처리문, 명령문, 데이터 구조 등이 있음."
+      ],
+      "screen_text": "• 단위 모듈의 구성 요소에는 처리문, 명령문, 데이터 구조 등이 있음.",
+      "spoken_sentences": [
+        "해서 이 단위 모듈이라는 건 여러 가지로 구성이 돼 있는데 그 구성 요소에는 우리 처리문, 명령문, 데이터 구조 요런 것들로 구성이 돼 있는 게 우리 단위 모듈이요."
+      ],
+      "spoken_text": "해서 이 단위 모듈이라는 건 여러 가지로 구성이 돼 있는데 그 구성 요소에는 우리 처리문, 명령문, 데이터 구조 요런 것들로 구성이 돼 있는 게 우리 단위 모듈이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "모듈의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:01:11",
+      "end_time_hms": "00:01:31",
+      "start_seconds": 71,
+      "end_seconds": 91,
+      "duration_seconds": 20,
+      "timeline_summary": "단위 모듈의 컴파일 및 호출 특징",
+      "screen_text_lines": [
+        "• 단위 모듈은 독립적인 컴파일이 가능하며, 다른 모듈에 호출되거나 삽입되기도 함."
+      ],
+      "screen_text": "• 단위 모듈은 독립적인 컴파일이 가능하며, 다른 모듈에 호출되거나 삽입되기도 함.",
+      "spoken_sentences": [
+        "이 단위 모듈은 한 가지 동작을 수행하는 그 기능을 우리가 모듈화시켜 놓은 게 단위 모듈이라 그랬는데 얘는 독립적으로, 독립적으로도 우리가 컴파일이 가능하고요.",
+        "아니면 내가 만들어준 그 단위 모듈을 다른 모듈에서 호출을 해서 실행이 되거나 아니면 다른 모듈에 삽입이 되기도 합니다."
+      ],
+      "spoken_text": "이 단위 모듈은 한 가지 동작을 수행하는 그 기능을 우리가 모듈화시켜 놓은 게 단위 모듈이라 그랬는데 얘는 독립적으로, 독립적으로도 우리가 컴파일이 가능하고요. 아니면 내가 만들어준 그 단위 모듈을 다른 모듈에서 호출을 해서 실행이 되거나 아니면 다른 모듈에 삽입이 되기도 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "모듈의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:01:31",
+      "end_time_hms": "00:01:50",
+      "start_seconds": 91,
+      "end_seconds": 110,
+      "duration_seconds": 19,
+      "timeline_summary": "단위 모듈 구현을 위한 3단계 절차",
+      "screen_text_lines": [
+        "• 단위 모듈을 구현하기 위해서는 단위 기능 명세서를 작성한 후 입·출력 기능과 알고리즘을 구현해야 함.",
+        "단위 기능 명세서 작성",
+        "입·출력 기능 구현",
+        "알고리즘 구현"
+      ],
+      "screen_text": "• 단위 모듈을 구현하기 위해서는 단위 기능 명세서를 작성한 후 입·출력 기능과 알고리즘을 구현해야 함.\n단위 기능 명세서 작성\n입·출력 기능 구현\n알고리즘 구현",
+      "spoken_sentences": [
+        "해서 우리가 단위 모듈이라는 걸 구현할 때는 맨 처음에 명세서를 먼저 작성을 해야 되겠죠?",
+        "그러고 나서 그 명세서를 보고 우리가 입출력 기능 같은 것들을 구현하고요.",
+        "모듈 간의 입출력이 해결이 되면 그 들어온 데이터들을 어떻게 처리할 건지 우리가 알고리즘을 구현해 주면 됩니다."
+      ],
+      "spoken_text": "해서 우리가 단위 모듈이라는 걸 구현할 때는 맨 처음에 명세서를 먼저 작성을 해야 되겠죠? 그러고 나서 그 명세서를 보고 우리가 입출력 기능 같은 것들을 구현하고요. 모듈 간의 입출력이 해결이 되면 그 들어온 데이터들을 어떻게 처리할 건지 우리가 알고리즘을 구현해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0129_129",
+      "subtopic_title": "단위 모듈",
+      "subtopic_sequence": 129,
+      "subtopic_number": "129",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=2yw_tBAykbc",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:02:27",
+      "start_seconds": 110,
+      "end_seconds": 147,
+      "duration_seconds": 37,
+      "timeline_summary": "단위 모듈 구현 순서 요약 및 마무리",
+      "screen_text_lines": [
+        "단위 기능 명세서 작성",
+        "입·출력 기능 구현",
+        "알고리즘 구현"
+      ],
+      "screen_text": "단위 기능 명세서 작성\n입·출력 기능 구현\n알고리즘 구현",
+      "spoken_sentences": [
+        "해서 우리가 단위 모듈을 구현할 때는 맨 처음에 단위 기능 명세서를 먼저 작성하더라.",
+        "그 다음에 입출력 기능을 구현하고 그 다음에 알고리즘을 구현하면 단위 모듈을 우리가 구현할 수 있더라라고 그렇게 기억하시면 됩니다.",
+        "자, 그러면 단위 기능 명세서 작성하는 거부터 시작해서 알고리즘 구현하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요.",
+        "이번 시간에 배운 이 내용은 우리 단위 모듈이 뭔지 어떤 건지 정확하게 그 개념만 잘 잡고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 우리가 단위 모듈을 구현할 때는 맨 처음에 단위 기능 명세서를 먼저 작성하더라. 그 다음에 입출력 기능을 구현하고 그 다음에 알고리즘을 구현하면 단위 모듈을 우리가 구현할 수 있더라라고 그렇게 기억하시면 됩니다. 자, 그러면 단위 기능 명세서 작성하는 거부터 시작해서 알고리즘 구현하는 것까지 하나씩 하나씩 다음 시간부터 같이 한번 보자고요. 이번 시간에 배운 이 내용은 우리 단위 모듈이 뭔지 어떤 건지 정확하게 그 개념만 잘 잡고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "단위 모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "IPC에 대한 학습 시작 안내",
+      "screen_text_lines": [
+        "IPC(Inter-Process Communication)"
+      ],
+      "screen_text": "IPC(Inter-Process Communication)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 IPC에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 IPC에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IPC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "IPC에 대한 학습 시작 안내",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:28",
+      "start_seconds": 7,
+      "end_seconds": 28,
+      "duration_seconds": 21,
+      "timeline_summary": "IPC(Inter-Process Communication)의 정의 설명",
+      "screen_text_lines": [
+        "IPC(Inter-Process Communication)",
+        "IPC는 모듈 간 통신 방식을 구현하기 위해 사용되는 대표적인 프로그래밍 인터페이스 집합으로, 복수의 프로세스를 수행하며 이뤄지는 프로세스 간 통신까지 구현이 가능함."
+      ],
+      "screen_text": "IPC(Inter-Process Communication)\nIPC는 모듈 간 통신 방식을 구현하기 위해 사용되는 대표적인 프로그래밍 인터페이스 집합으로, 복수의 프로세스를 수행하며 이뤄지는 프로세스 간 통신까지 구현이 가능함.",
+      "spoken_sentences": [
+        "우리가 입출력을 구현할 때 모듈 간의 통신 방식을 구현해야 되는데 그때 사용되는 대표적인 프로그래밍 인터페이스 집합을 보고 우리가 IPC라고 그렇게 불러요.",
+        "얘는 모듈 간의 통신 방식을 구현하기 위해서 사용되는 사용되는 대표적인 프로그래밍 인터페이스 집합이다."
+      ],
+      "spoken_text": "우리가 입출력을 구현할 때 모듈 간의 통신 방식을 구현해야 되는데 그때 사용되는 대표적인 프로그래밍 인터페이스 집합을 보고 우리가 IPC라고 그렇게 불러요. 얘는 모듈 간의 통신 방식을 구현하기 위해서 사용되는 사용되는 대표적인 프로그래밍 인터페이스 집합이다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IPC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:28",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 28,
+      "end_seconds": 33,
+      "duration_seconds": 5,
+      "timeline_summary": "IPC의 대표 메소드 5가지 소개",
+      "screen_text_lines": [
+        "IPC의 대표 메소드 5가지"
+      ],
+      "screen_text": "IPC의 대표 메소드 5가지",
+      "spoken_sentences": [
+        "이때 IPC의 우리 대표적인 메소드가 있는데 그 대표적인 메소드 다섯 가지요."
+      ],
+      "spoken_text": "이때 IPC의 우리 대표적인 메소드가 있는데 그 대표적인 메소드 다섯 가지요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IPC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "IPC의 대표 메소드 5가지 소개",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 33,
+      "end_seconds": 48,
+      "duration_seconds": 15,
+      "timeline_summary": "Shared Memory 메소드 설명",
+      "screen_text_lines": [
+        "Shared Memory",
+        "다수의 프로세스가 공유 가능한 메모리를 구성하여 프로세스 간 통신을 수행함."
+      ],
+      "screen_text": "Shared Memory\n다수의 프로세스가 공유 가능한 메모리를 구성하여 프로세스 간 통신을 수행함.",
+      "spoken_sentences": [
+        "첫 번째 게 쉐어 메모리.",
+        "쉐어 메모리라는 거는 말 그대로 메모리를 공유하는 거죠.",
+        "해서 다수의 프로세스가 공유 가능한 그런 메모리를 구성을 해요.",
+        "구성을 해서 프로세스 간의 통신을 수행해 주는 게 우리 쉐어 메모리고요."
+      ],
+      "spoken_text": "첫 번째 게 쉐어 메모리. 쉐어 메모리라는 거는 말 그대로 메모리를 공유하는 거죠. 해서 다수의 프로세스가 공유 가능한 그런 메모리를 구성을 해요. 구성을 해서 프로세스 간의 통신을 수행해 주는 게 우리 쉐어 메모리고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "통신을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        },
+        {
+          "keyword": "Shared Memory 메소드 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 48,
+      "end_seconds": 58,
+      "duration_seconds": 10,
+      "timeline_summary": "Socket 메소드 설명",
+      "screen_text_lines": [
+        "Socket",
+        "네트워크 소켓을 이용하여 네트워크를 경유하는 프로세스들 간 통신을 수행함."
+      ],
+      "screen_text": "Socket\n네트워크 소켓을 이용하여 네트워크를 경유하는 프로세스들 간 통신을 수행함.",
+      "spoken_sentences": [
+        "그 다음에 소켓이라는 거요.",
+        "얘는 네트워크 소켓을 이용해서 네트워크를 경유하는 그런 프로세스 간의 통신을 수행해 주는 게 우리 소켓이고요."
+      ],
+      "spoken_text": "그 다음에 소켓이라는 거요. 얘는 네트워크 소켓을 이용해서 네트워크를 경유하는 그런 프로세스 간의 통신을 수행해 주는 게 우리 소켓이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "Socket",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "통신을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 58,
+      "end_seconds": 68,
+      "duration_seconds": 10,
+      "timeline_summary": "Semaphores 메소드 설명",
+      "screen_text_lines": [
+        "Semaphores",
+        "공유 자원에 대한 접근 제어를 통해 프로세스 간 통신을 수행함."
+      ],
+      "screen_text": "Semaphores\n공유 자원에 대한 접근 제어를 통해 프로세스 간 통신을 수행함.",
+      "spoken_sentences": [
+        "그 다음에 세마포어요.",
+        "이 세마포어라는 거는 우리 공유 자원에 대한 그런 접근 제어를 통해서 프로세스 간의 통신을 수행해 주는 게 우리 세마포어."
+      ],
+      "spoken_text": "그 다음에 세마포어요. 이 세마포어라는 거는 우리 공유 자원에 대한 그런 접근 제어를 통해서 프로세스 간의 통신을 수행해 주는 게 우리 세마포어.",
+      "highlight_keywords": [
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "Semaphores",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "통신을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:29",
+      "start_seconds": 68,
+      "end_seconds": 89,
+      "duration_seconds": 21,
+      "timeline_summary": "Pipes & named Pipes 메소드 설명",
+      "screen_text_lines": [
+        "Pipes&named Pipes",
+        "· 'Pipe'라고 불리는 선입선출 형태로 구성된 메모리를 여러 프로세스가 공유하여 통신을 수행함.",
+        "· 하나의 프로세스가 Pipe를 이용 중이라면 다른 프로세스는 접근할 수 없음."
+      ],
+      "screen_text": "Pipes&named Pipes\n· 'Pipe'라고 불리는 선입선출 형태로 구성된 메모리를 여러 프로세스가 공유하여 통신을 수행함.\n· 하나의 프로세스가 Pipe를 이용 중이라면 다른 프로세스는 접근할 수 없음.",
+      "spoken_sentences": [
+        "그 다음에 파이프 네임드 파이프라는 거는 우리 파이프라고 불리는 파이프라고 불리는 선입선출 그 형태로 구성된 그런 메모리를 여러 프로세스가 공유해서 통신을 수행할 수 있게 통신할 수 있게 그렇게 해주는데 그때 하나의 프로세스가 파이프를 이용하고 있으면 다른 프로세스는 접근할 수가 없습니다."
+      ],
+      "spoken_text": "그 다음에 파이프 네임드 파이프라는 거는 우리 파이프라고 불리는 파이프라고 불리는 선입선출 그 형태로 구성된 그런 메모리를 여러 프로세스가 공유해서 통신을 수행할 수 있게 통신할 수 있게 그렇게 해주는데 그때 하나의 프로세스가 파이프를 이용하고 있으면 다른 프로세스는 접근할 수가 없습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "통신을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0130_130",
+      "subtopic_title": "IPC",
+      "subtopic_sequence": 130,
+      "subtopic_number": "130",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ClcMZj2JNXw",
+      "start_time_hms": "00:01:29",
+      "end_time_hms": "00:02:01",
+      "start_seconds": 89,
+      "end_seconds": 121,
+      "duration_seconds": 32,
+      "timeline_summary": "Message Queueing 메소드 설명 및 정리",
+      "screen_text_lines": [
+        "Message Queueing",
+        "메시지가 발생하면 이를 전달하는 형태로 프로세스 간 통신을 수행함."
+      ],
+      "screen_text": "Message Queueing\n메시지가 발생하면 이를 전달하는 형태로 프로세스 간 통신을 수행함.",
+      "spoken_sentences": [
+        "그 다음에 메시지 큐잉이요.",
+        "메시지 큐잉이라는 거는 메시지가 발생하면 메시지가 발생하면 이거를 전달하는 형태로 우리 프로세스 간의 통신 수행해 주는 게 우리 메시지 큐잉이요.",
+        "이렇게 IPC라는 거에 보게 되면 이렇게 다섯 가지 메소드가 있어요.",
+        "해서 우리 IPC에 보게 되면 대표적인 메소드가 이렇게 다섯 가지가 있는데 이 다섯 가지가 각각 뭐가 뭔지 구분할 수 있을 정도로 여러분들이 보고 지나가시면 됩니다."
+      ],
+      "spoken_text": "그 다음에 메시지 큐잉이요. 메시지 큐잉이라는 거는 메시지가 발생하면 메시지가 발생하면 이거를 전달하는 형태로 우리 프로세스 간의 통신 수행해 주는 게 우리 메시지 큐잉이요. 이렇게 IPC라는 거에 보게 되면 이렇게 다섯 가지 메소드가 있어요. 해서 우리 IPC에 보게 되면 대표적인 메소드가 이렇게 다섯 가지가 있는데 이 다섯 가지가 각각 뭐가 뭔지 구분할 수 있을 정도로 여러분들이 보고 지나가시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IPC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "메소드",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "통신을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:02",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 2,
+      "end_seconds": 9,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 주제인 '단위 모듈 테스트의 개요' 소개",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 개요"
+      ],
+      "screen_text": "단위 모듈 테스트의 개요",
+      "spoken_sentences": [
+        "이번 시간에는 우리 단위 모듈 테스트의 개요에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 단위 모듈 테스트의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "단위 모듈 테스트의 정의 설명",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 개요",
+        "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.",
+        "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+        "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "단위 모듈 테스트의 개요\n단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.\n단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.\n단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "우리가 앞에서 단위 모듈, 단위 모듈이라는 걸 구현을 했죠.",
+        "그 단위 모듈을 구현을 했으면 우리가 그 단위 모듈이 정상적으로 수행이 되는지 우리가 테스트를 해봐야 됩니다."
+      ],
+      "spoken_text": "우리가 앞에서 단위 모듈, 단위 모듈이라는 걸 구현을 했죠. 그 단위 모듈을 구현을 했으면 우리가 그 단위 모듈이 정상적으로 수행이 되는지 우리가 테스트를 해봐야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 23,
+      "end_seconds": 33,
+      "duration_seconds": 10,
+      "timeline_summary": "통합 전 단위 테스트의 필요성 강조",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 개요",
+        "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.",
+        "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+        "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "단위 모듈 테스트의 개요\n단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.\n단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.\n단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "내가 모듈을 만들었다고 해서 그런 모듈들 여러 개를 만들어 놓고 그런 것들을 싹 다 모듈을 다 조립을 해요.",
+        "조립을 하게 되면 하나의 소프트웨어가 되겠죠."
+      ],
+      "spoken_text": "내가 모듈을 만들었다고 해서 그런 모듈들 여러 개를 만들어 놓고 그런 것들을 싹 다 모듈을 다 조립을 해요. 조립을 하게 되면 하나의 소프트웨어가 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:00:42",
+      "start_seconds": 33,
+      "end_seconds": 42,
+      "duration_seconds": 9,
+      "timeline_summary": "통합 후 에러 발생 시 디버깅의 어려움 설명",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 개요",
+        "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.",
+        "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+        "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "단위 모듈 테스트의 개요\n단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.\n단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.\n단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "근데 그렇게 모듈을 싹 다 조립한 다음에 만약에 중간에 오류가 발생하면은 그때 디버깅 할 때 시간이 엄청나게 오래 걸립니다."
+      ],
+      "spoken_text": "근데 그렇게 모듈을 싹 다 조립한 다음에 만약에 중간에 오류가 발생하면은 그때 디버깅 할 때 시간이 엄청나게 오래 걸립니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:42",
+      "end_time_hms": "00:00:51",
+      "start_seconds": 42,
+      "end_seconds": 51,
+      "duration_seconds": 9,
+      "timeline_summary": "단계별 테스트 과정 요약",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 개요",
+        "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.",
+        "단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+        "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "단위 모듈 테스트의 개요\n단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.\n단위 모듈 테스트는 단위 테스트(Unit Test)라고도 하며, 화이트박스 테스트와 블랙박스 테스트 기법을 사용함.\n단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "그래서 우리가 미리미리 테스트를 해야 돼요.",
+        "그래서 우리가 단위 모듈 하나 만들고 테스트하고, 하나 만들고 테스트하고, 그렇게 해야 돼요."
+      ],
+      "spoken_text": "그래서 우리가 미리미리 테스트를 해야 돼요. 그래서 우리가 단위 모듈 하나 만들고 테스트하고, 하나 만들고 테스트하고, 그렇게 해야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:00:51",
+      "end_time_hms": "00:01:04",
+      "start_seconds": 51,
+      "end_seconds": 64,
+      "duration_seconds": 13,
+      "timeline_summary": "단위 모듈 테스트 정의 재확인",
+      "screen_text_lines": [
+        "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것."
+      ],
+      "screen_text": "단위 모듈 테스트는 프로그램의 단위 기능을 구현하는 모듈이 정해진 기능을 정확히 수행하는지 검증하는 것.",
+      "spoken_sentences": [
+        "해서 우리 단위 모듈 테스트라는 거는 프로그램의 단위 기능을 구현하는 그런 모듈 있죠?",
+        "그런 모듈이 정해진 기능을 정확하게 수행하는지 그걸 검증하는 걸 보고 우리가 단위 모듈 테스트라고 그렇게 부르더라."
+      ],
+      "spoken_text": "해서 우리 단위 모듈 테스트라는 거는 프로그램의 단위 기능을 구현하는 그런 모듈 있죠? 그런 모듈이 정해진 기능을 정확하게 수행하는지 그걸 검증하는 걸 보고 우리가 단위 모듈 테스트라고 그렇게 부르더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "테스트는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:01:04",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 64,
+      "end_seconds": 81,
+      "duration_seconds": 17,
+      "timeline_summary": "단위 테스트의 명칭 및 주요 기법 소개",
+      "screen_text_lines": [
+        "단위 테스트(Unit Test)",
+        "화이트박스 테스트와 블랙박스 테스트 기법을 사용함."
+      ],
+      "screen_text": "단위 테스트(Unit Test)\n화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+      "spoken_sentences": [
+        "이 단위 모듈 테스트는 단위 테스트, 그렇게 부르기도 해요.",
+        "우리가 단위 모듈을 테스트할 때는 크게 두 가지 방법이 있습니다.",
+        "우리가 화이트박스 테스트하는 방법이 있고요, 블랙박스 테스트라는 그런 기법이 있고 이렇게 두 가지 기법이 있어요."
+      ],
+      "spoken_text": "이 단위 모듈 테스트는 단위 테스트, 그렇게 부르기도 해요. 우리가 단위 모듈을 테스트할 때는 크게 두 가지 방법이 있습니다. 우리가 화이트박스 테스트하는 방법이 있고요, 블랙박스 테스트라는 그런 기법이 있고 이렇게 두 가지 기법이 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Unit Test",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:32",
+      "start_seconds": 81,
+      "end_seconds": 92,
+      "duration_seconds": 11,
+      "timeline_summary": "화이트박스 테스트의 기본 개념 설명",
+      "screen_text_lines": [
+        "단위 테스트(Unit Test)",
+        "화이트박스 테스트와 블랙박스 테스트 기법을 사용함."
+      ],
+      "screen_text": "단위 테스트(Unit Test)\n화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+      "spoken_sentences": [
+        "요 화이트박스 테스트 방식은 소스 코드를 전부 다 오픈시킨 상태에서 그 소스 코드에 있는 모든 논리적인 그런 경로들을 싹 다 테스트하는 걸 보고 우리가 화이트박스 [불명확] 블랙박스 테스트라는 거는"
+      ],
+      "spoken_text": "요 화이트박스 테스트 방식은 소스 코드를 전부 다 오픈시킨 상태에서 그 소스 코드에 있는 모든 논리적인 그런 경로들을 싹 다 테스트하는 걸 보고 우리가 화이트박스 [불명확] 블랙박스 테스트라는 거는",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "Unit Test",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "블랙박스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:01:32",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 92,
+      "end_seconds": 107,
+      "duration_seconds": 15,
+      "timeline_summary": "블랙박스 테스트의 기본 개념 설명",
+      "screen_text_lines": [
+        "화이트박스 테스트와 블랙박스 테스트 기법을 사용함."
+      ],
+      "screen_text": "화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+      "spoken_sentences": [
+        "특정 기능이 완전히 작동하는지 그걸 테스트하는 걸 보고 우리가 블랙박스 테스트, 그렇게 부릅니다."
+      ],
+      "spoken_text": "특정 기능이 완전히 작동하는지 그걸 테스트하는 걸 보고 우리가 블랙박스 테스트, 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "블랙박스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "화이트박스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:01:54",
+      "start_seconds": 107,
+      "end_seconds": 114,
+      "duration_seconds": 7,
+      "timeline_summary": "테스트 기법에 대한 추후 학습 안내",
+      "screen_text_lines": [
+        "화이트박스 테스트와 블랙박스 테스트 기법을 사용함."
+      ],
+      "screen_text": "화이트박스 테스트와 블랙박스 테스트 기법을 사용함.",
+      "spoken_sentences": [
+        "해서 화이트박스랑 블랙박스, 이런 테스트 기법을 사용해서 우리가 단위 모듈을 테스트하는구나, 그렇게 기억하시면 되고요."
+      ],
+      "spoken_text": "해서 화이트박스랑 블랙박스, 이런 테스트 기법을 사용해서 우리가 단위 모듈을 테스트하는구나, 그렇게 기억하시면 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "블랙박스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:01:54",
+      "end_time_hms": "00:02:06",
+      "start_seconds": 114,
+      "end_seconds": 126,
+      "duration_seconds": 12,
+      "timeline_summary": "단위 테스트 수행을 위한 환경 및 데이터 요건",
+      "screen_text_lines": [
+        "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "단위 모듈 테스트를 수행하기 위해서는 모듈을 단독적으로 실행할 수 있는 환경과 테스트에 필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "요런 화이트박스 테스트나 블랙박스 테스트는 뒤의 섹션에 넘어가게 되면 자세히 배울 겁니다.",
+        "그리고 우리가 단위 모듈 테스트를 수행하려면 그 모듈을, 그 모듈을 단독적으로 그렇게 실행할 수 있는 환경이 됐든 아니면 테스트에 필요한 데이터가 모두 다 준비가 돼야 됩니다."
+      ],
+      "spoken_text": "요런 화이트박스 테스트나 블랙박스 테스트는 뒤의 섹션에 넘어가게 되면 자세히 배울 겁니다. 그리고 우리가 단위 모듈 테스트를 수행하려면 그 모듈을, 그 모듈을 단독적으로 그렇게 실행할 수 있는 환경이 됐든 아니면 테스트에 필요한 데이터가 모두 다 준비가 돼야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "블랙박스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:02:06",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 126,
+      "end_seconds": 140,
+      "duration_seconds": 14,
+      "timeline_summary": "테스트 케이스와 데이터 준비의 중요성",
+      "screen_text_lines": [
+        "필요한 데이터가 모두 준비되어야 함."
+      ],
+      "screen_text": "필요한 데이터가 모두 준비되어야 함.",
+      "spoken_sentences": [
+        "우리가 정확한 테스트를 하려면 일단은 뭘 테스트를 할지 정확한 그 테스트 항목이 필요하죠?",
+        "이걸 보고 우리가 테스트 케이스라고 하는데 그런 데이터들을 우리가 모두 다 준비를 해야 된다고요."
+      ],
+      "spoken_text": "우리가 정확한 테스트를 하려면 일단은 뭘 테스트를 할지 정확한 그 테스트 항목이 필요하죠? 이걸 보고 우리가 테스트 케이스라고 하는데 그런 데이터들을 우리가 모두 다 준비를 해야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "테스트를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:02:20",
+      "end_time_hms": "00:02:38",
+      "start_seconds": 140,
+      "end_seconds": 158,
+      "duration_seconds": 18,
+      "timeline_summary": "통합 후 발견 어려운 에러 해결에 대한 단위 테스트의 효용",
+      "screen_text_lines": [
+        "모듈의 통합 이후에는 오랜 시간 추적해야 발견할 수 있는 에러들도 단위 모듈 테스트를 수행하면 쉽게 발견하고 수정할 수 있음."
+      ],
+      "screen_text": "모듈의 통합 이후에는 오랜 시간 추적해야 발견할 수 있는 에러들도 단위 모듈 테스트를 수행하면 쉽게 발견하고 수정할 수 있음.",
+      "spoken_sentences": [
+        "그리고 모듈을 싹 다 여러 개 모듈들을 싹 다 통합한 후에 우리가 오랜 시간 동안 추적을 해야 발견되는 그런 에러들도 단위 모듈 테스트를 수행하게 되면 우리가 쉽게 쉽게 발견하고 우리가 수정할 수 있습니다.",
+        "해서 이 단위 모듈 테스트라는 거를 반드시 해야 되는 거예요."
+      ],
+      "spoken_text": "그리고 모듈을 싹 다 여러 개 모듈들을 싹 다 통합한 후에 우리가 오랜 시간 동안 추적을 해야 발견되는 그런 에러들도 단위 모듈 테스트를 수행하게 되면 우리가 쉽게 쉽게 발견하고 우리가 수정할 수 있습니다. 해서 이 단위 모듈 테스트라는 거를 반드시 해야 되는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "테스트를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:02:38",
+      "end_time_hms": "00:02:51",
+      "start_seconds": 158,
+      "end_seconds": 171,
+      "duration_seconds": 13,
+      "timeline_summary": "단위 모듈 테스트의 대상과 한계 설명",
+      "screen_text_lines": [
+        "단위 모듈 테스트의 기준은 단위 모듈에 대한 코드이므로 시스템 수준의 오류는 잡아낼 수 없음."
+      ],
+      "screen_text": "단위 모듈 테스트의 기준은 단위 모듈에 대한 코드이므로 시스템 수준의 오류는 잡아낼 수 없음.",
+      "spoken_sentences": [
+        "그리고 이 단위 모듈 테스트라는 거는 단위 모듈에 대한 그런 코드를, 코드를 우리가 테스트하는 거죠."
+      ],
+      "spoken_text": "그리고 이 단위 모듈 테스트라는 거는 단위 모듈에 대한 그런 코드를, 코드를 우리가 테스트하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "단위 모듈 테스트",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:02:51",
+      "end_time_hms": "00:03:07",
+      "start_seconds": 171,
+      "end_seconds": 187,
+      "duration_seconds": 16,
+      "timeline_summary": "시스템 수준 오류 검출의 불가능성 설명",
+      "screen_text_lines": [
+        "시스템 수준의 오류는 잡아낼 수 없음."
+      ],
+      "screen_text": "시스템 수준의 오류는 잡아낼 수 없음.",
+      "spoken_sentences": [
+        "해서 이 단위 모듈 테스트라는 걸 통해서 우리가 시스템 수준의 오류는 잡아낼 수가 없습니다.",
+        "얘는 단위 모듈들을 싹 다 테스트하고 나서 얘네들을 싹 다 모듈을 통합한 후에 그때 테스트를 해야 시스템 수준의 오류를 잡아낼 수 있는 거예요."
+      ],
+      "spoken_text": "해서 이 단위 모듈 테스트라는 걸 통해서 우리가 시스템 수준의 오류는 잡아낼 수가 없습니다. 얘는 단위 모듈들을 싹 다 테스트하고 나서 얘네들을 싹 다 모듈을 통합한 후에 그때 테스트를 해야 시스템 수준의 오류를 잡아낼 수 있는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "테스트를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 4,
+      "subtopic_id": "0131_131",
+      "subtopic_title": "단위 모듈 테스트",
+      "subtopic_sequence": 131,
+      "subtopic_number": "131",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NGEa-aaHmko",
+      "start_time_hms": "00:03:07",
+      "end_time_hms": "00:03:17",
+      "start_seconds": 187,
+      "end_seconds": 197,
+      "duration_seconds": 10,
+      "timeline_summary": "단위 모듈 테스트 학습 마무리",
+      "screen_text_lines": [
+        "시스템 수준의 오류는 잡아낼 수 없음."
+      ],
+      "screen_text": "시스템 수준의 오류는 잡아낼 수 없음.",
+      "spoken_sentences": [
+        "해서 단위 모듈 테스트를 할 때는 시스템 수준의 오류는 잡아낼 수 없습니다.",
+        "아, 요런 게 단위 모듈 테스트구나, 그 정도 여러분들이 기억하고 지나가시면 돼요."
+      ],
+      "spoken_text": "해서 단위 모듈 테스트를 할 때는 시스템 수준의 오류는 잡아낼 수 없습니다. 아, 요런 게 단위 모듈 테스트구나, 그 정도 여러분들이 기억하고 지나가시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "단위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 97
+        },
+        {
+          "keyword": "모듈",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "테스트를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "테스트 케이스 학습 시작 안내",
+      "screen_text_lines": [
+        "테스트 케이스(Test Case)"
+      ],
+      "screen_text": "테스트 케이스(Test Case)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 테스트 케이스에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 테스트 케이스에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Test Case",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 8,
+      "end_seconds": 26,
+      "duration_seconds": 18,
+      "timeline_summary": "테스트 케이스의 정의와 필요성",
+      "screen_text_lines": [
+        "테스트 케이스(Test Case)",
+        "테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨."
+      ],
+      "screen_text": "테스트 케이스(Test Case)\n테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨.",
+      "spoken_sentences": [
+        "우리가 단위 모듈을 만들어 놓고 우리가 테스트를 해야 된다라고 했죠.",
+        "그때 우리가 정확한 테스트를 하려면 무엇을 테스트를 해야 되는지 정확한 그 테스트 항목이 필요해요.",
+        "그런 테스트 항목을 보고 우리는 테스트 케이스 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "우리가 단위 모듈을 만들어 놓고 우리가 테스트를 해야 된다라고 했죠. 그때 우리가 정확한 테스트를 하려면 무엇을 테스트를 해야 되는지 정확한 그 테스트 항목이 필요해요. 그런 테스트 항목을 보고 우리는 테스트 케이스 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:44",
+      "start_seconds": 26,
+      "end_seconds": 44,
+      "duration_seconds": 18,
+      "timeline_summary": "테스트 케이스의 주요 특징 설명",
+      "screen_text_lines": [
+        "테스트 케이스(Test Case)",
+        "테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨."
+      ],
+      "screen_text": "테스트 케이스(Test Case)\n테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨.",
+      "spoken_sentences": [
+        "우리 테스트 케이스는 구현된 그 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지 그런 것들을 확인하기 위해서 설계된 그런 입력값 그리고 실행 조건 그리고 기대 결과 이런 것들로 구성된 그런 테스트 항목에 대한 명세서를 보고 우리가 테스트 케이스라고 합니다."
+      ],
+      "spoken_text": "우리 테스트 케이스는 구현된 그 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지 그런 것들을 확인하기 위해서 설계된 그런 입력값 그리고 실행 조건 그리고 기대 결과 이런 것들로 구성된 그런 테스트 항목에 대한 명세서를 보고 우리가 테스트 케이스라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:00:44",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 44,
+      "end_seconds": 70,
+      "duration_seconds": 26,
+      "timeline_summary": "명세 기반 테스트 설계 산출물로서의 테스트 케이스",
+      "screen_text_lines": [
+        "테스트 케이스(Test Case)",
+        "테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨."
+      ],
+      "screen_text": "테스트 케이스(Test Case)\n테스트 케이스는 구현된 소프트웨어가 사용자의 요구사항을 정확하게 준수했는지를 확인하기 위해 설계된 입력 값, 실행 조건, 기대 결과 등으로 구성된 테스트 항목에 대한 명세서로, 명세 기반 테스트의 설계 산출물에 해당됨.",
+      "spoken_sentences": [
+        "그때 이런 테스트 항목은 내가 만들고 싶은 대로 마음대로 막 만드는 게 아니라 명세 기반, 명세 기반 테스트의 설계 산출물에 해당되는 게 우리 테스트 케이스예요.",
+        "여기 보게 되면 명세 기반의 테스트다라고 나왔는데 이 명세 기반의 테스트라는 거는 사용자의 요구사항을 제지해서 명세서대로 빠짐없이 테스트 케이스로 전부 다 구현했는지 안 했는지 그런 거를 확인하는 거를 명세 기반 테스트라고 해요."
+      ],
+      "spoken_text": "그때 이런 테스트 항목은 내가 만들고 싶은 대로 마음대로 막 만드는 게 아니라 명세 기반, 명세 기반 테스트의 설계 산출물에 해당되는 게 우리 테스트 케이스예요. 여기 보게 되면 명세 기반의 테스트다라고 나왔는데 이 명세 기반의 테스트라는 거는 사용자의 요구사항을 제지해서 명세서대로 빠짐없이 테스트 케이스로 전부 다 구현했는지 안 했는지 그런 거를 확인하는 거를 명세 기반 테스트라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:22",
+      "start_seconds": 70,
+      "end_seconds": 82,
+      "duration_seconds": 12,
+      "timeline_summary": "테스트 케이스 제작 시기 및 구성 내용",
+      "screen_text_lines": [
+        "• 단위 모듈을 테스트하기 전에 테스트에 필요한 입력 데이터, 테스트 조건, 예상 결과 등을 모아 테스트 케이스를 만든다."
+      ],
+      "screen_text": "• 단위 모듈을 테스트하기 전에 테스트에 필요한 입력 데이터, 테스트 조건, 예상 결과 등을 모아 테스트 케이스를 만든다.",
+      "spoken_sentences": [
+        "얘는 단위 모듈을 테스트하기 전에 테스트에 필요한 그런 입력 데이터 그리고 테스트 조건 그리고 예상 결과 이런 것들을 싹 다 모아서 테스트 케이스로 만들어 주면 되는 거고요."
+      ],
+      "spoken_text": "얘는 단위 모듈을 테스트하기 전에 테스트에 필요한 그런 입력 데이터 그리고 테스트 조건 그리고 예상 결과 이런 것들을 싹 다 모아서 테스트 케이스로 만들어 주면 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "입력",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:01:22",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 82,
+      "end_seconds": 103,
+      "duration_seconds": 21,
+      "timeline_summary": "테스트 케이스 부재 시 발생하는 문제점",
+      "screen_text_lines": [
+        "• 테스트 케이스를 이용하지 않고 수행하는 직관적인 테스트는 특정 요소에 대한 검증이 누락되거나 불필요한 검증의 반복으로 인해 인력과 시간을 낭비할 수 있음."
+      ],
+      "screen_text": "• 테스트 케이스를 이용하지 않고 수행하는 직관적인 테스트는 특정 요소에 대한 검증이 누락되거나 불필요한 검증의 반복으로 인해 인력과 시간을 낭비할 수 있음.",
+      "spoken_sentences": [
+        "우리가 테스트 케이스를 이용하지 않고 만약에 직관적으로 그렇게 테스트를 할 때는 특정 요소에 대한 검증이 검증이 누락되거나 불필요한 검증이 반복으로 인해서 시간이나 인력 그런 것들이 낭비가 될 수 있습니다.",
+        "해서 우리가 단위 모듈을 테스트할 때는 이 테스트 케이스를 반드시 사용을 해야 돼요."
+      ],
+      "spoken_text": "우리가 테스트 케이스를 이용하지 않고 만약에 직관적으로 그렇게 테스트를 할 때는 특정 요소에 대한 검증이 검증이 누락되거나 불필요한 검증이 반복으로 인해서 시간이나 인력 그런 것들이 낭비가 될 수 있습니다. 해서 우리가 단위 모듈을 테스트할 때는 이 테스트 케이스를 반드시 사용을 해야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:01:50",
+      "start_seconds": 103,
+      "end_seconds": 110,
+      "duration_seconds": 7,
+      "timeline_summary": "테스트 케이스 구성 요소 소개",
+      "screen_text_lines": [
+        "테스트 케이스(Test Case)",
+        "• ISO/IEC/IEEE29119-3 표준에 따른 테스트 케이스의 구성 요소는 다음과 같음."
+      ],
+      "screen_text": "테스트 케이스(Test Case)\n• ISO/IEC/IEEE29119-3 표준에 따른 테스트 케이스의 구성 요소는 다음과 같음.",
+      "spoken_sentences": [
+        "자 그럼 우리 테스트 케이스의 구성 요소 좀 살펴보자고요."
+      ],
+      "spoken_text": "자 그럼 우리 테스트 케이스의 구성 요소 좀 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "테스트 케이스(Test Case)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:01:55",
+      "start_seconds": 110,
+      "end_seconds": 115,
+      "duration_seconds": 5,
+      "timeline_summary": "구성 요소 1: 식별자(Identifier)",
+      "screen_text_lines": [
+        "식별자(Identifier)",
+        "항목 식별자, 일련번호"
+      ],
+      "screen_text": "식별자(Identifier)\n항목 식별자, 일련번호",
+      "spoken_sentences": [
+        "우리 테스트 케이스의 구성 요소는 지금처럼 이렇게 일곱 가지가 있습니다.",
+        "첫 번째 게 식별자요.",
+        "이 식별자라는 거 항목을 식별할 때 우리가 사용하는 거죠."
+      ],
+      "spoken_text": "우리 테스트 케이스의 구성 요소는 지금처럼 이렇게 일곱 가지가 있습니다. 첫 번째 게 식별자요. 이 식별자라는 거 항목을 식별할 때 우리가 사용하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "식별자(Identifier)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:01:55",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 115,
+      "end_seconds": 120,
+      "duration_seconds": 5,
+      "timeline_summary": "구성 요소 2: 테스트 항목(Test Item)",
+      "screen_text_lines": [
+        "테스트 항목(Test Item)",
+        "테스트 대상(모듈 또는 기능)"
+      ],
+      "screen_text": "테스트 항목(Test Item)\n테스트 대상(모듈 또는 기능)",
+      "spoken_sentences": [
+        "그 다음에 테스트 항목, 테스트 항목은 어떤 거를 테스트할 건지 그 대상을 우리가 정해야 되고요."
+      ],
+      "spoken_text": "그 다음에 테스트 항목, 테스트 항목은 어떤 거를 테스트할 건지 그 대상을 우리가 정해야 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "테스트 항목(Test Item)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:18",
+      "start_seconds": 120,
+      "end_seconds": 138,
+      "duration_seconds": 18,
+      "timeline_summary": "구성 요소 3&4: 입력 명세 및 출력 명세",
+      "screen_text_lines": [
+        "입력 명세(Input Specification)",
+        "입력 데이터 또는 테스트 조건",
+        "출력 명세(Output Specification)",
+        "테스트 케이스 수행 시 예상되는 출력 결과"
+      ],
+      "screen_text": "입력 명세(Input Specification)\n입력 데이터 또는 테스트 조건\n출력 명세(Output Specification)\n테스트 케이스 수행 시 예상되는 출력 결과",
+      "spoken_sentences": [
+        "그리고 입력 명세, 출력 명세 그렇게 써져 있습니다.",
+        "그때 이 하나의 모듈을 우리가 개발을 했을 때 입력 데이터를 어떤 거를 입력을 할지 그때 테스트 조건은 뭔지 그런 것들을 보고 우리가 입력 명세라고 하는 거고 출력 명세라는 거는 테스트 케이스를 수행을 했을 때 그때 예상되는 그 출력 결과 있잖아요.",
+        "그걸 보고 우리가 출력 명세라고 합니다."
+      ],
+      "spoken_text": "그리고 입력 명세, 출력 명세 그렇게 써져 있습니다. 그때 이 하나의 모듈을 우리가 개발을 했을 때 입력 데이터를 어떤 거를 입력을 할지 그때 테스트 조건은 뭔지 그런 것들을 보고 우리가 입력 명세라고 하는 거고 출력 명세라는 거는 테스트 케이스를 수행을 했을 때 그때 예상되는 그 출력 결과 있잖아요. 그걸 보고 우리가 출력 명세라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:02:18",
+      "end_time_hms": "00:02:32",
+      "start_seconds": 138,
+      "end_seconds": 152,
+      "duration_seconds": 14,
+      "timeline_summary": "구성 요소 5: 환경 설정(Environmental Needs)",
+      "screen_text_lines": [
+        "환경 설정(Environmental Needs)",
+        "필요한 하드웨어나 소프트웨어의 환경"
+      ],
+      "screen_text": "환경 설정(Environmental Needs)\n필요한 하드웨어나 소프트웨어의 환경",
+      "spoken_sentences": [
+        "그리고 환경 설정이라는 거는 우리 테스트 할 때 필요한 그런 하드웨어나 소프트웨어의 그 환경을 모두 얘기하는 거고요."
+      ],
+      "spoken_text": "그리고 환경 설정이라는 거는 우리 테스트 할 때 필요한 그런 하드웨어나 소프트웨어의 그 환경을 모두 얘기하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:02:32",
+      "end_time_hms": "00:02:41",
+      "start_seconds": 152,
+      "end_seconds": 161,
+      "duration_seconds": 9,
+      "timeline_summary": "구성 요소 6: 특수 절차 요구(Special Procedure Requirement)",
+      "screen_text_lines": [
+        "특수 절차 요구(Special Procedure Requirement)",
+        "테스트 케이스 수행 시 특별히 요구되는 절차"
+      ],
+      "screen_text": "특수 절차 요구(Special Procedure Requirement)\n테스트 케이스 수행 시 특별히 요구되는 절차",
+      "spoken_sentences": [
+        "특수 절차 요구라는 거는 테스트 케이스를 수행할 때 특별히 요구되는 그런 절차가 있냐 없냐 그런 것도 우리가 작성을 해줘야 된다고요."
+      ],
+      "spoken_text": "특수 절차 요구라는 거는 테스트 케이스를 수행할 때 특별히 요구되는 그런 절차가 있냐 없냐 그런 것도 우리가 작성을 해줘야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:02:41",
+      "end_time_hms": "00:02:49",
+      "start_seconds": 161,
+      "end_seconds": 169,
+      "duration_seconds": 8,
+      "timeline_summary": "구성 요소 7: 의존성 기술(Inter-case Dependencies)",
+      "screen_text_lines": [
+        "의존성 기술(Inter-case Dependencies)",
+        "테스트 케이스 간의 의존성"
+      ],
+      "screen_text": "의존성 기술(Inter-case Dependencies)\n테스트 케이스 간의 의존성",
+      "spoken_sentences": [
+        "그리고 의존성 기술이라는 건 말 그대로 테스트 케이스 간의 의존성, 의존성을 확인할 때 우리가 사용하는 겁니다."
+      ],
+      "spoken_text": "그리고 의존성 기술이라는 건 말 그대로 테스트 케이스 간의 의존성, 의존성을 확인할 때 우리가 사용하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_027-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 5,
+      "subtopic_id": "0132_132",
+      "subtopic_title": "테스트 케이스의 구성 요소",
+      "subtopic_sequence": 132,
+      "subtopic_number": "132",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5noO5jrOa44",
+      "start_time_hms": "00:02:49",
+      "end_time_hms": "00:03:15",
+      "start_seconds": 169,
+      "end_seconds": 195,
+      "duration_seconds": 26,
+      "timeline_summary": "테스트 케이스 학습 마무리",
+      "screen_text_lines": [
+        "식별자(Identifier)",
+        "테스트 항목(Test Item)",
+        "입력 명세(Input Specification)",
+        "출력 명세(Output Specification)"
+      ],
+      "screen_text": "식별자(Identifier)\n테스트 항목(Test Item)\n입력 명세(Input Specification)\n출력 명세(Output Specification)",
+      "spoken_sentences": [
+        "해서 우리 테스트 케이스의 구성 요소에는 지금처럼 이렇게 일곱 가지가 있는데 얘네들은 뭐 이 앞에 있는 요런 제목들만 봐도 쉽게 쉽게 예상되는 그런 내용들이죠.",
+        "해서 테스트 케이스의 구성 요소에는 아 이런 것들이 있구나 그리고 테스트 케이스가 정확하게 뭔지 그 개념 이해하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 우리 테스트 케이스의 구성 요소에는 지금처럼 이렇게 일곱 가지가 있는데 얘네들은 뭐 이 앞에 있는 요런 제목들만 봐도 쉽게 쉽게 예상되는 그런 내용들이죠. 해서 테스트 케이스의 구성 요소에는 아 이런 것들이 있구나 그리고 테스트 케이스가 정확하게 뭔지 그 개념 이해하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "테스트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 88
+        },
+        {
+          "keyword": "구성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5731 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_005",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 7,
+    "source_sequences": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "source_lecture_ids": [
+      "0016_16",
+      "0017_17",
+      "0018_18",
+      "0019_19",
+      "0020_20",
+      "0021_21",
+      "0022_22"
+    ],
+    "source_titles": [
+      "비기능 요구사항",
+      "기능 요구사항",
+      "요구사항개발프로세스",
+      "요구사항 도출",
+      "요구사항 명세 기법",
+      "요구사항 확인",
+      "요구사항 분석의 개요"
+    ],
+    "keywords": [
+      "요구사항",
+      "비기능",
+      "기능",
+      "요구사항개발프로세스",
+      "도출"
+    ],
+    "highlight_keywords": [
+      "요구사항",
+      "제약사항",
+      "이식성",
+      "시스템",
+      "확장성",
+      "기능",
+      "요구사항의",
+      "기능 요구사항",
+      "유형",
+      "요구사항개발프로세스"
+    ],
+    "secondary_keywords": [
+      "유지",
+      "시스템 장비 구성 요구사항",
+      "프로젝트 관리 요구사항",
+      "인터페이스 요구사항",
+      "데이터 요구사항",
+      "보안 요구사항",
+      "요구사항의 유형",
+      "사용자",
+      "시스템",
+      "requirements",
+      "비기능",
+      "Functional requirements"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0016_16",
+      "sequence": 16,
+      "number": "16",
+      "course_code": "350016",
+      "title": "비기능 요구사항",
+      "duration_seconds": 341,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "segment_count": 22,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 87,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "제약사항",
+          "tokens": [
+            "제약사항"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "이식성",
+          "tokens": [
+            "이식성"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "시스템",
+          "tokens": [
+            "시스템"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "확장성",
+          "tokens": [
+            "확장성"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "유지",
+          "tokens": [
+            "유지"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시스템 장비 구성 요구사항",
+          "tokens": [
+            "시스템",
+            "장비",
+            "구성",
+            "요구사항"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "프로젝트 관리 요구사항",
+          "tokens": [
+            "프로젝트",
+            "관리",
+            "요구사항"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "인터페이스 요구사항",
+          "tokens": [
+            "인터페이스",
+            "요구사항"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터 요구사항",
+          "tokens": [
+            "데이터",
+            "요구사항"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "보안 요구사항",
+          "tokens": [
+            "보안",
+            "요구사항"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-001-source-seg-001::01",
+          "prompt": "______의 유형 소개",
+          "answer": "요구사항",
+          "original": "요구사항의 유형 소개",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-001-source-seg-017::02",
+          "prompt": "______ : 시스템 설계, 구축, 운영과 관련하여 사전에 파악된 기술, 표준, 업무, 법·제도 등의 제약조건",
+          "answer": "제약사항",
+          "original": "제약사항 : 시스템 설계, 구축, 운영과 관련하여 사전에 파악된 기술, 표준, 업무, 법·제도 등의 제약조건",
+          "keyword": "제약사항",
+          "source_segment_id": "topic_005-subtopic-001-source-seg-017",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '제약사항'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-001-source-seg-009::03",
+          "prompt": "품질 요구사항 : 관리가 필요한 품질 항목, 품질 평가 대상에 대한 요구사항으로 가용성, 정합성, 상호 호환성, 대응성, 신뢰성, 사용성, 유지·관리성, ______, 확장성, 보안성 등으로 구분하여 기술",
+          "answer": "이식성",
+          "original": "품질 요구사항 : 관리가 필요한 품질 항목, 품질 평가 대상에 대한 요구사항으로 가용성, 정합성, 상호 호환성, 대응성, 신뢰성, 사용성, 유지·관리성, 이식성, 확장성, 보안성 등으로 구분하여 기술",
+          "keyword": "이식성",
+          "source_segment_id": "topic_005-subtopic-001-source-seg-009",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '이식성'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-001-source-seg-002::04",
+          "prompt": "______ 장비 구성 요구사항",
+          "answer": "시스템",
+          "original": "시스템 장비 구성 요구사항",
+          "keyword": "시스템",
+          "source_segment_id": "topic_005-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '시스템'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0017_17",
+      "sequence": 17,
+      "number": "17",
+      "course_code": "350017",
+      "title": "기능 요구사항",
+      "duration_seconds": 159,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 38,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능",
+          "tokens": [
+            "기능"
+          ],
+          "score": 33,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항의",
+          "tokens": [
+            "요구사항의"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기능 요구사항",
+          "tokens": [
+            "기능",
+            "요구사항"
+          ],
+          "score": 20,
+          "sources": [
+            "lecture_title",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "유형",
+          "tokens": [
+            "유형"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "요구사항의 유형",
+          "tokens": [
+            "요구사항의",
+            "유형"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사용자",
+          "tokens": [
+            "사용자"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시스템",
+          "tokens": [
+            "시스템"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "requirements",
+          "tokens": [
+            "requirements"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비기능",
+          "tokens": [
+            "비기능"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Functional requirements",
+          "tokens": [
+            "Functional",
+            "requirements"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-002-source-seg-001::01",
+          "prompt": "______의 유형 강의 시작",
+          "answer": "요구사항",
+          "original": "요구사항의 유형 강의 시작",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-002-source-seg-001::02",
+          "prompt": "______ 유형 강의 시작",
+          "answer": "요구사항의",
+          "original": "요구사항의 유형 강의 시작",
+          "keyword": "요구사항의",
+          "source_segment_id": "topic_005-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-002-source-seg-002::03",
+          "prompt": "요구사항은 일반적으로 기술하는 내용에 따라 ______(Functional requirements)과 비기능 요구사항(Non-functional requirements)으로 구분하며",
+          "answer": "기능 요구사항",
+          "original": "요구사항은 일반적으로 기술하는 내용에 따라 기능 요구사항(Functional requirements)과 비기능 요구사항(Non-functional requirements)으로 구분하며",
+          "keyword": "기능 요구사항",
+          "source_segment_id": "topic_005-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '기능 요구사항'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-002-source-seg-001::04",
+          "prompt": "______ 강의 시작",
+          "answer": "요구사항의 유형",
+          "original": "요구사항의 유형 강의 시작",
+          "keyword": "요구사항의 유형",
+          "source_segment_id": "topic_005-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '요구사항의 유형'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0018_18",
+      "sequence": 18,
+      "number": "18",
+      "course_code": "350018",
+      "title": "요구사항개발프로세스",
+      "duration_seconds": 125,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항개발프로세스",
+          "tokens": [
+            "요구사항개발프로세스"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "명세 (Specification)",
+          "tokens": [
+            "명세",
+            "Specification"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "도출 (Elicitation)",
+          "tokens": [
+            "도출",
+            "Elicitation"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분석 (Analysis)",
+          "tokens": [
+            "분석",
+            "Analysis"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "요구사항 개발 프로세스",
+          "tokens": [
+            "요구사항",
+            "개발",
+            "프로세스"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "확인",
+          "tokens": [
+            "확인"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "프로세스 순서 암기 당부 및 다음 시간 예고",
+          "tokens": [
+            "프로세스",
+            "암기",
+            "당부",
+            "예고"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 개발 프로세스 4단계 소개",
+          "tokens": [
+            "요구사항",
+            "개발",
+            "프로세스",
+            "단계",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 개발 프로세스의 정의 설명",
+          "tokens": [
+            "요구사항",
+            "개발",
+            "프로세스의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "도출과 분석 단계의 핵심 의미",
+          "tokens": [
+            "도출과",
+            "분석",
+            "단계의",
+            "핵심",
+            "의미"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-003-source-seg-001::01",
+          "prompt": "______ 개발 프로세스",
+          "answer": "요구사항",
+          "original": "요구사항 개발 프로세스",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-003-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-003-source-seg-001::02",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "요구사항 개발 프로세스",
+          "original": "이번 시간에는 우리 요구사항 개발 프로세스에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "요구사항 개발 프로세스",
+          "source_segment_id": "topic_005-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '요구사항 개발 프로세스'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0019_19",
+      "sequence": 19,
+      "number": "19",
+      "course_code": "350019",
+      "title": "요구사항 도출",
+      "duration_seconds": 371,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 38,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기법",
+          "tokens": [
+            "기법"
+          ],
+          "score": 35,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "브레인스토밍",
+          "tokens": [
+            "브레인스토밍"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "프로토타이핑",
+          "tokens": [
+            "프로토타이핑"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "워크샵",
+          "tokens": [
+            "워크샵"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "설문",
+          "tokens": [
+            "설문"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "유스케이스등이 있음.",
+          "tokens": [
+            "유스케이스등이",
+            "있음"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "도출",
+          "tokens": [
+            "도출"
+          ],
+          "score": 21,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 도출",
+          "tokens": [
+            "요구사항",
+            "도출"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "주요",
+          "tokens": [
+            "주요"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "청취와",
+          "tokens": [
+            "청취와"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-004-source-seg-001::01",
+          "prompt": "______ 도출(Requirement Elicitation, 요구사항 수집)",
+          "answer": "요구사항",
+          "original": "요구사항 도출(Requirement Elicitation, 요구사항 수집)",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-004-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-004-source-seg-008::02",
+          "prompt": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, ______, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+          "answer": "브레인스토밍",
+          "original": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+          "keyword": "브레인스토밍",
+          "source_segment_id": "topic_005-subtopic-004-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '브레인스토밍'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-004-source-seg-008::03",
+          "prompt": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, ______, 유스케이스등이 있음.",
+          "answer": "프로토타이핑",
+          "original": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+          "keyword": "프로토타이핑",
+          "source_segment_id": "topic_005-subtopic-004-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '프로토타이핑'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-004-source-seg-008::04",
+          "prompt": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, ______, 프로토타이핑, 유스케이스등이 있음.",
+          "answer": "워크샵",
+          "original": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+          "keyword": "워크샵",
+          "source_segment_id": "topic_005-subtopic-004-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '워크샵'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 5,
+      "lecture_id": "0020_20",
+      "sequence": 20,
+      "number": "20",
+      "course_code": "350020",
+      "title": "요구사항 명세 기법",
+      "duration_seconds": 254,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "tokens": [
+            "명세"
+          ],
+          "score": 53,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항 명세 기법",
+          "tokens": [
+            "요구사항",
+            "명세",
+            "기법"
+          ],
+          "score": 26,
+          "sources": [
+            "lecture_title",
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "tokens": [
+            "비정형",
+            "명세",
+            "기법"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기법의",
+          "tokens": [
+            "기법의"
+          ],
+          "score": 21,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "정형",
+          "tokens": [
+            "정형"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "정형 명세 기법",
+          "tokens": [
+            "정형",
+            "명세",
+            "기법"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비정형 명세 기법의 개념 및 작성 방법",
+          "tokens": [
+            "비정형",
+            "명세",
+            "기법의",
+            "개념",
+            "작성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정형 명세 기법의 정의 및 작성 방법",
+          "tokens": [
+            "정형",
+            "명세",
+            "기법의",
+            "작성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비정형 명세 기법의 종류 및 요약",
+          "tokens": [
+            "비정형",
+            "명세",
+            "기법의",
+            "요약"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 명세 기법의 개념",
+          "tokens": [
+            "요구사항",
+            "명세",
+            "기법의",
+            "개념"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "비정형 명세 기법의 특징",
+          "tokens": [
+            "비정형",
+            "명세",
+            "기법의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-005-source-seg-001::01",
+          "prompt": "소프트웨어 요구사항 명세서 / ______",
+          "answer": "요구사항 명세 기법",
+          "original": "소프트웨어 요구사항 명세서 / 요구사항 명세 기법",
+          "keyword": "요구사항 명세 기법",
+          "source_segment_id": "topic_005-subtopic-005-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항 명세 기법'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-005-source-seg-003::02",
+          "prompt": "정형 명세 기법이라는 게 있고 ______이라는 게 있고 이렇게 두 가지가 있어요.",
+          "answer": "비정형 명세 기법",
+          "original": "정형 명세 기법이라는 게 있고 비정형 명세 기법이라는 게 있고 이렇게 두 가지가 있어요.",
+          "keyword": "비정형 명세 기법",
+          "source_segment_id": "topic_005-subtopic-005-source-seg-003",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '비정형 명세 기법'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-005-source-seg-002::03",
+          "prompt": "요구사항 명세 ______ 개념",
+          "answer": "기법의",
+          "original": "요구사항 명세 기법의 개념",
+          "keyword": "기법의",
+          "source_segment_id": "topic_005-subtopic-005-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '기법의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-005-source-seg-003::04",
+          "prompt": "______의 정의 및 작성 방법",
+          "answer": "정형 명세 기법",
+          "original": "정형 명세 기법의 정의 및 작성 방법",
+          "keyword": "정형 명세 기법",
+          "source_segment_id": "topic_005-subtopic-005-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '정형 명세 기법'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 6,
+      "lecture_id": "0021_21",
+      "sequence": 21,
+      "number": "21",
+      "course_code": "350021",
+      "title": "요구사항 확인",
+      "duration_seconds": 150,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "segment_count": 7,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 46,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항 확인",
+          "tokens": [
+            "요구사항",
+            "확인"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "검증",
+          "tokens": [
+            "검증"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "검증의 중요성 및 재작업 비용",
+          "tokens": [
+            "검증의",
+            "중요성",
+            "재작업",
+            "비용"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항 개발 프로세스 마무리",
+          "tokens": [
+            "요구사항",
+            "개발",
+            "프로세스",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "검증의 구체적 항목과 한계점",
+          "tokens": [
+            "검증의",
+            "구체적",
+            "항목과",
+            "한계점"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 확인의 정의",
+          "tokens": [
+            "요구사항",
+            "확인의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Validation",
+          "tokens": [
+            "Validation"
+          ],
+          "score": 10,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 확인 개요",
+          "tokens": [
+            "요구사항",
+            "확인",
+            "개요"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "명세서 검증 과정",
+          "tokens": [
+            "명세서",
+            "검증",
+            "과정"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "형상 관리의 개념",
+          "tokens": [
+            "형상",
+            "관리의",
+            "개념"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-006-source-seg-001::01",
+          "prompt": "______ 확인 개요",
+          "answer": "요구사항",
+          "original": "요구사항 확인 개요",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-006-source-seg-001::02",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "요구사항 확인",
+          "original": "이번 시간에는 우리 요구사항 확인에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "요구사항 확인",
+          "source_segment_id": "topic_005-subtopic-006-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항 확인'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-006-source-seg-001::03",
+          "prompt": "(Requirement ______, 요구사항 검증)",
+          "answer": "Validation",
+          "original": "(Requirement Validation, 요구사항 검증)",
+          "keyword": "Validation",
+          "source_segment_id": "topic_005-subtopic-006-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Validation'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 7,
+      "lecture_id": "0022_22",
+      "sequence": 22,
+      "number": "22",
+      "course_code": "350022",
+      "title": "요구사항 분석의 개요",
+      "duration_seconds": 146,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "segment_count": 11,
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "tokens": [
+            "요구사항"
+          ],
+          "score": 50,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분석",
+          "tokens": [
+            "분석"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "소프트웨어",
+          "tokens": [
+            "소프트웨어"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구사항 분석의 개요",
+          "tokens": [
+            "요구사항",
+            "분석의",
+            "개요"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "사용자의",
+          "tokens": [
+            "사용자의"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "요구사항을",
+          "tokens": [
+            "요구사항을"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "명세화",
+          "tokens": [
+            "명세화"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요약",
+          "tokens": [
+            "요약"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 분석 단계 마무리 및 시험 대비",
+          "tokens": [
+            "요구사항",
+            "분석",
+            "단계",
+            "마무리",
+            "대비"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 추출 및 목표, 해결 방식 결정",
+          "tokens": [
+            "요구사항",
+            "추출",
+            "목표",
+            "해결",
+            "결정"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "요구사항 분석 수행자 및 단계 명칭",
+          "tokens": [
+            "요구사항",
+            "분석",
+            "수행자",
+            "단계",
+            "명칭"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_005-subtopic-007-source-seg-001::01",
+          "prompt": "이번 시간에는 우리 ______ 분석의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "요구사항",
+          "original": "이번 시간에는 우리 요구사항 분석의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "요구사항",
+          "source_segment_id": "topic_005-subtopic-007-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-007-source-seg-002::02",
+          "prompt": "요구사항 분석은 ______ 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+          "answer": "소프트웨어",
+          "original": "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+          "keyword": "소프트웨어",
+          "source_segment_id": "topic_005-subtopic-007-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '소프트웨어'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-007-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "요구사항 분석의 개요",
+          "original": "이번 시간에는 우리 요구사항 분석의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "요구사항 분석의 개요",
+          "source_segment_id": "topic_005-subtopic-007-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구사항 분석의 개요'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_005-subtopic-007-source-seg-002::04",
+          "prompt": "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 ______ 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+          "answer": "사용자의",
+          "original": "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+          "keyword": "사용자의",
+          "source_segment_id": "topic_005-subtopic-007-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '사용자의'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_005",
+    "sequence": 5,
+    "number": "05",
+    "title": "요구사항 유형과 개발 프로세스",
+    "title_raw": "요구사항 유형과 개발 프로세스",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "source_count": 7,
+    "source_sequences": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "source_titles": [
+      "비기능 요구사항",
+      "기능 요구사항",
+      "요구사항개발프로세스",
+      "요구사항 도출",
+      "요구사항 명세 기법",
+      "요구사항 확인",
+      "요구사항 분석의 개요"
+    ],
+    "preview_text": "비기능 요구사항, 기능 요구사항, 요구사항개발프로세스 등",
+    "segment_count": 80,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 비기능 요구사항, 기능 요구사항, 요구사항개발프로세스, 요구사항 도출 등을 중심으로 정리합니다. 소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 7개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 비기능 요구사항, 기능 요구사항, 요구사항개발프로세스, 요구사항 도출 등을 중심으로 정리합니다.",
+      "소프트웨어 설계 과목에서 함께 출제되는 핵심 개념 7개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1546,
+    "source_titles_preview": [
+      "비기능 요구사항",
+      "기능 요구사항",
+      "요구사항개발프로세스"
+    ],
+    "highlight_keywords": [
+      "요구사항",
+      "제약사항",
+      "이식성",
+      "시스템",
+      "확장성",
+      "기능",
+      "요구사항의",
+      "기능 요구사항",
+      "유형",
+      "요구사항개발프로세스"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_005-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "요구사항의 유형 소개",
+      "screen_text_lines": [
+        "요구사항의 유형",
+        "비기능 요구사항(Non-functional requirements)"
+      ],
+      "screen_text": "요구사항의 유형\n비기능 요구사항(Non-functional requirements)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항의 유형에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항의 유형에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 8,
+      "end_seconds": 24,
+      "duration_seconds": 16,
+      "timeline_summary": "시스템 장비 구성 요구사항",
+      "screen_text_lines": [
+        "시스템 장비 구성 요구사항 : 하드웨어, 소프트웨어, 네트워크 등의 시스템 장비 구성에 대한 요구사항"
+      ],
+      "screen_text": "시스템 장비 구성 요구사항 : 하드웨어, 소프트웨어, 네트워크 등의 시스템 장비 구성에 대한 요구사항",
+      "spoken_sentences": [
+        "비기능 요구사항에 보게 되면 종류가 되게 많아요.",
+        "자, 일단 첫 번째 거 먼저요.",
+        "시스템 장비 구성 요구사항이요.",
+        "얘는 하드웨어가 됐든 소프트웨어가 됐든 네트워크가 됐든 이런 시스템 장비 구성에 대한 그런 요구사항을 보고 얘기해요."
+      ],
+      "spoken_text": "비기능 요구사항에 보게 되면 종류가 되게 많아요. 자, 일단 첫 번째 거 먼저요. 시스템 장비 구성 요구사항이요. 얘는 하드웨어가 됐든 소프트웨어가 됐든 네트워크가 됐든 이런 시스템 장비 구성에 대한 그런 요구사항을 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "시스템 장비 구성 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:39",
+      "start_seconds": 24,
+      "end_seconds": 39,
+      "duration_seconds": 15,
+      "timeline_summary": "성능 요구사항",
+      "screen_text_lines": [
+        "성능 요구사항 : 처리 속도 및 시간, 처리량, 동적·정적 적용량, 가용성 등 성능에 대한 요구사항"
+      ],
+      "screen_text": "성능 요구사항 : 처리 속도 및 시간, 처리량, 동적·정적 적용량, 가용성 등 성능에 대한 요구사항",
+      "spoken_sentences": [
+        "그리고 성능 요구사항이다라고 하게 되면 얘는 말 그대로 성능에 관한 거예요.",
+        "처리 속도가 됐든 처리 시간이 됐든 처리량이 됐든 동적, 정적 적용량이 됐든 가용성이 됐든 이런 성능에 대한 그런 요구사항을 보고 얘기하는 거고요."
+      ],
+      "spoken_text": "그리고 성능 요구사항이다라고 하게 되면 얘는 말 그대로 성능에 관한 거예요. 처리 속도가 됐든 처리 시간이 됐든 처리량이 됐든 동적, 정적 적용량이 됐든 가용성이 됐든 이런 성능에 대한 그런 요구사항을 보고 얘기하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:00:39",
+      "end_time_hms": "00:01:06",
+      "start_seconds": 39,
+      "end_seconds": 66,
+      "duration_seconds": 27,
+      "timeline_summary": "인터페이스 요구사항",
+      "screen_text_lines": [
+        "인터페이스 요구사항 : 시스템 인터페이스와 사용자 인터페이스에 대한 요구사항으로 다른 소프트웨어, 하드웨어 및 통신 인터페이스, 다른 시스템과의 정보 교환에 사용되는 프로토콜과의 연계도 포함하여 기술"
+      ],
+      "screen_text": "인터페이스 요구사항 : 시스템 인터페이스와 사용자 인터페이스에 대한 요구사항으로 다른 소프트웨어, 하드웨어 및 통신 인터페이스, 다른 시스템과의 정보 교환에 사용되는 프로토콜과의 연계도 포함하여 기술",
+      "spoken_sentences": [
+        "그 다음에 인터페이스 요구사항이요.",
+        "인터페이스 요구사항은 시스템 인터페이스랑 사용자 인터페이스에 대한 그런 요구사항, 요구사항을 보고 얘기하는데, 다른 소프트웨어랑 어떻게 어떻게 인터페이스를 할 거냐, 아니면 하드웨어 및 통신 인터페이스는 어떤 거를 쓸 거냐, 그리고 다른 시스템이랑 정보 교환에 사용되는 그런 프로토콜, 프로토콜이랑 그리고 연계도 같은 것들은 어떻게 할 거냐 그런 것들을 기술하는 게 우리 인터페이스 요구사항이고요."
+      ],
+      "spoken_text": "그 다음에 인터페이스 요구사항이요. 인터페이스 요구사항은 시스템 인터페이스랑 사용자 인터페이스에 대한 그런 요구사항, 요구사항을 보고 얘기하는데, 다른 소프트웨어랑 어떻게 어떻게 인터페이스를 할 거냐, 아니면 하드웨어 및 통신 인터페이스는 어떤 거를 쓸 거냐, 그리고 다른 시스템이랑 정보 교환에 사용되는 그런 프로토콜, 프로토콜이랑 그리고 연계도 같은 것들은 어떻게 할 거냐 그런 것들을 기술하는 게 우리 인터페이스 요구사항이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "인터페이스 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:01:06",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 66,
+      "end_seconds": 85,
+      "duration_seconds": 19,
+      "timeline_summary": "데이터 요구사항",
+      "screen_text_lines": [
+        "데이터 요구사항 : 초기 자료 구축 및 데이터 변환을 위한 대상, 방법, 보안이 필요한 데이터 등 데이터를 구축하기 위해 필요한 요구사항"
+      ],
+      "screen_text": "데이터 요구사항 : 초기 자료 구축 및 데이터 변환을 위한 대상, 방법, 보안이 필요한 데이터 등 데이터를 구축하기 위해 필요한 요구사항",
+      "spoken_sentences": [
+        "그리고 데이터 요구사항이라는 거는 말 그대로 데이터, 데이터를 구축하기 위해서 필요한 그런 요구사항들을 보고 얘기하는데, 초기 자료 구축은 어떻게 할 건지, 데이터 변환을 위한 대상이 됐든 방법이 됐든 보안이 됐든 그런 데이터는 어떻게 할 건지, 그런 것들을 적어 놓는 게 우리 데이터 요구사항이요."
+      ],
+      "spoken_text": "그리고 데이터 요구사항이라는 거는 말 그대로 데이터, 데이터를 구축하기 위해서 필요한 그런 요구사항들을 보고 얘기하는데, 초기 자료 구축은 어떻게 할 건지, 데이터 변환을 위한 대상이 됐든 방법이 됐든 보안이 됐든 그런 데이터는 어떻게 할 건지, 그런 것들을 적어 놓는 게 우리 데이터 요구사항이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "데이터 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:40",
+      "start_seconds": 85,
+      "end_seconds": 100,
+      "duration_seconds": 15,
+      "timeline_summary": "테스트 요구사항",
+      "screen_text_lines": [
+        "테스트 요구사항 : 도입되는 장비의 성능 테스트(BMT)나 구축된 시스템이 제대로 운영되는지를 테스트하고 점검하기 위한 테스트 요구사항"
+      ],
+      "screen_text": "테스트 요구사항 : 도입되는 장비의 성능 테스트(BMT)나 구축된 시스템이 제대로 운영되는지를 테스트하고 점검하기 위한 테스트 요구사항",
+      "spoken_sentences": [
+        "그 다음에 테스트 요구사항이요.",
+        "테스트 요구사항이라는 거는 도입되는 장비에 성능 테스트가 됐든 아니면 구축된 시스템이 제대로 운영되고 있는지 테스트하고 점검하기 위해 사용되는 그런 테스트 요구사항을 보고 우리가 테스트 요구사항이라고 합니다."
+      ],
+      "spoken_text": "그 다음에 테스트 요구사항이요. 테스트 요구사항이라는 거는 도입되는 장비에 성능 테스트가 됐든 아니면 구축된 시스템이 제대로 운영되고 있는지 테스트하고 점검하기 위해 사용되는 그런 테스트 요구사항을 보고 우리가 테스트 요구사항이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:01:40",
+      "end_time_hms": "00:01:55",
+      "start_seconds": 100,
+      "end_seconds": 115,
+      "duration_seconds": 15,
+      "timeline_summary": "첫 번째 페이지 항목 요약 및 전환",
+      "screen_text_lines": [
+        "시스템 장비 구성 요구사항",
+        "성능 요구사항",
+        "인터페이스 요구사항",
+        "데이터 요구사항"
+      ],
+      "screen_text": "시스템 장비 구성 요구사항\n성능 요구사항\n인터페이스 요구사항\n데이터 요구사항",
+      "spoken_sentences": [
+        "그래서 얘네들을 쭉쭉 읽어봤을 때 뭐 이 제목만 봐도 대충 뒤에 있는 내용들을 유추할 수 있죠?",
+        "유추할 수 있기 때문에 크게 어려운 그런 내용들은 아닙니다.",
+        "그리고 비기능 요구사항에는 지금처럼 이렇게 5가지만 있는 게 아니라 더 있어요.",
+        "자, 그 뒤로 넘어가자고요."
+      ],
+      "spoken_text": "그래서 얘네들을 쭉쭉 읽어봤을 때 뭐 이 제목만 봐도 대충 뒤에 있는 내용들을 유추할 수 있죠? 유추할 수 있기 때문에 크게 어려운 그런 내용들은 아닙니다. 그리고 비기능 요구사항에는 지금처럼 이렇게 5가지만 있는 게 아니라 더 있어요. 자, 그 뒤로 넘어가자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "시스템 장비 구성 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "인터페이스 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:01:55",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 115,
+      "end_seconds": 128,
+      "duration_seconds": 13,
+      "timeline_summary": "보안 요구사항",
+      "screen_text_lines": [
+        "보안 요구사항 : 시스템의 데이터 및 기능, 운영 접근을 통제하기 위한 요구사항"
+      ],
+      "screen_text": "보안 요구사항 : 시스템의 데이터 및 기능, 운영 접근을 통제하기 위한 요구사항",
+      "spoken_sentences": [
+        "넘어가서 보니까 보안 요구사항도 있습니다.",
+        "우리 시스템에 들어있는 데이터가 됐든 기능이 됐든 운영 접근을 통제하기 위한 그런 요구사항을 보고 우리가 보안 요구사항이라고 하는 거고요."
+      ],
+      "spoken_text": "넘어가서 보니까 보안 요구사항도 있습니다. 우리 시스템에 들어있는 데이터가 됐든 기능이 됐든 운영 접근을 통제하기 위한 그런 요구사항을 보고 우리가 보안 요구사항이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "보안 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:32",
+      "start_seconds": 128,
+      "end_seconds": 152,
+      "duration_seconds": 24,
+      "timeline_summary": "품질 요구사항 개요",
+      "screen_text_lines": [
+        "품질 요구사항 : 관리가 필요한 품질 항목, 품질 평가 대상에 대한 요구사항으로 가용성, 정합성, 상호 호환성, 대응성, 신뢰성, 사용성, 유지·관리성, 이식성, 확장성, 보안성 등으로 구분하여 기술"
+      ],
+      "screen_text": "품질 요구사항 : 관리가 필요한 품질 항목, 품질 평가 대상에 대한 요구사항으로 가용성, 정합성, 상호 호환성, 대응성, 신뢰성, 사용성, 유지·관리성, 이식성, 확장성, 보안성 등으로 구분하여 기술",
+      "spoken_sentences": [
+        "그 다음에 품질 요구사항이다라고 하게 되면 관리가 필요한 품질 항목, 품질 평가 대상에 대한 그런 요구사항 같은 것들을 전부 다 품질 요구사항이라고 합니다.",
+        "여기에는 가용성이다, 정합성이다, 상호 호환성이다, 대응성이다, 신뢰성이다, 사용성이다, 유지·관리성이다, 그리고 이식성이다, 확장성이다, 보안성이다 해서 이런 것들로 구분해서 우리가 품질 요구사항을 기술해 주면 돼요."
+      ],
+      "spoken_text": "그 다음에 품질 요구사항이다라고 하게 되면 관리가 필요한 품질 항목, 품질 평가 대상에 대한 그런 요구사항 같은 것들을 전부 다 품질 요구사항이라고 합니다. 여기에는 가용성이다, 정합성이다, 상호 호환성이다, 대응성이다, 신뢰성이다, 사용성이다, 유지·관리성이다, 그리고 이식성이다, 확장성이다, 보안성이다 해서 이런 것들로 구분해서 우리가 품질 요구사항을 기술해 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "이식성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "확장성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "유지",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:02:32",
+      "end_time_hms": "00:02:40",
+      "start_seconds": 152,
+      "end_seconds": 160,
+      "duration_seconds": 8,
+      "timeline_summary": "가용성 설명",
+      "screen_text_lines": [
+        "가용성"
+      ],
+      "screen_text": "가용성",
+      "spoken_sentences": [
+        "여기 보게 되면 가용성이라는 말이 나오는데 가용성이라는 거는 사용하고자 할 때 언제라도 사용할 수 있는 그 정도를 보고 우리가 가용성 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "여기 보게 되면 가용성이라는 말이 나오는데 가용성이라는 거는 사용하고자 할 때 언제라도 사용할 수 있는 그 정도를 보고 우리가 가용성 그렇게 부르는 거고요.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_005-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:02:40",
+      "end_time_hms": "00:02:51",
+      "start_seconds": 160,
+      "end_seconds": 171,
+      "duration_seconds": 11,
+      "timeline_summary": "정합성 설명",
+      "screen_text_lines": [
+        "정합성"
+      ],
+      "screen_text": "정합성",
+      "spoken_sentences": [
+        "그 다음에 정합성이다라고 하게 되면 정합성이라는 거는 데이터의 값이 서로 모순 없이, 모순 없이 일관되게 일치하는 그 정도를 보고 우리가 정합성 그렇게 부르는 거고"
+      ],
+      "spoken_text": "그 다음에 정합성이다라고 하게 되면 정합성이라는 거는 데이터의 값이 서로 모순 없이, 모순 없이 일관되게 일치하는 그 정도를 보고 우리가 정합성 그렇게 부르는 거고",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_005-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:02:51",
+      "end_time_hms": "00:02:57",
+      "start_seconds": 171,
+      "end_seconds": 177,
+      "duration_seconds": 6,
+      "timeline_summary": "상호 호환성 설명",
+      "screen_text_lines": [
+        "상호 호환성"
+      ],
+      "screen_text": "상호 호환성",
+      "spoken_sentences": [
+        "상호 호환성이라는 거는 다른 소프트웨어랑 정보를 교환할 수 있는 그 정도를 보고 얘기하는 거고"
+      ],
+      "spoken_text": "상호 호환성이라는 거는 다른 소프트웨어랑 정보를 교환할 수 있는 그 정도를 보고 얘기하는 거고",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_005-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:02:57",
+      "end_time_hms": "00:03:04",
+      "start_seconds": 177,
+      "end_seconds": 184,
+      "duration_seconds": 7,
+      "timeline_summary": "대응성 설명",
+      "screen_text_lines": [
+        "대응성"
+      ],
+      "screen_text": "대응성",
+      "spoken_sentences": [
+        "그 다음에 대응성, 대응성이라는 거는 발생한 상황에 대해서 대처하는 그 정도를 보고 우리가 대응성이라고 하는 거고"
+      ],
+      "spoken_text": "그 다음에 대응성, 대응성이라는 거는 발생한 상황에 대해서 대처하는 그 정도를 보고 우리가 대응성이라고 하는 거고",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_005-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:03:04",
+      "end_time_hms": "00:03:09",
+      "start_seconds": 184,
+      "end_seconds": 189,
+      "duration_seconds": 5,
+      "timeline_summary": "신뢰성 설명",
+      "screen_text_lines": [
+        "신뢰성"
+      ],
+      "screen_text": "신뢰성",
+      "spoken_sentences": [
+        "신뢰성이다라고 하게 되면 신뢰성이라는 건 믿을 수 있냐 없냐 그거 따지는 거고요."
+      ],
+      "spoken_text": "신뢰성이다라고 하게 되면 신뢰성이라는 건 믿을 수 있냐 없냐 그거 따지는 거고요.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_005-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:03:09",
+      "end_time_hms": "00:03:15",
+      "start_seconds": 189,
+      "end_seconds": 195,
+      "duration_seconds": 6,
+      "timeline_summary": "사용성 설명",
+      "screen_text_lines": [
+        "사용성"
+      ],
+      "screen_text": "사용성",
+      "spoken_sentences": [
+        "사용성이라는 거는 사용자가 시스템을 얼마나 잘 편리하게 사용할 수 있는지 그걸 나타내는 거고요."
+      ],
+      "spoken_text": "사용성이라는 거는 사용자가 시스템을 얼마나 잘 편리하게 사용할 수 있는지 그걸 나타내는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:03:15",
+      "end_time_hms": "00:03:37",
+      "start_seconds": 195,
+      "end_seconds": 217,
+      "duration_seconds": 22,
+      "timeline_summary": "유지·관리성, 이식성, 확장성, 보안성",
+      "screen_text_lines": [
+        "유지·관리성",
+        "이식성",
+        "확장성",
+        "보안성"
+      ],
+      "screen_text": "유지·관리성\n이식성\n확장성\n보안성",
+      "spoken_sentences": [
+        "그리고 유지 관리성은 말 그대로 그냥 유지 관리성이고, 그 다음에 이식성이다라고 하게 되면 이식성이라는 거는 다른 하드웨어 환경에서도 운영 가능하도록 쉽게 수정할 수 있는 그 정도를 보고 우리가 이식성, 이식성이라고 합니다.",
+        "그 다음에 확장성은 말 그대로 확장성이고요.",
+        "보안성도 말 그대로 보안성이요.",
+        "이런 것들을 구분해서 기술하는 게 우리 품질 요구사항이요."
+      ],
+      "spoken_text": "그리고 유지 관리성은 말 그대로 그냥 유지 관리성이고, 그 다음에 이식성이다라고 하게 되면 이식성이라는 거는 다른 하드웨어 환경에서도 운영 가능하도록 쉽게 수정할 수 있는 그 정도를 보고 우리가 이식성, 이식성이라고 합니다. 그 다음에 확장성은 말 그대로 확장성이고요. 보안성도 말 그대로 보안성이요. 이런 것들을 구분해서 기술하는 게 우리 품질 요구사항이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "이식성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "확장성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "유지",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:03:37",
+      "end_time_hms": "00:03:51",
+      "start_seconds": 217,
+      "end_seconds": 231,
+      "duration_seconds": 14,
+      "timeline_summary": "제약사항",
+      "screen_text_lines": [
+        "제약사항 : 시스템 설계, 구축, 운영과 관련하여 사전에 파악된 기술, 표준, 업무, 법·제도 등의 제약조건"
+      ],
+      "screen_text": "제약사항 : 시스템 설계, 구축, 운영과 관련하여 사전에 파악된 기술, 표준, 업무, 법·제도 등의 제약조건",
+      "spoken_sentences": [
+        "그 다음에 제약사항.",
+        "제약사항이라는 거는 시스템 설계, 구축, 운영과 관련해서 사전에 파악된 기술이 됐든 표준이 됐든 업무가 됐든 법이 됐든 제도가 됐든 그런 제약 조건, 그런 제약 조건을 보고 우리가 제약사항이라고 합니다."
+      ],
+      "spoken_text": "그 다음에 제약사항. 제약사항이라는 거는 시스템 설계, 구축, 운영과 관련해서 사전에 파악된 기술이 됐든 표준이 됐든 업무가 됐든 법이 됐든 제도가 됐든 그런 제약 조건, 그런 제약 조건을 보고 우리가 제약사항이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "제약사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:03:51",
+      "end_time_hms": "00:04:01",
+      "start_seconds": 231,
+      "end_seconds": 241,
+      "duration_seconds": 10,
+      "timeline_summary": "프로젝트 관리 요구사항",
+      "screen_text_lines": [
+        "프로젝트 관리 요구사항 : 프로젝트의 원활한 수행을 위한 관리 방법에 대한 요구사항"
+      ],
+      "screen_text": "프로젝트 관리 요구사항 : 프로젝트의 원활한 수행을 위한 관리 방법에 대한 요구사항",
+      "spoken_sentences": [
+        "그리고 프로젝트 관리 요구사항이라고 있는데 얘는 프로젝트를 원활하게 수행하기 위한 그런 관리 방법, 그걸 보고 우리가 프로젝트 관리 요구사항이라고 하는 거고요."
+      ],
+      "spoken_text": "그리고 프로젝트 관리 요구사항이라고 있는데 얘는 프로젝트를 원활하게 수행하기 위한 그런 관리 방법, 그걸 보고 우리가 프로젝트 관리 요구사항이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "프로젝트 관리 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:04:01",
+      "end_time_hms": "00:04:12",
+      "start_seconds": 241,
+      "end_seconds": 252,
+      "duration_seconds": 11,
+      "timeline_summary": "프로젝트 지원 요구사항",
+      "screen_text_lines": [
+        "프로젝트 지원 요구사항 : 프로젝트의 원활한 수행을 위한 지원 사항이나 방안에 대한 요구사항"
+      ],
+      "screen_text": "프로젝트 지원 요구사항 : 프로젝트의 원활한 수행을 위한 지원 사항이나 방안에 대한 요구사항",
+      "spoken_sentences": [
+        "프로젝트 지원 요구사항이라는 거는 프로젝트 원활한 수행을 위해서 지원 사항이나 방안에 대한 그런 요구사항을 보고 우리가 프로젝트 지원 요구사항이라고 합니다."
+      ],
+      "spoken_text": "프로젝트 지원 요구사항이라는 거는 프로젝트 원활한 수행을 위해서 지원 사항이나 방안에 대한 그런 요구사항을 보고 우리가 프로젝트 지원 요구사항이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:04:12",
+      "end_time_hms": "00:04:32",
+      "start_seconds": 252,
+      "end_seconds": 272,
+      "duration_seconds": 20,
+      "timeline_summary": "비기능 요구사항 요약 및 강조",
+      "screen_text_lines": [
+        "보안 요구사항",
+        "품질 요구사항",
+        "제약사항",
+        "프로젝트 관리 요구사항"
+      ],
+      "screen_text": "보안 요구사항\n품질 요구사항\n제약사항\n프로젝트 관리 요구사항",
+      "spoken_sentences": [
+        "요렇게 비기능 요구사항에는 여러 가지가 있어요.",
+        "그래서 기능 요구사항이랑 비기능 요구사항이랑 사용자 요구사항, 시스템 요구사항 요 4가지로 나눠볼 수 있습니다.",
+        "그래서 기능 요구사항하고 비기능 요구사항하고 이거 구분하는 문제가 시험 문제 나온 적이 있거든요.",
+        "있으니까 요 내용 잘 정리하셔야 돼요."
+      ],
+      "spoken_text": "요렇게 비기능 요구사항에는 여러 가지가 있어요. 그래서 기능 요구사항이랑 비기능 요구사항이랑 사용자 요구사항, 시스템 요구사항 요 4가지로 나눠볼 수 있습니다. 그래서 기능 요구사항하고 비기능 요구사항하고 이거 구분하는 문제가 시험 문제 나온 적이 있거든요. 있으니까 요 내용 잘 정리하셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "제약사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "프로젝트 관리 요구사항",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:04:32",
+      "end_time_hms": "00:04:52",
+      "start_seconds": 272,
+      "end_seconds": 292,
+      "duration_seconds": 20,
+      "timeline_summary": "사용자 요구사항",
+      "screen_text_lines": [
+        "사용자 요구사항(User requirements) : 사용자 관점에서 본 시스템이 제공해야 할 요구사항",
+        "사용자를 위한 것으로 친숙한 표현으로 이해하기 쉽게 작성됨."
+      ],
+      "screen_text": "사용자 요구사항(User requirements) : 사용자 관점에서 본 시스템이 제공해야 할 요구사항\n사용자를 위한 것으로 친숙한 표현으로 이해하기 쉽게 작성됨.",
+      "spoken_sentences": [
+        "그 다음 사용자 요구사항이요.",
+        "사용자 관점이다.",
+        "시스템 요구사항은 누구 관점이다?",
+        "개발자 관점이다.",
+        "사용자 관점이니까 얘는 일반 사용자들은 전문적인 용어를 잘 모르기 때문에 친숙하게 표현해 줘야 되고요, 이해하기 쉽게 우리가 작성을 해야 됩니다."
+      ],
+      "spoken_text": "그 다음 사용자 요구사항이요. 사용자 관점이다. 시스템 요구사항은 누구 관점이다? 개발자 관점이다. 사용자 관점이니까 얘는 일반 사용자들은 전문적인 용어를 잘 모르기 때문에 친숙하게 표현해 줘야 되고요, 이해하기 쉽게 우리가 작성을 해야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 1,
+      "subtopic_id": "0016_16",
+      "subtopic_title": "비기능 요구사항",
+      "subtopic_sequence": 16,
+      "subtopic_number": "16",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=T7fu4pEp7qQ",
+      "start_time_hms": "00:04:52",
+      "end_time_hms": "00:05:41",
+      "start_seconds": 292,
+      "end_seconds": 341,
+      "duration_seconds": 49,
+      "timeline_summary": "시스템 요구사항 및 마무리",
+      "screen_text_lines": [
+        "시스템 요구사항(System requirements) : 개발자 관점에서 본 시스템 전체가 사용자와 다른 시스템에 제공해야 할 요구사항",
+        "사용자 요구사항에 비해 전문적이고 기술적인 용어로 표현됨.",
+        "소프트웨어 요구사항이라고도 함."
+      ],
+      "screen_text": "시스템 요구사항(System requirements) : 개발자 관점에서 본 시스템 전체가 사용자와 다른 시스템에 제공해야 할 요구사항\n사용자 요구사항에 비해 전문적이고 기술적인 용어로 표현됨.\n소프트웨어 요구사항이라고도 함.",
+      "spoken_sentences": [
+        "그리고 시스템 요구사항 같은 경우에는 개발자 관점이기 때문에 전문적이고 기술적인 그런 용어로 표현을 해도 되겠죠.",
+        "해서 전체가, 시스템 전체가 사용자와 다른 시스템에 제공해야 되는 그런 요구사항을 보고 우리가 시스템 요구사항이라고 하는 거고, 얘를 다른 말로 소프트웨어 요구사항, 요렇게 부르기도 합니다.",
+        "요렇게 요구사항 유형에는 기능 요구사항, 비기능 요구사항, 사용자 요구사항, 시스템 요구사항 요렇게 4가지로 나눠볼 수 있습니다.",
+        "해서 뭐 사용자 요구사항이나 시스템 요구사항 같은 경우는 크게 어려운 내용도 짧으니까.",
+        "근데 비기능 요구사항이 되게 많았죠.",
+        "기능 요구사항은 앞 시간에 한 거고요.",
+        "그래서 고 내용들 잘 구분할 수 있게 여러분들이 보고 지나가시면 됩니다."
+      ],
+      "spoken_text": "그리고 시스템 요구사항 같은 경우에는 개발자 관점이기 때문에 전문적이고 기술적인 그런 용어로 표현을 해도 되겠죠. 해서 전체가, 시스템 전체가 사용자와 다른 시스템에 제공해야 되는 그런 요구사항을 보고 우리가 시스템 요구사항이라고 하는 거고, 얘를 다른 말로 소프트웨어 요구사항, 요렇게 부르기도 합니다. 요렇게 요구사항 유형에는 기능 요구사항, 비기능 요구사항, 사용자 요구사항, 시스템 요구사항 요렇게 4가지로 나눠볼 수 있습니다. 해서 뭐 사용자 요구사항이나 시스템 요구사항 같은 경우는 크게 어려운 내용도 짧으니까. 근데 비기능 요구사항이 되게 많았죠. 기능 요구사항은 앞 시간에 한 거고요. 그래서 고 내용들 잘 구분할 수 있게 여러분들이 보고 지나가시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 87
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "요구사항의 유형 강의 시작",
+      "screen_text_lines": [
+        "요구사항의 유형"
+      ],
+      "screen_text": "요구사항의 유형",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항의 유형에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항의 유형에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "유형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "요구사항의 유형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:27",
+      "start_seconds": 10,
+      "end_seconds": 27,
+      "duration_seconds": 17,
+      "timeline_summary": "기술 내용에 따른 요구사항 분류",
+      "screen_text_lines": [
+        "요구사항의 유형",
+        "요구사항은 일반적으로 기술하는 내용에 따라 기능 요구사항(Functional requirements)과 비기능 요구사항(Non-functional requirements)으로 구분하며"
+      ],
+      "screen_text": "요구사항의 유형\n요구사항은 일반적으로 기술하는 내용에 따라 기능 요구사항(Functional requirements)과 비기능 요구사항(Non-functional requirements)으로 구분하며",
+      "spoken_sentences": [
+        "자, 우리 요구사항.",
+        "요구사항이라는 거는 일반적으로 기술하는 그 내용에 따라서, 그 내용에 따라서 기능 요구사항이라는 게 있고요.",
+        "비기능 요구사항이 있고 요렇게 크게 두 가지로 나눠서 구분할 수 있습니다."
+      ],
+      "spoken_text": "자, 우리 요구사항. 요구사항이라는 거는 일반적으로 기술하는 그 내용에 따라서, 그 내용에 따라서 기능 요구사항이라는 게 있고요. 비기능 요구사항이 있고 요렇게 크게 두 가지로 나눠서 구분할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:00:27",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 27,
+      "end_seconds": 41,
+      "duration_seconds": 14,
+      "timeline_summary": "관점과 대상 범위에 따른 요구사항 분류",
+      "screen_text_lines": [
+        "기술 관점과 대상의 범위에 따라 시스템 요구사항(System requirements)과 사용자 요구사항(User requirements)으로 나눈다."
+      ],
+      "screen_text": "기술 관점과 대상의 범위에 따라 시스템 요구사항(System requirements)과 사용자 요구사항(User requirements)으로 나눈다.",
+      "spoken_sentences": [
+        "그리고 기술 관점이나 대상의 범위에 따라서 시스템 요구사항, 그리고 사용자 요구사항 요렇게 또 두 가지로 또 나눌 수 있어요.",
+        "해서 요구사항에는 총 네 가지가 있는 거예요.",
+        "기능 요구사항, 비기능 요구사항, 시스템 요구사항, 사용자 요구사항하고 요렇게 네 가지가 있습니다."
+      ],
+      "spoken_text": "그리고 기술 관점이나 대상의 범위에 따라서 시스템 요구사항, 그리고 사용자 요구사항 요렇게 또 두 가지로 또 나눌 수 있어요. 해서 요구사항에는 총 네 가지가 있는 거예요. 기능 요구사항, 비기능 요구사항, 시스템 요구사항, 사용자 요구사항하고 요렇게 네 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "사용자",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:00:53",
+      "start_seconds": 41,
+      "end_seconds": 53,
+      "duration_seconds": 12,
+      "timeline_summary": "기능 요구사항의 개념",
+      "screen_text_lines": [
+        "기능 요구사항(Functional requirements)"
+      ],
+      "screen_text": "기능 요구사항(Functional requirements)",
+      "spoken_sentences": [
+        "기능 요구사항은 말 그대로 기능적인 거.",
+        "어떤 특정 사용자가 들어왔을 때 로그인할 수 있게 해주세요.",
+        "아니면 회원 정보를 조회할 수 있게 해주세요.",
+        "그런 거를 보고 기능 요구사항이라고 하는 거고요."
+      ],
+      "spoken_text": "기능 요구사항은 말 그대로 기능적인 거. 어떤 특정 사용자가 들어왔을 때 로그인할 수 있게 해주세요. 아니면 회원 정보를 조회할 수 있게 해주세요. 그런 거를 보고 기능 요구사항이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:00:53",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 53,
+      "end_seconds": 73,
+      "duration_seconds": 20,
+      "timeline_summary": "비기능 요구사항의 개념",
+      "screen_text_lines": [
+        "비기능 요구사항(Non-functional requirements)"
+      ],
+      "screen_text": "비기능 요구사항(Non-functional requirements)",
+      "spoken_sentences": [
+        "비기능 요구사항이라는 거는 대부분 품질이나 제약사항과 관련된 그런 내용을 보고 우리가 비기능 요구사항이라고 합니다.",
+        "예를 들어서 뭐 시스템은 1년 365일 하루 24시간 계속해서 운영 가능해야 된다.",
+        "동시에 최대 접속할 수 있는 인원은 100명이다.",
+        "그런 게 비기능 요구사항이고요."
+      ],
+      "spoken_text": "비기능 요구사항이라는 거는 대부분 품질이나 제약사항과 관련된 그런 내용을 보고 우리가 비기능 요구사항이라고 합니다. 예를 들어서 뭐 시스템은 1년 365일 하루 24시간 계속해서 운영 가능해야 된다. 동시에 최대 접속할 수 있는 인원은 100명이다. 그런 게 비기능 요구사항이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:28",
+      "start_seconds": 73,
+      "end_seconds": 88,
+      "duration_seconds": 15,
+      "timeline_summary": "시스템 요구사항의 특징",
+      "screen_text_lines": [
+        "시스템 요구사항(System requirements)"
+      ],
+      "screen_text": "시스템 요구사항(System requirements)",
+      "spoken_sentences": [
+        "그리고 시스템 요구사항하고 사용자 요구사항은 뭘 얘기하냐?",
+        "시스템 요구사항이라는 거는 개발자 입장에서 개발에 도움이 되는 전문적인 용어를 사용해서 작성해 놓은 그런 요구사항을 보고 우리가 시스템 요구사항이라고 하는 거고요."
+      ],
+      "spoken_text": "그리고 시스템 요구사항하고 사용자 요구사항은 뭘 얘기하냐? 시스템 요구사항이라는 거는 개발자 입장에서 개발에 도움이 되는 전문적인 용어를 사용해서 작성해 놓은 그런 요구사항을 보고 우리가 시스템 요구사항이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "사용자",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:01:28",
+      "end_time_hms": "00:01:50",
+      "start_seconds": 88,
+      "end_seconds": 110,
+      "duration_seconds": 22,
+      "timeline_summary": "사용자 요구사항의 특징",
+      "screen_text_lines": [
+        "사용자 요구사항(User requirements)"
+      ],
+      "screen_text": "사용자 요구사항(User requirements)",
+      "spoken_sentences": [
+        "사용자 요구사항이라는 거는 사용자 관점, 일반 사용자이기 때문에 친숙한 표현 그리고 쉽게 쉽게 이해할 수 있게 그렇게 작성해 줘야 되는 게 사용자 요구사항이에요.",
+        "해서 시스템은 개발자 입장에서 우리가 시스템 요구사항을 작성하는 거고, 사용자 요구사항은 말 그대로 사용자, 사용자 입장에서 작성하는 거예요."
+      ],
+      "spoken_text": "사용자 요구사항이라는 거는 사용자 관점, 일반 사용자이기 때문에 친숙한 표현 그리고 쉽게 쉽게 이해할 수 있게 그렇게 작성해 줘야 되는 게 사용자 요구사항이에요. 해서 시스템은 개발자 입장에서 우리가 시스템 요구사항을 작성하는 거고, 사용자 요구사항은 말 그대로 사용자, 사용자 입장에서 작성하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "사용자",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "시스템",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:01:50",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 110,
+      "end_seconds": 120,
+      "duration_seconds": 10,
+      "timeline_summary": "요구사항의 4가지 유형 요약",
+      "screen_text_lines": [
+        "비기능 요구사항",
+        "시스템 요구사항",
+        "사용자 요구사항"
+      ],
+      "screen_text": "비기능 요구사항\n시스템 요구사항\n사용자 요구사항",
+      "spoken_sentences": [
+        "요렇게 요구사항에는 기능 요구사항, 비기능 요구사항, 시스템 요구사항, 사용자 요구사항 요렇게 크게 네 가지로 우리가 구분할 수 있습니다."
+      ],
+      "spoken_text": "요렇게 요구사항에는 기능 요구사항, 비기능 요구사항, 시스템 요구사항, 사용자 요구사항 요렇게 크게 네 가지로 우리가 구분할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:24",
+      "start_seconds": 120,
+      "end_seconds": 144,
+      "duration_seconds": 24,
+      "timeline_summary": "기능 요구사항의 세부 내용 - 주요 기능 및 입출력 연산",
+      "screen_text_lines": [
+        "유형",
+        "내용",
+        "기능 요구사항(Functional requirements)",
+        "시스템이 무엇을 하는지, 어떤 기능을 하는지에 대한 사항"
+      ],
+      "screen_text": "유형\n내용\n기능 요구사항(Functional requirements)\n시스템이 무엇을 하는지, 어떤 기능을 하는지에 대한 사항",
+      "spoken_sentences": [
+        "자, 그 중에 첫 번째 기능 요구사항이요.",
+        "기능 요구사항이라는 거는 시스템이 수행 가능한 그런 요구사항을 보고 얘기하는데, 시스템이 뭘 하는지, 어떤 기능을 해야 되는지, 거기에 대한 사항이나 아니면 시스템의 입력이 됐든 출력이 됐든 그런 것들에 무엇이 포함돼야 되는지.",
+        "그리고 시스템이 어떤 데이터를 저장하거나 어떤 연산을 수행해야 되는지 거기에 대한 그런 사항들."
+      ],
+      "spoken_text": "자, 그 중에 첫 번째 기능 요구사항이요. 기능 요구사항이라는 거는 시스템이 수행 가능한 그런 요구사항을 보고 얘기하는데, 시스템이 뭘 하는지, 어떤 기능을 해야 되는지, 거기에 대한 사항이나 아니면 시스템의 입력이 됐든 출력이 됐든 그런 것들에 무엇이 포함돼야 되는지. 그리고 시스템이 어떤 데이터를 저장하거나 어떤 연산을 수행해야 되는지 거기에 대한 그런 사항들.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0017_17",
+      "subtopic_title": "기능 요구사항",
+      "subtopic_sequence": 17,
+      "subtopic_number": "17",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gyPLmleea74",
+      "start_time_hms": "00:02:24",
+      "end_time_hms": "00:02:39",
+      "start_seconds": 144,
+      "end_seconds": 159,
+      "duration_seconds": 15,
+      "timeline_summary": "기능 요구사항의 세부 내용 - 필수 및 요청 기능",
+      "screen_text_lines": [
+        "시스템이 반드시 수행해야 하는 기능",
+        "사용자가 시스템을 통해 제공받기를 원하는 기능"
+      ],
+      "screen_text": "시스템이 반드시 수행해야 하는 기능\n사용자가 시스템을 통해 제공받기를 원하는 기능",
+      "spoken_sentences": [
+        "그리고 시스템이 반드시 수행해야 되는 그런 기능들.",
+        "그리고 사용자가 시스템을 통해서 제공받기를 원하는 기능들.",
+        "그런 것들을 묶어서 우리가 기능 요구사항 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그리고 시스템이 반드시 수행해야 되는 그런 기능들. 그리고 사용자가 시스템을 통해서 제공받기를 원하는 기능들. 그런 것들을 묶어서 우리가 기능 요구사항 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기능",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "요구사항의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "기능 요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [
+        "요구사항 개발 프로세스"
+      ],
+      "screen_text": "요구사항 개발 프로세스",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항 개발 프로세스에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항 개발 프로세스에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "요구사항 개발 프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:27",
+      "start_seconds": 9,
+      "end_seconds": 27,
+      "duration_seconds": 18,
+      "timeline_summary": "요구사항 개발 프로세스 4단계 소개",
+      "screen_text_lines": [
+        "요구사항 개발 프로세스",
+        "도출 (Elicitation)",
+        "분석 (Analysis)",
+        "명세 (Specification)"
+      ],
+      "screen_text": "요구사항 개발 프로세스\n도출 (Elicitation)\n분석 (Analysis)\n명세 (Specification)",
+      "spoken_sentences": [
+        "우리 요구사항 개발 프로세스는 크게 이렇게 네 개의 단계를 거쳐요.",
+        "맨 처음에 도출하고요, 그다음에 분석하고 명세, 확인.",
+        "도출, 분석, 명세, 확인, 도출, 분석, 명세, 확인.",
+        "이렇게 네 단계를 거칩니다."
+      ],
+      "spoken_text": "우리 요구사항 개발 프로세스는 크게 이렇게 네 개의 단계를 거쳐요. 맨 처음에 도출하고요, 그다음에 분석하고 명세, 확인. 도출, 분석, 명세, 확인, 도출, 분석, 명세, 확인. 이렇게 네 단계를 거칩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "명세 (Specification)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "도출 (Elicitation)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분석 (Analysis)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:00:27",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 27,
+      "end_seconds": 46,
+      "duration_seconds": 19,
+      "timeline_summary": "요구사항 개발 프로세스의 정의 설명",
+      "screen_text_lines": [
+        "요구사항 개발 프로세스는 개발 대상에 대한 요구사항을 체계적으로 도출하고 이를 분석한 후 분석 결과를 명세서(Specification Document)에 정리한 다음 마지막으로 이를 확인 및 검증하는 일련의 구조화된 활동임."
+      ],
+      "screen_text": "요구사항 개발 프로세스는 개발 대상에 대한 요구사항을 체계적으로 도출하고 이를 분석한 후 분석 결과를 명세서(Specification Document)에 정리한 다음 마지막으로 이를 확인 및 검증하는 일련의 구조화된 활동임.",
+      "spoken_sentences": [
+        "요구사항 개발 프로세스는 요구사항을, 요구사항을 체계적으로 전부 다 도출을 하고요.",
+        "그리고 이를 분석한 다음에 그 분석, 그 결과를 명세서에 정리한 다음 마지막으로 확인하고 검증하는 일련의 구조화된 활동, 그걸 보고 요구사항 개발 프로세스 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "요구사항 개발 프로세스는 요구사항을, 요구사항을 체계적으로 전부 다 도출을 하고요. 그리고 이를 분석한 다음에 그 분석, 그 결과를 명세서에 정리한 다음 마지막으로 확인하고 검증하는 일련의 구조화된 활동, 그걸 보고 요구사항 개발 프로세스 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "요구사항 개발 프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        },
+        {
+          "keyword": "요구사항 개발 프로세스의 정의 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:05",
+      "start_seconds": 46,
+      "end_seconds": 65,
+      "duration_seconds": 19,
+      "timeline_summary": "타당성 조사와 요구공학",
+      "screen_text_lines": [
+        "요구사항 개발 프로세스가 진행되기 전에 개발 프로세스가 비즈니스 목적에 부합되는지, 예산은 적정한지 등에 대한 정보를 수집, 평가한 보고서를 토대로 타당성 조사(Feasibility Study)가 선행되어야 함.",
+        "요구사항 개발은 요구공학(Requirement Engineering)의 한 요소임."
+      ],
+      "screen_text": "요구사항 개발 프로세스가 진행되기 전에 개발 프로세스가 비즈니스 목적에 부합되는지, 예산은 적정한지 등에 대한 정보를 수집, 평가한 보고서를 토대로 타당성 조사(Feasibility Study)가 선행되어야 함.\n요구사항 개발은 요구공학(Requirement Engineering)의 한 요소임.",
+      "spoken_sentences": [
+        "요구사항 개발 프로세스가 진행되기 전에 개발 프로세스가 비즈니스 목적에 부합되는지, 그리고 예산은 적정한지, 이런 정보를 수집하고 평가한 그 보고서를 토대로 해서 타당성 조사가 선행이 먼저 돼야 돼요.",
+        "이런 요구사항 개발은 요구공학의 한 요소입니다."
+      ],
+      "spoken_text": "요구사항 개발 프로세스가 진행되기 전에 개발 프로세스가 비즈니스 목적에 부합되는지, 그리고 예산은 적정한지, 이런 정보를 수집하고 평가한 그 보고서를 토대로 해서 타당성 조사가 선행이 먼저 돼야 돼요. 이런 요구사항 개발은 요구공학의 한 요소입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "요구사항 개발 프로세스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:01:05",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 65,
+      "end_seconds": 81,
+      "duration_seconds": 16,
+      "timeline_summary": "도출과 분석 단계의 핵심 의미",
+      "screen_text_lines": [
+        "도출 (Elicitation)",
+        "분석 (Analysis)"
+      ],
+      "screen_text": "도출 (Elicitation)\n분석 (Analysis)",
+      "spoken_sentences": [
+        "그래서 여기 보게 되면 도출이다, 분석이다, 명세다, 확인이다 하고 이렇게 네 단계를 거친다 그랬는데, 도출이라는 거는 요구사항을 수집하는 거, 수집하는 걸 보고 얘기하는 거고요.",
+        "분석이다 그러면 분석이라는 거는 요구사항이 타당성을 조사하는 걸 보고 우리가 분석이라고 하는 거고."
+      ],
+      "spoken_text": "그래서 여기 보게 되면 도출이다, 분석이다, 명세다, 확인이다 하고 이렇게 네 단계를 거친다 그랬는데, 도출이라는 거는 요구사항을 수집하는 거, 수집하는 걸 보고 얘기하는 거고요. 분석이다 그러면 분석이라는 거는 요구사항이 타당성을 조사하는 걸 보고 우리가 분석이라고 하는 거고.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "도출 (Elicitation)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분석 (Analysis)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:40",
+      "start_seconds": 81,
+      "end_seconds": 100,
+      "duration_seconds": 19,
+      "timeline_summary": "명세와 확인 단계의 핵심 의미",
+      "screen_text_lines": [
+        "명세 (Specification)",
+        "확인 (Validation)"
+      ],
+      "screen_text": "명세 (Specification)\n확인 (Validation)",
+      "spoken_sentences": [
+        "그리고 명세다 라고 하게 되면 명세라는 거는 요구사항을, 요구사항을 체계적으로 문서화하는 걸 보고 우리가 명세, 명세라고 하는 거고요.",
+        "그리고 확인이라는 거는 요구사항을 검증하는 겁니다.",
+        "해서 요구사항을 수집하고, 타당성 조사하고, 문서화해서 검증까지, 그렇게 해 줘야 돼요."
+      ],
+      "spoken_text": "그리고 명세다 라고 하게 되면 명세라는 거는 요구사항을, 요구사항을 체계적으로 문서화하는 걸 보고 우리가 명세, 명세라고 하는 거고요. 그리고 확인이라는 거는 요구사항을 검증하는 겁니다. 해서 요구사항을 수집하고, 타당성 조사하고, 문서화해서 검증까지, 그렇게 해 줘야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "명세 (Specification)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 3,
+      "subtopic_id": "0018_18",
+      "subtopic_title": "요구사항개발프로세스",
+      "subtopic_sequence": 18,
+      "subtopic_number": "18",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=SjlKRonXzrE",
+      "start_time_hms": "00:01:40",
+      "end_time_hms": "00:02:05",
+      "start_seconds": 100,
+      "end_seconds": 125,
+      "duration_seconds": 25,
+      "timeline_summary": "프로세스 순서 암기 당부 및 다음 시간 예고",
+      "screen_text_lines": [
+        "요구사항 개발 프로세스",
+        "도출 (Elicitation)",
+        "분석 (Analysis)",
+        "명세 (Specification)"
+      ],
+      "screen_text": "요구사항 개발 프로세스\n도출 (Elicitation)\n분석 (Analysis)\n명세 (Specification)",
+      "spoken_sentences": [
+        "그래서 요구사항 개발 프로세스에는 지금처럼 이렇게 네 개가 있다, 네 개의 과정을 거치더라.",
+        "요 순서 잘 기억하시고 각 단계에서 어떤 역할을 하는지 개념을 파악하고 계셔야 돼요.",
+        "자, 요 도출이다, 분석이다, 명세다, 확인이다 해서 다음 시간부터 좀 더 자세히, 자세히 배울 겁니다."
+      ],
+      "spoken_text": "그래서 요구사항 개발 프로세스에는 지금처럼 이렇게 네 개가 있다, 네 개의 과정을 거치더라. 요 순서 잘 기억하시고 각 단계에서 어떤 역할을 하는지 개념을 파악하고 계셔야 돼요. 자, 요 도출이다, 분석이다, 명세다, 확인이다 해서 다음 시간부터 좀 더 자세히, 자세히 배울 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "명세 (Specification)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "도출 (Elicitation)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "분석 (Analysis)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:11",
+      "start_seconds": 0,
+      "end_seconds": 11,
+      "duration_seconds": 11,
+      "timeline_summary": "인트로 및 주제 소개",
+      "screen_text_lines": [
+        "요구사항 도출(Requirement Elicitation, 요구사항 수집)"
+      ],
+      "screen_text": "요구사항 도출(Requirement Elicitation, 요구사항 수집)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항 도출, 요구사항 수집에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항 도출, 요구사항 수집에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:00:11",
+      "end_time_hms": "00:00:34",
+      "start_seconds": 11,
+      "end_seconds": 34,
+      "duration_seconds": 23,
+      "timeline_summary": "요구사항 도출의 정의",
+      "screen_text_lines": [
+        "요구사항 도출(Requirement Elicitation, 요구사항 수집)",
+        "요구사항 도출은 시스템, 사용자, 그리고 시스템 개발에 관련된 사람들이 서로 의견을 교환하여 요구사항이 어디에 있는지, 어떻게 수집할 것인지를 식별하고 이해하는 과정임."
+      ],
+      "screen_text": "요구사항 도출(Requirement Elicitation, 요구사항 수집)\n요구사항 도출은 시스템, 사용자, 그리고 시스템 개발에 관련된 사람들이 서로 의견을 교환하여 요구사항이 어디에 있는지, 어떻게 수집할 것인지를 식별하고 이해하는 과정임.",
+      "spoken_sentences": [
+        "우리 요구사항 도출이라는 거는 요구사항 수집하는 걸 보고 얘기한다고 했죠.",
+        "이 요구사항 도출이라는 거는 시스템이 됐든, 사용자가 됐든, 그리고 시스템 개발에 필요한, 시스템 개발에 관련된 그 사람들이 서로서로 의견을 교환해서 요구사항이 어디에 있는지, 어떻게 수집할 것인지 그 과정을 보고 우리가 요구사항 도출 그렇게 부릅니다."
+      ],
+      "spoken_text": "우리 요구사항 도출이라는 거는 요구사항 수집하는 걸 보고 얘기한다고 했죠. 이 요구사항 도출이라는 거는 시스템이 됐든, 사용자가 됐든, 그리고 시스템 개발에 필요한, 시스템 개발에 관련된 그 사람들이 서로서로 의견을 교환해서 요구사항이 어디에 있는지, 어떻게 수집할 것인지 그 과정을 보고 우리가 요구사항 도출 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:00:34",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 34,
+      "end_seconds": 60,
+      "duration_seconds": 26,
+      "timeline_summary": "이해관계자의 의미",
+      "screen_text_lines": [
+        "시스템 개발에 관련된 사람들",
+        "이해관계자(Stakeholder)"
+      ],
+      "screen_text": "시스템 개발에 관련된 사람들\n이해관계자(Stakeholder)",
+      "spoken_sentences": [
+        "그래서 시스템 개발에 관련된 그 사람들 그러면 이해관계자들이 되겠죠.",
+        "그 이해관계자다라고 하게 되면 이해관계자는 소프트웨어 개발 의뢰자도 있을 거고요.",
+        "소프트웨어 개발자도 있을 거고, 소프트웨어 사용자도 있고, 있죠.",
+        "이런 사람들을 보고 우리는 이해관계자라고 하는 거고, 이런 이해관계자들끼리 서로서로 의견을 교환해서 요구사항이 만들어지는 거죠."
+      ],
+      "spoken_text": "그래서 시스템 개발에 관련된 그 사람들 그러면 이해관계자들이 되겠죠. 그 이해관계자다라고 하게 되면 이해관계자는 소프트웨어 개발 의뢰자도 있을 거고요. 소프트웨어 개발자도 있을 거고, 소프트웨어 사용자도 있고, 있죠. 이런 사람들을 보고 우리는 이해관계자라고 하는 거고, 이런 이해관계자들끼리 서로서로 의견을 교환해서 요구사항이 만들어지는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:01:00",
+      "end_time_hms": "00:01:27",
+      "start_seconds": 60,
+      "end_seconds": 87,
+      "duration_seconds": 27,
+      "timeline_summary": "이해관계자 간 효율적 의사소통",
+      "screen_text_lines": [
+        "이 단계에서는 다양한 이해관계자 간의 효율적인 의사소통이 중요함."
+      ],
+      "screen_text": "이 단계에서는 다양한 이해관계자 간의 효율적인 의사소통이 중요함.",
+      "spoken_sentences": [
+        "그래서 요구사항 도출 단계에서 가장 중요한 게 우리 이해관계자들 간에 효율적인, 효율적인 의사소통이 중요합니다.",
+        "A라는 사람이 이거 만들어 주세요라고 했는데, 이거대로 개발을 시작했어요.",
+        "근데 또 다른 사람이 와서 어 이거 이거 아니잖아.",
+        "그렇게 돼버리면 곤란해지잖아요.",
+        "그죠?"
+      ],
+      "spoken_text": "그래서 요구사항 도출 단계에서 가장 중요한 게 우리 이해관계자들 간에 효율적인, 효율적인 의사소통이 중요합니다. A라는 사람이 이거 만들어 주세요라고 했는데, 이거대로 개발을 시작했어요. 근데 또 다른 사람이 와서 어 이거 이거 아니잖아. 그렇게 돼버리면 곤란해지잖아요. 그죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:01:27",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 87,
+      "end_seconds": 103,
+      "duration_seconds": 16,
+      "timeline_summary": "정확한 요구사항의 중요성",
+      "screen_text_lines": [
+        "이 단계에서는 다양한 이해관계자 간의 효율적인 의사소통이 중요함."
+      ],
+      "screen_text": "이 단계에서는 다양한 이해관계자 간의 효율적인 의사소통이 중요함.",
+      "spoken_sentences": [
+        "그래서 요구사항 도출이 제일 중요해요.",
+        "요구사항이 정확하게 나와야 개발할 때 차질이 안 생긴다고요.",
+        "그래서 이해관계자들 그 간에 효율적인 의사소통이 중요합니다.",
+        "그 사람들끼리 정확하게 뭐 의견이 맞아서 그 맞은 의견을 개발자한테 얘기해 줘야 정확하게 우리가 시스템을 구축할 수 있는 거죠."
+      ],
+      "spoken_text": "그래서 요구사항 도출이 제일 중요해요. 요구사항이 정확하게 나와야 개발할 때 차질이 안 생긴다고요. 그래서 이해관계자들 그 간에 효율적인 의사소통이 중요합니다. 그 사람들끼리 정확하게 뭐 의견이 맞아서 그 맞은 의견을 개발자한테 얘기해 줘야 정확하게 우리가 시스템을 구축할 수 있는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:01:57",
+      "start_seconds": 103,
+      "end_seconds": 117,
+      "duration_seconds": 14,
+      "timeline_summary": "문제 이해와 식별",
+      "screen_text_lines": [
+        "요구사항 도출은 소프트웨어가 해결해야 할 문제를 이해하는 첫 번째 단계임.",
+        "요구사항 도출 단계에서 개발자와 고객 사이의 관계가 만들어지고 이해관계자(Stakeholder)가 식별됨."
+      ],
+      "screen_text": "요구사항 도출은 소프트웨어가 해결해야 할 문제를 이해하는 첫 번째 단계임.\n요구사항 도출 단계에서 개발자와 고객 사이의 관계가 만들어지고 이해관계자(Stakeholder)가 식별됨.",
+      "spoken_sentences": [
+        "그래서 요구사항 도출이라는 거는 소프트웨어가 해결해야 되는 그 문제를 이해하는 첫 번째 단계고요.",
+        "이 요구사항 도출 단계에서 개발자랑 고객 사이의 관계가 만들어지고 이해관계자가 정확하게 식별이 되겠죠."
+      ],
+      "spoken_text": "그래서 요구사항 도출이라는 거는 소프트웨어가 해결해야 되는 그 문제를 이해하는 첫 번째 단계고요. 이 요구사항 도출 단계에서 개발자랑 고객 사이의 관계가 만들어지고 이해관계자가 정확하게 식별이 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:01:57",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 117,
+      "end_seconds": 142,
+      "duration_seconds": 25,
+      "timeline_summary": "SDLC 동안의 지속적 반복",
+      "screen_text_lines": [
+        "요구사항 도출은 소프트웨어 개발 생명 주기(SDLC; Software Development Life Cycle) 동안 지속적으로 반복됨."
+      ],
+      "screen_text": "요구사항 도출은 소프트웨어 개발 생명 주기(SDLC; Software Development Life Cycle) 동안 지속적으로 반복됨.",
+      "spoken_sentences": [
+        "이런 요구사항 도출이라는 거는 소프트웨어 개발 생명 주기(SDLC) 그 동안 지속적으로 반복이 됩니다.",
+        "우리가 뭐 한 번에 처음부터 끝까지 요구사항을 싹 다 한 번에 다 받아서 완벽하게 요구사항을 도출했다.",
+        "그게 힘든 거죠.",
+        "처음에 요구사항을 쭉 얘기했다가 개발하는 과정에서 중간중간에 다음에 요구사항을 또 얘기 못 하는 게 아니잖아요.",
+        "그죠?",
+        "일부가 수정될 수도 있고, 요구사항이 또 추가가 될 수도 있는 거고요.",
+        "그래서 소프트웨어 개발 생명 주기 동안 이 요구사항 도출은 계속적으로 지속적으로 반복이 됩니다."
+      ],
+      "spoken_text": "이런 요구사항 도출이라는 거는 소프트웨어 개발 생명 주기(SDLC) 그 동안 지속적으로 반복이 됩니다. 우리가 뭐 한 번에 처음부터 끝까지 요구사항을 싹 다 한 번에 다 받아서 완벽하게 요구사항을 도출했다. 그게 힘든 거죠. 처음에 요구사항을 쭉 얘기했다가 개발하는 과정에서 중간중간에 다음에 요구사항을 또 얘기 못 하는 게 아니잖아요. 그죠? 일부가 수정될 수도 있고, 요구사항이 또 추가가 될 수도 있는 거고요. 그래서 소프트웨어 개발 생명 주기 동안 이 요구사항 도출은 계속적으로 지속적으로 반복이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:44",
+      "start_seconds": 142,
+      "end_seconds": 164,
+      "duration_seconds": 22,
+      "timeline_summary": "요구사항 도출 주요 기법 소개",
+      "screen_text_lines": [
+        "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음."
+      ],
+      "screen_text": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+      "spoken_sentences": [
+        "우리가 요구사항을 수집하는, 도출하는 그 주요 기법에 보게 되면 청취와 인터뷰라는 게 있고요.",
+        "그다음에 설문이 있고, 그다음에 브레인스토밍이라는 게 있고, 워크샵이라는 게 있고, 프로토타이핑이라는 게 있고, 유스케이스라는 게 있고 요런 것들이 있습니다.",
+        "그래서 요구사항 도출의 주요 기법에 어떤 것들이 있는지, 요구사항 도출이 뭔지 정확하게 알고 계셔야 돼요."
+      ],
+      "spoken_text": "우리가 요구사항을 수집하는, 도출하는 그 주요 기법에 보게 되면 청취와 인터뷰라는 게 있고요. 그다음에 설문이 있고, 그다음에 브레인스토밍이라는 게 있고, 워크샵이라는 게 있고, 프로토타이핑이라는 게 있고, 유스케이스라는 게 있고 요런 것들이 있습니다. 그래서 요구사항 도출의 주요 기법에 어떤 것들이 있는지, 요구사항 도출이 뭔지 정확하게 알고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "브레인스토밍",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "프로토타이핑",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:02:44",
+      "end_time_hms": "00:03:20",
+      "start_seconds": 164,
+      "end_seconds": 200,
+      "duration_seconds": 36,
+      "timeline_summary": "기법: 청취와 인터뷰",
+      "screen_text_lines": [
+        "청취와 인터뷰"
+      ],
+      "screen_text": "청취와 인터뷰",
+      "spoken_sentences": [
+        "여기 보게 되면 청취 인터뷰라고 나왔는데 여기서는 질문 기술이 뛰어나야죠.",
+        "왜?",
+        "상대방이 나한테 로그인하는 거 만들어 주세요.",
+        "그냥 단순하게 그 한마디만 했어요.",
+        "그러면 로그인하는 걸 만들 때 어떤 형태로 만들까요?",
+        "이거를 어디다 배치할까요?",
+        "그런 것까지 싹 다 물어봐야 되잖아요.",
+        "그 사람은 단순하게 그냥 로그인하는 화면 만들어 주세요.",
+        "그렇게만 얘기할 수도 있다고요.",
+        "그래서 요구사항 도출하는 그 과정에서는 청취나 인터뷰 등에 질문 기술이, 질문 기술이 사용이 된다.",
+        "그거 기억하셔야 되고요."
+      ],
+      "spoken_text": "여기 보게 되면 청취 인터뷰라고 나왔는데 여기서는 질문 기술이 뛰어나야죠. 왜? 상대방이 나한테 로그인하는 거 만들어 주세요. 그냥 단순하게 그 한마디만 했어요. 그러면 로그인하는 걸 만들 때 어떤 형태로 만들까요? 이거를 어디다 배치할까요? 그런 것까지 싹 다 물어봐야 되잖아요. 그 사람은 단순하게 그냥 로그인하는 화면 만들어 주세요. 그렇게만 얘기할 수도 있다고요. 그래서 요구사항 도출하는 그 과정에서는 청취나 인터뷰 등에 질문 기술이, 질문 기술이 사용이 된다. 그거 기억하셔야 되고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        },
+        {
+          "keyword": "요구사항 도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:03:20",
+      "end_time_hms": "00:03:39",
+      "start_seconds": 200,
+      "end_seconds": 219,
+      "duration_seconds": 19,
+      "timeline_summary": "기법: 설문 및 브레인스토밍",
+      "screen_text_lines": [
+        "설문, 브레인스토밍"
+      ],
+      "screen_text": "설문, 브레인스토밍",
+      "spoken_sentences": [
+        "그리고 이 소프트웨어를 사용할 사람이 되게 많아요.",
+        "많을 때는 설문조사 같은 것도 할 수 있겠죠.",
+        "그리고 브레인스토밍하고 나왔는데 브레인스토밍이라는 거는 세 명 이상이 자유롭게 의견을 주고받고 주고받고 하면서 독창적인 그런 아이디어를 산출해내는 그런 방법을 보고 우리가 브레인스토밍, 그렇게 부릅니다."
+      ],
+      "spoken_text": "그리고 이 소프트웨어를 사용할 사람이 되게 많아요. 많을 때는 설문조사 같은 것도 할 수 있겠죠. 그리고 브레인스토밍하고 나왔는데 브레인스토밍이라는 거는 세 명 이상이 자유롭게 의견을 주고받고 주고받고 하면서 독창적인 그런 아이디어를 산출해내는 그런 방법을 보고 우리가 브레인스토밍, 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "브레인스토밍",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "설문",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:03:39",
+      "end_time_hms": "00:04:14",
+      "start_seconds": 219,
+      "end_seconds": 254,
+      "duration_seconds": 35,
+      "timeline_summary": "기법: 워크샵 및 프로토타이핑",
+      "screen_text_lines": [
+        "워크샵, 프로토타이핑"
+      ],
+      "screen_text": "워크샵, 프로토타이핑",
+      "spoken_sentences": [
+        "그다음에 워크샵이 있고요.",
+        "그리고 프로토타이핑이라는 게 있는데 프로토타이핑이라는 거는 프로토타입, 견본품 있죠?",
+        "견본품을 통해서 효과적으로 요구 분석을 수행하면서 명세서를 산출하는 그런 작업을 보고 우리가 프로토타이핑 그렇게 부릅니다.",
+        "근데 맨 처음에 소프트웨어 개발 의뢰가 들어와서 찾아갔을 때는 견본품이 없을 거 아니에요.",
+        "딱히 만들어진 견본품이 없기 때문에 처음에는 대략적으로 종이에다가 쓱쓱 쓱쓱 그려서 이런 형태로 만들면 되죠?",
+        "그렇게 보여주면서 얘기하는 거 그게 프로토타이핑입니다."
+      ],
+      "spoken_text": "그다음에 워크샵이 있고요. 그리고 프로토타이핑이라는 게 있는데 프로토타이핑이라는 거는 프로토타입, 견본품 있죠? 견본품을 통해서 효과적으로 요구 분석을 수행하면서 명세서를 산출하는 그런 작업을 보고 우리가 프로토타이핑 그렇게 부릅니다. 근데 맨 처음에 소프트웨어 개발 의뢰가 들어와서 찾아갔을 때는 견본품이 없을 거 아니에요. 딱히 만들어진 견본품이 없기 때문에 처음에는 대략적으로 종이에다가 쓱쓱 쓱쓱 그려서 이런 형태로 만들면 되죠? 그렇게 보여주면서 얘기하는 거 그게 프로토타이핑입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "프로토타이핑",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "워크샵",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:04:14",
+      "end_time_hms": "00:04:35",
+      "start_seconds": 254,
+      "end_seconds": 275,
+      "duration_seconds": 21,
+      "timeline_summary": "기법: 유스케이스 및 정리",
+      "screen_text_lines": [
+        "유스케이스등이 있음."
+      ],
+      "screen_text": "유스케이스등이 있음.",
+      "spoken_sentences": [
+        "그다음에 유스케이스라는 게 있는데 유스케이스라는 거는 사용자의 요구사항을 기능 단위로, 기능 단위로 표현하는 걸 보고 우리가 유스케이스, 그렇게 부릅니다.",
+        "그래서 요구사항 도출에서 요구사항 도출이 뭔지 정확하게 여러분들이 알고 계셔야 되고요.",
+        "거기서 사용하는 주요 기법에는 어떤 것들이 있는지 정확하게 알고 계셔야 돼요."
+      ],
+      "spoken_text": "그다음에 유스케이스라는 게 있는데 유스케이스라는 거는 사용자의 요구사항을 기능 단위로, 기능 단위로 표현하는 걸 보고 우리가 유스케이스, 그렇게 부릅니다. 그래서 요구사항 도출에서 요구사항 도출이 뭔지 정확하게 여러분들이 알고 계셔야 되고요. 거기서 사용하는 주요 기법에는 어떤 것들이 있는지 정확하게 알고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "유스케이스등이 있음.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "도출",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:04:35",
+      "end_time_hms": "00:05:08",
+      "start_seconds": 275,
+      "end_seconds": 308,
+      "duration_seconds": 33,
+      "timeline_summary": "시험 대비 암기의 중요성",
+      "screen_text_lines": [
+        "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음."
+      ],
+      "screen_text": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+      "spoken_sentences": [
+        "그래서 이 요구사항을 잘 도출을 해야 우리가 시스템을 정확하게 개발할 수 있겠죠.",
+        "그래서 요구사항에 대한 거는 시험 문제 자주 출제되는 그런 내용이기 때문에 요구사항과 관련된 그런 내용들은 정확하게 여러분들이 이해하고 그리고 외우고 지나가셔야 돼요.",
+        "제가 계속해서 수업하면서 기억하세요, 기억하세요, 기억하세요 계속 얘기해요.",
+        "근데 이게 필기시험이든 실기시험이든 우리가 뭔가 외워야 내가 문제를 풀 수 있잖아요.",
+        "그냥 이해만 했어요.",
+        "이해만 했다고 해서 내가 바로 내일 시험 보는 게 아니잖아요.",
+        "그죠."
+      ],
+      "spoken_text": "그래서 이 요구사항을 잘 도출을 해야 우리가 시스템을 정확하게 개발할 수 있겠죠. 그래서 요구사항에 대한 거는 시험 문제 자주 출제되는 그런 내용이기 때문에 요구사항과 관련된 그런 내용들은 정확하게 여러분들이 이해하고 그리고 외우고 지나가셔야 돼요. 제가 계속해서 수업하면서 기억하세요, 기억하세요, 기억하세요 계속 얘기해요. 근데 이게 필기시험이든 실기시험이든 우리가 뭔가 외워야 내가 문제를 풀 수 있잖아요. 그냥 이해만 했어요. 이해만 했다고 해서 내가 바로 내일 시험 보는 게 아니잖아요. 그죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "브레인스토밍",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "프로토타이핑",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:05:08",
+      "end_time_hms": "00:05:44",
+      "start_seconds": 308,
+      "end_seconds": 344,
+      "duration_seconds": 36,
+      "timeline_summary": "키포인트 암기와 실기 연계",
+      "screen_text_lines": [
+        "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음."
+      ],
+      "screen_text": "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+      "spoken_sentences": [
+        "이해해도 뭐 1주일, 2주일 정도 지나면 다 잊어버린다고요.",
+        "그리고 우리 문제가 나왔을 때, 이 문제를 봤을 때 되게 헷갈린단 말이죠.",
+        "어 이건가, 이건가 헷갈리는 게 되게 많아요.",
+        "그건 왜 헷갈리냐?",
+        "정확하게 모르니까.",
+        "그래서 제가 계속해서 기억해야 됩니다, 외워야 됩니다 라고 얘기 계속 한다고요.",
+        "그렇다고 우리가 책을 전부 다 외울 수는 없지만 중요한 키포인트 그런 것들은 여러분들이 꼭 기억하셔야 돼요.",
+        "필기 때 공부 잘 해 놓으시면 실기 넘어가서 편하다고요.",
+        "실기 넘어가도 이게 똑같이 나와요."
+      ],
+      "spoken_text": "이해해도 뭐 1주일, 2주일 정도 지나면 다 잊어버린다고요. 그리고 우리 문제가 나왔을 때, 이 문제를 봤을 때 되게 헷갈린단 말이죠. 어 이건가, 이건가 헷갈리는 게 되게 많아요. 그건 왜 헷갈리냐? 정확하게 모르니까. 그래서 제가 계속해서 기억해야 됩니다, 외워야 됩니다 라고 얘기 계속 한다고요. 그렇다고 우리가 책을 전부 다 외울 수는 없지만 중요한 키포인트 그런 것들은 여러분들이 꼭 기억하셔야 돼요. 필기 때 공부 잘 해 놓으시면 실기 넘어가서 편하다고요. 실기 넘어가도 이게 똑같이 나와요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "브레인스토밍",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "프로토타이핑",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 4,
+      "subtopic_id": "0019_19",
+      "subtopic_title": "요구사항 도출",
+      "subtopic_sequence": 19,
+      "subtopic_number": "19",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fzxfPiTei6Q",
+      "start_time_hms": "00:05:44",
+      "end_time_hms": "00:06:11",
+      "start_seconds": 344,
+      "end_seconds": 371,
+      "duration_seconds": 27,
+      "timeline_summary": "최종 요약 및 강의 마무리",
+      "screen_text_lines": [
+        "요구사항 도출은 시스템, 사용자, 그리고 시스템 개발에 관련된 사람들이 서로 의견을 교환하여 요구사항이 어디에 있는지, 어떻게 수집할 것인지를 식별하고 이해하는 과정임.",
+        "요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음."
+      ],
+      "screen_text": "요구사항 도출은 시스템, 사용자, 그리고 시스템 개발에 관련된 사람들이 서로 의견을 교환하여 요구사항이 어디에 있는지, 어떻게 수집할 것인지를 식별하고 이해하는 과정임.\n요구사항을 도출하는 주요 기법에는 청취와 인터뷰, 설문, 브레인스토밍, 워크샵, 프로토타이핑, 유스케이스등이 있음.",
+      "spoken_sentences": [
+        "그래서 요구사항 도출이라는 거는 시스템 개발에 관련된 그런 사람들이 서로서로 의견을 교환해서 요구사항 같은 것들을 전부 다 식별하고 이해하는 그 과정을 보고 우리는 요구사항 도출, 요구사항 수집 그렇게 부르더라.",
+        "거기에는 주요 기법이 이런 것들이 있더라.",
+        "그리고 이런 것들이 있습니다.",
+        "요 내용 잘 기억하고 지나가세요."
+      ],
+      "spoken_text": "그래서 요구사항 도출이라는 거는 시스템 개발에 관련된 그런 사람들이 서로서로 의견을 교환해서 요구사항 같은 것들을 전부 다 식별하고 이해하는 그 과정을 보고 우리는 요구사항 도출, 요구사항 수집 그렇게 부르더라. 거기에는 주요 기법이 이런 것들이 있더라. 그리고 이런 것들이 있습니다. 요 내용 잘 기억하고 지나가세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 35
+        },
+        {
+          "keyword": "브레인스토밍",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "프로토타이핑",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [
+        "소프트웨어 요구사항 명세서 / 요구사항 명세 기법"
+      ],
+      "screen_text": "소프트웨어 요구사항 명세서 / 요구사항 명세 기법",
+      "spoken_sentences": [
+        "이번 시간에는 우리 소프트웨어 요구사항 명세서, 요구사항 명세 기법에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 소프트웨어 요구사항 명세서, 요구사항 명세 기법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "요구사항 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:38",
+      "start_seconds": 9,
+      "end_seconds": 38,
+      "duration_seconds": 29,
+      "timeline_summary": "요구사항 명세 기법의 개념",
+      "screen_text_lines": [
+        "소프트웨어 요구사항 명세서 / 요구사항 명세 기법",
+        "구분",
+        "정형 명세 기법",
+        "비정형 명세 기법"
+      ],
+      "screen_text": "소프트웨어 요구사항 명세서 / 요구사항 명세 기법\n구분\n정형 명세 기법\n비정형 명세 기법",
+      "spoken_sentences": [
+        "요구사항 명세 기법이요.",
+        "이 요구사항 명세 기법이라는 거는 소프트웨어를 의뢰한 사람이 '이런 이런 소프트웨어를 만들어 달라', '이런 이런 기능들을 넣어 달라' 그런 식으로 말을 할 거 아니에요.",
+        "요구사항들을 말하면 그런 요구사항들을 적어놓고 우리가 체계화를 시켜요.",
+        "체계화를 시켜서 누구든지 알아볼 수 있게끔, 사용자도 알아보고 설계자도 알아보고 알아볼 수 있게끔 그런 문서를 작성하는 그런 기법을 보고 우리가 요구사항 명세 기법이라고 해요."
+      ],
+      "spoken_text": "요구사항 명세 기법이요. 이 요구사항 명세 기법이라는 거는 소프트웨어를 의뢰한 사람이 '이런 이런 소프트웨어를 만들어 달라', '이런 이런 기능들을 넣어 달라' 그런 식으로 말을 할 거 아니에요. 요구사항들을 말하면 그런 요구사항들을 적어놓고 우리가 체계화를 시켜요. 체계화를 시켜서 누구든지 알아볼 수 있게끔, 사용자도 알아보고 설계자도 알아보고 알아볼 수 있게끔 그런 문서를 작성하는 그런 기법을 보고 우리가 요구사항 명세 기법이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "요구사항 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:00:38",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 38,
+      "end_seconds": 85,
+      "duration_seconds": 47,
+      "timeline_summary": "정형 명세 기법의 정의 및 작성 방법",
+      "screen_text_lines": [
+        "정형 명세 기법",
+        "비정형 명세 기법",
+        "수학적 원리 기반, 모델 기반",
+        "수학적 기호, 정형화된 표기법"
+      ],
+      "screen_text": "정형 명세 기법\n비정형 명세 기법\n수학적 원리 기반, 모델 기반\n수학적 기호, 정형화된 표기법",
+      "spoken_sentences": [
+        "여기에는 크게 두 가지가 있습니다.",
+        "정형 명세 기법이라는 게 있고 비정형 명세 기법이라는 게 있고 이렇게 두 가지가 있어요.",
+        "정형 명세 기법이다라고 하게 되면 얘는 수학처럼 공식화되어 있는 거예요.",
+        "특정 규칙, 특정 룰이 있어서 수학처럼 그렇게 공식화되어 있는 그런 기법을 보고 우리가 정형 명세 기법이라고 부르는 거고.",
+        "비정형 명세 기법이다라고 하게 되면 얘는 그냥 우리가 일반적으로 쓰는 말들 있죠?",
+        "그런 자연어를 기반으로 해서 서술하거나 다이어그램, 도형 같은 걸로 작성하는 걸 보고 얘기합니다.",
+        "해서 정형 명세 기법이다라고 하게 되면 특정 규칙, 특정 룰이 있다 그랬어요.",
+        "수학적인 그런 원리를 기반으로 하고요, 모델 기반으로 작성이 되는 거예요.",
+        "그때 작성할 때 수학적인 기호 같은 것들이 됐든 아니면 정형화된 표기법, 정해진 그런 표기법이 있어요.",
+        "그런 것들을 이용해서 작성을 합니다."
+      ],
+      "spoken_text": "여기에는 크게 두 가지가 있습니다. 정형 명세 기법이라는 게 있고 비정형 명세 기법이라는 게 있고 이렇게 두 가지가 있어요. 정형 명세 기법이다라고 하게 되면 얘는 수학처럼 공식화되어 있는 거예요. 특정 규칙, 특정 룰이 있어서 수학처럼 그렇게 공식화되어 있는 그런 기법을 보고 우리가 정형 명세 기법이라고 부르는 거고. 비정형 명세 기법이다라고 하게 되면 얘는 그냥 우리가 일반적으로 쓰는 말들 있죠? 그런 자연어를 기반으로 해서 서술하거나 다이어그램, 도형 같은 걸로 작성하는 걸 보고 얘기합니다. 해서 정형 명세 기법이다라고 하게 되면 특정 규칙, 특정 룰이 있다 그랬어요. 수학적인 그런 원리를 기반으로 하고요, 모델 기반으로 작성이 되는 거예요. 그때 작성할 때 수학적인 기호 같은 것들이 됐든 아니면 정형화된 표기법, 정해진 그런 표기법이 있어요. 그런 것들을 이용해서 작성을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 85,
+      "end_seconds": 140,
+      "duration_seconds": 55,
+      "timeline_summary": "정형 명세 기법의 특징",
+      "screen_text_lines": [
+        "요구사항을 정확하고 간결하게 표현할 수 있음",
+        "요구사항에 대한 결과가 작성자에 관계없이 일관성이 있으므로 완전성 검증이 가능함",
+        "표기법이 어려워 사용자가 이해하기 어려움"
+      ],
+      "screen_text": "요구사항을 정확하고 간결하게 표현할 수 있음\n요구사항에 대한 결과가 작성자에 관계없이 일관성이 있으므로 완전성 검증이 가능함\n표기법이 어려워 사용자가 이해하기 어려움",
+      "spoken_sentences": [
+        "해서 사용자 요구사항들을 쭉 받아봤을 때, 이 기능을 예를 들어서 수치로 따졌을 때 1부터 100까지가 있을 때 이 기능은 뭐 30에 해당한다, 50에 해당한다, 70에 해당한다.",
+        "해서 전부 다 수치로 다 표현할 수 있다고요.",
+        "해서 요구사항에 관한 그런 결과가 작성자에 관계없이 일관성이 있어요.",
+        "일관성이 있기 때문에 완전성 검증이 가능한 게 우리 정형 명세 기법이요.",
+        "하지만 얘는 작성할 때 수학적인 기호를 쓴다 그랬죠.",
+        "정형화된 표기법이 따로 있다 그랬어요.",
+        "그 표기법이 어려워서 일반 사용자들 있죠?",
+        "일반 사용자들은 이해하기가 어려워요.",
+        "개발자들은 다 알아볼 수 있겠죠.",
+        "자기들끼리 약속해 놓은 그런 기호들, 표기법들을 쓰기 때문에 개발자들끼리는 알 수 있지만, 일반 사용자가 봤을 때는 저게 뭔 소리야?",
+        "그러고 못 알아볼 수도 있다고요.",
+        "해서 요구사항을 정확하고 간결하게 그렇게 표현할 수 있어요.",
+        "왜?",
+        "수치로 딱딱딱딱 떨어지기 때문에."
+      ],
+      "spoken_text": "해서 사용자 요구사항들을 쭉 받아봤을 때, 이 기능을 예를 들어서 수치로 따졌을 때 1부터 100까지가 있을 때 이 기능은 뭐 30에 해당한다, 50에 해당한다, 70에 해당한다. 해서 전부 다 수치로 다 표현할 수 있다고요. 해서 요구사항에 관한 그런 결과가 작성자에 관계없이 일관성이 있어요. 일관성이 있기 때문에 완전성 검증이 가능한 게 우리 정형 명세 기법이요. 하지만 얘는 작성할 때 수학적인 기호를 쓴다 그랬죠. 정형화된 표기법이 따로 있다 그랬어요. 그 표기법이 어려워서 일반 사용자들 있죠? 일반 사용자들은 이해하기가 어려워요. 개발자들은 다 알아볼 수 있겠죠. 자기들끼리 약속해 놓은 그런 기호들, 표기법들을 쓰기 때문에 개발자들끼리는 알 수 있지만, 일반 사용자가 봤을 때는 저게 뭔 소리야? 그러고 못 알아볼 수도 있다고요. 해서 요구사항을 정확하고 간결하게 그렇게 표현할 수 있어요. 왜? 수치로 딱딱딱딱 떨어지기 때문에.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "정형 명세 기법",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:02:20",
+      "end_time_hms": "00:02:30",
+      "start_seconds": 140,
+      "end_seconds": 150,
+      "duration_seconds": 10,
+      "timeline_summary": "정형 명세 기법의 종류",
+      "screen_text_lines": [
+        "VDM, Z, Petri-net, CSP 등"
+      ],
+      "screen_text": "VDM, Z, Petri-net, CSP 등",
+      "spoken_sentences": [
+        "해서 정형 명세 기법을 보게 되면 VDM이라는 것도 있고요, Z라는 것도 있고, 그다음에 Petri-net이라는 것도 있고요, CSP도 있고 요런 것들이 있습니다."
+      ],
+      "spoken_text": "해서 정형 명세 기법을 보게 되면 VDM이라는 것도 있고요, Z라는 것도 있고, 그다음에 Petri-net이라는 것도 있고요, CSP도 있고 요런 것들이 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "정형 명세 기법",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:02:30",
+      "end_time_hms": "00:02:47",
+      "start_seconds": 150,
+      "end_seconds": 167,
+      "duration_seconds": 17,
+      "timeline_summary": "비정형 명세 기법의 개념 및 작성 방법",
+      "screen_text_lines": [
+        "비정형 명세 기법",
+        "일반 명사, 동사 등의 자연어를 기반으로 서술 또는 다이어그램으로 작성"
+      ],
+      "screen_text": "비정형 명세 기법\n일반 명사, 동사 등의 자연어를 기반으로 서술 또는 다이어그램으로 작성",
+      "spoken_sentences": [
+        "그에 반해서 비정형 명세 기법이라는 거는 얘는 아까 제가 자연어를 기반으로 작성한다 그랬죠?",
+        "해서 일반 명사가 됐든, 동사가 됐든, 이런 자연어, 자연어를 기반으로 해서 우리가 서술을 하거나 아니면 다이어그램, 도형 같은 것들을 이용해서 우리가 작성하는 그런 방식을 보고 비정형 명세 기법이라고 합니다."
+      ],
+      "spoken_text": "그에 반해서 비정형 명세 기법이라는 거는 얘는 아까 제가 자연어를 기반으로 작성한다 그랬죠? 해서 일반 명사가 됐든, 동사가 됐든, 이런 자연어, 자연어를 기반으로 해서 우리가 서술을 하거나 아니면 다이어그램, 도형 같은 것들을 이용해서 우리가 작성하는 그런 방식을 보고 비정형 명세 기법이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:02:47",
+      "end_time_hms": "00:03:25",
+      "start_seconds": 167,
+      "end_seconds": 205,
+      "duration_seconds": 38,
+      "timeline_summary": "비정형 명세 기법의 특징",
+      "screen_text_lines": [
+        "상태/기능/객체 중심",
+        "자연어의 사용으로 인해 요구사항에 대한 결과가 작성자에 따라 다를 수 있어 일관성이 떨어지고, 해석이 달라질 수 있음",
+        "내용의 이해가 쉬워 의사소통이 용이함"
+      ],
+      "screen_text": "상태/기능/객체 중심\n자연어의 사용으로 인해 요구사항에 대한 결과가 작성자에 따라 다를 수 있어 일관성이 떨어지고, 해석이 달라질 수 있음\n내용의 이해가 쉬워 의사소통이 용이함",
+      "spoken_sentences": [
+        "정형 명세 같은 경우는 특정 규칙, 특정 룰이 있다 그랬어요.",
+        "수학적인 기호를 쓴다 그랬어요.",
+        "근데 이 비정형 같은 경우에는 그런 게 없다는 거예요.",
+        "그래서 표현하는 그 기법이 상태, 상태 위주로, 기능 위주로, 객체 위주로 그렇게 표현이 됩니다.",
+        "해서 얘는 마음대로, 자연어를 가지고 내 마음대로 작성하는 거기 때문에, 작성자에 따라서 다를 수가 있어요.",
+        "일관성이 좀 떨어지고요.",
+        "해석이 전부 다 보는 사람들마다 달라질 수가 있어요.",
+        "이런 단점도 있지만 이게 자연어를 기반으로 작성하다 보니까 내용의 이해가 쉽고요, 의사소통이 용이하다는 그런 장점도 가지고 있습니다."
+      ],
+      "spoken_text": "정형 명세 같은 경우는 특정 규칙, 특정 룰이 있다 그랬어요. 수학적인 기호를 쓴다 그랬어요. 근데 이 비정형 같은 경우에는 그런 게 없다는 거예요. 그래서 표현하는 그 기법이 상태, 상태 위주로, 기능 위주로, 객체 위주로 그렇게 표현이 됩니다. 해서 얘는 마음대로, 자연어를 가지고 내 마음대로 작성하는 거기 때문에, 작성자에 따라서 다를 수가 있어요. 일관성이 좀 떨어지고요. 해석이 전부 다 보는 사람들마다 달라질 수가 있어요. 이런 단점도 있지만 이게 자연어를 기반으로 작성하다 보니까 내용의 이해가 쉽고요, 의사소통이 용이하다는 그런 장점도 가지고 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 5,
+      "subtopic_id": "0020_20",
+      "subtopic_title": "요구사항 명세 기법",
+      "subtopic_sequence": 20,
+      "subtopic_number": "20",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9p0sXotDYVw",
+      "start_time_hms": "00:03:25",
+      "end_time_hms": "00:04:14",
+      "start_seconds": 205,
+      "end_seconds": 254,
+      "duration_seconds": 49,
+      "timeline_summary": "비정형 명세 기법의 종류 및 요약",
+      "screen_text_lines": [
+        "FSM, Decision Table, ER모델링, State Chart(SADT) 등"
+      ],
+      "screen_text": "FSM, Decision Table, ER모델링, State Chart(SADT) 등",
+      "spoken_sentences": [
+        "해서 이 비정형 명세 기법에 보게 되면 FSM이라는 것도 있고요, Decision Table이라는 것도 있고, ER 모델링이라는 것도 있고, State Chart라는 것도 있고 요런 것들이 있습니다.",
+        "해서 정형 명세 같은 경우는 사용자가 조금 보긴 어렵지만 표준화되어 있는 거, 표준화되어 있는 거 고고요.",
+        "비정형은 자연어를 이용하기 때문에 사람마다 표현하는 방식이 달라서 표준화되어 있지 않은 거예요.",
+        "개개인마다 주관적으로, 주관적으로 작성되는 그런 명세 기법이 우리 비정형 명세 기법이요.",
+        "해서 정형 명세 기법이 뭔지, 비정형 명세 기법이 뭔지 이 두 가지를 서로서로 비교해 가면서 잘 이해하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 이 비정형 명세 기법에 보게 되면 FSM이라는 것도 있고요, Decision Table이라는 것도 있고, ER 모델링이라는 것도 있고, State Chart라는 것도 있고 요런 것들이 있습니다. 해서 정형 명세 같은 경우는 사용자가 조금 보긴 어렵지만 표준화되어 있는 거, 표준화되어 있는 거 고고요. 비정형은 자연어를 이용하기 때문에 사람마다 표현하는 방식이 달라서 표준화되어 있지 않은 거예요. 개개인마다 주관적으로, 주관적으로 작성되는 그런 명세 기법이 우리 비정형 명세 기법이요. 해서 정형 명세 기법이 뭔지, 비정형 명세 기법이 뭔지 이 두 가지를 서로서로 비교해 가면서 잘 이해하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "명세",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 53
+        },
+        {
+          "keyword": "비정형 명세 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기법의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "정형",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "요구사항 확인 개요",
+      "screen_text_lines": [
+        "(Requirement Validation, 요구사항 검증)"
+      ],
+      "screen_text": "(Requirement Validation, 요구사항 검증)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항 확인에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항 확인에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "요구사항 확인",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "검증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "Validation",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 10,
+      "end_seconds": 32,
+      "duration_seconds": 22,
+      "timeline_summary": "요구사항 확인의 정의",
+      "screen_text_lines": [
+        "요구사항 확인(Requirement Validation, 요구사항 검증)",
+        "요구사항 확인은 개발 자원을 요구사항에 할당하기 전에 요구사항 명세서가 정확하고 완전하게 작성되었는지를 검토하는 활동임."
+      ],
+      "screen_text": "요구사항 확인(Requirement Validation, 요구사항 검증)\n요구사항 확인은 개발 자원을 요구사항에 할당하기 전에 요구사항 명세서가 정확하고 완전하게 작성되었는지를 검토하는 활동임.",
+      "spoken_sentences": [
+        "우리가 요구사항을 도출하고 분석하고 명세까지 끝났어요.",
+        "확인 작업을 하면 되는데 이 요구사항 확인이라는 거는 요구사항 검증하는 거예요.",
+        "검증하는 거.",
+        "그래서 요구사항 확인이라는 거는 요구사항에 할당하기 전에 요구사항 명세서가 정확하고 완전하게 작성이 돼있는지 그걸 검토하는 활동"
+      ],
+      "spoken_text": "우리가 요구사항을 도출하고 분석하고 명세까지 끝났어요. 확인 작업을 하면 되는데 이 요구사항 확인이라는 거는 요구사항 검증하는 거예요. 검증하는 거. 그래서 요구사항 확인이라는 거는 요구사항에 할당하기 전에 요구사항 명세서가 정확하고 완전하게 작성이 돼있는지 그걸 검토하는 활동",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "요구사항 확인",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "검증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "요구사항 확인의 정의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:57",
+      "start_seconds": 32,
+      "end_seconds": 57,
+      "duration_seconds": 25,
+      "timeline_summary": "명세서 검증 과정",
+      "screen_text_lines": [
+        "분석가가 요구사항을 정확하게 이해한 후 요구사항 명세서를 작성했는지 확인(Validation)하는 것이 필요함.",
+        "요구사항이 실제 요구를 반영하는지, 서로 상충되는 요구사항은 없는지 등을 점검함."
+      ],
+      "screen_text": "분석가가 요구사항을 정확하게 이해한 후 요구사항 명세서를 작성했는지 확인(Validation)하는 것이 필요함.\n요구사항이 실제 요구를 반영하는지, 서로 상충되는 요구사항은 없는지 등을 점검함.",
+      "spoken_sentences": [
+        "우리는 요구사항 확인이라고 합니다.",
+        "이 요구사항 확인이 만약에 제대로 되지 않으면 시스템이 이상하게 만들어지겠죠.",
+        "그래서 우리 분석가가 요구사항을 정확하게 이해한 후에 요구사항 명세서를 작성했는지 그걸 확인하는 거, 확인하는 게 꼭 필요한 거고요.",
+        "요구사항이 실제 요구를 반영했는지, 그리고 서로 상충되는 그런 요구사항 같은 것들은 없는지, 그런 것들을 점검합니다."
+      ],
+      "spoken_text": "우리는 요구사항 확인이라고 합니다. 이 요구사항 확인이 만약에 제대로 되지 않으면 시스템이 이상하게 만들어지겠죠. 그래서 우리 분석가가 요구사항을 정확하게 이해한 후에 요구사항 명세서를 작성했는지 그걸 확인하는 거, 확인하는 게 꼭 필요한 거고요. 요구사항이 실제 요구를 반영했는지, 그리고 서로 상충되는 그런 요구사항 같은 것들은 없는지, 그런 것들을 점검합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "요구사항 확인",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "검증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "Validation",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-066",
+      "segment_index": 66,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:00:57",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 57,
+      "end_seconds": 67,
+      "duration_seconds": 10,
+      "timeline_summary": "검증의 중요성 및 재작업 비용",
+      "screen_text_lines": [
+        "개발이 완료된 후 문제가 발견되면 재작업 비용이 발생할 수 있으므로 요구사항 검증은 매우 중요함."
+      ],
+      "screen_text": "개발이 완료된 후 문제가 발견되면 재작업 비용이 발생할 수 있으므로 요구사항 검증은 매우 중요함.",
+      "spoken_sentences": [
+        "그리고 개발이 완료된 후에 만약에 문제가 발견이 되면 재작업 비용이 발생할 수 있기 때문에 요구사항 검증이 매우 중요한 거죠."
+      ],
+      "spoken_text": "그리고 개발이 완료된 후에 만약에 문제가 발견이 되면 재작업 비용이 발생할 수 있기 때문에 요구사항 검증이 매우 중요한 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "검증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "검증의 중요성 및 재작업 비용",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-067",
+      "segment_index": 67,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:31",
+      "start_seconds": 67,
+      "end_seconds": 91,
+      "duration_seconds": 24,
+      "timeline_summary": "검증의 구체적 항목과 한계점",
+      "screen_text_lines": [
+        "요구사항 명세서의 내용이 이해하기 쉬운지, 일관성은 있는지, 회사의 기준에는 맞는지, 그리고 누락된 기능은 없는지 등을 검증(Verification)하는 것이 중요함.",
+        "요구사항 문서는 이해관계자들이 검토해야 함.",
+        "요구사항 검증 과정을 통해 모든 문제를 확인할 수 있는 것은 아니다."
+      ],
+      "screen_text": "요구사항 명세서의 내용이 이해하기 쉬운지, 일관성은 있는지, 회사의 기준에는 맞는지, 그리고 누락된 기능은 없는지 등을 검증(Verification)하는 것이 중요함.\n요구사항 문서는 이해관계자들이 검토해야 함.\n요구사항 검증 과정을 통해 모든 문제를 확인할 수 있는 것은 아니다.",
+      "spoken_sentences": [
+        "이 요구사항 문서는 우리 이해관계자들이 같이 검토를 하기 때문에 요구사항 명세서의 그 내용이 이해하기 쉬운지, 그리고 일관성은 있는지, 그리고 회사의 기준에 맞는지, 그리고 누락된 그런 기능 같은 것들은 없는지 그런 것들을 검증하는 것이 엄청나게 중요합니다.",
+        "그렇다고 해서 요구사항 이 검증 과정을 통해서 모든 문제를 확인할 수 있는 건 아니에요."
+      ],
+      "spoken_text": "이 요구사항 문서는 우리 이해관계자들이 같이 검토를 하기 때문에 요구사항 명세서의 그 내용이 이해하기 쉬운지, 그리고 일관성은 있는지, 그리고 회사의 기준에 맞는지, 그리고 누락된 그런 기능 같은 것들은 없는지 그런 것들을 검증하는 것이 엄청나게 중요합니다. 그렇다고 해서 요구사항 이 검증 과정을 통해서 모든 문제를 확인할 수 있는 건 아니에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "검증",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "검증의 구체적 항목과 한계점",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-068",
+      "segment_index": 68,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:01:31",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 91,
+      "end_seconds": 128,
+      "duration_seconds": 37,
+      "timeline_summary": "형상 관리의 개념",
+      "screen_text_lines": [
+        "일반적으로 요구사항 관리 도구를 이용하여 요구사항 정의 문서들에 대해 형상 관리를 수행함."
+      ],
+      "screen_text": "일반적으로 요구사항 관리 도구를 이용하여 요구사항 정의 문서들에 대해 형상 관리를 수행함.",
+      "spoken_sentences": [
+        "일반적으로 요구사항 관리 도구를 이용해서 요구사항 정의 문서들에 대해서 형상 관리를 전부 다 수행합니다.",
+        "여기 보게 되면 형상 관리라고 나오는데, 이 형상 관리라는 거는 소프트웨어 개발 단계에서 각 과정에서 만들어진 프로그램이 됐든 아니면 프로그램을 설명하는 문서가 됐든 데이터가 됐든 이런 것들을 통칭해서 우리가 형상, 형상이라고 부르는 거고요.",
+        "여기서 얘기하는 형상 관리라는 거는 소프트웨어 개발 과정에서 만들어지는 형상들의 변경 사항 같은 것들을 관리하는 일련의 활동을 우리가 형상 관리라고 해요.",
+        "이 형상 관리는 뒤에 넘어가면 좀 더 자세히 배울 거예요."
+      ],
+      "spoken_text": "일반적으로 요구사항 관리 도구를 이용해서 요구사항 정의 문서들에 대해서 형상 관리를 전부 다 수행합니다. 여기 보게 되면 형상 관리라고 나오는데, 이 형상 관리라는 거는 소프트웨어 개발 단계에서 각 과정에서 만들어진 프로그램이 됐든 아니면 프로그램을 설명하는 문서가 됐든 데이터가 됐든 이런 것들을 통칭해서 우리가 형상, 형상이라고 부르는 거고요. 여기서 얘기하는 형상 관리라는 거는 소프트웨어 개발 과정에서 만들어지는 형상들의 변경 사항 같은 것들을 관리하는 일련의 활동을 우리가 형상 관리라고 해요. 이 형상 관리는 뒤에 넘어가면 좀 더 자세히 배울 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "형상 관리의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-069",
+      "segment_index": 69,
+      "subtopic_index": 6,
+      "subtopic_id": "0021_21",
+      "subtopic_title": "요구사항 확인",
+      "subtopic_sequence": 21,
+      "subtopic_number": "21",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=IA0qKMi_VPY",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:30",
+      "start_seconds": 128,
+      "end_seconds": 150,
+      "duration_seconds": 22,
+      "timeline_summary": "요구사항 개발 프로세스 마무리",
+      "screen_text_lines": [
+        "일반적으로 요구사항 관리 도구를 이용하여 요구사항 정의 문서들에 대해 형상 관리를 수행함."
+      ],
+      "screen_text": "일반적으로 요구사항 관리 도구를 이용하여 요구사항 정의 문서들에 대해 형상 관리를 수행함.",
+      "spoken_sentences": [
+        "요렇게 해서 우리 요구사항 개발 프로세스 도출이다, 분석이다, 명세다, 확인이다 해서 요 네 가지가 전부 다 끝났습니다.",
+        "자, 요 네 가지가 각각 뭘 하는 건지 정확하게 알고 있어야 돼요.",
+        "자, 요 내용 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "요렇게 해서 우리 요구사항 개발 프로세스 도출이다, 분석이다, 명세다, 확인이다 해서 요 네 가지가 전부 다 끝났습니다. 자, 요 네 가지가 각각 뭘 하는 건지 정확하게 알고 있어야 돼요. 자, 요 내용 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 46
+        },
+        {
+          "keyword": "요구사항 개발 프로세스 마무리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-070",
+      "segment_index": 70,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "duration_seconds": 10,
+      "timeline_summary": "강의 시작 및 제목 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 요구사항 분석의 개요에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 요구사항 분석의 개요에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "요구사항 분석의 개요",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-071",
+      "segment_index": 71,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 10,
+      "end_seconds": 32,
+      "duration_seconds": 22,
+      "timeline_summary": "요구사항 분석의 정의",
+      "screen_text_lines": [
+        "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함."
+      ],
+      "screen_text": "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+      "spoken_sentences": [
+        "우리 요구사항 분석이라는 거는 소프트웨어 개발 단계의 실질적인 첫 번째 단계가 우리 요구사항 분석 단계예요.",
+        "얘는 개발 대상에 대한 사용자들의 요구사항이 엄청나게 많겠죠.",
+        "그 요구사항들을 이해하고, 이해하고, 그리고 문서화하는, 명세화하는 그 활동을 보고 우리가 요구사항 분석 그렇게 부릅니다."
+      ],
+      "spoken_text": "우리 요구사항 분석이라는 거는 소프트웨어 개발 단계의 실질적인 첫 번째 단계가 우리 요구사항 분석 단계예요. 얘는 개발 대상에 대한 사용자들의 요구사항이 엄청나게 많겠죠. 그 요구사항들을 이해하고, 이해하고, 그리고 문서화하는, 명세화하는 그 활동을 보고 우리가 요구사항 분석 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-072",
+      "segment_index": 72,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 32,
+      "end_seconds": 46,
+      "duration_seconds": 14,
+      "timeline_summary": "타당성 조사 및 제약 설정",
+      "screen_text_lines": [
+        "사용자 요구의 타당성을 조사하고 비용과 일정에 대한 제약을 설정함."
+      ],
+      "screen_text": "사용자 요구의 타당성을 조사하고 비용과 일정에 대한 제약을 설정함.",
+      "spoken_sentences": [
+        "일단 사용자의 요구사항들이 있을 때 그 사용자 요구사항들을 전부 다 타당성을 먼저 조사를 해야 되겠죠.",
+        "타당성을 조사하고, 그 타당성 조사한 걸 가지고 비용이나 일정에 대한 그런 제약 같은 것들을 전부 다 설정을 합니다."
+      ],
+      "spoken_text": "일단 사용자의 요구사항들이 있을 때 그 사용자 요구사항들을 전부 다 타당성을 먼저 조사를 해야 되겠죠. 타당성을 조사하고, 그 타당성 조사한 걸 가지고 비용이나 일정에 대한 그런 제약 같은 것들을 전부 다 설정을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-073",
+      "segment_index": 73,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:00:56",
+      "start_seconds": 46,
+      "end_seconds": 56,
+      "duration_seconds": 10,
+      "timeline_summary": "요구사항 추출 및 목표, 해결 방식 결정",
+      "screen_text_lines": [
+        "사용자의 요구를 정확하게 추출하여 목표를 정하고, 어떤 방식으로 해결할 것인지를 결정함."
+      ],
+      "screen_text": "사용자의 요구를 정확하게 추출하여 목표를 정하고, 어떤 방식으로 해결할 것인지를 결정함.",
+      "spoken_sentences": [
+        "그때 사용자의 요구사항을 정확하게 추출해서 목표를 정해야죠.",
+        "목표를 정하고 어떤 방식으로 해결할 것인지 그걸 결정해야 돼요."
+      ],
+      "spoken_text": "그때 사용자의 요구사항을 정확하게 추출해서 목표를 정해야죠. 목표를 정하고 어떤 방식으로 해결할 것인지 그걸 결정해야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "요구사항을",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        },
+        {
+          "keyword": "요구사항 추출 및 목표, 해결 방식 결정",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-074",
+      "segment_index": 74,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:00:56",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 56,
+      "end_seconds": 71,
+      "duration_seconds": 15,
+      "timeline_summary": "설계 단계의 기본 자료 및 문서화",
+      "screen_text_lines": [
+        "요구사항 분석을 통한 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되므로 사용자의 요구사항을 정확하고 일관성 있게 분석하여 문서화해야함."
+      ],
+      "screen_text": "요구사항 분석을 통한 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되므로 사용자의 요구사항을 정확하고 일관성 있게 분석하여 문서화해야함.",
+      "spoken_sentences": [
+        "요렇게 요구사항 분석을 했을 때, 요구 분석을 하고 나면 결과가 나오겠죠.",
+        "그 결과, 그 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되기 때문에 사용자의 요구사항을 정확하고, 정확하고 일관성 있게 분석해서 문서화를 해야 돼요."
+      ],
+      "spoken_text": "요렇게 요구사항 분석을 했을 때, 요구 분석을 하고 나면 결과가 나오겠죠. 그 결과, 그 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되기 때문에 사용자의 요구사항을 정확하고, 정확하고 일관성 있게 분석해서 문서화를 해야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-075",
+      "segment_index": 75,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:01:11",
+      "end_time_hms": "00:01:20",
+      "start_seconds": 71,
+      "end_seconds": 80,
+      "duration_seconds": 9,
+      "timeline_summary": "요구사항 분석 수행자 및 단계 명칭",
+      "screen_text_lines": [
+        "소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함."
+      ],
+      "screen_text": "소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함.",
+      "spoken_sentences": [
+        "그때 소프트웨어 분석가에 의해서 요구사항 분석이 수행이 되고요.",
+        "이런 작업 단계를 보고 요구사항 분석 단계라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그때 소프트웨어 분석가에 의해서 요구사항 분석이 수행이 되고요. 이런 작업 단계를 보고 요구사항 분석 단계라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "요구사항 분석 수행자 및 단계 명칭",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-076",
+      "segment_index": 76,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:01:20",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 80,
+      "end_seconds": 90,
+      "duration_seconds": 10,
+      "timeline_summary": "요구사항 분석 개념 요약",
+      "screen_text_lines": [
+        "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함."
+      ],
+      "screen_text": "요구사항 분석은 소프트웨어 개발의 실제적인 첫 단계로 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동을 의미함.",
+      "spoken_sentences": [
+        "해서 요구사항 분석이라는 거는 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화하는 그 활동을 보고 얘기하더라."
+      ],
+      "spoken_text": "해서 요구사항 분석이라는 거는 개발 대상에 대한 사용자의 요구사항을 이해하고 문서화하는 그 활동을 보고 얘기하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-077",
+      "segment_index": 77,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:38",
+      "start_seconds": 90,
+      "end_seconds": 98,
+      "duration_seconds": 8,
+      "timeline_summary": "타당성 조사 및 제약 설정 요약",
+      "screen_text_lines": [
+        "사용자 요구의 타당성을 조사하고 비용과 일정에 대한 제약을 설정함."
+      ],
+      "screen_text": "사용자 요구의 타당성을 조사하고 비용과 일정에 대한 제약을 설정함.",
+      "spoken_sentences": [
+        "이 요구사항 분석에서 뭘 한다?",
+        "사용자 요구에 대해서 타당성을 조사하더라.",
+        "그리고 비용과 일정에 대한 그런 제약 같은 것들 설정하더라."
+      ],
+      "spoken_text": "이 요구사항 분석에서 뭘 한다? 사용자 요구에 대해서 타당성을 조사하더라. 그리고 비용과 일정에 대한 그런 제약 같은 것들 설정하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "요약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-078",
+      "segment_index": 78,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:01:38",
+      "end_time_hms": "00:01:52",
+      "start_seconds": 98,
+      "end_seconds": 112,
+      "duration_seconds": 14,
+      "timeline_summary": "분석 수행자 및 목표 설정 요약",
+      "screen_text_lines": [
+        "사용자의 요구를 정확하게 추출하여 목표를 정하고, 어떤 방식으로 해결할 것인지를 결정함.",
+        "소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함."
+      ],
+      "screen_text": "사용자의 요구를 정확하게 추출하여 목표를 정하고, 어떤 방식으로 해결할 것인지를 결정함.\n소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함.",
+      "spoken_sentences": [
+        "그리고 이런 요구사항 분석은 누가 한다?",
+        "소프트웨어 분석가가, 분석가가 요구사항 분석을 수행을 하더라.",
+        "그때 사용자의 요구를 정확하게 추출하고 목표를 정하더라.",
+        "그리고 어떤 방식으로 해결할 것인지 그걸 결정하더라."
+      ],
+      "spoken_text": "그리고 이런 요구사항 분석은 누가 한다? 소프트웨어 분석가가, 분석가가 요구사항 분석을 수행을 하더라. 그때 사용자의 요구를 정확하게 추출하고 목표를 정하더라. 그리고 어떤 방식으로 해결할 것인지 그걸 결정하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-079",
+      "segment_index": 79,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:01:52",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 112,
+      "end_seconds": 124,
+      "duration_seconds": 12,
+      "timeline_summary": "분석 결과의 문서화 요약",
+      "screen_text_lines": [
+        "요구사항 분석을 통한 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되므로 사용자의 요구사항을 정확하고 일관성 있게 분석하여 문서화해야함."
+      ],
+      "screen_text": "요구사항 분석을 통한 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되므로 사용자의 요구사항을 정확하고 일관성 있게 분석하여 문서화해야함.",
+      "spoken_sentences": [
+        "이때 요구사항 분석을 통한 그 결과, 그 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되기 때문에 사용자의 요구사항을 정확하고 일관성 있게 분석해서 문서화하는 거."
+      ],
+      "spoken_text": "이때 요구사항 분석을 통한 그 결과, 그 결과는 소프트웨어 설계 단계에서 필요한 기본적인 자료가 되기 때문에 사용자의 요구사항을 정확하고 일관성 있게 분석해서 문서화하는 거.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "사용자의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_005-seg-080",
+      "segment_index": 80,
+      "subtopic_index": 7,
+      "subtopic_id": "0022_22",
+      "subtopic_title": "요구사항 분석의 개요",
+      "subtopic_sequence": 22,
+      "subtopic_number": "22",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=b3vfWoaYWl8",
+      "start_time_hms": "00:02:04",
+      "end_time_hms": "00:02:26",
+      "start_seconds": 124,
+      "end_seconds": 146,
+      "duration_seconds": 22,
+      "timeline_summary": "요구사항 분석 단계 마무리 및 시험 대비",
+      "screen_text_lines": [
+        "소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함."
+      ],
+      "screen_text": "소프트웨어 분석가에 의해 요구사항 분석이 수행되며, 이 작업 단계를 요구사항 분석 단계라고 함.",
+      "spoken_sentences": [
+        "이런 작업 단계를 보고 우리는 요구사항 분석 단계라고 하더라라고 요 개념하고 특징 정확하게 알고 계셔야 돼요.",
+        "요 요구사항 분석에 대해서 필기 시험에 나온 적이 있습니다.",
+        "해서 요구사항 분석 과정에서 어떤 작업들을 수행하는지 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "이런 작업 단계를 보고 우리는 요구사항 분석 단계라고 하더라라고 요 개념하고 특징 정확하게 알고 계셔야 돼요. 요 요구사항 분석에 대해서 필기 시험에 나온 적이 있습니다. 해서 요구사항 분석 과정에서 어떤 작업들을 수행하는지 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구사항",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "소프트웨어",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "요구사항 분석 단계 마무리 및 시험 대비",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    }
+  ]
+}

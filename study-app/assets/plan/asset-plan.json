@@ -1,0 +1,563 @@
+{
+  "plan_version": "1.0.0",
+  "status": "planning_only",
+  "created_at": "2026-04-03",
+  "project": {
+    "name": "정보처리기사 스터디 앱",
+    "app_root": "study-app",
+    "plan_root": "study-app/assets"
+  },
+  "official_vertex_ai_models": {
+    "sources": [
+      {
+        "label": "Gemini 3.1 Flash Image",
+        "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-1-flash-image",
+        "notes": [
+          "공식 명칭: Gemini 3.1 Flash Image",
+          "모델 ID: gemini-3.1-flash-image-preview",
+          "출력: Text and image",
+          "출시 단계: Public preview",
+          "릴리스 날짜: 2026-02-26"
+        ]
+      },
+      {
+        "label": "Gemini 3 Pro Image",
+        "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-pro-image",
+        "notes": [
+          "공식 명칭: Gemini 3 Pro Image",
+          "모델 ID: gemini-3-pro-image-preview",
+          "출력: Text and image",
+          "출시 단계: Public preview",
+          "복잡한 멀티턴 이미지 생성/편집에 적합"
+        ]
+      },
+      {
+        "label": "Gemini 2.5 Flash Image",
+        "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image",
+        "notes": [
+          "공식 명칭: Gemini 2.5 Flash Image",
+          "모델 ID: gemini-2.5-flash-image",
+          "출력: Text and image",
+          "현재 안정적으로 쓰기 좋은 GA 계열"
+        ]
+      },
+      {
+        "label": "Generate images with Gemini",
+        "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/image-generation",
+        "notes": [
+          "공식 문서 기준 지원 모델: gemini-3.1-flash-image-preview, gemini-3-pro-image-preview, gemini-2.5-flash-image"
+        ]
+      }
+    ],
+    "selected_default_model": {
+      "official_name": "Gemini 3.1 Flash Image",
+      "model_id": "gemini-3.1-flash-image-preview",
+      "selection_reason": "공식 Vertex AI 문서에 나온 Gemini 이미지 생성 모델 중 가장 최신 세대(3.1)라서 기본 선택",
+      "selection_type": "inference_from_official_docs"
+    },
+    "fallback_models": [
+      {
+        "official_name": "Gemini 3 Pro Image",
+        "model_id": "gemini-3-pro-image-preview",
+        "use_when": "한 장씩 고품질 보정이나 복잡한 리파인먼트가 필요할 때"
+      },
+      {
+        "official_name": "Gemini 2.5 Flash Image",
+        "model_id": "gemini-2.5-flash-image",
+        "use_when": "미리보기 모델보다 안정성을 우선할 때"
+      }
+    ]
+  },
+  "visual_direction": {
+    "concept_name": "Blueprint Study Atelier",
+    "summary": "시험 학습 앱에 맞춘 부드러운 3D 배지형 에셋 세트. 책상 위 학습 도구와 디지털 시스템 요소를 섞은 미니 디오라마 톤.",
+    "style_keywords": [
+      "soft 3D",
+      "clean badge illustration",
+      "light blueprint accents",
+      "friendly but not childish",
+      "high legibility on white UI"
+    ],
+    "palette": {
+      "primary_blue": "#3182F6",
+      "green": "#30C85E",
+      "orange": "#FF9500",
+      "violet": "#8B5CF6",
+      "red": "#F04452",
+      "neutral_bg": "#F8FAFC"
+    },
+    "global_constraints": [
+      "투명 배경 PNG로 저장",
+      "텍스트 삽입 금지",
+      "워터마크 금지",
+      "하얀 UI 위에 올려도 떠보이지 않도록 부드러운 그림자만 허용",
+      "각 에셋은 단일 주제 중심 구성으로 단순하게 유지"
+    ]
+  },
+  "storage_layout": {
+    "root": "study-app/assets",
+    "plan_file": "study-app/assets/plan/asset-plan.json",
+    "generated_folders": {
+      "branding": "study-app/assets/generated/branding",
+      "characters": "study-app/assets/generated/characters",
+      "subjects": "study-app/assets/generated/subjects",
+      "states": "study-app/assets/generated/states",
+      "ui_notes": "study-app/assets/generated/ui"
+    },
+    "naming_rule": "<family>/<asset-id>-v1.png",
+    "later_application_note": "생성 후 app.js/index.html/style.css 에서 이 JSON의 usage_map 순서대로 교체"
+  },
+  "character_integration": {
+    "feature_name": "lecture-guide-professor",
+    "status": "planned",
+    "summary": "강의 진입 시 상단 카드 근처에 설명 중인 3D 가이드 캐릭터를 배치",
+    "likeness_policy": "실존 인물을 그대로 복제하지 않고, 정일영 프랑스어학과 교수님 같은 인상의 지적인 중년 남성 교수 캐릭터로 해석",
+    "screen_target": {
+      "file": "study-app/app.js",
+      "line": 559,
+      "slot": "theory-body.top-guide-character"
+    },
+    "layout_concept": {
+      "placement": "lecture-now-card 상단 또는 우측 상단에 반신 캐릭터 배치",
+      "behavior": [
+        "첫 진입 시 idle 포즈 노출",
+        "대사 진행 중에는 speaking 포즈로 교체 가능",
+        "캐릭터는 말풍선보다 시선을 더 위로 끌어올리는 역할"
+      ]
+    }
+  },
+  "summary_counts": {
+    "ai_generated_asset_count": 16,
+    "code_native_ui_cleanup_count": 8
+  },
+  "assets_to_generate": [
+    {
+      "id": "brand-loading-emblem",
+      "family": "branding",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/branding/brand-loading-emblem-v1.png",
+      "display_role": "앱 로딩 로고 공통 교체",
+      "display_size_px": 48,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "책, 회로, 체크 마크가 결합된 학습 앱 메인 배지",
+      "usage_map": [
+        {
+          "file": "study-app/index.html",
+          "line": 19,
+          "current_value": "📚",
+          "slot": "loading-screen.logo"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 375,
+          "current_value": "📖",
+          "slot": "loading-screen.logo"
+        }
+      ],
+      "prompt_seed": "clean soft 3D study app emblem, open book plus subtle circuit lines plus check badge, centered, transparent background, premium educational mobile app asset"
+    },
+    {
+      "id": "subject-software-design",
+      "family": "subjects",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/subjects/subject-software-design-v1.png",
+      "display_role": "소프트웨어 설계 과목 아이콘",
+      "display_size_px": 44,
+      "source_size_px": 256,
+      "background": "transparent",
+      "concept": "설계도, 자, 구조 다이어그램을 결합한 블루프린트 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 9,
+          "current_value": "📐",
+          "slot": "SUBJECTS[1].emoji"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 812,
+          "current_value": "📐",
+          "slot": "stats.subject-label"
+        }
+      ],
+      "prompt_seed": "soft 3D blueprint badge with ruler, layout nodes, design sheet, blue accent, transparent background"
+    },
+    {
+      "id": "subject-software-development",
+      "family": "subjects",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/subjects/subject-software-development-v1.png",
+      "display_role": "소프트웨어 개발 과목 아이콘",
+      "display_size_px": 44,
+      "source_size_px": 256,
+      "background": "transparent",
+      "concept": "노트북, 코드 창, 실행 흐름을 묶은 개발 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 10,
+          "current_value": "💻",
+          "slot": "SUBJECTS[2].emoji"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 812,
+          "current_value": "💻",
+          "slot": "stats.subject-label"
+        }
+      ],
+      "prompt_seed": "soft 3D coding badge with laptop, code window and flow line, green accent, transparent background"
+    },
+    {
+      "id": "subject-database",
+      "family": "subjects",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/subjects/subject-database-v1.png",
+      "display_role": "데이터베이스 구축 과목 아이콘",
+      "display_size_px": 44,
+      "source_size_px": 256,
+      "background": "transparent",
+      "concept": "데이터 스택, 테이블 카드, 연결 포인트를 묶은 DB 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 11,
+          "current_value": "🗄️",
+          "slot": "SUBJECTS[3].emoji"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 812,
+          "current_value": "🗄️",
+          "slot": "stats.subject-label"
+        }
+      ],
+      "prompt_seed": "soft 3D database badge with stacked data disks, table card and connection dots, orange accent, transparent background"
+    },
+    {
+      "id": "subject-programming-language",
+      "family": "subjects",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/subjects/subject-programming-language-v1.png",
+      "display_role": "프로그래밍 언어 활용 과목 아이콘",
+      "display_size_px": 44,
+      "source_size_px": 256,
+      "background": "transparent",
+      "concept": "키보드, 중괄호, 문법 토큰을 묶은 언어 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 12,
+          "current_value": "⌨️",
+          "slot": "SUBJECTS[4].emoji"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 812,
+          "current_value": "⌨️",
+          "slot": "stats.subject-label"
+        }
+      ],
+      "prompt_seed": "soft 3D programming language badge with compact keyboard, curly braces and syntax tile, violet accent, transparent background"
+    },
+    {
+      "id": "subject-system-management",
+      "family": "subjects",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/subjects/subject-system-management-v1.png",
+      "display_role": "정보시스템 구축관리 과목 아이콘",
+      "display_size_px": 44,
+      "source_size_px": 256,
+      "background": "transparent",
+      "concept": "실드, 서버, 네트워크 망을 결합한 운영/보안 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 13,
+          "current_value": "🔒",
+          "slot": "SUBJECTS[5].emoji"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 812,
+          "current_value": "🔒",
+          "slot": "stats.subject-label"
+        }
+      ],
+      "prompt_seed": "soft 3D infrastructure security badge with shield, server rack and network grid, red accent, transparent background"
+    },
+    {
+      "id": "state-empty-search",
+      "family": "states",
+      "priority": 2,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-empty-search-v1.png",
+      "display_role": "검색 결과 없음 상태",
+      "display_size_px": 48,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "찾아보는 카드와 작은 돋보기, 비어 있는 주제 카드",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 330,
+          "current_value": "🔍",
+          "slot": "empty-state.search"
+        }
+      ],
+      "prompt_seed": "soft 3D empty search illustration with magnifier and empty study cards, calm and tidy, transparent background"
+    },
+    {
+      "id": "state-load-error",
+      "family": "states",
+      "priority": 2,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-load-error-v1.png",
+      "display_role": "주제 불러오기 실패 상태",
+      "display_size_px": 48,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "불러오기 실패를 표현하는 끊긴 카드 스택과 작은 경고 포인트",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 396,
+          "current_value": "😵",
+          "slot": "empty-state.load-error"
+        },
+        {
+          "file": "study-app/app.js",
+          "line": 880,
+          "current_value": "😵",
+          "slot": "empty-state.secondary-error"
+        }
+      ],
+      "prompt_seed": "soft 3D error state illustration with disconnected study cards and subtle alert symbol, not scary, transparent background"
+    },
+    {
+      "id": "state-theory-complete",
+      "family": "states",
+      "priority": 2,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-theory-complete-v1.png",
+      "display_role": "주제 학습 완료 상태",
+      "display_size_px": 64,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "완료된 노트와 배지, 졸업모 대신 학습 완료 카드 느낌",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 630,
+          "current_value": "🎓",
+          "slot": "theory.complete"
+        }
+      ],
+      "prompt_seed": "soft 3D study completion badge with completed notebook, ribbon badge and subtle sparkle, premium educational app, transparent background"
+    },
+    {
+      "id": "state-quiz-result-excellent",
+      "family": "states",
+      "priority": 3,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-quiz-result-excellent-v1.png",
+      "display_role": "퀴즈 결과 80% 이상",
+      "display_size_px": 64,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "최상위 성취 배지와 빛나는 체크 카드",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 753,
+          "current_value": "🏆",
+          "slot": "quiz-result.excellent"
+        }
+      ],
+      "prompt_seed": "soft 3D excellence badge for quiz result, premium achievement medal and checked study card, transparent background"
+    },
+    {
+      "id": "state-quiz-result-good",
+      "family": "states",
+      "priority": 3,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-quiz-result-good-v1.png",
+      "display_role": "퀴즈 결과 60% 이상",
+      "display_size_px": 64,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "좋은 성과를 표현하는 안정감 있는 진행 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 754,
+          "current_value": "👍",
+          "slot": "quiz-result.good"
+        }
+      ],
+      "prompt_seed": "soft 3D good progress badge for quiz result, upward study graph and checked card, transparent background"
+    },
+    {
+      "id": "state-quiz-result-review",
+      "family": "states",
+      "priority": 3,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-quiz-result-review-v1.png",
+      "display_role": "퀴즈 결과 40% 이상",
+      "display_size_px": 64,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "조금 더 복습이 필요한 상태를 표현하는 복습 카드와 메모",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 755,
+          "current_value": "💪",
+          "slot": "quiz-result.review-more"
+        }
+      ],
+      "prompt_seed": "soft 3D review progress badge with sticky note, open study card and encouraging upward motion, transparent background"
+    },
+    {
+      "id": "state-quiz-result-retry",
+      "family": "states",
+      "priority": 3,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/states/state-quiz-result-retry-v1.png",
+      "display_role": "퀴즈 결과 40% 미만",
+      "display_size_px": 64,
+      "source_size_px": 512,
+      "background": "transparent",
+      "concept": "다시 학습을 권하는 열린 책과 재도전 화살표 배지",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 756,
+          "current_value": "📖",
+          "slot": "quiz-result.retry"
+        }
+      ],
+      "prompt_seed": "soft 3D retry study badge with open book, revisit arrow and calm supportive tone, transparent background"
+    },
+    {
+      "id": "guide-professor-idle",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/characters/guide-professor-idle-v1.png",
+      "display_role": "강의 진입 기본 반신 캐릭터",
+      "display_size_px": 180,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "코리안 트레버 같은 에너지를 가진, 장난기 있지만 똑똑해 보이는 중년 남성 교수님 분위기의 머리 큰 3등신 카툰 반신 캐릭터",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 559,
+          "current_value": null,
+          "slot": "theory.guide-character.idle"
+        }
+      ],
+      "prompt_seed": "cute 3-head-tall chibi Korean professor character, very oversized head and tiny body, soft 3D cartoon style, rounded simplified facial features, no realistic skin texture, mischievous but intelligent expression, expressive eyebrows, slightly tousled hair, charming troublemaker academic vibe, neat but slightly relaxed blazer and shirt, adorable professor guide, no props, no text, transparent background"
+    },
+    {
+      "id": "guide-professor-speaking",
+      "family": "characters",
+      "priority": 1,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/characters/guide-professor-speaking-v1.png",
+      "display_role": "대사 진행 중 설명하는 반신 캐릭터",
+      "display_size_px": 180,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "같은 코리안 트레버 느낌의 3등신 카툰 교수 캐릭터가 손짓하며 설명하는 speaking 포즈",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 569,
+          "current_value": null,
+          "slot": "theory.guide-character.speaking"
+        }
+      ],
+      "prompt_seed": "same cute 3-head-tall chibi Korean professor character, soft 3D cartoon style, large head and tiny body, mischievous but intelligent expression, thick expressive eyebrows, slightly messy dark hair, round glasses, playful professor smile, half-body speaking pose, one hand raised as if teaching, relaxed professor outfit, no props, no text, transparent background"
+    },
+    {
+      "id": "guide-professor-pointing",
+      "family": "characters",
+      "priority": 2,
+      "quantity": 1,
+      "output_file": "study-app/assets/generated/characters/guide-professor-pointing-v1.png",
+      "display_role": "소주제 소개 또는 완료 직전 강조 포즈",
+      "display_size_px": 180,
+      "source_size_px": 1024,
+      "background": "transparent",
+      "concept": "같은 코리안 트레버 느낌의 3등신 카툰 교수 캐릭터가 옆의 카드나 말풍선을 가리키는 pointing 포즈",
+      "usage_map": [
+        {
+          "file": "study-app/app.js",
+          "line": 560,
+          "current_value": null,
+          "slot": "theory.guide-character.pointing"
+        }
+      ],
+      "prompt_seed": "same cute 3-head-tall chibi Korean professor character, soft 3D cartoon style, large head and tiny body, mischievous but intelligent expression, expressive eyebrows, slightly tousled hair, half-body pointing pose toward side content, clear silhouette, relaxed professor outfit, no props, no text, transparent background"
+    }
+  ],
+  "code_native_ui_cleanup": [
+    {
+      "current_value": "☀️ / 💪 / 🌙",
+      "file": "study-app/app.js",
+      "line": 228,
+      "reason": "텍스트 인사말에 붙은 이모지라서 AI 이미지보다 문구 또는 작은 SVG가 적합"
+    },
+    {
+      "current_value": "▶",
+      "file": "study-app/app.js",
+      "line": 253,
+      "reason": "이어가기 라벨의 방향 표시로, AI 이미지보다 벡터 아이콘이 적합"
+    },
+    {
+      "current_value": "✓",
+      "file": "study-app/app.js",
+      "line": 344,
+      "reason": "완료 체크 UI는 코드 기반 아이콘이 적합"
+    },
+    {
+      "current_value": "▶ / ❚❚",
+      "file": "study-app/app.js",
+      "line": 541,
+      "reason": "재생/일시정지 컨트롤은 코드 또는 SVG가 적합"
+    },
+    {
+      "current_value": "📝",
+      "file": "study-app/app.js",
+      "line": 694,
+      "reason": "퀴즈 타입 마커는 텍스트 배지 또는 SVG가 적합"
+    },
+    {
+      "current_value": "✓ / ✗",
+      "file": "study-app/app.js",
+      "line": 708,
+      "reason": "정오답 액션 표시는 코드 기반 아이콘이 적합"
+    },
+    {
+      "current_value": "📊",
+      "file": "study-app/app.js",
+      "line": 787,
+      "reason": "통계 제목 앞 장식은 제거 또는 SVG 헤더 배지가 적합"
+    },
+    {
+      "current_value": "🏠 / 📚 / 📊",
+      "file": "study-app/app.js",
+      "line": 832,
+      "reason": "하단 내비게이션은 AI 이미지보다 선명한 SVG가 적합"
+    }
+  ]
+}

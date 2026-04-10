@@ -1,0 +1,750 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_070",
+    "sequence": 70,
+    "title": "동적 메모리 할당",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 4,
+    "review_count": 3,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_355"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_eb6133d417279ff5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          18
+        ],
+        "page_span": {
+          "start_page": 18,
+          "end_page": 18
+        },
+        "source_explanation": "malloc() 함수는 인자로 전달된 '바이트(byte)' 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_070",
+        "topic_title": "동적 메모리 할당",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "동적 메모리 할당",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C언어에서 malloc() 함수에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다."
+          },
+          {
+            "label": "5",
+            "text": "없음"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "사용자가 입력한 bit만큼 메모리를 할당한다."
+        ],
+        "answer_text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+      },
+      "explanation": {
+        "source_text": "malloc() 함수는 인자로 전달된 '바이트(byte)' 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다.",
+        "summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "malloc은 바이트(Byte) 단위로 메모리를 할당합니다. 비트(Bit) 단위가 아니라는 점이 핵심 오답 포인트입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다.",
+          "3번: 할당된 메모리는 반드시 free()로 해제해야 메모리 누수를 막을 수 있습니다.",
+          "4번: 힙 영역에 여유 공간이 없으면 NULL 포인터를 반환합니다."
+        ],
+        "key_concepts": [
+          "malloc (Memory Allocation)",
+          "free (Memory Deallocation)",
+          "바이트 단위 할당"
+        ],
+        "memory_cues": [
+          "malloc의 인자는 '바이트'입니다. (1 Byte = 8 Bits)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.'이므로 일치하지 않습니다. 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다. 3번: 할당된 메모리는 반드시 free()로 해제해야 메모리 누수를 막을 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc은 바이트(Byte) 단위로 메모리를 할당합니다. 비트(Bit) 단위가 아니라는 점이 핵심 오답 포인트입니다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 'free 명령어로 할당된 메모리를 해제한다.'이므로 일치하지 않습니다. 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다. 3번: 할당된 메모리는 반드시 free()로 해제해야 메모리 누수를 막을 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '메모리 할당이 불가능할 경우 NULL이 반환된다.'이므로 일치하지 않습니다. 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다. 3번: 할당된 메모리는 반드시 free()로 해제해야 메모리 누수를 막을 수 있습니다."
+          },
+          {
+            "label": "5",
+            "text": "없음",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '없음'이므로 일치하지 않습니다. 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다. 3번: 할당된 메모리는 반드시 free()로 해제해야 메모리 누수를 막을 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 malloc() 함수에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. malloc (Memory Allocation), free (Memory Deallocation), 바이트 단위 할당",
+          "정답 판단 근거를 적용합니다. malloc은 바이트(Byte) 단위로 메모리를 할당합니다. 비트(Bit) 단위가 아니라는 점이 핵심 오답 포인트입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다."
+        ],
+        "exam_traps": [
+          "1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'malloc (Memory Allocation)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'free (Memory Deallocation)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '바이트 단위 할당'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. malloc의 인자는 '바이트'입니다. (1 Byte = 8 Bits)"
+        ],
+        "detailed_summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다. malloc() 함수는 인자로 전달된 '바이트(byte)' 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 malloc() 함수에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc은 바이트(Byte) 단위로 메모리를 할당합니다. 비트(Bit) 단위가 아니라는 점이 핵심 오답 포인트입니다. 시험 포인트는 1번: 실행 중에 메모리를 할당하므로 동적 할당이 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "Choice 5 is a placeholder from the image layout, ignore it."
+        ]
+      },
+      "keywords": [
+        "malloc",
+        "동적 메모리 할당",
+        "C언어",
+        "byte",
+        "NULL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3ba0d235234748a5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 46
+        },
+        "source_explanation": "실제로 사용되지 않으면서 가용 공간 리스트에 반환되지 않는 메모리 공간인 가비지(Garbage)를 강제로 해제하여 사용할 수 있도록 하는 모듈을 가비지 컬렉터(Garbage Collector)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "동적 메모리 할당"
+        ],
+        "chapter_label": "동적 메모리 할당",
+        "chapter_key": "프로그래밍 언어 활용 > 동적 메모리 할당",
+        "chapter_id": "chapter_355"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_070",
+        "topic_title": "동적 메모리 할당",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "동적 메모리 할당",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Heap Collector"
+          },
+          {
+            "label": "2",
+            "text": "Garbage Collector"
+          },
+          {
+            "label": "3",
+            "text": "Memory Collector"
+          },
+          {
+            "label": "4",
+            "text": "Variable Collector"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Garbage Collector"
+        ],
+        "answer_text": "Garbage Collector"
+      },
+      "explanation": {
+        "source_text": "실제로 사용되지 않으면서 가용 공간 리스트에 반환되지 않는 메모리 공간인 가비지(Garbage)를 강제로 해제하여 사용할 수 있도록 하는 모듈을 가비지 컬렉터(Garbage Collector)라고 합니다.",
+        "summary": "Java의 자동 메모리 관리 메커니즘인 가비지 컬렉션에 대해 묻는 문제입니다.",
+        "why_correct": [
+          "가비지 컬렉터는 더 이상 참조되지 않는 객체(가비지)를 찾아 메모리에서 해제하는 역할을 합니다."
+        ],
+        "why_others_wrong": [
+          "나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+        ],
+        "key_concepts": [
+          "가비지 컬렉션(Garbage Collection)",
+          "힙 메모리 관리"
+        ],
+        "memory_cues": [
+          "쓰레기(Garbage) 수집기(Collector)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Heap Collector",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Garbage Collector'인데 이 선택지는 'Heap Collector'이므로 일치하지 않습니다. 나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "Garbage Collector",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Garbage Collector'와 일치합니다. 가비지 컬렉터는 더 이상 참조되지 않는 객체(가비지)를 찾아 메모리에서 해제하는 역할을 합니다."
+          },
+          {
+            "label": "3",
+            "text": "Memory Collector",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Garbage Collector'인데 이 선택지는 'Memory Collector'이므로 일치하지 않습니다. 나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "Variable Collector",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Garbage Collector'인데 이 선택지는 'Variable Collector'이므로 일치하지 않습니다. 나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은?",
+          "핵심 개념을 떠올립니다. 가비지 컬렉션(Garbage Collection), 힙 메모리 관리",
+          "정답 판단 근거를 적용합니다. 가비지 컬렉터는 더 이상 참조되지 않는 객체(가비지)를 찾아 메모리에서 해제하는 역할을 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+        ],
+        "exam_traps": [
+          "나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '가비지 컬렉션(Garbage Collection)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '힙 메모리 관리'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 쓰레기(Garbage) 수집기(Collector)"
+        ],
+        "detailed_summary": "Java의 자동 메모리 관리 메커니즘인 가비지 컬렉션에 대해 묻는 문제입니다. 실제로 사용되지 않으면서 가용 공간 리스트에 반환되지 않는 메모리 공간인 가비지(Garbage)를 강제로 해제하여 사용할 수 있도록 하는 모듈을 가비지 컬렉터(Garbage Collector)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. JAVA에서 힙(Heap)에 남아있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈은? 정답입니다. 이 선택지는 실제 정답인 '2번 Garbage Collector'와 일치합니다. 가비지 컬렉터는 더 이상 참조되지 않는 객체(가비지)를 찾아 메모리에서 해제하는 역할을 합니다. 시험 포인트는 나머지 보기들은 존재하지 않거나 일반적인 용어가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "Garbage Collector",
+        "Heap Memory",
+        "Memory Management"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0041",
+            "page_number": 41,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0041.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1383,
+            "file_size_bytes": 875955,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0042",
+            "page_number": 42,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0042.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1383,
+            "file_size_bytes": 913369,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0043",
+            "page_number": 43,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0043.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1382,
+            "file_size_bytes": 840600,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0044",
+            "page_number": 44,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0044.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1382,
+            "file_size_bytes": 748034,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0045",
+            "page_number": 45,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0045.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1383,
+            "file_size_bytes": 552644,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0046",
+            "page_number": 46,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0046.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1383,
+            "file_size_bytes": 1074950,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0041",
+          "page_number": 41,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0041.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1383,
+          "file_size_bytes": 875955,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0041",
+          "page_number": 41,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0041.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1383,
+          "file_size_bytes": 875955,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_e2cea65984bc2ab2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          94
+        ],
+        "page_span": {
+          "start_page": 94,
+          "end_page": 94
+        },
+        "source_explanation": "전문가의 조언 | malloc( ) 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_070",
+        "topic_title": "동적 메모리 할당",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "동적 메모리 할당",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "사용자가 입력한 bit만큼 메모리를 할당한다."
+        ],
+        "answer_text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | malloc( ) 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다.",
+        "summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "malloc() 함수는 인자로 전달된 바이트(Byte) 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+        ],
+        "key_concepts": [
+          "malloc",
+          "Byte 단위 할당",
+          "동적 할당"
+        ],
+        "memory_cues": [
+          "malloc은 바이트 단위!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.'이므로 일치하지 않습니다. 1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc() 함수는 인자로 전달된 바이트(Byte) 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 'free 명령어로 할당된 메모리를 해제한다.'이므로 일치하지 않습니다. 1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '메모리 할당이 불가능할 경우 NULL이 반환된다.'이므로 일치하지 않습니다. 1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. malloc, Byte 단위 할당, 동적 할당",
+          "정답 판단 근거를 적용합니다. malloc() 함수는 인자로 전달된 바이트(Byte) 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+        ],
+        "exam_traps": [
+          "1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'malloc'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Byte 단위 할당'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '동적 할당'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. malloc은 바이트 단위!"
+        ],
+        "detailed_summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다. 전문가의 조언 | malloc( ) 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc() 함수는 인자로 전달된 바이트(Byte) 단위의 크기만큼 메모리를 할당합니다. 비트(bit) 단위가 아닙니다. 시험 포인트는 1번: 동적 할당의 정의입니다. 3번: free()로 해제합니다. 4번: 할당 실패 시 NULL을 반환합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "동적 메모리 할당",
+        "malloc",
+        "free"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5cb0690793cdb8c2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "malloc() 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "동적 메모리 할당"
+        ],
+        "chapter_label": "동적 메모리 할당",
+        "chapter_key": "프로그래밍 언어 활용 > 동적 메모리 할당",
+        "chapter_id": "chapter_355"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_070",
+        "topic_title": "동적 메모리 할당",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "동적 메모리 할당",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "사용자가 입력한 bit만큼 메모리를 할당한다."
+        ],
+        "answer_text": "사용자가 입력한 bit만큼 메모리를 할당한다."
+      },
+      "explanation": {
+        "source_text": "malloc() 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다.",
+        "summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "malloc() 함수는 인자로 전달된 크기를 바이트(Byte) 단위로 인식하여 메모리를 할당합니다. 비트(bit) 단위가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1번은 동적 할당의 정의입니다.",
+          "3번은 할당된 메모리를 반환할 때 free()를 사용하는 것이 맞습니다.",
+          "4번은 힙 메모리가 부족하여 할당에 실패하면 NULL 포인터를 반환합니다."
+        ],
+        "key_concepts": [
+          "malloc",
+          "free",
+          "Byte 단위 할당"
+        ],
+        "memory_cues": [
+          "malloc(size_t size)에서 size는 바이트 단위!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '원하는 시점에 원하는 만큼 메모리를 동적으로 할당한다.'이므로 일치하지 않습니다. 1번은 동적 할당의 정의입니다. 3번은 할당된 메모리를 반환할 때 free()를 사용하는 것이 맞습니다."
+          },
+          {
+            "label": "2",
+            "text": "사용자가 입력한 bit만큼 메모리를 할당한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc() 함수는 인자로 전달된 크기를 바이트(Byte) 단위로 인식하여 메모리를 할당합니다. 비트(bit) 단위가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "free 명령어로 할당된 메모리를 해제한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 'free 명령어로 할당된 메모리를 해제한다.'이므로 일치하지 않습니다. 1번은 동적 할당의 정의입니다. 3번은 할당된 메모리를 반환할 때 free()를 사용하는 것이 맞습니다."
+          },
+          {
+            "label": "4",
+            "text": "메모리 할당이 불가능할 경우 NULL이 반환된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'인데 이 선택지는 '메모리 할당이 불가능할 경우 NULL이 반환된다.'이므로 일치하지 않습니다. 1번은 동적 할당의 정의입니다. 3번은 할당된 메모리를 반환할 때 free()를 사용하는 것이 맞습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. malloc, free, Byte 단위 할당",
+          "정답 판단 근거를 적용합니다. malloc() 함수는 인자로 전달된 크기를 바이트(Byte) 단위로 인식하여 메모리를 할당합니다. 비트(bit) 단위가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 동적 할당의 정의입니다."
+        ],
+        "exam_traps": [
+          "1번은 동적 할당의 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'malloc'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'free'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Byte 단위 할당'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. malloc(size_t size)에서 size는 바이트 단위!"
+        ],
+        "detailed_summary": "C언어의 동적 메모리 할당 함수인 malloc()의 특징을 묻는 문제입니다. malloc() 함수는 입력한 Byte만큼 메모리를 할당하는 함수입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 72. C 언어에서 malloc( ) 함수에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 사용자가 입력한 bit만큼 메모리를 할당한다.'와 일치합니다. malloc() 함수는 인자로 전달된 크기를 바이트(Byte) 단위로 인식하여 메모리를 할당합니다. 비트(bit) 단위가 아닙니다. 시험 포인트는 1번은 동적 할당의 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "malloc",
+        "동적 메모리 할당",
+        "C언어",
+        "힙 영역"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

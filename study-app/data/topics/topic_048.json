@@ -1,0 +1,3254 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_048",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      219,
+      220
+    ],
+    "source_lecture_ids": [
+      "0219_219",
+      "0220_220"
+    ],
+    "source_titles": [
+      "CRUD 분석",
+      "인덱스"
+    ],
+    "keywords": [
+      "CRUD",
+      "분석",
+      "인덱스"
+    ],
+    "highlight_keywords": [
+      "CRUD",
+      "CRUD 분석",
+      "분석을",
+      "데이터베이스",
+      "트랜잭션의",
+      "학번",
+      "생년월일",
+      "이름",
+      "전화",
+      "인덱스"
+    ],
+    "secondary_keywords": [
+      "외부 트랜잭션 부하 집중 채널 파악",
+      "CRUD 분석 학습 시작 안내",
+      "CRUD 용어의 정의 설명",
+      "Create",
+      "Read",
+      "테이블에",
+      "인덱스(Index)의 개념",
+      "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+      "데이터",
+      "인덱스의",
+      "포인터(주소)",
+      "인덱스를"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0219_219",
+      "sequence": 219,
+      "number": "219",
+      "course_code": "350217",
+      "title": "CRUD 분석",
+      "duration_seconds": 124,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "tokens": [
+            "CRUD"
+          ],
+          "score": 41,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "CRUD 분석",
+          "tokens": [
+            "CRUD",
+            "분석"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "분석을",
+          "tokens": [
+            "분석을"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션의",
+          "tokens": [
+            "트랜잭션의"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "외부 트랜잭션 부하 집중 채널 파악",
+          "tokens": [
+            "외부",
+            "트랜잭션",
+            "부하",
+            "집중",
+            "채널",
+            "파악"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "CRUD 분석 학습 시작 안내",
+          "tokens": [
+            "CRUD",
+            "분석",
+            "학습",
+            "시작",
+            "안내"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "CRUD 용어의 정의 설명",
+          "tokens": [
+            "CRUD",
+            "용어의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Create",
+          "tokens": [
+            "Create"
+          ],
+          "score": 9,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Read",
+          "tokens": [
+            "Read"
+          ],
+          "score": 9,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "테이블에",
+          "tokens": [
+            "테이블에"
+          ],
+          "score": 9,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_048-subtopic-001-source-seg-001::01",
+          "prompt": "______ 분석 학습 시작 안내",
+          "answer": "CRUD",
+          "original": "CRUD 분석 학습 시작 안내",
+          "keyword": "CRUD",
+          "source_segment_id": "topic_048-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'CRUD'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-001-source-seg-001::02",
+          "prompt": "______ 학습 시작 안내",
+          "answer": "CRUD 분석",
+          "original": "CRUD 분석 학습 시작 안내",
+          "keyword": "CRUD 분석",
+          "source_segment_id": "topic_048-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'CRUD 분석'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-001-source-seg-004::03",
+          "prompt": "CRUD ______ 통한 물리적 데이터베이스 설계 최적화",
+          "answer": "분석을",
+          "original": "CRUD 분석을 통한 물리적 데이터베이스 설계 최적화",
+          "keyword": "분석을",
+          "source_segment_id": "topic_048-subtopic-001-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '분석을'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-001-source-seg-003::04",
+          "prompt": "CRUD 분석은 ______ 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것.",
+          "answer": "데이터베이스",
+          "original": "CRUD 분석은 데이터베이스 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것.",
+          "keyword": "데이터베이스",
+          "source_segment_id": "topic_048-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0220_220",
+      "sequence": 220,
+      "number": "220",
+      "course_code": "350218",
+      "title": "인덱스",
+      "duration_seconds": 704,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "segment_count": 41,
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "tokens": [
+            "학번"
+          ],
+          "score": 187,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "생년월일",
+          "tokens": [
+            "생년월일"
+          ],
+          "score": 150,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "이름",
+          "tokens": [
+            "이름"
+          ],
+          "score": 150,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "전화",
+          "tokens": [
+            "전화"
+          ],
+          "score": 150,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "인덱스",
+          "tokens": [
+            "인덱스"
+          ],
+          "score": 124,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "tokens": [
+            "인덱스",
+            "Index",
+            "개념"
+          ],
+          "score": 72,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "tokens": [
+            "학생",
+            "릴레이션의",
+            "학번",
+            "속성에",
+            "인덱스"
+          ],
+          "score": 56,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "인덱스의",
+          "tokens": [
+            "인덱스의"
+          ],
+          "score": 38,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "포인터(주소)",
+          "tokens": [
+            "포인터",
+            "주소"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "인덱스를",
+          "tokens": [
+            "인덱스를"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_048-subtopic-002-source-seg-001::01",
+          "prompt": "______ 개념 소개 시작",
+          "answer": "인덱스",
+          "original": "인덱스 개념 소개 시작",
+          "keyword": "인덱스",
+          "source_segment_id": "topic_048-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '인덱스'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-002-source-seg-002::02",
+          "prompt": "인덱스는 ______ 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+          "answer": "데이터",
+          "original": "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+          "keyword": "데이터",
+          "source_segment_id": "topic_048-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-002-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______ 개념에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "인덱스의",
+          "original": "이번 시간에는 우리 인덱스의 개념에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "인덱스의",
+          "source_segment_id": "topic_048-subtopic-002-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '인덱스의'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_048-subtopic-002-source-seg-004::04",
+          "prompt": "______ 통한 빠른 데이터 검색",
+          "answer": "인덱스를",
+          "original": "인덱스를 통한 빠른 데이터 검색",
+          "keyword": "인덱스를",
+          "source_segment_id": "topic_048-subtopic-002-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '인덱스를'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_048",
+    "sequence": 48,
+    "number": "48",
+    "title": "CRUD 분석과 인덱스",
+    "title_raw": "CRUD 분석과 인덱스",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 2,
+    "source_sequences": [
+      219,
+      220
+    ],
+    "source_titles": [
+      "CRUD 분석",
+      "인덱스"
+    ],
+    "preview_text": "CRUD 분석, 인덱스",
+    "segment_count": 49,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 CRUD 분석, 인덱스을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 CRUD 분석, 인덱스을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 2개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 828,
+    "source_titles_preview": [
+      "CRUD 분석",
+      "인덱스"
+    ],
+    "highlight_keywords": [
+      "CRUD",
+      "CRUD 분석",
+      "분석을",
+      "데이터베이스",
+      "트랜잭션의",
+      "학번",
+      "생년월일",
+      "이름",
+      "전화",
+      "인덱스"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_048-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "CRUD 분석 학습 시작 안내",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 CRUD 분석에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 CRUD 분석에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "CRUD 분석 학습 시작 안내",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:29",
+      "start_seconds": 9,
+      "end_seconds": 29,
+      "duration_seconds": 20,
+      "timeline_summary": "CRUD 용어의 정의 설명",
+      "screen_text_lines": [
+        "CRUD는 '생성(Create), 읽기(Read), 갱신(Update), 삭제(Delete)'의 앞 글자만 모아서 만든 용어"
+      ],
+      "screen_text": "CRUD는 '생성(Create), 읽기(Read), 갱신(Update), 삭제(Delete)'의 앞 글자만 모아서 만든 용어",
+      "spoken_sentences": [
+        "자 우리 CRUD요.",
+        "여기서 CRUD는 크레이트(Create), 크레이트 생성의 C.",
+        "그리고 리드(Read), 읽기의 R.",
+        "그리고 우리 갱신 업데이트(Update)의 U.",
+        "그리고 삭제 딜리트(Delete)의 D.",
+        "요 앞 글자만 따서 모아놓은 그런 용어가 우리 CRUD요."
+      ],
+      "spoken_text": "자 우리 CRUD요. 여기서 CRUD는 크레이트(Create), 크레이트 생성의 C. 그리고 리드(Read), 읽기의 R. 그리고 우리 갱신 업데이트(Update)의 U. 그리고 삭제 딜리트(Delete)의 D. 요 앞 글자만 따서 모아놓은 그런 용어가 우리 CRUD요.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 용어의 정의 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        },
+        {
+          "keyword": "Create",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 9
+        },
+        {
+          "keyword": "Read",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:00:29",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 29,
+      "end_seconds": 46,
+      "duration_seconds": 17,
+      "timeline_summary": "CRUD 분석의 개념 및 CRUD 매트릭스 작성",
+      "screen_text_lines": [
+        "CRUD 분석은 데이터베이스 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것."
+      ],
+      "screen_text": "CRUD 분석은 데이터베이스 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것.",
+      "spoken_sentences": [
+        "이 CRUD 분석이라는 거는 데이터베이스 테이블에 변화를 주는, 변화주는 그런 트랜잭션의 CRUD 연산에 대해서 CRUD 매트릭스라는 거를 작성해서 어떤 트랜잭션들이 발생하는지 그걸 분석하는 걸 보고 얘기하는데"
+      ],
+      "spoken_text": "이 CRUD 분석이라는 거는 데이터베이스 테이블에 변화를 주는, 변화주는 그런 트랜잭션의 CRUD 연산에 대해서 CRUD 매트릭스라는 거를 작성해서 어떤 트랜잭션들이 발생하는지 그걸 분석하는 걸 보고 얘기하는데",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 46,
+      "end_seconds": 60,
+      "duration_seconds": 14,
+      "timeline_summary": "CRUD 분석을 통한 물리적 데이터베이스 설계 최적화",
+      "screen_text_lines": [
+        "CRUD 분석은 데이터베이스 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것."
+      ],
+      "screen_text": "CRUD 분석은 데이터베이스 테이블에 변화를 주는 트랜잭션의 CRUD 연산에 대해 CRUD 매트릭스를 작성하여 분석하는 것.",
+      "spoken_sentences": [
+        "얘는 테이블에 발생하는 그런 트랜잭션 같은 것들을 싹 다 분석을 한 다음에 그걸 가지고 우리가 물리적인 데이터베이스를 설계를 할 때 구조를 최적화할 때 우리가 사용하기 위해서 CRUD 분석이라는 걸 우리가 하는 겁니다."
+      ],
+      "spoken_text": "얘는 테이블에 발생하는 그런 트랜잭션 같은 것들을 싹 다 분석을 한 다음에 그걸 가지고 우리가 물리적인 데이터베이스를 설계를 할 때 구조를 최적화할 때 우리가 사용하기 위해서 CRUD 분석이라는 걸 우리가 하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분석을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:01:00",
+      "end_time_hms": "00:01:17",
+      "start_seconds": 60,
+      "end_seconds": 77,
+      "duration_seconds": 17,
+      "timeline_summary": "트랜잭션 발생 횟수 파악을 통한 데이터 양 유추",
+      "screen_text_lines": [
+        "CRUD 분석으로 테이블에 발생되는 트랜잭션의 주기별 발생 횟수를 파악하고 연관된 테이블들을 분석하면 테이블에 저장되는 데이터의 양을 유추할 수 있음."
+      ],
+      "screen_text": "CRUD 분석으로 테이블에 발생되는 트랜잭션의 주기별 발생 횟수를 파악하고 연관된 테이블들을 분석하면 테이블에 저장되는 데이터의 양을 유추할 수 있음.",
+      "spoken_sentences": [
+        "해서 이 CRUD 분석으로 테이블에서 발생되는 그런 트랜잭션의 주기별로, 주기별로 발생 횟수 같은 것들을 싹 다 파악을 하고 연관된 그 테이블들을 싹 다 분석을 합니다.",
+        "분석을 해서 테이블에 저장된 그런 데이터 양도 우리가 유추를 할 수가 있고요."
+      ],
+      "spoken_text": "해서 이 CRUD 분석으로 테이블에서 발생되는 그런 트랜잭션의 주기별로, 주기별로 발생 횟수 같은 것들을 싹 다 파악을 하고 연관된 그 테이블들을 싹 다 분석을 합니다. 분석을 해서 테이블에 저장된 그런 데이터 양도 우리가 유추를 할 수가 있고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분석을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:01:17",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 77,
+      "end_seconds": 90,
+      "duration_seconds": 13,
+      "timeline_summary": "트랜잭션 집중 테이블 파악 및 디스크 구성 활용",
+      "screen_text_lines": [
+        "CRUD 분석을 통해 많은 트랜잭션이 몰리는 테이블을 파악할 수 있으므로 디스크 구성 시 유용한 자료로 활용할 수 있음."
+      ],
+      "screen_text": "CRUD 분석을 통해 많은 트랜잭션이 몰리는 테이블을 파악할 수 있으므로 디스크 구성 시 유용한 자료로 활용할 수 있음.",
+      "spoken_sentences": [
+        "그리고 CRUD 분석을 통해서 많은 트랜잭션들이 몰리는 그 테이블이 어떤 건지 그런 것도 파악을 할 수 있어요.",
+        "이런 것들을 파악을 해서 디스크를 구성할 때 유용한 자료로 활용할 수 있습니다."
+      ],
+      "spoken_text": "그리고 CRUD 분석을 통해서 많은 트랜잭션들이 몰리는 그 테이블이 어떤 건지 그런 것도 파악을 할 수 있어요. 이런 것들을 파악을 해서 디스크를 구성할 때 유용한 자료로 활용할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분석을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:46",
+      "start_seconds": 90,
+      "end_seconds": 106,
+      "duration_seconds": 16,
+      "timeline_summary": "외부 트랜잭션 부하 집중 채널 파악",
+      "screen_text_lines": [
+        "CRUD 분석을 통해 외부 프로세스 트랜잭션의 부하가 집중되는 데이터베이스 채널을 파악하고"
+      ],
+      "screen_text": "CRUD 분석을 통해 외부 프로세스 트랜잭션의 부하가 집중되는 데이터베이스 채널을 파악하고",
+      "spoken_sentences": [
+        "그리고 이 CRUD 분석을 통해서 외부 프로세스의 트랜잭션의 부하가 집중되는 그런 데이터베이스 채널을 파악하고 분산을 시키면 되겠죠."
+      ],
+      "spoken_text": "그리고 이 CRUD 분석을 통해서 외부 프로세스의 트랜잭션의 부하가 집중되는 그런 데이터베이스 채널을 파악하고 분산을 시키면 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분석을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        },
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0219_219",
+      "subtopic_title": "CRUD 분석",
+      "subtopic_sequence": 219,
+      "subtopic_number": "219",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JqJPK2V5SvQ",
+      "start_time_hms": "00:01:46",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 106,
+      "end_seconds": 124,
+      "duration_seconds": 18,
+      "timeline_summary": "부하 분산을 통한 연결 지연 및 타임아웃 오류 방지",
+      "screen_text_lines": [
+        "분산시킴으로써 연결 지연이나 타임아웃 오류를 방지할 수 있음."
+      ],
+      "screen_text": "분산시킴으로써 연결 지연이나 타임아웃 오류를 방지할 수 있음.",
+      "spoken_sentences": [
+        "분산을 시킴으로써 연결 지연이 됐든 타임아웃 오류, 이런 것들을 우리가 방지할 수 있습니다.",
+        "해서 이런 것들 때문에 우리가 CRUD, CRUD 분석을 우리가 수행하는 거예요.",
+        "이 CRUD 분석을 왜 하는지, CRUD 분석이라는 게 뭔지 정확하게 여러분들 알고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "분산을 시킴으로써 연결 지연이 됐든 타임아웃 오류, 이런 것들을 우리가 방지할 수 있습니다. 해서 이런 것들 때문에 우리가 CRUD, CRUD 분석을 우리가 수행하는 거예요. 이 CRUD 분석을 왜 하는지, CRUD 분석이라는 게 뭔지 정확하게 여러분들 알고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "CRUD",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "분석을",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "인덱스 개념 소개 시작",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념"
+      ],
+      "screen_text": "인덱스(Index)의 개념",
+      "spoken_sentences": [
+        "이번 시간에는 우리 인덱스의 개념에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 인덱스의 개념에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 8,
+      "end_seconds": 24,
+      "duration_seconds": 16,
+      "timeline_summary": "인덱스의 정의와 책의 목차 비유",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>",
+      "spoken_sentences": [
+        "자 우리 인덱스라는 거는 색인, 목차, 우리말로 그렇게 부르기도 한다고 그랬어요.",
+        "해서 여러분들이 지금 교재 가지고 계시잖아요.",
+        "교재에서 어떤 특정 내용을 찾을 거예요.",
+        "그러면 책을 펴놓고 한 장 한 장 넘겨가면서 그 내용을 찾아요?"
+      ],
+      "spoken_text": "자 우리 인덱스라는 거는 색인, 목차, 우리말로 그렇게 부르기도 한다고 그랬어요. 해서 여러분들이 지금 교재 가지고 계시잖아요. 교재에서 어떤 특정 내용을 찾을 거예요. 그러면 책을 펴놓고 한 장 한 장 넘겨가면서 그 내용을 찾아요?",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 24,
+      "end_seconds": 43,
+      "duration_seconds": 19,
+      "timeline_summary": "책의 목차를 사용하는 이유",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>",
+      "spoken_sentences": [
+        "아니죠 여러분들은 뭘 봐요?",
+        "맨 앞부분에 있는 차례, 목차, 그거를 펴겠죠.",
+        "펴서 거기서 내가 원하는 그 내용이 몇 페이지에 있는지 그걸 찾을 거예요.",
+        "찾아가지고 그 페이지로 해당 페이지로 한 번에 열어서 찾아가잖아요."
+      ],
+      "spoken_text": "아니죠 여러분들은 뭘 봐요? 맨 앞부분에 있는 차례, 목차, 그거를 펴겠죠. 펴서 거기서 내가 원하는 그 내용이 몇 페이지에 있는지 그걸 찾을 거예요. 찾아가지고 그 페이지로 해당 페이지로 한 번에 열어서 찾아가잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:00:52",
+      "start_seconds": 43,
+      "end_seconds": 52,
+      "duration_seconds": 9,
+      "timeline_summary": "인덱스를 통한 빠른 데이터 검색",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>",
+      "spoken_sentences": [
+        "그렇게 해야 좀 더 내가 원하는 내용을 책에서 빨리빨리 찾을 수 있다고요.",
+        "그렇게 책에서 어떤 특정 내용을 빨리빨리 찾을 수 있게 만들어 놓은 것, 그 차례, 목차가 우리 인덱스라는 거예요."
+      ],
+      "spoken_text": "그렇게 해야 좀 더 내가 원하는 내용을 책에서 빨리빨리 찾을 수 있다고요. 그렇게 책에서 어떤 특정 내용을 빨리빨리 찾을 수 있게 만들어 놓은 것, 그 차례, 목차가 우리 인덱스라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:00:52",
+      "end_time_hms": "00:01:09",
+      "start_seconds": 52,
+      "end_seconds": 69,
+      "duration_seconds": 17,
+      "timeline_summary": "데이터베이스에서의 인덱스 역할",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>",
+      "spoken_sentences": [
+        "우리 데이터베이스라는 곳에는 데이터가 엄청나게 많이 들어 있겠죠.",
+        "그 여러 개, 그 수많은 데이터들 중에서 내가 원하는 걸 빨리빨리 찾기 위해서 우리가 사용하는 게 인덱스라는 겁니다.",
+        "자 그럼 인덱스가 뭔지 조금만 더 보자고요."
+      ],
+      "spoken_text": "우리 데이터베이스라는 곳에는 데이터가 엄청나게 많이 들어 있겠죠. 그 여러 개, 그 수많은 데이터들 중에서 내가 원하는 걸 빨리빨리 찾기 위해서 우리가 사용하는 게 인덱스라는 겁니다. 자 그럼 인덱스가 뭔지 조금만 더 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:01:09",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 69,
+      "end_seconds": 85,
+      "duration_seconds": 16,
+      "timeline_summary": "학생 테이블 예시 설명",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "예를 들어서 우리 학생이라는 테이블에다가 내가 데이터가 요런 게 있다라고 가정을 해보자고요.",
+        "근데 우리가 테이블을 만들 때는 요런 식으로 만들지만 이런 한 사람 한 사람 한 사람 한 사람의 데이터가 실제 우리 데이터베이스에 저장이 될 때"
+      ],
+      "spoken_text": "예를 들어서 우리 학생이라는 테이블에다가 내가 데이터가 요런 게 있다라고 가정을 해보자고요. 근데 우리가 테이블을 만들 때는 요런 식으로 만들지만 이런 한 사람 한 사람 한 사람 한 사람의 데이터가 실제 우리 데이터베이스에 저장이 될 때",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 85,
+      "end_seconds": 102,
+      "duration_seconds": 17,
+      "timeline_summary": "실제 저장 장치의 물리적 구조 설명",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "실제 저장되는 그 저장 공간이 있겠죠.",
+        "만약에 여기가 그 실제 저장 공간이라고 한번 생각을 한번 해보자고요.",
+        "이렇게 데이터베이스 기억 장소가 있을 때 이 기억 장소 안에는 뭔가 내용들이 쭉쭉 들어 있을 거예요."
+      ],
+      "spoken_text": "실제 저장되는 그 저장 공간이 있겠죠. 만약에 여기가 그 실제 저장 공간이라고 한번 생각을 한번 해보자고요. 이렇게 데이터베이스 기억 장소가 있을 때 이 기억 장소 안에는 뭔가 내용들이 쭉쭉 들어 있을 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:01:42",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 102,
+      "end_seconds": 124,
+      "duration_seconds": 22,
+      "timeline_summary": "데이터가 무작위로 저장되는 과정 예시",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "쭉쭉 들어 있다가 만약에 학번이 1001번인, 1001번인 이 학생을 만약에 등록을 시켜요.",
+        "등록을 시켰더니 이 1001번 학생은 만약에 이 위치에 들어갔다라고 가정을 하자고요.",
+        "그리고 나서 또 데이터를 다른 것들을 막 저장을 시켰습니다."
+      ],
+      "spoken_text": "쭉쭉 들어 있다가 만약에 학번이 1001번인, 1001번인 이 학생을 만약에 등록을 시켜요. 등록을 시켰더니 이 1001번 학생은 만약에 이 위치에 들어갔다라고 가정을 하자고요. 그리고 나서 또 데이터를 다른 것들을 막 저장을 시켰습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:02:04",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 124,
+      "end_seconds": 141,
+      "duration_seconds": 17,
+      "timeline_summary": "다양한 데이터가 섞여서 저장되는 양상",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "학교 정보도 집어넣어야 되고 교수 테이블에 있는 교수님들도 막 넣어야 되고 집어넣어야 되겠죠.",
+        "해서 막 데이터를 넣고 있는데 또 1002번 학생이 찾아와서 우리 학교에다가 등록금을 냈습니다."
+      ],
+      "spoken_text": "학교 정보도 집어넣어야 되고 교수 테이블에 있는 교수님들도 막 넣어야 되고 집어넣어야 되겠죠. 해서 막 데이터를 넣고 있는데 또 1002번 학생이 찾아와서 우리 학교에다가 등록금을 냈습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:02:21",
+      "end_time_hms": "00:02:35",
+      "start_seconds": 141,
+      "end_seconds": 155,
+      "duration_seconds": 14,
+      "timeline_summary": "데이터 등록에 따른 저장 위치 변화",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "그러면 이 학생도 등록을 시켜줘야죠.",
+        "해서 1002번이 만약에 여기에 들어갔다라고 가정을 하자고요.",
+        "그리고 여러 가지 학교 사진 같은 것도 막 등록시키고 등록시키고 있어요."
+      ],
+      "spoken_text": "그러면 이 학생도 등록을 시켜줘야죠. 해서 1002번이 만약에 여기에 들어갔다라고 가정을 하자고요. 그리고 여러 가지 학교 사진 같은 것도 막 등록시키고 등록시키고 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:02:35",
+      "end_time_hms": "00:02:49",
+      "start_seconds": 155,
+      "end_seconds": 169,
+      "duration_seconds": 14,
+      "timeline_summary": "삭제된 빈 공간에 새 데이터가 채워짐",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "그러다가 1003번 학생이 들어왔어요.",
+        "1003번은 만약에 여기에 저장됐다라고 가정을 하자고요.",
+        "그리고 다른 데이터들 막 집어넣었어요.",
+        "집어넣고 있다가 또 1004번이 왔어요.",
+        "해서 1004번 학생은 이곳에 저장이 됐고"
+      ],
+      "spoken_text": "그러다가 1003번 학생이 들어왔어요. 1003번은 만약에 여기에 저장됐다라고 가정을 하자고요. 그리고 다른 데이터들 막 집어넣었어요. 집어넣고 있다가 또 1004번이 왔어요. 해서 1004번 학생은 이곳에 저장이 됐고",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:02:49",
+      "end_time_hms": "00:03:03",
+      "start_seconds": 169,
+      "end_seconds": 183,
+      "duration_seconds": 14,
+      "timeline_summary": "불규칙하게 저장되는 데이터베이스 특징",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "중간에 만약에 뭔가 사진이 됐든 동영상이 됐든 그런 것들을 내가 여기다 넣어놨었는데 그거를 삭제를 했어요.",
+        "그럼 요 칸이 비어 있겠죠?",
+        "근데 만약에 1005번 학생이 들어왔어요.",
+        "그럼 1005번은 막 여기에 또 저장이 되고 저장이 될 거예요."
+      ],
+      "spoken_text": "중간에 만약에 뭔가 사진이 됐든 동영상이 됐든 그런 것들을 내가 여기다 넣어놨었는데 그거를 삭제를 했어요. 그럼 요 칸이 비어 있겠죠? 근데 만약에 1005번 학생이 들어왔어요. 그럼 1005번은 막 여기에 또 저장이 되고 저장이 될 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:03:03",
+      "end_time_hms": "00:03:20",
+      "start_seconds": 183,
+      "end_seconds": 200,
+      "duration_seconds": 17,
+      "timeline_summary": "수많은 데이터 사이에서 특정 데이터 찾기",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "요런 식으로 해서 학생 테이블에 있는 데이터도 저장이 될 거고 교수 테이블에 있는 것도 저장이 될 거고 학교 사진이다 동영상이다 학교와 관련된 모든 것들이 전부 다 이 데이터베이스에 전부 다 다 저장이 될 거란 말이에요."
+      ],
+      "spoken_text": "요런 식으로 해서 학생 테이블에 있는 데이터도 저장이 될 거고 교수 테이블에 있는 것도 저장이 될 거고 학교 사진이다 동영상이다 학교와 관련된 모든 것들이 전부 다 이 데이터베이스에 전부 다 다 저장이 될 거란 말이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:03:20",
+      "end_time_hms": "00:03:33",
+      "start_seconds": 200,
+      "end_seconds": 213,
+      "duration_seconds": 13,
+      "timeline_summary": "인덱스 없는 검색의 비효율성",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "근데 만약에 내가 1003번 학생, 1003번 학생을 내가 찾고 싶어요.",
+        "그래서 우리가 셀렉트 구문을 이용해서 데이터베이스에서 검색을 하겠죠.",
+        "검색을 하게 되면 이 데이터베이스에서 1003번 학생을 찾을 때"
+      ],
+      "spoken_text": "근데 만약에 내가 1003번 학생, 1003번 학생을 내가 찾고 싶어요. 그래서 우리가 셀렉트 구문을 이용해서 데이터베이스에서 검색을 하겠죠. 검색을 하게 되면 이 데이터베이스에서 1003번 학생을 찾을 때",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:03:33",
+      "end_time_hms": "00:03:46",
+      "start_seconds": 213,
+      "end_seconds": 226,
+      "duration_seconds": 13,
+      "timeline_summary": "기억 장소 전체를 순차적으로 뒤져야 함",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "우리가 이 표를 봤을 때는 금방금방 찾을 수 있지만 이런 데이터들은 실제로 이런 기억 장소 안에 들어 있잖아요.",
+        "해서 1003번 학생을 이 기억 장소에서 찾아서 그 사람의 데이터를 우리가 눈으로 볼 수 있게 화면에다 표시를 해줘야 된다고요."
+      ],
+      "spoken_text": "우리가 이 표를 봤을 때는 금방금방 찾을 수 있지만 이런 데이터들은 실제로 이런 기억 장소 안에 들어 있잖아요. 해서 1003번 학생을 이 기억 장소에서 찾아서 그 사람의 데이터를 우리가 눈으로 볼 수 있게 화면에다 표시를 해줘야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:03:46",
+      "end_time_hms": "00:04:00",
+      "start_seconds": 226,
+      "end_seconds": 240,
+      "duration_seconds": 14,
+      "timeline_summary": "데이터 위치에 따라 검색 시간 차이 발생",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "그때 야 너 1003번이야?",
+        "너 1003번이야?",
+        "1003번이야?",
+        "다 물어봐요.",
+        "다 물어보면서 이렇게 찾아요.",
+        "찾다 보니까 1003번이 저 뒤에 있죠?",
+        "뒤에 있으니까 그만큼 속도가 오래 걸릴 거예요."
+      ],
+      "spoken_text": "그때 야 너 1003번이야? 너 1003번이야? 1003번이야? 다 물어봐요. 다 물어보면서 이렇게 찾아요. 찾다 보니까 1003번이 저 뒤에 있죠? 뒤에 있으니까 그만큼 속도가 오래 걸릴 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:04:00",
+      "end_time_hms": "00:04:16",
+      "start_seconds": 240,
+      "end_seconds": 256,
+      "duration_seconds": 16,
+      "timeline_summary": "모든 데이터를 다 뒤져야 하는 비효율",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "만약에 또 내가 다른 작업을 하고 있는데 1005번 학생을 내가 셀렉트 구문으로 만약에 검색을 했어요.",
+        "그럼 또 처음부터 시작해서 또 찾아요.",
+        "너 1005번이야?",
+        "1005번이야?",
+        "하고 쭉쭉 찾아요.",
+        "그럼 1005번 학생은 그나마 요 앞쪽에 있으니까 금방 찾겠죠."
+      ],
+      "spoken_text": "만약에 또 내가 다른 작업을 하고 있는데 1005번 학생을 내가 셀렉트 구문으로 만약에 검색을 했어요. 그럼 또 처음부터 시작해서 또 찾아요. 너 1005번이야? 1005번이야? 하고 쭉쭉 찾아요. 그럼 1005번 학생은 그나마 요 앞쪽에 있으니까 금방 찾겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:04:16",
+      "end_time_hms": "00:04:29",
+      "start_seconds": 256,
+      "end_seconds": 269,
+      "duration_seconds": 13,
+      "timeline_summary": "검색 효율을 위해 인덱스가 필수적임",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "근데 만약에 1004번 학생을 찾는다고 생각해보세요.",
+        "1004번 학생 이 끝에 있잖아요.",
+        "그러면 그만큼 또 시간이 오래 걸리겠죠.",
+        "우리가 데이터베이스에 엄청나게 많은 데이터들이 들어 있는데 그 중에서 내가 원하는 데이터를 빨리빨리 검색하기 위해서 사용하는 게 우리 인덱스라는 거예요."
+      ],
+      "spoken_text": "근데 만약에 1004번 학생을 찾는다고 생각해보세요. 1004번 학생 이 끝에 있잖아요. 그러면 그만큼 또 시간이 오래 걸리겠죠. 우리가 데이터베이스에 엄청나게 많은 데이터들이 들어 있는데 그 중에서 내가 원하는 데이터를 빨리빨리 검색하기 위해서 사용하는 게 우리 인덱스라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:04:29",
+      "end_time_hms": "00:04:53",
+      "start_seconds": 269,
+      "end_seconds": 293,
+      "duration_seconds": 24,
+      "timeline_summary": "색인/목차와 데이터베이스 인덱스의 비유",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "책에도 수많은 정보가 들어 있어요.",
+        "그 중에서 내가 원하는 정보를 빨리빨리 찾기 위해서 우리가 색인 목차라는 걸 만들어 놨죠?",
+        "그것처럼 우리 데이터베이스에도 엄청나게 많은 데이터가 들어 있으니까 그 중에서 그 중에서 특정 내용을 찾을 때 좀 더 빠르게 찾기 위해서 우리가 인덱스라는 걸 사용하는 겁니다."
+      ],
+      "spoken_text": "책에도 수많은 정보가 들어 있어요. 그 중에서 내가 원하는 정보를 빨리빨리 찾기 위해서 우리가 색인 목차라는 걸 만들어 놨죠? 그것처럼 우리 데이터베이스에도 엄청나게 많은 데이터가 들어 있으니까 그 중에서 그 중에서 특정 내용을 찾을 때 좀 더 빠르게 찾기 위해서 우리가 인덱스라는 걸 사용하는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:04:53",
+      "end_time_hms": "00:05:13",
+      "start_seconds": 293,
+      "end_seconds": 313,
+      "duration_seconds": 20,
+      "timeline_summary": "기본키(학번)를 이용한 인덱스 구성",
+      "screen_text_lines": [
+        "학번",
+        "이름",
+        "생년월일",
+        "전화"
+      ],
+      "screen_text": "학번\n이름\n생년월일\n전화",
+      "spoken_sentences": [
+        "그럼 인덱스라는 건 어떻게 사용하냐.",
+        "우리가 보통 학교에서 특정 학생들을 우리가 검색을 할 때 주로 학번을 가지고 많이 검색을 하죠?",
+        "해서 이 학번이라는 게 우리 학생 테이블에서 유일하게 식별할 수 있는 그 키 값이 되겠죠?",
+        "해서 얘가 기본키로 설정이 되겠네요."
+      ],
+      "spoken_text": "그럼 인덱스라는 건 어떻게 사용하냐. 우리가 보통 학교에서 특정 학생들을 우리가 검색을 할 때 주로 학번을 가지고 많이 검색을 하죠? 해서 이 학번이라는 게 우리 학생 테이블에서 유일하게 식별할 수 있는 그 키 값이 되겠죠? 해서 얘가 기본키로 설정이 되겠네요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "생년월일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        },
+        {
+          "keyword": "전화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 150
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:05:13",
+      "end_time_hms": "00:05:32",
+      "start_seconds": 313,
+      "end_seconds": 332,
+      "duration_seconds": 19,
+      "timeline_summary": "키 값과 포인터로 인덱스 생성",
+      "screen_text_lines": [
+        "학번(키 값)",
+        "포인터(주소)",
+        "1001",
+        "159"
+      ],
+      "screen_text": "학번(키 값)\n포인터(주소)\n1001\n159",
+      "spoken_sentences": [
+        "그런 걸 가지고 인덱스로 만들어 주는 거예요.",
+        "해서 지금처럼 요렇게요.",
+        "해서 인덱스라는 거는 키 값이라 포인터, 포인터라는 걸로 구성이 되는데 그때 이 학생 테이블에서는 학번이 기본키잖아요.",
+        "그 기본키를 가지고 유일하게 식별할 수 있는 그 값을 가지고"
+      ],
+      "spoken_text": "그런 걸 가지고 인덱스로 만들어 주는 거예요. 해서 지금처럼 요렇게요. 해서 인덱스라는 거는 키 값이라 포인터, 포인터라는 걸로 구성이 되는데 그때 이 학생 테이블에서는 학번이 기본키잖아요. 그 기본키를 가지고 유일하게 식별할 수 있는 그 값을 가지고",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "포인터(주소)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:05:32",
+      "end_time_hms": "00:05:53",
+      "start_seconds": 332,
+      "end_seconds": 353,
+      "duration_seconds": 21,
+      "timeline_summary": "인덱스에 저장된 각 데이터의 실제 주소",
+      "screen_text_lines": [
+        "학번(키 값)",
+        "포인터(주소)",
+        "1001",
+        "159"
+      ],
+      "screen_text": "학번(키 값)\n포인터(주소)\n1001\n159",
+      "spoken_sentences": [
+        "이 1001번 이 학생은 실제 데이터가 이 기억 장소에 159번지에 있습니다.",
+        "1002번 학생은 200번지에 있습니다.",
+        "1003번 학생은 359번 그 주소에 있습니다.",
+        "1004번 학생은 471번 그 주소에 이 사람의 데이터가 들어 있습니다라고 해서"
+      ],
+      "spoken_text": "이 1001번 이 학생은 실제 데이터가 이 기억 장소에 159번지에 있습니다. 1002번 학생은 200번지에 있습니다. 1003번 학생은 359번 그 주소에 있습니다. 1004번 학생은 471번 그 주소에 이 사람의 데이터가 들어 있습니다라고 해서",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "포인터(주소)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:05:53",
+      "end_time_hms": "00:06:11",
+      "start_seconds": 353,
+      "end_seconds": 371,
+      "duration_seconds": 18,
+      "timeline_summary": "인덱스를 참조하여 데이터 주소로 직접 접근",
+      "screen_text_lines": [
+        "학번(키 값)",
+        "포인터(주소)",
+        "1001",
+        "159"
+      ],
+      "screen_text": "학번(키 값)\n포인터(주소)\n1001\n159",
+      "spoken_sentences": [
+        "요런 인덱스를 우리가 하나 만들어 주는 거예요.",
+        "그랬다가 특정 사용자가 1004번을 찾아요.",
+        "그러면은 이 기억 장소에서 1004번이 어디 있나 다 찾는 게 아니라 어떻게 한다?",
+        "이 인덱스를 먼저 찾아보더라."
+      ],
+      "spoken_text": "요런 인덱스를 우리가 하나 만들어 주는 거예요. 그랬다가 특정 사용자가 1004번을 찾아요. 그러면은 이 기억 장소에서 1004번이 어디 있나 다 찾는 게 아니라 어떻게 한다? 이 인덱스를 먼저 찾아보더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "포인터(주소)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:06:11",
+      "end_time_hms": "00:06:33",
+      "start_seconds": 371,
+      "end_seconds": 393,
+      "duration_seconds": 22,
+      "timeline_summary": "인덱스 구조: 키 값과 포인터의 쌍",
+      "screen_text_lines": [
+        "학번(키 값)",
+        "포인터(주소)",
+        "1001",
+        "159"
+      ],
+      "screen_text": "학번(키 값)\n포인터(주소)\n1001\n159",
+      "spoken_sentences": [
+        "해서 인덱스에 보니까 1004번 학생이 있죠?",
+        "이 1004번 학생은 실제 기억 장소 몇 번지에 저장돼 있대요?",
+        "471번지에 저장돼 있대요.",
+        "그러면 이 실제 기억 장소 471번지에 찾아가면 1004번이 있겠죠.",
+        "그렇게 해서 좀 더 빠르게 검색을 하기 위해서 우리가 인덱스라는 걸 쓰는 겁니다."
+      ],
+      "spoken_text": "해서 인덱스에 보니까 1004번 학생이 있죠? 이 1004번 학생은 실제 기억 장소 몇 번지에 저장돼 있대요? 471번지에 저장돼 있대요. 그러면 이 실제 기억 장소 471번지에 찾아가면 1004번이 있겠죠. 그렇게 해서 좀 더 빠르게 검색을 하기 위해서 우리가 인덱스라는 걸 쓰는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "포인터(주소)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:06:33",
+      "end_time_hms": "00:06:53",
+      "start_seconds": 393,
+      "end_seconds": 413,
+      "duration_seconds": 20,
+      "timeline_summary": "인덱스의 핵심 정의 요약",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조."
+      ],
+      "screen_text": "인덱스(Index)의 개념\n인덱스는 데이터 레코드를 빠르게 접근하기 위해 <키 값, 포인터> 쌍으로 구성되는 데이터 구조.",
+      "spoken_sentences": [
+        "해서 요 인덱스는 키 값과 실제 주소 포인터, 포인터, 이 두 가지로 구성이 된다.",
+        "그거 기억하시면 돼요.",
+        "해서 인덱스라는 거는 데이터 레코드를 빠르게 접근하기 위해서 우리가 키 값과 포인터 이 쌍으로 구성되는 데이터 구조를 보고 우리는 인덱스, 인덱스라고 하더라."
+      ],
+      "spoken_text": "해서 요 인덱스는 키 값과 실제 주소 포인터, 포인터, 이 두 가지로 구성이 된다. 그거 기억하시면 돼요. 해서 인덱스라는 거는 데이터 레코드를 빠르게 접근하기 위해서 우리가 키 값과 포인터 이 쌍으로 구성되는 데이터 구조를 보고 우리는 인덱스, 인덱스라고 하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:06:53",
+      "end_time_hms": "00:07:15",
+      "start_seconds": 413,
+      "end_seconds": 435,
+      "duration_seconds": 22,
+      "timeline_summary": "학생 릴레이션 예시를 통한 시각적 설명",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>",
+        "학번(키 값)"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>\n학번(키 값)",
+      "spoken_sentences": [
+        "이렇게 우리 학생이라는 요 테이블이 있을 때 이런 각각 데이터가 들어 있어요.",
+        "이런 데이터들은 실제 물리적인 그런 저장 장치에 어딘가에 저장이 돼 있겠죠?",
+        "해서 이 첫 번째 사람의 데이터는 100번지 요렇게 저장되어 있고 그리고 두 번째 사람이 300번지에"
+      ],
+      "spoken_text": "이렇게 우리 학생이라는 요 테이블이 있을 때 이런 각각 데이터가 들어 있어요. 이런 데이터들은 실제 물리적인 그런 저장 장치에 어딘가에 저장이 돼 있겠죠? 해서 이 첫 번째 사람의 데이터는 100번지 요렇게 저장되어 있고 그리고 두 번째 사람이 300번지에",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:07:15",
+      "end_time_hms": "00:07:35",
+      "start_seconds": 435,
+      "end_seconds": 455,
+      "duration_seconds": 20,
+      "timeline_summary": "키 값에 따른 물리적 주소 연결",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>",
+        "학번(키 값)"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>\n학번(키 값)",
+      "spoken_sentences": [
+        "그리고 세 번째 사람은 200번지에, 그리고 네 번째 사람은 400번지에 요렇게 실제 저장이 되어 있을 때 그때 이걸 가지고 인덱스를 구성하겠다 그랬을 때 지금처럼 키 값, 키 값과 포인터, 포인터라는 걸 쌍으로 해서 우리가 인덱스를 구성을 한다고요."
+      ],
+      "spoken_text": "그리고 세 번째 사람은 200번지에, 그리고 네 번째 사람은 400번지에 요렇게 실제 저장이 되어 있을 때 그때 이걸 가지고 인덱스를 구성하겠다 그랬을 때 지금처럼 키 값, 키 값과 포인터, 포인터라는 걸 쌍으로 해서 우리가 인덱스를 구성을 한다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:07:35",
+      "end_time_hms": "00:07:55",
+      "start_seconds": 455,
+      "end_seconds": 475,
+      "duration_seconds": 20,
+      "timeline_summary": "인덱스 사용 시 검색 속도 향상 효과",
+      "screen_text_lines": [
+        "인덱스(Index)의 개념",
+        "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+        "<인덱스>",
+        "학번(키 값)"
+      ],
+      "screen_text": "인덱스(Index)의 개념\n예 학생 릴레이션의 학번 속성에 대한 인덱스\n<인덱스>\n학번(키 값)",
+      "spoken_sentences": [
+        "해서 학번 이런 학번을 가지고 있는 이런 데이터는 실제 저장 장치에 몇 번지에 저장돼 있다?",
+        "300번지에 저장돼 있습니다.",
+        "그리고 학번이 지금처럼 요렇게 되는 그 데이터는 200번지에 저장돼 있다.",
+        "그러면 우리가 특정 학생을 찾아갈 때 학번을 보고 찾아가는데"
+      ],
+      "spoken_text": "해서 학번 이런 학번을 가지고 있는 이런 데이터는 실제 저장 장치에 몇 번지에 저장돼 있다? 300번지에 저장돼 있습니다. 그리고 학번이 지금처럼 요렇게 되는 그 데이터는 200번지에 저장돼 있다. 그러면 우리가 특정 학생을 찾아갈 때 학번을 보고 찾아가는데",
+      "highlight_keywords": [
+        {
+          "keyword": "학번",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 187
+        },
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스(Index)의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 72
+        },
+        {
+          "keyword": "예 학생 릴레이션의 학번 속성에 대한 인덱스",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:07:55",
+      "end_time_hms": "00:08:12",
+      "start_seconds": 475,
+      "end_seconds": 492,
+      "duration_seconds": 17,
+      "timeline_summary": "인덱스의 주요 특징 (1): 물리적 구조와 관련됨",
+      "screen_text_lines": [
+        "• 인덱스는 데이터가 저장된 물리적 구조와 밀접한 관계가 있음."
+      ],
+      "screen_text": "• 인덱스는 데이터가 저장된 물리적 구조와 밀접한 관계가 있음.",
+      "spoken_sentences": [
+        "그때 요 인덱스, 인덱스라는 걸 우리가 보고 우리가 찾아가게 되면 좀 더 빠르게 빠른 속도로 우리가 해당 데이터를 찾아갈 수 있겠죠?",
+        "요런 게 우리 인덱스요.",
+        "자 그럼 인덱스의 특징 좀 살펴보자고요.",
+        "우리 인덱스라는 거는 데이터가 저장된 그런 물리적 구조와 밀접한 관계가 있죠."
+      ],
+      "spoken_text": "그때 요 인덱스, 인덱스라는 걸 우리가 보고 우리가 찾아가게 되면 좀 더 빠르게 빠른 속도로 우리가 해당 데이터를 찾아갈 수 있겠죠? 요런 게 우리 인덱스요. 자 그럼 인덱스의 특징 좀 살펴보자고요. 우리 인덱스라는 거는 데이터가 저장된 그런 물리적 구조와 밀접한 관계가 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:08:12",
+      "end_time_hms": "00:08:30",
+      "start_seconds": 492,
+      "end_seconds": 510,
+      "duration_seconds": 18,
+      "timeline_summary": "인덱스의 주요 특징 (2): 접근 방법 제공 및 빠른 액세스",
+      "screen_text_lines": [
+        "• 인덱스는 레코드가 저장된 물리적 구조에 접근하는 방법을 제공함.",
+        "• 인덱스를 통해서 파일의 레코드에 대한 액세스를 빠르게 수행할 수 있음."
+      ],
+      "screen_text": "• 인덱스는 레코드가 저장된 물리적 구조에 접근하는 방법을 제공함.\n• 인덱스를 통해서 파일의 레코드에 대한 액세스를 빠르게 수행할 수 있음.",
+      "spoken_sentences": [
+        "왜요 인덱스를 구성할 때 우리는 주소 실제 데이터가 저장된 그런 물리적인 그런 저장 장치의 주소값을 가지고 우리가 인덱스를 구성하기 때문에 물리적 구조와 밀접한 그런 관계가 있고요.",
+        "그리고 이 인덱스는 레코드가 저장된 그런 물리 구조에 접근하는 그 방법을 제공해주는 게 우리 인덱스라는 거예요."
+      ],
+      "spoken_text": "왜요 인덱스를 구성할 때 우리는 주소 실제 데이터가 저장된 그런 물리적인 그런 저장 장치의 주소값을 가지고 우리가 인덱스를 구성하기 때문에 물리적 구조와 밀접한 그런 관계가 있고요. 그리고 이 인덱스는 레코드가 저장된 그런 물리 구조에 접근하는 그 방법을 제공해주는 게 우리 인덱스라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:08:30",
+      "end_time_hms": "00:08:48",
+      "start_seconds": 510,
+      "end_seconds": 528,
+      "duration_seconds": 18,
+      "timeline_summary": "인덱스의 주요 특징 (3): 삽입/삭제 잦은 경우의 관리",
+      "screen_text_lines": [
+        "• 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 인덱스의 개수를 최소로 하는 것이 효율적임."
+      ],
+      "screen_text": "• 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 인덱스의 개수를 최소로 하는 것이 효율적임.",
+      "spoken_sentences": [
+        "그리고 우리는 인덱스를 통해서 파일의 레코드에 대해서 액세스를 빠르게 우리가 수행할 수 있겠죠.",
+        "근데 요런 인덱스를 구성할 때 만약에 만약에 레코드의 삽입과 삭제가 수시로 일어나요.",
+        "그럴 때는 우리가 인덱스의 개수를 최소로 하는 게 최소라는 게 가장 효율적이에요."
+      ],
+      "spoken_text": "그리고 우리는 인덱스를 통해서 파일의 레코드에 대해서 액세스를 빠르게 우리가 수행할 수 있겠죠. 근데 요런 인덱스를 구성할 때 만약에 만약에 레코드의 삽입과 삭제가 수시로 일어나요. 그럴 때는 우리가 인덱스의 개수를 최소로 하는 게 최소라는 게 가장 효율적이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:08:48",
+      "end_time_hms": "00:09:12",
+      "start_seconds": 528,
+      "end_seconds": 552,
+      "duration_seconds": 24,
+      "timeline_summary": "삽입/삭제 시 인덱스 수정 오버헤드 설명",
+      "screen_text_lines": [
+        "• 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 인덱스의 개수를 최소로 하는 것이 효율적임."
+      ],
+      "screen_text": "• 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 인덱스의 개수를 최소로 하는 것이 효율적임.",
+      "spoken_sentences": [
+        "만약에 하나의 테이블이 있는데 그 테이블에 대해서 레코드의 삽입이 됐든 삭제를 했든 하루에도 수십 번 그렇게 일어나요.",
+        "그런 거를 가지고 우리가 인덱스를 많이 구성하게 되면 데이터 삽입 삭제가 일어날 때마다 인덱스도 인덱스도 같이 수정을 해줘야 되겠죠.",
+        "해서 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 우리가 인덱스의 개수를 최소로 하는 게 제일 좋습니다."
+      ],
+      "spoken_text": "만약에 하나의 테이블이 있는데 그 테이블에 대해서 레코드의 삽입이 됐든 삭제를 했든 하루에도 수십 번 그렇게 일어나요. 그런 거를 가지고 우리가 인덱스를 많이 구성하게 되면 데이터 삽입 삭제가 일어날 때마다 인덱스도 인덱스도 같이 수정을 해줘야 되겠죠. 해서 레코드의 삽입과 삭제가 수시로 일어나는 경우에는 우리가 인덱스의 개수를 최소로 하는 게 제일 좋습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:09:12",
+      "end_time_hms": "00:09:30",
+      "start_seconds": 552,
+      "end_seconds": 570,
+      "duration_seconds": 18,
+      "timeline_summary": "데이터 정의어(DDL)와 테이블 스캔 개념",
+      "screen_text_lines": [
+        "• 데이터 정의어(DDL)를 이용하여 사용자가 생성, 변경, 제거할 수 있음.",
+        "• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함."
+      ],
+      "screen_text": "• 데이터 정의어(DDL)를 이용하여 사용자가 생성, 변경, 제거할 수 있음.\n• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함.",
+      "spoken_sentences": [
+        "그리고 이런 인덱스는 우리가 데이터 정의어, 데이터 정의어라는 걸 이용해서 사용자가 직접 생성하거나 변경하거나 제거할 수 있습니다.",
+        "그리고 인덱스가 만약에 없다면, 인덱스가 없을 때는 특정 값을 우리가 찾아내기 위해서 모든 데이터 페이지를 싹 다 확인해야 돼요."
+      ],
+      "spoken_text": "그리고 이런 인덱스는 우리가 데이터 정의어, 데이터 정의어라는 걸 이용해서 사용자가 직접 생성하거나 변경하거나 제거할 수 있습니다. 그리고 인덱스가 만약에 없다면, 인덱스가 없을 때는 특정 값을 우리가 찾아내기 위해서 모든 데이터 페이지를 싹 다 확인해야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:09:30",
+      "end_time_hms": "00:09:42",
+      "start_seconds": 570,
+      "end_seconds": 582,
+      "duration_seconds": 12,
+      "timeline_summary": "테이블 스캔의 정의",
+      "screen_text_lines": [
+        "• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함."
+      ],
+      "screen_text": "• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함.",
+      "spoken_sentences": [
+        "그런 걸 보고 우리가 테이블 스캔, 테이블 스캔이라고 그렇게 부르는데 이 테이블 스캔을 우리가 다른 말로 풀 테이블 스캔 그렇게 부르기도 합니다."
+      ],
+      "spoken_text": "그런 걸 보고 우리가 테이블 스캔, 테이블 스캔이라고 그렇게 부르는데 이 테이블 스캔을 우리가 다른 말로 풀 테이블 스캔 그렇게 부르기도 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:09:42",
+      "end_time_hms": "00:10:00",
+      "start_seconds": 582,
+      "end_seconds": 600,
+      "duration_seconds": 18,
+      "timeline_summary": "인덱스 없을 때의 전수 조사 과정 비유",
+      "screen_text_lines": [
+        "• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함."
+      ],
+      "screen_text": "• 인덱스가 없으면 특정한 값을 찾기 위해 모든 데이터 페이지를 확인하는 TABLE SCAN이 발생함.",
+      "spoken_sentences": [
+        "만약에 내가 A라는 데이터를 찾을 건데 인덱스가 없어요.",
+        "없으면 그 기억 장소에 찾아가서 우리가 A라는 데이터가 어디에 있는지 순서대로 우리가 싹 다 확인을 해야 되겠죠.",
+        "그런 걸 보고 테이블 스캔, 풀 테이블 스캔 그렇게 부른다고요."
+      ],
+      "spoken_text": "만약에 내가 A라는 데이터를 찾을 건데 인덱스가 없어요. 없으면 그 기억 장소에 찾아가서 우리가 A라는 데이터가 어디에 있는지 순서대로 우리가 싹 다 확인을 해야 되겠죠. 그런 걸 보고 테이블 스캔, 풀 테이블 스캔 그렇게 부른다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:10:00",
+      "end_time_hms": "00:10:14",
+      "start_seconds": 600,
+      "end_seconds": 614,
+      "duration_seconds": 14,
+      "timeline_summary": "기본 인덱스와 보조 인덱스의 구분",
+      "screen_text_lines": [
+        "• 기본키를 위한 인덱스를 기본 인덱스라 하고, 기본 인덱스가 아닌 인덱스들을 보조 인덱스라고 함."
+      ],
+      "screen_text": "• 기본키를 위한 인덱스를 기본 인덱스라 하고, 기본 인덱스가 아닌 인덱스들을 보조 인덱스라고 함.",
+      "spoken_sentences": [
+        "그리고 우리가 인덱스를 설정하는데 그때 기본키를 위한 그런 인덱스를 보고 우리가 기본 인덱스 그렇게 부르고요.",
+        "그리고 기본 인덱스가 아닌 나머지 인덱스들 있죠?",
+        "그런 것들은 우리가 보조 인덱스 그렇게 부르기도 합니다."
+      ],
+      "spoken_text": "그리고 우리가 인덱스를 설정하는데 그때 기본키를 위한 그런 인덱스를 보고 우리가 기본 인덱스 그렇게 부르고요. 그리고 기본 인덱스가 아닌 나머지 인덱스들 있죠? 그런 것들은 우리가 보조 인덱스 그렇게 부르기도 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:10:14",
+      "end_time_hms": "00:10:33",
+      "start_seconds": 614,
+      "end_seconds": 633,
+      "duration_seconds": 19,
+      "timeline_summary": "자동 기본 인덱스 생성 및 클러스터드 인덱스",
+      "screen_text_lines": [
+        "• 대부분의 관계형 데이터베이스 관리 시스템에서는 모든 기본키에 대해서 자동적으로 기본 인덱스를 생성함.",
+        "• 레코드의 물리적 순서가 인덱스의 엔트리 순서와 일치하게 유지되도록 구성되는 인덱스를 클러스터드(Clustered) 인덱스라고 함."
+      ],
+      "screen_text": "• 대부분의 관계형 데이터베이스 관리 시스템에서는 모든 기본키에 대해서 자동적으로 기본 인덱스를 생성함.\n• 레코드의 물리적 순서가 인덱스의 엔트리 순서와 일치하게 유지되도록 구성되는 인덱스를 클러스터드(Clustered) 인덱스라고 함.",
+      "spoken_sentences": [
+        "우리 대부분의 관계형 데이터베이스 관리 시스템에서는 모든 기본키에 대해서 자동적으로, 자동적으로 기본 인덱스를 생성해줘요.",
+        "그리고 레코드의 물리적인 그 순서가 인덱스의, 인덱스의 엔트리 그 순서와 일치하게, 일치하게 유지되도록 그렇게 구성하는 그런 인덱스를 보고 우리가 클러스터드 인덱스 그렇게 부릅니다."
+      ],
+      "spoken_text": "우리 대부분의 관계형 데이터베이스 관리 시스템에서는 모든 기본키에 대해서 자동적으로, 자동적으로 기본 인덱스를 생성해줘요. 그리고 레코드의 물리적인 그 순서가 인덱스의, 인덱스의 엔트리 그 순서와 일치하게, 일치하게 유지되도록 그렇게 구성하는 그런 인덱스를 보고 우리가 클러스터드 인덱스 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:10:33",
+      "end_time_hms": "00:10:54",
+      "start_seconds": 633,
+      "end_seconds": 654,
+      "duration_seconds": 21,
+      "timeline_summary": "인덱스 엔트리 순서의 의미",
+      "screen_text_lines": [
+        "• 레코드의 물리적 순서가 인덱스의 엔트리 순서와 일치하게 유지되도록 구성되는 인덱스를 클러스터드(Clustered) 인덱스라고 함."
+      ],
+      "screen_text": "• 레코드의 물리적 순서가 인덱스의 엔트리 순서와 일치하게 유지되도록 구성되는 인덱스를 클러스터드(Clustered) 인덱스라고 함.",
+      "spoken_sentences": [
+        "여기 보게 되면 레코드의 물리적인 그런 순서가 인덱스의 엔트리 순서와 일치하게 유지한다.",
+        "그렇게 나왔는데 얘가 무슨 말이냐 인덱스의 키의 그 순서에 따라서 데이터가 정렬이 된다 그 얘기예요."
+      ],
+      "spoken_text": "여기 보게 되면 레코드의 물리적인 그런 순서가 인덱스의 엔트리 순서와 일치하게 유지한다. 그렇게 나왔는데 얘가 무슨 말이냐 인덱스의 키의 그 순서에 따라서 데이터가 정렬이 된다 그 얘기예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:10:54",
+      "end_time_hms": "00:11:10",
+      "start_seconds": 654,
+      "end_seconds": 670,
+      "duration_seconds": 16,
+      "timeline_summary": "다양한 인덱스 종류 나열 (트리, 비트맵 등)",
+      "screen_text_lines": [
+        "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨."
+      ],
+      "screen_text": "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨.",
+      "spoken_sentences": [
+        "그렇게 정렬돼서 저장되는 그런 방식을 보고 우리 클러스터드 인덱스라고 하는 겁니다.",
+        "그리고 인덱스는 인덱스를 구성하는 그런 구조나 특징에 따라서 트리 기반의 인덱스다, 비트맵 인덱스다, 그리고 함수 기반 인덱스다"
+      ],
+      "spoken_text": "그렇게 정렬돼서 저장되는 그런 방식을 보고 우리 클러스터드 인덱스라고 하는 겁니다. 그리고 인덱스는 인덱스를 구성하는 그런 구조나 특징에 따라서 트리 기반의 인덱스다, 비트맵 인덱스다, 그리고 함수 기반 인덱스다",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:11:10",
+      "end_time_hms": "00:11:24",
+      "start_seconds": 670,
+      "end_seconds": 684,
+      "duration_seconds": 14,
+      "timeline_summary": "인덱스 분류 요약",
+      "screen_text_lines": [
+        "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨."
+      ],
+      "screen_text": "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨.",
+      "spoken_sentences": [
+        "그리고 비트맵 조인 인덱스다, 그리고 도메인 인덱스다라고 해서 이렇게 여러 가지로 분류가 됩니다.",
+        "해서 우리가 다음 시간부터 시작해서 이런 인덱스의 종류에 대해서 같이 한번 더 살펴보도록 할 거예요."
+      ],
+      "spoken_text": "그리고 비트맵 조인 인덱스다, 그리고 도메인 인덱스다라고 해서 이렇게 여러 가지로 분류가 됩니다. 해서 우리가 다음 시간부터 시작해서 이런 인덱스의 종류에 대해서 같이 한번 더 살펴보도록 할 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_048-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 2,
+      "subtopic_id": "0220_220",
+      "subtopic_title": "인덱스",
+      "subtopic_sequence": 220,
+      "subtopic_number": "220",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=DOIm76sjX1M",
+      "start_time_hms": "00:11:24",
+      "end_time_hms": "00:11:44",
+      "start_seconds": 684,
+      "end_seconds": 704,
+      "duration_seconds": 20,
+      "timeline_summary": "인덱스 학습 마무리",
+      "screen_text_lines": [
+        "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨."
+      ],
+      "screen_text": "• 인덱스는 인덱스를 구성하는 구조나 특징에 따라 트리 기반 인덱스, 비트맵 인덱스, 함수 기반 인덱스, 비트맵 조인 인덱스, 도메인 인덱스 등으로 분류됨.",
+      "spoken_sentences": [
+        "해서 인덱스라는 게 이런 거구나.",
+        "그정도 여러분들이 특징 기억하시면 되는데 요 특징에 대해서 시험 문제가 종종 출제가 되고 있다고요.",
+        "해서 요 인덱스의 개념, 인덱스의 특징 정확하게 기억하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 인덱스라는 게 이런 거구나. 그정도 여러분들이 특징 기억하시면 되는데 요 특징에 대해서 시험 문제가 종종 출제가 되고 있다고요. 해서 요 인덱스의 개념, 인덱스의 특징 정확하게 기억하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "인덱스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 124
+        },
+        {
+          "keyword": "인덱스의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 38
+        },
+        {
+          "keyword": "인덱스를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    }
+  ]
+}

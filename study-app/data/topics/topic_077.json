@@ -1,0 +1,3551 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_077",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      340,
+      341,
+      342,
+      343
+    ],
+    "source_lecture_ids": [
+      "0340_340",
+      "0341_341",
+      "0342_342",
+      "0343_343"
+    ],
+    "source_titles": [
+      "비선점 스케줄링",
+      "선점 스케줄링",
+      "SJF 스케줄링",
+      "HRN 스케줄링"
+    ],
+    "keywords": [
+      "스케줄링",
+      "비선점",
+      "선점",
+      "SJF",
+      "HRN"
+    ],
+    "highlight_keywords": [
+      "비선점(Non-Preemptive) 스케줄링",
+      "선점(Preemptive) 스케줄링",
+      "CPU",
+      "프로세스가",
+      "비선점 스케줄링",
+      "프로세스 스케줄링의 기법",
+      "선점 스케줄링",
+      "Clock",
+      "우선순위가",
+      "실행"
+    ],
+    "secondary_keywords": [
+      "강제로",
+      "없는",
+      "해당",
+      "스케줄링의",
+      "때까지",
+      "사용할",
+      "타이머",
+      "높은",
+      "선점(Preemptive) 스케줄링의 정의",
+      "우선순위가 높은 프로세스의 빠른 처리",
+      "병원 응급 환자 비유를 통한 설명",
+      "대화식 시분할 시스템에서의 활용"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0340_340",
+      "sequence": 340,
+      "number": "340",
+      "course_code": "350336",
+      "title": "비선점 스케줄링",
+      "duration_seconds": 221,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "segment_count": 13,
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "tokens": [
+            "비선점",
+            "Non-Preemptive",
+            "스케줄링"
+          ],
+          "score": 96,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "tokens": [
+            "선점",
+            "Preemptive",
+            "스케줄링"
+          ],
+          "score": 48,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "CPU",
+          "tokens": [
+            "CPU"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "프로세스가",
+          "tokens": [
+            "프로세스가"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "비선점 스케줄링",
+          "tokens": [
+            "비선점",
+            "스케줄링"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "강제로",
+          "tokens": [
+            "강제로"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "없는",
+          "tokens": [
+            "없는"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "해당",
+          "tokens": [
+            "해당"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "스케줄링의",
+          "tokens": [
+            "스케줄링의"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "때까지",
+          "tokens": [
+            "때까지"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사용할",
+          "tokens": [
+            "사용할"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_077-subtopic-001-source-seg-008::01",
+          "prompt": "비선점형 스케줄링의 정의 및 ______ 할당의 특징",
+          "answer": "CPU",
+          "original": "비선점형 스케줄링의 정의 및 CPU 할당의 특징",
+          "keyword": "CPU",
+          "source_segment_id": "topic_077-subtopic-001-source-seg-008",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'CPU'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-001-source-seg-008::02",
+          "prompt": "이미 할당된 CPU를 다른 ______ 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+          "answer": "프로세스가",
+          "original": "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+          "keyword": "프로세스가",
+          "source_segment_id": "topic_077-subtopic-001-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '프로세스가'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-001-source-seg-002::03",
+          "prompt": "선점과 ______의 개념 및 비선점의 비유 설명",
+          "answer": "비선점 스케줄링",
+          "original": "선점과 비선점 스케줄링의 개념 및 비선점의 비유 설명",
+          "keyword": "비선점 스케줄링",
+          "source_segment_id": "topic_077-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '비선점 스케줄링'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-001-source-seg-004::04",
+          "prompt": "해서 선점하고 비선점은 우리가 강제 종료를 시킬 수 있냐 없냐 ______ 무언가를 뺏어올 수 있냐 없냐 그 차이요.",
+          "answer": "강제로",
+          "original": "해서 선점하고 비선점은 우리가 강제 종료를 시킬 수 있냐 없냐 강제로 무언가를 뺏어올 수 있냐 없냐 그 차이요.",
+          "keyword": "강제로",
+          "source_segment_id": "topic_077-subtopic-001-source-seg-004",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '강제로'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0341_341",
+      "sequence": 341,
+      "number": "341",
+      "course_code": "350337",
+      "title": "선점 스케줄링",
+      "duration_seconds": 202,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "tokens": [
+            "프로세스",
+            "스케줄링의",
+            "기법"
+          ],
+          "score": 72,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "tokens": [
+            "선점",
+            "Preemptive",
+            "스케줄링"
+          ],
+          "score": 64,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "선점 스케줄링",
+          "tokens": [
+            "선점",
+            "스케줄링"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Clock",
+          "tokens": [
+            "Clock"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "우선순위가",
+          "tokens": [
+            "우선순위가"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "타이머",
+          "tokens": [
+            "타이머"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "높은",
+          "tokens": [
+            "높은"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링의 정의",
+          "tokens": [
+            "선점",
+            "Preemptive",
+            "스케줄링의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "우선순위가 높은 프로세스의 빠른 처리",
+          "tokens": [
+            "우선순위가",
+            "높은",
+            "프로세스의",
+            "빠른",
+            "처리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "병원 응급 환자 비유를 통한 설명",
+          "tokens": [
+            "병원",
+            "응급",
+            "환자",
+            "비유를",
+            "통한"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "대화식 시분할 시스템에서의 활용",
+          "tokens": [
+            "대화식",
+            "시분할",
+            "시스템에서의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_077-subtopic-002-source-seg-002::01",
+          "prompt": "______의 정의",
+          "answer": "선점(Preemptive) 스케줄링",
+          "original": "선점(Preemptive) 스케줄링의 정의",
+          "keyword": "선점(Preemptive) 스케줄링",
+          "source_segment_id": "topic_077-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '선점(Preemptive) 스케줄링'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-002-source-seg-002::02",
+          "prompt": "그다음에 우리 ______이요.",
+          "answer": "선점 스케줄링",
+          "original": "그다음에 우리 선점 스케줄링이요.",
+          "keyword": "선점 스케줄링",
+          "source_segment_id": "topic_077-subtopic-002-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '선점 스케줄링'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-002-source-seg-007::03",
+          "prompt": "선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(______)이 필요함.",
+          "answer": "Clock",
+          "original": "선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(Clock)이 필요함.",
+          "keyword": "Clock",
+          "source_segment_id": "topic_077-subtopic-002-source-seg-007",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Clock'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-002-source-seg-002::04",
+          "prompt": "하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 ______ 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법.",
+          "answer": "우선순위가",
+          "original": "하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 우선순위가 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법.",
+          "keyword": "우선순위가",
+          "source_segment_id": "topic_077-subtopic-002-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '우선순위가'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0342_342",
+      "sequence": 342,
+      "number": "342",
+      "course_code": "350338",
+      "title": "SJF 스케줄링",
+      "duration_seconds": 663,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "segment_count": 11,
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "tokens": [
+            "실행"
+          ],
+          "score": 42,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "SJF",
+          "tokens": [
+            "SJF"
+          ],
+          "score": 36,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "평균",
+          "tokens": [
+            "평균"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "예제",
+          "tokens": [
+            "예제"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "대기",
+          "tokens": [
+            "대기"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "프로세스 번호 P1 P2 P3",
+          "tokens": [
+            "프로세스",
+            "번호",
+            "P1",
+            "P2",
+            "P3"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "반환",
+          "tokens": [
+            "반환"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "SJF 스케줄링",
+          "tokens": [
+            "SJF",
+            "스케줄링"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "시간이",
+          "tokens": [
+            "시간이"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "실행 시간 20 4 6",
+          "tokens": [
+            "실행"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "평균 대기 시간",
+          "tokens": [
+            "평균",
+            "대기"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_077-subtopic-003-source-seg-001::01",
+          "prompt": "______(단기 작업 우선) 스케줄링 소개",
+          "answer": "SJF",
+          "original": "SJF(단기 작업 우선) 스케줄링 소개",
+          "keyword": "SJF",
+          "source_segment_id": "topic_077-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'SJF'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-003-source-seg-003::02",
+          "prompt": "SJF는 준비상태 큐에서 기다리고 있는 프로세스들 중에서 실행 ______ 가장 짧은 프로세스에게 먼저 CPU를 할당하는 기법.",
+          "answer": "시간이",
+          "original": "SJF는 준비상태 큐에서 기다리고 있는 프로세스들 중에서 실행 시간이 가장 짧은 프로세스에게 먼저 CPU를 할당하는 기법.",
+          "keyword": "시간이",
+          "source_segment_id": "topic_077-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '시간이'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-003-source-seg-003::03",
+          "prompt": "· 가장 적은 ______을 제공하는 최적 알고리즘.",
+          "answer": "평균 대기 시간",
+          "original": "· 가장 적은 평균 대기 시간을 제공하는 최적 알고리즘.",
+          "keyword": "평균 대기 시간",
+          "source_segment_id": "topic_077-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '평균 대기 시간'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0343_343",
+      "sequence": 343,
+      "number": "343",
+      "course_code": "350339",
+      "title": "HRN 스케줄링",
+      "duration_seconds": 331,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "segment_count": 11,
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "tokens": [
+            "HRN"
+          ],
+          "score": 56,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "우선순위",
+          "tokens": [
+            "우선순위"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "실행",
+          "tokens": [
+            "실행"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Response-ratio",
+          "tokens": [
+            "Response-ratio"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Highest",
+          "tokens": [
+            "Highest"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Next",
+          "tokens": [
+            "Next"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "P2",
+          "tokens": [
+            "P2"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "P3",
+          "tokens": [
+            "P3"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "HRN 스케줄링",
+          "tokens": [
+            "HRN",
+            "스케줄링"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "계산",
+          "tokens": [
+            "계산"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "P1",
+          "tokens": [
+            "P1"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_077-subtopic-004-source-seg-001::01",
+          "prompt": "______ 스케줄링 개요",
+          "answer": "HRN",
+          "original": "HRN 스케줄링 개요",
+          "keyword": "HRN",
+          "source_segment_id": "topic_077-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'HRN'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-004-source-seg-002::02",
+          "prompt": "비선점 스케줄링 종류 : FCFS, SJF, ______, HRN, 기한부 등.",
+          "answer": "우선순위",
+          "original": "비선점 스케줄링 종류 : FCFS, SJF, 우선순위, HRN, 기한부 등.",
+          "keyword": "우선순위",
+          "source_segment_id": "topic_077-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '우선순위'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-004-source-seg-001::03",
+          "prompt": "HRN(Highest ______ Next)",
+          "answer": "Response-ratio",
+          "original": "HRN(Highest Response-ratio Next)",
+          "keyword": "Response-ratio",
+          "source_segment_id": "topic_077-subtopic-004-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Response-ratio'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_077-subtopic-004-source-seg-001::04",
+          "prompt": "HRN(______ Response-ratio Next)",
+          "answer": "Highest",
+          "original": "HRN(Highest Response-ratio Next)",
+          "keyword": "Highest",
+          "source_segment_id": "topic_077-subtopic-004-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Highest'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_077",
+    "sequence": 77,
+    "number": "77",
+    "title": "CPU 스케줄링",
+    "title_raw": "CPU 스케줄링",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      340,
+      341,
+      342,
+      343
+    ],
+    "source_titles": [
+      "비선점 스케줄링",
+      "선점 스케줄링",
+      "SJF 스케줄링",
+      "HRN 스케줄링"
+    ],
+    "preview_text": "비선점 스케줄링, 선점 스케줄링, SJF 스케줄링 등",
+    "segment_count": 44,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 비선점 스케줄링, 선점 스케줄링, SJF 스케줄링, HRN 스케줄링을 중심으로 정리합니다. 정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 비선점 스케줄링, 선점 스케줄링, SJF 스케줄링, HRN 스케줄링을 중심으로 정리합니다.",
+      "정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1417,
+    "source_titles_preview": [
+      "비선점 스케줄링",
+      "선점 스케줄링",
+      "SJF 스케줄링"
+    ],
+    "highlight_keywords": [
+      "비선점(Non-Preemptive) 스케줄링",
+      "선점(Preemptive) 스케줄링",
+      "CPU",
+      "프로세스가",
+      "비선점 스케줄링",
+      "프로세스 스케줄링의 기법",
+      "선점 스케줄링",
+      "Clock",
+      "우선순위가",
+      "실행"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_077-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "프로세스 스케줄링 기법에 대한 학습 시작 안내",
+      "screen_text_lines": [
+        "정보처리",
+        "프로세스 스케줄링의 기법"
+      ],
+      "screen_text": "정보처리\n프로세스 스케줄링의 기법",
+      "spoken_sentences": [
+        "이번 시간에는 우리 프로세스 스케줄링 기법에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 프로세스 스케줄링 기법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "스케줄링의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "선점과 비선점 스케줄링의 개념 및 비선점의 비유 설명",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "우리 프로세스 스케줄링 기법에 보게 되면 크게 보게 되면 지금쯤 이렇게 두 가지로 나눠 볼 수 있어요.",
+        "자 지금 여기 보게 되면 선점이라는 말이 나오고 비선점이라는 말이 나왔죠.",
+        "선점하고 비선점이 뭐냐.",
+        "자 예를 들어서 내가 화장실에 갔어요.",
+        "화장실에 갔는데 화장실 칸이 딱 한 칸밖에 없습니다.",
+        "해서 화장실에 들어가서 문을 똑똑 두드려 보니까 안에 사람이 있어요."
+      ],
+      "spoken_text": "우리 프로세스 스케줄링 기법에 보게 되면 크게 보게 되면 지금쯤 이렇게 두 가지로 나눠 볼 수 있어요. 자 지금 여기 보게 되면 선점이라는 말이 나오고 비선점이라는 말이 나왔죠. 선점하고 비선점이 뭐냐. 자 예를 들어서 내가 화장실에 갔어요. 화장실에 갔는데 화장실 칸이 딱 한 칸밖에 없습니다. 해서 화장실에 들어가서 문을 똑똑 두드려 보니까 안에 사람이 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "비선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "스케줄링의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 23,
+      "end_seconds": 41,
+      "duration_seconds": 18,
+      "timeline_summary": "비선점과 선점의 차이를 화장실 예시로 비교 설명",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "그러면 나는 어떻게 해야 돼요?",
+        "나는 그 사람이 나올 때까지 무작정 무작정 기다려야 돼요.",
+        "그런 걸 보고 우리가 비선점 비선점이라고 그렇게 부르는 거고요.",
+        "선점이라는 건 뭘 얘기하냐 화장실에 사람이 들어 있는데 내가 그 사람을 강제로 빼고 내가 들어가는 걸 보고 우리가 선점 선점이라고 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그러면 나는 어떻게 해야 돼요? 나는 그 사람이 나올 때까지 무작정 무작정 기다려야 돼요. 그런 걸 보고 우리가 비선점 비선점이라고 그렇게 부르는 거고요. 선점이라는 건 뭘 얘기하냐 화장실에 사람이 들어 있는데 내가 그 사람을 강제로 빼고 내가 들어가는 걸 보고 우리가 선점 선점이라고 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "때까지",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "01:00:00",
+      "start_seconds": 41,
+      "end_seconds": 3600,
+      "duration_seconds": 3559,
+      "timeline_summary": "강제 종료 가능 여부에 따른 선점과 비선점의 핵심 차이",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "해서 선점하고 비선점은 우리가 강제 종료를 시킬 수 있냐 없냐 강제로 무언가를 뺏어올 수 있냐 없냐 그 차이요.",
+        "해서 강제로 뺏어올 수 있는 거를 보고 우리가 선점 그렇게 부르는 거고 강제로 뺏어올 수 없는 거를 보고 우리가 비선점 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 선점하고 비선점은 우리가 강제 종료를 시킬 수 있냐 없냐 강제로 무언가를 뺏어올 수 있냐 없냐 그 차이요. 해서 강제로 뺏어올 수 있는 거를 보고 우리가 선점 그렇게 부르는 거고 강제로 뺏어올 수 없는 거를 보고 우리가 비선점 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "없는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "01:00:00",
+      "end_time_hms": "01:21:00",
+      "start_seconds": 3600,
+      "end_seconds": 4860,
+      "duration_seconds": 1260,
+      "timeline_summary": "윈도우의 작업 관리자를 예로 든 선점형 방식 설명",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "우리가 지금 사용하고 있는 이 윈도우는 선점형이죠 선점형.",
+        "우리가 여러 개 프로그램을 쭉 띄워 놓고 우리가 사용하다가 갑자기 어떤 특정 프로그램에서 응답 없음 그렇게 떴어요.",
+        "그렇게 뜨는 순간 우리는 어떻게 해요?",
+        "우리가 작업 관리자에 들어가서 그 응답 없음 실행이 중단된 그 프로그램만 우리가 강제로 종료를 시킬 수가 있잖아요."
+      ],
+      "spoken_text": "우리가 지금 사용하고 있는 이 윈도우는 선점형이죠 선점형. 우리가 여러 개 프로그램을 쭉 띄워 놓고 우리가 사용하다가 갑자기 어떤 특정 프로그램에서 응답 없음 그렇게 떴어요. 그렇게 뜨는 순간 우리는 어떻게 해요? 우리가 작업 관리자에 들어가서 그 응답 없음 실행이 중단된 그 프로그램만 우리가 강제로 종료를 시킬 수가 있잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "01:21:00",
+      "end_time_hms": "01:41:00",
+      "start_seconds": 4860,
+      "end_seconds": 6060,
+      "duration_seconds": 1200,
+      "timeline_summary": "선점형과 비선점형의 영어 명칭 확인",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "그렇게 우리가 뭔가를 강제로 뺏어올 수 있는 거 그게 선점이라는 거요.",
+        "그때 우리가 비선점형을 넘프램티브 그렇게 부르는 거고 우리가 선점형을 우리가 프램티브 그렇게 부릅니다.",
+        "해서 넌이 붙었냐 안 붙었냐 그 차이죠.",
+        "해서 선점하고 비선점은 여러분이 영어로도까지 같이 기억해 두셔야 돼요."
+      ],
+      "spoken_text": "그렇게 우리가 뭔가를 강제로 뺏어올 수 있는 거 그게 선점이라는 거요. 그때 우리가 비선점형을 넘프램티브 그렇게 부르는 거고 우리가 선점형을 우리가 프램티브 그렇게 부릅니다. 해서 넌이 붙었냐 안 붙었냐 그 차이죠. 해서 선점하고 비선점은 여러분이 영어로도까지 같이 기억해 두셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "01:41:00",
+      "end_time_hms": "01:57:00",
+      "start_seconds": 6060,
+      "end_seconds": 7020,
+      "duration_seconds": 960,
+      "timeline_summary": "비선점형 스케줄링의 세부 내용 학습 안내",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "선점(Preemptive) 스케줄링"
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n선점(Preemptive) 스케줄링",
+      "spoken_sentences": [
+        "자 그럼 해당 내용 좀 보자고요.",
+        "우리 비선점형 스케줄링이요."
+      ],
+      "spoken_text": "자 그럼 해당 내용 좀 보자고요. 우리 비선점형 스케줄링이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해당",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "스케줄링의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "01:57:00",
+      "end_time_hms": "02:18:00",
+      "start_seconds": 7020,
+      "end_seconds": 8280,
+      "duration_seconds": 1260,
+      "timeline_summary": "비선점형 스케줄링의 정의 및 CPU 할당의 특징",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "비선점형이라는 거는 강제를 빼앗아 올 수 없는 거를 보고 우리가 비선점이라고 했죠.",
+        "이미 할당된 그런 CPU를 다른 프로세스가 다른 프로세스가 강제로 뺏어서 사용할 수 없는 그런 스케줄링 기법을 우리가 비선점 스케줄링 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "비선점형이라는 거는 강제를 빼앗아 올 수 없는 거를 보고 우리가 비선점이라고 했죠. 이미 할당된 그런 CPU를 다른 프로세스가 다른 프로세스가 강제로 뺏어서 사용할 수 없는 그런 스케줄링 기법을 우리가 비선점 스케줄링 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "비선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "02:18:00",
+      "end_time_hms": "02:35:00",
+      "start_seconds": 8280,
+      "end_seconds": 9300,
+      "duration_seconds": 1020,
+      "timeline_summary": "비선점 방식의 작업 완료 시까지 CPU 독점 특징",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "해서 프로세스가 어떤 특정 프로세스가 CPU를 할당받으면 그 해당 프로세스가 완전히 완료가 될 때까지 계속해서 CPU를 사용하는 거예요.",
+        "해서 그 해당 프로세스가 전부 다 종료가 돼야 다른 프로세스가 다시 CPU를 할당받아서 사용할 수 있다고요."
+      ],
+      "spoken_text": "해서 프로세스가 어떤 특정 프로세스가 CPU를 할당받으면 그 해당 프로세스가 완전히 완료가 될 때까지 계속해서 CPU를 사용하는 거예요. 해서 그 해당 프로세스가 전부 다 종료가 돼야 다른 프로세스가 다시 CPU를 할당받아서 사용할 수 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "02:35:00",
+      "end_time_hms": "02:42:00",
+      "start_seconds": 9300,
+      "end_seconds": 9720,
+      "duration_seconds": 420,
+      "timeline_summary": "비선점 방식의 공정한 요구 처리 장점",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "해서 얘는 모든 프로세스한테 요구를 공정하게 그렇게 처리할 수 있겠죠."
+      ],
+      "spoken_text": "해서 얘는 모든 프로세스한테 요구를 공정하게 그렇게 처리할 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "02:42:00",
+      "end_time_hms": "02:52:00",
+      "start_seconds": 9720,
+      "end_seconds": 10320,
+      "duration_seconds": 600,
+      "timeline_summary": "응답 시간 예측 용이 및 일괄 처리 적합성",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "그때 프로세스의 응답 시간 예측이 용이하다.",
+        "그리고 일괄 처리 방식에 적합하다 그렇게 써져 있는데 어떤 사람이 화장실에 들어가면서 나 5분이면 돼.",
+        "5분만 있다가 나 나올게 그렇게 얘기하고 들어가게 되면 프로세스의 응답 시간에 예측이 용이하다고요.",
+        "그리고 얘는 한 프로세스가 CPU를 할당받으면 그 작업이 완료가 될 때까지 계속해서 CPU를 쓴다 그랬죠.",
+        "해서 얘는 일괄 처리 일괄 처리 방식에 적합한 거예요."
+      ],
+      "spoken_text": "그때 프로세스의 응답 시간 예측이 용이하다. 그리고 일괄 처리 방식에 적합하다 그렇게 써져 있는데 어떤 사람이 화장실에 들어가면서 나 5분이면 돼. 5분만 있다가 나 나올게 그렇게 얘기하고 들어가게 되면 프로세스의 응답 시간에 예측이 용이하다고요. 그리고 얘는 한 프로세스가 CPU를 할당받으면 그 작업이 완료가 될 때까지 계속해서 CPU를 쓴다 그랬죠. 해서 얘는 일괄 처리 일괄 처리 방식에 적합한 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "강제로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "02:52:00",
+      "end_time_hms": "03:25:00",
+      "start_seconds": 10320,
+      "end_seconds": 12300,
+      "duration_seconds": 1980,
+      "timeline_summary": "비선점 스케줄링의 단점: 짧은 작업의 대기 발생",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "근데 이런 비선점 스케줄링을 쓰게 되면 중요한 작업이 중요한 작업이 중요하지 않은 그런 작업을 기다리는 경우가 발생할 수도 있다.",
+        "요런 단점을 가지고 있는 게 우리 비선점 스케줄링이요."
+      ],
+      "spoken_text": "근데 이런 비선점 스케줄링을 쓰게 되면 중요한 작업이 중요한 작업이 중요하지 않은 그런 작업을 기다리는 경우가 발생할 수도 있다. 요런 단점을 가지고 있는 게 우리 비선점 스케줄링이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "비선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0340_340",
+      "subtopic_title": "비선점 스케줄링",
+      "subtopic_sequence": 340,
+      "subtopic_number": "340",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=NWq_E34L3go",
+      "start_time_hms": "03:25:00",
+      "end_time_hms": "03:41:00",
+      "start_seconds": 12300,
+      "end_seconds": 13260,
+      "duration_seconds": 960,
+      "timeline_summary": "비선점 스케줄링 알고리즘의 다양한 종류 나열",
+      "screen_text_lines": [
+        "비선점(Non-Preemptive) 스케줄링",
+        "이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.",
+        "프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.",
+        "모든 프로세스에 대한 요구를 공정하게 처리할 수 있음."
+      ],
+      "screen_text": "비선점(Non-Preemptive) 스케줄링\n이미 할당된 CPU를 다른 프로세스가 강제로 빼앗아 사용할 수 없는 스케줄링 기법.\n프로세스가 CPU를 할당받으면 해당 프로세스가 완료될 때까지 CPU를 사용함.\n모든 프로세스에 대한 요구를 공정하게 처리할 수 있음.",
+      "spoken_sentences": [
+        "그때 우리 비선점 스케줄링 종류에 보게 되면 FCFS다 그다음에 SJF다 우선순위다 HRN이다 기한부다 요렇게 여러 가지 알고리즘이 있습니다.",
+        "해서 우리 비선점 스케줄링이 뭔지 그리고 스케줄링 종류에는 어떤 것들이 있는지 요거 기억하시면 됩니다."
+      ],
+      "spoken_text": "그때 우리 비선점 스케줄링 종류에 보게 되면 FCFS다 그다음에 SJF다 우선순위다 HRN이다 기한부다 요렇게 여러 가지 알고리즘이 있습니다. 해서 우리 비선점 스케줄링이 뭔지 그리고 스케줄링 종류에는 어떤 것들이 있는지 요거 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "비선점(Non-Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "CPU",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "프로세스가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "비선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "도입 및 강의 주제 소개",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법"
+      ],
+      "screen_text": "프로세스 스케줄링의 기법",
+      "spoken_sentences": [
+        "이번 시간에는 우리 프로세스 스케줄링 기법에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 프로세스 스케줄링 기법에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 8,
+      "end_seconds": 33,
+      "duration_seconds": 25,
+      "timeline_summary": "선점(Preemptive) 스케줄링의 정의",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 우선순위가 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 우선순위가 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법.",
+      "spoken_sentences": [
+        "그다음에 우리 선점 스케줄링이요.",
+        "선점 스케줄링이라는 거는 강제로 뺏을 수 있다고 그랬죠?",
+        "해서 하나의 프로세스가 CPU를 할당받아 실행하고 있을 때, 실행하고 있는데 갑자기 우선순위가 높은 다른 프로세스가 짜잔 하고 나타납니다.",
+        "짜잔 하고 나타나서 CPU를, CPU를 강제로 뺏어서 사용할 수 있는 그런 스케줄링 기법을 우리가 선점 스케줄링 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그다음에 우리 선점 스케줄링이요. 선점 스케줄링이라는 거는 강제로 뺏을 수 있다고 그랬죠? 해서 하나의 프로세스가 CPU를 할당받아 실행하고 있을 때, 실행하고 있는데 갑자기 우선순위가 높은 다른 프로세스가 짜잔 하고 나타납니다. 짜잔 하고 나타나서 CPU를, CPU를 강제로 뺏어서 사용할 수 있는 그런 스케줄링 기법을 우리가 선점 스케줄링 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "우선순위가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 33,
+      "end_seconds": 48,
+      "duration_seconds": 15,
+      "timeline_summary": "병원 응급 환자 비유를 통한 설명",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 우선순위가 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n하나의 프로세스가 CPU를 할당받아 실행하고 있을 때 우선순위가 높은 다른 프로세스가 CPU를 강제로 빼앗아 사용할 수 있는 스케줄링 기법.",
+      "spoken_sentences": [
+        "병원에서도 의사들이 환자들을 계속해서 진료를 하고 있다가 갑자기 응급 환자가 들어왔대요.",
+        "그러면 진료 보던 걸 멈추고 그 사람을 당장 응급 수술하러 가야 되겠죠?",
+        "그게 우리 선점 스케줄링이에요."
+      ],
+      "spoken_text": "병원에서도 의사들이 환자들을 계속해서 진료를 하고 있다가 갑자기 응급 환자가 들어왔대요. 그러면 진료 보던 걸 멈추고 그 사람을 당장 응급 수술하러 가야 되겠죠? 그게 우리 선점 스케줄링이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "우선순위가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:00:55",
+      "start_seconds": 48,
+      "end_seconds": 55,
+      "duration_seconds": 7,
+      "timeline_summary": "우선순위가 높은 프로세스의 빠른 처리",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "우선순위가 높은 프로세스를 빠르게 처리할 수 있음."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n우선순위가 높은 프로세스를 빠르게 처리할 수 있음.",
+      "spoken_sentences": [
+        "해서 우선순위를 딱 정해놓고 우선순위가 높은 그런 프로세스가 있을 때 그런 것들을 빨리빨리 우리가 처리할 수 있고요."
+      ],
+      "spoken_text": "해서 우선순위를 딱 정해놓고 우선순위가 높은 그런 프로세스가 있을 때 그런 것들을 빨리빨리 우리가 처리할 수 있고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "우선순위가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "높은",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:00:55",
+      "end_time_hms": "00:01:14",
+      "start_seconds": 55,
+      "end_seconds": 74,
+      "duration_seconds": 19,
+      "timeline_summary": "대화식 시분할 시스템에서의 활용",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "주로 빠른 응답 시간을 요구하는 대화식 시분할 시스템에 사용됨."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n주로 빠른 응답 시간을 요구하는 대화식 시분할 시스템에 사용됨.",
+      "spoken_sentences": [
+        "그리고 주로 빠른 응답을 요구하는 그런 대화식, 대화식 시분할 시스템에서 사용이 되는 게 우리 선점 스케줄링이요.",
+        "우리 비선점은 일괄 처리 방식에 적합한 거고요.",
+        "우리 선점 스케줄링은 실시간 처리할 때, 대화식 시분할 시스템에서 주로 사용이 되는 게 우리 선점 스케줄링이요."
+      ],
+      "spoken_text": "그리고 주로 빠른 응답을 요구하는 그런 대화식, 대화식 시분할 시스템에서 사용이 되는 게 우리 선점 스케줄링이요. 우리 비선점은 일괄 처리 방식에 적합한 거고요. 우리 선점 스케줄링은 실시간 처리할 때, 대화식 시분할 시스템에서 주로 사용이 되는 게 우리 선점 스케줄링이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "대화식 시분할 시스템에서의 활용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:01:14",
+      "end_time_hms": "00:01:38",
+      "start_seconds": 74,
+      "end_seconds": 98,
+      "duration_seconds": 24,
+      "timeline_summary": "많은 오버헤드 발생 가능성",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "많은 오버헤드(Overhead)를 초래함."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n많은 오버헤드(Overhead)를 초래함.",
+      "spoken_sentences": [
+        "그리고 많은 오버헤드를 초래할 수 있다 그렇게 써져 있는데 얘는 A라는 프로세스를 CPU가 처리하고 있다가 갑자기 우선순위가 높은 B라는 프로세스가 들어왔어요.",
+        "그러면 그 B라는 프로세스를 처리를 해야 되겠죠?",
+        "그러면 그때 A라는 프로세스를 어디까지 처리했었는지 그런 것들을 전부 다 저장하고 있어야 된다고요.",
+        "해서 많은 오버헤드를 초래할 수도 있습니다."
+      ],
+      "spoken_text": "그리고 많은 오버헤드를 초래할 수 있다 그렇게 써져 있는데 얘는 A라는 프로세스를 CPU가 처리하고 있다가 갑자기 우선순위가 높은 B라는 프로세스가 들어왔어요. 그러면 그 B라는 프로세스를 처리를 해야 되겠죠? 그러면 그때 A라는 프로세스를 어디까지 처리했었는지 그런 것들을 전부 다 저장하고 있어야 된다고요. 해서 많은 오버헤드를 초래할 수도 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "우선순위가",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "높은",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:01:38",
+      "end_time_hms": "00:02:01",
+      "start_seconds": 98,
+      "end_seconds": 121,
+      "duration_seconds": 23,
+      "timeline_summary": "인터럽트용 타이머 클록의 필요성",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(Clock)이 필요함."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(Clock)이 필요함.",
+      "spoken_sentences": [
+        "그리고 선점이 가능하도록 일정 시간 배당에 대한 그런 인터럽트용 타이머 클록 그런 것도 필요해요.",
+        "여기 보게 되면 우리 인터럽트용 타이머 클록이라고 그렇게 나왔는데 얘가 도대체 뭘 하는 거냐?",
+        "만약에 A라는 프로세스가 있고 B라는 프로세스가 있는데 A라는 프로세스한테 5초를 할당해 주고 그다음에 B라는 프로세스한테도..."
+      ],
+      "spoken_text": "그리고 선점이 가능하도록 일정 시간 배당에 대한 그런 인터럽트용 타이머 클록 그런 것도 필요해요. 여기 보게 되면 우리 인터럽트용 타이머 클록이라고 그렇게 나왔는데 얘가 도대체 뭘 하는 거냐? 만약에 A라는 프로세스가 있고 B라는 프로세스가 있는데 A라는 프로세스한테 5초를 할당해 주고 그다음에 B라는 프로세스한테도...",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "Clock",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "타이머",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:02:01",
+      "end_time_hms": "00:02:41",
+      "start_seconds": 121,
+      "end_seconds": 161,
+      "duration_seconds": 40,
+      "timeline_summary": "타이머 클록의 역할 상세 설명",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(Clock)이 필요함."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n선점이 가능하도록 일정 시간 배당에 대한 인터럽트용 타이머 클록(Clock)이 필요함.",
+      "spoken_sentences": [
+        "5초씩 CPU를 사용하고 나와야 돼요.",
+        "그때 A라는 프로세스가 CPU에 들어가서 5초가 지나면 나와야 되는데 안 나오고 10초, 20초, 30초, 40초 계속해서 있는 거예요.",
+        "그러면 안 되잖아요.",
+        "해서 이 인터럽트용 타이머 클록이라는 거는 하나의 시스템에서 동작하는 그런 장치들을 감시하기 위해서 주기적으로 신호를 발생합니다.",
+        "해서 A라는 프로세스한테 신호를 보내서 '야 너 몇 초 동안 사용했어?' 또 B라는 프로세스한테 신호를 보내서 '너 몇 초 동안 사용했어?' 그렇게 계속해서 감시하기 위해서 주기적으로 신호를 발생하는 걸 보고 우리가 인터럽트용 타이머 클록 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "5초씩 CPU를 사용하고 나와야 돼요. 그때 A라는 프로세스가 CPU에 들어가서 5초가 지나면 나와야 되는데 안 나오고 10초, 20초, 30초, 40초 계속해서 있는 거예요. 그러면 안 되잖아요. 해서 이 인터럽트용 타이머 클록이라는 거는 하나의 시스템에서 동작하는 그런 장치들을 감시하기 위해서 주기적으로 신호를 발생합니다. 해서 A라는 프로세스한테 신호를 보내서 '야 너 몇 초 동안 사용했어?' 또 B라는 프로세스한테 신호를 보내서 '너 몇 초 동안 사용했어?' 그렇게 계속해서 감시하기 위해서 주기적으로 신호를 발생하는 걸 보고 우리가 인터럽트용 타이머 클록 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "Clock",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "타이머",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0341_341",
+      "subtopic_title": "선점 스케줄링",
+      "subtopic_sequence": 341,
+      "subtopic_number": "341",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=yx64zaPED3I",
+      "start_time_hms": "00:02:41",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 161,
+      "end_seconds": 202,
+      "duration_seconds": 41,
+      "timeline_summary": "선점 스케줄링의 종류 및 마무리",
+      "screen_text_lines": [
+        "프로세스 스케줄링의 기법",
+        "선점(Preemptive) 스케줄링",
+        "선점 스케줄링의 종류에는 Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등의 알고리즘이 있음."
+      ],
+      "screen_text": "프로세스 스케줄링의 기법\n선점(Preemptive) 스케줄링\n선점 스케줄링의 종류에는 Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등의 알고리즘이 있음.",
+      "spoken_sentences": [
+        "그때 우리 선점형 스케줄링 종류에 보게 되면 우리 RR, 우리 라운드 로빈이라는 것도 있고요.",
+        "그다음에 SRT라는 것도 있고, 선점 우선순위라는 것도 있고요.",
+        "다단계 큐라는 것도 있고, 다단계 피드백 큐 그런 것도 있고 여러 가지 알고리즘이 있습니다.",
+        "이렇게 선점형 스케줄링 종류에도 여러 가지가 있고 비선점형 스케줄링 종류에도 여러 가지가 있다 보니까 얘네들을 막 섞어 놓고 선점형 스케줄링이 아닌 거 찾아라 비선점형 스케줄링이 아닌 거 찾아라 그렇게도 문제가 나올 수가 있겠죠?",
+        "해서 우리 선점형 스케줄링이 뭔지 그거 정확하게 기억하셔야 되고요.",
+        "그다음에 스케줄링 종류에는 어떤 것들이 있는지 각각 구분할 수 있게 정리하고 지나가셔야 됩니다."
+      ],
+      "spoken_text": "그때 우리 선점형 스케줄링 종류에 보게 되면 우리 RR, 우리 라운드 로빈이라는 것도 있고요. 그다음에 SRT라는 것도 있고, 선점 우선순위라는 것도 있고요. 다단계 큐라는 것도 있고, 다단계 피드백 큐 그런 것도 있고 여러 가지 알고리즘이 있습니다. 이렇게 선점형 스케줄링 종류에도 여러 가지가 있고 비선점형 스케줄링 종류에도 여러 가지가 있다 보니까 얘네들을 막 섞어 놓고 선점형 스케줄링이 아닌 거 찾아라 비선점형 스케줄링이 아닌 거 찾아라 그렇게도 문제가 나올 수가 있겠죠? 해서 우리 선점형 스케줄링이 뭔지 그거 정확하게 기억하셔야 되고요. 그다음에 스케줄링 종류에는 어떤 것들이 있는지 각각 구분할 수 있게 정리하고 지나가셔야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로세스 스케줄링의 기법",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 72
+        },
+        {
+          "keyword": "선점(Preemptive) 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "선점 스케줄링",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:11",
+      "start_seconds": 0,
+      "end_seconds": 11,
+      "duration_seconds": 11,
+      "timeline_summary": "SJF(단기 작업 우선) 스케줄링 소개",
+      "screen_text_lines": [
+        "SJF(Shortest Job First, 단기 작업 우선)"
+      ],
+      "screen_text": "SJF(Shortest Job First, 단기 작업 우선)",
+      "spoken_sentences": [
+        "이번 시간엔 우리 SJF 단기 작업 우선에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간엔 우리 SJF 단기 작업 우선에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SJF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:00:11",
+      "end_time_hms": "00:01:16",
+      "start_seconds": 11,
+      "end_seconds": 76,
+      "duration_seconds": 65,
+      "timeline_summary": "비선점 및 선점 스케줄링의 종류 구분",
+      "screen_text_lines": [
+        "SJF(Shortest Job First, 단기 작업 우선)",
+        "· 비선점 스케줄링 종류 : FCFS, SJF, 우선순위, HRN, 기한부 등.",
+        "· 선점 스케줄링 종류 : Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등."
+      ],
+      "screen_text": "SJF(Shortest Job First, 단기 작업 우선)\n· 비선점 스케줄링 종류 : FCFS, SJF, 우선순위, HRN, 기한부 등.\n· 선점 스케줄링 종류 : Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등.",
+      "spoken_sentences": [
+        "우리 스케줄링 종류를 크게 두 가지로 나누자면 우리 비선점 스케줄링이 있고 우리 선점 스케줄링이 있고 이렇게 두 가지가 있는 거죠.",
+        "그때 선점하고 비선점의 가장 큰 차이가 강제 종료를 시킬 수 있냐 없냐, 강제로 뭔가 우선순위를 뺏어 올 수 있냐 없냐 그 차이였어요.",
+        "우리 선점이 강제로 뺏어 올 수 있는 거고 비선점은 강제로 뺏어 올 수 없는 거, 그걸 보고 우리가 비선점 그렇게 불렀죠.",
+        "그때 우리 비선점 스케줄링의 알고리즘에 보게 되면 지금처럼 FCFS라는 것도 있고 SJF라는 것도 있고 우선순위도 있고 HRN이다 기한부다 해서 이런 것들이 있습니다.",
+        "그리고 선점 스케줄링 종류에 보게 되면 라운드 로빈 RR 방식이 있고요.",
+        "그다음에 SRT라는 게 있고 그다음에 우리 선점 우선순위다 다단계 큐다 그다음에 다단계 피드백 큐다 해서 이렇게 여러 가지가 있습니다.",
+        "그 중에서 이번 시간에 공부하고자 하는 게 우리 SJF요.",
+        "얘도 비선점이에요.",
+        "해서 얘는 뭔가를 강제로 뺏어 올 수 있다 없다?",
+        "없더라 없더라."
+      ],
+      "spoken_text": "우리 스케줄링 종류를 크게 두 가지로 나누자면 우리 비선점 스케줄링이 있고 우리 선점 스케줄링이 있고 이렇게 두 가지가 있는 거죠. 그때 선점하고 비선점의 가장 큰 차이가 강제 종료를 시킬 수 있냐 없냐, 강제로 뭔가 우선순위를 뺏어 올 수 있냐 없냐 그 차이였어요. 우리 선점이 강제로 뺏어 올 수 있는 거고 비선점은 강제로 뺏어 올 수 없는 거, 그걸 보고 우리가 비선점 그렇게 불렀죠. 그때 우리 비선점 스케줄링의 알고리즘에 보게 되면 지금처럼 FCFS라는 것도 있고 SJF라는 것도 있고 우선순위도 있고 HRN이다 기한부다 해서 이런 것들이 있습니다. 그리고 선점 스케줄링 종류에 보게 되면 라운드 로빈 RR 방식이 있고요. 그다음에 SRT라는 게 있고 그다음에 우리 선점 우선순위다 다단계 큐다 그다음에 다단계 피드백 큐다 해서 이렇게 여러 가지가 있습니다. 그 중에서 이번 시간에 공부하고자 하는 게 우리 SJF요. 얘도 비선점이에요. 해서 얘는 뭔가를 강제로 뺏어 올 수 있다 없다? 없더라 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "SJF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:01:16",
+      "end_time_hms": "00:02:56",
+      "start_seconds": 76,
+      "end_seconds": 176,
+      "duration_seconds": 100,
+      "timeline_summary": "SJF의 정의와 특징 설명",
+      "screen_text_lines": [
+        "SJF(Shortest Job First, 단기 작업 우선)",
+        "SJF는 준비상태 큐에서 기다리고 있는 프로세스들 중에서 실행 시간이 가장 짧은 프로세스에게 먼저 CPU를 할당하는 기법.",
+        "· 가장 적은 평균 대기 시간을 제공하는 최적 알고리즘.",
+        "· 실행 시간이 긴 프로세스는 실행 시간이 짧은 프로세스에게 할당 순위가 밀려 무한 연기 상태가 발생될 수 있음."
+      ],
+      "screen_text": "SJF(Shortest Job First, 단기 작업 우선)\nSJF는 준비상태 큐에서 기다리고 있는 프로세스들 중에서 실행 시간이 가장 짧은 프로세스에게 먼저 CPU를 할당하는 기법.\n· 가장 적은 평균 대기 시간을 제공하는 최적 알고리즘.\n· 실행 시간이 긴 프로세스는 실행 시간이 짧은 프로세스에게 할당 순위가 밀려 무한 연기 상태가 발생될 수 있음.",
+      "spoken_sentences": [
+        "자 그럼 요 SJF 요거 좀 살펴보자고요.",
+        "우리 SJF라는 거는 쇼티스트 잡 퍼스트요.",
+        "쇼티스트다라고 하게 되면 얘는 가장 짧다 그런 뜻이죠.",
+        "해서 가장 짧은 그런 작업이 퍼스트 먼저 처리되는 거예요.",
+        "해서 우리말로는 단기 작업 우선이요.",
+        "해서 우리 실행 시간이 가장 짧은 게 가장 짧은 게 먼저 처리되는 그런 방식을 보고 우리 얘기하는 거예요.",
+        "해서 SJF라는 거는 우리 준비 상태 큐에서 기다리고 있는 그런 프로세스들 중에서 실행 시간이 실행 시간이 가장 짧은 가장 짧은 그런 프로세스한테 먼저 CPU를 할당하는 그런 기법을 보고 우리가 SJF 그렇게 부르는 거예요.",
+        "해서 가장 적은 그런 평균 대기 시간을 제공하는 최적의 알고리즘이 우리 SJF요.",
+        "해서 여러 개의 작업이 있을 때 빨리빨리 먼저 처리할 수 있는 걸 먼저 처리하고 시간이 오래 걸리는 거는 나중에 처리되는 그런 방식입니다.",
+        "해서 실행 시간이 긴 프로세스 입장에서는 대기 불공평하죠.",
+        "해서 실행 시간이 이 긴 프로세스는 실행 시간이 짧은 프로세스한테 할당 우선순위가 밀려요.",
+        "밀려서 대기하고 있다가 또 다시 또 다시 짧은 작업 시간을 가진 그 작업이 또 들어왔어요.",
+        "또 들어오면 또 밀리겠죠.",
+        "그리고 기다리고 있는데 또 실행 시간이 짧은 그 프로세스가 또 들어왔어요.",
+        "그럼 또 물린다고요.",
+        "그렇게 실행 시간이 짧은 그런 프로세스한테 할당 우선순위가 밀리기 때문에 무한 연기 상태가 발생할 수도 있습니다.",
+        "요런 게 우리 SJF요."
+      ],
+      "spoken_text": "자 그럼 요 SJF 요거 좀 살펴보자고요. 우리 SJF라는 거는 쇼티스트 잡 퍼스트요. 쇼티스트다라고 하게 되면 얘는 가장 짧다 그런 뜻이죠. 해서 가장 짧은 그런 작업이 퍼스트 먼저 처리되는 거예요. 해서 우리말로는 단기 작업 우선이요. 해서 우리 실행 시간이 가장 짧은 게 가장 짧은 게 먼저 처리되는 그런 방식을 보고 우리 얘기하는 거예요. 해서 SJF라는 거는 우리 준비 상태 큐에서 기다리고 있는 그런 프로세스들 중에서 실행 시간이 실행 시간이 가장 짧은 가장 짧은 그런 프로세스한테 먼저 CPU를 할당하는 그런 기법을 보고 우리가 SJF 그렇게 부르는 거예요. 해서 가장 적은 그런 평균 대기 시간을 제공하는 최적의 알고리즘이 우리 SJF요. 해서 여러 개의 작업이 있을 때 빨리빨리 먼저 처리할 수 있는 걸 먼저 처리하고 시간이 오래 걸리는 거는 나중에 처리되는 그런 방식입니다. 해서 실행 시간이 긴 프로세스 입장에서는 대기 불공평하죠. 해서 실행 시간이 이 긴 프로세스는 실행 시간이 짧은 프로세스한테 할당 우선순위가 밀려요. 밀려서 대기하고 있다가 또 다시 또 다시 짧은 작업 시간을 가진 그 작업이 또 들어왔어요. 또 들어오면 또 밀리겠죠. 그리고 기다리고 있는데 또 실행 시간이 짧은 그 프로세스가 또 들어왔어요. 그럼 또 물린다고요. 그렇게 실행 시간이 짧은 그런 프로세스한테 할당 우선순위가 밀리기 때문에 무한 연기 상태가 발생할 수도 있습니다. 요런 게 우리 SJF요.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "SJF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:02:56",
+      "end_time_hms": "00:03:28",
+      "start_seconds": 176,
+      "end_seconds": 208,
+      "duration_seconds": 32,
+      "timeline_summary": "예제 1 문제 제시 (제출 시간 없음)",
+      "screen_text_lines": [
+        "예제 다음과 같은 프로세스들이 차례로 준비상태 큐에 들어왔다고 가정할 때, SJF 기법을 이용하여 평균 실행 시간, 평균 대기 시간, 평균 반환 시간을 구하시오(제출 시간이 없을 경우).",
+        "프로세스 번호 P1 P2 P3",
+        "실행 시간 20 4 6"
+      ],
+      "screen_text": "예제 다음과 같은 프로세스들이 차례로 준비상태 큐에 들어왔다고 가정할 때, SJF 기법을 이용하여 평균 실행 시간, 평균 대기 시간, 평균 반환 시간을 구하시오(제출 시간이 없을 경우).\n프로세스 번호 P1 P2 P3\n실행 시간 20 4 6",
+      "spoken_sentences": [
+        "자 우리 예제 문제를 보니까 다음과 같은 프로세스들이 차례로 차례로 준비 상태 큐에 들어왔다고 가정을 할 때 그때 SJF 이 기법을 이용해서 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 이거를 구하시오 그렇게 나왔습니다.",
+        "그때 제출 시간이 없을 경우라고 그렇게 되어 있죠."
+      ],
+      "spoken_text": "자 우리 예제 문제를 보니까 다음과 같은 프로세스들이 차례로 차례로 준비 상태 큐에 들어왔다고 가정을 할 때 그때 SJF 이 기법을 이용해서 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 이거를 구하시오 그렇게 나왔습니다. 그때 제출 시간이 없을 경우라고 그렇게 되어 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "SJF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:03:28",
+      "end_time_hms": "00:03:58",
+      "start_seconds": 208,
+      "end_seconds": 238,
+      "duration_seconds": 30,
+      "timeline_summary": "예제 1 풀이 가이드",
+      "screen_text_lines": [
+        "① 아래와 같이 실행 시간이 짧은 프로세스를 먼저 처리하도록 이동시킨 후 각 프로세스의 대기 시간과 반환 시간을 구함.",
+        "② 실행시간, 대기 시간, 반환 시간, 각 시간의 평균은 FCFS의 예제와 동일한 방법으로 구함."
+      ],
+      "screen_text": "① 아래와 같이 실행 시간이 짧은 프로세스를 먼저 처리하도록 이동시킨 후 각 프로세스의 대기 시간과 반환 시간을 구함.\n② 실행시간, 대기 시간, 반환 시간, 각 시간의 평균은 FCFS의 예제와 동일한 방법으로 구함.",
+      "spoken_sentences": [
+        "여기서 제출 시간이 없다 그 얘기는 이 P1이다 P2다 P3다 요게 동시에 도착을 했다 그렇게 생각을 하라는 거예요.",
+        "그때 아래와 같이 실행 시간이 짧은 프로세스, 실행 시간이 짧은 그런 프로세스를 먼저 처리하도록 우리가 이동을 먼저 시켜 줘야 돼요.",
+        "그리고 각 프로세스의 대기 시간이다 반환 시간이다 이런 것들을 구해 주면 됩니다.",
+        "그때 실행 시간이다 대기 시간이다 반환 시간이다 해서 각각 이런 시간들의 평균을 우리가 구할 때는 우리 FCFS 그 방법, 그 방법과 동일한 그 방법으로 구해 주면 됩니다."
+      ],
+      "spoken_text": "여기서 제출 시간이 없다 그 얘기는 이 P1이다 P2다 P3다 요게 동시에 도착을 했다 그렇게 생각을 하라는 거예요. 그때 아래와 같이 실행 시간이 짧은 프로세스, 실행 시간이 짧은 그런 프로세스를 먼저 처리하도록 우리가 이동을 먼저 시켜 줘야 돼요. 그리고 각 프로세스의 대기 시간이다 반환 시간이다 이런 것들을 구해 주면 됩니다. 그때 실행 시간이다 대기 시간이다 반환 시간이다 해서 각각 이런 시간들의 평균을 우리가 구할 때는 우리 FCFS 그 방법, 그 방법과 동일한 그 방법으로 구해 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:03:58",
+      "end_time_hms": "00:04:30",
+      "start_seconds": 238,
+      "end_seconds": 270,
+      "duration_seconds": 32,
+      "timeline_summary": "예제 1 실행 순서 결정",
+      "screen_text_lines": [
+        "처리 순서 : P2 → P3 → P1",
+        "프로세스 번호 P1 P2 P3",
+        "실행 시간 20 4 6"
+      ],
+      "screen_text": "처리 순서 : P2 → P3 → P1\n프로세스 번호 P1 P2 P3\n실행 시간 20 4 6",
+      "spoken_sentences": [
+        "자 그럼 실제로 한번 해 보자고요.",
+        "그러면 지금처럼 이렇게 프로세스가 있고 그리고 실행 시간이 이렇게 정해져 있을 때 SAF는 실행 시간이 짧은 그 아이가 먼저 처리된다 그랬죠.",
+        "그러면 여기서 실행 시간으로 봤을 때 P2가 제일 짧아요.",
+        "그다음에 P3, 그다음에 실행 시간이 제일 긴 게 P1이죠.",
+        "그러면 그때 처리되는 순서가 P2가 먼저 처리가 될 거고요.",
+        "그다음에 두 번째로 처리되는 게 우리 P3요.",
+        "그다음에 세 번째로 처리되는 게 우리 P1입니다.",
+        "해서 그때 처리되는 순서는 지금처럼 P2 P3 P1이요."
+      ],
+      "spoken_text": "자 그럼 실제로 한번 해 보자고요. 그러면 지금처럼 이렇게 프로세스가 있고 그리고 실행 시간이 이렇게 정해져 있을 때 SAF는 실행 시간이 짧은 그 아이가 먼저 처리된다 그랬죠. 그러면 여기서 실행 시간으로 봤을 때 P2가 제일 짧아요. 그다음에 P3, 그다음에 실행 시간이 제일 긴 게 P1이죠. 그러면 그때 처리되는 순서가 P2가 먼저 처리가 될 거고요. 그다음에 두 번째로 처리되는 게 우리 P3요. 그다음에 세 번째로 처리되는 게 우리 P1입니다. 해서 그때 처리되는 순서는 지금처럼 P2 P3 P1이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "프로세스 번호 P1 P2 P3",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "시간이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:04:30",
+      "end_time_hms": "00:05:59",
+      "start_seconds": 270,
+      "end_seconds": 359,
+      "duration_seconds": 89,
+      "timeline_summary": "예제 1 타임라인 시뮬레이션",
+      "screen_text_lines": [
+        "진행시간 0 10 20 30",
+        "P2 도착 실행 완료",
+        "P3 도착 대기 실행 완료",
+        "P1 도착 대기 실행 완료"
+      ],
+      "screen_text": "진행시간 0 10 20 30\nP2 도착 실행 완료\nP3 도착 대기 실행 완료\nP1 도착 대기 실행 완료",
+      "spoken_sentences": [
+        "그러면 지금처럼 이렇게 우리 진행 시간이 0부터 30까지 있다고 가정을 한번 해 보자고요.",
+        "그때 문제에서 제출 시간이 없을 경우라고 했죠.",
+        "그러면 P1이다 P2가 P3다 요게 동시에 우리 진행 시간으로 봤을 때 0일 때 전부 다 도착을 했다 그 얘기예요.",
+        "해서 그때 처리되는 순서가 P2 P3 P1이니까 그 순서대로 우리가 쭉쭉쭉 전부 다 적어 주고요.",
+        "얘네들은 전부 다 0초에 전부 다 프로세스들이 싹 다 도착을 한 겁니다.",
+        "그때 P2가 먼저 처리가 된다 그랬으니까 그때 P2가 실행 시간이 4가 되겠죠.",
+        "그러면 그 이전에 처리됐던 그런 작업이 없기 때문에 0초에 도착하자마자 얘가 4초 동안 뭔가를 실행을 할 거예요.",
+        "해서 4만큼 실행이 되고 4초가 딱 되는 그 시점에 그 시점에 얘는 작업이 완료가 되겠죠.",
+        "그러면 P3 같은 경우에는 두 번째로 처리가 되는데 P2가 실행이 되는 동안 얘는 대기를 해야 되겠죠.",
+        "해서 4초 동안 대기하고 있다가 4초가 되는 그 시점에 얘는 실행을 시작을 할 거예요.",
+        "실행을 시작하는데 그때 P3 같은 경우에는 6초 동안 6초 동안 실행이 된다 그랬죠.",
+        "해서 6초 만큼 쭉 실행이 될 겁니다.",
+        "실행을 하고 6초가 지난 그 시점 그러면 10초가 되겠죠.",
+        "그 10초가 되는 그 시점에 완료가 될 거예요.",
+        "그다음에 P1이라는 이 프로세스, 이 프로세스는 다른 프로세스와 마찬가지로 0초에 도착을 하긴 했는데 그때 우선순위에 따라서 얘가 제일 마지막에 처리가 되는 거죠.",
+        "그때 P2다 P3다 요게 실행이 전부 다 완료가 됐을 때 P1이 P1이 실행을 하겠죠.",
+        "해서 우리 앞에서 P2가 실행할 때 4초가 걸렸고 그다음에 P3가 6초가 걸렸으니까 얘는 그만큼 대기를 해야 돼요.",
+        "해서 얘가 대기하는 그 시간은 총 10초입니다.",
+        "10초 동안 대기하고 있다가 P3가 10초가 됐을 때 완료가 됐죠.",
+        "그러면 그때 10초 10초부터 시작해서 얘가 P1이 실행을 시작하겠죠.",
+        "실행을 해서 얘는 총 20초 동안 실행이 된다 그랬으니까 20초 동안 계속해서 실행을 하고 30초가 되는 그 시점에 완료가 될 겁니다."
+      ],
+      "spoken_text": "그러면 지금처럼 이렇게 우리 진행 시간이 0부터 30까지 있다고 가정을 한번 해 보자고요. 그때 문제에서 제출 시간이 없을 경우라고 했죠. 그러면 P1이다 P2가 P3다 요게 동시에 우리 진행 시간으로 봤을 때 0일 때 전부 다 도착을 했다 그 얘기예요. 해서 그때 처리되는 순서가 P2 P3 P1이니까 그 순서대로 우리가 쭉쭉쭉 전부 다 적어 주고요. 얘네들은 전부 다 0초에 전부 다 프로세스들이 싹 다 도착을 한 겁니다. 그때 P2가 먼저 처리가 된다 그랬으니까 그때 P2가 실행 시간이 4가 되겠죠. 그러면 그 이전에 처리됐던 그런 작업이 없기 때문에 0초에 도착하자마자 얘가 4초 동안 뭔가를 실행을 할 거예요. 해서 4만큼 실행이 되고 4초가 딱 되는 그 시점에 그 시점에 얘는 작업이 완료가 되겠죠. 그러면 P3 같은 경우에는 두 번째로 처리가 되는데 P2가 실행이 되는 동안 얘는 대기를 해야 되겠죠. 해서 4초 동안 대기하고 있다가 4초가 되는 그 시점에 얘는 실행을 시작을 할 거예요. 실행을 시작하는데 그때 P3 같은 경우에는 6초 동안 6초 동안 실행이 된다 그랬죠. 해서 6초 만큼 쭉 실행이 될 겁니다. 실행을 하고 6초가 지난 그 시점 그러면 10초가 되겠죠. 그 10초가 되는 그 시점에 완료가 될 거예요. 그다음에 P1이라는 이 프로세스, 이 프로세스는 다른 프로세스와 마찬가지로 0초에 도착을 하긴 했는데 그때 우선순위에 따라서 얘가 제일 마지막에 처리가 되는 거죠. 그때 P2다 P3다 요게 실행이 전부 다 완료가 됐을 때 P1이 P1이 실행을 하겠죠. 해서 우리 앞에서 P2가 실행할 때 4초가 걸렸고 그다음에 P3가 6초가 걸렸으니까 얘는 그만큼 대기를 해야 돼요. 해서 얘가 대기하는 그 시간은 총 10초입니다. 10초 동안 대기하고 있다가 P3가 10초가 됐을 때 완료가 됐죠. 그러면 그때 10초 10초부터 시작해서 얘가 P1이 실행을 시작하겠죠. 실행을 해서 얘는 총 20초 동안 실행이 된다 그랬으니까 20초 동안 계속해서 실행을 하고 30초가 되는 그 시점에 완료가 될 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "시간이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:05:59",
+      "end_time_hms": "00:07:02",
+      "start_seconds": 359,
+      "end_seconds": 422,
+      "duration_seconds": 63,
+      "timeline_summary": "예제 1 평균 실행 시간 계산",
+      "screen_text_lines": [
+        "평균 실행 시간 : (4+6+20)/3 = 10"
+      ],
+      "screen_text": "평균 실행 시간 : (4+6+20)/3 = 10",
+      "spoken_sentences": [
+        "그러면 지금 우리가 계산한 거 요거를 가지고 우리 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 요거 한번 계산 한번 해 보자고요.",
+        "자 그럼 우리가 평균 실행 시간부터 한번 구해 보자고요.",
+        "자 평균 실행 시간이요.",
+        "자 우리가 맨 처음에 실행이 될 때 P2가 먼저 실행이 되고 그다음에 P3가 실행이 되고 그다음에 마지막에 P1 요게 실행이 됐죠.",
+        "그때 P2는 실행 시간이 총 4초였고요.",
+        "그다음에 P3는 총 실행 시간이 6초였습니다.",
+        "그리고 P1은 총 실행 시간이 20초였죠.",
+        "그러면 요 세 가지의 값을 다 더한 다음에 우리 프로세스의 개수가 세 개니까 3으로 나눠주면 되겠죠.",
+        "그러면 4 + 6 하게 되면 10이 될 거고 10 + 20을 하면 30이 될 거고 30 나누기 3을 하게 되면 10 하고 그렇게 평균 실행 시간이 10이다 그렇게 나오겠죠."
+      ],
+      "spoken_text": "그러면 지금 우리가 계산한 거 요거를 가지고 우리 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 요거 한번 계산 한번 해 보자고요. 자 그럼 우리가 평균 실행 시간부터 한번 구해 보자고요. 자 평균 실행 시간이요. 자 우리가 맨 처음에 실행이 될 때 P2가 먼저 실행이 되고 그다음에 P3가 실행이 되고 그다음에 마지막에 P1 요게 실행이 됐죠. 그때 P2는 실행 시간이 총 4초였고요. 그다음에 P3는 총 실행 시간이 6초였습니다. 그리고 P1은 총 실행 시간이 20초였죠. 그러면 요 세 가지의 값을 다 더한 다음에 우리 프로세스의 개수가 세 개니까 3으로 나눠주면 되겠죠. 그러면 4 + 6 하게 되면 10이 될 거고 10 + 20을 하면 30이 될 거고 30 나누기 3을 하게 되면 10 하고 그렇게 평균 실행 시간이 10이다 그렇게 나오겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:07:02",
+      "end_time_hms": "00:08:42",
+      "start_seconds": 422,
+      "end_seconds": 522,
+      "duration_seconds": 100,
+      "timeline_summary": "예제 1 평균 대기 및 반환 시간 계산",
+      "screen_text_lines": [
+        "평균 실행 시간 : (4+6+20)/3 = 10",
+        "평균 대기 시간 : (0+4+10)/3 = 4.6",
+        "평균 반환 시간 : (4+10+30)/3 = 14.6"
+      ],
+      "screen_text": "평균 실행 시간 : (4+6+20)/3 = 10\n평균 대기 시간 : (0+4+10)/3 = 4.6\n평균 반환 시간 : (4+10+30)/3 = 14.6",
+      "spoken_sentences": [
+        "그다음에 우리 평균 대기 시간도 한번 구해 보자고요.",
+        "자 우리 평균 대기 시간이요.",
+        "우리 P2 같은 경우에는 제일 처음에 들어와서 대기를 하지 않고 바로 실행을 했죠.",
+        "해서 P2는 대기 시간이 0이고요.",
+        "그다음에 P3는 들어오자마자 바로 실행이 된 게 아니라 P2가 실행이 되는 동안 얘는 4초 동안 대기를 했다고요.",
+        "해서 P3는 4초 동안 대기를 했고 그다음에 P1이라는 이 프로세스도 들어오자마자 바로 실행이 된 게 아니라 P2랑 P3 요 두 가지가 전부 다 실행이 될 동안 얘는 대기를 했다고요.",
+        "해서 그때 대기 시간이 총 10초요.",
+        "해서 요걸 싹 다 더한 다음에 요것도 우리가 3으로 나눠서 계산을 해 주면 되겠죠.",
+        "해서 0 + 4 + 10을 하게 되면 14초 그렇게 나올 거고 14초 나누기 3을 하게 되면 4.6 하고 그렇게 나옵니다.",
+        "그다음에 우리 평균 반환 시간도 한번 구해 보자고요.",
+        "해서 우리 평균 반환 시간이요.",
+        "우리 P2는 맨 처음에 들어오자마자 바로 실행해서 4초가 됐을 때 작업이 완료가 됐죠.",
+        "그다음에 P3는 4초만큼 대기를 하고 있다가 6초만큼 실행을 해서 10초가 지난 그 시점에 작업이 완료가 됐습니다.",
+        "그리고 P1은 10초 동안 대기하고 있다가 그다음에 20초만큼 실행을 해서 30초가 되는 그 시점에 작업이 완료가 된 거죠.",
+        "해서 우리 P2는 그때 반환 시간이 4초, 그다음에 P3는 우리 반환 시간이 10초, 그다음에 P1은 반환 시간이 우리 30초요.",
+        "해서 우리가 요 세 개 값을 싹 다 더한 다음에 이걸 또 우리가 3으로 나눠 주면 됩니다.",
+        "해서 4 + 10을 하면 14가 될 거고 거기다 30을 더하게 되면 44초 그렇게 나오겠죠.",
+        "44초를 우리가 3으로 3으로 나누게 되면 우리 14.6초 하고 그렇게 나옵니다.",
+        "해서 지금처럼 요렇게 우리가 그림을 그려놓고 요렇게 우리 실행 시간이다 대기 시간이다 이런 것들을 쭉쭉쭉 적어 놓고 지금처럼 평균 실행 시간 평균 대기 시간 평균 반환 시간 요런 것들을 요렇게 계산해야 우리가 틀리지 않고 정확하게 계산을 할 수 있다고요."
+      ],
+      "spoken_text": "그다음에 우리 평균 대기 시간도 한번 구해 보자고요. 자 우리 평균 대기 시간이요. 우리 P2 같은 경우에는 제일 처음에 들어와서 대기를 하지 않고 바로 실행을 했죠. 해서 P2는 대기 시간이 0이고요. 그다음에 P3는 들어오자마자 바로 실행이 된 게 아니라 P2가 실행이 되는 동안 얘는 4초 동안 대기를 했다고요. 해서 P3는 4초 동안 대기를 했고 그다음에 P1이라는 이 프로세스도 들어오자마자 바로 실행이 된 게 아니라 P2랑 P3 요 두 가지가 전부 다 실행이 될 동안 얘는 대기를 했다고요. 해서 그때 대기 시간이 총 10초요. 해서 요걸 싹 다 더한 다음에 요것도 우리가 3으로 나눠서 계산을 해 주면 되겠죠. 해서 0 + 4 + 10을 하게 되면 14초 그렇게 나올 거고 14초 나누기 3을 하게 되면 4.6 하고 그렇게 나옵니다. 그다음에 우리 평균 반환 시간도 한번 구해 보자고요. 해서 우리 평균 반환 시간이요. 우리 P2는 맨 처음에 들어오자마자 바로 실행해서 4초가 됐을 때 작업이 완료가 됐죠. 그다음에 P3는 4초만큼 대기를 하고 있다가 6초만큼 실행을 해서 10초가 지난 그 시점에 작업이 완료가 됐습니다. 그리고 P1은 10초 동안 대기하고 있다가 그다음에 20초만큼 실행을 해서 30초가 되는 그 시점에 작업이 완료가 된 거죠. 해서 우리 P2는 그때 반환 시간이 4초, 그다음에 P3는 우리 반환 시간이 10초, 그다음에 P1은 반환 시간이 우리 30초요. 해서 우리가 요 세 개 값을 싹 다 더한 다음에 이걸 또 우리가 3으로 나눠 주면 됩니다. 해서 4 + 10을 하면 14가 될 거고 거기다 30을 더하게 되면 44초 그렇게 나오겠죠. 44초를 우리가 3으로 3으로 나누게 되면 우리 14.6초 하고 그렇게 나옵니다. 해서 지금처럼 요렇게 우리가 그림을 그려놓고 요렇게 우리 실행 시간이다 대기 시간이다 이런 것들을 쭉쭉쭉 적어 놓고 지금처럼 평균 실행 시간 평균 대기 시간 평균 반환 시간 요런 것들을 요렇게 계산해야 우리가 틀리지 않고 정확하게 계산을 할 수 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:08:42",
+      "end_time_hms": "00:10:05",
+      "start_seconds": 522,
+      "end_seconds": 605,
+      "duration_seconds": 83,
+      "timeline_summary": "예제 1 결과 정리",
+      "screen_text_lines": [
+        "· 평균 실행 시간 : (4+6+20)/3 = 10",
+        "· 평균 대기 시간 : (0+4+10)/3 = 4.6",
+        "· 평균 반환 시간 : (4+10+30)/3 = 14.6"
+      ],
+      "screen_text": "· 평균 실행 시간 : (4+6+20)/3 = 10\n· 평균 대기 시간 : (0+4+10)/3 = 4.6\n· 평균 반환 시간 : (4+10+30)/3 = 14.6",
+      "spoken_sentences": [
+        "해서 요거를 깨끗하게 정리해 보면 지금처럼 요렇게 계산이 되는 거죠."
+      ],
+      "spoken_text": "해서 요거를 깨끗하게 정리해 보면 지금처럼 요렇게 계산이 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "대기",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0342_342",
+      "subtopic_title": "SJF 스케줄링",
+      "subtopic_sequence": 342,
+      "subtopic_number": "342",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5GN3HBms5Ow",
+      "start_time_hms": "00:10:05",
+      "end_time_hms": "00:11:03",
+      "start_seconds": 605,
+      "end_seconds": 663,
+      "duration_seconds": 58,
+      "timeline_summary": "예제 2 문제 제시 (제출 시간 있음)",
+      "screen_text_lines": [
+        "예제 다음과 같은 프로세스들이 차례로 준비상태 큐에 들어왔다고 가정할 때, SJF 기법을 이용하여 평균 실행 시간, 평균 대기 시간, 평균 반환 시간을 구하시오(제출 시간이 있을 경우).",
+        "프로세스 번호 P1 P2 P3",
+        "실행 시간 20 7 4",
+        "제출 시간 0 1 2"
+      ],
+      "screen_text": "예제 다음과 같은 프로세스들이 차례로 준비상태 큐에 들어왔다고 가정할 때, SJF 기법을 이용하여 평균 실행 시간, 평균 대기 시간, 평균 반환 시간을 구하시오(제출 시간이 있을 경우).\n프로세스 번호 P1 P2 P3\n실행 시간 20 7 4\n제출 시간 0 1 2",
+      "spoken_sentences": [
+        "자 예제 문제 보니까 다음과 같은 프로세스들이 차례로 준비 상태 큐에 들어왔대요.",
+        "들어왔다고 가정을 했을 때 그때 SJF 이 기법을 이용해서 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 이거를 구하라고 그렇게 문제가 나왔습니다.",
+        "근데 여기 보니까 제출 시간이 있을 경우라고 그렇게 문제가 나왔죠.",
+        "여기서 제출 시간이라는 거는 이 프로세스가 들어온 그 시간을 보고 얘기하는 거예요.",
+        "그러면 만약에 지금 이 상태에서 우리 제출 시간이 없다 그 얘기는 똑같은 시간에 이 프로세스들이 똑같이 들어왔다 그 얘기예요.",
+        "그럼 만약에 제출 시간이 없을 때는 우리가 SJF 이 기법을 이용하게 되면 실행 시간이 가장 짧은 게 먼저 실행이 되는 거죠.",
+        "해서 만약에 제출 시간이 없을 때는 얘가 P3가 4초니까 실행 시간이 4초니까 얘가 제일 먼저 처리가 될 거고요.",
+        "그다음에 우리 7초 얘가 두 번째로 실행이 될 거고 그다음에 마지막에 P1이 실행이 되겠죠.",
+        "근데 여기서 제출 시간이 있을 경우라고 그렇게 문제가 나왔습니다.",
+        "그러면 그때 제출 시간에 봤을 때 얘는 0초에 도착을 했다는 거예요.",
+        "그러면 0초에 도착해서 보니까 기다리고 있는 아이가 하나도 없죠.",
+        "하나도 없으니까 P1 얘가 먼저 실행이 될 겁니다.",
+        "그다음에 얘가 실행 시간이 20초니까 20초만큼 쭉 실행을 하겠죠.",
+        "실행하다 보니까 P2가 1초가 된 그 시점에 도착을 했고요.",
+        "그다음에 P3가 2초가 되는 그 시점에 도착을 했대요.",
+        "해서 P2 입장에서는 CPU를 할당 받으려고 들어와 보니까 P1이 이미 실행 중에 있는 거예요.",
+        "실행 중에 있으니까 얘가 P2가 기다려야 되겠죠.",
+        "얘가 기다리고 있는데 P3가 짜잔 하고 바로 1초 뒤에 2초가 되는 그 시점에 들어왔다고요.",
+        "들어왔는데 그때 P3의 실행 시간은 4초고 그다음에 P2는 7초죠.",
+        "그러면 얘는 우리 SJF 이 기법을 이용한다 그랬으니까 그때 대기 시간이 얘가 더 짧죠.",
+        "얘가 더 짧으니까 P2보다 먼저 실행이 됩니다.",
+        "해서 얘가 두 번째로 실행이 되는 거고요.",
+        "그다음에 마지막에 얘가 실행이 되는 거예요.",
+        "해서 문제에서 이렇게 제출 시간이 있냐 없냐에 따라서 처리되는 그 실행 순서가 바뀐다고요.",
+        "해서 처리 시간이 있을 때 없을 때 그거 구분할 줄 알아야 됩니다."
+      ],
+      "spoken_text": "자 예제 문제 보니까 다음과 같은 프로세스들이 차례로 준비 상태 큐에 들어왔대요. 들어왔다고 가정을 했을 때 그때 SJF 이 기법을 이용해서 평균 실행 시간이다 평균 대기 시간이다 평균 반환 시간이다 이거를 구하라고 그렇게 문제가 나왔습니다. 근데 여기 보니까 제출 시간이 있을 경우라고 그렇게 문제가 나왔죠. 여기서 제출 시간이라는 거는 이 프로세스가 들어온 그 시간을 보고 얘기하는 거예요. 그러면 만약에 지금 이 상태에서 우리 제출 시간이 없다 그 얘기는 똑같은 시간에 이 프로세스들이 똑같이 들어왔다 그 얘기예요. 그럼 만약에 제출 시간이 없을 때는 우리가 SJF 이 기법을 이용하게 되면 실행 시간이 가장 짧은 게 먼저 실행이 되는 거죠. 해서 만약에 제출 시간이 없을 때는 얘가 P3가 4초니까 실행 시간이 4초니까 얘가 제일 먼저 처리가 될 거고요. 그다음에 우리 7초 얘가 두 번째로 실행이 될 거고 그다음에 마지막에 P1이 실행이 되겠죠. 근데 여기서 제출 시간이 있을 경우라고 그렇게 문제가 나왔습니다. 그러면 그때 제출 시간에 봤을 때 얘는 0초에 도착을 했다는 거예요. 그러면 0초에 도착해서 보니까 기다리고 있는 아이가 하나도 없죠. 하나도 없으니까 P1 얘가 먼저 실행이 될 겁니다. 그다음에 얘가 실행 시간이 20초니까 20초만큼 쭉 실행을 하겠죠. 실행하다 보니까 P2가 1초가 된 그 시점에 도착을 했고요. 그다음에 P3가 2초가 되는 그 시점에 도착을 했대요. 해서 P2 입장에서는 CPU를 할당 받으려고 들어와 보니까 P1이 이미 실행 중에 있는 거예요. 실행 중에 있으니까 얘가 P2가 기다려야 되겠죠. 얘가 기다리고 있는데 P3가 짜잔 하고 바로 1초 뒤에 2초가 되는 그 시점에 들어왔다고요. 들어왔는데 그때 P3의 실행 시간은 4초고 그다음에 P2는 7초죠. 그러면 얘는 우리 SJF 이 기법을 이용한다 그랬으니까 그때 대기 시간이 얘가 더 짧죠. 얘가 더 짧으니까 P2보다 먼저 실행이 됩니다. 해서 얘가 두 번째로 실행이 되는 거고요. 그다음에 마지막에 얘가 실행이 되는 거예요. 해서 문제에서 이렇게 제출 시간이 있냐 없냐에 따라서 처리되는 그 실행 순서가 바뀐다고요. 해서 처리 시간이 있을 때 없을 때 그거 구분할 줄 알아야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "SJF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "평균",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "HRN 스케줄링 개요",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)",
+      "spoken_sentences": [
+        "이번 시간 우리 HRN에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간 우리 HRN에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "Highest",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "Next",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 9,
+      "end_seconds": 41,
+      "duration_seconds": 32,
+      "timeline_summary": "비선점 및 선점 스케줄링 종류",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "비선점 스케줄링 종류 : FCFS, SJF, 우선순위, HRN, 기한부 등.",
+        "선점 스케줄링 종류 : Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등."
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n비선점 스케줄링 종류 : FCFS, SJF, 우선순위, HRN, 기한부 등.\n선점 스케줄링 종류 : Round Robin, SRT, 선점 우선순위, 다단계 큐, 다단계 피드백 큐 등.",
+      "spoken_sentences": [
+        "우리 스케줄링의 종류에 보게 되면 선점이다 비선점이다 이렇게 두 가지로 나눌 수 있었고요.",
+        "그때 비선점 스케줄링의 종류에 보게 되면 우리 FCFS라는 것도 있었고요, SJF라는 것도 있고 우리 우선순위도 있고 HRN이다 기한부다 요런 게 있었어요.",
+        "그리고 우리 선점 스케줄링의 종류에 보게 되면 라운드 로빈, RR 방식도 있었고요, SRT라는 것도 있었고 우리 선점 우선순위다 다단계 큐다 다단계 피드백 큐다 요런 것들이 있었어요.",
+        "그중에서 우리 HRN이요."
+      ],
+      "spoken_text": "우리 스케줄링의 종류에 보게 되면 선점이다 비선점이다 이렇게 두 가지로 나눌 수 있었고요. 그때 비선점 스케줄링의 종류에 보게 되면 우리 FCFS라는 것도 있었고요, SJF라는 것도 있고 우리 우선순위도 있고 HRN이다 기한부다 요런 게 있었어요. 그리고 우리 선점 스케줄링의 종류에 보게 되면 라운드 로빈, RR 방식도 있었고요, SRT라는 것도 있었고 우리 선점 우선순위다 다단계 큐다 다단계 피드백 큐다 요런 것들이 있었어요. 그중에서 우리 HRN이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "Highest",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:23",
+      "start_seconds": 41,
+      "end_seconds": 83,
+      "duration_seconds": 42,
+      "timeline_summary": "HRN의 정의와 특징",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "실행 시간이 긴 프로세스에 불리한 SJF 기법을 보완하기 위한 것으로, 대기 시간과 서비스(실행) 시간을 이용하는 기법."
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n실행 시간이 긴 프로세스에 불리한 SJF 기법을 보완하기 위한 것으로, 대기 시간과 서비스(실행) 시간을 이용하는 기법.",
+      "spoken_sentences": [
+        "우리 HRN이요.",
+        "HRN이라는 건 뭘 얘기하냐 우리 SJF라는 그 기법이 있었죠.",
+        "얘가 실행 시간이 가장 짧은 아이가 우선순위를 먼저 갖는 거를 보고 우리가 SJF 그렇게 불렀어요.",
+        "그때 이 기법 같은 경우에는 실행 시간이 긴 프로세스에 불리했습니다.",
+        "해서 실행 시간이 긴 프로세스에 불리한 그런 SJF 이런 기법을 보완하기 위해서 만들어 놓은 게 우리 HRN이라는 거예요.",
+        "이 HRN은 우리 대기 시간이라 우리 서비스 시간, 이 서비스 시간이 우리 실행 시간이에요.",
+        "이 두 시간을 이용하는 기법을 보고 우리가 HRN 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "우리 HRN이요. HRN이라는 건 뭘 얘기하냐 우리 SJF라는 그 기법이 있었죠. 얘가 실행 시간이 가장 짧은 아이가 우선순위를 먼저 갖는 거를 보고 우리가 SJF 그렇게 불렀어요. 그때 이 기법 같은 경우에는 실행 시간이 긴 프로세스에 불리했습니다. 해서 실행 시간이 긴 프로세스에 불리한 그런 SJF 이런 기법을 보완하기 위해서 만들어 놓은 게 우리 HRN이라는 거예요. 이 HRN은 우리 대기 시간이라 우리 서비스 시간, 이 서비스 시간이 우리 실행 시간이에요. 이 두 시간을 이용하는 기법을 보고 우리가 HRN 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:01:23",
+      "end_time_hms": "00:02:00",
+      "start_seconds": 83,
+      "end_seconds": 120,
+      "duration_seconds": 37,
+      "timeline_summary": "HRN 우선순위 부여 기준",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "우선순위 계산 공식을 이용하여 서비스(실행) 시간이 짧은 프로세스나 대기 시간이 긴 프로세스에게 우선순위를 주어 CPU를 할당함.",
+        "서비스 실행 시간이 짧거나 대기 시간이 긴 프로세스일 경우 우선순위가 높아짐."
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n우선순위 계산 공식을 이용하여 서비스(실행) 시간이 짧은 프로세스나 대기 시간이 긴 프로세스에게 우선순위를 주어 CPU를 할당함.\n서비스 실행 시간이 짧거나 대기 시간이 긴 프로세스일 경우 우선순위가 높아짐.",
+      "spoken_sentences": [
+        "해서 요 HRN은 우리가 대기 시간하고 서비스 시간 이 두 가지를 이용해서 우리가 우선순위를 요렇게 계산을 해서 계산을 해서 그 값을 가지고 우리가 우선순위를 판별을 하는 거예요.",
+        "그때 우리 우선순위 계산 공식을 이용해서 우리 서비스 시간, 서비스 시간이 짧은 그런 프로세스나 아니면 대기 시간이 긴 프로세스 있죠, 그런 프로세스한테 우선순위를 주어서 CPU를 할당해 주는 그런 기법입니다.",
+        "해서 서비스 실행 시간이 짧거나 아니면 대기 시간이 긴 프로세스일 경우에 우선순위가 높아집니다."
+      ],
+      "spoken_text": "해서 요 HRN은 우리가 대기 시간하고 서비스 시간 이 두 가지를 이용해서 우리가 우선순위를 요렇게 계산을 해서 계산을 해서 그 값을 가지고 우리가 우선순위를 판별을 하는 거예요. 그때 우리 우선순위 계산 공식을 이용해서 우리 서비스 시간, 서비스 시간이 짧은 그런 프로세스나 아니면 대기 시간이 긴 프로세스 있죠, 그런 프로세스한테 우선순위를 주어서 CPU를 할당해 주는 그런 기법입니다. 해서 서비스 실행 시간이 짧거나 아니면 대기 시간이 긴 프로세스일 경우에 우선순위가 높아집니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:02:00",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 120,
+      "end_seconds": 142,
+      "duration_seconds": 22,
+      "timeline_summary": "우선순위 계산 및 부여 순서",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "우선순위를 계산하여 그 숫자가 가장 높은 것부터 낮은 순으로 우선순위가 부여됨."
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n우선순위를 계산하여 그 숫자가 가장 높은 것부터 낮은 순으로 우선순위가 부여됨.",
+      "spoken_sentences": [
+        "해서 우리가 이 공식대로 우리가 우선순위를 싹 다 계산한 다음에 그때 나오는 그 수치값 있죠, 그 수치가 가장 높은 것부터 시작해서 낮은 순으로 우선순위가 부여가 됩니다."
+      ],
+      "spoken_text": "해서 우리가 이 공식대로 우리가 우선순위를 싹 다 계산한 다음에 그때 나오는 그 수치값 있죠, 그 수치가 가장 높은 것부터 시작해서 낮은 순으로 우선순위가 부여가 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "Highest",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:53",
+      "start_seconds": 142,
+      "end_seconds": 173,
+      "duration_seconds": 31,
+      "timeline_summary": "HRN 우선순위 계산식",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "우선순위 계산식",
+        "우선순위 계산식 = (대기 시간 + 서비스 시간) / 서비스 시간"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n우선순위 계산식\n우선순위 계산식 = (대기 시간 + 서비스 시간) / 서비스 시간",
+      "spoken_sentences": [
+        "해서 우리가 이 공식을 이용해서 우리가 값을 계산하고 그 값이 높은 순서대로 우선순위가 부여가 돼요.",
+        "해서 요 우선순위 계산식은 시험 문제에 자주 출제가 되기 때문에 요 공식 꼭 외우고 계셔야 돼요.",
+        "그 공식이 지금처럼 요렇게요."
+      ],
+      "spoken_text": "해서 우리가 이 공식을 이용해서 우리가 값을 계산하고 그 값이 높은 순서대로 우선순위가 부여가 돼요. 해서 요 우선순위 계산식은 시험 문제에 자주 출제가 되기 때문에 요 공식 꼭 외우고 계셔야 돼요. 그 공식이 지금처럼 요렇게요.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "Highest",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:02:53",
+      "end_time_hms": "00:03:31",
+      "start_seconds": 173,
+      "end_seconds": 211,
+      "duration_seconds": 38,
+      "timeline_summary": "예제 프로세스 P1의 우선순위 계산",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "예제 다음과 같은 프로세스가 HRN 기법으로 스케줄링될 때 우선순위를 계산하시오.",
+        "프로세스 번호: P1, P2, P3",
+        "실행 시간: 20, 4, 6"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n예제 다음과 같은 프로세스가 HRN 기법으로 스케줄링될 때 우선순위를 계산하시오.\n프로세스 번호: P1, P2, P3\n실행 시간: 20, 4, 6",
+      "spoken_sentences": [
+        "자 그럼 요 공식대로 우리 P1부터 한번 계산 한번 해 보자고요.",
+        "일단은 우리 대기 시간이요, 대기 시간이 지금 10초라고 그렇게 나왔고요, 거기서 더하기 서비스 시간, 여기서 얘기하는 그 서비스 시간이 우리 실행 시간을 보고 얘기한다 그랬어요.",
+        "해서 여기다가 20을 더해 주면 되겠죠.",
+        "요렇게 계산한 다음에 그거를 우리가 서비스 시간으로 나눠 주면 되겠죠.",
+        "그때 서비스 시간이 우리 실행 시간이라고 했으니까 이거를 우리가 20, 20으로 나눠 주면 됩니다.",
+        "요렇게 해서 우리가 10 더하기 20을 하게 되면 30이 될 거고 30 나누기 20을 하게 되면 그때 결과값은 1.5 하고 그렇게 나오겠죠."
+      ],
+      "spoken_text": "자 그럼 요 공식대로 우리 P1부터 한번 계산 한번 해 보자고요. 일단은 우리 대기 시간이요, 대기 시간이 지금 10초라고 그렇게 나왔고요, 거기서 더하기 서비스 시간, 여기서 얘기하는 그 서비스 시간이 우리 실행 시간을 보고 얘기한다 그랬어요. 해서 여기다가 20을 더해 주면 되겠죠. 요렇게 계산한 다음에 그거를 우리가 서비스 시간으로 나눠 주면 되겠죠. 그때 서비스 시간이 우리 실행 시간이라고 했으니까 이거를 우리가 20, 20으로 나눠 주면 됩니다. 요렇게 해서 우리가 10 더하기 20을 하게 되면 30이 될 거고 30 나누기 20을 하게 되면 그때 결과값은 1.5 하고 그렇게 나오겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:03:31",
+      "end_time_hms": "00:03:54",
+      "start_seconds": 211,
+      "end_seconds": 234,
+      "duration_seconds": 23,
+      "timeline_summary": "예제 프로세스 P2의 우선순위 계산",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "(20+4)/4 = 6"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n(20+4)/4 = 6",
+      "spoken_sentences": [
+        "그 다음에 P2 같은 경우에는 우리 대기 시간 대기 시간이 지금 20이니까 20 더하기 그 다음에 서비스 시간, 우리 실행 시간이 4니까 4를 더해 주고 그거를 그 값을 우리가 4로 나눠 주면 됩니다.",
+        "그러면 그때 20 더하기 4를 하게 되면 24가 될 거고 그 값을 4로 나누게 되면 6, 6하고 그렇게 나오겠죠."
+      ],
+      "spoken_text": "그 다음에 P2 같은 경우에는 우리 대기 시간 대기 시간이 지금 20이니까 20 더하기 그 다음에 서비스 시간, 우리 실행 시간이 4니까 4를 더해 주고 그거를 그 값을 우리가 4로 나눠 주면 됩니다. 그러면 그때 20 더하기 4를 하게 되면 24가 될 거고 그 값을 4로 나누게 되면 6, 6하고 그렇게 나오겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:03:54",
+      "end_time_hms": "00:04:19",
+      "start_seconds": 234,
+      "end_seconds": 259,
+      "duration_seconds": 25,
+      "timeline_summary": "예제 프로세스 P3의 우선순위 계산",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "(10+6)/6 = 2.6"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\n(10+6)/6 = 2.6",
+      "spoken_sentences": [
+        "그 다음에 P3요.",
+        "P3 같은 경우 실행 시간이 6이고 대기 시간이 10이에요.",
+        "해서 대기 시간 10초 더하기 우리 서비스 시간, 우리 실행 시간이 6초니까 6을 더해 주면 되겠죠.",
+        "그렇게 한 상태로 우리가 서비스 시간으로 나눠 주면 됩니다.",
+        "그때 서비스 시간이 우리 6초요.",
+        "그때 우리 10 더하기 6을 하게 되면 16이 될 거고 16 나누기 6을 하게 되면 2.6 하고 그렇게 나와요."
+      ],
+      "spoken_text": "그 다음에 P3요. P3 같은 경우 실행 시간이 6이고 대기 시간이 10이에요. 해서 대기 시간 10초 더하기 우리 서비스 시간, 우리 실행 시간이 6초니까 6을 더해 주면 되겠죠. 그렇게 한 상태로 우리가 서비스 시간으로 나눠 주면 됩니다. 그때 서비스 시간이 우리 6초요. 그때 우리 10 더하기 6을 하게 되면 16이 될 거고 16 나누기 6을 하게 되면 2.6 하고 그렇게 나와요.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:04:19",
+      "end_time_hms": "00:05:00",
+      "start_seconds": 259,
+      "end_seconds": 300,
+      "duration_seconds": 41,
+      "timeline_summary": "우선순위 결과에 따른 실행 순서 결정",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "P1: 1.5 (3)",
+        "P2: 6 (1)",
+        "P3: 2.6 (2)"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\nP1: 1.5 (3)\nP2: 6 (1)\nP3: 2.6 (2)",
+      "spoken_sentences": [
+        "그때 지금처럼 요렇게 우선순위 계산식으로 우리가 어떤 특정 값을 계산했을 때 요렇게 결과값이 나오죠.",
+        "그때 이런 수치값이 높으면 높을수록 우선순위를 먼저 갖는다고요.",
+        "그러면 P2가 6이니까 얘가 제일 처음에 제일 처음에 우리 우선순위를 가질 거예요.",
+        "그 다음에 숫자값이 높은 게 P3죠.",
+        "해서 얘가 두 번째로 실행이 될 거고 그 다음에 1.5가 가장 작으니까 얘가 세 번째로 실행이 될 겁니다."
+      ],
+      "spoken_text": "그때 지금처럼 요렇게 우선순위 계산식으로 우리가 어떤 특정 값을 계산했을 때 요렇게 결과값이 나오죠. 그때 이런 수치값이 높으면 높을수록 우선순위를 먼저 갖는다고요. 그러면 P2가 6이니까 얘가 제일 처음에 제일 처음에 우리 우선순위를 가질 거예요. 그 다음에 숫자값이 높은 게 P3죠. 해서 얘가 두 번째로 실행이 될 거고 그 다음에 1.5가 가장 작으니까 얘가 세 번째로 실행이 될 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_077-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 4,
+      "subtopic_id": "0343_343",
+      "subtopic_title": "HRN 스케줄링",
+      "subtopic_sequence": 343,
+      "subtopic_number": "343",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=ckd56NEZks8",
+      "start_time_hms": "00:05:00",
+      "end_time_hms": "00:05:31",
+      "start_seconds": 300,
+      "end_seconds": 331,
+      "duration_seconds": 31,
+      "timeline_summary": "최종 실행 순서 확인 및 마무리",
+      "screen_text_lines": [
+        "HRN(Highest Response-ratio Next)",
+        "P2 -> P3 -> P1"
+      ],
+      "screen_text": "HRN(Highest Response-ratio Next)\nP2 -> P3 -> P1",
+      "spoken_sentences": [
+        "해서 얘가 실행되는 그 우선순위는 맨 처음에 P2, P2가 먼저 실행이 되고 그 다음에 우리 P3가 실행이 되고 그 다음에 마지막에 P1이 실행이 될 거예요.",
+        "요렇게 해서 우리 HRN 이 기법은 지금처럼 우선순위 이 계산식을 이용해서 각각의 값들을 전부 다 구한 다음에 그 값이 높으면 높을수록 우선순위를 먼저 갖는 거예요.",
+        "해서 우리 HRN의 우리 특징 잘 기억하시고요, 그리고 이 우선순위 공식을 꼭 기억을 하고 있어야 이런 문제가 나왔을 때 문제를 풀 수 있겠죠.",
+        "자 그럼 요 내용 잘 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 얘가 실행되는 그 우선순위는 맨 처음에 P2, P2가 먼저 실행이 되고 그 다음에 우리 P3가 실행이 되고 그 다음에 마지막에 P1이 실행이 될 거예요. 요렇게 해서 우리 HRN 이 기법은 지금처럼 우선순위 이 계산식을 이용해서 각각의 값들을 전부 다 구한 다음에 그 값이 높으면 높을수록 우선순위를 먼저 갖는 거예요. 해서 우리 HRN의 우리 특징 잘 기억하시고요, 그리고 이 우선순위 공식을 꼭 기억을 하고 있어야 이런 문제가 나왔을 때 문제를 풀 수 있겠죠. 자 그럼 요 내용 잘 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "HRN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "우선순위",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "실행",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "Response-ratio",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    }
+  ]
+}

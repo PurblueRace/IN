@@ -1,0 +1,3649 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_054",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      242,
+      243,
+      244,
+      245
+    ],
+    "source_lecture_ids": [
+      "0242_242",
+      "0243_243",
+      "0244_244",
+      "0245_245"
+    ],
+    "source_titles": [
+      "삽입문(INSERT INTO~)",
+      "삭제문(DELETE FROM~)",
+      "갱신문(UPDATE~ SET~)",
+      "데이터 조작문의 네 가지 유형"
+    ],
+    "keywords": [
+      "삽입문",
+      "INSERT",
+      "INTO~",
+      "삭제문",
+      "DELETE"
+    ],
+    "highlight_keywords": [
+      "생일",
+      "이름",
+      "INSERT",
+      "INTO",
+      "주소",
+      "DELETE",
+      "예제",
+      "FROM",
+      "사원",
+      "FROM 사원"
+    ],
+    "secondary_keywords": [
+      "부서",
+      "사원",
+      "예제",
+      "삽입문(INSERT INTO~)",
+      "데이터",
+      "VALUES (데이터1, 데이터2, …)",
+      "WHERE",
+      "이름",
+      "임꺽정",
+      "모든",
+      "삭제",
+      "SET 주소 = '수색동'"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0242_242",
+      "sequence": 242,
+      "number": "242",
+      "course_code": "350240",
+      "title": "삽입문(INSERT INTO~)",
+      "duration_seconds": 666,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "tokens": [
+            "생일"
+          ],
+          "score": 38,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "이름",
+          "tokens": [
+            "이름"
+          ],
+          "score": 38,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "INSERT",
+          "tokens": [
+            "INSERT"
+          ],
+          "score": 33,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "INTO",
+          "tokens": [
+            "INTO"
+          ],
+          "score": 33,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "주소",
+          "tokens": [
+            "주소"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "부서",
+          "tokens": [
+            "부서"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "사원",
+          "tokens": [
+            "사원"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "예제",
+          "tokens": [
+            "예제"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "삽입문(INSERT INTO~)",
+          "tokens": [
+            "삽입문",
+            "INSERT",
+            "INTO"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "VALUES (데이터1, 데이터2, …)",
+          "tokens": [
+            "VALUES",
+            "데이터"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_054-subtopic-001-source-seg-001::01",
+          "prompt": "삽입문(______ INTO~) 소개",
+          "answer": "INSERT",
+          "original": "삽입문(INSERT INTO~) 소개",
+          "keyword": "INSERT",
+          "source_segment_id": "topic_054-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'INSERT'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-001-source-seg-001::02",
+          "prompt": "삽입문(INSERT ______~) 소개",
+          "answer": "INTO",
+          "original": "삽입문(INSERT INTO~) 소개",
+          "keyword": "INTO",
+          "source_segment_id": "topic_054-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'INTO'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-001-source-seg-002::03",
+          "prompt": "VALUES (______1, 데이터2, …)",
+          "answer": "데이터",
+          "original": "VALUES (데이터1, 데이터2, …)",
+          "keyword": "데이터",
+          "source_segment_id": "topic_054-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0243_243",
+      "sequence": 243,
+      "number": "243",
+      "course_code": "",
+      "title": "삭제문(DELETE FROM~)",
+      "duration_seconds": 277,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "segment_count": 19,
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "tokens": [
+            "DELETE"
+          ],
+          "score": 75,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "예제",
+          "tokens": [
+            "예제"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "FROM",
+          "tokens": [
+            "FROM"
+          ],
+          "score": 34,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "사원",
+          "tokens": [
+            "사원"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "FROM 사원",
+          "tokens": [
+            "FROM",
+            "사원"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "부서",
+          "tokens": [
+            "부서"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "WHERE",
+          "tokens": [
+            "WHERE"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "이름",
+          "tokens": [
+            "이름"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "임꺽정",
+          "tokens": [
+            "임꺽정"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "모든",
+          "tokens": [
+            "모든"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 21,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_054-subtopic-002-source-seg-001::01",
+          "prompt": "삭제문(______ FROM) 강의 시작 및 주제 소개",
+          "answer": "DELETE",
+          "original": "삭제문(DELETE FROM) 강의 시작 및 주제 소개",
+          "keyword": "DELETE",
+          "source_segment_id": "topic_054-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DELETE'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-002-source-seg-001::02",
+          "prompt": "삭제문(DELETE ______) 강의 시작 및 주제 소개",
+          "answer": "FROM",
+          "original": "삭제문(DELETE FROM) 강의 시작 및 주제 소개",
+          "keyword": "FROM",
+          "source_segment_id": "topic_054-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'FROM'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-002-source-seg-010::03",
+          "prompt": "예제 1의 SQL 기본 구문 작성 (DELETE ______)",
+          "answer": "FROM 사원",
+          "original": "예제 1의 SQL 기본 구문 작성 (DELETE FROM 사원)",
+          "keyword": "FROM 사원",
+          "source_segment_id": "topic_054-subtopic-002-source-seg-010",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'FROM 사원'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-002-source-seg-003::04",
+          "prompt": "[______ 조건]",
+          "answer": "WHERE",
+          "original": "[WHERE 조건]",
+          "keyword": "WHERE",
+          "source_segment_id": "topic_054-subtopic-002-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'WHERE'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0244_244",
+      "sequence": 244,
+      "number": "244",
+      "course_code": "350242",
+      "title": "갱신문(UPDATE~ SET~)",
+      "duration_seconds": 301,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "segment_count": 10,
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE 사원",
+          "tokens": [
+            "UPDATE",
+            "사원"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "SET",
+          "tokens": [
+            "SET"
+          ],
+          "score": 27,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "예제",
+          "tokens": [
+            "예제"
+          ],
+          "score": 20,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "부서",
+          "tokens": [
+            "부서"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "갱신문(UPDATE~ SET~)",
+          "tokens": [
+            "갱신문",
+            "UPDATE",
+            "SET"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "SET 주소 = '수색동'",
+          "tokens": [
+            "SET",
+            "주소",
+            "수색동"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "이름",
+          "tokens": [
+            "이름"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "황진이",
+          "tokens": [
+            "황진이"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "WHERE",
+          "tokens": [
+            "WHERE"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "쿼리",
+          "tokens": [
+            "쿼리"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "예제 1: 홍길동의 주소 수정 문제 분석",
+          "tokens": [
+            "예제",
+            "홍길동의",
+            "주소",
+            "수정",
+            "분석"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_054-subtopic-003-source-seg-001::01",
+          "prompt": "이번 시간에는 우리 갱신문 UPDATE ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "SET",
+          "original": "이번 시간에는 우리 갱신문 UPDATE SET에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "SET",
+          "source_segment_id": "topic_054-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 'SET'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-003-source-seg-008::02",
+          "prompt": "예제 2: ______의 부서 및 기본급 수정 문제 분석",
+          "answer": "황진이",
+          "original": "예제 2: 황진이의 부서 및 기본급 수정 문제 분석",
+          "keyword": "황진이",
+          "source_segment_id": "topic_054-subtopic-003-source-seg-008",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '황진이'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-003-source-seg-004::03",
+          "prompt": "[______ 조건]",
+          "answer": "WHERE",
+          "original": "[WHERE 조건]",
+          "keyword": "WHERE",
+          "source_segment_id": "topic_054-subtopic-003-source-seg-004",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'WHERE'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0245_245",
+      "sequence": 245,
+      "number": "245",
+      "course_code": "350243",
+      "title": "데이터 조작문의 네 가지 유형",
+      "duration_seconds": 71,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "WHERE",
+          "tokens": [
+            "WHERE"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "변경",
+          "tokens": [
+            "변경"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "검색",
+          "tokens": [
+            "검색"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "삭제",
+          "tokens": [
+            "삭제"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "삽입",
+          "tokens": [
+            "삽입"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "DELETE(삭제)",
+          "tokens": [
+            "DELETE",
+            "삭제"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "INSERT(삽입)",
+          "tokens": [
+            "INSERT",
+            "삽입"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "SELECT(검색)",
+          "tokens": [
+            "SELECT",
+            "검색"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "UPDATE(변경)",
+          "tokens": [
+            "UPDATE",
+            "변경"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터 조작문의 네 가지 유형",
+          "tokens": [
+            "데이터",
+            "조작문의",
+            "가지",
+            "유형"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DELETE~ FROM~ WHERE~",
+          "tokens": [
+            "DELETE",
+            "FROM",
+            "WHERE"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_054-subtopic-004-source-seg-003::01",
+          "prompt": "SELECT(검색) : SELECT~ FROM~ ______~",
+          "answer": "WHERE",
+          "original": "SELECT(검색) : SELECT~ FROM~ WHERE~",
+          "keyword": "WHERE",
+          "source_segment_id": "topic_054-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'WHERE'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-004-source-seg-003::02",
+          "prompt": "______ : DELETE~ FROM~ WHERE~",
+          "answer": "DELETE(삭제)",
+          "original": "DELETE(삭제) : DELETE~ FROM~ WHERE~",
+          "keyword": "DELETE(삭제)",
+          "source_segment_id": "topic_054-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'DELETE(삭제)'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-004-source-seg-003::03",
+          "prompt": "______ : INSERT INTO~ VALUES~",
+          "answer": "INSERT(삽입)",
+          "original": "INSERT(삽입) : INSERT INTO~ VALUES~",
+          "keyword": "INSERT(삽입)",
+          "source_segment_id": "topic_054-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'INSERT(삽입)'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_054-subtopic-004-source-seg-003::04",
+          "prompt": "______ : SELECT~ FROM~ WHERE~",
+          "answer": "SELECT(검색)",
+          "original": "SELECT(검색) : SELECT~ FROM~ WHERE~",
+          "keyword": "SELECT(검색)",
+          "source_segment_id": "topic_054-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'SELECT(검색)'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_054",
+    "sequence": 54,
+    "number": "54",
+    "title": "데이터 조작문",
+    "title_raw": "데이터 조작문",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      242,
+      243,
+      244,
+      245
+    ],
+    "source_titles": [
+      "삽입문(INSERT INTO~)",
+      "삭제문(DELETE FROM~)",
+      "갱신문(UPDATE~ SET~)",
+      "데이터 조작문의 네 가지 유형"
+    ],
+    "preview_text": "삽입문(INSERT INTO~), 삭제문(DELETE FROM~), 갱신문(UPDATE~ SET~) 등",
+    "segment_count": 49,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 삽입문(INSERT INTO~), 삭제문(DELETE FROM~), 갱신문(UPDATE~ SET~), 데이터 조작문의 네 가지 유형을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 삽입문(INSERT INTO~), 삭제문(DELETE FROM~), 갱신문(UPDATE~ SET~), 데이터 조작문의 네 가지 유형을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1315,
+    "source_titles_preview": [
+      "삽입문(INSERT INTO~)",
+      "삭제문(DELETE FROM~)",
+      "갱신문(UPDATE~ SET~)"
+    ],
+    "highlight_keywords": [
+      "생일",
+      "이름",
+      "INSERT",
+      "INTO",
+      "주소",
+      "DELETE",
+      "예제",
+      "FROM",
+      "사원",
+      "FROM 사원"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_054-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "삽입문(INSERT INTO~) 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 삽입문, 인설트 인투(INSERT INTO)에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 삽입문, 인설트 인투(INSERT INTO)에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "삽입문(INSERT INTO~)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:42",
+      "start_seconds": 8,
+      "end_seconds": 42,
+      "duration_seconds": 34,
+      "timeline_summary": "삽입문의 정의 및 일반 형식 설명",
+      "screen_text_lines": [
+        "삽입문은 기본 테이블에 새로운 튜플을 삽입할 때 사용함",
+        "일반 형식",
+        "INSERT INTO 테이블명([속성명1, 속성명2, …])",
+        "VALUES (데이터1, 데이터2, …)"
+      ],
+      "screen_text": "삽입문은 기본 테이블에 새로운 튜플을 삽입할 때 사용함\n일반 형식\nINSERT INTO 테이블명([속성명1, 속성명2, …])\nVALUES (데이터1, 데이터2, …)",
+      "spoken_sentences": [
+        "삽입문이라는 거는 우리 기본 테이블에다가 새로운 튜플을 삽입하고자 할 때 우리가 사용하는 게 삽입문, 인설트 인투(INSERT INTO)요.",
+        "인설트 인투는 지금처럼 요렇게 생겼습니다.",
+        "인설트 인투(INSERT INTO)라고 먼저 적어주고 내가 가지고 있는 여러 개 테이블 중에서 어떤 테이블에다가 내가 데이터를 삽입할 건지 그 테이블 명을 먼저 적어주고요.",
+        "그리고 어떤 필드에다가 내가 데이터를 삽입을 할 건지 그 필드 명을 쭉쭉 적어주면 됩니다.",
+        "그리고 밸류(VALUES)라고 이렇게 적어놓고 그 필드에 해당하는 데이터들, 내가 추가시키고자 하는 그 데이터를 쭉쭉 적어주면 돼요.",
+        "요게 기본 형식입니다."
+      ],
+      "spoken_text": "삽입문이라는 거는 우리 기본 테이블에다가 새로운 튜플을 삽입하고자 할 때 우리가 사용하는 게 삽입문, 인설트 인투(INSERT INTO)요. 인설트 인투는 지금처럼 요렇게 생겼습니다. 인설트 인투(INSERT INTO)라고 먼저 적어주고 내가 가지고 있는 여러 개 테이블 중에서 어떤 테이블에다가 내가 데이터를 삽입할 건지 그 테이블 명을 먼저 적어주고요. 그리고 어떤 필드에다가 내가 데이터를 삽입을 할 건지 그 필드 명을 쭉쭉 적어주면 됩니다. 그리고 밸류(VALUES)라고 이렇게 적어놓고 그 필드에 해당하는 데이터들, 내가 추가시키고자 하는 그 데이터를 쭉쭉 적어주면 돼요. 요게 기본 형식입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "VALUES (데이터1, 데이터2, …)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:00:42",
+      "end_time_hms": "00:01:04",
+      "start_seconds": 42,
+      "end_seconds": 64,
+      "duration_seconds": 22,
+      "timeline_summary": "속성과 데이터의 개수 및 유형 일치 원칙",
+      "screen_text_lines": [
+        "삽입문은 기본 테이블에 새로운 튜플을 삽입할 때 사용함",
+        "일반 형식",
+        "INSERT INTO 테이블명([속성명1, 속성명2, …])",
+        "VALUES (데이터1, 데이터2, …)"
+      ],
+      "screen_text": "삽입문은 기본 테이블에 새로운 튜플을 삽입할 때 사용함\n일반 형식\nINSERT INTO 테이블명([속성명1, 속성명2, …])\nVALUES (데이터1, 데이터2, …)",
+      "spoken_sentences": [
+        "그때 내가 만약에 속성 명을 세 개를 썼어요.",
+        "세 개를 썼으면 데이터도 당연히 몇 개가 돼야 돼요?",
+        "세 개가 돼야 되겠죠?",
+        "근데 내가 속성 명은 세 개 적어놓고 데이터를 두 개만 적었다?",
+        "그러면은 정상적으로 삽입이 안 되겠죠?",
+        "해서 속성과 데이터의 그 개수는 일치해야 됩니다.",
+        "일치해야 되고요.",
+        "데이터 유형도 일치해야 됩니다."
+      ],
+      "spoken_text": "그때 내가 만약에 속성 명을 세 개를 썼어요. 세 개를 썼으면 데이터도 당연히 몇 개가 돼야 돼요? 세 개가 돼야 되겠죠? 근데 내가 속성 명은 세 개 적어놓고 데이터를 두 개만 적었다? 그러면은 정상적으로 삽입이 안 되겠죠? 해서 속성과 데이터의 그 개수는 일치해야 됩니다. 일치해야 되고요. 데이터 유형도 일치해야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "VALUES (데이터1, 데이터2, …)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:01:04",
+      "end_time_hms": "00:01:37",
+      "start_seconds": 64,
+      "end_seconds": 97,
+      "duration_seconds": 33,
+      "timeline_summary": "속성과 데이터의 유형 불일치 시 삽입 오류 예시",
+      "screen_text_lines": [
+        "나이",
+        "홍길동",
+        "개수",
+        "데이터 유형"
+      ],
+      "screen_text": "나이\n홍길동\n개수\n데이터 유형",
+      "spoken_sentences": [
+        "내가 만약에 속성 명으로 만약에 나이라는 필드를 삽입하겠다라고 해서 나이라고 요렇게 적었어요.",
+        "적어놓고 데이터 1번 여기 자리에다가 내가 만약에 홍길동이라고 적었다고 생각해 보세요.",
+        "이 나이라는 이 필드에는 숫자만 들어갈 수 있을 거 아니에요, 그렇죠?",
+        "근데 내가 지금처럼 이렇게 문자 데이터, 홍길동이라고 요렇게 입력을 해라라고 하게 되면 이거는 삽입이 정상적으로 안 되겠죠?",
+        "그래서 속성 명하고 데이터의 개수도 일치해야 되고 데이터 유형도 일치해야 됩니다.",
+        "그래서 이게 중요한 거니까 요거 잘 기억하셔야 돼요."
+      ],
+      "spoken_text": "내가 만약에 속성 명으로 만약에 나이라는 필드를 삽입하겠다라고 해서 나이라고 요렇게 적었어요. 적어놓고 데이터 1번 여기 자리에다가 내가 만약에 홍길동이라고 적었다고 생각해 보세요. 이 나이라는 이 필드에는 숫자만 들어갈 수 있을 거 아니에요, 그렇죠? 근데 내가 지금처럼 이렇게 문자 데이터, 홍길동이라고 요렇게 입력을 해라라고 하게 되면 이거는 삽입이 정상적으로 안 되겠죠? 그래서 속성 명하고 데이터의 개수도 일치해야 되고 데이터 유형도 일치해야 됩니다. 그래서 이게 중요한 거니까 요거 잘 기억하셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:01:37",
+      "end_time_hms": "00:02:24",
+      "start_seconds": 97,
+      "end_seconds": 144,
+      "duration_seconds": 47,
+      "timeline_summary": "모든 속성 사용 시 속성명 생략 가능성 설명",
+      "screen_text_lines": [
+        "이름 나이 성별",
+        "모든 속성",
+        "속성명을 생략할 수 있음"
+      ],
+      "screen_text": "이름 나이 성별\n모든 속성\n속성명을 생략할 수 있음",
+      "spoken_sentences": [
+        "그리고 내가 만약에 테이블 하나 가지고 있는데 그 테이블에 보니까 이름이라는 필드도 있고 나이라는 필드도 있고 그다음에 성별이라는 필드도 있고 요렇게 세 개 필드가 있다라고 생각해 보세요.",
+        "하나의 테이블에는 이 세 개밖에 없는데 이 세 개 데이터를 전부 다 내가 다 삽입하겠다라고 했을 때 그때는 우리가 속성 명을 내가 생략하고 쓸 수도 있어요.",
+        "해서 기본 테이블에 들어있는 모든 속성을 이용해서 우리가 전부 다 삽입을 하겠다, 이름, 나이, 성별 이 세 가지를 전부 다 삽입할 때는 우리가 속성 명을 생략해도 되는 거고요.",
+        "만약에 이 세 개 필드를 가지고 있는 그런 테이블이 있을 때 이름하고 나이만 내가 삽입하겠다라고 했을 때는 반드시 속성 명을 적어줘야 돼요."
+      ],
+      "spoken_text": "그리고 내가 만약에 테이블 하나 가지고 있는데 그 테이블에 보니까 이름이라는 필드도 있고 나이라는 필드도 있고 그다음에 성별이라는 필드도 있고 요렇게 세 개 필드가 있다라고 생각해 보세요. 하나의 테이블에는 이 세 개밖에 없는데 이 세 개 데이터를 전부 다 내가 다 삽입하겠다라고 했을 때 그때는 우리가 속성 명을 내가 생략하고 쓸 수도 있어요. 해서 기본 테이블에 들어있는 모든 속성을 이용해서 우리가 전부 다 삽입을 하겠다, 이름, 나이, 성별 이 세 가지를 전부 다 삽입할 때는 우리가 속성 명을 생략해도 되는 거고요. 만약에 이 세 개 필드를 가지고 있는 그런 테이블이 있을 때 이름하고 나이만 내가 삽입하겠다라고 했을 때는 반드시 속성 명을 적어줘야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:02:24",
+      "end_time_hms": "00:02:56",
+      "start_seconds": 144,
+      "end_seconds": 176,
+      "duration_seconds": 32,
+      "timeline_summary": "SELECT문을 활용한 다른 테이블 데이터 삽입",
+      "screen_text_lines": [
+        "SELECT문을 사용하여 다른 테이블의 검색 결과를 삽입할 수 있음"
+      ],
+      "screen_text": "SELECT문을 사용하여 다른 테이블의 검색 결과를 삽입할 수 있음",
+      "spoken_sentences": [
+        "그리고 셀렉트(SELECT) 문, 셀렉트(SELECT)라는 명령어가 있는데 이게 검색하는 거거든요.",
+        "해서 이 셀렉트(SELECT)라는 명령어를 이용해서 다른 테이블에 들어있는 데이터 있죠?",
+        "그거를 검색을 해요.",
+        "그 검색을 해서 그 결과도 내가 삽입을 할 수 있습니다.",
+        "해서 인설트 인투(INSERT INTO)랑 셀렉트(SELECT)랑 같이 이용해서 다른 테이블에 들어있는 데이터도 내가 검색을 해서 삽입할 수 있다라는 거 그거 잘 기억하시면 됩니다.",
+        "그러면 인설트 인투(INSERT INTO)라는 요 명령어, 삽입문은 어떻게 쓰는지 우리 예제를 통해서 한번 보자고요."
+      ],
+      "spoken_text": "그리고 셀렉트(SELECT) 문, 셀렉트(SELECT)라는 명령어가 있는데 이게 검색하는 거거든요. 해서 이 셀렉트(SELECT)라는 명령어를 이용해서 다른 테이블에 들어있는 데이터 있죠? 그거를 검색을 해요. 그 검색을 해서 그 결과도 내가 삽입을 할 수 있습니다. 해서 인설트 인투(INSERT INTO)랑 셀렉트(SELECT)랑 같이 이용해서 다른 테이블에 들어있는 데이터도 내가 검색을 해서 삽입할 수 있다라는 거 그거 잘 기억하시면 됩니다. 그러면 인설트 인투(INSERT INTO)라는 요 명령어, 삽입문은 어떻게 쓰는지 우리 예제를 통해서 한번 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:02:56",
+      "end_time_hms": "00:03:24",
+      "start_seconds": 176,
+      "end_seconds": 204,
+      "duration_seconds": 28,
+      "timeline_summary": "예제 1: 특정 속성(이름, 부서) 데이터 삽입 문제 확인",
+      "screen_text_lines": [
+        "<사원>",
+        "이름",
+        "부서",
+        "생일"
+      ],
+      "screen_text": "<사원>\n이름\n부서\n생일",
+      "spoken_sentences": [
+        "자, 만약에 지금처럼 요런 사원이라는 테이블이 있어요.",
+        "사원이라는 테이블이 있을 때 그 사원이라는 테이블에다가 이름은 홍승현이다, 부서는 인터넷이다, 이 두 개 필드의 데이터를 삽입을 하라고 그렇게 나왔습니다.",
+        "지금 내가 가지고 있는 이 사원 테이블에는 이름도 있고 부서도 있고 생일도 있고 주소도 있고 기본급도 있고 해서 이 다섯 가지의 필드를 전부 다 가지고 있는데 거기다가 이름은 홍승현, 부서는 인터넷, 이거를 삽입하세요."
+      ],
+      "spoken_text": "자, 만약에 지금처럼 요런 사원이라는 테이블이 있어요. 사원이라는 테이블이 있을 때 그 사원이라는 테이블에다가 이름은 홍승현이다, 부서는 인터넷이다, 이 두 개 필드의 데이터를 삽입을 하라고 그렇게 나왔습니다. 지금 내가 가지고 있는 이 사원 테이블에는 이름도 있고 부서도 있고 생일도 있고 주소도 있고 기본급도 있고 해서 이 다섯 가지의 필드를 전부 다 가지고 있는데 거기다가 이름은 홍승현, 부서는 인터넷, 이거를 삽입하세요.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "주소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:03:24",
+      "end_time_hms": "00:04:35",
+      "start_seconds": 204,
+      "end_seconds": 275,
+      "duration_seconds": 71,
+      "timeline_summary": "예제 1의 SQL 코드 작성 과정",
+      "screen_text_lines": [
+        "INSERT INTO 사원(이름, 부서)",
+        "VALUES ('홍승현', '인터넷')"
+      ],
+      "screen_text": "INSERT INTO 사원(이름, 부서)\nVALUES ('홍승현', '인터넷')",
+      "spoken_sentences": [
+        "요거 삽입할 때 어떻게 하나 좀 보세요.",
+        "일단 내가 데이터를 삽입할 거니까 인설트 인투(INSERT INTO) 하고 명령어를 먼저 적어주고요.",
+        "그리고 그 뒤에다가 테이블 이름 적어주면 되죠?",
+        "우리는 지금 이름은 홍승현이다, 부서는 인터넷이다 이 데이터를 우리가 사원이라는 테이블에다가 삽입을 할 겁니다.",
+        "해서 사원이라는 테이블에다가 데이터를 삽입해 주세요.",
+        "삽입하긴 삽입하는데 사원이라는 테이블에 들어있는 모든 필드에 대해서 다 데이터를 삽입을 하는 게 아니라 이름이라는 필드랑 부서라는 필드에만 우리가 데이터를 삽입할 거죠?",
+        "해서 이름하고 부서하고 이렇게 적어주고 그 뒤에다가 이름하고 부서 어떤 값을 입력할지 그 데이터를 입력해주면 되겠죠?",
+        "해서 데이터를 입력할 때는 우리가 밸류(VALUES) 하고 요렇게 적어주면 되죠?",
+        "밸류(VALUES)라고 적어주고 가로 열어주고요.",
+        "데이터를 적어주면 되는데 데이터를 적을 때는 우리가 문자일 때는 우리가 홑따옴표, 작은따옴표로 우리가 묶어서 입력을 해주면 됩니다.",
+        "해서 홑따옴표 쓰고 홍승현이다라고 입력해주고요.",
+        "그다음에 부서는 인터넷이다라고 그렇게 입력을 해주고 가로 닫아주고 세미콜론 찍어주면 됩니다.",
+        "요렇게 해주면 사원이라는 테이블에 이름은 홍승현이다, 부서는 인터넷이다 해서 요 데이터가 삽입이 될 겁니다."
+      ],
+      "spoken_text": "요거 삽입할 때 어떻게 하나 좀 보세요. 일단 내가 데이터를 삽입할 거니까 인설트 인투(INSERT INTO) 하고 명령어를 먼저 적어주고요. 그리고 그 뒤에다가 테이블 이름 적어주면 되죠? 우리는 지금 이름은 홍승현이다, 부서는 인터넷이다 이 데이터를 우리가 사원이라는 테이블에다가 삽입을 할 겁니다. 해서 사원이라는 테이블에다가 데이터를 삽입해 주세요. 삽입하긴 삽입하는데 사원이라는 테이블에 들어있는 모든 필드에 대해서 다 데이터를 삽입을 하는 게 아니라 이름이라는 필드랑 부서라는 필드에만 우리가 데이터를 삽입할 거죠? 해서 이름하고 부서하고 이렇게 적어주고 그 뒤에다가 이름하고 부서 어떤 값을 입력할지 그 데이터를 입력해주면 되겠죠? 해서 데이터를 입력할 때는 우리가 밸류(VALUES) 하고 요렇게 적어주면 되죠? 밸류(VALUES)라고 적어주고 가로 열어주고요. 데이터를 적어주면 되는데 데이터를 적을 때는 우리가 문자일 때는 우리가 홑따옴표, 작은따옴표로 우리가 묶어서 입력을 해주면 됩니다. 해서 홑따옴표 쓰고 홍승현이다라고 입력해주고요. 그다음에 부서는 인터넷이다라고 그렇게 입력을 해주고 가로 닫아주고 세미콜론 찍어주면 됩니다. 요렇게 해주면 사원이라는 테이블에 이름은 홍승현이다, 부서는 인터넷이다 해서 요 데이터가 삽입이 될 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:04:35",
+      "end_time_hms": "00:05:08",
+      "start_seconds": 275,
+      "end_seconds": 308,
+      "duration_seconds": 33,
+      "timeline_summary": "예제 2: 전체 속성 데이터 삽입 문제 확인",
+      "screen_text_lines": [
+        "이름",
+        "부서",
+        "생일",
+        "주소"
+      ],
+      "screen_text": "이름\n부서\n생일\n주소",
+      "spoken_sentences": [
+        "자, 예제를 보니까 우리 사원이라는 요 테이블에는 이름하고 부서하고 생일하고 주소하고 기본급하고 이 다섯 개의 필드를 가지고 있어요.",
+        "가지고 있는데 우리 사원이라는 요 테이블에다가 장보고다, 기획이다, 05/03/73, 그다음에 홍제동이다, 90이다 해서 이 다섯 가지의 데이터를 전부 다 삽입을 하래요.",
+        "그때 내가 가지고 있는 이 사원 테이블에서 모든 필드에 대해서 다 데이터를 삽입을 하는 거잖아요.",
+        "그때는 우리가 속성 명을 우리가 생략하고 사용할 수 있습니다."
+      ],
+      "spoken_text": "자, 예제를 보니까 우리 사원이라는 요 테이블에는 이름하고 부서하고 생일하고 주소하고 기본급하고 이 다섯 개의 필드를 가지고 있어요. 가지고 있는데 우리 사원이라는 요 테이블에다가 장보고다, 기획이다, 05/03/73, 그다음에 홍제동이다, 90이다 해서 이 다섯 가지의 데이터를 전부 다 삽입을 하래요. 그때 내가 가지고 있는 이 사원 테이블에서 모든 필드에 대해서 다 데이터를 삽입을 하는 거잖아요. 그때는 우리가 속성 명을 우리가 생략하고 사용할 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "주소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:05:08",
+      "end_time_hms": "00:06:46",
+      "start_seconds": 308,
+      "end_seconds": 406,
+      "duration_seconds": 98,
+      "timeline_summary": "예제 2의 SQL 코드 작성 및 속성명 생략 방법",
+      "screen_text_lines": [
+        "INSERT INTO 사원",
+        "VALUES ('장보고', '기획', #05/03/73#, '홍제동', 90)"
+      ],
+      "screen_text": "INSERT INTO 사원\nVALUES ('장보고', '기획', #05/03/73#, '홍제동', 90)",
+      "spoken_sentences": [
+        "자, 그럼 한번 보자고요.",
+        "일단은 삽입할 거니까 인설트 인투(INSERT INTO) 하고 먼저 시작하면 되겠죠?",
+        "해서 인설트 인투(INSERT INTO) 하고 먼저 적어주고요.",
+        "그리고 사원이라는 테이블에 대해서 데이터를 삽입하겠습니다라고 이렇게 적어놓고 그 뒤에다가 원래는 필드 명을 적어주면 되는데 우리는 이 사원 테이블에 들어있는 모든 필드, 이 다섯 개의 필드에 대해서 전체 데이터를 다 삽입을 할 거예요.",
+        "그래서 그 뒤에다가 우리가 필드 명을 생략하고 쓸 수 있다는 겁니다.",
+        "해서 필드 명을 전부 다 생략해 버리고 그리고 우리가 밸류(VALUES) 해서 값을 바로 적어주면 됩니다.",
+        "해서 밸류(VALUES)라고 요렇게 적어주고 이름은 장보고입니다라고 요렇게 입력을 해주고요.",
+        "그다음에 기획부입니다라고 해서 부서 명 입력해주고 그다음에 생일 입력하면 되는데 생일 같은 경우 날짜 형태잖아요.",
+        "날짜 형태를 입력할 때는 우리가 보통 샵(#)으로 묶어서 요런 식으로 표시를 해요.",
+        "해서 05/03/73이다라고 해서 요렇게 샵(#)으로 묶어서 입력을 해주면 됩니다.",
+        "우리가 날짜를 입력할 때 입력하는 방법이 지금처럼 얘는 날짜 형태로 인식이 되어야 되기 때문에 샵(#)으로 요렇게 묶어도 되고요, 작은따옴표를 묶어서 입력을 해도 상관없습니다.",
+        "근데 보통 날짜 데이터를 입력할 때는 지금처럼 샵(#)을 보통 많이 사용합니다.",
+        "그다음에 홍제동이다라고 입력을 해주면 되겠죠?",
+        "주소는 홍제동입니다라고 이렇게 입력해주고 그다음에 90이라는 기본급 입력해주면 되겠죠?",
+        "얘는 90이라는 숫자이기 때문에 그냥 90 하고 요렇게 입력해주면 됩니다.",
+        "그리고 맨 뒤에다 세미콜론 찍어주면 끝이에요."
+      ],
+      "spoken_text": "자, 그럼 한번 보자고요. 일단은 삽입할 거니까 인설트 인투(INSERT INTO) 하고 먼저 시작하면 되겠죠? 해서 인설트 인투(INSERT INTO) 하고 먼저 적어주고요. 그리고 사원이라는 테이블에 대해서 데이터를 삽입하겠습니다라고 이렇게 적어놓고 그 뒤에다가 원래는 필드 명을 적어주면 되는데 우리는 이 사원 테이블에 들어있는 모든 필드, 이 다섯 개의 필드에 대해서 전체 데이터를 다 삽입을 할 거예요. 그래서 그 뒤에다가 우리가 필드 명을 생략하고 쓸 수 있다는 겁니다. 해서 필드 명을 전부 다 생략해 버리고 그리고 우리가 밸류(VALUES) 해서 값을 바로 적어주면 됩니다. 해서 밸류(VALUES)라고 요렇게 적어주고 이름은 장보고입니다라고 요렇게 입력을 해주고요. 그다음에 기획부입니다라고 해서 부서 명 입력해주고 그다음에 생일 입력하면 되는데 생일 같은 경우 날짜 형태잖아요. 날짜 형태를 입력할 때는 우리가 보통 샵(#)으로 묶어서 요런 식으로 표시를 해요. 해서 05/03/73이다라고 해서 요렇게 샵(#)으로 묶어서 입력을 해주면 됩니다. 우리가 날짜를 입력할 때 입력하는 방법이 지금처럼 얘는 날짜 형태로 인식이 되어야 되기 때문에 샵(#)으로 요렇게 묶어도 되고요, 작은따옴표를 묶어서 입력을 해도 상관없습니다. 근데 보통 날짜 데이터를 입력할 때는 지금처럼 샵(#)을 보통 많이 사용합니다. 그다음에 홍제동이다라고 입력을 해주면 되겠죠? 주소는 홍제동입니다라고 이렇게 입력해주고 그다음에 90이라는 기본급 입력해주면 되겠죠? 얘는 90이라는 숫자이기 때문에 그냥 90 하고 요렇게 입력해주면 됩니다. 그리고 맨 뒤에다 세미콜론 찍어주면 끝이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:06:46",
+      "end_time_hms": "00:07:09",
+      "start_seconds": 406,
+      "end_seconds": 429,
+      "duration_seconds": 23,
+      "timeline_summary": "속성명 생략 시의 의미 재강조",
+      "screen_text_lines": [
+        "사원",
+        "INSERT INTO 사원"
+      ],
+      "screen_text": "사원\nINSERT INTO 사원",
+      "spoken_sentences": [
+        "해서 하나의 테이블에다가 모든 필드, 하나의 테이블에서 가지고 있는 모든 필드에다가 데이터를 다 삽입을 할 때는 지금처럼 사원이라는 요 테이블 이름 뒤에다가 필드 명을 생략하고 쓸 수도 있다.",
+        "인설트 인투(INSERT INTO)가 나왔는데 지금 테이블 이름만 있고 필드 명이 없을 때는 이 테이블에 들어있는 모든 필드들에 대해서 데이터를 다 삽입하는구나라고 그렇게 이해하시면 돼요."
+      ],
+      "spoken_text": "해서 하나의 테이블에다가 모든 필드, 하나의 테이블에서 가지고 있는 모든 필드에다가 데이터를 다 삽입을 할 때는 지금처럼 사원이라는 요 테이블 이름 뒤에다가 필드 명을 생략하고 쓸 수도 있다. 인설트 인투(INSERT INTO)가 나왔는데 지금 테이블 이름만 있고 필드 명이 없을 때는 이 테이블에 들어있는 모든 필드들에 대해서 데이터를 다 삽입하는구나라고 그렇게 이해하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:07:09",
+      "end_time_hms": "00:07:50",
+      "start_seconds": 429,
+      "end_seconds": 470,
+      "duration_seconds": 41,
+      "timeline_summary": "예제 3: 다른 테이블의 특정 튜플 검색 결과 삽입 문제",
+      "screen_text_lines": [
+        "예제 <사원> 테이블에 있는 편집부의 모든 튜플을 편집부원(이름, 생일, 주소, 기본급) 테이블에 삽입하시오."
+      ],
+      "screen_text": "예제 <사원> 테이블에 있는 편집부의 모든 튜플을 편집부원(이름, 생일, 주소, 기본급) 테이블에 삽입하시오.",
+      "spoken_sentences": [
+        "자, 지금처럼 이렇게 사원이라는 테이블에 여러 명의 사람들이 있고요.",
+        "이 여러 명의 사람들이 각각의 부서에서 일한다라고 요렇게 되어 있습니다.",
+        "근데 문제를 보니까 사원이라는 요 테이블에 들어있는 편집부요, 편집부.",
+        "편집부의 모든 튜플을 편집부원이라는 요 테이블, 요 테이블에다가 삽입하라고 요렇게 나왔습니다.",
+        "그때 요 편집부원이라는 요 테이블에다가 데이터를 삽입을 하긴 하는데 삽입할 때 지금 우리 사원 테이블에는 이름, 부서, 생일, 주소, 기본급 하고 이 다섯 개 필드가 있지만 우리가 삽입을 할 때는 이름하고 생일하고 주소하고 기본급하고 요 네 개만 가져가서 삽입을 하라는 거예요."
+      ],
+      "spoken_text": "자, 지금처럼 이렇게 사원이라는 테이블에 여러 명의 사람들이 있고요. 이 여러 명의 사람들이 각각의 부서에서 일한다라고 요렇게 되어 있습니다. 근데 문제를 보니까 사원이라는 요 테이블에 들어있는 편집부요, 편집부. 편집부의 모든 튜플을 편집부원이라는 요 테이블, 요 테이블에다가 삽입하라고 요렇게 나왔습니다. 그때 요 편집부원이라는 요 테이블에다가 데이터를 삽입을 하긴 하는데 삽입할 때 지금 우리 사원 테이블에는 이름, 부서, 생일, 주소, 기본급 하고 이 다섯 개 필드가 있지만 우리가 삽입을 할 때는 이름하고 생일하고 주소하고 기본급하고 요 네 개만 가져가서 삽입을 하라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "주소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:07:50",
+      "end_time_hms": "00:09:02",
+      "start_seconds": 470,
+      "end_seconds": 542,
+      "duration_seconds": 72,
+      "timeline_summary": "예제 3의 SQL 코드 작성 과정 (INSERT INTO ... SELECT)",
+      "screen_text_lines": [
+        "INSERT INTO 편집부원(이름, 생일, 주소, 기본급)"
+      ],
+      "screen_text": "INSERT INTO 편집부원(이름, 생일, 주소, 기본급)",
+      "spoken_sentences": [
+        "자, 그러면 작성 한번 해보자고요.",
+        "인설트 인투(INSERT INTO)라고 먼저 적어주고 우리가 삽입을 하긴 할 건데 어디에다가 삽입할 거예요?",
+        "사원이라는 곳에서 내가 데이터를 검색을 해요.",
+        "검색을 한 다음에 편집부원이라는 요 테이블에다가, 요 테이블에다가 우리가 삽입을 하는 거죠?",
+        "해서 테이블 명은 편집부원입니다라고 그렇게 적어주면 되겠네요.",
+        "해서 편집부원이라고 요렇게 적어주고 편집부원이라는 테이블에다가 삽입을 하긴 할 건데 뭐를 삽입해라?",
+        "이름하고 생일하고 주소하고 기본급, 요 네 개 필드만 가져가서 편집부원이라는 요 테이블에다가 삽입을 하는 거죠?",
+        "해서 그 뒤에다가 이름입니다, 그다음에 생일이다, 그다음에 주소다, 그다음에 기본급이다 해서 요렇게 적어주면 되겠죠?",
+        "해서 편집부원이라는 요 테이블에다가 이름하고 생일하고 주소하고 기본급을 요 네 개 필드를 삽입을 하긴 할 건데 그 데이터를 우리가 사원이라는 테이블에서 검색을 해야죠."
+      ],
+      "spoken_text": "자, 그러면 작성 한번 해보자고요. 인설트 인투(INSERT INTO)라고 먼저 적어주고 우리가 삽입을 하긴 할 건데 어디에다가 삽입할 거예요? 사원이라는 곳에서 내가 데이터를 검색을 해요. 검색을 한 다음에 편집부원이라는 요 테이블에다가, 요 테이블에다가 우리가 삽입을 하는 거죠? 해서 테이블 명은 편집부원입니다라고 그렇게 적어주면 되겠네요. 해서 편집부원이라고 요렇게 적어주고 편집부원이라는 테이블에다가 삽입을 하긴 할 건데 뭐를 삽입해라? 이름하고 생일하고 주소하고 기본급, 요 네 개 필드만 가져가서 편집부원이라는 요 테이블에다가 삽입을 하는 거죠? 해서 그 뒤에다가 이름입니다, 그다음에 생일이다, 그다음에 주소다, 그다음에 기본급이다 해서 요렇게 적어주면 되겠죠? 해서 편집부원이라는 요 테이블에다가 이름하고 생일하고 주소하고 기본급을 요 네 개 필드를 삽입을 하긴 할 건데 그 데이터를 우리가 사원이라는 테이블에서 검색을 해야죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "00:09:02",
+      "end_time_hms": "10:31:00",
+      "start_seconds": 542,
+      "end_seconds": 37860,
+      "duration_seconds": 37318,
+      "timeline_summary": "예제 3의 코드 논리 상세 설명",
+      "screen_text_lines": [
+        "SELECT 이름, 생일, 주소, 기본급",
+        "FROM 사원",
+        "WHERE 부서 = '편집'"
+      ],
+      "screen_text": "SELECT 이름, 생일, 주소, 기본급\nFROM 사원\nWHERE 부서 = '편집'",
+      "spoken_sentences": [
+        "사원 테이블에 들어있는 모든 사람들에 대해서 다 데이터를 가져가는 게 아니라 이 사원이라는 테이블에 들어있는 것들 중에서 부서가 뭐인 거?",
+        "편집인 거, 편집인 거.",
+        "얘네들만 데리고 갈 거예요.",
+        "편집부의 모든 튜플을 가져가는 겁니다.",
+        "그때 사원이라는 테이블에서 검색을 해야 되겠죠?",
+        "우리가 검색을 할 때는 우리가 셀렉트(SELECT), 프롬(FROM), 웨어(WHERE)라는 그 명령어를 사용해 주면 돼요.",
+        "해서 셀렉트(SELECT), 검색을 하긴 하는데 어떤 거 검색해라?",
+        "이름 검색해라, 그리고 생일도 검색해 주고 주소도 검색하고 기본급도 검색해라.",
+        "얘네들을 검색하긴 검색하는데 어디서 해라?",
+        "프롬(FROM) 사원이라는 테이블에서 검색해라.",
+        "해서 요렇게만 적게 되면 사원이라는 테이블에서 이름, 생일, 주소, 기본급 이 네 가지 필드에 대해서 전부 다 데이터를 다 검색을 합니다.",
+        "근데 지금 문제에서는 편집부인 모든 튜플을 검색하라고 그렇게 되어 있죠?",
+        "해서 조건을 적어줘야 돼요.",
+        "조건을 적을 때는 웨어(WHERE).",
+        "웨어(WHERE)라고 이렇게 적어주고 그때 조건은 뭐다?",
+        "부서가 뭐랑 똑같은 거 찾아라?",
+        "편집인 거 찾아라.",
+        "부서가 편집인 거 찾아라라고 요렇게 적어주면 됩니다.",
+        "요렇게 하게 되면 인설트 인투(INSERT INTO), 삽입해라.",
+        "어떤 테이블에다가?",
+        "편집부원이라는 요 테이블에다가 삽입하긴 하는데 뭐를 삽입해라?",
+        "이름하고 생일하고 주소하고 기본급 요 네 가지만 삽입을 해라.",
+        "그 삽입할 데이터는 사원이라는 테이블에서 부서가 편집인 사람들의 이름하고 생일, 주소, 기본급 요 데이터를 삽입해라라고 그렇게 적어준 겁니다.",
+        "요렇게 셀렉트(SELECT) 문을 사용해서 다른 테이블에 들어있는 그런 검색 결과도 우리가 테이블에다가, 특정 테이블에다가 삽입할 수 있더라라고 그렇게 기억하시면 돼요."
+      ],
+      "spoken_text": "사원 테이블에 들어있는 모든 사람들에 대해서 다 데이터를 가져가는 게 아니라 이 사원이라는 테이블에 들어있는 것들 중에서 부서가 뭐인 거? 편집인 거, 편집인 거. 얘네들만 데리고 갈 거예요. 편집부의 모든 튜플을 가져가는 겁니다. 그때 사원이라는 테이블에서 검색을 해야 되겠죠? 우리가 검색을 할 때는 우리가 셀렉트(SELECT), 프롬(FROM), 웨어(WHERE)라는 그 명령어를 사용해 주면 돼요. 해서 셀렉트(SELECT), 검색을 하긴 하는데 어떤 거 검색해라? 이름 검색해라, 그리고 생일도 검색해 주고 주소도 검색하고 기본급도 검색해라. 얘네들을 검색하긴 검색하는데 어디서 해라? 프롬(FROM) 사원이라는 테이블에서 검색해라. 해서 요렇게만 적게 되면 사원이라는 테이블에서 이름, 생일, 주소, 기본급 이 네 가지 필드에 대해서 전부 다 데이터를 다 검색을 합니다. 근데 지금 문제에서는 편집부인 모든 튜플을 검색하라고 그렇게 되어 있죠? 해서 조건을 적어줘야 돼요. 조건을 적을 때는 웨어(WHERE). 웨어(WHERE)라고 이렇게 적어주고 그때 조건은 뭐다? 부서가 뭐랑 똑같은 거 찾아라? 편집인 거 찾아라. 부서가 편집인 거 찾아라라고 요렇게 적어주면 됩니다. 요렇게 하게 되면 인설트 인투(INSERT INTO), 삽입해라. 어떤 테이블에다가? 편집부원이라는 요 테이블에다가 삽입하긴 하는데 뭐를 삽입해라? 이름하고 생일하고 주소하고 기본급 요 네 가지만 삽입을 해라. 그 삽입할 데이터는 사원이라는 테이블에서 부서가 편집인 사람들의 이름하고 생일, 주소, 기본급 요 데이터를 삽입해라라고 그렇게 적어준 겁니다. 요렇게 셀렉트(SELECT) 문을 사용해서 다른 테이블에 들어있는 그런 검색 결과도 우리가 테이블에다가, 특정 테이블에다가 삽입할 수 있더라라고 그렇게 기억하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "생일",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 38
+        },
+        {
+          "keyword": "INSERT",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "INTO",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0242_242",
+      "subtopic_title": "삽입문(INSERT INTO~)",
+      "subtopic_sequence": 242,
+      "subtopic_number": "242",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=oUjEyf5i2-o",
+      "start_time_hms": "10:31:00",
+      "end_time_hms": "00:11:06",
+      "start_seconds": 37860,
+      "end_seconds": 666,
+      "duration_seconds": 0,
+      "timeline_summary": "직접 코드 작성 연습의 중요성 강조 및 마무리",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "예제 문제에 보면은 명령어들이 적혀 있는데 그걸 보고 이게 무슨 뜻이다, 이게 이렇게 이렇게 되는구나라고 그 정도로 여러분들이 보시고 지나가시면 절대로 안 됩니다.",
+        "지금 방금 제가 했던 것처럼 그냥 문제만 띄워놓고 여러분들이 그 밑에다가 빈 종이 그냥 꺼내서 직접 명령 한번 적어보세요.",
+        "여러분들이 눈으로 열 번 보는 것보다 한두 번 코드를 직접 작성해 보는 게 더 많은 도움이 되거든요.",
+        "더 많은 도움이 되니까 강의가 끝났다고 해서 그냥 지나가지 말고 빈 종이 꺼내놓고 꼭 코드 써보시고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "예제 문제에 보면은 명령어들이 적혀 있는데 그걸 보고 이게 무슨 뜻이다, 이게 이렇게 이렇게 되는구나라고 그 정도로 여러분들이 보시고 지나가시면 절대로 안 됩니다. 지금 방금 제가 했던 것처럼 그냥 문제만 띄워놓고 여러분들이 그 밑에다가 빈 종이 그냥 꺼내서 직접 명령 한번 적어보세요. 여러분들이 눈으로 열 번 보는 것보다 한두 번 코드를 직접 작성해 보는 게 더 많은 도움이 되거든요. 더 많은 도움이 되니까 강의가 끝났다고 해서 그냥 지나가지 말고 빈 종이 꺼내놓고 꼭 코드 써보시고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "삭제문(DELETE FROM) 강의 시작 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 삭제문 DELETE FROM에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 삭제문 DELETE FROM에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:21",
+      "start_seconds": 8,
+      "end_seconds": 21,
+      "duration_seconds": 13,
+      "timeline_summary": "삭제문의 용도 설명 (특정 튜플 삭제)",
+      "screen_text_lines": [
+        "삭제문은 기본 테이블에 있는 튜플들 중에서 특정 튜플(행)을 삭제할 때 사용함"
+      ],
+      "screen_text": "삭제문은 기본 테이블에 있는 튜플들 중에서 특정 튜플(행)을 삭제할 때 사용함",
+      "spoken_sentences": [
+        "삭제문이다라고 하게 되면 얘는 말 그대로 삭제하는 거고요.",
+        "기본 테이블에 들어 있는 그런 튜플들 중에서 특정 행, 특정 튜플을 우리가 삭제하고자 할 때 그때 사용하는 게 우리 DELETE FROM이라는 거예요."
+      ],
+      "spoken_text": "삭제문이다라고 하게 되면 얘는 말 그대로 삭제하는 거고요. 기본 테이블에 들어 있는 그런 튜플들 중에서 특정 행, 특정 튜플을 우리가 삭제하고자 할 때 그때 사용하는 게 우리 DELETE FROM이라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:21",
+      "end_time_hms": "00:00:30",
+      "start_seconds": 21,
+      "end_seconds": 30,
+      "duration_seconds": 9,
+      "timeline_summary": "삭제문의 일반 형식(구문) 설명",
+      "screen_text_lines": [
+        "• 일반 형식",
+        "DELETE",
+        "FROM 테이블명",
+        "[WHERE 조건]"
+      ],
+      "screen_text": "• 일반 형식\nDELETE\nFROM 테이블명\n[WHERE 조건]",
+      "spoken_sentences": [
+        "해서 얘는 일반 형식이 DELETE라고 써 주고요.",
+        "FROM이라고 쓰고 그리고 테이블 명 써 주고요.",
+        "그리고 WHERE라고 쓰고 조건 써 주면 됩니다."
+      ],
+      "spoken_text": "해서 얘는 일반 형식이 DELETE라고 써 주고요. FROM이라고 쓰고 그리고 테이블 명 써 주고요. 그리고 WHERE라고 쓰고 조건 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:30",
+      "end_time_hms": "00:00:40",
+      "start_seconds": 30,
+      "end_seconds": 40,
+      "duration_seconds": 10,
+      "timeline_summary": "WHERE절 생략 시의 동작 (모든 레코드 삭제)",
+      "screen_text_lines": [
+        "모든 레코드를 삭제할 때는 WHERE절을 생략함"
+      ],
+      "screen_text": "모든 레코드를 삭제할 때는 WHERE절을 생략함",
+      "spoken_sentences": [
+        "만약에 조건이 없다라고 했을 때는 WHERE 절을 우리가 생략해 주면 됩니다.",
+        "해서 우리가 모든 레코드를 다 삭제하겠다라고 했을 때는 WHERE 절을 아예 생략하고 그냥 써 버리면 되는 거고요."
+      ],
+      "spoken_text": "만약에 조건이 없다라고 했을 때는 WHERE 절을 우리가 생략해 주면 됩니다. 해서 우리가 모든 레코드를 다 삭제하겠다라고 했을 때는 WHERE 절을 아예 생략하고 그냥 써 버리면 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "모든",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:40",
+      "end_time_hms": "00:00:53",
+      "start_seconds": 40,
+      "end_seconds": 53,
+      "duration_seconds": 13,
+      "timeline_summary": "DELETE와 DROP의 차이점 (구조 유지 여부)",
+      "screen_text_lines": [
+        "모든 레코드를 삭제하더라도 테이블 구조는 남아 있기 때문에 디스크에서 테이블을 완전히",
+        "제거하는 DROP과는 다름"
+      ],
+      "screen_text": "모든 레코드를 삭제하더라도 테이블 구조는 남아 있기 때문에 디스크에서 테이블을 완전히\n제거하는 DROP과는 다름",
+      "spoken_sentences": [
+        "만약에 모든 레코드를 삭제하더라도 테이블 구조는 남아 있기 때문에 디스크에서 완전히 테이블을 삭제하는 건 아니에요.",
+        "해서 디스크에서 테이블을 완전히 삭제하겠다라고 했을 때는 우리 DROP이라는 요 명령어를 가지고 우리가 삭제를 해 줘야 됩니다."
+      ],
+      "spoken_text": "만약에 모든 레코드를 삭제하더라도 테이블 구조는 남아 있기 때문에 디스크에서 완전히 테이블을 삭제하는 건 아니에요. 해서 디스크에서 테이블을 완전히 삭제하겠다라고 했을 때는 우리 DROP이라는 요 명령어를 가지고 우리가 삭제를 해 줘야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "모든",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:00:53",
+      "end_time_hms": "00:01:05",
+      "start_seconds": 53,
+      "end_seconds": 65,
+      "duration_seconds": 12,
+      "timeline_summary": "사원 테이블 예시를 통한 삭제 과정 설명",
+      "screen_text_lines": [
+        "<사원>",
+        "이름",
+        "부서",
+        "생일"
+      ],
+      "screen_text": "<사원>\n이름\n부서\n생일",
+      "spoken_sentences": [
+        "만약에 지금처럼 사원이라는 테이블이 이렇게 있을 때 홍길동하고 임꺽정하고 황진이하고 이걸 내가 전부 다 삭제하겠다라고 했을 때는 DELETE라고 써 주고 FROM이라고 쓰고 테이블 명 사원이라고 써 주고 그리고 그냥 실행시켜 주면 돼요."
+      ],
+      "spoken_text": "만약에 지금처럼 사원이라는 테이블이 이렇게 있을 때 홍길동하고 임꺽정하고 황진이하고 이걸 내가 전부 다 삭제하겠다라고 했을 때는 DELETE라고 써 주고 FROM이라고 쓰고 테이블 명 사원이라고 써 주고 그리고 그냥 실행시켜 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 29
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:01:05",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 65,
+      "end_seconds": 81,
+      "duration_seconds": 16,
+      "timeline_summary": "DELETE 실행 후 데이터 삭제와 구조 유지 시각화",
+      "screen_text_lines": [
+        "<사원>",
+        "이름",
+        "부서",
+        "생일"
+      ],
+      "screen_text": "<사원>\n이름\n부서\n생일",
+      "spoken_sentences": [
+        "그러면 홍길동이다, 임꺽정이다, 황진이다 해서 이 데이터만 삭제가 돼요.",
+        "이 위에 써져 있는 이름이다, 부서다, 생일이다, 주소다, 기본급이다 해서 이런 테이블의 구조는 그냥 그대로 남아 있습니다."
+      ],
+      "spoken_text": "그러면 홍길동이다, 임꺽정이다, 황진이다 해서 이 데이터만 삭제가 돼요. 이 위에 써져 있는 이름이다, 부서다, 생일이다, 주소다, 기본급이다 해서 이런 테이블의 구조는 그냥 그대로 남아 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 29
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 81,
+      "end_seconds": 103,
+      "duration_seconds": 22,
+      "timeline_summary": "DROP과 DELETE의 개념적 차이 요약",
+      "screen_text_lines": [
+        "제거하는 DROP과는 다름"
+      ],
+      "screen_text": "제거하는 DROP과는 다름",
+      "spoken_sentences": [
+        "해서 여기서 얘기하는 DELETE라는 요 명령과 DROP이라는 명령어는 차이가 좀 있어요.",
+        "DROP은 아예 이 테이블 자체를 디스크에서 완전히 삭제하는 거고요.",
+        "DELETE는 이 안에 들어 있는 레코드 튜플만 삭제해 주는 거예요.",
+        "해서 DELETE로 삭제하면 뭐가 남아 있다?",
+        "테이블 구조는 그대로 디스크에 남아 있더라.",
+        "해서 DROP과 DELETE 차이점 기억하셔야 됩니다."
+      ],
+      "spoken_text": "해서 여기서 얘기하는 DELETE라는 요 명령과 DROP이라는 명령어는 차이가 좀 있어요. DROP은 아예 이 테이블 자체를 디스크에서 완전히 삭제하는 거고요. DELETE는 이 안에 들어 있는 레코드 튜플만 삭제해 주는 거예요. 해서 DELETE로 삭제하면 뭐가 남아 있다? 테이블 구조는 그대로 디스크에 남아 있더라. 해서 DROP과 DELETE 차이점 기억하셔야 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:02:03",
+      "start_seconds": 103,
+      "end_seconds": 123,
+      "duration_seconds": 20,
+      "timeline_summary": "예제 1: 특정 인물(임꺽정) 튜플 삭제 문제 소개",
+      "screen_text_lines": [
+        "<사원>",
+        "예제 <사원> 테이블에서 “임꺽정”에 대한 튜플을 삭제하시오."
+      ],
+      "screen_text": "<사원>\n예제 <사원> 테이블에서 “임꺽정”에 대한 튜플을 삭제하시오.",
+      "spoken_sentences": [
+        "자, 그럼 예제 문제를 통해서 한번 같이 보자고요.",
+        "지금처럼 요렇게 예제가 있을 때 사원이라는 테이블이 지금처럼 요렇게 있어요.",
+        "요렇게 있을 때 사원 테이블에서 임꺽정에 대한 튜플을 삭제하시오 그러고 나왔습니다.",
+        "해서 특정 튜플만 삭제할 때 우리는 DELETE FROM이라는 명령어를 써 주면 돼요.",
+        "해서 임꺽정, 지금 여기 데이터가 있죠?",
+        "요거 삭제하라는 거예요."
+      ],
+      "spoken_text": "자, 그럼 예제 문제를 통해서 한번 같이 보자고요. 지금처럼 요렇게 예제가 있을 때 사원이라는 테이블이 지금처럼 요렇게 있어요. 요렇게 있을 때 사원 테이블에서 임꺽정에 대한 튜플을 삭제하시오 그러고 나왔습니다. 해서 특정 튜플만 삭제할 때 우리는 DELETE FROM이라는 명령어를 써 주면 돼요. 해서 임꺽정, 지금 여기 데이터가 있죠? 요거 삭제하라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:02:03",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 123,
+      "end_seconds": 140,
+      "duration_seconds": 17,
+      "timeline_summary": "예제 1의 SQL 기본 구문 작성 (DELETE FROM 사원)",
+      "screen_text_lines": [
+        "DELETE",
+        "FROM 사원"
+      ],
+      "screen_text": "DELETE\nFROM 사원",
+      "spoken_sentences": [
+        "해서 우리가 지울 거니까 DELETE라고 써 주고요.",
+        "그다음에 그 밑에다가 FROM, 어떤 테이블에서 삭제할 거냐?",
+        "사원이라는 테이블에서 삭제하겠습니다라고 사원 테이블에 있는 거 요렇게 지워 달라고 써 주면 됩니다.",
+        "지금처럼 요렇게만 쓰게 되면 이 사원 테이블에 있는 모든 튜플, 모든 데이터가 다 삭제가 됩니다."
+      ],
+      "spoken_text": "해서 우리가 지울 거니까 DELETE라고 써 주고요. 그다음에 그 밑에다가 FROM, 어떤 테이블에서 삭제할 거냐? 사원이라는 테이블에서 삭제하겠습니다라고 사원 테이블에 있는 거 요렇게 지워 달라고 써 주면 됩니다. 지금처럼 요렇게만 쓰게 되면 이 사원 테이블에 있는 모든 튜플, 모든 데이터가 다 삭제가 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:02:20",
+      "end_time_hms": "00:02:40",
+      "start_seconds": 140,
+      "end_seconds": 160,
+      "duration_seconds": 20,
+      "timeline_summary": "예제 1의 조건절 작성 (WHERE 이름 = '임꺽정')",
+      "screen_text_lines": [
+        "WHERE 이름 = '임꺽정'"
+      ],
+      "screen_text": "WHERE 이름 = '임꺽정'",
+      "spoken_sentences": [
+        "근데 우리는 임꺽정에 대한 튜플만 삭제할 거잖아요.",
+        "그렇죠?",
+        "그래서 그 밑에다가 우리가 WHERE라고 써 주고 WHERE라고 써 주고 조건 써 주면 됩니다.",
+        "조건은 뭐다?",
+        "이름이 뭐랑 똑같은 거?",
+        "임꺽정이랑 똑같은 거 찾아라라고 해서 요렇게 써 주면 됩니다."
+      ],
+      "spoken_text": "근데 우리는 임꺽정에 대한 튜플만 삭제할 거잖아요. 그렇죠? 그래서 그 밑에다가 우리가 WHERE라고 써 주고 WHERE라고 써 주고 조건 써 주면 됩니다. 조건은 뭐다? 이름이 뭐랑 똑같은 거? 임꺽정이랑 똑같은 거 찾아라라고 해서 요렇게 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 25
+        },
+        {
+          "keyword": "임꺽정",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:02:40",
+      "end_time_hms": "00:02:58",
+      "start_seconds": 160,
+      "end_seconds": 178,
+      "duration_seconds": 18,
+      "timeline_summary": "예제 1 실행 결과 시각적 확인",
+      "screen_text_lines": [
+        "임꺽정 데이터 행 가로선 취소선 표시"
+      ],
+      "screen_text": "임꺽정 데이터 행 가로선 취소선 표시",
+      "spoken_sentences": [
+        "요렇게 해서 DELETE라고 써 주고 FROM이라고 쓰고 FROM 뒤에다가 테이블, 테이블 명 써 주면 되는 거고요.",
+        "WHERE라고 해서 조건을 써 주면 됩니다.",
+        "이름이 뭐랑 똑같은 거 찾아라?",
+        "임꺽정인 거 찾아라.",
+        "찾아서 그걸 지워라.",
+        "그렇게요.",
+        "그러면 임꺽정인 요 데이터가 요 한 줄이 삭제가 될 겁니다."
+      ],
+      "spoken_text": "요렇게 해서 DELETE라고 써 주고 FROM이라고 쓰고 FROM 뒤에다가 테이블, 테이블 명 써 주면 되는 거고요. WHERE라고 해서 조건을 써 주면 됩니다. 이름이 뭐랑 똑같은 거 찾아라? 임꺽정인 거 찾아라. 찾아서 그걸 지워라. 그렇게요. 그러면 임꺽정인 요 데이터가 요 한 줄이 삭제가 될 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:02:58",
+      "end_time_hms": "00:03:14",
+      "start_seconds": 178,
+      "end_seconds": 194,
+      "duration_seconds": 16,
+      "timeline_summary": "예제 2: 특정 부서(인터넷)의 모든 튜플 삭제 문제 소개",
+      "screen_text_lines": [
+        "예제 <사원> 테이블에서 “인터넷” 부서에 대한 모든 튜플을 삭제하시오."
+      ],
+      "screen_text": "예제 <사원> 테이블에서 “인터넷” 부서에 대한 모든 튜플을 삭제하시오.",
+      "spoken_sentences": [
+        "예제 문제 보니까 사원 테이블에서 인터넷 부서에 대한 모든 튜플을 삭제해라라고 했습니다.",
+        "자, 부서가 인터넷인 거 찾는 거죠.",
+        "부서 보니까 인터넷이 지금처럼 여기도 있고 여기도 있고 두 명의 데이터가 있습니다.",
+        "이 두 명의 데이터를 지우라는 거예요."
+      ],
+      "spoken_text": "예제 문제 보니까 사원 테이블에서 인터넷 부서에 대한 모든 튜플을 삭제해라라고 했습니다. 자, 부서가 인터넷인 거 찾는 거죠. 부서 보니까 인터넷이 지금처럼 여기도 있고 여기도 있고 두 명의 데이터가 있습니다. 이 두 명의 데이터를 지우라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 29
+        },
+        {
+          "keyword": "모든",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:03:14",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 194,
+      "end_seconds": 202,
+      "duration_seconds": 8,
+      "timeline_summary": "예제 2의 SQL 기본 구문 작성 (DELETE FROM 사원)",
+      "screen_text_lines": [
+        "DELETE",
+        "FROM 사원"
+      ],
+      "screen_text": "DELETE\nFROM 사원",
+      "spoken_sentences": [
+        "자, 그럼 명령어 한번 써 보자고요.",
+        "자, DELETE라고 써 주고 그다음에 그 밑에다가 FROM 어떤 테이블에서?",
+        "사원이라는 테이블에서 삭제해라."
+      ],
+      "spoken_text": "자, 그럼 명령어 한번 써 보자고요. 자, DELETE라고 써 주고 그다음에 그 밑에다가 FROM 어떤 테이블에서? 사원이라는 테이블에서 삭제해라.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:03:22",
+      "end_time_hms": "00:03:33",
+      "start_seconds": 202,
+      "end_seconds": 213,
+      "duration_seconds": 11,
+      "timeline_summary": "예제 2의 조건절 작성 (WHERE 부서 = '인터넷')",
+      "screen_text_lines": [
+        "WHERE 부서 = '인터넷'"
+      ],
+      "screen_text": "WHERE 부서 = '인터넷'",
+      "spoken_sentences": [
+        "삭제하긴 삭제하는데 WHERE 조건은 뭐다?",
+        "그때 조건은 부서가 뭐랑 똑같은 거 찾아라?",
+        "인터넷이랑 똑같은 거 찾아라라고 해서 요렇게 써 주면 됩니다."
+      ],
+      "spoken_text": "삭제하긴 삭제하는데 WHERE 조건은 뭐다? 그때 조건은 부서가 뭐랑 똑같은 거 찾아라? 인터넷이랑 똑같은 거 찾아라라고 해서 요렇게 써 주면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 29
+        },
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:03:33",
+      "end_time_hms": "00:03:46",
+      "start_seconds": 213,
+      "end_seconds": 226,
+      "duration_seconds": 13,
+      "timeline_summary": "예제 2 실행 결과 시각적 확인",
+      "screen_text_lines": [
+        "임꺽정, 강호동 데이터 행 가로선 취소선 표시"
+      ],
+      "screen_text": "임꺽정, 강호동 데이터 행 가로선 취소선 표시",
+      "spoken_sentences": [
+        "그러면은 사원이라는 테이블에서 부서가 인터넷이라는 똑같은 걸 찾아서 삭제해라 그겁니다.",
+        "그렇게 해서 임꺽정의 데이터랑 그다음에 강호동 요 데이터가 삭제가 되겠죠."
+      ],
+      "spoken_text": "그러면은 사원이라는 테이블에서 부서가 인터넷이라는 똑같은 걸 찾아서 삭제해라 그겁니다. 그렇게 해서 임꺽정의 데이터랑 그다음에 강호동 요 데이터가 삭제가 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 29
+        },
+        {
+          "keyword": "임꺽정",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:03:46",
+      "end_time_hms": "00:03:58",
+      "start_seconds": 226,
+      "end_seconds": 238,
+      "duration_seconds": 12,
+      "timeline_summary": "예제 3: 모든 레코드 삭제 문제 소개",
+      "screen_text_lines": [
+        "예제 <사원> 테이블의 모든 레코드를 삭제하시오."
+      ],
+      "screen_text": "예제 <사원> 테이블의 모든 레코드를 삭제하시오.",
+      "spoken_sentences": [
+        "예제 보니까 사원 테이블의 모든 레코드를 삭제하래요.",
+        "여기 있는 거 싹 다 삭제하래요.",
+        "어떤 것만 삭제해라가 아니라 전부 다 삭제할 거니까 따로 조건이 없는 거죠.",
+        "자, 명령어 한번 써 보자고요."
+      ],
+      "spoken_text": "예제 보니까 사원 테이블의 모든 레코드를 삭제하래요. 여기 있는 거 싹 다 삭제하래요. 어떤 것만 삭제해라가 아니라 전부 다 삭제할 거니까 따로 조건이 없는 거죠. 자, 명령어 한번 써 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "모든",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:03:58",
+      "end_time_hms": "00:04:08",
+      "start_seconds": 238,
+      "end_seconds": 248,
+      "duration_seconds": 10,
+      "timeline_summary": "예제 3의 SQL 구문 작성 (WHERE절 생략)",
+      "screen_text_lines": [
+        "DELETE",
+        "FROM 사원"
+      ],
+      "screen_text": "DELETE\nFROM 사원",
+      "spoken_sentences": [
+        "DELETE라고 써 주고 FROM 사원이라는 테이블에서 삭제해라라고 해서 요렇게만 적어 주면 돼요."
+      ],
+      "spoken_text": "DELETE라고 써 주고 FROM 사원이라는 테이블에서 삭제해라라고 해서 요렇게만 적어 주면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0243_243",
+      "subtopic_title": "삭제문(DELETE FROM~)",
+      "subtopic_sequence": 243,
+      "subtopic_number": "243",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fMGplcaRIMg",
+      "start_time_hms": "00:04:08",
+      "end_time_hms": "00:04:37",
+      "start_seconds": 248,
+      "end_seconds": 277,
+      "duration_seconds": 29,
+      "timeline_summary": "전체 레코드 삭제 결과 확인 및 학습 마무리",
+      "screen_text_lines": [
+        "전체 데이터 행 가로선 취소선 표시",
+        "FROM 사원"
+      ],
+      "screen_text": "전체 데이터 행 가로선 취소선 표시\nFROM 사원",
+      "spoken_sentences": [
+        "모든 레코드를 다 삭제할 때는 지금처럼 요렇게만 쓰더라.",
+        "조건이 없으니까 WHERE 절은 생략하더라.",
+        "이렇게 써 주면 사원 테이블에서 이 데이터, 이 데이터들이 싹 다 삭제가 되는 거고요.",
+        "이 사원 테이블의 이 구조, 이름이다, 부서다, 생일이다, 주소다, 기본급이다 해서 이런 구조는 그대로 남아 있고 실제 이 튜플, 이 튜플들만 전부 다 삭제가 되는 겁니다.",
+        "해서 삭제할 때 우리가 DELETE FROM이라는 거 사용한다라고 요렇게 기억하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "모든 레코드를 다 삭제할 때는 지금처럼 요렇게만 쓰더라. 조건이 없으니까 WHERE 절은 생략하더라. 이렇게 써 주면 사원 테이블에서 이 데이터, 이 데이터들이 싹 다 삭제가 되는 거고요. 이 사원 테이블의 이 구조, 이름이다, 부서다, 생일이다, 주소다, 기본급이다 해서 이런 구조는 그대로 남아 있고 실제 이 튜플, 이 튜플들만 전부 다 삭제가 되는 겁니다. 해서 삭제할 때 우리가 DELETE FROM이라는 거 사용한다라고 요렇게 기억하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DELETE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 75
+        },
+        {
+          "keyword": "FROM",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "FROM 사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 도입 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 갱신문 UPDATE SET에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 갱신문 UPDATE SET에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "갱신문의 정의와 용도 설명",
+      "screen_text_lines": [
+        "갱신문은 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용함"
+      ],
+      "screen_text": "갱신문은 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용함",
+      "spoken_sentences": [
+        "갱신문이다라고 하게 되면 UPDATE SET이라고 써주는데 그때 얘는 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경하고자 할 때 수정하고자 할 때 우리가 사용하는 게 갱신문입니다."
+      ],
+      "spoken_text": "갱신문이다라고 하게 되면 UPDATE SET이라고 써주는데 그때 얘는 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경하고자 할 때 수정하고자 할 때 우리가 사용하는 게 갱신문입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:44",
+      "start_seconds": 23,
+      "end_seconds": 44,
+      "duration_seconds": 21,
+      "timeline_summary": "갱신문 사용의 실례 (학년 진급, 급여 인상)",
+      "screen_text_lines": [
+        "갱신문은 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용함"
+      ],
+      "screen_text": "갱신문은 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용함",
+      "spoken_sentences": [
+        "예를 들어서 학교 같은 경우는 해가 바뀌면 학년이 1학년씩 올라가잖아요 그쵸 그때 사용하는 거에요 아니면 직원들의 급여가 해마다 오르죠 일정 부분 몇 퍼센트씩 오르기 시작합니다 그랬을 때 우리가 UPDATE SET이라는 요 명령문을 통해서 기본급을 몇 퍼센트 올려라 그런 식으로 해서 특정 튜플의 내용을 변경할 때 우리가 사용하는 게 UPDATE SET이요"
+      ],
+      "spoken_text": "예를 들어서 학교 같은 경우는 해가 바뀌면 학년이 1학년씩 올라가잖아요 그쵸 그때 사용하는 거에요 아니면 직원들의 급여가 해마다 오르죠 일정 부분 몇 퍼센트씩 오르기 시작합니다 그랬을 때 우리가 UPDATE SET이라는 요 명령문을 통해서 기본급을 몇 퍼센트 올려라 그런 식으로 해서 특정 튜플의 내용을 변경할 때 우리가 사용하는 게 UPDATE SET이요",
+      "highlight_keywords": [
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:00:44",
+      "end_time_hms": "00:01:19",
+      "start_seconds": 44,
+      "end_seconds": 79,
+      "duration_seconds": 35,
+      "timeline_summary": "갱신문의 일반 형식 및 작성 규칙 설명",
+      "screen_text_lines": [
+        "일반 형식",
+        "UPDATE 테이블명",
+        "SET 속성명 = 데이터[, 속성명=데이터, ...]",
+        "[WHERE 조건]"
+      ],
+      "screen_text": "일반 형식\nUPDATE 테이블명\nSET 속성명 = 데이터[, 속성명=데이터, ...]\n[WHERE 조건]",
+      "spoken_sentences": [
+        "얘를 쓰는 형식은 지금 좀 이렇게 생겼어요 UPDATE라고 써주고 그 뒤에다가 테이블 이름을 써줍니다 그리고 SET이라고 쓰고 어떤 필드 어떤 속성명을 어떤 데이터로 변경해라 이렇게 써주면 되는데 만약에 변경하고자 하는 게 여러 개다라고 하게 되면 계속 뒤에다가 콤마 콤마 콤마로 연결시켜서 속성명은 데이터다 속성명은 데이터다 해서 쭉쭉 적어주면 됩니다 그리고 내가 특정 조건을 내가 만약에 써서 그 조건에 만족하는 것만 내가 바꾸겠다라고 했을 때 WHERE 절을 우리가 작성해주면 되는 거에요"
+      ],
+      "spoken_text": "얘를 쓰는 형식은 지금 좀 이렇게 생겼어요 UPDATE라고 써주고 그 뒤에다가 테이블 이름을 써줍니다 그리고 SET이라고 쓰고 어떤 필드 어떤 속성명을 어떤 데이터로 변경해라 이렇게 써주면 되는데 만약에 변경하고자 하는 게 여러 개다라고 하게 되면 계속 뒤에다가 콤마 콤마 콤마로 연결시켜서 속성명은 데이터다 속성명은 데이터다 해서 쭉쭉 적어주면 됩니다 그리고 내가 특정 조건을 내가 만약에 써서 그 조건에 만족하는 것만 내가 바꾸겠다라고 했을 때 WHERE 절을 우리가 작성해주면 되는 거에요",
+      "highlight_keywords": [
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "WHERE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:01:19",
+      "end_time_hms": "00:01:37",
+      "start_seconds": 79,
+      "end_seconds": 97,
+      "duration_seconds": 18,
+      "timeline_summary": "예제 1: 홍길동의 주소 수정 문제 분석",
+      "screen_text_lines": [
+        "<사원>",
+        "이름",
+        "부서",
+        "생일"
+      ],
+      "screen_text": "<사원>\n이름\n부서\n생일",
+      "spoken_sentences": [
+        "그러면 예제 문제를 통해서 한번 코드 작성 한번 해보자구요 예제 문제를 보니까 사원이라는 테이블이 있대요 사원 테이블에서 홍길동이라는 사람이 있대요 그 사람의 주소를 수색동으로 그렇게 수정을 해라 수색동으로 수정해라 지금 홍길동이라는 사람을 찾아서 그 사람의 주소 지금 망원동으로 돼 있는데 이거를 수색동으로 그렇게 수정하라는 겁니다"
+      ],
+      "spoken_text": "그러면 예제 문제를 통해서 한번 코드 작성 한번 해보자구요 예제 문제를 보니까 사원이라는 테이블이 있대요 사원 테이블에서 홍길동이라는 사람이 있대요 그 사람의 주소를 수색동으로 그렇게 수정을 해라 수색동으로 수정해라 지금 홍길동이라는 사람을 찾아서 그 사람의 주소 지금 망원동으로 돼 있는데 이거를 수색동으로 그렇게 수정하라는 겁니다",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "이름",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "예제 1: 홍길동의 주소 수정 문제 분석",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:01:37",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 97,
+      "end_seconds": 128,
+      "duration_seconds": 31,
+      "timeline_summary": "예제 1 쿼리 작성 (UPDATE, SET 절)",
+      "screen_text_lines": [
+        "UPDATE 사원",
+        "SET 주소 = '수색동'"
+      ],
+      "screen_text": "UPDATE 사원\nSET 주소 = '수색동'",
+      "spoken_sentences": [
+        "자 그럼 명령 한번 써보자구요 해서 UPDATE라고 써주고요 그 뒤에다가 테이블 이름 써야죠 어떤 테이블을 갱신할 건지 테이블 이름 사원이라는 테이블을 수정하겠습니다라고 이렇게 써주고 그다음에 그 밑에다가 SET SET이라고 이렇게 써주고 그러고 나서 필드명 속성명 써주면 되죠 자 뭐를 뭘로 바꿔라 주소를 수색동으로 바꿔라 하는 거에요 해서 주소라는 필드가 있는데 거기다 뭘 집어넣어라 수색동이라고 집어넣어라"
+      ],
+      "spoken_text": "자 그럼 명령 한번 써보자구요 해서 UPDATE라고 써주고요 그 뒤에다가 테이블 이름 써야죠 어떤 테이블을 갱신할 건지 테이블 이름 사원이라는 테이블을 수정하겠습니다라고 이렇게 써주고 그다음에 그 밑에다가 SET SET이라고 이렇게 써주고 그러고 나서 필드명 속성명 써주면 되죠 자 뭐를 뭘로 바꿔라 주소를 수색동으로 바꿔라 하는 거에요 해서 주소라는 필드가 있는데 거기다 뭘 집어넣어라 수색동이라고 집어넣어라",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE 사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "SET 주소 = '수색동'",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:55",
+      "start_seconds": 128,
+      "end_seconds": 175,
+      "duration_seconds": 47,
+      "timeline_summary": "예제 1 쿼리 완성 (WHERE 절 추가 및 설명)",
+      "screen_text_lines": [
+        "UPDATE 사원",
+        "SET 주소 = '수색동'",
+        "WHERE 이름 = '홍길동'"
+      ],
+      "screen_text": "UPDATE 사원\nSET 주소 = '수색동'\nWHERE 이름 = '홍길동'",
+      "spoken_sentences": [
+        "이렇게만 쓰게 되면 이 사원 테이블에 들어있는 이 모든 주소가 전부 다 수색동으로 그렇게 변경이 됩니다 근데 우리는 모든 주소를 다 수색동으로 고치는 게 아니라 어떤 사람의 데이터만 홍길동이라는 이 사람의 데이터의 주소만 그렇게 바꾸는 거죠 그래서 조건이 있기 때문에 그 밑에다가 WHERE라고 쓰고 우리가 조건을 작성해주면 됩니다 해서 그 밑으로 내려가서 우리가 WHERE라고 써주면 됩니다 WHERE라고 써주고 이름이라는 게 뭐랑 똑같은 거 찾아라 우리 홍길동이랑 똑같은 거 찾아라 찾아서 그것들의 주소를 수색동으로 고쳐라라고 이렇게 써주면 돼요 이렇게 쓰게 되면은 사원 테이블에서 이름이 홍길동인 걸 찾습니다 찾아서 그 사람의 주소를 수색동으로 그렇게 변경시켜라 갱신해라 그렇게 사용한 거에요"
+      ],
+      "spoken_text": "이렇게만 쓰게 되면 이 사원 테이블에 들어있는 이 모든 주소가 전부 다 수색동으로 그렇게 변경이 됩니다 근데 우리는 모든 주소를 다 수색동으로 고치는 게 아니라 어떤 사람의 데이터만 홍길동이라는 이 사람의 데이터의 주소만 그렇게 바꾸는 거죠 그래서 조건이 있기 때문에 그 밑에다가 WHERE라고 쓰고 우리가 조건을 작성해주면 됩니다 해서 그 밑으로 내려가서 우리가 WHERE라고 써주면 됩니다 WHERE라고 써주고 이름이라는 게 뭐랑 똑같은 거 찾아라 우리 홍길동이랑 똑같은 거 찾아라 찾아서 그것들의 주소를 수색동으로 고쳐라라고 이렇게 써주면 돼요 이렇게 쓰게 되면은 사원 테이블에서 이름이 홍길동인 걸 찾습니다 찾아서 그 사람의 주소를 수색동으로 그렇게 변경시켜라 갱신해라 그렇게 사용한 거에요",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE 사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "SET 주소 = '수색동'",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:02:55",
+      "end_time_hms": "00:03:30",
+      "start_seconds": 175,
+      "end_seconds": 210,
+      "duration_seconds": 35,
+      "timeline_summary": "예제 2: 황진이의 부서 및 기본급 수정 문제 분석",
+      "screen_text_lines": [
+        "황진이",
+        "편집",
+        "07/21/75",
+        "연희동"
+      ],
+      "screen_text": "황진이\n편집\n07/21/75\n연희동",
+      "spoken_sentences": [
+        "예제 문제를 보니까 사원 테이블에서 황진이가 있대요 황진이 황진이 황진이의 부서를 기획부로 그렇게 변경하래요 변경하고 기본급을 5만원 인상시켜라라고 되어 있습니다 해서 지금 여기 보니까 황진이라는 사람이 지금처럼 여기 있고요 이 사람의 부서 부서가 지금 편집부인데 그 부서를 기획부로 변경하래요 그리고 이 사람의 기본급은 지금 100만원으로 되어 있는데 여기서 5만원을 인상시켜라라고 했습니다 그러면 이 사람의 기본급은 105만원이 되겠죠 그러면 기존에 가지고 있던 이 기본급에다가 더하기 5를 해주면 되겠네요"
+      ],
+      "spoken_text": "예제 문제를 보니까 사원 테이블에서 황진이가 있대요 황진이 황진이 황진이의 부서를 기획부로 그렇게 변경하래요 변경하고 기본급을 5만원 인상시켜라라고 되어 있습니다 해서 지금 여기 보니까 황진이라는 사람이 지금처럼 여기 있고요 이 사람의 부서 부서가 지금 편집부인데 그 부서를 기획부로 변경하래요 그리고 이 사람의 기본급은 지금 100만원으로 되어 있는데 여기서 5만원을 인상시켜라라고 했습니다 그러면 이 사람의 기본급은 105만원이 되겠죠 그러면 기존에 가지고 있던 이 기본급에다가 더하기 5를 해주면 되겠네요",
+      "highlight_keywords": [
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "황진이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:03:30",
+      "end_time_hms": "00:04:10",
+      "start_seconds": 210,
+      "end_seconds": 250,
+      "duration_seconds": 40,
+      "timeline_summary": "예제 2 쿼리 작성 (여러 속성 변경 및 연산)",
+      "screen_text_lines": [
+        "UPDATE 사원",
+        "SET 부서 = '기획', 기본급 = 기본급 + 5"
+      ],
+      "screen_text": "UPDATE 사원\nSET 부서 = '기획', 기본급 = 기본급 + 5",
+      "spoken_sentences": [
+        "자 그러면 코드 한번 작성해 보자구요 자 UPDATE라고 써주고 사원 테이블을 갱신하겠습니다라고 써주고요 그때 SET 어떤 데이터를 변경을 시킬 거냐 일단은 부서 부서가 있는데 부서를 뭘로 고쳐라 기획부로 고쳐라 해서 기획이라고 이렇게 써주고요 그다음에 두 번째 필드 또 바꾸고자 하는 게 또 있죠 또 있을 때는 콤마 찍고 그 뒤에다가 두 번째 거 변경시키고자 하는 그 필드명 써주면 되죠 해서 부서 바꾸고 또 뭐도 바꿀 거에요 기본급도 바꿀 거죠 그래서 기본급도 바꾸는데 기본급은 어떻게 계산을 해라 5만원 인상시켜라 그랬죠 해서 원래 가지고 있던 그 기본급에다가 더하기 5를 해라"
+      ],
+      "spoken_text": "자 그러면 코드 한번 작성해 보자구요 자 UPDATE라고 써주고 사원 테이블을 갱신하겠습니다라고 써주고요 그때 SET 어떤 데이터를 변경을 시킬 거냐 일단은 부서 부서가 있는데 부서를 뭘로 고쳐라 기획부로 고쳐라 해서 기획이라고 이렇게 써주고요 그다음에 두 번째 필드 또 바꾸고자 하는 게 또 있죠 또 있을 때는 콤마 찍고 그 뒤에다가 두 번째 거 변경시키고자 하는 그 필드명 써주면 되죠 해서 부서 바꾸고 또 뭐도 바꿀 거에요 기본급도 바꿀 거죠 그래서 기본급도 바꾸는데 기본급은 어떻게 계산을 해라 5만원 인상시켜라 그랬죠 해서 원래 가지고 있던 그 기본급에다가 더하기 5를 해라",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE 사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 3,
+      "subtopic_id": "0244_244",
+      "subtopic_title": "갱신문(UPDATE~ SET~)",
+      "subtopic_sequence": 244,
+      "subtopic_number": "244",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=dWqqVZEFLZY",
+      "start_time_hms": "00:04:10",
+      "end_time_hms": "00:05:01",
+      "start_seconds": 250,
+      "end_seconds": 301,
+      "duration_seconds": 51,
+      "timeline_summary": "예제 2 쿼리 완성 및 최종 마무리",
+      "screen_text_lines": [
+        "UPDATE 사원",
+        "SET 부서 = '기획', 기본급 = 기본급 + 5",
+        "WHERE 이름 = '황진이'"
+      ],
+      "screen_text": "UPDATE 사원\nSET 부서 = '기획', 기본급 = 기본급 + 5\nWHERE 이름 = '황진이'",
+      "spoken_sentences": [
+        "그때 모든 사람들의 부서와 기본급을 다 바꾸는 게 아니라 누구 데이터만 그렇게 해라 황진이만 해라 그렇게 해서 조건 써줘야죠 WHERE라고 써주고 그리고 이름이 뭐랑 똑같은 거 찾아라 황진이랑 똑같은 거 찾아라 해서 황진이 하고 이렇게 써주고 세미콜론 찍어주면 되겠죠 이렇게 하게 되면 사원 테이블에서 이름이 황진이를 찾아요 찾으면 이 사람을 찾겠죠 찾아서 그 사람의 부서를 기획부로 바꿔라 그러면 요 편집이 기획으로 변경이 될 거고요 그다음에 기본급이라는 필드가 있는데 기본급이라는 그 필드는 원래 가지고 있던 기본급에다가 더하기 5한 값을 집어넣어라 해서 이 기본급 100만원도 105만원이 될 겁니다 이렇게 UPDATE SET이라는 요 명령문을 가지고 우리가 데이터를 수정할 수 있더라라고 그렇게 기억하시면 됩니다"
+      ],
+      "spoken_text": "그때 모든 사람들의 부서와 기본급을 다 바꾸는 게 아니라 누구 데이터만 그렇게 해라 황진이만 해라 그렇게 해서 조건 써줘야죠 WHERE라고 써주고 그리고 이름이 뭐랑 똑같은 거 찾아라 황진이랑 똑같은 거 찾아라 해서 황진이 하고 이렇게 써주고 세미콜론 찍어주면 되겠죠 이렇게 하게 되면 사원 테이블에서 이름이 황진이를 찾아요 찾으면 이 사람을 찾겠죠 찾아서 그 사람의 부서를 기획부로 바꿔라 그러면 요 편집이 기획으로 변경이 될 거고요 그다음에 기본급이라는 필드가 있는데 기본급이라는 그 필드는 원래 가지고 있던 기본급에다가 더하기 5한 값을 집어넣어라 해서 이 기본급 100만원도 105만원이 될 겁니다 이렇게 UPDATE SET이라는 요 명령문을 가지고 우리가 데이터를 수정할 수 있더라라고 그렇게 기억하시면 됩니다",
+      "highlight_keywords": [
+        {
+          "keyword": "UPDATE 사원",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "SET",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        },
+        {
+          "keyword": "예제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "부서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 4,
+      "subtopic_id": "0245_245",
+      "subtopic_title": "데이터 조작문의 네 가지 유형",
+      "subtopic_sequence": 245,
+      "subtopic_number": "245",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터 조작문의 네 가지 유형 소개 시작",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간 우리 데이터 조작문의 네 가지 유형에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간 우리 데이터 조작문의 네 가지 유형에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터 조작문의 네 가지 유형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 4,
+      "subtopic_id": "0245_245",
+      "subtopic_title": "데이터 조작문의 네 가지 유형",
+      "subtopic_sequence": 245,
+      "subtopic_number": "245",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:19",
+      "start_seconds": 8,
+      "end_seconds": 19,
+      "duration_seconds": 11,
+      "timeline_summary": "SELECT, INSERT, DELETE, UPDATE 명령어 나열",
+      "screen_text_lines": [
+        "SELECT(검색)",
+        "INSERT(삽입)",
+        "DELETE(삭제)",
+        "UPDATE(변경)"
+      ],
+      "screen_text": "SELECT(검색)\nINSERT(삽입)\nDELETE(삭제)\nUPDATE(변경)",
+      "spoken_sentences": [
+        "자 데이터 조작문의 네 가지 유형이다라고 하게 되면 우리 검색할 때 셀렉트라는 명령어 쓰고요.",
+        "삽입할 때 인서트를 쓰고 삭제할 때 딜리트 쓰고 그리고 변경할 때 수정할 때 우리가 업데이트를 쓰죠."
+      ],
+      "spoken_text": "자 데이터 조작문의 네 가지 유형이다라고 하게 되면 우리 검색할 때 셀렉트라는 명령어 쓰고요. 삽입할 때 인서트를 쓰고 삭제할 때 딜리트 쓰고 그리고 변경할 때 수정할 때 우리가 업데이트를 쓰죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "변경",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "삽입",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 4,
+      "subtopic_id": "0245_245",
+      "subtopic_title": "데이터 조작문의 네 가지 유형",
+      "subtopic_sequence": 245,
+      "subtopic_number": "245",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "start_time_hms": "00:00:19",
+      "end_time_hms": "00:00:35",
+      "start_seconds": 19,
+      "end_seconds": 35,
+      "duration_seconds": 16,
+      "timeline_summary": "각 명령어의 기본 형식 설명",
+      "screen_text_lines": [
+        "SELECT(검색) : SELECT~ FROM~ WHERE~",
+        "INSERT(삽입) : INSERT INTO~ VALUES~",
+        "DELETE(삭제) : DELETE~ FROM~ WHERE~",
+        "UPDATE(변경) : UPDATE~ SET~ WHERE~"
+      ],
+      "screen_text": "SELECT(검색) : SELECT~ FROM~ WHERE~\nINSERT(삽입) : INSERT INTO~ VALUES~\nDELETE(삭제) : DELETE~ FROM~ WHERE~\nUPDATE(변경) : UPDATE~ SET~ WHERE~",
+      "spoken_sentences": [
+        "그때 기본 형태요.",
+        "기본 형태가 셀렉트다라고 하게 되면 셀렉트 프롬 웨어라고 이렇게 쓰면 되고 삽입이다라고 하게 되면 인서트 인투 밸류라고 이렇게 쓰는 거고요.",
+        "딜리트다라고 하게 되면 딜리트 프롬 웨어라고 쓰면 되고 업데이트다라고 하게 되면 업데이트 셋 웨어라고 쓰면 되죠."
+      ],
+      "spoken_text": "그때 기본 형태요. 기본 형태가 셀렉트다라고 하게 되면 셀렉트 프롬 웨어라고 이렇게 쓰면 되고 삽입이다라고 하게 되면 인서트 인투 밸류라고 이렇게 쓰는 거고요. 딜리트다라고 하게 되면 딜리트 프롬 웨어라고 쓰면 되고 업데이트다라고 하게 되면 업데이트 셋 웨어라고 쓰면 되죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "WHERE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "변경",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 4,
+      "subtopic_id": "0245_245",
+      "subtopic_title": "데이터 조작문의 네 가지 유형",
+      "subtopic_sequence": 245,
+      "subtopic_number": "245",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "start_time_hms": "00:00:35",
+      "end_time_hms": "00:00:49",
+      "start_seconds": 35,
+      "end_seconds": 49,
+      "duration_seconds": 14,
+      "timeline_summary": "조건절(WHERE)의 사용 목적 설명",
+      "screen_text_lines": [
+        "SELECT(검색) : SELECT~ FROM~ WHERE~",
+        "INSERT(삽입) : INSERT INTO~ VALUES~",
+        "DELETE(삭제) : DELETE~ FROM~ WHERE~",
+        "UPDATE(변경) : UPDATE~ SET~ WHERE~"
+      ],
+      "screen_text": "SELECT(검색) : SELECT~ FROM~ WHERE~\nINSERT(삽입) : INSERT INTO~ VALUES~\nDELETE(삭제) : DELETE~ FROM~ WHERE~\nUPDATE(변경) : UPDATE~ SET~ WHERE~",
+      "spoken_sentences": [
+        "우리가 검색을 하거나 삭제를 하거나 변경을 할 때 우리가 조건이 있다라고 했을 때는 우리가 웨어 절을 쓰는 거죠.",
+        "웨어 절.",
+        "웨어 뒤에는 조건들이 다 오는 거고요.",
+        "조건이 없을 때는 생략을 해서 써도 되는 거죠."
+      ],
+      "spoken_text": "우리가 검색을 하거나 삭제를 하거나 변경을 할 때 우리가 조건이 있다라고 했을 때는 우리가 웨어 절을 쓰는 거죠. 웨어 절. 웨어 뒤에는 조건들이 다 오는 거고요. 조건이 없을 때는 생략을 해서 써도 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "WHERE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "변경",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_054-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 4,
+      "subtopic_id": "0245_245",
+      "subtopic_title": "데이터 조작문의 네 가지 유형",
+      "subtopic_sequence": 245,
+      "subtopic_number": "245",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9TpNDWichzc",
+      "start_time_hms": "00:00:49",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 49,
+      "end_seconds": 71,
+      "duration_seconds": 22,
+      "timeline_summary": "명령어 간 구문 차이 강조",
+      "screen_text_lines": [
+        "SELECT(검색) : SELECT~ FROM~ WHERE~",
+        "INSERT(삽입) : INSERT INTO~ VALUES~",
+        "DELETE(삭제) : DELETE~ FROM~ WHERE~",
+        "UPDATE(변경) : UPDATE~ SET~ WHERE~"
+      ],
+      "screen_text": "SELECT(검색) : SELECT~ FROM~ WHERE~\nINSERT(삽입) : INSERT INTO~ VALUES~\nDELETE(삭제) : DELETE~ FROM~ WHERE~\nUPDATE(변경) : UPDATE~ SET~ WHERE~",
+      "spoken_sentences": [
+        "해서 셀렉트 프롬 웨어다 딜리트 프롬 웨어다 해서 얘네 두 가지는 유형 형태가 거의 비슷합니다.",
+        "근데 삽입이나 변경 같은 경우에는 인서트 뒤에 인투가 와요.",
+        "인투가 오고 그리고 업데이트다라고 하게 되면 여기 셋이 오죠.",
+        "해서 요게 좀 다르니까 이거 정확하게 여러분들이 기억하고 지나가셔야 돼요."
+      ],
+      "spoken_text": "해서 셀렉트 프롬 웨어다 딜리트 프롬 웨어다 해서 얘네 두 가지는 유형 형태가 거의 비슷합니다. 근데 삽입이나 변경 같은 경우에는 인서트 뒤에 인투가 와요. 인투가 오고 그리고 업데이트다라고 하게 되면 여기 셋이 오죠. 해서 요게 좀 다르니까 이거 정확하게 여러분들이 기억하고 지나가셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "WHERE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "변경",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "검색",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "삭제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    }
+  ]
+}

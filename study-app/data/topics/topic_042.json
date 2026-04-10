@@ -1,0 +1,2499 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_042",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 3,
+    "source_sequences": [
+      192,
+      193,
+      194
+    ],
+    "source_lecture_ids": [
+      "0192_192",
+      "0193_193",
+      "0194_194"
+    ],
+    "source_titles": [
+      "관계의 형태",
+      "데이터 모델에 표시할 요소",
+      "E-R 다이어그램"
+    ],
+    "keywords": [
+      "관계의",
+      "형태",
+      "데이터",
+      "모델에",
+      "표시할"
+    ],
+    "highlight_keywords": [
+      "관계의",
+      "관계의 형태",
+      "개체",
+      "데이터 모델의 구성 요소",
+      "집합",
+      "데이터",
+      "연산",
+      "요소",
+      "제약",
+      "데이터 모델에 표시할 요소"
+    ],
+    "secondary_keywords": [
+      "여러",
+      "다대 다 관계의 다이어그램 시각화 및 마무리",
+      "1대 1 관계의 다이어그램 시각화 설명",
+      "1대 다 관계의 다이어그램 시각화 설명",
+      "다대 다(N:M) 관계의 정의 설명",
+      "관계의 형태 세 가지 종류 소개",
+      "구조",
+      "조건",
+      "제약 조건(Constraint)",
+      "구조(Structure)",
+      "연산(Operation)",
+      "데이터 모델의 개념"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0192_192",
+      "sequence": 192,
+      "number": "192",
+      "course_code": "350190",
+      "title": "관계의 형태",
+      "duration_seconds": 141,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "tokens": [
+            "관계의"
+          ],
+          "score": 29,
+          "sources": [
+            "lecture_title",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "관계의 형태",
+          "tokens": [
+            "관계의",
+            "형태"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개체",
+          "tokens": [
+            "개체"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터 모델의 구성 요소",
+          "tokens": [
+            "데이터",
+            "모델의",
+            "구성",
+            "요소"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "집합",
+          "tokens": [
+            "집합"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "여러",
+          "tokens": [
+            "여러"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "다대 다 관계의 다이어그램 시각화 및 마무리",
+          "tokens": [
+            "다대",
+            "관계의",
+            "다이어그램",
+            "시각화",
+            "마무리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "1대 1 관계의 다이어그램 시각화 설명",
+          "tokens": [
+            "관계의",
+            "다이어그램",
+            "시각화"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "1대 다 관계의 다이어그램 시각화 설명",
+          "tokens": [
+            "관계의",
+            "다이어그램",
+            "시각화"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "다대 다(N:M) 관계의 정의 설명",
+          "tokens": [
+            "다대",
+            "관계의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "관계의 형태 세 가지 종류 소개",
+          "tokens": [
+            "관계의",
+            "형태",
+            "가지",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_042-subtopic-001-source-seg-002::01",
+          "prompt": "______ 형태 세 가지 종류 소개",
+          "answer": "관계의",
+          "original": "관계의 형태 세 가지 종류 소개",
+          "keyword": "관계의",
+          "source_segment_id": "topic_042-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '관계의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-001-source-seg-002::02",
+          "prompt": "______ 세 가지 종류 소개",
+          "answer": "관계의 형태",
+          "original": "관계의 형태 세 가지 종류 소개",
+          "keyword": "관계의 형태",
+          "source_segment_id": "topic_042-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '관계의 형태'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-001-source-seg-001::03",
+          "prompt": "이번 시간에는 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "데이터 모델의 구성 요소",
+          "original": "이번 시간에는 우리 데이터 모델의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "데이터 모델의 구성 요소",
+          "source_segment_id": "topic_042-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터 모델의 구성 요소'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 3
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0193_193",
+      "sequence": 193,
+      "number": "193",
+      "course_code": "350191",
+      "title": "데이터 모델에 표시할 요소",
+      "duration_seconds": 194,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 30,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "연산",
+          "tokens": [
+            "연산"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요소",
+          "tokens": [
+            "요소"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "제약",
+          "tokens": [
+            "제약"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터 모델에 표시할 요소",
+          "tokens": [
+            "데이터",
+            "모델에",
+            "표시할",
+            "요소"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "구조",
+          "tokens": [
+            "구조"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "조건",
+          "tokens": [
+            "조건"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "제약 조건(Constraint)",
+          "tokens": [
+            "제약",
+            "조건",
+            "Constraint"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "구조(Structure)",
+          "tokens": [
+            "구조",
+            "Structure"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "연산(Operation)",
+          "tokens": [
+            "연산",
+            "Operation"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터 모델의 개념",
+          "tokens": [
+            "데이터",
+            "모델의",
+            "개념"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_042-subtopic-002-source-seg-001::01",
+          "prompt": "______ 모델의 개념 강의 시작",
+          "answer": "데이터",
+          "original": "데이터 모델의 개념 강의 시작",
+          "keyword": "데이터",
+          "source_segment_id": "topic_042-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-002-source-seg-001::02",
+          "prompt": "______ 강의 시작",
+          "answer": "데이터 모델의 개념",
+          "original": "데이터 모델의 개념 강의 시작",
+          "keyword": "데이터 모델의 개념",
+          "source_segment_id": "topic_042-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터 모델의 개념'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0194_194",
+      "sequence": 194,
+      "number": "194",
+      "course_code": "350192",
+      "title": "E-R 다이어그램",
+      "duration_seconds": 289,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "segment_count": 16,
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "tokens": [
+            "고객"
+          ],
+          "score": 58,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "주문",
+          "tokens": [
+            "주문"
+          ],
+          "score": 50,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "주문서",
+          "tokens": [
+            "주문서"
+          ],
+          "score": 42,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "속성",
+          "tokens": [
+            "속성"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "E-R",
+          "tokens": [
+            "E-R"
+          ],
+          "score": 30,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "고객번호",
+          "tokens": [
+            "고객번호"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "관계",
+          "tokens": [
+            "관계"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "타원",
+          "tokens": [
+            "타원"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기호",
+          "tokens": [
+            "기호"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "개체",
+          "tokens": [
+            "개체"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "E-R 다이어그램",
+          "tokens": [
+            "E-R",
+            "다이어그램"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_042-subtopic-003-source-seg-010::01",
+          "prompt": "고객과 ______ 간의 관계 예제 소개",
+          "answer": "주문서",
+          "original": "고객과 주문서 간의 관계 예제 소개",
+          "keyword": "주문서",
+          "source_segment_id": "topic_042-subtopic-003-source-seg-010",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '주문서'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-003-source-seg-001::02",
+          "prompt": "______ 다이어그램 학습 시작 안내",
+          "answer": "E-R",
+          "original": "E-R 다이어그램 학습 시작 안내",
+          "keyword": "E-R",
+          "source_segment_id": "topic_042-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'E-R'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-003-source-seg-014::03",
+          "prompt": "고객 개체의 속성 및 기본키(______) 분석",
+          "answer": "고객번호",
+          "original": "고객 개체의 속성 및 기본키(고객번호) 분석",
+          "keyword": "고객번호",
+          "source_segment_id": "topic_042-subtopic-003-source-seg-014",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '고객번호'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_042-subtopic-003-source-seg-001::04",
+          "prompt": "______ 학습 시작 안내",
+          "answer": "E-R 다이어그램",
+          "original": "E-R 다이어그램 학습 시작 안내",
+          "keyword": "E-R 다이어그램",
+          "source_segment_id": "topic_042-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'E-R 다이어그램'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_042",
+    "sequence": 42,
+    "number": "42",
+    "title": "데이터 모델과 E-R 다이어그램",
+    "title_raw": "데이터 모델과 E-R 다이어그램",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 3,
+    "source_sequences": [
+      192,
+      193,
+      194
+    ],
+    "source_titles": [
+      "관계의 형태",
+      "데이터 모델에 표시할 요소",
+      "E-R 다이어그램"
+    ],
+    "preview_text": "관계의 형태, 데이터 모델에 표시할 요소, E-R 다이어그램",
+    "segment_count": 33,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 관계의 형태, 데이터 모델에 표시할 요소, E-R 다이어그램을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 관계의 형태, 데이터 모델에 표시할 요소, E-R 다이어그램을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 3개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 624,
+    "source_titles_preview": [
+      "관계의 형태",
+      "데이터 모델에 표시할 요소",
+      "E-R 다이어그램"
+    ],
+    "highlight_keywords": [
+      "관계의",
+      "관계의 형태",
+      "개체",
+      "데이터 모델의 구성 요소",
+      "집합",
+      "데이터",
+      "연산",
+      "요소",
+      "제약",
+      "데이터 모델에 표시할 요소"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_042-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 제목 및 도입부",
+      "screen_text_lines": [
+        "데이터 모델의 구성 요소"
+      ],
+      "screen_text": "데이터 모델의 구성 요소",
+      "spoken_sentences": [
+        "이번 시간에는 우리 데이터 모델의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 데이터 모델의 구성 요소에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터 모델의 구성 요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:14",
+      "start_seconds": 7,
+      "end_seconds": 14,
+      "duration_seconds": 7,
+      "timeline_summary": "관계의 형태 세 가지 종류 소개",
+      "screen_text_lines": [
+        "데이터 모델의 구성 요소",
+        "관계(Relationship)",
+        "관계는 개체와 개체 사이의 논리적인 연결을 의미함",
+        "관계에는 개체 간의 관계와 속성 간의 관계가 있음"
+      ],
+      "screen_text": "데이터 모델의 구성 요소\n관계(Relationship)\n관계는 개체와 개체 사이의 논리적인 연결을 의미함\n관계에는 개체 간의 관계와 속성 간의 관계가 있음",
+      "spoken_sentences": [
+        "그때 관계의 형태에는 지금처럼 1대 1 관계가 있고요.",
+        "1대 다 관계가 있고 다대 다 관계가 있어요."
+      ],
+      "spoken_text": "그때 관계의 형태에는 지금처럼 1대 1 관계가 있고요. 1대 다 관계가 있고 다대 다 관계가 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "관계의 형태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터 모델의 구성 요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:00:14",
+      "end_time_hms": "00:00:22",
+      "start_seconds": 14,
+      "end_seconds": 22,
+      "duration_seconds": 8,
+      "timeline_summary": "1대 1(1:1) 관계의 정의 설명",
+      "screen_text_lines": [
+        "일 대 일(1:1)",
+        "개체 집합 A의 각 원소가 개체 집합 B의 원소 한 개와 대응하는 관계"
+      ],
+      "screen_text": "일 대 일(1:1)\n개체 집합 A의 각 원소가 개체 집합 B의 원소 한 개와 대응하는 관계",
+      "spoken_sentences": [
+        "그때 객체 집합 A의 각 원소가 객체 집합 B의 원소의 한 개랑 대응을 한다.",
+        "그럼 1대 1 관계가 되는 거고요."
+      ],
+      "spoken_text": "그때 객체 집합 A의 각 원소가 객체 집합 B의 원소의 한 개랑 대응을 한다. 그럼 1대 1 관계가 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:00:22",
+      "end_time_hms": "00:00:39",
+      "start_seconds": 22,
+      "end_seconds": 39,
+      "duration_seconds": 17,
+      "timeline_summary": "1대 다(1:N) 관계의 정의 설명",
+      "screen_text_lines": [
+        "일 대 다(1:N)",
+        "개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계"
+      ],
+      "screen_text": "일 대 다(1:N)\n개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계",
+      "spoken_sentences": [
+        "그다음에 개체 집합 A가 있는데 이 A는 개체 집합 B 원소의 여러 개에 대응한대요.",
+        "근데 이 B의 각 원소는 우리 개체 집합 A라는 그 원소의 한 개와 대응을 한다 해서 여러 개 대 한 개다 해서 1대 다 관계가 되는 거고요."
+      ],
+      "spoken_text": "그다음에 개체 집합 A가 있는데 이 A는 개체 집합 B 원소의 여러 개에 대응한대요. 근데 이 B의 각 원소는 우리 개체 집합 A라는 그 원소의 한 개와 대응을 한다 해서 여러 개 대 한 개다 해서 1대 다 관계가 되는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "여러",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:00:39",
+      "end_time_hms": "00:01:05",
+      "start_seconds": 39,
+      "end_seconds": 65,
+      "duration_seconds": 26,
+      "timeline_summary": "다대 다(N:M) 관계의 정의 설명",
+      "screen_text_lines": [
+        "다 대 다(N:M)",
+        "개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고, 개체 집합 B의 각 원소도 개체 집합 A의 원소 여러 개와 대응하는 관계"
+      ],
+      "screen_text": "다 대 다(N:M)\n개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고, 개체 집합 B의 각 원소도 개체 집합 A의 원소 여러 개와 대응하는 관계",
+      "spoken_sentences": [
+        "그다음에 다대 다 관계다 그러면 개체 집합 A의 각 원소는 개체 집합 B의 원소의 여러 개에 대응한대요.",
+        "그리고 이 개체 집합 B의 각 원소도 개체 집합 A 원소의 여러 개에 대응한대요.",
+        "이렇게 여러 개 대 여러 개 대응하는 그런 관계를 보고 우리는 다대 다 관계라고 그렇게 부릅니다.",
+        "자 이렇게 관계의 형태에는 이렇게 세 가지가 있다.",
+        "어떤 내용이 어떤 형태인지 구분할 수 있게 보시면 됩니다."
+      ],
+      "spoken_text": "그다음에 다대 다 관계다 그러면 개체 집합 A의 각 원소는 개체 집합 B의 원소의 여러 개에 대응한대요. 그리고 이 개체 집합 B의 각 원소도 개체 집합 A 원소의 여러 개에 대응한대요. 이렇게 여러 개 대 여러 개 대응하는 그런 관계를 보고 우리는 다대 다 관계라고 그렇게 부릅니다. 자 이렇게 관계의 형태에는 이렇게 세 가지가 있다. 어떤 내용이 어떤 형태인지 구분할 수 있게 보시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "관계의 형태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:01:05",
+      "end_time_hms": "00:01:23",
+      "start_seconds": 65,
+      "end_seconds": 83,
+      "duration_seconds": 18,
+      "timeline_summary": "1대 1 관계의 다이어그램 시각화 설명",
+      "screen_text_lines": [
+        "A",
+        "B",
+        "일 대 일(1:1)"
+      ],
+      "screen_text": "A\nB\n일 대 일(1:1)",
+      "spoken_sentences": [
+        "이거를 그림으로 봤을 때 지금처럼 요렇게 관계 형태가 나타난다는 거예요.",
+        "해서 개체 집합 A라는 게 있는데 거기서 각각의 이런 원소가 이런 원소가 개체 집합 B의 각 원소 한 개와 그렇게 1대 1로 그렇게 대응하는 그런 관계를 보고 얘기한다."
+      ],
+      "spoken_text": "이거를 그림으로 봤을 때 지금처럼 요렇게 관계 형태가 나타난다는 거예요. 해서 개체 집합 A라는 게 있는데 거기서 각각의 이런 원소가 이런 원소가 개체 집합 B의 각 원소 한 개와 그렇게 1대 1로 그렇게 대응하는 그런 관계를 보고 얘기한다.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "1대 1 관계의 다이어그램 시각화 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:01:23",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 83,
+      "end_seconds": 107,
+      "duration_seconds": 24,
+      "timeline_summary": "1대 다 관계의 다이어그램 시각화 설명",
+      "screen_text_lines": [
+        "A",
+        "B",
+        "일 대 다(1:N)"
+      ],
+      "screen_text": "A\nB\n일 대 다(1:N)",
+      "spoken_sentences": [
+        "그다음에 1대 다 관계다 그러면 개체 집합 A를 기준으로 봤을 때 이 각 원소는 개체 집합 B 원소의 여러 개랑 여러 개랑 이렇게 대응되는 그런 관계.",
+        "그리고 개체 집합 B를 기준으로 봤을 때 이 개체 집합 B의 각 원소들은 개체 집합 A 원소의 한 개와 그렇게 대응되는 거.",
+        "그걸 보고 우리가 1대 다 관계라고 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "그다음에 1대 다 관계다 그러면 개체 집합 A를 기준으로 봤을 때 이 각 원소는 개체 집합 B 원소의 여러 개랑 여러 개랑 이렇게 대응되는 그런 관계. 그리고 개체 집합 B를 기준으로 봤을 때 이 개체 집합 B의 각 원소들은 개체 집합 A 원소의 한 개와 그렇게 대응되는 거. 그걸 보고 우리가 1대 다 관계라고 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "여러",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0192_192",
+      "subtopic_title": "관계의 형태",
+      "subtopic_sequence": 192,
+      "subtopic_number": "192",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Jz_D_-bOE60",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:21",
+      "start_seconds": 107,
+      "end_seconds": 141,
+      "duration_seconds": 34,
+      "timeline_summary": "다대 다 관계의 다이어그램 시각화 및 마무리",
+      "screen_text_lines": [
+        "A",
+        "B",
+        "다 대 다(N:M)"
+      ],
+      "screen_text": "A\nB\n다 대 다(N:M)",
+      "spoken_sentences": [
+        "다대 다 관계다 그러면 지금처럼 이렇게 개체 집합 A를 기준으로 봤을 때 개체 집합 B의 원소 여러 개에 대응하고 개체 집합 B를 기준으로 봤을 때 개체 집합 A의 원소의 여러 개와 대응하는 그런 관계를 보고 다대 다 관계라고 그렇게 부릅니다.",
+        "해서 요 그림을 보니까 훨씬 더 쉽죠?",
+        "해서 시험 문제 요런 그림을 주고 설명을 해라.",
+        "그러면 쉽게 쉽게 설명할 수 있는데 이런 거 없이 그냥 글만 보고 우리가 구분하려면 조금 자세히 신중하게 꼼꼼하게 잘 읽어보셔야 돼요."
+      ],
+      "spoken_text": "다대 다 관계다 그러면 지금처럼 이렇게 개체 집합 A를 기준으로 봤을 때 개체 집합 B의 원소 여러 개에 대응하고 개체 집합 B를 기준으로 봤을 때 개체 집합 A의 원소의 여러 개와 대응하는 그런 관계를 보고 다대 다 관계라고 그렇게 부릅니다. 해서 요 그림을 보니까 훨씬 더 쉽죠? 해서 시험 문제 요런 그림을 주고 설명을 해라. 그러면 쉽게 쉽게 설명할 수 있는데 이런 거 없이 그냥 글만 보고 우리가 구분하려면 조금 자세히 신중하게 꼼꼼하게 잘 읽어보셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "집합",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        },
+        {
+          "keyword": "여러",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터 모델의 개념 강의 시작",
+      "screen_text_lines": [
+        "데이터 모델의 개념"
+      ],
+      "screen_text": "데이터 모델의 개념",
+      "spoken_sentences": [
+        "이번 시간에는 우리 데이터 모델의 개념에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 데이터 모델의 개념에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "데이터 모델의 개념",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:29",
+      "start_seconds": 8,
+      "end_seconds": 29,
+      "duration_seconds": 21,
+      "timeline_summary": "데이터 모델의 3요소(구조, 연산, 제약 조건) 소개",
+      "screen_text_lines": [
+        "데이터 모델의 개념",
+        "● 데이터 모델에 표시할 요소",
+        "요소",
+        "내용"
+      ],
+      "screen_text": "데이터 모델의 개념\n● 데이터 모델에 표시할 요소\n요소\n내용",
+      "spoken_sentences": [
+        "그다음에 데이터 모델에 표시해야 될 그 요소요.",
+        "그 3요소 그러면 구조, 스트럭처(Structure)라는 게 있고요.",
+        "그 다음에 연산, 오퍼레이션(Operation)이라는 게 있고 제약 조건, 컨스트레인트(Constraint)라는 게 있고 이렇게 세 가지가 있습니다.",
+        "얘네들은 영어로, 영어로 써라 그렇게도 나올 수 있으니까 이 영어까지 같이 기억해 두셔야 돼요."
+      ],
+      "spoken_text": "그다음에 데이터 모델에 표시해야 될 그 요소요. 그 3요소 그러면 구조, 스트럭처(Structure)라는 게 있고요. 그 다음에 연산, 오퍼레이션(Operation)이라는 게 있고 제약 조건, 컨스트레인트(Constraint)라는 게 있고 이렇게 세 가지가 있습니다. 얘네들은 영어로, 영어로 써라 그렇게도 나올 수 있으니까 이 영어까지 같이 기억해 두셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "연산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:00:29",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 29,
+      "end_seconds": 46,
+      "duration_seconds": 17,
+      "timeline_summary": "은행 시스템을 예로 든 '구조'의 이해",
+      "screen_text_lines": [
+        "구조(Structure)"
+      ],
+      "screen_text": "구조(Structure)",
+      "spoken_sentences": [
+        "만약에 은행에서 데이터베이스를 구축한다고 생각해보세요.",
+        "그때 구조에 해당하는 게 은행 그 데이터베이스에서는 어떤 데이터를 사용할지 그리고 그 데이터들끼리 어떤 관계가 있는지 그리고 어떤 구조로 만들 건지 그런 것들을 표현하는 걸 보고 우리가 구조라고 하는 거예요."
+      ],
+      "spoken_text": "만약에 은행에서 데이터베이스를 구축한다고 생각해보세요. 그때 구조에 해당하는 게 은행 그 데이터베이스에서는 어떤 데이터를 사용할지 그리고 그 데이터들끼리 어떤 관계가 있는지 그리고 어떤 구조로 만들 건지 그런 것들을 표현하는 걸 보고 우리가 구조라고 하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "구조",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "구조(Structure)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:04",
+      "start_seconds": 46,
+      "end_seconds": 64,
+      "duration_seconds": 18,
+      "timeline_summary": "은행 입출금을 예로 든 '연산'의 이해",
+      "screen_text_lines": [
+        "연산(Operation)"
+      ],
+      "screen_text": "연산(Operation)",
+      "spoken_sentences": [
+        "그리고 연산이다 그러면 연산은 은행으로 따졌을 때 은행에서는 주로 해주는 일이 뭐예요?",
+        "돈이 입금이 되고 출금이 되죠.",
+        "해서 어떤 사람이 돈을 집어넣었어.",
+        "그러면 그 금액만큼 플러스(+)를 해줘야 될 거고요.",
+        "만약에 돈을 찾아갔다 그러면 그 금액만큼 마이너스(-)를 해주면 되겠죠."
+      ],
+      "spoken_text": "그리고 연산이다 그러면 연산은 은행으로 따졌을 때 은행에서는 주로 해주는 일이 뭐예요? 돈이 입금이 되고 출금이 되죠. 해서 어떤 사람이 돈을 집어넣었어. 그러면 그 금액만큼 플러스(+)를 해줘야 될 거고요. 만약에 돈을 찾아갔다 그러면 그 금액만큼 마이너스(-)를 해주면 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "연산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "연산(Operation)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:01:04",
+      "end_time_hms": "00:01:33",
+      "start_seconds": 64,
+      "end_seconds": 93,
+      "duration_seconds": 29,
+      "timeline_summary": "계좌 이체 작업을 통한 '연산'의 개념 보충",
+      "screen_text_lines": [
+        "연산(Operation)"
+      ],
+      "screen_text": "연산(Operation)",
+      "spoken_sentences": [
+        "그리고 만약에 어떤 사람이 스마트 뱅킹이 됐든 인터넷 뱅킹이 됐든 그런 걸 이용해서 돈을 다른 사람한테 만약에 이체를 시켰어요.",
+        "그럼 그 해당 사람한테는 돈을 마이너스를 시켜야 되고 그 받는 사람 계좌에서는 플러스가 일어나야 되겠죠.",
+        "그렇게 연산이라는 거는 그 은행 그 데이터베이스에 들어있는 그 데이터들을 가지고 무엇을 해야 되는지 어떤 거를 할 건지 어떤 작업을 처리할 건지 그런 것들을 나타내는 걸 보고 우리가 연산이라고 하는 거고요."
+      ],
+      "spoken_text": "그리고 만약에 어떤 사람이 스마트 뱅킹이 됐든 인터넷 뱅킹이 됐든 그런 걸 이용해서 돈을 다른 사람한테 만약에 이체를 시켰어요. 그럼 그 해당 사람한테는 돈을 마이너스를 시켜야 되고 그 받는 사람 계좌에서는 플러스가 일어나야 되겠죠. 그렇게 연산이라는 거는 그 은행 그 데이터베이스에 들어있는 그 데이터들을 가지고 무엇을 해야 되는지 어떤 거를 할 건지 어떤 작업을 처리할 건지 그런 것들을 나타내는 걸 보고 우리가 연산이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "연산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "연산(Operation)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:01:33",
+      "end_time_hms": "00:02:06",
+      "start_seconds": 93,
+      "end_seconds": 126,
+      "duration_seconds": 33,
+      "timeline_summary": "보안 및 데이터 형식을 예로 든 '제약 조건'의 이해",
+      "screen_text_lines": [
+        "제약 조건(Constraint)"
+      ],
+      "screen_text": "제약 조건(Constraint)",
+      "spoken_sentences": [
+        "그다음에 제약 조건이다 그러면 제약 조건은 이 데이터베이스에 저장될 수 있는 그런 실제 데이터, 그 실제 데이터의 제약 조건을 보고 얘기하는 거예요.",
+        "은행 데이터베이스에 아무나 접근할 수 있게 만들면 돼요?",
+        "안 되겠죠.",
+        "그리고 아무 데이터나 막 입력이 되게끔 그렇게 설계하면 되겠어요?",
+        "그리고 데이터를 입력받을 때 정해진 형식이 있을 거 아니에요.",
+        "그런 데이터 형식은 어떻게 어떻게 해라 이런 데이터는 이렇게 이런 형식으로 입력을 받고 이런 형식으로 출력을 해줘라 그렇게 조건 같은 것들을 기술하는 걸 보고 우리가 제약 조건이라고 합니다."
+      ],
+      "spoken_text": "그다음에 제약 조건이다 그러면 제약 조건은 이 데이터베이스에 저장될 수 있는 그런 실제 데이터, 그 실제 데이터의 제약 조건을 보고 얘기하는 거예요. 은행 데이터베이스에 아무나 접근할 수 있게 만들면 돼요? 안 되겠죠. 그리고 아무 데이터나 막 입력이 되게끔 그렇게 설계하면 되겠어요? 그리고 데이터를 입력받을 때 정해진 형식이 있을 거 아니에요. 그런 데이터 형식은 어떻게 어떻게 해라 이런 데이터는 이렇게 이런 형식으로 입력을 받고 이런 형식으로 출력을 해줘라 그렇게 조건 같은 것들을 기술하는 걸 보고 우리가 제약 조건이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        },
+        {
+          "keyword": "조건",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        },
+        {
+          "keyword": "제약 조건(Constraint)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:02:06",
+      "end_time_hms": "00:02:19",
+      "start_seconds": 126,
+      "end_seconds": 139,
+      "duration_seconds": 13,
+      "timeline_summary": "학술적 정의로서 '구조'의 의미 재정리",
+      "screen_text_lines": [
+        "논리적으로 표현된 개체 타입들 간의 관계로 데이터 구조 및 정적 성질 표현"
+      ],
+      "screen_text": "논리적으로 표현된 개체 타입들 간의 관계로 데이터 구조 및 정적 성질 표현",
+      "spoken_sentences": [
+        "해서 구조다 그러면 구조라는 거는 우리 논리적으로 표현된 그 개체들의 타입 있죠.",
+        "그 개체들 타입 간의 그 관계 그 관계로서 우리 데이터 구조가 됐든 정적 성질이 됐든 그런 것들을 표현하는 걸 보고 얘기하는 거고요."
+      ],
+      "spoken_text": "해서 구조다 그러면 구조라는 거는 우리 논리적으로 표현된 그 개체들의 타입 있죠. 그 개체들 타입 간의 그 관계 그 관계로서 우리 데이터 구조가 됐든 정적 성질이 됐든 그런 것들을 표현하는 걸 보고 얘기하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "구조",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:02:19",
+      "end_time_hms": "00:02:39",
+      "start_seconds": 139,
+      "end_seconds": 159,
+      "duration_seconds": 20,
+      "timeline_summary": "학술적 정의로서 '연산'의 의미 재정리",
+      "screen_text_lines": [
+        "데이터베이스를 조작하는 기본 도구"
+      ],
+      "screen_text": "데이터베이스를 조작하는 기본 도구",
+      "spoken_sentences": [
+        "연산이다 그러면은 연산이라는 거는 실제 데이터를 처리하는 그 작업에서 그 해당 데이터베이스를 조작하는 기본 도구요.",
+        "은행에서는 입금하고 출금을 주로 한다 돈이 나가고 들어가고 나가고 들어가고 하는 그런 업무를 한다 그런 식으로 무엇을 하는지 그런 것들을 나타내는 거 그게 연산이요."
+      ],
+      "spoken_text": "연산이다 그러면은 연산이라는 거는 실제 데이터를 처리하는 그 작업에서 그 해당 데이터베이스를 조작하는 기본 도구요. 은행에서는 입금하고 출금을 주로 한다 돈이 나가고 들어가고 나가고 들어가고 하는 그런 업무를 한다 그런 식으로 무엇을 하는지 그런 것들을 나타내는 거 그게 연산이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "연산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0193_193",
+      "subtopic_title": "데이터 모델에 표시할 요소",
+      "subtopic_sequence": 193,
+      "subtopic_number": "193",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=7B4r97Zo48E",
+      "start_time_hms": "00:02:39",
+      "end_time_hms": "00:03:13",
+      "start_seconds": 159,
+      "end_seconds": 193,
+      "duration_seconds": 34,
+      "timeline_summary": "제약 조건 정리 및 전체 요소에 대한 시험 포인트 강조",
+      "screen_text_lines": [
+        "제약 조건(Constraint)",
+        "실제 데이터의 논리적인 제약 조건",
+        "표시할 요소",
+        "구조(Structure)"
+      ],
+      "screen_text": "제약 조건(Constraint)\n실제 데이터의 논리적인 제약 조건\n표시할 요소\n구조(Structure)",
+      "spoken_sentences": [
+        "그다음에 제약 조건은 데이터베이스에 저장될 수 있는 그 실제 데이터 있죠.",
+        "그 실제 데이터의 논리적인 그런 제약 조건 제약 조건을 보고 우리가 제약 조건이라고 합니다.",
+        "해서 데이터 모델에 표시해야 되는 그 요소는 구조, 연산, 제약 조건하고 이렇게 세 가지가 있더라.",
+        "요 세 가지 정확하게 기억하고 계셔야 돼요.",
+        "해서 뭐 얘네들은 뭐 시험 문제 나올 게 뻔하죠.",
+        "뭐 이런 거 하나 띡 써놓고 얘가 뭐에 대한 설명이냐 써라 아니면 데이터 모델에 표시될 요소 세 가지를 써라 그런 식으로 시험 문제가 나올 수 있겠죠."
+      ],
+      "spoken_text": "그다음에 제약 조건은 데이터베이스에 저장될 수 있는 그 실제 데이터 있죠. 그 실제 데이터의 논리적인 그런 제약 조건 제약 조건을 보고 우리가 제약 조건이라고 합니다. 해서 데이터 모델에 표시해야 되는 그 요소는 구조, 연산, 제약 조건하고 이렇게 세 가지가 있더라. 요 세 가지 정확하게 기억하고 계셔야 돼요. 해서 뭐 얘네들은 뭐 시험 문제 나올 게 뻔하죠. 뭐 이런 거 하나 띡 써놓고 얘가 뭐에 대한 설명이냐 써라 아니면 데이터 모델에 표시될 요소 세 가지를 써라 그런 식으로 시험 문제가 나올 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "연산",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "요소",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "제약",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "E-R 다이어그램 학습 시작 안내",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 E-R 다이어그램에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 E-R 다이어그램에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "E-R 다이어그램",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:31",
+      "start_seconds": 7,
+      "end_seconds": 31,
+      "duration_seconds": 24,
+      "timeline_summary": "E-R 다이어그램의 정의 및 시각적 표현의 목적 설명",
+      "screen_text_lines": [
+        "E-R 모델의 기본 아이디어를 시각적으로 표현하기 위한 그림으로, 실체 간의 관계는 물론 조직, 사용자, 프로그램, 데이터 등 시스템 내에서 역할을 가진 모든 실체들을 표현함."
+      ],
+      "screen_text": "E-R 모델의 기본 아이디어를 시각적으로 표현하기 위한 그림으로, 실체 간의 관계는 물론 조직, 사용자, 프로그램, 데이터 등 시스템 내에서 역할을 가진 모든 실체들을 표현함.",
+      "spoken_sentences": [
+        "우리 E-R 다이어그램이요 얘는 E-R 모델의 기본적인 그런 아이디어를 시각적으로 표현하기 위한 그런 그림을 보고 우리가 E-R 다이어그램 그렇게 불러요.",
+        "해서 우리 E-R 모델의 기본적인 그런 아이디어 같은 것들을 시각적으로 지금처럼 이런 도형을 이용해서 지금처럼 이런 형태로 표현한 거 그걸 보고 우리 E-R 다이어그램이라고 합니다."
+      ],
+      "spoken_text": "우리 E-R 다이어그램이요 얘는 E-R 모델의 기본적인 그런 아이디어를 시각적으로 표현하기 위한 그런 그림을 보고 우리가 E-R 다이어그램 그렇게 불러요. 해서 우리 E-R 모델의 기본적인 그런 아이디어 같은 것들을 시각적으로 지금처럼 이런 도형을 이용해서 지금처럼 이런 형태로 표현한 거 그걸 보고 우리 E-R 다이어그램이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "E-R 다이어그램",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:00:31",
+      "end_time_hms": "00:00:49",
+      "start_seconds": 31,
+      "end_seconds": 49,
+      "duration_seconds": 18,
+      "timeline_summary": "E-R 다이어그램의 표현 범위 설명",
+      "screen_text_lines": [
+        "E-R 모델의 기본 아이디어를 시각적으로 표현하기 위한 그림으로, 실체 간의 관계는 물론 조직, 사용자, 프로그램, 데이터 등 시스템 내에서 역할을 가진 모든 실체들을 표현함."
+      ],
+      "screen_text": "E-R 모델의 기본 아이디어를 시각적으로 표현하기 위한 그림으로, 실체 간의 관계는 물론 조직, 사용자, 프로그램, 데이터 등 시스템 내에서 역할을 가진 모든 실체들을 표현함.",
+      "spoken_sentences": [
+        "해서 실체 간의 관계는 물론이고 조직이다 사용자다 프로그램이다 데이터다 이런 시스템 내에서 역할을 가진 모든 실체들을 전부 다 표현할 수 있는 게 우리 E-R 다이어그램이요.",
+        "자 그러면 이런 각각의 기호들이 어떤 것들을 의미하는지 고것 좀 살펴보자고요."
+      ],
+      "spoken_text": "해서 실체 간의 관계는 물론이고 조직이다 사용자다 프로그램이다 데이터다 이런 시스템 내에서 역할을 가진 모든 실체들을 전부 다 표현할 수 있는 게 우리 E-R 다이어그램이요. 자 그러면 이런 각각의 기호들이 어떤 것들을 의미하는지 고것 좀 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "E-R 다이어그램",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:00:49",
+      "end_time_hms": "00:01:06",
+      "start_seconds": 49,
+      "end_seconds": 66,
+      "duration_seconds": 17,
+      "timeline_summary": "사각형(개체 타입)과 마름모(관계 타입) 기호 설명",
+      "screen_text_lines": [
+        "기호",
+        "기호 이름",
+        "의미",
+        "사각형"
+      ],
+      "screen_text": "기호\n기호 이름\n의미\n사각형",
+      "spoken_sentences": [
+        "우리 E-R 다이어그램에서 사용되는 기호에는 지금처럼 이렇게 여러 가지가 있어요.",
+        "요런 사각형 사각형은 우리 개체 타입을 나타낼 때 사용하는 게 우리 사각형이고요.",
+        "그다음에 요런 마름모요 마름모 같은 경우는 관계 타입을 나타낼 때 우리가 사용하는 거고요."
+      ],
+      "spoken_text": "우리 E-R 다이어그램에서 사용되는 기호에는 지금처럼 이렇게 여러 가지가 있어요. 요런 사각형 사각형은 우리 개체 타입을 나타낼 때 사용하는 게 우리 사각형이고요. 그다음에 요런 마름모요 마름모 같은 경우는 관계 타입을 나타낼 때 우리가 사용하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:01:06",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 66,
+      "end_seconds": 78,
+      "duration_seconds": 12,
+      "timeline_summary": "타원(속성)과 이중 타원(다중값 속성) 기호 설명",
+      "screen_text_lines": [
+        "타원",
+        "속성(Attribute)",
+        "이중 타원",
+        "다중값 속성(복합 속성)"
+      ],
+      "screen_text": "타원\n속성(Attribute)\n이중 타원\n다중값 속성(복합 속성)",
+      "spoken_sentences": [
+        "그다음에 요런 타원 타원은 속성을 나타낼 때 우리가 사용을 합니다.",
+        "그리고 요렇게 이중 타원도 있어요 이런 이중 타원은 다중값 속성을 나타낼 때 우리가 사용하는 그런 기호고요."
+      ],
+      "spoken_text": "그다음에 요런 타원 타원은 속성을 나타낼 때 우리가 사용을 합니다. 그리고 요렇게 이중 타원도 있어요 이런 이중 타원은 다중값 속성을 나타낼 때 우리가 사용하는 그런 기호고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "타원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:31",
+      "start_seconds": 78,
+      "end_seconds": 91,
+      "duration_seconds": 13,
+      "timeline_summary": "밑줄 타원(기본키 속성) 기호 설명",
+      "screen_text_lines": [
+        "밑줄 타원",
+        "기본키 속성"
+      ],
+      "screen_text": "밑줄 타원\n기본키 속성",
+      "spoken_sentences": [
+        "그다음에 지금처럼 이렇게 타원에 밑줄이 그려져 있는 게 있어요.",
+        "요 타원이 우리가 속성 나타낸다 그랬죠.",
+        "이 속성이 기본 키다 기본 키로 사용할 거다 그렇게 기본 키 속성을 나타내는 게 우리 밑줄 타원이고요."
+      ],
+      "spoken_text": "그다음에 지금처럼 이렇게 타원에 밑줄이 그려져 있는 게 있어요. 요 타원이 우리가 속성 나타낸다 그랬죠. 이 속성이 기본 키다 기본 키로 사용할 거다 그렇게 기본 키 속성을 나타내는 게 우리 밑줄 타원이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "타원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:01:31",
+      "end_time_hms": "00:02:01",
+      "start_seconds": 91,
+      "end_seconds": 121,
+      "duration_seconds": 30,
+      "timeline_summary": "복수 타원(복합 속성) 기호 설명 및 예시",
+      "screen_text_lines": [
+        "복수 타원",
+        "복합 속성",
+        "예) 성명은 성과 이름으로 구성"
+      ],
+      "screen_text": "복수 타원\n복합 속성\n예) 성명은 성과 이름으로 구성",
+      "spoken_sentences": [
+        "그다음에 지금처럼 이렇게 타원이 여러 개를 구성된 게 있어요.",
+        "요런 걸 보고 우리가 복수 타원이라고 하는 거고 얘는 복합 속성을 나타낼 때 우리가 사용을 합니다.",
+        "우리 이름 같은 경우에 여기다 제목에다가 우리 이름 이름이라고 그렇게 써 놓고 이 이름은 크게 두 가지로 우리가 분류해서 볼 수가 있는 거죠.",
+        "성하고 이름하고 그렇게 두 가지로 분류해서 볼 수 있는데 그때 앞에다가 성이다 그리고 뒤에다가 이름이다 그렇게 해서 우리가 복합 속성을 표현을 할 때 우리가 복수 타원을 사용을 합니다."
+      ],
+      "spoken_text": "그다음에 지금처럼 이렇게 타원이 여러 개를 구성된 게 있어요. 요런 걸 보고 우리가 복수 타원이라고 하는 거고 얘는 복합 속성을 나타낼 때 우리가 사용을 합니다. 우리 이름 같은 경우에 여기다 제목에다가 우리 이름 이름이라고 그렇게 써 놓고 이 이름은 크게 두 가지로 우리가 분류해서 볼 수가 있는 거죠. 성하고 이름하고 그렇게 두 가지로 분류해서 볼 수 있는데 그때 앞에다가 성이다 그리고 뒤에다가 이름이다 그렇게 해서 우리가 복합 속성을 표현을 할 때 우리가 복수 타원을 사용을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "타원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:02:01",
+      "end_time_hms": "00:02:25",
+      "start_seconds": 121,
+      "end_seconds": 145,
+      "duration_seconds": 24,
+      "timeline_summary": "관계 대응수 표현 방법(1:1, 1:N, N:M) 설명",
+      "screen_text_lines": [
+        "관계",
+        "1:1, 1:N, N:M 등의 개체 간 관계에 대한 대응수를 선 위에 기술함"
+      ],
+      "screen_text": "관계\n1:1, 1:N, N:M 등의 개체 간 관계에 대한 대응수를 선 위에 기술함",
+      "spoken_sentences": [
+        "그다음에 지금처럼 몇 대 몇 관계인지 어떤 관계가 있는지 그것들을 지금처럼 n 대 n 관계해서 요런 형태로 우리가 관계를 표현할 수도 있어요.",
+        "거기다 n 대 m이다 해서 다대다 관계 그것만 표현할 수 있는 게 아니라 1 대 1이다 1 대 n이다 n 대 m이다 해서 요런 개체 간의 관계를 대응수를 대응수를 선 위에다가 기술해서 우리가 관계를 표현해 줘요."
+      ],
+      "spoken_text": "그다음에 지금처럼 몇 대 몇 관계인지 어떤 관계가 있는지 그것들을 지금처럼 n 대 n 관계해서 요런 형태로 우리가 관계를 표현할 수도 있어요. 거기다 n 대 m이다 해서 다대다 관계 그것만 표현할 수 있는 게 아니라 1 대 1이다 1 대 n이다 n 대 m이다 해서 요런 개체 간의 관계를 대응수를 대응수를 선 위에다가 기술해서 우리가 관계를 표현해 줘요.",
+      "highlight_keywords": [
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:02:25",
+      "end_time_hms": "00:02:49",
+      "start_seconds": 145,
+      "end_seconds": 169,
+      "duration_seconds": 24,
+      "timeline_summary": "선 및 링크(개체 타입과 속성 연결) 설명",
+      "screen_text_lines": [
+        "선, 링크",
+        "개체 타입과 속성을 연결"
+      ],
+      "screen_text": "선, 링크\n개체 타입과 속성을 연결",
+      "spoken_sentences": [
+        "그다음에 요렇게 밑줄이요 얘가 선이요 링크요 이런 것들은 개체 타입과 속성들을 서로서로 연결시킬 때 우리가 선으로 서로서로 연결을 시켜 주면 됩니다.",
+        "해서 E-R 다이어그램에서 사용하는 기호는 요런 것들이 있어요.",
+        "크게 많지 않기 때문에 어떤 기호가 어떤 것을 의미하는지는 여러분들이 정확하게 알고 계셔야 돼요."
+      ],
+      "spoken_text": "그다음에 요렇게 밑줄이요 얘가 선이요 링크요 이런 것들은 개체 타입과 속성들을 서로서로 연결시킬 때 우리가 선으로 서로서로 연결을 시켜 주면 됩니다. 해서 E-R 다이어그램에서 사용하는 기호는 요런 것들이 있어요. 크게 많지 않기 때문에 어떤 기호가 어떤 것을 의미하는지는 여러분들이 정확하게 알고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        },
+        {
+          "keyword": "기호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:02:49",
+      "end_time_hms": "00:02:59",
+      "start_seconds": 169,
+      "end_seconds": 179,
+      "duration_seconds": 10,
+      "timeline_summary": "고객과 주문서 간의 관계 예제 소개",
+      "screen_text_lines": [
+        "예제 다음은 고객과 주문서 간의 관계를 나타낸 E-R 다이어그램이다."
+      ],
+      "screen_text": "예제 다음은 고객과 주문서 간의 관계를 나타낸 E-R 다이어그램이다.",
+      "spoken_sentences": [
+        "예제 다음은 고객과 주문서 간의 관계를 나타낸 E-R 다이어그램이다."
+      ],
+      "spoken_text": "예제 다음은 고객과 주문서 간의 관계를 나타낸 E-R 다이어그램이다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:02:59",
+      "end_time_hms": "00:03:10",
+      "start_seconds": 179,
+      "end_seconds": 190,
+      "duration_seconds": 11,
+      "timeline_summary": "예제 속 개체(고객, 주문서) 확인",
+      "screen_text_lines": [
+        "고객",
+        "주문",
+        "주문서"
+      ],
+      "screen_text": "고객\n주문\n주문서",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 사각형이 나왔죠 요 사각형이 요 사각형이 우리 개체 타입을 나타낸다 그랬어요.",
+        "해서 고객이라는 개체가 있다 주문서라는 개체가 있다 그렇게 해서 표현해 놓은 거고요."
+      ],
+      "spoken_text": "지금 여기 보게 되면 사각형이 나왔죠 요 사각형이 요 사각형이 우리 개체 타입을 나타낸다 그랬어요. 해서 고객이라는 개체가 있다 주문서라는 개체가 있다 그렇게 해서 표현해 놓은 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:03:10",
+      "end_time_hms": "00:03:24",
+      "start_seconds": 190,
+      "end_seconds": 204,
+      "duration_seconds": 14,
+      "timeline_summary": "예제 속 개체 간 관계(주문) 확인",
+      "screen_text_lines": [
+        "고객",
+        "주문",
+        "주문서"
+      ],
+      "screen_text": "고객\n주문\n주문서",
+      "spoken_sentences": [
+        "그다음에 여기 중간에 보니까 주문하고 요렇게 마름모로 그림이 그려져 있죠 이 두 개 이 고객이라는 이 개체와 우리 주문서라는 이 개체는 어떤 관계를 가지고 있다 주문이라는 그 관계를 가지고 있더라."
+      ],
+      "spoken_text": "그다음에 여기 중간에 보니까 주문하고 요렇게 마름모로 그림이 그려져 있죠 이 두 개 이 고객이라는 이 개체와 우리 주문서라는 이 개체는 어떤 관계를 가지고 있다 주문이라는 그 관계를 가지고 있더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:03:24",
+      "end_time_hms": "00:03:37",
+      "start_seconds": 204,
+      "end_seconds": 217,
+      "duration_seconds": 13,
+      "timeline_summary": "예제 속 1:N 관계의 의미 분석",
+      "screen_text_lines": [
+        "1",
+        "N",
+        "고객",
+        "주문"
+      ],
+      "screen_text": "1\nN\n고객\n주문",
+      "spoken_sentences": [
+        "그때 몇 대 몇 관계다 우리 1 대 n 관계다 해서 1 대 다 관계 그걸 표현해 놓은 거죠.",
+        "해서 고객이 어떤 거를 주문하게 되면 그 데이터는 주문서에 들어간다는 그 얘기예요."
+      ],
+      "spoken_text": "그때 몇 대 몇 관계다 우리 1 대 n 관계다 해서 1 대 다 관계 그걸 표현해 놓은 거죠. 해서 고객이 어떤 거를 주문하게 되면 그 데이터는 주문서에 들어간다는 그 얘기예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "관계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:03:37",
+      "end_time_hms": "00:03:59",
+      "start_seconds": 217,
+      "end_seconds": 239,
+      "duration_seconds": 22,
+      "timeline_summary": "고객 개체의 속성 및 기본키(고객번호) 분석",
+      "screen_text_lines": [
+        "고객번호",
+        "성명",
+        "주소",
+        "고객"
+      ],
+      "screen_text": "고객번호\n성명\n주소\n고객",
+      "spoken_sentences": [
+        "그때 이 고객이라는 그 개체는 우리 고객 번호라는 속성도 있고요 성명이라는 속성도 있고 주소라는 이 속성도 있다 요렇게 세 가지 속성으로 구성돼 있다 그렇게 표현해 놓은 거고 요렇게 타원에다가 밑줄이 그어져 있죠.",
+        "이 고객 번호가 뭘로 사용되는 거다 기본 키 속성으로 사용되는 그 속성이다 그렇게 표현해 놓은 겁니다."
+      ],
+      "spoken_text": "그때 이 고객이라는 그 개체는 우리 고객 번호라는 속성도 있고요 성명이라는 속성도 있고 주소라는 이 속성도 있다 요렇게 세 가지 속성으로 구성돼 있다 그렇게 표현해 놓은 거고 요렇게 타원에다가 밑줄이 그어져 있죠. 이 고객 번호가 뭘로 사용되는 거다 기본 키 속성으로 사용되는 그 속성이다 그렇게 표현해 놓은 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "고객번호",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "타원",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:03:59",
+      "end_time_hms": "00:04:23",
+      "start_seconds": 239,
+      "end_seconds": 263,
+      "duration_seconds": 24,
+      "timeline_summary": "주문서 개체의 속성 및 기본키(주문번호) 분석",
+      "screen_text_lines": [
+        "주문번호",
+        "품명",
+        "수량",
+        "금액"
+      ],
+      "screen_text": "주문번호\n품명\n수량\n금액",
+      "spoken_sentences": [
+        "그리고 주문서라는 이 개체에는 주문 번호라는 속성 품명이라는 속성 수량이라는 속성 금액이라는 속성 요렇게 네 개의 속성으로 그렇게 구성이 되어 있는데 그 중에서 주문 번호의 아래쪽에 우리 밑줄이 그려져 있죠.",
+        "밑줄이 꺼져 있다 그 얘기는 이 주문 번호가 지금 기본 키 기본 키 속성으로 사용되고 있다 그런 뜻으로 사용이 되는 겁니다."
+      ],
+      "spoken_text": "그리고 주문서라는 이 개체에는 주문 번호라는 속성 품명이라는 속성 수량이라는 속성 금액이라는 속성 요렇게 네 개의 속성으로 그렇게 구성이 되어 있는데 그 중에서 주문 번호의 아래쪽에 우리 밑줄이 그려져 있죠. 밑줄이 꺼져 있다 그 얘기는 이 주문 번호가 지금 기본 키 기본 키 속성으로 사용되고 있다 그런 뜻으로 사용이 되는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "속성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "개체",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_042-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 3,
+      "subtopic_id": "0194_194",
+      "subtopic_title": "E-R 다이어그램",
+      "subtopic_sequence": 194,
+      "subtopic_number": "194",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=obOCbMYMKno",
+      "start_time_hms": "00:04:23",
+      "end_time_hms": "00:04:49",
+      "start_seconds": 263,
+      "end_seconds": 289,
+      "duration_seconds": 26,
+      "timeline_summary": "전체 예제 요약 및 강의 마무리",
+      "screen_text_lines": [
+        "고객",
+        "주문",
+        "주문서",
+        "고객번호"
+      ],
+      "screen_text": "고객\n주문\n주문서\n고객번호",
+      "spoken_sentences": [
+        "해서 이 고객이라는 개체가 있고 주문서라는 개체가 있을 때 이 둘 사이에는 주문이라는 그 관계가 있더라 그때 몇 대 몇 관계 1 대 다 관계가 있더라.",
+        "해서 한 사람이 한 사람이 주문을 여러 번 할 수 있다 그런 뜻으로 그렇게 표현이 된 겁니다 요런 게 E-R 다이어그램이요."
+      ],
+      "spoken_text": "해서 이 고객이라는 개체가 있고 주문서라는 개체가 있을 때 이 둘 사이에는 주문이라는 그 관계가 있더라 그때 몇 대 몇 관계 1 대 다 관계가 있더라. 해서 한 사람이 한 사람이 주문을 여러 번 할 수 있다 그런 뜻으로 그렇게 표현이 된 겁니다 요런 게 E-R 다이어그램이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "고객",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 58
+        },
+        {
+          "keyword": "주문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "주문서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "E-R",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 30
+        }
+      ]
+    }
+  ]
+}

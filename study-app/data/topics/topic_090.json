@@ -1,0 +1,5127 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_090",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      410,
+      411,
+      412,
+      413
+    ],
+    "source_lecture_ids": [
+      "0410_410",
+      "0411_411",
+      "0412_412",
+      "0413_413"
+    ],
+    "source_titles": [
+      "네트워크 설치 구조",
+      "VLAN",
+      "LAN의 표준 규격 – 802.11의 버전",
+      "WPA"
+    ],
+    "keywords": [
+      "네트워크",
+      "설치",
+      "구조",
+      "VLAN",
+      "LAN의"
+    ],
+    "highlight_keywords": [
+      "n-1",
+      "네트워크의",
+      "해서",
+      "중앙",
+      "성형(Star, 중앙 집중형)",
+      "VLAN",
+      "스위치 24포트",
+      "기술부",
+      "인사부",
+      "Virtual"
+    ],
+    "secondary_keywords": [
+      "통신",
+      "네트워크",
+      "링형",
+      "회선수 = n(n-1)/2",
+      "포트수 = n-1",
+      "데이터",
+      "기술DB",
+      "인사DB",
+      "기술부와 인사부의 독립적인 DB 사용 예시",
+      "물리적 스위치 분리 시 발생하는 자원 낭비",
+      "단일 네트워크 구성 시의 보안 문제 설명",
+      "VLAN을 이용한 논리적 네트워크 분리"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0410_410",
+      "sequence": 410,
+      "number": "410",
+      "course_code": "350406",
+      "title": "네트워크 설치 구조",
+      "duration_seconds": 227,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "segment_count": 50,
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "tokens": [
+            "n-1"
+          ],
+          "score": 68,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "네트워크의",
+          "tokens": [
+            "네트워크의"
+          ],
+          "score": 48,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "해서",
+          "tokens": [
+            "해서"
+          ],
+          "score": 45,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "중앙",
+          "tokens": [
+            "중앙"
+          ],
+          "score": 43,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "tokens": [
+            "성형",
+            "Star",
+            "중앙",
+            "집중형"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "통신",
+          "tokens": [
+            "통신"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "네트워크",
+          "tokens": [
+            "네트워크"
+          ],
+          "score": 34,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "링형",
+          "tokens": [
+            "링형"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "회선수 = n(n-1)/2",
+          "tokens": [
+            "회선수",
+            "n-1"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "포트수 = n-1",
+          "tokens": [
+            "포트수",
+            "n-1"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 31,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_090-subtopic-001-source-seg-040::01",
+          "prompt": "n(______)/2개의 회선이 필요하고",
+          "answer": "n-1",
+          "original": "n(n-1)/2개의 회선이 필요하고",
+          "keyword": "n-1",
+          "source_segment_id": "topic_090-subtopic-001-source-seg-040",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'n-1'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-001-source-seg-002::02",
+          "prompt": "성형 ______ 개념 및 구성 방식",
+          "answer": "네트워크의",
+          "original": "성형 네트워크의 개념 및 구성 방식",
+          "keyword": "네트워크의",
+          "source_segment_id": "topic_090-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '네트워크의'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-001-source-seg-001::03",
+          "prompt": "강의 시작 및 성형(Star) ______ 소개",
+          "answer": "네트워크",
+          "original": "강의 시작 및 성형(Star) 네트워크 소개",
+          "keyword": "네트워크",
+          "source_segment_id": "topic_090-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '네트워크'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-001-source-seg-005::04",
+          "prompt": "중앙 컴퓨터를 통한 ______ 교환 과정",
+          "answer": "데이터",
+          "original": "중앙 컴퓨터를 통한 데이터 교환 과정",
+          "keyword": "데이터",
+          "source_segment_id": "topic_090-subtopic-001-source-seg-005",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0411_411",
+      "sequence": 411,
+      "number": "411",
+      "course_code": "350407",
+      "title": "VLAN",
+      "duration_seconds": 295,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "VLAN",
+          "tokens": [
+            "VLAN"
+          ],
+          "score": 52,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "스위치 24포트",
+          "tokens": [
+            "스위치",
+            "포트"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "기술부",
+          "tokens": [
+            "기술부"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "인사부",
+          "tokens": [
+            "인사부"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Virtual",
+          "tokens": [
+            "Virtual"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "기술DB",
+          "tokens": [
+            "기술",
+            "DB"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "인사DB",
+          "tokens": [
+            "인사",
+            "DB"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "기술부와 인사부의 독립적인 DB 사용 예시",
+          "tokens": [
+            "기술부와",
+            "인사부의",
+            "독립적인",
+            "DB",
+            "사용"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "물리적 스위치 분리 시 발생하는 자원 낭비",
+          "tokens": [
+            "물리적",
+            "스위치",
+            "분리",
+            "발생하는",
+            "자원",
+            "낭비"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단일 네트워크 구성 시의 보안 문제 설명",
+          "tokens": [
+            "단일",
+            "네트워크",
+            "구성",
+            "시의",
+            "보안"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "VLAN을 이용한 논리적 네트워크 분리",
+          "tokens": [
+            "VLAN",
+            "이용한",
+            "논리적",
+            "네트워크",
+            "분리"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_090-subtopic-002-source-seg-001::01",
+          "prompt": "______(Virtual Local Area Network) 소개",
+          "answer": "VLAN",
+          "original": "VLAN(Virtual Local Area Network) 소개",
+          "keyword": "VLAN",
+          "source_segment_id": "topic_090-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'VLAN'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-002-source-seg-003::02",
+          "prompt": "______와 인사부의 독립적인 DB 사용 예시",
+          "answer": "기술부",
+          "original": "기술부와 인사부의 독립적인 DB 사용 예시",
+          "keyword": "기술부",
+          "source_segment_id": "topic_090-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '기술부'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-002-source-seg-003::03",
+          "prompt": "기술부와 ______의 독립적인 DB 사용 예시",
+          "answer": "인사부",
+          "original": "기술부와 인사부의 독립적인 DB 사용 예시",
+          "keyword": "인사부",
+          "source_segment_id": "topic_090-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '인사부'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-002-source-seg-001::04",
+          "prompt": "VLAN(______ Local Area Network) 소개",
+          "answer": "Virtual",
+          "original": "VLAN(Virtual Local Area Network) 소개",
+          "keyword": "Virtual",
+          "source_segment_id": "topic_090-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Virtual'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0412_412",
+      "sequence": 412,
+      "number": "412",
+      "course_code": "350408",
+      "title": "LAN의 표준 규격 – 802.11의 버전",
+      "duration_seconds": 294,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "segment_count": 16,
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "tokens": [
+            "IEEE"
+          ],
+          "score": 48,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "버전",
+          "tokens": [
+            "버전"
+          ],
+          "score": 39,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "표준",
+          "tokens": [
+            "표준"
+          ],
+          "score": 36,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "관한",
+          "tokens": [
+            "관한"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "LAN",
+          "tokens": [
+            "LAN"
+          ],
+          "score": 21,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "LAN의 표준 규격 – 802.11의 버전",
+          "tokens": [
+            "LAN",
+            "표준",
+            "규격",
+            "버전"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "제어",
+          "tokens": [
+            "제어"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "규약",
+          "tokens": [
+            "규약"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "네트워크 구축",
+          "tokens": [
+            "네트워크",
+            "구축"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "MAN",
+          "tokens": [
+            "MAN"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "계층에",
+          "tokens": [
+            "계층에"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_090-subtopic-003-source-seg-002::01",
+          "prompt": "LAN의 표준안 ______ 802 주요 표준 규격 소개",
+          "answer": "IEEE",
+          "original": "LAN의 표준안 IEEE 802 주요 표준 규격 소개",
+          "keyword": "IEEE",
+          "source_segment_id": "topic_090-subtopic-003-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'IEEE'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-003-source-seg-002::02",
+          "prompt": "______의 표준안 IEEE 802 주요 표준 규격 소개",
+          "answer": "LAN",
+          "original": "LAN의 표준안 IEEE 802 주요 표준 규격 소개",
+          "keyword": "LAN",
+          "source_segment_id": "topic_090-subtopic-003-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'LAN'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-003-source-seg-001::03",
+          "prompt": "이번 시간엔 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "네트워크 구축",
+          "original": "이번 시간엔 우리 네트워크 구축에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "네트워크 구축",
+          "source_segment_id": "topic_090-subtopic-003-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "secondary",
+          "explanation": "정답은 '네트워크 구축'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-003-source-seg-008::04",
+          "prompt": "IEEE 802.6 도시형 통신망(______) 표준 설명",
+          "answer": "MAN",
+          "original": "IEEE 802.6 도시형 통신망(MAN) 표준 설명",
+          "keyword": "MAN",
+          "source_segment_id": "topic_090-subtopic-003-source-seg-008",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'MAN'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0413_413",
+      "sequence": 413,
+      "number": "413",
+      "course_code": "350409",
+      "title": "WPA",
+      "duration_seconds": 96,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "tokens": [
+            "WPA"
+          ],
+          "score": 52,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "WLAN",
+          "tokens": [
+            "WLAN"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "무선",
+          "tokens": [
+            "무선"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Wi-Fi Protected Access",
+          "tokens": [
+            "Wi-Fi",
+            "Protected",
+            "Access"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "무선 랜 인증 및 암호화 표준으로서의 WPA",
+          "tokens": [
+            "무선",
+            "인증",
+            "암호화",
+            "표준으로서의",
+            "WPA"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "WPA의 개선 버전인 WPA2 설명",
+          "tokens": [
+            "WPA",
+            "개선",
+            "버전인",
+            "WPA2"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "WPA의 정의 및 약어 설명",
+          "tokens": [
+            "WPA",
+            "약어"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "WPA의 특징 요약",
+          "tokens": [
+            "WPA",
+            "요약"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "WPA 학습 개요",
+          "tokens": [
+            "WPA",
+            "학습",
+            "개요"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "IEEE",
+          "tokens": [
+            "IEEE"
+          ],
+          "score": 10,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "제정한",
+          "tokens": [
+            "제정한"
+          ],
+          "score": 8,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_090-subtopic-004-source-seg-001::01",
+          "prompt": "______ 학습 개요",
+          "answer": "WPA",
+          "original": "WPA 학습 개요",
+          "keyword": "WPA",
+          "source_segment_id": "topic_090-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'WPA'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-004-source-seg-002::02",
+          "prompt": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(______) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+          "answer": "WLAN",
+          "original": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+          "keyword": "WLAN",
+          "source_segment_id": "topic_090-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'WLAN'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-004-source-seg-002::03",
+          "prompt": "WPA(______)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+          "answer": "Wi-Fi Protected Access",
+          "original": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+          "keyword": "Wi-Fi Protected Access",
+          "source_segment_id": "topic_090-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Wi-Fi Protected Access'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_090-subtopic-004-source-seg-002::04",
+          "prompt": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, ______ 802.11i 버전에서 지원함.",
+          "answer": "IEEE",
+          "original": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+          "keyword": "IEEE",
+          "source_segment_id": "topic_090-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'IEEE'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_090",
+    "sequence": 90,
+    "number": "90",
+    "title": "네트워크 설치 구조와 WLAN 보안",
+    "title_raw": "네트워크 설치 구조와 WLAN 보안",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      410,
+      411,
+      412,
+      413
+    ],
+    "source_titles": [
+      "네트워크 설치 구조",
+      "VLAN",
+      "LAN의 표준 규격 – 802.11의 버전",
+      "WPA"
+    ],
+    "preview_text": "네트워크 설치 구조, VLAN, LAN의 표준 규격 – 802.11의 버전 등",
+    "segment_count": 79,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 네트워크 설치 구조, VLAN, LAN의 표준 규격 – 802.11의 버전, WPA을 중심으로 정리합니다. 정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 네트워크 설치 구조, VLAN, LAN의 표준 규격 – 802.11의 버전, WPA을 중심으로 정리합니다.",
+      "정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 912,
+    "source_titles_preview": [
+      "네트워크 설치 구조",
+      "VLAN",
+      "LAN의 표준 규격 – 802.11의 버전"
+    ],
+    "highlight_keywords": [
+      "n-1",
+      "네트워크의",
+      "해서",
+      "중앙",
+      "성형(Star, 중앙 집중형)",
+      "VLAN",
+      "스위치 24포트",
+      "기술부",
+      "인사부",
+      "Virtual"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_090-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 시작 및 성형(Star) 네트워크 소개",
+      "screen_text_lines": [
+        "성형(Star, 중앙 집중형)"
+      ],
+      "screen_text": "성형(Star, 중앙 집중형)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 성형, 스타형, 중앙 집중형에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 성형, 스타형, 중앙 집중형에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 9,
+      "end_seconds": 20,
+      "duration_seconds": 11,
+      "timeline_summary": "성형 네트워크의 개념 및 구성 방식",
+      "screen_text_lines": [
+        "성형(Star, 중앙 집중형)",
+        "성형은 중앙에 중앙 컴퓨터가 있고, 이를 중심으로 단말장치들이 연결되는 중앙 집중식의 네트워크 구성 형태."
+      ],
+      "screen_text": "성형(Star, 중앙 집중형)\n성형은 중앙에 중앙 컴퓨터가 있고, 이를 중심으로 단말장치들이 연결되는 중앙 집중식의 네트워크 구성 형태.",
+      "spoken_sentences": [
+        "우리 성형요.",
+        "성형이라는 거를 다른 말로 우리가 스타형, 그렇게 부르기도 하고요.",
+        "얘를 우리말로는 다른 말로는 우리 중앙 집중형이다, 그렇게 부르기도 해요."
+      ],
+      "spoken_text": "우리 성형요. 성형이라는 거를 다른 말로 우리가 스타형, 그렇게 부르기도 하고요. 얘를 우리말로는 다른 말로는 우리 중앙 집중형이다, 그렇게 부르기도 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:37",
+      "start_seconds": 20,
+      "end_seconds": 37,
+      "duration_seconds": 17,
+      "timeline_summary": "성형 네트워크의 시각적 설명",
+      "screen_text_lines": [
+        "성형(Star, 중앙 집중형)",
+        "성형은 중앙에 중앙 컴퓨터가 있고, 이를 중심으로 단말장치들이 연결되는 중앙 집중식의 네트워크 구성 형태."
+      ],
+      "screen_text": "성형(Star, 중앙 집중형)\n성형은 중앙에 중앙 컴퓨터가 있고, 이를 중심으로 단말장치들이 연결되는 중앙 집중식의 네트워크 구성 형태.",
+      "spoken_sentences": [
+        "이 성형이라는 거는 어떻게 생겼냐?",
+        "지금처럼 요렇게 우리가 컴퓨터, 컴퓨터가 요렇게 중간에, 중간에 컴퓨터를 설치하고 이 컴퓨터를 중심으로 해서 우리가 각각 단말기들을 요렇게 설치를 하는 그런 형태를 보고 우리가 성형, 스타형, 중앙 집중식, 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "이 성형이라는 거는 어떻게 생겼냐? 지금처럼 요렇게 우리가 컴퓨터, 컴퓨터가 요렇게 중간에, 중간에 컴퓨터를 설치하고 이 컴퓨터를 중심으로 해서 우리가 각각 단말기들을 요렇게 설치를 하는 그런 형태를 보고 우리가 성형, 스타형, 중앙 집중식, 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:00:37",
+      "end_time_hms": "00:01:03",
+      "start_seconds": 37,
+      "end_seconds": 63,
+      "duration_seconds": 26,
+      "timeline_summary": "포인트 투 포인트(Point-to-Point) 방식 설명",
+      "screen_text_lines": [
+        "성형(Star, 중앙 집중형)",
+        "포인트 투 포인트(Point-to-Point) 방식으로 회선을 연결함."
+      ],
+      "screen_text": "성형(Star, 중앙 집중형)\n포인트 투 포인트(Point-to-Point) 방식으로 회선을 연결함.",
+      "spoken_sentences": [
+        "해서, 우리가 요 단말기, 요 단말기 입장에서 보게 되면 이 단말기랑 이 컴퓨터랑 일대일로 연결이 되죠.",
+        "그리고 이 단말기도 이 중앙에 있는 이 컴퓨터랑 일대일로 연결이 됩니다.",
+        "그리고 이 단말기도 그렇고 이 단말기도 그렇고 얘도 그렇고, 모든 이런 단말기들이 이 중앙에 있는 이 컴퓨터랑 일대일로 연결되는 그런 형태를 보고 우리가 성형, 중앙 집중형, 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서, 우리가 요 단말기, 요 단말기 입장에서 보게 되면 이 단말기랑 이 컴퓨터랑 일대일로 연결이 되죠. 그리고 이 단말기도 이 중앙에 있는 이 컴퓨터랑 일대일로 연결이 됩니다. 그리고 이 단말기도 그렇고 이 단말기도 그렇고 얘도 그렇고, 모든 이런 단말기들이 이 중앙에 있는 이 컴퓨터랑 일대일로 연결되는 그런 형태를 보고 우리가 성형, 중앙 집중형, 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:01:03",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 63,
+      "end_seconds": 90,
+      "duration_seconds": 27,
+      "timeline_summary": "중앙 컴퓨터를 통한 데이터 교환 과정",
+      "screen_text_lines": [
+        "성형(Star, 중앙 집중형)",
+        "각 단말장치들은 중앙 컴퓨터를 통하여 데이터를 교환함."
+      ],
+      "screen_text": "성형(Star, 중앙 집중형)\n각 단말장치들은 중앙 컴퓨터를 통하여 데이터를 교환함.",
+      "spoken_sentences": [
+        "해서, 중앙에, 중앙에 중앙 컴퓨터가 있고요.",
+        "그리고 그걸 중심으로, 그걸 중심으로 해서 우리 각각의 단말장치들이 전부 다 연결되는 그런 형태, 그게 성형, 우리 스타형, 그렇게 부르고, 얘는 가운데에 있는 이 컴퓨터를 중심으로 해서 모든 단말기들이 싹 다 연결이 됐다, 그렇게 해서 우리가 중앙 집중식, 그렇게 부르기도 하는 거예요."
+      ],
+      "spoken_text": "해서, 중앙에, 중앙에 중앙 컴퓨터가 있고요. 그리고 그걸 중심으로, 그걸 중심으로 해서 우리 각각의 단말장치들이 전부 다 연결되는 그런 형태, 그게 성형, 우리 스타형, 그렇게 부르고, 얘는 가운데에 있는 이 컴퓨터를 중심으로 해서 모든 단말기들이 싹 다 연결이 됐다, 그렇게 해서 우리가 중앙 집중식, 그렇게 부르기도 하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "성형(Star, 중앙 집중형)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:55",
+      "start_seconds": 90,
+      "end_seconds": 115,
+      "duration_seconds": 25,
+      "timeline_summary": "성형 네트워크의 포인트 투 포인트 특성",
+      "screen_text_lines": [
+        "포인트 투 포인트(Point-to-Point) 방식으로 회선을 연결함."
+      ],
+      "screen_text": "포인트 투 포인트(Point-to-Point) 방식으로 회선을 연결함.",
+      "spoken_sentences": [
+        "해서, 우리 단말기랑 이 중앙에 있는 이 컴퓨터랑 전부 다 일대일로 연결이 되기 때문에 그 방식을 보고 우리가 다른 말로 포인트 투 포인트 방식, 그렇게 불러요.",
+        "해서 여기서 포인트라는 거의 뜻이 우리 점이죠.",
+        "해서 얘를 다른 말로 우리가 점 대 점 방식, 점 대 점 방식, 그렇게 부르기도 하고 요게 우리가 컴퓨터와 단말기들을 서로서로 연결시킬 때 일대일로 연결되는 그런 형태를 보고 우리가 포인트 투 포인트, 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "해서, 우리 단말기랑 이 중앙에 있는 이 컴퓨터랑 전부 다 일대일로 연결이 되기 때문에 그 방식을 보고 우리가 다른 말로 포인트 투 포인트 방식, 그렇게 불러요. 해서 여기서 포인트라는 거의 뜻이 우리 점이죠. 해서 얘를 다른 말로 우리가 점 대 점 방식, 점 대 점 방식, 그렇게 부르기도 하고 요게 우리가 컴퓨터와 단말기들을 서로서로 연결시킬 때 일대일로 연결되는 그런 형태를 보고 우리가 포인트 투 포인트, 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:01:55",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 115,
+      "end_seconds": 140,
+      "duration_seconds": 25,
+      "timeline_summary": "중앙 컴퓨터를 거치는 데이터 전송 구조",
+      "screen_text_lines": [
+        "각 단말장치들은 중앙 컴퓨터를 통하여 데이터를 교환함."
+      ],
+      "screen_text": "각 단말장치들은 중앙 컴퓨터를 통하여 데이터를 교환함.",
+      "spoken_sentences": [
+        "해서 만약에 이쪽에 있는 이 컴퓨터에서 만약에 이쪽에 있는 컴퓨터한테 뭔가 데이터를 보낼 거예요.",
+        "보낼 때는 항상 누구를 거쳐야 된다?",
+        "우리 중앙에 있는 이 컴퓨터, 얘를 거쳐야 요렇게 데이터가 왔다 갔다 왔다 갔다 하더라."
+      ],
+      "spoken_text": "해서 만약에 이쪽에 있는 이 컴퓨터에서 만약에 이쪽에 있는 컴퓨터한테 뭔가 데이터를 보낼 거예요. 보낼 때는 항상 누구를 거쳐야 된다? 우리 중앙에 있는 이 컴퓨터, 얘를 거쳐야 요렇게 데이터가 왔다 갔다 왔다 갔다 하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:02:20",
+      "end_time_hms": "00:02:48",
+      "start_seconds": 140,
+      "end_seconds": 168,
+      "duration_seconds": 28,
+      "timeline_summary": "성형 네트워크의 장단점 및 고장 시 영향",
+      "screen_text_lines": [
+        "단말장치의 추가와 제거가 쉬움.",
+        "하나의 단말장치가 고장나더라도 다른 단말장치에는 영향을 주지 않지만, 중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨."
+      ],
+      "screen_text": "단말장치의 추가와 제거가 쉬움.\n하나의 단말장치가 고장나더라도 다른 단말장치에는 영향을 주지 않지만, 중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨.",
+      "spoken_sentences": [
+        "그리고 내가 이 단말기를 이용해서 얘한테 데이터를 뭔가를 줄 거예요.",
+        "그래도 이 중앙에 있는 컴퓨터랑 항상 이렇게 거쳐 가야 되겠죠.",
+        "근데 요렇게 사용하다가 만약에 이쪽에 있는 이 단말기가 만약에 고장이 났어요.",
+        "고장이 나도 얘네들 나머지 장치들을 가지고는 통신할 수가 있다 없다?",
+        "있더라, 있더라.",
+        "해서 이런 단말기가 고장이 나는 거는 통신망에는 큰 영향을 끼치지 않습니다."
+      ],
+      "spoken_text": "그리고 내가 이 단말기를 이용해서 얘한테 데이터를 뭔가를 줄 거예요. 그래도 이 중앙에 있는 컴퓨터랑 항상 이렇게 거쳐 가야 되겠죠. 근데 요렇게 사용하다가 만약에 이쪽에 있는 이 단말기가 만약에 고장이 났어요. 고장이 나도 얘네들 나머지 장치들을 가지고는 통신할 수가 있다 없다? 있더라, 있더라. 해서 이런 단말기가 고장이 나는 거는 통신망에는 큰 영향을 끼치지 않습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:02:48",
+      "end_time_hms": "00:03:14",
+      "start_seconds": 168,
+      "end_seconds": 194,
+      "duration_seconds": 26,
+      "timeline_summary": "중앙 컴퓨터 고장 시 전체 통신 마비",
+      "screen_text_lines": [
+        "중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨."
+      ],
+      "screen_text": "중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨.",
+      "spoken_sentences": [
+        "근데 만약에 이 가운데 있는 이 컴퓨터, 중앙에 있는 이 컴퓨터가 고장이 났다고 생각을 해보세요.",
+        "그러면 모든 장치들끼리 서로서로 통신할 수가 있다 없다?",
+        "없더라, 없더라.",
+        "해서 각 단말장치들은 중앙에 있는 그 컴퓨터를 통해서, 그 컴퓨터를 통해서 데이터를 교환하는 그런 방식을 보고 얘기하는 거고."
+      ],
+      "spoken_text": "근데 만약에 이 가운데 있는 이 컴퓨터, 중앙에 있는 이 컴퓨터가 고장이 났다고 생각을 해보세요. 그러면 모든 장치들끼리 서로서로 통신할 수가 있다 없다? 없더라, 없더라. 해서 각 단말장치들은 중앙에 있는 그 컴퓨터를 통해서, 그 컴퓨터를 통해서 데이터를 교환하는 그런 방식을 보고 얘기하는 거고.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:03:14",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 194,
+      "end_seconds": 218,
+      "duration_seconds": 24,
+      "timeline_summary": "단말장치 추가 및 제거의 용이성",
+      "screen_text_lines": [
+        "단말장치의 추가와 제거가 쉬움."
+      ],
+      "screen_text": "단말장치의 추가와 제거가 쉬움.",
+      "spoken_sentences": [
+        "그리고 이런 형태로 내가 구성을 하고 쓰다가 만약에 여기다가 단말기를 내가 한 대 추가를 시키고 싶어요.",
+        "그러면 그냥 이 단말기 한 대 갖다 놓고 중앙에 있는 그 컴퓨터랑 그냥 선을, 선을 쭉 연결을 시켜서 일대일로 연결을 시켜서 요렇게 해서 우리가 단말기를 추가를 시킬 수가 있습니다.",
+        "내가 또 여기다가 또 추가 시키겠다?",
+        "그러면 그냥 선만 우리가 중앙에 있는 컴퓨터랑 연결만 시켜주면 되는 거죠."
+      ],
+      "spoken_text": "그리고 이런 형태로 내가 구성을 하고 쓰다가 만약에 여기다가 단말기를 내가 한 대 추가를 시키고 싶어요. 그러면 그냥 이 단말기 한 대 갖다 놓고 중앙에 있는 그 컴퓨터랑 그냥 선을, 선을 쭉 연결을 시켜서 일대일로 연결을 시켜서 요렇게 해서 우리가 단말기를 추가를 시킬 수가 있습니다. 내가 또 여기다가 또 추가 시키겠다? 그러면 그냥 선만 우리가 중앙에 있는 컴퓨터랑 연결만 시켜주면 되는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:18",
+      "start_seconds": 218,
+      "end_seconds": 258,
+      "duration_seconds": 40,
+      "timeline_summary": "성형 네트워크의 핵심 특징 요약",
+      "screen_text_lines": [
+        "하나의 단말장치가 고장나더라도 다른 단말장치에는 영향을 주지 않지만, 중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨.",
+        "중앙 집중식이므로 교환 노드의 수가 가장 적다."
+      ],
+      "screen_text": "하나의 단말장치가 고장나더라도 다른 단말장치에는 영향을 주지 않지만, 중앙 컴퓨터가 고장나면 전체 통신망의 기능이 정지됨.\n중앙 집중식이므로 교환 노드의 수가 가장 적다.",
+      "spoken_sentences": [
+        "해서 이 성형이라는 거는 우리 단말장치의 추가, 제거, 요런 게 쉬워요.",
+        "그리고 하나의 단말장치가 고장이 나더라도, 단말장치가 고장이 나더라도 다른 단말장치에는 영향을 준다 안 준다?",
+        "영향을 주지 않더라.",
+        "근데 중앙에 있는 그 컴퓨터가 만약에 고장이 나면 어떻게 된다?",
+        "전체 통신망이 기능이 정지가 되더라.",
+        "그래서 아무도 통신을 못 하더라.",
+        "그리고 얘네는 서로서로 데이터를 교환하고 교환하고 교환하는 그런 중앙 집중식이기 때문에 교환 노드의 수가 가장 적다.",
+        "요런 특징을 가지고 있는 게 우리 성형, 스타형, 중앙 집중형이요."
+      ],
+      "spoken_text": "해서 이 성형이라는 거는 우리 단말장치의 추가, 제거, 요런 게 쉬워요. 그리고 하나의 단말장치가 고장이 나더라도, 단말장치가 고장이 나더라도 다른 단말장치에는 영향을 준다 안 준다? 영향을 주지 않더라. 근데 중앙에 있는 그 컴퓨터가 만약에 고장이 나면 어떻게 된다? 전체 통신망이 기능이 정지가 되더라. 그래서 아무도 통신을 못 하더라. 그리고 얘네는 서로서로 데이터를 교환하고 교환하고 교환하는 그런 중앙 집중식이기 때문에 교환 노드의 수가 가장 적다. 요런 특징을 가지고 있는 게 우리 성형, 스타형, 중앙 집중형이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:04:18",
+      "end_time_hms": "00:04:23",
+      "start_seconds": 258,
+      "end_seconds": 263,
+      "duration_seconds": 5,
+      "timeline_summary": "성형 네트워크 마무리 및 다음 내용 예고",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 성형에 대한 이런 문제가 나오면 이 그림을, 이 그림을 머릿속으로 딱 떠올리셔야 돼요.",
+        "요 그림을 딱 떠올린 다음에 이런 각각의 특징들이랑 서로서로 읽어보면서 비교를 하게 되면 쉽게 쉽게 우리가 정답을 찾을 수가 있습니다.",
+        "요런 게 우리 성형요."
+      ],
+      "spoken_text": "해서 성형에 대한 이런 문제가 나오면 이 그림을, 이 그림을 머릿속으로 딱 떠올리셔야 돼요. 요 그림을 딱 떠올린 다음에 이런 각각의 특징들이랑 서로서로 읽어보면서 비교를 하게 되면 쉽게 쉽게 우리가 정답을 찾을 수가 있습니다. 요런 게 우리 성형요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:04:23",
+      "end_time_hms": "00:04:34",
+      "start_seconds": 263,
+      "end_seconds": 274,
+      "duration_seconds": 11,
+      "timeline_summary": "링형(Ring) 네트워크 소개 및 특성",
+      "screen_text_lines": [
+        "링형(Ring, 루프형)"
+      ],
+      "screen_text": "링형(Ring, 루프형)",
+      "spoken_sentences": [
+        "자 우리 링형, 루프형이요.",
+        "링형이나 루프형이나 둘 다 똑같은 말이에요.",
+        "우리가 링이다 그러면 링은 동그랗다 그런 뜻도 가지고 있고 우리 반지 그런 뜻도 가지고 있죠."
+      ],
+      "spoken_text": "자 우리 링형, 루프형이요. 링형이나 루프형이나 둘 다 똑같은 말이에요. 우리가 링이다 그러면 링은 동그랗다 그런 뜻도 가지고 있고 우리 반지 그런 뜻도 가지고 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:04:34",
+      "end_time_hms": "00:04:46",
+      "start_seconds": 274,
+      "end_seconds": 286,
+      "duration_seconds": 12,
+      "timeline_summary": "링형 네트워크의 연결 구조",
+      "screen_text_lines": [
+        "링형(Ring, 루프형)"
+      ],
+      "screen_text": "링형(Ring, 루프형)",
+      "spoken_sentences": [
+        "해서 얘는 단말기하고 우리가 컴퓨터를 서로서로 연결을 시킬 때 지금처럼 요렇게 동그란 모양으로 요렇게 연결시켜 놓은 그런 형태를 보고 우리가 링형 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 얘는 단말기하고 우리가 컴퓨터를 서로서로 연결을 시킬 때 지금처럼 요렇게 동그란 모양으로 요렇게 연결시켜 놓은 그런 형태를 보고 우리가 링형 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:04:46",
+      "end_time_hms": "00:05:17",
+      "start_seconds": 286,
+      "end_seconds": 317,
+      "duration_seconds": 31,
+      "timeline_summary": "링형 네트워크의 포인트 투 포인트 연결 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그러면 지금처럼 요렇게 우리가 구성이 되어 있다라고 가정을 했을 때 요 단말장치를 기준으로 보자고요.",
+        "이 단말장치를 기준으로 봤을 때 그 왼쪽에 있는 이 컴퓨터랑 서로서로 일대일로 연결이 되어 있죠.",
+        "그리고 그 오른쪽에 있는 이 단말기랑도 서로서로 일대일로 그렇게 연결이 되어 있죠."
+      ],
+      "spoken_text": "그러면 지금처럼 요렇게 우리가 구성이 되어 있다라고 가정을 했을 때 요 단말장치를 기준으로 보자고요. 이 단말장치를 기준으로 봤을 때 그 왼쪽에 있는 이 컴퓨터랑 서로서로 일대일로 연결이 되어 있죠. 그리고 그 오른쪽에 있는 이 단말기랑도 서로서로 일대일로 그렇게 연결이 되어 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:05:17",
+      "end_time_hms": "00:05:46",
+      "start_seconds": 317,
+      "end_seconds": 346,
+      "duration_seconds": 29,
+      "timeline_summary": "이웃하는 노드 간 연결 방식",
+      "screen_text_lines": [
+        "링형은 컴퓨터와 단말장치들을 서로 이웃하는 것끼리 포인트 투 포인트(Point-to-Point) 방식으로 연결시킨 형태."
+      ],
+      "screen_text": "링형은 컴퓨터와 단말장치들을 서로 이웃하는 것끼리 포인트 투 포인트(Point-to-Point) 방식으로 연결시킨 형태.",
+      "spoken_sentences": [
+        "해서 이런 식으로 해서 전부 다 각각 단말기하고 컴퓨터들끼리 서로서로 요렇게 동그랗게 이런 형태로 연결된 걸 보고 우리가 링형 그렇게 부르는 거예요.",
+        "해서 컴퓨터와 단말장치들을 서로서로 연결을 할 때 서로서로 이웃하는 것들끼리 포인트 투 포인트, 일대일 방식으로 그렇게 연결시킨 그런 형태를 보고 우리 링형, 링형이라고 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "해서 이런 식으로 해서 전부 다 각각 단말기하고 컴퓨터들끼리 서로서로 요렇게 동그랗게 이런 형태로 연결된 걸 보고 우리가 링형 그렇게 부르는 거예요. 해서 컴퓨터와 단말장치들을 서로서로 연결을 할 때 서로서로 이웃하는 것들끼리 포인트 투 포인트, 일대일 방식으로 그렇게 연결시킨 그런 형태를 보고 우리 링형, 링형이라고 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:05:46",
+      "end_time_hms": "00:06:03",
+      "start_seconds": 346,
+      "end_seconds": 363,
+      "duration_seconds": 17,
+      "timeline_summary": "링형 네트워크의 점 대 점 방식 특징",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "우리 포인트 투 포인트 일대일 방식으로 연결되어 있는 게 우리 링형도 이런 형태로 연결이 되어 있지만 성형도 포인트 투 포인트 방식으로 연결이 되어 있다고요.",
+        "근데 성형하고 링형은 완전히 생김새가 완전 다른 거죠.",
+        "해서 우리 포인트 투 포인트를 우리가 다른 말로 우리가 점 대 점 방식, 점 대 점 방식 그렇게 부르고."
+      ],
+      "spoken_text": "우리 포인트 투 포인트 일대일 방식으로 연결되어 있는 게 우리 링형도 이런 형태로 연결이 되어 있지만 성형도 포인트 투 포인트 방식으로 연결이 되어 있다고요. 근데 성형하고 링형은 완전히 생김새가 완전 다른 거죠. 해서 우리 포인트 투 포인트를 우리가 다른 말로 우리가 점 대 점 방식, 점 대 점 방식 그렇게 부르고.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:06:03",
+      "end_time_hms": "00:06:38",
+      "start_seconds": 363,
+      "end_seconds": 398,
+      "duration_seconds": 35,
+      "timeline_summary": "링형 네트워크에서의 데이터 전송 방향 및 중계기",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "얘는 단말기하고 컴퓨터를 연결시킬 때 어떻게 연결시킨다?",
+        "전부 다 일대일로 그렇게 연결시키는 그런 방식을 우리가 포인트 투 포인트 그렇게 부르는 겁니다.",
+        "해서 예를 들어서 지금처럼 여기 보니까 컴퓨터하고 단말기들이 총 6개가 있죠.",
+        "만약에 사람이 6명이 모였어요.",
+        "6명이 모여서 놀 때, 놀 때 우리가 카드 놀이를 하거나 고스톱을 칠 거예요.",
+        "그러면 서로서로 동그랗게 앉아서 서로서로 게임을 하죠.",
+        "그때 게임이 진행되는 그런 방향도 여기서 설정을 해줄 수가 있습니다."
+      ],
+      "spoken_text": "얘는 단말기하고 컴퓨터를 연결시킬 때 어떻게 연결시킨다? 전부 다 일대일로 그렇게 연결시키는 그런 방식을 우리가 포인트 투 포인트 그렇게 부르는 겁니다. 해서 예를 들어서 지금처럼 여기 보니까 컴퓨터하고 단말기들이 총 6개가 있죠. 만약에 사람이 6명이 모였어요. 6명이 모여서 놀 때, 놀 때 우리가 카드 놀이를 하거나 고스톱을 칠 거예요. 그러면 서로서로 동그랗게 앉아서 서로서로 게임을 하죠. 그때 게임이 진행되는 그런 방향도 여기서 설정을 해줄 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:06:38",
+      "end_time_hms": "00:07:04",
+      "start_seconds": 398,
+      "end_seconds": 424,
+      "duration_seconds": 26,
+      "timeline_summary": "데이터 전송 경로와 중계기 증가 문제",
+      "screen_text_lines": [
+        "중계기의 수가 많아짐."
+      ],
+      "screen_text": "중계기의 수가 많아짐.",
+      "spoken_sentences": [
+        "해서 이 컴퓨터가 게임을 할 때 뭔가 데이터를 주고받고 주고받고 할 때 이 방향으로 하자, 그렇게 정할 수가 있다고요.",
+        "그러면 이 방향으로만 데이터가 왔다 갔다 왔다 갔다 할 거예요.",
+        "그러면 이 단말기랑 이 단말기랑 만약에 통신한다고 생각해보세요.",
+        "그러면 이 단말기에서 데이터를 뿅 하고 보내게 되면 그 데이터는 그 옆에 있는 이 단말기를 통해서 이 단말기를 또 거쳐서 이 단말기를 거쳐서 도착하는 거죠."
+      ],
+      "spoken_text": "해서 이 컴퓨터가 게임을 할 때 뭔가 데이터를 주고받고 주고받고 할 때 이 방향으로 하자, 그렇게 정할 수가 있다고요. 그러면 이 방향으로만 데이터가 왔다 갔다 왔다 갔다 할 거예요. 그러면 이 단말기랑 이 단말기랑 만약에 통신한다고 생각해보세요. 그러면 이 단말기에서 데이터를 뿅 하고 보내게 되면 그 데이터는 그 옆에 있는 이 단말기를 통해서 이 단말기를 또 거쳐서 이 단말기를 거쳐서 도착하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:07:04",
+      "end_time_hms": "00:07:41",
+      "start_seconds": 424,
+      "end_seconds": 461,
+      "duration_seconds": 37,
+      "timeline_summary": "링형 네트워크의 전송 지연 및 보안 취약성",
+      "screen_text_lines": [
+        "각 단말장치에서 전송 지연이 발생할 수 있음."
+      ],
+      "screen_text": "각 단말장치에서 전송 지연이 발생할 수 있음.",
+      "spoken_sentences": [
+        "이런 식으로 해서 뭔가 데이터를 하나 보낼 때 중간중간에 거쳐야 되는 그런 중계기의 개수가 많아요.",
+        "만약에 얘랑 얘랑 둘이서만 통신하겠다?",
+        "그러면 그때도 얘가, 얘가 얘한테 뭔가를 줄 때는 한 번에 줄 수 있지만, 얘가 만약에 얘한테 뭔가를 주겠다?",
+        "그때 데이터가 진행되는 그 방향이 정해져 있기 때문에 얘를 거치고 얘를 거치고 얘를 거치고 얘를 거쳐야 그때 돼서 데이터를 받는다고요."
+      ],
+      "spoken_text": "이런 식으로 해서 뭔가 데이터를 하나 보낼 때 중간중간에 거쳐야 되는 그런 중계기의 개수가 많아요. 만약에 얘랑 얘랑 둘이서만 통신하겠다? 그러면 그때도 얘가, 얘가 얘한테 뭔가를 줄 때는 한 번에 줄 수 있지만, 얘가 만약에 얘한테 뭔가를 주겠다? 그때 데이터가 진행되는 그 방향이 정해져 있기 때문에 얘를 거치고 얘를 거치고 얘를 거치고 얘를 거쳐야 그때 돼서 데이터를 받는다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:07:41",
+      "end_time_hms": "00:08:13",
+      "start_seconds": 461,
+      "end_seconds": 493,
+      "duration_seconds": 32,
+      "timeline_summary": "데이터 기밀 유지의 어려움 및 전송 지연",
+      "screen_text_lines": [
+        "단말장치의 추가/제거 및 기밀 보호가 어려움."
+      ],
+      "screen_text": "단말장치의 추가/제거 및 기밀 보호가 어려움.",
+      "spoken_sentences": [
+        "해서 데이터를 서로서로 주고받고 주고받고 할 때 중간중간에 거쳐야 되는 그런 중계기 수가 많아져요.",
+        "그리고 그러다 보니까 중간에 어떤 나쁜 놈이 중간에 지나다니는 그 모든 데이터를 전부 다 훔쳐볼 수가 있다고요.",
+        "그리고 만약에 얘가 만약에 얘랑 데이터를 막 주고 주고 주고 주고 계속해서 주고 있어요.",
+        "얘가 뭔가 요청해서 계속해서 데이터 주고 있는데 얘가 얘한테 또 데이터를 보낼 거예요.",
+        "그러면 또 거치고 거치고 거쳐야 되는데 그때 왔을 때 얘가 뭔가 얘한테 계속해서 자기 거를 계속해서 주고 있으니까 그때 옆에서 들어온 그 데이터에 대해서 너 기다려, 내 거 먼저 하고 네 거 처리해 줄게, 그럴 수도 있겠죠."
+      ],
+      "spoken_text": "해서 데이터를 서로서로 주고받고 주고받고 할 때 중간중간에 거쳐야 되는 그런 중계기 수가 많아져요. 그리고 그러다 보니까 중간에 어떤 나쁜 놈이 중간에 지나다니는 그 모든 데이터를 전부 다 훔쳐볼 수가 있다고요. 그리고 만약에 얘가 만약에 얘랑 데이터를 막 주고 주고 주고 주고 계속해서 주고 있어요. 얘가 뭔가 요청해서 계속해서 데이터 주고 있는데 얘가 얘한테 또 데이터를 보낼 거예요. 그러면 또 거치고 거치고 거쳐야 되는데 그때 왔을 때 얘가 뭔가 얘한테 계속해서 자기 거를 계속해서 주고 있으니까 그때 옆에서 들어온 그 데이터에 대해서 너 기다려, 내 거 먼저 하고 네 거 처리해 줄게, 그럴 수도 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:08:13",
+      "end_time_hms": "00:08:58",
+      "start_seconds": 493,
+      "end_seconds": 538,
+      "duration_seconds": 45,
+      "timeline_summary": "단말장치 추가 및 제거의 복잡성",
+      "screen_text_lines": [
+        "단방향 링의 경우 컴퓨터, 단말장치, 통신 회선 중 어느 하나라도 고장나면 전체 통신망에 영향을 미침."
+      ],
+      "screen_text": "단방향 링의 경우 컴퓨터, 단말장치, 통신 회선 중 어느 하나라도 고장나면 전체 통신망에 영향을 미침.",
+      "spoken_sentences": [
+        "그렇게 각 단말장치에서 전송 지연이 또 발생할 수도 있다고요.",
+        "그리고 데이터를 전송을 할 때 중간중간에 거쳐야 되는 그런 단말장치들이 있죠.",
+        "해서 중계기의 개수가 많아집니다.",
+        "그리고 데이터는 단방향으로도 우리가 보낼 수가 있고 양방향으로도 전송을 할 수가 있는데 우리가 단방향으로 데이터를 보내게 그렇게 방향을 딱 하나만 만들어 놓는 게 우리 단방향 링 그렇게 부르는 거고, 그리고 양쪽 방향으로 서로서로 주고받고 주고받고 할 수 있게 해 주는 게 우리 양방향 링 그렇게 불러요."
+      ],
+      "spoken_text": "그렇게 각 단말장치에서 전송 지연이 또 발생할 수도 있다고요. 그리고 데이터를 전송을 할 때 중간중간에 거쳐야 되는 그런 단말장치들이 있죠. 해서 중계기의 개수가 많아집니다. 그리고 데이터는 단방향으로도 우리가 보낼 수가 있고 양방향으로도 전송을 할 수가 있는데 우리가 단방향으로 데이터를 보내게 그렇게 방향을 딱 하나만 만들어 놓는 게 우리 단방향 링 그렇게 부르는 거고, 그리고 양쪽 방향으로 서로서로 주고받고 주고받고 할 수 있게 해 주는 게 우리 양방향 링 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:08:58",
+      "end_time_hms": "00:09:31",
+      "start_seconds": 538,
+      "end_seconds": 571,
+      "duration_seconds": 33,
+      "timeline_summary": "링형 네트워크의 유지보수 어려움",
+      "screen_text_lines": [
+        "단말장치의 추가/제거 및 기밀 보호가 어려움."
+      ],
+      "screen_text": "단말장치의 추가/제거 및 기밀 보호가 어려움.",
+      "spoken_sentences": [
+        "그리고 만약에 내가 여기다 단말기를 한 대 추가시킨다고 생각해보세요.",
+        "추가를 하려면 어떻게 해야 돼요?",
+        "절차가 복잡해지는 거죠.",
+        "얘랑 얘랑 원래 연결이 돼 있었는데 그 선을 뽑아서 얘는 얘랑 연결해야 되고, 또 얘는 얘랑 또 연결을 시켜 줘야 된다고요.",
+        "그리고 만약에 이 단말기가 만약에 고장 나서 이 단말기를 제거를 할 거예요.",
+        "제거를 하려면 또 여기 꽂혀 있던 선을 또 이쪽에 꽂아야 되고, 얘도 마찬가지로 꽂아야 된다고요.",
+        "해서 이 링형 같은 경우에는 단말장치를 추가하거나 제거하거나 그런 것들이 어렵더라고요."
+      ],
+      "spoken_text": "그리고 만약에 내가 여기다 단말기를 한 대 추가시킨다고 생각해보세요. 추가를 하려면 어떻게 해야 돼요? 절차가 복잡해지는 거죠. 얘랑 얘랑 원래 연결이 돼 있었는데 그 선을 뽑아서 얘는 얘랑 연결해야 되고, 또 얘는 얘랑 또 연결을 시켜 줘야 된다고요. 그리고 만약에 이 단말기가 만약에 고장 나서 이 단말기를 제거를 할 거예요. 제거를 하려면 또 여기 꽂혀 있던 선을 또 이쪽에 꽂아야 되고, 얘도 마찬가지로 꽂아야 된다고요. 해서 이 링형 같은 경우에는 단말장치를 추가하거나 제거하거나 그런 것들이 어렵더라고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:09:31",
+      "end_time_hms": "00:10:01",
+      "start_seconds": 571,
+      "end_seconds": 601,
+      "duration_seconds": 30,
+      "timeline_summary": "링형 네트워크의 특징 요약",
+      "screen_text_lines": [
+        "분산 및 집중 제어 모두 가능함.",
+        "단말장치의 추가/제거 및 기밀 보호가 어려움.",
+        "각 단말장치에서 전송 지연이 발생할 수 있음.",
+        "중계기의 수가 많아짐."
+      ],
+      "screen_text": "분산 및 집중 제어 모두 가능함.\n단말장치의 추가/제거 및 기밀 보호가 어려움.\n각 단말장치에서 전송 지연이 발생할 수 있음.\n중계기의 수가 많아짐.",
+      "spoken_sentences": [
+        "해서 우리 링역이라는 거는 분산이 됐든 집중제어가 됐든 이런 게 모두 다 가능한 그런 방식을 보고 우리 링형 그렇게 부르는 거고, 단말장치를 우리가 추가를 하거나 제거를 하거나 그런 것들이 어렵더라, 어렵더라.",
+        "그리고 기밀 보호가 어렵더라.",
+        "그리고 각 단말장치에서 전송 지연이 발생할 수도 있더라.",
+        "그리고 데이터를 전송을 할 때 중간중간에 거쳐야 되는 그런 단말장치들이 있죠.",
+        "해서 중계기의 개수가 많아집니다."
+      ],
+      "spoken_text": "해서 우리 링역이라는 거는 분산이 됐든 집중제어가 됐든 이런 게 모두 다 가능한 그런 방식을 보고 우리 링형 그렇게 부르는 거고, 단말장치를 우리가 추가를 하거나 제거를 하거나 그런 것들이 어렵더라, 어렵더라. 그리고 기밀 보호가 어렵더라. 그리고 각 단말장치에서 전송 지연이 발생할 수도 있더라. 그리고 데이터를 전송을 할 때 중간중간에 거쳐야 되는 그런 단말장치들이 있죠. 해서 중계기의 개수가 많아집니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:10:01",
+      "end_time_hms": "00:10:54",
+      "start_seconds": 601,
+      "end_seconds": 654,
+      "duration_seconds": 53,
+      "timeline_summary": "단방향 링의 취약성과 양방향 링의 장점",
+      "screen_text_lines": [
+        "데이터는 단방향 또는 양방향으로 전송할 수 있으며, 단방향 링의 경우 컴퓨터, 단말장치, 통신 회선 중 어느 하나라도 고장나면 전체 통신망에 영향을 미침."
+      ],
+      "screen_text": "데이터는 단방향 또는 양방향으로 전송할 수 있으며, 단방향 링의 경우 컴퓨터, 단말장치, 통신 회선 중 어느 하나라도 고장나면 전체 통신망에 영향을 미침.",
+      "spoken_sentences": [
+        "그리고 데이터는 이게 단방향으로도 우리가 보낼 수가 있고 양방향으로도 전송을 할 수가 있는데 우리가 단방향으로 데이터를 보내게 그렇게 방향을 딱 하나만 만들어 놓는 게 우리 단방향 링 그렇게 부르는 거고, 그리고 양쪽 방향으로 서로서로 주고받고 주고받고 할 수 있게 해 주는 게 우리 양방향 링 그렇게 불러요.",
+        "해서 단방향 링 같은 경우에는 컴퓨터가 됐든 단말장치가 됐든 통신회선이 됐든 이런 것들 중에서 어느 하나라도 만약에 고장이 나면 어떻게 된다?",
+        "전체 통신망에 영향을 미치더라.",
+        "근데 양방향 링 같은 경우에는 한 단말장치에서 만약에 문제가 생겼을 때 다른 방향으로 데이터를 우회해서, 우리가 우회 통신해서 정상적으로 데이터를 주고받고 주고받고 할 수 있습니다.",
+        "요런 게 우리 링형요."
+      ],
+      "spoken_text": "그리고 데이터는 이게 단방향으로도 우리가 보낼 수가 있고 양방향으로도 전송을 할 수가 있는데 우리가 단방향으로 데이터를 보내게 그렇게 방향을 딱 하나만 만들어 놓는 게 우리 단방향 링 그렇게 부르는 거고, 그리고 양쪽 방향으로 서로서로 주고받고 주고받고 할 수 있게 해 주는 게 우리 양방향 링 그렇게 불러요. 해서 단방향 링 같은 경우에는 컴퓨터가 됐든 단말장치가 됐든 통신회선이 됐든 이런 것들 중에서 어느 하나라도 만약에 고장이 나면 어떻게 된다? 전체 통신망에 영향을 미치더라. 근데 양방향 링 같은 경우에는 한 단말장치에서 만약에 문제가 생겼을 때 다른 방향으로 데이터를 우회해서, 우리가 우회 통신해서 정상적으로 데이터를 주고받고 주고받고 할 수 있습니다. 요런 게 우리 링형요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "링형",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 33
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:10:54",
+      "end_time_hms": "00:11:35",
+      "start_seconds": 654,
+      "end_seconds": 695,
+      "duration_seconds": 41,
+      "timeline_summary": "버스형(Bus) 네트워크 구조와 특징",
+      "screen_text_lines": [
+        "버스형(Bus)"
+      ],
+      "screen_text": "버스형(Bus)",
+      "spoken_sentences": [
+        "자 우리 버스형이요.",
+        "버스형이라는 거는 우리가 일반적으로 타고 다니는 그 버스 생각하시면 돼요.",
+        "만약에 1번 버스가 있다라고 하면 그 1번 버스는 출발하는 그 지점이 있고 그 출발하는 지점부터 시작해서 그 1번 버스가 가야 되는 그 길이 딱 정해져 있죠.",
+        "그 노선이 딱 정해져 있고 출발을 해서 그 목적지까지, 목적지까지 그냥 짜잔 하고 그냥 한 방에 쭉 가는 게 아니죠.",
+        "중간중간에 우리 버스 정류장, 버스 정류장의 중간중간에 쓴다고요.",
+        "해서 이런 버스 정류장 모양으로 우리가 각각 단말기들을 전부 다 연결하는 그런 방식을 보고 우리가 버스형 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "자 우리 버스형이요. 버스형이라는 거는 우리가 일반적으로 타고 다니는 그 버스 생각하시면 돼요. 만약에 1번 버스가 있다라고 하면 그 1번 버스는 출발하는 그 지점이 있고 그 출발하는 지점부터 시작해서 그 1번 버스가 가야 되는 그 길이 딱 정해져 있죠. 그 노선이 딱 정해져 있고 출발을 해서 그 목적지까지, 목적지까지 그냥 짜잔 하고 그냥 한 방에 쭉 가는 게 아니죠. 중간중간에 우리 버스 정류장, 버스 정류장의 중간중간에 쓴다고요. 해서 이런 버스 정류장 모양으로 우리가 각각 단말기들을 전부 다 연결하는 그런 방식을 보고 우리가 버스형 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:11:35",
+      "end_time_hms": "00:12:14",
+      "start_seconds": 695,
+      "end_seconds": 734,
+      "duration_seconds": 39,
+      "timeline_summary": "단일 통신 회선을 공유하는 버스형 네트워크",
+      "screen_text_lines": [
+        "버스형은 한 개의 통신 회선에 여러 대의 단말장치가 연결되어 있는 형태."
+      ],
+      "screen_text": "버스형은 한 개의 통신 회선에 여러 대의 단말장치가 연결되어 있는 형태.",
+      "spoken_sentences": [
+        "해서 우리 버스형이라는 거는 지금처럼 요렇게 생겼습니다.",
+        "해서 컴퓨터가 지금 여기 있고, 그리고 그 통신 회선을 하나를 설치해요.",
+        "하나를 설치해 놓고 그 통신 회선에다가 각각 단말장치들을 우리 버스 정류장처럼 요렇게 연결하는 그런 방식을 우리가 버스형 그렇게 부르는 거예요.",
+        "해서 이 버스형은 한 개의 통신 회선에 여러 개의 단말장치가 연결되어 있는 그런 형태를 보고 얘기하더라."
+      ],
+      "spoken_text": "해서 우리 버스형이라는 거는 지금처럼 요렇게 생겼습니다. 해서 컴퓨터가 지금 여기 있고, 그리고 그 통신 회선을 하나를 설치해요. 하나를 설치해 놓고 그 통신 회선에다가 각각 단말장치들을 우리 버스 정류장처럼 요렇게 연결하는 그런 방식을 우리가 버스형 그렇게 부르는 거예요. 해서 이 버스형은 한 개의 통신 회선에 여러 개의 단말장치가 연결되어 있는 그런 형태를 보고 얘기하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:12:14",
+      "end_time_hms": "00:12:47",
+      "start_seconds": 734,
+      "end_seconds": 767,
+      "duration_seconds": 33,
+      "timeline_summary": "버스형 네트워크의 장점과 한계",
+      "screen_text_lines": [
+        "물리적 구조가 간단하고, 단말장치의 추가와 제거가 용이함.",
+        "단말장치가 고장나더라도 통신망 전체에 영향을 주지 않기 때문에 신뢰성을 높일 수 있음."
+      ],
+      "screen_text": "물리적 구조가 간단하고, 단말장치의 추가와 제거가 용이함.\n단말장치가 고장나더라도 통신망 전체에 영향을 주지 않기 때문에 신뢰성을 높일 수 있음.",
+      "spoken_sentences": [
+        "얘는 물리적 구조가 간단하죠.",
+        "그리고 단말장치를 내가 추가하거나 제거하기가 용이합니다.",
+        "왜?",
+        "내가 여기다 단말기를 하나 추가시키고 싶어요.",
+        "그냥 이 통신 회선이랑 그냥 연결만 시켜주면 되는 거예요.",
+        "그리고 특정한 단말장치가 만약에 고장이 났다, 고장이 나도 통신망 전체에 있는 영향을 준다 안 준다?",
+        "안 주더라, 안 주더라.",
+        "해서 우리 신뢰성을 높일 수가 있더라.",
+        "근데 얘는 통신 회선이 지금 이거 하나밖에 없기 때문에 이 통신 회선 하나를 가지고 모든 이런 단말기들이 서로서로 데이터를 주고받고 주고받고 하겠죠."
+      ],
+      "spoken_text": "얘는 물리적 구조가 간단하죠. 그리고 단말장치를 내가 추가하거나 제거하기가 용이합니다. 왜? 내가 여기다 단말기를 하나 추가시키고 싶어요. 그냥 이 통신 회선이랑 그냥 연결만 시켜주면 되는 거예요. 그리고 특정한 단말장치가 만약에 고장이 났다, 고장이 나도 통신망 전체에 있는 영향을 준다 안 준다? 안 주더라, 안 주더라. 해서 우리 신뢰성을 높일 수가 있더라. 근데 얘는 통신 회선이 지금 이거 하나밖에 없기 때문에 이 통신 회선 하나를 가지고 모든 이런 단말기들이 서로서로 데이터를 주고받고 주고받고 하겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:12:47",
+      "end_time_hms": "00:13:15",
+      "start_seconds": 767,
+      "end_seconds": 795,
+      "duration_seconds": 28,
+      "timeline_summary": "보안 및 거리 제한 등 버스형의 단점",
+      "screen_text_lines": [
+        "기밀 보장이 어렵고, 통신 회선의 길이에 제한이 있음."
+      ],
+      "screen_text": "기밀 보장이 어렵고, 통신 회선의 길이에 제한이 있음.",
+      "spoken_sentences": [
+        "그때 어떤 나쁜 놈이 이 통신 회선만 잘 들여다보고 있으면 이곳에서 지나다니는 모든 데이터를 전부 다 탈취를 할 수가 있다고요.",
+        "해서 기밀 보장이 어렵다, 요런 단점도 가지고 있고, 그리고 이 통신 회선의 길이에는 제한이 있을 수밖에 없어요.",
+        "근데 만약에 이 통신 회선이 지금 사용되는 게 딱 하나의 통신 회선만 사용이 되죠.",
+        "해서 이런 단말기장치는 고장이 나도 통신망 전체에 있는 영향을 주지 않지만 이 통신 회선이 만약에 문제가 생겼다, 그러면 통신 자체가 전부 다 마비가 되겠죠.",
+        "해서 그런 장단점을 가지고 있는 게 우리 버스형이요."
+      ],
+      "spoken_text": "그때 어떤 나쁜 놈이 이 통신 회선만 잘 들여다보고 있으면 이곳에서 지나다니는 모든 데이터를 전부 다 탈취를 할 수가 있다고요. 해서 기밀 보장이 어렵다, 요런 단점도 가지고 있고, 그리고 이 통신 회선의 길이에는 제한이 있을 수밖에 없어요. 근데 만약에 이 통신 회선이 지금 사용되는 게 딱 하나의 통신 회선만 사용이 되죠. 해서 이런 단말기장치는 고장이 나도 통신망 전체에 있는 영향을 주지 않지만 이 통신 회선이 만약에 문제가 생겼다, 그러면 통신 자체가 전부 다 마비가 되겠죠. 해서 그런 장단점을 가지고 있는 게 우리 버스형이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:13:15",
+      "end_time_hms": "00:13:40",
+      "start_seconds": 795,
+      "end_seconds": 820,
+      "duration_seconds": 25,
+      "timeline_summary": "계층형(Tree) 네트워크 구조 설명",
+      "screen_text_lines": [
+        "네트워크 구축",
+        "계층형(Tree, 분산형)"
+      ],
+      "screen_text": "네트워크 구축\n계층형(Tree, 분산형)",
+      "spoken_sentences": [
+        "그다음에 계층형이요.",
+        "계층형은 다른 말로 트리형, 분산형이다, 그렇게 불러요.",
+        "얘는 말 그대로 그냥 족보 구조예요.",
+        "아니면 우리 회사 조직도 구조.",
+        "맨 위에 제일 높은 할아버지가 있고 그 밑에 아버지가 있고 작은아버지가 있고 아버지 밑에 자식들이 있고 작은아버지 밑에 자식들이 있고 이런 형태가 우리 계층형, 분산형, 트리형이라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그다음에 계층형이요. 계층형은 다른 말로 트리형, 분산형이다, 그렇게 불러요. 얘는 말 그대로 그냥 족보 구조예요. 아니면 우리 회사 조직도 구조. 맨 위에 제일 높은 할아버지가 있고 그 밑에 아버지가 있고 작은아버지가 있고 아버지 밑에 자식들이 있고 작은아버지 밑에 자식들이 있고 이런 형태가 우리 계층형, 분산형, 트리형이라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:13:40",
+      "end_time_hms": "00:14:17",
+      "start_seconds": 820,
+      "end_seconds": 857,
+      "duration_seconds": 37,
+      "timeline_summary": "계층형 네트워크의 분산 처리 방식",
+      "screen_text_lines": [
+        "계층형은 중앙 컴퓨터와 일정 지역의 단말장치까지는 하나의 통신 회선으로 연결시키고, 이웃하는 단말장치는 일정 지역 내에 설치된 중간 단말장치로부터 다시 연결시키는 형태",
+        "분산 처리 시스템을 구성하는 방식임"
+      ],
+      "screen_text": "계층형은 중앙 컴퓨터와 일정 지역의 단말장치까지는 하나의 통신 회선으로 연결시키고, 이웃하는 단말장치는 일정 지역 내에 설치된 중간 단말장치로부터 다시 연결시키는 형태\n분산 처리 시스템을 구성하는 방식임",
+      "spoken_sentences": [
+        "해서 얘는 중앙에 있는 컴퓨터랑 일정 지역의 단말장치까지는 하나의 통신 회선으로 연결을 시켜요.",
+        "이 얘기가 이게 중앙의 컴퓨터죠.",
+        "얘랑 일정 지역에 있는 이 단말장치, 이 단말장치, 이 단말장치까지는 한 개의 통신 회선으로 지금 연결이 되어 있죠.",
+        "그리고 이웃하는 단말장치는 일정 지역 내에 있는 중간에 이 단말장치로부터 다시 연결하고 연결하고 연결하는, 다시 연결하고 연결하고 연결하는 형태를 보고 우리가 계층형, 트리형, 분산형, 그렇게 부릅니다.",
+        "얘는 주로 우리가 분산 처리 시스템을 구성할 때 사용하는 그런 방식입니다."
+      ],
+      "spoken_text": "해서 얘는 중앙에 있는 컴퓨터랑 일정 지역의 단말장치까지는 하나의 통신 회선으로 연결을 시켜요. 이 얘기가 이게 중앙의 컴퓨터죠. 얘랑 일정 지역에 있는 이 단말장치, 이 단말장치, 이 단말장치까지는 한 개의 통신 회선으로 지금 연결이 되어 있죠. 그리고 이웃하는 단말장치는 일정 지역 내에 있는 중간에 이 단말장치로부터 다시 연결하고 연결하고 연결하는, 다시 연결하고 연결하고 연결하는 형태를 보고 우리가 계층형, 트리형, 분산형, 그렇게 부릅니다. 얘는 주로 우리가 분산 처리 시스템을 구성할 때 사용하는 그런 방식입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "중앙",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 43
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:14:17",
+      "end_time_hms": "00:14:38",
+      "start_seconds": 857,
+      "end_seconds": 878,
+      "duration_seconds": 21,
+      "timeline_summary": "망형(Mesh) 네트워크 소개",
+      "screen_text_lines": [
+        "망형(Mesh)"
+      ],
+      "screen_text": "망형(Mesh)",
+      "spoken_sentences": [
+        "자 우리 망형이요.",
+        "망형을 다른 말로 우리가 매시형 그렇게 부르고, 이 망형을 다른 말로 우리가 그물형 그렇게 부릅니다.",
+        "해서 이 망형이라는 거는 모든 지점에 들어 있는 그런 컴퓨터와 단말기들을 서로서로 싹 다 그물 형태로 그렇게 연결해 놓은 그런 모양을 보고 우리가 망형 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "자 우리 망형이요. 망형을 다른 말로 우리가 매시형 그렇게 부르고, 이 망형을 다른 말로 우리가 그물형 그렇게 부릅니다. 해서 이 망형이라는 거는 모든 지점에 들어 있는 그런 컴퓨터와 단말기들을 서로서로 싹 다 그물 형태로 그렇게 연결해 놓은 그런 모양을 보고 우리가 망형 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:14:38",
+      "end_time_hms": "00:15:04",
+      "start_seconds": 878,
+      "end_seconds": 904,
+      "duration_seconds": 26,
+      "timeline_summary": "망형 네트워크의 높은 연결성",
+      "screen_text_lines": [
+        "망형은 모든 지점의 컴퓨터와 단말장치를 서로 연결한 형태로, 노드의 연결성이 높다."
+      ],
+      "screen_text": "망형은 모든 지점의 컴퓨터와 단말장치를 서로 연결한 형태로, 노드의 연결성이 높다.",
+      "spoken_sentences": [
+        "해서 지금처럼 요렇게 생긴 걸 보고 우리가 망형, 그물형, 우리 매시형, 그렇게 부르는 거예요.",
+        "해서 이 컴퓨터 한 대랑 모든 단말기들을 통신 회선으로 싹 다 연결이 되어 있죠.",
+        "그리고 이 단말기를 기준으로 봐도 모든 단말기 컴퓨터들이 싹 다 이 단말기랑 서로서로 다 연결이 되어 있습니다.",
+        "해서 노드의 연결성이 제일 높은 게 우리 망형이라는 이 아이입니다."
+      ],
+      "spoken_text": "해서 지금처럼 요렇게 생긴 걸 보고 우리가 망형, 그물형, 우리 매시형, 그렇게 부르는 거예요. 해서 이 컴퓨터 한 대랑 모든 단말기들을 통신 회선으로 싹 다 연결이 되어 있죠. 그리고 이 단말기를 기준으로 봐도 모든 단말기 컴퓨터들이 싹 다 이 단말기랑 서로서로 다 연결이 되어 있습니다. 해서 노드의 연결성이 제일 높은 게 우리 망형이라는 이 아이입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:15:04",
+      "end_time_hms": "00:15:30",
+      "start_seconds": 904,
+      "end_seconds": 930,
+      "duration_seconds": 26,
+      "timeline_summary": "망형 네트워크의 직접 연결과 전송 효율",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그러면 만약에 이 컴퓨터랑 얘랑 둘이서 통신한다고 생각해보세요.",
+        "그러면 얘하고 얘하고 서로서로 직접 연결된 그 통신 회선이 있죠.",
+        "이 통신 회선을 통해서 데이터를 주고받고 주고받고 하면 돼요.",
+        "또 얘랑 얘랑 뭔가를 데이터를 주고받고 주고받고 할 거예요.",
+        "그때도 이 단말기랑 이 단말기랑 직접 연결된 그 통신 회선이 따로 있죠.",
+        "해서 이 선을 통해서 데이터를 서로서로 주고받고 주고받고 하면 된다고요."
+      ],
+      "spoken_text": "그러면 만약에 이 컴퓨터랑 얘랑 둘이서 통신한다고 생각해보세요. 그러면 얘하고 얘하고 서로서로 직접 연결된 그 통신 회선이 있죠. 이 통신 회선을 통해서 데이터를 주고받고 주고받고 하면 돼요. 또 얘랑 얘랑 뭔가를 데이터를 주고받고 주고받고 할 거예요. 그때도 이 단말기랑 이 단말기랑 직접 연결된 그 통신 회선이 따로 있죠. 해서 이 선을 통해서 데이터를 서로서로 주고받고 주고받고 하면 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:15:30",
+      "end_time_hms": "00:16:16",
+      "start_seconds": 930,
+      "end_seconds": 976,
+      "duration_seconds": 46,
+      "timeline_summary": "공중 데이터 통신망과 장애 시 우회 전송",
+      "screen_text_lines": [
+        "많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 유리함.",
+        "보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다.",
+        "통신 회선 장애 시 다른 경로를 통하여 데이터를 전송할 수 있음."
+      ],
+      "screen_text": "많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 유리함.\n보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다.\n통신 회선 장애 시 다른 경로를 통하여 데이터를 전송할 수 있음.",
+      "spoken_sentences": [
+        "해서 얘는 데이터 전송 속도가 제일 빨라요.",
+        "제일 빠르고 신뢰성이 제일 우수합니다.",
+        "그리고 만약에 이 통신 회선이 만약에 문제가 생겼어요.",
+        "그러면 다른 통신 회선을 통해서도 우리가 서로서로 데이터를 주고받고 주고받고 할 수 있다고요.",
+        "해서 어떤 특정 장애가 생겼을 때 우회 통신이 가능한 게 우리 망형이라는 이 아이입니다.",
+        "대신에 얘는 통신 회선을 모든 단말기 모든 컴퓨터랑 싹 다 연결을 시켜야 되기 때문에 통신 회선이 그만큼 많이 들어가죠.",
+        "많이 들어가기 때문에 그마만큼 구축 비용도 많이 들어갑니다."
+      ],
+      "spoken_text": "해서 얘는 데이터 전송 속도가 제일 빨라요. 제일 빠르고 신뢰성이 제일 우수합니다. 그리고 만약에 이 통신 회선이 만약에 문제가 생겼어요. 그러면 다른 통신 회선을 통해서도 우리가 서로서로 데이터를 주고받고 주고받고 할 수 있다고요. 해서 어떤 특정 장애가 생겼을 때 우회 통신이 가능한 게 우리 망형이라는 이 아이입니다. 대신에 얘는 통신 회선을 모든 단말기 모든 컴퓨터랑 싹 다 연결을 시켜야 되기 때문에 통신 회선이 그만큼 많이 들어가죠. 많이 들어가기 때문에 그마만큼 구축 비용도 많이 들어갑니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:16:16",
+      "end_time_hms": "00:16:45",
+      "start_seconds": 976,
+      "end_seconds": 1005,
+      "duration_seconds": 29,
+      "timeline_summary": "망형 네트워크의 적용 분야 및 장점",
+      "screen_text_lines": [
+        "많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 유리함.",
+        "보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다."
+      ],
+      "screen_text": "많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 유리함.\n보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다.",
+      "spoken_sentences": [
+        "해서 이 망형이라는 거는 많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 가장 유리한 게 우리 망형이고요.",
+        "이런 망형이라는 거는 보통 공중 데이터 망에서 사용이 된다, 그렇게 나왔습니다.",
+        "지금 여기 보게 되면 공중 데이터 망 하고 나왔는데 우리가 일반적으로 제일 많이 사용하는 그런 망이 우리 공중 데이터 망이 있고요.",
+        "우리 공중 전화망이라는 것도 있습니다."
+      ],
+      "spoken_text": "해서 이 망형이라는 거는 많은 단말장치로부터 많은 양의 통신을 필요로 하는 경우에 가장 유리한 게 우리 망형이고요. 이런 망형이라는 거는 보통 공중 데이터 망에서 사용이 된다, 그렇게 나왔습니다. 지금 여기 보게 되면 공중 데이터 망 하고 나왔는데 우리가 일반적으로 제일 많이 사용하는 그런 망이 우리 공중 데이터 망이 있고요. 우리 공중 전화망이라는 것도 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "네트워크",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:16:45",
+      "end_time_hms": "00:17:14",
+      "start_seconds": 1005,
+      "end_seconds": 1034,
+      "duration_seconds": 29,
+      "timeline_summary": "공중망의 개념과 적용 예",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "우리 공중 전화망이라는 거는 말 그대로 우리 집집마다 전부 다 전화를 전부 다 설치할 수가 있죠.",
+        "그렇게 집을 처음에 지을 때부터 시작해서 모든 각각의 집집들마다 전화기를 전부 다 설치할 수 있게끔 우리 선 꽂을 수 있는 그 포트가 전부 다 집집마다 다 들어가 있다고요.",
+        "그렇게 모든 집집들을 전부 다 그렇게 전화 통화를 할 수 있게끔 그렇게 만들어 놓은 그 망을 우리가 공중 전화망 그렇게 부르는 거고."
+      ],
+      "spoken_text": "우리 공중 전화망이라는 거는 말 그대로 우리 집집마다 전부 다 전화를 전부 다 설치할 수가 있죠. 그렇게 집을 처음에 지을 때부터 시작해서 모든 각각의 집집들마다 전화기를 전부 다 설치할 수 있게끔 우리 선 꽂을 수 있는 그 포트가 전부 다 집집마다 다 들어가 있다고요. 그렇게 모든 집집들을 전부 다 그렇게 전화 통화를 할 수 있게끔 그렇게 만들어 놓은 그 망을 우리가 공중 전화망 그렇게 부르는 거고.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:17:14",
+      "end_time_hms": "00:17:46",
+      "start_seconds": 1034,
+      "end_seconds": 1066,
+      "duration_seconds": 32,
+      "timeline_summary": "공중 데이터 통신망의 정의와 경로 특성",
+      "screen_text_lines": [
+        "보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다."
+      ],
+      "screen_text": "보통 공중 데이터 통신망에서 사용되며, 통신 회선의 총 경로가 가장 길다.",
+      "spoken_sentences": [
+        "그리고 우리 공중 데이터 망이다 그러면 우리가 지금 사용하고 있는 여러 가지 인터넷이 있죠.",
+        "그런 것들을 생각하면 돼요.",
+        "우리 인터넷 제공해주는 업체가 뭐 SK다, KT다, 아니면 우리 뭐 LG다, 아니면 각각 지역들마다 통신을 제공해주는 그런 회사들이 있죠.",
+        "그런 것들을 보고 우리가 공중 데이터 통신망, 그렇게 부르는 거예요.",
+        "해서 이런 망형이 그런 공중 데이터 통신망에서 주로 사용이 되고 그때 통신 회선의 총 경로가 가장 긴 게 우리 망형이라는 그 아이요."
+      ],
+      "spoken_text": "그리고 우리 공중 데이터 망이다 그러면 우리가 지금 사용하고 있는 여러 가지 인터넷이 있죠. 그런 것들을 생각하면 돼요. 우리 인터넷 제공해주는 업체가 뭐 SK다, KT다, 아니면 우리 뭐 LG다, 아니면 각각 지역들마다 통신을 제공해주는 그런 회사들이 있죠. 그런 것들을 보고 우리가 공중 데이터 통신망, 그렇게 부르는 거예요. 해서 이런 망형이 그런 공중 데이터 통신망에서 주로 사용이 되고 그때 통신 회선의 총 경로가 가장 긴 게 우리 망형이라는 그 아이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:17:46",
+      "end_time_hms": "00:18:10",
+      "start_seconds": 1066,
+      "end_seconds": 1090,
+      "duration_seconds": 24,
+      "timeline_summary": "장애 시 우회 전송 기능 및 노드 연결 수",
+      "screen_text_lines": [
+        "통신 회선 장애 시 다른 경로를 통하여 데이터를 전송할 수 있음."
+      ],
+      "screen_text": "통신 회선 장애 시 다른 경로를 통하여 데이터를 전송할 수 있음.",
+      "spoken_sentences": [
+        "그리고 얘는 어떤 특정 통신 회선에 만약에 장애가 발생했다, 장애가 발생해도 상관이 없죠.",
+        "왜?",
+        "경로가 찾아갈 수 있는 경로가 워낙 많다 보니까 우리가 다른 경로를 통해서 데이터를 전부 다 전송을 시킬 수가 있다고요.",
+        "그때 이 망형이라는 거는 요렇게 하나의 통신망을 구성할 때 그때 단말기 컴퓨터가 몇 개냐에 따라서 이런 통신 회선이 엄청나게 필요하죠."
+      ],
+      "spoken_text": "그리고 얘는 어떤 특정 통신 회선에 만약에 장애가 발생했다, 장애가 발생해도 상관이 없죠. 왜? 경로가 찾아갈 수 있는 경로가 워낙 많다 보니까 우리가 다른 경로를 통해서 데이터를 전부 다 전송을 시킬 수가 있다고요. 그때 이 망형이라는 거는 요렇게 하나의 통신망을 구성할 때 그때 단말기 컴퓨터가 몇 개냐에 따라서 이런 통신 회선이 엄청나게 필요하죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:18:10",
+      "end_time_hms": "00:18:35",
+      "start_seconds": 1090,
+      "end_seconds": 1115,
+      "duration_seconds": 25,
+      "timeline_summary": "망형 연결을 위한 공식 설명 시작",
+      "screen_text_lines": [
+        "모든 노드를 망형으로 연결하려면",
+        "노드의 수가 n개일 때",
+        "n(n-1)/2개의 회선이 필요하고",
+        "노드당 n-1개의 포트가 필요함."
+      ],
+      "screen_text": "모든 노드를 망형으로 연결하려면\n노드의 수가 n개일 때\nn(n-1)/2개의 회선이 필요하고\n노드당 n-1개의 포트가 필요함.",
+      "spoken_sentences": [
+        "해서 얘는 모든 노드를 망형으로 연결을 하려고 했을 때 그때 통신 회선이 몇 개가 필요하냐?",
+        "아니면 포트가 몇 개가 필요하냐?",
+        "그런 것들을 시험 문제에서 물어볼 수도 있다고요.",
+        "여기서 포트라는 게 뭘 얘기하냐?",
+        "그냥 선 꽂는 그 구멍을 보고 우리가 포트라고 그렇게 불러요."
+      ],
+      "spoken_text": "해서 얘는 모든 노드를 망형으로 연결을 하려고 했을 때 그때 통신 회선이 몇 개가 필요하냐? 아니면 포트가 몇 개가 필요하냐? 그런 것들을 시험 문제에서 물어볼 수도 있다고요. 여기서 포트라는 게 뭘 얘기하냐? 그냥 선 꽂는 그 구멍을 보고 우리가 포트라고 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:18:35",
+      "end_time_hms": "00:19:00",
+      "start_seconds": 1115,
+      "end_seconds": 1140,
+      "duration_seconds": 25,
+      "timeline_summary": "포트의 정의와 노드당 필요 포트 수 공식",
+      "screen_text_lines": [
+        "노드당 n-1개의 포트가 필요함."
+      ],
+      "screen_text": "노드당 n-1개의 포트가 필요함.",
+      "spoken_sentences": [
+        "우리가 스마트폰 같은 거 충전할 때도 선을 꽂을 수 있는 그 구멍이 있죠.",
+        "그 구멍 보고 우리가 포트라고 그렇게 부르는 거예요.",
+        "그리고 우리가 집에서 쓰는 멀티탭 있죠.",
+        "우리 전기 코드 여러 개 꽂아서 쓰는 거.",
+        "그렇게 코드를 꽂을 수 있는 그런 구멍들 하나하나 하나하나를 보고 우리가 포트라고 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "우리가 스마트폰 같은 거 충전할 때도 선을 꽂을 수 있는 그 구멍이 있죠. 그 구멍 보고 우리가 포트라고 그렇게 부르는 거예요. 그리고 우리가 집에서 쓰는 멀티탭 있죠. 우리 전기 코드 여러 개 꽂아서 쓰는 거. 그렇게 코드를 꽂을 수 있는 그런 구멍들 하나하나 하나하나를 보고 우리가 포트라고 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:19:00",
+      "end_time_hms": "00:19:27",
+      "start_seconds": 1140,
+      "end_seconds": 1167,
+      "duration_seconds": 27,
+      "timeline_summary": "시각적 예시를 통한 포트 수 계산",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그러면 지금 이 컴퓨터를 기준으로 봤을 때 그때 이 컴퓨터에는 포트가 몇 개가 필요하냐?",
+        "얘는 이 컴퓨터랑도 연결해야 하죠.",
+        "얘랑도 연결해야 하고, 얘랑도 연결해야 하고, 얘랑도 연결해야 하고, 얘랑도 연결을 해줘야 된다고요.",
+        "그러면 이 컴퓨터에는 지금 현재 포트가 총 몇 개가 필요하다?",
+        "다섯 개가 필요하다.",
+        "다섯 개가 있어야 다섯 개의 선을 이용해서 이런 각각의 단말장치들이랑 서로서로 연결을 할 거 아니에요."
+      ],
+      "spoken_text": "그러면 지금 이 컴퓨터를 기준으로 봤을 때 그때 이 컴퓨터에는 포트가 몇 개가 필요하냐? 얘는 이 컴퓨터랑도 연결해야 하죠. 얘랑도 연결해야 하고, 얘랑도 연결해야 하고, 얘랑도 연결해야 하고, 얘랑도 연결을 해줘야 된다고요. 그러면 이 컴퓨터에는 지금 현재 포트가 총 몇 개가 필요하다? 다섯 개가 필요하다. 다섯 개가 있어야 다섯 개의 선을 이용해서 이런 각각의 단말장치들이랑 서로서로 연결을 할 거 아니에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:19:27",
+      "end_time_hms": "00:19:56",
+      "start_seconds": 1167,
+      "end_seconds": 1196,
+      "duration_seconds": 29,
+      "timeline_summary": "노드당 필요 포트 수 공식 (n-1)",
+      "screen_text_lines": [
+        "노드당 n-1개의 포트가 필요함."
+      ],
+      "screen_text": "노드당 n-1개의 포트가 필요함.",
+      "spoken_sentences": [
+        "해서 지금 여기에는 이 그림상으로 봤을 때 그때 노드가 총 6개, 6개 노드가 있는 거고요.",
+        "그때 이 노드당 각각의 하나의 노드당 우리 선을 꽂을 수 있는 구멍이 몇 개가 필요하다?",
+        "다섯 개가 필요하다.",
+        "그때 이런 포트를 구하는, 포트의 개수를 구하는 그 공식이 있다고요.",
+        "그 공식이 n-1개요.",
+        "해서 각각 각각의 노드당 노드당 n-1개의 포트가 필요한 거예요."
+      ],
+      "spoken_text": "해서 지금 여기에는 이 그림상으로 봤을 때 그때 노드가 총 6개, 6개 노드가 있는 거고요. 그때 이 노드당 각각의 하나의 노드당 우리 선을 꽂을 수 있는 구멍이 몇 개가 필요하다? 다섯 개가 필요하다. 그때 이런 포트를 구하는, 포트의 개수를 구하는 그 공식이 있다고요. 그 공식이 n-1개요. 해서 각각 각각의 노드당 노드당 n-1개의 포트가 필요한 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:19:56",
+      "end_time_hms": "00:20:23",
+      "start_seconds": 1196,
+      "end_seconds": 1223,
+      "duration_seconds": 27,
+      "timeline_summary": "망형 연결을 위한 전체 회선 수 공식 설명",
+      "screen_text_lines": [
+        "n(n-1)/2개의 회선이 필요하고"
+      ],
+      "screen_text": "n(n-1)/2개의 회선이 필요하고",
+      "spoken_sentences": [
+        "해서 그때 노드의 개수가 지금 6개라 그랬으니까 6, 6을 우리 n에다가 대신 집어넣으면 되겠죠.",
+        "해서 6-1 해도 우리 5하고 그렇게 나오잖아요.",
+        "해서 포트의 수는 그냥 n-1개다, 그렇게 계산을 하면 되는 거고, 그때 통신 회선, 통신 회선이 몇 개 필요하냐?",
+        "그렇게 물어보는데 만약에 단말장치가 4개가 있다라고 가정을 한번 해보자고요.",
+        "요렇게 4개가 있을 때."
+      ],
+      "spoken_text": "해서 그때 노드의 개수가 지금 6개라 그랬으니까 6, 6을 우리 n에다가 대신 집어넣으면 되겠죠. 해서 6-1 해도 우리 5하고 그렇게 나오잖아요. 해서 포트의 수는 그냥 n-1개다, 그렇게 계산을 하면 되는 거고, 그때 통신 회선, 통신 회선이 몇 개 필요하냐? 그렇게 물어보는데 만약에 단말장치가 4개가 있다라고 가정을 한번 해보자고요. 요렇게 4개가 있을 때.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:20:23",
+      "end_time_hms": "00:20:58",
+      "start_seconds": 1223,
+      "end_seconds": 1258,
+      "duration_seconds": 35,
+      "timeline_summary": "노드 4개인 경우의 회선 수 계산 시각화",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그때 얘네들을 서로서로 전부 다 망형으로 싹 다 연결을 시킬 거예요.",
+        "그러면 얘랑 요렇게 연결시키고 요렇게 연결시키고 요렇게 연결시키고 요렇게 연결시키고 얘랑 얘랑도 연결시키고 얘랑 얘랑도 요렇게 연결시키면 되겠죠.",
+        "그러면 모든 노드들이 전부 다 각각 다 연결이 됐다고요.",
+        "그러면 그때 지금 여기에 한 개 통신에서 필요하고 여기도 필요하고 여기도 필요하고 여기도 필요합니다.",
+        "그리고 가운데 지나가는 이 선도 필요하겠죠.",
+        "해서 다섯 번째 선, 여섯 번째 선 해서 총 6개의 선이 필요한 거예요."
+      ],
+      "spoken_text": "그때 얘네들을 서로서로 전부 다 망형으로 싹 다 연결을 시킬 거예요. 그러면 얘랑 요렇게 연결시키고 요렇게 연결시키고 요렇게 연결시키고 요렇게 연결시키고 얘랑 얘랑도 연결시키고 얘랑 얘랑도 요렇게 연결시키면 되겠죠. 그러면 모든 노드들이 전부 다 각각 다 연결이 됐다고요. 그러면 그때 지금 여기에 한 개 통신에서 필요하고 여기도 필요하고 여기도 필요하고 여기도 필요합니다. 그리고 가운데 지나가는 이 선도 필요하겠죠. 해서 다섯 번째 선, 여섯 번째 선 해서 총 6개의 선이 필요한 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "통신",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:20:58",
+      "end_time_hms": "00:21:10",
+      "start_seconds": 1258,
+      "end_seconds": 1270,
+      "duration_seconds": 12,
+      "timeline_summary": "전체 회선 수 공식 (n(n-1)/2) 소개",
+      "screen_text_lines": [
+        "회선수 = n(n-1)/2",
+        "포트수 = n-1"
+      ],
+      "screen_text": "회선수 = n(n-1)/2\n포트수 = n-1",
+      "spoken_sentences": [
+        "그때 우리 회선수를 구하는 그 공식이 지금처럼 2분의 n(n-1)하고 요렇게 있습니다.",
+        "그러면 이 공식대로 한번 계산 한번 해보자고요.",
+        "그러면 우리 회선수를 구하는 그 공식이 2분의 n(n-1)인데 그때 지금 여기에는 몇 개의 노드가 있다?",
+        "4개의 노드가 있더라."
+      ],
+      "spoken_text": "그때 우리 회선수를 구하는 그 공식이 지금처럼 2분의 n(n-1)하고 요렇게 있습니다. 그러면 이 공식대로 한번 계산 한번 해보자고요. 그러면 우리 회선수를 구하는 그 공식이 2분의 n(n-1)인데 그때 지금 여기에는 몇 개의 노드가 있다? 4개의 노드가 있더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "회선수 = n(n-1)/2",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "포트수 = n-1",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:21:10",
+      "end_time_hms": "00:21:45",
+      "start_seconds": 1270,
+      "end_seconds": 1305,
+      "duration_seconds": 35,
+      "timeline_summary": "공식 적용 예시 (노드 4개)",
+      "screen_text_lines": [
+        "회선수 = n(n-1)/2",
+        "포트수 = n-1"
+      ],
+      "screen_text": "회선수 = n(n-1)/2\n포트수 = n-1",
+      "spoken_sentences": [
+        "그러면 우리 n이라는 거 대신에 요 자리에다가 4를 집어넣어서 계산을 하면 되겠네요.",
+        "그러면 우리 2분의, 2분의 4(4-1) 하고 요렇게 계산하면 되겠네요.",
+        "그러면 4-1 하게 되면 3이 되겠죠.",
+        "그러면 우리 3 곱하기 4, 4 곱하기 3 하게 되면 12가 나올 거고 2분의 12다 그렇게 계산하게 되면 총 몇 개가 필요하다?",
+        "6개가 필요하다 그렇게 나오는 거예요."
+      ],
+      "spoken_text": "그러면 우리 n이라는 거 대신에 요 자리에다가 4를 집어넣어서 계산을 하면 되겠네요. 그러면 우리 2분의, 2분의 4(4-1) 하고 요렇게 계산하면 되겠네요. 그러면 4-1 하게 되면 3이 되겠죠. 그러면 우리 3 곱하기 4, 4 곱하기 3 하게 되면 12가 나올 거고 2분의 12다 그렇게 계산하게 되면 총 몇 개가 필요하다? 6개가 필요하다 그렇게 나오는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "회선수 = n(n-1)/2",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "포트수 = n-1",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:21:45",
+      "end_time_hms": "00:22:10",
+      "start_seconds": 1305,
+      "end_seconds": 1330,
+      "duration_seconds": 25,
+      "timeline_summary": "망형 공식 학습의 중요성 강조",
+      "screen_text_lines": [
+        "회선수 = n(n-1)/2",
+        "포트수 = n-1"
+      ],
+      "screen_text": "회선수 = n(n-1)/2\n포트수 = n-1",
+      "spoken_sentences": [
+        "해서 우리 노드의 개수가 몇 개가 안 될 때는 지금처럼 내가 실제로 그림을 그려서 선이 몇 개 필요하냐?",
+        "그걸 따져볼 수도 있지만 만약에 이런 노드가 만약에 20개가 있다라고 생각해보세요.",
+        "그러면 이거 언제 전부 다 그림 그리고 앉아 있냐고요.",
+        "해서 우리가 요런 공식을 정확하게 여러분들이 기억을 하고 계셔야 됩니다.",
+        "그러면 우리 예제 문제 좀 보자고요."
+      ],
+      "spoken_text": "해서 우리 노드의 개수가 몇 개가 안 될 때는 지금처럼 내가 실제로 그림을 그려서 선이 몇 개 필요하냐? 그걸 따져볼 수도 있지만 만약에 이런 노드가 만약에 20개가 있다라고 생각해보세요. 그러면 이거 언제 전부 다 그림 그리고 앉아 있냐고요. 해서 우리가 요런 공식을 정확하게 여러분들이 기억을 하고 계셔야 됩니다. 그러면 우리 예제 문제 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "회선수 = n(n-1)/2",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "포트수 = n-1",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:22:10",
+      "end_time_hms": "00:22:36",
+      "start_seconds": 1330,
+      "end_seconds": 1356,
+      "duration_seconds": 26,
+      "timeline_summary": "예제 문제: 노드 25개인 경우의 계산",
+      "screen_text_lines": [
+        "예제 25개의 노드를 망형으로 연결하려고 할 때 필요한 회선의 수와 노드당 필요한 포트의 수는?"
+      ],
+      "screen_text": "예제 25개의 노드를 망형으로 연결하려고 할 때 필요한 회선의 수와 노드당 필요한 포트의 수는?",
+      "spoken_sentences": [
+        "예제 문제를 보니까 25개의 노드가 있대요.",
+        "이 25개 노드를 망형으로 연결을 하겠대요.",
+        "그때 필요한 그 회선 수 그리고 노드당 필요한 그 포트 수가 몇 개냐?",
+        "그렇게 물어봅니다.",
+        "그러면 그때 회선수를 구하는 공식이 따로 있었죠.",
+        "그 공식이 2분의 n(n-1)이었고, 그리고 각각 노드당 필요한 그 포트수를 구하는 그 공식이 n-1이었습니다."
+      ],
+      "spoken_text": "예제 문제를 보니까 25개의 노드가 있대요. 이 25개 노드를 망형으로 연결을 하겠대요. 그때 필요한 그 회선 수 그리고 노드당 필요한 그 포트 수가 몇 개냐? 그렇게 물어봅니다. 그러면 그때 회선수를 구하는 공식이 따로 있었죠. 그 공식이 2분의 n(n-1)이었고, 그리고 각각 노드당 필요한 그 포트수를 구하는 그 공식이 n-1이었습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 1,
+      "subtopic_id": "0410_410",
+      "subtopic_title": "네트워크 설치 구조",
+      "subtopic_sequence": 410,
+      "subtopic_number": "410",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=JccldcM2uks",
+      "start_time_hms": "00:22:36",
+      "end_time_hms": "00:23:47",
+      "start_seconds": 1356,
+      "end_seconds": 1427,
+      "duration_seconds": 71,
+      "timeline_summary": "공식을 이용한 예제 풀이",
+      "screen_text_lines": [
+        "회선수 = n(n-1)/2",
+        "포트수 = n-1"
+      ],
+      "screen_text": "회선수 = n(n-1)/2\n포트수 = n-1",
+      "spoken_sentences": [
+        "해서 지금처럼 요렇게 공식이 따로 있다고요.",
+        "이런 공식을 알아야 우리가 문제를 풀 수 있는 겁니다.",
+        "그렇다고 해서 25개 노드다라고 그렇게 문제가 났는데 25개 노드를 싹 다 그림을 그려서 우리가 직접 선의 개수를 셀 수가 없잖아요.",
+        "그러면 우리 n 대신에 25개 노드라 그랬으니까 25를 집어넣어서 계산을 해보면 되겠죠.",
+        "해서 25 우리 25-1 분의 2 하고 요렇게 계산해주면 됩니다.",
+        "그러면 25에서 -1을 하게 되면 24가 나올 거고 그다음에 25 곱하기 24를 하게 되면 600 그렇게 나올 거예요.",
+        "그러면 2분의 600이다 그렇게 계산하게 되면 총 몇 개가 필요하다?",
+        "우리 300개의 회선이 필요하더라.",
+        "그다음에 포트의 개수는 우리 25-1 요렇게 계산하면 되죠.",
+        "그러면 각각의 노드당 몇 개의 포트가 필요하다?",
+        "우리 총 24개의 포트가 필요하더라, 그렇게요.",
+        "요렇게 해서 우리가 계산을 해주면 됩니다.",
+        "해서 요런 공식 잘 기억하고 계셔야 돼요.",
+        "요런 게 우리 망형요."
+      ],
+      "spoken_text": "해서 지금처럼 요렇게 공식이 따로 있다고요. 이런 공식을 알아야 우리가 문제를 풀 수 있는 겁니다. 그렇다고 해서 25개 노드다라고 그렇게 문제가 났는데 25개 노드를 싹 다 그림을 그려서 우리가 직접 선의 개수를 셀 수가 없잖아요. 그러면 우리 n 대신에 25개 노드라 그랬으니까 25를 집어넣어서 계산을 해보면 되겠죠. 해서 25 우리 25-1 분의 2 하고 요렇게 계산해주면 됩니다. 그러면 25에서 -1을 하게 되면 24가 나올 거고 그다음에 25 곱하기 24를 하게 되면 600 그렇게 나올 거예요. 그러면 2분의 600이다 그렇게 계산하게 되면 총 몇 개가 필요하다? 우리 300개의 회선이 필요하더라. 그다음에 포트의 개수는 우리 25-1 요렇게 계산하면 되죠. 그러면 각각의 노드당 몇 개의 포트가 필요하다? 우리 총 24개의 포트가 필요하더라, 그렇게요. 요렇게 해서 우리가 계산을 해주면 됩니다. 해서 요런 공식 잘 기억하고 계셔야 돼요. 요런 게 우리 망형요.",
+      "highlight_keywords": [
+        {
+          "keyword": "n-1",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 68
+        },
+        {
+          "keyword": "해서",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "회선수 = n(n-1)/2",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "포트수 = n-1",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "VLAN(Virtual Local Area Network) 소개",
+      "screen_text_lines": [
+        "VLAN(Virtual Local Area Network)"
+      ],
+      "screen_text": "VLAN(Virtual Local Area Network)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 VLAN에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 VLAN에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "VLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "Virtual",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:33",
+      "start_seconds": 8,
+      "end_seconds": 33,
+      "duration_seconds": 25,
+      "timeline_summary": "VLAN의 정의와 목적",
+      "screen_text_lines": [
+        "VLAN(Virtual Local Area Network)",
+        "VLAN은 LAN의 물리적인 배치와 상관없이 논리적으로 분리하는 기술로",
+        "접속된 장비들의 성능 및 보안성을 향상시킬 수 있음."
+      ],
+      "screen_text": "VLAN(Virtual Local Area Network)\nVLAN은 LAN의 물리적인 배치와 상관없이 논리적으로 분리하는 기술로\n접속된 장비들의 성능 및 보안성을 향상시킬 수 있음.",
+      "spoken_sentences": [
+        "우리 VLAN이라는 거요.",
+        "VLAN이라는 게 뭐냐?",
+        "얘가 버추얼 우리 로컬 에어리어 네트워크의 약자예요.",
+        "로컬 에어리어 네트워크다라고 하게 되면 얘는 근거리 통신망, 랜을 보고 얘기하는 거죠.",
+        "근거리 통신망인데 앞에 버추얼이 붙은 겁니다.",
+        "해서 가상의 근거리 통신망이다 그거요.",
+        "그러면 이게 도대체 뭘 얘기하는지 좀 보자고요."
+      ],
+      "spoken_text": "우리 VLAN이라는 거요. VLAN이라는 게 뭐냐? 얘가 버추얼 우리 로컬 에어리어 네트워크의 약자예요. 로컬 에어리어 네트워크다라고 하게 되면 얘는 근거리 통신망, 랜을 보고 얘기하는 거죠. 근거리 통신망인데 앞에 버추얼이 붙은 겁니다. 해서 가상의 근거리 통신망이다 그거요. 그러면 이게 도대체 뭘 얘기하는지 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "VLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "Virtual",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:00:33",
+      "end_time_hms": "00:01:01",
+      "start_seconds": 33,
+      "end_seconds": 61,
+      "duration_seconds": 28,
+      "timeline_summary": "기술부와 인사부의 독립적인 DB 사용 예시",
+      "screen_text_lines": [
+        "기술부",
+        "인사부",
+        "기술DB",
+        "인사DB"
+      ],
+      "screen_text": "기술부\n인사부\n기술DB\n인사DB",
+      "spoken_sentences": [
+        "예를 들어서 지금처럼 이렇게 우리 기술부, 기술부에 직원이 세 명이 있어요.",
+        "세 명이 있고 그리고 인사부, 인사부에 세 명의 직원이 있다라고 가정을 한번 해 보자고요.",
+        "그때 기술부에서 사용하는 그런 데이터베이스가 따로 있고 그리고 인사부에서 사용하는 그런 데이터베이스가 따로 있습니다.",
+        "그때 얘네들을 서로서로 통신이 가능하도록 그렇게 만들어 줄 거예요."
+      ],
+      "spoken_text": "예를 들어서 지금처럼 이렇게 우리 기술부, 기술부에 직원이 세 명이 있어요. 세 명이 있고 그리고 인사부, 인사부에 세 명의 직원이 있다라고 가정을 한번 해 보자고요. 그때 기술부에서 사용하는 그런 데이터베이스가 따로 있고 그리고 인사부에서 사용하는 그런 데이터베이스가 따로 있습니다. 그때 얘네들을 서로서로 통신이 가능하도록 그렇게 만들어 줄 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "기술부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "인사부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기술DB",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "인사DB",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:01:01",
+      "end_time_hms": "00:01:28",
+      "start_seconds": 61,
+      "end_seconds": 88,
+      "duration_seconds": 27,
+      "timeline_summary": "24포트 스위치를 통한 장비 연결",
+      "screen_text_lines": [
+        "스위치 24포트"
+      ],
+      "screen_text": "스위치 24포트",
+      "spoken_sentences": [
+        "그때 우리가 보통 스위치라는 그 장비를 이용해서 우리가 서로서로 연결을 시키는데 이 스위치에는 총 24포트가 있거든요.",
+        "선을 꽂을 수 있는 구멍이 총 24개가 있으니까 여기에 세 개 세 개 그리고 서버까지 두 개 해서 총 여덟 개밖에 없죠?",
+        "해서 이 여덟 개의 장비들을 서로서로 이 스위치라는 이 장치를 통해서 전부 다 연결을 시켰어요."
+      ],
+      "spoken_text": "그때 우리가 보통 스위치라는 그 장비를 이용해서 우리가 서로서로 연결을 시키는데 이 스위치에는 총 24포트가 있거든요. 선을 꽂을 수 있는 구멍이 총 24개가 있으니까 여기에 세 개 세 개 그리고 서버까지 두 개 해서 총 여덟 개밖에 없죠? 해서 이 여덟 개의 장비들을 서로서로 이 스위치라는 이 장치를 통해서 전부 다 연결을 시켰어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "스위치 24포트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:01:28",
+      "end_time_hms": "00:02:05",
+      "start_seconds": 88,
+      "end_seconds": 125,
+      "duration_seconds": 37,
+      "timeline_summary": "단일 네트워크 구성 시의 보안 문제 설명",
+      "screen_text_lines": [
+        "기술부",
+        "인사부",
+        "기술DB",
+        "인사DB"
+      ],
+      "screen_text": "기술부\n인사부\n기술DB\n인사DB",
+      "spoken_sentences": [
+        "그러면 그때 이 하나의 스위치에 연결되어 있는 모든 컴퓨터 모든 이런 데이터베이스 서버들은 싹 다 하나의 네트워크로 구성이 돼요.",
+        "그러면 이 기술부 이 데이터베이스는 기술부 이 직원들만 접속이 돼야 되고 그리고 인사 이 데이터베이스에는 인사부 이 직원들만 우리가 데이터 접속을 할 수가 있어야 되는데 얘네가 전부 다 싹 다 하나의 네트워크로 그렇게 구성이 되어 있기 때문에 기술부 직원들도 인사 데이터베이스에 우리 접속이 가능하고요.",
+        "그리고 이 기술부 데이터베이스 여기에도 인사부 직원들이 전부 다 접속을 할 수 있다고요.",
+        "왜요?",
+        "하나의 네트워크로 구성이 돼 있기 때문에 전부 다 접근이 가능하고요.",
+        "그러면 보안상의 문제가 생길 수도 있겠죠?"
+      ],
+      "spoken_text": "그러면 그때 이 하나의 스위치에 연결되어 있는 모든 컴퓨터 모든 이런 데이터베이스 서버들은 싹 다 하나의 네트워크로 구성이 돼요. 그러면 이 기술부 이 데이터베이스는 기술부 이 직원들만 접속이 돼야 되고 그리고 인사 이 데이터베이스에는 인사부 이 직원들만 우리가 데이터 접속을 할 수가 있어야 되는데 얘네가 전부 다 싹 다 하나의 네트워크로 그렇게 구성이 되어 있기 때문에 기술부 직원들도 인사 데이터베이스에 우리 접속이 가능하고요. 그리고 이 기술부 데이터베이스 여기에도 인사부 직원들이 전부 다 접속을 할 수 있다고요. 왜요? 하나의 네트워크로 구성이 돼 있기 때문에 전부 다 접근이 가능하고요. 그러면 보안상의 문제가 생길 수도 있겠죠?",
+      "highlight_keywords": [
+        {
+          "keyword": "기술부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "인사부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기술DB",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "인사DB",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:02:05",
+      "end_time_hms": "00:03:19",
+      "start_seconds": 125,
+      "end_seconds": 199,
+      "duration_seconds": 74,
+      "timeline_summary": "물리적 스위치 분리 시 발생하는 자원 낭비",
+      "screen_text_lines": [
+        "스위치 24포트"
+      ],
+      "screen_text": "스위치 24포트",
+      "spoken_sentences": [
+        "해서 이 기술부와 인사부를 서로서로 별개의 네트워크로 구성해야지 그렇게 해서 우리가 요렇게 네트워크를 구성을 했다고 가정을 한번 해 보자고요.",
+        "그러면 지금처럼 요렇게 스위치를 따로따로 이렇게 쪼갠 거예요.",
+        "요렇게 스위치를 쪼개게 되면 이쪽의 네트워크가 별도로 하나가 구성이 되는 거고 이쪽에도 이쪽에도 네트워크가 별도로 하나로 구성이 되는 겁니다.",
+        "그러면 요렇게 구성을 하게 되면 우리 인사부에서는 기술부 데이터베이스 접속할 수 있다 없다?",
+        "없더라 없더라.",
+        "그리고 기술부에서도 이 인사 데이터베이스에 접속할 수 있다 없다?",
+        "근데 이렇게 구성하게 되면 보안적인 그런 문제는 해결이 되긴 됐지만 심각한 자원 낭비가 초래가 된다고요.",
+        "왜요?",
+        "이 스위치에는 24개 구멍이 있다니깐요.",
+        "근데 컴퓨터 딸랑 세 개 서버 하나 이렇게 네 개만 사용하고 있고요.",
+        "20개의 포트가 지금 놀고 있잖아요.",
+        "그리고 아래쪽에서도 마찬가지죠?",
+        "그리고 이런 뭐 스위치가 뭐 1, 2만 원이면 이렇게 여러 개 설치를 해도 되겠지만 그게 아니잖아요.",
+        "그럼 돈 낭비도 심해지고 심해진다고요."
+      ],
+      "spoken_text": "해서 이 기술부와 인사부를 서로서로 별개의 네트워크로 구성해야지 그렇게 해서 우리가 요렇게 네트워크를 구성을 했다고 가정을 한번 해 보자고요. 그러면 지금처럼 요렇게 스위치를 따로따로 이렇게 쪼갠 거예요. 요렇게 스위치를 쪼개게 되면 이쪽의 네트워크가 별도로 하나가 구성이 되는 거고 이쪽에도 이쪽에도 네트워크가 별도로 하나로 구성이 되는 겁니다. 그러면 요렇게 구성을 하게 되면 우리 인사부에서는 기술부 데이터베이스 접속할 수 있다 없다? 없더라 없더라. 그리고 기술부에서도 이 인사 데이터베이스에 접속할 수 있다 없다? 근데 이렇게 구성하게 되면 보안적인 그런 문제는 해결이 되긴 됐지만 심각한 자원 낭비가 초래가 된다고요. 왜요? 이 스위치에는 24개 구멍이 있다니깐요. 근데 컴퓨터 딸랑 세 개 서버 하나 이렇게 네 개만 사용하고 있고요. 20개의 포트가 지금 놀고 있잖아요. 그리고 아래쪽에서도 마찬가지죠? 그리고 이런 뭐 스위치가 뭐 1, 2만 원이면 이렇게 여러 개 설치를 해도 되겠지만 그게 아니잖아요. 그럼 돈 낭비도 심해지고 심해진다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "스위치 24포트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기술부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "인사부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "물리적 스위치 분리 시 발생하는 자원 낭비",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:03:19",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 199,
+      "end_seconds": 218,
+      "duration_seconds": 19,
+      "timeline_summary": "VLAN을 이용한 논리적 네트워크 분리",
+      "screen_text_lines": [
+        "스위치 24포트"
+      ],
+      "screen_text": "스위치 24포트",
+      "spoken_sentences": [
+        "해서 이런 문제를 해결하기 위해서 나온 게 우리 VLAN이요.",
+        "해서 지금처럼 이런 우리 컴퓨터가 됐든 아니면 데이터베이스가 됐든 이런 것들을 싹 다 스위치 하나에다가 싹 다 연결을 시킵니다.",
+        "연결을 시켜 놓고 요렇게 따로따로 우리 기술부 따로 인사부 따로 따로따로 해서 네트워크를 구성을 시키는 걸 보고 우리가 VLAN 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "해서 이런 문제를 해결하기 위해서 나온 게 우리 VLAN이요. 해서 지금처럼 이런 우리 컴퓨터가 됐든 아니면 데이터베이스가 됐든 이런 것들을 싹 다 스위치 하나에다가 싹 다 연결을 시킵니다. 연결을 시켜 놓고 요렇게 따로따로 우리 기술부 따로 인사부 따로 따로따로 해서 네트워크를 구성을 시키는 걸 보고 우리가 VLAN 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "VLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "스위치 24포트",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "기술부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "인사부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 2,
+      "subtopic_id": "0411_411",
+      "subtopic_title": "VLAN",
+      "subtopic_sequence": 411,
+      "subtopic_number": "411",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=AknIkyVnlTM",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:55",
+      "start_seconds": 218,
+      "end_seconds": 295,
+      "duration_seconds": 77,
+      "timeline_summary": "VLAN의 핵심 개념 요약",
+      "screen_text_lines": [
+        "V100",
+        "V200",
+        "Virtual",
+        "VLAN은 LAN의 물리적인 배치와 상관없이 논리적으로 분리하는 기술로"
+      ],
+      "screen_text": "V100\nV200\nVirtual\nVLAN은 LAN의 물리적인 배치와 상관없이 논리적으로 분리하는 기술로",
+      "spoken_sentences": [
+        "그러면 요 VLAN이라는 거는 우리 앞에 V가 버추얼이라 그랬죠?",
+        "해서 가상이에요 가상.",
+        "가상으로 이쪽에 마치 네트워크가 따로 있는 것처럼 이쪽에 네트워크가 따로 구성된 것처럼 그렇게 사용하자 그렇게 해서 우리가 만들어 놓은 게 우리 VLAN이라는 거요.",
+        "그러면 어차피 이 모든 장치들이 전부 다 이 하나의 스위치에 물론 연결은 되어 있어요.",
+        "연결은 되어 있지만 이쪽에 랜을 따로 구성하고 이쪽에 랜을 따로 구성해서 그때 이쪽 네트워크를 보고 우리가 예를 들어서 뭐 VLAN 100번이다 그리고 얘를 보고 우리가 VLAN 200번이다 요렇게 나누게 되면 별도의 네트워크로 인식이 된다고요.",
+        "해서 이 VLAN이라는 거는 랜의 물리적인 그런 배치와는 상관없이 하나의 스위치에 전부 다 연결이 돼 있더라도 이런 거랑 상관없이 논리적으로 분리하는 그런 기술을 보고 우리가 VLAN 그렇게 부르는 거예요.",
+        "해서 접속된 그런 장비들의 성능이 됐든 보안성이 됐든 그런 것들을 향상시킬 목적으로 사용하는 게 우리 VLAN이라는 겁니다.",
+        "VLAN은 진짜다 가짜다?",
+        "가짜다 가짜다.",
+        "해서 우리가 논리적으로만 요렇게 네트워크를 분리하는 그런 기술이 우리 VLAN이요."
+      ],
+      "spoken_text": "그러면 요 VLAN이라는 거는 우리 앞에 V가 버추얼이라 그랬죠? 해서 가상이에요 가상. 가상으로 이쪽에 마치 네트워크가 따로 있는 것처럼 이쪽에 네트워크가 따로 구성된 것처럼 그렇게 사용하자 그렇게 해서 우리가 만들어 놓은 게 우리 VLAN이라는 거요. 그러면 어차피 이 모든 장치들이 전부 다 이 하나의 스위치에 물론 연결은 되어 있어요. 연결은 되어 있지만 이쪽에 랜을 따로 구성하고 이쪽에 랜을 따로 구성해서 그때 이쪽 네트워크를 보고 우리가 예를 들어서 뭐 VLAN 100번이다 그리고 얘를 보고 우리가 VLAN 200번이다 요렇게 나누게 되면 별도의 네트워크로 인식이 된다고요. 해서 이 VLAN이라는 거는 랜의 물리적인 그런 배치와는 상관없이 하나의 스위치에 전부 다 연결이 돼 있더라도 이런 거랑 상관없이 논리적으로 분리하는 그런 기술을 보고 우리가 VLAN 그렇게 부르는 거예요. 해서 접속된 그런 장비들의 성능이 됐든 보안성이 됐든 그런 것들을 향상시킬 목적으로 사용하는 게 우리 VLAN이라는 겁니다. VLAN은 진짜다 가짜다? 가짜다 가짜다. 해서 우리가 논리적으로만 요렇게 네트워크를 분리하는 그런 기술이 우리 VLAN이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "VLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "Virtual",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 도입부 및 주제 소개",
+      "screen_text_lines": [
+        "네트워크 구축"
+      ],
+      "screen_text": "네트워크 구축",
+      "spoken_sentences": [
+        "이번 시간엔 우리 네트워크 구축에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간엔 우리 네트워크 구축에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "네트워크 구축",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:27",
+      "start_seconds": 8,
+      "end_seconds": 27,
+      "duration_seconds": 19,
+      "timeline_summary": "LAN의 표준안 IEEE 802 주요 표준 규격 소개",
+      "screen_text_lines": [
+        "네트워크 구축",
+        "LAN의 표준안",
+        "IEEE 802의 주요 표준 규격",
+        "표준 규격"
+      ],
+      "screen_text": "네트워크 구축\nLAN의 표준안\nIEEE 802의 주요 표준 규격\n표준 규격",
+      "spoken_sentences": [
+        "그 다음에 LAN의 표준안 좀 보자구요.",
+        "LAN의 표준안 그러면 가장 대표적인 게 IEEE 802라는 요 표준 규격이 있습니다.",
+        "자 여기 보게 되면 802.1번부터 시작해서 2번, 3번, 4번, 5번, 6번도 있고 그 다음에 9번도 있고 11번도 있고 이렇게 여러가지가 있습니다."
+      ],
+      "spoken_text": "그 다음에 LAN의 표준안 좀 보자구요. LAN의 표준안 그러면 가장 대표적인 게 IEEE 802라는 요 표준 규격이 있습니다. 자 여기 보게 되면 802.1번부터 시작해서 2번, 3번, 4번, 5번, 6번도 있고 그 다음에 9번도 있고 11번도 있고 이렇게 여러가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "LAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "네트워크 구축",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:27",
+      "end_time_hms": "00:00:39",
+      "start_seconds": 27,
+      "end_seconds": 39,
+      "duration_seconds": 12,
+      "timeline_summary": "IEEE 802.1 표준 규격 설명",
+      "screen_text_lines": [
+        "802.1",
+        "전체의 구성, OSI 참조 모델과의 관계, 통신망 관리 등에 관한 규약"
+      ],
+      "screen_text": "802.1\n전체의 구성, OSI 참조 모델과의 관계, 통신망 관리 등에 관한 규약",
+      "spoken_sentences": [
+        "자 802.1번이라는 거는 전체 구성이 됐든 OSI 참조 모델과의 어떤 관계가 있는지 통신망 관리는 어떻게 하는지 그런 것들에 대한 그런 규약, 규약 같은 것들을 보고 우리가 802.1번이라고 하는 거고"
+      ],
+      "spoken_text": "자 802.1번이라는 거는 전체 구성이 됐든 OSI 참조 모델과의 어떤 관계가 있는지 통신망 관리는 어떻게 하는지 그런 것들에 대한 그런 규약, 규약 같은 것들을 보고 우리가 802.1번이라고 하는 거고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "규약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:39",
+      "end_time_hms": "00:00:44",
+      "start_seconds": 39,
+      "end_seconds": 44,
+      "duration_seconds": 5,
+      "timeline_summary": "IEEE 802.2 논리 링크 제어(LLC) 표준 설명",
+      "screen_text_lines": [
+        "802.2",
+        "논리 링크 제어(LLC) 계층에 관한 규약"
+      ],
+      "screen_text": "802.2\n논리 링크 제어(LLC) 계층에 관한 규약",
+      "spoken_sentences": [
+        "802.2번이라는 거는 논리 링크 제어 계층에 관한 그런 규약을 보고 얘기하는 거고"
+      ],
+      "spoken_text": "802.2번이라는 거는 논리 링크 제어 계층에 관한 그런 규약을 보고 얘기하는 거고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "제어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-063",
+      "segment_index": 63,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:44",
+      "end_time_hms": "00:00:50",
+      "start_seconds": 44,
+      "end_seconds": 50,
+      "duration_seconds": 6,
+      "timeline_summary": "IEEE 802.3 CSMA/CD 방식 표준 설명",
+      "screen_text_lines": [
+        "802.3",
+        "CSMA/CD 방식의 매체 접근 제어 계층에 관한 규약"
+      ],
+      "screen_text": "802.3\nCSMA/CD 방식의 매체 접근 제어 계층에 관한 규약",
+      "spoken_sentences": [
+        "802.3번은 CSMA/CD 방식에서 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고"
+      ],
+      "spoken_text": "802.3번은 CSMA/CD 방식에서 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "제어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-064",
+      "segment_index": 64,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:00:50",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 50,
+      "end_seconds": 60,
+      "duration_seconds": 10,
+      "timeline_summary": "IEEE 802.4 토큰 버스 방식 표준 설명",
+      "screen_text_lines": [
+        "802.4",
+        "토큰 버스 방식의 매체 접근 제어 계층에 관한 규약"
+      ],
+      "screen_text": "802.4\n토큰 버스 방식의 매체 접근 제어 계층에 관한 규약",
+      "spoken_sentences": [
+        "802.4번이다 그러면 토큰 버스 방식이요.",
+        "토큰 버스 방식의 우리 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고"
+      ],
+      "spoken_text": "802.4번이다 그러면 토큰 버스 방식이요. 토큰 버스 방식의 우리 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "제어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-065",
+      "segment_index": 65,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:01:00",
+      "end_time_hms": "00:01:07",
+      "start_seconds": 60,
+      "end_seconds": 67,
+      "duration_seconds": 7,
+      "timeline_summary": "IEEE 802.5 토큰 링 방식 표준 설명",
+      "screen_text_lines": [
+        "802.5",
+        "토큰 링 방식의 매체 접근 제어 계층에 관한 규약"
+      ],
+      "screen_text": "802.5\n토큰 링 방식의 매체 접근 제어 계층에 관한 규약",
+      "spoken_sentences": [
+        "802.5번이다 그러면 얘는 토큰 링 방식.",
+        "토큰 링 방식의 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고"
+      ],
+      "spoken_text": "802.5번이다 그러면 얘는 토큰 링 방식. 토큰 링 방식의 매체 접근 제어 계층에 관한 그런 규약을 보고 얘기하고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "제어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-066",
+      "segment_index": 66,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:01:07",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 67,
+      "end_seconds": 71,
+      "duration_seconds": 4,
+      "timeline_summary": "IEEE 802.6 도시형 통신망(MAN) 표준 설명",
+      "screen_text_lines": [
+        "802.6",
+        "도시형 통신망(MAN)에 관한 규약"
+      ],
+      "screen_text": "802.6\n도시형 통신망(MAN)에 관한 규약",
+      "spoken_sentences": [
+        "802.6번은 도시형 통신망 MAN에 관한 그런 규약입니다."
+      ],
+      "spoken_text": "802.6번은 도시형 통신망 MAN에 관한 그런 규약입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "규약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-067",
+      "segment_index": 67,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:01:11",
+      "end_time_hms": "00:01:17",
+      "start_seconds": 71,
+      "end_seconds": 77,
+      "duration_seconds": 6,
+      "timeline_summary": "IEEE 802.9 음성/데이터 네트워크 표준 설명",
+      "screen_text_lines": [
+        "802.9",
+        "종합 음성/데이터 네트워크에 관한 규약"
+      ],
+      "screen_text": "802.9\n종합 음성/데이터 네트워크에 관한 규약",
+      "spoken_sentences": [
+        "그 다음에 802.9번은 종합 음성 데이터 네트워크에 관한 그런 규약을 보고 얘기하고"
+      ],
+      "spoken_text": "그 다음에 802.9번은 종합 음성 데이터 네트워크에 관한 그런 규약을 보고 얘기하고",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "규약",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-068",
+      "segment_index": 68,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:01:17",
+      "end_time_hms": "00:01:39",
+      "start_seconds": 77,
+      "end_seconds": 99,
+      "duration_seconds": 22,
+      "timeline_summary": "IEEE 802.11 무선 LAN 표준의 중요성 언급",
+      "screen_text_lines": [
+        "802.11",
+        "무선 LAN에 관한 규약"
+      ],
+      "screen_text": "802.11\n무선 LAN에 관한 규약",
+      "spoken_sentences": [
+        "802.11번이다 그러면 무선 LAN에 관한 그런 규약을 보고 얘기하는 겁니다.",
+        "그럼 이 중에서 우리가 지금 현재 제일 많이 쓰고 있는 게 뭐예요?",
+        "무선 LAN을 우리가 제일 많이 사용하고 있죠?",
+        "해서 이 무선 LAN이 시험문제 나올 확률이 높겠죠 그만큼?",
+        "자 그럼 무선 LAN 802.11번에 대해서 좀 더 자세히 살펴보자구요."
+      ],
+      "spoken_text": "802.11번이다 그러면 무선 LAN에 관한 그런 규약을 보고 얘기하는 겁니다. 그럼 이 중에서 우리가 지금 현재 제일 많이 쓰고 있는 게 뭐예요? 무선 LAN을 우리가 제일 많이 사용하고 있죠? 해서 이 무선 LAN이 시험문제 나올 확률이 높겠죠 그만큼? 자 그럼 무선 LAN 802.11번에 대해서 좀 더 자세히 살펴보자구요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "LAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-069",
+      "segment_index": 69,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:01:39",
+      "end_time_hms": "00:02:02",
+      "start_seconds": 99,
+      "end_seconds": 122,
+      "duration_seconds": 23,
+      "timeline_summary": "IEEE 802.11 초기 버전 상세 설명",
+      "screen_text_lines": [
+        "802.11의 버전",
+        "버전",
+        "내용",
+        "802.11 (초기 버전)"
+      ],
+      "screen_text": "802.11의 버전\n버전\n내용\n802.11 (초기 버전)",
+      "spoken_sentences": [
+        "자 802.11번 맨 처음에 초창기에 나온 802.11번은 2.4기가 헤르츠의 대역 전파 그리고 CSMA/CA라는 그 기술을 사용해서 최고 2메가 비피에스까지 그렇게 전송 속도를 지원해 주는 게 우리 802.11번이요.",
+        "얘는 2.4기가 헤르츠 대역 전파를 쓴다 그랬어요."
+      ],
+      "spoken_text": "자 802.11번 맨 처음에 초창기에 나온 802.11번은 2.4기가 헤르츠의 대역 전파 그리고 CSMA/CA라는 그 기술을 사용해서 최고 2메가 비피에스까지 그렇게 전송 속도를 지원해 주는 게 우리 802.11번이요. 얘는 2.4기가 헤르츠 대역 전파를 쓴다 그랬어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-070",
+      "segment_index": 70,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:02:02",
+      "end_time_hms": "00:02:26",
+      "start_seconds": 122,
+      "end_seconds": 146,
+      "duration_seconds": 24,
+      "timeline_summary": "IEEE 802.11a 버전 상세 설명",
+      "screen_text_lines": [
+        "802.11a",
+        "5GHz 대역의 전파를 사용하며, OFDM 기술을 사용해 최고 54Mbps 까지의 전송 속도를 지원함"
+      ],
+      "screen_text": "802.11a\n5GHz 대역의 전파를 사용하며, OFDM 기술을 사용해 최고 54Mbps 까지의 전송 속도를 지원함",
+      "spoken_sentences": [
+        "그 다음에 만들어 놓은 게 802.11.a요.",
+        "11.a를 만들었는데 얘는 5기가 대역의 전파를 사용하게 그렇게 만들어진 거고요.",
+        "OFDM이라는 요 기술을 사용해서 최고 54메가 비피에스까지 전송 속도를 지원합니다.",
+        "여기서 OFDM이라는 거는 직교 주파수 분할 다중화 방식을 보고 우리가 얘기해요."
+      ],
+      "spoken_text": "그 다음에 만들어 놓은 게 802.11.a요. 11.a를 만들었는데 얘는 5기가 대역의 전파를 사용하게 그렇게 만들어진 거고요. OFDM이라는 요 기술을 사용해서 최고 54메가 비피에스까지 전송 속도를 지원합니다. 여기서 OFDM이라는 거는 직교 주파수 분할 다중화 방식을 보고 우리가 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-071",
+      "segment_index": 71,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:02:26",
+      "end_time_hms": "00:03:07",
+      "start_seconds": 146,
+      "end_seconds": 187,
+      "duration_seconds": 41,
+      "timeline_summary": "IEEE 802.11b 버전 상세 설명",
+      "screen_text_lines": [
+        "802.11b",
+        "802.11 초기 버전의 개선안으로 등장하였으며, 초기 버전의 대역 전파와 기술을 사용해 최고 11Mbps의 전송 속도로 기존에 비해 5배 이상 빠르게 개선되었음"
+      ],
+      "screen_text": "802.11b\n802.11 초기 버전의 개선안으로 등장하였으며, 초기 버전의 대역 전파와 기술을 사용해 최고 11Mbps의 전송 속도로 기존에 비해 5배 이상 빠르게 개선되었음",
+      "spoken_sentences": [
+        "그 다음에 802.11b요.",
+        "b.",
+        "얘는 맨 처음에 만들어진 거 있죠 802.11번.",
+        "그 초기 버전의 개선, 개선해서 만들어 놓은 거예요.",
+        "얘는 초기 버전의 대역 전파와 우리 기술을 사용해서 최고 11메가 비피에스 전송 속도로 그렇게 전송할 수 있게 만들어 놓은 게 우리 802.11.b요 b.",
+        "우리 802.11번 초기 버전은 2메가 비피에스까지라 그랬잖아요 최대.",
+        "근데 얘는 그거를 개선해서 11메가 비피에스 전송 속도로 전송할 수 있게 그렇게 만들었다고요.",
+        "해서 기존 거에 비해서 약 5배 이상 빠르게 그렇게 개선시켜 놓은 게 11.b요."
+      ],
+      "spoken_text": "그 다음에 802.11b요. b. 얘는 맨 처음에 만들어진 거 있죠 802.11번. 그 초기 버전의 개선, 개선해서 만들어 놓은 거예요. 얘는 초기 버전의 대역 전파와 우리 기술을 사용해서 최고 11메가 비피에스 전송 속도로 그렇게 전송할 수 있게 만들어 놓은 게 우리 802.11.b요 b. 우리 802.11번 초기 버전은 2메가 비피에스까지라 그랬잖아요 최대. 근데 얘는 그거를 개선해서 11메가 비피에스 전송 속도로 전송할 수 있게 그렇게 만들었다고요. 해서 기존 거에 비해서 약 5배 이상 빠르게 그렇게 개선시켜 놓은 게 11.b요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-072",
+      "segment_index": 72,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:03:07",
+      "end_time_hms": "00:03:35",
+      "start_seconds": 187,
+      "end_seconds": 215,
+      "duration_seconds": 28,
+      "timeline_summary": "IEEE 802.11e 버전 및 QoS 기능 설명",
+      "screen_text_lines": [
+        "802.11e",
+        "802.11의 부가 기능 표준으로, QoS 기능이 지원되도록 하기 위해 매체 접근 제어(MAC) 계층에 해당하는 부분을 수정하였음"
+      ],
+      "screen_text": "802.11e\n802.11의 부가 기능 표준으로, QoS 기능이 지원되도록 하기 위해 매체 접근 제어(MAC) 계층에 해당하는 부분을 수정하였음",
+      "spoken_sentences": [
+        "그 다음에 11.e요.",
+        "11.e라는 거는 우리 802.11번 있죠?",
+        "그 11번에다가 부가 기능을 표준으로 해서 QoS 기능이 지원되도록 하기 위해서 매체 접근 제어 MAC 계층에 해당하는 그런 부분들을 수정해 놨습니다.",
+        "여기서 QoS라는 거는 우리 퀄리티 오브 서비스의 약자예요.",
+        "해서 얘가 통신 네트워크상에서 우리 데이터를 전송하는 그 품질을 나타내는 그 규격을 보고 우리가 QoS라고 합니다."
+      ],
+      "spoken_text": "그 다음에 11.e요. 11.e라는 거는 우리 802.11번 있죠? 그 11번에다가 부가 기능을 표준으로 해서 QoS 기능이 지원되도록 하기 위해서 매체 접근 제어 MAC 계층에 해당하는 그런 부분들을 수정해 놨습니다. 여기서 QoS라는 거는 우리 퀄리티 오브 서비스의 약자예요. 해서 얘가 통신 네트워크상에서 우리 데이터를 전송하는 그 품질을 나타내는 그 규격을 보고 우리가 QoS라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "표준",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "제어",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-073",
+      "segment_index": 73,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:03:35",
+      "end_time_hms": "00:04:09",
+      "start_seconds": 215,
+      "end_seconds": 249,
+      "duration_seconds": 34,
+      "timeline_summary": "IEEE 802.11g 버전 상세 설명",
+      "screen_text_lines": [
+        "802.11g",
+        "2.4GHz 대역의 전파를 사용하지만 5GHz 대역의 전파를 사용하는 802.11a와 동일한 최고 54Mbps까지의 전송 속도를 지원함"
+      ],
+      "screen_text": "802.11g\n2.4GHz 대역의 전파를 사용하지만 5GHz 대역의 전파를 사용하는 802.11a와 동일한 최고 54Mbps까지의 전송 속도를 지원함",
+      "spoken_sentences": [
+        "그 다음에 802.11.g요.",
+        "11.g요.",
+        "얘는 우리 초기 버전의 2.4기가 헤르츠 그 대역 전파를 쓴다 그랬죠?",
+        "얘도 마찬가지로 2.4기가 헤르츠 대역 전파를 사용하는데 우리 802.11.a가 5기가 헤르츠의 대역을 쓴다 그랬어요.",
+        "그때 최고 54메가 비피에스까지 그렇게 전송 속도를 지원한다 그랬죠.",
+        "얘는 2.4기가 헤르츠의 전파를 사용하는데 최고 54메가 비피에스까지 그렇게 전송 속도를 지원하게끔 그렇게 만들어 놓은 게 우리 11.g 버전이요."
+      ],
+      "spoken_text": "그 다음에 802.11.g요. 11.g요. 얘는 우리 초기 버전의 2.4기가 헤르츠 그 대역 전파를 쓴다 그랬죠? 얘도 마찬가지로 2.4기가 헤르츠 대역 전파를 사용하는데 우리 802.11.a가 5기가 헤르츠의 대역을 쓴다 그랬어요. 그때 최고 54메가 비피에스까지 그렇게 전송 속도를 지원한다 그랬죠. 얘는 2.4기가 헤르츠의 전파를 사용하는데 최고 54메가 비피에스까지 그렇게 전송 속도를 지원하게끔 그렇게 만들어 놓은 게 우리 11.g 버전이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-074",
+      "segment_index": 74,
+      "subtopic_index": 3,
+      "subtopic_id": "0412_412",
+      "subtopic_title": "LAN의 표준 규격 – 802.11의 버전",
+      "subtopic_sequence": 412,
+      "subtopic_number": "412",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3aTU0nrC2Bc",
+      "start_time_hms": "00:04:09",
+      "end_time_hms": "00:04:54",
+      "start_seconds": 249,
+      "end_seconds": 294,
+      "duration_seconds": 45,
+      "timeline_summary": "IEEE 802.11n 버전 상세 설명 및 강의 마무리",
+      "screen_text_lines": [
+        "802.11n",
+        "2.4GHz 대역과 5GHz 대역을 사용하는 규격으로, 최고 600Mbps까지의 전송 속도를 지원함"
+      ],
+      "screen_text": "802.11n\n2.4GHz 대역과 5GHz 대역을 사용하는 규격으로, 최고 600Mbps까지의 전송 속도를 지원함",
+      "spoken_sentences": [
+        "그 다음에 11.n이 있습니다.",
+        "11.n이라는 거는 2.4기가 헤르츠 대역 그리고 5기가 헤르츠 대역 이 두 가지를 모두 다 사용하는 그런 규격을 보고 우리가 802.11.n이라고 그렇게 불러요.",
+        "얘는 최고 전송 속도가 600메가 비피에스까지 그렇게 속도를 지원해 줍니다.",
+        "해서 우리 802.11번이 무선이라 그랬어요 무선.",
+        "무선 LAN에 관한 것도 지금처럼 이렇게 여러가지가 있어요.",
+        "각각 뭐가 뭔지 그냥 구분만 할 수 있게 그렇게 보고 지나가세요.",
+        "얘가 그냥 11번 그 다음에 11a, 11b, 11e, 11g, 11n하고 이렇게 여섯 가지가 있습니다."
+      ],
+      "spoken_text": "그 다음에 11.n이 있습니다. 11.n이라는 거는 2.4기가 헤르츠 대역 그리고 5기가 헤르츠 대역 이 두 가지를 모두 다 사용하는 그런 규격을 보고 우리가 802.11.n이라고 그렇게 불러요. 얘는 최고 전송 속도가 600메가 비피에스까지 그렇게 속도를 지원해 줍니다. 해서 우리 802.11번이 무선이라 그랬어요 무선. 무선 LAN에 관한 것도 지금처럼 이렇게 여러가지가 있어요. 각각 뭐가 뭔지 그냥 구분만 할 수 있게 그렇게 보고 지나가세요. 얘가 그냥 11번 그 다음에 11a, 11b, 11e, 11g, 11n하고 이렇게 여섯 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "IEEE",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 48
+        },
+        {
+          "keyword": "버전",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "관한",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "LAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-075",
+      "segment_index": 75,
+      "subtopic_index": 4,
+      "subtopic_id": "0413_413",
+      "subtopic_title": "WPA",
+      "subtopic_sequence": 413,
+      "subtopic_number": "413",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "WPA 학습 개요",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 WPA에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 WPA에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "WPA 학습 개요",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-076",
+      "segment_index": 76,
+      "subtopic_index": 4,
+      "subtopic_id": "0413_413",
+      "subtopic_title": "WPA",
+      "subtopic_sequence": 413,
+      "subtopic_number": "413",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 8,
+      "end_seconds": 32,
+      "duration_seconds": 24,
+      "timeline_summary": "WPA의 정의 및 약어 설명",
+      "screen_text_lines": [
+        "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함."
+      ],
+      "screen_text": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+      "spoken_sentences": [
+        "자, 우리 WPA요.",
+        "얘는 W가 우리 와이파이의 약자입니다.",
+        "그리고 우리 프로텍티드, 여기에 약자가 우리 P고요.",
+        "그리고 우리 액세스의 약자 A 써서 우리가 WPA, 그렇게 부르는데 우리 와이파이에서 안전한, 안전한 그 접근, 그 접근을 지원하는 그 표준이 우리 WPA요."
+      ],
+      "spoken_text": "자, 우리 WPA요. 얘는 W가 우리 와이파이의 약자입니다. 그리고 우리 프로텍티드, 여기에 약자가 우리 P고요. 그리고 우리 액세스의 약자 A 써서 우리가 WPA, 그렇게 부르는데 우리 와이파이에서 안전한, 안전한 그 접근, 그 접근을 지원하는 그 표준이 우리 WPA요.",
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "WLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "무선",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "Wi-Fi Protected Access",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-077",
+      "segment_index": 77,
+      "subtopic_index": 4,
+      "subtopic_id": "0413_413",
+      "subtopic_title": "WPA",
+      "subtopic_sequence": 413,
+      "subtopic_number": "413",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:52",
+      "start_seconds": 32,
+      "end_seconds": 52,
+      "duration_seconds": 20,
+      "timeline_summary": "무선 랜 인증 및 암호화 표준으로서의 WPA",
+      "screen_text_lines": [
+        "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함."
+      ],
+      "screen_text": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+      "spoken_sentences": [
+        "얘는 와이파이에서 제정한 그런 무선 랜이요.",
+        "무선 랜에서 우리 인증이나 암호화와 관련된 그런 표준을 보고 우리가 WPA, 그렇게 부르는 거고, 이 WPA는 IEEE 802.11i요.",
+        "802.11i 그 버전에서 지원을 합니다."
+      ],
+      "spoken_text": "얘는 와이파이에서 제정한 그런 무선 랜이요. 무선 랜에서 우리 인증이나 암호화와 관련된 그런 표준을 보고 우리가 WPA, 그렇게 부르는 거고, 이 WPA는 IEEE 802.11i요. 802.11i 그 버전에서 지원을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "WLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "무선",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "Wi-Fi Protected Access",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-078",
+      "segment_index": 78,
+      "subtopic_index": 4,
+      "subtopic_id": "0413_413",
+      "subtopic_title": "WPA",
+      "subtopic_sequence": 413,
+      "subtopic_number": "413",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "start_time_hms": "00:00:52",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 52,
+      "end_seconds": 71,
+      "duration_seconds": 19,
+      "timeline_summary": "WPA의 특징 요약",
+      "screen_text_lines": [
+        "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함."
+      ],
+      "screen_text": "WPA(Wi-Fi Protected Access)는 Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준으로, IEEE 802.11i 버전에서 지원함.",
+      "spoken_sentences": [
+        "해서 이 WPA의 약자만 정확하게 알고 있어도 우리가 쉽게 쉽게 이 WPA가 뭔지 알 수가 있는 거죠.",
+        "해서 얘는 와이파이에서 제정한 그런 무선 랜이요.",
+        "무선 랜의 인증이나 암호화와 관련된 그런 표준을 보고 얘기한다라고 기억하시면 되고"
+      ],
+      "spoken_text": "해서 이 WPA의 약자만 정확하게 알고 있어도 우리가 쉽게 쉽게 이 WPA가 뭔지 알 수가 있는 거죠. 해서 얘는 와이파이에서 제정한 그런 무선 랜이요. 무선 랜의 인증이나 암호화와 관련된 그런 표준을 보고 얘기한다라고 기억하시면 되고",
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "WLAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "무선",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 13
+        },
+        {
+          "keyword": "Wi-Fi Protected Access",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_090-seg-079",
+      "segment_index": 79,
+      "subtopic_index": 4,
+      "subtopic_id": "0413_413",
+      "subtopic_title": "WPA",
+      "subtopic_sequence": 413,
+      "subtopic_number": "413",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=_gCTZefEQl4",
+      "start_time_hms": "00:01:11",
+      "end_time_hms": "00:01:36",
+      "start_seconds": 71,
+      "end_seconds": 96,
+      "duration_seconds": 25,
+      "timeline_summary": "WPA의 개선 버전인 WPA2 설명",
+      "screen_text_lines": [
+        "※ WPA2(Wi-Fi Protected Access 2)",
+        "IEEE 802.11i 표준을 완전히 수용하지 못했던 WPA를 개선한 버전"
+      ],
+      "screen_text": "※ WPA2(Wi-Fi Protected Access 2)\nIEEE 802.11i 표준을 완전히 수용하지 못했던 WPA를 개선한 버전",
+      "spoken_sentences": [
+        "참고적으로 요것도 좀 기억 좀 해 두세요.",
+        "우리 WPA2라는 것도 있습니다.",
+        "얘는 IEEE 802.11i요.",
+        "11i 그 표준을 완전히 수용하지 못했던 그런 WPA, 얘를 개선한 그런 버전이 우리 WPA2라는 것도 있더라.",
+        "요것도 같이 기억 좀 하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "참고적으로 요것도 좀 기억 좀 해 두세요. 우리 WPA2라는 것도 있습니다. 얘는 IEEE 802.11i요. 11i 그 표준을 완전히 수용하지 못했던 그런 WPA, 얘를 개선한 그런 버전이 우리 WPA2라는 것도 있더라. 요것도 같이 기억 좀 하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "WPA",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "Wi-Fi Protected Access",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 12
+        },
+        {
+          "keyword": "WPA의 개선 버전인 WPA2 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        },
+        {
+          "keyword": "IEEE",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    }
+  ]
+}

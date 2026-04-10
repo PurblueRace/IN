@@ -1,0 +1,805 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_054",
+    "sequence": 54,
+    "title": "데이터 조작문",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 5,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_197",
+      "chapter_204",
+      "chapter_118"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_1e0956ac5b6207ee",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          34
+        ],
+        "page_span": {
+          "start_page": 34,
+          "end_page": 34
+        },
+        "source_explanation": "UNION은 두 릴레이션의 합집합을 수행하며, 두 릴레이션의 공통 튜플, 즉 중복되는 튜플은 한 번만 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "집합 연산자"
+        ],
+        "chapter_label": "집합 연산자",
+        "chapter_key": "데이터베이스 구축 > SQL > 집합 연산자",
+        "chapter_id": "chapter_197"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_054",
+        "topic_title": "데이터 조작문",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 조작문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "집합 연산자에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다."
+          },
+          {
+            "label": "2",
+            "text": "UNION ALL은 중복된 행을 포함하여 두 SELECT문의 조회 결과를 모두 출력한다."
+          },
+          {
+            "label": "3",
+            "text": "두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자는 INTERSECT이다."
+          },
+          {
+            "label": "4",
+            "text": "EXCEPT는 두 릴레이션의 차집합 연산을 수행하기 때문에 첫 번째 릴레이션의 튜플보다 많은 수의 튜플이 출력될 수 없다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다."
+        ],
+        "answer_text": "UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다."
+      },
+      "explanation": {
+        "source_text": "UNION은 두 릴레이션의 합집합을 수행하며, 두 릴레이션의 공통 튜플, 즉 중복되는 튜플은 한 번만 출력합니다.",
+        "summary": "SQL의 집합 연산자인 UNION, INTERSECT, EXCEPT의 개념을 묻는 문제입니다.",
+        "why_correct": [
+          "UNION은 교집합이 아니라 합집합(OR) 연산입니다."
+        ],
+        "why_others_wrong": [
+          "UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "UNION",
+          "UNION ALL",
+          "INTERSECT",
+          "EXCEPT"
+        ],
+        "memory_cues": [
+          "UNION = 합집합",
+          "INTERSECT = 교집합"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.'와 일치합니다. UNION은 교집합이 아니라 합집합(OR) 연산입니다."
+          },
+          {
+            "label": "2",
+            "text": "UNION ALL은 중복된 행을 포함하여 두 SELECT문의 조회 결과를 모두 출력한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.'인데 이 선택지는 'UNION ALL은 중복된 행을 포함하여 두 SELECT문의 조회 결과를 모두 출력한다.'이므로 일치하지 않습니다. UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자는 INTERSECT이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.'인데 이 선택지는 '두 SELECT문의 조회 결과 중 공통된 행만 출력하는 집합 연산자는 INTERSECT이다.'이므로 일치하지 않습니다. UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "EXCEPT는 두 릴레이션의 차집합 연산을 수행하기 때문에 첫 번째 릴레이션의 튜플보다 많은 수의 튜플이 출력될 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.'인데 이 선택지는 'EXCEPT는 두 릴레이션의 차집합 연산을 수행하기 때문에 첫 번째 릴레이션의 튜플보다 많은 수의 튜플이 출력될 수 없다.'이므로 일치하지 않습니다. UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 집합 연산자에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. UNION, UNION ALL, INTERSECT, EXCEPT",
+          "정답 판단 근거를 적용합니다. UNION은 교집합이 아니라 합집합(OR) 연산입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'UNION'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'UNION ALL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'INTERSECT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'EXCEPT'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. UNION = 합집합",
+          "암기 포인트를 떠올립니다. INTERSECT = 교집합"
+        ],
+        "detailed_summary": "SQL의 집합 연산자인 UNION, INTERSECT, EXCEPT의 개념을 묻는 문제입니다. UNION은 두 릴레이션의 합집합을 수행하며, 두 릴레이션의 공통 튜플, 즉 중복되는 튜플은 한 번만 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 집합 연산자에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 UNION은 두 릴레이션의 교집합을 수행하기 때문에 두 릴레이션의 공통 튜플 수와 관계가 없다.'와 일치합니다. UNION은 교집합이 아니라 합집합(OR) 연산입니다. 시험 포인트는 UNION ALL은 중복 허용 합집합, INTERSECT는 교집합, EXCEPT는 차집합에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "집합 연산자",
+        "UNION",
+        "INTERSECT",
+        "EXCEPT",
+        "합집합"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_38fdfb27a2ee5a1d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | 삽입문의 문법인 'INSERT INTO 테이블명(속성명) VALUES(값)'을 올바르게 적용한 것은 3번입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 조작문"
+        ],
+        "chapter_label": "데이터 조작문",
+        "chapter_key": "데이터베이스 구축 > 데이터 조작문",
+        "chapter_id": "chapter_204"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_054",
+        "topic_title": "데이터 조작문",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 조작문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "45. SQL문에서 STUDENT(SNO, SNAME, YEAR, DEPT) 테이블에 학번 600, 성명 홍길동, 학년 2학년인 학생 튜플을 삽입하는 명령으로 옳은 것은(단, SNO는 학번, SNAME은 성명, YEAR는 학년, DEPT는 학과, 교수 구분 필드임)?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "INSERT STUDENT INTO VALUES (600, '홍길동', 2);"
+          },
+          {
+            "label": "2",
+            "text": "INSERT FROM STUDENT VALUES (600, '홍길동', 2);"
+          },
+          {
+            "label": "3",
+            "text": "INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);"
+          },
+          {
+            "label": "4",
+            "text": "INSERT TO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);"
+        ],
+        "answer_text": "INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 삽입문의 문법인 'INSERT INTO 테이블명(속성명) VALUES(값)'을 올바르게 적용한 것은 3번입니다.",
+        "summary": "SQL의 데이터 삽입문(INSERT)의 정확한 구문을 묻는 문제입니다.",
+        "why_correct": [
+          "INSERT INTO [테이블명](컬럼리스트) VALUES (값리스트) 형식이 표준 SQL 문법입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+        ],
+        "key_concepts": [
+          "INSERT INTO ... VALUES ..."
+        ],
+        "memory_cues": [
+          "인투(INTO) 밸류스(VALUES)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "INSERT STUDENT INTO VALUES (600, '홍길동', 2);",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'인데 이 선택지는 'INSERT STUDENT INTO VALUES (600, '홍길동', 2);'이므로 일치하지 않습니다. 1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "INSERT FROM STUDENT VALUES (600, '홍길동', 2);",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'인데 이 선택지는 'INSERT FROM STUDENT VALUES (600, '홍길동', 2);'이므로 일치하지 않습니다. 1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'와 일치합니다. INSERT INTO [테이블명](컬럼리스트) VALUES (값리스트) 형식이 표준 SQL 문법입니다."
+          },
+          {
+            "label": "4",
+            "text": "INSERT TO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'인데 이 선택지는 'INSERT TO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'이므로 일치하지 않습니다. 1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. SQL문에서 STUDENT(SNO, SNAME, YEAR, DEPT) 테이블에 학번 600, 성명 홍길동, 학년 2학년인 학생 튜플을 삽입하는 명령으로 옳은 것은(단, SNO는 학번, SNAME은 성명, YEAR는 학년, DEPT는 학과, 교수 구분 필드임)?",
+          "핵심 개념을 떠올립니다. INSERT INTO ... VALUES ...",
+          "정답 판단 근거를 적용합니다. INSERT INTO [테이블명](컬럼리스트) VALUES (값리스트) 형식이 표준 SQL 문법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2, 4번은 INTO 키워드 누락, FROM 사용, TO 사용 등 문법적으로 틀린 표현을 포함하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'INSERT INTO ... VALUES ...'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인투(INTO) 밸류스(VALUES)"
+        ],
+        "detailed_summary": "SQL의 데이터 삽입문(INSERT)의 정확한 구문을 묻는 문제입니다. 전문가의 조언 | 삽입문의 문법인 'INSERT INTO 테이블명(속성명) VALUES(값)'을 올바르게 적용한 것은 3번입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. SQL문에서 STUDENT(SNO, SNAME, YEAR, DEPT) 테이블에 학번 600, 성명 홍길동, 학년 2학년인 학생 튜플을 삽입하는 명령으로 옳은 것은(단, SNO는 학번, SNAME은 성명, YEAR는 학년, DEPT는 학과, 교수 구분 필드임)? 정답입니다. 이 선택지는 실제 정답인 '3번 INSERT INTO STUDENT(SNO, SNAME, YEAR) VALUES (600, '홍길동', 2);'와 일치합니다. INSERT INTO [테이블명](컬럼리스트) VALUES (값리스트) 형식이 표준 SQL 문법입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "INSERT",
+        "데이터 삽입",
+        "DML"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8a612713039688d5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | UPDATE문의 문법인 'UPDATE 테이블명 SET 속성명=데이터 WHERE 조건'에 따라 괄호에 들어갈 명령어는 SET입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 조작문"
+        ],
+        "chapter_label": "데이터 조작문",
+        "chapter_key": "데이터베이스 구축 > 데이터 조작문",
+        "chapter_id": "chapter_204"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_054",
+        "topic_title": "데이터 조작문",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 조작문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "49. 다음 SQL문의 빈 칸에 들어갈 내용은?\nupdate 직원\n( ) 급여 = 급여 * 1.1\nwhere 급여 <= 100000 or 입사일 < 19990101;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "into"
+          },
+          {
+            "label": "2",
+            "text": "Set"
+          },
+          {
+            "label": "3",
+            "text": "from"
+          },
+          {
+            "label": "4",
+            "text": "Select"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Set"
+        ],
+        "answer_text": "Set"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | UPDATE문의 문법인 'UPDATE 테이블명 SET 속성명=데이터 WHERE 조건'에 따라 괄호에 들어갈 명령어는 SET입니다.",
+        "summary": "SQL 데이터 수정문(UPDATE)의 기본 구문을 완성하는 문제입니다.",
+        "why_correct": [
+          "UPDATE 문에서 값을 변경할 컬럼을 지정할 때는 SET 키워드를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+        ],
+        "key_concepts": [
+          "UPDATE [테이블] SET [컬럼]=[값] WHERE [조건]"
+        ],
+        "memory_cues": [
+          "업데이트 셋(UPDATE SET)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "into",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Set'인데 이 선택지는 'into'이므로 일치하지 않습니다. into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+          },
+          {
+            "label": "2",
+            "text": "Set",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Set'와 일치합니다. UPDATE 문에서 값을 변경할 컬럼을 지정할 때는 SET 키워드를 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "from",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Set'인데 이 선택지는 'from'이므로 일치하지 않습니다. into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+          },
+          {
+            "label": "4",
+            "text": "Select",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Set'인데 이 선택지는 'Select'이므로 일치하지 않습니다. into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 다음 SQL문의 빈 칸에 들어갈 내용은? update 직원 ( ) 급여 = 급여 * 1.1 where 급여 <= 100000 or 입사일 < 19990101;",
+          "핵심 개념을 떠올립니다. UPDATE [테이블] SET [컬럼]=[값] WHERE [조건]",
+          "정답 판단 근거를 적용합니다. UPDATE 문에서 값을 변경할 컬럼을 지정할 때는 SET 키워드를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "into는 INSERT, from은 SELECT/DELETE, Select는 조회 시 사용되는 키워드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'UPDATE [테이블] SET [컬럼]=[값] WHERE [조건]'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 업데이트 셋(UPDATE SET)"
+        ],
+        "detailed_summary": "SQL 데이터 수정문(UPDATE)의 기본 구문을 완성하는 문제입니다. 전문가의 조언 | UPDATE문의 문법인 'UPDATE 테이블명 SET 속성명=데이터 WHERE 조건'에 따라 괄호에 들어갈 명령어는 SET입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 다음 SQL문의 빈 칸에 들어갈 내용은? update 직원 ( ) 급여 = 급여 * 1.1 where 급여 <= 100000 or 입사일 < 19990101; 정답입니다. 이 선택지는 실제 정답인 '2번 Set'와 일치합니다. UPDATE 문에서 값을 변경할 컬럼을 지정할 때는 SET 키워드를 사용합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "UPDATE",
+        "SET",
+        "데이터 수정"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_874cd30392e35311",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 151
+        },
+        "source_explanation": "전문가의 조언 | SQL 문장은 절별로 분리하여 이해하면 쉽습니다. SELECT로 검색한 결과를 INSERT INTO로 삽입하는 구문입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "데이터 조작문"
+        ],
+        "chapter_label": "데이터 조작문",
+        "chapter_key": "3과목 데이터베이스 구축 > 데이터 조작문",
+        "chapter_id": "chapter_118"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_054",
+        "topic_title": "데이터 조작문",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 조작문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "44. 다음 SQL 문장이 뜻하는 것은 무엇인가?\nINSERT INTO 컴퓨터과테이블(학번, 이름, 학년)\nSELECT 학번, 이름, 학년\nFROM 학생테이블\nWHERE 학과='컴퓨터';",
+        "choices": [
+          {
+            "label": "1",
+            "text": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하라."
+          },
+          {
+            "label": "2",
+            "text": "학생테이블에 학과가 컴퓨터인 사람의 학번, 이름, 학년을 삽입하라."
+          },
+          {
+            "label": "3",
+            "text": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라."
+          },
+          {
+            "label": "4",
+            "text": "컴퓨터과테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 학생테이블에 삽입하라."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라."
+        ],
+        "answer_text": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | SQL 문장은 절별로 분리하여 이해하면 쉽습니다. SELECT로 검색한 결과를 INSERT INTO로 삽입하는 구문입니다.",
+        "summary": "INSERT INTO ... SELECT 구문의 동작 방식을 이해하는 문제입니다.",
+        "why_correct": [
+          "이 구문은 SELECT 문을 통해 추출된 결과 집합을 지정된 테이블(컴퓨터과테이블)에 한꺼번에 삽입하는 명령입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+        ],
+        "key_concepts": [
+          "INSERT INTO SELECT",
+          "대량 삽입"
+        ],
+        "memory_cues": [
+          "SELECT 결과를 INSERT 한다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하라.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.'인데 이 선택지는 '학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하라.'이므로 일치하지 않습니다. 1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+          },
+          {
+            "label": "2",
+            "text": "학생테이블에 학과가 컴퓨터인 사람의 학번, 이름, 학년을 삽입하라.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.'인데 이 선택지는 '학생테이블에 학과가 컴퓨터인 사람의 학번, 이름, 학년을 삽입하라.'이므로 일치하지 않습니다. 1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+          },
+          {
+            "label": "3",
+            "text": "학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.'와 일치합니다. 이 구문은 SELECT 문을 통해 추출된 결과 집합을 지정된 테이블(컴퓨터과테이블)에 한꺼번에 삽입하는 명령입니다."
+          },
+          {
+            "label": "4",
+            "text": "컴퓨터과테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 학생테이블에 삽입하라.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.'인데 이 선택지는 '컴퓨터과테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 학생테이블에 삽입하라.'이므로 일치하지 않습니다. 1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 44. 다음 SQL 문장이 뜻하는 것은 무엇인가? INSERT INTO 컴퓨터과테이블(학번, 이름, 학년) SELECT 학번, 이름, 학년 FROM 학생테이블 WHERE 학과='컴퓨터';",
+          "핵심 개념을 떠올립니다. INSERT INTO SELECT, 대량 삽입",
+          "정답 판단 근거를 적용합니다. 이 구문은 SELECT 문을 통해 추출된 결과 집합을 지정된 테이블(컴퓨터과테이블)에 한꺼번에 삽입하는 명령입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1번은 검색만 설명했고, 2번은 삽입 대상이 틀렸으며, 4번은 원본과 대상 테이블이 바뀌어 설명되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'INSERT INTO SELECT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '대량 삽입'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SELECT 결과를 INSERT 한다"
+        ],
+        "detailed_summary": "INSERT INTO ... SELECT 구문의 동작 방식을 이해하는 문제입니다. 전문가의 조언 | SQL 문장은 절별로 분리하여 이해하면 쉽습니다. SELECT로 검색한 결과를 INSERT INTO로 삽입하는 구문입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 44. 다음 SQL 문장이 뜻하는 것은 무엇인가? INSERT INTO 컴퓨터과테이블(학번, 이름, 학년) SELECT 학번, 이름, 학년 FROM 학생테이블 WHERE 학과='컴퓨터'; 정답입니다. 이 선택지는 실제 정답인 '3번 학생테이블에서 학과가 컴퓨터인 사람의 학번, 이름, 학년을 검색하여 컴퓨터과테이블에 삽입하라.'와 일치합니다. 이 구문은 SELECT 문을 통해 추출된 결과 집합을 지정된 테이블(컴퓨터과테이블)에 한꺼번에 삽입하는 명령입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "INSERT INTO SELECT",
+        "데이터 삽입",
+        "서브쿼리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b599ce51023b22ee",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 151
+        },
+        "source_explanation": "전문가의 조언 | 특정 튜플의 내용을 변경할 때 사용하는 명령문은 UPDATE문입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "데이터 조작문"
+        ],
+        "chapter_label": "데이터 조작문",
+        "chapter_key": "3과목 데이터베이스 구축 > 데이터 조작문",
+        "chapter_id": "chapter_118"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_054",
+        "topic_title": "데이터 조작문",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 조작문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "45. 다음 중 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용하는 명령문은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "INSERT"
+          },
+          {
+            "label": "2",
+            "text": "DELETE"
+          },
+          {
+            "label": "3",
+            "text": "UPDATE"
+          },
+          {
+            "label": "4",
+            "text": "DROP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "UPDATE"
+        ],
+        "answer_text": "UPDATE"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 특정 튜플의 내용을 변경할 때 사용하는 명령문은 UPDATE문입니다.",
+        "summary": "데이터 조작어(DML) 중 수정 명령어를 찾는 문제입니다.",
+        "why_correct": [
+          "UPDATE 문은 기존에 존재하는 레코드(튜플)의 값을 변경할 때 사용합니다."
+        ],
+        "why_others_wrong": [
+          "INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+        ],
+        "key_concepts": [
+          "DML",
+          "UPDATE",
+          "SET"
+        ],
+        "memory_cues": [
+          "수정 = UPDATE"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "INSERT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 UPDATE'인데 이 선택지는 'INSERT'이므로 일치하지 않습니다. INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+          },
+          {
+            "label": "2",
+            "text": "DELETE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 UPDATE'인데 이 선택지는 'DELETE'이므로 일치하지 않습니다. INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+          },
+          {
+            "label": "3",
+            "text": "UPDATE",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 UPDATE'와 일치합니다. UPDATE 문은 기존에 존재하는 레코드(튜플)의 값을 변경할 때 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 UPDATE'인데 이 선택지는 'DROP'이므로 일치하지 않습니다. INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. 다음 중 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용하는 명령문은?",
+          "핵심 개념을 떠올립니다. DML, UPDATE, SET",
+          "정답 판단 근거를 적용합니다. UPDATE 문은 기존에 존재하는 레코드(튜플)의 값을 변경할 때 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "INSERT는 삽입, DELETE는 삭제, DROP은 테이블 자체를 삭제하는 DDL입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'UPDATE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SET'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 수정 = UPDATE"
+        ],
+        "detailed_summary": "데이터 조작어(DML) 중 수정 명령어를 찾는 문제입니다. 전문가의 조언 | 특정 튜플의 내용을 변경할 때 사용하는 명령문은 UPDATE문입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. 다음 중 기본 테이블에 있는 튜플들 중에서 특정 튜플의 내용을 변경할 때 사용하는 명령문은? 정답입니다. 이 선택지는 실제 정답인 '3번 UPDATE'와 일치합니다. UPDATE 문은 기존에 존재하는 레코드(튜플)의 값을 변경할 때 사용합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "UPDATE",
+        "DML",
+        "데이터 수정",
+        "SQL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

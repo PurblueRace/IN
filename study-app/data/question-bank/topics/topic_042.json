@@ -1,0 +1,1643 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_042",
+    "sequence": 42,
+    "title": "데이터 모델과 E-R 다이어그램",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 10,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_201",
+      "chapter_202",
+      "chapter_104",
+      "chapter_117"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_3e1463da3edcf26d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          16
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 16
+        },
+        "source_explanation": "데이터 모델의 3대 구성 요소 중 연산(Operation)은 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델"
+        ],
+        "chapter_label": "데이터 모델",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델",
+        "chapter_id": "chapter_201"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터 모델의 구성 요소 중 데이터베이스 표현된 개체 인스턴스를 처리하는 작업에 대한 명세로서 데이터베이스를 조작하는 기본 도구에 해당하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Operation"
+          },
+          {
+            "label": "2",
+            "text": "Constraint"
+          },
+          {
+            "label": "3",
+            "text": "Structure"
+          },
+          {
+            "label": "4",
+            "text": "Relationship"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Operation"
+        ],
+        "answer_text": "Operation"
+      },
+      "explanation": {
+        "source_text": "데이터 모델의 3대 구성 요소 중 연산(Operation)은 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세입니다.",
+        "summary": "데이터 모델의 3대 요소(구조, 연산, 제약 조건) 중 하나를 찾는 문제입니다.",
+        "why_correct": [
+          "데이터를 조작하고 처리하는 명세는 '연산(Operation)'에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+        ],
+        "key_concepts": [
+          "데이터 모델 3요소",
+          "연산(Operation)"
+        ],
+        "memory_cues": [
+          "조작/처리 = 연산(Operation)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Operation",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Operation'와 일치합니다. 데이터를 조작하고 처리하는 명세는 '연산(Operation)'에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "Constraint",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Operation'인데 이 선택지는 'Constraint'이므로 일치하지 않습니다. Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "Structure",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Operation'인데 이 선택지는 'Structure'이므로 일치하지 않습니다. Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Relationship",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Operation'인데 이 선택지는 'Relationship'이므로 일치하지 않습니다. Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터 모델의 구성 요소 중 데이터베이스 표현된 개체 인스턴스를 처리하는 작업에 대한 명세로서 데이터베이스를 조작하는 기본 도구에 해당하는 것은?",
+          "핵심 개념을 떠올립니다. 데이터 모델 3요소, 연산(Operation)",
+          "정답 판단 근거를 적용합니다. 데이터를 조작하고 처리하는 명세는 '연산(Operation)'에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+        ],
+        "exam_traps": [
+          "Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '데이터 모델 3요소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연산(Operation)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 조작/처리 = 연산(Operation)"
+        ],
+        "detailed_summary": "데이터 모델의 3대 요소(구조, 연산, 제약 조건) 중 하나를 찾는 문제입니다. 데이터 모델의 3대 구성 요소 중 연산(Operation)은 데이터베이스에 저장된 실제 데이터를 처리하는 작업에 대한 명세입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터 모델의 구성 요소 중 데이터베이스 표현된 개체 인스턴스를 처리하는 작업에 대한 명세로서 데이터베이스를 조작하는 기본 도구에 해당하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Operation'와 일치합니다. 데이터를 조작하고 처리하는 명세는 '연산(Operation)'에 해당합니다. 시험 포인트는 Structure는 데이터 구조, Constraint는 데이터의 논리적 제약 사항을 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데이터 모델 구성 요소",
+        "연산",
+        "Operation",
+        "조작 도구"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_529d337502f4ba8e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          16
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 16
+        },
+        "source_explanation": "개체 집합 A의 원소 하나가 B의 여러 개와 대응하고, B의 원소 하나는 A의 하나에만 대응하므로 1:N(일 대 다) 관계입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델"
+        ],
+        "chapter_label": "데이터 모델",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델",
+        "chapter_id": "chapter_201"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "일 대 일"
+          },
+          {
+            "label": "2",
+            "text": "일 대 다"
+          },
+          {
+            "label": "3",
+            "text": "다 대 다"
+          },
+          {
+            "label": "4",
+            "text": "다 대 일"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "일 대 다"
+        ],
+        "answer_text": "일 대 다"
+      },
+      "explanation": {
+        "source_text": "개체 집합 A의 원소 하나가 B의 여러 개와 대응하고, B의 원소 하나는 A의 하나에만 대응하므로 1:N(일 대 다) 관계입니다.",
+        "summary": "엔티티 간의 관계 차수(Cardinality)를 정의하는 문제입니다.",
+        "why_correct": [
+          "A 입장에서 여러 개의 B를 가질 수 있고, B 입장에서는 오직 하나의 A에만 속하므로 1:N 관계가 성립합니다."
+        ],
+        "why_others_wrong": [
+          "1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "key_concepts": [
+          "관계 차수",
+          "1:N 관계"
+        ],
+        "memory_cues": [
+          "A(1) -> B(N) 이므로 일 대 다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "일 대 일",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '일 대 일'이므로 일치하지 않습니다. 1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          },
+          {
+            "label": "2",
+            "text": "일 대 다",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 일 대 다'와 일치합니다. A 입장에서 여러 개의 B를 가질 수 있고, B 입장에서는 오직 하나의 A에만 속하므로 1:N 관계가 성립합니다."
+          },
+          {
+            "label": "3",
+            "text": "다 대 다",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '다 대 다'이므로 일치하지 않습니다. 1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          },
+          {
+            "label": "4",
+            "text": "다 대 일",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '다 대 일'이므로 일치하지 않습니다. 1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가?",
+          "핵심 개념을 떠올립니다. 관계 차수, 1:N 관계",
+          "정답 판단 근거를 적용합니다. A 입장에서 여러 개의 B를 가질 수 있고, B 입장에서는 오직 하나의 A에만 속하므로 1:N 관계가 성립합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "exam_traps": [
+          "1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '관계 차수'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '1:N 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A(1) -> B(N) 이므로 일 대 다"
+        ],
+        "detailed_summary": "엔티티 간의 관계 차수(Cardinality)를 정의하는 문제입니다. 개체 집합 A의 원소 하나가 B의 여러 개와 대응하고, B의 원소 하나는 A의 하나에만 대응하므로 1:N(일 대 다) 관계입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가? 정답입니다. 이 선택지는 실제 정답인 '2번 일 대 다'와 일치합니다. A 입장에서 여러 개의 B를 가질 수 있고, B 입장에서는 오직 하나의 A에만 속하므로 1:N 관계가 성립합니다. 시험 포인트는 1:1은 양쪽 모두 하나씩, N:M은 양쪽 모두 여러 개씩 대응하는 경우입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "개체 관계",
+        "일 대 다",
+        "1:N",
+        "데이터 모델링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_094cb5a70d168f29",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          35
+        ],
+        "page_span": {
+          "start_page": 35,
+          "end_page": 35
+        },
+        "source_explanation": "오너-멤버(Owner-Member) 관계라고도 불리는 데이터 모델은 논리적 데이터 모델 중 하나인 네트워크(망)형 데이터 모델입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델"
+        ],
+        "chapter_label": "데이터 모델",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델",
+        "chapter_id": "chapter_201"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "개체-관계 모델에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "오너-멤버(Owner-Member) 관계라고도 한다."
+          },
+          {
+            "label": "2",
+            "text": "개체 타입과 이들 간의 관계 타입을 기본 요소로 이용하여 현실 세계를 개념적으로 표현한다."
+          },
+          {
+            "label": "3",
+            "text": "E-R 다이어그램에서 개체 타입은 사각형으로 나타낸다."
+          },
+          {
+            "label": "4",
+            "text": "E-R 다이어그램에서 속성은 타원으로 나타낸다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "오너-멤버(Owner-Member) 관계라고도 한다."
+        ],
+        "answer_text": "오너-멤버(Owner-Member) 관계라고도 한다."
+      },
+      "explanation": {
+        "source_text": "오너-멤버(Owner-Member) 관계라고도 불리는 데이터 모델은 논리적 데이터 모델 중 하나인 네트워크(망)형 데이터 모델입니다.",
+        "summary": "개념적 설계 단계에서 사용되는 E-R 모델의 특징과 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "오너-멤버 관계는 계층형이나 네트워크형 모델에서 사용하는 용어입니다. E-R 모델은 개체와 관계를 중심으로 합니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "E-R 모델",
+          "네트워크 모델"
+        ],
+        "memory_cues": [
+          "E-R = 사각형(개체), 마름모(관계), 타원(속성)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "오너-멤버(Owner-Member) 관계라고도 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 오너-멤버(Owner-Member) 관계라고도 한다.'와 일치합니다. 오너-멤버 관계는 계층형이나 네트워크형 모델에서 사용하는 용어입니다. E-R 모델은 개체와 관계를 중심으로 합니다."
+          },
+          {
+            "label": "2",
+            "text": "개체 타입과 이들 간의 관계 타입을 기본 요소로 이용하여 현실 세계를 개념적으로 표현한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 오너-멤버(Owner-Member) 관계라고도 한다.'인데 이 선택지는 '개체 타입과 이들 간의 관계 타입을 기본 요소로 이용하여 현실 세계를 개념적으로 표현한다.'이므로 일치하지 않습니다. 2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "E-R 다이어그램에서 개체 타입은 사각형으로 나타낸다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 오너-멤버(Owner-Member) 관계라고도 한다.'인데 이 선택지는 'E-R 다이어그램에서 개체 타입은 사각형으로 나타낸다.'이므로 일치하지 않습니다. 2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "E-R 다이어그램에서 속성은 타원으로 나타낸다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 오너-멤버(Owner-Member) 관계라고도 한다.'인데 이 선택지는 'E-R 다이어그램에서 속성은 타원으로 나타낸다.'이므로 일치하지 않습니다. 2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계 모델에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. E-R 모델, 네트워크 모델",
+          "정답 판단 근거를 적용합니다. 오너-멤버 관계는 계층형이나 네트워크형 모델에서 사용하는 용어입니다. E-R 모델은 개체와 관계를 중심으로 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'E-R 모델'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '네트워크 모델'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. E-R = 사각형(개체), 마름모(관계), 타원(속성)"
+        ],
+        "detailed_summary": "개념적 설계 단계에서 사용되는 E-R 모델의 특징과 표기법을 묻는 문제입니다. 오너-멤버(Owner-Member) 관계라고도 불리는 데이터 모델은 논리적 데이터 모델 중 하나인 네트워크(망)형 데이터 모델입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계 모델에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 오너-멤버(Owner-Member) 관계라고도 한다.'와 일치합니다. 오너-멤버 관계는 계층형이나 네트워크형 모델에서 사용하는 용어입니다. E-R 모델은 개체와 관계를 중심으로 합니다. 시험 포인트는 2, 3, 4번은 E-R 모델의 기본 개념과 다이어그램 기호(사각형=개체, 타원=속성)에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "E-R 모델",
+        "개체-관계 모델",
+        "네트워크 모델",
+        "다이어그램"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_36bcbd58fef516ed",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          74
+        ],
+        "page_span": {
+          "start_page": 74,
+          "end_page": 74
+        },
+        "source_explanation": "E-R 모델에서 연결은 선으로 표현합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_202"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "개체-관계 모델(E-R)의 그래픽 표현으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "개체 타입 - 사각형"
+          },
+          {
+            "label": "2",
+            "text": "속성 - 원형"
+          },
+          {
+            "label": "3",
+            "text": "관계 타입 - 마름모"
+          },
+          {
+            "label": "4",
+            "text": "연결 - 삼각형"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "연결 - 삼각형"
+        ],
+        "answer_text": "연결 - 삼각형"
+      },
+      "explanation": {
+        "source_text": "E-R 모델에서 연결은 선으로 표현합니다.",
+        "summary": "E-R 다이어그램에서 사용하는 표준 기호를 묻는 문제입니다.",
+        "why_correct": [
+          "개체와 속성, 관계를 잇는 연결은 단순한 실선(Line)으로 표시합니다."
+        ],
+        "why_others_wrong": [
+          "1: 개체는 사각형입니다.",
+          "2: 속성은 타원(원형)입니다.",
+          "3: 관계는 마름모입니다."
+        ],
+        "key_concepts": [
+          "E-R 다이어그램 기호"
+        ],
+        "memory_cues": [
+          "개사 속타 관마 (개체 사각형, 속성 타원, 관계 마름모)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "개체 타입 - 사각형",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 연결 - 삼각형'인데 이 선택지는 '개체 타입 - 사각형'이므로 일치하지 않습니다. 1: 개체는 사각형입니다. 2: 속성은 타원(원형)입니다."
+          },
+          {
+            "label": "2",
+            "text": "속성 - 원형",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 연결 - 삼각형'인데 이 선택지는 '속성 - 원형'이므로 일치하지 않습니다. 1: 개체는 사각형입니다. 2: 속성은 타원(원형)입니다."
+          },
+          {
+            "label": "3",
+            "text": "관계 타입 - 마름모",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 연결 - 삼각형'인데 이 선택지는 '관계 타입 - 마름모'이므로 일치하지 않습니다. 1: 개체는 사각형입니다. 2: 속성은 타원(원형)입니다."
+          },
+          {
+            "label": "4",
+            "text": "연결 - 삼각형",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 연결 - 삼각형'와 일치합니다. 개체와 속성, 관계를 잇는 연결은 단순한 실선(Line)으로 표시합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계 모델(E-R)의 그래픽 표현으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. E-R 다이어그램 기호",
+          "정답 판단 근거를 적용합니다. 개체와 속성, 관계를 잇는 연결은 단순한 실선(Line)으로 표시합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1: 개체는 사각형입니다."
+        ],
+        "exam_traps": [
+          "1: 개체는 사각형입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'E-R 다이어그램 기호'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 개사 속타 관마 (개체 사각형, 속성 타원, 관계 마름모)"
+        ],
+        "detailed_summary": "E-R 다이어그램에서 사용하는 표준 기호를 묻는 문제입니다. E-R 모델에서 연결은 선으로 표현합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계 모델(E-R)의 그래픽 표현으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 연결 - 삼각형'와 일치합니다. 개체와 속성, 관계를 잇는 연결은 단순한 실선(Line)으로 표시합니다. 시험 포인트는 1: 개체는 사각형입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "E-R 모델",
+        "다이어그램 기호",
+        "개체",
+        "속성",
+        "관계"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          74
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0074",
+            "page_number": 74,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0074.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 729823,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0074",
+          "page_number": 74,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0074.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1384,
+          "file_size_bytes": 729823,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0074",
+          "page_number": 74,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0074.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1384,
+          "file_size_bytes": 729823,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_878ec9d15c6f64b1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          88
+        ],
+        "page_span": {
+          "start_page": 88,
+          "end_page": 88
+        },
+        "source_explanation": "전문가의 조언 | 데이터 모델의 구성 요소에는 구조(Structure), 연산(Operation), 제약 조건(Constraint)이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "61섹션 5빌드"
+        ],
+        "chapter_label": "61섹션 5빌드",
+        "chapter_key": "3과목 데이터베이스 구축 > 61섹션 5빌드",
+        "chapter_id": "chapter_104"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "46. 데이터 모델의 구성 요소가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "추상적인 개념으로 조직된 구조"
+          },
+          {
+            "label": "2",
+            "text": "구성 요소의 연산"
+          },
+          {
+            "label": "3",
+            "text": "구성 요소의 제약 조건"
+          },
+          {
+            "label": "4",
+            "text": "구성 요소들의 저장 인터페이스"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "구성 요소들의 저장 인터페이스"
+        ],
+        "answer_text": "구성 요소들의 저장 인터페이스"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 데이터 모델의 구성 요소에는 구조(Structure), 연산(Operation), 제약 조건(Constraint)이 있습니다.",
+        "summary": "데이터 모델을 정의하는 3가지 핵심 요소를 묻는 문제입니다.",
+        "why_correct": [
+          "저장 인터페이스는 물리적 구현 단계의 사항이며, 논리적인 데이터 모델의 3대 구성 요소(구조, 연산, 제약 조건)에는 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "데이터 모델 3요소",
+          "Structure",
+          "Operation",
+          "Constraint"
+        ],
+        "memory_cues": [
+          "구연제 (구조, 연산, 제약조건)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "추상적인 개념으로 조직된 구조",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 구성 요소들의 저장 인터페이스'인데 이 선택지는 '추상적인 개념으로 조직된 구조'이므로 일치하지 않습니다. 1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "구성 요소의 연산",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 구성 요소들의 저장 인터페이스'인데 이 선택지는 '구성 요소의 연산'이므로 일치하지 않습니다. 1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "구성 요소의 제약 조건",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 구성 요소들의 저장 인터페이스'인데 이 선택지는 '구성 요소의 제약 조건'이므로 일치하지 않습니다. 1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "구성 요소들의 저장 인터페이스",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 구성 요소들의 저장 인터페이스'와 일치합니다. 저장 인터페이스는 물리적 구현 단계의 사항이며, 논리적인 데이터 모델의 3대 구성 요소(구조, 연산, 제약 조건)에는 포함되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. 데이터 모델의 구성 요소가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 데이터 모델 3요소, Structure, Operation, Constraint",
+          "정답 판단 근거를 적용합니다. 저장 인터페이스는 물리적 구현 단계의 사항이며, 논리적인 데이터 모델의 3대 구성 요소(구조, 연산, 제약 조건)에는 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '데이터 모델 3요소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Structure'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Operation'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Constraint'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 구연제 (구조, 연산, 제약조건)"
+        ],
+        "detailed_summary": "데이터 모델을 정의하는 3가지 핵심 요소를 묻는 문제입니다. 전문가의 조언 | 데이터 모델의 구성 요소에는 구조(Structure), 연산(Operation), 제약 조건(Constraint)이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. 데이터 모델의 구성 요소가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 구성 요소들의 저장 인터페이스'와 일치합니다. 저장 인터페이스는 물리적 구현 단계의 사항이며, 논리적인 데이터 모델의 3대 구성 요소(구조, 연산, 제약 조건)에는 포함되지 않습니다. 시험 포인트는 1(구조), 2(연산), 3(제약 조건)은 데이터 모델의 필수 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데이터 모델",
+        "구조",
+        "연산",
+        "제약 조건"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_cc3e57bfdd3f2385",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          128
+        ],
+        "page_span": {
+          "start_page": 128,
+          "end_page": 128
+        },
+        "source_explanation": "전문가의 조언 | E-R 다이어그램은 관계 타입은 마름모(=다이아몬드), 속성은 타원으로 나타냅니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_202"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "57. 개체-관계 모델(E-R Model)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "특정 DBMS를 고려한 것은 아니다."
+          },
+          {
+            "label": "2",
+            "text": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다."
+          },
+          {
+            "label": "3",
+            "text": "개체 타입과 관계 타입을 기본 개념으로 현실 세계를 개념적으로 표현하는 방법이다."
+          },
+          {
+            "label": "4",
+            "text": "1976년 Peter Chen이 제안하였다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다."
+        ],
+        "answer_text": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | E-R 다이어그램은 관계 타입은 마름모(=다이아몬드), 속성은 타원으로 나타냅니다.",
+        "summary": "개념적 데이터 모델링의 대표적 도구인 E-R 모델의 특징과 다이어그램 기호를 묻는 문제입니다.",
+        "why_correct": [
+          "E-R 다이어그램에서 관계는 마름모(다이아몬드), 속성은 타원으로 표시해야 합니다. 보기 2번은 이 둘을 반대로 설명했습니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "사각형: 개체(Entity)",
+          "마름모: 관계(Relationship)",
+          "타원: 속성(Attribute)"
+        ],
+        "memory_cues": [
+          "개사 관마 속타 (개체-사각형, 관계-마름모, 속성-타원)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "특정 DBMS를 고려한 것은 아니다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.'인데 이 선택지는 '특정 DBMS를 고려한 것은 아니다.'이므로 일치하지 않습니다. 1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.'와 일치합니다. E-R 다이어그램에서 관계는 마름모(다이아몬드), 속성은 타원으로 표시해야 합니다. 보기 2번은 이 둘을 반대로 설명했습니다."
+          },
+          {
+            "label": "3",
+            "text": "개체 타입과 관계 타입을 기본 개념으로 현실 세계를 개념적으로 표현하는 방법이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.'인데 이 선택지는 '개체 타입과 관계 타입을 기본 개념으로 현실 세계를 개념적으로 표현하는 방법이다.'이므로 일치하지 않습니다. 1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "1976년 Peter Chen이 제안하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.'인데 이 선택지는 '1976년 Peter Chen이 제안하였다.'이므로 일치하지 않습니다. 1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 57. 개체-관계 모델(E-R Model)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 사각형: 개체(Entity), 마름모: 관계(Relationship), 타원: 속성(Attribute)",
+          "정답 판단 근거를 적용합니다. E-R 다이어그램에서 관계는 마름모(다이아몬드), 속성은 타원으로 표시해야 합니다. 보기 2번은 이 둘을 반대로 설명했습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '사각형: 개체(Entity)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '마름모: 관계(Relationship)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '타원: 속성(Attribute)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 개사 관마 속타 (개체-사각형, 관계-마름모, 속성-타원)"
+        ],
+        "detailed_summary": "개념적 데이터 모델링의 대표적 도구인 E-R 모델의 특징과 다이어그램 기호를 묻는 문제입니다. 전문가의 조언 | E-R 다이어그램은 관계 타입은 마름모(=다이아몬드), 속성은 타원으로 나타냅니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 57. 개체-관계 모델(E-R Model)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 타원, 속성은 다이아몬드로 나타낸다.'와 일치합니다. E-R 다이어그램에서 관계는 마름모(다이아몬드), 속성은 타원으로 표시해야 합니다. 보기 2번은 이 둘을 반대로 설명했습니다. 시험 포인트는 1, 3, 4번은 E-R 모델의 독립성, 개념적 모델링 특성, 제안자에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "E-R 모델",
+        "개체-관계 다이어그램",
+        "데이터 모델링",
+        "Peter Chen"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          128
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0128",
+            "page_number": 128,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0128.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 984311,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0128",
+          "page_number": 128,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0128.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1384,
+          "file_size_bytes": 984311,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0128",
+          "page_number": 128,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0128.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1384,
+          "file_size_bytes": 984311,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_88ef2543a04a2ca8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 141
+        },
+        "source_explanation": "전문가의 조언 | 정보공학 방법론에서는 업무 영역 분석과 업무 시스템 설계 과정에서 데이터베이스 설계를 위한 데이터 모델링으로 Entity-Relationship Diagram(개체 관계도)을 사용합니다.\n• 1, 2, 3번은 객체지향 개발 방법론에서 사용하는 모델링 언어입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_202"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델링 언어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Package Diagram"
+          },
+          {
+            "label": "2",
+            "text": "State Transition Diagram"
+          },
+          {
+            "label": "3",
+            "text": "Deployment Diagram"
+          },
+          {
+            "label": "4",
+            "text": "Entity-Relationship Diagram"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Entity-Relationship Diagram"
+        ],
+        "answer_text": "Entity-Relationship Diagram"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 정보공학 방법론에서는 업무 영역 분석과 업무 시스템 설계 과정에서 데이터베이스 설계를 위한 데이터 모델링으로 Entity-Relationship Diagram(개체 관계도)을 사용합니다.\n• 1, 2, 3번은 객체지향 개발 방법론에서 사용하는 모델링 언어입니다.",
+        "summary": "데이터베이스 설계 시 사용하는 대표적인 모델링 도구를 묻는 문제입니다.",
+        "why_correct": [
+          "ERD(개체-관계 다이어그램)는 데이터 구조와 관계를 시각화하는 표준 도구입니다."
+        ],
+        "why_others_wrong": [
+          "나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+        ],
+        "key_concepts": [
+          "ERD",
+          "Information Engineering Methodology"
+        ],
+        "memory_cues": [
+          "DB 설계 = ERD"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Package Diagram",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Entity-Relationship Diagram'인데 이 선택지는 'Package Diagram'이므로 일치하지 않습니다. 나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+          },
+          {
+            "label": "2",
+            "text": "State Transition Diagram",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Entity-Relationship Diagram'인데 이 선택지는 'State Transition Diagram'이므로 일치하지 않습니다. 나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+          },
+          {
+            "label": "3",
+            "text": "Deployment Diagram",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Entity-Relationship Diagram'인데 이 선택지는 'Deployment Diagram'이므로 일치하지 않습니다. 나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+          },
+          {
+            "label": "4",
+            "text": "Entity-Relationship Diagram",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Entity-Relationship Diagram'와 일치합니다. ERD(개체-관계 다이어그램)는 데이터 구조와 관계를 시각화하는 표준 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델링 언어는?",
+          "핵심 개념을 떠올립니다. ERD, Information Engineering Methodology",
+          "정답 판단 근거를 적용합니다. ERD(개체-관계 다이어그램)는 데이터 구조와 관계를 시각화하는 표준 도구입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+        ],
+        "exam_traps": [
+          "나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ERD'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Information Engineering Methodology'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DB 설계 = ERD"
+        ],
+        "detailed_summary": "데이터베이스 설계 시 사용하는 대표적인 모델링 도구를 묻는 문제입니다. 전문가의 조언 | 정보공학 방법론에서는 업무 영역 분석과 업무 시스템 설계 과정에서 데이터베이스 설계를 위한 데이터 모델링으로 Entity-Relationship Diagram(개체 관계도)을 사용합니다. • 1, 2, 3번은 객체지향 개발 방법론에서 사용하는 모델링 언어입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정보공학 방법론에서 데이터베이스 설계의 표현으로 사용하는 모델링 언어는? 정답입니다. 이 선택지는 실제 정답인 '4번 Entity-Relationship Diagram'와 일치합니다. ERD(개체-관계 다이어그램)는 데이터 구조와 관계를 시각화하는 표준 도구입니다. 시험 포인트는 나머지는 UML 다이어그램으로 주로 소프트웨어 구조나 상태를 표현합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ERD",
+        "정보공학 방법론",
+        "데이터 모델링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b701f1201e1e4ed7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          148
+        ],
+        "page_span": {
+          "start_page": 148,
+          "end_page": 148
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문은 일 대 다(1:N) 관계에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "3과목 데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_117"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "58. 집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "일 대 일"
+          },
+          {
+            "label": "2",
+            "text": "일 대 다"
+          },
+          {
+            "label": "3",
+            "text": "다 대 다"
+          },
+          {
+            "label": "4",
+            "text": "다 대 일"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "일 대 다"
+        ],
+        "answer_text": "일 대 다"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문은 일 대 다(1:N) 관계에 대한 설명입니다.",
+        "summary": "엔티티 간의 관계 차수(Cardinality)를 정의하는 문제입니다.",
+        "why_correct": [
+          "A 하나가 B 여러 개와 대응(1:N)하고, 반대로 B 하나는 A 하나와만 대응하므로 '일 대 다' 관계입니다."
+        ],
+        "why_others_wrong": [
+          "일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "key_concepts": [
+          "1:1 관계",
+          "1:N 관계",
+          "N:M 관계"
+        ],
+        "memory_cues": [
+          "A(1) -> B(N)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "일 대 일",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '일 대 일'이므로 일치하지 않습니다. 일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          },
+          {
+            "label": "2",
+            "text": "일 대 다",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 일 대 다'와 일치합니다. A 하나가 B 여러 개와 대응(1:N)하고, 반대로 B 하나는 A 하나와만 대응하므로 '일 대 다' 관계입니다."
+          },
+          {
+            "label": "3",
+            "text": "다 대 다",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '다 대 다'이므로 일치하지 않습니다. 일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          },
+          {
+            "label": "4",
+            "text": "다 대 일",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 일 대 다'인데 이 선택지는 '다 대 일'이므로 일치하지 않습니다. 일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. 집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가?",
+          "핵심 개념을 떠올립니다. 1:1 관계, 1:N 관계, N:M 관계",
+          "정답 판단 근거를 적용합니다. A 하나가 B 여러 개와 대응(1:N)하고, 반대로 B 하나는 A 하나와만 대응하므로 '일 대 다' 관계입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "exam_traps": [
+          "일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '1:1 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '1:N 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'N:M 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A(1) -> B(N)"
+        ],
+        "detailed_summary": "엔티티 간의 관계 차수(Cardinality)를 정의하는 문제입니다. 전문가의 조언 | 문제의 지문은 일 대 다(1:N) 관계에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. 집합 A와 B에 대해 개체 집합 A의 각 원소는 개체 집합 B의 원소 여러 개와 대응하고 있지만, 개체 집합 B의 각 원소는 개체 집합 A의 원소 한 개와 대응하는 관계의 종류는 무엇인가? 정답입니다. 이 선택지는 실제 정답인 '2번 일 대 다'와 일치합니다. A 하나가 B 여러 개와 대응(1:N)하고, 반대로 B 하나는 A 하나와만 대응하므로 '일 대 다' 관계입니다. 시험 포인트는 일대일은 양쪽 모두 하나씩, 다대다는 양쪽 모두 여러 개씩 대응하는 경우입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "관계성",
+        "1:N",
+        "일대다",
+        "E-R 모델"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_11857768ea3f6f78",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          185
+        ],
+        "page_span": {
+          "start_page": 185,
+          "end_page": 185
+        },
+        "source_explanation": "관계형, 계층형, 네트워크형 데이터베이스를 구분하는 기준은 관계(Relationship)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_202"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "개체(Object)"
+          },
+          {
+            "label": "2",
+            "text": "관계(Relationship)"
+          },
+          {
+            "label": "3",
+            "text": "속성(Attribute)"
+          },
+          {
+            "label": "4",
+            "text": "제약 조건(Constraint)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "관계(Relationship)"
+        ],
+        "answer_text": "관계(Relationship)"
+      },
+      "explanation": {
+        "source_text": "관계형, 계층형, 네트워크형 데이터베이스를 구분하는 기준은 관계(Relationship)입니다.",
+        "summary": "데이터 모델의 분류 기준을 묻는 문제입니다.",
+        "why_correct": [
+          "데이터 간의 관계를 표(Table)로 나타내는지, 트리(Tree) 구조인지, 망(Graph) 구조인지에 따라 모델이 구분되므로 '관계'가 기준입니다."
+        ],
+        "why_others_wrong": [
+          "개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "데이터 모델의 3요소 (구조, 연산, 제약조건)"
+        ],
+        "memory_cues": [
+          "어떤 '관계'로 엮여있는가?"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "개체(Object)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 관계(Relationship)'인데 이 선택지는 '개체(Object)'이므로 일치하지 않습니다. 개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "관계(Relationship)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 관계(Relationship)'와 일치합니다. 데이터 간의 관계를 표(Table)로 나타내는지, 트리(Tree) 구조인지, 망(Graph) 구조인지에 따라 모델이 구분되므로 '관계'가 기준입니다."
+          },
+          {
+            "label": "3",
+            "text": "속성(Attribute)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 관계(Relationship)'인데 이 선택지는 '속성(Attribute)'이므로 일치하지 않습니다. 개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "제약 조건(Constraint)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 관계(Relationship)'인데 이 선택지는 '제약 조건(Constraint)'이므로 일치하지 않습니다. 개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준은?",
+          "핵심 개념을 떠올립니다. 데이터 모델의 3요소 (구조, 연산, 제약조건)",
+          "정답 판단 근거를 적용합니다. 데이터 간의 관계를 표(Table)로 나타내는지, 트리(Tree) 구조인지, 망(Graph) 구조인지에 따라 모델이 구분되므로 '관계'가 기준입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '데이터 모델의 3요소 (구조, 연산, 제약조건)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 어떤 '관계'로 엮여있는가?"
+        ],
+        "detailed_summary": "데이터 모델의 분류 기준을 묻는 문제입니다. 관계형, 계층형, 네트워크형 데이터베이스를 구분하는 기준은 관계(Relationship)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스에는 관계형, 계층형, 네트워크형 등 다양한 종류가 있는데 이들을 구분하는 기준은? 정답입니다. 이 선택지는 실제 정답인 '2번 관계(Relationship)'와 일치합니다. 데이터 간의 관계를 표(Table)로 나타내는지, 트리(Tree) 구조인지, 망(Graph) 구조인지에 따라 모델이 구분되므로 '관계'가 기준입니다. 시험 포인트는 개체, 속성, 제약 조건은 모든 데이터 모델이 공통적으로 가지는 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데이터 모델",
+        "관계형",
+        "계층형",
+        "네트워크형"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_dcdeacb2eb4733e5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          186
+        ],
+        "page_span": {
+          "start_page": 186,
+          "end_page": 186
+        },
+        "source_explanation": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 마름모, 속성은 타원으로 표현합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 모델과 E-R 다이어그램"
+        ],
+        "chapter_label": "데이터 모델과 E-R 다이어그램",
+        "chapter_key": "데이터베이스 구축 > 데이터 모델과 E-R 다이어그램",
+        "chapter_id": "chapter_202"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_042",
+        "topic_title": "데이터 모델과 E-R 다이어그램",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터 모델과 E-R 다이어그램",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "개체-관계(E-R) 모델에 대한 설명으로 잘못된 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "특정 DBMS를 고려하여 제작하지 않는다."
+          },
+          {
+            "label": "2",
+            "text": "개체는 마름모, 속성은 사각형을 이용하여 표현한다."
+          },
+          {
+            "label": "3",
+            "text": "개념적 데이터베이스 단계에서 제작된다."
+          },
+          {
+            "label": "4",
+            "text": "E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "개체는 마름모, 속성은 사각형을 이용하여 표현한다."
+        ],
+        "answer_text": "개체는 마름모, 속성은 사각형을 이용하여 표현한다."
+      },
+      "explanation": {
+        "source_text": "E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 마름모, 속성은 타원으로 표현합니다.",
+        "summary": "E-R 모델의 특징과 다이어그램 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "E-R 다이어그램에서 개체(Entity)는 사각형, 관계(Relationship)는 마름모로 표현합니다. 설명이 서로 바뀌었습니다."
+        ],
+        "why_others_wrong": [
+          "1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+        ],
+        "key_concepts": [
+          "E-R 다이어그램 기호"
+        ],
+        "memory_cues": [
+          "개사 관마 속타 (개체-사각형, 관계-마름모, 속성-타원)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "특정 DBMS를 고려하여 제작하지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개체는 마름모, 속성은 사각형을 이용하여 표현한다.'인데 이 선택지는 '특정 DBMS를 고려하여 제작하지 않는다.'이므로 일치하지 않습니다. 1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "개체는 마름모, 속성은 사각형을 이용하여 표현한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 개체는 마름모, 속성은 사각형을 이용하여 표현한다.'와 일치합니다. E-R 다이어그램에서 개체(Entity)는 사각형, 관계(Relationship)는 마름모로 표현합니다. 설명이 서로 바뀌었습니다."
+          },
+          {
+            "label": "3",
+            "text": "개념적 데이터베이스 단계에서 제작된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개체는 마름모, 속성은 사각형을 이용하여 표현한다.'인데 이 선택지는 '개념적 데이터베이스 단계에서 제작된다.'이므로 일치하지 않습니다. 1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+          },
+          {
+            "label": "4",
+            "text": "E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개체는 마름모, 속성은 사각형을 이용하여 표현한다.'인데 이 선택지는 'E-R 모델의 기본적인 아이디어를 시각적으로 가장 잘 나타낸 것이 E-R 다이어그램이다.'이므로 일치하지 않습니다. 1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계(E-R) 모델에 대한 설명으로 잘못된 것은?",
+          "핵심 개념을 떠올립니다. E-R 다이어그램 기호",
+          "정답 판단 근거를 적용합니다. E-R 다이어그램에서 개체(Entity)는 사각형, 관계(Relationship)는 마름모로 표현합니다. 설명이 서로 바뀌었습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+        ],
+        "exam_traps": [
+          "1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'E-R 다이어그램 기호'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 개사 관마 속타 (개체-사각형, 관계-마름모, 속성-타원)"
+        ],
+        "detailed_summary": "E-R 모델의 특징과 다이어그램 표기법을 묻는 문제입니다. E-R 다이어그램에서 개체 타입은 사각형, 관계 타입은 마름모, 속성은 타원으로 표현합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 개체-관계(E-R) 모델에 대한 설명으로 잘못된 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 개체는 마름모, 속성은 사각형을 이용하여 표현한다.'와 일치합니다. E-R 다이어그램에서 개체(Entity)는 사각형, 관계(Relationship)는 마름모로 표현합니다. 설명이 서로 바뀌었습니다. 시험 포인트는 1, 3번은 개념적 설계의 특징(DBMS 독립성)이며, 4번은 E-R 다이어그램의 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "E-R 모델",
+        "E-R 다이어그램",
+        "개체",
+        "속성",
+        "관계"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          186
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0186",
+            "page_number": 186,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0186.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 953846,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0186",
+          "page_number": 186,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0186.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 953846,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0186",
+          "page_number": 186,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0186.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 953846,
+          "render_scale": 2.0
+        }
+      }
+    }
+  ]
+}

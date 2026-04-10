@@ -1,0 +1,483 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_062",
+    "sequence": 62,
+    "title": "입출력 함수",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 3,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_364"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_381725fd5e7f9fe5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          94
+        ],
+        "page_span": {
+          "start_page": 94,
+          "end_page": 94
+        },
+        "source_explanation": "전문가의 조언 | 코드 출력문의 결과로 옳은 것은 ④번입니다. Java의 print( ) 또는 println( ) 사용 시 '숫자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과를 출력합니다.\n- (\"5 + 2 = \" + 3) + 4의 순서로 수행되며, (\"5 + 2 = \" + 3)는 문자+숫자이므로 5 + 2 = 3이라는 문자를, (\"5 + 2 = 3\" + 4) 또한 문자+숫자이므로 5 + 2 = 34라는 결과를 출력합니다.\n- (\"5 + 2 = \" + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (\"5 + 2 = \" + 7)은 문자+숫자이므로 5 + 2 = 7이라는 결과를 출력합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_062",
+        "topic_title": "입출력 함수",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "입출력 함수",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "73. 다음 JAVA 코드 출력문의 결과는?\nSystem.out.println(\"5 + 2 = \" + 3 + 4);\nSystem.out.println(\"5 + 2 = \" + (3 + 4));",
+        "choices": [
+          {
+            "label": "1",
+            "text": "5 + 2 = 34, 5 + 2 = 34"
+          },
+          {
+            "label": "2",
+            "text": "5 + 2 + 3 + 4, 5 + 2 = 7"
+          },
+          {
+            "label": "3",
+            "text": "7 = 7, 7 + 7"
+          },
+          {
+            "label": "4",
+            "text": "5 + 2 = 34, 5 + 2 = 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "5 + 2 = 34, 5 + 2 = 7"
+        ],
+        "answer_text": "5 + 2 = 34, 5 + 2 = 7"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드 출력문의 결과로 옳은 것은 ④번입니다. Java의 print( ) 또는 println( ) 사용 시 '숫자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과를 출력합니다.\n- (\"5 + 2 = \" + 3) + 4의 순서로 수행되며, (\"5 + 2 = \" + 3)는 문자+숫자이므로 5 + 2 = 3이라는 문자를, (\"5 + 2 = 3\" + 4) 또한 문자+숫자이므로 5 + 2 = 34라는 결과를 출력합니다.\n- (\"5 + 2 = \" + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (\"5 + 2 = \" + 7)은 문자+숫자이므로 5 + 2 = 7이라는 결과를 출력합니다.",
+        "summary": "Java에서 문자열과 숫자의 결합 연산 및 괄호에 의한 우선순위 변화를 이해하는 문제입니다.",
+        "why_correct": [
+          "첫 번째 줄은 왼쪽부터 결합되어 문자열 '5 + 2 = 3'에 4가 붙어 '5 + 2 = 34'가 됩니다. 두 번째 줄은 괄호 안의 (3+4)가 먼저 계산되어 7이 된 후 문자열과 결합되어 '5 + 2 = 7'이 됩니다."
+        ],
+        "why_others_wrong": [
+          "괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+        ],
+        "key_concepts": [
+          "문자열 연결(String Concatenation)",
+          "연산자 우선순위"
+        ],
+        "memory_cues": [
+          "문자열 + 숫자는 문자열!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "5 + 2 = 34, 5 + 2 = 34",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34, 5 + 2 = 7'인데 이 선택지는 '5 + 2 = 34, 5 + 2 = 34'이므로 일치하지 않습니다. 괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+          },
+          {
+            "label": "2",
+            "text": "5 + 2 + 3 + 4, 5 + 2 = 7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34, 5 + 2 = 7'인데 이 선택지는 '5 + 2 + 3 + 4, 5 + 2 = 7'이므로 일치하지 않습니다. 괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+          },
+          {
+            "label": "3",
+            "text": "7 = 7, 7 + 7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34, 5 + 2 = 7'인데 이 선택지는 '7 = 7, 7 + 7'이므로 일치하지 않습니다. 괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+          },
+          {
+            "label": "4",
+            "text": "5 + 2 = 34, 5 + 2 = 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 5 + 2 = 34, 5 + 2 = 7'와 일치합니다. 첫 번째 줄은 왼쪽부터 결합되어 문자열 '5 + 2 = 3'에 4가 붙어 '5 + 2 = 34'가 됩니다. 두 번째 줄은 괄호 안의 (3+4)가 먼저 계산되어 7이 된 후 문자열과 결합되어 '5 + 2 = 7'이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 JAVA 코드 출력문의 결과는? System.out.println(\"5 + 2 = \" + 3 + 4); System.out.println(\"5 + 2 = \" + (3 + 4));",
+          "핵심 개념을 떠올립니다. 문자열 연결(String Concatenation), 연산자 우선순위",
+          "정답 판단 근거를 적용합니다. 첫 번째 줄은 왼쪽부터 결합되어 문자열 '5 + 2 = 3'에 4가 붙어 '5 + 2 = 34'가 됩니다. 두 번째 줄은 괄호 안의 (3+4)가 먼저 계산되어 7이 된 후 문자열과 결합되어 '5 + 2 = 7'이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+        ],
+        "exam_traps": [
+          "괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '문자열 연결(String Concatenation)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 문자열 + 숫자는 문자열!"
+        ],
+        "detailed_summary": "Java에서 문자열과 숫자의 결합 연산 및 괄호에 의한 우선순위 변화를 이해하는 문제입니다. 전문가의 조언 | 코드 출력문의 결과로 옳은 것은 ④번입니다. Java의 print( ) 또는 println( ) 사용 시 '숫자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과를 출력합니다. - (\"5 + 2 = \" + 3) + 4의 순서로 수행되며, (\"5 + 2 = \" + 3)는 문자+숫자이므로 5 + 2 = 3이라는 문자를, (\"5 + 2 = 3\" + 4) 또한 문자+숫자이므로 5 + 2 = 34라는 결과를 출력합니다. - (\"5 + 2 = \" + (3 + 4))의 순서로 수행되며, 3 + 4는 숫자+숫자이므로 7이 되고, (\"5 + 2 = \" + 7)은 문자+숫자이므로 5 + 2 = 7이라는 결과를 출력합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 JAVA 코드 출력문의 결과는? System.out.println(\"5 + 2 = \" + 3 + 4); System.out.println(\"5 + 2 = \" + (3 + 4)); 정답입니다. 이 선택지는 실제 정답인 '4번 5 + 2 = 34, 5 + 2 = 7'와 일치합니다. 첫 번째 줄은 왼쪽부터 결합되어 문자열 '5 + 2 = 3'에 4가 붙어 '5 + 2 = 34'가 됩니다. 두 번째 줄은 괄호 안의 (3+4)가 먼저 계산되어 7이 된 후 문자열과 결합되어 '5 + 2 = 7'이 됩니다. 시험 포인트는 괄호가 없으면 문자열 결합이 우선 발생하며, 괄호가 있으면 산술 연산이 먼저 발생합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "출력문",
+        "문자열 연결",
+        "연산자 우선순위"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_750ee186efb5a03e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          94
+        ],
+        "page_span": {
+          "start_page": 94,
+          "end_page": 94
+        },
+        "source_explanation": "전문가의 조언 | 문자는 아스키코드로 저장됩니다. 대문자 'A'는 아스키코드 값 65이고, 1을 더하게 되면 66이 되어 대문자 'B'를 가리키게 됩니다.\n- 하지만 출력문에서 출력 형식 이 문자 %c가 아닌 정수를 출력하는 %d를 사용했으므로 대문자 'B'가 아닌 아스키코드 값 66이 출력되게 됩니다.\n사용된 코드의 의미는 다음과 같습니다.\n- 문자형 변수 c를 선언하고 'A'로 초기화한다.\n- c에 1을 더한다.\n- c의 값을 정수로 출력한다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_062",
+        "topic_title": "입출력 함수",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "입출력 함수",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "74. 다음 C 언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\nchar c = 'A';\nc = c + 1;\nprintf(\"%d\", c);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "65"
+          },
+          {
+            "label": "4",
+            "text": "66"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "66"
+        ],
+        "answer_text": "66"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문자는 아스키코드로 저장됩니다. 대문자 'A'는 아스키코드 값 65이고, 1을 더하게 되면 66이 되어 대문자 'B'를 가리키게 됩니다.\n- 하지만 출력문에서 출력 형식 이 문자 %c가 아닌 정수를 출력하는 %d를 사용했으므로 대문자 'B'가 아닌 아스키코드 값 66이 출력되게 됩니다.\n사용된 코드의 의미는 다음과 같습니다.\n- 문자형 변수 c를 선언하고 'A'로 초기화한다.\n- c에 1을 더한다.\n- c의 값을 정수로 출력한다.",
+        "summary": "C언어에서 문자의 아스키 코드 연산과 서식 지정자에 따른 출력 결과를 묻는 문제입니다.",
+        "why_correct": [
+          "'A'의 아스키 코드는 65입니다. 여기에 1을 더하면 66이 됩니다. printf에서 %d(정수형) 서식 지정자를 사용했으므로 66이 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "%c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+        ],
+        "key_concepts": [
+          "ASCII Code",
+          "Format Specifier (%d, %c)"
+        ],
+        "memory_cues": [
+          "A=65, %d는 정수 출력"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 'A'이므로 일치하지 않습니다. %c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 'B'이므로 일치하지 않습니다. %c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+          },
+          {
+            "label": "3",
+            "text": "65",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 '65'이므로 일치하지 않습니다. %c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+          },
+          {
+            "label": "4",
+            "text": "66",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 66'와 일치합니다. 'A'의 아스키 코드는 65입니다. 여기에 1을 더하면 66이 됩니다. printf에서 %d(정수형) 서식 지정자를 사용했으므로 66이 출력됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { char c = 'A'; c = c + 1; printf(\"%d\", c); }",
+          "핵심 개념을 떠올립니다. ASCII Code, Format Specifier (%d, %c)",
+          "정답 판단 근거를 적용합니다. 'A'의 아스키 코드는 65입니다. 여기에 1을 더하면 66이 됩니다. printf에서 %d(정수형) 서식 지정자를 사용했으므로 66이 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. %c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+        ],
+        "exam_traps": [
+          "%c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ASCII Code'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Format Specifier (%d, %c)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A=65, %d는 정수 출력"
+        ],
+        "detailed_summary": "C언어에서 문자의 아스키 코드 연산과 서식 지정자에 따른 출력 결과를 묻는 문제입니다. 전문가의 조언 | 문자는 아스키코드로 저장됩니다. 대문자 'A'는 아스키코드 값 65이고, 1을 더하게 되면 66이 되어 대문자 'B'를 가리키게 됩니다. - 하지만 출력문에서 출력 형식 이 문자 %c가 아닌 정수를 출력하는 %d를 사용했으므로 대문자 'B'가 아닌 아스키코드 값 66이 출력되게 됩니다. 사용된 코드의 의미는 다음과 같습니다. - 문자형 변수 c를 선언하고 'A'로 초기화한다. - c에 1을 더한다. - c의 값을 정수로 출력한다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { char c = 'A'; c = c + 1; printf(\"%d\", c); } 정답입니다. 이 선택지는 실제 정답인 '4번 66'와 일치합니다. 'A'의 아스키 코드는 65입니다. 여기에 1을 더하면 66이 됩니다. printf에서 %d(정수형) 서식 지정자를 사용했으므로 66이 출력됩니다. 시험 포인트는 %c를 사용했다면 'B'가 출력되었겠지만, %d를 사용했으므로 정수값이 출력됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "아스키 코드",
+        "printf",
+        "형 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_394cde50f842c066",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "문자는 아스키코드로 저장됩니다. 대문자 'A'는 65이고, 1을 더하면 66이 됩니다. printf에서 %d 서식 지정자를 사용했으므로 정수값 66이 출력됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "입출력 함수"
+        ],
+        "chapter_label": "입출력 함수",
+        "chapter_key": "프로그래밍 언어 활용 > 입출력 함수",
+        "chapter_id": "chapter_364"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_062",
+        "topic_title": "입출력 함수",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "입출력 함수",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "74. 다음 C 언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\nchar c = 'A';\nc = c + 1;\nprintf(\"%d\", c);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "65"
+          },
+          {
+            "label": "4",
+            "text": "66"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "66"
+        ],
+        "answer_text": "66"
+      },
+      "explanation": {
+        "source_text": "문자는 아스키코드로 저장됩니다. 대문자 'A'는 65이고, 1을 더하면 66이 됩니다. printf에서 %d 서식 지정자를 사용했으므로 정수값 66이 출력됩니다.",
+        "summary": "문자형 변수의 아스키코드 연산과 출력 형식을 묻는 문제입니다.",
+        "why_correct": [
+          "'A'의 아스키코드 값은 65입니다. 65 + 1 = 66이 변수 c에 저장됩니다. printf(\"%d\", c)는 c의 값을 10진수 정수로 출력하므로 66이 나옵니다."
+        ],
+        "why_others_wrong": [
+          "1번은 %c로 출력했을 때의 결과입니다.",
+          "2번은 %c로 출력했을 때 'A' 다음 문자인 'B'가 나오는 경우입니다.",
+          "3번은 연산 전 'A'의 아스키코드 값입니다."
+        ],
+        "key_concepts": [
+          "ASCII 코드",
+          "서식 지정자 %d"
+        ],
+        "memory_cues": [
+          "A=65, a=97은 암기 필수! %d는 decimal(정수), %c는 character(문자)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 'A'이므로 일치하지 않습니다. 1번은 %c로 출력했을 때의 결과입니다. 2번은 %c로 출력했을 때 'A' 다음 문자인 'B'가 나오는 경우입니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 'B'이므로 일치하지 않습니다. 1번은 %c로 출력했을 때의 결과입니다. 2번은 %c로 출력했을 때 'A' 다음 문자인 'B'가 나오는 경우입니다."
+          },
+          {
+            "label": "3",
+            "text": "65",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 66'인데 이 선택지는 '65'이므로 일치하지 않습니다. 1번은 %c로 출력했을 때의 결과입니다. 2번은 %c로 출력했을 때 'A' 다음 문자인 'B'가 나오는 경우입니다."
+          },
+          {
+            "label": "4",
+            "text": "66",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 66'와 일치합니다. 'A'의 아스키코드 값은 65입니다. 65 + 1 = 66이 변수 c에 저장됩니다. printf(\"%d\", c)는 c의 값을 10진수 정수로 출력하므로 66이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { char c = 'A'; c = c + 1; printf(\"%d\", c); }",
+          "핵심 개념을 떠올립니다. ASCII 코드, 서식 지정자 %d",
+          "정답 판단 근거를 적용합니다. 'A'의 아스키코드 값은 65입니다. 65 + 1 = 66이 변수 c에 저장됩니다. printf(\"%d\", c)는 c의 값을 10진수 정수로 출력하므로 66이 나옵니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 %c로 출력했을 때의 결과입니다."
+        ],
+        "exam_traps": [
+          "1번은 %c로 출력했을 때의 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ASCII 코드'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서식 지정자 %d'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A=65, a=97은 암기 필수! %d는 decimal(정수), %c는 character(문자)."
+        ],
+        "detailed_summary": "문자형 변수의 아스키코드 연산과 출력 형식을 묻는 문제입니다. 문자는 아스키코드로 저장됩니다. 대문자 'A'는 65이고, 1을 더하면 66이 됩니다. printf에서 %d 서식 지정자를 사용했으므로 정수값 66이 출력됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { char c = 'A'; c = c + 1; printf(\"%d\", c); } 정답입니다. 이 선택지는 실제 정답인 '4번 66'와 일치합니다. 'A'의 아스키코드 값은 65입니다. 65 + 1 = 66이 변수 c에 저장됩니다. printf(\"%d\", c)는 c의 값을 10진수 정수로 출력하므로 66이 나옵니다. 시험 포인트는 1번은 %c로 출력했을 때의 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "C언어",
+        "아스키코드",
+        "printf",
+        "형 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

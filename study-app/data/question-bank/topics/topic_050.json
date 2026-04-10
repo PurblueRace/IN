@@ -1,0 +1,1125 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_050",
+    "sequence": 50,
+    "title": "데이터베이스 보안·백업·스토리지",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 7,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_325",
+      "chapter_205",
+      "chapter_295",
+      "chapter_163",
+      "chapter_119",
+      "chapter_170"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_4319635a61710e1d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          13
+        ],
+        "page_span": {
+          "start_page": 13,
+          "end_page": 13
+        },
+        "source_explanation": "iSCSI는 네트워크를 통해 스토리지 장치와 서버를 연결하는 프로토콜로, SAN(Storage Area Network)에서 주로 사용됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "정보시스템 구축관리 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_325"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "DAS(Direct Attached Storage) 연결에 사용되는 프로토콜로 관련 없는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "eSATA"
+          },
+          {
+            "label": "2",
+            "text": "SATA"
+          },
+          {
+            "label": "3",
+            "text": "SCSI"
+          },
+          {
+            "label": "4",
+            "text": "iSCSI"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "iSCSI"
+        ],
+        "answer_text": "iSCSI"
+      },
+      "explanation": {
+        "source_text": "iSCSI는 네트워크를 통해 스토리지 장치와 서버를 연결하는 프로토콜로, SAN(Storage Area Network)에서 주로 사용됩니다.",
+        "summary": "직접 연결 저장장치(DAS) 방식에서 사용되지 않는 프로토콜을 찾는 문제입니다.",
+        "why_correct": [
+          "iSCSI는 IP 네트워크를 기반으로 하는 스토리지 프로토콜로, 주로 SAN 환경에서 사용됩니다."
+        ],
+        "why_others_wrong": [
+          "SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "SAN",
+          "iSCSI"
+        ],
+        "memory_cues": [
+          "iSCSI의 'i'는 Internet(IP)을 뜻하므로 네트워크 방식인 SAN용입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "eSATA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 iSCSI'인데 이 선택지는 'eSATA'이므로 일치하지 않습니다. SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+          },
+          {
+            "label": "2",
+            "text": "SATA",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 iSCSI'인데 이 선택지는 'SATA'이므로 일치하지 않습니다. SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+          },
+          {
+            "label": "3",
+            "text": "SCSI",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 iSCSI'인데 이 선택지는 'SCSI'이므로 일치하지 않습니다. SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+          },
+          {
+            "label": "4",
+            "text": "iSCSI",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 iSCSI'와 일치합니다. iSCSI는 IP 네트워크를 기반으로 하는 스토리지 프로토콜로, 주로 SAN 환경에서 사용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DAS(Direct Attached Storage) 연결에 사용되는 프로토콜로 관련 없는 것은?",
+          "핵심 개념을 떠올립니다. DAS, SAN, iSCSI",
+          "정답 판단 근거를 적용합니다. iSCSI는 IP 네트워크를 기반으로 하는 스토리지 프로토콜로, 주로 SAN 환경에서 사용됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+        ],
+        "exam_traps": [
+          "SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'iSCSI'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. iSCSI의 'i'는 Internet(IP)을 뜻하므로 네트워크 방식인 SAN용입니다."
+        ],
+        "detailed_summary": "직접 연결 저장장치(DAS) 방식에서 사용되지 않는 프로토콜을 찾는 문제입니다. iSCSI는 네트워크를 통해 스토리지 장치와 서버를 연결하는 프로토콜로, SAN(Storage Area Network)에서 주로 사용됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DAS(Direct Attached Storage) 연결에 사용되는 프로토콜로 관련 없는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 iSCSI'와 일치합니다. iSCSI는 IP 네트워크를 기반으로 하는 스토리지 프로토콜로, 주로 SAN 환경에서 사용됩니다. 시험 포인트는 SATA, eSATA, SCSI는 서버와 저장장치를 직접 케이블로 연결하는 DAS 방식의 대표적인 인터페이스입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "DAS",
+        "iSCSI",
+        "SAN",
+        "스토리지 프로토콜"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1869564898150b38",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 96
+        },
+        "source_explanation": "문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "데이터베이스 구축 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_205"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "83. 다음 내용이 설명하는 스토리지 시스템은?\n- 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식\n- 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DAS"
+          },
+          {
+            "label": "2",
+            "text": "NAS"
+          },
+          {
+            "label": "3",
+            "text": "SAN"
+          },
+          {
+            "label": "4",
+            "text": "NFC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DAS"
+        ],
+        "answer_text": "DAS"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다.",
+        "summary": "서버와 저장장치의 연결 방식에 따른 스토리지 유형을 묻는 문제입니다.",
+        "why_correct": [
+          "DAS는 전용 케이블을 통해 서버에 직접 연결하는 방식으로, 네트워크를 거치지 않습니다."
+        ],
+        "why_others_wrong": [
+          "NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다.",
+          "SAN은 광케이블과 전용 스위치를 사용하는 고속 네트워크 저장 장치입니다.",
+          "NFC는 근거리 무선 통신 기술입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "NAS",
+          "SAN"
+        ],
+        "memory_cues": [
+          "Direct(직접) = DAS"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DAS",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS는 전용 케이블을 통해 서버에 직접 연결하는 방식으로, 네트워크를 거치지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "NAS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NAS'이므로 일치하지 않습니다. NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다. SAN은 광케이블과 전용 스위치를 사용하는 고속 네트워크 저장 장치입니다."
+          },
+          {
+            "label": "3",
+            "text": "SAN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'SAN'이므로 일치하지 않습니다. NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다. SAN은 광케이블과 전용 스위치를 사용하는 고속 네트워크 저장 장치입니다."
+          },
+          {
+            "label": "4",
+            "text": "NFC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NFC'이므로 일치하지 않습니다. NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다. SAN은 광케이블과 전용 스위치를 사용하는 고속 네트워크 저장 장치입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 다음 내용이 설명하는 스토리지 시스템은? - 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 - 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+          "핵심 개념을 떠올립니다. DAS, NAS, SAN",
+          "정답 판단 근거를 적용합니다. DAS는 전용 케이블을 통해 서버에 직접 연결하는 방식으로, 네트워크를 거치지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다."
+        ],
+        "exam_traps": [
+          "NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Direct(직접) = DAS"
+        ],
+        "detailed_summary": "서버와 저장장치의 연결 방식에 따른 스토리지 유형을 묻는 문제입니다. 문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 다음 내용이 설명하는 스토리지 시스템은? - 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 - 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성 정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS는 전용 케이블을 통해 서버에 직접 연결하는 방식으로, 네트워크를 거치지 않습니다. 시험 포인트는 NAS는 이더넷 네트워크를 통해 연결하는 파일 서버 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DAS",
+        "NAS",
+        "SAN",
+        "스토리지"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1677522b6a9c474c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          134
+        ],
+        "page_span": {
+          "start_page": 134,
+          "end_page": 134
+        },
+        "source_explanation": "문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다. NAS는 네트워크를 통해 연결하며, SAN은 전용 네트워크를 별도로 구성합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "정보시스템 구축 관리 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_295"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 211.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 내용이 설명하는 스토리지 시스템은?\n- 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식\n- 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DAS"
+          },
+          {
+            "label": "2",
+            "text": "NAS"
+          },
+          {
+            "label": "3",
+            "text": "SAN"
+          },
+          {
+            "label": "4",
+            "text": "NFC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DAS"
+        ],
+        "answer_text": "DAS"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다. NAS는 네트워크를 통해 연결하며, SAN은 전용 네트워크를 별도로 구성합니다.",
+        "summary": "스토리지 연결 방식 중 DAS의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로, 네트워크 장비가 필요 없습니다."
+        ],
+        "why_others_wrong": [
+          "NAS는 이더넷 등 일반 네트워크를 통해 연결합니다.",
+          "SAN은 광섬유 채널 등 고속 전용 네트워크를 사용합니다.",
+          "NFC는 근거리 무선 통신 기술입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "Direct Attached Storage",
+          "Host Bus Adapter"
+        ],
+        "memory_cues": [
+          "Direct = 직접 연결 = DAS"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DAS",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로, 네트워크 장비가 필요 없습니다."
+          },
+          {
+            "label": "2",
+            "text": "NAS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NAS'이므로 일치하지 않습니다. NAS는 이더넷 등 일반 네트워크를 통해 연결합니다. SAN은 광섬유 채널 등 고속 전용 네트워크를 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "SAN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'SAN'이므로 일치하지 않습니다. NAS는 이더넷 등 일반 네트워크를 통해 연결합니다. SAN은 광섬유 채널 등 고속 전용 네트워크를 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "NFC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NFC'이므로 일치하지 않습니다. NAS는 이더넷 등 일반 네트워크를 통해 연결합니다. SAN은 광섬유 채널 등 고속 전용 네트워크를 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 스토리지 시스템은? - 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 - 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+          "핵심 개념을 떠올립니다. DAS, Direct Attached Storage, Host Bus Adapter",
+          "정답 판단 근거를 적용합니다. DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로, 네트워크 장비가 필요 없습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NAS는 이더넷 등 일반 네트워크를 통해 연결합니다."
+        ],
+        "exam_traps": [
+          "NAS는 이더넷 등 일반 네트워크를 통해 연결합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Direct Attached Storage'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Host Bus Adapter'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Direct = 직접 연결 = DAS"
+        ],
+        "detailed_summary": "스토리지 연결 방식 중 DAS의 특징을 묻는 문제입니다. 문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다. NAS는 네트워크를 통해 연결하며, SAN은 전용 네트워크를 별도로 구성합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 스토리지 시스템은? - 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 - 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성 정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로, 네트워크 장비가 필요 없습니다. 시험 포인트는 NAS는 이더넷 등 일반 네트워크를 통해 연결합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스토리지",
+        "DAS",
+        "직접 연결",
+        "저장장치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5c7624a929dbf8a9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136,
+          137,
+          138,
+          139,
+          140,
+          141
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 141
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "78섹션 2필드"
+        ],
+        "chapter_label": "78섹션 2필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 78섹션 2필드",
+        "chapter_id": "chapter_163"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 내용이 설명하는 스토리지 시스템은?\n• 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식\n• 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DAS"
+          },
+          {
+            "label": "2",
+            "text": "NAS"
+          },
+          {
+            "label": "3",
+            "text": "SAN"
+          },
+          {
+            "label": "4",
+            "text": "NFC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "DAS"
+        ],
+        "answer_text": "DAS"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다.",
+        "summary": "호스트에 직접 연결되는 스토리지 방식인 DAS에 대한 설명입니다.",
+        "why_correct": [
+          "DAS(Direct Attached Storage)는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "NAS는 네트워크를 통해 연결합니다.",
+          "SAN은 전용 광네트워크를 사용합니다.",
+          "NFC는 근거리 무선 통신 기술입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "NAS",
+          "SAN"
+        ],
+        "memory_cues": [
+          "Direct = 직접 연결 = DAS"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DAS",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS(Direct Attached Storage)는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "NAS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NAS'이므로 일치하지 않습니다. NAS는 네트워크를 통해 연결합니다. SAN은 전용 광네트워크를 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "SAN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'SAN'이므로 일치하지 않습니다. NAS는 네트워크를 통해 연결합니다. SAN은 전용 광네트워크를 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "NFC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 DAS'인데 이 선택지는 'NFC'이므로 일치하지 않습니다. NAS는 네트워크를 통해 연결합니다. SAN은 전용 광네트워크를 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 스토리지 시스템은? • 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 • 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성",
+          "핵심 개념을 떠올립니다. DAS, NAS, SAN",
+          "정답 판단 근거를 적용합니다. DAS(Direct Attached Storage)는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NAS는 네트워크를 통해 연결합니다."
+        ],
+        "exam_traps": [
+          "NAS는 네트워크를 통해 연결합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Direct = 직접 연결 = DAS"
+        ],
+        "detailed_summary": "호스트에 직접 연결되는 스토리지 방식인 DAS에 대한 설명입니다. 전문가의 조언 | 문제의 지문에서 설명하는 스토리지 시스템은 DAS(Direct Attached Storage)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 스토리지 시스템은? • 하드디스크와 같은 데이터 저장장치를 호스트버스 어댑터에 직접 연결하는 방식 • 저장장치와 호스트 기기 사이에 네트워크 디바이스 없이 직접 연결하는 방식으로 구성 정답입니다. 이 선택지는 실제 정답인 '1번 DAS'와 일치합니다. DAS(Direct Attached Storage)는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식입니다. 시험 포인트는 NAS는 네트워크를 통해 연결합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "DAS",
+        "Direct Attached Storage",
+        "스토리지",
+        "호스트버스 어댑터"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0a2a8442e1b202c6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          147
+        ],
+        "page_span": {
+          "start_page": 147,
+          "end_page": 147
+        },
+        "source_explanation": "전문가의 조언 | 3번은 NAS(Network Attached Storage)에 대한 설명입니다. DAS는 서버에 연결된 저장장치이므로 서버를 통하지 않고 파일에 직접 접근할 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "3과목 데이터베이스 구축 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_119"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "51. 스토리지(Storage)의 종류 중 DAS(Direct Attached Storage)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "서버와 저장장치를 전용 케이블로 직접 연결하는 방식이다."
+          },
+          {
+            "label": "2",
+            "text": "저장 데이터가 적고 공유가 필요 없는 환경에 적합하다."
+          },
+          {
+            "label": "3",
+            "text": "네트워크를 통해 파일에 직접 접근할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "초기 구축 비용 및 유지보수 비용이 저렴하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "네트워크를 통해 파일에 직접 접근할 수 있다."
+        ],
+        "answer_text": "네트워크를 통해 파일에 직접 접근할 수 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 3번은 NAS(Network Attached Storage)에 대한 설명입니다. DAS는 서버에 연결된 저장장치이므로 서버를 통하지 않고 파일에 직접 접근할 수 없습니다.",
+        "summary": "스토리지 연결 방식인 DAS의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "DAS는 서버와 1:1로 직접 연결되는 방식이므로, 네트워크를 통한 직접 파일 접근은 NAS의 특징입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "NAS",
+          "SAN"
+        ],
+        "memory_cues": [
+          "DAS = Direct (직접)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "서버와 저장장치를 전용 케이블로 직접 연결하는 방식이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 네트워크를 통해 파일에 직접 접근할 수 있다.'인데 이 선택지는 '서버와 저장장치를 전용 케이블로 직접 연결하는 방식이다.'이므로 일치하지 않습니다. 1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "저장 데이터가 적고 공유가 필요 없는 환경에 적합하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 네트워크를 통해 파일에 직접 접근할 수 있다.'인데 이 선택지는 '저장 데이터가 적고 공유가 필요 없는 환경에 적합하다.'이므로 일치하지 않습니다. 1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "네트워크를 통해 파일에 직접 접근할 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 네트워크를 통해 파일에 직접 접근할 수 있다.'와 일치합니다. DAS는 서버와 1:1로 직접 연결되는 방식이므로, 네트워크를 통한 직접 파일 접근은 NAS의 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "초기 구축 비용 및 유지보수 비용이 저렴하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 네트워크를 통해 파일에 직접 접근할 수 있다.'인데 이 선택지는 '초기 구축 비용 및 유지보수 비용이 저렴하다.'이므로 일치하지 않습니다. 1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 51. 스토리지(Storage)의 종류 중 DAS(Direct Attached Storage)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. DAS, NAS, SAN",
+          "정답 판단 근거를 적용합니다. DAS는 서버와 1:1로 직접 연결되는 방식이므로, 네트워크를 통한 직접 파일 접근은 NAS의 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DAS = Direct (직접)"
+        ],
+        "detailed_summary": "스토리지 연결 방식인 DAS의 특징을 묻는 문제입니다. 전문가의 조언 | 3번은 NAS(Network Attached Storage)에 대한 설명입니다. DAS는 서버에 연결된 저장장치이므로 서버를 통하지 않고 파일에 직접 접근할 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 51. 스토리지(Storage)의 종류 중 DAS(Direct Attached Storage)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 네트워크를 통해 파일에 직접 접근할 수 있다.'와 일치합니다. DAS는 서버와 1:1로 직접 연결되는 방식이므로, 네트워크를 통한 직접 파일 접근은 NAS의 특징입니다. 시험 포인트는 1, 2, 4번은 전용 케이블 사용, 저비용, 비공유 환경 적합 등 DAS의 전형적인 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DAS",
+        "NAS",
+        "스토리지",
+        "직접 연결"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_868c0be82faf2a1a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          173
+        ],
+        "page_span": {
+          "start_page": 173,
+          "end_page": 173
+        },
+        "source_explanation": "1번 설명은 SAN(Storage Area Network)에 대한 설명입니다. DAS는 서버에 직접 연결되는 방식으로 저장장치 공유가 어렵습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "정보시스템 구축관리 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_325"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 DAS(Direct Attached Storage)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "서버에서 저장장치를 관리한다."
+          },
+          {
+            "label": "3",
+            "text": "초기 구축 비용 및 유지보수 비용이 저렴하다."
+          },
+          {
+            "label": "4",
+            "text": "확장성 및 유연성이 상대적으로 떨어진다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다."
+        ],
+        "answer_text": "저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다."
+      },
+      "explanation": {
+        "source_text": "1번 설명은 SAN(Storage Area Network)에 대한 설명입니다. DAS는 서버에 직접 연결되는 방식으로 저장장치 공유가 어렵습니다.",
+        "summary": "데이터 저장 장치 연결 방식인 DAS의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "DAS는 서버와 1:1로 직접 연결되므로 여러 서버가 저장장치를 공유하는 기능은 제공하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+        ],
+        "key_concepts": [
+          "DAS",
+          "NAS",
+          "SAN"
+        ],
+        "memory_cues": [
+          "DAS: Direct(직접) 연결 -> 공유 불가"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.'와 일치합니다. DAS는 서버와 1:1로 직접 연결되므로 여러 서버가 저장장치를 공유하는 기능은 제공하지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "서버에서 저장장치를 관리한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.'인데 이 선택지는 '서버에서 저장장치를 관리한다.'이므로 일치하지 않습니다. 2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "초기 구축 비용 및 유지보수 비용이 저렴하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.'인데 이 선택지는 '초기 구축 비용 및 유지보수 비용이 저렴하다.'이므로 일치하지 않습니다. 2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "확장성 및 유연성이 상대적으로 떨어진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.'인데 이 선택지는 '확장성 및 유연성이 상대적으로 떨어진다.'이므로 일치하지 않습니다. 2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 DAS(Direct Attached Storage)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. DAS, NAS, SAN",
+          "정답 판단 근거를 적용합니다. DAS는 서버와 1:1로 직접 연결되므로 여러 서버가 저장장치를 공유하는 기능은 제공하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DAS: Direct(직접) 연결 -> 공유 불가"
+        ],
+        "detailed_summary": "데이터 저장 장치 연결 방식인 DAS의 특징을 묻는 문제입니다. 1번 설명은 SAN(Storage Area Network)에 대한 설명입니다. DAS는 서버에 직접 연결되는 방식으로 저장장치 공유가 어렵습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 DAS(Direct Attached Storage)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화시킬 수 있다.'와 일치합니다. DAS는 서버와 1:1로 직접 연결되므로 여러 서버가 저장장치를 공유하는 기능은 제공하지 않습니다. 시험 포인트는 2, 3, 4번은 직접 연결 방식인 DAS의 전형적인 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "DAS",
+        "스토리지",
+        "SAN",
+        "NAS"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6220361cb0baa6ed",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0191_p0196"
+        ],
+        "source_pages": [
+          192
+        ],
+        "page_span": {
+          "start_page": 192,
+          "end_page": 192
+        },
+        "source_explanation": "문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "데이터베이스 보안·백업·스토리지"
+        ],
+        "chapter_label": "데이터베이스 보안·백업·스토리지",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 데이터베이스 보안·백업·스토리지",
+        "chapter_id": "chapter_170"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_050",
+        "topic_title": "데이터베이스 보안·백업·스토리지",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "데이터베이스 보안·백업·스토리지",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "97. 다음 내용이 설명하는 것은?\n- 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용\n- 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SAN"
+          },
+          {
+            "label": "2",
+            "text": "MBR"
+          },
+          {
+            "label": "3",
+            "text": "NAC"
+          },
+          {
+            "label": "4",
+            "text": "NIC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SAN"
+        ],
+        "answer_text": "SAN"
+      },
+      "explanation": {
+        "source_text": "문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다.",
+        "summary": "고속 전송과 데이터 공유를 위한 스토리지 전용 네트워크 기술을 찾는 문제입니다.",
+        "why_correct": [
+          "SAN(Storage Area Network)은 광채널(Fibre Channel) 스위치를 사용하여 서버와 저장장치를 연결하는 고속 전용 네트워크입니다."
+        ],
+        "why_others_wrong": [
+          "MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다.",
+          "NAC(Network Access Control)은 네트워크 접근 제어 보안 솔루션입니다.",
+          "NIC(Network Interface Card)은 컴퓨터를 네트워크에 연결하는 하드웨어(랜카드)입니다."
+        ],
+        "key_concepts": [
+          "SAN",
+          "NAS",
+          "DAS",
+          "광채널(FC)"
+        ],
+        "memory_cues": [
+          "광채널 + 스토리지 전용망 = SAN"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SAN",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SAN'와 일치합니다. SAN(Storage Area Network)은 광채널(Fibre Channel) 스위치를 사용하여 서버와 저장장치를 연결하는 고속 전용 네트워크입니다."
+          },
+          {
+            "label": "2",
+            "text": "MBR",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'MBR'이므로 일치하지 않습니다. MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다. NAC(Network Access Control)은 네트워크 접근 제어 보안 솔루션입니다."
+          },
+          {
+            "label": "3",
+            "text": "NAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'NAC'이므로 일치하지 않습니다. MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다. NAC(Network Access Control)은 네트워크 접근 제어 보안 솔루션입니다."
+          },
+          {
+            "label": "4",
+            "text": "NIC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'NIC'이므로 일치하지 않습니다. MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다. NAC(Network Access Control)은 네트워크 접근 제어 보안 솔루션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 다음 내용이 설명하는 것은? - 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용 - 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+          "핵심 개념을 떠올립니다. SAN, NAS, DAS, 광채널(FC)",
+          "정답 판단 근거를 적용합니다. SAN(Storage Area Network)은 광채널(Fibre Channel) 스위치를 사용하여 서버와 저장장치를 연결하는 고속 전용 네트워크입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다."
+        ],
+        "exam_traps": [
+          "MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '광채널(FC)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 광채널 + 스토리지 전용망 = SAN"
+        ],
+        "detailed_summary": "고속 전송과 데이터 공유를 위한 스토리지 전용 네트워크 기술을 찾는 문제입니다. 문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 다음 내용이 설명하는 것은? - 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용 - 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템 정답입니다. 이 선택지는 실제 정답인 '1번 SAN'와 일치합니다. SAN(Storage Area Network)은 광채널(Fibre Channel) 스위치를 사용하여 서버와 저장장치를 연결하는 고속 전용 네트워크입니다. 시험 포인트는 MBR(Master Boot Record)은 하드 디스크의 첫 번째 섹터에 위치한 부팅 정보입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "SAN",
+        "Storage Area Network",
+        "스토리지",
+        "광채널"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

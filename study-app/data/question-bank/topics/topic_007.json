@@ -1,0 +1,884 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_007",
+    "sequence": 7,
+    "title": "UML 기본 관계",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 5,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_263",
+      "chapter_031",
+      "chapter_030"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_652ebd2400a3ebf1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          102
+        ],
+        "page_span": {
+          "start_page": 102,
+          "end_page": 102
+        },
+        "source_explanation": "문제의 UML 모델은 하나의 사물이 다른 사물에 비해 더 일반적인지 구체적인지를 표현하는 일반화(Generalization) 관계를 표현하고 있습니다. 차를 구체적으로 표현하면 버스, 트럭, 택시가 되고, 반대로 버스, 트럭, 택시를 일반적으로 표현하면 차가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_007",
+        "topic_title": "UML 기본 관계",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UML 기본 관계",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "14. 아래의 UML 모델에서 '차' 클래스와 각 클래스의 관계로 옳은 것은?\n[다이어그램 내용: 상단에 '차' 클래스가 있고, 하단에 '버스', '트럭', '택시' 클래스가 있으며 '차' 방향으로 빈 화살표가 연결됨]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "추상화 관계"
+          },
+          {
+            "label": "2",
+            "text": "의존 관계"
+          },
+          {
+            "label": "3",
+            "text": "일반화 관계"
+          },
+          {
+            "label": "4",
+            "text": "그룹 관계"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "일반화 관계"
+        ],
+        "answer_text": "일반화 관계"
+      },
+      "explanation": {
+        "source_text": "문제의 UML 모델은 하나의 사물이 다른 사물에 비해 더 일반적인지 구체적인지를 표현하는 일반화(Generalization) 관계를 표현하고 있습니다. 차를 구체적으로 표현하면 버스, 트럭, 택시가 되고, 반대로 버스, 트럭, 택시를 일반적으로 표현하면 차가 됩니다.",
+        "summary": "UML에서 상속 관계를 나타내는 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "하위 개념(버스, 트럭 등)에서 상위 개념(차)으로 빈 삼각형 화살표가 연결된 것은 '일반화(Generalization)' 관계, 즉 상속을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+        ],
+        "key_concepts": [
+          "Generalization",
+          "Inheritance",
+          "UML Class Diagram"
+        ],
+        "memory_cues": [
+          "빈 삼각형 화살표 = 일반화(상속)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "추상화 관계",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 일반화 관계'인데 이 선택지는 '추상화 관계'이므로 일치하지 않습니다. 의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "의존 관계",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 일반화 관계'인데 이 선택지는 '의존 관계'이므로 일치하지 않습니다. 의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "일반화 관계",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 일반화 관계'와 일치합니다. 하위 개념(버스, 트럭 등)에서 상위 개념(차)으로 빈 삼각형 화살표가 연결된 것은 '일반화(Generalization)' 관계, 즉 상속을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "그룹 관계",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 일반화 관계'인데 이 선택지는 '그룹 관계'이므로 일치하지 않습니다. 의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 14. 아래의 UML 모델에서 '차' 클래스와 각 클래스의 관계로 옳은 것은? [다이어그램 내용: 상단에 '차' 클래스가 있고, 하단에 '버스', '트럭', '택시' 클래스가 있으며 '차' 방향으로 빈 화살표가 연결됨]",
+          "핵심 개념을 떠올립니다. Generalization, Inheritance, UML Class Diagram",
+          "정답 판단 근거를 적용합니다. 하위 개념(버스, 트럭 등)에서 상위 개념(차)으로 빈 삼각형 화살표가 연결된 것은 '일반화(Generalization)' 관계, 즉 상속을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+        ],
+        "exam_traps": [
+          "의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Generalization'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Inheritance'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'UML Class Diagram'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 빈 삼각형 화살표 = 일반화(상속)"
+        ],
+        "detailed_summary": "UML에서 상속 관계를 나타내는 표기법을 묻는 문제입니다. 문제의 UML 모델은 하나의 사물이 다른 사물에 비해 더 일반적인지 구체적인지를 표현하는 일반화(Generalization) 관계를 표현하고 있습니다. 차를 구체적으로 표현하면 버스, 트럭, 택시가 되고, 반대로 버스, 트럭, 택시를 일반적으로 표현하면 차가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 14. 아래의 UML 모델에서 '차' 클래스와 각 클래스의 관계로 옳은 것은? [다이어그램 내용: 상단에 '차' 클래스가 있고, 하단에 '버스', '트럭', '택시' 클래스가 있으며 '차' 방향으로 빈 화살표가 연결됨] 정답입니다. 이 선택지는 실제 정답인 '3번 일반화 관계'와 일치합니다. 하위 개념(버스, 트럭 등)에서 상위 개념(차)으로 빈 삼각형 화살표가 연결된 것은 '일반화(Generalization)' 관계, 즉 상속을 의미합니다. 시험 포인트는 의존 관계는 점선 화살표로 표현하며, 추상화나 그룹 관계는 이 다이어그램의 표준 명칭이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency"
+        ]
+      },
+      "keywords": [
+        "UML",
+        "일반화 관계",
+        "Generalization",
+        "상속"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          102
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0102",
+            "page_number": 102,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0102.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 939476,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0102",
+          "page_number": 102,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0102.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 939476,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0102",
+          "page_number": 102,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0102.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 939476,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_fd3ff56986c27775",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          102
+        ],
+        "page_span": {
+          "start_page": 102,
+          "end_page": 102
+        },
+        "source_explanation": "문제에서 설명하는 관계는 의존(Dependency) 관계입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_007",
+        "topic_title": "UML 기본 관계",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UML 기본 관계",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "15. 하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Generalization"
+          },
+          {
+            "label": "2",
+            "text": "Association"
+          },
+          {
+            "label": "3",
+            "text": "Dependency"
+          },
+          {
+            "label": "4",
+            "text": "Realization"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Dependency"
+        ],
+        "answer_text": "Dependency"
+      },
+      "explanation": {
+        "source_text": "문제에서 설명하는 관계는 의존(Dependency) 관계입니다.",
+        "summary": "클래스 간의 일시적인 참조 관계를 나타내는 UML 용어를 묻는 문제입니다.",
+        "why_correct": [
+          "의존(Dependency) 관계는 한 클래스가 다른 클래스를 매개변수로 사용하거나 지역 변수로 사용하는 등, 짧은 시간 동안만 관계를 맺는 것을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+        ],
+        "key_concepts": [
+          "Dependency",
+          "UML Relationships",
+          "Parameter usage"
+        ],
+        "memory_cues": [
+          "매개변수로 잠깐 쓰면 '의존'한다!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Generalization",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Generalization'이므로 일치하지 않습니다. Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "Association",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Association'이므로 일치하지 않습니다. Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "Dependency",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Dependency'와 일치합니다. 의존(Dependency) 관계는 한 클래스가 다른 클래스를 매개변수로 사용하거나 지역 변수로 사용하는 등, 짧은 시간 동안만 관계를 맺는 것을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Realization",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Realization'이므로 일치하지 않습니다. Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 15. 하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+          "핵심 개념을 떠올립니다. Dependency, UML Relationships, Parameter usage",
+          "정답 판단 근거를 적용합니다. 의존(Dependency) 관계는 한 클래스가 다른 클래스를 매개변수로 사용하거나 지역 변수로 사용하는 등, 짧은 시간 동안만 관계를 맺는 것을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+        ],
+        "exam_traps": [
+          "Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Dependency'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'UML Relationships'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Parameter usage'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 매개변수로 잠깐 쓰면 '의존'한다!"
+        ],
+        "detailed_summary": "클래스 간의 일시적인 참조 관계를 나타내는 UML 용어를 묻는 문제입니다. 문제에서 설명하는 관계는 의존(Dependency) 관계입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 15. 하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는? 정답입니다. 이 선택지는 실제 정답인 '3번 Dependency'와 일치합니다. 의존(Dependency) 관계는 한 클래스가 다른 클래스를 매개변수로 사용하거나 지역 변수로 사용하는 등, 짧은 시간 동안만 관계를 맺는 것을 의미합니다. 시험 포인트는 Generalization은 상속, Association은 지속적인 연관, Realization은 인터페이스 구현을 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "의존 관계",
+        "Dependency",
+        "UML 관계",
+        "매개 변수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_27ddaa94ef1ac610",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          119
+        ],
+        "page_span": {
+          "start_page": 119,
+          "end_page": 119
+        },
+        "source_explanation": "UML에서 스테레오 타입을 표현할 때는 길러멧(Guillemet) 기호인 '<< >>'를 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "UML 기본 관계"
+        ],
+        "chapter_label": "UML 기본 관계",
+        "chapter_key": "소프트웨어 설계 > UML 기본 관계",
+        "chapter_id": "chapter_263"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_007",
+        "topic_title": "UML 기본 관계",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UML 기본 관계",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "<< >>"
+          },
+          {
+            "label": "2",
+            "text": "(( ))"
+          },
+          {
+            "label": "3",
+            "text": "{{ }}"
+          },
+          {
+            "label": "4",
+            "text": "[[ ]]"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "<< >>"
+        ],
+        "answer_text": "<< >>"
+      },
+      "explanation": {
+        "source_text": "UML에서 스테레오 타입을 표현할 때는 길러멧(Guillemet) 기호인 '<< >>'를 사용합니다.",
+        "summary": "UML의 확장 메커니즘인 스테레오 타입의 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "스테레오 타입은 기존 UML 요소에 새로운 의미를 부여할 때 사용하며 '<< >>' 사이에 이름을 적습니다."
+        ],
+        "why_others_wrong": [
+          "다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+        ],
+        "key_concepts": [
+          "Stereotype",
+          "Guillemet"
+        ],
+        "memory_cues": [
+          "스테레오 = 화살표 두 개(<< >>)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "<< >>",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 << >>'와 일치합니다. 스테레오 타입은 기존 UML 요소에 새로운 의미를 부여할 때 사용하며 '<< >>' 사이에 이름을 적습니다."
+          },
+          {
+            "label": "2",
+            "text": "(( ))",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '(( ))'이므로 일치하지 않습니다. 다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "{{ }}",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '{{ }}'이므로 일치하지 않습니다. 다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "[[ ]]",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '[[ ]]'이므로 일치하지 않습니다. 다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+          "핵심 개념을 떠올립니다. Stereotype, Guillemet",
+          "정답 판단 근거를 적용합니다. 스테레오 타입은 기존 UML 요소에 새로운 의미를 부여할 때 사용하며 '<< >>' 사이에 이름을 적습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+        ],
+        "exam_traps": [
+          "다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Stereotype'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Guillemet'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스테레오 = 화살표 두 개(<< >>)"
+        ],
+        "detailed_summary": "UML의 확장 메커니즘인 스테레오 타입의 표기법을 묻는 문제입니다. UML에서 스테레오 타입을 표현할 때는 길러멧(Guillemet) 기호인 '<< >>'를 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 << >>'와 일치합니다. 스테레오 타입은 기존 UML 요소에 새로운 의미를 부여할 때 사용하며 '<< >>' 사이에 이름을 적습니다. 시험 포인트는 다른 괄호 기호들은 UML 스테레오 타입 표기법이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "UML",
+        "스테레오 타입",
+        "길러멧",
+        "확장 모델"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          119
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0119",
+            "page_number": 119,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0119.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 1077538,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0119",
+          "page_number": 119,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0119.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1384,
+          "file_size_bytes": 1077538,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0119",
+          "page_number": 119,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0119.png",
+          "content_type": "image/png",
+          "width": 1037,
+          "height": 1384,
+          "file_size_bytes": 1077538,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_9a8dc2ad48eab21f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          121
+        ],
+        "page_span": {
+          "start_page": 121,
+          "end_page": 121
+        },
+        "source_explanation": "전문가의 조언 | 스테레오 타입을 표현하는 기호는 겹화살괄호(<< >>)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "9섹션 4빌드"
+        ],
+        "chapter_label": "9섹션 4빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 9섹션 4빌드",
+        "chapter_id": "chapter_031"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_007",
+        "topic_title": "UML 기본 관계",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UML 기본 관계",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "6. UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "<< >>"
+          },
+          {
+            "label": "2",
+            "text": "(( ))"
+          },
+          {
+            "label": "3",
+            "text": "{{ }}"
+          },
+          {
+            "label": "4",
+            "text": "[[ ]]"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "<< >>"
+        ],
+        "answer_text": "<< >>"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 스테레오 타입을 표현하는 기호는 겹화살괄호(<< >>)입니다.",
+        "summary": "UML에서 기본 요소 외에 새로운 의미를 부여하기 위해 사용하는 스테레오 타입의 표기법을 묻는 문제입니다.",
+        "why_correct": [
+          "스테레오 타입은 길러멧(Guillemet)이라고 불리는 겹화살괄호 '<< >>' 사이에 이름을 적어 표현합니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+        ],
+        "key_concepts": [
+          "Stereotype",
+          "Guillemet",
+          "<< >>"
+        ],
+        "memory_cues": [
+          "스테레오 타입은 화살표 두 개씩(<< >>)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "<< >>",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 << >>'와 일치합니다. 스테레오 타입은 길러멧(Guillemet)이라고 불리는 겹화살괄호 '<< >>' 사이에 이름을 적어 표현합니다."
+          },
+          {
+            "label": "2",
+            "text": "(( ))",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '(( ))'이므로 일치하지 않습니다. 2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "{{ }}",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '{{ }}'이므로 일치하지 않습니다. 2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "[[ ]]",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 << >>'인데 이 선택지는 '[[ ]]'이므로 일치하지 않습니다. 2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 6. UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은?",
+          "핵심 개념을 떠올립니다. Stereotype, Guillemet, << >>",
+          "정답 판단 근거를 적용합니다. 스테레오 타입은 길러멧(Guillemet)이라고 불리는 겹화살괄호 '<< >>' 사이에 이름을 적어 표현합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Stereotype'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Guillemet'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '<< >>'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스테레오 타입은 화살표 두 개씩(<< >>)"
+        ],
+        "detailed_summary": "UML에서 기본 요소 외에 새로운 의미를 부여하기 위해 사용하는 스테레오 타입의 표기법을 묻는 문제입니다. 전문가의 조언 | 스테레오 타입을 표현하는 기호는 겹화살괄호(<< >>)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 6. UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호로 맞는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 << >>'와 일치합니다. 스테레오 타입은 길러멧(Guillemet)이라고 불리는 겹화살괄호 '<< >>' 사이에 이름을 적어 표현합니다. 시험 포인트는 2, 3, 4번은 UML에서 스테레오 타입을 나타내는 표준 기호가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스테레오 타입",
+        "UML 확장",
+        "길러멧",
+        "Stereotype"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "none",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          121
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0121",
+            "page_number": 121,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0121.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 885485,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0121",
+          "page_number": 121,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0121.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1384,
+          "file_size_bytes": 885485,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0121",
+          "page_number": 121,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0121.png",
+          "content_type": "image/png",
+          "width": 1035,
+          "height": 1384,
+          "file_size_bytes": 885485,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_46ce4cad396640f1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          138
+        ],
+        "page_span": {
+          "start_page": 138,
+          "end_page": 138
+        },
+        "source_explanation": "전문가의 조언 | 문제에서 설명하는 관계는 의존(Dependency) 관계입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "9섹션 3필드"
+        ],
+        "chapter_label": "9섹션 3필드",
+        "chapter_key": "1과목 소프트웨어 설계 > 9섹션 3필드",
+        "chapter_id": "chapter_030"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_007",
+        "topic_title": "UML 기본 관계",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UML 기본 관계",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Generalization"
+          },
+          {
+            "label": "2",
+            "text": "Association"
+          },
+          {
+            "label": "3",
+            "text": "Dependency"
+          },
+          {
+            "label": "4",
+            "text": "Realization"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Dependency"
+        ],
+        "answer_text": "Dependency"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에서 설명하는 관계는 의존(Dependency) 관계입니다.",
+        "summary": "UML 클래스 간의 관계 중 '의존 관계'의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "의존(Dependency) 관계는 한 사물의 명세가 바뀌면 그것을 사용하는 다른 사물에 영향을 주는 일시적인 관계를 의미합니다."
+        ],
+        "why_others_wrong": [
+          "Generalization은 상속(일반화)입니다.",
+          "Association은 지속적인 연관입니다.",
+          "Realization은 인터페이스 구현(실체화)입니다."
+        ],
+        "key_concepts": [
+          "UML 관계 (연관, 의존, 일반화, 실체화)"
+        ],
+        "memory_cues": [
+          "매개변수 사용 = 잠깐 의지함 = 의존"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Generalization",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Generalization'이므로 일치하지 않습니다. Generalization은 상속(일반화)입니다. Association은 지속적인 연관입니다."
+          },
+          {
+            "label": "2",
+            "text": "Association",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Association'이므로 일치하지 않습니다. Generalization은 상속(일반화)입니다. Association은 지속적인 연관입니다."
+          },
+          {
+            "label": "3",
+            "text": "Dependency",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Dependency'와 일치합니다. 의존(Dependency) 관계는 한 사물의 명세가 바뀌면 그것을 사용하는 다른 사물에 영향을 주는 일시적인 관계를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Realization",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Dependency'인데 이 선택지는 'Realization'이므로 일치하지 않습니다. Generalization은 상속(일반화)입니다. Association은 지속적인 연관입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는?",
+          "핵심 개념을 떠올립니다. UML 관계 (연관, 의존, 일반화, 실체화)",
+          "정답 판단 근거를 적용합니다. 의존(Dependency) 관계는 한 사물의 명세가 바뀌면 그것을 사용하는 다른 사물에 영향을 주는 일시적인 관계를 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Generalization은 상속(일반화)입니다."
+        ],
+        "exam_traps": [
+          "Generalization은 상속(일반화)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'UML 관계 (연관, 의존, 일반화, 실체화)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 매개변수 사용 = 잠깐 의지함 = 의존"
+        ],
+        "detailed_summary": "UML 클래스 간의 관계 중 '의존 관계'의 정의를 묻는 문제입니다. 전문가의 조언 | 문제에서 설명하는 관계는 의존(Dependency) 관계입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 하나의 사물의 변화가 다른 사물에도 영향을 미치는 관계로, 일반적으로 한 클래스가 다른 클래스를 오퍼레이션의 매개 변수로 사용하는 경우에 나타나는 관계는? 정답입니다. 이 선택지는 실제 정답인 '3번 Dependency'와 일치합니다. 의존(Dependency) 관계는 한 사물의 명세가 바뀌면 그것을 사용하는 다른 사물에 영향을 주는 일시적인 관계를 의미합니다. 시험 포인트는 Generalization은 상속(일반화)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "UML 관계",
+        "의존 관계",
+        "Dependency",
+        "클래스 다이어그램"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

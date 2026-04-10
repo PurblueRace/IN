@@ -1,0 +1,3367 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_047",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      215,
+      216,
+      217,
+      218
+    ],
+    "source_lecture_ids": [
+      "0215_215",
+      "0216_216",
+      "0217_217",
+      "0218_218"
+    ],
+    "source_titles": [
+      "시스템 카탈로그",
+      "트랜잭션",
+      "트랜잭션의상태",
+      "트랜잭션의 특성"
+    ],
+    "keywords": [
+      "시스템",
+      "카탈로그",
+      "트랜잭션",
+      "트랜잭션의상태",
+      "트랜잭션의"
+    ],
+    "highlight_keywords": [
+      "시스템",
+      "카탈로그",
+      "시스템 카탈로그",
+      "설명합니다",
+      "데이터",
+      "트랜잭션",
+      "트랜잭션 분석 / CRUD 분석",
+      "트랜잭션(Transaction)",
+      "CRUD 분석",
+      "트랜잭션 분석"
+    ],
+    "secondary_keywords": [
+      "정보를",
+      "DBMS",
+      "데이터베이스",
+      "객체에",
+      "카탈로그를",
+      "관한",
+      "단위",
+      "논리적",
+      "작업",
+      "논리적 기능 및 일련의 연산으로서의 트랜잭션",
+      "병행 제어 및 회복 작업의 논리적 단위",
+      "트랜잭션의 정의: 작업 단위"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0215_215",
+      "sequence": 215,
+      "number": "215",
+      "course_code": "350213",
+      "title": "시스템 카탈로그",
+      "duration_seconds": 279,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "segment_count": 12,
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "tokens": [
+            "시스템"
+          ],
+          "score": 49,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "카탈로그",
+          "tokens": [
+            "카탈로그"
+          ],
+          "score": 39,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "tokens": [
+            "시스템",
+            "카탈로그"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "설명합니다",
+          "tokens": [
+            "설명합니다"
+          ],
+          "score": 18,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "정보를",
+          "tokens": [
+            "정보를"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DBMS",
+          "tokens": [
+            "DBMS"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "객체에",
+          "tokens": [
+            "객체에"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "카탈로그를",
+          "tokens": [
+            "카탈로그를"
+          ],
+          "score": 10,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "관한",
+          "tokens": [
+            "관한"
+          ],
+          "score": 10,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_047-subtopic-001-source-seg-001::01",
+          "prompt": "강의 주제인 '______ 카탈로그'를 소개하며 시작합니다.",
+          "answer": "시스템",
+          "original": "강의 주제인 '시스템 카탈로그'를 소개하며 시작합니다.",
+          "keyword": "시스템",
+          "source_segment_id": "topic_047-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '시스템'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-001-source-seg-001::02",
+          "prompt": "강의 주제인 '시스템 ______'를 소개하며 시작합니다.",
+          "answer": "카탈로그",
+          "original": "강의 주제인 '시스템 카탈로그'를 소개하며 시작합니다.",
+          "keyword": "카탈로그",
+          "source_segment_id": "topic_047-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '카탈로그'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-001-source-seg-001::03",
+          "prompt": "강의 주제인 '______'를 소개하며 시작합니다.",
+          "answer": "시스템 카탈로그",
+          "original": "강의 주제인 '시스템 카탈로그'를 소개하며 시작합니다.",
+          "keyword": "시스템 카탈로그",
+          "source_segment_id": "topic_047-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '시스템 카탈로그'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-001-source-seg-002::04",
+          "prompt": "일상생활의 카탈로그 비유를 통해 시스템 카탈로그의 개념을 ______.",
+          "answer": "설명합니다",
+          "original": "일상생활의 카탈로그 비유를 통해 시스템 카탈로그의 개념을 설명합니다.",
+          "keyword": "설명합니다",
+          "source_segment_id": "topic_047-subtopic-001-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '설명합니다'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0216_216",
+      "sequence": 216,
+      "number": "216",
+      "course_code": "350214",
+      "title": "트랜잭션",
+      "duration_seconds": 60,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "tokens": [
+            "트랜잭션"
+          ],
+          "score": 50,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "tokens": [
+            "트랜잭션",
+            "분석",
+            "CRUD"
+          ],
+          "score": 45,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션(Transaction)",
+          "tokens": [
+            "트랜잭션",
+            "Transaction"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "CRUD 분석",
+          "tokens": [
+            "CRUD",
+            "분석"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션 분석",
+          "tokens": [
+            "트랜잭션",
+            "분석"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "단위",
+          "tokens": [
+            "단위"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "논리적",
+          "tokens": [
+            "논리적"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "작업",
+          "tokens": [
+            "작업"
+          ],
+          "score": 11,
+          "sources": [
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "논리적 기능 및 일련의 연산으로서의 트랜잭션",
+          "tokens": [
+            "논리적",
+            "기능",
+            "일련의",
+            "연산으로서의",
+            "트랜잭션"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "병행 제어 및 회복 작업의 논리적 단위",
+          "tokens": [
+            "병행",
+            "제어",
+            "회복",
+            "작업의",
+            "논리적",
+            "단위"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션의 정의: 작업 단위",
+          "tokens": [
+            "트랜잭션의",
+            "작업",
+            "단위"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_047-subtopic-002-source-seg-001::01",
+          "prompt": "학습 주제 안내: ______ 분석 / CRUD 분석",
+          "answer": "트랜잭션",
+          "original": "학습 주제 안내: 트랜잭션 분석 / CRUD 분석",
+          "keyword": "트랜잭션",
+          "source_segment_id": "topic_047-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '트랜잭션'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-002-source-seg-001::02",
+          "prompt": "학습 주제 안내: ______",
+          "answer": "트랜잭션 분석 / CRUD 분석",
+          "original": "학습 주제 안내: 트랜잭션 분석 / CRUD 분석",
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "source_segment_id": "topic_047-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '트랜잭션 분석 / CRUD 분석'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-002-source-seg-001::03",
+          "prompt": "학습 주제 안내: 트랜잭션 분석 / ______",
+          "answer": "CRUD 분석",
+          "original": "학습 주제 안내: 트랜잭션 분석 / CRUD 분석",
+          "keyword": "CRUD 분석",
+          "source_segment_id": "topic_047-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'CRUD 분석'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-002-source-seg-001::04",
+          "prompt": "학습 주제 안내: ______ / CRUD 분석",
+          "answer": "트랜잭션 분석",
+          "original": "학습 주제 안내: 트랜잭션 분석 / CRUD 분석",
+          "keyword": "트랜잭션 분석",
+          "source_segment_id": "topic_047-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '트랜잭션 분석'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0217_217",
+      "sequence": 217,
+      "number": "217",
+      "course_code": "350215",
+      "title": "트랜잭션의상태",
+      "duration_seconds": 253,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "segment_count": 13,
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "tokens": [
+            "상태"
+          ],
+          "score": 70,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "트랜잭션의 상태",
+          "tokens": [
+            "트랜잭션의",
+            "상태"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "완료",
+          "tokens": [
+            "완료"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Committed",
+          "tokens": [
+            "Committed"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Aborted",
+          "tokens": [
+            "Aborted"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Active",
+          "tokens": [
+            "Active"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Failed",
+          "tokens": [
+            "Failed"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션의상태",
+          "tokens": [
+            "트랜잭션의상태"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "철회",
+          "tokens": [
+            "철회"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "실패",
+          "tokens": [
+            "실패"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "활동",
+          "tokens": [
+            "활동"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_047-subtopic-003-source-seg-001::01",
+          "prompt": "강의 주제인 '______' 소개",
+          "answer": "트랜잭션의 상태",
+          "original": "강의 주제인 '트랜잭션의 상태' 소개",
+          "keyword": "트랜잭션의 상태",
+          "source_segment_id": "topic_047-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '트랜잭션의 상태'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-003-source-seg-007::02",
+          "prompt": "부분 완료(Partially ______) 상태 설명",
+          "answer": "Committed",
+          "original": "부분 완료(Partially Committed) 상태 설명",
+          "keyword": "Committed",
+          "source_segment_id": "topic_047-subtopic-003-source-seg-007",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Committed'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-003-source-seg-003::03",
+          "prompt": "• 철회(______) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태",
+          "answer": "Aborted",
+          "original": "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태",
+          "keyword": "Aborted",
+          "source_segment_id": "topic_047-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Aborted'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-003-source-seg-003::04",
+          "prompt": "• 활동(______) : 트랜잭션이 실행 중인 상태",
+          "answer": "Active",
+          "original": "• 활동(Active) : 트랜잭션이 실행 중인 상태",
+          "keyword": "Active",
+          "source_segment_id": "topic_047-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Active'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0218_218",
+      "sequence": 218,
+      "number": "218",
+      "course_code": "350216",
+      "title": "트랜잭션의 특성",
+      "duration_seconds": 236,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "segment_count": 15,
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "tokens": [
+            "Atomicity"
+          ],
+          "score": 37,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "원자성",
+          "tokens": [
+            "원자성"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Consistency",
+          "tokens": [
+            "Consistency"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Durability",
+          "tokens": [
+            "Durability"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Isolation",
+          "tokens": [
+            "Isolation"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Atomicity (원자성)",
+          "tokens": [
+            "Atomicity",
+            "원자성"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션의",
+          "tokens": [
+            "트랜잭션의"
+          ],
+          "score": 27,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Rollback",
+          "tokens": [
+            "Rollback"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Commit",
+          "tokens": [
+            "Commit"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션",
+          "tokens": [
+            "트랜잭션"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "일관성",
+          "tokens": [
+            "일관성"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_047-subtopic-004-source-seg-003::01",
+          "prompt": "______ (원자성)",
+          "answer": "Atomicity",
+          "original": "Atomicity (원자성)",
+          "keyword": "Atomicity",
+          "source_segment_id": "topic_047-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Atomicity'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-004-source-seg-003::02",
+          "prompt": "Atomicity (______)",
+          "answer": "원자성",
+          "original": "Atomicity (원자성)",
+          "keyword": "원자성",
+          "source_segment_id": "topic_047-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '원자성'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-004-source-seg-003::03",
+          "prompt": "______ (일관성)",
+          "answer": "Consistency",
+          "original": "Consistency (일관성)",
+          "keyword": "Consistency",
+          "source_segment_id": "topic_047-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Consistency'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_047-subtopic-004-source-seg-003::04",
+          "prompt": "______ (영속성, 지속성)",
+          "answer": "Durability",
+          "original": "Durability (영속성, 지속성)",
+          "keyword": "Durability",
+          "source_segment_id": "topic_047-subtopic-004-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Durability'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_047",
+    "sequence": 47,
+    "number": "47",
+    "title": "시스템 카탈로그와 트랜잭션",
+    "title_raw": "시스템 카탈로그와 트랜잭션",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      215,
+      216,
+      217,
+      218
+    ],
+    "source_titles": [
+      "시스템 카탈로그",
+      "트랜잭션",
+      "트랜잭션의상태",
+      "트랜잭션의 특성"
+    ],
+    "preview_text": "시스템 카탈로그, 트랜잭션, 트랜잭션의상태 등",
+    "segment_count": 45,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 시스템 카탈로그, 트랜잭션, 트랜잭션의상태, 트랜잭션의 특성을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 시스템 카탈로그, 트랜잭션, 트랜잭션의상태, 트랜잭션의 특성을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 828,
+    "source_titles_preview": [
+      "시스템 카탈로그",
+      "트랜잭션",
+      "트랜잭션의상태"
+    ],
+    "highlight_keywords": [
+      "시스템",
+      "카탈로그",
+      "시스템 카탈로그",
+      "설명합니다",
+      "데이터",
+      "트랜잭션",
+      "트랜잭션 분석 / CRUD 분석",
+      "트랜잭션(Transaction)",
+      "CRUD 분석",
+      "트랜잭션 분석"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_047-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:00:02",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 2,
+      "end_seconds": 9,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 주제인 '시스템 카탈로그'를 소개하며 시작합니다.",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 시스템 카탈로그에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 시스템 카탈로그에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 9,
+      "end_seconds": 26,
+      "duration_seconds": 17,
+      "timeline_summary": "일상생활의 카탈로그 비유를 통해 시스템 카탈로그의 개념을 설명합니다.",
+      "screen_text_lines": [
+        "● 시스템 카탈로그(System Catalog)",
+        "· 시스템 카탈로그는 시스템 그 자체에 관련이 있는 다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스",
+        "· 시스템 카탈로그 내의 각 테이블은 사용자를 포함하여 DBMS에서 지원하는 모든 데이터 객체에 대한 정의나 명세에 관한 정보를 유지 관리하는 시스템 테이블 임",
+        "· 카탈로그들이 생성되면 데이터 사전(Data Dictionary)에 저장되기 때문에 좁은 의미로는 카탈로그를 데이터 사전이라고도 함"
+      ],
+      "screen_text": "● 시스템 카탈로그(System Catalog)\n· 시스템 카탈로그는 시스템 그 자체에 관련이 있는 다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스\n· 시스템 카탈로그 내의 각 테이블은 사용자를 포함하여 DBMS에서 지원하는 모든 데이터 객체에 대한 정의나 명세에 관한 정보를 유지 관리하는 시스템 테이블 임\n· 카탈로그들이 생성되면 데이터 사전(Data Dictionary)에 저장되기 때문에 좁은 의미로는 카탈로그를 데이터 사전이라고도 함",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 카탈로그라는 말이 나오죠?",
+        "이 카탈로그요.",
+        "우리 일상생활에 보게 되면 카탈로그가 되게 많아요.",
+        "뭐 가방도 그렇고 옷도 그렇고 그런 카탈로그가 있죠?",
+        "우리 자동차를 사더라도 자동차 대리점에 방문하게 되면은 우리 자동차도 전부 다 카탈로그가 있잖아요."
+      ],
+      "spoken_text": "지금 여기 보게 되면 카탈로그라는 말이 나오죠? 이 카탈로그요. 우리 일상생활에 보게 되면 카탈로그가 되게 많아요. 뭐 가방도 그렇고 옷도 그렇고 그런 카탈로그가 있죠? 우리 자동차를 사더라도 자동차 대리점에 방문하게 되면은 우리 자동차도 전부 다 카탈로그가 있잖아요.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 26,
+      "end_seconds": 41,
+      "duration_seconds": 15,
+      "timeline_summary": "자동차 카탈로그 예시를 통해 세부 정보 기록의 역할을 설명합니다.",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 우리 카탈로그 같은 거 보면은 지금처럼 이렇게 이 자동차에 어떤 기능들이 있는지 그런 것도 설명이 되어 있고 자동차의 실내 크기 실외 크기 길이 높이 얼마나 되는지 그런 것들이 다 써져 있는 거 그런 것들을 보고 우리가 카탈로그라고 하는 거죠."
+      ],
+      "spoken_text": "해서 우리 카탈로그 같은 거 보면은 지금처럼 이렇게 이 자동차에 어떤 기능들이 있는지 그런 것도 설명이 되어 있고 자동차의 실내 크기 실외 크기 길이 높이 얼마나 되는지 그런 것들이 다 써져 있는 거 그런 것들을 보고 우리가 카탈로그라고 하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:03",
+      "start_seconds": 41,
+      "end_seconds": 63,
+      "duration_seconds": 22,
+      "timeline_summary": "시스템 카탈로그가 데이터베이스 객체 정보를 포함하는 시스템 데이터베이스임을 정의합니다.",
+      "screen_text_lines": [
+        "다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스"
+      ],
+      "screen_text": "다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스",
+      "spoken_sentences": [
+        "해서 우리 일상생활에도 그렇게 카탈로그를 쓰듯이 여기서도 우리 시스템 카탈로그라는 거를 사용을 합니다.",
+        "여기서 얘기하는 시스템 카탈로그라는 거 뭘 얘기하냐?",
+        "얘는 데이터베이스에 보게 되면 다양한 객체들이 있죠?",
+        "그 다양한 객체들에 관한 그런 정보를 포함하고 있는 그런 시스템 데이터베이스를 보고 우리가 시스템 카탈로그 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 우리 일상생활에도 그렇게 카탈로그를 쓰듯이 여기서도 우리 시스템 카탈로그라는 거를 사용을 합니다. 여기서 얘기하는 시스템 카탈로그라는 거 뭘 얘기하냐? 얘는 데이터베이스에 보게 되면 다양한 객체들이 있죠? 그 다양한 객체들에 관한 그런 정보를 포함하고 있는 그런 시스템 데이터베이스를 보고 우리가 시스템 카탈로그 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:01:03",
+      "end_time_hms": "00:01:27",
+      "start_seconds": 63,
+      "end_seconds": 87,
+      "duration_seconds": 24,
+      "timeline_summary": "카탈로그에 포함되는 개체명, 소유자, 생성일 등 구체적인 정보 예시를 나열합니다.",
+      "screen_text_lines": [
+        "다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스"
+      ],
+      "screen_text": "다양한 객체에 관한 정보를 포함하는 시스템 데이터베이스",
+      "spoken_sentences": [
+        "해서 개체명이 뭐다 소유자는 누구다 그다음에 개체 종류는 어떤 거다 이 개체는 언제 생성이 됐다 해서 생성일도 나타내 주고요.",
+        "속성명이 됐든 테이블명이 됐든 속성의 타입이 됐든 그룹명이 됐든 인덱스명이 됐든 뷰명이 됐든 튜플의 개수가 됐든 권한이 됐든 그런 여러 가지 정보를 포함하고 있는 그런 시스템 데이터베이스를 보고 우리가 시스템 카탈로그라고 한다 그렇게 기억하시면 돼요."
+      ],
+      "spoken_text": "해서 개체명이 뭐다 소유자는 누구다 그다음에 개체 종류는 어떤 거다 이 개체는 언제 생성이 됐다 해서 생성일도 나타내 주고요. 속성명이 됐든 테이블명이 됐든 속성의 타입이 됐든 그룹명이 됐든 인덱스명이 됐든 뷰명이 됐든 튜플의 개수가 됐든 권한이 됐든 그런 여러 가지 정보를 포함하고 있는 그런 시스템 데이터베이스를 보고 우리가 시스템 카탈로그라고 한다 그렇게 기억하시면 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:01:27",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 87,
+      "end_seconds": 103,
+      "duration_seconds": 16,
+      "timeline_summary": "카탈로그가 데이터 객체의 정의와 명세를 유지 관리하는 시스템 테이블임을 설명합니다.",
+      "screen_text_lines": [
+        "각 테이블은 사용자를 포함하여",
+        "DBMS에서 지원하는 모든 데이터 객체에 대한 정의나 명세에 관한 정보를 유지 관리하는 시스템 테이블 임"
+      ],
+      "screen_text": "각 테이블은 사용자를 포함하여\nDBMS에서 지원하는 모든 데이터 객체에 대한 정의나 명세에 관한 정보를 유지 관리하는 시스템 테이블 임",
+      "spoken_sentences": [
+        "해서 시스템 카탈로그 내에 들어있는 각 테이블들은 사용자를 포함해서 우리 DBMS에서 지원하는 모든 데이터 객체에 대해서 정의나 명세 이런 정보들을 유지 관리하는 그런 시스템 테이블을 보고 우리가 시스템 카탈로그라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 시스템 카탈로그 내에 들어있는 각 테이블들은 사용자를 포함해서 우리 DBMS에서 지원하는 모든 데이터 객체에 대해서 정의나 명세 이런 정보들을 유지 관리하는 그런 시스템 테이블을 보고 우리가 시스템 카탈로그라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 103,
+      "end_seconds": 128,
+      "duration_seconds": 25,
+      "timeline_summary": "사용자는 검색만 가능하며 변경은 DBMS에 의해 자동으로 갱신됨을 강조합니다.",
+      "screen_text_lines": [
+        "정의나 명세"
+      ],
+      "screen_text": "정의나 명세",
+      "spoken_sentences": [
+        "이런 시스템 카탈로그는 사용자들은 그 시스템 카탈로그에 어떤 내용들이 있는지 그런 것들은 전부 다 검색은 할 수 있어요.",
+        "검색은 할 수 있지만 그 시스템 카탈로그에 들어있는 그런 내용들을 직접 변경은 불가능해요.",
+        "불가능하고 우리가 데이터 정의문이 됐든 조작문이 됐든 그런 것들 있죠?",
+        "그런 것들을 우리가 사용해서 뭔가 변경을 시키게 되면 그게 DBMS에 의해서 자동으로 갱신이 됩니다."
+      ],
+      "spoken_text": "이런 시스템 카탈로그는 사용자들은 그 시스템 카탈로그에 어떤 내용들이 있는지 그런 것들은 전부 다 검색은 할 수 있어요. 검색은 할 수 있지만 그 시스템 카탈로그에 들어있는 그런 내용들을 직접 변경은 불가능해요. 불가능하고 우리가 데이터 정의문이 됐든 조작문이 됐든 그런 것들 있죠? 그런 것들을 우리가 사용해서 뭔가 변경을 시키게 되면 그게 DBMS에 의해서 자동으로 갱신이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:33",
+      "start_seconds": 128,
+      "end_seconds": 153,
+      "duration_seconds": 25,
+      "timeline_summary": "카탈로그와 데이터 사전의 관계 및 메타데이터의 정의를 설명합니다.",
+      "screen_text_lines": [
+        "데이터 사전(Data Dictionary)"
+      ],
+      "screen_text": "데이터 사전(Data Dictionary)",
+      "spoken_sentences": [
+        "그때 카탈로그가 얘가 생성이 되게 되면 우리 데이터 사전에 저장되게 됩니다.",
+        "저장되기 때문에 좁은 의미로 봤을 때는 이 카탈로그를 다른 말로 데이터 사전 데이터 딕셔너리 그렇게 부르기도 해요.",
+        "이런 시스템 카탈로그에 여러 가지 정보들이 엄청나게 많이 들어있는데 그렇게 시스템 카탈로그에 저장된 그런 정보들을 우리가 메타데이터라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "그때 카탈로그가 얘가 생성이 되게 되면 우리 데이터 사전에 저장되게 됩니다. 저장되기 때문에 좁은 의미로 봤을 때는 이 카탈로그를 다른 말로 데이터 사전 데이터 딕셔너리 그렇게 부르기도 해요. 이런 시스템 카탈로그에 여러 가지 정보들이 엄청나게 많이 들어있는데 그렇게 시스템 카탈로그에 저장된 그런 정보들을 우리가 메타데이터라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "시스템 카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:02:33",
+      "end_time_hms": "00:03:00",
+      "start_seconds": 153,
+      "end_seconds": 180,
+      "duration_seconds": 27,
+      "timeline_summary": "카탈로그 자체가 시스템 테이블로 구성되어 SQL 검색이 가능함을 설명합니다.",
+      "screen_text_lines": [
+        "카탈로그의 특징",
+        "· 카탈로그 자체도 시스템 테이블로 구성되어 있어 일반 이용자도 SQL을 이용하여 내용을 검색해 볼 수 있음.",
+        "· INSERT, DELETE, UPDATE문으로 카탈로그를 갱신하는 것은 허용되지 않음."
+      ],
+      "screen_text": "카탈로그의 특징\n· 카탈로그 자체도 시스템 테이블로 구성되어 있어 일반 이용자도 SQL을 이용하여 내용을 검색해 볼 수 있음.\n· INSERT, DELETE, UPDATE문으로 카탈로그를 갱신하는 것은 허용되지 않음.",
+      "spoken_sentences": [
+        "카탈로그 자체도 우리 시스템 테이블로 전부 다 구성이 돼 있어요.",
+        "시스템 테이블로 구성돼 있어서 일반 이용자들도 SQL문 SQL문을 이용해서 해당 내용을 검색 검색을 해볼 수 있습니다.",
+        "검색은 해볼 수 있지만 우리가 인서트가 됐든 딜리트가 됐든 업데이트문이 됐든 이런 SQL문을 이용해서 사용자가 직접 이용자가 직접 카탈로그를 갱신하는 것은 허용되지 않습니다."
+      ],
+      "spoken_text": "카탈로그 자체도 우리 시스템 테이블로 전부 다 구성이 돼 있어요. 시스템 테이블로 구성돼 있어서 일반 이용자들도 SQL문 SQL문을 이용해서 해당 내용을 검색 검색을 해볼 수 있습니다. 검색은 해볼 수 있지만 우리가 인서트가 됐든 딜리트가 됐든 업데이트문이 됐든 이런 SQL문을 이용해서 사용자가 직접 이용자가 직접 카탈로그를 갱신하는 것은 허용되지 않습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "카탈로그를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:03:00",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 180,
+      "end_seconds": 202,
+      "duration_seconds": 22,
+      "timeline_summary": "카탈로그 관리는 DBMS가 전적으로 담당한다는 점을 재차 강조합니다.",
+      "screen_text_lines": [
+        "검색해 볼 수 있음",
+        "카탈로그를 갱신하는 것은 허용되지 않음",
+        "DBMS가 스스로 생성하고 유지함"
+      ],
+      "screen_text": "검색해 볼 수 있음\n카탈로그를 갱신하는 것은 허용되지 않음\nDBMS가 스스로 생성하고 유지함",
+      "spoken_sentences": [
+        "해서 카탈로그는 사용자는 뭐만 할 수 있다?",
+        "검색만 할 수 있더라.",
+        "이런 카탈로그는 그러면 누가 관리를 하냐?",
+        "이런 카탈로그는 DBMS가 스스로 생성하고 계속해서 그 데이터를 유지를 해 줘요."
+      ],
+      "spoken_text": "해서 카탈로그는 사용자는 뭐만 할 수 있다? 검색만 할 수 있더라. 이런 카탈로그는 그러면 누가 관리를 하냐? 이런 카탈로그는 DBMS가 스스로 생성하고 계속해서 그 데이터를 유지를 해 줘요.",
+      "highlight_keywords": [
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "카탈로그를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:03:22",
+      "end_time_hms": "00:03:51",
+      "start_seconds": 202,
+      "end_seconds": 231,
+      "duration_seconds": 29,
+      "timeline_summary": "시스템에 따른 카탈로그 구조의 차이와 자동 갱신 메커니즘을 설명합니다.",
+      "screen_text_lines": [
+        "· 데이터베이스 시스템에 따라 상이한 구조를 갖는다.",
+        "· 카탈로그는 DBMS가 스스로 생성하고 유지함.",
+        "· 카탈로그의 갱신 : 사용자가 SQL문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템이 자동으로 갱신함."
+      ],
+      "screen_text": "· 데이터베이스 시스템에 따라 상이한 구조를 갖는다.\n· 카탈로그는 DBMS가 스스로 생성하고 유지함.\n· 카탈로그의 갱신 : 사용자가 SQL문을 실행시켜 기본 테이블, 뷰, 인덱스 등에 변화를 주면 시스템이 자동으로 갱신함.",
+      "spoken_sentences": [
+        "그때 이 카탈로그라는 거는 데이터베이스 그 시스템에 따라서 상이한 그런 구조를 가지고 있어요.",
+        "그때 카탈로그를 갱신하겠다 이거는 사용자가 직접 못한다 그랬죠?",
+        "그때 누가 한다?",
+        "DBMS가 스스로 생성하고 유지를 하는데 만약에 사용자가 SQL문을 실행시켜서 테이블이 됐든 뷰가 됐든 인덱스 같은 거에 변화를 주게 되면 우리 DBMS가 DBMS가 자동으로 갱신을 해 줘요."
+      ],
+      "spoken_text": "그때 이 카탈로그라는 거는 데이터베이스 그 시스템에 따라서 상이한 그런 구조를 가지고 있어요. 그때 카탈로그를 갱신하겠다 이거는 사용자가 직접 못한다 그랬죠? 그때 누가 한다? DBMS가 스스로 생성하고 유지를 하는데 만약에 사용자가 SQL문을 실행시켜서 테이블이 됐든 뷰가 됐든 인덱스 같은 거에 변화를 주게 되면 우리 DBMS가 DBMS가 자동으로 갱신을 해 줘요.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "설명합니다",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0215_215",
+      "subtopic_title": "시스템 카탈로그",
+      "subtopic_sequence": 215,
+      "subtopic_number": "215",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=Z5-3tSMNY6U",
+      "start_time_hms": "00:03:51",
+      "end_time_hms": "00:04:39",
+      "start_seconds": 231,
+      "end_seconds": 279,
+      "duration_seconds": 48,
+      "timeline_summary": "분산 시스템 환경에서의 카탈로그 특징과 시험 출제 가능성을 언급하며 마무리합니다.",
+      "screen_text_lines": [
+        "· 분산 시스템에서의 카탈로그 : 보통의 릴레이션, 인덱스, 사용자 등의 정보를 포함할 뿐 아니라 위치 투명성 및 중복 투명성을 제공하기 위해 필요한 모든 제어 정보를 가져야 함."
+      ],
+      "screen_text": "· 분산 시스템에서의 카탈로그 : 보통의 릴레이션, 인덱스, 사용자 등의 정보를 포함할 뿐 아니라 위치 투명성 및 중복 투명성을 제공하기 위해 필요한 모든 제어 정보를 가져야 함.",
+      "spoken_sentences": [
+        "그때 분산 시스템에서 카탈로그라는 거는 여기서는 분산이라는 말이 들어갔죠?",
+        "그럼 여기저기 데이터베이스 시스템이 흩어져 있는 거예요.",
+        "그때는 보통의 릴레이션이 됐든 인덱스가 됐든 사용자가 됐든 그런 정보는 당연히 포함하고 있는 거고요.",
+        "그리고 얘는 데이터베이스 시스템이 분산돼 있기 때문에 그때 위치의 투명성이 됐든 아니면 중복의 투명성 이런 것들을 제공하기 위해 필요한 모든 제어 정보를 전부 다 가져야 돼요.",
+        "이런 것들이 전부 다 카탈로그의 우리 특징들이요.",
+        "이 카탈로그의 특징에 대한 설명이다 틀린 것은 그리고 시험 문제가 나왔었습니다.",
+        "나왔기 때문에 또 나올 수 있겠죠?",
+        "해서 이 내용 이 특징은 여러분들이 알고 지나가셔야 돼요."
+      ],
+      "spoken_text": "그때 분산 시스템에서 카탈로그라는 거는 여기서는 분산이라는 말이 들어갔죠? 그럼 여기저기 데이터베이스 시스템이 흩어져 있는 거예요. 그때는 보통의 릴레이션이 됐든 인덱스가 됐든 사용자가 됐든 그런 정보는 당연히 포함하고 있는 거고요. 그리고 얘는 데이터베이스 시스템이 분산돼 있기 때문에 그때 위치의 투명성이 됐든 아니면 중복의 투명성 이런 것들을 제공하기 위해 필요한 모든 제어 정보를 전부 다 가져야 돼요. 이런 것들이 전부 다 카탈로그의 우리 특징들이요. 이 카탈로그의 특징에 대한 설명이다 틀린 것은 그리고 시험 문제가 나왔었습니다. 나왔기 때문에 또 나올 수 있겠죠? 해서 이 내용 이 특징은 여러분들이 알고 지나가셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "시스템",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 49
+        },
+        {
+          "keyword": "카탈로그",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 39
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "정보를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0216_216",
+      "subtopic_title": "트랜잭션",
+      "subtopic_sequence": 216,
+      "subtopic_number": "216",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "start_time_hms": "00:00:02",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 2,
+      "end_seconds": 10,
+      "duration_seconds": 8,
+      "timeline_summary": "학습 주제 안내: 트랜잭션 분석 / CRUD 분석",
+      "screen_text_lines": [
+        "트랜잭션 분석 / CRUD 분석"
+      ],
+      "screen_text": "트랜잭션 분석 / CRUD 분석",
+      "spoken_sentences": [
+        "이번 시간에는 우리 트랜잭션 CRUD 분석에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 트랜잭션 CRUD 분석에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "트랜잭션 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0216_216",
+      "subtopic_title": "트랜잭션",
+      "subtopic_sequence": 216,
+      "subtopic_number": "216",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:16",
+      "start_seconds": 10,
+      "end_seconds": 16,
+      "duration_seconds": 6,
+      "timeline_summary": "트랜잭션의 정의: 작업 단위",
+      "screen_text_lines": [
+        "트랜잭션 분석 / CRUD 분석",
+        "트랜잭션(Transaction)"
+      ],
+      "screen_text": "트랜잭션 분석 / CRUD 분석\n트랜잭션(Transaction)",
+      "spoken_sentences": [
+        "우리 트랜잭션이라는 거는 한마디로 딱 얘기하게 되면 우리 작업 단위예요.",
+        "작업 단위."
+      ],
+      "spoken_text": "우리 트랜잭션이라는 거는 한마디로 딱 얘기하게 되면 우리 작업 단위예요. 작업 단위.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "트랜잭션(Transaction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0216_216",
+      "subtopic_title": "트랜잭션",
+      "subtopic_sequence": 216,
+      "subtopic_number": "216",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "start_time_hms": "00:00:16",
+      "end_time_hms": "00:00:32",
+      "start_seconds": 16,
+      "end_seconds": 32,
+      "duration_seconds": 16,
+      "timeline_summary": "논리적 기능 및 일련의 연산으로서의 트랜잭션",
+      "screen_text_lines": [
+        "트랜잭션 분석 / CRUD 분석",
+        "트랜잭션(Transaction)",
+        "트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위",
+        "또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함"
+      ],
+      "screen_text": "트랜잭션 분석 / CRUD 분석\n트랜잭션(Transaction)\n트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위\n또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함",
+      "spoken_sentences": [
+        "그래서 우리 데이터베이스 상태를 변화시키는 하나의 논리적인 그런 기능을 수행하기 위한 작업 단위, 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 보고 우리는 트랜잭션이라고 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그래서 우리 데이터베이스 상태를 변화시키는 하나의 논리적인 그런 기능을 수행하기 위한 작업 단위, 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 보고 우리는 트랜잭션이라고 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "트랜잭션(Transaction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0216_216",
+      "subtopic_title": "트랜잭션",
+      "subtopic_sequence": 216,
+      "subtopic_number": "216",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "start_time_hms": "00:00:32",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 32,
+      "end_seconds": 43,
+      "duration_seconds": 11,
+      "timeline_summary": "병행 제어 및 회복 작업의 논리적 단위",
+      "screen_text_lines": [
+        "트랜잭션 분석 / CRUD 분석",
+        "트랜잭션(Transaction)",
+        "트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위",
+        "또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함"
+      ],
+      "screen_text": "트랜잭션 분석 / CRUD 분석\n트랜잭션(Transaction)\n트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위\n또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함",
+      "spoken_sentences": [
+        "해서 이 트랜잭션은 우리 데이터베이스 시스템에서 병행 제어를 하거나 회복 작업을 할 때 그때 처리되는 논리적인 그런 단위, 작업 단위를 보고 우리가 트랜잭션이라고 하는 거고요."
+      ],
+      "spoken_text": "해서 이 트랜잭션은 우리 데이터베이스 시스템에서 병행 제어를 하거나 회복 작업을 할 때 그때 처리되는 논리적인 그런 단위, 작업 단위를 보고 우리가 트랜잭션이라고 하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "트랜잭션(Transaction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0216_216",
+      "subtopic_title": "트랜잭션",
+      "subtopic_sequence": 216,
+      "subtopic_number": "216",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=qGekiive100",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:01:00",
+      "start_seconds": 43,
+      "end_seconds": 60,
+      "duration_seconds": 17,
+      "timeline_summary": "사용자 서비스 요구 및 상태 변화의 작업 단위",
+      "screen_text_lines": [
+        "트랜잭션 분석 / CRUD 분석",
+        "트랜잭션(Transaction)",
+        "트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위",
+        "또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함"
+      ],
+      "screen_text": "트랜잭션 분석 / CRUD 분석\n트랜잭션(Transaction)\n트랜잭션은 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위\n또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함",
+      "spoken_sentences": [
+        "사용자가 만약에 시스템한테 어떤 서비스에 대해서 요구를 했어요.",
+        "그러면 시스템이 응답을 해야 되겠죠.",
+        "그때 시스템이 응답하기 위해서 상태 변화 과정을 거쳐야 되는데 그때 상태 변화하는 그런 작업 단위로 사용되는 게 우리 트랜잭션이라는 거예요."
+      ],
+      "spoken_text": "사용자가 만약에 시스템한테 어떤 서비스에 대해서 요구를 했어요. 그러면 시스템이 응답을 해야 되겠죠. 그때 시스템이 응답하기 위해서 상태 변화 과정을 거쳐야 되는데 그때 상태 변화하는 그런 작업 단위로 사용되는 게 우리 트랜잭션이라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 50
+        },
+        {
+          "keyword": "트랜잭션 분석 / CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 45
+        },
+        {
+          "keyword": "트랜잭션(Transaction)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "CRUD 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 주제인 '트랜잭션의 상태' 소개",
+      "screen_text_lines": [
+        "트랜잭션의 상태"
+      ],
+      "screen_text": "트랜잭션의 상태",
+      "spoken_sentences": [
+        "이번 시간 우리 트랜잭션의 상태에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간 우리 트랜잭션의 상태에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "트랜잭션의 상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:31",
+      "start_seconds": 9,
+      "end_seconds": 31,
+      "duration_seconds": 22,
+      "timeline_summary": "트랜잭션의 정의 설명",
+      "screen_text_lines": [
+        "트랜잭션의 상태",
+        "※ 트랜잭션 - 데이터베이스의 상태를 변환시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함."
+      ],
+      "screen_text": "트랜잭션의 상태\n※ 트랜잭션 - 데이터베이스의 상태를 변환시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함.",
+      "spoken_sentences": [
+        "우리 트랜잭션이라는 거요.",
+        "우리 트랜잭션이라는 거는 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함.",
+        "그렇게 부르는 거죠.",
+        "그래서 우리 트랜잭션이라는 거는 우리 하나의 작업 단위를 보고 얘기하는 거에요."
+      ],
+      "spoken_text": "우리 트랜잭션이라는 거요. 우리 트랜잭션이라는 거는 데이터베이스의 상태를 변화시키는 하나의 논리적 기능을 수행하기 위한 작업의 단위 또는 한꺼번에 모두 수행되어야 할 일련의 연산들을 의미함. 그렇게 부르는 거죠. 그래서 우리 트랜잭션이라는 거는 우리 하나의 작업 단위를 보고 얘기하는 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "트랜잭션의 상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:00:31",
+      "end_time_hms": "00:00:54",
+      "start_seconds": 31,
+      "end_seconds": 54,
+      "duration_seconds": 23,
+      "timeline_summary": "트랜잭션의 다섯 가지 상태 나열",
+      "screen_text_lines": [
+        "트랜잭션의 상태",
+        "• 활동(Active) : 트랜잭션이 실행 중인 상태",
+        "• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태",
+        "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태"
+      ],
+      "screen_text": "트랜잭션의 상태\n• 활동(Active) : 트랜잭션이 실행 중인 상태\n• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태\n• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태",
+      "spoken_sentences": [
+        "그때 이런 트랜잭션을 내가 실행을 시켰을 때 그때 트랜잭션의 상태에는 지금처럼 활동이다, 실패다, 철회다 그리고 부분 완료다 그리고 완료다 해서 이렇게 다섯 가지가 있습니다.",
+        "그때 우리가 이거를 그림으로 그려보게 되면 지금처럼 이렇게요."
+      ],
+      "spoken_text": "그때 이런 트랜잭션을 내가 실행을 시켰을 때 그때 트랜잭션의 상태에는 지금처럼 활동이다, 실패다, 철회다 그리고 부분 완료다 그리고 완료다 해서 이렇게 다섯 가지가 있습니다. 그때 우리가 이거를 그림으로 그려보게 되면 지금처럼 이렇게요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "트랜잭션의 상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Aborted",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:00:54",
+      "end_time_hms": "00:01:09",
+      "start_seconds": 54,
+      "end_seconds": 69,
+      "duration_seconds": 15,
+      "timeline_summary": "활동(Active) 상태 설명",
+      "screen_text_lines": [
+        "트랜잭션의 상태",
+        "• 활동(Active) : 트랜잭션이 실행 중인 상태",
+        "시작",
+        "활동"
+      ],
+      "screen_text": "트랜잭션의 상태\n• 활동(Active) : 트랜잭션이 실행 중인 상태\n시작\n활동",
+      "spoken_sentences": [
+        "예를 들어서 우리가 하나의 트랜잭션인데 그거를 내가 트랜잭션 작업을 시작을 했어요.",
+        "시작을 하게 되면 그 트랜잭션이 실행 중이겠죠.",
+        "그때 그런 실행 중인 그 상태를 보고 우리가 활동이다 그렇게 부르는 거에요."
+      ],
+      "spoken_text": "예를 들어서 우리가 하나의 트랜잭션인데 그거를 내가 트랜잭션 작업을 시작을 했어요. 시작을 하게 되면 그 트랜잭션이 실행 중이겠죠. 그때 그런 실행 중인 그 상태를 보고 우리가 활동이다 그렇게 부르는 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "트랜잭션의 상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Active",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "활동",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:01:09",
+      "end_time_hms": "00:01:34",
+      "start_seconds": 69,
+      "end_seconds": 94,
+      "duration_seconds": 25,
+      "timeline_summary": "실패(Failed) 상태 설명",
+      "screen_text_lines": [
+        "• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태",
+        "실패"
+      ],
+      "screen_text": "• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태\n실패",
+      "spoken_sentences": [
+        "그리고 이 하나의 트랜잭션이 실행을 했을 때 그때 그 트랜잭션이 모두 다 성공적으로 실행이 될 때가 있을 거고 그 트랜잭션에서 오류가 발생할 수도 있죠.",
+        "그때 오류가 발생한 그 상태를 보고 우리는 실패다 그렇게 부르는 거에요.",
+        "그래서 이 실패라는 거는 트랜잭션 실행 중에 오류가 발생되서 중단된 그 상태를 보고 우리가 실패다 그렇게 부르는 거에요."
+      ],
+      "spoken_text": "그리고 이 하나의 트랜잭션이 실행을 했을 때 그때 그 트랜잭션이 모두 다 성공적으로 실행이 될 때가 있을 거고 그 트랜잭션에서 오류가 발생할 수도 있죠. 그때 오류가 발생한 그 상태를 보고 우리는 실패다 그렇게 부르는 거에요. 그래서 이 실패라는 거는 트랜잭션 실행 중에 오류가 발생되서 중단된 그 상태를 보고 우리가 실패다 그렇게 부르는 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "Failed",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "실패",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:01:34",
+      "end_time_hms": "00:02:06",
+      "start_seconds": 94,
+      "end_seconds": 126,
+      "duration_seconds": 32,
+      "timeline_summary": "철회(Aborted) 상태 및 롤백 연산 설명",
+      "screen_text_lines": [
+        "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태",
+        "철회"
+      ],
+      "screen_text": "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태\n철회",
+      "spoken_sentences": [
+        "그러면 우리가 하나의 트랜잭션 처리하다가 중간에 오류가 발생하게 되면 그거를 원래 상태대로 다시 되돌려야 되겠죠.",
+        "그렇게 원래대로 다시 되돌리기 위해서 우리가 롤백이라는 걸 해야 되는데 그 롤백을 수행한 그 상태를 보고 우리가 철회다 그렇게 부르는 거에요.",
+        "그래서 이 철회라는 거요.",
+        "이 철회라는 거는 트랜잭션이 비정상적으로 종료가 됐어요.",
+        "오류가 나서 비정상적으로 종료가 됐을 때 그때 우리는 롤백 연산을 수행해서 원래 상태대로 다시 되돌린다고요."
+      ],
+      "spoken_text": "그러면 우리가 하나의 트랜잭션 처리하다가 중간에 오류가 발생하게 되면 그거를 원래 상태대로 다시 되돌려야 되겠죠. 그렇게 원래대로 다시 되돌리기 위해서 우리가 롤백이라는 걸 해야 되는데 그 롤백을 수행한 그 상태를 보고 우리가 철회다 그렇게 부르는 거에요. 그래서 이 철회라는 거요. 이 철회라는 거는 트랜잭션이 비정상적으로 종료가 됐어요. 오류가 나서 비정상적으로 종료가 됐을 때 그때 우리는 롤백 연산을 수행해서 원래 상태대로 다시 되돌린다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "Aborted",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "철회",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:02:06",
+      "end_time_hms": "00:02:26",
+      "start_seconds": 126,
+      "end_seconds": 146,
+      "duration_seconds": 20,
+      "timeline_summary": "부분 완료(Partially Committed) 상태 설명",
+      "screen_text_lines": [
+        "• 부분 완료(Partially Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산이 실행되기 직전인 상태",
+        "부분 완료"
+      ],
+      "screen_text": "• 부분 완료(Partially Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산이 실행되기 직전인 상태\n부분 완료",
+      "spoken_sentences": [
+        "그리고 내가 어떤 트랜잭션 하나를 실행을 했을 때 그때 성공적으로 완료가 될 수도 있겠죠.",
+        "그렇게 완료가 된 그 상태를 보고 우리가 부분 완료다 그렇게 부르는 거에요.",
+        "그래서 이 부분 완료라는 거는 트랜잭션을 모두 다 성공적으로 실행을, 실행을 했을 때 그때 그 상태요."
+      ],
+      "spoken_text": "그리고 내가 어떤 트랜잭션 하나를 실행을 했을 때 그때 성공적으로 완료가 될 수도 있겠죠. 그렇게 완료가 된 그 상태를 보고 우리가 부분 완료다 그렇게 부르는 거에요. 그래서 이 부분 완료라는 거는 트랜잭션을 모두 다 성공적으로 실행을, 실행을 했을 때 그때 그 상태요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Committed",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:02:26",
+      "end_time_hms": "00:03:05",
+      "start_seconds": 146,
+      "end_seconds": 185,
+      "duration_seconds": 39,
+      "timeline_summary": "완료(Committed) 상태 및 커밋 연산 설명",
+      "screen_text_lines": [
+        "• 완료(Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산을 실행한 후의 상태",
+        "완료"
+      ],
+      "screen_text": "• 완료(Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산을 실행한 후의 상태\n완료",
+      "spoken_sentences": [
+        "그러면 트랜잭션이 모두 다 성공적으로 실행을 했으니까 우리가 저장을 해야 되겠죠.",
+        "저장할 때 우리가 커밋 그 연산을 수행하는데 저장까지 싹 다 완료된 그 상태를 보고 우리가 완료다 그렇게 부르는 거에요.",
+        "해서 이 완료라는 거는 하나의 트랜잭션의 모두 다 성공적으로 전부 다 싹 다 실행을 다 한 다음에 그때 커밋 연산, 커밋 연산을 우리가 실행한 후에 그 상태를 보고 얘기하는 거에요."
+      ],
+      "spoken_text": "그러면 트랜잭션이 모두 다 성공적으로 실행을 했으니까 우리가 저장을 해야 되겠죠. 저장할 때 우리가 커밋 그 연산을 수행하는데 저장까지 싹 다 완료된 그 상태를 보고 우리가 완료다 그렇게 부르는 거에요. 해서 이 완료라는 거는 하나의 트랜잭션의 모두 다 성공적으로 전부 다 싹 다 실행을 다 한 다음에 그때 커밋 연산, 커밋 연산을 우리가 실행한 후에 그 상태를 보고 얘기하는 거에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Committed",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:03:05",
+      "end_time_hms": "00:03:16",
+      "start_seconds": 185,
+      "end_seconds": 196,
+      "duration_seconds": 11,
+      "timeline_summary": "활동 상태 요약 복습",
+      "screen_text_lines": [
+        "• 활동(Active) : 트랜잭션이 실행 중인 상태"
+      ],
+      "screen_text": "• 활동(Active) : 트랜잭션이 실행 중인 상태",
+      "spoken_sentences": [
+        "그래서 우리 부분 완료와 그냥 완료는 커밋 연산의 실행하기 직전이냐 아니면 커밋 연산의 실행한 후의 그 상태냐 거기에 따라서 부분 완료다 완료다 그렇게 구분이 되는 거에요.",
+        "해서 우리 트랜잭션 그 상태에 보게 되면 이렇게 다섯 가지가 있습니다.",
+        "그때 우리 활동이라는 건 뭐다?",
+        "트랜잭션이 실행 중인 그 상태를 보고 얘기하더라."
+      ],
+      "spoken_text": "그래서 우리 부분 완료와 그냥 완료는 커밋 연산의 실행하기 직전이냐 아니면 커밋 연산의 실행한 후의 그 상태냐 거기에 따라서 부분 완료다 완료다 그렇게 구분이 되는 거에요. 해서 우리 트랜잭션 그 상태에 보게 되면 이렇게 다섯 가지가 있습니다. 그때 우리 활동이라는 건 뭐다? 트랜잭션이 실행 중인 그 상태를 보고 얘기하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Active",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "활동",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:03:16",
+      "end_time_hms": "00:03:28",
+      "start_seconds": 196,
+      "end_seconds": 208,
+      "duration_seconds": 12,
+      "timeline_summary": "실패 상태 요약 복습",
+      "screen_text_lines": [
+        "• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태"
+      ],
+      "screen_text": "• 실패(Failed) : 트랜잭션 실행에 오류가 발생하여 중단된 상태",
+      "spoken_sentences": [
+        "그리고 실패라는 거는 트랜잭션을 처리하다가 중간에 오류가 발생해서 중단된 그 상태를 보고 우리가 실패라고 하고..."
+      ],
+      "spoken_text": "그리고 실패라는 거는 트랜잭션을 처리하다가 중간에 오류가 발생해서 중단된 그 상태를 보고 우리가 실패라고 하고...",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "Failed",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "실패",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:03:28",
+      "end_time_hms": "00:03:41",
+      "start_seconds": 208,
+      "end_seconds": 221,
+      "duration_seconds": 13,
+      "timeline_summary": "철회 상태 요약 복습",
+      "screen_text_lines": [
+        "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태"
+      ],
+      "screen_text": "• 철회(Aborted) : 트랜잭션이 비정상적으로 종료되어 Rollback 연산을 수행한 상태",
+      "spoken_sentences": [
+        "실패가 일어났을 때는 우리가 원래 상태대로 다시 되돌려줘야 되겠죠.",
+        "그걸 보고 우리가 철회다 그렇게 부르는 거에요.",
+        "해서 우리 철회라는 거는 트랜잭션이 비정상적으로 종료가 돼서 우리가 롤백 연산을 수행한 그 상태를 보고 우리가 철회 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "실패가 일어났을 때는 우리가 원래 상태대로 다시 되돌려줘야 되겠죠. 그걸 보고 우리가 철회다 그렇게 부르는 거에요. 해서 우리 철회라는 거는 트랜잭션이 비정상적으로 종료가 돼서 우리가 롤백 연산을 수행한 그 상태를 보고 우리가 철회 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "Aborted",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "철회",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        },
+        {
+          "keyword": "실패",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:03:41",
+      "end_time_hms": "00:03:52",
+      "start_seconds": 221,
+      "end_seconds": 232,
+      "duration_seconds": 11,
+      "timeline_summary": "완료 상태 요약 복습",
+      "screen_text_lines": [
+        "• 완료(Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산을 실행한 후의 상태"
+      ],
+      "screen_text": "• 완료(Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산을 실행한 후의 상태",
+      "spoken_sentences": [
+        "우리 부분 완료가 있고 우리 완료가 있을 때는 얘는 둘 다 트랜잭션을 모두 다 성공적으로 실행을 했어요.",
+        "모두 다 성공적으로 싹 다 실행한 다음에 우리가 커밋 연산을 실행한 후의 그 상태를 보고 우리가 완료다 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "우리 부분 완료가 있고 우리 완료가 있을 때는 얘는 둘 다 트랜잭션을 모두 다 성공적으로 실행을 했어요. 모두 다 성공적으로 싹 다 실행한 다음에 우리가 커밋 연산을 실행한 후의 그 상태를 보고 우리가 완료다 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Committed",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 3,
+      "subtopic_id": "0217_217",
+      "subtopic_title": "트랜잭션의상태",
+      "subtopic_sequence": 217,
+      "subtopic_number": "217",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=gvwZrr7RX_E",
+      "start_time_hms": "00:03:52",
+      "end_time_hms": "00:04:13",
+      "start_seconds": 232,
+      "end_seconds": 253,
+      "duration_seconds": 21,
+      "timeline_summary": "부분 완료 상태 요약 및 마무리",
+      "screen_text_lines": [
+        "• 부분 완료(Partially Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산이 실행되기 직전인 상태"
+      ],
+      "screen_text": "• 부분 완료(Partially Committed) : 트랜잭션을 모두 성공적으로 실행한 후 Commit 연산이 실행되기 직전인 상태",
+      "spoken_sentences": [
+        "커밋 연산을 실행하기 직전 그 상태를 보고 우리가 부분 완료다 그렇게 부르는 거에요.",
+        "해서 요 다섯 가지 여러분들이 헷갈리지 않게 정확하게 잘 기억하고 계셔야 돼요."
+      ],
+      "spoken_text": "커밋 연산을 실행하기 직전 그 상태를 보고 우리가 부분 완료다 그렇게 부르는 거에요. 해서 요 다섯 가지 여러분들이 헷갈리지 않게 정확하게 잘 기억하고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "상태",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 70
+        },
+        {
+          "keyword": "완료",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "Committed",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강의 도입 및 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간에는 우리 트랜잭션의 특성에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 트랜잭션의 특성에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 9,
+      "end_seconds": 20,
+      "duration_seconds": 11,
+      "timeline_summary": "트랜잭션 특성의 목적 및 개요",
+      "screen_text_lines": [
+        "다음은 데이터의 무결성(Integrity)을 보장하기 위하여 DBMS의 트랜잭션이 가져야 할 특성임."
+      ],
+      "screen_text": "다음은 데이터의 무결성(Integrity)을 보장하기 위하여 DBMS의 트랜잭션이 가져야 할 특성임.",
+      "spoken_sentences": [
+        "우리 데이터의 무결성을 보장하기 위해서 DBMS의 트랜잭션이 가져야 될 그 특성에는 지금처럼 이렇게 네 가지가 있습니다."
+      ],
+      "spoken_text": "우리 데이터의 무결성을 보장하기 위해서 DBMS의 트랜잭션이 가져야 될 그 특성에는 지금처럼 이렇게 네 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:28",
+      "start_seconds": 20,
+      "end_seconds": 28,
+      "duration_seconds": 8,
+      "timeline_summary": "트랜잭션의 4가지 특성 소개",
+      "screen_text_lines": [
+        "Atomicity (원자성)",
+        "Consistency (일관성)",
+        "Isolation (독립성, 격리성, 순차성)",
+        "Durability (영속성, 지속성)"
+      ],
+      "screen_text": "Atomicity (원자성)\nConsistency (일관성)\nIsolation (독립성, 격리성, 순차성)\nDurability (영속성, 지속성)",
+      "spoken_sentences": [
+        "우리 원자성이라는 것도 있고요 일관성이라는 것도 있고 그리고 독립성이라는 것도 있고 그리고 영속성이라는 것도 있고 이렇게 네 가지가 있습니다."
+      ],
+      "spoken_text": "우리 원자성이라는 것도 있고요 일관성이라는 것도 있고 그리고 독립성이라는 것도 있고 그리고 영속성이라는 것도 있고 이렇게 네 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "Consistency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "Durability",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:00:28",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 28,
+      "end_seconds": 46,
+      "duration_seconds": 18,
+      "timeline_summary": "트랜잭션 특성의 약어 ACID 설명",
+      "screen_text_lines": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "screen_text": "Atomicity\nConsistency\nIsolation\nDurability",
+      "spoken_sentences": [
+        "자 여기 보게 되면 원자성이 A로 시작하죠 그리고 일관성은 C로 시작하고 그리고 우리 독립성은 I로 시작하고 그리고 영속성은 D로 시작합니다 해서 이 트랜잭션의 특성 특성 이 네 가지를 앞 글자만 따서 우리가 ACID 그렇게 부르기도 해요."
+      ],
+      "spoken_text": "자 여기 보게 되면 원자성이 A로 시작하죠 그리고 일관성은 C로 시작하고 그리고 우리 독립성은 I로 시작하고 그리고 영속성은 D로 시작합니다 해서 이 트랜잭션의 특성 특성 이 네 가지를 앞 글자만 따서 우리가 ACID 그렇게 부르기도 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "Consistency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "Durability",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:01",
+      "start_seconds": 46,
+      "end_seconds": 61,
+      "duration_seconds": 15,
+      "timeline_summary": "원자성(Atomicity)의 기본 정의",
+      "screen_text_lines": [
+        "Atomicity (원자성)",
+        "트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함."
+      ],
+      "screen_text": "Atomicity (원자성)\n트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함.",
+      "spoken_sentences": [
+        "우리 원자성 Atomicity 원자성이요.",
+        "자 얘는 트랜잭션 연산은 트랜잭션의 연산은 데이터베이스에 모두 다 반영되도록 우리 완료 Commit이 되든지 아니면 전혀 반영되지 않도록 복구 Rollback이 되어야 된다."
+      ],
+      "spoken_text": "우리 원자성 Atomicity 원자성이요. 자 얘는 트랜잭션 연산은 트랜잭션의 연산은 데이터베이스에 모두 다 반영되도록 우리 완료 Commit이 되든지 아니면 전혀 반영되지 않도록 복구 Rollback이 되어야 된다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "Atomicity (원자성)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:01:01",
+      "end_time_hms": "00:01:21",
+      "start_seconds": 61,
+      "end_seconds": 81,
+      "duration_seconds": 20,
+      "timeline_summary": "원자성의 예시 - 계좌 이체 과정",
+      "screen_text_lines": [
+        "Atomicity (원자성)",
+        "트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함."
+      ],
+      "screen_text": "Atomicity (원자성)\n트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함.",
+      "spoken_sentences": [
+        "우리가 예를 들어서 상대방한테 돈을 보내줄 거예요.",
+        "상대방한테 돈을 보내줄 때 만약에 ATM 기계 그곳에 갔다고 생각해보세요.",
+        "그곳에 가서 우리는 카드를 집어넣고 내 계좌를 먼저 조회한 다음에 내 통장에 돈이 얼마 들어있는지 그걸 확인하고 그리고 상대방한테 송금을 하겠죠."
+      ],
+      "spoken_text": "우리가 예를 들어서 상대방한테 돈을 보내줄 거예요. 상대방한테 돈을 보내줄 때 만약에 ATM 기계 그곳에 갔다고 생각해보세요. 그곳에 가서 우리는 카드를 집어넣고 내 계좌를 먼저 조회한 다음에 내 통장에 돈이 얼마 들어있는지 그걸 확인하고 그리고 상대방한테 송금을 하겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "Atomicity (원자성)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:01:21",
+      "end_time_hms": "00:01:43",
+      "start_seconds": 81,
+      "end_seconds": 103,
+      "duration_seconds": 22,
+      "timeline_summary": "원자성 예시 - 오류 발생 시 상황",
+      "screen_text_lines": [
+        "Atomicity (원자성)",
+        "트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함."
+      ],
+      "screen_text": "Atomicity (원자성)\n트랜잭션의 연산은 데이터베이스에 모두 반영되도록 완료(Commit)되든지 아니면 전혀 반영되지 않도록 복구(Rollback)되어야 함.",
+      "spoken_sentences": [
+        "송금을 할 때 만약에 상대방 계좌 번호를 한 글자라도 내가 잘못 누르게 되면 내가 원하는 사람한테 돈을 보낼 수가 없겠죠.",
+        "그러면 잘못하게 되면 다른 사람한테 돈을 보낼 수도 있잖아요.",
+        "그러면 안 되잖아요.",
+        "그러면 계좌 번호를 내가 틀리게 눌렀을 때는 바로 이전 상태로 되돌아가서 계좌 번호만 다시 누르는 게 아니라 어떻게 돼요 처음부터 다시 거래를 시작하라 그러죠."
+      ],
+      "spoken_text": "송금을 할 때 만약에 상대방 계좌 번호를 한 글자라도 내가 잘못 누르게 되면 내가 원하는 사람한테 돈을 보낼 수가 없겠죠. 그러면 잘못하게 되면 다른 사람한테 돈을 보낼 수도 있잖아요. 그러면 안 되잖아요. 그러면 계좌 번호를 내가 틀리게 눌렀을 때는 바로 이전 상태로 되돌아가서 계좌 번호만 다시 누르는 게 아니라 어떻게 돼요 처음부터 다시 거래를 시작하라 그러죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "Atomicity (원자성)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 32
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:01:43",
+      "end_time_hms": "00:01:54",
+      "start_seconds": 103,
+      "end_seconds": 114,
+      "duration_seconds": 11,
+      "timeline_summary": "원자성의 특징 - 오류 발생 시 전체 취소",
+      "screen_text_lines": [
+        "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 함."
+      ],
+      "screen_text": "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 함.",
+      "spoken_sentences": [
+        "그렇게 어느 하나라도 만약에 오류가 발생하게 되면 트랜잭션 전부가 트랜잭션 전부가 취소가 돼야 돼요.",
+        "해서 우리가 롤백 복구를 다시 시켜줘야 된다고요."
+      ],
+      "spoken_text": "그렇게 어느 하나라도 만약에 오류가 발생하게 되면 트랜잭션 전부가 트랜잭션 전부가 취소가 돼야 돼요. 해서 우리가 롤백 복구를 다시 시켜줘야 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:01:54",
+      "end_time_hms": "00:02:11",
+      "start_seconds": 114,
+      "end_seconds": 131,
+      "duration_seconds": 17,
+      "timeline_summary": "원자성 정리",
+      "screen_text_lines": [
+        "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 함."
+      ],
+      "screen_text": "트랜잭션 내의 모든 명령은 반드시 완벽히 수행되어야 하며, 모두가 완벽히 수행되지 않고 어느 하나라도 오류가 발생하면 트랜잭션 전부가 취소되어야 함.",
+      "spoken_sentences": [
+        "해서 트랜잭션의 모든 명령은 반드시 반드시 완벽하게 수행이 돼야 돼요.",
+        "완벽하게 수행이 되면 커밋 완료가 되는 거고 만약에 어느 하나라도 오류가 발생하게 되면 우리는 뭘 해줘야 된다 롤백을 해줘야 되더라.",
+        "그게 원자성이요."
+      ],
+      "spoken_text": "해서 트랜잭션의 모든 명령은 반드시 반드시 완벽하게 수행이 돼야 돼요. 완벽하게 수행이 되면 커밋 완료가 되는 거고 만약에 어느 하나라도 오류가 발생하게 되면 우리는 뭘 해줘야 된다 롤백을 해줘야 되더라. 그게 원자성이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "원자성",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:02:11",
+      "end_time_hms": "00:02:34",
+      "start_seconds": 131,
+      "end_seconds": 154,
+      "duration_seconds": 23,
+      "timeline_summary": "일관성(Consistency)의 정의",
+      "screen_text_lines": [
+        "Consistency (일관성)",
+        "트랜잭션이 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환함.",
+        "시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후의 상태가 같아야 함."
+      ],
+      "screen_text": "Consistency (일관성)\n트랜잭션이 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환함.\n시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 트랜잭션 수행 완료 후의 상태가 같아야 함.",
+      "spoken_sentences": [
+        "그다음에 일관성 Consistency 일관성이요.",
+        "일관성이라는 거는 트랜잭션이 그 실행을 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환해야 된다.",
+        "요게 일관성이죠.",
+        "해서 시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 수행 후가 상태가 같아야 된다.",
+        "그게 일관성이고요."
+      ],
+      "spoken_text": "그다음에 일관성 Consistency 일관성이요. 일관성이라는 거는 트랜잭션이 그 실행을 그 실행을 성공적으로 완료하면 언제나 일관성 있는 데이터베이스 상태로 변환해야 된다. 요게 일관성이죠. 해서 시스템이 가지고 있는 고정 요소는 트랜잭션 수행 전과 수행 후가 상태가 같아야 된다. 그게 일관성이고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Consistency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        },
+        {
+          "keyword": "일관성",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:02:34",
+      "end_time_hms": "00:02:53",
+      "start_seconds": 154,
+      "end_seconds": 173,
+      "duration_seconds": 19,
+      "timeline_summary": "독립성(Isolation)의 정의",
+      "screen_text_lines": [
+        "Isolation (독립성, 격리성, 순차성)",
+        "둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행중에 다른 트랜잭션의 연산이 끼어들 수 없음."
+      ],
+      "screen_text": "Isolation (독립성, 격리성, 순차성)\n둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행중에 다른 트랜잭션의 연산이 끼어들 수 없음.",
+      "spoken_sentences": [
+        "그다음에 독립성 Isolation 독립성이요.",
+        "이 독립성을 다른 말로 격리성이다 순차성이다 그렇게 부르기도 해요.",
+        "얘는 둘 이상의 트랜잭션이 동시에 병행돼서 실행이 되는 경우에 어느 하나의 트랜잭션이 실행 중일 때는 다른 트랜잭션이 연산에 끼어들 수 있다 없다 없더라 없더라."
+      ],
+      "spoken_text": "그다음에 독립성 Isolation 독립성이요. 이 독립성을 다른 말로 격리성이다 순차성이다 그렇게 부르기도 해요. 얘는 둘 이상의 트랜잭션이 동시에 병행돼서 실행이 되는 경우에 어느 하나의 트랜잭션이 실행 중일 때는 다른 트랜잭션이 연산에 끼어들 수 있다 없다 없더라 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "Isolation",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:02:53",
+      "end_time_hms": "00:03:00",
+      "start_seconds": 173,
+      "end_seconds": 180,
+      "duration_seconds": 7,
+      "timeline_summary": "독립성의 비유 - 화장실 사용",
+      "screen_text_lines": [
+        "둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행중에 다른 트랜잭션의 연산이 끼어들 수 없음."
+      ],
+      "screen_text": "둘 이상의 트랜잭션이 동시에 병행 실행되는 경우 어느 하나의 트랜잭션 실행중에 다른 트랜잭션의 연산이 끼어들 수 없음.",
+      "spoken_sentences": [
+        "내가 만약에 화장실을 쓰고 있어요.",
+        "근데 딴 사람이 같이 들어와서 쓸 수가 있다 없다 없다 그걸 얘기하는 거죠."
+      ],
+      "spoken_text": "내가 만약에 화장실을 쓰고 있어요. 근데 딴 사람이 같이 들어와서 쓸 수가 있다 없다 없다 그걸 얘기하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:03:00",
+      "end_time_hms": "00:03:12",
+      "start_seconds": 180,
+      "end_seconds": 192,
+      "duration_seconds": 12,
+      "timeline_summary": "독립성 - 수행 결과 참조 불가 특징",
+      "screen_text_lines": [
+        "수행중인 트랜잭션은 완전히 완료될 때까지 다른 트랜잭션에서 수행 결과를 참조할 수 없음."
+      ],
+      "screen_text": "수행중인 트랜잭션은 완전히 완료될 때까지 다른 트랜잭션에서 수행 결과를 참조할 수 없음.",
+      "spoken_sentences": [
+        "해서 수행 중인 그 트랜잭션은 완전히 완료가 될 때까지 다른 트랜잭션에서 수행 결과를 참조할 수 없다.",
+        "그걸 보고 우리가 독립성 격리성 순차성 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "해서 수행 중인 그 트랜잭션은 완전히 완료가 될 때까지 다른 트랜잭션에서 수행 결과를 참조할 수 없다. 그걸 보고 우리가 독립성 격리성 순차성 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:03:12",
+      "end_time_hms": "00:03:29",
+      "start_seconds": 192,
+      "end_seconds": 209,
+      "duration_seconds": 17,
+      "timeline_summary": "영속성(Durability)의 정의",
+      "screen_text_lines": [
+        "Durability (영속성, 지속성)",
+        "성공적으로 완료된 트랜잭션의 결과는 시스템이 고장나더라도 영구적으로 반영되어야 함."
+      ],
+      "screen_text": "Durability (영속성, 지속성)\n성공적으로 완료된 트랜잭션의 결과는 시스템이 고장나더라도 영구적으로 반영되어야 함.",
+      "spoken_sentences": [
+        "그다음에 영속성 Durability 우리 영속성 지속성이요.",
+        "얘는 성공적으로 완료된 그 트랜잭션의 결과는 시스템이 고장이 나더라도 영구적으로 영구적으로 반영이 돼야 된다.",
+        "그런 특성을 보고 우리가 영속성 지속성 그렇게 부르는 거죠."
+      ],
+      "spoken_text": "그다음에 영속성 Durability 우리 영속성 지속성이요. 얘는 성공적으로 완료된 그 트랜잭션의 결과는 시스템이 고장이 나더라도 영구적으로 영구적으로 반영이 돼야 된다. 그런 특성을 보고 우리가 영속성 지속성 그렇게 부르는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "Durability",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "트랜잭션의",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "트랜잭션",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_047-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 4,
+      "subtopic_id": "0218_218",
+      "subtopic_title": "트랜잭션의 특성",
+      "subtopic_sequence": 218,
+      "subtopic_number": "218",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=R0SJ2TP8mo0",
+      "start_time_hms": "00:03:29",
+      "end_time_hms": "00:03:56",
+      "start_seconds": 209,
+      "end_seconds": 236,
+      "duration_seconds": 27,
+      "timeline_summary": "강의 마무리 및 특성 숙지 강조",
+      "screen_text_lines": [
+        "Atomicity",
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "screen_text": "Atomicity\nConsistency\nIsolation\nDurability",
+      "spoken_sentences": [
+        "해서 이 트랜잭션 특성에는 지금처럼 이렇게 네 가지가 있는데 이 네 가지는 우리 필기 시험 문제에도 거의 매 회차마다 시험에 나오고 있고요.",
+        "얘가 실제 실기 시험에서도 나온 적이 있습니다.",
+        "그럼 각각의 특성들마다 어떤 의미가 있는지 정확하게 숙지하고 영어로도까지 같이 기억을 하시고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "해서 이 트랜잭션 특성에는 지금처럼 이렇게 네 가지가 있는데 이 네 가지는 우리 필기 시험 문제에도 거의 매 회차마다 시험에 나오고 있고요. 얘가 실제 실기 시험에서도 나온 적이 있습니다. 그럼 각각의 특성들마다 어떤 의미가 있는지 정확하게 숙지하고 영어로도까지 같이 기억을 하시고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "Atomicity",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 37
+        },
+        {
+          "keyword": "Consistency",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "Durability",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        },
+        {
+          "keyword": "Isolation",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 33
+        }
+      ]
+    }
+  ]
+}

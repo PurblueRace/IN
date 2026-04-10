@@ -1,0 +1,2735 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_041",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      188,
+      189,
+      190,
+      191
+    ],
+    "source_lecture_ids": [
+      "0188_188",
+      "0189_189",
+      "0190_190",
+      "0191_191"
+    ],
+    "source_titles": [
+      "데이터베이스 설계 순서",
+      "개념적 설계",
+      "논리적 설계",
+      "물리적 설계"
+    ],
+    "keywords": [
+      "설계",
+      "데이터베이스",
+      "순서",
+      "개념적",
+      "논리적"
+    ],
+    "highlight_keywords": [
+      "설계",
+      "논리적 설계",
+      "DBMS",
+      "요구 조건 분석",
+      "개념적 설계",
+      "개념적",
+      "데이터베이스 설계",
+      "개념",
+      "논리적",
+      "논리적 설계(데이터 모델링)"
+    ],
+    "secondary_keywords": [
+      "데이터베이스 설계 순서",
+      "데이터베이스 설계",
+      "물리적 설계",
+      "단계",
+      "구현",
+      "상세",
+      "트랜잭션",
+      "스키마",
+      "개념 스키마 모델링과 트랜잭션 모델링",
+      "데이터베이스 설계 강의 시작",
+      "트랜잭션 모델링에 대한 설명",
+      "개념 스키마 설계 단계"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0188_188",
+      "sequence": 188,
+      "number": "188",
+      "course_code": "350186",
+      "title": "데이터베이스 설계 순서",
+      "duration_seconds": 140,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "tokens": [
+            "설계"
+          ],
+          "score": 52,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "논리적 설계",
+          "tokens": [
+            "논리적",
+            "설계"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DBMS",
+          "tokens": [
+            "DBMS"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "요구 조건 분석",
+          "tokens": [
+            "요구",
+            "조건",
+            "분석"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개념적 설계",
+          "tokens": [
+            "개념적",
+            "설계"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터베이스 설계 순서",
+          "tokens": [
+            "데이터베이스",
+            "설계"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스 설계",
+          "tokens": [
+            "데이터베이스",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "물리적 설계",
+          "tokens": [
+            "물리적",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단계",
+          "tokens": [
+            "단계"
+          ],
+          "score": 15,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "구현",
+          "tokens": [
+            "구현"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "상세",
+          "tokens": [
+            "상세"
+          ],
+          "score": 12,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_041-subtopic-001-source-seg-002::01",
+          "prompt": "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, ______를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "answer": "논리적 설계",
+          "original": "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "keyword": "논리적 설계",
+          "source_segment_id": "topic_041-subtopic-001-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '논리적 설계'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-001-source-seg-006::02",
+          "prompt": "논리적 설계 단계와 ______의 개념 설명",
+          "answer": "DBMS",
+          "original": "논리적 설계 단계와 DBMS의 개념 설명",
+          "keyword": "DBMS",
+          "source_segment_id": "topic_041-subtopic-001-source-seg-006",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DBMS'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-001-source-seg-002::03",
+          "prompt": "설계 순서는 맨 처음에 ______을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "answer": "요구 조건 분석",
+          "original": "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "keyword": "요구 조건 분석",
+          "source_segment_id": "topic_041-subtopic-001-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '요구 조건 분석'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-001-source-seg-002::04",
+          "prompt": "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 ______를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "answer": "개념적 설계",
+          "original": "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+          "keyword": "개념적 설계",
+          "source_segment_id": "topic_041-subtopic-001-source-seg-002",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '개념적 설계'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0189_189",
+      "sequence": 189,
+      "number": "189",
+      "course_code": "350187",
+      "title": "개념적 설계",
+      "duration_seconds": 101,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "segment_count": 6,
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "tokens": [
+            "개념적"
+          ],
+          "score": 25,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "설계",
+          "tokens": [
+            "설계"
+          ],
+          "score": 19,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개념적 설계",
+          "tokens": [
+            "개념적",
+            "설계"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스 설계",
+          "tokens": [
+            "데이터베이스",
+            "설계"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개념",
+          "tokens": [
+            "개념"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "트랜잭션",
+          "tokens": [
+            "트랜잭션"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "스키마",
+          "tokens": [
+            "스키마"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "개념 스키마 모델링과 트랜잭션 모델링",
+          "tokens": [
+            "개념",
+            "스키마",
+            "모델링과",
+            "트랜잭션",
+            "모델링"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스 설계 강의 시작",
+          "tokens": [
+            "데이터베이스",
+            "설계",
+            "강의",
+            "시작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션 모델링에 대한 설명",
+          "tokens": [
+            "트랜잭션",
+            "모델링에"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "개념 스키마 설계 단계",
+          "tokens": [
+            "개념",
+            "스키마",
+            "설계",
+            "단계"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_041-subtopic-002-source-seg-002::01",
+          "prompt": "______ 설계의 정의",
+          "answer": "개념적",
+          "original": "개념적 설계의 정의",
+          "keyword": "개념적",
+          "source_segment_id": "topic_041-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '개념적'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-002-source-seg-002::02",
+          "prompt": "______의 정의",
+          "answer": "개념적 설계",
+          "original": "개념적 설계의 정의",
+          "keyword": "개념적 설계",
+          "source_segment_id": "topic_041-subtopic-002-source-seg-002",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '개념적 설계'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-002-source-seg-001::03",
+          "prompt": "______ 강의 시작",
+          "answer": "데이터베이스 설계",
+          "original": "데이터베이스 설계 강의 시작",
+          "keyword": "데이터베이스 설계",
+          "source_segment_id": "topic_041-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스 설계'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-002-source-seg-003::04",
+          "prompt": "개념 스키마 모델링과 ______ 모델링",
+          "answer": "트랜잭션",
+          "original": "개념 스키마 모델링과 트랜잭션 모델링",
+          "keyword": "트랜잭션",
+          "source_segment_id": "topic_041-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '트랜잭션'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0190_190",
+      "sequence": 190,
+      "number": "190",
+      "course_code": "350188",
+      "title": "논리적 설계",
+      "duration_seconds": 153,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "tokens": [
+            "논리적"
+          ],
+          "score": 51,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "설계",
+          "tokens": [
+            "설계"
+          ],
+          "score": 44,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "논리적 설계(데이터 모델링)",
+          "tokens": [
+            "논리적",
+            "설계",
+            "데이터",
+            "모델링"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "논리적 설계",
+          "tokens": [
+            "논리적",
+            "설계"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "개념",
+          "tokens": [
+            "개념"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터 모델링",
+          "tokens": [
+            "데이터",
+            "모델링"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DBMS",
+          "tokens": [
+            "DBMS"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "mapping",
+          "tokens": [
+            "mapping"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "단계",
+          "tokens": [
+            "단계"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "논리적 설계 단계의 주요 작업 요약",
+          "tokens": [
+            "논리적",
+            "설계",
+            "단계의",
+            "주요",
+            "작업",
+            "요약"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "트랜잭션 인터페이스 설계 언급",
+          "tokens": [
+            "트랜잭션",
+            "인터페이스",
+            "설계",
+            "언급"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_041-subtopic-003-source-seg-001::01",
+          "prompt": "______ 설계(데이터 모델링)",
+          "answer": "논리적",
+          "original": "논리적 설계(데이터 모델링)",
+          "keyword": "논리적",
+          "source_segment_id": "topic_041-subtopic-003-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '논리적'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-003-source-seg-001::02",
+          "prompt": "______(데이터 모델링)",
+          "answer": "논리적 설계",
+          "original": "논리적 설계(데이터 모델링)",
+          "keyword": "논리적 설계",
+          "source_segment_id": "topic_041-subtopic-003-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '논리적 설계'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-003-source-seg-001::03",
+          "prompt": "논리적 설계(______)",
+          "answer": "데이터 모델링",
+          "original": "논리적 설계(데이터 모델링)",
+          "keyword": "데이터 모델링",
+          "source_segment_id": "topic_041-subtopic-003-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '데이터 모델링'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-003-source-seg-003::04",
+          "prompt": "논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 ______가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정.",
+          "answer": "DBMS",
+          "original": "논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 DBMS가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정.",
+          "keyword": "DBMS",
+          "source_segment_id": "topic_041-subtopic-003-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'DBMS'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0191_191",
+      "sequence": 191,
+      "number": "191",
+      "course_code": "350189",
+      "title": "물리적 설계",
+      "duration_seconds": 167,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "tokens": [
+            "물리적",
+            "설계",
+            "데이터",
+            "구조화"
+          ],
+          "score": 64,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터 구조화",
+          "tokens": [
+            "데이터",
+            "구조화"
+          ],
+          "score": 32,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "물리적 설계",
+          "tokens": [
+            "물리적",
+            "설계"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "저장",
+          "tokens": [
+            "저장"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "처리",
+          "tokens": [
+            "처리"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터베이스 설계 순서 중 물리적 설계 강조",
+          "tokens": [
+            "데이터베이스",
+            "설계",
+            "물리적",
+            "강조"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "물리적 설계 시 고려 사항과 시험 대비 강조",
+          "tokens": [
+            "물리적",
+            "설계",
+            "고려",
+            "사항과",
+            "대비",
+            "강조"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "책 정리 비유를 통한 액세스 경로 결정 설명",
+          "tokens": [
+            "비유를",
+            "통한",
+            "액세스",
+            "경로",
+            "결정"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "물리적 설계 단계에서의 주요 결정 사항",
+          "tokens": [
+            "물리적",
+            "설계",
+            "단계에서의",
+            "주요",
+            "결정",
+            "사항"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "저장 방법 묘사에 사용되는 정보들",
+          "tokens": [
+            "저장",
+            "묘사에",
+            "사용되는",
+            "정보들"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "물리적 설계의 정의 설명",
+          "tokens": [
+            "물리적",
+            "설계의"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_041-subtopic-004-source-seg-001::01",
+          "prompt": "물리적 설계(______)",
+          "answer": "데이터 구조화",
+          "original": "물리적 설계(데이터 구조화)",
+          "keyword": "데이터 구조화",
+          "source_segment_id": "topic_041-subtopic-004-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터 구조화'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_041-subtopic-004-source-seg-001::02",
+          "prompt": "______ 강의 도입",
+          "answer": "물리적 설계",
+          "original": "물리적 설계 강의 도입",
+          "keyword": "물리적 설계",
+          "source_segment_id": "topic_041-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '물리적 설계'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 2
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_041",
+    "sequence": 41,
+    "number": "41",
+    "title": "데이터베이스 설계 단계",
+    "title_raw": "데이터베이스 설계 단계",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 4,
+    "source_sequences": [
+      188,
+      189,
+      190,
+      191
+    ],
+    "source_titles": [
+      "데이터베이스 설계 순서",
+      "개념적 설계",
+      "논리적 설계",
+      "물리적 설계"
+    ],
+    "preview_text": "데이터베이스 설계 순서, 개념적 설계, 논리적 설계 등",
+    "segment_count": 31,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 데이터베이스 설계 순서, 개념적 설계, 논리적 설계, 물리적 설계을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 데이터베이스 설계 순서, 개념적 설계, 논리적 설계, 물리적 설계을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 561,
+    "source_titles_preview": [
+      "데이터베이스 설계 순서",
+      "개념적 설계",
+      "논리적 설계"
+    ],
+    "highlight_keywords": [
+      "설계",
+      "논리적 설계",
+      "DBMS",
+      "요구 조건 분석",
+      "개념적 설계",
+      "개념적",
+      "데이터베이스 설계",
+      "개념",
+      "논리적",
+      "논리적 설계(데이터 모델링)"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_041-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 소개 및 주제 제시",
+      "screen_text_lines": [
+        "데이터베이스 설계"
+      ],
+      "screen_text": "데이터베이스 설계",
+      "spoken_sentences": [
+        "이번 시간에는 우리 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "데이터베이스 설계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:34",
+      "start_seconds": 8,
+      "end_seconds": 34,
+      "duration_seconds": 26,
+      "timeline_summary": "데이터베이스 설계의 5단계 순서 개요 설명",
+      "screen_text_lines": [
+        "데이터베이스 설계",
+        "요구 조건 분석",
+        "개념적 설계",
+        "논리적 설계"
+      ],
+      "screen_text": "데이터베이스 설계\n요구 조건 분석\n개념적 설계\n논리적 설계",
+      "spoken_sentences": [
+        "그 다음에 데이터베이스 설계 순서, 설계 순서요.",
+        "설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다.",
+        "그때 데이터베이스를 설계하는 순서죠.",
+        "실제 설계는 여기죠 여기 여기.",
+        "개념적 설계, 논리적 설계, 물리적 설계요."
+      ],
+      "spoken_text": "그 다음에 데이터베이스 설계 순서, 설계 순서요. 설계 순서는 맨 처음에 요구 조건 분석을 먼저 하고요, 그 다음에 개념적 설계를 하고, 논리적 설계를 하고, 물리적 설계를 하고, 구현을 해내면 됩니다. 그때 데이터베이스를 설계하는 순서죠. 실제 설계는 여기죠 여기 여기. 개념적 설계, 논리적 설계, 물리적 설계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "요구 조건 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:00:34",
+      "end_time_hms": "00:00:55",
+      "start_seconds": 34,
+      "end_seconds": 55,
+      "duration_seconds": 21,
+      "timeline_summary": "설계 순서 암기법 '요계논물구' 소개",
+      "screen_text_lines": [
+        "요구 조건 분석",
+        "개념적 설계",
+        "논리적 설계",
+        "물리적 설계"
+      ],
+      "screen_text": "요구 조건 분석\n개념적 설계\n논리적 설계\n물리적 설계",
+      "spoken_sentences": [
+        "자 요 설계 순서도 여러분들이 순서대로 기억하셔야 돼요.",
+        "우리 만화 같은 데 보면 요괴 나오죠 요괴.",
+        "요거 외울 때 이렇게 기억 좀 하세요.",
+        "요괴, 요괴, 요괴 나쁜 놈이 있어요.",
+        "그 요괴 놈이 있어요.",
+        "그 요괴 놈이 나를 물고 갔어요.",
+        "해서 요괴 놈 물구, 요괴 놈 물구, 요괴 놈 물구 하고 순서 기억하시면 됩니다."
+      ],
+      "spoken_text": "자 요 설계 순서도 여러분들이 순서대로 기억하셔야 돼요. 우리 만화 같은 데 보면 요괴 나오죠 요괴. 요거 외울 때 이렇게 기억 좀 하세요. 요괴, 요괴, 요괴 나쁜 놈이 있어요. 그 요괴 놈이 있어요. 그 요괴 놈이 나를 물고 갔어요. 해서 요괴 놈 물구, 요괴 놈 물구, 요괴 놈 물구 하고 순서 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "요구 조건 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:00:55",
+      "end_time_hms": "00:01:15",
+      "start_seconds": 55,
+      "end_seconds": 75,
+      "duration_seconds": 20,
+      "timeline_summary": "요구 조건 분석 단계 상세 설명",
+      "screen_text_lines": [
+        "요구 조건 분석",
+        "요구 조건 명세서 작성"
+      ],
+      "screen_text": "요구 조건 분석\n요구 조건 명세서 작성",
+      "spoken_sentences": [
+        "이 요구 조건 분석은 말 그대로 사용자들, 실제 사용하고자 하는 그 사용자들한테 어떤 기능을 원합니까, 어떤 데이터를 사용합니까 해서 그런 사용자들한테 요구 사항을 우리가 먼저 들어요.",
+        "그거를 명세서 작성하는 그 단계를 보고 우리가 요구 조건 분석이라고 그렇게 부르는 거고요."
+      ],
+      "spoken_text": "이 요구 조건 분석은 말 그대로 사용자들, 실제 사용하고자 하는 그 사용자들한테 어떤 기능을 원합니까, 어떤 데이터를 사용합니까 해서 그런 사용자들한테 요구 사항을 우리가 먼저 들어요. 그거를 명세서 작성하는 그 단계를 보고 우리가 요구 조건 분석이라고 그렇게 부르는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "요구 조건 분석",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "상세",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:01:15",
+      "end_time_hms": "00:01:24",
+      "start_seconds": 75,
+      "end_seconds": 84,
+      "duration_seconds": 9,
+      "timeline_summary": "개념적 설계 단계 상세 설명",
+      "screen_text_lines": [
+        "개념적 설계",
+        "개념 스키마, 트랜잭션 모델링, E-R 모델"
+      ],
+      "screen_text": "개념적 설계\n개념 스키마, 트랜잭션 모델링, E-R 모델",
+      "spoken_sentences": [
+        "개념적 설계라는 거는 우리 스키마로 따졌을 때 개념 스키마에 해당하는 거고 여기서 트랜잭션 모델링이라는 걸 하고, 그리고 E-R 모델을 우리가 작성을 합니다."
+      ],
+      "spoken_text": "개념적 설계라는 거는 우리 스키마로 따졌을 때 개념 스키마에 해당하는 거고 여기서 트랜잭션 모델링이라는 걸 하고, 그리고 E-R 모델을 우리가 작성을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "상세",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:01:24",
+      "end_time_hms": "00:01:44",
+      "start_seconds": 84,
+      "end_seconds": 104,
+      "duration_seconds": 20,
+      "timeline_summary": "논리적 설계 단계와 DBMS의 개념 설명",
+      "screen_text_lines": [
+        "논리적 설계",
+        "목표 DBMS에 맞는 논리 스키마 설계, 트랜잭션 인터페이스 설계",
+        "DBMS"
+      ],
+      "screen_text": "논리적 설계\n목표 DBMS에 맞는 논리 스키마 설계, 트랜잭션 인터페이스 설계\nDBMS",
+      "spoken_sentences": [
+        "그 다음에 논리적 설계는 목표 DBMS에 맞는 이라고 나왔어요.",
+        "여기 DBMS 그러면 우리 데이터베이스를 관리해 주는 그 시스템을 보고 얘기하죠.",
+        "근데 이 프로그램의 종류가 여러 가지가 있거든요.",
+        "우리가 대표적으로 많이 쓰는 게 오라클이라든지 아니면 MySQL, 아니면 우리 MS사에서 만들어 놓은 엑세스라는 그 프로그램도 있고 있어요."
+      ],
+      "spoken_text": "그 다음에 논리적 설계는 목표 DBMS에 맞는 이라고 나왔어요. 여기 DBMS 그러면 우리 데이터베이스를 관리해 주는 그 시스템을 보고 얘기하죠. 근데 이 프로그램의 종류가 여러 가지가 있거든요. 우리가 대표적으로 많이 쓰는 게 오라클이라든지 아니면 MySQL, 아니면 우리 MS사에서 만들어 놓은 엑세스라는 그 프로그램도 있고 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:01:44",
+      "end_time_hms": "00:01:53",
+      "start_seconds": 104,
+      "end_seconds": 113,
+      "duration_seconds": 9,
+      "timeline_summary": "논리적 설계 단계의 주요 활동 설명",
+      "screen_text_lines": [
+        "논리적 설계",
+        "목표 DBMS에 맞는 논리 스키마 설계, 트랜잭션 인터페이스 설계"
+      ],
+      "screen_text": "논리적 설계\n목표 DBMS에 맞는 논리 스키마 설계, 트랜잭션 인터페이스 설계",
+      "spoken_sentences": [
+        "어떤 DBMS를 쓰냐 거기에 맞는 논리 스키마 설계도 해야 되고요, 트랜잭션 인터페이스도 설계를 해야 됩니다.",
+        "고게 논리적 설계고요."
+      ],
+      "spoken_text": "어떤 DBMS를 쓰냐 거기에 맞는 논리 스키마 설계도 해야 되고요, 트랜잭션 인터페이스도 설계를 해야 됩니다. 고게 논리적 설계고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:01:53",
+      "end_time_hms": "00:02:02",
+      "start_seconds": 113,
+      "end_seconds": 122,
+      "duration_seconds": 9,
+      "timeline_summary": "물리적 설계 단계 상세 설명",
+      "screen_text_lines": [
+        "물리적 설계",
+        "목표 DBMS에 맞는 물리적 구조의 데이터로 변환"
+      ],
+      "screen_text": "물리적 설계\n목표 DBMS에 맞는 물리적 구조의 데이터로 변환",
+      "spoken_sentences": [
+        "그 다음에 물리적 설계 그러면 목표 DBMS에 맞는 그런 물리적 구조, 물리적 구조의 데이터로 우리가 변환하는 게 물리적 설계요."
+      ],
+      "spoken_text": "그 다음에 물리적 설계 그러면 목표 DBMS에 맞는 그런 물리적 구조, 물리적 구조의 데이터로 우리가 변환하는 게 물리적 설계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 52
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0188_188",
+      "subtopic_title": "데이터베이스 설계 순서",
+      "subtopic_sequence": 188,
+      "subtopic_number": "188",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=UCfpGfdpocY",
+      "start_time_hms": "00:02:02",
+      "end_time_hms": "00:02:20",
+      "start_seconds": 122,
+      "end_seconds": 140,
+      "duration_seconds": 18,
+      "timeline_summary": "구현 단계 상세 설명 및 강의 마무리",
+      "screen_text_lines": [
+        "구현",
+        "목표 DBMS의 DDL(데이터 정의어)로 데이터베이스 생성, 트랜잭션 작성",
+        "DDL(데이터 정의어)"
+      ],
+      "screen_text": "구현\n목표 DBMS의 DDL(데이터 정의어)로 데이터베이스 생성, 트랜잭션 작성\nDDL(데이터 정의어)",
+      "spoken_sentences": [
+        "그 다음에 구현이다 그러면 목표 DBMS의 DDL이라는 데이터 정의어가 있을 거예요.",
+        "그 데이터 정의어를 가지고 데이터베이스를 생성을 하고, 트랜잭션을 작성하는 거 고게 구현 단계에서 하는 일입니다.",
+        "자 그러면 요것들을 좀 더 자세히 좀 살펴보자고요."
+      ],
+      "spoken_text": "그 다음에 구현이다 그러면 목표 DBMS의 DDL이라는 데이터 정의어가 있을 거예요. 그 데이터 정의어를 가지고 데이터베이스를 생성을 하고, 트랜잭션을 작성하는 거 고게 구현 단계에서 하는 일입니다. 자 그러면 요것들을 좀 더 자세히 좀 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 26
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "구현",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        },
+        {
+          "keyword": "상세",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터베이스 설계 강의 시작",
+      "screen_text_lines": [
+        "데이터베이스 설계"
+      ],
+      "screen_text": "데이터베이스 설계",
+      "spoken_sentences": [
+        "이번 시간에는 우리 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 데이터베이스 설계에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "데이터베이스 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "데이터베이스 설계 강의 시작",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:25",
+      "start_seconds": 8,
+      "end_seconds": 25,
+      "duration_seconds": 17,
+      "timeline_summary": "개념적 설계의 정의",
+      "screen_text_lines": [
+        "데이터베이스 설계",
+        "개념적 설계 (정보 모델링, 개념화)",
+        "개념적 설계는 정보의 구조를 얻기 위하여 현실 세계의 무한성과 계속성을 이해하고, 다른 사람과 통신하기 위하여 현실 세계에 대한 인식을 추상적 개념으로 표현하는 과정임"
+      ],
+      "screen_text": "데이터베이스 설계\n개념적 설계 (정보 모델링, 개념화)\n개념적 설계는 정보의 구조를 얻기 위하여 현실 세계의 무한성과 계속성을 이해하고, 다른 사람과 통신하기 위하여 현실 세계에 대한 인식을 추상적 개념으로 표현하는 과정임",
+      "spoken_sentences": [
+        "그래서 그 다음 단계가 개념적 설계요.",
+        "개념적 설계를 다른 말로 정보 모델링, 그다음에 개념화 그렇게 부르기도 해요.",
+        "이 개념적 설계라는 거는 현실 세계에 대한 그런 인식을 추상적 그런 개념으로 표현하는 그런 과정을 보고 우리가 개념적 설계라고 합니다."
+      ],
+      "spoken_text": "그래서 그 다음 단계가 개념적 설계요. 개념적 설계를 다른 말로 정보 모델링, 그다음에 개념화 그렇게 부르기도 해요. 이 개념적 설계라는 거는 현실 세계에 대한 그런 인식을 추상적 그런 개념으로 표현하는 그런 과정을 보고 우리가 개념적 설계라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터베이스 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:00:25",
+      "end_time_hms": "00:00:50",
+      "start_seconds": 25,
+      "end_seconds": 50,
+      "duration_seconds": 25,
+      "timeline_summary": "개념 스키마 모델링과 트랜잭션 모델링",
+      "screen_text_lines": [
+        "개념적 설계에서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행함"
+      ],
+      "screen_text": "개념적 설계에서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행함",
+      "spoken_sentences": [
+        "여기서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행해요.",
+        "그때 개념 스키마 그러면 개념 스키마가 데이터베이스의 전체적인 그런 논리적인 구조를 보고 우리가 개념 스키마라고 했죠.",
+        "그런 것도 모델링 하고요."
+      ],
+      "spoken_text": "여기서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행해요. 그때 개념 스키마 그러면 개념 스키마가 데이터베이스의 전체적인 그런 논리적인 구조를 보고 우리가 개념 스키마라고 했죠. 그런 것도 모델링 하고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:00:50",
+      "end_time_hms": "00:01:11",
+      "start_seconds": 50,
+      "end_seconds": 71,
+      "duration_seconds": 21,
+      "timeline_summary": "트랜잭션 모델링에 대한 설명",
+      "screen_text_lines": [
+        "개념적 설계에서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행함"
+      ],
+      "screen_text": "개념적 설계에서는 개념 스키마 모델링과 트랜잭션 모델링을 병행 수행함",
+      "spoken_sentences": [
+        "그다음에 트랜잭션 모델링 한다 그랬는데 트랜잭션이라는 거는 우리가 어떤 특정 하나의 작업을 처리하기 위한 그런 논리적인 작업 단위를 보고 우리가 트랜잭션이라고 합니다.",
+        "만약에 보험 회사에서 어떤 직원이 어떤 특정 회원을 조회했을 때 그 사람 이름 하고 차 번호하고 어떤 보험에 가입했는지 그런 것들을 보고 싶다 그랬을 때 그런 기능을 할 수 있게끔 만들어 줘야 되겠죠.",
+        "그런 걸 보고 우리가 트랜잭션 모델링이라고 해요.",
+        "이런 것들을 병행 수행하는 곳이 우리 개념적 설계 단계요."
+      ],
+      "spoken_text": "그다음에 트랜잭션 모델링 한다 그랬는데 트랜잭션이라는 거는 우리가 어떤 특정 하나의 작업을 처리하기 위한 그런 논리적인 작업 단위를 보고 우리가 트랜잭션이라고 합니다. 만약에 보험 회사에서 어떤 직원이 어떤 특정 회원을 조회했을 때 그 사람 이름 하고 차 번호하고 어떤 보험에 가입했는지 그런 것들을 보고 싶다 그랬을 때 그런 기능을 할 수 있게끔 만들어 줘야 되겠죠. 그런 걸 보고 우리가 트랜잭션 모델링이라고 해요. 이런 것들을 병행 수행하는 곳이 우리 개념적 설계 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:01:11",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 71,
+      "end_seconds": 90,
+      "duration_seconds": 19,
+      "timeline_summary": "요구 조건 명세를 통한 E-R 다이어그램 작성",
+      "screen_text_lines": [
+        "개념적 설계에서는 요구 분석에서 나온 결과인 요구 조건 명세를 DBMS에 독립적인 E-R 다이어그램으로 작성함"
+      ],
+      "screen_text": "개념적 설계에서는 요구 분석에서 나온 결과인 요구 조건 명세를 DBMS에 독립적인 E-R 다이어그램으로 작성함",
+      "spoken_sentences": [
+        "해서 우리가 개념적 설계를 하기 전에 요구 조건 분석을 먼저 한다 그랬어요.",
+        "그때 요구 조건 분석을 하게 되면 우리 요구 조건 명세서라는 거를 작성한다 그랬죠.",
+        "이 요구 조건 명세서져 있는 것들을 DBMS에다가 독립적인 E-R 다이어그램으로 그렇게 작성하는 그 단계요.",
+        "그 단계가 개념적 설계 단계요."
+      ],
+      "spoken_text": "해서 우리가 개념적 설계를 하기 전에 요구 조건 분석을 먼저 한다 그랬어요. 그때 요구 조건 분석을 하게 되면 우리 요구 조건 명세서라는 거를 작성한다 그랬죠. 이 요구 조건 명세서져 있는 것들을 DBMS에다가 독립적인 E-R 다이어그램으로 그렇게 작성하는 그 단계요. 그 단계가 개념적 설계 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0189_189",
+      "subtopic_title": "개념적 설계",
+      "subtopic_sequence": 189,
+      "subtopic_number": "189",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=3oX7g6WRTz4",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:41",
+      "start_seconds": 90,
+      "end_seconds": 101,
+      "duration_seconds": 11,
+      "timeline_summary": "개념 스키마 설계 단계",
+      "screen_text_lines": [
+        "DBMS에 독립적인 개념 스키마를 설계함"
+      ],
+      "screen_text": "DBMS에 독립적인 개념 스키마를 설계함",
+      "spoken_sentences": [
+        "해서 DBMS에 독립적인 그런 개념 스키마를 설계를 하는 그런 단계를 보고 우리가 개념적 설계라고 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 DBMS에 독립적인 그런 개념 스키마를 설계를 하는 그런 단계를 보고 우리가 개념적 설계라고 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "개념적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "개념적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강좌 제목 소개",
+      "screen_text_lines": [
+        "논리적 설계(데이터 모델링)"
+      ],
+      "screen_text": "논리적 설계(데이터 모델링)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 논리적 설계에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 논리적 설계에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계(데이터 모델링)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 8,
+      "end_seconds": 24,
+      "duration_seconds": 16,
+      "timeline_summary": "데이터베이스 설계 순서 설명",
+      "screen_text_lines": [
+        "논리적 설계(데이터 모델링)",
+        "요구 조건 분석",
+        "개념적 설계",
+        "물리적 설계"
+      ],
+      "screen_text": "논리적 설계(데이터 모델링)\n요구 조건 분석\n개념적 설계\n물리적 설계",
+      "spoken_sentences": [
+        "자 우리 데이터베이스 설계하는 그 순서에 보게 되면 맨 처음에 요구 조건에 먼저 분석을 하고 그걸 가지고 개념적 설계를 하고 개념적 설계가 끝나면 논리적 설계를 하고 물리적 설계를 하고 구현을 해주면 됩니다.",
+        "그 중에서 논리적 설계요."
+      ],
+      "spoken_text": "자 우리 데이터베이스 설계하는 그 순서에 보게 되면 맨 처음에 요구 조건에 먼저 분석을 하고 그걸 가지고 개념적 설계를 하고 개념적 설계가 끝나면 논리적 설계를 하고 물리적 설계를 하고 구현을 해주면 됩니다. 그 중에서 논리적 설계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계(데이터 모델링)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:52",
+      "start_seconds": 24,
+      "end_seconds": 52,
+      "duration_seconds": 28,
+      "timeline_summary": "논리적 설계의 단계 정의 및 데이터 모델링 용어 소개",
+      "screen_text_lines": [
+        "논리적 설계(데이터 모델링)",
+        "논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 DBMS가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정."
+      ],
+      "screen_text": "논리적 설계(데이터 모델링)\n논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 DBMS가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정.",
+      "spoken_sentences": [
+        "우리 논리적 설계 단계라는 거는 현실 세계에서 발생하는 그런 자료 있죠.",
+        "그런 자료를 컴퓨터가 이해하고 처리할 수 있는 그런 물리적인 물리적인 그런 저장 장치에다가 저장할 수 있게 저장할 수 있도록 그렇게 변환하기 위해서 특정 DBMS가 지원하는 그런 논리적인 자료 구조로 변환시키는 그런 과정을 보고 우리가 논리적 설계 그렇게 부릅니다.",
+        "이 논리적 설계를 다른 말로 데이터 모델링 모델링이라고 그렇게 불러요."
+      ],
+      "spoken_text": "우리 논리적 설계 단계라는 거는 현실 세계에서 발생하는 그런 자료 있죠. 그런 자료를 컴퓨터가 이해하고 처리할 수 있는 그런 물리적인 물리적인 그런 저장 장치에다가 저장할 수 있게 저장할 수 있도록 그렇게 변환하기 위해서 특정 DBMS가 지원하는 그런 논리적인 자료 구조로 변환시키는 그런 과정을 보고 우리가 논리적 설계 그렇게 부릅니다. 이 논리적 설계를 다른 말로 데이터 모델링 모델링이라고 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계(데이터 모델링)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:00:52",
+      "end_time_hms": "00:01:08",
+      "start_seconds": 52,
+      "end_seconds": 68,
+      "duration_seconds": 16,
+      "timeline_summary": "개념 세계 데이터를 논리적 구조로 모델화하는 과정 설명",
+      "screen_text_lines": [
+        "개념 세계의 데이터를 필드로 기술된 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 논리적 구조의 데이터로 모델화함."
+      ],
+      "screen_text": "개념 세계의 데이터를 필드로 기술된 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 논리적 구조의 데이터로 모델화함.",
+      "spoken_sentences": [
+        "얘는 개념 세계에서 데이터를 데이터를 필드로 기술된 그런 데이터 타입이랑 그리고 이 데이터 타입들 간의 그런 관계 관계로 표현되는 그런 논리적인 구조 논리적인 구조의 데이터로 모델화 시키는 걸 보고 얘기하는 거고요."
+      ],
+      "spoken_text": "얘는 개념 세계에서 데이터를 데이터를 필드로 기술된 그런 데이터 타입이랑 그리고 이 데이터 타입들 간의 그런 관계 관계로 표현되는 그런 논리적인 구조 논리적인 구조의 데이터로 모델화 시키는 걸 보고 얘기하는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:01:08",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 68,
+      "end_seconds": 85,
+      "duration_seconds": 17,
+      "timeline_summary": "개념 스키마 평가 및 논리적 스키마 설계 단계 설명",
+      "screen_text_lines": [
+        "개념적 설계가 개념 스키마를 설계하는 단계라면 논리적 설계에서는 개념 스키마를 평가 및 정제하고 DBMS에 따라 서로 다른 논리적 스키마를 설계하는 단계임."
+      ],
+      "screen_text": "개념적 설계가 개념 스키마를 설계하는 단계라면 논리적 설계에서는 개념 스키마를 평가 및 정제하고 DBMS에 따라 서로 다른 논리적 스키마를 설계하는 단계임.",
+      "spoken_sentences": [
+        "개념적 설계 단계에서 개념 스키마를 설계하는 그런 단계라면 이 논리적 설계에서는 개념 스키마를 평가 평가하고 정제하고 DBMS에 따라서 서로 다른 논리적 스키마를 설계하는 그런 단계가 우리 논리적 설계 단계요."
+      ],
+      "spoken_text": "개념적 설계 단계에서 개념 스키마를 설계하는 그런 단계라면 이 논리적 설계에서는 개념 스키마를 평가 평가하고 정제하고 DBMS에 따라서 서로 다른 논리적 스키마를 설계하는 그런 단계가 우리 논리적 설계 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "개념",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 85,
+      "end_seconds": 90,
+      "duration_seconds": 5,
+      "timeline_summary": "트랜잭션 인터페이스 설계 언급",
+      "screen_text_lines": [
+        "트랜잭션의 인터페이스를 설계함."
+      ],
+      "screen_text": "트랜잭션의 인터페이스를 설계함.",
+      "spoken_sentences": [
+        "이 논리적 설계 단계에서 트랜잭션의 인터페이스를 설계를 해주고요."
+      ],
+      "spoken_text": "이 논리적 설계 단계에서 트랜잭션의 인터페이스를 설계를 해주고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:40",
+      "start_seconds": 90,
+      "end_seconds": 100,
+      "duration_seconds": 10,
+      "timeline_summary": "관계형 데이터베이스의 경우 테이블 설계 단계 설명",
+      "screen_text_lines": [
+        "관계형 데이터베이스라면 테이블을 설계하는 단계."
+      ],
+      "screen_text": "관계형 데이터베이스라면 테이블을 설계하는 단계.",
+      "spoken_sentences": [
+        "만약에 만약에 우리가 사용하는 그런 데이터베이스가 관계형 데이터베이스라면 여기서 테이블 테이블을 설계하는 그 단계가 우리 논리적 설계 단계요."
+      ],
+      "spoken_text": "만약에 만약에 우리가 사용하는 그런 데이터베이스가 관계형 데이터베이스라면 여기서 테이블 테이블을 설계하는 그 단계가 우리 논리적 설계 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "단계",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0190_190",
+      "subtopic_title": "논리적 설계",
+      "subtopic_sequence": 190,
+      "subtopic_number": "190",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=sVfyUM58Wvs",
+      "start_time_hms": "00:01:40",
+      "end_time_hms": "00:02:33",
+      "start_seconds": 100,
+      "end_seconds": 153,
+      "duration_seconds": 53,
+      "timeline_summary": "논리적 설계 단계의 주요 작업 요약",
+      "screen_text_lines": [
+        "논리적 설계(데이터 모델링)",
+        "논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 DBMS가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정.",
+        "개념 세계의 데이터를 필드로 기술된 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 논리적 구조의 데이터로 모델화함.",
+        "개념적 설계가 개념 스키마를 설계하는 단계라면 논리적 설계에서는 개념 스키마를 평가 및 정제하고 DBMS에 따라 서로 다른 논리적 스키마를 설계하는 단계임."
+      ],
+      "screen_text": "논리적 설계(데이터 모델링)\n논리적 설계 단계란 현실 세계에서 발생하는 자료를 컴퓨터가 이해하고 처리할 수 있는 물리적 저장 장치에 저장할 수 있도록 변환하기 위해 특정 DBMS가 지원하는 논리적 자료 구조로 변환(mapping)시키는 과정.\n개념 세계의 데이터를 필드로 기술된 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 논리적 구조의 데이터로 모델화함.\n개념적 설계가 개념 스키마를 설계하는 단계라면 논리적 설계에서는 개념 스키마를 평가 및 정제하고 DBMS에 따라 서로 다른 논리적 스키마를 설계하는 단계임.",
+      "spoken_sentences": [
+        "해서 논리적 설계 단계에서 수행하는 작업에는 여러 가지가 있어요.",
+        "특정 DBMS가 지원하는 그런 논리적 자료 구조로 변환시키는 매핑해주는 그런 역할도 해주고요.",
+        "개념 스키마를 평가하고 정제해주는 그런 역할도 해주고 DBMS에 따라서 특정 DBMS에 따라서 서로 다른 논리적 스키마를 설계도 해줍니다.",
+        "그리고 트랜잭션의 인터페이스도 설계를 해주고요.",
+        "만약에 관계형 데이터베이스다 그랬을 때는 테이블 테이블을 설계하는 그 단계가 우리 논리적 설계 단계에요.",
+        "해서 개념 세계 데이터를 필드로 필드로 기술된 그런 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 그런 논리적인 논리적인 그런 구조의 데이터로 모델화시켜주는 그 단계가 논리적 설계 단계 데이터 모델링 단계요."
+      ],
+      "spoken_text": "해서 논리적 설계 단계에서 수행하는 작업에는 여러 가지가 있어요. 특정 DBMS가 지원하는 그런 논리적 자료 구조로 변환시키는 매핑해주는 그런 역할도 해주고요. 개념 스키마를 평가하고 정제해주는 그런 역할도 해주고 DBMS에 따라서 특정 DBMS에 따라서 서로 다른 논리적 스키마를 설계도 해줍니다. 그리고 트랜잭션의 인터페이스도 설계를 해주고요. 만약에 관계형 데이터베이스다 그랬을 때는 테이블 테이블을 설계하는 그 단계가 우리 논리적 설계 단계에요. 해서 개념 세계 데이터를 필드로 필드로 기술된 그런 데이터 타입과 이 데이터 타입들 간의 관계로 표현되는 그런 논리적인 논리적인 그런 구조의 데이터로 모델화시켜주는 그 단계가 논리적 설계 단계 데이터 모델링 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "논리적",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 51
+        },
+        {
+          "keyword": "설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "논리적 설계(데이터 모델링)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "논리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:00:01",
+      "end_time_hms": "00:00:10",
+      "start_seconds": 1,
+      "end_seconds": 10,
+      "duration_seconds": 9,
+      "timeline_summary": "물리적 설계 강의 도입",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)"
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 물리적 설계 데이터 구조화에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 물리적 설계 데이터 구조화에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:00:10",
+      "end_time_hms": "00:00:26",
+      "start_seconds": 10,
+      "end_seconds": 26,
+      "duration_seconds": 16,
+      "timeline_summary": "데이터베이스 설계 순서 중 물리적 설계 강조",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "요구 조건 분석",
+        "개념적 설계",
+        "논리적 설계"
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n요구 조건 분석\n개념적 설계\n논리적 설계",
+      "spoken_sentences": [
+        "우리 데이터베이스를 설계하는 순서를 보게 되면 맨 처음에 요구 조건 분석을 하죠.",
+        "그다음에 개념적 설계를 하고요.",
+        "그다음에 논리적 설계를 하고 그리고 물리적 설계를 하고 그리고 구현을 해주면 됩니다.",
+        "그 중에서 물리적 설계요."
+      ],
+      "spoken_text": "우리 데이터베이스를 설계하는 순서를 보게 되면 맨 처음에 요구 조건 분석을 하죠. 그다음에 개념적 설계를 하고요. 그다음에 논리적 설계를 하고 그리고 물리적 설계를 하고 그리고 구현을 해주면 됩니다. 그 중에서 물리적 설계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터베이스 설계 순서 중 물리적 설계 강조",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:00:26",
+      "end_time_hms": "00:00:44",
+      "start_seconds": 26,
+      "end_seconds": 44,
+      "duration_seconds": 18,
+      "timeline_summary": "물리적 설계의 정의 설명",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "물리적 설계란 논리적 설계 단계에서 논리적 구조로 표현된 데이터를 디스크 등의 물리적 저장장치에 저장할 수 있는 물리적 구조의 데이터로 변환하는 과정."
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n물리적 설계란 논리적 설계 단계에서 논리적 구조로 표현된 데이터를 디스크 등의 물리적 저장장치에 저장할 수 있는 물리적 구조의 데이터로 변환하는 과정.",
+      "spoken_sentences": [
+        "물리적 설계라는 거는 우리가 논리적 설계 단계에서 논리적 구조로 표현된 그런 데이터들 있죠.",
+        "그런 데이터를 디스크와 같은 그런 물리적 저장장치에다가 저장할 수 있는 그런 물리적 구조의 데이터로 변환하는 그 과정을 보고 우리가 물리적 설계라고 합니다."
+      ],
+      "spoken_text": "물리적 설계라는 거는 우리가 논리적 설계 단계에서 논리적 구조로 표현된 그런 데이터들 있죠. 그런 데이터를 디스크와 같은 그런 물리적 저장장치에다가 저장할 수 있는 그런 물리적 구조의 데이터로 변환하는 그 과정을 보고 우리가 물리적 설계라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:00:44",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 44,
+      "end_seconds": 58,
+      "duration_seconds": 14,
+      "timeline_summary": "물리적 설계 단계에서의 주요 결정 사항",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함."
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함.",
+      "spoken_sentences": [
+        "이런 물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해서 처리 성능을 얻기 위해서 데이터베이스 데이터베이스 파일의 저장 구조나 액세스 경로 그런 것들을 싹 다 결정을 합니다."
+      ],
+      "spoken_text": "이런 물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해서 처리 성능을 얻기 위해서 데이터베이스 데이터베이스 파일의 저장 구조나 액세스 경로 그런 것들을 싹 다 결정을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:22",
+      "start_seconds": 58,
+      "end_seconds": 82,
+      "duration_seconds": 24,
+      "timeline_summary": "책 정리 비유를 통한 액세스 경로 결정 설명",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함."
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함.",
+      "spoken_sentences": [
+        "예를 들어서 우리가 책 정리를 한다고 생각해 보세요.",
+        "그러면 여러분들이 가지고 있는 책들이 여러 권이 있겠죠.",
+        "그런 책들을 정리를 할 때 책꽂이에다가 정리를 할 때 우리가 자주 보는 책들은 내가 손이 쉽게 쉽게 닿는 곳에 두면 되고 내가 자주 보지 않는 책들은 조금 위쪽에다가 아니면 조금 아래쪽에다가 그렇게 놓고 우리가 정리를 할 수 있겠죠."
+      ],
+      "spoken_text": "예를 들어서 우리가 책 정리를 한다고 생각해 보세요. 그러면 여러분들이 가지고 있는 책들이 여러 권이 있겠죠. 그런 책들을 정리를 할 때 책꽂이에다가 정리를 할 때 우리가 자주 보는 책들은 내가 손이 쉽게 쉽게 닿는 곳에 두면 되고 내가 자주 보지 않는 책들은 조금 위쪽에다가 아니면 조금 아래쪽에다가 그렇게 놓고 우리가 정리를 할 수 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:01:22",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 82,
+      "end_seconds": 107,
+      "duration_seconds": 25,
+      "timeline_summary": "처리 성능 향상을 위한 파일 저장 구조 결정 설명",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함."
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n물리적 설계 단계에서는 다양한 데이터베이스 응용에 대해 처리 성능을 얻기 위해 데이터베이스 파일의 저장 구조 및 액세스 경로를 결정함.",
+      "spoken_sentences": [
+        "그리고 우리가 책들을 정리를 할 때 책꽂이에다가 책을 꽂아야지 책을 쌓아두면 안 되겠죠.",
+        "책을 쌓아둔다고 생각해 보세요.",
+        "그러면 내가 맨 밑에 있는 책을 뺄 거예요.",
+        "그러면 위에 거 다 치워야 내가 뺄 수 있잖아요.",
+        "그렇게 처리 성능을 얻기 위해서 파일의 저장 구조를 어떻게 할 건지 그리고 액세스 경로를 어떻게 할 건지 그런 것들이 물리적 설계 단계에서 전부 다 결정을 한다고요."
+      ],
+      "spoken_text": "그리고 우리가 책들을 정리를 할 때 책꽂이에다가 책을 꽂아야지 책을 쌓아두면 안 되겠죠. 책을 쌓아둔다고 생각해 보세요. 그러면 내가 맨 밑에 있는 책을 뺄 거예요. 그러면 위에 거 다 치워야 내가 뺄 수 있잖아요. 그렇게 처리 성능을 얻기 위해서 파일의 저장 구조를 어떻게 할 건지 그리고 액세스 경로를 어떻게 할 건지 그런 것들이 물리적 설계 단계에서 전부 다 결정을 한다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:08",
+      "start_seconds": 107,
+      "end_seconds": 128,
+      "duration_seconds": 21,
+      "timeline_summary": "저장 방법 묘사에 사용되는 정보들",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "저장 레코드의 형식, 순서, 접근 경로, 조회가 집중되는 레코드와 같은 정보를 사용하여 데이터가 컴퓨터에 저장되는 방법을 묘사함."
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n저장 레코드의 형식, 순서, 접근 경로, 조회가 집중되는 레코드와 같은 정보를 사용하여 데이터가 컴퓨터에 저장되는 방법을 묘사함.",
+      "spoken_sentences": [
+        "해서 저장 레코드 저장 레코드의 형식이 됐든 순서가 됐든 아니면 접근하는 그 경로가 됐든 조회가 집중되는 그런 레코드 자주 사용하는 그런 레코드가 됐든 그런 정보를 사용해서 데이터가 데이터가 컴퓨터에 저장되는 그런 방법을 전부 다 묘사를 하는 그 단계가 우리 물리적 설계 단계요."
+      ],
+      "spoken_text": "해서 저장 레코드 저장 레코드의 형식이 됐든 순서가 됐든 아니면 접근하는 그 경로가 됐든 조회가 집중되는 그런 레코드 자주 사용하는 그런 레코드가 됐든 그런 정보를 사용해서 데이터가 데이터가 컴퓨터에 저장되는 그런 방법을 전부 다 묘사를 하는 그 단계가 우리 물리적 설계 단계요.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_041-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 4,
+      "subtopic_id": "0191_191",
+      "subtopic_title": "물리적 설계",
+      "subtopic_sequence": 191,
+      "subtopic_number": "191",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=9k3jrhaCjMw",
+      "start_time_hms": "00:02:08",
+      "end_time_hms": "00:02:47",
+      "start_seconds": 128,
+      "end_seconds": 167,
+      "duration_seconds": 39,
+      "timeline_summary": "물리적 설계 시 고려 사항과 시험 대비 강조",
+      "screen_text_lines": [
+        "물리적 설계(데이터 구조화)",
+        "물리적 설계 시 고려할 사항 : 트랜잭션 처리량, 응답 시간, 디스크 용량 등"
+      ],
+      "screen_text": "물리적 설계(데이터 구조화)\n물리적 설계 시 고려할 사항 : 트랜잭션 처리량, 응답 시간, 디스크 용량 등",
+      "spoken_sentences": [
+        "그때 물리적 설계 시 고려할 사항에는 지금처럼 이렇게 세 가지가 있습니다.",
+        "트랜잭션 처리 양도 우리가 고려를 해야 되고요.",
+        "응답 시간도 고려를 해야 되고 디스크의 용량도 고려를 해서 우리가 물리적 설계를 해줘야 돼요.",
+        "해서 이 물리적 설계 단계 같은 경우에는 우리가 실제 시험에 특징을 묻는 문제가 많이 출제가 됐어요.",
+        "많이 출제가 되고 실제 실기 시험에서도 이 내용이 나왔었거든요.",
+        "해서 이 물리적 설계 단계에서 수행하는 그런 작업들 있죠.",
+        "그런 작업들을 중심으로 해서 특징을 정확하게 정리하고 지나가시기 바랍니다."
+      ],
+      "spoken_text": "그때 물리적 설계 시 고려할 사항에는 지금처럼 이렇게 세 가지가 있습니다. 트랜잭션 처리 양도 우리가 고려를 해야 되고요. 응답 시간도 고려를 해야 되고 디스크의 용량도 고려를 해서 우리가 물리적 설계를 해줘야 돼요. 해서 이 물리적 설계 단계 같은 경우에는 우리가 실제 시험에 특징을 묻는 문제가 많이 출제가 됐어요. 많이 출제가 되고 실제 실기 시험에서도 이 내용이 나왔었거든요. 해서 이 물리적 설계 단계에서 수행하는 그런 작업들 있죠. 그런 작업들을 중심으로 해서 특징을 정확하게 정리하고 지나가시기 바랍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "물리적 설계(데이터 구조화)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "데이터 구조화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 32
+        },
+        {
+          "keyword": "물리적 설계",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "처리",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 11
+        }
+      ]
+    }
+  ]
+}

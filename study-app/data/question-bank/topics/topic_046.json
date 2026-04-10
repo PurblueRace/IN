@@ -1,0 +1,474 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_046",
+    "sequence": 46,
+    "title": "반정규화와 중복 테이블",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 3,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_212",
+      "chapter_213"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_edc401b573d86439",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          34
+        ],
+        "page_span": {
+          "start_page": 34,
+          "end_page": 34
+        },
+        "source_explanation": "정규화된 엔티티, 속성, 관계를 중복, 통합, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위를 반정규화(Denormalization)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "반정규화"
+        ],
+        "chapter_label": "반정규화",
+        "chapter_key": "데이터베이스 구축 > 반정규화",
+        "chapter_id": "chapter_212"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_046",
+        "topic_title": "반정규화와 중복 테이블",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "반정규화와 중복 테이블",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인덱스정규화"
+          },
+          {
+            "label": "2",
+            "text": "반정규화"
+          },
+          {
+            "label": "3",
+            "text": "집단화"
+          },
+          {
+            "label": "4",
+            "text": "머징"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "반정규화"
+        ],
+        "answer_text": "반정규화"
+      },
+      "explanation": {
+        "source_text": "정규화된 엔티티, 속성, 관계를 중복, 통합, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위를 반정규화(Denormalization)라고 합니다.",
+        "summary": "성능 최적화를 위해 정규화된 모델을 다시 통합하거나 중복을 허용하는 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "반정규화(Denormalization)는 조회 성능 향상을 위해 의도적으로 정규화 원칙을 깨는 과정입니다."
+        ],
+        "why_others_wrong": [
+          "인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+        ],
+        "key_concepts": [
+          "반정규화",
+          "성능 최적화"
+        ],
+        "memory_cues": [
+          "정규화 반대 = 반정규화"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인덱스정규화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '인덱스정규화'이므로 일치하지 않습니다. 인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+          },
+          {
+            "label": "2",
+            "text": "반정규화",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 의도적으로 정규화 원칙을 깨는 과정입니다."
+          },
+          {
+            "label": "3",
+            "text": "집단화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '집단화'이므로 일치하지 않습니다. 인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+          },
+          {
+            "label": "4",
+            "text": "머징",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '머징'이므로 일치하지 않습니다. 인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+          "핵심 개념을 떠올립니다. 반정규화, 성능 최적화",
+          "정답 판단 근거를 적용합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 의도적으로 정규화 원칙을 깨는 과정입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+        ],
+        "exam_traps": [
+          "인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '반정규화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '성능 최적화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정규화 반대 = 반정규화"
+        ],
+        "detailed_summary": "성능 최적화를 위해 정규화된 모델을 다시 통합하거나 중복을 허용하는 기법을 묻는 문제입니다. 정규화된 엔티티, 속성, 관계를 중복, 통합, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위를 반정규화(Denormalization)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 의도적으로 정규화 원칙을 깨는 과정입니다. 시험 포인트는 인덱스나 머징은 다른 최적화 기법이며, 정규화의 반대 개념은 반정규화입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "반정규화",
+        "성능 향상",
+        "데이터 모델링",
+        "역정규화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_09ea729be330122b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          109
+        ],
+        "page_span": {
+          "start_page": 109,
+          "end_page": 109
+        },
+        "source_explanation": "전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "반정규화와 중복 테이블"
+        ],
+        "chapter_label": "반정규화와 중복 테이블",
+        "chapter_key": "데이터베이스 구축 > 반정규화와 중복 테이블",
+        "chapter_id": "chapter_213"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_046",
+        "topic_title": "반정규화와 중복 테이블",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "반정규화와 중복 테이블",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "47. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인덱스정규화"
+          },
+          {
+            "label": "2",
+            "text": "반정규화"
+          },
+          {
+            "label": "3",
+            "text": "집단화"
+          },
+          {
+            "label": "4",
+            "text": "머징"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "반정규화"
+        ],
+        "answer_text": "반정규화"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다.",
+        "summary": "데이터베이스 성능 최적화를 위한 반정규화 기법에 관한 문제입니다.",
+        "why_correct": [
+          "반정규화(Denormalization)는 조회 성능 향상을 위해 정규화된 모델을 의도적으로 통합하거나 중복을 허용하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+        ],
+        "key_concepts": [
+          "반정규화",
+          "성능 최적화"
+        ],
+        "memory_cues": [
+          "성능 위해 정규화 반대로 = 반정규화"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인덱스정규화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '인덱스정규화'이므로 일치하지 않습니다. 정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+          },
+          {
+            "label": "2",
+            "text": "반정규화",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화된 모델을 의도적으로 통합하거나 중복을 허용하는 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "집단화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '집단화'이므로 일치하지 않습니다. 정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+          },
+          {
+            "label": "4",
+            "text": "머징",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '머징'이므로 일치하지 않습니다. 정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+          "핵심 개념을 떠올립니다. 반정규화, 성능 최적화",
+          "정답 판단 근거를 적용합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화된 모델을 의도적으로 통합하거나 중복을 허용하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+        ],
+        "exam_traps": [
+          "정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '반정규화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '성능 최적화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 성능 위해 정규화 반대로 = 반정규화"
+        ],
+        "detailed_summary": "데이터베이스 성능 최적화를 위한 반정규화 기법에 관한 문제입니다. 전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화된 모델을 의도적으로 통합하거나 중복을 허용하는 기법입니다. 시험 포인트는 정규화는 중복을 제거하는 과정이며, 인덱스는 검색 속도를 높이는 별도의 구조입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "반정규화",
+        "역정규화",
+        "성능 향상",
+        "데이터 모델링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_cb9cdb521875b592",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          128
+        ],
+        "page_span": {
+          "start_page": 128,
+          "end_page": 128
+        },
+        "source_explanation": "전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "반정규화와 중복 테이블"
+        ],
+        "chapter_label": "반정규화와 중복 테이블",
+        "chapter_key": "데이터베이스 구축 > 반정규화와 중복 테이블",
+        "chapter_id": "chapter_213"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_046",
+        "topic_title": "반정규화와 중복 테이블",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "반정규화와 중복 테이블",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "59. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인덱스정규화"
+          },
+          {
+            "label": "2",
+            "text": "반정규화"
+          },
+          {
+            "label": "3",
+            "text": "집단화"
+          },
+          {
+            "label": "4",
+            "text": "머징"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "반정규화"
+        ],
+        "answer_text": "반정규화"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다.",
+        "summary": "시스템 성능 최적화를 위해 정규화된 모델을 의도적으로 중복시키는 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "반정규화(Denormalization)는 조회 성능 향상을 위해 정규화 원칙을 일부 포기하고 데이터를 중복시키거나 통합하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+        ],
+        "key_concepts": [
+          "반정규화: 중복 테이블 추가, 테이블 조합, 테이블 분할, 중복 컬럼 추가"
+        ],
+        "memory_cues": [
+          "반(Anti) 정규화 = 정규화 반대로 하기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인덱스정규화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '인덱스정규화'이므로 일치하지 않습니다. 인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+          },
+          {
+            "label": "2",
+            "text": "반정규화",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화 원칙을 일부 포기하고 데이터를 중복시키거나 통합하는 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "집단화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '집단화'이므로 일치하지 않습니다. 인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+          },
+          {
+            "label": "4",
+            "text": "머징",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 반정규화'인데 이 선택지는 '머징'이므로 일치하지 않습니다. 인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 59. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은?",
+          "핵심 개념을 떠올립니다. 반정규화: 중복 테이블 추가, 테이블 조합, 테이블 분할, 중복 컬럼 추가",
+          "정답 판단 근거를 적용합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화 원칙을 일부 포기하고 데이터를 중복시키거나 통합하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+        ],
+        "exam_traps": [
+          "인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '반정규화: 중복 테이블 추가, 테이블 조합, 테이블 분할, 중복 컬럼 추가'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 반(Anti) 정규화 = 정규화 반대로 하기"
+        ],
+        "detailed_summary": "시스템 성능 최적화를 위해 정규화된 모델을 의도적으로 중복시키는 기법을 묻는 문제입니다. 전문가의 조언 | 시스템의 성능 향상과 개발 운영의 단순화를 위해 정규화된 데이터 모델을 통합, 중복, 분리하는 등의 의도적으로 정규화 원칙을 위배하는 행위는 반정규화입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 59. 정규화된 엔티티, 속성, 관계를 시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 반정규화'와 일치합니다. 반정규화(Denormalization)는 조회 성능 향상을 위해 정규화 원칙을 일부 포기하고 데이터를 중복시키거나 통합하는 기법입니다. 시험 포인트는 인덱스정규화, 집단화 등은 문제의 정의와 맞지 않는 용어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "반정규화",
+        "Denormalization",
+        "성능 향상",
+        "데이터 모델링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

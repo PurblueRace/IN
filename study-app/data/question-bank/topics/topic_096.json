@@ -1,0 +1,956 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_096",
+    "sequence": 96,
+    "title": "빅데이터 분석 기술",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 6,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_305",
+      "chapter_331",
+      "chapter_153",
+      "chapter_304"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_1ff678879080ff71",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 41
+        },
+        "source_explanation": "하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는 Sqoop입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "빅데이터 분석 기술"
+        ],
+        "chapter_label": "빅데이터 분석 기술",
+        "chapter_key": "정보시스템 구축 관리 > 빅데이터 분석 기술",
+        "chapter_id": "chapter_305"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Apnic"
+          },
+          {
+            "label": "2",
+            "text": "Topology"
+          },
+          {
+            "label": "3",
+            "text": "Sqoop"
+          },
+          {
+            "label": "4",
+            "text": "SDB"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Sqoop"
+        ],
+        "answer_text": "Sqoop"
+      },
+      "explanation": {
+        "source_text": "하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는 Sqoop입니다.",
+        "summary": "하둡 에코시스템 중 RDBMS와의 데이터 연동 도구를 묻는 문제입니다.",
+        "why_correct": [
+          "Sqoop(SQL-to-Hadoop)은 구조화된 데이터 저장소(RDBMS 등)와 하둡 간의 대용량 데이터 전송을 지원하는 도구입니다."
+        ],
+        "why_others_wrong": [
+          "1번: IP 주소 관리 기구",
+          "2번: 네트워크 연결 형태",
+          "4번: SimpleDB 등 다른 의미"
+        ],
+        "key_concepts": [
+          "Sqoop",
+          "하둡 에코시스템"
+        ],
+        "memory_cues": [
+          "SQL + Hadoop = Sqoop"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Apnic",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Sqoop'인데 이 선택지는 'Apnic'이므로 일치하지 않습니다. 1번: IP 주소 관리 기구 2번: 네트워크 연결 형태"
+          },
+          {
+            "label": "2",
+            "text": "Topology",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Sqoop'인데 이 선택지는 'Topology'이므로 일치하지 않습니다. 1번: IP 주소 관리 기구 2번: 네트워크 연결 형태"
+          },
+          {
+            "label": "3",
+            "text": "Sqoop",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Sqoop'와 일치합니다. Sqoop(SQL-to-Hadoop)은 구조화된 데이터 저장소(RDBMS 등)와 하둡 간의 대용량 데이터 전송을 지원하는 도구입니다."
+          },
+          {
+            "label": "4",
+            "text": "SDB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Sqoop'인데 이 선택지는 'SDB'이므로 일치하지 않습니다. 1번: IP 주소 관리 기구 2번: 네트워크 연결 형태"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는?",
+          "핵심 개념을 떠올립니다. Sqoop, 하둡 에코시스템",
+          "정답 판단 근거를 적용합니다. Sqoop(SQL-to-Hadoop)은 구조화된 데이터 저장소(RDBMS 등)와 하둡 간의 대용량 데이터 전송을 지원하는 도구입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: IP 주소 관리 기구"
+        ],
+        "exam_traps": [
+          "1번: IP 주소 관리 기구"
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Sqoop'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '하둡 에코시스템'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SQL + Hadoop = Sqoop"
+        ],
+        "detailed_summary": "하둡 에코시스템 중 RDBMS와의 데이터 연동 도구를 묻는 문제입니다. 하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는 Sqoop입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 하둡(Hadoop)과 관계형 데이터베이스 간에 데이터를 전송할 수 있도록 설계된 도구는? 정답입니다. 이 선택지는 실제 정답인 '3번 Sqoop'와 일치합니다. Sqoop(SQL-to-Hadoop)은 구조화된 데이터 저장소(RDBMS 등)와 하둡 간의 대용량 데이터 전송을 지원하는 도구입니다. 시험 포인트는 1번: IP 주소 관리 기구"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Hadoop",
+        "RDBMS",
+        "Sqoop",
+        "Big Data"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f20849442f5ae447",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          42
+        ],
+        "page_span": {
+          "start_page": 42,
+          "end_page": 42
+        },
+        "source_explanation": "문제의 지문에 제시된 내용은 하둡(Hadoop)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "빅데이터 분석 기술"
+        ],
+        "chapter_label": "빅데이터 분석 기술",
+        "chapter_key": "정보시스템 구축 관리 > 빅데이터 분석 기술",
+        "chapter_id": "chapter_305"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "93. 다음이 설명하는 용어로 옳은 것은?\n• 오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다.\n• 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성한다.\n• 다양한 소스를 통해 생성된 빅데이터를 효율적으로 저장하고 처리한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "하둡(Hadoop)"
+          },
+          {
+            "label": "2",
+            "text": "비컨(Beacon)"
+          },
+          {
+            "label": "3",
+            "text": "포스퀘어(Foursquare)"
+          },
+          {
+            "label": "4",
+            "text": "맴리스터(Memristor)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "하둡(Hadoop)"
+        ],
+        "answer_text": "하둡(Hadoop)"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에 제시된 내용은 하둡(Hadoop)에 대한 설명입니다.",
+        "summary": "빅데이터 처리를 위한 대표적인 분산 컴퓨팅 프레임워크인 하둡을 묻는 문제입니다.",
+        "why_correct": [
+          "하둡은 여러 대의 컴퓨터를 하나로 묶어 대용량 데이터를 분산 저장(HDFS)하고 처리(MapReduce)하는 오픈 소스 플랫폼입니다."
+        ],
+        "why_others_wrong": [
+          "2번: 위치 정보 전송 기술",
+          "3번: 위치 기반 SNS",
+          "4번: 차세대 메모리 소자"
+        ],
+        "key_concepts": [
+          "하둡(Hadoop)",
+          "분산 컴퓨팅"
+        ],
+        "memory_cues": [
+          "빅데이터 분산 처리 = 하둡"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "하둡(Hadoop)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 하둡(Hadoop)'와 일치합니다. 하둡은 여러 대의 컴퓨터를 하나로 묶어 대용량 데이터를 분산 저장(HDFS)하고 처리(MapReduce)하는 오픈 소스 플랫폼입니다."
+          },
+          {
+            "label": "2",
+            "text": "비컨(Beacon)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하둡(Hadoop)'인데 이 선택지는 '비컨(Beacon)'이므로 일치하지 않습니다. 2번: 위치 정보 전송 기술 3번: 위치 기반 SNS"
+          },
+          {
+            "label": "3",
+            "text": "포스퀘어(Foursquare)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하둡(Hadoop)'인데 이 선택지는 '포스퀘어(Foursquare)'이므로 일치하지 않습니다. 2번: 위치 정보 전송 기술 3번: 위치 기반 SNS"
+          },
+          {
+            "label": "4",
+            "text": "맴리스터(Memristor)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하둡(Hadoop)'인데 이 선택지는 '맴리스터(Memristor)'이므로 일치하지 않습니다. 2번: 위치 정보 전송 기술 3번: 위치 기반 SNS"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 다음이 설명하는 용어로 옳은 것은? • 오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. • 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성한다. • 다양한 소스를 통해 생성된 빅데이터를 효율적으로 저장하고 처리한다.",
+          "핵심 개념을 떠올립니다. 하둡(Hadoop), 분산 컴퓨팅",
+          "정답 판단 근거를 적용합니다. 하둡은 여러 대의 컴퓨터를 하나로 묶어 대용량 데이터를 분산 저장(HDFS)하고 처리(MapReduce)하는 오픈 소스 플랫폼입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 위치 정보 전송 기술"
+        ],
+        "exam_traps": [
+          "2번: 위치 정보 전송 기술"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '하둡(Hadoop)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분산 컴퓨팅'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 빅데이터 분산 처리 = 하둡"
+        ],
+        "detailed_summary": "빅데이터 처리를 위한 대표적인 분산 컴퓨팅 프레임워크인 하둡을 묻는 문제입니다. 문제의 지문에 제시된 내용은 하둡(Hadoop)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 다음이 설명하는 용어로 옳은 것은? • 오픈 소스를 기반으로 한 분산 컴퓨팅 플랫폼이다. • 일반 PC급 컴퓨터들로 가상화된 대형 스토리지를 형성한다. • 다양한 소스를 통해 생성된 빅데이터를 효율적으로 저장하고 처리한다. 정답입니다. 이 선택지는 실제 정답인 '1번 하둡(Hadoop)'와 일치합니다. 하둡은 여러 대의 컴퓨터를 하나로 묶어 대용량 데이터를 분산 저장(HDFS)하고 처리(MapReduce)하는 오픈 소스 플랫폼입니다. 시험 포인트는 2번: 위치 정보 전송 기술"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Hadoop",
+        "Distributed Computing",
+        "Big Data",
+        "Open Source"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_7b5020cce5fe5a2d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 96
+        },
+        "source_explanation": "문제의 지문은 MapReduce에 대한 내용입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "빅데이터 분석 기술"
+        ],
+        "chapter_label": "빅데이터 분석 기술",
+        "chapter_key": "정보시스템 구축관리 > 빅데이터 분석 기술",
+        "chapter_id": "chapter_331"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "85. 다음 내용에 적합한 용어는?\n- 대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다.\n- Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다.\n- 임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MapReduce"
+          },
+          {
+            "label": "2",
+            "text": "SQL"
+          },
+          {
+            "label": "3",
+            "text": "Hijacking"
+          },
+          {
+            "label": "4",
+            "text": "Logs"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "MapReduce"
+        ],
+        "answer_text": "MapReduce"
+      },
+      "explanation": {
+        "source_text": "문제의 지문은 MapReduce에 대한 내용입니다.",
+        "summary": "대용량 데이터 분산 처리를 위한 구글의 프로그래밍 모델을 묻는 문제입니다.",
+        "why_correct": [
+          "MapReduce는 데이터를 쪼개서 처리(Map)하고 다시 합치는(Reduce) 방식으로 대규모 병렬 처리를 가능하게 합니다."
+        ],
+        "why_others_wrong": [
+          "SQL은 관계형 DB 질의어입니다.",
+          "Hijacking은 세션을 가로채는 공격 기법입니다.",
+          "Logs는 시스템 기록입니다."
+        ],
+        "key_concepts": [
+          "MapReduce",
+          "Hadoop",
+          "Distributed Computing"
+        ],
+        "memory_cues": [
+          "Map(나누고) + Reduce(합치고) = 분산 처리"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MapReduce",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 MapReduce'와 일치합니다. MapReduce는 데이터를 쪼개서 처리(Map)하고 다시 합치는(Reduce) 방식으로 대규모 병렬 처리를 가능하게 합니다."
+          },
+          {
+            "label": "2",
+            "text": "SQL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 MapReduce'인데 이 선택지는 'SQL'이므로 일치하지 않습니다. SQL은 관계형 DB 질의어입니다. Hijacking은 세션을 가로채는 공격 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Hijacking",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 MapReduce'인데 이 선택지는 'Hijacking'이므로 일치하지 않습니다. SQL은 관계형 DB 질의어입니다. Hijacking은 세션을 가로채는 공격 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "Logs",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 MapReduce'인데 이 선택지는 'Logs'이므로 일치하지 않습니다. SQL은 관계형 DB 질의어입니다. Hijacking은 세션을 가로채는 공격 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 다음 내용에 적합한 용어는? - 대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. - Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다. - 임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다.",
+          "핵심 개념을 떠올립니다. MapReduce, Hadoop, Distributed Computing",
+          "정답 판단 근거를 적용합니다. MapReduce는 데이터를 쪼개서 처리(Map)하고 다시 합치는(Reduce) 방식으로 대규모 병렬 처리를 가능하게 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SQL은 관계형 DB 질의어입니다."
+        ],
+        "exam_traps": [
+          "SQL은 관계형 DB 질의어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MapReduce'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Hadoop'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Distributed Computing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Map(나누고) + Reduce(합치고) = 분산 처리"
+        ],
+        "detailed_summary": "대용량 데이터 분산 처리를 위한 구글의 프로그래밍 모델을 묻는 문제입니다. 문제의 지문은 MapReduce에 대한 내용입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 다음 내용에 적합한 용어는? - 대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다. - Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다. - 임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다. 정답입니다. 이 선택지는 실제 정답인 '1번 MapReduce'와 일치합니다. MapReduce는 데이터를 쪼개서 처리(Map)하고 다시 합치는(Reduce) 방식으로 대규모 병렬 처리를 가능하게 합니다. 시험 포인트는 SQL은 관계형 DB 질의어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "MapReduce",
+        "구글",
+        "빅데이터",
+        "분산 처리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0e7f0593c7afcb7d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          98
+        ],
+        "page_span": {
+          "start_page": 98,
+          "end_page": 98
+        },
+        "source_explanation": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법을 데이터 마이닝(Data Mining)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "빅데이터 분석 기술"
+        ],
+        "chapter_label": "빅데이터 분석 기술",
+        "chapter_key": "정보시스템 구축관리 > 빅데이터 분석 기술",
+        "chapter_id": "chapter_331"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "97. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Data Mining"
+          },
+          {
+            "label": "2",
+            "text": "Wm-bus"
+          },
+          {
+            "label": "3",
+            "text": "Digital Twin"
+          },
+          {
+            "label": "4",
+            "text": "Zigbee"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Data Mining"
+        ],
+        "answer_text": "Data Mining"
+      },
+      "explanation": {
+        "source_text": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법을 데이터 마이닝(Data Mining)이라고 합니다.",
+        "summary": "데이터에서 유용한 정보를 캐내는 기술인 데이터 마이닝의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "데이터 마이닝은 방대한 데이터 속에서 숨겨진 규칙이나 패턴을 찾아내는 기술입니다."
+        ],
+        "why_others_wrong": [
+          "Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+        ],
+        "key_concepts": [
+          "Data Mining",
+          "Pattern Recognition"
+        ],
+        "memory_cues": [
+          "데이터 광산(Mine)에서 패턴을 캐내기 = 데이터 마이닝"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Data Mining",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Data Mining'와 일치합니다. 데이터 마이닝은 방대한 데이터 속에서 숨겨진 규칙이나 패턴을 찾아내는 기술입니다."
+          },
+          {
+            "label": "2",
+            "text": "Wm-bus",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'Wm-bus'이므로 일치하지 않습니다. Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+          },
+          {
+            "label": "3",
+            "text": "Digital Twin",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'Digital Twin'이므로 일치하지 않습니다. Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+          },
+          {
+            "label": "4",
+            "text": "Zigbee",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'Zigbee'이므로 일치하지 않습니다. Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법은?",
+          "핵심 개념을 떠올립니다. Data Mining, Pattern Recognition",
+          "정답 판단 근거를 적용합니다. 데이터 마이닝은 방대한 데이터 속에서 숨겨진 규칙이나 패턴을 찾아내는 기술입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+        ],
+        "exam_traps": [
+          "Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Data Mining'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pattern Recognition'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 데이터 광산(Mine)에서 패턴을 캐내기 = 데이터 마이닝"
+        ],
+        "detailed_summary": "데이터에서 유용한 정보를 캐내는 기술인 데이터 마이닝의 정의를 묻는 문제입니다. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법을 데이터 마이닝(Data Mining)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 97. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호 관계를 규명하여 일정한 패턴을 찾아내는 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 Data Mining'와 일치합니다. 데이터 마이닝은 방대한 데이터 속에서 숨겨진 규칙이나 패턴을 찾아내는 기술입니다. 시험 포인트는 Wm-bus는 원격 검침 프로토콜, Digital Twin은 가상 모델, Zigbee는 무선 통신 기술입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데이터 마이닝",
+        "빅데이터",
+        "패턴 추출",
+        "지식 발견"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b6b63a0a4b1ac384",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 136
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 데이터 마이닝(Data Mining)의 개념입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "142섹션 9필드"
+        ],
+        "chapter_label": "142섹션 9필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 142섹션 9필드",
+        "chapter_id": "chapter_153"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관계를 규명하여 일정 패턴을 찾아내는 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Data Mining"
+          },
+          {
+            "label": "2",
+            "text": "WM-Bus"
+          },
+          {
+            "label": "3",
+            "text": "Digital Twin"
+          },
+          {
+            "label": "4",
+            "text": "Zigbee"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Data Mining"
+        ],
+        "answer_text": "Data Mining"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 데이터 마이닝(Data Mining)의 개념입니다.",
+        "summary": "대량의 데이터에서 유용한 패턴을 찾아내는 데이터 마이닝에 대한 정의입니다.",
+        "why_correct": [
+          "데이터 마이닝(Data Mining)은 대규모 데이터셋에서 상관관계와 패턴을 찾아내는 기술입니다."
+        ],
+        "why_others_wrong": [
+          "WM-Bus는 무선 미터링 프로토콜입니다.",
+          "Digital Twin은 가상 모델링 기술입니다.",
+          "Zigbee는 저속 무선 통신 표준입니다."
+        ],
+        "key_concepts": [
+          "데이터 마이닝",
+          "상관관계"
+        ],
+        "memory_cues": [
+          "데이터 속에서 금을 캐듯 패턴 찾기 = 마이닝"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Data Mining",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Data Mining'와 일치합니다. 데이터 마이닝(Data Mining)은 대규모 데이터셋에서 상관관계와 패턴을 찾아내는 기술입니다."
+          },
+          {
+            "label": "2",
+            "text": "WM-Bus",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'WM-Bus'이므로 일치하지 않습니다. WM-Bus는 무선 미터링 프로토콜입니다. Digital Twin은 가상 모델링 기술입니다."
+          },
+          {
+            "label": "3",
+            "text": "Digital Twin",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'Digital Twin'이므로 일치하지 않습니다. WM-Bus는 무선 미터링 프로토콜입니다. Digital Twin은 가상 모델링 기술입니다."
+          },
+          {
+            "label": "4",
+            "text": "Zigbee",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Data Mining'인데 이 선택지는 'Zigbee'이므로 일치하지 않습니다. WM-Bus는 무선 미터링 프로토콜입니다. Digital Twin은 가상 모델링 기술입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관계를 규명하여 일정 패턴을 찾아내는 기법은?",
+          "핵심 개념을 떠올립니다. 데이터 마이닝, 상관관계",
+          "정답 판단 근거를 적용합니다. 데이터 마이닝(Data Mining)은 대규모 데이터셋에서 상관관계와 패턴을 찾아내는 기술입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. WM-Bus는 무선 미터링 프로토콜입니다."
+        ],
+        "exam_traps": [
+          "WM-Bus는 무선 미터링 프로토콜입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '데이터 마이닝'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '상관관계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 데이터 속에서 금을 캐듯 패턴 찾기 = 마이닝"
+        ],
+        "detailed_summary": "대량의 데이터에서 유용한 패턴을 찾아내는 데이터 마이닝에 대한 정의입니다. 전문가의 조언 | 문제에 제시된 내용은 데이터 마이닝(Data Mining)의 개념입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관계를 규명하여 일정 패턴을 찾아내는 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 Data Mining'와 일치합니다. 데이터 마이닝(Data Mining)은 대규모 데이터셋에서 상관관계와 패턴을 찾아내는 기술입니다. 시험 포인트는 WM-Bus는 무선 미터링 프로토콜입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Data Mining",
+        "데이터 마이닝",
+        "빅데이터",
+        "패턴 추출"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_12be4dcf3bda5a7d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "4번은 하둡(Hadoop) 에코시스템의 특징입니다. (Sqoop은 RDBMS와 Hadoop 간의 데이터 전송 도구이지 Map-Reduce 알고리즘 자체의 특징은 아닙니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "빅데이터"
+        ],
+        "chapter_label": "빅데이터",
+        "chapter_key": "정보시스템 구축 관리 > 빅데이터",
+        "chapter_id": "chapter_304"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_096",
+        "topic_title": "빅데이터 분석 기술",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "빅데이터 분석 기술",
+        "match_score": 94.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "90. Hadoop내의 Map-reduce의 특징으로 올바르지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다."
+          },
+          {
+            "label": "2",
+            "text": "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다."
+          },
+          {
+            "label": "3",
+            "text": "임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다."
+          },
+          {
+            "label": "4",
+            "text": "대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다."
+        ],
+        "answer_text": "대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다."
+      },
+      "explanation": {
+        "source_text": "4번은 하둡(Hadoop) 에코시스템의 특징입니다. (Sqoop은 RDBMS와 Hadoop 간의 데이터 전송 도구이지 Map-Reduce 알고리즘 자체의 특징은 아닙니다.)",
+        "summary": "하둡의 핵심 분산 처리 모델인 맵리듀스(Map-Reduce)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "Sqoop은 하둡 에코시스템 내에서 RDBMS와 하둡 간 데이터를 주고받는 별도의 도구이며, 맵리듀스 프로그래밍 모델의 내재적 특징은 아닙니다."
+        ],
+        "why_others_wrong": [
+          "구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+        ],
+        "key_concepts": [
+          "Map-Reduce",
+          "Hadoop",
+          "Sqoop"
+        ],
+        "memory_cues": [
+          "Map-Reduce = 알고리즘/모델",
+          "Sqoop = 데이터 이동 도구"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.'인데 이 선택지는 'Google에 의해 고안된 기술로써 대표적인 대용량 데이터 처리를 위한 병렬 처리 기법을 제공한다.'이므로 일치하지 않습니다. 구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.'인데 이 선택지는 '대용량 데이터를 분산 처리하기 위한 목적으로 개발된 프로그래밍 모델이다.'이므로 일치하지 않습니다. 구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.'인데 이 선택지는 '임의의 순서로 정렬된 데이터를 분산 처리하고 이를 다시 합치는 과정을 거친다.'이므로 일치하지 않습니다. 구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.'와 일치합니다. Sqoop은 하둡 에코시스템 내에서 RDBMS와 하둡 간 데이터를 주고받는 별도의 도구이며, 맵리듀스 프로그래밍 모델의 내재적 특징은 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. Hadoop내의 Map-reduce의 특징으로 올바르지 않은 것은?",
+          "핵심 개념을 떠올립니다. Map-Reduce, Hadoop, Sqoop",
+          "정답 판단 근거를 적용합니다. Sqoop은 하둡 에코시스템 내에서 RDBMS와 하둡 간 데이터를 주고받는 별도의 도구이며, 맵리듀스 프로그래밍 모델의 내재적 특징은 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+        ],
+        "exam_traps": [
+          "구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Map-Reduce'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Hadoop'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Sqoop'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Map-Reduce = 알고리즘/모델",
+          "암기 포인트를 떠올립니다. Sqoop = 데이터 이동 도구"
+        ],
+        "detailed_summary": "하둡의 핵심 분산 처리 모델인 맵리듀스(Map-Reduce)의 특징을 묻는 문제입니다. 4번은 하둡(Hadoop) 에코시스템의 특징입니다. (Sqoop은 RDBMS와 Hadoop 간의 데이터 전송 도구이지 Map-Reduce 알고리즘 자체의 특징은 아닙니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. Hadoop내의 Map-reduce의 특징으로 올바르지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 대용량 데이터를 전송할 때 스쿱(Sqoop)이라는 도구를 이용한다.'와 일치합니다. Sqoop은 하둡 에코시스템 내에서 RDBMS와 하둡 간 데이터를 주고받는 별도의 도구이며, 맵리듀스 프로그래밍 모델의 내재적 특징은 아닙니다. 시험 포인트는 구글 고안, 분산/병렬 처리 모델, Map과 Reduce 단계로 구성됨은 모두 맵리듀스의 핵심 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Map-Reduce",
+        "Hadoop",
+        "빅데이터",
+        "Sqoop"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

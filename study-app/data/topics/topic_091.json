@@ -1,0 +1,4496 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_091",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      415,
+      416,
+      417,
+      418
+    ],
+    "source_lecture_ids": [
+      "0415_415",
+      "0416_416",
+      "0417_417",
+      "0418_418"
+    ],
+    "source_titles": [
+      "경로 제어 프로토콜",
+      "RIP",
+      "OSPF",
+      "흐름 제어"
+    ],
+    "keywords": [
+      "제어",
+      "경로",
+      "프로토콜",
+      "RIP",
+      "OSPF"
+    ],
+    "highlight_keywords": [
+      "프로토콜",
+      "Protocol",
+      "AS",
+      "EGP",
+      "영업부",
+      "RIP",
+      "경로 제어 프로토콜(Routing Protocol)",
+      "Routing Protocol",
+      "Hop",
+      "OSPF"
+    ],
+    "secondary_keywords": [
+      "Gateway",
+      "게이트웨이",
+      "경로",
+      "Main_Router",
+      "BGP",
+      "IGP",
+      "라우팅",
+      "알고리즘",
+      "Bellman-Ford",
+      "Information",
+      "그때",
+      "네트워크"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0415_415",
+      "sequence": 415,
+      "number": "415",
+      "course_code": "350808",
+      "title": "경로 제어 프로토콜",
+      "duration_seconds": 383,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "segment_count": 16,
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "tokens": [
+            "프로토콜"
+          ],
+          "score": 42,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Protocol",
+          "tokens": [
+            "Protocol"
+          ],
+          "score": 36,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "AS",
+          "tokens": [
+            "AS"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "EGP",
+          "tokens": [
+            "EGP"
+          ],
+          "score": 31,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "영업부",
+          "tokens": [
+            "영업부"
+          ],
+          "score": 31,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Gateway",
+          "tokens": [
+            "Gateway"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "게이트웨이",
+          "tokens": [
+            "게이트웨이"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "경로",
+          "tokens": [
+            "경로"
+          ],
+          "score": 27,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Main_Router",
+          "tokens": [
+            "Main",
+            "Router"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "BGP",
+          "tokens": [
+            "BGP"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "IGP",
+          "tokens": [
+            "IGP"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_091-subtopic-001-source-seg-001::01",
+          "prompt": "이번 시간 우리 경로 제어 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "프로토콜",
+          "original": "이번 시간 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "프로토콜",
+          "source_segment_id": "topic_091-subtopic-001-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '프로토콜'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-001-source-seg-002::02",
+          "prompt": "경로 제어 프로토콜(Routing ______)",
+          "answer": "Protocol",
+          "original": "경로 제어 프로토콜(Routing Protocol)",
+          "keyword": "Protocol",
+          "source_segment_id": "topic_091-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Protocol'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-001-source-seg-003::03",
+          "prompt": "______(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+          "answer": "EGP",
+          "original": "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+          "keyword": "EGP",
+          "source_segment_id": "topic_091-subtopic-001-source-seg-003",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'EGP'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-001-source-seg-007::04",
+          "prompt": "해서 이곳에 있는 것들을 싹 다 ______, 영업부 컴퓨터들만 이렇게 묶어서 우리가 영업부 네트워크를 따로 만들었어요.",
+          "answer": "영업부",
+          "original": "해서 이곳에 있는 것들을 싹 다 영업부, 영업부 컴퓨터들만 이렇게 묶어서 우리가 영업부 네트워크를 따로 만들었어요.",
+          "keyword": "영업부",
+          "source_segment_id": "topic_091-subtopic-001-source-seg-007",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '영업부'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0416_416",
+      "sequence": 416,
+      "number": "416",
+      "course_code": "350412",
+      "title": "RIP",
+      "duration_seconds": 483,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "segment_count": 20,
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "tokens": [
+            "RIP"
+          ],
+          "score": 99,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "tokens": [
+            "경로",
+            "제어",
+            "프로토콜",
+            "Routing",
+            "Protocol"
+          ],
+          "score": 80,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Routing Protocol",
+          "tokens": [
+            "Routing",
+            "Protocol"
+          ],
+          "score": 80,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Hop",
+          "tokens": [
+            "Hop"
+          ],
+          "score": 36,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "OSPF",
+          "tokens": [
+            "OSPF"
+          ],
+          "score": 34,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "라우팅",
+          "tokens": [
+            "라우팅"
+          ],
+          "score": 27,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "알고리즘",
+          "tokens": [
+            "알고리즘"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Bellman-Ford",
+          "tokens": [
+            "Bellman-Ford"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Information",
+          "tokens": [
+            "Information"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "그때",
+          "tokens": [
+            "그때"
+          ],
+          "score": 16,
+          "sources": [
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "네트워크",
+          "tokens": [
+            "네트워크"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_091-subtopic-002-source-seg-003::01",
+          "prompt": "______(Routing Information Protocol) 소개",
+          "answer": "RIP",
+          "original": "RIP(Routing Information Protocol) 소개",
+          "keyword": "RIP",
+          "source_segment_id": "topic_091-subtopic-002-source-seg-003",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'RIP'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-002-source-seg-001::02",
+          "prompt": "경로 제어 프로토콜(______)",
+          "answer": "Routing Protocol",
+          "original": "경로 제어 프로토콜(Routing Protocol)",
+          "keyword": "Routing Protocol",
+          "source_segment_id": "topic_091-subtopic-002-source-seg-001",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Routing Protocol'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-002-source-seg-004::03",
+          "prompt": "홉(______) 수와 라우팅 경로 선택 예시",
+          "answer": "Hop",
+          "original": "홉(Hop) 수와 라우팅 경로 선택 예시",
+          "keyword": "Hop",
+          "source_segment_id": "topic_091-subtopic-002-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Hop'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-002-source-seg-011::04",
+          "prompt": "내부 라우팅 알고리즘(RIP, ______) 비교",
+          "answer": "OSPF",
+          "original": "내부 라우팅 알고리즘(RIP, OSPF) 비교",
+          "keyword": "OSPF",
+          "source_segment_id": "topic_091-subtopic-002-source-seg-011",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'OSPF'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0417_417",
+      "sequence": 417,
+      "number": "417",
+      "course_code": "350413",
+      "title": "OSPF",
+      "duration_seconds": 165,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "segment_count": 8,
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "tokens": [
+            "OSPF"
+          ],
+          "score": 66,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "라우팅",
+          "tokens": [
+            "라우팅"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "최단",
+          "tokens": [
+            "최단"
+          ],
+          "score": 17,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "RIP",
+          "tokens": [
+            "RIP"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "경로",
+          "tokens": [
+            "경로"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "프로토콜",
+          "tokens": [
+            "프로토콜"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "대규모 네트워크에서 많이 사용됨.",
+          "tokens": [
+            "대규모",
+            "네트워크에서",
+            "많이",
+            "사용됨"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "다익스트라",
+          "tokens": [
+            "다익스트라"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "OSPF 업데이트 방식의 장점 (부하 감소)",
+          "tokens": [
+            "OSPF",
+            "업데이트",
+            "방식의",
+            "장점",
+            "부하",
+            "감소"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "OSPF의 최단 경로 알고리즘: 다익스트라",
+          "tokens": [
+            "OSPF",
+            "최단",
+            "경로",
+            "알고리즘",
+            "다익스트라"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "경로 제어 프로토콜(OSPF) 강의 시작",
+          "tokens": [
+            "경로",
+            "제어",
+            "프로토콜",
+            "OSPF",
+            "강의",
+            "시작"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_091-subtopic-003-source-seg-001::01",
+          "prompt": "경로 제어 프로토콜(______) 강의 시작",
+          "answer": "OSPF",
+          "original": "경로 제어 프로토콜(OSPF) 강의 시작",
+          "keyword": "OSPF",
+          "source_segment_id": "topic_091-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'OSPF'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-003-source-seg-004::02",
+          "prompt": "RIP와 OSPF의 ______ 정보 업데이트 방식 비교",
+          "answer": "라우팅",
+          "original": "RIP와 OSPF의 라우팅 정보 업데이트 방식 비교",
+          "keyword": "라우팅",
+          "source_segment_id": "topic_091-subtopic-003-source-seg-004",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '라우팅'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-003-source-seg-002::03",
+          "prompt": "______의 단점을 해결하여 새로운 기능을 지원하는 인터넷 프로토콜로, 대규모 네트워크에서 많이 사용됨.",
+          "answer": "RIP",
+          "original": "RIP의 단점을 해결하여 새로운 기능을 지원하는 인터넷 프로토콜로, 대규모 네트워크에서 많이 사용됨.",
+          "keyword": "RIP",
+          "source_segment_id": "topic_091-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'RIP'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-003-source-seg-001::04",
+          "prompt": "경로 제어 ______(OSPF) 강의 시작",
+          "answer": "프로토콜",
+          "original": "경로 제어 프로토콜(OSPF) 강의 시작",
+          "keyword": "프로토콜",
+          "source_segment_id": "topic_091-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '프로토콜'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0418_418",
+      "sequence": 418,
+      "number": "418",
+      "course_code": "350414",
+      "title": "흐름 제어",
+      "duration_seconds": 551,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "segment_count": 18,
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "tokens": [
+            "흐름",
+            "제어",
+            "Flow",
+            "Control"
+          ],
+          "score": 144,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "수신",
+          "tokens": [
+            "수신"
+          ],
+          "score": 96,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "송신",
+          "tokens": [
+            "송신"
+          ],
+          "score": 81,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Flow Control",
+          "tokens": [
+            "Flow",
+            "Control"
+          ],
+          "score": 77,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "슬라이딩 윈도우(Sliding Window)",
+          "tokens": [
+            "슬라이딩",
+            "윈도우",
+            "Sliding",
+            "Window"
+          ],
+          "score": 64,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "Sliding Window",
+          "tokens": [
+            "Sliding",
+            "Window"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "확인",
+          "tokens": [
+            "확인"
+          ],
+          "score": 39,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "버퍼",
+          "tokens": [
+            "버퍼"
+          ],
+          "score": 33,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "ACK",
+          "tokens": [
+            "ACK"
+          ],
+          "score": 30,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Stop-and-Wait",
+          "tokens": [
+            "Stop-and-Wait"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "Overflow",
+          "tokens": [
+            "Overflow"
+          ],
+          "score": 26,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_091-subtopic-004-source-seg-001::01",
+          "prompt": "강의 시작 및 ______ 주제 소개",
+          "answer": "흐름 제어(Flow Control)",
+          "original": "강의 시작 및 흐름 제어(Flow Control) 주제 소개",
+          "keyword": "흐름 제어(Flow Control)",
+          "source_segment_id": "topic_091-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '흐름 제어(Flow Control)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-004-source-seg-001::02",
+          "prompt": "강의 시작 및 흐름 제어(______) 주제 소개",
+          "answer": "Flow Control",
+          "original": "강의 시작 및 흐름 제어(Flow Control) 주제 소개",
+          "keyword": "Flow Control",
+          "source_segment_id": "topic_091-subtopic-004-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Flow Control'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-004-source-seg-008::03",
+          "prompt": "그리고 ______라는 게 있고 이렇게 크게 두 가지가 있습니다.",
+          "answer": "슬라이딩 윈도우(Sliding Window)",
+          "original": "그리고 슬라이딩 윈도우(Sliding Window)라는 게 있고 이렇게 크게 두 가지가 있습니다.",
+          "keyword": "슬라이딩 윈도우(Sliding Window)",
+          "source_segment_id": "topic_091-subtopic-004-source-seg-008",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '슬라이딩 윈도우(Sliding Window)'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_091-subtopic-004-source-seg-008::04",
+          "prompt": "슬라이딩 윈도우(______)",
+          "answer": "Sliding Window",
+          "original": "슬라이딩 윈도우(Sliding Window)",
+          "keyword": "Sliding Window",
+          "source_segment_id": "topic_091-subtopic-004-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 'Sliding Window'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_091",
+    "sequence": 91,
+    "number": "91",
+    "title": "라우팅과 흐름 제어",
+    "title_raw": "라우팅과 흐름 제어",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "source_count": 4,
+    "source_sequences": [
+      415,
+      416,
+      417,
+      418
+    ],
+    "source_titles": [
+      "경로 제어 프로토콜",
+      "RIP",
+      "OSPF",
+      "흐름 제어"
+    ],
+    "preview_text": "경로 제어 프로토콜, RIP, OSPF 등",
+    "segment_count": 62,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 경로 제어 프로토콜, RIP, OSPF, 흐름 제어을 중심으로 정리합니다. 정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 경로 제어 프로토콜, RIP, OSPF, 흐름 제어을 중심으로 정리합니다.",
+      "정보시스템 구축관리 과목에서 함께 출제되는 핵심 개념 4개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1582,
+    "source_titles_preview": [
+      "경로 제어 프로토콜",
+      "RIP",
+      "OSPF"
+    ],
+    "highlight_keywords": [
+      "프로토콜",
+      "Protocol",
+      "AS",
+      "EGP",
+      "영업부",
+      "RIP",
+      "경로 제어 프로토콜(Routing Protocol)",
+      "Routing Protocol",
+      "Hop",
+      "OSPF"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_091-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:29",
+      "start_seconds": 8,
+      "end_seconds": 29,
+      "duration_seconds": 21,
+      "timeline_summary": "경로 제어 프로토콜의 정의",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "경로 제어 프로토콜(Routing Protocol)이란 효율적인 경로 제어를 위해 네트워크 정보를 생성, 교환, 제어하는 프로토콜을 총칭함."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\n경로 제어 프로토콜(Routing Protocol)이란 효율적인 경로 제어를 위해 네트워크 정보를 생성, 교환, 제어하는 프로토콜을 총칭함.",
+      "spoken_sentences": [
+        "경로 제어 프로토콜이요.",
+        "경로 제어 프로토콜이라는 거는 우리 영어로 라우팅 프로토콜 그렇게 부르는데 얘는 효율적인 경로 제어를 위해서 우리 네트워크 정보를 생성하고 교환하고 제어하는 그 프로토콜을 싹 다 총칭을 해서 우리가 경로 제어 프로토콜이다 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "경로 제어 프로토콜이요. 경로 제어 프로토콜이라는 거는 우리 영어로 라우팅 프로토콜 그렇게 부르는데 얘는 효율적인 경로 제어를 위해서 우리 네트워크 정보를 생성하고 교환하고 제어하는 그 프로토콜을 싹 다 총칭을 해서 우리가 경로 제어 프로토콜이다 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:00:29",
+      "end_time_hms": "00:00:41",
+      "start_seconds": 29,
+      "end_seconds": 41,
+      "duration_seconds": 12,
+      "timeline_summary": "주요 경로 제어 프로토콜 종류 소개",
+      "screen_text_lines": [
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+        "BGP(Border Gateway Protocol)"
+      ],
+      "screen_text": "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nEGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)\nBGP(Border Gateway Protocol)",
+      "spoken_sentences": [
+        "이 경로 제어 프로토콜에는 우리 IGP라는 것도 있고요.",
+        "그리고 우리 EGP라는 것도 있고 우리 BGP라는 것도 있고 이렇게 세 가지가 써져 있죠."
+      ],
+      "spoken_text": "이 경로 제어 프로토콜에는 우리 IGP라는 것도 있고요. 그리고 우리 EGP라는 것도 있고 우리 BGP라는 것도 있고 이렇게 세 가지가 써져 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Gateway",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:00:41",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 41,
+      "end_seconds": 73,
+      "duration_seconds": 32,
+      "timeline_summary": "내부와 외부 프로토콜의 분류 및 BGP의 배경",
+      "screen_text_lines": [
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+        "BGP(Border Gateway Protocol)"
+      ],
+      "screen_text": "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nEGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)\nBGP(Border Gateway Protocol)",
+      "spoken_sentences": [
+        "그때 얘네들을 크게 두 가지로 나누게 되면 얘 하나랑 요거 두 개랑 이렇게 묶어서 우리가 볼 수 있습니다.",
+        "우리 IGP가 우리말로 하게 되면 내부 게이트웨이 프로토콜이에요.",
+        "그리고 EGP라는 거는 외부 게이트웨이 프로토콜입니다.",
+        "근데 이 EGP라는 거는 예전에 사용하던 거고 이 EGP를 좀 더 좋게 단점을 보완해서 만들어 놓은 게 우리 BGP라는 거예요.",
+        "그러면 이 BGP라는 것도 외부 게이트웨이 프로토콜이죠."
+      ],
+      "spoken_text": "그때 얘네들을 크게 두 가지로 나누게 되면 얘 하나랑 요거 두 개랑 이렇게 묶어서 우리가 볼 수 있습니다. 우리 IGP가 우리말로 하게 되면 내부 게이트웨이 프로토콜이에요. 그리고 EGP라는 거는 외부 게이트웨이 프로토콜입니다. 근데 이 EGP라는 거는 예전에 사용하던 거고 이 EGP를 좀 더 좋게 단점을 보완해서 만들어 놓은 게 우리 BGP라는 거예요. 그러면 이 BGP라는 것도 외부 게이트웨이 프로토콜이죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Gateway",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 73,
+      "end_seconds": 90,
+      "duration_seconds": 17,
+      "timeline_summary": "라우팅 프로토콜의 큰 분류 기준 요약",
+      "screen_text_lines": [
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+        "BGP(Border Gateway Protocol)"
+      ],
+      "screen_text": "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nEGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)\nBGP(Border Gateway Protocol)",
+      "spoken_sentences": [
+        "해서 라우팅 프로토콜은 내부냐 외부냐 거기에 따라서 크게 이렇게 두 가지로 나눠지는 거고 이 외부에 이렇게 두 가지가 나왔는데 이 EGP는 예전 거다.",
+        "그리고 BGP가 요즘 거다 그렇게 기억하시면 돼요.",
+        "그러면 얘가 도대체 뭔지 잠깐 보자고요."
+      ],
+      "spoken_text": "해서 라우팅 프로토콜은 내부냐 외부냐 거기에 따라서 크게 이렇게 두 가지로 나눠지는 거고 이 외부에 이렇게 두 가지가 나왔는데 이 EGP는 예전 거다. 그리고 BGP가 요즘 거다 그렇게 기억하시면 돼요. 그러면 얘가 도대체 뭔지 잠깐 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Gateway",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 90,
+      "end_seconds": 107,
+      "duration_seconds": 17,
+      "timeline_summary": "네트워크 구성 예시 설명",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "Main_Router",
+        "Branch_Router"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nMain_Router\nBranch_Router",
+      "spoken_sentences": [
+        "자 예를 들어서 지금처럼 이렇게 네트워크가 구성이 되어 있어요.",
+        "근데 만약에 여기가 전부 다 한 회사라고 생각 한번 해 보자고요.",
+        "한 회사에서 이렇게 네트워크를 구성을 해서 사용할 수가 있는데"
+      ],
+      "spoken_text": "자 예를 들어서 지금처럼 이렇게 네트워크가 구성이 되어 있어요. 근데 만약에 여기가 전부 다 한 회사라고 생각 한번 해 보자고요. 한 회사에서 이렇게 네트워크를 구성을 해서 사용할 수가 있는데",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "Main_Router",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:12",
+      "start_seconds": 107,
+      "end_seconds": 132,
+      "duration_seconds": 25,
+      "timeline_summary": "부서별 네트워크 분할 예시",
+      "screen_text_lines": [
+        "영업부"
+      ],
+      "screen_text": "영업부",
+      "spoken_sentences": [
+        "이 하나의 네트워크를 우리가 여러 개로 쪼개서 우리가 사용을 할 수 있는 거죠.",
+        "해서 이곳에 있는 것들을 싹 다 영업부, 영업부 컴퓨터들만 이렇게 묶어서 우리가 영업부 네트워크를 따로 만들었어요.",
+        "그리고 지금 원래 보게 되면 지금 이쪽도 여기로 또 쪼갰습니다."
+      ],
+      "spoken_text": "이 하나의 네트워크를 우리가 여러 개로 쪼개서 우리가 사용을 할 수 있는 거죠. 해서 이곳에 있는 것들을 싹 다 영업부, 영업부 컴퓨터들만 이렇게 묶어서 우리가 영업부 네트워크를 따로 만들었어요. 그리고 지금 원래 보게 되면 지금 이쪽도 여기로 또 쪼갰습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:02:12",
+      "end_time_hms": "00:02:43",
+      "start_seconds": 132,
+      "end_seconds": 163,
+      "duration_seconds": 31,
+      "timeline_summary": "라우터를 통한 부서 간 통신 원리",
+      "screen_text_lines": [
+        "영업부",
+        "기획부",
+        "인사부",
+        "Main_Router"
+      ],
+      "screen_text": "영업부\n기획부\n인사부\nMain_Router",
+      "spoken_sentences": [
+        "그렇게 해서 우리가 기획부다 그리고 인사부다 해서 이렇게 네트워크를 전부 다 각각 잘랐다고요.",
+        "이렇게 해서 우리가 한 회사에서 이렇게 하나의 네트워크를 여러 개로 쪼개서 이렇게 사용을 해요.",
+        "그러면 지금 이 라우터를 이용하게 되면 우리는 이 라우터를 이용해서 영업부로 들어갈 수가 있죠.",
+        "그리고 이 라우터를 통하게 되면 우리의 기획부다 인사부다 이곳으로 들어갈 수 있는 거고요."
+      ],
+      "spoken_text": "그렇게 해서 우리가 기획부다 그리고 인사부다 해서 이렇게 네트워크를 전부 다 각각 잘랐다고요. 이렇게 해서 우리가 한 회사에서 이렇게 하나의 네트워크를 여러 개로 쪼개서 이렇게 사용을 해요. 그러면 지금 이 라우터를 이용하게 되면 우리는 이 라우터를 이용해서 영업부로 들어갈 수가 있죠. 그리고 이 라우터를 통하게 되면 우리의 기획부다 인사부다 이곳으로 들어갈 수 있는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Main_Router",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:02:43",
+      "end_time_hms": "00:03:08",
+      "start_seconds": 163,
+      "end_seconds": 188,
+      "duration_seconds": 25,
+      "timeline_summary": "라우터 간 경로 정보 교환의 필요성",
+      "screen_text_lines": [
+        "영업부",
+        "기획부",
+        "인사부",
+        "Main_Router"
+      ],
+      "screen_text": "영업부\n기획부\n인사부\nMain_Router",
+      "spoken_sentences": [
+        "그러면 내가 영업부에서 기획부나 인사부로 들어가겠다 그랬을 때는 반드시 이 라우터를 거쳐야 기획부다 인사부다 이곳으로 들어갈 수 있는 거죠.",
+        "그리고 기획부다 인사부다 이곳에서는 이 영업부로 나갈 때 무조건 이 라우터를 거쳐야만 우리가 이 영업부로 들어갈 수 있다고요.",
+        "해서 지금 이 라우터랑 이 라우터랑 서로서로 정보를 주고받고 주고받고 할 때 나를 통하면 영업부로 들어갈 수 있다 그걸 이 라우터한테 알려 줘야죠."
+      ],
+      "spoken_text": "그러면 내가 영업부에서 기획부나 인사부로 들어가겠다 그랬을 때는 반드시 이 라우터를 거쳐야 기획부다 인사부다 이곳으로 들어갈 수 있는 거죠. 그리고 기획부다 인사부다 이곳에서는 이 영업부로 나갈 때 무조건 이 라우터를 거쳐야만 우리가 이 영업부로 들어갈 수 있다고요. 해서 지금 이 라우터랑 이 라우터랑 서로서로 정보를 주고받고 주고받고 할 때 나를 통하면 영업부로 들어갈 수 있다 그걸 이 라우터한테 알려 줘야죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "영업부",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        },
+        {
+          "keyword": "Main_Router",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 24
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:03:08",
+      "end_time_hms": "00:03:22",
+      "start_seconds": 188,
+      "end_seconds": 202,
+      "duration_seconds": 14,
+      "timeline_summary": "자율 시스템(AS)의 정의",
+      "screen_text_lines": [
+        "자율 시스템(AS; Autonomous System)"
+      ],
+      "screen_text": "자율 시스템(AS; Autonomous System)",
+      "spoken_sentences": [
+        "그리고 이 라우터는 나를 통하면 기획부 인사부로 들어갈 수 있다 그 정보를 얘한테 알려 줘야 되겠죠.",
+        "그런 정보를 서로서로 라우터들끼리 서로서로 주고받고 주고받고 하는 걸 보고 우리는 라우팅, 라우팅이라고 하는 거죠.",
+        "이렇게 하나의 큰 회사, 하나의 도메인에 속해 있는 이런 라우터들의 집합을 보고 우리는 자율 시스템 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "그리고 이 라우터는 나를 통하면 기획부 인사부로 들어갈 수 있다 그 정보를 얘한테 알려 줘야 되겠죠. 그런 정보를 서로서로 라우터들끼리 서로서로 주고받고 주고받고 하는 걸 보고 우리는 라우팅, 라우팅이라고 하는 거죠. 이렇게 하나의 큰 회사, 하나의 도메인에 속해 있는 이런 라우터들의 집합을 보고 우리는 자율 시스템 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "AS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:03:22",
+      "end_time_hms": "00:03:48",
+      "start_seconds": 202,
+      "end_seconds": 228,
+      "duration_seconds": 26,
+      "timeline_summary": "AS 내부 라우팅과 IGP의 관계",
+      "screen_text_lines": [
+        "자율 시스템(AS; Autonomous System)"
+      ],
+      "screen_text": "자율 시스템(AS; Autonomous System)",
+      "spoken_sentences": [
+        "이 자율 시스템을 AS, 오토노머스 시스템 그렇게 부르는 겁니다.",
+        "이렇게 하나의 자율 시스템 내에 하나의 AS 내에서 여러 개의 네트워크들로 그렇게 구성이 되어 있고 여러 개의 라우터가 있을 때 얘네들끼리 서로서로 데이터를 주고받고 주고받고 하려면 반드시 이 라우터들끼리 서로서로 라우팅 정보를 주고받고 주고받고 해야 돼요.",
+        "그때 사용되는 그런 라우팅 프로토콜을 보고 우리는 내부 프로토콜, 내부 게이트웨이 프로토콜 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "이 자율 시스템을 AS, 오토노머스 시스템 그렇게 부르는 겁니다. 이렇게 하나의 자율 시스템 내에 하나의 AS 내에서 여러 개의 네트워크들로 그렇게 구성이 되어 있고 여러 개의 라우터가 있을 때 얘네들끼리 서로서로 데이터를 주고받고 주고받고 하려면 반드시 이 라우터들끼리 서로서로 라우팅 정보를 주고받고 주고받고 해야 돼요. 그때 사용되는 그런 라우팅 프로토콜을 보고 우리는 내부 프로토콜, 내부 게이트웨이 프로토콜 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "AS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "게이트웨이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        },
+        {
+          "keyword": "IGP",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 23
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:03:48",
+      "end_time_hms": "00:04:25",
+      "start_seconds": 228,
+      "end_seconds": 265,
+      "duration_seconds": 37,
+      "timeline_summary": "여러 AS 간 통신과 EGP의 역할",
+      "screen_text_lines": [
+        "자율 시스템(AS; Autonomous System)"
+      ],
+      "screen_text": "자율 시스템(AS; Autonomous System)",
+      "spoken_sentences": [
+        "그리고 우리가 이거를 인터넷 전체적인 큰 틀로 봤을 때 이 하나의 자율 네트워크 시스템만 존재하는 게 아니라 이런 자율 시스템이 여러 개가 존재하겠죠.",
+        "왜 우리 회사만 있는 게 아니잖아요.",
+        "다른 회사도 있고 또 다른 회사도 있고 또 다른 회사도 있고 여러 개의 회사들이 있잖아요.",
+        "이런 여러 개의 자율 시스템 간에 또 데이터도 주고받고 주고받고 해야 되겠죠.",
+        "그렇게 자율 시스템 간에 라우팅을 또 해야 되는데 그때 사용되는 그런 프로토콜을 보고 우리가 외부 게이트웨이 프로토콜, 외부 라우팅 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "그리고 우리가 이거를 인터넷 전체적인 큰 틀로 봤을 때 이 하나의 자율 네트워크 시스템만 존재하는 게 아니라 이런 자율 시스템이 여러 개가 존재하겠죠. 왜 우리 회사만 있는 게 아니잖아요. 다른 회사도 있고 또 다른 회사도 있고 또 다른 회사도 있고 여러 개의 회사들이 있잖아요. 이런 여러 개의 자율 시스템 간에 또 데이터도 주고받고 주고받고 해야 되겠죠. 그렇게 자율 시스템 간에 라우팅을 또 해야 되는데 그때 사용되는 그런 프로토콜을 보고 우리가 외부 게이트웨이 프로토콜, 외부 라우팅 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "AS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "게이트웨이",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:04:25",
+      "end_time_hms": "00:04:56",
+      "start_seconds": 265,
+      "end_seconds": 296,
+      "duration_seconds": 31,
+      "timeline_summary": "IGP와 EGP의 세부 정의 재확인",
+      "screen_text_lines": [
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+        "자율 시스템(AS) 간의 라우팅, 즉 게이트웨이 간의 라우팅에 사용되는 프로토콜"
+      ],
+      "screen_text": "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nEGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)\n자율 시스템(AS) 간의 라우팅, 즉 게이트웨이 간의 라우팅에 사용되는 프로토콜",
+      "spoken_sentences": [
+        "해서 우리 IGP라는 거요.",
+        "IGP라는 거는 하나의 자율 시스템 그 내에서 내에서 라우팅 할 때 사용되는 그 프로토콜을 보고 우리가 IGP 그렇게 부르는 거고 우리 EGP라는 거는 외부라는 말이 붙어 있죠.",
+        "해서 얘는 자율 시스템과 자율 시스템 끼리 라우팅 할 때 그때 사용되는 게 우리 EGP라는 거요."
+      ],
+      "spoken_text": "해서 우리 IGP라는 거요. IGP라는 거는 하나의 자율 시스템 그 내에서 내에서 라우팅 할 때 사용되는 그 프로토콜을 보고 우리가 IGP 그렇게 부르는 거고 우리 EGP라는 거는 외부라는 말이 붙어 있죠. 해서 얘는 자율 시스템과 자율 시스템 끼리 라우팅 할 때 그때 사용되는 게 우리 EGP라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "AS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:04:56",
+      "end_time_hms": "00:05:12",
+      "start_seconds": 296,
+      "end_seconds": 312,
+      "duration_seconds": 16,
+      "timeline_summary": "자율 시스템 내/외부 라우팅 구분 요약",
+      "screen_text_lines": [
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "EGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)",
+        "자율 시스템(AS) 간의 라우팅, 즉 게이트웨이 간의 라우팅에 사용되는 프로토콜"
+      ],
+      "screen_text": "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nEGP(Exterior Gateway Protocol, 외부 게이트웨이 프로토콜)\n자율 시스템(AS) 간의 라우팅, 즉 게이트웨이 간의 라우팅에 사용되는 프로토콜",
+      "spoken_sentences": [
+        "해서 하나의 자율 시스템 그 내에서 라우팅을 하냐 아니면 자율 시스템과 자율 시스템 간에 라우팅을 하냐 거기에 따라서 이렇게 내부 게이트웨이 프로토콜도 있고 우리 외부 게이트웨이 프로토콜도 있고 이렇게 두 가지로 나눠집니다."
+      ],
+      "spoken_text": "해서 하나의 자율 시스템 그 내에서 라우팅을 하냐 아니면 자율 시스템과 자율 시스템 간에 라우팅을 하냐 거기에 따라서 이렇게 내부 게이트웨이 프로토콜도 있고 우리 외부 게이트웨이 프로토콜도 있고 이렇게 두 가지로 나눠집니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "AS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:05:12",
+      "end_time_hms": "00:05:42",
+      "start_seconds": 312,
+      "end_seconds": 342,
+      "duration_seconds": 30,
+      "timeline_summary": "EGP를 보완한 BGP의 특징",
+      "screen_text_lines": [
+        "BGP(Border Gateway Protocol)",
+        "EGP의 단점을 보완하기 위해 만들어짐"
+      ],
+      "screen_text": "BGP(Border Gateway Protocol)\nEGP의 단점을 보완하기 위해 만들어짐",
+      "spoken_sentences": [
+        "그때 이 EGP의 단점을 보완하기 위해서 만들어진 게 우리 BGP라는 거요.",
+        "이 EGP라는 거는 라우터들이 서로서로 연결이 될 때 전체 경로 표요.",
+        "라우팅 테이블, 라우팅 테이블이라는 게 있는데 그 라우팅 테이블 전체를 전부 다 주고받고 주고받고 합니다.",
+        "근데 이 BGP라는 거는 맨 처음에 라우터들이 서로서로 연결될 때만 전체 경로 라우팅 테이블을 싹 다 교환하고요."
+      ],
+      "spoken_text": "그때 이 EGP의 단점을 보완하기 위해서 만들어진 게 우리 BGP라는 거요. 이 EGP라는 거는 라우터들이 서로서로 연결이 될 때 전체 경로 표요. 라우팅 테이블, 라우팅 테이블이라는 게 있는데 그 라우팅 테이블 전체를 전부 다 주고받고 주고받고 합니다. 근데 이 BGP라는 거는 맨 처음에 라우터들이 서로서로 연결될 때만 전체 경로 라우팅 테이블을 싹 다 교환하고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Gateway",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 1,
+      "subtopic_id": "0415_415",
+      "subtopic_title": "경로 제어 프로토콜",
+      "subtopic_sequence": 415,
+      "subtopic_number": "415",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=p0CVEXoOwW0",
+      "start_time_hms": "00:05:42",
+      "end_time_hms": "00:06:23",
+      "start_seconds": 342,
+      "end_seconds": 383,
+      "duration_seconds": 41,
+      "timeline_summary": "BGP의 발전 및 IGP 예시 최종 정리",
+      "screen_text_lines": [
+        "BGP(Border Gateway Protocol)",
+        "EGP의 단점을 보완하기 위해 만들어짐",
+        "RIP, OSPF 등이 있음"
+      ],
+      "screen_text": "BGP(Border Gateway Protocol)\nEGP의 단점을 보완하기 위해 만들어짐\nRIP, OSPF 등이 있음",
+      "spoken_sentences": [
+        "그 이후에는 변화된 그 정보만 교환을 해요.",
+        "그렇게 단점을 보완해서 만들어진 게 우리 BGP라는 거예요.",
+        "해서 EGP라는 게 예전 거고요.",
+        "요즘에 쓰고 있는 게 우리 BGP라는 거 요거를 쓰고 있어요.",
+        "그리고 우리 IGP 내부 게이트웨이 프로토콜에 보게 되면 RIP라는 것도 있고 OSPF라는 그 프로토콜도 있고 이런 것들이 있습니다.",
+        "자 그러면 경로 제어 프로토콜이 뭘 얘기하는지 IGP가 뭐고 EGP가 뭐고 그리고 BGP가 뭔지 서로서로 특징들 정확하게 기억하고 계셔야 돼요."
+      ],
+      "spoken_text": "그 이후에는 변화된 그 정보만 교환을 해요. 그렇게 단점을 보완해서 만들어진 게 우리 BGP라는 거예요. 해서 EGP라는 게 예전 거고요. 요즘에 쓰고 있는 게 우리 BGP라는 거 요거를 쓰고 있어요. 그리고 우리 IGP 내부 게이트웨이 프로토콜에 보게 되면 RIP라는 것도 있고 OSPF라는 그 프로토콜도 있고 이런 것들이 있습니다. 자 그러면 경로 제어 프로토콜이 뭘 얘기하는지 IGP가 뭐고 EGP가 뭐고 그리고 BGP가 뭔지 서로서로 특징들 정확하게 기억하고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "프로토콜",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 42
+        },
+        {
+          "keyword": "Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "EGP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "Gateway",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 30
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 도입부 및 주제 소개",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:37",
+      "start_seconds": 8,
+      "end_seconds": 37,
+      "duration_seconds": 29,
+      "timeline_summary": "IGP(내부 게이트웨이 프로토콜)의 정의 및 특징",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "하나의 자율 시스템(AS) 내의 라우팅에 사용되는 프로토콜.",
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\n하나의 자율 시스템(AS) 내의 라우팅에 사용되는 프로토콜.\nIGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+      "spoken_sentences": [
+        "IGP요.",
+        "IGP.",
+        "IGP가 내부 게이트웨이 프로토콜을 보고 얘기하는데 얘는 하나의, 하나의 자율 시스템(AS) 내의 라우팅에서 사용되는 그런 프로토콜을 보고 얘기하더라.",
+        "하나의 자율 시스템 안에서, 그 안에서 라우팅할 때 사용되는 그 프로토콜이 IGP, 그렇게 부르는데 가장 대표적인 게 우리 RIP라는 것도 있고 우리 OSPF라는 것도 있고 크게 보게 되면 요렇게 두 가지가 많이 사용이 되고 있습니다."
+      ],
+      "spoken_text": "IGP요. IGP. IGP가 내부 게이트웨이 프로토콜을 보고 얘기하는데 얘는 하나의, 하나의 자율 시스템(AS) 내의 라우팅에서 사용되는 그런 프로토콜을 보고 얘기하더라. 하나의 자율 시스템 안에서, 그 안에서 라우팅할 때 사용되는 그 프로토콜이 IGP, 그렇게 부르는데 가장 대표적인 게 우리 RIP라는 것도 있고 우리 OSPF라는 것도 있고 크게 보게 되면 요렇게 두 가지가 많이 사용이 되고 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:00:37",
+      "end_time_hms": "00:00:46",
+      "start_seconds": 37,
+      "end_seconds": 46,
+      "duration_seconds": 9,
+      "timeline_summary": "RIP(Routing Information Protocol) 소개",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)",
+      "spoken_sentences": [
+        "자, 지금 여기 보게 되면 RIP하고 우리 Routing Information Protocol하고 그렇게 나왔는데 요 RIP가 뭔지 좀 보자고요."
+      ],
+      "spoken_text": "자, 지금 여기 보게 되면 RIP하고 우리 Routing Information Protocol하고 그렇게 나왔는데 요 RIP가 뭔지 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Information",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:00:46",
+      "end_time_hms": "00:01:10",
+      "start_seconds": 46,
+      "end_seconds": 70,
+      "duration_seconds": 24,
+      "timeline_summary": "홉(Hop) 수와 라우팅 경로 선택 예시",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "자, 지금처럼 요렇게 라우터가 지금처럼 요렇게 여러 개가 있다라고 가정을 해보자고요.",
+        "그러면 지금처럼 요렇게 라우터가 있다 그 얘기는 A라는 이 라우터에 연결되어 있는 그런 네트워크가 이 뒤쪽에 있는 거고, 그 다음에 이 F 라우터에도 여러 개 네트워크가 그 뒤에 달려 있겠죠.",
+        "그리고 D라는 이 라우터에도 여러 개의 네트워크가 이쪽에 구성이 되어 있을 거예요."
+      ],
+      "spoken_text": "자, 지금처럼 요렇게 라우터가 지금처럼 요렇게 여러 개가 있다라고 가정을 해보자고요. 그러면 지금처럼 요렇게 라우터가 있다 그 얘기는 A라는 이 라우터에 연결되어 있는 그런 네트워크가 이 뒤쪽에 있는 거고, 그 다음에 이 F 라우터에도 여러 개 네트워크가 그 뒤에 달려 있겠죠. 그리고 D라는 이 라우터에도 여러 개의 네트워크가 이쪽에 구성이 되어 있을 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Hop",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:01:10",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 70,
+      "end_seconds": 90,
+      "duration_seconds": 20,
+      "timeline_summary": "A에서 I로 가는 두 가지 경로 설명",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "그때 만약에 A에서 출발해서 만약에 I, I를 찾아갈 거예요.",
+        "여기가 출발지고 여기가 목적지일 때 그때 이 A라는 라우터에서 출발을 해서 위쪽으로 올라가는 그 방법도 있고, 아래쪽으로 내려가는 방법도 있고 두 가지가 있죠."
+      ],
+      "spoken_text": "그때 만약에 A에서 출발해서 만약에 I, I를 찾아갈 거예요. 여기가 출발지고 여기가 목적지일 때 그때 이 A라는 라우터에서 출발을 해서 위쪽으로 올라가는 그 방법도 있고, 아래쪽으로 내려가는 방법도 있고 두 가지가 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:01:51",
+      "start_seconds": 90,
+      "end_seconds": 111,
+      "duration_seconds": 21,
+      "timeline_summary": "위쪽 경로와 아래쪽 경로의 노드 수 비교",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "그때 위쪽으로 가는 게 빨라요, 아래쪽으로 가는 게 빨라요?",
+        "위쪽으로 가게 되면 B를 지나고 D를 지나고 E를 지나면 I로 도착할 수 있습니다.",
+        "근데 우리 A, A에서 출발해서 아래쪽으로 내려가게 되면 C를 지나고 F를 지나고 G를 지나고 H를 지나야 우리 I를 만날 수 있어요."
+      ],
+      "spoken_text": "그때 위쪽으로 가는 게 빨라요, 아래쪽으로 가는 게 빨라요? 위쪽으로 가게 되면 B를 지나고 D를 지나고 E를 지나면 I로 도착할 수 있습니다. 근데 우리 A, A에서 출발해서 아래쪽으로 내려가게 되면 C를 지나고 F를 지나고 G를 지나고 H를 지나야 우리 I를 만날 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:01:51",
+      "end_time_hms": "00:02:10",
+      "start_seconds": 111,
+      "end_seconds": 130,
+      "duration_seconds": 19,
+      "timeline_summary": "홉(Hop)의 정의 설명",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "홉"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\n홉",
+      "spoken_sentences": [
+        "요렇게 출발지에서 출발을 해서 목적지까지, 목적지까지 그때 찾아갈 때 그때 중간중간에 거쳐야 되는 그런 네트워크 개수를 보고 우리가 여기서 홉, 홉이라고 그렇게 불러요."
+      ],
+      "spoken_text": "요렇게 출발지에서 출발을 해서 목적지까지, 목적지까지 그때 찾아갈 때 그때 중간중간에 거쳐야 되는 그런 네트워크 개수를 보고 우리가 여기서 홉, 홉이라고 그렇게 불러요.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Hop",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:02:10",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 130,
+      "end_seconds": 165,
+      "duration_seconds": 35,
+      "timeline_summary": "RIP 프로토콜의 경로 선택 기준(최소 홉 수)",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "홉"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\n홉",
+      "spoken_sentences": [
+        "해서 이 홉이, 이 홉이 짧은, 짧은 그 경로를 선택해 주는 게 우리 RIP라는 그 아이입니다.",
+        "해서 A에서, A에서 출발을 해서 우리가 I, I까지 찾아갈 때 이 목적지까지 찾아가고자 했을 때 위쪽으로 지나가면 세 개의 네트워크만 거치면 I에 도착을 할 수가 있고, 그리고 아래쪽으로 가게 되면 C다 F다 G다 H다 해서 요렇게 네 개의 네트워크를 거쳐야 I에 도착을 할 수 있다고요.",
+        "해서 내가 어떤 특정 목적지를 찾아갈 때 그때 몇 개의 네트워크를 거쳐야 되느냐, 몇 개의 홉을 거쳐야 되느냐, 그게 짧은 거, 짧은 경로를 선택해 주는 게 우리 RIP라는 그 프로토콜이에요."
+      ],
+      "spoken_text": "해서 이 홉이, 이 홉이 짧은, 짧은 그 경로를 선택해 주는 게 우리 RIP라는 그 아이입니다. 해서 A에서, A에서 출발을 해서 우리가 I, I까지 찾아갈 때 이 목적지까지 찾아가고자 했을 때 위쪽으로 지나가면 세 개의 네트워크만 거치면 I에 도착을 할 수가 있고, 그리고 아래쪽으로 가게 되면 C다 F다 G다 H다 해서 요렇게 네 개의 네트워크를 거쳐야 I에 도착을 할 수 있다고요. 해서 내가 어떤 특정 목적지를 찾아갈 때 그때 몇 개의 네트워크를 거쳐야 되느냐, 몇 개의 홉을 거쳐야 되느냐, 그게 짧은 거, 짧은 경로를 선택해 주는 게 우리 RIP라는 그 프로토콜이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:02:45",
+      "end_time_hms": "00:03:13",
+      "start_seconds": 165,
+      "end_seconds": 193,
+      "duration_seconds": 28,
+      "timeline_summary": "RIP의 거리 벡터 라우팅 프로토콜 특징 설명",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨.",
+      "spoken_sentences": [
+        "해서 우리 RIP라는 그 프로토콜은 현재 가장 널리 사용되고 있는 그런 라우팅 프로토콜인데 얘를 다른 말로 우리가 거리 벡터 라우팅 프로토콜, 그렇게 부르는 거예요.",
+        "그래서 우리가 목적지까지 찾아갈 때 그때 몇 개의 네트워크를 거쳐야 되느냐, 그 개수를 보고 우리가 홉, 홉이라고 그렇게 불렀죠."
+      ],
+      "spoken_text": "해서 우리 RIP라는 그 프로토콜은 현재 가장 널리 사용되고 있는 그런 라우팅 프로토콜인데 얘를 다른 말로 우리가 거리 벡터 라우팅 프로토콜, 그렇게 부르는 거예요. 그래서 우리가 목적지까지 찾아갈 때 그때 몇 개의 네트워크를 거쳐야 되느냐, 그 개수를 보고 우리가 홉, 홉이라고 그렇게 불렀죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:03:13",
+      "end_time_hms": "00:03:38",
+      "start_seconds": 193,
+      "end_seconds": 218,
+      "duration_seconds": 25,
+      "timeline_summary": "RIP의 알고리즘(Bellman-Ford) 소개",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨.",
+      "spoken_sentences": [
+        "그래서 우리가 특정 목적지까지 찾아갈 때 그때 몇 개의 네트워크를 거치냐, 그게 홉이라 그랬어요.",
+        "해서 목적지까지 찾아갈 때 여러 개의 경로가 있다면 그 중에서, 그 경로들 중에서 홉의 개수가 가장 작은 그런 경로를 선택해 주는 게 우리 RIP요.",
+        "이런 RIP에서 최단 경로를 탐색할 때 그때 벨만-포드 알고리즘이라는 게 사용이 됩니다.",
+        "지금 여기 보게 되면 벨만-포드 알고리즘, 그렇게 나왔는데 이런 알고리즘이 뭔지 좀 보자고요."
+      ],
+      "spoken_text": "그래서 우리가 특정 목적지까지 찾아갈 때 그때 몇 개의 네트워크를 거치냐, 그게 홉이라 그랬어요. 해서 목적지까지 찾아갈 때 여러 개의 경로가 있다면 그 중에서, 그 경로들 중에서 홉의 개수가 가장 작은 그런 경로를 선택해 주는 게 우리 RIP요. 이런 RIP에서 최단 경로를 탐색할 때 그때 벨만-포드 알고리즘이라는 게 사용이 됩니다. 지금 여기 보게 되면 벨만-포드 알고리즘, 그렇게 나왔는데 이런 알고리즘이 뭔지 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:03:38",
+      "end_time_hms": "00:04:14",
+      "start_seconds": 218,
+      "end_seconds": 254,
+      "duration_seconds": 36,
+      "timeline_summary": "내부 라우팅 알고리즘(RIP, OSPF) 비교",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "OSPF",
+        "RIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)",
+        "OSPF : 다익스트라 알고리즘(Dijkstra Algorithm)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nOSPF\nRIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)\nOSPF : 다익스트라 알고리즘(Dijkstra Algorithm)",
+      "spoken_sentences": [
+        "우리 내부 게이트웨이 프로토콜, 내부 라우팅에서 우리가 사용하는 게 크게 보게 되면 지금처럼 요렇게 RIP가 있고 OSPF가 있고 요렇게 크게 두 가지가 있다라고 했죠.",
+        "그때 우리 RIP, OSPF 이런 데서 최단 경로를 선택할 때 그때 사용하는 그런 알고리즘이 있습니다.",
+        "그때 그 RIP에서 사용되는 게 우리 벨만-포드 알고리즘이라는 게 사용이 되고요, 우리 OSPF에서는 다익스트라 우리 알고리즘이라는 게 사용이 됩니다.",
+        "그러면 벨만-포드 알고리즘이 뭔지, 다익스트라 알고리즘이 뭔지 어떤 차이가 있는지 고거 좀 잠깐 보자고요."
+      ],
+      "spoken_text": "우리 내부 게이트웨이 프로토콜, 내부 라우팅에서 우리가 사용하는 게 크게 보게 되면 지금처럼 요렇게 RIP가 있고 OSPF가 있고 요렇게 크게 두 가지가 있다라고 했죠. 그때 우리 RIP, OSPF 이런 데서 최단 경로를 선택할 때 그때 사용하는 그런 알고리즘이 있습니다. 그때 그 RIP에서 사용되는 게 우리 벨만-포드 알고리즘이라는 게 사용이 되고요, 우리 OSPF에서는 다익스트라 우리 알고리즘이라는 게 사용이 됩니다. 그러면 벨만-포드 알고리즘이 뭔지, 다익스트라 알고리즘이 뭔지 어떤 차이가 있는지 고거 좀 잠깐 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:04:14",
+      "end_time_hms": "00:04:47",
+      "start_seconds": 254,
+      "end_seconds": 287,
+      "duration_seconds": 33,
+      "timeline_summary": "알고리즘 비교를 위한 네트워크 모델 예시",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "자, 예를 들어서 지금처럼 A라는 라우터, B라는 라우터, C라는 라우터 요렇게 세 가지가 있을 때 그때 우리가 A라는 그 라우터에서 출발해서, 출발해서 우리가 C라는 그 라우터로 찾아갈 거예요.",
+        "그러면 그때 A에서 출발해서 C로 직접 요렇게 가는 방법이 하나 있을 거고, 그 다음에 위쪽을 거쳐서 B를 거쳐서 가는 방법이 있고 요렇게 두 개의 경로가 있겠죠."
+      ],
+      "spoken_text": "자, 예를 들어서 지금처럼 A라는 라우터, B라는 라우터, C라는 라우터 요렇게 세 가지가 있을 때 그때 우리가 A라는 그 라우터에서 출발해서, 출발해서 우리가 C라는 그 라우터로 찾아갈 거예요. 그러면 그때 A에서 출발해서 C로 직접 요렇게 가는 방법이 하나 있을 거고, 그 다음에 위쪽을 거쳐서 B를 거쳐서 가는 방법이 있고 요렇게 두 개의 경로가 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "알고리즘",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 26
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:04:47",
+      "end_time_hms": "00:05:13",
+      "start_seconds": 287,
+      "end_seconds": 313,
+      "duration_seconds": 26,
+      "timeline_summary": "가중치가 있는 경로의 거리 계산 예시",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "10",
+        "8",
+        "5"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\n10\n8\n5",
+      "spoken_sentences": [
+        "그러면 그때 우리가 각 노드마다 각각의 거리를 계산한 다음에 거기다 가중치를 더해서 우리가 실제 거리를 구합니다.",
+        "근데 그때 그 값들 따져보니까 지금처럼 요렇게 돼요.",
+        "요렇게 돼요.",
+        "그러면 A에서 지금 출발해서 C로 찾아갈 때 A에서 출발해서 C로 직접 가게 되면 그때 거리가 5고, 그 다음에 위쪽을 통하게 되면 이런 10이라는 값, 그 다음에 -8이라는 값, 요렇게 두 개의 값을 계산해 보면 얘는 2가 되겠죠."
+      ],
+      "spoken_text": "그러면 그때 우리가 각 노드마다 각각의 거리를 계산한 다음에 거기다 가중치를 더해서 우리가 실제 거리를 구합니다. 근데 그때 그 값들 따져보니까 지금처럼 요렇게 돼요. 요렇게 돼요. 그러면 A에서 지금 출발해서 C로 찾아갈 때 A에서 출발해서 C로 직접 가게 되면 그때 거리가 5고, 그 다음에 위쪽을 통하게 되면 이런 10이라는 값, 그 다음에 -8이라는 값, 요렇게 두 개의 값을 계산해 보면 얘는 2가 되겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "그때",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:05:13",
+      "end_time_hms": "00:05:44",
+      "start_seconds": 313,
+      "end_seconds": 344,
+      "duration_seconds": 31,
+      "timeline_summary": "음수 가중치 처리 여부에 따른 알고리즘 차이",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)",
+        "OSPF : 다익스트라 알고리즘(Dijkstra Algorithm)",
+        "10"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)\nOSPF : 다익스트라 알고리즘(Dijkstra Algorithm)\n10",
+      "spoken_sentences": [
+        "그러면 오히려 직접 가는 거보다 B를 거쳐서 찾아가는 게 더 짧다고요.",
+        "해서 지금처럼 요렇게 음수 값, 음수 값을 처리할 수 있는 그런 알고리즘이 우리 벨만-포드 알고리즘이라는 거예요.",
+        "이 다익스트라 알고리즘이라는 건 뭐냐, 이런 음수 값을 처리를 못 합니다.",
+        "처리를 못 하기 때문에 그러면 5가 있고 10이 있고 요렇게 두 가지 값이 있을 때 우리 OSPF, 우리 다익스트라 알고리즘에서는 음수 값을 처리를 못 하니까 그냥 아래쪽 길로, 이 직접 연결된 이 길로 찾아가는 게 가장 짧다, 그렇게 계산해 주는 게 우리 다익스트라 알고리즘이요."
+      ],
+      "spoken_text": "그러면 오히려 직접 가는 거보다 B를 거쳐서 찾아가는 게 더 짧다고요. 해서 지금처럼 요렇게 음수 값, 음수 값을 처리할 수 있는 그런 알고리즘이 우리 벨만-포드 알고리즘이라는 거예요. 이 다익스트라 알고리즘이라는 건 뭐냐, 이런 음수 값을 처리를 못 합니다. 처리를 못 하기 때문에 그러면 5가 있고 10이 있고 요렇게 두 가지 값이 있을 때 우리 OSPF, 우리 다익스트라 알고리즘에서는 음수 값을 처리를 못 하니까 그냥 아래쪽 길로, 이 직접 연결된 이 길로 찾아가는 게 가장 짧다, 그렇게 계산해 주는 게 우리 다익스트라 알고리즘이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:05:44",
+      "end_time_hms": "00:06:09",
+      "start_seconds": 344,
+      "end_seconds": 369,
+      "duration_seconds": 25,
+      "timeline_summary": "두 알고리즘의 핵심 차이점 정리",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)",
+        "OSPF : 다익스트라 알고리즘(Dijkstra Algorithm)",
+        "10"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP : 벨만-포드 알고리즘(Bellman-Ford Algorithm)\nOSPF : 다익스트라 알고리즘(Dijkstra Algorithm)\n10",
+      "spoken_sentences": [
+        "해서 벨만-포드 알고리즘과 우리 다익스트라 알고리즘의 가장 큰 차이는 지금처럼 요렇게 음수 값을, 음수 값을 처리할 수 있냐 없냐 고거예요.",
+        "해서 우리 벨만-포드 알고리즘이 음수 값을 처리할 수 있고, 우리 다익스트라 알고리즘은 음수 값 요런 것들을 처리를 할 수가 없습니다.",
+        "요런 게 우리 벨만-포드 알고리즘, 다익스트라 알고리즘이요."
+      ],
+      "spoken_text": "해서 벨만-포드 알고리즘과 우리 다익스트라 알고리즘의 가장 큰 차이는 지금처럼 요렇게 음수 값을, 음수 값을 처리할 수 있냐 없냐 고거예요. 해서 우리 벨만-포드 알고리즘이 음수 값을 처리할 수 있고, 우리 다익스트라 알고리즘은 음수 값 요런 것들을 처리를 할 수가 없습니다. 요런 게 우리 벨만-포드 알고리즘, 다익스트라 알고리즘이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:06:09",
+      "end_time_hms": "00:06:26",
+      "start_seconds": 369,
+      "end_seconds": 386,
+      "duration_seconds": 17,
+      "timeline_summary": "RIP 프로토콜의 특성 재확인",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n현재 가장 널리 사용되는 라우팅 프로토콜로 거리 벡터 라우팅 프로토콜이라고도 불리며, 최단 경로 탐색에 Bellman-Ford 알고리즘이 사용됨.",
+      "spoken_sentences": [
+        "해서 우리 RIP라는 이 프로토콜은 현재 가장 널리 사용되고 있는 그런 프로토콜인데 우리 거리 벡터 라우팅 프로토콜, 그렇게 부르는 거고 얘는 최단 경로를 탐색할 때 어떤 알고리즘을 쓴다?",
+        "우리 벨만-포드 알고리즘, 요게 사용이 되더라."
+      ],
+      "spoken_text": "해서 우리 RIP라는 이 프로토콜은 현재 가장 널리 사용되고 있는 그런 프로토콜인데 우리 거리 벡터 라우팅 프로토콜, 그렇게 부르는 거고 얘는 최단 경로를 탐색할 때 어떤 알고리즘을 쓴다? 우리 벨만-포드 알고리즘, 요게 사용이 되더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:06:26",
+      "end_time_hms": "00:06:48",
+      "start_seconds": 386,
+      "end_seconds": 408,
+      "duration_seconds": 22,
+      "timeline_summary": "RIP의 홉(Hop) 수 제한(최대 15) 설명",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "최대 홉(Hop) 수를 15로 제한하므로 15를 초과하는 경우는 도달할 수 없는 네트워크를 의미하는데 이것은 대규모 네트워크에서는 RIP를 사용할 수 없음을 의미함."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n최대 홉(Hop) 수를 15로 제한하므로 15를 초과하는 경우는 도달할 수 없는 네트워크를 의미하는데 이것은 대규모 네트워크에서는 RIP를 사용할 수 없음을 의미함.",
+      "spoken_sentences": [
+        "그리고 이 RIP라는 아이는 최대 홉수를, 최대 홉수를 15로 제한을 합니다.",
+        "여기서 홉수라는 게 목적지까지 찾아갈 때 그때 거쳐야 되는 그 네트워크 개수를 보고 우리가 홉수라고 그렇게 불렀죠.",
+        "그러면 얘는 최대 15개의 네트워크까지만 지나갈 수 있다 그 얘기예요."
+      ],
+      "spoken_text": "그리고 이 RIP라는 아이는 최대 홉수를, 최대 홉수를 15로 제한을 합니다. 여기서 홉수라는 게 목적지까지 찾아갈 때 그때 거쳐야 되는 그 네트워크 개수를 보고 우리가 홉수라고 그렇게 불렀죠. 그러면 얘는 최대 15개의 네트워크까지만 지나갈 수 있다 그 얘기예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Hop",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:06:48",
+      "end_time_hms": "00:07:29",
+      "start_seconds": 408,
+      "end_seconds": 449,
+      "duration_seconds": 41,
+      "timeline_summary": "RIP의 네트워크 규모 제한 및 소규모 효율성",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "소규모 동종의 네트워크(자율 시스템, AS) 내에서 효율적인 방법.",
+        "최대 홉(Hop) 수를 15로 제한하므로 15를 초과하는 경우는 도달할 수 없는 네트워크를 의미하는데 이것은 대규모 네트워크에서는 RIP를 사용할 수 없음을 의미함."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n소규모 동종의 네트워크(자율 시스템, AS) 내에서 효율적인 방법.\n최대 홉(Hop) 수를 15로 제한하므로 15를 초과하는 경우는 도달할 수 없는 네트워크를 의미하는데 이것은 대규모 네트워크에서는 RIP를 사용할 수 없음을 의미함.",
+      "spoken_sentences": [
+        "만약에 내가 어떤 특정 목적지를 찾아가는데 16개를 거쳐야 돼요.",
+        "아니면 17개를 거쳐야 돼요.",
+        "그러면 얘는 더 이상 찾아갈 수가 없다고요.",
+        "해서 거리상의 제한이 있기 때문에 얘는 대규모 그런 네트워크에서는 우리가 RIP를 사용할 수가 있다 없다?",
+        "없다.",
+        "해서 소규모 동종 네트워크 그 안에서 효율적인 방법으로 사용되고 있는 게 우리 RIP라는 그 아이요.",
+        "해서 대규모 네트워크에서는 사용을 할 수가 없더라라는 거 요거 기억하셔야 되고."
+      ],
+      "spoken_text": "만약에 내가 어떤 특정 목적지를 찾아가는데 16개를 거쳐야 돼요. 아니면 17개를 거쳐야 돼요. 그러면 얘는 더 이상 찾아갈 수가 없다고요. 해서 거리상의 제한이 있기 때문에 얘는 대규모 그런 네트워크에서는 우리가 RIP를 사용할 수가 있다 없다? 없다. 해서 소규모 동종 네트워크 그 안에서 효율적인 방법으로 사용되고 있는 게 우리 RIP라는 그 아이요. 해서 대규모 네트워크에서는 사용을 할 수가 없더라라는 거 요거 기억하셔야 되고.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Hop",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:07:29",
+      "end_time_hms": "00:07:50",
+      "start_seconds": 449,
+      "end_seconds": 470,
+      "duration_seconds": 21,
+      "timeline_summary": "라우팅 정보 갱신 주기(30초) 및 알림",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "라우팅 정보를 30초마다 네트워크 내의 모든 라우터에 알리며, 180초 이내에 새로운 라우팅 정보가 수신되지 않으면 해당 경로를 이상 상태로 간주함."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n라우팅 정보를 30초마다 네트워크 내의 모든 라우터에 알리며, 180초 이내에 새로운 라우팅 정보가 수신되지 않으면 해당 경로를 이상 상태로 간주함.",
+      "spoken_sentences": [
+        "그리고 이 RIP라는 거는 라우터들끼리 서로서로 라우팅 정보를 주고받고 주고받고 하는데 그때 30초마다, 30초마다 계속해서 주고받고 주고받고 합니다.",
+        "해서 얘는 한 번만 딱 라우팅 정보를 주고받고 끝, 그게 아니라 30초마다 계속해서 우리 라우팅 정보를 계속해서 주고받고 주고받고 하더라."
+      ],
+      "spoken_text": "그리고 이 RIP라는 거는 라우터들끼리 서로서로 라우팅 정보를 주고받고 주고받고 하는데 그때 30초마다, 30초마다 계속해서 주고받고 주고받고 합니다. 해서 얘는 한 번만 딱 라우팅 정보를 주고받고 끝, 그게 아니라 30초마다 계속해서 우리 라우팅 정보를 계속해서 주고받고 주고받고 하더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 2,
+      "subtopic_id": "0416_416",
+      "subtopic_title": "RIP",
+      "subtopic_sequence": 416,
+      "subtopic_number": "416",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=s__4ol5J6TI",
+      "start_time_hms": "00:07:50",
+      "end_time_hms": "00:08:03",
+      "start_seconds": 470,
+      "end_seconds": 483,
+      "duration_seconds": 13,
+      "timeline_summary": "경로 이상 상태 간주 기준(180초)",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "RIP(Routing Information Protocol)",
+        "라우팅 정보를 30초마다 네트워크 내의 모든 라우터에 알리며, 180초 이내에 새로운 라우팅 정보가 수신되지 않으면 해당 경로를 이상 상태로 간주함."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nRIP(Routing Information Protocol)\n라우팅 정보를 30초마다 네트워크 내의 모든 라우터에 알리며, 180초 이내에 새로운 라우팅 정보가 수신되지 않으면 해당 경로를 이상 상태로 간주함.",
+      "spoken_sentences": [
+        "근데 만약에 180초 이내에 새로운 라우팅 정보가 만약에 수신이 안 된다, 그 얘기는 그 네트워크에 뭔가 문제가 생겼다, 이상이 생겼다, 그렇게 간주해 버려요."
+      ],
+      "spoken_text": "근데 만약에 180초 이내에 새로운 라우팅 정보가 만약에 수신이 안 된다, 그 얘기는 그 네트워크에 뭔가 문제가 생겼다, 이상이 생겼다, 그렇게 간주해 버려요.",
+      "highlight_keywords": [
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 99
+        },
+        {
+          "keyword": "경로 제어 프로토콜(Routing Protocol)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "Routing Protocol",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 80
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 27
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "경로 제어 프로토콜(OSPF) 강의 시작",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)"
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 경로 제어 프로토콜에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "프로토콜",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        },
+        {
+          "keyword": "경로 제어 프로토콜(OSPF) 강의 시작",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:20",
+      "start_seconds": 8,
+      "end_seconds": 20,
+      "duration_seconds": 12,
+      "timeline_summary": "OSPF의 정의 및 특징",
+      "screen_text_lines": [
+        "경로 제어 프로토콜(Routing Protocol)",
+        "IGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)",
+        "OSPF(Open Shortest Path First protocol)",
+        "RIP의 단점을 해결하여 새로운 기능을 지원하는 인터넷 프로토콜로, 대규모 네트워크에서 많이 사용됨."
+      ],
+      "screen_text": "경로 제어 프로토콜(Routing Protocol)\nIGP(Interior Gateway Protocol, 내부 게이트웨이 프로토콜)\nOSPF(Open Shortest Path First protocol)\nRIP의 단점을 해결하여 새로운 기능을 지원하는 인터넷 프로토콜로, 대규모 네트워크에서 많이 사용됨.",
+      "spoken_sentences": [
+        "그다음에 우리 OSPF요.",
+        "OSPF라는 거는 RIP의 단점을 해결해서 새로운 기능을 지원하는 그런 인터넷 프로토콜이다.",
+        "그렇게 써져 있는데 RIP의 단점을 해결했다 그렇게 써져 있죠."
+      ],
+      "spoken_text": "그다음에 우리 OSPF요. OSPF라는 거는 RIP의 단점을 해결해서 새로운 기능을 지원하는 그런 인터넷 프로토콜이다. 그렇게 써져 있는데 RIP의 단점을 해결했다 그렇게 써져 있죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "프로토콜",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:00:20",
+      "end_time_hms": "00:00:47",
+      "start_seconds": 20,
+      "end_seconds": 47,
+      "duration_seconds": 27,
+      "timeline_summary": "RIP와 OSPF의 홉 수 제한 비교",
+      "screen_text_lines": [
+        "대규모 네트워크에서 많이 사용됨."
+      ],
+      "screen_text": "대규모 네트워크에서 많이 사용됨.",
+      "spoken_sentences": [
+        "우리 RIP 같은 경우에는 최대 홉 수가 15로, 15로 제한이 되어 있다라고 했어요.",
+        "근데 이 OSPF는 그런 홉 수에 대한 제한이 없습니다.",
+        "해서 우리 RIP 같은 경우는 최대 홉 수가 15로 제한이 되어 있기 때문에 소규모 네트워크에서 효율적으로 사용한다고 그랬죠.",
+        "근데 이 OSPF는 홉 수에 대한 그런 제한이 없기 때문에 대규모 네트워크에서 많이 사용되는 게 우리 OSPF요."
+      ],
+      "spoken_text": "우리 RIP 같은 경우에는 최대 홉 수가 15로, 15로 제한이 되어 있다라고 했어요. 근데 이 OSPF는 그런 홉 수에 대한 제한이 없습니다. 해서 우리 RIP 같은 경우는 최대 홉 수가 15로 제한이 되어 있기 때문에 소규모 네트워크에서 효율적으로 사용한다고 그랬죠. 근데 이 OSPF는 홉 수에 대한 그런 제한이 없기 때문에 대규모 네트워크에서 많이 사용되는 게 우리 OSPF요.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "대규모 네트워크에서 많이 사용됨.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:00:47",
+      "end_time_hms": "00:01:13",
+      "start_seconds": 47,
+      "end_seconds": 73,
+      "duration_seconds": 26,
+      "timeline_summary": "RIP와 OSPF의 라우팅 정보 업데이트 방식 비교",
+      "screen_text_lines": [
+        "라우팅 정보에 변화가 생길 경우 변화된 정보만 네트워크 내의 모든 라우터에 알림."
+      ],
+      "screen_text": "라우팅 정보에 변화가 생길 경우 변화된 정보만 네트워크 내의 모든 라우터에 알림.",
+      "spoken_sentences": [
+        "그리고 RIP 같은 경우는 라우팅 정보를 30초마다, 30초마다 모든 라우터한테 싹 다 알려준다 그랬어요.",
+        "근데 이 OSPF 같은 경우에는 라우팅의 정보가 변화가 생길 때, 변화가 생길 때만 그 변화된 그 정보만 가지고 모든 라우터들한테 전부 다 알려줍니다."
+      ],
+      "spoken_text": "그리고 RIP 같은 경우는 라우팅 정보를 30초마다, 30초마다 모든 라우터한테 싹 다 알려준다 그랬어요. 근데 이 OSPF 같은 경우에는 라우팅의 정보가 변화가 생길 때, 변화가 생길 때만 그 변화된 그 정보만 가지고 모든 라우터들한테 전부 다 알려줍니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:01:13",
+      "end_time_hms": "00:01:42",
+      "start_seconds": 73,
+      "end_seconds": 102,
+      "duration_seconds": 29,
+      "timeline_summary": "OSPF 업데이트 방식의 장점 (부하 감소)",
+      "screen_text_lines": [
+        "변화된 정보만",
+        "네트워크 내의 모든 라우터에 알림."
+      ],
+      "screen_text": "변화된 정보만\n네트워크 내의 모든 라우터에 알림.",
+      "spoken_sentences": [
+        "해서 변경된 그런 정보만 교환하기 때문에 그만큼 부하가 감소가 되겠죠.",
+        "그리고 RIP 같은 경우는 라우팅 정보를 30초마다 주고받고 주고받고 해요.",
+        "해서 지금 방금 라우팅 정보를 뿅 하고 보냈는데 갑자기 한 3초 뒤에, 3초 뒤에 네트워크상에 뭔가 문제가 생겼어요.",
+        "그러면 그런 정보는 RIP에서 알아낼 수가 있다 없다?",
+        "없더라 없더라."
+      ],
+      "spoken_text": "해서 변경된 그런 정보만 교환하기 때문에 그만큼 부하가 감소가 되겠죠. 그리고 RIP 같은 경우는 라우팅 정보를 30초마다 주고받고 주고받고 해요. 해서 지금 방금 라우팅 정보를 뿅 하고 보냈는데 갑자기 한 3초 뒤에, 3초 뒤에 네트워크상에 뭔가 문제가 생겼어요. 그러면 그런 정보는 RIP에서 알아낼 수가 있다 없다? 없더라 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "OSPF 업데이트 방식의 장점 (부하 감소)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:01:42",
+      "end_time_hms": "00:02:12",
+      "start_seconds": 102,
+      "end_seconds": 132,
+      "duration_seconds": 30,
+      "timeline_summary": "OSPF의 실시간 경로 반영 및 최단 경로 라우팅",
+      "screen_text_lines": [
+        "인터넷 망에서 이용자가 최단 경로를 선정할 수 있도록 라우팅 정보에 노드 간의 거리 정보, 링크 상태 정보를 실시간으로 반영하여 최단 경로로 라우팅을 지원함.",
+        "실시간으로 반영하여 최단 경로로 라우팅을 지원함.",
+        "노드 간의 거리 정보, 링크 상태 정보를 실시간으로 반영하여 최단 경로로"
+      ],
+      "screen_text": "인터넷 망에서 이용자가 최단 경로를 선정할 수 있도록 라우팅 정보에 노드 간의 거리 정보, 링크 상태 정보를 실시간으로 반영하여 최단 경로로 라우팅을 지원함.\n실시간으로 반영하여 최단 경로로 라우팅을 지원함.\n노드 간의 거리 정보, 링크 상태 정보를 실시간으로 반영하여 최단 경로로",
+      "spoken_sentences": [
+        "근데 이 OSPF는 라우팅 정보의 변화가 생길 경우에만 변화된 그 정보만 가지고 라우터들한테 다 알려준다고 했어요.",
+        "그렇게 뭔가 변화가 생기면 그런 내용들을 바로바로 실시간으로, 실시간으로 반영하기 때문에 최단 경로로 라우팅을 지원해 주는 게 우리 OSPF요.",
+        "해서 이 OSPF라는 거는 최단 경로를 선정할 수 있도록 라우팅 정보에 노드 간의 거리 정보가 됐든 아니면 링크 상태 정보가 됐든 이런 것들을 실시간으로 전부 다 반영해서 최단 경로를 선택할 수 있게 그렇게 지원해 주는 게 우리 OSPF입니다."
+      ],
+      "spoken_text": "근데 이 OSPF는 라우팅 정보의 변화가 생길 경우에만 변화된 그 정보만 가지고 라우터들한테 다 알려준다고 했어요. 그렇게 뭔가 변화가 생기면 그런 내용들을 바로바로 실시간으로, 실시간으로 반영하기 때문에 최단 경로로 라우팅을 지원해 주는 게 우리 OSPF요. 해서 이 OSPF라는 거는 최단 경로를 선정할 수 있도록 라우팅 정보에 노드 간의 거리 정보가 됐든 아니면 링크 상태 정보가 됐든 이런 것들을 실시간으로 전부 다 반영해서 최단 경로를 선택할 수 있게 그렇게 지원해 주는 게 우리 OSPF입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "최단",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:02:12",
+      "end_time_hms": "00:02:23",
+      "start_seconds": 132,
+      "end_seconds": 143,
+      "duration_seconds": 11,
+      "timeline_summary": "OSPF의 최단 경로 알고리즘: 다익스트라",
+      "screen_text_lines": [
+        "최단 경로 탐색에 다익스트라(Dijkstra) 알고리즘을 사용함."
+      ],
+      "screen_text": "최단 경로 탐색에 다익스트라(Dijkstra) 알고리즘을 사용함.",
+      "spoken_sentences": [
+        "그때 이 OSPF에서 최단 경로를 탐색할 때 그때 사용하는 그 알고리즘이 다익스트라 우리 알고리즘, 요거를 사용을 해요."
+      ],
+      "spoken_text": "그때 이 OSPF에서 최단 경로를 탐색할 때 그때 사용하는 그 알고리즘이 다익스트라 우리 알고리즘, 요거를 사용을 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "최단",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 17
+        },
+        {
+          "keyword": "경로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "다익스트라",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 3,
+      "subtopic_id": "0417_417",
+      "subtopic_title": "OSPF",
+      "subtopic_sequence": 417,
+      "subtopic_number": "417",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=fwGjSIs6VO4",
+      "start_time_hms": "00:02:23",
+      "end_time_hms": "00:02:45",
+      "start_seconds": 143,
+      "end_seconds": 165,
+      "duration_seconds": 22,
+      "timeline_summary": "내부 게이트웨이 프로토콜(IGP)로서의 OSPF",
+      "screen_text_lines": [
+        "하나의 자율 시스템(AS)에서 동작하면서 내부 라우팅 프로토콜의 그룹에 도달함."
+      ],
+      "screen_text": "하나의 자율 시스템(AS)에서 동작하면서 내부 라우팅 프로토콜의 그룹에 도달함.",
+      "spoken_sentences": [
+        "그리고 이 OSPF도 우리 RIP처럼 하나의 자율 시스템 그 안에서 동작을 하기 때문에 이 OSPF도 우리 내부 라우팅 프로토콜이에요.",
+        "해서 우리 내부 게이트웨이 프로토콜, 내부 라우팅 프로토콜에는 RIP하고 OSPF하고 요 두 가지가 많이 사용되는데 이 두 가지를 비교해 가면서 여러분들이 구분을 할 줄 알아야 돼요."
+      ],
+      "spoken_text": "그리고 이 OSPF도 우리 RIP처럼 하나의 자율 시스템 그 안에서 동작을 하기 때문에 이 OSPF도 우리 내부 라우팅 프로토콜이에요. 해서 우리 내부 게이트웨이 프로토콜, 내부 라우팅 프로토콜에는 RIP하고 OSPF하고 요 두 가지가 많이 사용되는데 이 두 가지를 비교해 가면서 여러분들이 구분을 할 줄 알아야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "OSPF",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 66
+        },
+        {
+          "keyword": "라우팅",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 19
+        },
+        {
+          "keyword": "RIP",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        },
+        {
+          "keyword": "프로토콜",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 13
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:07",
+      "start_seconds": 0,
+      "end_seconds": 7,
+      "duration_seconds": 7,
+      "timeline_summary": "강의 시작 및 흐름 제어(Flow Control) 주제 소개",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)"
+      ],
+      "screen_text": "흐름 제어(Flow Control)",
+      "spoken_sentences": [
+        "이번 시간에 우리 흐름 제어에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에 우리 흐름 제어에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:00:07",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 7,
+      "end_seconds": 24,
+      "duration_seconds": 17,
+      "timeline_summary": "흐름 제어의 정의 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.",
+      "spoken_sentences": [
+        "우리 흐름 제어여.",
+        "흐름 제어라는 거는 네트워크 내에서 원활 흐름을 위해서 송·수신 측 그 사이에서 전송되는 그런 패킷들의 양이 됐든 속도가 됐든 그런 것들을 규제하는 그런 기능을 보고 우리가 흐름 제어 그렇게 부릅니다."
+      ],
+      "spoken_text": "우리 흐름 제어여. 흐름 제어라는 거는 네트워크 내에서 원활 흐름을 위해서 송·수신 측 그 사이에서 전송되는 그런 패킷들의 양이 됐든 속도가 됐든 그런 것들을 규제하는 그런 기능을 보고 우리가 흐름 제어 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 24,
+      "end_seconds": 58,
+      "duration_seconds": 34,
+      "timeline_summary": "송·수신 측 기기 및 속도 차이에 대한 가정 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.",
+        "송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능.",
+        "송신"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.\n송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능.\n송신",
+      "spoken_sentences": [
+        "예를 들어서 지금쯤 이렇게 송신 측이 있고 수신 측이 있다라고 가정을 한번 해보자고요.",
+        "그때 송신 측과 수신 측에 있는 그런 컴퓨터가 만약에 기종이 됐든 그런 게 전부 다 똑같은 게 아니라 전부 다 다 다를 수가 있겠죠.",
+        "그리고 컴퓨터마다 우리 처리하는 속도도 다 다르기 때문에 송신 측과 수신 측의 속도는 똑같을 수가 없어요.",
+        "만약에 똑같은 회사에서 나온 그런 똑같은 컴퓨터에 똑같은 기종이라고 하더라도 우리가 얘는 통신망에서 사용되는 거라 인터넷 속도는 똑같을 수가 없다고요."
+      ],
+      "spoken_text": "예를 들어서 지금쯤 이렇게 송신 측이 있고 수신 측이 있다라고 가정을 한번 해보자고요. 그때 송신 측과 수신 측에 있는 그런 컴퓨터가 만약에 기종이 됐든 그런 게 전부 다 똑같은 게 아니라 전부 다 다 다를 수가 있겠죠. 그리고 컴퓨터마다 우리 처리하는 속도도 다 다르기 때문에 송신 측과 수신 측의 속도는 똑같을 수가 없어요. 만약에 똑같은 회사에서 나온 그런 똑같은 컴퓨터에 똑같은 기종이라고 하더라도 우리가 얘는 통신망에서 사용되는 거라 인터넷 속도는 똑같을 수가 없다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:33",
+      "start_seconds": 58,
+      "end_seconds": 93,
+      "duration_seconds": 35,
+      "timeline_summary": "속도 차이로 인한 데이터 손실 상황 예시",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "송신",
+        "수신"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n송신\n수신",
+      "spoken_sentences": [
+        "해서 예를 들어서 송신 측에서는 데이터를 한번 보내줄 때마다 6개씩 6개씩 이렇게 묶어서 보내줄 수가 있습니다.",
+        "근데 수신 측에서는 속도가 조금 느려져서 처리 속도가 조금 느려져서 지금처럼 이렇게 한 번에 3개씩밖에 못 받아요.",
+        "그러면 송신 측과 수신 측 간에 데이터를 주고받고 주고받고 할 수 있다 없다?",
+        "없더라 없더라.",
+        "송신 측에서 데이터를 보내면 6개를 보냈는데 얘는 한 번에 받을 수 있는 그 개수가 3개씩밖에 안 되기 때문에 6개 중에 3개는 수신할 수 있지만 나머지 3개는 손실이 된다고요."
+      ],
+      "spoken_text": "해서 예를 들어서 송신 측에서는 데이터를 한번 보내줄 때마다 6개씩 6개씩 이렇게 묶어서 보내줄 수가 있습니다. 근데 수신 측에서는 속도가 조금 느려져서 처리 속도가 조금 느려져서 지금처럼 이렇게 한 번에 3개씩밖에 못 받아요. 그러면 송신 측과 수신 측 간에 데이터를 주고받고 주고받고 할 수 있다 없다? 없더라 없더라. 송신 측에서 데이터를 보내면 6개를 보냈는데 얘는 한 번에 받을 수 있는 그 개수가 3개씩밖에 안 되기 때문에 6개 중에 3개는 수신할 수 있지만 나머지 3개는 손실이 된다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:01:33",
+      "end_time_hms": "00:02:11",
+      "start_seconds": 93,
+      "end_seconds": 131,
+      "duration_seconds": 38,
+      "timeline_summary": "버퍼(Buffer)의 역할 및 도입 배경 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "송신",
+        "버퍼",
+        "수신"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n송신\n버퍼\n수신",
+      "spoken_sentences": [
+        "그러면 안 되기 때문에 중간에 우리가 수신 측에서 버퍼라는 거를 사용을 합니다.",
+        "요 버퍼라는 거는 임시 기억 장소를 보고 얘기해요.",
+        "해서 송신 측에서 보내는 그런 데이터를 일단 버퍼에 저장을 해 놓고, 그리고 수신 측에서 자기가 가져갈 수 있는 만큼 순차적으로 전부 다 데이터를 가져가서 수신을 하는 거예요.",
+        "그러면 요런 버퍼가 중간에 있다면 지금처럼 이렇게 송·수신 측 간에 그렇게 처리 속도가 다르더라도 우리가 데이터를 주고받고 주고받고 할 수 있다고요."
+      ],
+      "spoken_text": "그러면 안 되기 때문에 중간에 우리가 수신 측에서 버퍼라는 거를 사용을 합니다. 요 버퍼라는 거는 임시 기억 장소를 보고 얘기해요. 해서 송신 측에서 보내는 그런 데이터를 일단 버퍼에 저장을 해 놓고, 그리고 수신 측에서 자기가 가져갈 수 있는 만큼 순차적으로 전부 다 데이터를 가져가서 수신을 하는 거예요. 그러면 요런 버퍼가 중간에 있다면 지금처럼 이렇게 송·수신 측 간에 그렇게 처리 속도가 다르더라도 우리가 데이터를 주고받고 주고받고 할 수 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:02:11",
+      "end_time_hms": "00:02:55",
+      "start_seconds": 131,
+      "end_seconds": 175,
+      "duration_seconds": 44,
+      "timeline_summary": "버퍼 오버플로(Overflow) 발생 상황 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "송신",
+        "버퍼",
+        "수신"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n송신\n버퍼\n수신",
+      "spoken_sentences": [
+        "해서 이런 버퍼를 이용해서 송신 측과 수신 측이 서로서로 데이터를 주고받고 주고받고 하는데 그때 송신 측은 네트워크에 별 문제가 없어요.",
+        "해서 6개씩 6개씩 계속해서 데이터를 보내고 있는데 수신 측의 네트워크에 만약에 과부하가 걸린다거나 아니면 무슨 문제가 생겼습니다.",
+        "그러면 송신 측에서 보내는 그 데이터들은 계속해서 버퍼에 쌓이고 쌓이고 쌓이겠죠.",
+        "근데 수신 측의 컴퓨터에 문제가 발생하거나 네트워크에 과부하가 발생했다.",
+        "그러면 수신 측에서 그만큼 가져가는 속도가 느려지겠죠.",
+        "그러면 버퍼에는 계속해서 데이터가 쌓이고 쌓이고 쌓이다 보면은 언젠가는 이 버퍼가 꽉 찰 수도 있다고요.",
+        "꽉 찼는데도 불구하고 계속해서 송신 측에서는 데이터가 계속해서 날아오겠죠.",
+        "그러면 이 버퍼에서 오버플로가 발생을 한다고요."
+      ],
+      "spoken_text": "해서 이런 버퍼를 이용해서 송신 측과 수신 측이 서로서로 데이터를 주고받고 주고받고 하는데 그때 송신 측은 네트워크에 별 문제가 없어요. 해서 6개씩 6개씩 계속해서 데이터를 보내고 있는데 수신 측의 네트워크에 만약에 과부하가 걸린다거나 아니면 무슨 문제가 생겼습니다. 그러면 송신 측에서 보내는 그 데이터들은 계속해서 버퍼에 쌓이고 쌓이고 쌓이겠죠. 근데 수신 측의 컴퓨터에 문제가 발생하거나 네트워크에 과부하가 발생했다. 그러면 수신 측에서 그만큼 가져가는 속도가 느려지겠죠. 그러면 버퍼에는 계속해서 데이터가 쌓이고 쌓이고 쌓이다 보면은 언젠가는 이 버퍼가 꽉 찰 수도 있다고요. 꽉 찼는데도 불구하고 계속해서 송신 측에서는 데이터가 계속해서 날아오겠죠. 그러면 이 버퍼에서 오버플로가 발생을 한다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:02:55",
+      "end_time_hms": "00:03:28",
+      "start_seconds": 175,
+      "end_seconds": 208,
+      "duration_seconds": 33,
+      "timeline_summary": "흐름 제어의 목적 및 정의 재정리",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.",
+        "송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능.",
+        "송신"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.\n송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능.\n송신",
+      "spoken_sentences": [
+        "해서 그런 일이 발생하면 안 되기 때문에 우리가 흐름 제어라는 거를 하는 거예요.",
+        "해서 송신 측과 수신 측 간에 처리 속도가 됐든 아니면 버퍼의 크기의 차이에 의해서 발생할 수 있는 그런 수신 측의 버퍼 오버플로 이런 것들을 방지하기 위해서 우리가 전송되는 송·수신 측 간에 전송되는 그런 패킷의 양이 됐든 속도가 됐든 그런 것들을 규제하는 거를 보고 우리가 흐름 제어 그렇게 부르는 겁니다.",
+        "그러면 흐름 제어 하는 그 방식에 대해서 좀 살펴보자고요."
+      ],
+      "spoken_text": "해서 그런 일이 발생하면 안 되기 때문에 우리가 흐름 제어라는 거를 하는 거예요. 해서 송신 측과 수신 측 간에 처리 속도가 됐든 아니면 버퍼의 크기의 차이에 의해서 발생할 수 있는 그런 수신 측의 버퍼 오버플로 이런 것들을 방지하기 위해서 우리가 전송되는 송·수신 측 간에 전송되는 그런 패킷의 양이 됐든 속도가 됐든 그런 것들을 규제하는 거를 보고 우리가 흐름 제어 그렇게 부르는 겁니다. 그러면 흐름 제어 하는 그 방식에 대해서 좀 살펴보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:03:28",
+      "end_time_hms": "00:03:41",
+      "start_seconds": 208,
+      "end_seconds": 221,
+      "duration_seconds": 13,
+      "timeline_summary": "흐름 제어 방식의 종류(정지-대기, 슬라이딩 윈도우) 소개",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "정지-대기(Stop-and-Wait)",
+        "슬라이딩 윈도우(Sliding Window)"
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n정지-대기(Stop-and-Wait)\n슬라이딩 윈도우(Sliding Window)",
+      "spoken_sentences": [
+        "우리가 흐름 제어할 때 그때 사용되는 방식에는 크게 보게 되면 이렇게 두 가지가 있습니다.",
+        "우리 정지-대기, 스탑 앤 웨이트(Stop-and-Wait)라는 게 있고요.",
+        "그리고 슬라이딩 윈도우(Sliding Window)라는 게 있고 이렇게 크게 두 가지가 있습니다."
+      ],
+      "spoken_text": "우리가 흐름 제어할 때 그때 사용되는 방식에는 크게 보게 되면 이렇게 두 가지가 있습니다. 우리 정지-대기, 스탑 앤 웨이트(Stop-and-Wait)라는 게 있고요. 그리고 슬라이딩 윈도우(Sliding Window)라는 게 있고 이렇게 크게 두 가지가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "슬라이딩 윈도우(Sliding Window)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 64
+        },
+        {
+          "keyword": "Sliding Window",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:03:41",
+      "end_time_hms": "00:04:13",
+      "start_seconds": 221,
+      "end_seconds": 253,
+      "duration_seconds": 32,
+      "timeline_summary": "정지-대기(Stop-and-Wait) 방식 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "정지-대기(Stop-and-Wait)",
+        "· 수신 측의 확인 신호(ACK)를 받은 후에 다음 패킷을 전송하는 방식.",
+        "· 한 번에 하나의 패킷만을 전송할 수 있음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n정지-대기(Stop-and-Wait)\n· 수신 측의 확인 신호(ACK)를 받은 후에 다음 패킷을 전송하는 방식.\n· 한 번에 하나의 패킷만을 전송할 수 있음.",
+      "spoken_sentences": [
+        "우리 정지-대기라는 거는 말 그대로 데이터를 하나 던져주고 멈춥니다.",
+        "더 이상 데이터를 보내지 않고 기다려요.",
+        "상대방이 다 잘 받았다 그렇게 대답이 올 때까지 기다렸다가 잘 받았다고 응답이 오면 내가 그 다음 데이터를 또 던져요.",
+        "던져주고 더 이상 데이터를 보내지 않고 또 기다리는 거예요.",
+        "그렇게 송·수신 측 간에 데이터를 주고받고 주고받고 할 때 그렇게 한 번에 하나의 패킷만 전송하는 거를 우리가 정지-대기 스탑 앤 웨이트 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "우리 정지-대기라는 거는 말 그대로 데이터를 하나 던져주고 멈춥니다. 더 이상 데이터를 보내지 않고 기다려요. 상대방이 다 잘 받았다 그렇게 대답이 올 때까지 기다렸다가 잘 받았다고 응답이 오면 내가 그 다음 데이터를 또 던져요. 던져주고 더 이상 데이터를 보내지 않고 또 기다리는 거예요. 그렇게 송·수신 측 간에 데이터를 주고받고 주고받고 할 때 그렇게 한 번에 하나의 패킷만 전송하는 거를 우리가 정지-대기 스탑 앤 웨이트 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:04:13",
+      "end_time_hms": "00:04:38",
+      "start_seconds": 253,
+      "end_seconds": 278,
+      "duration_seconds": 25,
+      "timeline_summary": "정지-대기 방식의 확인 신호(ACK) 메커니즘",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "정지-대기(Stop-and-Wait)",
+        "· 수신 측의 확인 신호(ACK)를 받은 후에 다음 패킷을 전송하는 방식.",
+        "· 한 번에 하나의 패킷만을 전송할 수 있음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n정지-대기(Stop-and-Wait)\n· 수신 측의 확인 신호(ACK)를 받은 후에 다음 패킷을 전송하는 방식.\n· 한 번에 하나의 패킷만을 전송할 수 있음.",
+      "spoken_sentences": [
+        "해서 얘는 상대방 수신 측에 수신 측에서 나 데이터 잘 받았어 그렇게 확인 신호가 날아오면 그 다음 패킷을 하나씩 하나씩 전송하는 그런 방식을 보고 얘기합니다.",
+        "해서 데이터를 하나 보내주고 잘 받았다 그렇게 대답이 오면 또 다음 데이터 던지고 또 잘 받았다 그러면 또 다음 데이터 던지고 그렇게 한 개씩 한 개씩 전송하는 그런 방식을 우리가 정지-대기 그렇게 부릅니다."
+      ],
+      "spoken_text": "해서 얘는 상대방 수신 측에 수신 측에서 나 데이터 잘 받았어 그렇게 확인 신호가 날아오면 그 다음 패킷을 하나씩 하나씩 전송하는 그런 방식을 보고 얘기합니다. 해서 데이터를 하나 보내주고 잘 받았다 그렇게 대답이 오면 또 다음 데이터 던지고 또 잘 받았다 그러면 또 다음 데이터 던지고 그렇게 한 개씩 한 개씩 전송하는 그런 방식을 우리가 정지-대기 그렇게 부릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        },
+        {
+          "keyword": "확인",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:04:38",
+      "end_time_hms": "00:05:08",
+      "start_seconds": 278,
+      "end_seconds": 308,
+      "duration_seconds": 30,
+      "timeline_summary": "슬라이딩 윈도우(Sliding Window) 방식 개념 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "그다음에 우리 슬라이딩 윈도우여.",
+        "슬라이딩 윈도우라는 건 뭘 얘기하냐면은 맨 처음에 송신 측하고 수신 측하고 서로서로 데이터를 주고받고 주고받고 하기 전에 데이터를 몇 개씩 주고받을지 그거를 정하는 거예요 처음에.",
+        "해서 맨 처음에 5개씩 주고받자 그렇게 정했어요.",
+        "정해놓고 상대방한테 데이터를 5번 5개를 쭉쭉쭉쭉 보내주겠죠.",
+        "보내주고 나서 상대방한테 물어보는 거예요.",
+        "잘 받았냐?",
+        "그렇게 물어봐요."
+      ],
+      "spoken_text": "그다음에 우리 슬라이딩 윈도우여. 슬라이딩 윈도우라는 건 뭘 얘기하냐면은 맨 처음에 송신 측하고 수신 측하고 서로서로 데이터를 주고받고 주고받고 하기 전에 데이터를 몇 개씩 주고받을지 그거를 정하는 거예요 처음에. 해서 맨 처음에 5개씩 주고받자 그렇게 정했어요. 정해놓고 상대방한테 데이터를 5번 5개를 쭉쭉쭉쭉 보내주겠죠. 보내주고 나서 상대방한테 물어보는 거예요. 잘 받았냐? 그렇게 물어봐요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:05:08",
+      "end_time_hms": "00:05:29",
+      "start_seconds": 308,
+      "end_seconds": 329,
+      "duration_seconds": 21,
+      "timeline_summary": "슬라이딩 윈도우 방식의 데이터 전송량 조절 (성공 시)",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "물어봤더니 잘 받았대요.",
+        "잘 받았으면 이번에 6개를 보내요.",
+        "6개를 보내놓고 또 물어봐요.",
+        "잘 받았냐?",
+        "물어보고 어 또 잘 받았대요.",
+        "그러면 그 다음번에 데이터를 보낼 때는 7개를 보냅니다.",
+        "7개를 쭉쭉쭉 보냈더니 이번에 또 또 잘 받았대요.",
+        "그러면 그 다음번에 데이터를 보낼 때는 8개를 보내요."
+      ],
+      "spoken_text": "물어봤더니 잘 받았대요. 잘 받았으면 이번에 6개를 보내요. 6개를 보내놓고 또 물어봐요. 잘 받았냐? 물어보고 어 또 잘 받았대요. 그러면 그 다음번에 데이터를 보낼 때는 7개를 보냅니다. 7개를 쭉쭉쭉 보냈더니 이번에 또 또 잘 받았대요. 그러면 그 다음번에 데이터를 보낼 때는 8개를 보내요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:05:29",
+      "end_time_hms": "00:06:05",
+      "start_seconds": 329,
+      "end_seconds": 365,
+      "duration_seconds": 36,
+      "timeline_summary": "슬라이딩 윈도우 방식의 데이터 전송량 조절 (실패 시)",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "8개를 보내놓고 또 물어봐요.",
+        "잘 받았냐?",
+        "물어봤더니 이번에 잘 못 받았대요.",
+        "그러면 우리가 데이터를 보낼 때 그 개수를 또 줄이는 거예요.",
+        "줄여서 7개를 던져줘요.",
+        "7개를 던져주고 잘 받았냐 물어보고 이번에 또 또 잘 못 받았대요.",
+        "그러면 이번에 데이터 전송할 때 이번에는 6개 6개 데이터를 또 보내줍니다.",
+        "보내주고 나서 또 잘 받았냐 물어보고 이번에는 또 잘 받았대요.",
+        "잘 받았다 그러면 그 다음번에 한번 또 또 6개를 보내요.",
+        "6개를 보내고 또 잘 받았냐 물어보고 또 잘 받았대요.",
+        "그러면 그 다음번에는 또 7개를 또 보내보는 거예요."
+      ],
+      "spoken_text": "8개를 보내놓고 또 물어봐요. 잘 받았냐? 물어봤더니 이번에 잘 못 받았대요. 그러면 우리가 데이터를 보낼 때 그 개수를 또 줄이는 거예요. 줄여서 7개를 던져줘요. 7개를 던져주고 잘 받았냐 물어보고 이번에 또 또 잘 못 받았대요. 그러면 이번에 데이터 전송할 때 이번에는 6개 6개 데이터를 또 보내줍니다. 보내주고 나서 또 잘 받았냐 물어보고 이번에는 또 잘 받았대요. 잘 받았다 그러면 그 다음번에 한번 또 또 6개를 보내요. 6개를 보내고 또 잘 받았냐 물어보고 또 잘 받았대요. 그러면 그 다음번에는 또 7개를 또 보내보는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:06:05",
+      "end_time_hms": "00:06:42",
+      "start_seconds": 365,
+      "end_seconds": 402,
+      "duration_seconds": 37,
+      "timeline_summary": "슬라이딩 윈도우 방식의 전송 효율 및 특징 요약",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "그렇게 해서 상대방이 어떤 응답을 해 오냐에 따라서 우리가 송신 데이터 그 양을 조절하는 그런 방식을 우리가 슬라이딩 윈도우 그렇게 부르는 겁니다.",
+        "해서 맨 처음에 수신 측에 확인 신호를 받지 않더라도 받지 않더라도 미리 정해진 그 패킷 수만큼 연속적으로 전송하는 그런 방식을 보고 우리가 슬라이딩 윈도우 그렇게 부릅니다.",
+        "우리가 상대방하고 내가 데이터를 주고받고 주고받고 하면서 중간중간 물어본다 그랬죠.",
+        "그때 물어봤을 때 상대방이 긍정적으로 대답을 할 수도 있고 부정적으로 대답을 할 수가 있어요."
+      ],
+      "spoken_text": "그렇게 해서 상대방이 어떤 응답을 해 오냐에 따라서 우리가 송신 데이터 그 양을 조절하는 그런 방식을 우리가 슬라이딩 윈도우 그렇게 부르는 겁니다. 해서 맨 처음에 수신 측에 확인 신호를 받지 않더라도 받지 않더라도 미리 정해진 그 패킷 수만큼 연속적으로 전송하는 그런 방식을 보고 우리가 슬라이딩 윈도우 그렇게 부릅니다. 우리가 상대방하고 내가 데이터를 주고받고 주고받고 하면서 중간중간 물어본다 그랬죠. 그때 물어봤을 때 상대방이 긍정적으로 대답을 할 수도 있고 부정적으로 대답을 할 수가 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:06:42",
+      "end_time_hms": "00:07:11",
+      "start_seconds": 402,
+      "end_seconds": 431,
+      "duration_seconds": 29,
+      "timeline_summary": "ACK와 NAK 신호 및 윈도우 크기(Window Size) 정의",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "긍정적인 대답을 보고 우리가 ACK 에크 그렇게 부르는 거고 우리 부정적인 그런 수신 응답을 보고 우리가 NAK 넥 그렇게 부르는 거요.",
+        "해서 송신 측은 수신 측으로부터 확인 신호 없이 확인 신호 없이 보내질 수 있는 그 패킷의 최대치를 미리 약속을 받는데 이때 그 패킷의 최대치를 우리가 윈도우 크기 윈도우 사이즈(Window Size) 그렇게 부르는 겁니다."
+      ],
+      "spoken_text": "긍정적인 대답을 보고 우리가 ACK 에크 그렇게 부르는 거고 우리 부정적인 그런 수신 응답을 보고 우리가 NAK 넥 그렇게 부르는 거요. 해서 송신 측은 수신 측으로부터 확인 신호 없이 확인 신호 없이 보내질 수 있는 그 패킷의 최대치를 미리 약속을 받는데 이때 그 패킷의 최대치를 우리가 윈도우 크기 윈도우 사이즈(Window Size) 그렇게 부르는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:07:11",
+      "end_time_hms": "00:07:49",
+      "start_seconds": 431,
+      "end_seconds": 469,
+      "duration_seconds": 38,
+      "timeline_summary": "확인 신호에 따른 윈도우 크기의 변화 설명",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.",
+        "· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 확인 신호, 즉 수신 통지를 이용하여 송신 데이터의 양을 조절하는 방식.\n· 수신 측의 확인 신호를 받지 않더라도 미리 정해진 패킷의 수만큼 연속적으로 전송하는 방식으로, 한 번에 여러 개의 패킷을 전송할 수 있어 전송 효율이 좋음.",
+      "spoken_sentences": [
+        "해서 상대방과 내가 데이터를 주고받고 주고받고 할 때 확인 신호를 이용해서 송신 데이터 그 양을 조절하는 그 방식을 보고 우리가 슬라이딩 윈도우 그렇게 부르는 거요.",
+        "그때 한꺼번에 전송할 수 있는 그 패킷의 최대치를 보고 우리는 윈도우 사이즈 윈도우 크기 그렇게 불렀는데 얘는 상황에 따라서 변한다고요.",
+        "해서 상대방한테 데이터를 보내놓고 상대방한테 물어보는 거예요.",
+        "너 잘 받아서 못 받았어 그렇게 물어보고 만약에 긍정적인 그런 대답이 왔어요.",
+        "ACK가 왔어요.",
+        "그러면 그때 윈도우의 크기는 우리가 증가를 시킬 수 있는 거고요."
+      ],
+      "spoken_text": "해서 상대방과 내가 데이터를 주고받고 주고받고 할 때 확인 신호를 이용해서 송신 데이터 그 양을 조절하는 그 방식을 보고 우리가 슬라이딩 윈도우 그렇게 부르는 거요. 그때 한꺼번에 전송할 수 있는 그 패킷의 최대치를 보고 우리는 윈도우 사이즈 윈도우 크기 그렇게 불렀는데 얘는 상황에 따라서 변한다고요. 해서 상대방한테 데이터를 보내놓고 상대방한테 물어보는 거예요. 너 잘 받아서 못 받았어 그렇게 물어보고 만약에 긍정적인 그런 대답이 왔어요. ACK가 왔어요. 그러면 그때 윈도우의 크기는 우리가 증가를 시킬 수 있는 거고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:07:49",
+      "end_time_hms": "00:08:32",
+      "start_seconds": 469,
+      "end_seconds": 512,
+      "duration_seconds": 43,
+      "timeline_summary": "부정 응답(NAK)에 따른 윈도우 크기 감소 및 효율성 언급",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "슬라이딩 윈도우(Sliding Window)",
+        "· 윈도우 크기(Window Size)는 상황에 따라 변함. 즉, 수신 측으로부터 이전에 송신한 패킷에 대한 긍정 수신 응답(ACK)이 전달된 경우 윈도우 크기는 증가하고, 수신 측으로부터 이전에 송신한 패킷에 대한 부정 수신 응답(NAK)이 전달된 경우 윈도우 크기는 감소함."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n슬라이딩 윈도우(Sliding Window)\n· 윈도우 크기(Window Size)는 상황에 따라 변함. 즉, 수신 측으로부터 이전에 송신한 패킷에 대한 긍정 수신 응답(ACK)이 전달된 경우 윈도우 크기는 증가하고, 수신 측으로부터 이전에 송신한 패킷에 대한 부정 수신 응답(NAK)이 전달된 경우 윈도우 크기는 감소함.",
+      "spoken_sentences": [
+        "그리고 또 데이터를 보내놓고 상대방한테 잘 받았어 못 받았어 물어봤더니 이번에는 부정적인 그런 수신 응답이 왔습니다.",
+        "그러면 그때는 윈도우의 크기를 우리가 감소를 시켜주면 돼요.",
+        "이렇게 송신하고 수신하고 할 때 그때 우리 응답 신호 확인 신호에 따라서 긍정적인 대답이 오냐 부정적인 대답이 오냐 거기에 따라서 이렇게 윈도우의 크기를 증감시키는 그런 방식을 우리가 슬라이딩 윈도우 그렇게 부르는 거예요.",
+        "해서 이 슬라이딩 윈도우라는 거는 한 번에 여러 개 패킷을 전송할 수 있기 때문에 우리 정지-대기 그 방식보다는 전송 효율이 엄청나게 좋은 거죠.",
+        "요런 게 우리 슬라이딩 윈도우여."
+      ],
+      "spoken_text": "그리고 또 데이터를 보내놓고 상대방한테 잘 받았어 못 받았어 물어봤더니 이번에는 부정적인 그런 수신 응답이 왔습니다. 그러면 그때는 윈도우의 크기를 우리가 감소를 시켜주면 돼요. 이렇게 송신하고 수신하고 할 때 그때 우리 응답 신호 확인 신호에 따라서 긍정적인 대답이 오냐 부정적인 대답이 오냐 거기에 따라서 이렇게 윈도우의 크기를 증감시키는 그런 방식을 우리가 슬라이딩 윈도우 그렇게 부르는 거예요. 해서 이 슬라이딩 윈도우라는 거는 한 번에 여러 개 패킷을 전송할 수 있기 때문에 우리 정지-대기 그 방식보다는 전송 효율이 엄청나게 좋은 거죠. 요런 게 우리 슬라이딩 윈도우여.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_091-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 4,
+      "subtopic_id": "0418_418",
+      "subtopic_title": "흐름 제어",
+      "subtopic_sequence": 418,
+      "subtopic_number": "418",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=usk69xbFnLI",
+      "start_time_hms": "00:08:32",
+      "end_time_hms": "00:09:11",
+      "start_seconds": 512,
+      "end_seconds": 551,
+      "duration_seconds": 39,
+      "timeline_summary": "흐름 제어의 정의 및 목적 최종 요약",
+      "screen_text_lines": [
+        "흐름 제어(Flow Control)",
+        "흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.",
+        "· 송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능."
+      ],
+      "screen_text": "흐름 제어(Flow Control)\n흐름 제어란 네트워크 내의 원활한 흐름을 위해 송·수신 측 사이에 전송되는 패킷의 양이나 속도를 규제하는 기능.\n· 송신 측과 수신 측 간의 처리 속도 또는 버퍼 크기의 차이에 의해 생길 수 있는 수신 측 버퍼의 오버플로(Overflow)를 방지하기 위한 기능.",
+      "spoken_sentences": [
+        "해서 우리 흐름 제어라는 거는 뭐다?",
+        "네트워크 내에서 원활한 데이터 흐름을 위해서 송·수신 측 그 사이에서 전송되는 그 패킷의 양이 됐든 속도가 됐든 그런 것들을 우리가 정지-대기 방식이 됐든 아니면 슬라이딩 윈도우 방식이 됐든 이런 방식을 이용해서 우리가 규제하는 거를 보고 얘기하더라.",
+        "해서 송·수신 측 간에 처리 속도나 우리 버퍼의 크기의 차이에 의해서 생길 수 있는 그런 버퍼의 오버플로 이런 것들을 방지하기 위한 그런 기능을 우리가 흐름 제어 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "해서 우리 흐름 제어라는 거는 뭐다? 네트워크 내에서 원활한 데이터 흐름을 위해서 송·수신 측 그 사이에서 전송되는 그 패킷의 양이 됐든 속도가 됐든 그런 것들을 우리가 정지-대기 방식이 됐든 아니면 슬라이딩 윈도우 방식이 됐든 이런 방식을 이용해서 우리가 규제하는 거를 보고 얘기하더라. 해서 송·수신 측 간에 처리 속도나 우리 버퍼의 크기의 차이에 의해서 생길 수 있는 그런 버퍼의 오버플로 이런 것들을 방지하기 위한 그런 기능을 우리가 흐름 제어 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "흐름 제어(Flow Control)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 144
+        },
+        {
+          "keyword": "수신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 96
+        },
+        {
+          "keyword": "송신",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 81
+        },
+        {
+          "keyword": "Flow Control",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 77
+        }
+      ]
+    }
+  ]
+}

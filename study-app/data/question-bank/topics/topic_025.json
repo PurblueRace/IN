@@ -1,0 +1,3672 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_025",
+    "sequence": 25,
+    "title": "수식 표기법과 정렬",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 22,
+    "review_count": 6,
+    "source_chapter_ids": [
+      "chapter_243",
+      "chapter_055",
+      "chapter_237",
+      "chapter_234",
+      "chapter_241",
+      "chapter_227",
+      "chapter_067",
+      "chapter_066",
+      "chapter_081",
+      "chapter_087",
+      "chapter_247"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_62bddc57efa6b43a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다. 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자노드 값은 14, 9입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "정렬"
+        ],
+        "chapter_label": "정렬",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 정렬",
+        "chapter_id": "chapter_243"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "55, 25"
+          },
+          {
+            "label": "2",
+            "text": "63, 33"
+          },
+          {
+            "label": "3",
+            "text": "33, 19"
+          },
+          {
+            "label": "4",
+            "text": "14, 9"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "14, 9"
+        ],
+        "answer_text": "14, 9"
+      },
+      "explanation": {
+        "source_text": "힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다. 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자노드 값은 14, 9입니다.",
+        "summary": "힙 정렬을 위해 주어진 레코드를 완전 이진 트리 형태로 배치했을 때 특정 노드의 자식 노드를 찾는 문제입니다.",
+        "why_correct": [
+          "주어진 레코드 순서대로 완전 이진 트리를 구성하면 37은 5번째 노드이며, 그 자식 노드는 10번째(14)와 11번째(9) 노드가 됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+        ],
+        "key_concepts": [
+          "힙(Heap)",
+          "완전 이진 트리",
+          "자식 노드 인덱스 계산"
+        ],
+        "memory_cues": [
+          "부모 인덱스가 i일 때, 왼쪽 자식은 2i, 오른쪽 자식은 2i+1입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "55, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '55, 25'이므로 일치하지 않습니다. 다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+          },
+          {
+            "label": "2",
+            "text": "63, 33",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '63, 33'이므로 일치하지 않습니다. 다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+          },
+          {
+            "label": "3",
+            "text": "33, 19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '33, 19'이므로 일치하지 않습니다. 다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+          },
+          {
+            "label": "4",
+            "text": "14, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 주어진 레코드 순서대로 완전 이진 트리를 구성하면 37은 5번째 노드이며, 그 자식 노드는 10번째(14)와 11번째(9) 노드가 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+          "핵심 개념을 떠올립니다. 힙(Heap), 완전 이진 트리, 자식 노드 인덱스 계산",
+          "정답 판단 근거를 적용합니다. 주어진 레코드 순서대로 완전 이진 트리를 구성하면 37은 5번째 노드이며, 그 자식 노드는 10번째(14)와 11번째(9) 노드가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '힙(Heap)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '완전 이진 트리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자식 노드 인덱스 계산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 부모 인덱스가 i일 때, 왼쪽 자식은 2i, 오른쪽 자식은 2i+1입니다."
+        ],
+        "detailed_summary": "힙 정렬을 위해 주어진 레코드를 완전 이진 트리 형태로 배치했을 때 특정 노드의 자식 노드를 찾는 문제입니다. 힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다. 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자노드 값은 14, 9입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은? 정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 주어진 레코드 순서대로 완전 이진 트리를 구성하면 37은 5번째 노드이며, 그 자식 노드는 10번째(14)와 11번째(9) 노드가 됩니다. 시험 포인트는 다른 보기들은 트리의 다른 레벨이나 다른 부모 노드의 자식들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "힙 정렬",
+        "이진 트리",
+        "자식 노드",
+        "완전 이진 트리"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          11
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0011",
+            "page_number": 11,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+            "content_type": "image/png",
+            "width": 1038,
+            "height": 1384,
+            "file_size_bytes": 1062337,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0011",
+          "page_number": 11,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+          "content_type": "image/png",
+          "width": 1038,
+          "height": 1384,
+          "file_size_bytes": 1062337,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0011",
+          "page_number": 11,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+          "content_type": "image/png",
+          "width": 1038,
+          "height": 1384,
+          "file_size_bytes": 1062337,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_90e06e714dee8bda",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "전문가의 조언 | 삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 ④번입니다. 삽입 정렬(Insertion Sort)은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다. 즉 두 번째 자료는 첫 번째 자료, 세 번째 자료는 두 번째와 첫 번째 자료, 네 번째 자료는 세 번째, 두 번째, 첫 번째 자료와 비교한 후 자료가 삽입될 위치를 찾습니다. • 초기 자료 : 8 3 4 9 7 • 1회전 : [8 3] 4 9 7 -> 3 8 4 9 7 (두 번째 값 3을 첫 번째 값과 비교하여 첫 번째 자리에 삽입하고 8을 한 칸 뒤로 이동시킵니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "32. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는?\n초기 자료 : 8, 3, 4, 9, 7",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8"
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9"
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "3, 8, 4, 9, 7"
+        ],
+        "answer_text": "3, 8, 4, 9, 7"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 ④번입니다. 삽입 정렬(Insertion Sort)은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다. 즉 두 번째 자료는 첫 번째 자료, 세 번째 자료는 두 번째와 첫 번째 자료, 네 번째 자료는 세 번째, 두 번째, 첫 번째 자료와 비교한 후 자료가 삽입될 위치를 찾습니다. • 초기 자료 : 8 3 4 9 7 • 1회전 : [8 3] 4 9 7 -> 3 8 4 9 7 (두 번째 값 3을 첫 번째 값과 비교하여 첫 번째 자리에 삽입하고 8을 한 칸 뒤로 이동시킵니다.)",
+        "summary": "삽입 정렬은 두 번째 요소부터 시작하여 앞의 정렬된 부분과 비교해 적절한 위치에 끼워넣는 방식입니다.",
+        "why_correct": [
+          "1회전에서는 두 번째 값인 3을 앞의 8과 비교합니다. 3이 더 작으므로 8 앞에 삽입되어 [3, 8, 4, 9, 7]이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 여러 회전이 진행된 상태입니다."
+        ],
+        "key_concepts": [
+          "삽입 정렬",
+          "회전별 결과"
+        ],
+        "memory_cues": [
+          "삽입은 두 번째부터 앞으로 쏙"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 8, 7, 9'이므로 일치하지 않습니다. 1, 2번은 여러 회전이 진행된 상태입니다."
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 9, 7, 8'이므로 일치하지 않습니다. 1, 2번은 여러 회전이 진행된 상태입니다."
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '7, 8, 3, 4, 9'이므로 일치하지 않습니다. 1, 2번은 여러 회전이 진행된 상태입니다."
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 1회전에서는 두 번째 값인 3을 앞의 8과 비교합니다. 3이 더 작으므로 8 앞에 삽입되어 [3, 8, 4, 9, 7]이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7",
+          "핵심 개념을 떠올립니다. 삽입 정렬, 회전별 결과",
+          "정답 판단 근거를 적용합니다. 1회전에서는 두 번째 값인 3을 앞의 8과 비교합니다. 3이 더 작으므로 8 앞에 삽입되어 [3, 8, 4, 9, 7]이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 여러 회전이 진행된 상태입니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 여러 회전이 진행된 상태입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '삽입 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '회전별 결과'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 삽입은 두 번째부터 앞으로 쏙"
+        ],
+        "detailed_summary": "삽입 정렬은 두 번째 요소부터 시작하여 앞의 정렬된 부분과 비교해 적절한 위치에 끼워넣는 방식입니다. 전문가의 조언 | 삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 ④번입니다. 삽입 정렬(Insertion Sort)은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다. 즉 두 번째 자료는 첫 번째 자료, 세 번째 자료는 두 번째와 첫 번째 자료, 네 번째 자료는 세 번째, 두 번째, 첫 번째 자료와 비교한 후 자료가 삽입될 위치를 찾습니다. • 초기 자료 : 8 3 4 9 7 • 1회전 : [8 3] 4 9 7 -> 3 8 4 9 7 (두 번째 값 3을 첫 번째 값과 비교하여 첫 번째 자리에 삽입하고 8을 한 칸 뒤로 이동시킵니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7 정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 1회전에서는 두 번째 값인 3을 앞의 8과 비교합니다. 3이 더 작으므로 8 앞에 삽입되어 [3, 8, 4, 9, 7]이 됩니다. 시험 포인트는 1, 2번은 여러 회전이 진행된 상태입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "삽입 정렬",
+        "Insertion Sort",
+        "정렬 알고리즘",
+        "1회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_bd863e5fab59b255",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "전문가의 조언 | 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자식노드의 값은 14, 9입니다. 힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "31. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자식노드(Child Node)의 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "55, 25"
+          },
+          {
+            "label": "2",
+            "text": "63, 33"
+          },
+          {
+            "label": "3",
+            "text": "33, 19"
+          },
+          {
+            "label": "4",
+            "text": "14, 9"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "14, 9"
+        ],
+        "answer_text": "14, 9"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자식노드의 값은 14, 9입니다. 힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다.",
+        "summary": "완전 이진 트리 형태의 힙 구조에서 부모와 자식 노드의 인덱스 관계를 묻는 문제입니다.",
+        "why_correct": [
+          "배열 인덱스를 1부터 시작할 때, i번째 노드의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소입니다."
+        ],
+        "why_others_wrong": [],
+        "key_concepts": [
+          "힙",
+          "완전 이진 트리",
+          "인덱스 관계"
+        ],
+        "memory_cues": [
+          "자식은 부모 인덱스의 2배와 2배+1"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "55, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '55, 25'이므로 일치하지 않습니다. 핵심 개념은 완전 이진 트리 형태의 힙 구조에서 부모와 자식 노드의 인덱스 관계를 묻는 문제입니다."
+          },
+          {
+            "label": "2",
+            "text": "63, 33",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '63, 33'이므로 일치하지 않습니다. 핵심 개념은 완전 이진 트리 형태의 힙 구조에서 부모와 자식 노드의 인덱스 관계를 묻는 문제입니다."
+          },
+          {
+            "label": "3",
+            "text": "33, 19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '33, 19'이므로 일치하지 않습니다. 핵심 개념은 완전 이진 트리 형태의 힙 구조에서 부모와 자식 노드의 인덱스 관계를 묻는 문제입니다."
+          },
+          {
+            "label": "4",
+            "text": "14, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 인덱스를 1부터 시작할 때, i번째 노드의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자식노드(Child Node)의 값은?",
+          "핵심 개념을 떠올립니다. 힙, 완전 이진 트리, 인덱스 관계",
+          "정답 판단 근거를 적용합니다. 배열 인덱스를 1부터 시작할 때, i번째 노드의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소입니다."
+        ],
+        "exam_traps": [
+          "보기 표현이 비슷할수록 문제의 핵심 기준을 먼저 정하고 하나씩 대조하는 편이 안전합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '힙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '완전 이진 트리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인덱스 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 자식은 부모 인덱스의 2배와 2배+1"
+        ],
+        "detailed_summary": "완전 이진 트리 형태의 힙 구조에서 부모와 자식 노드의 인덱스 관계를 묻는 문제입니다. 전문가의 조언 | 힙 정렬을 만들 때 37의 왼쪽과 오른쪽의 자식노드의 값은 14, 9입니다. 힙 정렬은 자료를 완전 이진 트리로 구성해 보면 간단하게 알 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자식노드(Child Node)의 값은? 정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 인덱스를 1부터 시작할 때, i번째 노드의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소입니다. 시험 포인트는 보기 표현이 비슷할수록 문제의 핵심 기준을 먼저 정하고 하나씩 대조하는 편이 안전합니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency"
+        ]
+      },
+      "keywords": [
+        "힙 정렬",
+        "Heap Sort",
+        "이진 트리",
+        "자식 노드"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          11
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0011",
+            "page_number": 11,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+            "content_type": "image/png",
+            "width": 1038,
+            "height": 1384,
+            "file_size_bytes": 1062337,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0011",
+          "page_number": 11,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+          "content_type": "image/png",
+          "width": 1038,
+          "height": 1384,
+          "file_size_bytes": 1062337,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0011",
+          "page_number": 11,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0011.png",
+          "content_type": "image/png",
+          "width": 1038,
+          "height": 1384,
+          "file_size_bytes": 1062337,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_e16110e1976282c8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 4번입니다. 삽입 정렬은 두 번째 자료부터 시작하여 그 앞의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "정렬"
+        ],
+        "chapter_label": "정렬",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 정렬",
+        "chapter_id": "chapter_243"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는?\n초기 자료 : 8, 3, 4, 9, 7",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8"
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9"
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "3, 8, 4, 9, 7"
+        ],
+        "answer_text": "3, 8, 4, 9, 7"
+      },
+      "explanation": {
+        "source_text": "삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 4번입니다. 삽입 정렬은 두 번째 자료부터 시작하여 그 앞의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다.",
+        "summary": "삽입 정렬의 1회전 과정을 묻는 문제입니다.",
+        "why_correct": [
+          "1회전에서는 두 번째 값(3)을 첫 번째 값(8)과 비교하여 8 앞에 삽입하므로 결과는 3, 8, 4, 9, 7이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+        ],
+        "key_concepts": [
+          "삽입 정렬(Insertion Sort)",
+          "회전(Pass)"
+        ],
+        "memory_cues": [
+          "삽입 정렬은 '두 번째'부터 시작해서 '앞'으로 끼워 넣는 방식입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 8, 7, 9'이므로 일치하지 않습니다. 1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 9, 7, 8'이므로 일치하지 않습니다. 1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '7, 8, 3, 4, 9'이므로 일치하지 않습니다. 1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 1회전에서는 두 번째 값(3)을 첫 번째 값(8)과 비교하여 8 앞에 삽입하므로 결과는 3, 8, 4, 9, 7이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7",
+          "핵심 개념을 떠올립니다. 삽입 정렬(Insertion Sort), 회전(Pass)",
+          "정답 판단 근거를 적용합니다. 1회전에서는 두 번째 값(3)을 첫 번째 값(8)과 비교하여 8 앞에 삽입하므로 결과는 3, 8, 4, 9, 7이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+        ],
+        "exam_traps": [
+          "1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '삽입 정렬(Insertion Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '회전(Pass)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 삽입 정렬은 '두 번째'부터 시작해서 '앞'으로 끼워 넣는 방식입니다."
+        ],
+        "detailed_summary": "삽입 정렬의 1회전 과정을 묻는 문제입니다. 삽입 정렬을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는 4번입니다. 삽입 정렬은 두 번째 자료부터 시작하여 그 앞의 자료들과 비교하여 삽입할 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 알고리즘입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7 정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 1회전에서는 두 번째 값(3)을 첫 번째 값(8)과 비교하여 8 앞에 삽입하므로 결과는 3, 8, 4, 9, 7이 됩니다. 시험 포인트는 1번과 2번은 2회전 이상의 결과이거나 다른 정렬 방식의 결과입니다. 3번은 전혀 다른 순서입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "삽입 정렬",
+        "1회전",
+        "오름차순 정렬"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a1919355d8e34847",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "알고리즘",
+          "정렬"
+        ],
+        "chapter_label": "정렬",
+        "chapter_key": "소프트웨어 개발 > 알고리즘 > 정렬",
+        "chapter_id": "chapter_237"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하며 최악의 경우 n(n-1)/2 회의 비교를 수행해야 하는 정렬(Sort)은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Selection Sort"
+          },
+          {
+            "label": "2",
+            "text": "Bubble Sort"
+          },
+          {
+            "label": "3",
+            "text": "Insertion Sort"
+          },
+          {
+            "label": "4",
+            "text": "Quick Sort"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Quick Sort"
+        ],
+        "answer_text": "Quick Sort"
+      },
+      "explanation": {
+        "source_text": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다.",
+        "summary": "퀵 정렬의 특징인 분할 정복 기법과 피벗 사용, 최악의 경우 시간 복잡도를 묻는 문제입니다.",
+        "why_correct": [
+          "퀵 정렬은 피벗을 기준으로 데이터를 두 부분으로 나누어 정렬하는 분할 정복 알고리즘이며, 이미 정렬된 데이터 등에 대해 최악의 경우 O(n²)의 성능을 보입니다."
+        ],
+        "why_others_wrong": [
+          "선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+        ],
+        "key_concepts": [
+          "퀵 정렬",
+          "분할 정복",
+          "피벗(Pivot)"
+        ],
+        "memory_cues": [
+          "피벗 = 퀵 정렬"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Selection Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Selection Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "Bubble Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Bubble Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "Insertion Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Insertion Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "Quick Sort",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Quick Sort'와 일치합니다. 퀵 정렬은 피벗을 기준으로 데이터를 두 부분으로 나누어 정렬하는 분할 정복 알고리즘이며, 이미 정렬된 데이터 등에 대해 최악의 경우 O(n²)의 성능을 보입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하며 최악의 경우 n(n-1)/2 회의 비교를 수행해야 하는 정렬(Sort)은?",
+          "핵심 개념을 떠올립니다. 퀵 정렬, 분할 정복, 피벗(Pivot)",
+          "정답 판단 근거를 적용합니다. 퀵 정렬은 피벗을 기준으로 데이터를 두 부분으로 나누어 정렬하는 분할 정복 알고리즘이며, 이미 정렬된 데이터 등에 대해 최악의 경우 O(n²)의 성능을 보입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+        ],
+        "exam_traps": [
+          "선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '퀵 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분할 정복'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '피벗(Pivot)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 피벗 = 퀵 정렬"
+        ],
+        "detailed_summary": "퀵 정렬의 특징인 분할 정복 기법과 피벗 사용, 최악의 경우 시간 복잡도를 묻는 문제입니다. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피벗(pivot)을 사용하며 최악의 경우 n(n-1)/2 회의 비교를 수행해야 하는 정렬(Sort)은? 정답입니다. 이 선택지는 실제 정답인 '4번 Quick Sort'와 일치합니다. 퀵 정렬은 피벗을 기준으로 데이터를 두 부분으로 나누어 정렬하는 분할 정복 알고리즘이며, 이미 정렬된 데이터 등에 대해 최악의 경우 O(n²)의 성능을 보입니다. 시험 포인트는 선택, 버블, 삽입 정렬은 분할 정복 알고리즘이 아니며 피벗을 사용하지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "퀵 정렬",
+        "분할 정복",
+        "피벗",
+        "최악 시간 복잡도"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d5732d83a868020f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          49
+        ],
+        "page_span": {
+          "start_page": 49,
+          "end_page": 49
+        },
+        "source_explanation": "버블 정렬 1회전 과정: (9,6)교환→6,9,7,3,5 / (9,7)교환→6,7,9,3,5 / (9,3)교환→6,7,3,9,5 / (9,5)교환→6,7,3,5,9. 1회전 결과 가장 큰 값인 9가 맨 뒤로 이동합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는?\n9, 6, 7, 3, 5",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9"
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9"
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "6, 7, 3, 5, 9"
+        ],
+        "answer_text": "6, 7, 3, 5, 9"
+      },
+      "explanation": {
+        "source_text": "버블 정렬 1회전 과정: (9,6)교환→6,9,7,3,5 / (9,7)교환→6,7,9,3,5 / (9,3)교환→6,7,3,9,5 / (9,5)교환→6,7,3,5,9. 1회전 결과 가장 큰 값인 9가 맨 뒤로 이동합니다.",
+        "summary": "버블 정렬의 동작 원리를 이해하고 1회전 결과를 도출하는 문제입니다.",
+        "why_correct": [
+          "버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 고정됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+        ],
+        "key_concepts": [
+          "Bubble Sort",
+          "Pass"
+        ],
+        "memory_cues": [
+          "버블 정렬 1회전 = 왕건이(최대값)가 맨 뒤로"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 3, 5, 7, 9'이므로 일치하지 않습니다. 1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 고정됩니다."
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '3, 5, 6, 7, 9'이므로 일치하지 않습니다. 1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 9, 7, 3, 5'이므로 일치하지 않습니다. 1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? 9, 6, 7, 3, 5",
+          "핵심 개념을 떠올립니다. Bubble Sort, Pass",
+          "정답 판단 근거를 적용합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 고정됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+        ],
+        "exam_traps": [
+          "1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Bubble Sort'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pass'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 버블 정렬 1회전 = 왕건이(최대값)가 맨 뒤로"
+        ],
+        "detailed_summary": "버블 정렬의 동작 원리를 이해하고 1회전 결과를 도출하는 문제입니다. 버블 정렬 1회전 과정: (9,6)교환→6,9,7,3,5 / (9,7)교환→6,7,9,3,5 / (9,3)교환→6,7,3,9,5 / (9,5)교환→6,7,3,5,9. 1회전 결과 가장 큰 값인 9가 맨 뒤로 이동합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? 9, 6, 7, 3, 5 정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 고정됩니다. 시험 포인트는 1번은 2회전 이후, 3번은 최종 결과, 4번은 중간 단계입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "버블 정렬",
+        "Bubble Sort",
+        "정렬 알고리즘",
+        "1회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_eb206e9e9e7fe424",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          51
+        ],
+        "page_span": {
+          "start_page": 51,
+          "end_page": 51
+        },
+        "source_explanation": "전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다.\n• 초기상태 : 9, 6, 7, 3, 5\n• 1회전\n9, 6, 7, 3, 5 → 6, 9, 7, 3, 5 → 6, 7, 9, 3, 5 → 6, 7, 3, 9, 5 → 6, 7, 3, 5, 9"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "39. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는?\n[ 9, 6, 7, 3, 5 ]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9"
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9"
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "6, 7, 3, 5, 9"
+        ],
+        "answer_text": "6, 7, 3, 5, 9"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다.\n• 초기상태 : 9, 6, 7, 3, 5\n• 1회전\n9, 6, 7, 3, 5 → 6, 9, 7, 3, 5 → 6, 7, 9, 3, 5 → 6, 7, 3, 9, 5 → 6, 7, 3, 5, 9",
+        "summary": "버블 정렬의 1회전 수행 결과를 구하는 문제입니다.",
+        "why_correct": [
+          "버블 정렬 1회전에서는 인접한 요소를 비교하며 가장 큰 값(9)을 맨 뒤로 보냅니다. (9,6)->(6,9), (9,7)->(7,9), (9,3)->(3,9), (9,5)->(5,9) 과정을 거쳐 '6, 7, 3, 5, 9'가 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+        ],
+        "key_concepts": [
+          "버블 정렬(Bubble Sort)",
+          "인접 요소 비교",
+          "회전(Pass)"
+        ],
+        "memory_cues": [
+          "버블 정렬 1회전 = 가장 큰 놈이 맨 뒤로!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 3, 5, 7, 9'이므로 일치하지 않습니다. 1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬 1회전에서는 인접한 요소를 비교하며 가장 큰 값(9)을 맨 뒤로 보냅니다. (9,6)->(6,9), (9,7)->(7,9), (9,3)->(3,9), (9,5)->(5,9) 과정을 거쳐 '6, 7, 3, 5, 9'가 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '3, 5, 6, 7, 9'이므로 일치하지 않습니다. 1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 9, 7, 3, 5'이므로 일치하지 않습니다. 1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? [ 9, 6, 7, 3, 5 ]",
+          "핵심 개념을 떠올립니다. 버블 정렬(Bubble Sort), 인접 요소 비교, 회전(Pass)",
+          "정답 판단 근거를 적용합니다. 버블 정렬 1회전에서는 인접한 요소를 비교하며 가장 큰 값(9)을 맨 뒤로 보냅니다. (9,6)->(6,9), (9,7)->(7,9), (9,3)->(3,9), (9,5)->(5,9) 과정을 거쳐 '6, 7, 3, 5, 9'가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+        ],
+        "exam_traps": [
+          "1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '버블 정렬(Bubble Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인접 요소 비교'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '회전(Pass)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 버블 정렬 1회전 = 가장 큰 놈이 맨 뒤로!"
+        ],
+        "detailed_summary": "버블 정렬의 1회전 수행 결과를 구하는 문제입니다. 전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다. • 초기상태 : 9, 6, 7, 3, 5 • 1회전 9, 6, 7, 3, 5 → 6, 9, 7, 3, 5 → 6, 7, 9, 3, 5 → 6, 7, 3, 9, 5 → 6, 7, 3, 5, 9 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? [ 9, 6, 7, 3, 5 ] 정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬 1회전에서는 인접한 요소를 비교하며 가장 큰 값(9)을 맨 뒤로 보냅니다. (9,6)->(6,9), (9,7)->(7,9), (9,3)->(3,9), (9,5)->(5,9) 과정을 거쳐 '6, 7, 3, 5, 9'가 됩니다. 시험 포인트는 1번은 2회전 이후의 중간 상태, 3번은 최종 정렬 결과, 4번은 1회전의 첫 번째 교환 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "버블 정렬",
+        "오름차순",
+        "1회전",
+        "정렬 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          51
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0051",
+            "page_number": 51,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0051.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 890478,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0051",
+          "page_number": 51,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0051.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 890478,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0051",
+          "page_number": 51,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0051.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 890478,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_75349799d6927a71",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          71
+        ],
+        "page_span": {
+          "start_page": 71,
+          "end_page": 71
+        },
+        "source_explanation": "후위 표기 방식은 중위 표기 방식으로 표현된 수식에서 연산자를 해당 피연산자 두 개의 뒤(오른쪽)로 이동시킨 것입니다. 1. 먼저 연산 우선 순위에 맞게 괄호로 묶습니다. ((A + B) * C) + (D + E) 2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B) + C) * (D E) + 3. 괄호를 제거합니다. AB+C*DE++"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_241"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "중위 표기법(Infix)의 수식 (A + B) * C + (D + E)를 후위 표기법(Postfix)으로 옳게 표기한 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "AB+CDE+*+"
+          },
+          {
+            "label": "2",
+            "text": "AB+C*DE++"
+          },
+          {
+            "label": "3",
+            "text": "+AB*C+DE+"
+          },
+          {
+            "label": "4",
+            "text": "+*+ABC+DE"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "AB+C*DE++"
+        ],
+        "answer_text": "AB+C*DE++"
+      },
+      "explanation": {
+        "source_text": "후위 표기 방식은 중위 표기 방식으로 표현된 수식에서 연산자를 해당 피연산자 두 개의 뒤(오른쪽)로 이동시킨 것입니다. 1. 먼저 연산 우선 순위에 맞게 괄호로 묶습니다. ((A + B) * C) + (D + E) 2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B) + C) * (D E) + 3. 괄호를 제거합니다. AB+C*DE++",
+        "summary": "중위 표기법 수식을 후위 표기법으로 변환하는 문제입니다.",
+        "why_correct": [
+          "연산 우선순위에 따라 괄호를 묶고 연산자를 괄호 뒤로 이동시키면 AB+C*DE++가 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 연산자 위치가 잘못되었습니다.",
+          "3번과 4번은 전위 표기법(Prefix) 형식을 띠고 있습니다."
+        ],
+        "key_concepts": [
+          "Infix",
+          "Postfix",
+          "연산자 우선순위"
+        ],
+        "memory_cues": [
+          "후위 표기는 연산자가 피연산자 뒤에 옵니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "AB+CDE+*+",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AB+C*DE++'인데 이 선택지는 'AB+CDE+*+'이므로 일치하지 않습니다. 1번은 연산자 위치가 잘못되었습니다. 3번과 4번은 전위 표기법(Prefix) 형식을 띠고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "AB+C*DE++",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 AB+C*DE++'와 일치합니다. 연산 우선순위에 따라 괄호를 묶고 연산자를 괄호 뒤로 이동시키면 AB+C*DE++가 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "+AB*C+DE+",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AB+C*DE++'인데 이 선택지는 '+AB*C+DE+'이므로 일치하지 않습니다. 1번은 연산자 위치가 잘못되었습니다. 3번과 4번은 전위 표기법(Prefix) 형식을 띠고 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "+*+ABC+DE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 AB+C*DE++'인데 이 선택지는 '+*+ABC+DE'이므로 일치하지 않습니다. 1번은 연산자 위치가 잘못되었습니다. 3번과 4번은 전위 표기법(Prefix) 형식을 띠고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 중위 표기법(Infix)의 수식 (A + B) * C + (D + E)를 후위 표기법(Postfix)으로 옳게 표기한 것은?",
+          "핵심 개념을 떠올립니다. Infix, Postfix, 연산자 우선순위",
+          "정답 판단 근거를 적용합니다. 연산 우선순위에 따라 괄호를 묶고 연산자를 괄호 뒤로 이동시키면 AB+C*DE++가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 연산자 위치가 잘못되었습니다."
+        ],
+        "exam_traps": [
+          "1번은 연산자 위치가 잘못되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Infix'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Postfix'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 후위 표기는 연산자가 피연산자 뒤에 옵니다."
+        ],
+        "detailed_summary": "중위 표기법 수식을 후위 표기법으로 변환하는 문제입니다. 후위 표기 방식은 중위 표기 방식으로 표현된 수식에서 연산자를 해당 피연산자 두 개의 뒤(오른쪽)로 이동시킨 것입니다. 1. 먼저 연산 우선 순위에 맞게 괄호로 묶습니다. ((A + B) * C) + (D + E) 2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B) + C) * (D E) + 3. 괄호를 제거합니다. AB+C*DE++ 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 중위 표기법(Infix)의 수식 (A + B) * C + (D + E)를 후위 표기법(Postfix)으로 옳게 표기한 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 AB+C*DE++'와 일치합니다. 연산 우선순위에 따라 괄호를 묶고 연산자를 괄호 뒤로 이동시키면 AB+C*DE++가 됩니다. 시험 포인트는 1번은 연산자 위치가 잘못되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "후위 표기법",
+        "Postfix",
+        "중위 표기법",
+        "Infix",
+        "수식 변환"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_95f6b53dd19d8fa3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          84
+        ],
+        "page_span": {
+          "start_page": 84,
+          "end_page": 84
+        },
+        "source_explanation": "전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다. • 원본 : 27, 7, 4, 30, 25 • 1회전 : 4, 7, 27, 30, 25 (첫 번째부터 마지막 값 중 최소값 4를 찾아 첫 번째 값 27과 위치를 교환합니다.) • 2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 값 중 최소값 7을 찾아 위치 교환이 없다면 다음 회전으로 넘어갑니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발"
+        ],
+        "chapter_label": "소프트웨어 개발",
+        "chapter_key": "소프트웨어 개발",
+        "chapter_id": "chapter_227"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는? [27, 7, 4, 30, 25]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4, 7, 25, 27, 30"
+          },
+          {
+            "label": "2",
+            "text": "4, 7, 30, 27, 25"
+          },
+          {
+            "label": "3",
+            "text": "4, 7, 27, 30, 25"
+          },
+          {
+            "label": "4",
+            "text": "4, 7, 25, 30, 27"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "4, 7, 27, 30, 25"
+        ],
+        "answer_text": "4, 7, 27, 30, 25"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다. • 원본 : 27, 7, 4, 30, 25 • 1회전 : 4, 7, 27, 30, 25 (첫 번째부터 마지막 값 중 최소값 4를 찾아 첫 번째 값 27과 위치를 교환합니다.) • 2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 값 중 최소값 7을 찾아 위치 교환이 없다면 다음 회전으로 넘어갑니다.)",
+        "summary": "선택 정렬 알고리즘의 중간 과정을 계산하는 문제입니다.",
+        "why_correct": [
+          "1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다(4, 7, 27, 30, 25). 2회전에서는 두 번째 자리부터 끝까지 중 최소값인 7을 찾는데, 이미 두 번째 자리에 있으므로 변화가 없습니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+        ],
+        "key_concepts": [
+          "선택 정렬",
+          "최소값 찾기",
+          "회전(Pass)"
+        ],
+        "memory_cues": [
+          "선택 정렬 = 최소값 선택해서 앞으로"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4, 7, 25, 27, 30",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 25, 27, 30'이므로 일치하지 않습니다. 다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+          },
+          {
+            "label": "2",
+            "text": "4, 7, 30, 27, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 30, 27, 25'이므로 일치하지 않습니다. 다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+          },
+          {
+            "label": "3",
+            "text": "4, 7, 27, 30, 25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 4, 7, 27, 30, 25'와 일치합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다(4, 7, 27, 30, 25). 2회전에서는 두 번째 자리부터 끝까지 중 최소값인 7을 찾는데, 이미 두 번째 자리에 있으므로 변화가 없습니다."
+          },
+          {
+            "label": "4",
+            "text": "4, 7, 25, 30, 27",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 25, 30, 27'이므로 일치하지 않습니다. 다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는? [27, 7, 4, 30, 25]",
+          "핵심 개념을 떠올립니다. 선택 정렬, 최소값 찾기, 회전(Pass)",
+          "정답 판단 근거를 적용합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다(4, 7, 27, 30, 25). 2회전에서는 두 번째 자리부터 끝까지 중 최소값인 7을 찾는데, 이미 두 번째 자리에 있으므로 변화가 없습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선택 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '최소값 찾기'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '회전(Pass)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 선택 정렬 = 최소값 선택해서 앞으로"
+        ],
+        "detailed_summary": "선택 정렬 알고리즘의 중간 과정을 계산하는 문제입니다. 전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다. • 원본 : 27, 7, 4, 30, 25 • 1회전 : 4, 7, 27, 30, 25 (첫 번째부터 마지막 값 중 최소값 4를 찾아 첫 번째 값 27과 위치를 교환합니다.) • 2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 값 중 최소값 7을 찾아 위치 교환이 없다면 다음 회전으로 넘어갑니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는? [27, 7, 4, 30, 25] 정답입니다. 이 선택지는 실제 정답인 '3번 4, 7, 27, 30, 25'와 일치합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다(4, 7, 27, 30, 25). 2회전에서는 두 번째 자리부터 끝까지 중 최소값인 7을 찾는데, 이미 두 번째 자리에 있으므로 변화가 없습니다. 시험 포인트는 다른 보기들은 정렬이 더 진행되었거나 잘못된 위치 교환 결과를 보여줍니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "선택 정렬",
+        "Selection Sort",
+        "정렬 알고리즘",
+        "알고리즘 회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3078b953102e0090",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다.\n원본 : 27, 7, 4, 30, 25\n1회전 : 4, 7, 27, 30, 25 (최소값 4를 찾아 첫 번째 값 27과 교환)\n2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 중 최소값 7을 찾아 위치 교환, 이미 제자리이므로 변화 없음)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "30섹션 3빌드"
+        ],
+        "chapter_label": "30섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 30섹션 3빌드",
+        "chapter_id": "chapter_067"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "22. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는?\n[27, 7, 4, 30, 25]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4, 7, 25, 27, 30"
+          },
+          {
+            "label": "2",
+            "text": "4, 7, 30, 27, 25"
+          },
+          {
+            "label": "3",
+            "text": "4, 7, 27, 30, 25"
+          },
+          {
+            "label": "4",
+            "text": "4, 7, 25, 30, 27"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "4, 7, 27, 30, 25"
+        ],
+        "answer_text": "4, 7, 27, 30, 25"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다.\n원본 : 27, 7, 4, 30, 25\n1회전 : 4, 7, 27, 30, 25 (최소값 4를 찾아 첫 번째 값 27과 교환)\n2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 중 최소값 7을 찾아 위치 교환, 이미 제자리이므로 변화 없음)",
+        "summary": "선택 정렬의 동작 과정을 이해하고 특정 회전 후의 상태를 찾는 문제입니다.",
+        "why_correct": [
+          "1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다. 2회전에서는 두 번째부터 끝까지 중 최소값인 7을 찾아 두 번째 자리와 바꾸는데, 이미 7이 두 번째 자리에 있으므로 배열 상태는 유지됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+        ],
+        "key_concepts": [
+          "선택 정렬",
+          "최소값 탐색",
+          "위치 교환(Swap)"
+        ],
+        "memory_cues": [
+          "선택 정렬은 '가장 작은 놈 나와!' 해서 맨 앞으로 보내는 방식입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4, 7, 25, 27, 30",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 25, 27, 30'이므로 일치하지 않습니다. 1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "4, 7, 30, 27, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 30, 27, 25'이므로 일치하지 않습니다. 1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "4, 7, 27, 30, 25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 4, 7, 27, 30, 25'와 일치합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다. 2회전에서는 두 번째부터 끝까지 중 최소값인 7을 찾아 두 번째 자리와 바꾸는데, 이미 7이 두 번째 자리에 있으므로 배열 상태는 유지됩니다."
+          },
+          {
+            "label": "4",
+            "text": "4, 7, 25, 30, 27",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 4, 7, 27, 30, 25'인데 이 선택지는 '4, 7, 25, 30, 27'이므로 일치하지 않습니다. 1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는? [27, 7, 4, 30, 25]",
+          "핵심 개념을 떠올립니다. 선택 정렬, 최소값 탐색, 위치 교환(Swap)",
+          "정답 판단 근거를 적용합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다. 2회전에서는 두 번째부터 끝까지 중 최소값인 7을 찾아 두 번째 자리와 바꾸는데, 이미 7이 두 번째 자리에 있으므로 배열 상태는 유지됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선택 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '최소값 탐색'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 교환(Swap)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 선택 정렬은 '가장 작은 놈 나와!' 해서 맨 앞으로 보내는 방식입니다."
+        ],
+        "detailed_summary": "선택 정렬의 동작 과정을 이해하고 특정 회전 후의 상태를 찾는 문제입니다. 전문가의 조언 | 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다. 원본 : 27, 7, 4, 30, 25 1회전 : 4, 7, 27, 30, 25 (최소값 4를 찾아 첫 번째 값 27과 교환) 2회전 : 4, 7, 27, 30, 25 (두 번째부터 마지막 중 최소값 7을 찾아 위치 교환, 이미 제자리이므로 변화 없음) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 2회전 수행 결과는? [27, 7, 4, 30, 25] 정답입니다. 이 선택지는 실제 정답인 '3번 4, 7, 27, 30, 25'와 일치합니다. 1회전에서 전체 중 최소값인 4를 찾아 맨 앞의 27과 바꿉니다. 2회전에서는 두 번째부터 끝까지 중 최소값인 7을 찾아 두 번째 자리와 바꾸는데, 이미 7이 두 번째 자리에 있으므로 배열 상태는 유지됩니다. 시험 포인트는 1, 2, 4번은 선택 정렬의 2회전 규칙을 따르지 않은 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "선택 정렬",
+        "Selection Sort",
+        "정렬 알고리즘",
+        "회전 결과"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0086",
+            "page_number": 86,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0086.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 1019686,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0087",
+            "page_number": 87,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0087.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1059470,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0088",
+            "page_number": 88,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0088.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 958451,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0089",
+            "page_number": 89,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0089.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 953025,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0090",
+            "page_number": 90,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0090.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 836134,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0091",
+            "page_number": 91,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0091.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 974641,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0086",
+          "page_number": 86,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0086.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1019686,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0086",
+          "page_number": 86,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0086.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1019686,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_3f73debee7ea37db",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 중위식(Infix)을 후위식(Postfix)으로 표현하려면 연산자의 우선순위에 따라 괄호로 묶고 해당 괄호의 뒤(오른쪽)로 연산자를 옮기면 됩니다.\n1. 연산 우선순위에 따라 괄호로 묶습니다. (((A / B) * (C + D)) + E)\n2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B /) (C D +) *) E +\n3. 괄호를 제거합니다. AB/CD+*E+"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "29섹션 3빌드"
+        ],
+        "chapter_label": "29섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 29섹션 3빌드",
+        "chapter_id": "chapter_066"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "24. 다음과 같은 중위식(Infix)을 후위식(Postfix)으로 올바르게 표현한 것은?\nA / B * (C + D) + E",
+        "choices": [
+          {
+            "label": "1",
+            "text": "+ * / A B + C D E"
+          },
+          {
+            "label": "2",
+            "text": "C D + A B / * E +"
+          },
+          {
+            "label": "3",
+            "text": "/ * + + A B C D E"
+          },
+          {
+            "label": "4",
+            "text": "A B / C D + * E +"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "A B / C D + * E +"
+        ],
+        "answer_text": "A B / C D + * E +"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 중위식(Infix)을 후위식(Postfix)으로 표현하려면 연산자의 우선순위에 따라 괄호로 묶고 해당 괄호의 뒤(오른쪽)로 연산자를 옮기면 됩니다.\n1. 연산 우선순위에 따라 괄호로 묶습니다. (((A / B) * (C + D)) + E)\n2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B /) (C D +) *) E +\n3. 괄호를 제거합니다. AB/CD+*E+",
+        "summary": "수식 표기법 변환(Infix to Postfix) 방법을 묻는 문제입니다.",
+        "why_correct": [
+          "연산 순서에 따라 괄호를 치고 연산자를 괄호 밖 오른쪽으로 빼면 AB/CD+*E+가 됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+        ],
+        "key_concepts": [
+          "Infix",
+          "Postfix",
+          "스택 활용"
+        ],
+        "memory_cues": [
+          "후위식은 연산자가 피연산자 '뒤'에 옵니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "+ * / A B + C D E",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 A B / C D + * E +'인데 이 선택지는 '+ * / A B + C D E'이므로 일치하지 않습니다. 1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+          },
+          {
+            "label": "2",
+            "text": "C D + A B / * E +",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 A B / C D + * E +'인데 이 선택지는 'C D + A B / * E +'이므로 일치하지 않습니다. 1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+          },
+          {
+            "label": "3",
+            "text": "/ * + + A B C D E",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 A B / C D + * E +'인데 이 선택지는 '/ * + + A B C D E'이므로 일치하지 않습니다. 1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+          },
+          {
+            "label": "4",
+            "text": "A B / C D + * E +",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 A B / C D + * E +'와 일치합니다. 연산 순서에 따라 괄호를 치고 연산자를 괄호 밖 오른쪽으로 빼면 AB/CD+*E+가 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 다음과 같은 중위식(Infix)을 후위식(Postfix)으로 올바르게 표현한 것은? A / B * (C + D) + E",
+          "핵심 개념을 떠올립니다. Infix, Postfix, 스택 활용",
+          "정답 판단 근거를 적용합니다. 연산 순서에 따라 괄호를 치고 연산자를 괄호 밖 오른쪽으로 빼면 AB/CD+*E+가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+        ],
+        "exam_traps": [
+          "1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Infix'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Postfix'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '스택 활용'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 후위식은 연산자가 피연산자 '뒤'에 옵니다."
+        ],
+        "detailed_summary": "수식 표기법 변환(Infix to Postfix) 방법을 묻는 문제입니다. 전문가의 조언 | 중위식(Infix)을 후위식(Postfix)으로 표현하려면 연산자의 우선순위에 따라 괄호로 묶고 해당 괄호의 뒤(오른쪽)로 연산자를 옮기면 됩니다. 1. 연산 우선순위에 따라 괄호로 묶습니다. (((A / B) * (C + D)) + E) 2. 연산자를 해당 괄호의 뒤로 옮깁니다. ((A B /) (C D +) *) E + 3. 괄호를 제거합니다. AB/CD+*E+ 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 다음과 같은 중위식(Infix)을 후위식(Postfix)으로 올바르게 표현한 것은? A / B * (C + D) + E 정답입니다. 이 선택지는 실제 정답인 '4번 A B / C D + * E +'와 일치합니다. 연산 순서에 따라 괄호를 치고 연산자를 괄호 밖 오른쪽으로 빼면 AB/CD+*E+가 됩니다. 시험 포인트는 1, 3번은 전위식(Prefix) 형태와 유사하며, 2번은 피연산자 순서가 잘못되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "중위식",
+        "후위식",
+        "Infix",
+        "Postfix",
+        "연산자 우선순위"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4a79a56bb6abf47a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          107
+        ],
+        "page_span": {
+          "start_page": 107,
+          "end_page": 107
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "31. 다음 설명에 해당하는 정렬(Sort)은?\n· 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다.\n· 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다.\n· 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "힙 정렬"
+          },
+          {
+            "label": "2",
+            "text": "퀵 정렬"
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬"
+          },
+          {
+            "label": "4",
+            "text": "버블 정렬"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "퀵 정렬"
+        ],
+        "answer_text": "퀵 정렬"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다.",
+        "summary": "퀵 정렬의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "퀵 정렬은 피봇을 기준으로 데이터를 분할하여 정렬하는 분할 정복 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+        ],
+        "key_concepts": [
+          "퀵 정렬",
+          "피봇",
+          "분할 정복"
+        ],
+        "memory_cues": [
+          "퀵-피봇-분할정복"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "힙 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '힙 정렬'이므로 일치하지 않습니다. 힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "퀵 정렬",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 퀵 정렬'와 일치합니다. 퀵 정렬은 피봇을 기준으로 데이터를 분할하여 정렬하는 분할 정복 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '선택 정렬'이므로 일치하지 않습니다. 힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "버블 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '버블 정렬'이므로 일치하지 않습니다. 힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 다음 설명에 해당하는 정렬(Sort)은? · 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다. · 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다. · 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다.",
+          "핵심 개념을 떠올립니다. 퀵 정렬, 피봇, 분할 정복",
+          "정답 판단 근거를 적용합니다. 퀵 정렬은 피봇을 기준으로 데이터를 분할하여 정렬하는 분할 정복 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+        ],
+        "exam_traps": [
+          "힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '퀵 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '피봇'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분할 정복'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 퀵-피봇-분할정복"
+        ],
+        "detailed_summary": "퀵 정렬의 특징을 묻는 문제입니다. 전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 다음 설명에 해당하는 정렬(Sort)은? · 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다. · 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다. · 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다. 정답입니다. 이 선택지는 실제 정답인 '2번 퀵 정렬'와 일치합니다. 퀵 정렬은 피봇을 기준으로 데이터를 분할하여 정렬하는 분할 정복 알고리즘입니다. 시험 포인트는 힙 정렬은 힙 자료구조를 이용하며, 선택/버블 정렬은 단순 비교 정렬 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "퀵 정렬",
+        "분할 정복",
+        "피봇",
+        "정렬 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d941b5c6be6b41e9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          108
+        ],
+        "page_span": {
+          "start_page": 108,
+          "end_page": 108
+        },
+        "source_explanation": "전문가의 조언 | 삽입 정렬은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입될 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 방식입니다. 1회전: [8, 3] 비교 -> 3, 8, 4, 9, 7."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "39. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는?\n초기 자료 : 8, 3, 4, 9, 7",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8"
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9"
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "3, 8, 4, 9, 7"
+        ],
+        "answer_text": "3, 8, 4, 9, 7"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 삽입 정렬은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입될 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 방식입니다. 1회전: [8, 3] 비교 -> 3, 8, 4, 9, 7.",
+        "summary": "삽입 정렬의 동작 과정을 이해하는 문제입니다.",
+        "why_correct": [
+          "삽입 정렬 1회전은 두 번째 요소(3)를 첫 번째 요소(8)와 비교하여 적절한 위치에 삽입하므로 [3, 8, 4, 9, 7]이 됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+        ],
+        "key_concepts": [
+          "삽입 정렬",
+          "정렬 회전"
+        ],
+        "memory_cues": [
+          "삽입은 두 번째부터 앞으로 쏙"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3, 4, 8, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 8, 7, 9'이므로 일치하지 않습니다. 다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 9, 7, 8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 9, 7, 8'이므로 일치하지 않습니다. 다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "7, 8, 3, 4, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '7, 8, 3, 4, 9'이므로 일치하지 않습니다. 다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 삽입 정렬 1회전은 두 번째 요소(3)를 첫 번째 요소(8)와 비교하여 적절한 위치에 삽입하므로 [3, 8, 4, 9, 7]이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7",
+          "핵심 개념을 떠올립니다. 삽입 정렬, 정렬 회전",
+          "정답 판단 근거를 적용합니다. 삽입 정렬 1회전은 두 번째 요소(3)를 첫 번째 요소(8)와 비교하여 적절한 위치에 삽입하므로 [3, 8, 4, 9, 7]이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '삽입 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '정렬 회전'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 삽입은 두 번째부터 앞으로 쏙"
+        ],
+        "detailed_summary": "삽입 정렬의 동작 과정을 이해하는 문제입니다. 전문가의 조언 | 삽입 정렬은 두 번째 자료부터 시작하여 그 앞(왼쪽)의 자료들과 비교하여 삽입될 위치를 지정한 후 자료를 뒤로 옮기고 지정한 자리에 자료를 삽입하여 정렬하는 방식입니다. 1회전: [8, 3] 비교 -> 3, 8, 4, 9, 7. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 다음 초기 자료에 대하여 삽입 정렬(Insertion Sort)을 이용하여 오름차순 정렬할 경우 1회전 후의 결과는? 초기 자료 : 8, 3, 4, 9, 7 정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 삽입 정렬 1회전은 두 번째 요소(3)를 첫 번째 요소(8)와 비교하여 적절한 위치에 삽입하므로 [3, 8, 4, 9, 7]이 됩니다. 시험 포인트는 다른 보기들은 2회전 이후의 결과이거나 다른 정렬 방식의 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "삽입 정렬",
+        "Insertion Sort",
+        "정렬 알고리즘",
+        "1회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f0c1abd952bf93cf",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          108
+        ],
+        "page_span": {
+          "start_page": 108,
+          "end_page": 108
+        },
+        "source_explanation": "전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. 인덱스 i의 자식은 2i, 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14), 11번째(9) 요소입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "40. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "55, 25"
+          },
+          {
+            "label": "2",
+            "text": "63, 33"
+          },
+          {
+            "label": "3",
+            "text": "33, 19"
+          },
+          {
+            "label": "4",
+            "text": "14, 9"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "14, 9"
+        ],
+        "answer_text": "14, 9"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. 인덱스 i의 자식은 2i, 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14), 11번째(9) 요소입니다.",
+        "summary": "힙(완전 이진 트리) 구조에서 부모-자식 노드 관계를 찾는 문제입니다.",
+        "why_correct": [
+          "배열 기반 힙에서 인덱스 n의 자식은 2n과 2n+1입니다. 37은 5번째 데이터이므로 자식은 10번째인 14와 11번째인 9입니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+        ],
+        "key_concepts": [
+          "힙",
+          "완전 이진 트리 인덱스"
+        ],
+        "memory_cues": [
+          "자식은 2배, 2배+1"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "55, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '55, 25'이므로 일치하지 않습니다. 다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+          },
+          {
+            "label": "2",
+            "text": "63, 33",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '63, 33'이므로 일치하지 않습니다. 다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+          },
+          {
+            "label": "3",
+            "text": "33, 19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '33, 19'이므로 일치하지 않습니다. 다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+          },
+          {
+            "label": "4",
+            "text": "14, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 기반 힙에서 인덱스 n의 자식은 2n과 2n+1입니다. 37은 5번째 데이터이므로 자식은 10번째인 14와 11번째인 9입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+          "핵심 개념을 떠올립니다. 힙, 완전 이진 트리 인덱스",
+          "정답 판단 근거를 적용합니다. 배열 기반 힙에서 인덱스 n의 자식은 2n과 2n+1입니다. 37은 5번째 데이터이므로 자식은 10번째인 14와 11번째인 9입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '힙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '완전 이진 트리 인덱스'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 자식은 2배, 2배+1"
+        ],
+        "detailed_summary": "힙(완전 이진 트리) 구조에서 부모-자식 노드 관계를 찾는 문제입니다. 전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. 인덱스 i의 자식은 2i, 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14), 11번째(9) 요소입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은? 정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 기반 힙에서 인덱스 n의 자식은 2n과 2n+1입니다. 37은 5번째 데이터이므로 자식은 10번째인 14와 11번째인 9입니다. 시험 포인트는 다른 보기들은 트리 상의 다른 위치에 있는 노드들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "힙 정렬",
+        "이진 트리",
+        "자식 노드",
+        "완전 이진 트리"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          108
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0108",
+            "page_number": 108,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0108.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 1062514,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0108",
+          "page_number": 108,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0108.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1062514,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0108",
+          "page_number": 108,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0108.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1062514,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_9398282ea0a4bb46",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(n²)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "합병 정렬"
+          },
+          {
+            "label": "2",
+            "text": "버블 정렬"
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬"
+          },
+          {
+            "label": "4",
+            "text": "삽입 정렬"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "합병 정렬"
+        ],
+        "answer_text": "합병 정렬"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(n²)입니다.",
+        "summary": "주요 정렬 알고리즘의 시간 복잡도를 구분하는 문제입니다.",
+        "why_correct": [
+          "합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(NlogN)의 시간 복잡도를 가집니다."
+        ],
+        "why_others_wrong": [
+          "버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+        ],
+        "key_concepts": [
+          "O(NlogN) 알고리즘: 합병 정렬, 퀵 정렬(평균), 힙 정렬",
+          "O(N²) 알고리즘: 버블 정렬, 선택 정렬, 삽입 정렬"
+        ],
+        "memory_cues": [
+          "효율적인 정렬(합병, 퀵, 힙)은 logN이 붙습니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "합병 정렬",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 합병 정렬'와 일치합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(NlogN)의 시간 복잡도를 가집니다."
+          },
+          {
+            "label": "2",
+            "text": "버블 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '버블 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '선택 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "삽입 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '삽입 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은?",
+          "핵심 개념을 떠올립니다. O(NlogN) 알고리즘: 합병 정렬, 퀵 정렬(평균), 힙 정렬, O(N²) 알고리즘: 버블 정렬, 선택 정렬, 삽입 정렬",
+          "정답 판단 근거를 적용합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(NlogN)의 시간 복잡도를 가집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+        ],
+        "exam_traps": [
+          "버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'O(NlogN) 알고리즘: 합병 정렬, 퀵 정렬(평균), 힙 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'O(N²) 알고리즘: 버블 정렬, 선택 정렬, 삽입 정렬'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 효율적인 정렬(합병, 퀵, 힙)은 logN이 붙습니다."
+        ],
+        "detailed_summary": "주요 정렬 알고리즘의 시간 복잡도를 구분하는 문제입니다. 전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(n²)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은? 정답입니다. 이 선택지는 실제 정답인 '1번 합병 정렬'와 일치합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(NlogN)의 시간 복잡도를 가집니다. 시험 포인트는 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간 복잡도를 가지는 비교적 단순한 정렬 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "정렬 알고리즘",
+        "시간 복잡도",
+        "합병 정렬",
+        "O(NlogN)"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9677e3af5122b89f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. • 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(N²)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "52섹션 3빌드"
+        ],
+        "chapter_label": "52섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 52섹션 3빌드",
+        "chapter_id": "chapter_081"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "합병 정렬"
+          },
+          {
+            "label": "2",
+            "text": "버블 정렬"
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬"
+          },
+          {
+            "label": "4",
+            "text": "삽입 정렬"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "합병 정렬"
+        ],
+        "answer_text": "합병 정렬"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. • 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(N²)입니다.",
+        "summary": "주요 정렬 알고리즘의 시간 복잡도를 구분하는 문제입니다.",
+        "why_correct": [
+          "합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(N log N)의 시간 복잡도를 가집니다."
+        ],
+        "why_others_wrong": [
+          "버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+        ],
+        "key_concepts": [
+          "Merge Sort",
+          "Time Complexity",
+          "O(N log N)"
+        ],
+        "memory_cues": [
+          "퀵합힙: 퀵, 합병, 힙 정렬은 N log N"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "합병 정렬",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 합병 정렬'와 일치합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(N log N)의 시간 복잡도를 가집니다."
+          },
+          {
+            "label": "2",
+            "text": "버블 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '버블 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '선택 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "삽입 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 합병 정렬'인데 이 선택지는 '삽입 정렬'이므로 일치하지 않습니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은?",
+          "핵심 개념을 떠올립니다. Merge Sort, Time Complexity, O(N log N)",
+          "정답 판단 근거를 적용합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(N log N)의 시간 복잡도를 가집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+        ],
+        "exam_traps": [
+          "버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Merge Sort'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Time Complexity'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'O(N log N)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 퀵합힙: 퀵, 합병, 힙 정렬은 N log N"
+        ],
+        "detailed_summary": "주요 정렬 알고리즘의 시간 복잡도를 구분하는 문제입니다. 전문가의 조언 | O(Nlog₂N)의 시간 복잡도를 가진 정렬 알고리즘에는 힙 정렬과 2-Way 합병 정렬이 있습니다. • 버블 정렬, 선택 정렬, 삽입 정렬의 시간 복잡도는 O(N²)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 정렬된 N개의 데이터를 처리하는 데 O(Nlog₂N)의 시간이 소요되는 정렬 알고리즘은? 정답입니다. 이 선택지는 실제 정답인 '1번 합병 정렬'와 일치합니다. 합병 정렬(Merge Sort)은 분할 정복 방식을 사용하여 최악, 평균, 최선의 경우 모두 O(N log N)의 시간 복잡도를 가집니다. 시험 포인트는 버블, 선택, 삽입 정렬은 모두 평균적으로 O(N²)의 시간이 걸리는 비교적 느린 정렬 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "합병 정렬",
+        "Merge Sort",
+        "시간 복잡도",
+        "O(N log N)"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3ccd070faa6bd61a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          143
+        ],
+        "page_span": {
+          "start_page": 143,
+          "end_page": 143
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다.\n• 힙 정렬(Heap Sort) : 전이진 트리(Complete Binary Tree)를 이용한 정렬 방식\n• 선택 정렬(Selection Sort) : n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 (n-1)개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식\n• 버블 정렬(Bubble Sort) : 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 설명에 해당하는 정렬(Sort)은?\n• 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다.\n• 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다.\n• 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "힙 정렬"
+          },
+          {
+            "label": "2",
+            "text": "퀵 정렬"
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬"
+          },
+          {
+            "label": "4",
+            "text": "버블 정렬"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "퀵 정렬"
+        ],
+        "answer_text": "퀵 정렬"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다.\n• 힙 정렬(Heap Sort) : 전이진 트리(Complete Binary Tree)를 이용한 정렬 방식\n• 선택 정렬(Selection Sort) : n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 (n-1)개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식\n• 버블 정렬(Bubble Sort) : 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식",
+        "summary": "특정 정렬 알고리즘의 특징을 보고 이름을 맞히는 문제입니다.",
+        "why_correct": [
+          "피봇(Pivot)을 사용하고 분할 정복(Divide and Conquer) 방식을 사용하는 것은 퀵 정렬의 고유한 특징입니다."
+        ],
+        "why_others_wrong": [
+          "힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+        ],
+        "key_concepts": [
+          "Quick Sort",
+          "Divide and Conquer"
+        ],
+        "memory_cues": [
+          "피봇 = 퀵 정렬"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "힙 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '힙 정렬'이므로 일치하지 않습니다. 힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+          },
+          {
+            "label": "2",
+            "text": "퀵 정렬",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 퀵 정렬'와 일치합니다. 피봇(Pivot)을 사용하고 분할 정복(Divide and Conquer) 방식을 사용하는 것은 퀵 정렬의 고유한 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "선택 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '선택 정렬'이므로 일치하지 않습니다. 힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+          },
+          {
+            "label": "4",
+            "text": "버블 정렬",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 퀵 정렬'인데 이 선택지는 '버블 정렬'이므로 일치하지 않습니다. 힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에 해당하는 정렬(Sort)은? • 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다. • 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다. • 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다.",
+          "핵심 개념을 떠올립니다. Quick Sort, Divide and Conquer",
+          "정답 판단 근거를 적용합니다. 피봇(Pivot)을 사용하고 분할 정복(Divide and Conquer) 방식을 사용하는 것은 퀵 정렬의 고유한 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+        ],
+        "exam_traps": [
+          "힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Quick Sort'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Divide and Conquer'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 피봇 = 퀵 정렬"
+        ],
+        "detailed_summary": "특정 정렬 알고리즘의 특징을 보고 이름을 맞히는 문제입니다. 전문가의 조언 | 문제의 지문에서 설명하는 정렬은 퀵 정렬(Quick Sort)입니다. • 힙 정렬(Heap Sort) : 전이진 트리(Complete Binary Tree)를 이용한 정렬 방식 • 선택 정렬(Selection Sort) : n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 (n-1)개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식 • 버블 정렬(Bubble Sort) : 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 설명에 해당하는 정렬(Sort)은? • 레코드의 많은 자료 이동을 없애고 하나의 파일을 부분적으로 나누어 가면서 정렬하는 방법이다. • 분할(Divide)과 정복(Conquer)을 통해 자료를 정렬한다. • 피봇(pivot)을 사용하며, 최악의 경우 n(n-1)/2회의 비교를 수행해야 한다. 정답입니다. 이 선택지는 실제 정답인 '2번 퀵 정렬'와 일치합니다. 피봇(Pivot)을 사용하고 분할 정복(Divide and Conquer) 방식을 사용하는 것은 퀵 정렬의 고유한 특징입니다. 시험 포인트는 힙 정렬은 트리를, 선택/버블은 단순 비교 교환 방식을 사용하며 피봇 개념이 없습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "퀵 정렬",
+        "분할 정복",
+        "피봇",
+        "정렬 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ac1197ade49d4603",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          143
+        ],
+        "page_span": {
+          "start_page": 143,
+          "end_page": 143
+        },
+        "source_explanation": "전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. (해설 이미지 참조)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "55, 25"
+          },
+          {
+            "label": "2",
+            "text": "63, 33"
+          },
+          {
+            "label": "3",
+            "text": "33, 19"
+          },
+          {
+            "label": "4",
+            "text": "14, 9"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "14, 9"
+        ],
+        "answer_text": "14, 9"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. (해설 이미지 참조)",
+        "summary": "배열 형태의 데이터를 완전 이진 트리(힙)로 구성했을 때 특정 노드의 자식을 찾는 문제입니다.",
+        "why_correct": [
+          "배열 인덱스 i의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소가 됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+        ],
+        "key_concepts": [
+          "Heap",
+          "Complete Binary Tree",
+          "Array Representation of Tree"
+        ],
+        "memory_cues": [
+          "인덱스 i의 자식은 2i, 2i+1"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "55, 25",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '55, 25'이므로 일치하지 않습니다. 다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+          },
+          {
+            "label": "2",
+            "text": "63, 33",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '63, 33'이므로 일치하지 않습니다. 다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+          },
+          {
+            "label": "3",
+            "text": "33, 19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 14, 9'인데 이 선택지는 '33, 19'이므로 일치하지 않습니다. 다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+          },
+          {
+            "label": "4",
+            "text": "14, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 인덱스 i의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소가 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은?",
+          "핵심 개념을 떠올립니다. Heap, Complete Binary Tree, Array Representation of Tree",
+          "정답 판단 근거를 적용합니다. 배열 인덱스 i의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+        ],
+        "exam_traps": [
+          "다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Heap'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Complete Binary Tree'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Array Representation of Tree'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인덱스 i의 자식은 2i, 2i+1"
+        ],
+        "detailed_summary": "배열 형태의 데이터를 완전 이진 트리(힙)로 구성했을 때 특정 노드의 자식을 찾는 문제입니다. 전문가의 조언 | 힙 정렬은 자료를 전이진 트리로 구성해 보면 간단하게 알 수 있습니다. (해설 이미지 참조) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 이진 트리의 레코드 R = (88, 74, 63, 55, 37, 25, 33, 19, 26, 14, 9)에 대하여 힙(Heap) 정렬을 만들 때, 37의 왼쪽과 오른쪽의 자노드(Child Node)의 값은? 정답입니다. 이 선택지는 실제 정답인 '4번 14, 9'와 일치합니다. 배열 인덱스 i의 자식은 2i와 2i+1입니다. 37은 5번째 요소이므로 자식은 10번째(14)와 11번째(9) 요소가 됩니다. 시험 포인트는 다른 숫자들은 트리의 다른 레벨이나 다른 가지에 위치합니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "The explanation includes a diagram of the heap tree structure."
+        ]
+      },
+      "keywords": [
+        "힙 정렬",
+        "이진 트리",
+        "자식 노드"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          143
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0143",
+            "page_number": 143,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0143.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1011459,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0143",
+          "page_number": 143,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0143.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1011459,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0143",
+          "page_number": 143,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0143.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1011459,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_cd9109a96fb19710",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          161
+        ],
+        "page_span": {
+          "start_page": 161,
+          "end_page": 161
+        },
+        "source_explanation": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "데이터 입출력 구현",
+          "정렬"
+        ],
+        "chapter_label": "정렬",
+        "chapter_key": "2과목 소프트웨어 개발 > 데이터 입출력 구현 > 정렬",
+        "chapter_id": "chapter_087"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "24. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하며 최악의 경우 n(n-1)/2회의 비교를 수행해야 하는 정렬(Sort)은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Selection Sort"
+          },
+          {
+            "label": "2",
+            "text": "Bubble Sort"
+          },
+          {
+            "label": "3",
+            "text": "Insertion Sort"
+          },
+          {
+            "label": "4",
+            "text": "Quick Sort"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Quick Sort"
+        ],
+        "answer_text": "Quick Sort"
+      },
+      "explanation": {
+        "source_text": "분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다.",
+        "summary": "퀵 정렬의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "피봇(Pivot)을 사용하여 데이터를 두 부분으로 나누는 분할 정복 방식은 퀵 정렬의 고유한 특징입니다."
+        ],
+        "why_others_wrong": [
+          "선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+        ],
+        "key_concepts": [
+          "퀵 정렬 (Quick Sort)",
+          "분할 정복 (Divide and Conquer)"
+        ],
+        "memory_cues": [
+          "피봇(Pivot) = 퀵(Quick)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Selection Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Selection Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "Bubble Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Bubble Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "Insertion Sort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Quick Sort'인데 이 선택지는 'Insertion Sort'이므로 일치하지 않습니다. 선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "Quick Sort",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Quick Sort'와 일치합니다. 피봇(Pivot)을 사용하여 데이터를 두 부분으로 나누는 분할 정복 방식은 퀵 정렬의 고유한 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하며 최악의 경우 n(n-1)/2회의 비교를 수행해야 하는 정렬(Sort)은?",
+          "핵심 개념을 떠올립니다. 퀵 정렬 (Quick Sort), 분할 정복 (Divide and Conquer)",
+          "정답 판단 근거를 적용합니다. 피봇(Pivot)을 사용하여 데이터를 두 부분으로 나누는 분할 정복 방식은 퀵 정렬의 고유한 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+        ],
+        "exam_traps": [
+          "선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '퀵 정렬 (Quick Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분할 정복 (Divide and Conquer)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 피봇(Pivot) = 퀵(Quick)"
+        ],
+        "detailed_summary": "퀵 정렬의 특징을 묻는 문제입니다. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하는 정렬은 퀵 정렬(Quick Sort)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 분할 정복(Divide and Conquer)에 기반한 알고리즘으로 피봇(pivot)을 사용하며 최악의 경우 n(n-1)/2회의 비교를 수행해야 하는 정렬(Sort)은? 정답입니다. 이 선택지는 실제 정답인 '4번 Quick Sort'와 일치합니다. 피봇(Pivot)을 사용하여 데이터를 두 부분으로 나누는 분할 정복 방식은 퀵 정렬의 고유한 특징입니다. 시험 포인트는 선택, 버블, 삽입 정렬은 분할 정복 방식이 아니며 피봇을 사용하지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분할 정복",
+        "피봇",
+        "퀵 정렬",
+        "Quick Sort"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ee9f51fcafb573d5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          164
+        ],
+        "page_span": {
+          "start_page": 164,
+          "end_page": 164
+        },
+        "source_explanation": "1회전 과정: (9,6) 비교->6,9 / (9,7) 비교->7,9 / (9,3) 비교->3,9 / (9,5) 비교->5,9. 결과적으로 가장 큰 값 9가 맨 뒤로 이동하여 6, 7, 3, 5, 9가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "데이터 입출력 구현",
+          "정렬"
+        ],
+        "chapter_label": "정렬",
+        "chapter_key": "2과목 소프트웨어 개발 > 데이터 입출력 구현 > 정렬",
+        "chapter_id": "chapter_087"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "37. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? [9, 6, 7, 3, 5]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9"
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9"
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "6, 7, 3, 5, 9"
+        ],
+        "answer_text": "6, 7, 3, 5, 9"
+      },
+      "explanation": {
+        "source_text": "1회전 과정: (9,6) 비교->6,9 / (9,7) 비교->7,9 / (9,3) 비교->3,9 / (9,5) 비교->5,9. 결과적으로 가장 큰 값 9가 맨 뒤로 이동하여 6, 7, 3, 5, 9가 됩니다.",
+        "summary": "버블 정렬의 1회전 수행 과정을 묻는 문제입니다.",
+        "why_correct": [
+          "버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 위치하게 됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+        ],
+        "key_concepts": [
+          "버블 정렬 (Bubble Sort)"
+        ],
+        "memory_cues": [
+          "버블 = 인접 비교, 큰 놈은 뒤로"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 3, 5, 7, 9'이므로 일치하지 않습니다. 다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 위치하게 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '3, 5, 6, 7, 9'이므로 일치하지 않습니다. 다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 9, 7, 3, 5'이므로 일치하지 않습니다. 다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? [9, 6, 7, 3, 5]",
+          "핵심 개념을 떠올립니다. 버블 정렬 (Bubble Sort)",
+          "정답 판단 근거를 적용합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 위치하게 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '버블 정렬 (Bubble Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 버블 = 인접 비교, 큰 놈은 뒤로"
+        ],
+        "detailed_summary": "버블 정렬의 1회전 수행 과정을 묻는 문제입니다. 1회전 과정: (9,6) 비교->6,9 / (9,7) 비교->7,9 / (9,3) 비교->3,9 / (9,5) 비교->5,9. 결과적으로 가장 큰 값 9가 맨 뒤로 이동하여 6, 7, 3, 5, 9가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? [9, 6, 7, 3, 5] 정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 원소를 비교하며 큰 값을 뒤로 보냅니다. 1회전이 끝나면 가장 큰 값(9)이 마지막 자리에 위치하게 됩니다. 시험 포인트는 다른 보기들은 1회전 결과와 일치하지 않거나 정렬이 더 진행된 상태입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "버블 정렬",
+        "Bubble Sort",
+        "정렬 알고리즘",
+        "1회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_42b621b3958f164a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0166_p0171"
+        ],
+        "source_pages": [
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "page_span": {
+          "start_page": 166,
+          "end_page": 171
+        },
+        "source_explanation": "전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다.\n초기 상태: 9 6 7 3 5\n1회전: 6 9 7 3 5 -> 6 7 9 3 5 -> 6 7 3 9 5 -> 6 7 3 5 9"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조 개요와 연결 리스트",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 자료구조 개요와 연결 리스트 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_247"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는?\n9, 6, 7, 3, 5",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9"
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9"
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9"
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "6, 7, 3, 5, 9"
+        ],
+        "answer_text": "6, 7, 3, 5, 9"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다.\n초기 상태: 9 6 7 3 5\n1회전: 6 9 7 3 5 -> 6 7 9 3 5 -> 6 7 3 9 5 -> 6 7 3 5 9",
+        "summary": "버블 정렬의 1회전 수행 과정을 묻는 문제입니다.",
+        "why_correct": [
+          "버블 정렬은 인접한 두 요소를 비교하며 큰 값을 뒤로 보냅니다. 9와 6 비교(교환), 9와 7 비교(교환), 9와 3 비교(교환), 9와 5 비교(교환)를 거치면 가장 큰 값인 9가 맨 뒤로 가고 '6, 7, 3, 5, 9'가 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+        ],
+        "key_concepts": [
+          "버블 정렬(Bubble Sort)",
+          "인접 비교",
+          "패스(Pass)"
+        ],
+        "memory_cues": [
+          "버블 정렬은 거품이 올라오듯 큰 수가 맨 뒤로 차례차례 쌓인다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6, 3, 5, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 3, 5, 7, 9'이므로 일치하지 않습니다. 1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "6, 7, 3, 5, 9",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 요소를 비교하며 큰 값을 뒤로 보냅니다. 9와 6 비교(교환), 9와 7 비교(교환), 9와 3 비교(교환), 9와 5 비교(교환)를 거치면 가장 큰 값인 9가 맨 뒤로 가고 '6, 7, 3, 5, 9'가 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "3, 5, 6, 7, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '3, 5, 6, 7, 9'이므로 일치하지 않습니다. 1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "6, 9, 7, 3, 5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6, 7, 3, 5, 9'인데 이 선택지는 '6, 9, 7, 3, 5'이므로 일치하지 않습니다. 1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? 9, 6, 7, 3, 5",
+          "핵심 개념을 떠올립니다. 버블 정렬(Bubble Sort), 인접 비교, 패스(Pass)",
+          "정답 판단 근거를 적용합니다. 버블 정렬은 인접한 두 요소를 비교하며 큰 값을 뒤로 보냅니다. 9와 6 비교(교환), 9와 7 비교(교환), 9와 3 비교(교환), 9와 5 비교(교환)를 거치면 가장 큰 값인 9가 맨 뒤로 가고 '6, 7, 3, 5, 9'가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+        ],
+        "exam_traps": [
+          "1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '버블 정렬(Bubble Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인접 비교'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '패스(Pass)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 버블 정렬은 거품이 올라오듯 큰 수가 맨 뒤로 차례차례 쌓인다."
+        ],
+        "detailed_summary": "버블 정렬의 1회전 수행 과정을 묻는 문제입니다. 전문가의 조언 | 버블 정렬은 주어진 파일에서 인접한 두 개의 레코드 키 값을 비교하여 그 크기에 따라 레코드 위치를 서로 교환하는 정렬 방식으로 다음과 같은 과정으로 진행됩니다. 초기 상태: 9 6 7 3 5 1회전: 6 9 7 3 5 -> 6 7 9 3 5 -> 6 7 3 9 5 -> 6 7 3 5 9 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 버블 정렬을 이용한 오름차순 정렬시 다음 자료에 대한 1회전 후의 결과는? 9, 6, 7, 3, 5 정답입니다. 이 선택지는 실제 정답인 '2번 6, 7, 3, 5, 9'와 일치합니다. 버블 정렬은 인접한 두 요소를 비교하며 큰 값을 뒤로 보냅니다. 9와 6 비교(교환), 9와 7 비교(교환), 9와 3 비교(교환), 9와 5 비교(교환)를 거치면 가장 큰 값인 9가 맨 뒤로 가고 '6, 7, 3, 5, 9'가 됩니다. 시험 포인트는 1번은 정렬 중간 단계가 아니며, 3번은 최종 정렬 결과에 가깝고, 4번은 첫 번째 비교만 수행한 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "버블 정렬",
+        "오름차순",
+        "정렬 알고리즘",
+        "1회전 결과"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_756430477de720fb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다.\n1회전: [8, 3, 4, 9, 7] -> [3, 8, 4, 9, 7] (최소값 3을 찾아 첫 번째 값 8과 교환)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "수식 표기법과 정렬"
+        ],
+        "chapter_label": "수식 표기법과 정렬",
+        "chapter_key": "소프트웨어 개발 > 수식 표기법과 정렬",
+        "chapter_id": "chapter_234"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_025",
+        "topic_title": "수식 표기법과 정렬",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "수식 표기법과 정렬",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 1회전 수행 결과는?\n[8, 3, 4, 9, 7]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3, 4, 7, 8, 9"
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 7, 9, 8"
+          },
+          {
+            "label": "3",
+            "text": "3, 4, 8, 9, 7"
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "3, 8, 4, 9, 7"
+        ],
+        "answer_text": "3, 8, 4, 9, 7"
+      },
+      "explanation": {
+        "source_text": "선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다.\n1회전: [8, 3, 4, 9, 7] -> [3, 8, 4, 9, 7] (최소값 3을 찾아 첫 번째 값 8과 교환)",
+        "summary": "선택 정렬의 1회전 과정을 이해하는 문제입니다.",
+        "why_correct": [
+          "선택 정렬 1회전에서는 전체 데이터 중 가장 작은 값(3)을 찾아 맨 앞의 값(8)과 자리를 바꿉니다. 따라서 결과는 [3, 8, 4, 9, 7]이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+        ],
+        "key_concepts": [
+          "선택 정렬 (Selection Sort)"
+        ],
+        "memory_cues": [
+          "선택해서 맨 앞으로"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3, 4, 7, 8, 9",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 7, 8, 9'이므로 일치하지 않습니다. 1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "3, 4, 7, 9, 8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 7, 9, 8'이므로 일치하지 않습니다. 1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "3, 4, 8, 9, 7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 3, 8, 4, 9, 7'인데 이 선택지는 '3, 4, 8, 9, 7'이므로 일치하지 않습니다. 1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "3, 8, 4, 9, 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 선택 정렬 1회전에서는 전체 데이터 중 가장 작은 값(3)을 찾아 맨 앞의 값(8)과 자리를 바꿉니다. 따라서 결과는 [3, 8, 4, 9, 7]이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 1회전 수행 결과는? [8, 3, 4, 9, 7]",
+          "핵심 개념을 떠올립니다. 선택 정렬 (Selection Sort)",
+          "정답 판단 근거를 적용합니다. 선택 정렬 1회전에서는 전체 데이터 중 가장 작은 값(3)을 찾아 맨 앞의 값(8)과 자리를 바꿉니다. 따라서 결과는 [3, 8, 4, 9, 7]이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선택 정렬 (Selection Sort)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 선택해서 맨 앞으로"
+        ],
+        "detailed_summary": "선택 정렬의 1회전 과정을 이해하는 문제입니다. 선택 정렬은 n개의 레코드 중에서 최소값을 찾아 첫 번째 레코드 위치에 놓고, 나머지 n-1개 중에서 다시 최소값을 찾아 두 번째 레코드 위치에 놓는 방식을 반복하여 정렬하는 방식입니다. 1회전: [8, 3, 4, 9, 7] -> [3, 8, 4, 9, 7] (최소값 3을 찾아 첫 번째 값 8과 교환) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 1회전 수행 결과는? [8, 3, 4, 9, 7] 정답입니다. 이 선택지는 실제 정답인 '4번 3, 8, 4, 9, 7'와 일치합니다. 선택 정렬 1회전에서는 전체 데이터 중 가장 작은 값(3)을 찾아 맨 앞의 값(8)과 자리를 바꿉니다. 따라서 결과는 [3, 8, 4, 9, 7]이 됩니다. 시험 포인트는 1, 2, 3번은 여러 회전이 진행되었거나 다른 정렬 방식을 적용한 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "선택 정렬",
+        "정렬 알고리즘",
+        "1회전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

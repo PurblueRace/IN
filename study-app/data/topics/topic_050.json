@@ -1,0 +1,4805 @@
+{
+  "schema_version": "study-topic.v1",
+  "topic": {
+    "topic_id": "topic_050",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 6,
+    "source_sequences": [
+      227,
+      228,
+      229,
+      230,
+      231,
+      232
+    ],
+    "source_lecture_ids": [
+      "0227_227",
+      "0228_228",
+      "0229_229",
+      "0230_230",
+      "0231_231",
+      "0232_232"
+    ],
+    "source_titles": [
+      "암호화",
+      "접근통제 기술",
+      "벨 라파듈라 모델",
+      "데이터베이스 백업",
+      "스토리지-DAS",
+      "스토리지-SAN"
+    ],
+    "keywords": [
+      "스토리지",
+      "암호화",
+      "접근통제",
+      "기술",
+      "라파듈라"
+    ],
+    "highlight_keywords": [
+      "암호화",
+      "Encryption",
+      "수신자",
+      "송신자",
+      "평문",
+      "접근통제",
+      "임의",
+      "DAC",
+      "접근통제 기술",
+      "임의 접근통제(DAC"
+    ],
+    "secondary_keywords": [
+      "암호화(Encryption)",
+      "데이터베이스 보안",
+      "두 가지 암호화 기법(개인키, 공개키) 소개",
+      "암호화 과정과 복호화 과정의 차이점 설명",
+      "데이터베이스 보안의 암호화 주제 소개",
+      "암호화의 정의와 목적 설명",
+      "객체와",
+      "접근",
+      "접근통제는",
+      "권한을",
+      "주체",
+      "정보"
+    ],
+    "emphasis_palette": {
+      "primary": "#FFB020",
+      "secondary": "#3182F6"
+    }
+  },
+  "subtopics": [
+    {
+      "subtopic_index": 1,
+      "lecture_id": "0227_227",
+      "sequence": 227,
+      "number": "227",
+      "course_code": "350224",
+      "title": "암호화",
+      "duration_seconds": 74,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "tokens": [
+            "암호화"
+          ],
+          "score": 44,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Encryption",
+          "tokens": [
+            "Encryption"
+          ],
+          "score": 22,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "수신자",
+          "tokens": [
+            "수신자"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "송신자",
+          "tokens": [
+            "송신자"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "평문",
+          "tokens": [
+            "평문"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "암호화(Encryption)",
+          "tokens": [
+            "암호화",
+            "Encryption"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스 보안",
+          "tokens": [
+            "데이터베이스",
+            "보안"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "두 가지 암호화 기법(개인키, 공개키) 소개",
+          "tokens": [
+            "가지",
+            "암호화",
+            "기법",
+            "개인키",
+            "공개키",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "암호화 과정과 복호화 과정의 차이점 설명",
+          "tokens": [
+            "암호화",
+            "과정과",
+            "복호화",
+            "과정의",
+            "차이점"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스 보안의 암호화 주제 소개",
+          "tokens": [
+            "데이터베이스",
+            "보안의",
+            "암호화",
+            "주제",
+            "소개"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "암호화의 정의와 목적 설명",
+          "tokens": [
+            "암호화의",
+            "정의와",
+            "목적"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-001-source-seg-001::01",
+          "prompt": "데이터베이스 보안의 ______ 주제 소개",
+          "answer": "암호화",
+          "original": "데이터베이스 보안의 암호화 주제 소개",
+          "keyword": "암호화",
+          "source_segment_id": "topic_050-subtopic-001-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '암호화'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-001-source-seg-002::02",
+          "prompt": "암호화(______)",
+          "answer": "Encryption",
+          "original": "암호화(Encryption)",
+          "keyword": "Encryption",
+          "source_segment_id": "topic_050-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'Encryption'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-001-source-seg-002::03",
+          "prompt": "암호화는 데이터를 보낼 때 송신자가 지정한 ______ 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것",
+          "answer": "수신자",
+          "original": "암호화는 데이터를 보낼 때 송신자가 지정한 수신자 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것",
+          "keyword": "수신자",
+          "source_segment_id": "topic_050-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '수신자'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-001-source-seg-002::04",
+          "prompt": "암호화는 데이터를 보낼 때 ______가 지정한 수신자 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것",
+          "answer": "송신자",
+          "original": "암호화는 데이터를 보낼 때 송신자가 지정한 수신자 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것",
+          "keyword": "송신자",
+          "source_segment_id": "topic_050-subtopic-001-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '송신자'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 2,
+      "lecture_id": "0228_228",
+      "sequence": 228,
+      "number": "228",
+      "course_code": "350225",
+      "title": "접근통제 기술",
+      "duration_seconds": 300,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "segment_count": 12,
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "tokens": [
+            "접근통제"
+          ],
+          "score": 115,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "임의",
+          "tokens": [
+            "임의"
+          ],
+          "score": 25,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DAC",
+          "tokens": [
+            "DAC"
+          ],
+          "score": 23,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "접근통제 기술",
+          "tokens": [
+            "접근통제",
+            "기술"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "임의 접근통제(DAC",
+          "tokens": [
+            "임의",
+            "접근통제",
+            "DAC"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "객체와",
+          "tokens": [
+            "객체와"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "접근",
+          "tokens": [
+            "접근"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "접근통제는",
+          "tokens": [
+            "접근통제는"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "권한을",
+          "tokens": [
+            "권한을"
+          ],
+          "score": 14,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "주체",
+          "tokens": [
+            "주체"
+          ],
+          "score": 13,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정보",
+          "tokens": [
+            "정보"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-002-source-seg-001::01",
+          "prompt": "______의 기본 개념 설명",
+          "answer": "접근통제",
+          "original": "접근통제의 기본 개념 설명",
+          "keyword": "접근통제",
+          "source_segment_id": "topic_050-subtopic-002-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '접근통제'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-002-source-seg-008::02",
+          "prompt": "접근통제 기술에는 임의 접근통제(______), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음.",
+          "answer": "DAC",
+          "original": "접근통제 기술에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음.",
+          "keyword": "DAC",
+          "source_segment_id": "topic_050-subtopic-002-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'DAC'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-002-source-seg-008::03",
+          "prompt": "______의 분류",
+          "answer": "접근통제 기술",
+          "original": "접근통제 기술의 분류",
+          "keyword": "접근통제 기술",
+          "source_segment_id": "topic_050-subtopic-002-source-seg-008",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 '접근통제 기술'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-002-source-seg-008::04",
+          "prompt": "접근통제 기술에는 ______), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음.",
+          "answer": "임의 접근통제(DAC",
+          "original": "접근통제 기술에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음.",
+          "keyword": "임의 접근통제(DAC",
+          "source_segment_id": "topic_050-subtopic-002-source-seg-008",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '임의 접근통제(DAC'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 3,
+      "lecture_id": "0229_229",
+      "sequence": 229,
+      "number": "229",
+      "course_code": "350226",
+      "title": "벨 라파듈라 모델",
+      "duration_seconds": 151,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "segment_count": 9,
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "tokens": [
+            "보안"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "라파듈라",
+          "tokens": [
+            "라파듈라"
+          ],
+          "score": 31,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "MAC",
+          "tokens": [
+            "MAC"
+          ],
+          "score": 28,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "모델",
+          "tokens": [
+            "모델"
+          ],
+          "score": 22,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "tokens": [
+            "라파듈라",
+            "모델"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "쓰기",
+          "tokens": [
+            "쓰기"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "읽기",
+          "tokens": [
+            "읽기"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "강제 접근통제(MAC)의 보안 모델",
+          "tokens": [
+            "강제",
+            "접근통제",
+            "MAC",
+            "보안",
+            "모델"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "문서를",
+          "tokens": [
+            "문서를"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "1·2급 비밀 문서를 작성할 수 있음.",
+          "tokens": [
+            "비밀",
+            "문서를",
+            "작성할",
+            "있음"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "2급 비밀 문서를 작성할 수 있음.",
+          "tokens": [
+            "비밀",
+            "문서를",
+            "작성할",
+            "있음"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-003-source-seg-002::01",
+          "prompt": "벨 ______ 모델 (Bell-LaPadula Model)",
+          "answer": "라파듈라",
+          "original": "벨 라파듈라 모델 (Bell-LaPadula Model)",
+          "keyword": "라파듈라",
+          "source_segment_id": "topic_050-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '라파듈라'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-003-source-seg-001::02",
+          "prompt": "강제 접근통제(______)의 보안 모델 강의 시작",
+          "answer": "MAC",
+          "original": "강제 접근통제(MAC)의 보안 모델 강의 시작",
+          "keyword": "MAC",
+          "source_segment_id": "topic_050-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'MAC'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-003-source-seg-002::03",
+          "prompt": "______ (Bell-LaPadula Model)",
+          "answer": "벨 라파듈라 모델",
+          "original": "벨 라파듈라 모델 (Bell-LaPadula Model)",
+          "keyword": "벨 라파듈라 모델",
+          "source_segment_id": "topic_050-subtopic-003-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '벨 라파듈라 모델'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-003-source-seg-001::04",
+          "prompt": "______ 강의 시작",
+          "answer": "강제 접근통제(MAC)의 보안 모델",
+          "original": "강제 접근통제(MAC)의 보안 모델 강의 시작",
+          "keyword": "강제 접근통제(MAC)의 보안 모델",
+          "source_segment_id": "topic_050-subtopic-003-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 '강제 접근통제(MAC)의 보안 모델'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 4,
+      "lecture_id": "0230_230",
+      "sequence": 230,
+      "number": "230",
+      "course_code": "350227",
+      "title": "데이터베이스 백업",
+      "duration_seconds": 151,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "segment_count": 5,
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "tokens": [
+            "데이터베이스"
+          ],
+          "score": 31,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "DBMS",
+          "tokens": [
+            "DBMS"
+          ],
+          "score": 29,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "tokens": [
+            "데이터베이스",
+            "백업"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "tokens": [
+            "보호하고",
+            "복구하기",
+            "위한",
+            "작업으로"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "정기적으로 백업해야 함.",
+          "tokens": [
+            "정기적으로",
+            "백업해야"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "데이터베이스에",
+          "tokens": [
+            "데이터베이스에"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터",
+          "tokens": [
+            "데이터"
+          ],
+          "score": 11,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "백업의 일상적 예시를 통한 개념 설명",
+          "tokens": [
+            "백업의",
+            "일상적",
+            "예시를",
+            "통한",
+            "개념"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "데이터베이스 백업의 정의와 목적",
+          "tokens": [
+            "데이터베이스",
+            "백업의",
+            "정의와",
+            "목적"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DBMS의 복구 기능 제공",
+          "tokens": [
+            "DBMS",
+            "복구",
+            "기능",
+            "제공"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "정기적인 백업의 중요성",
+          "tokens": [
+            "정기적인",
+            "백업의",
+            "중요성"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-004-source-seg-001::01",
+          "prompt": "이번 시간엔 우리 ______ 백업에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "데이터베이스",
+          "original": "이번 시간엔 우리 데이터베이스 백업에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "데이터베이스",
+          "source_segment_id": "topic_050-subtopic-004-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-004-source-seg-002::02",
+          "prompt": "데이터베이스 관리 시스템(______)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+          "answer": "DBMS",
+          "original": "데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+          "keyword": "DBMS",
+          "source_segment_id": "topic_050-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 'DBMS'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-004-source-seg-001::03",
+          "prompt": "이번 시간엔 우리 ______에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "answer": "데이터베이스 백업",
+          "original": "이번 시간엔 우리 데이터베이스 백업에 대해서 같이 한번 살펴보도록 하겠습니다.",
+          "keyword": "데이터베이스 백업",
+          "source_segment_id": "topic_050-subtopic-004-source-seg-001",
+          "source_type": "spoken_sentence",
+          "emphasis": "primary",
+          "explanation": "정답은 '데이터베이스 백업'입니다. spoken_sentence에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-004-source-seg-002::04",
+          "prompt": "______, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+          "answer": "보호하고 복구하기 위한 작업으로",
+          "original": "보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "source_segment_id": "topic_050-subtopic-004-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "primary",
+          "explanation": "정답은 '보호하고 복구하기 위한 작업으로'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 5,
+      "lecture_id": "0231_231",
+      "sequence": 231,
+      "number": "231",
+      "course_code": "350228",
+      "title": "스토리지-DAS",
+      "duration_seconds": 289,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "segment_count": 17,
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "tokens": [
+            "DAS"
+          ],
+          "score": 41,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Direct",
+          "tokens": [
+            "Direct"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "직접",
+          "tokens": [
+            "직접"
+          ],
+          "score": 24,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Direct Attached Storage",
+          "tokens": [
+            "Direct",
+            "Attached",
+            "Storage"
+          ],
+          "score": 21,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "스토리지-DAS",
+          "tokens": [
+            "스토리지",
+            "DAS"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "DAS(Direct Attached Storage)",
+          "tokens": [
+            "DAS",
+            "Direct",
+            "Attached",
+            "Storage"
+          ],
+          "score": 16,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "연결",
+          "tokens": [
+            "연결"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "전용",
+          "tokens": [
+            "전용"
+          ],
+          "score": 15,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "확장성 및 유연성이 상대적으로 떨어짐.",
+          "tokens": [
+            "확장성",
+            "유연성이",
+            "상대적으로",
+            "떨어짐"
+          ],
+          "score": 12,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "DAS의 핵심 연결 방식(직접 연결) 정의",
+          "tokens": [
+            "DAS",
+            "핵심",
+            "연결",
+            "직접"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "서버가 스토리지를 직접 관리하는 방식 설명",
+          "tokens": [
+            "서버가",
+            "스토리지를",
+            "직접",
+            "관리하는"
+          ],
+          "score": 10,
+          "sources": [
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-005-source-seg-001::01",
+          "prompt": "______(Direct Attached Storage) 강의 시작 및 주제 소개",
+          "answer": "DAS",
+          "original": "DAS(Direct Attached Storage) 강의 시작 및 주제 소개",
+          "keyword": "DAS",
+          "source_segment_id": "topic_050-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'DAS'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-005-source-seg-001::02",
+          "prompt": "DAS(______ Attached Storage) 강의 시작 및 주제 소개",
+          "answer": "Direct",
+          "original": "DAS(Direct Attached Storage) 강의 시작 및 주제 소개",
+          "keyword": "Direct",
+          "source_segment_id": "topic_050-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Direct'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-005-source-seg-001::03",
+          "prompt": "DAS(______) 강의 시작 및 주제 소개",
+          "answer": "Direct Attached Storage",
+          "original": "DAS(Direct Attached Storage) 강의 시작 및 주제 소개",
+          "keyword": "Direct Attached Storage",
+          "source_segment_id": "topic_050-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Direct Attached Storage'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-005-source-seg-001::04",
+          "prompt": "______ 강의 시작 및 주제 소개",
+          "answer": "DAS(Direct Attached Storage)",
+          "original": "DAS(Direct Attached Storage) 강의 시작 및 주제 소개",
+          "keyword": "DAS(Direct Attached Storage)",
+          "source_segment_id": "topic_050-subtopic-005-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "secondary",
+          "explanation": "정답은 'DAS(Direct Attached Storage)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    },
+    {
+      "subtopic_index": 6,
+      "lecture_id": "0232_232",
+      "sequence": 232,
+      "number": "232",
+      "course_code": "350229",
+      "title": "스토리지-SAN",
+      "duration_seconds": 291,
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "segment_count": 14,
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "tokens": [
+            "SAN"
+          ],
+          "score": 111,
+          "sources": [
+            "lecture_title",
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Storage Area Network",
+          "tokens": [
+            "Storage",
+            "Area",
+            "Network"
+          ],
+          "score": 61,
+          "sources": [
+            "screen_text",
+            "timeline_summary"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "tokens": [
+            "SAN",
+            "Storage",
+            "Area",
+            "Network"
+          ],
+          "score": 56,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "Client",
+          "tokens": [
+            "Client"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        },
+        {
+          "keyword": "LAN",
+          "tokens": [
+            "LAN"
+          ],
+          "score": 40,
+          "sources": [
+            "screen_text"
+          ],
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020"
+        }
+      ],
+      "secondary_keywords": [
+        {
+          "keyword": "네트워크를",
+          "tokens": [
+            "네트워크를"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "유연성",
+          "tokens": [
+            "유연성"
+          ],
+          "score": 20,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "저장",
+          "tokens": [
+            "저장"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "전용",
+          "tokens": [
+            "전용"
+          ],
+          "score": 19,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "스토리지-SAN",
+          "tokens": [
+            "스토리지",
+            "SAN"
+          ],
+          "score": 18,
+          "sources": [
+            "lecture_title"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        },
+        {
+          "keyword": "채널",
+          "tokens": [
+            "채널"
+          ],
+          "score": 18,
+          "sources": [
+            "screen_text",
+            "spoken_sentence",
+            "timeline_summary"
+          ],
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6"
+        }
+      ],
+      "blank_quiz_candidates": [
+        {
+          "candidate_id": "topic_050-subtopic-006-source-seg-001::01",
+          "prompt": "강의 주제인 ______(Storage Area Network) 소개",
+          "answer": "SAN",
+          "original": "강의 주제인 SAN(Storage Area Network) 소개",
+          "keyword": "SAN",
+          "source_segment_id": "topic_050-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'SAN'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-006-source-seg-001::02",
+          "prompt": "강의 주제인 SAN(______) 소개",
+          "answer": "Storage Area Network",
+          "original": "강의 주제인 SAN(Storage Area Network) 소개",
+          "keyword": "Storage Area Network",
+          "source_segment_id": "topic_050-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'Storage Area Network'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-006-source-seg-001::03",
+          "prompt": "강의 주제인 ______ 소개",
+          "answer": "SAN(Storage Area Network)",
+          "original": "강의 주제인 SAN(Storage Area Network) 소개",
+          "keyword": "SAN(Storage Area Network)",
+          "source_segment_id": "topic_050-subtopic-006-source-seg-001",
+          "source_type": "timeline_summary",
+          "emphasis": "primary",
+          "explanation": "정답은 'SAN(Storage Area Network)'입니다. timeline_summary에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        },
+        {
+          "candidate_id": "topic_050-subtopic-006-source-seg-002::04",
+          "prompt": "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 ______ 별도로 구성하는 방식.",
+          "answer": "네트워크를",
+          "original": "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+          "keyword": "네트워크를",
+          "source_segment_id": "topic_050-subtopic-006-source-seg-002",
+          "source_type": "screen_text",
+          "emphasis": "secondary",
+          "explanation": "정답은 '네트워크를'입니다. screen_text에서 반복되는 핵심 표현이라 소주제 복습에 적합합니다."
+        }
+      ],
+      "keyword_summary": {
+        "primary": 5,
+        "secondary": 6,
+        "blank_candidates": 4
+      }
+    }
+  ],
+  "lecture": {
+    "lecture_id": "topic_050",
+    "sequence": 50,
+    "number": "50",
+    "title": "데이터베이스 보안·백업·스토리지",
+    "title_raw": "데이터베이스 보안·백업·스토리지",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "source_count": 6,
+    "source_sequences": [
+      227,
+      228,
+      229,
+      230,
+      231,
+      232
+    ],
+    "source_titles": [
+      "암호화",
+      "접근통제 기술",
+      "벨 라파듈라 모델",
+      "데이터베이스 백업",
+      "스토리지-DAS",
+      "스토리지-SAN"
+    ],
+    "preview_text": "암호화, 접근통제 기술, 벨 라파듈라 모델 등",
+    "segment_count": 62,
+    "youtube_url": "",
+    "youtube_url_normalized": "",
+    "youtube_video_id": ""
+  },
+  "summary": {
+    "overall_summary": "이 주제는 암호화, 접근통제 기술, 벨 라파듈라 모델, 데이터베이스 백업 등을 중심으로 정리합니다. 데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 6개를 한 묶음으로 압축했습니다. 소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다.",
+    "overall_summary_sentences": [
+      "이 주제는 암호화, 접근통제 기술, 벨 라파듈라 모델, 데이터베이스 백업 등을 중심으로 정리합니다.",
+      "데이터베이스 구축 과목에서 함께 출제되는 핵심 개념 6개를 한 묶음으로 압축했습니다.",
+      "소주제별 요약을 순서대로 읽으며 빠르게 복습할 수 있습니다."
+    ],
+    "duration_hms": "",
+    "duration_seconds": 1256,
+    "source_titles_preview": [
+      "암호화",
+      "접근통제 기술",
+      "벨 라파듈라 모델"
+    ],
+    "highlight_keywords": [
+      "암호화",
+      "Encryption",
+      "수신자",
+      "송신자",
+      "평문",
+      "접근통제",
+      "임의",
+      "DAC",
+      "접근통제 기술",
+      "임의 접근통제(DAC"
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "topic_050-seg-001",
+      "segment_index": 1,
+      "subtopic_index": 1,
+      "subtopic_id": "0227_227",
+      "subtopic_title": "암호화",
+      "subtopic_sequence": 227,
+      "subtopic_number": "227",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "데이터베이스 보안의 암호화 주제 소개",
+      "screen_text_lines": [
+        "데이터베이스 보안"
+      ],
+      "screen_text": "데이터베이스 보안",
+      "spoken_sentences": [
+        "이번 시간에는 우리 데이터베이스 보안에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 데이터베이스 보안에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "데이터베이스 보안",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        },
+        {
+          "keyword": "데이터베이스 보안의 암호화 주제 소개",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-002",
+      "segment_index": 2,
+      "subtopic_index": 1,
+      "subtopic_id": "0227_227",
+      "subtopic_title": "암호화",
+      "subtopic_sequence": 227,
+      "subtopic_number": "227",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:21",
+      "start_seconds": 8,
+      "end_seconds": 21,
+      "duration_seconds": 13,
+      "timeline_summary": "암호화의 정의와 목적 설명",
+      "screen_text_lines": [
+        "데이터베이스 보안",
+        "암호화(Encryption)",
+        "암호화는 데이터를 보낼 때 송신자가 지정한 수신자 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것"
+      ],
+      "screen_text": "데이터베이스 보안\n암호화(Encryption)\n암호화는 데이터를 보낼 때 송신자가 지정한 수신자 이외에는 그 내용을 알 수 없도록 평문을 암호문으로 변환하는 것",
+      "spoken_sentences": [
+        "암호화요.",
+        "암호화라는 거는 상대방과 내가 데이터를 주고받고 주고받고 할 때 그거를 중간에서 누군가가 훔쳐갔어요.",
+        "훔쳐가도 그걸 못 알아보게끔 그렇게 암호문으로 변환하는 걸 보고 얘기해요."
+      ],
+      "spoken_text": "암호화요. 암호화라는 거는 상대방과 내가 데이터를 주고받고 주고받고 할 때 그거를 중간에서 누군가가 훔쳐갔어요. 훔쳐가도 그걸 못 알아보게끔 그렇게 암호문으로 변환하는 걸 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "Encryption",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "수신자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "송신자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-003",
+      "segment_index": 3,
+      "subtopic_index": 1,
+      "subtopic_id": "0227_227",
+      "subtopic_title": "암호화",
+      "subtopic_sequence": 227,
+      "subtopic_number": "227",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "start_time_hms": "00:00:21",
+      "end_time_hms": "00:00:40",
+      "start_seconds": 21,
+      "end_seconds": 40,
+      "duration_seconds": 19,
+      "timeline_summary": "송신자, 수신자, 평문, 암호문에 대한 상세 설명",
+      "screen_text_lines": [
+        "암호화(Encryption)",
+        "송신자",
+        "수신자",
+        "평문"
+      ],
+      "screen_text": "암호화(Encryption)\n송신자\n수신자\n평문",
+      "spoken_sentences": [
+        "해서 데이터를 보낼 때 그 송신자가 있고 수신자가 있겠죠?",
+        "그 지정한 수신자 이외에 이외에 다른 사람이 나쁜 놈이 만약에 그 내용을 훔쳐 봤어요.",
+        "그러면 그 내용을 알 수 없게 그렇게 평문으로 되어 있는 거를 암호문으로 그렇게 변환하는 거 그걸 보고 우리가 암호화라고 합니다."
+      ],
+      "spoken_text": "해서 데이터를 보낼 때 그 송신자가 있고 수신자가 있겠죠? 그 지정한 수신자 이외에 이외에 다른 사람이 나쁜 놈이 만약에 그 내용을 훔쳐 봤어요. 그러면 그 내용을 알 수 없게 그렇게 평문으로 되어 있는 거를 암호문으로 그렇게 변환하는 거 그걸 보고 우리가 암호화라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "Encryption",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "수신자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "송신자",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-004",
+      "segment_index": 4,
+      "subtopic_index": 1,
+      "subtopic_id": "0227_227",
+      "subtopic_title": "암호화",
+      "subtopic_sequence": 227,
+      "subtopic_number": "227",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "start_time_hms": "00:00:40",
+      "end_time_hms": "00:01:06",
+      "start_seconds": 40,
+      "end_seconds": 66,
+      "duration_seconds": 26,
+      "timeline_summary": "암호화 과정과 복호화 과정의 차이점 설명",
+      "screen_text_lines": [
+        "암호화(Encryption) 과정 : 암호화되지 않은 평문을 암호문으로 바꾸는 과정",
+        "복호화(Decryption) 과정 : 암호문을 원래의 평문으로 바꾸는 과정"
+      ],
+      "screen_text": "암호화(Encryption) 과정 : 암호화되지 않은 평문을 암호문으로 바꾸는 과정\n복호화(Decryption) 과정 : 암호문을 원래의 평문으로 바꾸는 과정",
+      "spoken_sentences": [
+        "그때 암호화를 해서 내가 보내게 되면 상대방이 원래대로 바꿔야 되겠죠?",
+        "그거를 원래대로 바꾸는 걸 보고 우리가 복호화라고 합니다.",
+        "해서 암호화라는 거는 평문으로 되어 있는 거 그거를 암호문으로 바꾸는 그런 과정을 보고 우리 암호화 과정이라고 하는 거고 복호화 과정이다라고 하게 되면 암호문 암호문으로 되어 있는 거를 원래대로 원래 평문으로 바꾸는 그 과정을 보고 우리가 복호화 과정이라고 해요."
+      ],
+      "spoken_text": "그때 암호화를 해서 내가 보내게 되면 상대방이 원래대로 바꿔야 되겠죠? 그거를 원래대로 바꾸는 걸 보고 우리가 복호화라고 합니다. 해서 암호화라는 거는 평문으로 되어 있는 거 그거를 암호문으로 바꾸는 그런 과정을 보고 우리 암호화 과정이라고 하는 거고 복호화 과정이다라고 하게 되면 암호문 암호문으로 되어 있는 거를 원래대로 원래 평문으로 바꾸는 그 과정을 보고 우리가 복호화 과정이라고 해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "Encryption",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "평문",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "암호화(Encryption)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-005",
+      "segment_index": 5,
+      "subtopic_index": 1,
+      "subtopic_id": "0227_227",
+      "subtopic_title": "암호화",
+      "subtopic_sequence": 227,
+      "subtopic_number": "227",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=5FA5fqfX-AY",
+      "start_time_hms": "00:01:06",
+      "end_time_hms": "00:01:14",
+      "start_seconds": 66,
+      "end_seconds": 74,
+      "duration_seconds": 8,
+      "timeline_summary": "두 가지 암호화 기법(개인키, 공개키) 소개",
+      "screen_text_lines": [
+        "암호화 기법",
+        "개인키 암호 방식(Private Key Encryption)",
+        "공개키 암호 방식(Public Key Encryption)"
+      ],
+      "screen_text": "암호화 기법\n개인키 암호 방식(Private Key Encryption)\n공개키 암호 방식(Public Key Encryption)",
+      "spoken_sentences": [
+        "이런 암호화 기법에는 개인키 암호화 기법이 있고요 그다음에 공개키 암호화 기법이 있고 이렇게 두 가지가 있어요."
+      ],
+      "spoken_text": "이런 암호화 기법에는 개인키 암호화 기법이 있고요 그다음에 공개키 암호화 기법이 있고 이렇게 두 가지가 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "암호화",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 44
+        },
+        {
+          "keyword": "Encryption",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "두 가지 암호화 기법(개인키, 공개키) 소개",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-006",
+      "segment_index": 6,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "접근통제의 기본 개념 설명",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것.",
+      "spoken_sentences": [
+        "이번 시간에는 우리 접근통제에 대해서 같이 한번 살펴보도록 하겠습니다.",
+        "우리 접근통제요."
+      ],
+      "spoken_text": "이번 시간에는 우리 접근통제에 대해서 같이 한번 살펴보도록 하겠습니다. 우리 접근통제요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "객체와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-007",
+      "segment_index": 7,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:28",
+      "start_seconds": 9,
+      "end_seconds": 28,
+      "duration_seconds": 19,
+      "timeline_summary": "접근통제 정의 및 목적",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것.",
+      "spoken_sentences": [
+        "접근통제라는 거는 말 그대로 데이터베이스에 대해서 사용자들의, 사용자들의 접근을 통제하는 거를 보고 우리가 접근통제라고 합니다.",
+        "이런 접근통제를 하게 되면 내가 가지고 있는 그런 데이터베이스의 데이터를 보호를 할 수가 있겠죠."
+      ],
+      "spoken_text": "접근통제라는 거는 말 그대로 데이터베이스에 대해서 사용자들의, 사용자들의 접근을 통제하는 거를 보고 우리가 접근통제라고 합니다. 이런 접근통제를 하게 되면 내가 가지고 있는 그런 데이터베이스의 데이터를 보호를 할 수가 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "객체와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-008",
+      "segment_index": 8,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:00:28",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 28,
+      "end_seconds": 43,
+      "duration_seconds": 15,
+      "timeline_summary": "객체와 주체 간 정보 흐름 제한 설명",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것.",
+      "spoken_sentences": [
+        "해서 데이터가, 데이터가 저장된 그런 객체와 그리고 이거를 사용하려는 그 주체, 그 주체 사이의 정보 흐름을 제한하는 거를 보고 우리가 접근통제라고 합니다."
+      ],
+      "spoken_text": "해서 데이터가, 데이터가 저장된 그런 객체와 그리고 이거를 사용하려는 그 주체, 그 주체 사이의 정보 흐름을 제한하는 거를 보고 우리가 접근통제라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "객체와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-009",
+      "segment_index": 9,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:01:18",
+      "start_seconds": 43,
+      "end_seconds": 78,
+      "duration_seconds": 35,
+      "timeline_summary": "데이터베이스 객체와 주체의 의미",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터가 저장된 객체와 이를 사용하려는 주체 사이의 정보 흐름을 제한하는 것.",
+      "spoken_sentences": [
+        "지금 여기 보게 되면 객체, 객체라는 말이 나왔는데 우리 데이터베이스에서 객체라는 거는 테이블이 됐든 뷰가 됐든 인덱스가 됐든 함수가 됐든 아니면 프로시저가 됐든 그런 여러 가지 데이터베이스의 객체, 객체들을 의미하는 게 우리 객체고요.",
+        "그리고 이거를 사용하려는 주체, 주체라는 말이 나왔죠.",
+        "이 주체라는 거는 그냥 일반 사용자다 그렇게 생각하시면 돼요.",
+        "그런 테이블이 됐든 뷰가 됐든 인덱스가 됐든 그런 것들을 사용자들이 사용하잖아요.",
+        "해서 객체와 주체 사이의 그 정보 흐름을 제한한 거를 보고 우리가 접근통제라고 하더라 그렇게 기억하시면 됩니다."
+      ],
+      "spoken_text": "지금 여기 보게 되면 객체, 객체라는 말이 나왔는데 우리 데이터베이스에서 객체라는 거는 테이블이 됐든 뷰가 됐든 인덱스가 됐든 함수가 됐든 아니면 프로시저가 됐든 그런 여러 가지 데이터베이스의 객체, 객체들을 의미하는 게 우리 객체고요. 그리고 이거를 사용하려는 주체, 주체라는 말이 나왔죠. 이 주체라는 거는 그냥 일반 사용자다 그렇게 생각하시면 돼요. 그런 테이블이 됐든 뷰가 됐든 인덱스가 됐든 그런 것들을 사용자들이 사용하잖아요. 해서 객체와 주체 사이의 그 정보 흐름을 제한한 거를 보고 우리가 접근통제라고 하더라 그렇게 기억하시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "객체와",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-010",
+      "segment_index": 10,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:01:18",
+      "end_time_hms": "00:01:30",
+      "start_seconds": 78,
+      "end_seconds": 90,
+      "duration_seconds": 12,
+      "timeline_summary": "접근통제를 통한 자원 보호",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터에 대해 다음과 같은 통제를 함으로써 자원의 불법적인 접근 및 파괴를 예방함."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터에 대해 다음과 같은 통제를 함으로써 자원의 불법적인 접근 및 파괴를 예방함.",
+      "spoken_sentences": [
+        "해서 우리 접근통제라는 거는 데이터에 대해서 다음과 같은 통제를 함으로써 자원의 불법적인 그런 접근이 됐든 파괴가 됐든 그런 것들을 예방할 수가 있습니다."
+      ],
+      "spoken_text": "해서 우리 접근통제라는 거는 데이터에 대해서 다음과 같은 통제를 함으로써 자원의 불법적인 그런 접근이 됐든 파괴가 됐든 그런 것들을 예방할 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-011",
+      "segment_index": 11,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:01:30",
+      "end_time_hms": "00:02:46",
+      "start_seconds": 90,
+      "end_seconds": 166,
+      "duration_seconds": 76,
+      "timeline_summary": "비유를 통한 접근통제 과정 설명",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제는 데이터에 대해 다음과 같은 통제를 함으로써 자원의 불법적인 접근 및 파괴를 예방함."
+      ],
+      "screen_text": "접근통제\n접근통제는 데이터에 대해 다음과 같은 통제를 함으로써 자원의 불법적인 접근 및 파괴를 예방함.",
+      "spoken_sentences": [
+        "자 예를 들어서 내가 어떤 큰 회사에, 큰 회사에 본사에 내가 들어가려고 해요.",
+        "해서 1층에 딱 하고 들어가게 되면 로비가 나타나죠.",
+        "그리고 그곳에서 엘리베이터를 타려고 가다 보면 다른 사람들은 보니까 막 사원증을 막 삑삑삑삑하고 찍고 막 들어가요.",
+        "건물 안으로 막 들어가는데 나는 그 건물에 처음 방문했어요.",
+        "내가 그 회사에 어떤 특정 사람을 만나기 위해서 그 회사에 찾아갔단 말이에요.",
+        "그러면 나는 그 회사 직원이 아니니까 사원증이 없겠죠.",
+        "나는 카드를 찍고 들어갈 수가 있다 없다?",
+        "없더라 없더라."
+      ],
+      "spoken_text": "자 예를 들어서 내가 어떤 큰 회사에, 큰 회사에 본사에 내가 들어가려고 해요. 해서 1층에 딱 하고 들어가게 되면 로비가 나타나죠. 그리고 그곳에서 엘리베이터를 타려고 가다 보면 다른 사람들은 보니까 막 사원증을 막 삑삑삑삑하고 찍고 막 들어가요. 건물 안으로 막 들어가는데 나는 그 건물에 처음 방문했어요. 내가 그 회사에 어떤 특정 사람을 만나기 위해서 그 회사에 찾아갔단 말이에요. 그러면 나는 그 회사 직원이 아니니까 사원증이 없겠죠. 나는 카드를 찍고 들어갈 수가 있다 없다? 없더라 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "접근통제는",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 14
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-012",
+      "segment_index": 12,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:02:46",
+      "end_time_hms": "00:03:19",
+      "start_seconds": 166,
+      "end_seconds": 199,
+      "duration_seconds": 33,
+      "timeline_summary": "비인가 사용자 감시 및 식별",
+      "screen_text_lines": [
+        "접근통제",
+        "비인가된 사용자의 접근 감시",
+        "접근 요구자의 사용자 식별",
+        "접근 요구의 정당성 확인 및 기록"
+      ],
+      "screen_text": "접근통제\n비인가된 사용자의 접근 감시\n접근 요구자의 사용자 식별\n접근 요구의 정당성 확인 및 기록",
+      "spoken_sentences": [
+        "해서 우리 1층에 보게 되면 안내 데스크가 있죠.",
+        "해서 내가 안내 데스크에 찾아가서 그곳에다가 내가 이 회사에 누구를 만나러 방문을 했다 그렇게 얘기를 하게 되면 나한테 방문자 기록 그 명단을 작성하라고 하죠.",
+        "해서 내가 몇 월 며칠 몇 시에 어떤 팀의 누구를 만나러 왔는지 방문 목적이 뭔지 그런 것들을 전부 다 자세하게 기록을 합니다.",
+        "기록을 하고 나면 그곳에서 그 해당 직원 내가 만나고자 하는 그 직원을 불러주든 아니면 나한테 방문증을 주든 그렇게 둘 중에 하나를 해 주겠죠.",
+        "그래야 내가 그 사람을 만나든 아니면 그 회사 안으로 방문증을 가지고 들어갈 수가 있다고요."
+      ],
+      "spoken_text": "해서 우리 1층에 보게 되면 안내 데스크가 있죠. 해서 내가 안내 데스크에 찾아가서 그곳에다가 내가 이 회사에 누구를 만나러 방문을 했다 그렇게 얘기를 하게 되면 나한테 방문자 기록 그 명단을 작성하라고 하죠. 해서 내가 몇 월 며칠 몇 시에 어떤 팀의 누구를 만나러 왔는지 방문 목적이 뭔지 그런 것들을 전부 다 자세하게 기록을 합니다. 기록을 하고 나면 그곳에서 그 해당 직원 내가 만나고자 하는 그 직원을 불러주든 아니면 나한테 방문증을 주든 그렇게 둘 중에 하나를 해 주겠죠. 그래야 내가 그 사람을 만나든 아니면 그 회사 안으로 방문증을 가지고 들어갈 수가 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "접근",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-013",
+      "segment_index": 13,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:03:19",
+      "end_time_hms": "00:03:48",
+      "start_seconds": 199,
+      "end_seconds": 228,
+      "duration_seconds": 29,
+      "timeline_summary": "접근통제 기술의 분류",
+      "screen_text_lines": [
+        "접근통제",
+        "접근통제 기술에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음."
+      ],
+      "screen_text": "접근통제\n접근통제 기술에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있음.",
+      "spoken_sentences": [
+        "그렇게 접근통제라는 거는 비인가된 그런 사용자들의 접근을 검사하고 감시를 해주고요.",
+        "그리고 접근 요구를 한 그 사람이 있으면 그 사용자의 사용자를 식별을 해 줍니다.",
+        "그리고 접근 요구의 정당성을 확인하고 기록을 다 남겨요.",
+        "그리고 보안 정책에 근거해서 접근을 승인을 해주든 거부를 하든 할 수 있는 거 그게 접근통제라는 거예요.",
+        "이런 것들을 해서 우리 데이터베이스에 들어오는 그런 불법적인 접근도 우리가 막을 수도 있고 파괴도 예방을 할 수가 있다고요."
+      ],
+      "spoken_text": "그렇게 접근통제라는 거는 비인가된 그런 사용자들의 접근을 검사하고 감시를 해주고요. 그리고 접근 요구를 한 그 사람이 있으면 그 사용자의 사용자를 식별을 해 줍니다. 그리고 접근 요구의 정당성을 확인하고 기록을 다 남겨요. 그리고 보안 정책에 근거해서 접근을 승인을 해주든 거부를 하든 할 수 있는 거 그게 접근통제라는 거예요. 이런 것들을 해서 우리 데이터베이스에 들어오는 그런 불법적인 접근도 우리가 막을 수도 있고 파괴도 예방을 할 수가 있다고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "임의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "접근통제 기술",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-014",
+      "segment_index": 14,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:03:48",
+      "end_time_hms": "00:04:09",
+      "start_seconds": 228,
+      "end_seconds": 249,
+      "duration_seconds": 21,
+      "timeline_summary": "임의 접근통제(DAC) 정의",
+      "screen_text_lines": [
+        "임의 접근통제(DAC, Discretionary Access Control)",
+        "임의 접근통제는 데이터에 접근하는 사용자의 신원에 따라 접근 권한을 부여하는 방식."
+      ],
+      "screen_text": "임의 접근통제(DAC, Discretionary Access Control)\n임의 접근통제는 데이터에 접근하는 사용자의 신원에 따라 접근 권한을 부여하는 방식.",
+      "spoken_sentences": [
+        "자 우리 임의 접근통제요.",
+        "임의 접근통제라는 거는 우리가 영어로 DAC 그렇게 불러요.",
+        "이 임의 접근통제라는 거는 데이터에 접근하는 그 사용자의 신원에 따라서, 신원에 따라서 그 접근 권한을 부여하는 그런 방식을 보고 우리가 임의 접근통제 그렇게 부르는 거예요."
+      ],
+      "spoken_text": "자 우리 임의 접근통제요. 임의 접근통제라는 거는 우리가 영어로 DAC 그렇게 불러요. 이 임의 접근통제라는 거는 데이터에 접근하는 그 사용자의 신원에 따라서, 신원에 따라서 그 접근 권한을 부여하는 그런 방식을 보고 우리가 임의 접근통제 그렇게 부르는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "임의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "임의 접근통제(DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-015",
+      "segment_index": 15,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:04:09",
+      "end_time_hms": "00:04:24",
+      "start_seconds": 249,
+      "end_seconds": 264,
+      "duration_seconds": 15,
+      "timeline_summary": "데이터 소유자의 권한 제어",
+      "screen_text_lines": [
+        "임의 접근통제(DAC, Discretionary Access Control)",
+        "데이터 소유자가 접근통제 권한을 지정하고 제어함."
+      ],
+      "screen_text": "임의 접근통제(DAC, Discretionary Access Control)\n데이터 소유자가 접근통제 권한을 지정하고 제어함.",
+      "spoken_sentences": [
+        "그때 이 임의 접근통제라는 거는 데이터를 실제로 소유하고 있는 그 소유자 있죠?",
+        "그 데이터 소유자가 접근통제 권한을 가지고 있어요.",
+        "해서 그 사람이 접근통제에 관한 그런 권한을 지정하고 제어를 합니다."
+      ],
+      "spoken_text": "그때 이 임의 접근통제라는 거는 데이터를 실제로 소유하고 있는 그 소유자 있죠? 그 데이터 소유자가 접근통제 권한을 가지고 있어요. 해서 그 사람이 접근통제에 관한 그런 권한을 지정하고 제어를 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "임의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "임의 접근통제(DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-016",
+      "segment_index": 16,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:04:24",
+      "end_time_hms": "00:04:52",
+      "start_seconds": 264,
+      "end_seconds": 292,
+      "duration_seconds": 28,
+      "timeline_summary": "권한 부여와 SQL 명령어(GRANT, REVOKE)",
+      "screen_text_lines": [
+        "임의 접근통제(DAC, Discretionary Access Control)",
+        "객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있음.",
+        "임의 접근통제에 사용되는 SQL 명령어에는 GRANT와 REVOKE가 있음."
+      ],
+      "screen_text": "임의 접근통제(DAC, Discretionary Access Control)\n객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있음.\n임의 접근통제에 사용되는 SQL 명령어에는 GRANT와 REVOKE가 있음.",
+      "spoken_sentences": [
+        "이게 뭘 얘기하냐 예를 들어서 내가 컴퓨터를 내가 돈 주고 한 대를 샀어 집에 갖다 놨습니다.",
+        "그러면 그 컴퓨터는 가족들을 모아놓고 이 컴퓨터는 내 컴퓨터니까 아무도 쓰지 마 그럴 수도 있겠죠.",
+        "그리고 누구는 써도 돼 누구는 쓰면 안 돼 그런 식으로 데이터를 소유한 그 소유자가 접근통제 권한을 가지고 그 접근통제 권한을 지정하고 제어할 수 있는 게 우리 임의 접근통제 방식이요."
+      ],
+      "spoken_text": "이게 뭘 얘기하냐 예를 들어서 내가 컴퓨터를 내가 돈 주고 한 대를 샀어 집에 갖다 놨습니다. 그러면 그 컴퓨터는 가족들을 모아놓고 이 컴퓨터는 내 컴퓨터니까 아무도 쓰지 마 그럴 수도 있겠죠. 그리고 누구는 써도 돼 누구는 쓰면 안 돼 그런 식으로 데이터를 소유한 그 소유자가 접근통제 권한을 가지고 그 접근통제 권한을 지정하고 제어할 수 있는 게 우리 임의 접근통제 방식이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "임의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "임의 접근통제(DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-017",
+      "segment_index": 17,
+      "subtopic_index": 2,
+      "subtopic_id": "0228_228",
+      "subtopic_title": "접근통제 기술",
+      "subtopic_sequence": 228,
+      "subtopic_number": "228",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=WkML9nAtGM8",
+      "start_time_hms": "00:04:52",
+      "end_time_hms": "00:05:00",
+      "start_seconds": 292,
+      "end_seconds": 300,
+      "duration_seconds": 8,
+      "timeline_summary": "객체 생성 사용자의 권한 관리",
+      "screen_text_lines": [
+        "임의 접근통제(DAC, Discretionary Access Control)",
+        "객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있음.",
+        "임의 접근통제에 사용되는 SQL 명령어에는 GRANT와 REVOKE가 있음."
+      ],
+      "screen_text": "임의 접근통제(DAC, Discretionary Access Control)\n객체를 생성한 사용자가 생성된 객체에 대한 모든 권한을 부여받고, 부여된 권한을 다른 사용자에게 허가할 수도 있음.\n임의 접근통제에 사용되는 SQL 명령어에는 GRANT와 REVOKE가 있음.",
+      "spoken_sentences": [
+        "해서 얘는 객체, 객체를 생성한 그 사용자가 있겠죠?",
+        "그 객체를 생성한 그 사용자가 생성된 그 객체에 대해서 권한을 전부 다 부여를 받아요.",
+        "모든 권한을 싹 다 부여를 받고 그 부여된 권한을 다른 사용자한테, 다른 사용자한테도 허가해 줄 수 있는 거 그게 임의 접근통제 방식이요."
+      ],
+      "spoken_text": "해서 얘는 객체, 객체를 생성한 그 사용자가 있겠죠? 그 객체를 생성한 그 사용자가 생성된 그 객체에 대해서 권한을 전부 다 부여를 받아요. 모든 권한을 싹 다 부여를 받고 그 부여된 권한을 다른 사용자한테, 다른 사용자한테도 허가해 줄 수 있는 거 그게 임의 접근통제 방식이요.",
+      "highlight_keywords": [
+        {
+          "keyword": "접근통제",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 115
+        },
+        {
+          "keyword": "임의",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 25
+        },
+        {
+          "keyword": "DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 23
+        },
+        {
+          "keyword": "임의 접근통제(DAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-018",
+      "segment_index": 18,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "강제 접근통제(MAC)의 보안 모델 강의 시작",
+      "screen_text_lines": [
+        "강제 접근통제(MAC)의 보안 모델"
+      ],
+      "screen_text": "강제 접근통제(MAC)의 보안 모델",
+      "spoken_sentences": [
+        "이번 시간에는 우리 강제 접근통제 보안 모델에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 강제 접근통제 보안 모델에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "MAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "강제 접근통제(MAC)의 보안 모델",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-019",
+      "segment_index": 19,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:23",
+      "start_seconds": 9,
+      "end_seconds": 23,
+      "duration_seconds": 14,
+      "timeline_summary": "강제 접근통제(MAC)의 정의 설명",
+      "screen_text_lines": [
+        "강제 접근통제(MAC)의 보안 모델",
+        "벨 라파듈라 모델 (Bell-LaPadula Model)",
+        "비바 무결성 모델 (Biba Integrity Model)"
+      ],
+      "screen_text": "강제 접근통제(MAC)의 보안 모델\n벨 라파듈라 모델 (Bell-LaPadula Model)\n비바 무결성 모델 (Biba Integrity Model)",
+      "spoken_sentences": [
+        "우리 강제 접근통제라는 거는 주체와 객체에다가 전부 다 등급을 우리가 부여를 해 놓고 그 등급을 비교해서 접근 권한을 부여하는 그런 방식을 보고 우리가 강제 접근통제 그렇게 불렀죠."
+      ],
+      "spoken_text": "우리 강제 접근통제라는 거는 주체와 객체에다가 전부 다 등급을 우리가 부여를 해 놓고 그 등급을 비교해서 접근 권한을 부여하는 그런 방식을 보고 우리가 강제 접근통제 그렇게 불렀죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "MAC",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 28
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-020",
+      "segment_index": 20,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:00:23",
+      "end_time_hms": "00:00:43",
+      "start_seconds": 23,
+      "end_seconds": 43,
+      "duration_seconds": 20,
+      "timeline_summary": "벨 라파듈라 모델의 특징 및 군대 보안 레벨 비유",
+      "screen_text_lines": [
+        "벨 라파듈라 모델 (Bell-LaPadula Model)",
+        "· 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용함."
+      ],
+      "screen_text": "벨 라파듈라 모델 (Bell-LaPadula Model)\n· 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용함.",
+      "spoken_sentences": [
+        "그 중에서 우리 벨 라파듈라 모델이라는 거요.",
+        "얘는 군대 생각하시면 됩니다.",
+        "군대에 보게 되면 보안 레벨이 있는데 얘는 정보의 기밀성에 따라서 기밀성에 따라서 상하 관계가 구분된 그런 정보를 보호하기 위해서 정보를 보호할 그 목적으로 사용하는 게 우리 벨 라파듈라 모델이라는 거예요."
+      ],
+      "spoken_text": "그 중에서 우리 벨 라파듈라 모델이라는 거요. 얘는 군대 생각하시면 됩니다. 군대에 보게 되면 보안 레벨이 있는데 얘는 정보의 기밀성에 따라서 기밀성에 따라서 상하 관계가 구분된 그런 정보를 보호하기 위해서 정보를 보호할 그 목적으로 사용하는 게 우리 벨 라파듈라 모델이라는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-021",
+      "segment_index": 21,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:00:43",
+      "end_time_hms": "00:01:03",
+      "start_seconds": 43,
+      "end_seconds": 63,
+      "duration_seconds": 20,
+      "timeline_summary": "벨 라파듈라 모델에서 기밀성의 개념",
+      "screen_text_lines": [
+        "벨 라파듈라 모델 (Bell-LaPadula Model)",
+        "· 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용함."
+      ],
+      "screen_text": "벨 라파듈라 모델 (Bell-LaPadula Model)\n· 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용함.",
+      "spoken_sentences": [
+        "여기 보게 되면 기밀성, 기밀성이라는 말이 나오는데 기밀성이라는 거는 인가된 그 사용자만 정보에 접근할 수 있다.",
+        "그게 우리 기밀성이지요.",
+        "해서 인가되지 않은 그런 사용자들은 이런 정보에 아예 접근을 못하게..."
+      ],
+      "spoken_text": "여기 보게 되면 기밀성, 기밀성이라는 말이 나오는데 기밀성이라는 거는 인가된 그 사용자만 정보에 접근할 수 있다. 그게 우리 기밀성이지요. 해서 인가되지 않은 그런 사용자들은 이런 정보에 아예 접근을 못하게...",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-022",
+      "segment_index": 22,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:01:03",
+      "end_time_hms": "00:01:12",
+      "start_seconds": 63,
+      "end_seconds": 72,
+      "duration_seconds": 9,
+      "timeline_summary": "보안 등급에 따른 접근 권한 제한",
+      "screen_text_lines": [
+        "· 보안 취급자의 등급을 기준으로 읽기 권한과 쓰기 권한이 제한됨."
+      ],
+      "screen_text": "· 보안 취급자의 등급을 기준으로 읽기 권한과 쓰기 권한이 제한됨.",
+      "spoken_sentences": [
+        "정보를 보호하기 위해서 사용하는 그런 방식이에요.",
+        "그때 보안 취급자의 등급을, 등급을 기준으로 해서 읽기 권한과 우리 쓰기 권한이 전부 다 제한이 됩니다."
+      ],
+      "spoken_text": "정보를 보호하기 위해서 사용하는 그런 방식이에요. 그때 보안 취급자의 등급을, 등급을 기준으로 해서 읽기 권한과 우리 쓰기 권한이 전부 다 제한이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "쓰기",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "읽기",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-023",
+      "segment_index": 23,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:01:12",
+      "end_time_hms": "00:01:37",
+      "start_seconds": 72,
+      "end_seconds": 97,
+      "duration_seconds": 25,
+      "timeline_summary": "보안 레벨 2급 기준의 읽기 및 쓰기 권한 예시",
+      "screen_text_lines": [
+        "예) 보안 레벨이 2급인 보안 취급자의 읽기 권한과 쓰기 권한",
+        "2·3급 비밀 문서를 조회할 수 있음.",
+        "1·2급 비밀 문서를 작성할 수 있음."
+      ],
+      "screen_text": "예) 보안 레벨이 2급인 보안 취급자의 읽기 권한과 쓰기 권한\n2·3급 비밀 문서를 조회할 수 있음.\n1·2급 비밀 문서를 작성할 수 있음.",
+      "spoken_sentences": [
+        "자, 예를 들어서 만약에 내가 보안 레벨이 만약에 2급이에요.",
+        "2급이라면 우리 1급이 있고 2급이 있고 3급이 있을 때 3급이 가장 낮은 그런 보안 등급이고요.",
+        "1급이 가장 높은 건데 내가 만약에 보안 레벨이 2급이라면 2·3급의 그런 문서들은 전부 다 조회할 수 있어요.",
+        "그리고 내가 문서를 작성하겠다 그랬을 때는 1·2급의 그 비밀 문서를 우리가 작성을 할 수가 있습니다."
+      ],
+      "spoken_text": "자, 예를 들어서 만약에 내가 보안 레벨이 만약에 2급이에요. 2급이라면 우리 1급이 있고 2급이 있고 3급이 있을 때 3급이 가장 낮은 그런 보안 등급이고요. 1급이 가장 높은 건데 내가 만약에 보안 레벨이 2급이라면 2·3급의 그런 문서들은 전부 다 조회할 수 있어요. 그리고 내가 문서를 작성하겠다 그랬을 때는 1·2급의 그 비밀 문서를 우리가 작성을 할 수가 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "쓰기",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "읽기",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        },
+        {
+          "keyword": "문서를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-024",
+      "segment_index": 24,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:01:37",
+      "end_time_hms": "00:01:56",
+      "start_seconds": 97,
+      "end_seconds": 116,
+      "duration_seconds": 19,
+      "timeline_summary": "벨 라파듈라 모델의 조회(읽기) 규칙 상세 설명",
+      "screen_text_lines": [
+        "예) 보안 레벨이 2급인 보안 취급자의 읽기 권한과 쓰기 권한",
+        "2·3급 비밀 문서를 조회할 수 있음.",
+        "1·2급 비밀 문서를 작성할 수 있음."
+      ],
+      "screen_text": "예) 보안 레벨이 2급인 보안 취급자의 읽기 권한과 쓰기 권한\n2·3급 비밀 문서를 조회할 수 있음.\n1·2급 비밀 문서를 작성할 수 있음.",
+      "spoken_sentences": [
+        "어, 보안 레벨이 2급인데 어떻게 1급 문서를 작성하지?",
+        "그렇게 생각할 수 있는데 예를 들어서 군대에서 장군이 있어요.",
+        "그 장군은 모든 데이터를 다 읽을 수 있어요.",
+        "그 사람이 보안 등급이 만약에 2급이다 그랬을 때 2급이 됐든 3급이 됐든 그런 문서를 싹 다 조회는 할 수 있어요."
+      ],
+      "spoken_text": "어, 보안 레벨이 2급인데 어떻게 1급 문서를 작성하지? 그렇게 생각할 수 있는데 예를 들어서 군대에서 장군이 있어요. 그 장군은 모든 데이터를 다 읽을 수 있어요. 그 사람이 보안 등급이 만약에 2급이다 그랬을 때 2급이 됐든 3급이 됐든 그런 문서를 싹 다 조회는 할 수 있어요.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-025",
+      "segment_index": 25,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:01:56",
+      "end_time_hms": "00:02:15",
+      "start_seconds": 116,
+      "end_seconds": 135,
+      "duration_seconds": 19,
+      "timeline_summary": "벨 라파듈라 모델의 작성(쓰기) 규칙 상세 설명",
+      "screen_text_lines": [
+        "1·2급 비밀 문서를 작성할 수 있음."
+      ],
+      "screen_text": "1·2급 비밀 문서를 작성할 수 있음.",
+      "spoken_sentences": [
+        "근데 그 장군이 만드는 그런 데이터는 중요한 데이터기 때문에 일반 사람들이, 일반 병사가 읽을 수 없게 그렇게 해야 돼요.",
+        "해서 그런 사람은 1·2급의 문서 그것만 작성할 수 있다고요.",
+        "3급의 문서를 작성할 수 있다 없다?",
+        "없더라."
+      ],
+      "spoken_text": "근데 그 장군이 만드는 그런 데이터는 중요한 데이터기 때문에 일반 사람들이, 일반 병사가 읽을 수 없게 그렇게 해야 돼요. 해서 그런 사람은 1·2급의 문서 그것만 작성할 수 있다고요. 3급의 문서를 작성할 수 있다 없다? 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "쓰기",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-026",
+      "segment_index": 26,
+      "subtopic_index": 3,
+      "subtopic_id": "0229_229",
+      "subtopic_title": "벨 라파듈라 모델",
+      "subtopic_sequence": 229,
+      "subtopic_number": "229",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=mVx_4Z-nurU",
+      "start_time_hms": "00:02:15",
+      "end_time_hms": "00:02:31",
+      "start_seconds": 135,
+      "end_seconds": 151,
+      "duration_seconds": 16,
+      "timeline_summary": "벨 라파듈라 모델의 보안 규칙 최종 요약",
+      "screen_text_lines": [
+        "· 자신의 보안 레벨 이상의 문서를 작성할 수 있고, 자신의 보안 레벨 이하의 문서를 읽을 수 있음."
+      ],
+      "screen_text": "· 자신의 보안 레벨 이상의 문서를 작성할 수 있고, 자신의 보안 레벨 이하의 문서를 읽을 수 있음.",
+      "spoken_sentences": [
+        "해서 자신의 보안 레벨 이상의, 보안 레벨 이상의 문서를 작성할 수 있어요.",
+        "작성할 수 있고 그리고 자신의 보안 레벨 이하의 문서를 읽을 수 있더라.",
+        "요런 게 우리 벨 라파듈라 모델이라는 거요."
+      ],
+      "spoken_text": "해서 자신의 보안 레벨 이상의, 보안 레벨 이상의 문서를 작성할 수 있어요. 작성할 수 있고 그리고 자신의 보안 레벨 이하의 문서를 읽을 수 있더라. 요런 게 우리 벨 라파듈라 모델이라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "보안",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        },
+        {
+          "keyword": "라파듈라",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 22
+        },
+        {
+          "keyword": "벨 라파듈라 모델",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-027",
+      "segment_index": 27,
+      "subtopic_index": 4,
+      "subtopic_id": "0230_230",
+      "subtopic_title": "데이터베이스 백업",
+      "subtopic_sequence": 230,
+      "subtopic_number": "230",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 주제 소개",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이번 시간엔 우리 데이터베이스 백업에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간엔 우리 데이터베이스 백업에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "데이터",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 11
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-028",
+      "segment_index": 28,
+      "subtopic_index": 4,
+      "subtopic_id": "0230_230",
+      "subtopic_title": "데이터베이스 백업",
+      "subtopic_sequence": 230,
+      "subtopic_number": "230",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:50",
+      "start_seconds": 8,
+      "end_seconds": 50,
+      "duration_seconds": 42,
+      "timeline_summary": "백업의 일상적 예시를 통한 개념 설명",
+      "screen_text_lines": [
+        "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를",
+        "보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+        "정기적으로 백업해야 함.",
+        "데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면"
+      ],
+      "screen_text": "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를\n보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를\n정기적으로 백업해야 함.\n데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+      "spoken_sentences": [
+        "내가 만약에 회사에서 일을 하고 있는데 내가 회사에서 일을 할 때 내 컴퓨터에는 엄청나게 중요한 그런 데이터들이 많아요.",
+        "그러면 그런 데이터를 그냥 컴퓨터에다가 저장해 놓고 그냥 끝내지 않죠.",
+        "우리는 그 중요한 데이터가 혹시나 잘못될까 봐 우리가 USB가 됐든 아니면 다른 기타적인 그런 장비들을 이용해서 우리가 중요한 그런 데이터를 따로 복사를 해 두죠.",
+        "따로 복사해 뒀다가 만약에 내 컴퓨터에 문제가 생겨서 그 데이터들이 전부 다 날아갔다 그랬을 때 내가 따로 복사해 둔 게 있기 때문에 그걸 가지고 다시 복구해서 우리가 사용을 합니다."
+      ],
+      "spoken_text": "내가 만약에 회사에서 일을 하고 있는데 내가 회사에서 일을 할 때 내 컴퓨터에는 엄청나게 중요한 그런 데이터들이 많아요. 그러면 그런 데이터를 그냥 컴퓨터에다가 저장해 놓고 그냥 끝내지 않죠. 우리는 그 중요한 데이터가 혹시나 잘못될까 봐 우리가 USB가 됐든 아니면 다른 기타적인 그런 장비들을 이용해서 우리가 중요한 그런 데이터를 따로 복사를 해 두죠. 따로 복사해 뒀다가 만약에 내 컴퓨터에 문제가 생겨서 그 데이터들이 전부 다 날아갔다 그랬을 때 내가 따로 복사해 둔 게 있기 때문에 그걸 가지고 다시 복구해서 우리가 사용을 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-029",
+      "segment_index": 29,
+      "subtopic_index": 4,
+      "subtopic_id": "0230_230",
+      "subtopic_title": "데이터베이스 백업",
+      "subtopic_sequence": 230,
+      "subtopic_number": "230",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "start_time_hms": "00:00:50",
+      "end_time_hms": "00:01:25",
+      "start_seconds": 50,
+      "end_seconds": 85,
+      "duration_seconds": 35,
+      "timeline_summary": "데이터베이스 백업의 정의와 목적",
+      "screen_text_lines": [
+        "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를",
+        "보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+        "정기적으로 백업해야 함.",
+        "데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면"
+      ],
+      "screen_text": "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를\n보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를\n정기적으로 백업해야 함.\n데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+      "spoken_sentences": [
+        "그것처럼 이 데이터베이스 백업이라는 거요.",
+        "데이터베이스 백업이라는 거는 우리 데이터베이스라는 곳에는 엄청나게 많은 양의 그런 데이터들이 이 데이터베이스에 전부 다 저장돼 있죠.",
+        "근데 이런 데이터베이스에 전산 장비에 장애를 대비해서, 장애에 대비해서 데이터베이스에 저장되어 있는 그런 데이터들을 우리가 보호하고 복구하기 위한 그런 작업을 우리가 데이터베이스 백업이라고 합니다."
+      ],
+      "spoken_text": "그것처럼 이 데이터베이스 백업이라는 거요. 데이터베이스 백업이라는 거는 우리 데이터베이스라는 곳에는 엄청나게 많은 양의 그런 데이터들이 이 데이터베이스에 전부 다 저장돼 있죠. 근데 이런 데이터베이스에 전산 장비에 장애를 대비해서, 장애에 대비해서 데이터베이스에 저장되어 있는 그런 데이터들을 우리가 보호하고 복구하기 위한 그런 작업을 우리가 데이터베이스 백업이라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-030",
+      "segment_index": 30,
+      "subtopic_index": 4,
+      "subtopic_id": "0230_230",
+      "subtopic_title": "데이터베이스 백업",
+      "subtopic_sequence": 230,
+      "subtopic_number": "230",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "start_time_hms": "00:01:25",
+      "end_time_hms": "00:01:47",
+      "start_seconds": 85,
+      "end_seconds": 107,
+      "duration_seconds": 22,
+      "timeline_summary": "정기적인 백업의 중요성",
+      "screen_text_lines": [
+        "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를",
+        "보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+        "정기적으로 백업해야 함.",
+        "데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면"
+      ],
+      "screen_text": "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를\n보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를\n정기적으로 백업해야 함.\n데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+      "spoken_sentences": [
+        "해서 치명적인 그런 데이터 손실을 막기 위해서는 우리가 데이터베이스를 정기적으로 뭘 해 둬야 된다?",
+        "백업이라는 걸 해 둬야 되더라.",
+        "백업을 해 놨다가 만약에 데이터 손실이 발생하거나 아니면 물리적인 장치들이 만약에 고장이 났어요.",
+        "그랬을 때 내가 백업해 놓은 걸 가지고 다시 복구를 할 수가 있겠죠."
+      ],
+      "spoken_text": "해서 치명적인 그런 데이터 손실을 막기 위해서는 우리가 데이터베이스를 정기적으로 뭘 해 둬야 된다? 백업이라는 걸 해 둬야 되더라. 백업을 해 놨다가 만약에 데이터 손실이 발생하거나 아니면 물리적인 장치들이 만약에 고장이 났어요. 그랬을 때 내가 백업해 놓은 걸 가지고 다시 복구를 할 수가 있겠죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-031",
+      "segment_index": 31,
+      "subtopic_index": 4,
+      "subtopic_id": "0230_230",
+      "subtopic_title": "데이터베이스 백업",
+      "subtopic_sequence": 230,
+      "subtopic_number": "230",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=1upXC2R7Rgo",
+      "start_time_hms": "00:01:47",
+      "end_time_hms": "00:02:31",
+      "start_seconds": 107,
+      "end_seconds": 151,
+      "duration_seconds": 44,
+      "timeline_summary": "DBMS의 복구 기능 제공",
+      "screen_text_lines": [
+        "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를",
+        "보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를",
+        "정기적으로 백업해야 함.",
+        "데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면"
+      ],
+      "screen_text": "데이터베이스 백업은 전산 장비의 장애에 대비하여 데이터베이스에 저장된 데이터를\n보호하고 복구하기 위한 작업으로, 치명적인 데이터 손실을 막기 위해서는 데이터베이스를\n정기적으로 백업해야 함.\n데이터베이스 관리 시스템(DBMS)은 데이터베이스 파괴 및 실행 중단이 발생하면",
+      "spoken_sentences": [
+        "해서 우리 데이터베이스에 저장된 그런 데이터들에 치명적인 그런 데이터 손실을 막기 위해서 우리가 정기적으로 백업하는 거 그걸 보고 우리가 데이터베이스 백업이라고 하는데 이 데이터베이스 백업은 우리 데이터베이스 관리 시스템이죠, DBMS요.",
+        "그 DBMS에서 데이터베이스의 파괴나 아니면 실행 중단 그런 것들이 발생을 했을 때 이거를 복구할 수 있는 그런 기능을 따로 제공을 해 준다구요.",
+        "복구할 수 있는 기능을 제공해 주기 때문에 우리는 주기적으로 정기적으로 뭘 해 둬야 된다?",
+        "우리가 백업이라는 걸 꼭 해 둬야 되더라.",
+        "해서 우리 백업이라는 거는 그냥 상식적인 그런 수준에서 생각해도 대충 어떤 건지 우리가 쉽게 쉽게 알 수 있는 그런 내용들이에요.",
+        "해서 데이터 백업이 아 이런 거다 그 정도만 기억하고 지나가시면 됩니다."
+      ],
+      "spoken_text": "해서 우리 데이터베이스에 저장된 그런 데이터들에 치명적인 그런 데이터 손실을 막기 위해서 우리가 정기적으로 백업하는 거 그걸 보고 우리가 데이터베이스 백업이라고 하는데 이 데이터베이스 백업은 우리 데이터베이스 관리 시스템이죠, DBMS요. 그 DBMS에서 데이터베이스의 파괴나 아니면 실행 중단 그런 것들이 발생을 했을 때 이거를 복구할 수 있는 그런 기능을 따로 제공을 해 준다구요. 복구할 수 있는 기능을 제공해 주기 때문에 우리는 주기적으로 정기적으로 뭘 해 둬야 된다? 우리가 백업이라는 걸 꼭 해 둬야 되더라. 해서 우리 백업이라는 거는 그냥 상식적인 그런 수준에서 생각해도 대충 어떤 건지 우리가 쉽게 쉽게 알 수 있는 그런 내용들이에요. 해서 데이터 백업이 아 이런 거다 그 정도만 기억하고 지나가시면 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "데이터베이스",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 31
+        },
+        {
+          "keyword": "DBMS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 29
+        },
+        {
+          "keyword": "데이터베이스 백업",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 18
+        },
+        {
+          "keyword": "보호하고 복구하기 위한 작업으로",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-032",
+      "segment_index": 32,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:09",
+      "start_seconds": 0,
+      "end_seconds": 9,
+      "duration_seconds": 9,
+      "timeline_summary": "DAS(Direct Attached Storage) 강의 시작 및 주제 소개",
+      "screen_text_lines": [
+        "DAS(Direct Attached Storage)"
+      ],
+      "screen_text": "DAS(Direct Attached Storage)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 DAS, 다스에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 DAS, 다스에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Direct",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Direct Attached Storage",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "DAS(Direct Attached Storage)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-033",
+      "segment_index": 33,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:00:09",
+      "end_time_hms": "00:00:25",
+      "start_seconds": 9,
+      "end_seconds": 25,
+      "duration_seconds": 16,
+      "timeline_summary": "DAS의 약자 의미와 'Direct'의 개념 설명",
+      "screen_text_lines": [
+        "DAS(Direct Attached Storage)",
+        "Direct"
+      ],
+      "screen_text": "DAS(Direct Attached Storage)\nDirect",
+      "spoken_sentences": [
+        "자, 우리 다스라는 거는 다이렉트 어태치 우리 스토리지의 약자예요.",
+        "해서 여기서 첫 번째 글자만 따서 우리가 다스 그렇게 부르는데 여기 첫 번째 글자가 우리 다이렉트죠.",
+        "다이렉트 그럼 직접 연결을 했다 그 뜻이에요."
+      ],
+      "spoken_text": "자, 우리 다스라는 거는 다이렉트 어태치 우리 스토리지의 약자예요. 해서 여기서 첫 번째 글자만 따서 우리가 다스 그렇게 부르는데 여기 첫 번째 글자가 우리 다이렉트죠. 다이렉트 그럼 직접 연결을 했다 그 뜻이에요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Direct",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Direct Attached Storage",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-034",
+      "segment_index": 34,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:00:25",
+      "end_time_hms": "00:00:48",
+      "start_seconds": 25,
+      "end_seconds": 48,
+      "duration_seconds": 23,
+      "timeline_summary": "스토리지 장치의 외관 및 하드디스크 구성 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "우리가 지금 여기서 얘기하는 이 스토리지, 스토리지라는 거는 지금처럼 요렇게 생겼습니다.",
+        "우리가 일반적으로 컴퓨터에서 사용하는 그런 하드 디스크 있죠?",
+        "그런 하드 디스크를 하나만 연결시키는 게 아니라 이렇게 여러 개, 여러 개의 우리가 하드 디스크를 꽂아서 이거를 하나의 대용량의 기억 장치로 사용되는 게 우리 스토리지라는 건데..."
+      ],
+      "spoken_text": "우리가 지금 여기서 얘기하는 이 스토리지, 스토리지라는 거는 지금처럼 요렇게 생겼습니다. 우리가 일반적으로 컴퓨터에서 사용하는 그런 하드 디스크 있죠? 그런 하드 디스크를 하나만 연결시키는 게 아니라 이렇게 여러 개, 여러 개의 우리가 하드 디스크를 꽂아서 이거를 하나의 대용량의 기억 장치로 사용되는 게 우리 스토리지라는 건데...",
+      "highlight_keywords": [
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-035",
+      "segment_index": 35,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:00:48",
+      "end_time_hms": "00:01:01",
+      "start_seconds": 48,
+      "end_seconds": 61,
+      "duration_seconds": 13,
+      "timeline_summary": "개별 하드디스크가 대용량 기억장치를 구성하는 방식 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이런 한 칸 한 칸 한 칸 한 칸마다 우리가 일반적으로 사용하는 이런 하드 디스크 있죠?",
+        "이런 하드 디스크를 꽂아서 그런 여러 개의 하드 디스크를 하나의 대용량의 기억 장치로 사용되는 게 우리 스토리지라는 거예요."
+      ],
+      "spoken_text": "이런 한 칸 한 칸 한 칸 한 칸마다 우리가 일반적으로 사용하는 이런 하드 디스크 있죠? 이런 하드 디스크를 꽂아서 그런 여러 개의 하드 디스크를 하나의 대용량의 기억 장치로 사용되는 게 우리 스토리지라는 거예요.",
+      "highlight_keywords": []
+    },
+    {
+      "segment_id": "topic_050-seg-036",
+      "segment_index": 36,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:01:01",
+      "end_time_hms": "00:01:16",
+      "start_seconds": 61,
+      "end_seconds": 76,
+      "duration_seconds": 15,
+      "timeline_summary": "연결 방식에 따른 스토리지 종류(DAS, NAS, SAN) 언급",
+      "screen_text_lines": [
+        "DAS(Direct Attached Storage)"
+      ],
+      "screen_text": "DAS(Direct Attached Storage)",
+      "spoken_sentences": [
+        "근데 지금 우리 스토리지의 종류에 보게 되면 다스다 나스다 샌이다 해서 이렇게 세 가지로 나눠지는데 이런 스토리지를 어떻게 연결했냐에 따라서 세 가지로 나눠지는 거예요."
+      ],
+      "spoken_text": "근데 지금 우리 스토리지의 종류에 보게 되면 다스다 나스다 샌이다 해서 이렇게 세 가지로 나눠지는데 이런 스토리지를 어떻게 연결했냐에 따라서 세 가지로 나눠지는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Direct",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Direct Attached Storage",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "DAS(Direct Attached Storage)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-037",
+      "segment_index": 37,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:01:16",
+      "end_time_hms": "00:01:41",
+      "start_seconds": 76,
+      "end_seconds": 101,
+      "duration_seconds": 25,
+      "timeline_summary": "DAS의 핵심 연결 방식(직접 연결) 정의",
+      "screen_text_lines": [
+        "DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로..."
+      ],
+      "screen_text": "DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로...",
+      "spoken_sentences": [
+        "그 중에 우리 다스라는 거는 다이렉트라고 그랬죠.",
+        "해서 이 다스라는 거는 서버와 그 저장 장치를 이용해서 전용 케이블로 서버랑 저장 장치랑 직접, 직접 연결하는 그런 방식을 보고 우리가 다스라고 합니다."
+      ],
+      "spoken_text": "그 중에 우리 다스라는 거는 다이렉트라고 그랬죠. 해서 이 다스라는 거는 서버와 그 저장 장치를 이용해서 전용 케이블로 서버랑 저장 장치랑 직접, 직접 연결하는 그런 방식을 보고 우리가 다스라고 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "전용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-038",
+      "segment_index": 38,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:01:41",
+      "end_time_hms": "00:01:49",
+      "start_seconds": 101,
+      "end_seconds": 109,
+      "duration_seconds": 8,
+      "timeline_summary": "가정에서 외장 하드 연결 사례를 통한 DAS 이해",
+      "screen_text_lines": [
+        "...일반 가정에서 컴퓨터에 외장하드를 연결하는 것이 여기에 해당됨."
+      ],
+      "screen_text": "...일반 가정에서 컴퓨터에 외장하드를 연결하는 것이 여기에 해당됨.",
+      "spoken_sentences": [
+        "해서 요 다스라는 거는 쉽게 이해할 수 있는 게 우리가 일반 가정집에서 가정집에서 컴퓨터에다가 외장 하드 디스크를 연결해서 우리가 사용하죠.",
+        "그게 우리 하나의 다스입니다."
+      ],
+      "spoken_text": "해서 요 다스라는 거는 쉽게 이해할 수 있는 게 우리가 일반 가정집에서 가정집에서 컴퓨터에다가 외장 하드 디스크를 연결해서 우리가 사용하죠. 그게 우리 하나의 다스입니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-039",
+      "segment_index": 39,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:01:49",
+      "end_time_hms": "00:02:04",
+      "start_seconds": 109,
+      "end_seconds": 124,
+      "duration_seconds": 15,
+      "timeline_summary": "DAS 구성을 다이어그램으로 설명 시작",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "해서 우리가 집에서 컴퓨터에다가 외장 하드를 연결시킬 때는 우리가 USB, USB 케이블로 우리가 연결을 시키죠.",
+        "해서 우리 다스를 그림으로 표현하게 되면 지금처럼 요렇게 표현이 됩니다."
+      ],
+      "spoken_text": "해서 우리가 집에서 컴퓨터에다가 외장 하드를 연결시킬 때는 우리가 USB, USB 케이블로 우리가 연결을 시키죠. 해서 우리 다스를 그림으로 표현하게 되면 지금처럼 요렇게 표현이 됩니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-040",
+      "segment_index": 40,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:02:04",
+      "end_time_hms": "00:02:25",
+      "start_seconds": 124,
+      "end_seconds": 145,
+      "duration_seconds": 21,
+      "timeline_summary": "서버와 스토리지가 전용 케이블로 직접 연결되는 모습 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "지금 여기 클라이언트가 이렇게 쭉쭉쭉 있고 여기 서버가 있죠.",
+        "그리고 중간에 얘네들이 전부 다 스위치로 전부 다 연결이 돼서 하나의 랜이 구성이 되어 있는 거예요.",
+        "그때 이 서버에도 이 서버에도 스토리지가 요렇게 연결이 되어 있고..."
+      ],
+      "spoken_text": "지금 여기 클라이언트가 이렇게 쭉쭉쭉 있고 여기 서버가 있죠. 그리고 중간에 얘네들이 전부 다 스위치로 전부 다 연결이 돼서 하나의 랜이 구성이 되어 있는 거예요. 그때 이 서버에도 이 서버에도 스토리지가 요렇게 연결이 되어 있고...",
+      "highlight_keywords": [
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "전용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-041",
+      "segment_index": 41,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:02:25",
+      "end_time_hms": "00:02:46",
+      "start_seconds": 145,
+      "end_seconds": 166,
+      "duration_seconds": 21,
+      "timeline_summary": "전용 케이블(광 케이블 등)을 통한 연결과 그로 인한 속도 이점 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이 서버에도 스토리지가 요렇게 연결이 되어 있습니다.",
+        "그때 이 서버와 스토리지를 연결할 때 전용 케이블을 가지고 서로서로 연결한다고요.",
+        "요즘에는 전부 다 광 케이블, 광 케이블을 이용해서 전부 다 이 서버랑 이 스토리지를 연결을 시켜요."
+      ],
+      "spoken_text": "이 서버에도 스토리지가 요렇게 연결이 되어 있습니다. 그때 이 서버와 스토리지를 연결할 때 전용 케이블을 가지고 서로서로 연결한다고요. 요즘에는 전부 다 광 케이블, 광 케이블을 이용해서 전부 다 이 서버랑 이 스토리지를 연결을 시켜요.",
+      "highlight_keywords": [
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "전용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-042",
+      "segment_index": 42,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:02:46",
+      "end_time_hms": "00:03:09",
+      "start_seconds": 166,
+      "end_seconds": 189,
+      "duration_seconds": 23,
+      "timeline_summary": "서버가 스토리지를 직접 관리하는 방식 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "그렇게 광 케이블로 연결해야 아무래도 속도가 빠르겠죠.",
+        "그렇게 서버에서 이 스토리지라는 거를 관리하는, 관리하는 그 방식을 보고 우리가 다스 그렇게 부르는 거고..."
+      ],
+      "spoken_text": "그렇게 광 케이블로 연결해야 아무래도 속도가 빠르겠죠. 그렇게 서버에서 이 스토리지라는 거를 관리하는, 관리하는 그 방식을 보고 우리가 다스 그렇게 부르는 거고...",
+      "highlight_keywords": [
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "서버가 스토리지를 직접 관리하는 방식 설명",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-043",
+      "segment_index": 43,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:03:09",
+      "end_time_hms": "00:03:29",
+      "start_seconds": 189,
+      "end_seconds": 209,
+      "duration_seconds": 20,
+      "timeline_summary": "서버 간 직접적인 스토리지 공유 및 접근 불가 단점 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "얘는 서버랑 스토리지 얘가 직접 연결이 되기 때문에 아무래도 속도가 빠르고 설치하고 운영하기가 쉽겠죠.",
+        "그러면 이 서버에서 이 두 번째 서버에서 이 스토리지에 접근하겠다?",
+        "접근할 수 있다 없다?",
+        "없더라, 없더라."
+      ],
+      "spoken_text": "얘는 서버랑 스토리지 얘가 직접 연결이 되기 때문에 아무래도 속도가 빠르고 설치하고 운영하기가 쉽겠죠. 그러면 이 서버에서 이 두 번째 서버에서 이 스토리지에 접근하겠다? 접근할 수 있다 없다? 없더라, 없더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-044",
+      "segment_index": 44,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:03:29",
+      "end_time_hms": "00:03:51",
+      "start_seconds": 209,
+      "end_seconds": 231,
+      "duration_seconds": 22,
+      "timeline_summary": "전용 장치로서의 특성과 타 서버 접근 제한 반복 설명",
+      "screen_text_lines": [],
+      "screen_text": "",
+      "spoken_sentences": [
+        "이 스토리지는 이 서버 거고 이 위에 있는 이 서버 거고 이 아래쪽에 있는 이 스토리지는 이 서버 거예요.",
+        "해서 다른 서버에서 서로서로 접근도 못 하고 파일 공유도 못 합니다."
+      ],
+      "spoken_text": "이 스토리지는 이 서버 거고 이 위에 있는 이 서버 거고 이 아래쪽에 있는 이 스토리지는 이 서버 거예요. 해서 다른 서버에서 서로서로 접근도 못 하고 파일 공유도 못 합니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "전용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-045",
+      "segment_index": 45,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:03:51",
+      "end_time_hms": "00:04:05",
+      "start_seconds": 231,
+      "end_seconds": 245,
+      "duration_seconds": 14,
+      "timeline_summary": "DAS의 장단점(저렴한 비용, 낮은 확장성) 정리",
+      "screen_text_lines": [
+        "DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로...",
+        "서버에서 저장장치를 관리함.",
+        "저장장치를 직접 연결하므로 속도가 빠르고 설치 및 운영이 쉽다.",
+        "초기 구축 비용 및 유지보수 비용이 저렴함."
+      ],
+      "screen_text": "DAS는 서버와 저장장치를 전용 케이블로 직접 연결하는 방식으로...\n서버에서 저장장치를 관리함.\n저장장치를 직접 연결하므로 속도가 빠르고 설치 및 운영이 쉽다.\n초기 구축 비용 및 유지보수 비용이 저렴함.",
+      "spoken_sentences": [
+        "해서 다른 방식에 비해서 확장성이나 유연성 그런 게 상대적으로 떨어지는 그런 단점을 가지고 있고요.",
+        "그리고 초기에 이런 스토리지를 구성하고자 했을 때 얘가 초기 구축 비용이 가장 저렴해요."
+      ],
+      "spoken_text": "해서 다른 방식에 비해서 확장성이나 유연성 그런 게 상대적으로 떨어지는 그런 단점을 가지고 있고요. 그리고 초기에 이런 스토리지를 구성하고자 했을 때 얘가 초기 구축 비용이 가장 저렴해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        },
+        {
+          "keyword": "전용",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-046",
+      "segment_index": 46,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:04:05",
+      "end_time_hms": "00:04:18",
+      "start_seconds": 245,
+      "end_seconds": 258,
+      "duration_seconds": 13,
+      "timeline_summary": "직접 연결 방식에 따른 공유 불가능 특성 재확인",
+      "screen_text_lines": [
+        "직접 연결 방식이므로 다른 서버에서 접근할 수 없고 파일을 공유할 수 없음."
+      ],
+      "screen_text": "직접 연결 방식이므로 다른 서버에서 접근할 수 없고 파일을 공유할 수 없음.",
+      "spoken_sentences": [
+        "그리고 유지 보수 비용도 저렴하고 저렴하다.",
+        "그런 장점을 가지고 있습니다.",
+        "근데 지금 이 스토리지는 직접 연결 방식이므로 다른 서버에서 접근할 수 없고 파일을 공유할 수 없음."
+      ],
+      "spoken_text": "그리고 유지 보수 비용도 저렴하고 저렴하다. 그런 장점을 가지고 있습니다. 근데 지금 이 스토리지는 직접 연결 방식이므로 다른 서버에서 접근할 수 없고 파일을 공유할 수 없음.",
+      "highlight_keywords": [
+        {
+          "keyword": "직접",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "연결",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-047",
+      "segment_index": 47,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:04:18",
+      "end_time_hms": "00:04:33",
+      "start_seconds": 258,
+      "end_seconds": 273,
+      "duration_seconds": 15,
+      "timeline_summary": "유연성 부족과 적합한 환경(데이터 적고 공유 불필요) 설명",
+      "screen_text_lines": [
+        "확장성 및 유연성이 상대적으로 떨어짐.",
+        "저장 데이터가 적고 공유가 필요 없는 환경에 적합함."
+      ],
+      "screen_text": "확장성 및 유연성이 상대적으로 떨어짐.\n저장 데이터가 적고 공유가 필요 없는 환경에 적합함.",
+      "spoken_sentences": [
+        "확장성 및 유연성이 상대적으로 떨어짐.",
+        "그리고 저장 데이터가 적고 공유가 필요 없는 환경에 적합함."
+      ],
+      "spoken_text": "확장성 및 유연성이 상대적으로 떨어짐. 그리고 저장 데이터가 적고 공유가 필요 없는 환경에 적합함.",
+      "highlight_keywords": [
+        {
+          "keyword": "확장성 및 유연성이 상대적으로 떨어짐.",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-048",
+      "segment_index": 48,
+      "subtopic_index": 5,
+      "subtopic_id": "0231_231",
+      "subtopic_title": "스토리지-DAS",
+      "subtopic_sequence": 231,
+      "subtopic_number": "231",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=duSQWhqfY2Y",
+      "start_time_hms": "00:04:33",
+      "end_time_hms": "00:04:49",
+      "start_seconds": 273,
+      "end_seconds": 289,
+      "duration_seconds": 16,
+      "timeline_summary": "강의 마무리 및 핵심 내용 숙지 당부",
+      "screen_text_lines": [
+        "DAS(Direct Attached Storage)"
+      ],
+      "screen_text": "DAS(Direct Attached Storage)",
+      "spoken_sentences": [
+        "해서 요 다스가 뭔지 정확하게 기억하셔야 돼요.",
+        "자 그러면 요 해당 내용 좀 보자고요."
+      ],
+      "spoken_text": "해서 요 다스가 뭔지 정확하게 기억하셔야 돼요. 자 그러면 요 해당 내용 좀 보자고요.",
+      "highlight_keywords": [
+        {
+          "keyword": "DAS",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 41
+        },
+        {
+          "keyword": "Direct",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 24
+        },
+        {
+          "keyword": "Direct Attached Storage",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 21
+        },
+        {
+          "keyword": "DAS(Direct Attached Storage)",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 16
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-049",
+      "segment_index": 49,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:00:00",
+      "end_time_hms": "00:00:08",
+      "start_seconds": 0,
+      "end_seconds": 8,
+      "duration_seconds": 8,
+      "timeline_summary": "강의 주제인 SAN(Storage Area Network) 소개",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)"
+      ],
+      "screen_text": "SAN(Storage Area Network)",
+      "spoken_sentences": [
+        "이번 시간에는 우리 SAN, 샌에 대해서 같이 한번 살펴보도록 하겠습니다."
+      ],
+      "spoken_text": "이번 시간에는 우리 SAN, 샌에 대해서 같이 한번 살펴보도록 하겠습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-050",
+      "segment_index": 50,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:00:08",
+      "end_time_hms": "00:00:24",
+      "start_seconds": 8,
+      "end_seconds": 24,
+      "duration_seconds": 16,
+      "timeline_summary": "SAN의 정의 및 약자 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식."
+      ],
+      "screen_text": "SAN(Storage Area Network)\nSAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+      "spoken_sentences": [
+        "우리 SAN은 Storage Area Network의 약자입니다.",
+        "우리 샌이라는 건 뭘 얘기하냐면은"
+      ],
+      "spoken_text": "우리 SAN은 Storage Area Network의 약자입니다. 우리 샌이라는 건 뭘 얘기하냐면은",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-051",
+      "segment_index": 51,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:00:24",
+      "end_time_hms": "00:00:58",
+      "start_seconds": 24,
+      "end_seconds": 58,
+      "duration_seconds": 34,
+      "timeline_summary": "DAS와 NAS의 장점을 혼합한 SAN의 특징 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식."
+      ],
+      "screen_text": "SAN(Storage Area Network)\nSAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+      "spoken_sentences": [
+        "우리 앞에서 배웠던 우리 다스라는 게 있고 나스라는 게 있었죠.",
+        "그 두 가지의 장점, 장점을 혼합한 방식을 보고 우리가 샌이라고 합니다.",
+        "우리 다스의 장점이 이 다스는 서버랑 스토리지랑 서로 서로 연결할 때 전용 케이블을 이용해서 직접 연결한다 그랬죠.",
+        "직접 연결했기 때문에 속도가, 속도가 빠르다 그랬어요.",
+        "그리고 나스는 우리가 스토리지를 구성할 때 별도의 네트워크로 우리가 구성하는 그런 방식이 우리 나스였죠.",
+        "해서 네트워크를 통해서 우리가 스토리지에 접근할 수 있었어요.",
+        "해서 네트워크를 통해서 우리가 그 스토리지에 접근할 수 있기 때문에 파일을 공유할 수 있다.",
+        "그런 장점이 있었죠."
+      ],
+      "spoken_text": "우리 앞에서 배웠던 우리 다스라는 게 있고 나스라는 게 있었죠. 그 두 가지의 장점, 장점을 혼합한 방식을 보고 우리가 샌이라고 합니다. 우리 다스의 장점이 이 다스는 서버랑 스토리지랑 서로 서로 연결할 때 전용 케이블을 이용해서 직접 연결한다 그랬죠. 직접 연결했기 때문에 속도가, 속도가 빠르다 그랬어요. 그리고 나스는 우리가 스토리지를 구성할 때 별도의 네트워크로 우리가 구성하는 그런 방식이 우리 나스였죠. 해서 네트워크를 통해서 우리가 스토리지에 접근할 수 있었어요. 해서 네트워크를 통해서 우리가 그 스토리지에 접근할 수 있기 때문에 파일을 공유할 수 있다. 그런 장점이 있었죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-052",
+      "segment_index": 52,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:00:58",
+      "end_time_hms": "00:01:23",
+      "start_seconds": 58,
+      "end_seconds": 83,
+      "duration_seconds": 25,
+      "timeline_summary": "SAN의 전용 네트워크 구성 방식 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식."
+      ],
+      "screen_text": "SAN(Storage Area Network)\nSAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+      "spoken_sentences": [
+        "해서 우리 다스의 빠른 처리와 나스의 우리 파일 공유, 파일을 공유할 수 있다.",
+        "그런 장점을 혼합한 방식을 우리가 샌이라고 합니다.",
+        "요 샌이라는 거는 서버랑 저장 장치를 우리가 서로 서로 연결을 시킬 때 그때 전용 케이블이 아니라 전용 네트워크를 별도로 구성하는 그런 방식을 보고 얘기해요."
+      ],
+      "spoken_text": "해서 우리 다스의 빠른 처리와 나스의 우리 파일 공유, 파일을 공유할 수 있다. 그런 장점을 혼합한 방식을 우리가 샌이라고 합니다. 요 샌이라는 거는 서버랑 저장 장치를 우리가 서로 서로 연결을 시킬 때 그때 전용 케이블이 아니라 전용 네트워크를 별도로 구성하는 그런 방식을 보고 얘기해요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-053",
+      "segment_index": 53,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:01:23",
+      "end_time_hms": "00:01:54",
+      "start_seconds": 83,
+      "end_seconds": 114,
+      "duration_seconds": 31,
+      "timeline_summary": "SAN 구성도를 통한 동작 원리 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "LAN",
+        "SAN",
+        "Client"
+      ],
+      "screen_text": "SAN(Storage Area Network)\nLAN\nSAN\nClient",
+      "spoken_sentences": [
+        "자, 그럼 그림 좀 잠깐 보자고요.",
+        "해서 우리 샌이라는 건 뭘 얘기하냐.",
+        "우리가 지금처럼 요렇게 서버가 있을 때 여기다 바로 직접 전용 케이블을 이용해서 스토리지를 연결시키게 되면 그게 다스였죠.",
+        "그리고 스토리지가 이렇게 여러 개가 있을 때 이거를 전부 다 네트워크를 통해서 연결을 시키면 그게 나스였어요.",
+        "해서 그 두 가지 장점을 전부 다 혼합해 놓은 게 우리 샌인데 이 샌이라는 거는 이런 여러 개의 스토리지를 서버랑 연결을 시킬 때 전용 네트워크 망을 구성하는 거예요."
+      ],
+      "spoken_text": "자, 그럼 그림 좀 잠깐 보자고요. 해서 우리 샌이라는 건 뭘 얘기하냐. 우리가 지금처럼 요렇게 서버가 있을 때 여기다 바로 직접 전용 케이블을 이용해서 스토리지를 연결시키게 되면 그게 다스였죠. 그리고 스토리지가 이렇게 여러 개가 있을 때 이거를 전부 다 네트워크를 통해서 연결을 시키면 그게 나스였어요. 해서 그 두 가지 장점을 전부 다 혼합해 놓은 게 우리 샌인데 이 샌이라는 거는 이런 여러 개의 스토리지를 서버랑 연결을 시킬 때 전용 네트워크 망을 구성하는 거예요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "Client",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-054",
+      "segment_index": 54,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:01:54",
+      "end_time_hms": "00:02:22",
+      "start_seconds": 114,
+      "end_seconds": 142,
+      "duration_seconds": 28,
+      "timeline_summary": "광 채널(FCS) 스위치의 역할 및 전송 속도 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "LAN",
+        "SAN",
+        "Client"
+      ],
+      "screen_text": "SAN(Storage Area Network)\nLAN\nSAN\nClient",
+      "spoken_sentences": [
+        "그때 일반 스위치를 쓰는 게 아니라 파이버 채널 스위치라는 걸 이용합니다.",
+        "여기서 파이버가, 파이버가 광, 광을 보고 얘기하고요.",
+        "얘는 광 채널, 광 채널 스위치라고 그렇게 부르는 건데 우리가 일반 스위치를 썼을 때는 그냥 메가바이트 단위로, 메가바이트 단위로 데이터를 주고받고 주고받고 해요.",
+        "근데 이 광 채널 스위치 얘를 이용하게 되면 그때 전송 속도가 기가바이트 단위로 높아져요."
+      ],
+      "spoken_text": "그때 일반 스위치를 쓰는 게 아니라 파이버 채널 스위치라는 걸 이용합니다. 여기서 파이버가, 파이버가 광, 광을 보고 얘기하고요. 얘는 광 채널, 광 채널 스위치라고 그렇게 부르는 건데 우리가 일반 스위치를 썼을 때는 그냥 메가바이트 단위로, 메가바이트 단위로 데이터를 주고받고 주고받고 해요. 근데 이 광 채널 스위치 얘를 이용하게 되면 그때 전송 속도가 기가바이트 단위로 높아져요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "Client",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-055",
+      "segment_index": 55,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:02:22",
+      "end_time_hms": "00:02:47",
+      "start_seconds": 142,
+      "end_seconds": 167,
+      "duration_seconds": 25,
+      "timeline_summary": "광 케이블을 이용한 고속 처리 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "LAN",
+        "SAN",
+        "Client"
+      ],
+      "screen_text": "SAN(Storage Area Network)\nLAN\nSAN\nClient",
+      "spoken_sentences": [
+        "해서 우리가 서버랑 스토리지를 서로 서로 연결시킬 때 광 채널 스위치 얘를 이용해서 우리가 전부 다 광 케이블로 전부 다 연결을 시켜 주는 거예요.",
+        "해서 일반 케이블이 아니라 광 케이블 요걸로 연결하기 때문에 처리 속도가 엄청나게 빠릅니다."
+      ],
+      "spoken_text": "해서 우리가 서버랑 스토리지를 서로 서로 연결시킬 때 광 채널 스위치 얘를 이용해서 우리가 전부 다 광 케이블로 전부 다 연결을 시켜 주는 거예요. 해서 일반 케이블이 아니라 광 케이블 요걸로 연결하기 때문에 처리 속도가 엄청나게 빠릅니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "Client",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-056",
+      "segment_index": 56,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:02:47",
+      "end_time_hms": "00:03:14",
+      "start_seconds": 167,
+      "end_seconds": 194,
+      "duration_seconds": 27,
+      "timeline_summary": "SAN의 확장성 및 비용 특징 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "LAN",
+        "SAN",
+        "Client"
+      ],
+      "screen_text": "SAN(Storage Area Network)\nLAN\nSAN\nClient",
+      "spoken_sentences": [
+        "해서 우리가 요렇게 여러 개의 스토리지를 쓰다가 만약에 저장 장치가 부족해요.",
+        "부족하면 우리가 스토리지를 하나 더 추가시켜 주면 되겠죠.",
+        "해서 이 샌이라는 거는 확장성, 유연성, 가용성 그런 게 되게 좋아요.",
+        "근데 우리가 샌이라는 걸 구성하기 위해서는 우리가 파이버 채널 스위치 요것도 필요하고 광 케이블도 필요하고 요렇게 전용 네트워크를 별도로 요렇게 구성을 해 줘야 되겠죠.",
+        "해서 다른 방식에 비해서 비용이, 비용이 엄청나게 많이 들어갑니다.",
+        "그런 게 샌이라는 거요."
+      ],
+      "spoken_text": "해서 우리가 요렇게 여러 개의 스토리지를 쓰다가 만약에 저장 장치가 부족해요. 부족하면 우리가 스토리지를 하나 더 추가시켜 주면 되겠죠. 해서 이 샌이라는 거는 확장성, 유연성, 가용성 그런 게 되게 좋아요. 근데 우리가 샌이라는 걸 구성하기 위해서는 우리가 파이버 채널 스위치 요것도 필요하고 광 케이블도 필요하고 요렇게 전용 네트워크를 별도로 요렇게 구성을 해 줘야 되겠죠. 해서 다른 방식에 비해서 비용이, 비용이 엄청나게 많이 들어갑니다. 그런 게 샌이라는 거요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "Client",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-057",
+      "segment_index": 57,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:03:14",
+      "end_time_hms": "00:03:32",
+      "start_seconds": 194,
+      "end_seconds": 212,
+      "duration_seconds": 18,
+      "timeline_summary": "SAN의 광 채널 스위치 이용 방식 요약",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+        "광 채널(FC) 스위치를 이용하여 네트워크를 구성함."
+      ],
+      "screen_text": "SAN(Storage Area Network)\nSAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.\n광 채널(FC) 스위치를 이용하여 네트워크를 구성함.",
+      "spoken_sentences": [
+        "해서 우리 샌이라는 거는 서버랑 저장 장치를 서로 서로 연결할 때 어떻게 하더라.",
+        "전용 네트워크를 별도로 구성하더라.",
+        "그때 전용 네트워크를 별도로 구성할 때 우리가 광 채널 스위치라는 거를 이용해서 전용 네트워크를 별도로 구성하는 거죠."
+      ],
+      "spoken_text": "해서 우리 샌이라는 거는 서버랑 저장 장치를 서로 서로 연결할 때 어떻게 하더라. 전용 네트워크를 별도로 구성하더라. 그때 전용 네트워크를 별도로 구성할 때 우리가 광 채널 스위치라는 거를 이용해서 전용 네트워크를 별도로 구성하는 거죠.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-058",
+      "segment_index": 58,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:03:32",
+      "end_time_hms": "00:03:46",
+      "start_seconds": 212,
+      "end_seconds": 226,
+      "duration_seconds": 14,
+      "timeline_summary": "광 케이블 연결을 통한 빠른 처리 속도 강조",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "광 채널 스위치는 서버나 저장장치를 광케이블로 연결하므로 처리 속도가 빠름."
+      ],
+      "screen_text": "SAN(Storage Area Network)\n광 채널 스위치는 서버나 저장장치를 광케이블로 연결하므로 처리 속도가 빠름.",
+      "spoken_sentences": [
+        "해서 서버하고 저장 장치 간에 광 케이블로, 광 케이블로 서로 서로 연결하기 때문에 처리 속도가 엄청나게 빠르더라."
+      ],
+      "spoken_text": "해서 서버하고 저장 장치 간에 광 케이블로, 광 케이블로 서로 서로 연결하기 때문에 처리 속도가 엄청나게 빠르더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "저장",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-059",
+      "segment_index": 59,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:03:46",
+      "end_time_hms": "00:03:56",
+      "start_seconds": 226,
+      "end_seconds": 236,
+      "duration_seconds": 10,
+      "timeline_summary": "저장 장치 공유 및 백업 장비 단일화 장점",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화 시킬 수 있음."
+      ],
+      "screen_text": "SAN(Storage Area Network)\n저장장치를 공유함으로써 여러 개의 저장장치나 백업 장비를 단일화 시킬 수 있음.",
+      "spoken_sentences": [
+        "해서 전용 네트워크를 통해서 그렇게 저장 장치를 서로 서로 전부 다 연결을 시켜 놨기 때문에 그런 저장 장치를 서로 서로 전부 다 공유해서 우리가 쓸 수가 있고 그리고 여러 개의 저장 장치가 됐든 백업 장비 이런 것들을 전부 다 단일화 시킬 수 있습니다."
+      ],
+      "spoken_text": "해서 전용 네트워크를 통해서 그렇게 저장 장치를 서로 서로 전부 다 연결을 시켜 놨기 때문에 그런 저장 장치를 서로 서로 전부 다 공유해서 우리가 쓸 수가 있고 그리고 여러 개의 저장 장치가 됐든 백업 장비 이런 것들을 전부 다 단일화 시킬 수 있습니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-060",
+      "segment_index": 60,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:03:56",
+      "end_time_hms": "00:04:01",
+      "start_seconds": 236,
+      "end_seconds": 241,
+      "duration_seconds": 5,
+      "timeline_summary": "SAN의 확장성, 유연성, 가용성 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "확장성, 유연성, 가용성이 뛰어남."
+      ],
+      "screen_text": "SAN(Storage Area Network)\n확장성, 유연성, 가용성이 뛰어남.",
+      "spoken_sentences": [
+        "그리고 확장성, 유연성, 가용성 이런 게 전부 다 뛰어났더라."
+      ],
+      "spoken_text": "그리고 확장성, 유연성, 가용성 이런 게 전부 다 뛰어났더라.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "유연성",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-061",
+      "segment_index": 61,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:04:01",
+      "end_time_hms": "00:04:30",
+      "start_seconds": 241,
+      "end_seconds": 270,
+      "duration_seconds": 29,
+      "timeline_summary": "트랜잭션 처리 효율성 및 구축 비용 단점 설명",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "높은 트랜잭션 처리에 효과적이나 기존 시스템의 경우 장비의 업그레이드가 필요하고, 초기 설치 시에는 별도의 네트워크를 구축해야 하므로 비용이 많이 듬."
+      ],
+      "screen_text": "SAN(Storage Area Network)\n높은 트랜잭션 처리에 효과적이나 기존 시스템의 경우 장비의 업그레이드가 필요하고, 초기 설치 시에는 별도의 네트워크를 구축해야 하므로 비용이 많이 듬.",
+      "spoken_sentences": [
+        "해서 우리 샌이라는 거는 높은 트랜잭션 처리 그런 거에 효과적이에요.",
+        "효과적이긴 하지만 우리가 기존 시스템의 경우에는 장비를 전부 업그레이드를 해야 되겠죠.",
+        "그만큼 돈이 더 많이 들어갈 거고요.",
+        "그리고 맨 처음부터 우리가 샌으로 구성하겠다.",
+        "그랬을 때 초기 설치 시에는 별도의 네트워크를 구축을 해 줘야 되겠죠.",
+        "해서 비용이 많이 들어간다.",
+        "요런 장단점을 가지고 있는 게 우리 샌이라는 겁니다."
+      ],
+      "spoken_text": "해서 우리 샌이라는 거는 높은 트랜잭션 처리 그런 거에 효과적이에요. 효과적이긴 하지만 우리가 기존 시스템의 경우에는 장비를 전부 업그레이드를 해야 되겠죠. 그만큼 돈이 더 많이 들어갈 거고요. 그리고 맨 처음부터 우리가 샌으로 구성하겠다. 그랬을 때 초기 설치 시에는 별도의 네트워크를 구축을 해 줘야 되겠죠. 해서 비용이 많이 들어간다. 요런 장단점을 가지고 있는 게 우리 샌이라는 겁니다.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    },
+    {
+      "segment_id": "topic_050-seg-062",
+      "segment_index": 62,
+      "subtopic_index": 6,
+      "subtopic_id": "0232_232",
+      "subtopic_title": "스토리지-SAN",
+      "subtopic_sequence": 232,
+      "subtopic_number": "232",
+      "youtube_url_normalized": "https://www.youtube.com/watch?v=y18JZJdut9A",
+      "start_time_hms": "00:04:30",
+      "end_time_hms": "00:04:51",
+      "start_seconds": 270,
+      "end_seconds": 291,
+      "duration_seconds": 21,
+      "timeline_summary": "강의 마무리 및 핵심 내용 정리 권고",
+      "screen_text_lines": [
+        "SAN(Storage Area Network)",
+        "SAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.",
+        "광 채널(FC) 스위치를 이용하여 네트워크를 구성함.",
+        "광 채널 스위치는 서버나 저장장치를 광케이블로 연결하므로 처리 속도가 빠름."
+      ],
+      "screen_text": "SAN(Storage Area Network)\nSAN은 DAS의 빠른 처리와 NAS의 파일 공유 장점을 혼합한 방식으로, 서버와 저장 장치를 연결하는 전용 네트워크를 별도로 구성하는 방식.\n광 채널(FC) 스위치를 이용하여 네트워크를 구성함.\n광 채널 스위치는 서버나 저장장치를 광케이블로 연결하므로 처리 속도가 빠름.",
+      "spoken_sentences": [
+        "해서 우리가 서버와 저장 장치를 어떻게 연결하냐 그 방법에 따라서 우리 다스하고 나스하고 샌하고 요렇게 세 가지가 있었어요.",
+        "요 세 가지 서로 서로 구분할 수 있게 잘 정리하시고요.",
+        "각각의 특징 정확하게 숙지하고 계셔야 돼요."
+      ],
+      "spoken_text": "해서 우리가 서버와 저장 장치를 어떻게 연결하냐 그 방법에 따라서 우리 다스하고 나스하고 샌하고 요렇게 세 가지가 있었어요. 요 세 가지 서로 서로 구분할 수 있게 잘 정리하시고요. 각각의 특징 정확하게 숙지하고 계셔야 돼요.",
+      "highlight_keywords": [
+        {
+          "keyword": "SAN",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 111
+        },
+        {
+          "keyword": "Storage Area Network",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 61
+        },
+        {
+          "keyword": "SAN(Storage Area Network)",
+          "emphasis": "primary",
+          "color_token": "primary",
+          "color_hex": "#FFB020",
+          "score": 56
+        },
+        {
+          "keyword": "네트워크를",
+          "emphasis": "secondary",
+          "color_token": "secondary",
+          "color_hex": "#3182F6",
+          "score": 20
+        }
+      ]
+    }
+  ]
+}

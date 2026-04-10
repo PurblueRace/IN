@@ -1,0 +1,2536 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_074",
+    "sequence": 74,
+    "title": "배치 전략과 가상기억장치",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 15,
+    "review_count": 15,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_359",
+      "chapter_140",
+      "chapter_327",
+      "chapter_363",
+      "chapter_138"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_13397a2eddaa1c01",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          18
+        ],
+        "page_span": {
+          "start_page": 18,
+          "end_page": 18
+        },
+        "source_explanation": "최적 적합(Best-Fit)은 들어갈 수 있는 크기 중 단편화를 가장 적게 남기는 공간에 배치합니다. 17KB는 20KB 공간에 배치되며, 이때 발생하는 내부 단편화는 20KB - 17KB = 3KB입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3KB"
+          },
+          {
+            "label": "2",
+            "text": "23KB"
+          },
+          {
+            "label": "3",
+            "text": "64KB"
+          },
+          {
+            "label": "4",
+            "text": "67KB"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "3KB"
+        ],
+        "answer_text": "3KB"
+      },
+      "explanation": {
+        "source_text": "최적 적합(Best-Fit)은 들어갈 수 있는 크기 중 단편화를 가장 적게 남기는 공간에 배치합니다. 17KB는 20KB 공간에 배치되며, 이때 발생하는 내부 단편화는 20KB - 17KB = 3KB입니다.",
+        "summary": "주기억장치 배치 전략 중 최적 적합(Best Fit) 방식의 단편화 계산 문제입니다.",
+        "why_correct": [
+          "Best Fit은 수용 가능한 빈 공간 중 크기 차이가 가장 작은 곳을 선택합니다. 17KB를 수용할 수 있는 공간(20, 40) 중 20KB가 가장 적절하며, 남는 공간은 3KB입니다."
+        ],
+        "why_others_wrong": [
+          "First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+        ],
+        "key_concepts": [
+          "First Fit (최초 적합)",
+          "Best Fit (최적 적합)",
+          "Worst Fit (최악 적합)",
+          "내부 단편화 (Internal Fragmentation)"
+        ],
+        "memory_cues": [
+          "Best Fit = '딱 맞는 옷 찾기' (남는 공간 최소화)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3KB",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. Best Fit은 수용 가능한 빈 공간 중 크기 차이가 가장 작은 곳을 선택합니다. 17KB를 수용할 수 있는 공간(20, 40) 중 20KB가 가장 적절하며, 남는 공간은 3KB입니다."
+          },
+          {
+            "label": "2",
+            "text": "23KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '23KB'이므로 일치하지 않습니다. First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "64KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '64KB'이므로 일치하지 않습니다. First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "67KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '67KB'이므로 일치하지 않습니다. First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+          "핵심 개념을 떠올립니다. First Fit (최초 적합), Best Fit (최적 적합), Worst Fit (최악 적합), 내부 단편화 (Internal Fragmentation)",
+          "정답 판단 근거를 적용합니다. Best Fit은 수용 가능한 빈 공간 중 크기 차이가 가장 작은 곳을 선택합니다. 17KB를 수용할 수 있는 공간(20, 40) 중 20KB가 가장 적절하며, 남는 공간은 3KB입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+        ],
+        "exam_traps": [
+          "First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'First Fit (최초 적합)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Best Fit (최적 적합)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Worst Fit (최악 적합)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '내부 단편화 (Internal Fragmentation)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Best Fit = '딱 맞는 옷 찾기' (남는 공간 최소화)"
+        ],
+        "detailed_summary": "주기억장치 배치 전략 중 최적 적합(Best Fit) 방식의 단편화 계산 문제입니다. 최적 적합(Best-Fit)은 들어갈 수 있는 크기 중 단편화를 가장 적게 남기는 공간에 배치합니다. 17KB는 20KB 공간에 배치되며, 이때 발생하는 내부 단편화는 20KB - 17KB = 3KB입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. Best Fit은 수용 가능한 빈 공간 중 크기 차이가 가장 작은 곳을 선택합니다. 17KB를 수용할 수 있는 공간(20, 40) 중 20KB가 가장 적절하며, 남는 공간은 3KB입니다. 시험 포인트는 First Fit(최초 적합)이었다면 첫 번째인 20KB에 들어가 결과는 같았겠지만, Worst Fit(최악 적합)이었다면 40KB에 들어가 23KB의 단편화가 생겼을 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Best Fit",
+        "최적 적합",
+        "내부 단편화",
+        "기억장치 배치 전략"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4ce935c17f0162c6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          22
+        ],
+        "page_span": {
+          "start_page": 22,
+          "end_page": 22
+        },
+        "source_explanation": "FIFO(선입선출) 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 최종 프레임 상태는 4, 1, 3이 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_359"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "80. 3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1, 2, 0"
+          },
+          {
+            "label": "2",
+            "text": "2, 4, 3"
+          },
+          {
+            "label": "3",
+            "text": "1, 4, 2"
+          },
+          {
+            "label": "4",
+            "text": "4, 1, 3"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "4, 1, 3"
+        ],
+        "answer_text": "4, 1, 3"
+      },
+      "explanation": {
+        "source_text": "FIFO(선입선출) 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 최종 프레임 상태는 4, 1, 3이 됩니다.",
+        "summary": "FIFO 페이지 교체 알고리즘의 동작 과정을 계산하는 문제입니다.",
+        "why_correct": [
+          "참조 순서에 따른 변화: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+        ],
+        "key_concepts": [
+          "FIFO: First-In First-Out, 가장 먼저 들어온 페이지를 먼저 교체",
+          "Page Fault: 참조하려는 페이지가 프레임에 없을 때 발생"
+        ],
+        "memory_cues": [
+          "FIFO는 선착순! 먼저 온 놈이 먼저 나간다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1, 2, 0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '1, 2, 0'이므로 일치하지 않습니다. 다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+          },
+          {
+            "label": "2",
+            "text": "2, 4, 3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '2, 4, 3'이므로 일치하지 않습니다. 다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+          },
+          {
+            "label": "3",
+            "text": "1, 4, 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '1, 4, 2'이므로 일치하지 않습니다. 다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+          },
+          {
+            "label": "4",
+            "text": "4, 1, 3",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 4, 1, 3'와 일치합니다. 참조 순서에 따른 변화: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는?",
+          "핵심 개념을 떠올립니다. FIFO: First-In First-Out, 가장 먼저 들어온 페이지를 먼저 교체, Page Fault: 참조하려는 페이지가 프레임에 없을 때 발생",
+          "정답 판단 근거를 적용합니다. 참조 순서에 따른 변화: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO: First-In First-Out, 가장 먼저 들어온 페이지를 먼저 교체'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Page Fault: 참조하려는 페이지가 프레임에 없을 때 발생'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO는 선착순! 먼저 온 놈이 먼저 나간다."
+        ],
+        "detailed_summary": "FIFO 페이지 교체 알고리즘의 동작 과정을 계산하는 문제입니다. FIFO(선입선출) 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 최종 프레임 상태는 4, 1, 3이 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는? 정답입니다. 이 선택지는 실제 정답인 '4번 4, 1, 3'와 일치합니다. 참조 순서에 따른 변화: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다. 시험 포인트는 다른 보기들은 교체 순서가 틀렸거나 중간 단계의 상태입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "FIFO",
+        "페이지 교체",
+        "가상기억장치",
+        "페이지 프레임"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_365093b34b94a041",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          37
+        ],
+        "page_span": {
+          "start_page": 37,
+          "end_page": 37
+        },
+        "source_explanation": "페이지 크기가 작아지면 전체 페이지 수가 많아지므로, 이를 관리하기 위한 페이지 맵 테이블의 크기는 오히려 커집니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "페이징 기법에서 페이지 크기가 작아질수록 발생하는 현상이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기억장소 이용 효율이 증가한다."
+          },
+          {
+            "label": "2",
+            "text": "입·출력 시간이 늘어난다."
+          },
+          {
+            "label": "3",
+            "text": "내부 단편화가 감소한다."
+          },
+          {
+            "label": "4",
+            "text": "페이지 맵 테이블의 크기가 감소한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "페이지 맵 테이블의 크기가 감소한다."
+        ],
+        "answer_text": "페이지 맵 테이블의 크기가 감소한다."
+      },
+      "explanation": {
+        "source_text": "페이지 크기가 작아지면 전체 페이지 수가 많아지므로, 이를 관리하기 위한 페이지 맵 테이블의 크기는 오히려 커집니다.",
+        "summary": "페이지 크기 변화에 따른 시스템 영향",
+        "why_correct": [
+          "페이지가 작아지면 개수가 늘어나므로 테이블 크기는 증가합니다."
+        ],
+        "why_others_wrong": [
+          "페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다.",
+          "대신 데이터를 읽어올 때 더 많은 횟수의 I/O가 필요해 시간이 늘어납니다."
+        ],
+        "key_concepts": [
+          "페이징 (Paging)",
+          "내부 단편화",
+          "페이지 맵 테이블"
+        ],
+        "memory_cues": [
+          "작은 조각 = 많은 개수 = 큰 명부(테이블)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기억장소 이용 효율이 증가한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 페이지 맵 테이블의 크기가 감소한다.'인데 이 선택지는 '기억장소 이용 효율이 증가한다.'이므로 일치하지 않습니다. 페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다. 대신 데이터를 읽어올 때 더 많은 횟수의 I/O가 필요해 시간이 늘어납니다."
+          },
+          {
+            "label": "2",
+            "text": "입·출력 시간이 늘어난다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 페이지 맵 테이블의 크기가 감소한다.'인데 이 선택지는 '입·출력 시간이 늘어난다.'이므로 일치하지 않습니다. 페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다. 대신 데이터를 읽어올 때 더 많은 횟수의 I/O가 필요해 시간이 늘어납니다."
+          },
+          {
+            "label": "3",
+            "text": "내부 단편화가 감소한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 페이지 맵 테이블의 크기가 감소한다.'인데 이 선택지는 '내부 단편화가 감소한다.'이므로 일치하지 않습니다. 페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다. 대신 데이터를 읽어올 때 더 많은 횟수의 I/O가 필요해 시간이 늘어납니다."
+          },
+          {
+            "label": "4",
+            "text": "페이지 맵 테이블의 크기가 감소한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 페이지 맵 테이블의 크기가 감소한다.'와 일치합니다. 페이지가 작아지면 개수가 늘어나므로 테이블 크기는 증가합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 페이징 기법에서 페이지 크기가 작아질수록 발생하는 현상이 아닌 것은?",
+          "핵심 개념을 떠올립니다. 페이징 (Paging), 내부 단편화, 페이지 맵 테이블",
+          "정답 판단 근거를 적용합니다. 페이지가 작아지면 개수가 늘어나므로 테이블 크기는 증가합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다."
+        ],
+        "exam_traps": [
+          "페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '페이징 (Paging)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '내부 단편화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 맵 테이블'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 작은 조각 = 많은 개수 = 큰 명부(테이블)"
+        ],
+        "detailed_summary": "페이지 크기 변화에 따른 시스템 영향 페이지 크기가 작아지면 전체 페이지 수가 많아지므로, 이를 관리하기 위한 페이지 맵 테이블의 크기는 오히려 커집니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 페이징 기법에서 페이지 크기가 작아질수록 발생하는 현상이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 페이지 맵 테이블의 크기가 감소한다.'와 일치합니다. 페이지가 작아지면 개수가 늘어나므로 테이블 크기는 증가합니다. 시험 포인트는 페이지가 작으면 빈 공간(단편화)도 작아져 효율이 좋아집니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "페이징",
+        "페이지 크기",
+        "내부 단편화",
+        "페이지 테이블"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a83c63a80580a80d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          37
+        ],
+        "page_span": {
+          "start_page": 37,
+          "end_page": 37
+        },
+        "source_explanation": "First Fit은 첫 번째로 발견된 수용 가능한 공간에 할당합니다. 15K는 작아서 패스하고, 두 번째인 23K 공간에 17K를 넣습니다. 남는 공간(내부 단편화)은 23K - 17K = 6K입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "기억공간이 15K, 23K, 22K, 21K 순으로 빈 공간이 있을 때 기억장치 배치 전략으로 \"First Fit\"을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "5K"
+          },
+          {
+            "label": "2",
+            "text": "6K"
+          },
+          {
+            "label": "3",
+            "text": "7K"
+          },
+          {
+            "label": "4",
+            "text": "8K"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "6K"
+        ],
+        "answer_text": "6K"
+      },
+      "explanation": {
+        "source_text": "First Fit은 첫 번째로 발견된 수용 가능한 공간에 할당합니다. 15K는 작아서 패스하고, 두 번째인 23K 공간에 17K를 넣습니다. 남는 공간(내부 단편화)은 23K - 17K = 6K입니다.",
+        "summary": "메모리 배치 전략 중 최초 적합(First Fit) 방식의 계산",
+        "why_correct": [
+          "순서대로 확인했을 때 17K가 들어갈 수 있는 첫 번째 공간은 23K입니다. 23에서 17을 뺀 6K가 낭비되는 공간(단편화)이 됩니다."
+        ],
+        "why_others_wrong": [
+          "15K는 프로그램보다 작아 들어갈 수 없습니다.",
+          "Best Fit(최적 적합)을 사용했다면 21K에 들어가 4K의 단편화가 생겼을 것입니다."
+        ],
+        "key_concepts": [
+          "First Fit",
+          "내부 단편화 (Internal Fragmentation)"
+        ],
+        "memory_cues": [
+          "First Fit = 처음 만나는 충분한 곳"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "5K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6K'인데 이 선택지는 '5K'이므로 일치하지 않습니다. 15K는 프로그램보다 작아 들어갈 수 없습니다. Best Fit(최적 적합)을 사용했다면 21K에 들어가 4K의 단편화가 생겼을 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "6K",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 6K'와 일치합니다. 순서대로 확인했을 때 17K가 들어갈 수 있는 첫 번째 공간은 23K입니다. 23에서 17을 뺀 6K가 낭비되는 공간(단편화)이 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "7K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6K'인데 이 선택지는 '7K'이므로 일치하지 않습니다. 15K는 프로그램보다 작아 들어갈 수 없습니다. Best Fit(최적 적합)을 사용했다면 21K에 들어가 4K의 단편화가 생겼을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "8K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 6K'인데 이 선택지는 '8K'이므로 일치하지 않습니다. 15K는 프로그램보다 작아 들어갈 수 없습니다. Best Fit(최적 적합)을 사용했다면 21K에 들어가 4K의 단편화가 생겼을 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기억공간이 15K, 23K, 22K, 21K 순으로 빈 공간이 있을 때 기억장치 배치 전략으로 \"First Fit\"을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+          "핵심 개념을 떠올립니다. First Fit, 내부 단편화 (Internal Fragmentation)",
+          "정답 판단 근거를 적용합니다. 순서대로 확인했을 때 17K가 들어갈 수 있는 첫 번째 공간은 23K입니다. 23에서 17을 뺀 6K가 낭비되는 공간(단편화)이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 15K는 프로그램보다 작아 들어갈 수 없습니다."
+        ],
+        "exam_traps": [
+          "15K는 프로그램보다 작아 들어갈 수 없습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'First Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '내부 단편화 (Internal Fragmentation)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. First Fit = 처음 만나는 충분한 곳"
+        ],
+        "detailed_summary": "메모리 배치 전략 중 최초 적합(First Fit) 방식의 계산 First Fit은 첫 번째로 발견된 수용 가능한 공간에 할당합니다. 15K는 작아서 패스하고, 두 번째인 23K 공간에 17K를 넣습니다. 남는 공간(내부 단편화)은 23K - 17K = 6K입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기억공간이 15K, 23K, 22K, 21K 순으로 빈 공간이 있을 때 기억장치 배치 전략으로 \"First Fit\"을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '2번 6K'와 일치합니다. 순서대로 확인했을 때 17K가 들어갈 수 있는 첫 번째 공간은 23K입니다. 23에서 17을 뺀 6K가 낭비되는 공간(단편화)이 됩니다. 시험 포인트는 15K는 프로그램보다 작아 들어갈 수 없습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "First Fit",
+        "최초 적합",
+        "내부 단편화",
+        "메모리 배치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2f19f7c5409e7913",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 61
+        },
+        "source_explanation": "최악 적합(Worst-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로, 사용 여부가 FREE인 메모리 중 가장 메모리 크기가 큰 영역인 NO.5에 배치됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_140"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "69. 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가?\n| 영역 번호 | 메모리 크기 | 사용 여부 |\n| :---: | :---: | :---: |\n| NO.1 | 8K | FREE |\n| NO.2 | 12K | FREE |\n| NO.3 | 10K | IN USE |\n| NO.4 | 20K | IN USE |\n| NO.5 | 16K | FREE |",
+        "choices": [
+          {
+            "label": "1",
+            "text": "NO.2"
+          },
+          {
+            "label": "2",
+            "text": "NO.3"
+          },
+          {
+            "label": "3",
+            "text": "NO.4"
+          },
+          {
+            "label": "4",
+            "text": "NO.5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "NO.5"
+        ],
+        "answer_text": "NO.5"
+      },
+      "explanation": {
+        "source_text": "최악 적합(Worst-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로, 사용 여부가 FREE인 메모리 중 가장 메모리 크기가 큰 영역인 NO.5에 배치됩니다.",
+        "summary": "주기억장치 배치 전략 중 최악 적합(Worst-Fit) 방식을 적용하는 문제입니다.",
+        "why_correct": [
+          "Worst-Fit은 가용 공간 중 가장 큰 곳을 선택합니다. FREE 상태인 NO.1(8K), NO.2(12K), NO.5(16K) 중 가장 큰 NO.5에 할당됩니다."
+        ],
+        "why_others_wrong": [
+          "NO.1은 10K보다 작아 할당 불가합니다.",
+          "NO.2는 First-Fit이나 Best-Fit일 때 고려될 수 있습니다.",
+          "NO.3, NO.4는 이미 사용 중(IN USE)입니다."
+        ],
+        "key_concepts": [
+          "First-Fit",
+          "Best-Fit",
+          "Worst-Fit"
+        ],
+        "memory_cues": [
+          "Worst = 가장 큰 빈 공간 선택"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "NO.2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 NO.5'인데 이 선택지는 'NO.2'이므로 일치하지 않습니다. NO.1은 10K보다 작아 할당 불가합니다. NO.2는 First-Fit이나 Best-Fit일 때 고려될 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "NO.3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 NO.5'인데 이 선택지는 'NO.3'이므로 일치하지 않습니다. NO.1은 10K보다 작아 할당 불가합니다. NO.2는 First-Fit이나 Best-Fit일 때 고려될 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "NO.4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 NO.5'인데 이 선택지는 'NO.4'이므로 일치하지 않습니다. NO.1은 10K보다 작아 할당 불가합니다. NO.2는 First-Fit이나 Best-Fit일 때 고려될 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "NO.5",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 NO.5'와 일치합니다. Worst-Fit은 가용 공간 중 가장 큰 곳을 선택합니다. FREE 상태인 NO.1(8K), NO.2(12K), NO.5(16K) 중 가장 큰 NO.5에 할당됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가? | 영역 번호 | 메모리 크기 | 사용 여부 | | :---: | :---: | :---: | | NO.1 | 8K | FREE | | NO.2 | 12K | FREE | | NO.3 | 10K | IN USE | | NO.4 | 20K | IN USE | | NO.5 | 16K | FREE |",
+          "핵심 개념을 떠올립니다. First-Fit, Best-Fit, Worst-Fit",
+          "정답 판단 근거를 적용합니다. Worst-Fit은 가용 공간 중 가장 큰 곳을 선택합니다. FREE 상태인 NO.1(8K), NO.2(12K), NO.5(16K) 중 가장 큰 NO.5에 할당됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NO.1은 10K보다 작아 할당 불가합니다."
+        ],
+        "exam_traps": [
+          "NO.1은 10K보다 작아 할당 불가합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'First-Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Best-Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Worst-Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Worst = 가장 큰 빈 공간 선택"
+        ],
+        "detailed_summary": "주기억장치 배치 전략 중 최악 적합(Worst-Fit) 방식을 적용하는 문제입니다. 최악 적합(Worst-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로, 사용 여부가 FREE인 메모리 중 가장 메모리 크기가 큰 영역인 NO.5에 배치됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가? | 영역 번호 | 메모리 크기 | 사용 여부 | | :---: | :---: | :---: | | NO.1 | 8K | FREE | | NO.2 | 12K | FREE | | NO.3 | 10K | IN USE | | NO.4 | 20K | IN USE | | NO.5 | 16K | FREE | 정답입니다. 이 선택지는 실제 정답인 '4번 NO.5'와 일치합니다. Worst-Fit은 가용 공간 중 가장 큰 곳을 선택합니다. FREE 상태인 NO.1(8K), NO.2(12K), NO.5(16K) 중 가장 큰 NO.5에 할당됩니다. 시험 포인트는 NO.1은 10K보다 작아 할당 불가합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "메모리 관리",
+        "Worst-Fit",
+        "최악 적합",
+        "단편화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f54bd0b0a925cb15",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          58
+        ],
+        "page_span": {
+          "start_page": 58,
+          "end_page": 58
+        },
+        "source_explanation": "4개의 프레임에 1, 2, 3이 차례로 들어오고(3회 결함), 1과 2는 이미 있으므로 적중합니다. 4가 들어오면 빈 자리에 들어가고(1회 결함), 5가 들어오면 가장 먼저 들어온 1을 교체합니다(1회 결함). 마지막 1이 들어오면 2를 교체합니다(1회 결함). 총 6회입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_140"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "80. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는?\n페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6회"
+          },
+          {
+            "label": "2",
+            "text": "7회"
+          },
+          {
+            "label": "3",
+            "text": "8회"
+          },
+          {
+            "label": "4",
+            "text": "9회"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "6회"
+        ],
+        "answer_text": "6회"
+      },
+      "explanation": {
+        "source_text": "4개의 프레임에 1, 2, 3이 차례로 들어오고(3회 결함), 1과 2는 이미 있으므로 적중합니다. 4가 들어오면 빈 자리에 들어가고(1회 결함), 5가 들어오면 가장 먼저 들어온 1을 교체합니다(1회 결함). 마지막 1이 들어오면 2를 교체합니다(1회 결함). 총 6회입니다.",
+        "summary": "FIFO(First-In First-Out) 페이지 교체 알고리즘의 동작 과정을 계산하는 문제입니다.",
+        "why_correct": [
+          "참조 과정: (1)F, (1,2)F, (1,2,3)F, (1,2,3)H, (1,2,3)H, (1,2,3,4)F, (5,2,3,4)F, (5,1,3,4)F. 총 Fault(F)는 6번 발생합니다."
+        ],
+        "why_others_wrong": [
+          "프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "key_concepts": [
+          "FIFO 알고리즘",
+          "페이지 결함(Page Fault)",
+          "페이지 적중(Page Hit)"
+        ],
+        "memory_cues": [
+          "FIFO = 선입선출 = 가장 오래된 페이지 교체"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6회",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 6회'와 일치합니다. 참조 과정: (1)F, (1,2)F, (1,2,3)F, (1,2,3)H, (1,2,3)H, (1,2,3,4)F, (5,2,3,4)F, (5,1,3,4)F. 총 Fault(F)는 6번 발생합니다."
+          },
+          {
+            "label": "2",
+            "text": "7회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '7회'이므로 일치하지 않습니다. 프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "8회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '8회'이므로 일치하지 않습니다. 프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          },
+          {
+            "label": "4",
+            "text": "9회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '9회'이므로 일치하지 않습니다. 프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1",
+          "핵심 개념을 떠올립니다. FIFO 알고리즘, 페이지 결함(Page Fault), 페이지 적중(Page Hit)",
+          "정답 판단 근거를 적용합니다. 참조 과정: (1)F, (1,2)F, (1,2,3)F, (1,2,3)H, (1,2,3)H, (1,2,3,4)F, (5,2,3,4)F, (5,1,3,4)F. 총 Fault(F)는 6번 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "exam_traps": [
+          "프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 결함(Page Fault)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 적중(Page Hit)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO = 선입선출 = 가장 오래된 페이지 교체"
+        ],
+        "detailed_summary": "FIFO(First-In First-Out) 페이지 교체 알고리즘의 동작 과정을 계산하는 문제입니다. 4개의 프레임에 1, 2, 3이 차례로 들어오고(3회 결함), 1과 2는 이미 있으므로 적중합니다. 4가 들어오면 빈 자리에 들어가고(1회 결함), 5가 들어오면 가장 먼저 들어온 1을 교체합니다(1회 결함). 마지막 1이 들어오면 2를 교체합니다(1회 결함). 총 6회입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1 정답입니다. 이 선택지는 실제 정답인 '1번 6회'와 일치합니다. 참조 과정: (1)F, (1,2)F, (1,2,3)F, (1,2,3)H, (1,2,3)H, (1,2,3,4)F, (5,2,3,4)F, (5,1,3,4)F. 총 Fault(F)는 6번 발생합니다. 시험 포인트는 프레임 개수(4개)를 잘못 파악하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "FIFO",
+        "페이지 교체",
+        "페이지 결함",
+        "가상기억장치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e693fa3c51ebd18a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          75
+        ],
+        "page_span": {
+          "start_page": 75,
+          "end_page": 75
+        },
+        "source_explanation": "FIFO 알고리즘을 사용하여 페이지 참조 순서대로 페이지를 교체할 경우 결함 발생 횟수는 7회입니다. (1, 2, 3 적재 시 3회, 4 참조 시 1회, 1 참조 시 1회, 2 참조 시 1회, 5 참조 시 1회)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_359"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에 모든 페이지는 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 몇 번의 페이지 결함이 발생하는가?\n페이지 참조 순서: 1, 2, 3, 1, 2, 4, 1, 2, 5",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4"
+          },
+          {
+            "label": "2",
+            "text": "5"
+          },
+          {
+            "label": "3",
+            "text": "6"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "7"
+        ],
+        "answer_text": "7"
+      },
+      "explanation": {
+        "source_text": "FIFO 알고리즘을 사용하여 페이지 참조 순서대로 페이지를 교체할 경우 결함 발생 횟수는 7회입니다. (1, 2, 3 적재 시 3회, 4 참조 시 1회, 1 참조 시 1회, 2 참조 시 1회, 5 참조 시 1회)",
+        "summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘을 적용하여 페이지 결함 횟수를 계산하는 문제입니다.",
+        "why_correct": [
+          "초기 1,2,3 적재(3회 결함) -> 1,2 참조(적중) -> 4 참조(1 교체, 결함) -> 1 참조(2 교체, 결함) -> 2 참조(3 교체, 결함) -> 5 참조(4 교체, 결함). 총 7회입니다."
+        ],
+        "why_others_wrong": [
+          "계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+        ],
+        "key_concepts": [
+          "FIFO",
+          "페이지 결함",
+          "페이지 프레임"
+        ],
+        "memory_cues": [
+          "먼저 들어온 놈이 먼저 나간다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '4'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 7'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 초기 1,2,3 적재(3회 결함) -> 1,2 참조(적중) -> 4 참조(1 교체, 결함) -> 1 참조(2 교체, 결함) -> 2 참조(3 교체, 결함) -> 5 참조(4 교체, 결함). 총 7회입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에 모든 페이지는 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 몇 번의 페이지 결함이 발생하는가? 페이지 참조 순서: 1, 2, 3, 1, 2, 4, 1, 2, 5",
+          "핵심 개념을 떠올립니다. FIFO, 페이지 결함, 페이지 프레임",
+          "정답 판단 근거를 적용합니다. 초기 1,2,3 적재(3회 결함) -> 1,2 참조(적중) -> 4 참조(1 교체, 결함) -> 1 참조(2 교체, 결함) -> 2 참조(3 교체, 결함) -> 5 참조(4 교체, 결함). 총 7회입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+        ],
+        "exam_traps": [
+          "계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 결함'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 프레임'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 먼저 들어온 놈이 먼저 나간다."
+        ],
+        "detailed_summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘을 적용하여 페이지 결함 횟수를 계산하는 문제입니다. FIFO 알고리즘을 사용하여 페이지 참조 순서대로 페이지를 교체할 경우 결함 발생 횟수는 7회입니다. (1, 2, 3 적재 시 3회, 4 참조 시 1회, 1 참조 시 1회, 2 참조 시 1회, 5 참조 시 1회) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에 모든 페이지는 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 몇 번의 페이지 결함이 발생하는가? 페이지 참조 순서: 1, 2, 3, 1, 2, 4, 1, 2, 5 정답입니다. 이 선택지는 실제 정답인 '4번 7'와 일치합니다. 초기 1,2,3 적재(3회 결함) -> 1,2 참조(적중) -> 4 참조(1 교체, 결함) -> 1 참조(2 교체, 결함) -> 2 참조(3 교체, 결함) -> 5 참조(4 교체, 결함). 총 7회입니다. 시험 포인트는 계산 과정에서 적중(Hit) 상황을 잘못 판단하면 다른 숫자가 나올 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "페이지 교체 알고리즘",
+        "FIFO",
+        "페이지 결함",
+        "가상기억장치"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          75
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0075",
+            "page_number": 75,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0075.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 1180089,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0075",
+          "page_number": 75,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0075.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1180089,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0075",
+          "page_number": 75,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0075.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 1180089,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_7eb124ca9e7a9641",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "전문가의 조언 | 최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중 단편화를 가장 적게 남기는 분할 영역에 배치시키는 방법으로, 17KB보다 큰 기억공간 중 가장 작은 20KB에 배치됩니다. 이 때 발생하는 내부 단편화는 3KB(20KB-17KB)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "77. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3KB"
+          },
+          {
+            "label": "2",
+            "text": "23KB"
+          },
+          {
+            "label": "3",
+            "text": "64KB"
+          },
+          {
+            "label": "4",
+            "text": "67KB"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "3KB"
+        ],
+        "answer_text": "3KB"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중 단편화를 가장 적게 남기는 분할 영역에 배치시키는 방법으로, 17KB보다 큰 기억공간 중 가장 작은 20KB에 배치됩니다. 이 때 발생하는 내부 단편화는 3KB(20KB-17KB)입니다.",
+        "summary": "메모리 배치 전략 중 Best Fit을 적용하여 내부 단편화 크기를 계산하는 문제입니다.",
+        "why_correct": [
+          "17KB가 들어갈 수 있는 공간(20, 40) 중 가장 크기가 작은 20KB 공간을 선택하므로, 남는 공간인 3KB가 내부 단편화가 됩니다."
+        ],
+        "why_others_wrong": [
+          "First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+        ],
+        "key_concepts": [
+          "Best Fit",
+          "내부 단편화"
+        ],
+        "memory_cues": [
+          "Best = 가장 작은 차이"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3KB",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 크기가 작은 20KB 공간을 선택하므로, 남는 공간인 3KB가 내부 단편화가 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "23KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '23KB'이므로 일치하지 않습니다. First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+          },
+          {
+            "label": "3",
+            "text": "64KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '64KB'이므로 일치하지 않습니다. First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+          },
+          {
+            "label": "4",
+            "text": "67KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '67KB'이므로 일치하지 않습니다. First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+          "핵심 개념을 떠올립니다. Best Fit, 내부 단편화",
+          "정답 판단 근거를 적용합니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 크기가 작은 20KB 공간을 선택하므로, 남는 공간인 3KB가 내부 단편화가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+        ],
+        "exam_traps": [
+          "First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Best Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '내부 단편화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Best = 가장 작은 차이"
+        ],
+        "detailed_summary": "메모리 배치 전략 중 Best Fit을 적용하여 내부 단편화 크기를 계산하는 문제입니다. 전문가의 조언 | 최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 크기의 빈 영역 중 단편화를 가장 적게 남기는 분할 영역에 배치시키는 방법으로, 17KB보다 큰 기억공간 중 가장 작은 20KB에 배치됩니다. 이 때 발생하는 내부 단편화는 3KB(20KB-17KB)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 크기가 작은 20KB 공간을 선택하므로, 남는 공간인 3KB가 내부 단편화가 됩니다. 시험 포인트는 First Fit이나 Worst Fit을 사용할 경우 다른 결과가 나오지만, Best Fit은 가장 딱 맞는 공간을 찾습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Best Fit",
+        "최적 적합",
+        "내부 단편화",
+        "기억장치 배치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5b5541169d719eea",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          93
+        ],
+        "page_span": {
+          "start_page": 93,
+          "end_page": 93
+        },
+        "source_explanation": "전문가의 조언 | 페이지 부재 횟수는 9번입니다. 3개의 페이지를 수용할 수 있는 주기억장치이므로 다음과 같이 3개의 페이지 프레임으로 표현할 수 있습니다.\n(표 생략: 2, 3, 2(H), 1, 5, 2, 4, 5(H), 3, 2(H), 5(H), 2 순으로 처리 시 부재 발생 지점 계산)\n참조할 페이지가 페이지 프레임에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지 프레임이 비어 있으므로 처음 2, 3 페이지 적재 시 페이지 결함이 발생합니다. 선입선출(FIFO) 기법은 각각의 페이지가 주기억장치에 적재될 때마다 그때의 시간을 기억시켜 가장 먼저 들어와서 가장 오래 있었던 페이지를 교체하는 기법입니다. 이와 같은 방식으로 모든 페이지 요청을 처리하고 나면 총 페이지 결함 발생 수는 9번입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "68. 3개의 페이지 프레임(Frame)을 가진 기억장치에서 페이지 요청을 다음과 같은 페이지 번호 순으로 요청했을 때 교체 알고리즘으로 FIFO 방법을 사용한다면 몇 번의 페이지 부재(Fault)가 발생하는가? (단, 현재 기억장치는 모두 비어 있다고 가정한다.)\n요청된 페이지 번호의 순서:\n2, 3, 2, 1, 5, 2, 4, 5, 3, 2, 5, 2",
+        "choices": [
+          {
+            "label": "1",
+            "text": "7번"
+          },
+          {
+            "label": "2",
+            "text": "8번"
+          },
+          {
+            "label": "3",
+            "text": "9번"
+          },
+          {
+            "label": "4",
+            "text": "10번"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "9번"
+        ],
+        "answer_text": "9번"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 페이지 부재 횟수는 9번입니다. 3개의 페이지를 수용할 수 있는 주기억장치이므로 다음과 같이 3개의 페이지 프레임으로 표현할 수 있습니다.\n(표 생략: 2, 3, 2(H), 1, 5, 2, 4, 5(H), 3, 2(H), 5(H), 2 순으로 처리 시 부재 발생 지점 계산)\n참조할 페이지가 페이지 프레임에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지 프레임이 비어 있으므로 처음 2, 3 페이지 적재 시 페이지 결함이 발생합니다. 선입선출(FIFO) 기법은 각각의 페이지가 주기억장치에 적재될 때마다 그때의 시간을 기억시켜 가장 먼저 들어와서 가장 오래 있었던 페이지를 교체하는 기법입니다. 이와 같은 방식으로 모든 페이지 요청을 처리하고 나면 총 페이지 결함 발생 수는 9번입니다.",
+        "summary": "FIFO 페이지 교체 알고리즘을 적용하여 페이지 부재 횟수를 계산하는 문제입니다.",
+        "why_correct": [
+          "순차적으로 시뮬레이션하면 2(F), 3(F), 2(H), 1(F), 5(F), 2(F), 4(F), 5(H), 3(F), 2(F), 5(F), 2(F) 순으로 총 9회의 부재가 발생합니다."
+        ],
+        "why_others_wrong": [
+          "계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+        ],
+        "key_concepts": [
+          "FIFO(First-In-First-Out)",
+          "Page Fault",
+          "Page Frame"
+        ],
+        "memory_cues": [
+          "FIFO는 가장 먼저 들어온 놈이 먼저 나감"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "7번",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 9번'인데 이 선택지는 '7번'이므로 일치하지 않습니다. 계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+          },
+          {
+            "label": "2",
+            "text": "8번",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 9번'인데 이 선택지는 '8번'이므로 일치하지 않습니다. 계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+          },
+          {
+            "label": "3",
+            "text": "9번",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 9번'와 일치합니다. 순차적으로 시뮬레이션하면 2(F), 3(F), 2(H), 1(F), 5(F), 2(F), 4(F), 5(H), 3(F), 2(F), 5(F), 2(F) 순으로 총 9회의 부재가 발생합니다."
+          },
+          {
+            "label": "4",
+            "text": "10번",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 9번'인데 이 선택지는 '10번'이므로 일치하지 않습니다. 계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 68. 3개의 페이지 프레임(Frame)을 가진 기억장치에서 페이지 요청을 다음과 같은 페이지 번호 순으로 요청했을 때 교체 알고리즘으로 FIFO 방법을 사용한다면 몇 번의 페이지 부재(Fault)가 발생하는가? (단, 현재 기억장치는 모두 비어 있다고 가정한다.) 요청된 페이지 번호의 순서: 2, 3, 2, 1, 5, 2, 4, 5, 3, 2, 5, 2",
+          "핵심 개념을 떠올립니다. FIFO(First-In-First-Out), Page Fault, Page Frame",
+          "정답 판단 근거를 적용합니다. 순차적으로 시뮬레이션하면 2(F), 3(F), 2(H), 1(F), 5(F), 2(F), 4(F), 5(H), 3(F), 2(F), 5(F), 2(F) 순으로 총 9회의 부재가 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+        ],
+        "exam_traps": [
+          "계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO(First-In-First-Out)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Page Fault'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Page Frame'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO는 가장 먼저 들어온 놈이 먼저 나감"
+        ],
+        "detailed_summary": "FIFO 페이지 교체 알고리즘을 적용하여 페이지 부재 횟수를 계산하는 문제입니다. 전문가의 조언 | 페이지 부재 횟수는 9번입니다. 3개의 페이지를 수용할 수 있는 주기억장치이므로 다음과 같이 3개의 페이지 프레임으로 표현할 수 있습니다. (표 생략: 2, 3, 2(H), 1, 5, 2, 4, 5(H), 3, 2(H), 5(H), 2 순으로 처리 시 부재 발생 지점 계산) 참조할 페이지가 페이지 프레임에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지 프레임이 비어 있으므로 처음 2, 3 페이지 적재 시 페이지 결함이 발생합니다. 선입선출(FIFO) 기법은 각각의 페이지가 주기억장치에 적재될 때마다 그때의 시간을 기억시켜 가장 먼저 들어와서 가장 오래 있었던 페이지를 교체하는 기법입니다. 이와 같은 방식으로 모든 페이지 요청을 처리하고 나면 총 페이지 결함 발생 수는 9번입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 68. 3개의 페이지 프레임(Frame)을 가진 기억장치에서 페이지 요청을 다음과 같은 페이지 번호 순으로 요청했을 때 교체 알고리즘으로 FIFO 방법을 사용한다면 몇 번의 페이지 부재(Fault)가 발생하는가? (단, 현재 기억장치는 모두 비어 있다고 가정한다.) 요청된 페이지 번호의 순서: 2, 3, 2, 1, 5, 2, 4, 5, 3, 2, 5, 2 정답입니다. 이 선택지는 실제 정답인 '3번 9번'와 일치합니다. 순차적으로 시뮬레이션하면 2(F), 3(F), 2(H), 1(F), 5(F), 2(F), 4(F), 5(H), 3(F), 2(F), 5(F), 2(F) 순으로 총 9회의 부재가 발생합니다. 시험 포인트는 계산 과정에서 Hit(적중)되는 경우를 제외해야 합니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency: explanation contains a table of page frames",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "운영체제",
+        "페이지 교체",
+        "FIFO",
+        "페이지 부재"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          93
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0093",
+            "page_number": 93,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0093.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 947784,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0093",
+          "page_number": 93,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0093.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 947784,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0093",
+          "page_number": 93,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0093.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 947784,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_c56f8675b8cd997c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 빈 공간 중 단편화를 가장 작게 남기는 공간에 배치하는 방식입니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 작은 20KB에 배치되므로 내부 단편화는 20-17=3KB가 발생합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_359"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "80. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3KB"
+          },
+          {
+            "label": "2",
+            "text": "23KB"
+          },
+          {
+            "label": "3",
+            "text": "64KB"
+          },
+          {
+            "label": "4",
+            "text": "67KB"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "3KB"
+        ],
+        "answer_text": "3KB"
+      },
+      "explanation": {
+        "source_text": "최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 빈 공간 중 단편화를 가장 작게 남기는 공간에 배치하는 방식입니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 작은 20KB에 배치되므로 내부 단편화는 20-17=3KB가 발생합니다.",
+        "summary": "운영체제의 메모리 배치 전략 중 Best Fit 방식을 적용하여 단편화 크기를 계산하는 문제입니다.",
+        "why_correct": [
+          "Best Fit은 수용 가능한 빈 블록 중 크기 차이가 가장 적은 곳을 선택합니다. 20KB 블록에 17KB를 넣으면 3KB가 남습니다."
+        ],
+        "why_others_wrong": [
+          "First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+        ],
+        "key_concepts": [
+          "First Fit",
+          "Best Fit",
+          "Worst Fit",
+          "Internal Fragmentation"
+        ],
+        "memory_cues": [
+          "Best Fit = 가장 딱 맞는(차이가 제일 적은) 곳 찾기!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3KB",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. Best Fit은 수용 가능한 빈 블록 중 크기 차이가 가장 적은 곳을 선택합니다. 20KB 블록에 17KB를 넣으면 3KB가 남습니다."
+          },
+          {
+            "label": "2",
+            "text": "23KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '23KB'이므로 일치하지 않습니다. First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "64KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '64KB'이므로 일치하지 않습니다. First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "67KB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 3KB'인데 이 선택지는 '67KB'이므로 일치하지 않습니다. First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가?",
+          "핵심 개념을 떠올립니다. First Fit, Best Fit, Worst Fit, Internal Fragmentation",
+          "정답 판단 근거를 적용합니다. Best Fit은 수용 가능한 빈 블록 중 크기 차이가 가장 적은 곳을 선택합니다. 20KB 블록에 17KB를 넣으면 3KB가 남습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+        ],
+        "exam_traps": [
+          "First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'First Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Best Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Worst Fit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Internal Fragmentation'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Best Fit = 가장 딱 맞는(차이가 제일 적은) 곳 찾기!"
+        ],
+        "detailed_summary": "운영체제의 메모리 배치 전략 중 Best Fit 방식을 적용하여 단편화 크기를 계산하는 문제입니다. 최적 적합(Best-Fit)은 데이터가 들어갈 수 있는 빈 공간 중 단편화를 가장 작게 남기는 공간에 배치하는 방식입니다. 17KB가 들어갈 수 있는 공간(20, 40) 중 가장 작은 20KB에 배치되므로 내부 단편화는 20-17=3KB가 발생합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 80. 빈 기억공간의 크기가 20KB, 16KB, 8KB, 40KB 일 때 기억장치 배치 전략으로 \"Best Fit\"을 사용하여 17KB의 프로그램을 적재할 경우 내부 단편화의 크기는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '1번 3KB'와 일치합니다. Best Fit은 수용 가능한 빈 블록 중 크기 차이가 가장 적은 곳을 선택합니다. 20KB 블록에 17KB를 넣으면 3KB가 남습니다. 시험 포인트는 First Fit(최초 적합)을 사용해도 이 경우엔 20KB에 들어가 3KB가 남지만, Worst Fit(최악 적합)을 사용하면 40KB에 들어가 23KB가 남게 됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Best Fit",
+        "최적 적합",
+        "내부 단편화",
+        "기억장치 배치 전략"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0e7d72999bd6efa1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          113
+        ],
+        "page_span": {
+          "start_page": 113,
+          "end_page": 113
+        },
+        "source_explanation": "FIFO 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 1, 2, 3, 4까지 적재 시 4회 결함, 5 참조 시 1 교체(5회 결함), 1 참조 시 2 교체(6회 결함)가 발생합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "정보시스템 구축관리 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_327"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는?\n페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1",
+        "choices": [
+          {
+            "label": "1",
+            "text": "6회"
+          },
+          {
+            "label": "2",
+            "text": "7회"
+          },
+          {
+            "label": "3",
+            "text": "8회"
+          },
+          {
+            "label": "4",
+            "text": "9회"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "6회"
+        ],
+        "answer_text": "6회"
+      },
+      "explanation": {
+        "source_text": "FIFO 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 1, 2, 3, 4까지 적재 시 4회 결함, 5 참조 시 1 교체(5회 결함), 1 참조 시 2 교체(6회 결함)가 발생합니다.",
+        "summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘의 동작을 이해하고 페이지 결함 횟수를 계산하는 문제입니다.",
+        "why_correct": [
+          "프레임 4개 기준: (1)결함, (1,2)결함, (1,2,3)결함, (1,2,3)적중, (1,2,3)적중, (1,2,3,4)결함, (5,2,3,4)결함, (5,1,3,4)결함. 총 6회의 결함이 발생합니다."
+        ],
+        "why_others_wrong": [
+          "계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+        ],
+        "key_concepts": [
+          "FIFO",
+          "페이지 결함",
+          "페이지 교체"
+        ],
+        "memory_cues": [
+          "먼저 온 놈이 먼저 나간다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "6회",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 6회'와 일치합니다. 프레임 4개 기준: (1)결함, (1,2)결함, (1,2,3)결함, (1,2,3)적중, (1,2,3)적중, (1,2,3,4)결함, (5,2,3,4)결함, (5,1,3,4)결함. 총 6회의 결함이 발생합니다."
+          },
+          {
+            "label": "2",
+            "text": "7회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '7회'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "8회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '8회'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+          },
+          {
+            "label": "4",
+            "text": "9회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 6회'인데 이 선택지는 '9회'이므로 일치하지 않습니다. 계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1",
+          "핵심 개념을 떠올립니다. FIFO, 페이지 결함, 페이지 교체",
+          "정답 판단 근거를 적용합니다. 프레임 4개 기준: (1)결함, (1,2)결함, (1,2,3)결함, (1,2,3)적중, (1,2,3)적중, (1,2,3,4)결함, (5,2,3,4)결함, (5,1,3,4)결함. 총 6회의 결함이 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+        ],
+        "exam_traps": [
+          "계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 결함'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 교체'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 먼저 온 놈이 먼저 나간다"
+        ],
+        "detailed_summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘의 동작을 이해하고 페이지 결함 횟수를 계산하는 문제입니다. FIFO 방식에 따라 가장 먼저 들어온 페이지를 교체합니다. 1, 2, 3, 4까지 적재 시 4회 결함, 5 참조 시 1 교체(5회 결함), 1 참조 시 2 교체(6회 결함)가 발생합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 1, 2, 3, 1, 2, 4, 5, 1 정답입니다. 이 선택지는 실제 정답인 '1번 6회'와 일치합니다. 프레임 4개 기준: (1)결함, (1,2)결함, (1,2,3)결함, (1,2,3)적중, (1,2,3)적중, (1,2,3,4)결함, (5,2,3,4)결함, (5,1,3,4)결함. 총 6회의 결함이 발생합니다. 시험 포인트는 계산 과정에서 적중(Hit) 상황을 결함으로 오인하거나 교체 대상을 잘못 선정하면 다른 결과가 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "시뮬레이션이 필요한 문제임"
+        ]
+      },
+      "keywords": [
+        "FIFO",
+        "페이지 교체 알고리즘",
+        "페이지 결함",
+        "가상기억장치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fcc2069b9c69a1c0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          129
+        ],
+        "page_span": {
+          "start_page": 129,
+          "end_page": 129
+        },
+        "source_explanation": "전문가의 조언 | 최악 적합(Worst Fit)은 프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로 17K의 프로그램은 40K의 빈 영역에 저장됩니다.\n- 내부 단편화는 40K - 17K = 23K가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_359"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "63. 빈 기억공간의 크기가 20K, 16K, 8K, 40K일 때 기억장치 배치 전략으로 'Worst Fit'을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3K"
+          },
+          {
+            "label": "2",
+            "text": "23K"
+          },
+          {
+            "label": "3",
+            "text": "44K"
+          },
+          {
+            "label": "4",
+            "text": "67K"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "23K"
+        ],
+        "answer_text": "23K"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 최악 적합(Worst Fit)은 프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로 17K의 프로그램은 40K의 빈 영역에 저장됩니다.\n- 내부 단편화는 40K - 17K = 23K가 됩니다.",
+        "summary": "기억장치 배치 전략 중 최악 적합(Worst Fit) 방식에 따른 내부 단편화 크기를 계산하는 문제입니다.",
+        "why_correct": [
+          "Worst Fit은 가용한 빈 공간 중 가장 큰 공간을 선택합니다. 40K 공간에 17K를 넣으면 남는 공간(내부 단편화)은 23K입니다."
+        ],
+        "why_others_wrong": [
+          "First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+        ],
+        "key_concepts": [
+          "First Fit: 첫 번째 가능 공간",
+          "Best Fit: 가장 작은 남는 공간",
+          "Worst Fit: 가장 큰 남는 공간"
+        ],
+        "memory_cues": [
+          "Worst(최악) = 가장 큰 구멍에 넣기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 23K'인데 이 선택지는 '3K'이므로 일치하지 않습니다. First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+          },
+          {
+            "label": "2",
+            "text": "23K",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 23K'와 일치합니다. Worst Fit은 가용한 빈 공간 중 가장 큰 공간을 선택합니다. 40K 공간에 17K를 넣으면 남는 공간(내부 단편화)은 23K입니다."
+          },
+          {
+            "label": "3",
+            "text": "44K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 23K'인데 이 선택지는 '44K'이므로 일치하지 않습니다. First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+          },
+          {
+            "label": "4",
+            "text": "67K",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 23K'인데 이 선택지는 '67K'이므로 일치하지 않습니다. First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 빈 기억공간의 크기가 20K, 16K, 8K, 40K일 때 기억장치 배치 전략으로 'Worst Fit'을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는?",
+          "핵심 개념을 떠올립니다. First Fit: 첫 번째 가능 공간, Best Fit: 가장 작은 남는 공간, Worst Fit: 가장 큰 남는 공간",
+          "정답 판단 근거를 적용합니다. Worst Fit은 가용한 빈 공간 중 가장 큰 공간을 선택합니다. 40K 공간에 17K를 넣으면 남는 공간(내부 단편화)은 23K입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+        ],
+        "exam_traps": [
+          "First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'First Fit: 첫 번째 가능 공간'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Best Fit: 가장 작은 남는 공간'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Worst Fit: 가장 큰 남는 공간'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Worst(최악) = 가장 큰 구멍에 넣기"
+        ],
+        "detailed_summary": "기억장치 배치 전략 중 최악 적합(Worst Fit) 방식에 따른 내부 단편화 크기를 계산하는 문제입니다. 전문가의 조언 | 최악 적합(Worst Fit)은 프로그램이나 데이터가 들어갈 수 있는 크기의 빈 영역 중에서 단편화를 가장 많이 남기는 분할 영역에 배치시키는 방법으로 17K의 프로그램은 40K의 빈 영역에 저장됩니다. - 내부 단편화는 40K - 17K = 23K가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. 빈 기억공간의 크기가 20K, 16K, 8K, 40K일 때 기억장치 배치 전략으로 'Worst Fit'을 사용하여 17K의 프로그램을 적재할 경우 내부 단편화의 크기는? 정답입니다. 이 선택지는 실제 정답인 '2번 23K'와 일치합니다. Worst Fit은 가용한 빈 공간 중 가장 큰 공간을 선택합니다. 40K 공간에 17K를 넣으면 남는 공간(내부 단편화)은 23K입니다. 시험 포인트는 First Fit(최초 적합)이면 20K에 들어가 3K가 남고, Best Fit(최적 적합)이면 20K에 들어가 3K가 남습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "기억장치 배치",
+        "Worst Fit",
+        "최악 적합",
+        "내부 단편화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c50997c5058c4561",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          131
+        ],
+        "page_span": {
+          "start_page": 131,
+          "end_page": 131
+        },
+        "source_explanation": "4개의 페이지 프레임을 수용할 수 있는 주기억장치이므로 아래 그림과 같이 4개의 페이지 프레임으로 표현할 수 있습니다. 참조 페이지가 페이지 테이블에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지가 비어 있으므로 처음 0, 1, 2, 3 페이지 적재 시 페이지 결함이 발생합니다. FIFO 기법은 가장 먼저 들어와 있었던 페이지를 교체하는 기법이므로 참조 페이지 4를 참조할 때에는 0을 제거한 후 4를 가져오게 됩니다. 이러한 과정으로 모든 페이지에 대한 요구를 처리하고 나면 총 페이지 결함 발생 횟수는 10회입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "운영체제 개요",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 운영체제 개요 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_363"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는?\n페이지 참조 순서 : 0, 1, 2, 3, 0, 1, 4, 0, 1, 2, 3, 4",
+        "choices": [
+          {
+            "label": "1",
+            "text": "7회"
+          },
+          {
+            "label": "2",
+            "text": "8회"
+          },
+          {
+            "label": "3",
+            "text": "9회"
+          },
+          {
+            "label": "4",
+            "text": "10회"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "10회"
+        ],
+        "answer_text": "10회"
+      },
+      "explanation": {
+        "source_text": "4개의 페이지 프레임을 수용할 수 있는 주기억장치이므로 아래 그림과 같이 4개의 페이지 프레임으로 표현할 수 있습니다. 참조 페이지가 페이지 테이블에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지가 비어 있으므로 처음 0, 1, 2, 3 페이지 적재 시 페이지 결함이 발생합니다. FIFO 기법은 가장 먼저 들어와 있었던 페이지를 교체하는 기법이므로 참조 페이지 4를 참조할 때에는 0을 제거한 후 4를 가져오게 됩니다. 이러한 과정으로 모든 페이지에 대한 요구를 처리하고 나면 총 페이지 결함 발생 횟수는 10회입니다.",
+        "summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘을 적용하여 페이지 결함 횟수를 계산하는 문제입니다.",
+        "why_correct": [
+          "참조 순서에 따라 4개의 프레임을 채우고, 부재 시 가장 오래된 페이지를 교체하며 추적하면 총 10회의 결함이 발생합니다."
+        ],
+        "why_others_wrong": [
+          "7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+        ],
+        "key_concepts": [
+          "FIFO",
+          "페이지 결함",
+          "페이지 프레임"
+        ],
+        "memory_cues": [
+          "FIFO는 선입선출, 즉 가장 먼저 들어온 놈이 가장 먼저 나간다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "7회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 10회'인데 이 선택지는 '7회'이므로 일치하지 않습니다. 7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "8회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 10회'인데 이 선택지는 '8회'이므로 일치하지 않습니다. 7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "9회",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 10회'인데 이 선택지는 '9회'이므로 일치하지 않습니다. 7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "10회",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 10회'와 일치합니다. 참조 순서에 따라 4개의 프레임을 채우고, 부재 시 가장 오래된 페이지를 교체하며 추적하면 총 10회의 결함이 발생합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 0, 1, 2, 3, 0, 1, 4, 0, 1, 2, 3, 4",
+          "핵심 개념을 떠올립니다. FIFO, 페이지 결함, 페이지 프레임",
+          "정답 판단 근거를 적용합니다. 참조 순서에 따라 4개의 프레임을 채우고, 부재 시 가장 오래된 페이지를 교체하며 추적하면 총 10회의 결함이 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+        ],
+        "exam_traps": [
+          "7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 결함'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 프레임'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO는 선입선출, 즉 가장 먼저 들어온 놈이 가장 먼저 나간다."
+        ],
+        "detailed_summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘을 적용하여 페이지 결함 횟수를 계산하는 문제입니다. 4개의 페이지 프레임을 수용할 수 있는 주기억장치이므로 아래 그림과 같이 4개의 페이지 프레임으로 표현할 수 있습니다. 참조 페이지가 페이지 테이블에 없을 경우 페이지 결함(부재)이 발생합니다. 초기에는 모든 페이지가 비어 있으므로 처음 0, 1, 2, 3 페이지 적재 시 페이지 결함이 발생합니다. FIFO 기법은 가장 먼저 들어와 있었던 페이지를 교체하는 기법이므로 참조 페이지 4를 참조할 때에는 0을 제거한 후 4를 가져오게 됩니다. 이러한 과정으로 모든 페이지에 대한 요구를 처리하고 나면 총 페이지 결함 발생 횟수는 10회입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4개의 페이지를 수용할 수 있는 주기억장치가 있으며, 초기에는 모두 비어 있다고 가정한다. 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 페이지 결함의 발생 횟수는? 페이지 참조 순서 : 0, 1, 2, 3, 0, 1, 4, 0, 1, 2, 3, 4 정답입니다. 이 선택지는 실제 정답인 '4번 10회'와 일치합니다. 참조 순서에 따라 4개의 프레임을 채우고, 부재 시 가장 오래된 페이지를 교체하며 추적하면 총 10회의 결함이 발생합니다. 시험 포인트는 7, 8, 9회는 계산 과정에서 히트(Hit)와 미스(Miss)를 잘못 판별했을 때 나오는 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "FIFO",
+        "페이지 교체",
+        "페이지 결함",
+        "가상기억장치"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          131
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0131",
+            "page_number": 131,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0131.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1116036,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0131",
+          "page_number": 131,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0131.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1116036,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0131",
+          "page_number": 131,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0131.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1116036,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_ee37feddf8712fa7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          173
+        ],
+        "page_span": {
+          "start_page": 173,
+          "end_page": 173
+        },
+        "source_explanation": "FIFO 순서: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_359"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1, 2, 0"
+          },
+          {
+            "label": "2",
+            "text": "2, 4, 3"
+          },
+          {
+            "label": "3",
+            "text": "1, 4, 2"
+          },
+          {
+            "label": "4",
+            "text": "4, 1, 3"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "4, 1, 3"
+        ],
+        "answer_text": "4, 1, 3"
+      },
+      "explanation": {
+        "source_text": "FIFO 순서: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다.",
+        "summary": "FIFO(First-In First-Out) 페이지 교체 알고리즘의 동작 과정을 시뮬레이션하는 문제입니다.",
+        "why_correct": [
+          "가장 먼저 들어온 페이지를 순차적으로 교체해 나가면 마지막에 남는 프레임 구성은 4, 1, 3이 됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+        ],
+        "key_concepts": [
+          "FIFO 알고리즘",
+          "페이지 부재(Page Fault)",
+          "페이지 프레임"
+        ],
+        "memory_cues": [
+          "FIFO: 선입선출, 먼저 온 놈이 먼저 나간다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1, 2, 0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '1, 2, 0'이므로 일치하지 않습니다. 다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+          },
+          {
+            "label": "2",
+            "text": "2, 4, 3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '2, 4, 3'이므로 일치하지 않습니다. 다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+          },
+          {
+            "label": "3",
+            "text": "1, 4, 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 4, 1, 3'인데 이 선택지는 '1, 4, 2'이므로 일치하지 않습니다. 다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+          },
+          {
+            "label": "4",
+            "text": "4, 1, 3",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 4, 1, 3'와 일치합니다. 가장 먼저 들어온 페이지를 순차적으로 교체해 나가면 마지막에 남는 프레임 구성은 4, 1, 3이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는?",
+          "핵심 개념을 떠올립니다. FIFO 알고리즘, 페이지 부재(Page Fault), 페이지 프레임",
+          "정답 판단 근거를 적용합니다. 가장 먼저 들어온 페이지를 순차적으로 교체해 나가면 마지막에 남는 프레임 구성은 4, 1, 3이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 부재(Page Fault)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '페이지 프레임'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO: 선입선출, 먼저 온 놈이 먼저 나간다."
+        ],
+        "detailed_summary": "FIFO(First-In First-Out) 페이지 교체 알고리즘의 동작 과정을 시뮬레이션하는 문제입니다. FIFO 순서: [1] -> [1,2] -> [1,2](Hit) -> [1,2,0] -> [4,2,0](1교체) -> [4,1,0](2교체) -> [4,1,3](0교체). 최종 상태는 4, 1, 3입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 페이지 프레임을 갖는 시스템에서 페이지 참조 순서가 1, 2, 1, 0, 4, 1, 3 일 경우 FIFO 알고리즘에 의한 페이지 교체의 경우 프레임의 최종 상태는? 정답입니다. 이 선택지는 실제 정답인 '4번 4, 1, 3'와 일치합니다. 가장 먼저 들어온 페이지를 순차적으로 교체해 나가면 마지막에 남는 프레임 구성은 4, 1, 3이 됩니다. 시험 포인트는 다른 보기들은 교체 순서를 잘못 적용하거나 중간 단계를 나타냅니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "페이지 교체",
+        "FIFO",
+        "페이지 프레임",
+        "가상메모리"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          173
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0173",
+            "page_number": 173,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0173.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 994647,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0173",
+          "page_number": 173,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0173.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 994647,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0173",
+          "page_number": 173,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0173.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 994647,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_7e14f0c922c8146d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0186_p0191"
+        ],
+        "source_pages": [
+          188
+        ],
+        "page_span": {
+          "start_page": 188,
+          "end_page": 188
+        },
+        "source_explanation": "FIFO 기법은 가장 먼저 들어온 페이지를 교체합니다. 1,2,3 적재 후 4 참조 시 1이 교체되어 [4,2,3], 이후 1 참조 시 2가 교체되어 [4,1,3]이 됩니다. 최종 상태는 4, 1, 3입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "배치 전략과 가상기억장치"
+        ],
+        "chapter_label": "배치 전략과 가상기억장치",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 배치 전략과 가상기억장치",
+        "chapter_id": "chapter_138"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_074",
+        "topic_title": "배치 전략과 가상기억장치",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "배치 전략과 가상기억장치",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3개의 보관구조를 가지는 주기억장치가 있으며, 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 마지막 페이지 값으로 옳은 것은?\n페이지 순서 : 1, 2, 3, 2, 4, 2, 3, 1, 3",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4, 2, 3"
+          },
+          {
+            "label": "2",
+            "text": "4, 1, 3"
+          },
+          {
+            "label": "3",
+            "text": "1, 2, 3"
+          },
+          {
+            "label": "4",
+            "text": "1, 4, 2"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "4, 1, 3"
+        ],
+        "answer_text": "4, 1, 3"
+      },
+      "explanation": {
+        "source_text": "FIFO 기법은 가장 먼저 들어온 페이지를 교체합니다. 1,2,3 적재 후 4 참조 시 1이 교체되어 [4,2,3], 이후 1 참조 시 2가 교체되어 [4,1,3]이 됩니다. 최종 상태는 4, 1, 3입니다.",
+        "summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘의 동작 과정을 시뮬레이션하는 문제입니다.",
+        "why_correct": [
+          "참조 순서에 따라 가장 오래된 페이지를 교체해 나가면 마지막에 메모리에 남는 페이지는 4, 1, 3입니다."
+        ],
+        "why_others_wrong": [
+          "LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "key_concepts": [
+          "FIFO",
+          "Page Replacement",
+          "Page Fault"
+        ],
+        "memory_cues": [
+          "FIFO = 선입선출, 먼저 온 놈이 먼저 나간다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4, 2, 3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4, 1, 3'인데 이 선택지는 '4, 2, 3'이므로 일치하지 않습니다. LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          },
+          {
+            "label": "2",
+            "text": "4, 1, 3",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 4, 1, 3'와 일치합니다. 참조 순서에 따라 가장 오래된 페이지를 교체해 나가면 마지막에 메모리에 남는 페이지는 4, 1, 3입니다."
+          },
+          {
+            "label": "3",
+            "text": "1, 2, 3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4, 1, 3'인데 이 선택지는 '1, 2, 3'이므로 일치하지 않습니다. LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          },
+          {
+            "label": "4",
+            "text": "1, 4, 2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4, 1, 3'인데 이 선택지는 '1, 4, 2'이므로 일치하지 않습니다. LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 보관구조를 가지는 주기억장치가 있으며, 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 마지막 페이지 값으로 옳은 것은? 페이지 순서 : 1, 2, 3, 2, 4, 2, 3, 1, 3",
+          "핵심 개념을 떠올립니다. FIFO, Page Replacement, Page Fault",
+          "정답 판단 근거를 적용합니다. 참조 순서에 따라 가장 오래된 페이지를 교체해 나가면 마지막에 메모리에 남는 페이지는 4, 1, 3입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "exam_traps": [
+          "LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Page Replacement'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Page Fault'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FIFO = 선입선출, 먼저 온 놈이 먼저 나간다."
+        ],
+        "detailed_summary": "FIFO(First-In-First-Out) 페이지 교체 알고리즘의 동작 과정을 시뮬레이션하는 문제입니다. FIFO 기법은 가장 먼저 들어온 페이지를 교체합니다. 1,2,3 적재 후 4 참조 시 1이 교체되어 [4,2,3], 이후 1 참조 시 2가 교체되어 [4,1,3]이 됩니다. 최종 상태는 4, 1, 3입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3개의 보관구조를 가지는 주기억장치가 있으며, 다음의 순서로 페이지 참조가 발생할 때, FIFO 페이지 교체 알고리즘을 사용할 경우 마지막 페이지 값으로 옳은 것은? 페이지 순서 : 1, 2, 3, 2, 4, 2, 3, 1, 3 정답입니다. 이 선택지는 실제 정답인 '2번 4, 1, 3'와 일치합니다. 참조 순서에 따라 가장 오래된 페이지를 교체해 나가면 마지막에 메모리에 남는 페이지는 4, 1, 3입니다. 시험 포인트는 LRU(최근 최소 사용) 등 다른 알고리즘을 적용하거나 교체 대상을 잘못 선정하면 오답이 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "FIFO",
+        "페이지 교체",
+        "가상기억장치",
+        "페이지 부재"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          188
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0188",
+            "page_number": 188,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0188.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1386,
+            "file_size_bytes": 966298,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0188",
+          "page_number": 188,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0188.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1386,
+          "file_size_bytes": 966298,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0188",
+          "page_number": 188,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0188.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1386,
+          "file_size_bytes": 966298,
+          "render_scale": 2.0
+        }
+      }
+    }
+  ]
+}
