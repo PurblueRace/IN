@@ -64,6 +64,8 @@ const state = {
   practicalSummaryError: '',
   practicalUnitFilter: 'all',
   practicalSearchQuery: '',
+  practicalStudyMode: 'sequential',
+  practicalStudyIndex: 0,
   practicalProgress: { by_item_id: {} },
   questionBankTopicCache: {},
   quizContext: null,
@@ -2368,6 +2370,108 @@ function getPracticalDetails(item) {
   return [];
 }
 
+function cleanPracticalText(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function buildPracticalDetailCloze(detail, index, item) {
+  const text = cleanPracticalText(detail);
+  if (!text) return null;
+
+  const numberMatch = text.match(/^\((\d+)\)\s*(.+)$/);
+  const label = numberMatch ? `(${numberMatch[1]})` : `(${index + 1})`;
+  const body = numberMatch ? numberMatch[2].trim() : text;
+  const equalIndex = body.indexOf('=');
+  let mainTerm = '';
+  let aliasTerm = '';
+  let rest = '';
+
+  if (equalIndex > -1) {
+    mainTerm = body.slice(0, equalIndex).trim();
+    const afterEqual = body.slice(equalIndex + 1).trim();
+    const aliasMatch = afterEqual.match(/^(.+?\([^()]+\))\s*(.*)$/);
+    if (aliasMatch) {
+      aliasTerm = aliasMatch[1].trim();
+      rest = aliasMatch[2].trim();
+    } else {
+      const parts = afterEqual.split(/\s+/);
+      aliasTerm = parts.shift() || '';
+      rest = parts.join(' ').trim();
+    }
+  } else {
+    const termMatch = body.match(/^(.+?\([^()]+\))\s*(.*)$/);
+    if (termMatch) {
+      mainTerm = termMatch[1].trim();
+      rest = termMatch[2].trim();
+    } else {
+      const colonMatch = body.match(/^([^:：]+)[:：]\s*(.*)$/);
+      if (colonMatch) {
+        mainTerm = colonMatch[1].trim();
+        rest = colonMatch[2].trim();
+      }
+    }
+  }
+
+  if (!mainTerm) return null;
+
+  const answer = aliasTerm ? `${mainTerm} = ${aliasTerm}` : mainTerm;
+  const prompt = [
+    label,
+    '____',
+    aliasTerm ? '= ____' : '',
+    rest,
+  ].filter(Boolean).join(' ');
+
+  return {
+    id: `${item.id}-detail-${index + 1}`,
+    label,
+    prompt,
+    answer,
+    fullText: text,
+  };
+}
+
+function getPracticalClozes(item) {
+  const detailClozes = getPracticalDetails(item)
+    .map((detail, index) => buildPracticalDetailCloze(detail, index, item))
+    .filter(Boolean);
+
+  if (detailClozes.length) return detailClozes;
+
+  return [{
+    id: `${item.id}-main`,
+    label: '핵심',
+    prompt: cleanPracticalText(item.cloze?.prompt || item.summary || ''),
+    answer: cleanPracticalText(item.cloze?.answer || item.title || ''),
+    fullText: cleanPracticalText(item.summary || ''),
+  }];
+}
+
+function getPracticalTitleCloze(item) {
+  const title = cleanPracticalText(item.title || '');
+  return {
+    id: `${item.id}-title`,
+    label: '제목',
+    prompt: '____',
+    answer: title,
+    fullText: `제목: ${title}`,
+  };
+}
+
+function getPracticalCardSummary(item, clozes) {
+  const details = getPracticalDetails(item);
+  if (details.length > 1) {
+    return `하위 개념 ${details.length}개`;
+  }
+
+  const summary = cleanPracticalText(item.summary || '');
+  if (summary && (!clozes.length || summary !== clozes[0].fullText)) {
+    return summary;
+  }
+
+  return '핵심 개념';
+}
+
 function getPracticalAllItems() {
   return (state.practicalSummary?.sections || []).flatMap(section => section.items || []);
 }
@@ -2469,6 +2573,59 @@ function filterPracticalSections() {
   }).filter(section => section.items.length > 0);
 }
 
+function getPracticalStudyItems(filteredSections = filterPracticalSections()) {
+  return filteredSections.flatMap(section => (section.items || []).map(item => ({
+    ...item,
+    sectionUnit: section.unit,
+    sectionTitle: section.title,
+  })));
+}
+
+function normalizePracticalStudyIndex(count) {
+  if (count <= 0) {
+    state.practicalStudyIndex = 0;
+    return 0;
+  }
+
+  if (state.practicalStudyIndex < 0) {
+    state.practicalStudyIndex = 0;
+  }
+  if (state.practicalStudyIndex >= count) {
+    state.practicalStudyIndex = count - 1;
+  }
+
+  return state.practicalStudyIndex;
+}
+
+function pickRandomPracticalIndex(count, currentIndex = state.practicalStudyIndex) {
+  if (count <= 1) return 0;
+
+  let nextIndex = currentIndex;
+  for (let attempt = 0; attempt < 8 && nextIndex === currentIndex; attempt++) {
+    nextIndex = Math.floor(Math.random() * count);
+  }
+
+  return nextIndex === currentIndex ? (currentIndex + 1) % count : nextIndex;
+}
+
+function renderPracticalStudyControls(count) {
+  const mode = state.practicalStudyMode === 'random' ? 'random' : 'sequential';
+  const disabled = count <= 1 ? 'disabled' : '';
+
+  return `
+    <div class="practical-study-controls">
+      <div class="practical-study-modes" role="group" aria-label="실기 학습 방식">
+        <button class="practical-study-mode ${mode === 'sequential' ? 'active' : ''}" data-practical-study-mode="sequential">순차</button>
+        <button class="practical-study-mode ${mode === 'random' ? 'active' : ''}" data-practical-study-mode="random">랜덤</button>
+      </div>
+      <div class="practical-study-nav">
+        <button class="practical-study-nav-btn" data-practical-study-action="prev" ${disabled}>이전</button>
+        <button class="practical-study-nav-btn primary" data-practical-study-action="next" ${disabled}>다음</button>
+      </div>
+    </div>
+  `;
+}
+
 function renderPracticalUnitChips(sections) {
   const allCount = state.practicalSummary?.source?.item_count || sections.reduce((sum, section) => sum + (section.item_count || 0), 0);
   const weakCount = getPracticalMemoryStats().weakItems.length;
@@ -2519,7 +2676,7 @@ function renderPracticalMemoryPanel(stats) {
             ${weakItems.map(({ item, progress }) => `
               <button class="practical-weak-item" data-practical-focus="${escapeHtml(item.id)}">
                 <span>${String(item.global_number).padStart(3, '0')}</span>
-                <strong>${escapeHtml(item.title)}</strong>
+                <strong>오답 항목 복습</strong>
                 <em>오답 ${progress.incorrect} · 정답 ${progress.correct}</em>
               </button>
             `).join('')}
@@ -2542,6 +2699,21 @@ function renderPracticalDetails(item) {
   `;
 }
 
+function renderPracticalClozeBlock(cloze) {
+  return `
+    <div class="practical-cloze">
+      <div class="practical-cloze-label">빈칸 암기 ${escapeHtml(cloze.label)}</div>
+      <p>${escapeHtml(cloze.prompt)}</p>
+      <button class="practical-answer-toggle" data-practical-answer>정답 보기</button>
+      <div class="practical-answer">
+        <span>정답</span>
+        <strong>${escapeHtml(cloze.answer)}</strong>
+      </div>
+      <div class="practical-answer-full">${escapeHtml(cloze.fullText)}</div>
+    </div>
+  `;
+}
+
 function renderPracticalItemCard(item) {
   const progress = getPracticalItemProgress(item.id);
   const statusClass = progress.lastResult === 'correct'
@@ -2550,24 +2722,20 @@ function renderPracticalItemCard(item) {
       ? 'missed'
       : '';
   const itemAccuracy = progress.attempts > 0 ? Math.round((progress.correct / progress.attempts) * 100) : 0;
+  const detailClozes = getPracticalClozes(item);
+  const clozes = [getPracticalTitleCloze(item), ...detailClozes];
 
   return `
     <article class="practical-card ${statusClass}" id="practical-card-${escapeHtml(item.id)}">
       <div class="practical-card-head">
         <span class="practical-number">${String(item.global_number).padStart(3, '0')}</span>
-        <h3>${escapeHtml(item.title)}</h3>
+        <h3><span class="practical-title-blank">____</span></h3>
       </div>
 
-      <div class="practical-summary">${escapeHtml(item.summary || '')}</div>
+      <div class="practical-summary">${escapeHtml(getPracticalCardSummary(item, detailClozes))}</div>
 
-      <div class="practical-cloze">
-        <div class="practical-cloze-label">빈칸 암기</div>
-        <p>${escapeHtml(item.cloze?.prompt || '')}</p>
-        <button class="practical-answer-toggle" data-practical-answer>정답 보기</button>
-        <div class="practical-answer">
-          <span>정답</span>
-          <strong>${escapeHtml(item.cloze?.answer || '')}</strong>
-        </div>
+      <div class="practical-cloze-list">
+        ${clozes.map(renderPracticalClozeBlock).join('')}
       </div>
 
       <div class="practical-memory-actions">
@@ -2581,8 +2749,6 @@ function renderPracticalItemCard(item) {
           <button class="practical-result-btn incorrect" data-practical-result="${escapeHtml(item.id)}" data-result="incorrect">틀렸어요</button>
         </div>
       </div>
-
-      ${renderPracticalDetails(item)}
     </article>
   `;
 }
@@ -2596,7 +2762,10 @@ function renderPracticalSummary() {
   const sections = summary.sections || [];
   const memoryStats = getPracticalMemoryStats();
   const filteredSections = filterPracticalSections();
-  const visibleCount = filteredSections.reduce((sum, section) => sum + section.items.length, 0);
+  const studyItems = getPracticalStudyItems(filteredSections);
+  const visibleCount = studyItems.length;
+  const currentIndex = normalizePracticalStudyIndex(visibleCount);
+  const currentItem = studyItems[currentIndex] || null;
 
   const loadingHtml = state.practicalSummaryLoading
     ? `<div class="auth-note practical-state-note">실기 정리 데이터를 불러오는 중이에요.</div>`
@@ -2607,6 +2776,22 @@ function renderPracticalSummary() {
   const emptyHtml = !state.practicalSummaryLoading && !state.practicalSummaryError && visibleCount === 0
     ? `<div class="empty-state practical-empty"><div class="empty-emoji">🔎</div><div class="empty-text">조건에 맞는 실기 정리가 없어요</div></div>`
     : '';
+  const studyHtml = currentItem ? `
+    <div class="practical-study-shell">
+      <section class="practical-section">
+        <div class="practical-section-head practical-study-head">
+          <div>
+            <div class="practical-section-kicker">${String(currentItem.sectionUnit).padStart(2, '0')}단원</div>
+            <h2>${escapeHtml(currentItem.sectionTitle || '')}</h2>
+          </div>
+          <span>${currentIndex + 1}/${visibleCount}</span>
+        </div>
+
+        ${renderPracticalStudyControls(visibleCount)}
+        ${renderPracticalItemCard(currentItem)}
+      </section>
+    </div>
+  ` : '';
 
   app.innerHTML = `
     <div class="page" id="page-practical">
@@ -2636,26 +2821,7 @@ function renderPracticalSummary() {
       ${loadingHtml}
       ${errorHtml}
       ${emptyHtml}
-
-      <div class="practical-section-list">
-        ${filteredSections.map(section => `
-          <section class="practical-section">
-            <div class="practical-section-head">
-              <div>
-                <div class="practical-section-kicker">${String(section.unit).padStart(2, '0')}단원</div>
-                <h2>${escapeHtml(section.title)}</h2>
-              </div>
-              <span>${section.items.length}개</span>
-            </div>
-
-            <div class="practical-card-list">
-              ${section.items.map(item => `
-                ${renderPracticalItemCard(item)}
-              `).join('')}
-            </div>
-          </section>
-        `).join('')}
-      </div>
+      ${studyHtml}
     </div>
 
     ${renderBottomNav('practical')}
@@ -2663,6 +2829,7 @@ function renderPracticalSummary() {
 
   document.getElementById('practical-search')?.addEventListener('input', (event) => {
     state.practicalSearchQuery = event.target.value;
+    state.practicalStudyIndex = 0;
     renderPracticalSummary();
     document.getElementById('practical-search')?.focus();
   });
@@ -2670,6 +2837,7 @@ function renderPracticalSummary() {
   document.querySelectorAll('[data-practical-unit]').forEach((button) => {
     button.addEventListener('click', () => {
       state.practicalUnitFilter = button.dataset.practicalUnit || 'all';
+      state.practicalStudyIndex = 0;
       renderPracticalSummary();
     });
   });
@@ -2679,10 +2847,39 @@ function renderPracticalSummary() {
       state.practicalUnitFilter = 'weak';
       state.practicalSearchQuery = '';
       const targetId = button.dataset.practicalFocus;
+      const focusedItems = getPracticalStudyItems(filterPracticalSections());
+      const focusedIndex = focusedItems.findIndex(item => item.id === targetId);
+      state.practicalStudyIndex = focusedIndex >= 0 ? focusedIndex : 0;
       renderPracticalSummary();
       setTimeout(() => {
         document.getElementById(`practical-card-${targetId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 50);
+    });
+  });
+
+  document.querySelectorAll('[data-practical-study-mode]').forEach((button) => {
+    button.addEventListener('click', () => {
+      state.practicalStudyMode = button.dataset.practicalStudyMode === 'random' ? 'random' : 'sequential';
+      if (state.practicalStudyMode === 'random') {
+        const items = getPracticalStudyItems();
+        state.practicalStudyIndex = pickRandomPracticalIndex(items.length);
+      }
+      renderPracticalSummary();
+    });
+  });
+
+  document.querySelectorAll('[data-practical-study-action]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const items = getPracticalStudyItems();
+      const count = items.length;
+      if (button.dataset.practicalStudyAction === 'prev') {
+        state.practicalStudyIndex = count > 0 ? (state.practicalStudyIndex - 1 + count) % count : 0;
+      } else if (state.practicalStudyMode === 'random') {
+        state.practicalStudyIndex = pickRandomPracticalIndex(count);
+      } else {
+        state.practicalStudyIndex = count > 0 ? (state.practicalStudyIndex + 1) % count : 0;
+      }
+      renderPracticalSummary();
     });
   });
 
