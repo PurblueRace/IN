@@ -2623,7 +2623,11 @@ function getPracticalTitleCloze(item) {
 
 function getPracticalQuestionClozes(item) {
   const seenPrompts = new Set();
-  return [getPracticalTitleCloze(item), ...getPracticalClozes(item)]
+  const clozes = item.title_cloze_enabled === false
+    ? getPracticalClozes(item)
+    : [getPracticalTitleCloze(item), ...getPracticalClozes(item)];
+
+  return clozes
     .filter(Boolean)
     .filter((cloze) => {
       const key = cleanPracticalText(cloze.prompt);
