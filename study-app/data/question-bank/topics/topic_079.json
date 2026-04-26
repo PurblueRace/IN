@@ -1,0 +1,2540 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_079",
+    "sequence": 79,
+    "title": "IP 주소와 IPv6",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 16,
+    "review_count": 13,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_319",
+      "chapter_137",
+      "chapter_344",
+      "chapter_186"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_7846a820ef137c57",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          16,
+          17
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 17
+        },
+        "source_explanation": "192.168.1.0/24를 4개로 나누면 각 서브넷은 64개씩 할당됩니다. 4번째 서브넷은 192.168.1.192부터 시작하며, 네트워크 주소(.192)를 제외한 첫 번째 사용 가능 IP는 .193입니다. 따라서 4번째 사용 가능 IP는 .196입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 4개의 Subnet으로 나누고 IP Subnet-zero를 적용하였다. 이때 Subnetting된 네트워크 중 4번째 네트워크의 4번째 사용 가능한 IP는 무엇인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "192.168.1.192"
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.195"
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.196"
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.198"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "192.168.1.196"
+        ],
+        "answer_text": "192.168.1.196"
+      },
+      "explanation": {
+        "source_text": "192.168.1.0/24를 4개로 나누면 각 서브넷은 64개씩 할당됩니다. 4번째 서브넷은 192.168.1.192부터 시작하며, 네트워크 주소(.192)를 제외한 첫 번째 사용 가능 IP는 .193입니다. 따라서 4번째 사용 가능 IP는 .196입니다.",
+        "summary": "C 클래스 네트워크를 4개의 서브넷으로 분할했을 때 특정 서브넷의 가용 IP를 찾는 문제입니다.",
+        "why_correct": [
+          "256개를 4로 나누면 서브넷당 64개입니다. 4번째 서브넷 범위는 192~255입니다.",
+          "네트워크 주소는 192, 브로드캐스트 주소는 255입니다.",
+          "사용 가능한 IP는 193(1st), 194(2nd), 195(3rd), 196(4th)입니다."
+        ],
+        "why_others_wrong": [
+          "192는 네트워크 대표 주소로 사용할 수 없습니다.",
+          "195는 3번째 사용 가능한 IP입니다.",
+          "198은 6번째 사용 가능한 IP입니다."
+        ],
+        "key_concepts": [
+          "FLSM (Fixed Length Subnet Mask)",
+          "서브넷 마스크",
+          "가용 IP 주소"
+        ],
+        "memory_cues": [
+          "서브넷의 첫 번째 주소(네트워크 ID)와 마지막 주소(브로드캐스트)는 호스트에 할당할 수 없음을 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "192.168.1.192",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 192.168.1.196'인데 이 선택지는 '192.168.1.192'이므로 일치하지 않습니다. 192는 네트워크 대표 주소로 사용할 수 없습니다. 195는 3번째 사용 가능한 IP입니다."
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.195",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 192.168.1.196'인데 이 선택지는 '192.168.1.195'이므로 일치하지 않습니다. 192는 네트워크 대표 주소로 사용할 수 없습니다. 195는 3번째 사용 가능한 IP입니다."
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.196",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 192.168.1.196'와 일치합니다. 256개를 4로 나누면 서브넷당 64개입니다. 4번째 서브넷 범위는 192~255입니다. 네트워크 주소는 192, 브로드캐스트 주소는 255입니다."
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.198",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 192.168.1.196'인데 이 선택지는 '192.168.1.198'이므로 일치하지 않습니다. 192는 네트워크 대표 주소로 사용할 수 없습니다. 195는 3번째 사용 가능한 IP입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 4개의 Subnet으로 나누고 IP Subnet-zero를 적용하였다. 이때 Subnetting된 네트워크 중 4번째 네트워크의 4번째 사용 가능한 IP는 무엇인가?",
+          "핵심 개념을 떠올립니다. FLSM (Fixed Length Subnet Mask), 서브넷 마스크, 가용 IP 주소",
+          "정답 판단 근거를 적용합니다. 256개를 4로 나누면 서브넷당 64개입니다. 4번째 서브넷 범위는 192~255입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 192는 네트워크 대표 주소로 사용할 수 없습니다."
+        ],
+        "exam_traps": [
+          "192는 네트워크 대표 주소로 사용할 수 없습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FLSM (Fixed Length Subnet Mask)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서브넷 마스크'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가용 IP 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 서브넷의 첫 번째 주소(네트워크 ID)와 마지막 주소(브로드캐스트)는 호스트에 할당할 수 없음을 기억하세요."
+        ],
+        "detailed_summary": "C 클래스 네트워크를 4개의 서브넷으로 분할했을 때 특정 서브넷의 가용 IP를 찾는 문제입니다. 192.168.1.0/24를 4개로 나누면 각 서브넷은 64개씩 할당됩니다. 4번째 서브넷은 192.168.1.192부터 시작하며, 네트워크 주소(.192)를 제외한 첫 번째 사용 가능 IP는 .193입니다. 따라서 4번째 사용 가능 IP는 .196입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 4개의 Subnet으로 나누고 IP Subnet-zero를 적용하였다. 이때 Subnetting된 네트워크 중 4번째 네트워크의 4번째 사용 가능한 IP는 무엇인가? 정답입니다. 이 선택지는 실제 정답인 '3번 192.168.1.196'와 일치합니다. 256개를 4로 나누면 서브넷당 64개입니다. 4번째 서브넷 범위는 192~255입니다. 네트워크 주소는 192, 브로드캐스트 주소는 255입니다. 시험 포인트는 192는 네트워크 대표 주소로 사용할 수 없습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IP 주소",
+        "서브네팅",
+        "FLSM",
+        "Subnet-zero"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_cec7c404c2733da3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          36
+        ],
+        "page_span": {
+          "start_page": 36,
+          "end_page": 36
+        },
+        "source_explanation": "IPv4 주소는 8비트씩 4부분, 총 32비트로 구성됩니다. 3번의 경우 IPv4의 특징이 맞으나, 문제의 의도상 IPv6와 대비되는 가장 명확한 특징인 2번을 정답으로 채택하고 있습니다. (해설지 기준)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 IPv4에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "IPv6에 비해 자료 전송 속도가 빠르다."
+          },
+          {
+            "label": "2",
+            "text": "주소의 길이는 32비트이다."
+          },
+          {
+            "label": "3",
+            "text": "브로드캐스트, 유니캐스트, 멀티캐스트로 구성된다."
+          },
+          {
+            "label": "4",
+            "text": "인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제를 해결할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "주소의 길이는 32비트이다."
+        ],
+        "answer_text": "주소의 길이는 32비트이다."
+      },
+      "explanation": {
+        "source_text": "IPv4 주소는 8비트씩 4부분, 총 32비트로 구성됩니다. 3번의 경우 IPv4의 특징이 맞으나, 문제의 의도상 IPv6와 대비되는 가장 명확한 특징인 2번을 정답으로 채택하고 있습니다. (해설지 기준)",
+        "summary": "IPv4 프로토콜의 기본 특징",
+        "why_correct": [
+          "IPv4는 32비트 주소 체계를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "속도는 IPv6가 더 효율적일 수 있습니다.",
+          "IPv6는 브로드캐스트 대신 애니캐스트를 사용합니다.",
+          "보안 기능(IPSec)은 IPv6에서 기본적으로 지원됩니다."
+        ],
+        "key_concepts": [
+          "IPv4 (32비트)",
+          "IPv6 (128비트)"
+        ],
+        "memory_cues": [
+          "IPv4는 4바이트(32비트)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "IPv6에 비해 자료 전송 속도가 빠르다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 주소의 길이는 32비트이다.'인데 이 선택지는 'IPv6에 비해 자료 전송 속도가 빠르다.'이므로 일치하지 않습니다. 속도는 IPv6가 더 효율적일 수 있습니다. IPv6는 브로드캐스트 대신 애니캐스트를 사용합니다."
+          },
+          {
+            "label": "2",
+            "text": "주소의 길이는 32비트이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 주소의 길이는 32비트이다.'와 일치합니다. IPv4는 32비트 주소 체계를 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "브로드캐스트, 유니캐스트, 멀티캐스트로 구성된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 주소의 길이는 32비트이다.'인데 이 선택지는 '브로드캐스트, 유니캐스트, 멀티캐스트로 구성된다.'이므로 일치하지 않습니다. 속도는 IPv6가 더 효율적일 수 있습니다. IPv6는 브로드캐스트 대신 애니캐스트를 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제를 해결할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 주소의 길이는 32비트이다.'인데 이 선택지는 '인증성, 기밀성, 데이터 무결성의 지원으로 보안 문제를 해결할 수 있다.'이므로 일치하지 않습니다. 속도는 IPv6가 더 효율적일 수 있습니다. IPv6는 브로드캐스트 대신 애니캐스트를 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 IPv4에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. IPv4 (32비트), IPv6 (128비트)",
+          "정답 판단 근거를 적용합니다. IPv4는 32비트 주소 체계를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 속도는 IPv6가 더 효율적일 수 있습니다."
+        ],
+        "exam_traps": [
+          "속도는 IPv6가 더 효율적일 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv4 (32비트)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IPv6 (128비트)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv4는 4바이트(32비트)"
+        ],
+        "detailed_summary": "IPv4 프로토콜의 기본 특징 IPv4 주소는 8비트씩 4부분, 총 32비트로 구성됩니다. 3번의 경우 IPv4의 특징이 맞으나, 문제의 의도상 IPv6와 대비되는 가장 명확한 특징인 2번을 정답으로 채택하고 있습니다. (해설지 기준) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 IPv4에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 주소의 길이는 32비트이다.'와 일치합니다. IPv4는 32비트 주소 체계를 사용합니다. 시험 포인트는 속도는 IPv6가 더 효율적일 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "선택지 3번도 IPv4의 전송 방식 특징이나, 정답은 2번으로 기재되어 있음. IPv6는 애니캐스트를 사용함."
+        ]
+      },
+      "keywords": [
+        "IPv4",
+        "IP 주소",
+        "32비트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1ed9422631029c1d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          56
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 56
+        },
+        "source_explanation": "전문가의 조언 | IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "정보시스템 구축관리 > IP 주소와 IPv6",
+        "chapter_id": "chapter_319"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "67. IPv6에 대한 특성으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+          },
+          {
+            "label": "2",
+            "text": "2^128개의 주소를 표현할 수 있다."
+          },
+          {
+            "label": "3",
+            "text": "등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다."
+          },
+          {
+            "label": "4",
+            "text": "확장기능을 통해 보안기능을 제공한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+        ],
+        "answer_text": "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다.",
+        "summary": "차세대 인터넷 프로토콜인 IPv6의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "8비트씩 4부분(총 32비트)을 10진수로 표시하는 것은 IPv4의 방식입니다. IPv6는 16비트씩 8부분(총 128비트)을 16진수로 표시합니다."
+        ],
+        "why_others_wrong": [
+          "IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+        ],
+        "key_concepts": [
+          "IPv6",
+          "주소 체계",
+          "128비트"
+        ],
+        "memory_cues": [
+          "IPv6 = 128비트, 16진수"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "표시방법은 8비트씩 4부분의 10진수로 표시한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'와 일치합니다. 8비트씩 4부분(총 32비트)을 10진수로 표시하는 것은 IPv4의 방식입니다. IPv6는 16비트씩 8부분(총 128비트)을 16진수로 표시합니다."
+          },
+          {
+            "label": "2",
+            "text": "2^128개의 주소를 표현할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '2^128개의 주소를 표현할 수 있다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+          },
+          {
+            "label": "3",
+            "text": "등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+          },
+          {
+            "label": "4",
+            "text": "확장기능을 통해 보안기능을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '확장기능을 통해 보안기능을 제공한다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. IPv6에 대한 특성으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. IPv6, 주소 체계, 128비트",
+          "정답 판단 근거를 적용합니다. 8비트씩 4부분(총 32비트)을 10진수로 표시하는 것은 IPv4의 방식입니다. IPv6는 16비트씩 8부분(총 128비트)을 16진수로 표시합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+        ],
+        "exam_traps": [
+          "IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '주소 체계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '128비트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv6 = 128비트, 16진수"
+        ],
+        "detailed_summary": "차세대 인터넷 프로토콜인 IPv6의 특징을 묻는 문제입니다. 전문가의 조언 | IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. IPv6에 대한 특성으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'와 일치합니다. 8비트씩 4부분(총 32비트)을 10진수로 표시하는 것은 IPv4의 방식입니다. IPv6는 16비트씩 8부분(총 128비트)을 16진수로 표시합니다. 시험 포인트는 IPv6는 128비트 주소 체계이며, QoS(품질 보장) 및 보안 기능(IPSec)이 강화되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "IPv6",
+        "IP 주소",
+        "128비트",
+        "16진수",
+        "QoS"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b764e26a2387b647",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 61
+        },
+        "source_explanation": "IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "네트워크"
+        ],
+        "chapter_label": "네트워크",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 네트워크",
+        "chapter_id": "chapter_137"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "67. IPv6에 대한 특성으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+          },
+          {
+            "label": "2",
+            "text": "2^128개의 주소를 표현할 수 있다."
+          },
+          {
+            "label": "3",
+            "text": "등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다."
+          },
+          {
+            "label": "4",
+            "text": "확장기능을 통해 보안기능을 제공한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+        ],
+        "answer_text": "표시방법은 8비트씩 4부분의 10진수로 표시한다."
+      },
+      "explanation": {
+        "source_text": "IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다.",
+        "summary": "IPv6의 주소 체계와 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "8비트씩 4부분(32비트)의 10진수 표시는 IPv4의 방식입니다. IPv6는 16비트씩 8부분(128비트)을 16진수로 표시합니다."
+        ],
+        "why_others_wrong": [
+          "IPv6는 128비트 주소 체계입니다.",
+          "Flow Label 필드 등을 통해 QoS(품질보장)가 용이합니다.",
+          "IPSec을 기본으로 포함하여 보안 기능이 강화되었습니다."
+        ],
+        "key_concepts": [
+          "IPv6",
+          "IPv4",
+          "주소 표현 방식"
+        ],
+        "memory_cues": [
+          "IPv6 = 128비트 = 16진수"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "표시방법은 8비트씩 4부분의 10진수로 표시한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'와 일치합니다. 8비트씩 4부분(32비트)의 10진수 표시는 IPv4의 방식입니다. IPv6는 16비트씩 8부분(128비트)을 16진수로 표시합니다."
+          },
+          {
+            "label": "2",
+            "text": "2^128개의 주소를 표현할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '2^128개의 주소를 표현할 수 있다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계입니다. Flow Label 필드 등을 통해 QoS(품질보장)가 용이합니다."
+          },
+          {
+            "label": "3",
+            "text": "등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '등급별, 서비스별로 패킷을 구분할 수 있어 품질보장이 용이하다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계입니다. Flow Label 필드 등을 통해 QoS(품질보장)가 용이합니다."
+          },
+          {
+            "label": "4",
+            "text": "확장기능을 통해 보안기능을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'인데 이 선택지는 '확장기능을 통해 보안기능을 제공한다.'이므로 일치하지 않습니다. IPv6는 128비트 주소 체계입니다. Flow Label 필드 등을 통해 QoS(품질보장)가 용이합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. IPv6에 대한 특성으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. IPv6, IPv4, 주소 표현 방식",
+          "정답 판단 근거를 적용합니다. 8비트씩 4부분(32비트)의 10진수 표시는 IPv4의 방식입니다. IPv6는 16비트씩 8부분(128비트)을 16진수로 표시합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. IPv6는 128비트 주소 체계입니다."
+        ],
+        "exam_traps": [
+          "IPv6는 128비트 주소 체계입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IPv4'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '주소 표현 방식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv6 = 128비트 = 16진수"
+        ],
+        "detailed_summary": "IPv6의 주소 체계와 특징을 묻는 문제입니다. IPv6는 16비트씩 8부분, 총 128비트로 구성되어 있으며 각 부분을 16진수로 표현합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 67. IPv6에 대한 특성으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 표시방법은 8비트씩 4부분의 10진수로 표시한다.'와 일치합니다. 8비트씩 4부분(32비트)의 10진수 표시는 IPv4의 방식입니다. IPv6는 16비트씩 8부분(128비트)을 16진수로 표시합니다. 시험 포인트는 IPv6는 128비트 주소 체계입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IPv6",
+        "IP 주소",
+        "128비트",
+        "QoS"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9da47d475f2eb8ad",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          75
+        ],
+        "page_span": {
+          "start_page": 75,
+          "end_page": 75
+        },
+        "source_explanation": "IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 방식의 주소 체계를 사용하며, 브로드캐스트는 사용하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "프로그래밍 언어 활용 > IP 주소와 IPv6",
+        "chapter_id": "chapter_344"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "IPv6에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+          },
+          {
+            "label": "2",
+            "text": "보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다."
+          },
+          {
+            "label": "3",
+            "text": "애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다."
+          },
+          {
+            "label": "4",
+            "text": "128비트 주소 체계를 사용한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+        ],
+        "answer_text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+      },
+      "explanation": {
+        "source_text": "IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 방식의 주소 체계를 사용하며, 브로드캐스트는 사용하지 않습니다.",
+        "summary": "IPv6 프로토콜의 주요 특징과 IPv4와의 차이점을 묻는 문제입니다.",
+        "why_correct": [
+          "IPv6는 브로드캐스트를 사용하지 않고 멀티캐스트를 사용하여 네트워크 효율성을 높였습니다."
+        ],
+        "why_others_wrong": [
+          "2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다.",
+          "3: 애니캐스트는 가장 가까운 노드 하나와 통신하는 방식입니다.",
+          "4: IPv6는 128비트(16비트씩 8부분) 주소를 사용합니다."
+        ],
+        "key_concepts": [
+          "IPv6",
+          "애니캐스트",
+          "128비트"
+        ],
+        "memory_cues": [
+          "IPv6는 브로드캐스트가 없다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'와 일치합니다. IPv6는 브로드캐스트를 사용하지 않고 멀티캐스트를 사용하여 네트워크 효율성을 높였습니다."
+          },
+          {
+            "label": "2",
+            "text": "보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다.'이므로 일치하지 않습니다. 2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다. 3: 애니캐스트는 가장 가까운 노드 하나와 통신하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다.'이므로 일치하지 않습니다. 2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다. 3: 애니캐스트는 가장 가까운 노드 하나와 통신하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "128비트 주소 체계를 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '128비트 주소 체계를 사용한다.'이므로 일치하지 않습니다. 2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다. 3: 애니캐스트는 가장 가까운 노드 하나와 통신하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv6에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. IPv6, 애니캐스트, 128비트",
+          "정답 판단 근거를 적용합니다. IPv6는 브로드캐스트를 사용하지 않고 멀티캐스트를 사용하여 네트워크 효율성을 높였습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다."
+        ],
+        "exam_traps": [
+          "2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '애니캐스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '128비트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv6는 브로드캐스트가 없다."
+        ],
+        "detailed_summary": "IPv6 프로토콜의 주요 특징과 IPv4와의 차이점을 묻는 문제입니다. IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 방식의 주소 체계를 사용하며, 브로드캐스트는 사용하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv6에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'와 일치합니다. IPv6는 브로드캐스트를 사용하지 않고 멀티캐스트를 사용하여 네트워크 효율성을 높였습니다. 시험 포인트는 2: IPSec 기능을 기본으로 포함하여 보안이 강화되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IPv6",
+        "주소 체계",
+        "멀티캐스트",
+        "애니캐스트",
+        "128비트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2485d12788a2cca6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 128.107.176.0/22 네트워크의 서브넷 마스크는 1의 개수가 22개, 즉 11111111 11111111 11111100 00000000이므로 255.255.252.0입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "68. 128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "255.0.0.0"
+          },
+          {
+            "label": "2",
+            "text": "255.248.0.0"
+          },
+          {
+            "label": "3",
+            "text": "255.255.252.0"
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.255"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "255.255.252.0"
+        ],
+        "answer_text": "255.255.252.0"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 128.107.176.0/22 네트워크의 서브넷 마스크는 1의 개수가 22개, 즉 11111111 11111111 11111100 00000000이므로 255.255.252.0입니다.",
+        "summary": "CIDR 표기법(/22)을 서브넷 마스크 형식으로 변환하는 문제입니다.",
+        "why_correct": [
+          "/22는 앞에서부터 22비트가 1임을 의미하며, 이를 8비트씩 끊어 십진수로 변환하면 255.255.252.0이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+        ],
+        "key_concepts": [
+          "CIDR",
+          "서브넷 마스크 변환"
+        ],
+        "memory_cues": [
+          "/22 = 8+8+6 bits = 255.255.(256-4).0"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "255.0.0.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.0.0.0'이므로 일치하지 않습니다. 1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "255.248.0.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.248.0.0'이므로 일치하지 않습니다. 1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "255.255.252.0",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 255.255.252.0'와 일치합니다. /22는 앞에서부터 22비트가 1임을 의미하며, 이를 8비트씩 끊어 십진수로 변환하면 255.255.252.0이 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.255",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.255.255.255'이므로 일치하지 않습니다. 1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 68. 128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는?",
+          "핵심 개념을 떠올립니다. CIDR, 서브넷 마스크 변환",
+          "정답 판단 근거를 적용합니다. /22는 앞에서부터 22비트가 1임을 의미하며, 이를 8비트씩 끊어 십진수로 변환하면 255.255.252.0이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+        ],
+        "exam_traps": [
+          "1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIDR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서브넷 마스크 변환'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. /22 = 8+8+6 bits = 255.255.(256-4).0"
+        ],
+        "detailed_summary": "CIDR 표기법(/22)을 서브넷 마스크 형식으로 변환하는 문제입니다. 전문가의 조언 | 128.107.176.0/22 네트워크의 서브넷 마스크는 1의 개수가 22개, 즉 11111111 11111111 11111100 00000000이므로 255.255.252.0입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 68. 128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는? 정답입니다. 이 선택지는 실제 정답인 '3번 255.255.252.0'와 일치합니다. /22는 앞에서부터 22비트가 1임을 의미하며, 이를 8비트씩 끊어 십진수로 변환하면 255.255.252.0이 됩니다. 시험 포인트는 1번은 /8, 2번은 /13, 4번은 /32에 해당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "서브넷 마스크",
+        "CIDR",
+        "IP 주소"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_37758c789f8050fe",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "CIDR 표기법 /22는 서브넷 마스크의 1의 개수가 22개임을 의미합니다. 11111111.11111111.11111100.00000000을 10진수로 변환하면 255.255.252.0입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "프로그래밍 언어 활용 > IP 주소와 IPv6",
+        "chapter_id": "chapter_344"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "255.0.0.0"
+          },
+          {
+            "label": "2",
+            "text": "255.248.0.0"
+          },
+          {
+            "label": "3",
+            "text": "255.255.252.0"
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.0"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "255.255.252.0"
+        ],
+        "answer_text": "255.255.252.0"
+      },
+      "explanation": {
+        "source_text": "CIDR 표기법 /22는 서브넷 마스크의 1의 개수가 22개임을 의미합니다. 11111111.11111111.11111100.00000000을 10진수로 변환하면 255.255.252.0입니다.",
+        "summary": "CIDR 표기법을 10진수 서브넷 마스크로 변환하는 문제입니다.",
+        "why_correct": [
+          "/22는 앞에서부터 22비트가 1임을 뜻하며, 이는 255.255.252.0에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "1: /8에 해당합니다.",
+          "2: /13에 해당합니다.",
+          "4: /24에 해당합니다."
+        ],
+        "key_concepts": [
+          "CIDR",
+          "서브넷 마스크"
+        ],
+        "memory_cues": [
+          "/24는 255.255.255.0, /22는 거기서 2비트 뺀 것"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "255.0.0.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.0.0.0'이므로 일치하지 않습니다. 1: /8에 해당합니다. 2: /13에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "255.248.0.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.248.0.0'이므로 일치하지 않습니다. 1: /8에 해당합니다. 2: /13에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "255.255.252.0",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 255.255.252.0'와 일치합니다. /22는 앞에서부터 22비트가 1임을 뜻하며, 이는 255.255.252.0에 해당합니다."
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 255.255.252.0'인데 이 선택지는 '255.255.255.0'이므로 일치하지 않습니다. 1: /8에 해당합니다. 2: /13에 해당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는?",
+          "핵심 개념을 떠올립니다. CIDR, 서브넷 마스크",
+          "정답 판단 근거를 적용합니다. /22는 앞에서부터 22비트가 1임을 뜻하며, 이는 255.255.252.0에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1: /8에 해당합니다."
+        ],
+        "exam_traps": [
+          "1: /8에 해당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIDR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서브넷 마스크'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. /24는 255.255.255.0, /22는 거기서 2비트 뺀 것"
+        ],
+        "detailed_summary": "CIDR 표기법을 10진수 서브넷 마스크로 변환하는 문제입니다. CIDR 표기법 /22는 서브넷 마스크의 1의 개수가 22개임을 의미합니다. 11111111.11111111.11111100.00000000을 10진수로 변환하면 255.255.252.0입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 128.107.176.0/22 네트워크에서 호스트에 의해 사용될 수 있는 서브넷 마스크는? 정답입니다. 이 선택지는 실제 정답인 '3번 255.255.252.0'와 일치합니다. /22는 앞에서부터 22비트가 1임을 뜻하며, 이는 255.255.252.0에 해당합니다. 시험 포인트는 1: /8에 해당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty in choice 4 text vs explanation",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "서브넷 마스크",
+        "CIDR",
+        "IP 주소",
+        "네트워크"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_597fdf6c5e0b5339",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "CIDR 표기에서 /27은 서브넷 마스크의 1의 개수가 27개임을 의미합니다. 즉, 11111111.11111111.11111111.11100000이 되어 255.255.255.224가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "프로그래밍 언어 활용 > IP 주소와 IPv6",
+        "chapter_id": "chapter_344"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "77. CIDR(Classless Inter-Domain Routing) 표기로 203.241.132.82/27과 같이 사용되었다면, 해당 주소의 서브넷 마스크(Subnet Mask)는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "255.255.255.0"
+          },
+          {
+            "label": "2",
+            "text": "255.255.255.224"
+          },
+          {
+            "label": "3",
+            "text": "255.255.255.240"
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.248"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "255.255.255.224"
+        ],
+        "answer_text": "255.255.255.224"
+      },
+      "explanation": {
+        "source_text": "CIDR 표기에서 /27은 서브넷 마스크의 1의 개수가 27개임을 의미합니다. 즉, 11111111.11111111.11111111.11100000이 되어 255.255.255.224가 됩니다.",
+        "summary": "CIDR 표기법을 서브넷 마스크로 변환하는 계산 문제입니다.",
+        "why_correct": [
+          "/27은 앞에서부터 27비트가 1이라는 뜻입니다. 마지막 옥텟은 11100000(2)이며, 이는 128+64+32 = 224입니다. 따라서 255.255.255.224입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 /24인 경우입니다.",
+          "3번은 /28인 경우(240)입니다.",
+          "4번은 /29인 경우(248)입니다."
+        ],
+        "key_concepts": [
+          "CIDR",
+          "Subnet Mask",
+          "Prefix Length"
+        ],
+        "memory_cues": [
+          "/24=0, /25=128, /26=192, /27=224, /28=240, /29=248, /30=252"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "255.255.255.0",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 255.255.255.224'인데 이 선택지는 '255.255.255.0'이므로 일치하지 않습니다. 1번은 /24인 경우입니다. 3번은 /28인 경우(240)입니다."
+          },
+          {
+            "label": "2",
+            "text": "255.255.255.224",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 255.255.255.224'와 일치합니다. /27은 앞에서부터 27비트가 1이라는 뜻입니다. 마지막 옥텟은 11100000(2)이며, 이는 128+64+32 = 224입니다. 따라서 255.255.255.224입니다."
+          },
+          {
+            "label": "3",
+            "text": "255.255.255.240",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 255.255.255.224'인데 이 선택지는 '255.255.255.240'이므로 일치하지 않습니다. 1번은 /24인 경우입니다. 3번은 /28인 경우(240)입니다."
+          },
+          {
+            "label": "4",
+            "text": "255.255.255.248",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 255.255.255.224'인데 이 선택지는 '255.255.255.248'이므로 일치하지 않습니다. 1번은 /24인 경우입니다. 3번은 /28인 경우(240)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. CIDR(Classless Inter-Domain Routing) 표기로 203.241.132.82/27과 같이 사용되었다면, 해당 주소의 서브넷 마스크(Subnet Mask)는?",
+          "핵심 개념을 떠올립니다. CIDR, Subnet Mask, Prefix Length",
+          "정답 판단 근거를 적용합니다. /27은 앞에서부터 27비트가 1이라는 뜻입니다. 마지막 옥텟은 11100000(2)이며, 이는 128+64+32 = 224입니다. 따라서 255.255.255.224입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 /24인 경우입니다."
+        ],
+        "exam_traps": [
+          "1번은 /24인 경우입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIDR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Subnet Mask'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Prefix Length'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. /24=0, /25=128, /26=192, /27=224, /28=240, /29=248, /30=252"
+        ],
+        "detailed_summary": "CIDR 표기법을 서브넷 마스크로 변환하는 계산 문제입니다. CIDR 표기에서 /27은 서브넷 마스크의 1의 개수가 27개임을 의미합니다. 즉, 11111111.11111111.11111111.11100000이 되어 255.255.255.224가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 77. CIDR(Classless Inter-Domain Routing) 표기로 203.241.132.82/27과 같이 사용되었다면, 해당 주소의 서브넷 마스크(Subnet Mask)는? 정답입니다. 이 선택지는 실제 정답인 '2번 255.255.255.224'와 일치합니다. /27은 앞에서부터 27비트가 1이라는 뜻입니다. 마지막 옥텟은 11100000(2)이며, 이는 128+64+32 = 224입니다. 따라서 255.255.255.224입니다. 시험 포인트는 1번은 /24인 경우입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "CIDR",
+        "서브넷 마스크",
+        "IP 주소",
+        "서브네팅"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_816b582fb4a012b5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          112
+        ],
+        "page_span": {
+          "start_page": 112,
+          "end_page": 112
+        },
+        "source_explanation": "10개의 서브넷을 만들기 위해 4비트를 빌려야 하며(2^4=16), 서브넷 크기는 16입니다. 10번째 서브넷 범위는 200.1.1.144 ~ 200.1.1.159이며, 브로드캐스트 주소는 마지막 주소인 200.1.1.159입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "정보시스템 구축관리 > IP 주소와 IPv6",
+        "chapter_id": "chapter_319"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "200.1.1.0/24 네트워크를 FLSM 방식을 이용하여 10개의 Subnet으로 나누고, ip subnet-zero를 적용했다. 이때 서브네팅된 네트워크 중 10번째 네트워크의 broadcast IP 주소는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "200.1.1.159"
+          },
+          {
+            "label": "2",
+            "text": "201.1.5.175"
+          },
+          {
+            "label": "3",
+            "text": "202.1.11.254"
+          },
+          {
+            "label": "4",
+            "text": "203.1.255.245"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "200.1.1.159"
+        ],
+        "answer_text": "200.1.1.159"
+      },
+      "explanation": {
+        "source_text": "10개의 서브넷을 만들기 위해 4비트를 빌려야 하며(2^4=16), 서브넷 크기는 16입니다. 10번째 서브넷 범위는 200.1.1.144 ~ 200.1.1.159이며, 브로드캐스트 주소는 마지막 주소인 200.1.1.159입니다.",
+        "summary": "IP 서브네팅을 통해 특정 서브넷의 브로드캐스트 주소를 구하는 문제입니다.",
+        "why_correct": [
+          "10개의 서브넷이 필요하므로 호스트 비트에서 4비트를 빌려 16개의 서브넷을 만듭니다. 각 서브넷의 크기는 16(2^4)입니다. 10번째 서브넷은 0부터 시작할 때 9번째 인덱스이므로 16*9=144부터 시작하여 159에서 끝납니다. 마지막 주소인 159가 브로드캐스트 주소입니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+        ],
+        "key_concepts": [
+          "서브네팅",
+          "브로드캐스트 주소",
+          "FLSM"
+        ],
+        "memory_cues": [
+          "서브넷 개수 결정 -> 비트 수 계산 -> 블록 크기 확인 -> 해당 순서 대역 계산"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "200.1.1.159",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 200.1.1.159'와 일치합니다. 10개의 서브넷이 필요하므로 호스트 비트에서 4비트를 빌려 16개의 서브넷을 만듭니다. 각 서브넷의 크기는 16(2^4)입니다. 10번째 서브넷은 0부터 시작할 때 9번째 인덱스이므로 16*9=144부터 시작하여 159에서 끝납니다. 마지막 주소인 159가 브로드캐스트 주소입니다."
+          },
+          {
+            "label": "2",
+            "text": "201.1.5.175",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.1.1.159'인데 이 선택지는 '201.1.5.175'이므로 일치하지 않습니다. 다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "202.1.11.254",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.1.1.159'인데 이 선택지는 '202.1.11.254'이므로 일치하지 않습니다. 다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "203.1.255.245",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.1.1.159'인데 이 선택지는 '203.1.255.245'이므로 일치하지 않습니다. 다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 200.1.1.0/24 네트워크를 FLSM 방식을 이용하여 10개의 Subnet으로 나누고, ip subnet-zero를 적용했다. 이때 서브네팅된 네트워크 중 10번째 네트워크의 broadcast IP 주소는?",
+          "핵심 개념을 떠올립니다. 서브네팅, 브로드캐스트 주소, FLSM",
+          "정답 판단 근거를 적용합니다. 10개의 서브넷이 필요하므로 호스트 비트에서 4비트를 빌려 16개의 서브넷을 만듭니다. 각 서브넷의 크기는 16(2^4)입니다. 10번째 서브넷은 0부터 시작할 때 9번째 인덱스이므로 16*9=144부터 시작하여 159에서 끝납니다. 마지막 주소인 159가 브로드캐스트 주소입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '서브네팅'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '브로드캐스트 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'FLSM'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 서브넷 개수 결정 -> 비트 수 계산 -> 블록 크기 확인 -> 해당 순서 대역 계산"
+        ],
+        "detailed_summary": "IP 서브네팅을 통해 특정 서브넷의 브로드캐스트 주소를 구하는 문제입니다. 10개의 서브넷을 만들기 위해 4비트를 빌려야 하며(2^4=16), 서브넷 크기는 16입니다. 10번째 서브넷 범위는 200.1.1.144 ~ 200.1.1.159이며, 브로드캐스트 주소는 마지막 주소인 200.1.1.159입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 200.1.1.0/24 네트워크를 FLSM 방식을 이용하여 10개의 Subnet으로 나누고, ip subnet-zero를 적용했다. 이때 서브네팅된 네트워크 중 10번째 네트워크의 broadcast IP 주소는? 정답입니다. 이 선택지는 실제 정답인 '1번 200.1.1.159'와 일치합니다. 10개의 서브넷이 필요하므로 호스트 비트에서 4비트를 빌려 16개의 서브넷을 만듭니다. 각 서브넷의 크기는 16(2^4)입니다. 10번째 서브넷은 0부터 시작할 때 9번째 인덱스이므로 16*9=144부터 시작하여 159에서 끝납니다. 마지막 주소인 159가 브로드캐스트 주소입니다. 시험 포인트는 다른 보기들은 네트워크 대역 자체가 다르거나 계산 결과와 일치하지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "계산이 필요한 문제임"
+        ]
+      },
+      "keywords": [
+        "서브네팅",
+        "FLSM",
+        "브로드캐스트 주소",
+        "IP 주소"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_980c452de5690236",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          114
+        ],
+        "page_span": {
+          "start_page": 114,
+          "end_page": 114
+        },
+        "source_explanation": "IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 주소 체계를 사용하며, IPv4에서 사용하던 브로드캐스트는 사용하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "정보시스템 구축관리 > IP 주소와 IPv6",
+        "chapter_id": "chapter_319"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "IPv6에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+          },
+          {
+            "label": "2",
+            "text": "보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다."
+          },
+          {
+            "label": "3",
+            "text": "애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다."
+          },
+          {
+            "label": "4",
+            "text": "128비트 주소 체계를 사용한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+        ],
+        "answer_text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다."
+      },
+      "explanation": {
+        "source_text": "IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 주소 체계를 사용하며, IPv4에서 사용하던 브로드캐스트는 사용하지 않습니다.",
+        "summary": "IPv6의 특징과 주소 체계에 관한 문제입니다.",
+        "why_correct": [
+          "IPv6는 브로드캐스트를 폐지하고 멀티캐스트로 대체하였습니다."
+        ],
+        "why_others_wrong": [
+          "IPSec 기능을 기본 포함하여 보안이 강화되었습니다.",
+          "애니캐스트는 가장 가까운 노드와 통신하는 방식입니다.",
+          "IPv6는 128비트(16비트씩 8부분) 주소를 사용합니다."
+        ],
+        "key_concepts": [
+          "IPv6 주소 체계",
+          "애니캐스트"
+        ],
+        "memory_cues": [
+          "IPv6에는 브로드캐스트가 없다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'와 일치합니다. IPv6는 브로드캐스트를 폐지하고 멀티캐스트로 대체하였습니다."
+          },
+          {
+            "label": "2",
+            "text": "보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '보안과 인증 확장 헤더를 사용함으로써 인터넷 계층의 보안 기능을 강화하였다.'이므로 일치하지 않습니다. IPSec 기능을 기본 포함하여 보안이 강화되었습니다. 애니캐스트는 가장 가까운 노드와 통신하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '애니캐스트(Anycast)는 하나의 호스트에서 그룹 내의 가장 가까운 곳에 있는 수신자에게 전달하는 방식이다.'이므로 일치하지 않습니다. IPSec 기능을 기본 포함하여 보안이 강화되었습니다. 애니캐스트는 가장 가까운 노드와 통신하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "128비트 주소 체계를 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'인데 이 선택지는 '128비트 주소 체계를 사용한다.'이므로 일치하지 않습니다. IPSec 기능을 기본 포함하여 보안이 강화되었습니다. 애니캐스트는 가장 가까운 노드와 통신하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv6에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. IPv6 주소 체계, 애니캐스트",
+          "정답 판단 근거를 적용합니다. IPv6는 브로드캐스트를 폐지하고 멀티캐스트로 대체하였습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. IPSec 기능을 기본 포함하여 보안이 강화되었습니다."
+        ],
+        "exam_traps": [
+          "IPSec 기능을 기본 포함하여 보안이 강화되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6 주소 체계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '애니캐스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv6에는 브로드캐스트가 없다"
+        ],
+        "detailed_summary": "IPv6의 특징과 주소 체계에 관한 문제입니다. IPv6는 유니캐스트, 멀티캐스트, 애니캐스트의 3가지 주소 체계를 사용하며, IPv4에서 사용하던 브로드캐스트는 사용하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv6에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 멀티캐스팅(Multicast) 대신 브로드캐스트(Broadcast)를 사용한다.'와 일치합니다. IPv6는 브로드캐스트를 폐지하고 멀티캐스트로 대체하였습니다. 시험 포인트는 IPSec 기능을 기본 포함하여 보안이 강화되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "IPv6",
+        "브로드캐스트",
+        "멀티캐스트",
+        "애니캐스트",
+        "128비트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_28bf3cbbfb520c73",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          131
+        ],
+        "page_span": {
+          "start_page": 131,
+          "end_page": 131
+        },
+        "source_explanation": "IPv6의 패킷 헤더는 40옥텟(octet)의 고정된 길이를 갖습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "프로그래밍 언어 활용 > IP 주소와 IPv6",
+        "chapter_id": "chapter_344"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 IP 주소 체계에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다."
+          },
+          {
+            "label": "2",
+            "text": "IPv6는 주소 자동설정(Auto Configuration) 기능을 통해 손쉽게 이용자의 단말을 네트워크에 접속시킬 수 있다."
+          },
+          {
+            "label": "3",
+            "text": "IPv4는 호스트 주소를 자동으로 설정하며 유니캐스트(Unicast)를 지원한다."
+          },
+          {
+            "label": "4",
+            "text": "IPv4는 클래스별로 네트워크와 호스트 주소의 길이가 다르다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다."
+        ],
+        "answer_text": "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다."
+      },
+      "explanation": {
+        "source_text": "IPv6의 패킷 헤더는 40옥텟(octet)의 고정된 길이를 갖습니다.",
+        "summary": "IPv4와 IPv6의 특징을 비교하는 문제입니다.",
+        "why_correct": [
+          "IPv6의 기본 헤더 크기는 40바이트(Octet)로 고정되어 있습니다."
+        ],
+        "why_others_wrong": [
+          "IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다.",
+          "IPv4는 유니캐스트를 지원하며 DHCP 등을 통해 자동 설정이 가능합니다.",
+          "IPv4는 A, B, C 클래스 등에 따라 네트워크/호스트 비트 비중이 다릅니다."
+        ],
+        "key_concepts": [
+          "IPv6 헤더",
+          "40 Octets",
+          "자동 설정"
+        ],
+        "memory_cues": [
+          "IPv6 헤더는 사십(40)이다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.'와 일치합니다. IPv6의 기본 헤더 크기는 40바이트(Octet)로 고정되어 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "IPv6는 주소 자동설정(Auto Configuration) 기능을 통해 손쉽게 이용자의 단말을 네트워크에 접속시킬 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.'인데 이 선택지는 'IPv6는 주소 자동설정(Auto Configuration) 기능을 통해 손쉽게 이용자의 단말을 네트워크에 접속시킬 수 있다.'이므로 일치하지 않습니다. IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다. IPv4는 유니캐스트를 지원하며 DHCP 등을 통해 자동 설정이 가능합니다."
+          },
+          {
+            "label": "3",
+            "text": "IPv4는 호스트 주소를 자동으로 설정하며 유니캐스트(Unicast)를 지원한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.'인데 이 선택지는 'IPv4는 호스트 주소를 자동으로 설정하며 유니캐스트(Unicast)를 지원한다.'이므로 일치하지 않습니다. IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다. IPv4는 유니캐스트를 지원하며 DHCP 등을 통해 자동 설정이 가능합니다."
+          },
+          {
+            "label": "4",
+            "text": "IPv4는 클래스별로 네트워크와 호스트 주소의 길이가 다르다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.'인데 이 선택지는 'IPv4는 클래스별로 네트워크와 호스트 주소의 길이가 다르다.'이므로 일치하지 않습니다. IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다. IPv4는 유니캐스트를 지원하며 DHCP 등을 통해 자동 설정이 가능합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 IP 주소 체계에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. IPv6 헤더, 40 Octets, 자동 설정",
+          "정답 판단 근거를 적용합니다. IPv6의 기본 헤더 크기는 40바이트(Octet)로 고정되어 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다."
+        ],
+        "exam_traps": [
+          "IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6 헤더'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '40 Octets'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자동 설정'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. IPv6 헤더는 사십(40)이다."
+        ],
+        "detailed_summary": "IPv4와 IPv6의 특징을 비교하는 문제입니다. IPv6의 패킷 헤더는 40옥텟(octet)의 고정된 길이를 갖습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 IP 주소 체계에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 IPv6의 패킷 헤더는 32 octet의 고정된 길이를 가진다.'와 일치합니다. IPv6의 기본 헤더 크기는 40바이트(Octet)로 고정되어 있습니다. 시험 포인트는 IPv6는 플러그 앤 플레이 방식의 자동 설정을 지원합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IPv6",
+        "IPv4",
+        "패킷 헤더",
+        "주소 체계"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3225b10240ef24b3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          149
+        ],
+        "page_span": {
+          "start_page": 149,
+          "end_page": 149
+        },
+        "source_explanation": "전문가의 조언 | 라우팅은 IPv4/IPv6 전환 기술이 아닙니다. 전환 기술에는 듀얼 스택, 터널링, 헤더 변환이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축관리",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "5과목 정보시스템 구축관리 > IP 주소와 IPv6",
+        "chapter_id": "chapter_186"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "64. IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "듀얼 스택"
+          },
+          {
+            "label": "2",
+            "text": "터널링"
+          },
+          {
+            "label": "3",
+            "text": "헤더 변환"
+          },
+          {
+            "label": "4",
+            "text": "라우팅"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "라우팅"
+        ],
+        "answer_text": "라우팅"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 라우팅은 IPv4/IPv6 전환 기술이 아닙니다. 전환 기술에는 듀얼 스택, 터널링, 헤더 변환이 있습니다.",
+        "summary": "IPv4에서 IPv6로의 전환을 돕는 3대 기술을 구분하는 문제입니다.",
+        "why_correct": [
+          "라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+        ],
+        "key_concepts": [
+          "IPv6 전환 기술",
+          "Dual Stack",
+          "Tunneling"
+        ],
+        "memory_cues": [
+          "듀-터-헤 (듀얼 터널 헤더)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "듀얼 스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '듀얼 스택'이므로 일치하지 않습니다. 듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+          },
+          {
+            "label": "2",
+            "text": "터널링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '터널링'이므로 일치하지 않습니다. 듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+          },
+          {
+            "label": "3",
+            "text": "헤더 변환",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '헤더 변환'이므로 일치하지 않습니다. 듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+          },
+          {
+            "label": "4",
+            "text": "라우팅",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 라우팅'와 일치합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은?",
+          "핵심 개념을 떠올립니다. IPv6 전환 기술, Dual Stack, Tunneling",
+          "정답 판단 근거를 적용합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+        ],
+        "exam_traps": [
+          "듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6 전환 기술'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Dual Stack'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Tunneling'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 듀-터-헤 (듀얼 터널 헤더)"
+        ],
+        "detailed_summary": "IPv4에서 IPv6로의 전환을 돕는 3대 기술을 구분하는 문제입니다. 전문가의 조언 | 라우팅은 IPv4/IPv6 전환 기술이 아닙니다. 전환 기술에는 듀얼 스택, 터널링, 헤더 변환이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 라우팅'와 일치합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다. 시험 포인트는 듀얼 스택(두 프로토콜 동시 지원), 터널링(한 프로토콜 내에 다른 패킷 캡슐화), 헤더 변환(주소 직접 변환)은 대표적인 전환 기술입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "IPv4",
+        "IPv6",
+        "전환 기술",
+        "듀얼 스택",
+        "터널링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1599a441125bc1c6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          151
+        ],
+        "page_span": {
+          "start_page": 151,
+          "end_page": 151
+        },
+        "source_explanation": "라우팅은 IPv4/IPv6 전환 기술이 아닙니다. IPv4/IPv6 전환 기술에는 듀얼 스택(Dual Stack), 터널링(Tunneling), 헤더 변환(Header Translation)이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "듀얼 스택"
+          },
+          {
+            "label": "2",
+            "text": "터널링"
+          },
+          {
+            "label": "3",
+            "text": "헤더 변환"
+          },
+          {
+            "label": "4",
+            "text": "라우팅"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "라우팅"
+        ],
+        "answer_text": "라우팅"
+      },
+      "explanation": {
+        "source_text": "라우팅은 IPv4/IPv6 전환 기술이 아닙니다. IPv4/IPv6 전환 기술에는 듀얼 스택(Dual Stack), 터널링(Tunneling), 헤더 변환(Header Translation)이 있습니다.",
+        "summary": "IPv4에서 IPv6로 전환하는 과정에서 공존을 위해 사용되는 기술이 아닌 것을 고르는 문제입니다.",
+        "why_correct": [
+          "라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+        ],
+        "key_concepts": [
+          "IPv6 전환 기술",
+          "듀얼 스택",
+          "터널링",
+          "헤더 변환"
+        ],
+        "memory_cues": [
+          "전환 기술 3대장: 듀얼, 터널, 변환"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "듀얼 스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '듀얼 스택'이므로 일치하지 않습니다. 듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "터널링",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '터널링'이므로 일치하지 않습니다. 듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "헤더 변환",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 라우팅'인데 이 선택지는 '헤더 변환'이므로 일치하지 않습니다. 듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "라우팅",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 라우팅'와 일치합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은?",
+          "핵심 개념을 떠올립니다. IPv6 전환 기술, 듀얼 스택, 터널링, 헤더 변환",
+          "정답 판단 근거를 적용합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+        ],
+        "exam_traps": [
+          "듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPv6 전환 기술'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '듀얼 스택'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '터널링'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '헤더 변환'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 전환 기술 3대장: 듀얼, 터널, 변환"
+        ],
+        "detailed_summary": "IPv4에서 IPv6로 전환하는 과정에서 공존을 위해 사용되는 기술이 아닌 것을 고르는 문제입니다. 라우팅은 IPv4/IPv6 전환 기술이 아닙니다. IPv4/IPv6 전환 기술에는 듀얼 스택(Dual Stack), 터널링(Tunneling), 헤더 변환(Header Translation)이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPv4와 IPv6 간의 주소 전환에 사용되는 기술이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 라우팅'와 일치합니다. 라우팅은 네트워크에서 패킷의 경로를 설정하는 일반적인 기능이지, 주소 체계 간의 전환 기술이 아닙니다. 시험 포인트는 듀얼 스택은 두 프로토콜을 모두 지원하는 방식, 터널링은 한 프로토콜 패킷을 다른 프로토콜 패킷에 캡슐화하는 방식, 헤더 변환은 패킷 헤더를 직접 변환하는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IPv4",
+        "IPv6",
+        "전환 기술",
+        "듀얼 스택",
+        "터널링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_29a3fc4fd31037a3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          155
+        ],
+        "page_span": {
+          "start_page": 155,
+          "end_page": 155
+        },
+        "source_explanation": "C Class의 IP address 범위는 192.0.0.0 ~ 223.255.255.255까지입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C Class에 속하는 IP address는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "200.168.30.1"
+          },
+          {
+            "label": "2",
+            "text": "10.3.2.1 4"
+          },
+          {
+            "label": "3",
+            "text": "225.2.4.1"
+          },
+          {
+            "label": "4",
+            "text": "172.16.98.3"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "200.168.30.1"
+        ],
+        "answer_text": "200.168.30.1"
+      },
+      "explanation": {
+        "source_text": "C Class의 IP address 범위는 192.0.0.0 ~ 223.255.255.255까지입니다.",
+        "summary": "IP 주소 클래스 분류 체계에서 C 클래스 범위를 묻는 문제입니다.",
+        "why_correct": [
+          "C 클래스는 첫 번째 옥텟이 192~223 사이인 주소입니다. 200은 이 범위에 속합니다."
+        ],
+        "why_others_wrong": [
+          "10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+        ],
+        "key_concepts": [
+          "IP 클래스",
+          "C 클래스 범위"
+        ],
+        "memory_cues": [
+          "A: 0~127, B: 128~191, C: 192~223"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "200.168.30.1",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 200.168.30.1'와 일치합니다. C 클래스는 첫 번째 옥텟이 192~223 사이인 주소입니다. 200은 이 범위에 속합니다."
+          },
+          {
+            "label": "2",
+            "text": "10.3.2.1 4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.168.30.1'인데 이 선택지는 '10.3.2.1 4'이므로 일치하지 않습니다. 10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+          },
+          {
+            "label": "3",
+            "text": "225.2.4.1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.168.30.1'인데 이 선택지는 '225.2.4.1'이므로 일치하지 않습니다. 10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+          },
+          {
+            "label": "4",
+            "text": "172.16.98.3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 200.168.30.1'인데 이 선택지는 '172.16.98.3'이므로 일치하지 않습니다. 10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C Class에 속하는 IP address는?",
+          "핵심 개념을 떠올립니다. IP 클래스, C 클래스 범위",
+          "정답 판단 근거를 적용합니다. C 클래스는 첫 번째 옥텟이 192~223 사이인 주소입니다. 200은 이 범위에 속합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+        ],
+        "exam_traps": [
+          "10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IP 클래스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'C 클래스 범위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. A: 0~127, B: 128~191, C: 192~223"
+        ],
+        "detailed_summary": "IP 주소 클래스 분류 체계에서 C 클래스 범위를 묻는 문제입니다. C Class의 IP address 범위는 192.0.0.0 ~ 223.255.255.255까지입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C Class에 속하는 IP address는? 정답입니다. 이 선택지는 실제 정답인 '1번 200.168.30.1'와 일치합니다. C 클래스는 첫 번째 옥텟이 192~223 사이인 주소입니다. 200은 이 범위에 속합니다. 시험 포인트는 10은 A 클래스, 172는 B 클래스, 225는 D 클래스(멀티캐스트용)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IP 주소",
+        "IP 클래스",
+        "C 클래스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_87f056922590d9af",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          155
+        ],
+        "page_span": {
+          "start_page": 155,
+          "end_page": 155
+        },
+        "source_explanation": "3개의 서브넷으로 나누기 위해 2비트가 필요하며, 각 서브넷은 64개의 IP를 가집니다. 2번째 서브넷 범위는 192.168.1.64 ~ 192.168.1.127이며, 마지막 주소인 .127이 브로드캐스트 주소입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 3개의 Subnet으로 나누고 IP subnet-zero를 적용했다. 이 때 Subnetting된 네트워크 중 2번째 네트워크의 브로드캐스트 주소는 무엇인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "192.168.1.64"
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.127"
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.128"
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.191"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "192.168.1.127"
+        ],
+        "answer_text": "192.168.1.127"
+      },
+      "explanation": {
+        "source_text": "3개의 서브넷으로 나누기 위해 2비트가 필요하며, 각 서브넷은 64개의 IP를 가집니다. 2번째 서브넷 범위는 192.168.1.64 ~ 192.168.1.127이며, 마지막 주소인 .127이 브로드캐스트 주소입니다.",
+        "summary": "네트워크를 서브넷으로 분할하고 특정 서브넷의 브로드캐스트 주소를 구하는 문제입니다.",
+        "why_correct": [
+          "2비트를 빌려 4개의 서브넷(0, 64, 128, 192 시작)으로 나눌 때, 두 번째 서브넷(64 시작)의 마지막 주소는 127입니다."
+        ],
+        "why_others_wrong": [
+          ".64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+        ],
+        "key_concepts": [
+          "서브네팅",
+          "브로드캐스트 주소",
+          "FLSM"
+        ],
+        "memory_cues": [
+          "브로드캐스트 주소는 해당 네트워크의 마지막 주소다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "192.168.1.64",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.127'인데 이 선택지는 '192.168.1.64'이므로 일치하지 않습니다. .64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.127",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 192.168.1.127'와 일치합니다. 2비트를 빌려 4개의 서브넷(0, 64, 128, 192 시작)으로 나눌 때, 두 번째 서브넷(64 시작)의 마지막 주소는 127입니다."
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.128",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.127'인데 이 선택지는 '192.168.1.128'이므로 일치하지 않습니다. .64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.191",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.127'인데 이 선택지는 '192.168.1.191'이므로 일치하지 않습니다. .64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 3개의 Subnet으로 나누고 IP subnet-zero를 적용했다. 이 때 Subnetting된 네트워크 중 2번째 네트워크의 브로드캐스트 주소는 무엇인가?",
+          "핵심 개념을 떠올립니다. 서브네팅, 브로드캐스트 주소, FLSM",
+          "정답 판단 근거를 적용합니다. 2비트를 빌려 4개의 서브넷(0, 64, 128, 192 시작)으로 나눌 때, 두 번째 서브넷(64 시작)의 마지막 주소는 127입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. .64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+        ],
+        "exam_traps": [
+          ".64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '서브네팅'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '브로드캐스트 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'FLSM'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 브로드캐스트 주소는 해당 네트워크의 마지막 주소다."
+        ],
+        "detailed_summary": "네트워크를 서브넷으로 분할하고 특정 서브넷의 브로드캐스트 주소를 구하는 문제입니다. 3개의 서브넷으로 나누기 위해 2비트가 필요하며, 각 서브넷은 64개의 IP를 가집니다. 2번째 서브넷 범위는 192.168.1.64 ~ 192.168.1.127이며, 마지막 주소인 .127이 브로드캐스트 주소입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 192.168.1.0/24 네트워크를 FLSM 방식을 이용하여 3개의 Subnet으로 나누고 IP subnet-zero를 적용했다. 이 때 Subnetting된 네트워크 중 2번째 네트워크의 브로드캐스트 주소는 무엇인가? 정답입니다. 이 선택지는 실제 정답인 '2번 192.168.1.127'와 일치합니다. 2비트를 빌려 4개의 서브넷(0, 64, 128, 192 시작)으로 나눌 때, 두 번째 서브넷(64 시작)의 마지막 주소는 127입니다. 시험 포인트는 .64는 네트워크 주소, .128은 세 번째 서브넷의 네트워크 주소, .191은 세 번째 서브넷의 브로드캐스트 주소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IP 주소",
+        "서브네팅",
+        "FLSM",
+        "브로드캐스트 주소"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a1c8e4ab52c2245e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          173
+        ],
+        "page_span": {
+          "start_page": 173,
+          "end_page": 173
+        },
+        "source_explanation": "/26은 서브넷 마스크가 255.255.255.192임을 의미하며, 호스트 비트가 6비트이므로 네트워크 크기는 64입니다. 69가 속한 구간은 64~127이므로 시작 주소는 192.168.1.64입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "IP 주소와 IPv6"
+        ],
+        "chapter_label": "IP 주소와 IPv6",
+        "chapter_key": "프로그래밍 언어 활용 > IP 주소와 IPv6",
+        "chapter_id": "chapter_344"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_079",
+        "topic_title": "IP 주소와 IPv6",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "IP 주소와 IPv6",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "사내망에서 192.168.1.69/26 주소를 사용하고 있는 PC의 subnet의 시작 IP address는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "192.168.9.64"
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.64"
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.65"
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.66"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "192.168.1.64"
+        ],
+        "answer_text": "192.168.1.64"
+      },
+      "explanation": {
+        "source_text": "/26은 서브넷 마스크가 255.255.255.192임을 의미하며, 호스트 비트가 6비트이므로 네트워크 크기는 64입니다. 69가 속한 구간은 64~127이므로 시작 주소는 192.168.1.64입니다.",
+        "summary": "CIDR 표기법을 이용한 서브넷 네트워크 주소 계산 문제입니다.",
+        "why_correct": [
+          "/26은 마지막 옥텟을 64개씩 나눕니다(0~63, 64~127...). 69는 두 번째 구간인 64~127에 속하므로 네트워크 시작 주소는 .64입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 세 번째 옥텟이 틀렸습니다.",
+          "3, 4번은 네트워크 주소가 아닌 호스트 주소 범위 내의 값입니다."
+        ],
+        "key_concepts": [
+          "CIDR",
+          "서브넷 마스크",
+          "네트워크 주소"
+        ],
+        "memory_cues": [
+          "/26 -> 2^(32-26) = 2^6 = 64 단위로 끊기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "192.168.9.64",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.64'인데 이 선택지는 '192.168.9.64'이므로 일치하지 않습니다. 1번은 세 번째 옥텟이 틀렸습니다. 3, 4번은 네트워크 주소가 아닌 호스트 주소 범위 내의 값입니다."
+          },
+          {
+            "label": "2",
+            "text": "192.168.1.64",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 192.168.1.64'와 일치합니다. /26은 마지막 옥텟을 64개씩 나눕니다(0~63, 64~127...). 69는 두 번째 구간인 64~127에 속하므로 네트워크 시작 주소는 .64입니다."
+          },
+          {
+            "label": "3",
+            "text": "192.168.1.65",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.64'인데 이 선택지는 '192.168.1.65'이므로 일치하지 않습니다. 1번은 세 번째 옥텟이 틀렸습니다. 3, 4번은 네트워크 주소가 아닌 호스트 주소 범위 내의 값입니다."
+          },
+          {
+            "label": "4",
+            "text": "192.168.1.66",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 192.168.1.64'인데 이 선택지는 '192.168.1.66'이므로 일치하지 않습니다. 1번은 세 번째 옥텟이 틀렸습니다. 3, 4번은 네트워크 주소가 아닌 호스트 주소 범위 내의 값입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 사내망에서 192.168.1.69/26 주소를 사용하고 있는 PC의 subnet의 시작 IP address는?",
+          "핵심 개념을 떠올립니다. CIDR, 서브넷 마스크, 네트워크 주소",
+          "정답 판단 근거를 적용합니다. /26은 마지막 옥텟을 64개씩 나눕니다(0~63, 64~127...). 69는 두 번째 구간인 64~127에 속하므로 네트워크 시작 주소는 .64입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 세 번째 옥텟이 틀렸습니다."
+        ],
+        "exam_traps": [
+          "1번은 세 번째 옥텟이 틀렸습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIDR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서브넷 마스크'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '네트워크 주소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. /26 -> 2^(32-26) = 2^6 = 64 단위로 끊기"
+        ],
+        "detailed_summary": "CIDR 표기법을 이용한 서브넷 네트워크 주소 계산 문제입니다. /26은 서브넷 마스크가 255.255.255.192임을 의미하며, 호스트 비트가 6비트이므로 네트워크 크기는 64입니다. 69가 속한 구간은 64~127이므로 시작 주소는 192.168.1.64입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 사내망에서 192.168.1.69/26 주소를 사용하고 있는 PC의 subnet의 시작 IP address는? 정답입니다. 이 선택지는 실제 정답인 '2번 192.168.1.64'와 일치합니다. /26은 마지막 옥텟을 64개씩 나눕니다(0~63, 64~127...). 69는 두 번째 구간인 64~127에 속하므로 네트워크 시작 주소는 .64입니다. 시험 포인트는 1번은 세 번째 옥텟이 틀렸습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "IP 주소",
+        "서브네팅",
+        "CIDR",
+        "네트워크 주소"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

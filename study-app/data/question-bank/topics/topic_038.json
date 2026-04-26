@@ -1,0 +1,796 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_038",
+    "sequence": 38,
+    "title": "인터페이스 보안과 검증",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 5,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_086",
+      "chapter_055",
+      "chapter_096",
+      "chapter_239"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_ff083d77082dbd0a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 86
+        },
+        "source_explanation": "전문가의 조언 | STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. ①번은 watir에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "59섹션 2빌드"
+        ],
+        "chapter_label": "59섹션 2빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 59섹션 2빌드",
+        "chapter_id": "chapter_086"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_038",
+        "topic_title": "인터페이스 보안과 검증",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "인터페이스 보안과 검증",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "34. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다."
+          },
+          {
+            "label": "3",
+            "text": "FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+        ],
+        "answer_text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. ①번은 watir에 대한 설명입니다.",
+        "summary": "인터페이스 구현을 검증하기 위한 자동화 도구들의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "STAF는 분산 환경에서의 테스트를 지원하는 프레임워크입니다. Ruby 기반의 웹 애플리케이션 테스트 도구는 Watir입니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "테스트 자동화 도구",
+          "STAF",
+          "Watir"
+        ],
+        "memory_cues": [
+          "Ruby - Watir (루비는 물(Water)처럼 맑다?)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'와 일치합니다. STAF는 분산 환경에서의 테스트를 지원하는 프레임워크입니다. Ruby 기반의 웹 애플리케이션 테스트 도구는 Watir입니다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다.'이므로 일치하지 않습니다. 2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다.'이므로 일치하지 않습니다. 2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다.'이므로 일치하지 않습니다. 2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 테스트 자동화 도구, STAF, Watir",
+          "정답 판단 근거를 적용합니다. STAF는 분산 환경에서의 테스트를 지원하는 프레임워크입니다. Ruby 기반의 웹 애플리케이션 테스트 도구는 Watir입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트 자동화 도구'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'STAF'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Watir'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Ruby - Watir (루비는 물(Water)처럼 맑다?)"
+        ],
+        "detailed_summary": "인터페이스 구현을 검증하기 위한 자동화 도구들의 특징을 묻는 문제입니다. 전문가의 조언 | STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. ①번은 watir에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'와 일치합니다. STAF는 분산 환경에서의 테스트를 지원하는 프레임워크입니다. Ruby 기반의 웹 애플리케이션 테스트 도구는 Watir입니다. 시험 포인트는 2, 3, 4번은 각 도구(xUnit, FitNesse, NTAF)의 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인터페이스 검증",
+        "STAF",
+        "xUnit",
+        "FitNesse",
+        "NTAF"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fa334b1e39527a9b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          103
+        ],
+        "page_span": {
+          "start_page": 103,
+          "end_page": 103
+        },
+        "source_explanation": "ESB(Enterprise Service Bus)는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_038",
+        "topic_title": "인터페이스 보안과 검증",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "인터페이스 보안과 검증",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "24. 인터페이스 구현 검증 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ESB"
+          },
+          {
+            "label": "2",
+            "text": "xUnit"
+          },
+          {
+            "label": "3",
+            "text": "STAF"
+          },
+          {
+            "label": "4",
+            "text": "NTAF"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "ESB"
+        ],
+        "answer_text": "ESB"
+      },
+      "explanation": {
+        "source_text": "ESB(Enterprise Service Bus)는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다.",
+        "summary": "인터페이스 테스트를 위한 도구가 아닌 것을 고르는 문제입니다.",
+        "why_correct": [
+          "ESB(Enterprise Service Bus)는 시스템 통합을 위한 '미들웨어 인프라'이지, 테스트를 수행하는 '검증 도구'가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+        ],
+        "key_concepts": [
+          "ESB",
+          "Interface Verification",
+          "Middleware"
+        ],
+        "memory_cues": [
+          "ESB는 '버스(통로)' 역할을 하는 인프라입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ESB",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ESB'와 일치합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 '미들웨어 인프라'이지, 테스트를 수행하는 '검증 도구'가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'xUnit'이므로 일치하지 않습니다. xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+          },
+          {
+            "label": "3",
+            "text": "STAF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'STAF'이므로 일치하지 않습니다. xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'NTAF'이므로 일치하지 않습니다. xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 인터페이스 구현 검증 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. ESB, Interface Verification, Middleware",
+          "정답 판단 근거를 적용합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 '미들웨어 인프라'이지, 테스트를 수행하는 '검증 도구'가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+        ],
+        "exam_traps": [
+          "xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ESB'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Interface Verification'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Middleware'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. ESB는 '버스(통로)' 역할을 하는 인프라입니다."
+        ],
+        "detailed_summary": "인터페이스 테스트를 위한 도구가 아닌 것을 고르는 문제입니다. ESB(Enterprise Service Bus)는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 인터페이스 구현 검증 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 ESB'와 일치합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 '미들웨어 인프라'이지, 테스트를 수행하는 '검증 도구'가 아닙니다. 시험 포인트는 xUnit, STAF, NTAF는 모두 인터페이스 및 소프트웨어 구현을 검증하기 위한 자동화 테스트 프레임워크입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인터페이스 검증",
+        "ESB",
+        "미들웨어",
+        "테스트 도구"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3cb09fd5b4bf5c75",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          125
+        ],
+        "page_span": {
+          "start_page": 125,
+          "end_page": 125
+        },
+        "source_explanation": "전문가의 조언 | 인터페이스 구현 검증 도구에는 xUnit, STAF, FitNesse, NTAF, Selenium, watir 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "59섹션 2빌드"
+        ],
+        "chapter_label": "59섹션 2빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 59섹션 2빌드",
+        "chapter_id": "chapter_086"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_038",
+        "topic_title": "인터페이스 보안과 검증",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "인터페이스 보안과 검증",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "28. 인터페이스 구현 검증 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Foxbase"
+          },
+          {
+            "label": "2",
+            "text": "STAF"
+          },
+          {
+            "label": "3",
+            "text": "watir"
+          },
+          {
+            "label": "4",
+            "text": "xUnit"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Foxbase"
+        ],
+        "answer_text": "Foxbase"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 인터페이스 구현 검증 도구에는 xUnit, STAF, FitNesse, NTAF, Selenium, watir 등이 있습니다.",
+        "summary": "인터페이스가 올바르게 구현되었는지 확인하는 자동화 도구의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "Foxbase는 과거에 사용되던 데이터베이스 관리 시스템(DBMS)의 일종으로, 인터페이스 검증 도구가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다.",
+          "3번: watir는 웹 애플리케이션 테스트 도구입니다.",
+          "4번: xUnit은 다양한 언어를 지원하는 단위 테스트 프레임워크입니다."
+        ],
+        "key_concepts": [
+          "Interface Verification Tools",
+          "xUnit",
+          "STAF",
+          "watir"
+        ],
+        "memory_cues": [
+          "엑스스태프피셀와: xUnit, STAF, FitNesse, Selenium, watir"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Foxbase",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Foxbase'와 일치합니다. Foxbase는 과거에 사용되던 데이터베이스 관리 시스템(DBMS)의 일종으로, 인터페이스 검증 도구가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "STAF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Foxbase'인데 이 선택지는 'STAF'이므로 일치하지 않습니다. 2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다. 3번: watir는 웹 애플리케이션 테스트 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "watir",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Foxbase'인데 이 선택지는 'watir'이므로 일치하지 않습니다. 2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다. 3번: watir는 웹 애플리케이션 테스트 도구입니다."
+          },
+          {
+            "label": "4",
+            "text": "xUnit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Foxbase'인데 이 선택지는 'xUnit'이므로 일치하지 않습니다. 2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다. 3번: watir는 웹 애플리케이션 테스트 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 28. 인터페이스 구현 검증 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. Interface Verification Tools, xUnit, STAF, watir",
+          "정답 판단 근거를 적용합니다. Foxbase는 과거에 사용되던 데이터베이스 관리 시스템(DBMS)의 일종으로, 인터페이스 검증 도구가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다."
+        ],
+        "exam_traps": [
+          "2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Interface Verification Tools'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'xUnit'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'STAF'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'watir'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 엑스스태프피셀와: xUnit, STAF, FitNesse, Selenium, watir"
+        ],
+        "detailed_summary": "인터페이스가 올바르게 구현되었는지 확인하는 자동화 도구의 종류를 묻는 문제입니다. 전문가의 조언 | 인터페이스 구현 검증 도구에는 xUnit, STAF, FitNesse, NTAF, Selenium, watir 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 28. 인터페이스 구현 검증 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Foxbase'와 일치합니다. Foxbase는 과거에 사용되던 데이터베이스 관리 시스템(DBMS)의 일종으로, 인터페이스 검증 도구가 아닙니다. 시험 포인트는 2번: STAF는 서비스 실행 환경에서 테스트를 자동화하는 프레임워크입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인터페이스 검증",
+        "테스트 자동화 도구",
+        "xUnit",
+        "STAF"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6a8cc66aad5e1dcb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          163
+        ],
+        "page_span": {
+          "start_page": 163,
+          "end_page": 163
+        },
+        "source_explanation": "STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. Ruby를 사용하는 도구는 watir입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "인터페이스 구현",
+          "인터페이스 검증"
+        ],
+        "chapter_label": "인터페이스 검증",
+        "chapter_key": "2과목 소프트웨어 개발 > 인터페이스 구현 > 인터페이스 검증",
+        "chapter_id": "chapter_096"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_038",
+        "topic_title": "인터페이스 보안과 검증",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "인터페이스 보안과 검증",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "31. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다."
+          },
+          {
+            "label": "3",
+            "text": "FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+        ],
+        "answer_text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다."
+      },
+      "explanation": {
+        "source_text": "STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. Ruby를 사용하는 도구는 watir입니다.",
+        "summary": "테스트 자동화 및 검증 도구의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "STAF는 분산 환경 지원 프레임워크이며, Ruby 기반 테스트 도구는 watir입니다."
+        ],
+        "why_others_wrong": [
+          "xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+        ],
+        "key_concepts": [
+          "STAF",
+          "watir",
+          "테스트 자동화 도구"
+        ],
+        "memory_cues": [
+          "Ruby = watir",
+          "STAF = 분산 환경"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'와 일치합니다. STAF는 분산 환경 지원 프레임워크이며, Ruby 기반 테스트 도구는 watir입니다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'xUnit : JUnit, NUnit 등 다양한 언어를 지원하는 단위 테스트 프레임워크이다.'이므로 일치하지 않습니다. xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+          },
+          {
+            "label": "3",
+            "text": "FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'FitNesse : 웹 기반 테스트케이스 설계, 실행, 결과 확인 등을 지원하는 테스트 프레임워크이다.'이므로 일치하지 않습니다. xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'인데 이 선택지는 'NTAF : Naver의 테스트 자동화 프레임워크로, FitNesse와 STAF를 통합하였다.'이므로 일치하지 않습니다. xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. STAF, watir, 테스트 자동화 도구",
+          "정답 판단 근거를 적용합니다. STAF는 분산 환경 지원 프레임워크이며, Ruby 기반 테스트 도구는 watir입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+        ],
+        "exam_traps": [
+          "xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'STAF'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'watir'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '테스트 자동화 도구'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Ruby = watir",
+          "암기 포인트를 떠올립니다. STAF = 분산 환경"
+        ],
+        "detailed_summary": "테스트 자동화 및 검증 도구의 특징을 묻는 문제입니다. STAF는 서비스 호출 및 컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크입니다. Ruby를 사용하는 도구는 watir입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 다음 중 인터페이스 구현 검증 도구에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 STAF : Ruby를 사용하는 애플리케이션 테스트 프레임워크이다.'와 일치합니다. STAF는 분산 환경 지원 프레임워크이며, Ruby 기반 테스트 도구는 watir입니다. 시험 포인트는 xUnit, FitNesse, NTAF에 대한 설명은 모두 옳습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인터페이스 검증",
+        "STAF",
+        "xUnit",
+        "FitNesse",
+        "NTAF"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_160a3ec15d3bc928",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "ESB는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "인터페이스 보안과 검증"
+        ],
+        "chapter_label": "인터페이스 보안과 검증",
+        "chapter_key": "소프트웨어 개발 > 인터페이스 보안과 검증",
+        "chapter_id": "chapter_239"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_038",
+        "topic_title": "인터페이스 보안과 검증",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "인터페이스 보안과 검증",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "인터페이스 구현 검증 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ESB"
+          },
+          {
+            "label": "2",
+            "text": "xUnit"
+          },
+          {
+            "label": "3",
+            "text": "STAF"
+          },
+          {
+            "label": "4",
+            "text": "NTAF"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "ESB"
+        ],
+        "answer_text": "ESB"
+      },
+      "explanation": {
+        "source_text": "ESB는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다.",
+        "summary": "인터페이스가 제대로 구현되었는지 확인하는 테스트 도구가 아닌 것을 고르는 문제입니다.",
+        "why_correct": [
+          "ESB(Enterprise Service Bus)는 시스템 통합을 위한 미들웨어 인프라스트럭처이지, 검증(테스트) 도구가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+        ],
+        "key_concepts": [
+          "인터페이스 검증 도구"
+        ],
+        "memory_cues": [
+          "ESB는 버스(통로), 나머지는 테스트 도구"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ESB",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 ESB'와 일치합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 미들웨어 인프라스트럭처이지, 검증(테스트) 도구가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "xUnit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'xUnit'이므로 일치하지 않습니다. xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "STAF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'STAF'이므로 일치하지 않습니다. xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+          },
+          {
+            "label": "4",
+            "text": "NTAF",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 ESB'인데 이 선택지는 'NTAF'이므로 일치하지 않습니다. xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인터페이스 구현 검증 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 인터페이스 검증 도구",
+          "정답 판단 근거를 적용합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 미들웨어 인프라스트럭처이지, 검증(테스트) 도구가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+        ],
+        "exam_traps": [
+          "xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인터페이스 검증 도구'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. ESB는 버스(통로), 나머지는 테스트 도구"
+        ],
+        "detailed_summary": "인터페이스가 제대로 구현되었는지 확인하는 테스트 도구가 아닌 것을 고르는 문제입니다. ESB는 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 인터페이스 구현 검증 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 ESB'와 일치합니다. ESB(Enterprise Service Bus)는 시스템 통합을 위한 미들웨어 인프라스트럭처이지, 검증(테스트) 도구가 아닙니다. 시험 포인트는 xUnit(단위 테스트), STAF(서비스 대상 자동화 프레임워크), NTAF(네이버 테스트 자동화 프레임워크)는 모두 검증 및 테스트 도구입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인터페이스 검증",
+        "xUnit",
+        "STAF",
+        "ESB"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

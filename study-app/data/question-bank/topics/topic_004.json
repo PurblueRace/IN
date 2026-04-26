@@ -1,0 +1,328 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_004",
+    "sequence": 4,
+    "title": "현행 시스템 파악",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 2,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_054"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_fd50851e25482e60",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          102
+        ],
+        "page_span": {
+          "start_page": 102,
+          "end_page": 102
+        },
+        "source_explanation": "서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_004",
+        "topic_title": "현행 시스템 파악",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "현행 시스템 파악",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "18. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "응답시간(Response Time)"
+          },
+          {
+            "label": "2",
+            "text": "서버 튜닝(Server Tuning)"
+          },
+          {
+            "label": "3",
+            "text": "가용성(Availability)"
+          },
+          {
+            "label": "4",
+            "text": "사용률(Utilization)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "서버 튜닝(Server Tuning)"
+        ],
+        "answer_text": "서버 튜닝(Server Tuning)"
+      },
+      "explanation": {
+        "source_text": "서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다.",
+        "summary": "시스템의 성능을 정량적으로 측정하기 위한 지표가 아닌 것을 고르는 문제입니다.",
+        "why_correct": [
+          "서버 튜닝(Tuning)은 성능을 높이기 위한 '행위'나 '과정'이지, 측정되는 '지표(Metric)'가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+        ],
+        "key_concepts": [
+          "Performance Metrics",
+          "Response Time",
+          "Availability",
+          "Utilization"
+        ],
+        "memory_cues": [
+          "튜닝은 '고치는 것', 나머지는 '재는 것'!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "응답시간(Response Time)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '응답시간(Response Time)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+          },
+          {
+            "label": "2",
+            "text": "서버 튜닝(Server Tuning)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 서버 튜닝(Server Tuning)'와 일치합니다. 서버 튜닝(Tuning)은 성능을 높이기 위한 '행위'나 '과정'이지, 측정되는 '지표(Metric)'가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "가용성(Availability)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '가용성(Availability)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+          },
+          {
+            "label": "4",
+            "text": "사용률(Utilization)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '사용률(Utilization)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 18. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은?",
+          "핵심 개념을 떠올립니다. Performance Metrics, Response Time, Availability, Utilization",
+          "정답 판단 근거를 적용합니다. 서버 튜닝(Tuning)은 성능을 높이기 위한 '행위'나 '과정'이지, 측정되는 '지표(Metric)'가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+        ],
+        "exam_traps": [
+          "응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Performance Metrics'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Response Time'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Availability'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Utilization'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 튜닝은 '고치는 것', 나머지는 '재는 것'!"
+        ],
+        "detailed_summary": "시스템의 성능을 정량적으로 측정하기 위한 지표가 아닌 것을 고르는 문제입니다. 서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 18. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 서버 튜닝(Server Tuning)'와 일치합니다. 서버 튜닝(Tuning)은 성능을 높이기 위한 '행위'나 '과정'이지, 측정되는 '지표(Metric)'가 아닙니다. 시험 포인트는 응답시간, 가용성, 사용률은 모두 시스템의 성능이나 품질을 숫자로 나타낼 수 있는 핵심 측정 항목입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "성능 분석",
+        "응답시간",
+        "가용성",
+        "사용률"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2ffa000739c7688b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          161
+        ],
+        "page_span": {
+          "start_page": 161,
+          "end_page": 161
+        },
+        "source_explanation": "서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "현행 시스템 분석",
+          "플랫폼 성능 특성"
+        ],
+        "chapter_label": "플랫폼 성능 특성",
+        "chapter_key": "1과목 소프트웨어 설계 > 현행 시스템 분석 > 플랫폼 성능 특성",
+        "chapter_id": "chapter_054"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_004",
+        "topic_title": "현행 시스템 파악",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "현행 시스템 파악",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "20. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "응답시간(Response Time)"
+          },
+          {
+            "label": "2",
+            "text": "서버 튜닝(Server Tuning)"
+          },
+          {
+            "label": "3",
+            "text": "가용성(Availability)"
+          },
+          {
+            "label": "4",
+            "text": "사용률(Utilization)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "서버 튜닝(Server Tuning)"
+        ],
+        "answer_text": "서버 튜닝(Server Tuning)"
+      },
+      "explanation": {
+        "source_text": "서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다.",
+        "summary": "플랫폼 성능을 측정하는 지표를 묻는 문제입니다.",
+        "why_correct": [
+          "서버 튜닝은 성능을 최적화하는 '행위'이지 측정 '항목'이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+        ],
+        "key_concepts": [
+          "성능 측정 지표",
+          "서버 튜닝"
+        ],
+        "memory_cues": [
+          "튜닝은 고치는 것, 나머지는 재는 것"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "응답시간(Response Time)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '응답시간(Response Time)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+          },
+          {
+            "label": "2",
+            "text": "서버 튜닝(Server Tuning)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 서버 튜닝(Server Tuning)'와 일치합니다. 서버 튜닝은 성능을 최적화하는 '행위'이지 측정 '항목'이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "가용성(Availability)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '가용성(Availability)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+          },
+          {
+            "label": "4",
+            "text": "사용률(Utilization)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서버 튜닝(Server Tuning)'인데 이 선택지는 '사용률(Utilization)'이므로 일치하지 않습니다. 응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 20. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은?",
+          "핵심 개념을 떠올립니다. 성능 측정 지표, 서버 튜닝",
+          "정답 판단 근거를 적용합니다. 서버 튜닝은 성능을 최적화하는 '행위'이지 측정 '항목'이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+        ],
+        "exam_traps": [
+          "응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '성능 측정 지표'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '서버 튜닝'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 튜닝은 고치는 것, 나머지는 재는 것"
+        ],
+        "detailed_summary": "플랫폼 성능을 측정하는 지표를 묻는 문제입니다. 서버 튜닝은 서버의 성능 개선을 의미하는 것으로, 성능 특성 분석에 사용되는 측정 항목이 될 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 20. 소프트웨어 설계 시 구축된 플랫폼의 성능 특성 분석에 사용되는 측정 항목이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 서버 튜닝(Server Tuning)'와 일치합니다. 서버 튜닝은 성능을 최적화하는 '행위'이지 측정 '항목'이 아닙니다. 시험 포인트는 응답시간, 가용성, 사용률은 모두 성능을 수치화할 수 있는 측정 항목입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "플랫폼 성능",
+        "응답시간",
+        "가용성",
+        "사용률"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_022",
+    "sequence": 22,
+    "title": "자료구조 개요와 연결 리스트",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 5,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_240",
+      "chapter_055",
+      "chapter_062",
+      "chapter_246"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_b173123f89a45f71",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          32
+        ],
+        "page_span": {
+          "start_page": 32,
+          "end_page": 32
+        },
+        "source_explanation": "트리(Tree)는 비선형 구조입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "비선형 구조"
+        ],
+        "chapter_label": "비선형 구조",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 비선형 구조",
+        "chapter_id": "chapter_240"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_022",
+        "topic_title": "자료구조 개요와 연결 리스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "자료구조 개요와 연결 리스트",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "자료 구조의 분류 중 선형 구조가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "트리"
+          },
+          {
+            "label": "2",
+            "text": "리스트"
+          },
+          {
+            "label": "3",
+            "text": "스택"
+          },
+          {
+            "label": "4",
+            "text": "데크"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "트리"
+        ],
+        "answer_text": "트리"
+      },
+      "explanation": {
+        "source_text": "트리(Tree)는 비선형 구조입니다.",
+        "summary": "자료구조를 선형과 비선형으로 구분하는 기초 문제입니다.",
+        "why_correct": [
+          "트리와 그래프는 데이터가 계층적이거나 망 형태로 연결된 비선형 구조입니다."
+        ],
+        "why_others_wrong": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+        ],
+        "key_concepts": [
+          "선형 구조",
+          "비선형 구조"
+        ],
+        "memory_cues": [
+          "비선형 = 트리, 그래프"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "트리",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리와 그래프는 데이터가 계층적이거나 망 형태로 연결된 비선형 구조입니다."
+          },
+          {
+            "label": "2",
+            "text": "리스트",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '리스트'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+          },
+          {
+            "label": "3",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+          },
+          {
+            "label": "4",
+            "text": "데크",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '데크'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 구조의 분류 중 선형 구조가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 선형 구조, 비선형 구조",
+          "정답 판단 근거를 적용합니다. 트리와 그래프는 데이터가 계층적이거나 망 형태로 연결된 비선형 구조입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+        ],
+        "exam_traps": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선형 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비선형 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 비선형 = 트리, 그래프"
+        ],
+        "detailed_summary": "자료구조를 선형과 비선형으로 구분하는 기초 문제입니다. 트리(Tree)는 비선형 구조입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 자료 구조의 분류 중 선형 구조가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리와 그래프는 데이터가 계층적이거나 망 형태로 연결된 비선형 구조입니다. 시험 포인트는 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 선형 구조입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "선형 구조",
+        "비선형 구조",
+        "트리",
+        "자료구조"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0f58c45c0bdac3aa",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          48
+        ],
+        "page_span": {
+          "start_page": 48,
+          "end_page": 48
+        },
+        "source_explanation": "연결 리스트는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트에 비해 검색 속도가 느립니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_022",
+        "topic_title": "자료구조 개요와 연결 리스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "자료구조 개요와 연결 리스트",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "노드의 삽입이나 삭제가 쉽다."
+          },
+          {
+            "label": "2",
+            "text": "노드들이 포인터로 연결되어 검색이 빠르다."
+          },
+          {
+            "label": "3",
+            "text": "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다."
+          },
+          {
+            "label": "4",
+            "text": "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "노드들이 포인터로 연결되어 검색이 빠르다."
+        ],
+        "answer_text": "노드들이 포인터로 연결되어 검색이 빠르다."
+      },
+      "explanation": {
+        "source_text": "연결 리스트는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트에 비해 검색 속도가 느립니다.",
+        "summary": "연결 리스트의 장단점을 묻는 문제입니다.",
+        "why_correct": [
+          "연결 리스트는 순차적으로 접근해야 하므로 특정 노드를 찾는 검색 속도는 배열(선형 리스트)보다 느립니다."
+        ],
+        "why_others_wrong": [
+          "1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+        ],
+        "key_concepts": [
+          "Linked List",
+          "Pointer",
+          "Search Speed"
+        ],
+        "memory_cues": [
+          "연결 리스트는 삽입/삭제는 빠르지만 검색은 느리다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "노드의 삽입이나 삭제가 쉽다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '노드의 삽입이나 삭제가 쉽다.'이므로 일치하지 않습니다. 1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "노드들이 포인터로 연결되어 검색이 빠르다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'와 일치합니다. 연결 리스트는 순차적으로 접근해야 하므로 특정 노드를 찾는 검색 속도는 배열(선형 리스트)보다 느립니다."
+          },
+          {
+            "label": "3",
+            "text": "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.'이므로 일치하지 않습니다. 1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다.'이므로 일치하지 않습니다. 1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. Linked List, Pointer, Search Speed",
+          "정답 판단 근거를 적용합니다. 연결 리스트는 순차적으로 접근해야 하므로 특정 노드를 찾는 검색 속도는 배열(선형 리스트)보다 느립니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+        ],
+        "exam_traps": [
+          "1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Linked List'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pointer'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Search Speed'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 연결 리스트는 삽입/삭제는 빠르지만 검색은 느리다."
+        ],
+        "detailed_summary": "연결 리스트의 장단점을 묻는 문제입니다. 연결 리스트는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트에 비해 검색 속도가 느립니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'와 일치합니다. 연결 리스트는 순차적으로 접근해야 하므로 특정 노드를 찾는 검색 속도는 배열(선형 리스트)보다 느립니다. 시험 포인트는 1번은 장점, 3번은 단점, 4번은 단방향 연결 리스트의 특징으로 옳은 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "연결 리스트",
+        "Linked List",
+        "포인터",
+        "자료구조"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_245c285d9d220110",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | 트리(Tree)는 비선형 구조입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "28섹션 1빌드"
+        ],
+        "chapter_label": "28섹션 1빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 28섹션 1빌드",
+        "chapter_id": "chapter_062"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_022",
+        "topic_title": "자료구조 개요와 연결 리스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "자료구조 개요와 연결 리스트",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "39. 자료 구조의 분류 중 선형 구조가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "트리"
+          },
+          {
+            "label": "2",
+            "text": "리스트"
+          },
+          {
+            "label": "3",
+            "text": "스택"
+          },
+          {
+            "label": "4",
+            "text": "데크"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "트리"
+        ],
+        "answer_text": "트리"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 트리(Tree)는 비선형 구조입니다.",
+        "summary": "데이터의 연결 형태에 따른 자료구조의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 '비선형 구조'입니다."
+        ],
+        "why_others_wrong": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+        ],
+        "key_concepts": [
+          "Linear Data Structure",
+          "Non-linear Data Structure",
+          "Tree"
+        ],
+        "memory_cues": [
+          "트그비: 트리, 그래프는 비선형"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "트리",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 '비선형 구조'입니다."
+          },
+          {
+            "label": "2",
+            "text": "리스트",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '리스트'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+          },
+          {
+            "label": "3",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+          },
+          {
+            "label": "4",
+            "text": "데크",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '데크'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 자료 구조의 분류 중 선형 구조가 아닌 것은?",
+          "핵심 개념을 떠올립니다. Linear Data Structure, Non-linear Data Structure, Tree",
+          "정답 판단 근거를 적용합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 '비선형 구조'입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+        ],
+        "exam_traps": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Linear Data Structure'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Non-linear Data Structure'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Tree'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 트그비: 트리, 그래프는 비선형"
+        ],
+        "detailed_summary": "데이터의 연결 형태에 따른 자료구조의 분류를 묻는 문제입니다. 전문가의 조언 | 트리(Tree)는 비선형 구조입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 자료 구조의 분류 중 선형 구조가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 '비선형 구조'입니다. 시험 포인트는 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열되는 '선형 구조'입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "선형 구조",
+        "비선형 구조",
+        "트리",
+        "자료구조 분류"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ce88e7434026d154",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | 트리(Tree)는 비선형 구조입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조 개요와 연결 리스트"
+        ],
+        "chapter_label": "자료구조 개요와 연결 리스트",
+        "chapter_key": "소프트웨어 개발 > 자료구조 개요와 연결 리스트",
+        "chapter_id": "chapter_246"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_022",
+        "topic_title": "자료구조 개요와 연결 리스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "자료구조 개요와 연결 리스트",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "39. 자료 구조의 분류 중 선형 구조가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "트리"
+          },
+          {
+            "label": "2",
+            "text": "리스트"
+          },
+          {
+            "label": "3",
+            "text": "스택"
+          },
+          {
+            "label": "4",
+            "text": "데크"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "트리"
+        ],
+        "answer_text": "트리"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 트리(Tree)는 비선형 구조입니다.",
+        "summary": "자료구조를 선형과 비선형으로 구분할 수 있는지 묻는 문제입니다.",
+        "why_correct": [
+          "트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 대표적인 비선형 구조입니다."
+        ],
+        "why_others_wrong": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+        ],
+        "key_concepts": [
+          "선형 구조: 배열, 리스트, 스택, 큐, 데크",
+          "비선형 구조: 트리, 그래프"
+        ],
+        "memory_cues": [
+          "선형 = 한 줄, 비선형 = 가지치기(트리)나 그물(그래프)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "트리",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 대표적인 비선형 구조입니다."
+          },
+          {
+            "label": "2",
+            "text": "리스트",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '리스트'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+          },
+          {
+            "label": "3",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+          },
+          {
+            "label": "4",
+            "text": "데크",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트리'인데 이 선택지는 '데크'이므로 일치하지 않습니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 자료 구조의 분류 중 선형 구조가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 선형 구조: 배열, 리스트, 스택, 큐, 데크, 비선형 구조: 트리, 그래프",
+          "정답 판단 근거를 적용합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 대표적인 비선형 구조입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+        ],
+        "exam_traps": [
+          "리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '선형 구조: 배열, 리스트, 스택, 큐, 데크'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비선형 구조: 트리, 그래프'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 선형 = 한 줄, 비선형 = 가지치기(트리)나 그물(그래프)"
+        ],
+        "detailed_summary": "자료구조를 선형과 비선형으로 구분할 수 있는지 묻는 문제입니다. 전문가의 조언 | 트리(Tree)는 비선형 구조입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 39. 자료 구조의 분류 중 선형 구조가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 트리'와 일치합니다. 트리(Tree)와 그래프(Graph)는 데이터가 계층적이거나 망 형태로 연결된 대표적인 비선형 구조입니다. 시험 포인트는 리스트, 스택, 큐, 데크는 데이터가 일렬로 나열된 선형 구조입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "자료구조",
+        "선형 구조",
+        "비선형 구조",
+        "트리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_7b5b0c7ce9dffa3d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          184
+        ],
+        "page_span": {
+          "start_page": 184,
+          "end_page": 184
+        },
+        "source_explanation": "연결 리스트(Linked List)는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트(배열 등)에 비해 검색 속도가 느립니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조 개요와 연결 리스트"
+        ],
+        "chapter_label": "자료구조 개요와 연결 리스트",
+        "chapter_key": "소프트웨어 개발 > 자료구조 개요와 연결 리스트",
+        "chapter_id": "chapter_246"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_022",
+        "topic_title": "자료구조 개요와 연결 리스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "자료구조 개요와 연결 리스트",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "노드의 삽입이나 삭제가 쉽다."
+          },
+          {
+            "label": "2",
+            "text": "노드들이 포인터로 연결되어 검색이 빠르다."
+          },
+          {
+            "label": "3",
+            "text": "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다."
+          },
+          {
+            "label": "4",
+            "text": "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "노드들이 포인터로 연결되어 검색이 빠르다."
+        ],
+        "answer_text": "노드들이 포인터로 연결되어 검색이 빠르다."
+      },
+      "explanation": {
+        "source_text": "연결 리스트(Linked List)는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트(배열 등)에 비해 검색 속도가 느립니다.",
+        "summary": "연결 리스트의 장단점을 묻는 문제입니다.",
+        "why_correct": [
+          "연결 리스트는 특정 데이터를 찾기 위해 첫 노드부터 순차적으로 탐색해야 하므로 검색 속도가 느립니다. (임의 접근 불가)"
+        ],
+        "why_others_wrong": [
+          "1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+        ],
+        "key_concepts": [
+          "연결 리스트의 특징"
+        ],
+        "memory_cues": [
+          "연결 리스트는 삽입/삭제는 굿, 검색은 배드"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "노드의 삽입이나 삭제가 쉽다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '노드의 삽입이나 삭제가 쉽다.'이므로 일치하지 않습니다. 1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "노드들이 포인터로 연결되어 검색이 빠르다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'와 일치합니다. 연결 리스트는 특정 데이터를 찾기 위해 첫 노드부터 순차적으로 탐색해야 하므로 검색 속도가 느립니다. (임의 접근 불가)"
+          },
+          {
+            "label": "3",
+            "text": "연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '연결을 해주는 포인터(Pointer)를 위한 추가 공간이 필요하다.'이므로 일치하지 않습니다. 1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'인데 이 선택지는 '연결 리스트 중에서 중간 노드 연결이 끊어지면 그 다음 노드를 찾기 힘들다.'이므로 일치하지 않습니다. 1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 연결 리스트의 특징",
+          "정답 판단 근거를 적용합니다. 연결 리스트는 특정 데이터를 찾기 위해 첫 노드부터 순차적으로 탐색해야 하므로 검색 속도가 느립니다. (임의 접근 불가)",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+        ],
+        "exam_traps": [
+          "1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '연결 리스트의 특징'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 연결 리스트는 삽입/삭제는 굿, 검색은 배드"
+        ],
+        "detailed_summary": "연결 리스트의 장단점을 묻는 문제입니다. 연결 리스트(Linked List)는 노드들이 포인터로 연결되어 포인터를 찾아가는 시간이 필요하므로 선형 리스트(배열 등)에 비해 검색 속도가 느립니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 연결 리스트(Linked List)에 대한 설명으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 노드들이 포인터로 연결되어 검색이 빠르다.'와 일치합니다. 연결 리스트는 특정 데이터를 찾기 위해 첫 노드부터 순차적으로 탐색해야 하므로 검색 속도가 느립니다. (임의 접근 불가) 시험 포인트는 1번은 연결 리스트의 최대 장점이며, 3번은 포인터 저장 공간이 필요하다는 단점, 4번은 단방향 연결 리스트의 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "연결 리스트",
+        "포인터",
+        "삽입 삭제",
+        "검색 속도"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

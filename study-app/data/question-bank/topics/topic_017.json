@@ -1,0 +1,1413 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_017",
+    "sequence": 17,
+    "title": "아키텍처 패턴",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 9,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_049",
+      "chapter_259",
+      "chapter_011",
+      "chapter_012",
+      "chapter_279"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_2eea5bc0f0b041f6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+        ],
+        "answer_text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다.",
+        "summary": "파이프-필터 패턴은 데이터 스트림을 처리하는 필터들을 파이프로 연결하여 순차적으로 데이터를 가공하는 방식입니다.",
+        "why_correct": [
+          "각 필터(서브시스템)가 데이터를 처리하고 그 결과를 다음 필터로 전달하는 구조가 파이프-필터의 핵심입니다."
+        ],
+        "why_others_wrong": [
+          "노드와 간선은 일반적인 그래프 구조 설명입니다.",
+          "계층 모델은 레이어드 패턴에 대한 설명입니다.",
+          "모델, 뷰, 제어는 MVC 패턴에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "파이프-필터 패턴",
+          "데이터 스트림"
+        ],
+        "memory_cues": [
+          "파이프를 타고 흐르는 데이터 필터링"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '노드와 간선으로 구성된다.'이므로 일치하지 않습니다. 노드와 간선은 일반적인 그래프 구조 설명입니다. 계층 모델은 레이어드 패턴에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 각 필터(서브시스템)가 데이터를 처리하고 그 결과를 다음 필터로 전달하는 구조가 파이프-필터의 핵심입니다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '계층 모델이라고도 한다.'이므로 일치하지 않습니다. 노드와 간선은 일반적인 그래프 구조 설명입니다. 계층 모델은 레이어드 패턴에 대한 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.'이므로 일치하지 않습니다. 노드와 간선은 일반적인 그래프 구조 설명입니다. 계층 모델은 레이어드 패턴에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 파이프-필터 패턴, 데이터 스트림",
+          "정답 판단 근거를 적용합니다. 각 필터(서브시스템)가 데이터를 처리하고 그 결과를 다음 필터로 전달하는 구조가 파이프-필터의 핵심입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 노드와 간선은 일반적인 그래프 구조 설명입니다."
+        ],
+        "exam_traps": [
+          "노드와 간선은 일반적인 그래프 구조 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파이프-필터 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 스트림'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파이프를 타고 흐르는 데이터 필터링"
+        ],
+        "detailed_summary": "파이프-필터 패턴은 데이터 스트림을 처리하는 필터들을 파이프로 연결하여 순차적으로 데이터를 가공하는 방식입니다. 전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 각 필터(서브시스템)가 데이터를 처리하고 그 결과를 다음 필터로 전달하는 구조가 파이프-필터의 핵심입니다. 시험 포인트는 노드와 간선은 일반적인 그래프 구조 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "아키텍처 패턴",
+        "파이프 필터",
+        "소프트웨어 아키텍처"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_852451eac9774f45",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0001_p0006"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+        ],
+        "answer_text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다.",
+        "summary": "파이프-필터 아키텍처 패턴의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "파이프-필터 패턴은 데이터 스트림을 생성하고 처리하는 시스템을 위한 구조로, 각 처리 단계(필터)가 데이터를 처리하고 파이프를 통해 다음 단계로 전달하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 일반적인 그래프 구조에 대한 설명입니다.",
+          "3번은 레이어 패턴(Layered Pattern)에 대한 설명입니다.",
+          "4번은 MVC(Model-View-Controller) 패턴에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "파이프-필터 패턴",
+          "데이터 스트림",
+          "재사용성"
+        ],
+        "memory_cues": [
+          "파이프를 타고 흐르는 데이터"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '노드와 간선으로 구성된다.'이므로 일치하지 않습니다. 1번은 일반적인 그래프 구조에 대한 설명입니다. 3번은 레이어 패턴(Layered Pattern)에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 파이프-필터 패턴은 데이터 스트림을 생성하고 처리하는 시스템을 위한 구조로, 각 처리 단계(필터)가 데이터를 처리하고 파이프를 통해 다음 단계로 전달하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '계층 모델이라고도 한다.'이므로 일치하지 않습니다. 1번은 일반적인 그래프 구조에 대한 설명입니다. 3번은 레이어 패턴(Layered Pattern)에 대한 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.'이므로 일치하지 않습니다. 1번은 일반적인 그래프 구조에 대한 설명입니다. 3번은 레이어 패턴(Layered Pattern)에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 파이프-필터 패턴, 데이터 스트림, 재사용성",
+          "정답 판단 근거를 적용합니다. 파이프-필터 패턴은 데이터 스트림을 생성하고 처리하는 시스템을 위한 구조로, 각 처리 단계(필터)가 데이터를 처리하고 파이프를 통해 다음 단계로 전달하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 일반적인 그래프 구조에 대한 설명입니다."
+        ],
+        "exam_traps": [
+          "1번은 일반적인 그래프 구조에 대한 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파이프-필터 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 스트림'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '재사용성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파이프를 타고 흐르는 데이터"
+        ],
+        "detailed_summary": "파이프-필터 아키텍처 패턴의 특징을 묻는 문제입니다. 전문가의 조언 | 파이프-필터 패턴에 대한 설명으로 옳은 것은 ②번입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 파이프-필터 패턴은 데이터 스트림을 생성하고 처리하는 시스템을 위한 구조로, 각 처리 단계(필터)가 데이터를 처리하고 파이프를 통해 다음 단계로 전달하는 방식입니다. 시험 포인트는 1번은 일반적인 그래프 구조에 대한 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파이프 필터 패턴",
+        "아키텍처 패턴",
+        "데이터 흐름"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_52183aaa761423d4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          8
+        ],
+        "page_span": {
+          "start_page": 8,
+          "end_page": 8
+        },
+        "source_explanation": "전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "16. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+        ],
+        "answer_text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다.",
+        "summary": "MVC 패턴은 애플리케이션을 모델, 뷰, 컨트롤러의 세 가지 역할로 분리하는 디자인 패턴입니다.",
+        "why_correct": [
+          "모델(Model)은 데이터와 비즈니스 로직을 담당하는 핵심 부분이지, 뷰와 컨트롤러 사이의 단순 전달자가 아닙니다. 전달자 역할은 주로 컨트롤러가 수행합니다."
+        ],
+        "why_others_wrong": [
+          "UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "MVC 패턴",
+          "모델의 역할"
+        ],
+        "memory_cues": [
+          "Model = Data/Logic (핵심)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 'MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'와 일치합니다. 모델(Model)은 데이터와 비즈니스 로직을 담당하는 핵심 부분이지, 뷰와 컨트롤러 사이의 단순 전달자가 아닙니다. 전달자 역할은 주로 컨트롤러가 수행합니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 16. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MVC 패턴, 모델의 역할",
+          "정답 판단 근거를 적용합니다. 모델(Model)은 데이터와 비즈니스 로직을 담당하는 핵심 부분이지, 뷰와 컨트롤러 사이의 단순 전달자가 아닙니다. 전달자 역할은 주로 컨트롤러가 수행합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MVC 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '모델의 역할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Model = Data/Logic (핵심)"
+        ],
+        "detailed_summary": "MVC 패턴은 애플리케이션을 모델, 뷰, 컨트롤러의 세 가지 역할로 분리하는 디자인 패턴입니다. 전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 16. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'와 일치합니다. 모델(Model)은 데이터와 비즈니스 로직을 담당하는 핵심 부분이지, 뷰와 컨트롤러 사이의 단순 전달자가 아닙니다. 전달자 역할은 주로 컨트롤러가 수행합니다. 시험 포인트는 UI 응집도 향상, 뷰의 데이터 표시 역할, 컨트롤러의 모델 상태 변경 등은 MVC의 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "MVC",
+        "아키텍처 패턴",
+        "Model",
+        "View",
+        "Controller"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_965789d96e92d19c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          63
+        ],
+        "page_span": {
+          "start_page": 63,
+          "end_page": 63
+        },
+        "source_explanation": "전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "아키텍처"
+        ],
+        "chapter_label": "아키텍처",
+        "chapter_key": "1과목 소프트웨어 설계 > 아키텍처",
+        "chapter_id": "chapter_049"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 157.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "4. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다."
+        ],
+        "answer_text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다.",
+        "summary": "MVC 패턴의 각 구성 요소(Model, View, Controller)의 역할을 정확히 이해하는지 묻는 문제입니다.",
+        "why_correct": [
+          "전달자 역할을 하는 것은 컨트롤러(Controller)이며, 모델(Model)은 데이터와 비즈니스 로직을 담당합니다. 또한 하나의 모델에 여러 개의 뷰가 연결될 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다.",
+          "3번: 뷰는 데이터의 시각적 표현을 담당합니다.",
+          "4번: 컨트롤러는 사용자 입력을 받아 모델의 상태를 제어합니다."
+        ],
+        "key_concepts": [
+          "MVC 패턴",
+          "관심사 분리"
+        ],
+        "memory_cues": [
+          "M: 데이터, V: 화면, C: 제어"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.'인데 이 선택지는 'MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.'이므로 일치하지 않습니다. 1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다. 3번: 뷰는 데이터의 시각적 표현을 담당합니다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.'와 일치합니다. 전달자 역할을 하는 것은 컨트롤러(Controller)이며, 모델(Model)은 데이터와 비즈니스 로직을 담당합니다. 또한 하나의 모델에 여러 개의 뷰가 연결될 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.'이므로 일치하지 않습니다. 1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다. 3번: 뷰는 데이터의 시각적 표현을 담당합니다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.'이므로 일치하지 않습니다. 1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다. 3번: 뷰는 데이터의 시각적 표현을 담당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MVC 패턴, 관심사 분리",
+          "정답 판단 근거를 적용합니다. 전달자 역할을 하는 것은 컨트롤러(Controller)이며, 모델(Model)은 데이터와 비즈니스 로직을 담당합니다. 또한 하나의 모델에 여러 개의 뷰가 연결될 수 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다."
+        ],
+        "exam_traps": [
+          "1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MVC 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '관심사 분리'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. M: 데이터, V: 화면, C: 제어"
+        ],
+        "detailed_summary": "MVC 패턴의 각 구성 요소(Model, View, Controller)의 역할을 정확히 이해하는지 묻는 문제입니다. 전문가의 조언 | 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서비스 시스템이 각각 하나씩 연결된다.'와 일치합니다. 전달자 역할을 하는 것은 컨트롤러(Controller)이며, 모델(Model)은 데이터와 비즈니스 로직을 담당합니다. 또한 하나의 모델에 여러 개의 뷰가 연결될 수 있습니다. 시험 포인트는 1번: UI와 로직 분리로 응집도를 높이고 결합도를 낮춥니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "MVC",
+        "아키텍처 모델",
+        "Model",
+        "View",
+        "Controller"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_63c90d8c33f522ec",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          82
+        ],
+        "page_span": {
+          "start_page": 82,
+          "end_page": 82
+        },
+        "source_explanation": "전문가의 조언 | 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 있습니다. • 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계"
+        ],
+        "chapter_label": "소프트웨어 설계",
+        "chapter_key": "소프트웨어 설계",
+        "chapter_id": "chapter_259"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+        ],
+        "answer_text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 있습니다. • 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다.",
+        "summary": "마스터-슬레이브 아키텍처의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "슬레이브 프로세스는 마스터의 지시를 받아 실제 작업을 수행하며, 데이터 수집과 같은 작업도 충분히 수행할 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+        ],
+        "key_concepts": [
+          "마스터-슬레이브",
+          "분산 컴퓨팅",
+          "역할 분담"
+        ],
+        "memory_cues": [
+          "마스터는 관리, 슬레이브는 실행"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '일반적으로 실시간 시스템에서 사용된다.'이므로 일치하지 않습니다. 마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.'이므로 일치하지 않습니다. 마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 작업을 수행하며, 데이터 수집과 같은 작업도 충분히 수행할 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.'이므로 일치하지 않습니다. 마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 마스터-슬레이브, 분산 컴퓨팅, 역할 분담",
+          "정답 판단 근거를 적용합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 작업을 수행하며, 데이터 수집과 같은 작업도 충분히 수행할 수 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+        ],
+        "exam_traps": [
+          "마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '마스터-슬레이브'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분산 컴퓨팅'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '역할 분담'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 마스터는 관리, 슬레이브는 실행"
+        ],
+        "detailed_summary": "마스터-슬레이브 아키텍처의 특징을 묻는 문제입니다. 전문가의 조언 | 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 있습니다. • 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 작업을 수행하며, 데이터 수집과 같은 작업도 충분히 수행할 수 있습니다. 시험 포인트는 마스터는 제어와 조정을 담당하며, 실시간 시스템에서 흔히 사용되는 구조입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "마스터-슬레이브",
+        "아키텍처 패턴",
+        "분산 시스템"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_dfa12fd9975dee29",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          122
+        ],
+        "page_span": {
+          "start_page": 122,
+          "end_page": 122
+        },
+        "source_explanation": "전문가의 조언 | 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은 2번입니다. • 1번은 자료 구조 중 그래프, 3번은 레이어 패턴, 4번은 모델-뷰-컨트롤러 패턴에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "17섹션 4빌드"
+        ],
+        "chapter_label": "17섹션 4빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 17섹션 4빌드",
+        "chapter_id": "chapter_011"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "10. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+        ],
+        "answer_text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은 2번입니다. • 1번은 자료 구조 중 그래프, 3번은 레이어 패턴, 4번은 모델-뷰-컨트롤러 패턴에 대한 설명입니다.",
+        "summary": "파이프-필터 아키텍처 패턴의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "파이프-필터 패턴은 데이터 스트림을 처리하며, 각 필터(서브시스템)가 데이터를 가공하여 파이프를 통해 다음 단계로 전달하는 구조입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다.",
+          "3번: 계층 모델은 레이어드(Layered) 패턴에 대한 설명입니다.",
+          "4번: 모델, 뷰, 제어는 MVC 패턴에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "Pipe-Filter Pattern",
+          "Data Stream",
+          "Filter",
+          "Pipe"
+        ],
+        "memory_cues": [
+          "파이프를 타고 데이터가 흐른다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "노드와 간선으로 구성된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '노드와 간선으로 구성된다.'이므로 일치하지 않습니다. 1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다. 3번: 계층 모델은 레이어드(Layered) 패턴에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 파이프-필터 패턴은 데이터 스트림을 처리하며, 각 필터(서브시스템)가 데이터를 가공하여 파이프를 통해 다음 단계로 전달하는 구조입니다."
+          },
+          {
+            "label": "3",
+            "text": "계층 모델이라고도 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '계층 모델이라고도 한다.'이므로 일치하지 않습니다. 1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다. 3번: 계층 모델은 레이어드(Layered) 패턴에 대한 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'인데 이 선택지는 '3개의 서브시스템(모델, 뷰, 제어)으로 구성되어 있다.'이므로 일치하지 않습니다. 1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다. 3번: 계층 모델은 레이어드(Layered) 패턴에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 10. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. Pipe-Filter Pattern, Data Stream, Filter, Pipe",
+          "정답 판단 근거를 적용합니다. 파이프-필터 패턴은 데이터 스트림을 처리하며, 각 필터(서브시스템)가 데이터를 가공하여 파이프를 통해 다음 단계로 전달하는 구조입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다."
+        ],
+        "exam_traps": [
+          "1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Pipe-Filter Pattern'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Stream'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Filter'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pipe'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파이프를 타고 데이터가 흐른다."
+        ],
+        "detailed_summary": "파이프-필터 아키텍처 패턴의 특징을 묻는 문제입니다. 전문가의 조언 | 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은 2번입니다. • 1번은 자료 구조 중 그래프, 3번은 레이어 패턴, 4번은 모델-뷰-컨트롤러 패턴에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 10. 파이프 필터 형태의 소프트웨어 아키텍처에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 서브시스템이 입력 데이터를 받아 처리하고 결과를 다음 서브시스템으로 넘겨주는 과정을 반복한다.'와 일치합니다. 파이프-필터 패턴은 데이터 스트림을 처리하며, 각 필터(서브시스템)가 데이터를 가공하여 파이프를 통해 다음 단계로 전달하는 구조입니다. 시험 포인트는 1번: 노드와 간선은 일반적인 그래프 구조의 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파이프 필터",
+        "아키텍처 패턴",
+        "데이터 스트림",
+        "Pipe-Filter"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b2b6012e304971ed",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          139
+        ],
+        "page_span": {
+          "start_page": 139,
+          "end_page": 139
+        },
+        "source_explanation": "전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "17섹션 6필드"
+        ],
+        "chapter_label": "17섹션 6필드",
+        "chapter_key": "1과목 소프트웨어 설계 > 17섹션 6필드",
+        "chapter_id": "chapter_012"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+        ],
+        "answer_text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다.",
+        "summary": "아키텍처 패턴 중 마스터-슬레이브 구조의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 등의 작업을 수행하는 주체이므로, 수행할 수 없다는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+        ],
+        "key_concepts": [
+          "마스터-슬레이브 패턴"
+        ],
+        "memory_cues": [
+          "마스터 = 관리자",
+          "슬레이브 = 일꾼(데이터 수집 등)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '일반적으로 실시간 시스템에서 사용된다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 등의 작업을 수행하는 주체이므로, 수행할 수 없다는 설명은 틀렸습니다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 마스터-슬레이브 패턴",
+          "정답 판단 근거를 적용합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 등의 작업을 수행하는 주체이므로, 수행할 수 없다는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '마스터-슬레이브 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 마스터 = 관리자",
+          "암기 포인트를 떠올립니다. 슬레이브 = 일꾼(데이터 수집 등)"
+        ],
+        "detailed_summary": "아키텍처 패턴 중 마스터-슬레이브 구조의 특징을 묻는 문제입니다. 전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 등의 작업을 수행하는 주체이므로, 수행할 수 없다는 설명은 틀렸습니다. 시험 포인트는 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권 등)을 설명합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "마스터-슬레이브",
+        "Master-Slave",
+        "아키텍처 패턴",
+        "분산 시스템"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_446864f0bd6c9e24",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "아키텍처 패턴"
+        ],
+        "chapter_label": "아키텍처 패턴",
+        "chapter_key": "소프트웨어 설계 > 아키텍처 패턴",
+        "chapter_id": "chapter_279"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+        ],
+        "answer_text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다.",
+        "summary": "마스터-슬레이브 아키텍처의 역할 분담에 대해 묻는 문제입니다.",
+        "why_correct": [
+          "슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 작업을 수행하는 주체이므로, 데이터 수집을 할 수 없다는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+        ],
+        "key_concepts": [
+          "Master-Slave Pattern",
+          "Distributed Systems"
+        ],
+        "memory_cues": [
+          "마스터 = 관리/지휘, 슬레이브 = 실제 작업 수행"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "일반적으로 실시간 시스템에서 사용된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '일반적으로 실시간 시스템에서 사용된다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+          },
+          {
+            "label": "2",
+            "text": "마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 일반적으로 연산, 통신, 조정을 책임진다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+          },
+          {
+            "label": "3",
+            "text": "슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 작업을 수행하는 주체이므로, 데이터 수집을 할 수 없다는 설명은 틀렸습니다."
+          },
+          {
+            "label": "4",
+            "text": "마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'인데 이 선택지는 '마스터 프로세스는 슬레이브 프로세스들을 제어할 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Master-Slave Pattern, Distributed Systems",
+          "정답 판단 근거를 적용합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 작업을 수행하는 주체이므로, 데이터 수집을 할 수 없다는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Master-Slave Pattern'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Distributed Systems'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 마스터 = 관리/지휘, 슬레이브 = 실제 작업 수행"
+        ],
+        "detailed_summary": "마스터-슬레이브 아키텍처의 역할 분담에 대해 묻는 문제입니다. 전문가의 조언 | 슬레이브 프로세스에서는 마스터 프로세스에서 수행하는 연산, 통신, 제어 등의 기능을 제외하고는 별도로 제한되는 기능은 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템을 위한 마스터-슬레이브(Master-Slave) 아키텍처에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 슬레이브 프로세스는 데이터 수집 기능을 수행할 수 없다.'와 일치합니다. 슬레이브 프로세스는 마스터의 지시를 받아 실제 데이터 수집이나 연산 작업을 수행하는 주체이므로, 데이터 수집을 할 수 없다는 설명은 틀렸습니다. 시험 포인트는 1, 2, 4번은 마스터-슬레이브 패턴의 전형적인 특징(실시간성, 마스터의 제어권)을 설명합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "마스터-슬레이브",
+        "아키텍처 패턴",
+        "분산 시스템"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_320a920e09f4ec3c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          159
+        ],
+        "page_span": {
+          "start_page": 159,
+          "end_page": 159
+        },
+        "source_explanation": "모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다. (전달자 역할은 주로 Controller가 수행합니다.)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "아키텍처 패턴"
+        ],
+        "chapter_label": "아키텍처 패턴",
+        "chapter_key": "소프트웨어 설계 > 아키텍처 패턴",
+        "chapter_id": "chapter_279"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_017",
+        "topic_title": "아키텍처 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "아키텍처 패턴",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "11. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+        ],
+        "answer_text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다."
+      },
+      "explanation": {
+        "source_text": "모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다. (전달자 역할은 주로 Controller가 수행합니다.)",
+        "summary": "가장 널리 쓰이는 아키텍처 패턴인 MVC의 각 구성 요소별 역할을 묻는 문제입니다.",
+        "why_correct": [
+          "모델은 데이터와 비즈니스 로직을 담당하며, 뷰와 컨트롤러 사이의 전달자 역할을 하는 것은 컨트롤러의 주요 기능입니다."
+        ],
+        "why_others_wrong": [
+          "UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "MVC Pattern",
+          "Separation of Concerns"
+        ],
+        "memory_cues": [
+          "Model = Data",
+          "View = UI",
+          "Controller = Manager"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 'MVC 모델은 사용자 인터페이스를 담당하는 계층의 응집도를 높일 수 있고, 여러 개의 다른 UI를 만들어 그 사이에 결합도를 낮출 수 있다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'와 일치합니다. 모델은 데이터와 비즈니스 로직을 담당하며, 뷰와 컨트롤러 사이의 전달자 역할을 하는 것은 컨트롤러의 주요 기능입니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '뷰(View)는 모델(Model)에 있는 데이터를 사용자 인터페이스에 보이는 역할을 담당한다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'인데 이 선택지는 '제어(Controller)는 모델(Model)에 명령을 보냄으로써 모델의 상태를 변경할 수 있다.'이므로 일치하지 않습니다. UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 11. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MVC Pattern, Separation of Concerns",
+          "정답 판단 근거를 적용합니다. 모델은 데이터와 비즈니스 로직을 담당하며, 뷰와 컨트롤러 사이의 전달자 역할을 하는 것은 컨트롤러의 주요 기능입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MVC Pattern'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Separation of Concerns'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Model = Data",
+          "암기 포인트를 떠올립니다. View = UI"
+        ],
+        "detailed_summary": "가장 널리 쓰이는 아키텍처 패턴인 MVC의 각 구성 요소별 역할을 묻는 문제입니다. 모델(Model)은 서브시스템의 핵심 기능과 데이터를 보관하는 역할을 합니다. (전달자 역할은 주로 Controller가 수행합니다.) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 11. 소프트웨어 아키텍처 모델 중 MVC(Model-View-Controller)와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 모델(Model)은 뷰(View)와 제어(Controller) 사이에서 전달자 역할을 하며, 뷰마다 모델 서브시스템이 각각 하나씩 연결된다.'와 일치합니다. 모델은 데이터와 비즈니스 로직을 담당하며, 뷰와 컨트롤러 사이의 전달자 역할을 하는 것은 컨트롤러의 주요 기능입니다. 시험 포인트는 UI 응집도 향상, 뷰의 출력 역할, 컨트롤러의 모델 제어 역할 등은 MVC 패턴의 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "MVC",
+        "Model",
+        "View",
+        "Controller",
+        "아키텍처 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,1326 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_026",
+    "sequence": 26,
+    "title": "검색과 해싱",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 8,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_055",
+      "chapter_245",
+      "chapter_230",
+      "chapter_068"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_093c91251e942477",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          9
+        ],
+        "page_span": {
+          "start_page": 9,
+          "end_page": 9
+        },
+        "source_explanation": "전문가의 조언 | 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는 4회입니다. A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. ① 첫 번째 값(F)과 마지막 값(L)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14) / 2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. ← 1회 비교 ② F = 1, L = 6, M = (1+6) / 2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. ← 2회 비교 ③ F = 4, L = 6, M = (4+6) / 2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. ← 3회 비교 ④ F = 6, L = 6, M = (6+6) / 2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. ← 4회 비교"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "23. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는?\nA B C D E F G H I J K L M N",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4"
+          },
+          {
+            "label": "2",
+            "text": "5"
+          },
+          {
+            "label": "3",
+            "text": "6"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는 4회입니다. A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. ① 첫 번째 값(F)과 마지막 값(L)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14) / 2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. ← 1회 비교 ② F = 1, L = 6, M = (1+6) / 2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. ← 2회 비교 ③ F = 4, L = 6, M = (4+6) / 2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. ← 3회 비교 ④ F = 6, L = 6, M = (6+6) / 2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. ← 4회 비교",
+        "summary": "이진 검색은 정렬된 리스트에서 중간값을 기준으로 탐색 범위를 절반씩 줄여나가는 방식입니다.",
+        "why_correct": [
+          "14개 요소 중 F(6번째)를 찾을 때: 7번(G)과 비교 -> 3번(C)과 비교 -> 5번(E)과 비교 -> 6번(F)과 비교하여 총 4회 소요됩니다."
+        ],
+        "why_others_wrong": [],
+        "key_concepts": [
+          "이진 검색",
+          "중간값 계산"
+        ],
+        "memory_cues": [
+          "절반씩 뚝뚝"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 14개 요소 중 F(6번째)를 찾을 때: 7번(G)과 비교 -> 3번(C)과 비교 -> 5번(E)과 비교 -> 6번(F)과 비교하여 총 4회 소요됩니다."
+          },
+          {
+            "label": "2",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 핵심 개념은 이진 검색은 정렬된 리스트에서 중간값을 기준으로 탐색 범위를 절반씩 줄여나가는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 핵심 개념은 이진 검색은 정렬된 리스트에서 중간값을 기준으로 탐색 범위를 절반씩 줄여나가는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '7'이므로 일치하지 않습니다. 핵심 개념은 이진 검색은 정렬된 리스트에서 중간값을 기준으로 탐색 범위를 절반씩 줄여나가는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N",
+          "핵심 개념을 떠올립니다. 이진 검색, 중간값 계산",
+          "정답 판단 근거를 적용합니다. 14개 요소 중 F(6번째)를 찾을 때: 7번(G)과 비교 -> 3번(C)과 비교 -> 5번(E)과 비교 -> 6번(F)과 비교하여 총 4회 소요됩니다."
+        ],
+        "exam_traps": [
+          "보기 표현이 비슷할수록 문제의 핵심 기준을 먼저 정하고 하나씩 대조하는 편이 안전합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '이진 검색'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '중간값 계산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 절반씩 뚝뚝"
+        ],
+        "detailed_summary": "이진 검색은 정렬된 리스트에서 중간값을 기준으로 탐색 범위를 절반씩 줄여나가는 방식입니다. 전문가의 조언 | 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는 4회입니다. A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. ① 첫 번째 값(F)과 마지막 값(L)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14) / 2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. ← 1회 비교 ② F = 1, L = 6, M = (1+6) / 2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. ← 2회 비교 ③ F = 4, L = 6, M = (4+6) / 2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. ← 3회 비교 ④ F = 6, L = 6, M = (6+6) / 2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. ← 4회 비교 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N 정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 14개 요소 중 F(6번째)를 찾을 때: 7번(G)과 비교 -> 3번(C)과 비교 -> 5번(E)과 비교 -> 6번(F)과 비교하여 총 4회 소요됩니다. 시험 포인트는 보기 표현이 비슷할수록 문제의 핵심 기준을 먼저 정하고 하나씩 대조하는 편이 안전합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "이진 검색",
+        "Binary Search",
+        "비교 횟수",
+        "알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8ebf307360c63b0e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          9
+        ],
+        "page_span": {
+          "start_page": 9,
+          "end_page": 9
+        },
+        "source_explanation": "전문가의 조언 | • 휴리스틱 알고리즘(Heuristic Algorithm)은 제한되고 불충분한 시간이나 정보로 인해 최적의 해결책을 보장하지는 않지만, 비교적 효율적인 해결책을 찾아내는 알고리즘으로, 대표적으로 힐 클라이밍(Hill Climbing), A* 알고리즘(A* Algorithm), 그리디 탐색(Greedy Search) 등이 있습니다. • 벨만-포드 알고리즘(Bellman-Ford Algorithm)은 두 노드 간의 최단 경로를 찾는 정확한 알고리즘으로, 휴리스틱 알고리즘에 해당하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "21. 휴리스틱 알고리즘(Heuristic Algorithm)에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "힐 클라이밍(Hill Climbing)"
+          },
+          {
+            "label": "2",
+            "text": "벨만-포드 알고리즘(Bellman-Ford Algorithm)"
+          },
+          {
+            "label": "3",
+            "text": "A* 알고리즘(A* Algorithm)"
+          },
+          {
+            "label": "4",
+            "text": "그리디 탐색(Greedy Search)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "벨만-포드 알고리즘(Bellman-Ford Algorithm)"
+        ],
+        "answer_text": "벨만-포드 알고리즘(Bellman-Ford Algorithm)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | • 휴리스틱 알고리즘(Heuristic Algorithm)은 제한되고 불충분한 시간이나 정보로 인해 최적의 해결책을 보장하지는 않지만, 비교적 효율적인 해결책을 찾아내는 알고리즘으로, 대표적으로 힐 클라이밍(Hill Climbing), A* 알고리즘(A* Algorithm), 그리디 탐색(Greedy Search) 등이 있습니다. • 벨만-포드 알고리즘(Bellman-Ford Algorithm)은 두 노드 간의 최단 경로를 찾는 정확한 알고리즘으로, 휴리스틱 알고리즘에 해당하지 않습니다.",
+        "summary": "휴리스틱 알고리즘은 최적해를 보장하지는 않지만 현실적인 시간 내에 해답을 찾는 방법입니다.",
+        "why_correct": [
+          "벨만-포드 알고리즘은 그래프에서 최단 경로를 구하는 확정적(Deterministic) 알고리즘입니다."
+        ],
+        "why_others_wrong": [
+          "힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+        ],
+        "key_concepts": [
+          "휴리스틱 알고리즘",
+          "벨만-포드 알고리즘"
+        ],
+        "memory_cues": [
+          "벨만-포드는 정확한 계산"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "힐 클라이밍(Hill Climbing)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 벨만-포드 알고리즘(Bellman-Ford Algorithm)'인데 이 선택지는 '힐 클라이밍(Hill Climbing)'이므로 일치하지 않습니다. 힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+          },
+          {
+            "label": "2",
+            "text": "벨만-포드 알고리즘(Bellman-Ford Algorithm)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 벨만-포드 알고리즘(Bellman-Ford Algorithm)'와 일치합니다. 벨만-포드 알고리즘은 그래프에서 최단 경로를 구하는 확정적(Deterministic) 알고리즘입니다."
+          },
+          {
+            "label": "3",
+            "text": "A* 알고리즘(A* Algorithm)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 벨만-포드 알고리즘(Bellman-Ford Algorithm)'인데 이 선택지는 'A* 알고리즘(A* Algorithm)'이므로 일치하지 않습니다. 힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+          },
+          {
+            "label": "4",
+            "text": "그리디 탐색(Greedy Search)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 벨만-포드 알고리즘(Bellman-Ford Algorithm)'인데 이 선택지는 '그리디 탐색(Greedy Search)'이므로 일치하지 않습니다. 힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 휴리스틱 알고리즘(Heuristic Algorithm)에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 휴리스틱 알고리즘, 벨만-포드 알고리즘",
+          "정답 판단 근거를 적용합니다. 벨만-포드 알고리즘은 그래프에서 최단 경로를 구하는 확정적(Deterministic) 알고리즘입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+        ],
+        "exam_traps": [
+          "힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '휴리스틱 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '벨만-포드 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 벨만-포드는 정확한 계산"
+        ],
+        "detailed_summary": "휴리스틱 알고리즘은 최적해를 보장하지는 않지만 현실적인 시간 내에 해답을 찾는 방법입니다. 전문가의 조언 | • 휴리스틱 알고리즘(Heuristic Algorithm)은 제한되고 불충분한 시간이나 정보로 인해 최적의 해결책을 보장하지는 않지만, 비교적 효율적인 해결책을 찾아내는 알고리즘으로, 대표적으로 힐 클라이밍(Hill Climbing), A* 알고리즘(A* Algorithm), 그리디 탐색(Greedy Search) 등이 있습니다. • 벨만-포드 알고리즘(Bellman-Ford Algorithm)은 두 노드 간의 최단 경로를 찾는 정확한 알고리즘으로, 휴리스틱 알고리즘에 해당하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 휴리스틱 알고리즘(Heuristic Algorithm)에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 벨만-포드 알고리즘(Bellman-Ford Algorithm)'와 일치합니다. 벨만-포드 알고리즘은 그래프에서 최단 경로를 구하는 확정적(Deterministic) 알고리즘입니다. 시험 포인트는 힐 클라이밍, A*, 그리디 탐색은 모두 경험적인 판단을 사용하는 휴리스틱 기법들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "휴리스틱",
+        "알고리즘",
+        "벨만-포드",
+        "최단 경로"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_34ebc21dd9bf5bde",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          32
+        ],
+        "page_span": {
+          "start_page": 32,
+          "end_page": 32
+        },
+        "source_explanation": "각 데이터를 해당 주소에 있는 연결 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은 체이닝(Chaining)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "해싱"
+        ],
+        "chapter_label": "해싱",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 해싱",
+        "chapter_id": "chapter_245"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 157.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Chaining"
+          },
+          {
+            "label": "2",
+            "text": "Rehashing"
+          },
+          {
+            "label": "3",
+            "text": "Open Addressing"
+          },
+          {
+            "label": "4",
+            "text": "Linear Probing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Chaining"
+        ],
+        "answer_text": "Chaining"
+      },
+      "explanation": {
+        "source_text": "각 데이터를 해당 주소에 있는 연결 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은 체이닝(Chaining)입니다.",
+        "summary": "해시 충돌 해결 방법 중 외부 저장 공간(연결 리스트)을 사용하는 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "체이닝은 같은 해시 값을 갖는 데이터를 사슬(Chain)처럼 연결 리스트로 묶어서 관리하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+        ],
+        "key_concepts": [
+          "해시 충돌",
+          "체이닝(Chaining)"
+        ],
+        "memory_cues": [
+          "리스트로 연결 = 체인(Chaining)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Chaining",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Chaining'와 일치합니다. 체이닝은 같은 해시 값을 갖는 데이터를 사슬(Chain)처럼 연결 리스트로 묶어서 관리하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "Rehashing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Rehashing'이므로 일치하지 않습니다. Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "Open Addressing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Open Addressing'이므로 일치하지 않습니다. Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "Linear Probing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Linear Probing'이므로 일치하지 않습니다. Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은?",
+          "핵심 개념을 떠올립니다. 해시 충돌, 체이닝(Chaining)",
+          "정답 판단 근거를 적용합니다. 체이닝은 같은 해시 값을 갖는 데이터를 사슬(Chain)처럼 연결 리스트로 묶어서 관리하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+        ],
+        "exam_traps": [
+          "Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '해시 충돌'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '체이닝(Chaining)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 리스트로 연결 = 체인(Chaining)"
+        ],
+        "detailed_summary": "해시 충돌 해결 방법 중 외부 저장 공간(연결 리스트)을 사용하는 기법을 묻는 문제입니다. 각 데이터를 해당 주소에 있는 연결 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은 체이닝(Chaining)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 Chaining'와 일치합니다. 체이닝은 같은 해시 값을 갖는 데이터를 사슬(Chain)처럼 연결 리스트로 묶어서 관리하는 방식입니다. 시험 포인트는 Open Addressing(개방 주소법)은 빈 버킷을 찾아 저장하는 방식이며, Linear Probing은 그 중 하나입니다. Rehashing은 해시 함수를 다시 적용하는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "해싱",
+        "충돌 해결",
+        "체이닝",
+        "연결 리스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c2edd829b9323ca9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          103
+        ],
+        "page_span": {
+          "start_page": 103,
+          "end_page": 103
+        },
+        "source_explanation": "해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "23. 해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "제곱법(Mid-Square)"
+          },
+          {
+            "label": "2",
+            "text": "숫자 분석법(Digit Analysis)"
+          },
+          {
+            "label": "3",
+            "text": "개방 주소법(Open Addressing)"
+          },
+          {
+            "label": "4",
+            "text": "제산법(Division)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "개방 주소법(Open Addressing)"
+        ],
+        "answer_text": "개방 주소법(Open Addressing)"
+      },
+      "explanation": {
+        "source_text": "해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다.",
+        "summary": "데이터를 해시 테이블에 저장하기 위한 주소 계산 방법(해싱 함수)이 아닌 것을 찾는 문제입니다.",
+        "why_correct": [
+          "개방 주소법(Open Addressing)은 해시 충돌이 발생했을 때 다른 빈 자리를 찾는 '충돌 해결 방법'이지, 해시 주소를 생성하는 '함수'가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+        ],
+        "key_concepts": [
+          "Hashing Function",
+          "Collision Resolution",
+          "Open Addressing"
+        ],
+        "memory_cues": [
+          "함수는 '계산'하는 것, 개방 주소법은 '빈 방 찾기'!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "제곱법(Mid-Square)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '제곱법(Mid-Square)'이므로 일치하지 않습니다. 제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+          },
+          {
+            "label": "2",
+            "text": "숫자 분석법(Digit Analysis)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '숫자 분석법(Digit Analysis)'이므로 일치하지 않습니다. 제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+          },
+          {
+            "label": "3",
+            "text": "개방 주소법(Open Addressing)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 개방 주소법(Open Addressing)'와 일치합니다. 개방 주소법(Open Addressing)은 해시 충돌이 발생했을 때 다른 빈 자리를 찾는 '충돌 해결 방법'이지, 해시 주소를 생성하는 '함수'가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "제산법(Division)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '제산법(Division)'이므로 일치하지 않습니다. 제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. Hashing Function, Collision Resolution, Open Addressing",
+          "정답 판단 근거를 적용합니다. 개방 주소법(Open Addressing)은 해시 충돌이 발생했을 때 다른 빈 자리를 찾는 '충돌 해결 방법'이지, 해시 주소를 생성하는 '함수'가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+        ],
+        "exam_traps": [
+          "제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Hashing Function'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Collision Resolution'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Open Addressing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 함수는 '계산'하는 것, 개방 주소법은 '빈 방 찾기'!"
+        ],
+        "detailed_summary": "데이터를 해시 테이블에 저장하기 위한 주소 계산 방법(해싱 함수)이 아닌 것을 찾는 문제입니다. 해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 해싱 함수(Hashing Function)의 종류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 개방 주소법(Open Addressing)'와 일치합니다. 개방 주소법(Open Addressing)은 해시 충돌이 발생했을 때 다른 빈 자리를 찾는 '충돌 해결 방법'이지, 해시 주소를 생성하는 '함수'가 아닙니다. 시험 포인트는 제곱법, 숫자 분석법, 제산법은 모두 키 값을 변형하여 해시 주소를 만드는 대표적인 해싱 함수들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "해싱 함수",
+        "Hashing",
+        "개방 주소법",
+        "충돌 해결"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_47a6cf5f4a0d1b6c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다.\n1. 첫 번째 값(1)과 마지막 값(14)의 중간값 M=(1+14)/2 = 7.5, 7번째 값 G와 비교. F < G이므로 왼쪽 탐색. (1회)\n2. F=1, L=6, M=(1+6)/2 = 3.5, 3번째 값 C와 비교. F > C이므로 오른쪽 탐색. (2회)\n3. F=4, L=6, M=(4+6)/2 = 5, 5번째 값 E와 비교. F > E이므로 오른쪽 탐색. (3회)\n4. F=6, L=6, M=(6+6)/2 = 6, 6번째 값 F와 비교. 일치. (4회)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "검색과 해싱"
+        ],
+        "chapter_label": "검색과 해싱",
+        "chapter_key": "소프트웨어 개발 > 검색과 해싱",
+        "chapter_id": "chapter_230"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는?\nA B C D E F G H I J K L M N",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4"
+          },
+          {
+            "label": "2",
+            "text": "5"
+          },
+          {
+            "label": "3",
+            "text": "6"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다.\n1. 첫 번째 값(1)과 마지막 값(14)의 중간값 M=(1+14)/2 = 7.5, 7번째 값 G와 비교. F < G이므로 왼쪽 탐색. (1회)\n2. F=1, L=6, M=(1+6)/2 = 3.5, 3번째 값 C와 비교. F > C이므로 오른쪽 탐색. (2회)\n3. F=4, L=6, M=(4+6)/2 = 5, 5번째 값 E와 비교. F > E이므로 오른쪽 탐색. (3회)\n4. F=6, L=6, M=(6+6)/2 = 6, 6번째 값 F와 비교. 일치. (4회)",
+        "summary": "정렬된 데이터 리스트에서 이진 검색(Binary Search)을 수행할 때 특정 값을 찾기까지의 비교 횟수를 계산하는 문제입니다.",
+        "why_correct": [
+          "중간값을 선택하여 찾는 값과 비교하고 범위를 절반씩 좁혀가는 과정을 반복하면 4번째 비교에서 F를 찾게 됩니다."
+        ],
+        "why_others_wrong": [
+          "계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+        ],
+        "key_concepts": [
+          "이진 검색: 정렬된 리스트에서 중간값과 비교하여 탐색 범위를 절반으로 줄여나가는 방식"
+        ],
+        "memory_cues": [
+          "이진 검색은 'Up/Down' 게임과 원리가 같습니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 중간값을 선택하여 찾는 값과 비교하고 범위를 절반씩 좁혀가는 과정을 반복하면 4번째 비교에서 F를 찾게 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+          },
+          {
+            "label": "3",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '7'이므로 일치하지 않습니다. 계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N",
+          "핵심 개념을 떠올립니다. 이진 검색: 정렬된 리스트에서 중간값과 비교하여 탐색 범위를 절반으로 줄여나가는 방식",
+          "정답 판단 근거를 적용합니다. 중간값을 선택하여 찾는 값과 비교하고 범위를 절반씩 좁혀가는 과정을 반복하면 4번째 비교에서 F를 찾게 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+        ],
+        "exam_traps": [
+          "계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '이진 검색: 정렬된 리스트에서 중간값과 비교하여 탐색 범위를 절반으로 줄여나가는 방식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 이진 검색은 'Up/Down' 게임과 원리가 같습니다."
+        ],
+        "detailed_summary": "정렬된 데이터 리스트에서 이진 검색(Binary Search)을 수행할 때 특정 값을 찾기까지의 비교 횟수를 계산하는 문제입니다. 전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. 1. 첫 번째 값(1)과 마지막 값(14)의 중간값 M=(1+14)/2 = 7.5, 7번째 값 G와 비교. F < G이므로 왼쪽 탐색. (1회) 2. F=1, L=6, M=(1+6)/2 = 3.5, 3번째 값 C와 비교. F > C이므로 오른쪽 탐색. (2회) 3. F=4, L=6, M=(4+6)/2 = 5, 5번째 값 E와 비교. F > E이므로 오른쪽 탐색. (3회) 4. F=6, L=6, M=(6+6)/2 = 6, 6번째 값 F와 비교. 일치. (4회) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N 정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 중간값을 선택하여 찾는 값과 비교하고 범위를 절반씩 좁혀가는 과정을 반복하면 4번째 비교에서 F를 찾게 됩니다. 시험 포인트는 계산 과정에서 중간값 인덱스 설정 방식에 따라 횟수가 달라질 수 있으나, 표준적인 이진 검색 절차를 따르면 4회가 정답입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "이진 검색",
+        "비교 횟수",
+        "탐색 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0126",
+            "page_number": 126,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1065366,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0127",
+            "page_number": 127,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0127.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 967033,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0128",
+            "page_number": 128,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0128.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 984311,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0129",
+            "page_number": 129,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0129.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1383,
+            "file_size_bytes": 938186,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0130",
+            "page_number": 130,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0130.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1383,
+            "file_size_bytes": 849449,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0131",
+            "page_number": 131,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0131.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1116036,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0126",
+          "page_number": 126,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1065366,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0126",
+          "page_number": 126,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1065366,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_932b630cf08c0513",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. • 첫 번째 값(1)과 마지막 값(14)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14)/2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. → 1회 비교 • F = 1, L = 6, M = (1+6)/2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. → 2회 비교 • F = 4, L = 6, M = (4+6)/2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. → 3회 비교 • F = 6, L = 6, M = (6+6)/2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. → 4회 비교"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "31섹션 1빌드"
+        ],
+        "chapter_label": "31섹션 1빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 31섹션 1빌드",
+        "chapter_id": "chapter_068"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는?\nA B C D E F G H I J K L M N",
+        "choices": [
+          {
+            "label": "1",
+            "text": "4"
+          },
+          {
+            "label": "2",
+            "text": "5"
+          },
+          {
+            "label": "3",
+            "text": "6"
+          },
+          {
+            "label": "4",
+            "text": "7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. • 첫 번째 값(1)과 마지막 값(14)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14)/2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. → 1회 비교 • F = 1, L = 6, M = (1+6)/2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. → 2회 비교 • F = 4, L = 6, M = (4+6)/2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. → 3회 비교 • F = 6, L = 6, M = (6+6)/2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. → 4회 비교",
+        "summary": "정렬된 데이터에서 이진 검색(Binary Search)을 수행할 때의 단계별 비교 과정을 묻는 문제입니다.",
+        "why_correct": [
+          "중간값을 선택해 나가는 과정을 거치면 7(G) -> 3(C) -> 5(E) -> 6(F) 순으로 비교하게 되어 총 4회 만에 F를 찾게 됩니다."
+        ],
+        "why_others_wrong": [
+          "계산 과정에 따라 4회가 정확한 결과입니다."
+        ],
+        "key_concepts": [
+          "Binary Search",
+          "Middle Index Calculation"
+        ],
+        "memory_cues": [
+          "반씩 쪼개며 비교하기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 중간값을 선택해 나가는 과정을 거치면 7(G) -> 3(C) -> 5(E) -> 6(F) 순으로 비교하게 되어 총 4회 만에 F를 찾게 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 과정에 따라 4회가 정확한 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 과정에 따라 4회가 정확한 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 4'인데 이 선택지는 '7'이므로 일치하지 않습니다. 계산 과정에 따라 4회가 정확한 결과입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N",
+          "핵심 개념을 떠올립니다. Binary Search, Middle Index Calculation",
+          "정답 판단 근거를 적용합니다. 중간값을 선택해 나가는 과정을 거치면 7(G) -> 3(C) -> 5(E) -> 6(F) 순으로 비교하게 되어 총 4회 만에 F를 찾게 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 과정에 따라 4회가 정확한 결과입니다."
+        ],
+        "exam_traps": [
+          "계산 과정에 따라 4회가 정확한 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Binary Search'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Middle Index Calculation'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 반씩 쪼개며 비교하기"
+        ],
+        "detailed_summary": "정렬된 데이터에서 이진 검색(Binary Search)을 수행할 때의 단계별 비교 과정을 묻는 문제입니다. 전문가의 조언 | A~N을 1~14로 가정하고 이진 검색 방법으로 F(6)를 찾는 방법은 다음과 같습니다. • 첫 번째 값(1)과 마지막 값(14)을 이용하여 중간 값 M을 구한 후 찾으려는 값과 비교합니다. M = (1+14)/2 = 7.5, 7이 찾으려는 값인지 확인합니다. 7은 찾으려는 값 6보다 크므로 찾는 값은 1~6에 있습니다. → 1회 비교 • F = 1, L = 6, M = (1+6)/2 = 3.5, 3이 찾으려는 값인지 확인합니다. 3은 찾으려는 값 6보다 작으므로 찾는 값은 4~6에 있습니다. → 2회 비교 • F = 4, L = 6, M = (4+6)/2 = 5, 5가 찾으려는 값인지 확인합니다. 5는 찾으려는 값 6보다 작으므로 찾는 값은 6에 있습니다. → 3회 비교 • F = 6, L = 6, M = (6+6)/2 = 6, 6이 찾으려는 값인지 확인합니다. 6은 찾는 값입니다. → 4회 비교 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. 다음과 같이 레코드가 구성되어 있을 때, 이진 검색 방법으로 F를 찾을 경우 비교되는 횟수는? A B C D E F G H I J K L M N 정답입니다. 이 선택지는 실제 정답인 '1번 4'와 일치합니다. 중간값을 선택해 나가는 과정을 거치면 7(G) -> 3(C) -> 5(E) -> 6(F) 순으로 비교하게 되어 총 4회 만에 F를 찾게 됩니다. 시험 포인트는 계산 과정에 따라 4회가 정확한 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "이진 검색",
+        "Binary Search",
+        "비교 횟수",
+        "탐색 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_452ff0d2e507c2d4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          142
+        ],
+        "page_span": {
+          "start_page": 142,
+          "end_page": 142
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 체이닝(Chaining)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "검색과 해싱"
+        ],
+        "chapter_label": "검색과 해싱",
+        "chapter_key": "소프트웨어 개발 > 검색과 해싱",
+        "chapter_id": "chapter_230"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Chaining"
+          },
+          {
+            "label": "2",
+            "text": "Rehashing"
+          },
+          {
+            "label": "3",
+            "text": "Open Addressing"
+          },
+          {
+            "label": "4",
+            "text": "Linear Probing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Chaining"
+        ],
+        "answer_text": "Chaining"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 체이닝(Chaining)에 대한 설명입니다.",
+        "summary": "해시 충돌 해결 방법 중 하나인 체이닝 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "체이닝(Chaining)은 충돌 발생 시 해당 버킷에 연결 리스트를 만들어 데이터를 줄줄이 연결하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+        ],
+        "key_concepts": [
+          "Hashing Collision",
+          "Chaining"
+        ],
+        "memory_cues": [
+          "체인처럼 연결한다 = Chaining"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Chaining",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Chaining'와 일치합니다. 체이닝(Chaining)은 충돌 발생 시 해당 버킷에 연결 리스트를 만들어 데이터를 줄줄이 연결하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "Rehashing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Rehashing'이므로 일치하지 않습니다. Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "Open Addressing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Open Addressing'이므로 일치하지 않습니다. Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "Linear Probing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Chaining'인데 이 선택지는 'Linear Probing'이므로 일치하지 않습니다. Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은?",
+          "핵심 개념을 떠올립니다. Hashing Collision, Chaining",
+          "정답 판단 근거를 적용합니다. 체이닝(Chaining)은 충돌 발생 시 해당 버킷에 연결 리스트를 만들어 데이터를 줄줄이 연결하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+        ],
+        "exam_traps": [
+          "Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Hashing Collision'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Chaining'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 체인처럼 연결한다 = Chaining"
+        ],
+        "detailed_summary": "해시 충돌 해결 방법 중 하나인 체이닝 기법을 묻는 문제입니다. 전문가의 조언 | 문제에 제시된 내용은 체이닝(Chaining)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해시 함수가 서로 다른 키에 대해 같은 주소값을 반환해서 충돌이 발생하면 각 데이터를 해당 주소에 있는 링크드 리스트(Linked List)에 삽입하여 문제를 해결하는 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 Chaining'와 일치합니다. 체이닝(Chaining)은 충돌 발생 시 해당 버킷에 연결 리스트를 만들어 데이터를 줄줄이 연결하는 방식입니다. 시험 포인트는 Open Addressing은 다른 빈 자리를 찾는 방식이며, Linear Probing은 그 중 선형적으로 찾는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "해싱",
+        "충돌 해결",
+        "체이닝"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_413465cf4d98b04f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다. 개방 주소법은 충돌 해결 방법입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "검색과 해싱"
+        ],
+        "chapter_label": "검색과 해싱",
+        "chapter_key": "소프트웨어 개발 > 검색과 해싱",
+        "chapter_id": "chapter_230"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_026",
+        "topic_title": "검색과 해싱",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "검색과 해싱",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "제곱법(Mid-Square)"
+          },
+          {
+            "label": "2",
+            "text": "숫자 분석법(Digit Analysis)"
+          },
+          {
+            "label": "3",
+            "text": "개방 주소법(Open Addressing)"
+          },
+          {
+            "label": "4",
+            "text": "제산법(Division)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "개방 주소법(Open Addressing)"
+        ],
+        "answer_text": "개방 주소법(Open Addressing)"
+      },
+      "explanation": {
+        "source_text": "해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다. 개방 주소법은 충돌 해결 방법입니다.",
+        "summary": "해싱 함수와 충돌 해결 방법을 구분하는 문제입니다.",
+        "why_correct": [
+          "개방 주소법은 해시 충돌이 발생했을 때 빈 공간을 찾아 저장하는 '충돌 해결 방법'이지, 해시 값을 생성하는 '함수'가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+        ],
+        "key_concepts": [
+          "해싱 함수 종류",
+          "충돌 해결 방법"
+        ],
+        "memory_cues": [
+          "함수는 계산법, 주소법은 자리 찾기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "제곱법(Mid-Square)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '제곱법(Mid-Square)'이므로 일치하지 않습니다. 제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+          },
+          {
+            "label": "2",
+            "text": "숫자 분석법(Digit Analysis)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '숫자 분석법(Digit Analysis)'이므로 일치하지 않습니다. 제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+          },
+          {
+            "label": "3",
+            "text": "개방 주소법(Open Addressing)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 개방 주소법(Open Addressing)'와 일치합니다. 개방 주소법은 해시 충돌이 발생했을 때 빈 공간을 찾아 저장하는 '충돌 해결 방법'이지, 해시 값을 생성하는 '함수'가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "제산법(Division)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 개방 주소법(Open Addressing)'인데 이 선택지는 '제산법(Division)'이므로 일치하지 않습니다. 제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해싱 함수(Hashing Function)의 종류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 해싱 함수 종류, 충돌 해결 방법",
+          "정답 판단 근거를 적용합니다. 개방 주소법은 해시 충돌이 발생했을 때 빈 공간을 찾아 저장하는 '충돌 해결 방법'이지, 해시 값을 생성하는 '함수'가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+        ],
+        "exam_traps": [
+          "제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '해싱 함수 종류'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '충돌 해결 방법'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 함수는 계산법, 주소법은 자리 찾기"
+        ],
+        "detailed_summary": "해싱 함수와 충돌 해결 방법을 구분하는 문제입니다. 해싱 함수의 종류에는 제산법, 제곱법, 폴딩법, 기수 변환법, 대수적 코딩법, 계수 분석법(숫자 분석법), 무작위법이 있습니다. 개방 주소법은 충돌 해결 방법입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 해싱 함수(Hashing Function)의 종류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 개방 주소법(Open Addressing)'와 일치합니다. 개방 주소법은 해시 충돌이 발생했을 때 빈 공간을 찾아 저장하는 '충돌 해결 방법'이지, 해시 값을 생성하는 '함수'가 아닙니다. 시험 포인트는 제산법(나머지 연산), 제곱법, 숫자 분석법은 모두 해시 주소를 생성하는 함수들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "해싱 함수",
+        "제산법",
+        "제곱법",
+        "개방 주소법"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

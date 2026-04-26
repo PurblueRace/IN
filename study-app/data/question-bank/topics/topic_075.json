@@ -1,0 +1,492 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_075",
+    "sequence": 75,
+    "title": "Locality·워킹 셋·스래싱",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 3,
+    "review_count": 3,
+    "source_chapter_ids": [
+      "chapter_140",
+      "chapter_361",
+      "chapter_129"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_ffde6f91a191b8ad",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          56
+        ],
+        "page_span": {
+          "start_page": 56,
+          "end_page": 56
+        },
+        "source_explanation": "페이지 부재율은 프로그램 실행 시 참조할 페이지가 주기억장치에 없는 비율을 의미하는 것으로, 페이지 부재율이 크면 프로세스의 처리 시간보다 페이지 교체 시간이 더 많아지는 스래싱 현상이 많이 발생하게 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_140"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_075",
+        "topic_title": "Locality·워킹 셋·스래싱",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Locality·워킹 셋·스래싱",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "74. 페이지 부재율(Page Fault Ratio)과 스래싱(Thrashing)의 관계에 대한 설명 중 가장 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "페이지 부재율이 크면 스래싱이 많이 일어날 것이다."
+          },
+          {
+            "label": "2",
+            "text": "페이지 부재율과 스래싱은 관계가 없다."
+          },
+          {
+            "label": "3",
+            "text": "다중 프로그래밍의 정도가 높아지면 페이지 부재율과 스래싱이 감소한다."
+          },
+          {
+            "label": "4",
+            "text": "스래싱이 많이 발생하면 페이지 부재율이 감소한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "페이지 부재율이 크면 스래싱이 많이 일어날 것이다."
+        ],
+        "answer_text": "페이지 부재율이 크면 스래싱이 많이 일어날 것이다."
+      },
+      "explanation": {
+        "source_text": "페이지 부재율은 프로그램 실행 시 참조할 페이지가 주기억장치에 없는 비율을 의미하는 것으로, 페이지 부재율이 크면 프로세스의 처리 시간보다 페이지 교체 시간이 더 많아지는 스래싱 현상이 많이 발생하게 됩니다.",
+        "summary": "가상기억장치 관리에서 발생하는 페이지 부재와 스래싱의 상관관계를 묻는 문제입니다.",
+        "why_correct": [
+          "페이지 부재가 빈번하면 CPU는 실제 작업보다 페이지 교체에 더 많은 시간을 쓰게 되어 시스템 성능이 급격히 저하되는 스래싱이 발생합니다."
+        ],
+        "why_others_wrong": [
+          "둘은 매우 밀접한 관계가 있습니다.",
+          "다중 프로그래밍 정도가 과도하게 높아지면 오히려 스래싱이 증가합니다.",
+          "스래싱이 발생한다는 것은 이미 페이지 부재율이 매우 높다는 뜻입니다."
+        ],
+        "key_concepts": [
+          "페이지 부재(Page Fault)",
+          "스래싱(Thrashing)",
+          "다중 프로그래밍 정도(Degree of Multiprogramming)"
+        ],
+        "memory_cues": [
+          "페이지 부재 증가 -> 페이지 교체 급증 -> CPU 효율 저하 = 스래싱"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "페이지 부재율이 크면 스래싱이 많이 일어날 것이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 페이지 부재율이 크면 스래싱이 많이 일어날 것이다.'와 일치합니다. 페이지 부재가 빈번하면 CPU는 실제 작업보다 페이지 교체에 더 많은 시간을 쓰게 되어 시스템 성능이 급격히 저하되는 스래싱이 발생합니다."
+          },
+          {
+            "label": "2",
+            "text": "페이지 부재율과 스래싱은 관계가 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 페이지 부재율이 크면 스래싱이 많이 일어날 것이다.'인데 이 선택지는 '페이지 부재율과 스래싱은 관계가 없다.'이므로 일치하지 않습니다. 둘은 매우 밀접한 관계가 있습니다. 다중 프로그래밍 정도가 과도하게 높아지면 오히려 스래싱이 증가합니다."
+          },
+          {
+            "label": "3",
+            "text": "다중 프로그래밍의 정도가 높아지면 페이지 부재율과 스래싱이 감소한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 페이지 부재율이 크면 스래싱이 많이 일어날 것이다.'인데 이 선택지는 '다중 프로그래밍의 정도가 높아지면 페이지 부재율과 스래싱이 감소한다.'이므로 일치하지 않습니다. 둘은 매우 밀접한 관계가 있습니다. 다중 프로그래밍 정도가 과도하게 높아지면 오히려 스래싱이 증가합니다."
+          },
+          {
+            "label": "4",
+            "text": "스래싱이 많이 발생하면 페이지 부재율이 감소한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 페이지 부재율이 크면 스래싱이 많이 일어날 것이다.'인데 이 선택지는 '스래싱이 많이 발생하면 페이지 부재율이 감소한다.'이므로 일치하지 않습니다. 둘은 매우 밀접한 관계가 있습니다. 다중 프로그래밍 정도가 과도하게 높아지면 오히려 스래싱이 증가합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 페이지 부재율(Page Fault Ratio)과 스래싱(Thrashing)의 관계에 대한 설명 중 가장 옳은 것은?",
+          "핵심 개념을 떠올립니다. 페이지 부재(Page Fault), 스래싱(Thrashing), 다중 프로그래밍 정도(Degree of Multiprogramming)",
+          "정답 판단 근거를 적용합니다. 페이지 부재가 빈번하면 CPU는 실제 작업보다 페이지 교체에 더 많은 시간을 쓰게 되어 시스템 성능이 급격히 저하되는 스래싱이 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 둘은 매우 밀접한 관계가 있습니다."
+        ],
+        "exam_traps": [
+          "둘은 매우 밀접한 관계가 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '페이지 부재(Page Fault)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '스래싱(Thrashing)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '다중 프로그래밍 정도(Degree of Multiprogramming)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 페이지 부재 증가 -> 페이지 교체 급증 -> CPU 효율 저하 = 스래싱"
+        ],
+        "detailed_summary": "가상기억장치 관리에서 발생하는 페이지 부재와 스래싱의 상관관계를 묻는 문제입니다. 페이지 부재율은 프로그램 실행 시 참조할 페이지가 주기억장치에 없는 비율을 의미하는 것으로, 페이지 부재율이 크면 프로세스의 처리 시간보다 페이지 교체 시간이 더 많아지는 스래싱 현상이 많이 발생하게 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 74. 페이지 부재율(Page Fault Ratio)과 스래싱(Thrashing)의 관계에 대한 설명 중 가장 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 페이지 부재율이 크면 스래싱이 많이 일어날 것이다.'와 일치합니다. 페이지 부재가 빈번하면 CPU는 실제 작업보다 페이지 교체에 더 많은 시간을 쓰게 되어 시스템 성능이 급격히 저하되는 스래싱이 발생합니다. 시험 포인트는 둘은 매우 밀접한 관계가 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "페이지 부재",
+        "스래싱",
+        "다중 프로그래밍",
+        "가상기억장치"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5cef9c83dc3d4ec3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 161
+        },
+        "source_explanation": "배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "운영체제"
+        ],
+        "chapter_label": "운영체제",
+        "chapter_key": "프로그래밍 언어 활용 > 운영체제",
+        "chapter_id": "chapter_361"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_075",
+        "topic_title": "Locality·워킹 셋·스래싱",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Locality·워킹 셋·스래싱",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "시간 구역성(Temporal Locality)과 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "스택"
+          },
+          {
+            "label": "2",
+            "text": "순환문"
+          },
+          {
+            "label": "3",
+            "text": "부프로그램"
+          },
+          {
+            "label": "4",
+            "text": "배열 순회"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "배열 순회"
+        ],
+        "answer_text": "배열 순회"
+      },
+      "explanation": {
+        "source_text": "배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다.",
+        "summary": "프로세스가 실행되는 동안 특정 시간대에 특정 메모리 영역을 집중적으로 참조하는 특성인 시간 구역성의 사례를 구분하는 문제입니다.",
+        "why_correct": [
+          "배열 순회는 인접한 메모리 주소를 차례로 방문하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다."
+        ],
+        "why_others_wrong": [
+          "스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+        ],
+        "key_concepts": [
+          "Temporal Locality",
+          "Spatial Locality"
+        ],
+        "memory_cues": [
+          "배열 = 공간(옆집 방문)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "순환문",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '순환문'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "부프로그램",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '부프로그램'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+          },
+          {
+            "label": "4",
+            "text": "배열 순회",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 배열 순회'와 일치합니다. 배열 순회는 인접한 메모리 주소를 차례로 방문하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시간 구역성(Temporal Locality)과 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. Temporal Locality, Spatial Locality",
+          "정답 판단 근거를 적용합니다. 배열 순회는 인접한 메모리 주소를 차례로 방문하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+        ],
+        "exam_traps": [
+          "스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Temporal Locality'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Spatial Locality'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 배열 = 공간(옆집 방문)"
+        ],
+        "detailed_summary": "프로세스가 실행되는 동안 특정 시간대에 특정 메모리 영역을 집중적으로 참조하는 특성인 시간 구역성의 사례를 구분하는 문제입니다. 배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시간 구역성(Temporal Locality)과 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 배열 순회'와 일치합니다. 배열 순회는 인접한 메모리 주소를 차례로 방문하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다. 시험 포인트는 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 영역이 짧은 시간 내에 다시 참조될 가능성이 높으므로 시간 구역성에 해당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Locality",
+        "시간 구역성",
+        "공간 구역성",
+        "배열 순회"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9d2203e4c935b85c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_075",
+        "topic_title": "Locality·워킹 셋·스래싱",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Locality·워킹 셋·스래싱",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "시간 구역성(Temporal Locality)과 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "스택"
+          },
+          {
+            "label": "2",
+            "text": "순환문"
+          },
+          {
+            "label": "3",
+            "text": "부프로그램"
+          },
+          {
+            "label": "4",
+            "text": "배열 순회"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "배열 순회"
+        ],
+        "answer_text": "배열 순회"
+      },
+      "explanation": {
+        "source_text": "배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다.",
+        "summary": "참조 구역성(Locality) 중 시간 구역성의 사례가 아닌 것을 찾는 문제입니다.",
+        "why_correct": [
+          "배열 순회는 인접한 메모리 위치를 연속적으로 참조하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다."
+        ],
+        "why_others_wrong": [
+          "스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+        ],
+        "key_concepts": [
+          "시간 구역성",
+          "공간 구역성"
+        ],
+        "memory_cues": [
+          "배열은 옆집(공간), 루프는 아까 그 집(시간)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+          },
+          {
+            "label": "2",
+            "text": "순환문",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '순환문'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+          },
+          {
+            "label": "3",
+            "text": "부프로그램",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 배열 순회'인데 이 선택지는 '부프로그램'이므로 일치하지 않습니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+          },
+          {
+            "label": "4",
+            "text": "배열 순회",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 배열 순회'와 일치합니다. 배열 순회는 인접한 메모리 위치를 연속적으로 참조하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시간 구역성(Temporal Locality)과 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 시간 구역성, 공간 구역성",
+          "정답 판단 근거를 적용합니다. 배열 순회는 인접한 메모리 위치를 연속적으로 참조하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+        ],
+        "exam_traps": [
+          "스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '시간 구역성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '공간 구역성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 배열은 옆집(공간), 루프는 아까 그 집(시간)"
+        ],
+        "detailed_summary": "참조 구역성(Locality) 중 시간 구역성의 사례가 아닌 것을 찾는 문제입니다. 배열 순회는 시간 구역성이 아니라 공간 구역성에 해당됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시간 구역성(Temporal Locality)과 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 배열 순회'와 일치합니다. 배열 순회는 인접한 메모리 위치를 연속적으로 참조하므로 공간 구역성(Spatial Locality)의 대표적인 예입니다. 시험 포인트는 스택, 순환문(Loop), 부프로그램(Subroutine)은 한 번 참조된 지점이 곧 다시 참조될 가능성이 높은 시간 구역성의 예입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "운영체제",
+        "구역성",
+        "시간 구역성",
+        "공간 구역성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

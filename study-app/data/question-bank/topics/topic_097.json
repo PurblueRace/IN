@@ -1,0 +1,2509 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_097",
+    "sequence": 97,
+    "title": "보안 개발 원칙과 취약점",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 16,
+    "review_count": 8,
+    "source_chapter_ids": [
+      "chapter_328",
+      "chapter_300",
+      "chapter_172",
+      "chapter_174",
+      "chapter_145",
+      "chapter_318",
+      "chapter_154",
+      "chapter_161",
+      "chapter_188",
+      "chapter_299",
+      "chapter_173"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_d9e4abc5afc36eef",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          26
+        ],
+        "page_span": {
+          "start_page": 26,
+          "end_page": 26
+        },
+        "source_explanation": "무결성(Integrity)은 정보가 인가된 사용자만 수정할 수 있으며, 전송 중 변조되지 않았음을 보장하는 보안 요소입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "정보시스템 구축관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_328"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "98. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기밀성"
+          },
+          {
+            "label": "2",
+            "text": "부인방지"
+          },
+          {
+            "label": "3",
+            "text": "가용성"
+          },
+          {
+            "label": "4",
+            "text": "무결성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "무결성"
+        ],
+        "answer_text": "무결성"
+      },
+      "explanation": {
+        "source_text": "무결성(Integrity)은 정보가 인가된 사용자만 수정할 수 있으며, 전송 중 변조되지 않았음을 보장하는 보안 요소입니다.",
+        "summary": "정보 보안의 3대 요소 중 무결성의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "무결성(Integrity)은 데이터가 허가 없이 변경되지 않도록 보호하는 성질입니다."
+        ],
+        "why_others_wrong": [
+          "1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다.",
+          "2번 부인방지는 행위 사실을 증명하여 발뺌하지 못하게 하는 것입니다.",
+          "3번 가용성은 필요할 때 언제든 사용할 수 있게 하는 것입니다."
+        ],
+        "key_concepts": [
+          "보안 3요소: 기밀성(C), 무결성(I), 가용성(A)"
+        ],
+        "memory_cues": [
+          "무결성 = 결점이 없음 = 함부로 못 고침"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기밀성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '기밀성'이므로 일치하지 않습니다. 1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다. 2번 부인방지는 행위 사실을 증명하여 발뺌하지 못하게 하는 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "부인방지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '부인방지'이므로 일치하지 않습니다. 1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다. 2번 부인방지는 행위 사실을 증명하여 발뺌하지 못하게 하는 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "가용성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '가용성'이므로 일치하지 않습니다. 1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다. 2번 부인방지는 행위 사실을 증명하여 발뺌하지 못하게 하는 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "무결성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 무결성'와 일치합니다. 무결성(Integrity)은 데이터가 허가 없이 변경되지 않도록 보호하는 성질입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는?",
+          "핵심 개념을 떠올립니다. 보안 3요소: 기밀성(C), 무결성(I), 가용성(A)",
+          "정답 판단 근거를 적용합니다. 무결성(Integrity)은 데이터가 허가 없이 변경되지 않도록 보호하는 성질입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다."
+        ],
+        "exam_traps": [
+          "1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '보안 3요소: 기밀성(C), 무결성(I), 가용성(A)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 무결성 = 결점이 없음 = 함부로 못 고침"
+        ],
+        "detailed_summary": "정보 보안의 3대 요소 중 무결성의 정의를 묻는 문제입니다. 무결성(Integrity)은 정보가 인가된 사용자만 수정할 수 있으며, 전송 중 변조되지 않았음을 보장하는 보안 요소입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는? 정답입니다. 이 선택지는 실제 정답인 '4번 무결성'와 일치합니다. 무결성(Integrity)은 데이터가 허가 없이 변경되지 않도록 보호하는 성질입니다. 시험 포인트는 1번 기밀성은 인가된 사람만 볼 수 있게 하는 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "무결성",
+        "Integrity",
+        "보안 3요소",
+        "기밀성",
+        "가용성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_45896e05961c38b2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          43
+        ],
+        "page_span": {
+          "start_page": 43,
+          "end_page": 43
+        },
+        "source_explanation": "정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "정보시스템 구축 관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_300"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "99. 정보 보안의 3대 요소에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "사용성"
+          },
+          {
+            "label": "2",
+            "text": "기밀성"
+          },
+          {
+            "label": "3",
+            "text": "가용성"
+          },
+          {
+            "label": "4",
+            "text": "무결성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "사용성"
+        ],
+        "answer_text": "사용성"
+      },
+      "explanation": {
+        "source_text": "정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다.",
+        "summary": "정보 보안의 기본 원칙인 CIA 3대 요소를 묻는 문제입니다.",
+        "why_correct": [
+          "사용성(Usability)은 보안의 요소라기보다 사용자 인터페이스나 편의성 측면의 용어입니다."
+        ],
+        "why_others_wrong": [
+          "2번: 인가된 사람만 접근",
+          "3번: 필요할 때 언제든 사용",
+          "4번: 데이터가 변조되지 않음"
+        ],
+        "key_concepts": [
+          "CIA 3대 요소"
+        ],
+        "memory_cues": [
+          "CIA (Confidentiality, Integrity, Availability)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "사용성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 사용성'와 일치합니다. 사용성(Usability)은 보안의 요소라기보다 사용자 인터페이스나 편의성 측면의 용어입니다."
+          },
+          {
+            "label": "2",
+            "text": "기밀성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '기밀성'이므로 일치하지 않습니다. 2번: 인가된 사람만 접근 3번: 필요할 때 언제든 사용"
+          },
+          {
+            "label": "3",
+            "text": "가용성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '가용성'이므로 일치하지 않습니다. 2번: 인가된 사람만 접근 3번: 필요할 때 언제든 사용"
+          },
+          {
+            "label": "4",
+            "text": "무결성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '무결성'이므로 일치하지 않습니다. 2번: 인가된 사람만 접근 3번: 필요할 때 언제든 사용"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 정보 보안의 3대 요소에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. CIA 3대 요소",
+          "정답 판단 근거를 적용합니다. 사용성(Usability)은 보안의 요소라기보다 사용자 인터페이스나 편의성 측면의 용어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 인가된 사람만 접근"
+        ],
+        "exam_traps": [
+          "2번: 인가된 사람만 접근"
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIA 3대 요소'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CIA (Confidentiality, Integrity, Availability)"
+        ],
+        "detailed_summary": "정보 보안의 기본 원칙인 CIA 3대 요소를 묻는 문제입니다. 정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 정보 보안의 3대 요소에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 사용성'와 일치합니다. 사용성(Usability)은 보안의 요소라기보다 사용자 인터페이스나 편의성 측면의 용어입니다. 시험 포인트는 2번: 인가된 사람만 접근"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "CIA Triad",
+        "Confidentiality",
+        "Integrity",
+        "Availability"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_458b4e929a206768",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          51
+        ],
+        "page_span": {
+          "start_page": 51,
+          "end_page": 51
+        },
+        "source_explanation": "전문가의 조언 | 위험 관리의 일반적인 절차는 어떠한 위험이 있는지 먼저 식별하고, 그 위험을 분석한 후 이 위험을 어떻게 관리할 것인지 계획한 다음 위험에 대해 감시하고 조치를 취해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "정보시스템 구축관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_328"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "38. 위험 관리의 일반적인 절차로 적합한 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치"
+          },
+          {
+            "label": "2",
+            "text": "위험 분석 및 평가 → 위험 식별 → 위험 관리 계획 → 위험 감시 및 조치"
+          },
+          {
+            "label": "3",
+            "text": "위험 관리 계획 → 위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가"
+          },
+          {
+            "label": "4",
+            "text": "위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치"
+        ],
+        "answer_text": "위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 위험 관리의 일반적인 절차는 어떠한 위험이 있는지 먼저 식별하고, 그 위험을 분석한 후 이 위험을 어떻게 관리할 것인지 계획한 다음 위험에 대해 감시하고 조치를 취해야 합니다.",
+        "summary": "위험 관리(Risk Management)의 표준 프로세스 순서를 묻는 문제입니다.",
+        "why_correct": [
+          "위험을 먼저 찾아내고(식별), 그 성격과 크기를 파악하며(분석/평가), 대응 방안을 세우고(계획), 지속적으로 확인(감시/조치)하는 순서가 논리적입니다."
+        ],
+        "why_others_wrong": [
+          "분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+        ],
+        "key_concepts": [
+          "위험 관리 절차",
+          "Risk Identification",
+          "Risk Assessment"
+        ],
+        "memory_cues": [
+          "식-분-계-감 (식별하고 분석해서 계획 세우고 감시한다)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치'와 일치합니다. 위험을 먼저 찾아내고(식별), 그 성격과 크기를 파악하며(분석/평가), 대응 방안을 세우고(계획), 지속적으로 확인(감시/조치)하는 순서가 논리적입니다."
+          },
+          {
+            "label": "2",
+            "text": "위험 분석 및 평가 → 위험 식별 → 위험 관리 계획 → 위험 감시 및 조치",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치'인데 이 선택지는 '위험 분석 및 평가 → 위험 식별 → 위험 관리 계획 → 위험 감시 및 조치'이므로 일치하지 않습니다. 분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+          },
+          {
+            "label": "3",
+            "text": "위험 관리 계획 → 위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치'인데 이 선택지는 '위험 관리 계획 → 위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가'이므로 일치하지 않습니다. 분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+          },
+          {
+            "label": "4",
+            "text": "위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치'인데 이 선택지는 '위험 감시 및 조치 → 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획'이므로 일치하지 않습니다. 분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 위험 관리의 일반적인 절차로 적합한 것은?",
+          "핵심 개념을 떠올립니다. 위험 관리 절차, Risk Identification, Risk Assessment",
+          "정답 판단 근거를 적용합니다. 위험을 먼저 찾아내고(식별), 그 성격과 크기를 파악하며(분석/평가), 대응 방안을 세우고(계획), 지속적으로 확인(감시/조치)하는 순서가 논리적입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+        ],
+        "exam_traps": [
+          "분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '위험 관리 절차'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Risk Identification'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Risk Assessment'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 식-분-계-감 (식별하고 분석해서 계획 세우고 감시한다)"
+        ],
+        "detailed_summary": "위험 관리(Risk Management)의 표준 프로세스 순서를 묻는 문제입니다. 전문가의 조언 | 위험 관리의 일반적인 절차는 어떠한 위험이 있는지 먼저 식별하고, 그 위험을 분석한 후 이 위험을 어떻게 관리할 것인지 계획한 다음 위험에 대해 감시하고 조치를 취해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 위험 관리의 일반적인 절차로 적합한 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 위험 식별 → 위험 분석 및 평가 → 위험 관리 계획 → 위험 감시 및 조치'와 일치합니다. 위험을 먼저 찾아내고(식별), 그 성격과 크기를 파악하며(분석/평가), 대응 방안을 세우고(계획), 지속적으로 확인(감시/조치)하는 순서가 논리적입니다. 시험 포인트는 분석이나 계획이 식별보다 먼저 올 수 없으며, 감시 및 조치는 사후 단계입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "위험 관리",
+        "위험 식별",
+        "위험 분석",
+        "위험 평가",
+        "위험 감시"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c561c4f85246c238",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0056_p0061"
+        ],
+        "source_pages": [
+          59
+        ],
+        "page_span": {
+          "start_page": 59,
+          "end_page": 59
+        },
+        "source_explanation": "정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_172"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "83. 정보 보안의 3요소에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기밀성"
+          },
+          {
+            "label": "2",
+            "text": "무결성"
+          },
+          {
+            "label": "3",
+            "text": "가용성"
+          },
+          {
+            "label": "4",
+            "text": "휘발성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "휘발성"
+        ],
+        "answer_text": "휘발성"
+      },
+      "explanation": {
+        "source_text": "정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다.",
+        "summary": "정보 보안의 가장 기본적인 3대 원칙(CIA)을 묻는 문제입니다.",
+        "why_correct": [
+          "휘발성은 메모리의 특성일 뿐 보안의 3요소에 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "기밀성: 인가된 사용자만 접근 가능",
+          "무결성: 정보가 변조되지 않음",
+          "가용성: 필요할 때 즉시 사용 가능"
+        ],
+        "key_concepts": [
+          "보안 3요소(CIA)"
+        ],
+        "memory_cues": [
+          "보안은 CIA (Confidentiality, Integrity, Availability)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기밀성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 휘발성'인데 이 선택지는 '기밀성'이므로 일치하지 않습니다. 기밀성: 인가된 사용자만 접근 가능 무결성: 정보가 변조되지 않음"
+          },
+          {
+            "label": "2",
+            "text": "무결성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 휘발성'인데 이 선택지는 '무결성'이므로 일치하지 않습니다. 기밀성: 인가된 사용자만 접근 가능 무결성: 정보가 변조되지 않음"
+          },
+          {
+            "label": "3",
+            "text": "가용성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 휘발성'인데 이 선택지는 '가용성'이므로 일치하지 않습니다. 기밀성: 인가된 사용자만 접근 가능 무결성: 정보가 변조되지 않음"
+          },
+          {
+            "label": "4",
+            "text": "휘발성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 휘발성'와 일치합니다. 휘발성은 메모리의 특성일 뿐 보안의 3요소에 포함되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보 보안의 3요소에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 보안 3요소(CIA)",
+          "정답 판단 근거를 적용합니다. 휘발성은 메모리의 특성일 뿐 보안의 3요소에 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 기밀성: 인가된 사용자만 접근 가능"
+        ],
+        "exam_traps": [
+          "기밀성: 인가된 사용자만 접근 가능"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '보안 3요소(CIA)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 보안은 CIA (Confidentiality, Integrity, Availability)"
+        ],
+        "detailed_summary": "정보 보안의 가장 기본적인 3대 원칙(CIA)을 묻는 문제입니다. 정보 보안의 3대 요소는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보 보안의 3요소에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 휘발성'와 일치합니다. 휘발성은 메모리의 특성일 뿐 보안의 3요소에 포함되지 않습니다. 시험 포인트는 기밀성: 인가된 사용자만 접근 가능"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "정보 보안",
+        "CIA",
+        "기밀성",
+        "무결성",
+        "가용성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3957c56164667326",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          62
+        ],
+        "page_span": {
+          "start_page": 62,
+          "end_page": 62
+        },
+        "source_explanation": "전문가의 조언 | SQL 삽입(SQL Injection) 공격은 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고 관리자 인증을 우회하는 기법으로, DBMS의 종류에 따라 접근하는 방법이 달라지므로 공격 기법이 모두 동일하다는 것은 잘못되었습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안 공격"
+        ],
+        "chapter_label": "보안 공격",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안 공격",
+        "chapter_id": "chapter_174"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "99. SQL Injection 공격과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SQL Injection은 임의로 작성한 SQL 구문을 애플리케이션에 삽입하는 공격 방식이다."
+          },
+          {
+            "label": "2",
+            "text": "SQL Injection 취약점이 발생하는 곳은 주로 웹 애플리케이션과 데이터베이스가 연동되는 부분이다."
+          },
+          {
+            "label": "3",
+            "text": "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다."
+          },
+          {
+            "label": "4",
+            "text": "로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다."
+        ],
+        "answer_text": "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | SQL 삽입(SQL Injection) 공격은 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고 관리자 인증을 우회하는 기법으로, DBMS의 종류에 따라 접근하는 방법이 달라지므로 공격 기법이 모두 동일하다는 것은 잘못되었습니다.",
+        "summary": "웹 보안의 대표적 취약점인 SQL Injection의 개념과 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "DBMS마다 SQL 문법이나 시스템 테이블 구조가 다르기 때문에, 공격 기법은 DBMS 종류(Oracle, MySQL, MS-SQL 등)에 따라 차이가 있습니다."
+        ],
+        "why_others_wrong": [
+          "1번: SQL Injection의 기본 정의입니다.",
+          "2번: 웹-DB 연동 구간이 주요 타겟입니다.",
+          "4번: 입력 폼을 통한 공격이 가장 일반적입니다."
+        ],
+        "key_concepts": [
+          "SQL Injection",
+          "DBMS 차이",
+          "입력값 검증"
+        ],
+        "memory_cues": [
+          "SQL Injection = DB마다 다름"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SQL Injection은 임의로 작성한 SQL 구문을 애플리케이션에 삽입하는 공격 방식이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.'인데 이 선택지는 'SQL Injection은 임의로 작성한 SQL 구문을 애플리케이션에 삽입하는 공격 방식이다.'이므로 일치하지 않습니다. 1번: SQL Injection의 기본 정의입니다. 2번: 웹-DB 연동 구간이 주요 타겟입니다."
+          },
+          {
+            "label": "2",
+            "text": "SQL Injection 취약점이 발생하는 곳은 주로 웹 애플리케이션과 데이터베이스가 연동되는 부분이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.'인데 이 선택지는 'SQL Injection 취약점이 발생하는 곳은 주로 웹 애플리케이션과 데이터베이스가 연동되는 부분이다.'이므로 일치하지 않습니다. 1번: SQL Injection의 기본 정의입니다. 2번: 웹-DB 연동 구간이 주요 타겟입니다."
+          },
+          {
+            "label": "3",
+            "text": "DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.'와 일치합니다. DBMS마다 SQL 문법이나 시스템 테이블 구조가 다르기 때문에, 공격 기법은 DBMS 종류(Oracle, MySQL, MS-SQL 등)에 따라 차이가 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.'인데 이 선택지는 '로그인과 같이 웹에서 사용자의 입력 값을 받아 데이터베이스 SQL문으로 데이터를 요청하는 경우 SQL Injection을 수행할 수 있다.'이므로 일치하지 않습니다. 1번: SQL Injection의 기본 정의입니다. 2번: 웹-DB 연동 구간이 주요 타겟입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. SQL Injection 공격과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. SQL Injection, DBMS 차이, 입력값 검증",
+          "정답 판단 근거를 적용합니다. DBMS마다 SQL 문법이나 시스템 테이블 구조가 다르기 때문에, 공격 기법은 DBMS 종류(Oracle, MySQL, MS-SQL 등)에 따라 차이가 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: SQL Injection의 기본 정의입니다."
+        ],
+        "exam_traps": [
+          "1번: SQL Injection의 기본 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SQL Injection'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DBMS 차이'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '입력값 검증'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SQL Injection = DB마다 다름"
+        ],
+        "detailed_summary": "웹 보안의 대표적 취약점인 SQL Injection의 개념과 특징을 묻는 문제입니다. 전문가의 조언 | SQL 삽입(SQL Injection) 공격은 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고 관리자 인증을 우회하는 기법으로, DBMS의 종류에 따라 접근하는 방법이 달라지므로 공격 기법이 모두 동일하다는 것은 잘못되었습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. SQL Injection 공격과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 DBMS의 종류와 관계없이 SQL Injection 공격 기법은 모두 동일하다.'와 일치합니다. DBMS마다 SQL 문법이나 시스템 테이블 구조가 다르기 때문에, 공격 기법은 DBMS 종류(Oracle, MySQL, MS-SQL 등)에 따라 차이가 있습니다. 시험 포인트는 1번: SQL Injection의 기본 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "SQL Injection",
+        "웹 보안",
+        "데이터베이스 공격",
+        "입력값 검증"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1dff8221010f67bd",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          77
+        ],
+        "page_span": {
+          "start_page": 77,
+          "end_page": 77
+        },
+        "source_explanation": "전문가의 조언 | 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는 무결성(Integrity)입니다.\n• 기밀성(Confidentiality): 시스템 내의 정보와 자원은 인가된 사용자에게만 접근이 허용되며, 정보가 전송 중에 노출되더라도 데이터를 읽을 수 없음\n• 부인 방지(NonRepudiation): 데이터를 송·수신한 자가 송·수신 사실을 부인할 수 없도록 송·수신 증거를 제공함\n• 가용성(Availability): 인가받은 사용자는 언제라도 사용할 수 있음"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "85. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기밀성"
+          },
+          {
+            "label": "2",
+            "text": "부인방지"
+          },
+          {
+            "label": "3",
+            "text": "가용성"
+          },
+          {
+            "label": "4",
+            "text": "무결성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "무결성"
+        ],
+        "answer_text": "무결성"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는 무결성(Integrity)입니다.\n• 기밀성(Confidentiality): 시스템 내의 정보와 자원은 인가된 사용자에게만 접근이 허용되며, 정보가 전송 중에 노출되더라도 데이터를 읽을 수 없음\n• 부인 방지(NonRepudiation): 데이터를 송·수신한 자가 송·수신 사실을 부인할 수 없도록 송·수신 증거를 제공함\n• 가용성(Availability): 인가받은 사용자는 언제라도 사용할 수 있음",
+        "summary": "정보 보안의 3대 요소 중 무결성의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "무결성(Integrity)은 데이터가 인가되지 않은 방식으로 변경되지 않음을 보장하는 성질입니다."
+        ],
+        "why_others_wrong": [
+          "기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+        ],
+        "key_concepts": [
+          "CIA Triad",
+          "무결성"
+        ],
+        "memory_cues": [
+          "무결성 = 수정 권한"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기밀성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '기밀성'이므로 일치하지 않습니다. 기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "부인방지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '부인방지'이므로 일치하지 않습니다. 기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "가용성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 무결성'인데 이 선택지는 '가용성'이므로 일치하지 않습니다. 기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "무결성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 무결성'와 일치합니다. 무결성(Integrity)은 데이터가 인가되지 않은 방식으로 변경되지 않음을 보장하는 성질입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는?",
+          "핵심 개념을 떠올립니다. CIA Triad, 무결성",
+          "정답 판단 근거를 적용합니다. 무결성(Integrity)은 데이터가 인가되지 않은 방식으로 변경되지 않음을 보장하는 성질입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+        ],
+        "exam_traps": [
+          "기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIA Triad'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '무결성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 무결성 = 수정 권한"
+        ],
+        "detailed_summary": "정보 보안의 3대 요소 중 무결성의 정의를 묻는 문제입니다. 전문가의 조언 | 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는 무결성(Integrity)입니다. • 기밀성(Confidentiality): 시스템 내의 정보와 자원은 인가된 사용자에게만 접근이 허용되며, 정보가 전송 중에 노출되더라도 데이터를 읽을 수 없음 • 부인 방지(NonRepudiation): 데이터를 송·수신한 자가 송·수신 사실을 부인할 수 없도록 송·수신 증거를 제공함 • 가용성(Availability): 인가받은 사용자는 언제라도 사용할 수 있음 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 시스템 내의 정보는 오직 인가된 사용자만 수정할 수 있는 보안 요소는? 정답입니다. 이 선택지는 실제 정답인 '4번 무결성'와 일치합니다. 무결성(Integrity)은 데이터가 인가되지 않은 방식으로 변경되지 않음을 보장하는 성질입니다. 시험 포인트는 기밀성은 접근 제어, 가용성은 지속적 사용 보장, 부인방지는 행위 사실 증명에 관한 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "보안 3요소",
+        "무결성",
+        "기밀성",
+        "가용성",
+        "Integrity"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_81680f4467aa0141",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          78
+        ],
+        "page_span": {
+          "start_page": 78,
+          "end_page": 78
+        },
+        "source_explanation": "전문가의 조언 | 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는 nmap입니다.\n• type: 명령어의 정보를 확인하는 옵션 또는 ftp 전송 모드를 설정할 때 사용하는 명령어\n• mkdir: 서버에 디렉터리를 생성하는 명령어\n• ftp: FTP 서버에 접속할 때 사용하는 명령어"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "91. 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "type"
+          },
+          {
+            "label": "2",
+            "text": "mkdir"
+          },
+          {
+            "label": "3",
+            "text": "ftp"
+          },
+          {
+            "label": "4",
+            "text": "nmap"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "nmap"
+        ],
+        "answer_text": "nmap"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는 nmap입니다.\n• type: 명령어의 정보를 확인하는 옵션 또는 ftp 전송 모드를 설정할 때 사용하는 명령어\n• mkdir: 서버에 디렉터리를 생성하는 명령어\n• ftp: FTP 서버에 접속할 때 사용하는 명령어",
+        "summary": "네트워크 보안 진단 시 포트 스캔을 위해 널리 사용되는 도구를 묻는 문제입니다.",
+        "why_correct": [
+          "nmap(Network Mapper)은 호스트의 열린 포트, 운영체제 정보 등을 탐색하는 대표적인 네트워크 스캐닝 도구입니다."
+        ],
+        "why_others_wrong": [
+          "type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+        ],
+        "key_concepts": [
+          "nmap",
+          "Port Scanning"
+        ],
+        "memory_cues": [
+          "nmap = Network Map"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "type",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 nmap'인데 이 선택지는 'type'이므로 일치하지 않습니다. type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "mkdir",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 nmap'인데 이 선택지는 'mkdir'이므로 일치하지 않습니다. type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "ftp",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 nmap'인데 이 선택지는 'ftp'이므로 일치하지 않습니다. type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+          },
+          {
+            "label": "4",
+            "text": "nmap",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 nmap'와 일치합니다. nmap(Network Mapper)은 호스트의 열린 포트, 운영체제 정보 등을 탐색하는 대표적인 네트워크 스캐닝 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 91. 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는?",
+          "핵심 개념을 떠올립니다. nmap, Port Scanning",
+          "정답 판단 근거를 적용합니다. nmap(Network Mapper)은 호스트의 열린 포트, 운영체제 정보 등을 탐색하는 대표적인 네트워크 스캐닝 도구입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+        ],
+        "exam_traps": [
+          "type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'nmap'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Port Scanning'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. nmap = Network Map"
+        ],
+        "detailed_summary": "네트워크 보안 진단 시 포트 스캔을 위해 널리 사용되는 도구를 묻는 문제입니다. 전문가의 조언 | 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는 nmap입니다. • type: 명령어의 정보를 확인하는 옵션 또는 ftp 전송 모드를 설정할 때 사용하는 명령어 • mkdir: 서버에 디렉터리를 생성하는 명령어 • ftp: FTP 서버에 접속할 때 사용하는 명령어 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 91. 서버에 열린 포트 정보를 스캐닝해서 보안 취약점을 찾는 데 사용하는 도구는? 정답입니다. 이 선택지는 실제 정답인 '4번 nmap'와 일치합니다. nmap(Network Mapper)은 호스트의 열린 포트, 운영체제 정보 등을 탐색하는 대표적인 네트워크 스캐닝 도구입니다. 시험 포인트는 type, mkdir, ftp는 일반적인 시스템 관리나 파일 전송을 위한 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "nmap",
+        "포트 스캐닝",
+        "보안 취약점",
+        "네트워크 도구"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1db5b449405d2759",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          99
+        ],
+        "page_span": {
+          "start_page": 99,
+          "end_page": 99
+        },
+        "source_explanation": "문제에 제시된 내용은 스택가드(StackGuard)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "정보시스템 구축관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_328"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "모드체크"
+          },
+          {
+            "label": "2",
+            "text": "리커버리 통제"
+          },
+          {
+            "label": "3",
+            "text": "시스로그"
+          },
+          {
+            "label": "4",
+            "text": "스택가드"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "스택가드"
+        ],
+        "answer_text": "스택가드"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 스택가드(StackGuard)에 대한 설명입니다.",
+        "summary": "버퍼 오버플로우 공격을 방지하기 위한 메모리 보호 기술을 묻는 문제입니다.",
+        "why_correct": [
+          "스택가드는 복귀 주소 앞에 '카나리(Canary)'라는 특정 값을 심어두고, 이 값이 변하면 공격으로 간주하여 차단합니다."
+        ],
+        "why_others_wrong": [
+          "모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+        ],
+        "key_concepts": [
+          "StackGuard",
+          "Canary Value",
+          "Buffer Overflow Protection"
+        ],
+        "memory_cues": [
+          "스택을 지키는(Guard) 파수꾼 = 스택가드"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "모드체크",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '모드체크'이므로 일치하지 않습니다. 모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+          },
+          {
+            "label": "2",
+            "text": "리커버리 통제",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '리커버리 통제'이므로 일치하지 않습니다. 모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+          },
+          {
+            "label": "3",
+            "text": "시스로그",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '시스로그'이므로 일치하지 않습니다. 모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+          },
+          {
+            "label": "4",
+            "text": "스택가드",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 스택가드'와 일치합니다. 스택가드는 복귀 주소 앞에 '카나리(Canary)'라는 특정 값을 심어두고, 이 값이 변하면 공격으로 간주하여 차단합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+          "핵심 개념을 떠올립니다. StackGuard, Canary Value, Buffer Overflow Protection",
+          "정답 판단 근거를 적용합니다. 스택가드는 복귀 주소 앞에 '카나리(Canary)'라는 특정 값을 심어두고, 이 값이 변하면 공격으로 간주하여 차단합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+        ],
+        "exam_traps": [
+          "모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'StackGuard'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Canary Value'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Buffer Overflow Protection'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택을 지키는(Guard) 파수꾼 = 스택가드"
+        ],
+        "detailed_summary": "버퍼 오버플로우 공격을 방지하기 위한 메모리 보호 기술을 묻는 문제입니다. 문제에 제시된 내용은 스택가드(StackGuard)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은? 정답입니다. 이 선택지는 실제 정답인 '4번 스택가드'와 일치합니다. 스택가드는 복귀 주소 앞에 '카나리(Canary)'라는 특정 값을 심어두고, 이 값이 변하면 공격으로 간주하여 차단합니다. 시험 포인트는 모드체크, 리커버리 통제는 일반적인 보안 용어이며, 시스로그는 시스템 로그 기록입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택가드",
+        "StackGuard",
+        "버퍼 오버플로우",
+        "카나리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ca33df8f44afeb07",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 106
+        },
+        "source_explanation": "스택가드(StackGuard): 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값(Canary)을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리"
+        ],
+        "chapter_label": "정보시스템 구축관리",
+        "chapter_key": "정보시스템 구축관리",
+        "chapter_id": "chapter_318"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "모드체크"
+          },
+          {
+            "label": "2",
+            "text": "리커버리 통제"
+          },
+          {
+            "label": "3",
+            "text": "시스로그"
+          },
+          {
+            "label": "4",
+            "text": "스택가드"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "스택가드"
+        ],
+        "answer_text": "스택가드"
+      },
+      "explanation": {
+        "source_text": "스택가드(StackGuard): 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값(Canary)을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술",
+        "summary": "버퍼 오버플로우 공격을 방지하기 위해 스택에 특정 값을 삽입하여 감시하는 기술을 묻는 문제입니다.",
+        "why_correct": [
+          "스택가드(StackGuard)는 복귀 주소 앞에 '카나리(Canary)'라는 값을 두어 이 값이 변조되면 실행을 중단시켜 오버플로우 공격을 막습니다."
+        ],
+        "why_others_wrong": [
+          "모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+        ],
+        "key_concepts": [
+          "StackGuard",
+          "Canary value",
+          "Buffer Overflow"
+        ],
+        "memory_cues": [
+          "스택(Stack)을 지키는(Guard) 기술이라고 연상하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "모드체크",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '모드체크'이므로 일치하지 않습니다. 모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "리커버리 통제",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '리커버리 통제'이므로 일치하지 않습니다. 모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "시스로그",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 스택가드'인데 이 선택지는 '시스로그'이므로 일치하지 않습니다. 모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "스택가드",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 스택가드'와 일치합니다. 스택가드(StackGuard)는 복귀 주소 앞에 '카나리(Canary)'라는 값을 두어 이 값이 변조되면 실행을 중단시켜 오버플로우 공격을 막습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+          "핵심 개념을 떠올립니다. StackGuard, Canary value, Buffer Overflow",
+          "정답 판단 근거를 적용합니다. 스택가드(StackGuard)는 복귀 주소 앞에 '카나리(Canary)'라는 값을 두어 이 값이 변조되면 실행을 중단시켜 오버플로우 공격을 막습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+        ],
+        "exam_traps": [
+          "모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'StackGuard'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Canary value'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Buffer Overflow'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택(Stack)을 지키는(Guard) 기술이라고 연상하세요."
+        ],
+        "detailed_summary": "버퍼 오버플로우 공격을 방지하기 위해 스택에 특정 값을 삽입하여 감시하는 기술을 묻는 문제입니다. 스택가드(StackGuard): 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값(Canary)을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 99. 메모리 상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은? 정답입니다. 이 선택지는 실제 정답인 '4번 스택가드'와 일치합니다. 스택가드(StackGuard)는 복귀 주소 앞에 '카나리(Canary)'라는 값을 두어 이 값이 변조되면 실행을 중단시켜 오버플로우 공격을 막습니다. 시험 포인트는 모드체크는 입력 데이터 형식을 확인하는 것이고, 시스로그는 시스템 로그 기록 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "Subject name inferred from context",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "스택가드",
+        "StackGuard",
+        "버퍼 오버플로우",
+        "보안 기술"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_dfd397d4adbf1fe7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 정책은 역할 기반 접근통제(RBAC: Role Based Access Control)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "정보시스템 구축 관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_300"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "RBAC"
+          },
+          {
+            "label": "2",
+            "text": "DAC"
+          },
+          {
+            "label": "3",
+            "text": "MAC"
+          },
+          {
+            "label": "4",
+            "text": "QAC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "RBAC"
+        ],
+        "answer_text": "RBAC"
+      },
+      "explanation": {
+        "source_text": "직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 정책은 역할 기반 접근통제(RBAC: Role Based Access Control)입니다.",
+        "summary": "사용자의 역할에 기반한 접근 통제 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "RBAC(Role Based Access Control)은 사용자의 역할(Role)에 따라 권한을 할당하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다.",
+          "MAC(Mandatory Access Control)은 보안 등급에 따라 강제로 권한을 제어하는 방식입니다.",
+          "QAC는 일반적인 접근 통제 모델이 아닙니다."
+        ],
+        "key_concepts": [
+          "RBAC",
+          "DAC",
+          "MAC"
+        ],
+        "memory_cues": [
+          "Role = RBAC"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "RBAC",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 RBAC'와 일치합니다. RBAC(Role Based Access Control)은 사용자의 역할(Role)에 따라 권한을 할당하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "DAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'DAC'이므로 일치하지 않습니다. DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다. MAC(Mandatory Access Control)은 보안 등급에 따라 강제로 권한을 제어하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "MAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'MAC'이므로 일치하지 않습니다. DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다. MAC(Mandatory Access Control)은 보안 등급에 따라 강제로 권한을 제어하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "QAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'QAC'이므로 일치하지 않습니다. DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다. MAC(Mandatory Access Control)은 보안 등급에 따라 강제로 권한을 제어하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+          "핵심 개념을 떠올립니다. RBAC, DAC, MAC",
+          "정답 판단 근거를 적용합니다. RBAC(Role Based Access Control)은 사용자의 역할(Role)에 따라 권한을 할당하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다."
+        ],
+        "exam_traps": [
+          "DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'RBAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MAC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Role = RBAC"
+        ],
+        "detailed_summary": "사용자의 역할에 기반한 접근 통제 방식을 묻는 문제입니다. 직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 정책은 역할 기반 접근통제(RBAC: Role Based Access Control)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은? 정답입니다. 이 선택지는 실제 정답인 '1번 RBAC'와 일치합니다. RBAC(Role Based Access Control)은 사용자의 역할(Role)에 따라 권한을 할당하는 방식입니다. 시험 포인트는 DAC(Discretionary Access Control)은 데이터 소유자가 임의로 권한을 부여하는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "RBAC",
+        "접근 통제",
+        "역할 기반",
+        "보안 정책"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d038afa129180b06",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 136
+        },
+        "source_explanation": "전문가의 조언 | 경로 조작 및 자원 삽입은 데이터 입·출력 경로를 조작하여 서버 자원을 수정 및 삭제할 수 있는 보안 약점입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "147섹션 2필드"
+        ],
+        "chapter_label": "147섹션 2필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 147섹션 2필드",
+        "chapter_id": "chapter_154"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 112.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "Secure Coding에서 입력 데이터의 보안 약점과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SQL 삽입 : 사용자의 입력 값 등 외부 입력 값이 SQL 쿼리에 삽입되어 공격"
+          },
+          {
+            "label": "2",
+            "text": "크로스사이트 스크립트 : 검증되지 않은 외부 입력 값에 의해 브라우저에서 악의적인 코드가 실행"
+          },
+          {
+            "label": "3",
+            "text": "운영체제 명령어 삽입 : 운영체제 명령어 파라미터 입력 값이 적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작"
+          },
+          {
+            "label": "4",
+            "text": "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생"
+        ],
+        "answer_text": "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 경로 조작 및 자원 삽입은 데이터 입·출력 경로를 조작하여 서버 자원을 수정 및 삭제할 수 있는 보안 약점입니다.",
+        "summary": "시큐어 코딩의 입력 데이터 보안 약점 중 잘못된 설명을 찾는 문제입니다.",
+        "why_correct": [
+          "자원 삽입은 외부 입력값을 제어하지 않고 자원(파일, 메모리 등) 할당에 사용하여 시스템 자원을 고갈시키거나 조작하는 공격입니다. 4번의 설명은 다소 모호하거나 부적절합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+        ],
+        "key_concepts": [
+          "자원 삽입",
+          "시큐어 코딩"
+        ],
+        "memory_cues": [
+          "자원 삽입 = 경로/자원 조작"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SQL 삽입 : 사용자의 입력 값 등 외부 입력 값이 SQL 쿼리에 삽입되어 공격",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생'인데 이 선택지는 'SQL 삽입 : 사용자의 입력 값 등 외부 입력 값이 SQL 쿼리에 삽입되어 공격'이므로 일치하지 않습니다. 1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "크로스사이트 스크립트 : 검증되지 않은 외부 입력 값에 의해 브라우저에서 악의적인 코드가 실행",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생'인데 이 선택지는 '크로스사이트 스크립트 : 검증되지 않은 외부 입력 값에 의해 브라우저에서 악의적인 코드가 실행'이므로 일치하지 않습니다. 1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "운영체제 명령어 삽입 : 운영체제 명령어 파라미터 입력 값이 적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생'인데 이 선택지는 '운영체제 명령어 삽입 : 운영체제 명령어 파라미터 입력 값이 적절한 사전검증을 거치지 않고 사용되어 공격자가 운영체제 명령어를 조작'이므로 일치하지 않습니다. 1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생'와 일치합니다. 자원 삽입은 외부 입력값을 제어하지 않고 자원(파일, 메모리 등) 할당에 사용하여 시스템 자원을 고갈시키거나 조작하는 공격입니다. 4번의 설명은 다소 모호하거나 부적절합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. Secure Coding에서 입력 데이터의 보안 약점과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 자원 삽입, 시큐어 코딩",
+          "정답 판단 근거를 적용합니다. 자원 삽입은 외부 입력값을 제어하지 않고 자원(파일, 메모리 등) 할당에 사용하여 시스템 자원을 고갈시키거나 조작하는 공격입니다. 4번의 설명은 다소 모호하거나 부적절합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '자원 삽입'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '시큐어 코딩'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 자원 삽입 = 경로/자원 조작"
+        ],
+        "detailed_summary": "시큐어 코딩의 입력 데이터 보안 약점 중 잘못된 설명을 찾는 문제입니다. 전문가의 조언 | 경로 조작 및 자원 삽입은 데이터 입·출력 경로를 조작하여 서버 자원을 수정 및 삭제할 수 있는 보안 약점입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. Secure Coding에서 입력 데이터의 보안 약점과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 자원 삽입 : 사용자가 내부 입력 값을 통해 시스템 내 사용이 불가능한 자원을 지속적으로 입력함으로써 시스템에 과부하 발생'와 일치합니다. 자원 삽입은 외부 입력값을 제어하지 않고 자원(파일, 메모리 등) 할당에 사용하여 시스템 자원을 고갈시키거나 조작하는 공격입니다. 4번의 설명은 다소 모호하거나 부적절합니다. 시험 포인트는 1, 2, 3번은 각각 SQL Injection, XSS, OS Command Injection에 대한 정확한 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Secure Coding",
+        "보안 약점",
+        "자원 삽입",
+        "SQL Injection"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3ab0e572f653f45d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          137
+        ],
+        "page_span": {
+          "start_page": 137,
+          "end_page": 137
+        },
+        "source_explanation": "전문가의 조언 | 서버 관리실 출입 통제는 물리적 보안에 포함되는 보안 조치입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "155섹션 1필드"
+        ],
+        "chapter_label": "155섹션 1필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 155섹션 1필드",
+        "chapter_id": "chapter_161"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 112.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "취약점 관리를 위한 응용 프로그램의 보안 설정과 가장 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "서버 관리실 출입 통제"
+          },
+          {
+            "label": "2",
+            "text": "실행 프로세스 권한 설정"
+          },
+          {
+            "label": "3",
+            "text": "운영체제의 접근 제한"
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 정보 수집 제한"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "서버 관리실 출입 통제"
+        ],
+        "answer_text": "서버 관리실 출입 통제"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 서버 관리실 출입 통제는 물리적 보안에 포함되는 보안 조치입니다.",
+        "summary": "기술적 보안(응용 프로그램 보안)과 물리적 보안을 구분하는 문제입니다.",
+        "why_correct": [
+          "서버 관리실 출입 통제는 시설물에 대한 '물리적 보안' 영역입니다."
+        ],
+        "why_others_wrong": [
+          "프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+        ],
+        "key_concepts": [
+          "물리적 보안",
+          "기술적 보안"
+        ],
+        "memory_cues": [
+          "출입 통제 = 몸이 움직이는 물리 보안"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "서버 관리실 출입 통제",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 서버 관리실 출입 통제'와 일치합니다. 서버 관리실 출입 통제는 시설물에 대한 '물리적 보안' 영역입니다."
+          },
+          {
+            "label": "2",
+            "text": "실행 프로세스 권한 설정",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 서버 관리실 출입 통제'인데 이 선택지는 '실행 프로세스 권한 설정'이므로 일치하지 않습니다. 프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+          },
+          {
+            "label": "3",
+            "text": "운영체제의 접근 제한",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 서버 관리실 출입 통제'인데 이 선택지는 '운영체제의 접근 제한'이므로 일치하지 않습니다. 프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 정보 수집 제한",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 서버 관리실 출입 통제'인데 이 선택지는 '운영체제의 정보 수집 제한'이므로 일치하지 않습니다. 프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 취약점 관리를 위한 응용 프로그램의 보안 설정과 가장 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 물리적 보안, 기술적 보안",
+          "정답 판단 근거를 적용합니다. 서버 관리실 출입 통제는 시설물에 대한 '물리적 보안' 영역입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+        ],
+        "exam_traps": [
+          "프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '물리적 보안'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '기술적 보안'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 출입 통제 = 몸이 움직이는 물리 보안"
+        ],
+        "detailed_summary": "기술적 보안(응용 프로그램 보안)과 물리적 보안을 구분하는 문제입니다. 전문가의 조언 | 서버 관리실 출입 통제는 물리적 보안에 포함되는 보안 조치입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 취약점 관리를 위한 응용 프로그램의 보안 설정과 가장 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 서버 관리실 출입 통제'와 일치합니다. 서버 관리실 출입 통제는 시설물에 대한 '물리적 보안' 영역입니다. 시험 포인트는 프로세스 권한, OS 접근 제한 등은 소프트웨어적인 '기술적 보안' 설정입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "응용 프로그램 보안",
+        "물리적 보안",
+        "취약점 관리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1ad2245a2715d21f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          147
+        ],
+        "page_span": {
+          "start_page": 147,
+          "end_page": 147
+        },
+        "source_explanation": "전문가의 조언 | 접근통제 정책의 종류에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "5과목 정보시스템 구축관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_188"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "53. 정보 보안을 위한 접근통제 정책 종류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "정책적 접근통제(PAC)"
+          },
+          {
+            "label": "2",
+            "text": "임의적 접근통제(DAC)"
+          },
+          {
+            "label": "3",
+            "text": "강제적 접근통제(MAC)"
+          },
+          {
+            "label": "4",
+            "text": "역할기반 접근통제(RBAC)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "정책적 접근통제(PAC)"
+        ],
+        "answer_text": "정책적 접근통제(PAC)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 접근통제 정책의 종류에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있습니다.",
+        "summary": "정보 보안의 3대 접근통제 모델을 구분하는 문제입니다.",
+        "why_correct": [
+          "PAC(Policy-based Access Control)는 일반적인 3대 접근통제 모델(DAC, MAC, RBAC)에 포함되지 않는 용어입니다."
+        ],
+        "why_others_wrong": [
+          "DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+        ],
+        "key_concepts": [
+          "DAC",
+          "MAC",
+          "RBAC"
+        ],
+        "memory_cues": [
+          "D-M-R (덤벼라)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "정책적 접근통제(PAC)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 정책적 접근통제(PAC)'와 일치합니다. PAC(Policy-based Access Control)는 일반적인 3대 접근통제 모델(DAC, MAC, RBAC)에 포함되지 않는 용어입니다."
+          },
+          {
+            "label": "2",
+            "text": "임의적 접근통제(DAC)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정책적 접근통제(PAC)'인데 이 선택지는 '임의적 접근통제(DAC)'이므로 일치하지 않습니다. DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "강제적 접근통제(MAC)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정책적 접근통제(PAC)'인데 이 선택지는 '강제적 접근통제(MAC)'이므로 일치하지 않습니다. DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "역할기반 접근통제(RBAC)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정책적 접근통제(PAC)'인데 이 선택지는 '역할기반 접근통제(RBAC)'이므로 일치하지 않습니다. DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 53. 정보 보안을 위한 접근통제 정책 종류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. DAC, MAC, RBAC",
+          "정답 판단 근거를 적용합니다. PAC(Policy-based Access Control)는 일반적인 3대 접근통제 모델(DAC, MAC, RBAC)에 포함되지 않는 용어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+        ],
+        "exam_traps": [
+          "DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RBAC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. D-M-R (덤벼라)"
+        ],
+        "detailed_summary": "정보 보안의 3대 접근통제 모델을 구분하는 문제입니다. 전문가의 조언 | 접근통제 정책의 종류에는 임의 접근통제(DAC), 강제 접근통제(MAC), 역할기반 접근통제(RBAC)가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 53. 정보 보안을 위한 접근통제 정책 종류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 정책적 접근통제(PAC)'와 일치합니다. PAC(Policy-based Access Control)는 일반적인 3대 접근통제 모델(DAC, MAC, RBAC)에 포함되지 않는 용어입니다. 시험 포인트는 DAC는 사용자 기반, MAC는 등급 기반, RBAC는 직무/역할 기반의 표준 접근통제 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "접근통제",
+        "DAC",
+        "MAC",
+        "RBAC",
+        "보안 정책"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e51917fc6eff3ee4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "정보 보안의 3대 요소는 기밀성, 무결성, 가용성입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "91. 정보 보안의 3대 요소에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "사용성"
+          },
+          {
+            "label": "2",
+            "text": "기밀성"
+          },
+          {
+            "label": "3",
+            "text": "가용성"
+          },
+          {
+            "label": "4",
+            "text": "무결성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "사용성"
+        ],
+        "answer_text": "사용성"
+      },
+      "explanation": {
+        "source_text": "정보 보안의 3대 요소는 기밀성, 무결성, 가용성입니다.",
+        "summary": "정보 보안의 가장 기본적인 원칙인 CIA 3요소를 묻는 문제입니다.",
+        "why_correct": [
+          "사용성(Usability)은 보안의 핵심 요소가 아니며, 때로는 보안과 상충되기도 합니다."
+        ],
+        "why_others_wrong": [
+          "기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+        ],
+        "key_concepts": [
+          "CIA Triad",
+          "Confidentiality",
+          "Integrity",
+          "Availability"
+        ],
+        "memory_cues": [
+          "보안은 CIA! (기무가)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "사용성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 사용성'와 일치합니다. 사용성(Usability)은 보안의 핵심 요소가 아니며, 때로는 보안과 상충되기도 합니다."
+          },
+          {
+            "label": "2",
+            "text": "기밀성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '기밀성'이므로 일치하지 않습니다. 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+          },
+          {
+            "label": "3",
+            "text": "가용성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '가용성'이므로 일치하지 않습니다. 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+          },
+          {
+            "label": "4",
+            "text": "무결성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 사용성'인데 이 선택지는 '무결성'이므로 일치하지 않습니다. 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 91. 정보 보안의 3대 요소에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. CIA Triad, Confidentiality, Integrity, Availability",
+          "정답 판단 근거를 적용합니다. 사용성(Usability)은 보안의 핵심 요소가 아니며, 때로는 보안과 상충되기도 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+        ],
+        "exam_traps": [
+          "기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CIA Triad'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Confidentiality'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Integrity'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Availability'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 보안은 CIA! (기무가)"
+        ],
+        "detailed_summary": "정보 보안의 가장 기본적인 원칙인 CIA 3요소를 묻는 문제입니다. 정보 보안의 3대 요소는 기밀성, 무결성, 가용성입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 91. 정보 보안의 3대 요소에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 사용성'와 일치합니다. 사용성(Usability)은 보안의 핵심 요소가 아니며, 때로는 보안과 상충되기도 합니다. 시험 포인트는 기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)은 정보 보안의 3대 핵심 가치입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "보안 3요소",
+        "기밀성",
+        "무결성",
+        "가용성",
+        "CIA"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9eb8482fffe4843b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          157
+        ],
+        "page_span": {
+          "start_page": 157,
+          "end_page": 157
+        },
+        "source_explanation": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 기술적 위협으로 인한 문제에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "98. 물리적 위협으로 인한 문제에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "화재, 홍수 등 천재지변으로 인한 위협"
+          },
+          {
+            "label": "2",
+            "text": "하드웨어 파손, 고장으로 인한 장애"
+          },
+          {
+            "label": "3",
+            "text": "방화, 테러로 인한 하드웨어와 기록장치를 물리적으로 파괴하는 행위"
+          },
+          {
+            "label": "4",
+            "text": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협"
+        ],
+        "answer_text": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협"
+      },
+      "explanation": {
+        "source_text": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 기술적 위협으로 인한 문제에 해당합니다.",
+        "summary": "보안 위협의 유형 중 물리적 위협과 기술적 위협을 구분하는 문제입니다.",
+        "why_correct": [
+          "방화벽 설정 오류는 소프트웨어 설정 및 네트워크 관리상의 문제이므로 기술적(논리적) 위협에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+        ],
+        "key_concepts": [
+          "Physical Threat",
+          "Technical Threat"
+        ],
+        "memory_cues": [
+          "손으로 만질 수 있는 위협 = 물리적 위협"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "화재, 홍수 등 천재지변으로 인한 위협",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협'인데 이 선택지는 '화재, 홍수 등 천재지변으로 인한 위협'이므로 일치하지 않습니다. 천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+          },
+          {
+            "label": "2",
+            "text": "하드웨어 파손, 고장으로 인한 장애",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협'인데 이 선택지는 '하드웨어 파손, 고장으로 인한 장애'이므로 일치하지 않습니다. 천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+          },
+          {
+            "label": "3",
+            "text": "방화, 테러로 인한 하드웨어와 기록장치를 물리적으로 파괴하는 행위",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협'인데 이 선택지는 '방화, 테러로 인한 하드웨어와 기록장치를 물리적으로 파괴하는 행위'이므로 일치하지 않습니다. 천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+          },
+          {
+            "label": "4",
+            "text": "방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협'와 일치합니다. 방화벽 설정 오류는 소프트웨어 설정 및 네트워크 관리상의 문제이므로 기술적(논리적) 위협에 해당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 물리적 위협으로 인한 문제에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. Physical Threat, Technical Threat",
+          "정답 판단 근거를 적용합니다. 방화벽 설정 오류는 소프트웨어 설정 및 네트워크 관리상의 문제이므로 기술적(논리적) 위협에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+        ],
+        "exam_traps": [
+          "천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Physical Threat'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Technical Threat'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 손으로 만질 수 있는 위협 = 물리적 위협"
+        ],
+        "detailed_summary": "보안 위협의 유형 중 물리적 위협과 기술적 위협을 구분하는 문제입니다. 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협은 기술적 위협으로 인한 문제에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 물리적 위협으로 인한 문제에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 방화벽 설정의 잘못된 조작으로 인한 네트워크, 서버 보안 위협'와 일치합니다. 방화벽 설정 오류는 소프트웨어 설정 및 네트워크 관리상의 문제이므로 기술적(논리적) 위협에 해당합니다. 시험 포인트는 천재지변, 하드웨어 파손, 물리적 파괴는 모두 실제 물리적 공간에서 발생하는 위협입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "물리적 위협",
+        "기술적 위협",
+        "보안 관리",
+        "방화벽"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_47f01145d115644d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0186_p0191"
+        ],
+        "source_pages": [
+          189
+        ],
+        "page_span": {
+          "start_page": 189,
+          "end_page": 189
+        },
+        "source_explanation": "자원 삽입은 자원(메모리, 파일 등)을 부적절하게 할당하여 시스템 자원을 고갈시키는 공격입니다. 설명된 내용은 '위험한 형식 파일 업로드'에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안 개발 원칙과 취약점"
+        ],
+        "chapter_label": "보안 개발 원칙과 취약점",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안 개발 원칙과 취약점",
+        "chapter_id": "chapter_173"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_097",
+        "topic_title": "보안 개발 원칙과 취약점",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 개발 원칙과 취약점",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "입력 데이터 검증 및 표현과 관련된 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SQL 삽입 : 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고, 관리자 인증을 우회한다."
+          },
+          {
+            "label": "2",
+            "text": "크로스사이트 스크립트 : 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취한다."
+          },
+          {
+            "label": "3",
+            "text": "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다."
+          },
+          {
+            "label": "4",
+            "text": "운영체제 명령어 삽입 : 외부 입력값을 통해 시스템 명령어의 실행을 유도함으로써 권한을 탈취하거나 시스템 장애를 유발한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다."
+        ],
+        "answer_text": "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다."
+      },
+      "explanation": {
+        "source_text": "자원 삽입은 자원(메모리, 파일 등)을 부적절하게 할당하여 시스템 자원을 고갈시키는 공격입니다. 설명된 내용은 '위험한 형식 파일 업로드'에 해당합니다.",
+        "summary": "소프트웨어 보안 약점 중 입력 데이터 검증 미흡으로 발생하는 취약점들을 구분하는 문제입니다.",
+        "why_correct": [
+          "3번의 설명은 '위험한 형식 파일 업로드'에 대한 것이며, 자원 삽입은 자원 할당을 조작하는 공격입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+        ],
+        "key_concepts": [
+          "SQL Injection",
+          "XSS",
+          "OS Command Injection",
+          "Resource Injection"
+        ],
+        "memory_cues": [
+          "자원 삽입 = 자원(Resource) 경로 조작"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SQL 삽입 : 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고, 관리자 인증을 우회한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.'인데 이 선택지는 'SQL 삽입 : 웹 응용 프로그램에 SQL을 삽입하여 내부 데이터베이스(DB) 서버의 데이터를 유출 및 변조하고, 관리자 인증을 우회한다.'이므로 일치하지 않습니다. 1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "크로스사이트 스크립트 : 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.'인데 이 선택지는 '크로스사이트 스크립트 : 웹페이지에 악의적인 스크립트를 삽입하여 방문자들의 정보를 탈취한다.'이므로 일치하지 않습니다. 1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+          },
+          {
+            "label": "3",
+            "text": "자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.'와 일치합니다. 3번의 설명은 '위험한 형식 파일 업로드'에 대한 것이며, 자원 삽입은 자원 할당을 조작하는 공격입니다."
+          },
+          {
+            "label": "4",
+            "text": "운영체제 명령어 삽입 : 외부 입력값을 통해 시스템 명령어의 실행을 유도함으로써 권한을 탈취하거나 시스템 장애를 유발한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.'인데 이 선택지는 '운영체제 명령어 삽입 : 외부 입력값을 통해 시스템 명령어의 실행을 유도함으로써 권한을 탈취하거나 시스템 장애를 유발한다.'이므로 일치하지 않습니다. 1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 입력 데이터 검증 및 표현과 관련된 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. SQL Injection, XSS, OS Command Injection, Resource Injection",
+          "정답 판단 근거를 적용합니다. 3번의 설명은 '위험한 형식 파일 업로드'에 대한 것이며, 자원 삽입은 자원 할당을 조작하는 공격입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SQL Injection'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'XSS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OS Command Injection'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Resource Injection'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 자원 삽입 = 자원(Resource) 경로 조작"
+        ],
+        "detailed_summary": "소프트웨어 보안 약점 중 입력 데이터 검증 미흡으로 발생하는 취약점들을 구분하는 문제입니다. 자원 삽입은 자원(메모리, 파일 등)을 부적절하게 할당하여 시스템 자원을 고갈시키는 공격입니다. 설명된 내용은 '위험한 형식 파일 업로드'에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 입력 데이터 검증 및 표현과 관련된 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 자원 삽입 : 악의적인 명령어가 포함된 스크립트 파일을 업로드함으로써 시스템에 손상을 준다.'와 일치합니다. 3번의 설명은 '위험한 형식 파일 업로드'에 대한 것이며, 자원 삽입은 자원 할당을 조작하는 공격입니다. 시험 포인트는 1, 2, 4번은 각 보안 약점에 대한 올바른 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "보안 취약점",
+        "SQL Injection",
+        "XSS",
+        "자원 삽입"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

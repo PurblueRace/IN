@@ -1,0 +1,1895 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_051",
+    "sequence": 51,
+    "title": "SQL 개요와 DDL·DML·DCL",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 12,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_194",
+      "chapter_192",
+      "chapter_199",
+      "chapter_116"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_00a2467b0350c9ae",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          14
+        ],
+        "page_span": {
+          "start_page": 14,
+          "end_page": 14
+        },
+        "source_explanation": "ALTER는 DDL(데이터 정의어)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "DML"
+        ],
+        "chapter_label": "DML",
+        "chapter_key": "데이터베이스 구축 > SQL > DML",
+        "chapter_id": "chapter_194"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 235.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "DML(Data Manipulation Language) 명령어가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "INSERT"
+          },
+          {
+            "label": "2",
+            "text": "UPDATE"
+          },
+          {
+            "label": "3",
+            "text": "ALTER"
+          },
+          {
+            "label": "4",
+            "text": "DELETE"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ALTER"
+        ],
+        "answer_text": "ALTER"
+      },
+      "explanation": {
+        "source_text": "ALTER는 DDL(데이터 정의어)입니다.",
+        "summary": "SQL 명령어의 분류 중 데이터 조작어(DML)에 해당하지 않는 것을 찾는 문제입니다.",
+        "why_correct": [
+          "ALTER는 테이블의 구조를 변경하는 명령어로, 데이터 정의어(DDL)에 속합니다."
+        ],
+        "why_others_wrong": [
+          "INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+        ],
+        "key_concepts": [
+          "DML (INSERT, UPDATE, DELETE, SELECT)",
+          "DDL (CREATE, ALTER, DROP)"
+        ],
+        "memory_cues": [
+          "구조 변경(ALTER)은 정의(DDL)다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "INSERT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ALTER'인데 이 선택지는 'INSERT'이므로 일치하지 않습니다. INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+          },
+          {
+            "label": "2",
+            "text": "UPDATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ALTER'인데 이 선택지는 'UPDATE'이므로 일치하지 않습니다. INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+          },
+          {
+            "label": "3",
+            "text": "ALTER",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ALTER'와 일치합니다. ALTER는 테이블의 구조를 변경하는 명령어로, 데이터 정의어(DDL)에 속합니다."
+          },
+          {
+            "label": "4",
+            "text": "DELETE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ALTER'인데 이 선택지는 'DELETE'이므로 일치하지 않습니다. INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DML(Data Manipulation Language) 명령어가 아닌 것은?",
+          "핵심 개념을 떠올립니다. DML (INSERT, UPDATE, DELETE, SELECT), DDL (CREATE, ALTER, DROP)",
+          "정답 판단 근거를 적용합니다. ALTER는 테이블의 구조를 변경하는 명령어로, 데이터 정의어(DDL)에 속합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "INSERT, UPDATE, DELETE는 테이블 내의 데이터를 조작하는 대표적인 DML입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DML (INSERT, UPDATE, DELETE, SELECT)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DDL (CREATE, ALTER, DROP)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 구조 변경(ALTER)은 정의(DDL)다."
+        ],
+        "detailed_summary": "SQL 명령어의 분류 중 데이터 조작어(DML)에 해당하지 않는 것을 찾는 문제입니다. ALTER는 DDL(데이터 정의어)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DML(Data Manipulation Language) 명령어가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 ALTER'와 일치합니다. ALTER는 테이블의 구조를 변경하는 명령어로, 데이터 정의어(DDL)에 속합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DML",
+        "DDL",
+        "ALTER",
+        "SQL 명령어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_7c137286fd554259",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          33
+        ],
+        "page_span": {
+          "start_page": 33,
+          "end_page": 33
+        },
+        "source_explanation": "CREATE는 DDL(데이터 정의어)이고, 나머지는 DML(데이터 조작어)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL"
+        ],
+        "chapter_label": "SQL",
+        "chapter_key": "데이터베이스 구축 > SQL",
+        "chapter_id": "chapter_192"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 229.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "SQL의 명령은 사용 용도에 따라 DDL, DML, DCL로 구분할 수 있다. 다음 명령 중 그 성격이 나머지 셋과 다른 하나는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT"
+          },
+          {
+            "label": "2",
+            "text": "CREATE"
+          },
+          {
+            "label": "3",
+            "text": "INSERT"
+          },
+          {
+            "label": "4",
+            "text": "UPDATE"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "CREATE"
+        ],
+        "answer_text": "CREATE"
+      },
+      "explanation": {
+        "source_text": "CREATE는 DDL(데이터 정의어)이고, 나머지는 DML(데이터 조작어)입니다.",
+        "summary": "SQL 명령어를 기능별(정의, 조작, 제어)로 분류하는 문제입니다.",
+        "why_correct": [
+          "CREATE는 테이블이나 인덱스 등 구조를 정의하는 DDL입니다."
+        ],
+        "why_others_wrong": [
+          "SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+        ],
+        "key_concepts": [
+          "DDL",
+          "DML",
+          "DCL"
+        ],
+        "memory_cues": [
+          "정의(DDL): CREATE, ALTER, DROP",
+          "조작(DML): SELECT, INSERT, UPDATE, DELETE"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 CREATE'인데 이 선택지는 'SELECT'이므로 일치하지 않습니다. SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+          },
+          {
+            "label": "2",
+            "text": "CREATE",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 CREATE'와 일치합니다. CREATE는 테이블이나 인덱스 등 구조를 정의하는 DDL입니다."
+          },
+          {
+            "label": "3",
+            "text": "INSERT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 CREATE'인데 이 선택지는 'INSERT'이므로 일치하지 않습니다. SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+          },
+          {
+            "label": "4",
+            "text": "UPDATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 CREATE'인데 이 선택지는 'UPDATE'이므로 일치하지 않습니다. SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령은 사용 용도에 따라 DDL, DML, DCL로 구분할 수 있다. 다음 명령 중 그 성격이 나머지 셋과 다른 하나는?",
+          "핵심 개념을 떠올립니다. DDL, DML, DCL",
+          "정답 판단 근거를 적용합니다. CREATE는 테이블이나 인덱스 등 구조를 정의하는 DDL입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "SELECT, INSERT, UPDATE는 데이터를 조회하거나 수정하는 DML에 속합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정의(DDL): CREATE, ALTER, DROP",
+          "암기 포인트를 떠올립니다. 조작(DML): SELECT, INSERT, UPDATE, DELETE"
+        ],
+        "detailed_summary": "SQL 명령어를 기능별(정의, 조작, 제어)로 분류하는 문제입니다. CREATE는 DDL(데이터 정의어)이고, 나머지는 DML(데이터 조작어)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령은 사용 용도에 따라 DDL, DML, DCL로 구분할 수 있다. 다음 명령 중 그 성격이 나머지 셋과 다른 하나는? 정답입니다. 이 선택지는 실제 정답인 '2번 CREATE'와 일치합니다. CREATE는 테이블이나 인덱스 등 구조를 정의하는 DDL입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "DML",
+        "CREATE",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a3b779f47e1f1cdd",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          53
+        ],
+        "page_span": {
+          "start_page": 53,
+          "end_page": 53
+        },
+        "source_explanation": "전문가의 조언 | DDL에 해당하는 것으로만 짝지어진 것은 ③번입니다.\n• SELECT, UPDATE, DELETE는 DML(데이터 조작어)에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "47. SQL 명령 중 DDL에 해당하는 것으로만 짝지어진 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "CREATE, ALTER, SELECT"
+          },
+          {
+            "label": "2",
+            "text": "CREATE, UPDATE, DROP"
+          },
+          {
+            "label": "3",
+            "text": "CREATE, ALTER, DROP"
+          },
+          {
+            "label": "4",
+            "text": "DELETE, ALTER, DROP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "CREATE, ALTER, DROP"
+        ],
+        "answer_text": "CREATE, ALTER, DROP"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | DDL에 해당하는 것으로만 짝지어진 것은 ③번입니다.\n• SELECT, UPDATE, DELETE는 DML(데이터 조작어)에 해당합니다.",
+        "summary": "SQL의 명령어 분류 중 데이터 정의어(DDL)를 찾는 문제입니다.",
+        "why_correct": [
+          "DDL(Data Definition Language)은 데이터베이스 구조를 정의하거나 변경하는 명령어로 CREATE, ALTER, DROP, TRUNCATE 등이 있습니다."
+        ],
+        "why_others_wrong": [
+          "SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+        ],
+        "key_concepts": [
+          "DDL",
+          "DML",
+          "DCL"
+        ],
+        "memory_cues": [
+          "DDL: CAD (Create, Alter, Drop)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "CREATE, ALTER, SELECT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 CREATE, ALTER, DROP'인데 이 선택지는 'CREATE, ALTER, SELECT'이므로 일치하지 않습니다. SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+          },
+          {
+            "label": "2",
+            "text": "CREATE, UPDATE, DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 CREATE, ALTER, DROP'인데 이 선택지는 'CREATE, UPDATE, DROP'이므로 일치하지 않습니다. SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+          },
+          {
+            "label": "3",
+            "text": "CREATE, ALTER, DROP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 CREATE, ALTER, DROP'와 일치합니다. DDL(Data Definition Language)은 데이터베이스 구조를 정의하거나 변경하는 명령어로 CREATE, ALTER, DROP, TRUNCATE 등이 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "DELETE, ALTER, DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 CREATE, ALTER, DROP'인데 이 선택지는 'DELETE, ALTER, DROP'이므로 일치하지 않습니다. SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. SQL 명령 중 DDL에 해당하는 것으로만 짝지어진 것은?",
+          "핵심 개념을 떠올립니다. DDL, DML, DCL",
+          "정답 판단 근거를 적용합니다. DDL(Data Definition Language)은 데이터베이스 구조를 정의하거나 변경하는 명령어로 CREATE, ALTER, DROP, TRUNCATE 등이 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "SELECT, UPDATE, DELETE는 데이터를 조작하는 DML(Data Manipulation Language)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DDL: CAD (Create, Alter, Drop)"
+        ],
+        "detailed_summary": "SQL의 명령어 분류 중 데이터 정의어(DDL)를 찾는 문제입니다. 전문가의 조언 | DDL에 해당하는 것으로만 짝지어진 것은 ③번입니다. • SELECT, UPDATE, DELETE는 DML(데이터 조작어)에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. SQL 명령 중 DDL에 해당하는 것으로만 짝지어진 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 CREATE, ALTER, DROP'와 일치합니다. DDL(Data Definition Language)은 데이터베이스 구조를 정의하거나 변경하는 명령어로 CREATE, ALTER, DROP, TRUNCATE 등이 있습니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "데이터 정의어",
+        "CREATE",
+        "ALTER",
+        "DROP"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4d3c20ce019bfed9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          55
+        ],
+        "page_span": {
+          "start_page": 55,
+          "end_page": 55
+        },
+        "source_explanation": "전문가의 조언 | DELETE 명령어로 삭제한 데이터는 ROLLBACK 명령어로 되살릴 수 있지만 TRUNCATE 명령어로 삭제한 데이터는 되살릴 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "60. SQL의 TRUNCATE 명령어에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DELETE와 같이 테이블의 모든 데이터를 삭제한다."
+          },
+          {
+            "label": "2",
+            "text": "DROP과 달리 테이블 스키마는 삭제되지 않고 유지된다."
+          },
+          {
+            "label": "3",
+            "text": "DELETE에 비해 빠르게 데이터를 제거하는 것이 가능하다."
+          },
+          {
+            "label": "4",
+            "text": "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다."
+        ],
+        "answer_text": "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | DELETE 명령어로 삭제한 데이터는 ROLLBACK 명령어로 되살릴 수 있지만 TRUNCATE 명령어로 삭제한 데이터는 되살릴 수 없습니다.",
+        "summary": "데이터 삭제 명령어인 TRUNCATE의 특징과 DELETE와의 차이점을 묻는 문제입니다.",
+        "why_correct": [
+          "TRUNCATE는 DDL 성격이 강해 실행 즉시 커밋되므로 ROLLBACK을 통해 데이터를 복구할 수 없습니다. 반면 DELETE는 DML이므로 롤백이 가능합니다."
+        ],
+        "why_others_wrong": [
+          "TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+        ],
+        "key_concepts": [
+          "TRUNCATE",
+          "DELETE",
+          "ROLLBACK"
+        ],
+        "memory_cues": [
+          "TRUNCATE = 싹 비우기 (복구 불가)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DELETE와 같이 테이블의 모든 데이터를 삭제한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.'인데 이 선택지는 'DELETE와 같이 테이블의 모든 데이터를 삭제한다.'이므로 일치하지 않습니다. TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+          },
+          {
+            "label": "2",
+            "text": "DROP과 달리 테이블 스키마는 삭제되지 않고 유지된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.'인데 이 선택지는 'DROP과 달리 테이블 스키마는 삭제되지 않고 유지된다.'이므로 일치하지 않습니다. TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+          },
+          {
+            "label": "3",
+            "text": "DELETE에 비해 빠르게 데이터를 제거하는 것이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.'인데 이 선택지는 'DELETE에 비해 빠르게 데이터를 제거하는 것이 가능하다.'이므로 일치하지 않습니다. TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+          },
+          {
+            "label": "4",
+            "text": "DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.'와 일치합니다. TRUNCATE는 DDL 성격이 강해 실행 즉시 커밋되므로 ROLLBACK을 통해 데이터를 복구할 수 없습니다. 반면 DELETE는 DML이므로 롤백이 가능합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 60. SQL의 TRUNCATE 명령어에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. TRUNCATE, DELETE, ROLLBACK",
+          "정답 판단 근거를 적용합니다. TRUNCATE는 DDL 성격이 강해 실행 즉시 커밋되므로 ROLLBACK을 통해 데이터를 복구할 수 없습니다. 반면 DELETE는 DML이므로 롤백이 가능합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+        ],
+        "exam_traps": [
+          "TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TRUNCATE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DELETE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ROLLBACK'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TRUNCATE = 싹 비우기 (복구 불가)"
+        ],
+        "detailed_summary": "데이터 삭제 명령어인 TRUNCATE의 특징과 DELETE와의 차이점을 묻는 문제입니다. 전문가의 조언 | DELETE 명령어로 삭제한 데이터는 ROLLBACK 명령어로 되살릴 수 있지만 TRUNCATE 명령어로 삭제한 데이터는 되살릴 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 60. SQL의 TRUNCATE 명령어에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 DELETE와 동일하게 ROLLBACK 명령어로 삭제된 데이터를 되살릴 수 있다.'와 일치합니다. TRUNCATE는 DDL 성격이 강해 실행 즉시 커밋되므로 ROLLBACK을 통해 데이터를 복구할 수 없습니다. 반면 DELETE는 DML이므로 롤백이 가능합니다. 시험 포인트는 TRUNCATE는 테이블 구조는 남기고 데이터만 빠르게 삭제하며, 로그를 적게 남기기 때문에 DELETE보다 속도가 빠릅니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "TRUNCATE",
+        "DELETE",
+        "DROP",
+        "ROLLBACK",
+        "데이터 삭제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f6b0b7441acff72d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          71
+        ],
+        "page_span": {
+          "start_page": 71,
+          "end_page": 71
+        },
+        "source_explanation": "DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령어에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DDL(Data Definition Language)"
+          },
+          {
+            "label": "2",
+            "text": "DML(Data Manipulation Language)"
+          },
+          {
+            "label": "3",
+            "text": "DCL(Data Control Language)"
+          },
+          {
+            "label": "4",
+            "text": "DUL(Data User Language)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "DCL(Data Control Language)"
+        ],
+        "answer_text": "DCL(Data Control Language)"
+      },
+      "explanation": {
+        "source_text": "DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령어에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다.",
+        "summary": "SQL 명령어의 기능별 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "DCL은 데이터의 보안, 무결성, 회복, 병행 제어 등을 정의하는 데 사용되며 GRANT와 REVOKE가 대표적입니다."
+        ],
+        "why_others_wrong": [
+          "DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다.",
+          "DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)에 사용됩니다.",
+          "DUL은 존재하지 않는 용어입니다."
+        ],
+        "key_concepts": [
+          "DCL",
+          "GRANT",
+          "REVOKE"
+        ],
+        "memory_cues": [
+          "DCL = Control = 권한 제어"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DDL(Data Definition Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DDL(Data Definition Language)'이므로 일치하지 않습니다. DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다. DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)에 사용됩니다."
+          },
+          {
+            "label": "2",
+            "text": "DML(Data Manipulation Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DML(Data Manipulation Language)'이므로 일치하지 않습니다. DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다. DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)에 사용됩니다."
+          },
+          {
+            "label": "3",
+            "text": "DCL(Data Control Language)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 DCL(Data Control Language)'와 일치합니다. DCL은 데이터의 보안, 무결성, 회복, 병행 제어 등을 정의하는 데 사용되며 GRANT와 REVOKE가 대표적입니다."
+          },
+          {
+            "label": "4",
+            "text": "DUL(Data User Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DUL(Data User Language)'이므로 일치하지 않습니다. DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다. DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)에 사용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+          "핵심 개념을 떠올립니다. DCL, GRANT, REVOKE",
+          "정답 판단 근거를 적용합니다. DCL은 데이터의 보안, 무결성, 회복, 병행 제어 등을 정의하는 데 사용되며 GRANT와 REVOKE가 대표적입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "DDL은 데이터 구조 정의(CREATE, ALTER, DROP)에 사용됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'GRANT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'REVOKE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. DCL = Control = 권한 제어"
+        ],
+        "detailed_summary": "SQL 명령어의 기능별 분류를 묻는 문제입니다. DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령어에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는? 정답입니다. 이 선택지는 실제 정답인 '3번 DCL(Data Control Language)'와 일치합니다. DCL은 데이터의 보안, 무결성, 회복, 병행 제어 등을 정의하는 데 사용되며 GRANT와 REVOKE가 대표적입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL 분류",
+        "DCL",
+        "REVOKE",
+        "권한 관리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_057415fdeb44500a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          73
+        ],
+        "page_span": {
+          "start_page": 73,
+          "end_page": 73
+        },
+        "source_explanation": "SELECT, UPDATE, INSERT는 DML(데이터 조작어)이며, GRANT는 DCL(데이터 제어어)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "SQL의 명령을 사용 용도에 따라 DDL, DML, DCL로 구분할 경우, 그 성격이 나머지 셋과 다른 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT"
+          },
+          {
+            "label": "2",
+            "text": "UPDATE"
+          },
+          {
+            "label": "3",
+            "text": "INSERT"
+          },
+          {
+            "label": "4",
+            "text": "GRANT"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "GRANT"
+        ],
+        "answer_text": "GRANT"
+      },
+      "explanation": {
+        "source_text": "SELECT, UPDATE, INSERT는 DML(데이터 조작어)이며, GRANT는 DCL(데이터 제어어)입니다.",
+        "summary": "SQL 명령어의 카테고리 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "GRANT는 권한을 부여하는 제어어(DCL)인 반면, 나머지는 데이터를 다루는 조작어(DML)입니다."
+        ],
+        "why_others_wrong": [
+          "SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+        ],
+        "key_concepts": [
+          "DML",
+          "DCL"
+        ],
+        "memory_cues": [
+          "조작(DML)은 S-I-U-D, 제어(DCL)는 G-R-C-R"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 GRANT'인데 이 선택지는 'SELECT'이므로 일치하지 않습니다. SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+          },
+          {
+            "label": "2",
+            "text": "UPDATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 GRANT'인데 이 선택지는 'UPDATE'이므로 일치하지 않습니다. SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+          },
+          {
+            "label": "3",
+            "text": "INSERT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 GRANT'인데 이 선택지는 'INSERT'이므로 일치하지 않습니다. SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+          },
+          {
+            "label": "4",
+            "text": "GRANT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 GRANT'와 일치합니다. GRANT는 권한을 부여하는 제어어(DCL)인 반면, 나머지는 데이터를 다루는 조작어(DML)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령을 사용 용도에 따라 DDL, DML, DCL로 구분할 경우, 그 성격이 나머지 셋과 다른 것은?",
+          "핵심 개념을 떠올립니다. DML, DCL",
+          "정답 판단 근거를 적용합니다. GRANT는 권한을 부여하는 제어어(DCL)인 반면, 나머지는 데이터를 다루는 조작어(DML)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "SELECT, UPDATE, INSERT는 모두 데이터의 조회, 수정, 삽입을 담당하는 DML입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 조작(DML)은 S-I-U-D, 제어(DCL)는 G-R-C-R"
+        ],
+        "detailed_summary": "SQL 명령어의 카테고리 분류를 묻는 문제입니다. SELECT, UPDATE, INSERT는 DML(데이터 조작어)이며, GRANT는 DCL(데이터 제어어)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령을 사용 용도에 따라 DDL, DML, DCL로 구분할 경우, 그 성격이 나머지 셋과 다른 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 GRANT'와 일치합니다. GRANT는 권한을 부여하는 제어어(DCL)인 반면, 나머지는 데이터를 다루는 조작어(DML)입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL 분류",
+        "DML",
+        "DCL",
+        "GRANT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_09cd4ab045e3fe69",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          109
+        ],
+        "page_span": {
+          "start_page": 109,
+          "end_page": 109
+        },
+        "source_explanation": "전문가의 조언 | CREATE, ALTER, DROP은 DDL(데이터 정의어)이고, REVOKE는 DCL(데이터 제어어)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "41. 다음에 제시된 SQL의 명령어 중 성격이 다른 하나는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "CREATE"
+          },
+          {
+            "label": "2",
+            "text": "REVOKE"
+          },
+          {
+            "label": "3",
+            "text": "ALTER"
+          },
+          {
+            "label": "4",
+            "text": "DROP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "REVOKE"
+        ],
+        "answer_text": "REVOKE"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | CREATE, ALTER, DROP은 DDL(데이터 정의어)이고, REVOKE는 DCL(데이터 제어어)입니다.",
+        "summary": "SQL 명령어의 분류(DDL, DML, DCL)를 묻는 문제입니다.",
+        "why_correct": [
+          "REVOKE는 권한을 취소하는 제어어(DCL)이며, 나머지는 구조를 정의하는 정의어(DDL)입니다."
+        ],
+        "why_others_wrong": [
+          "CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+        ],
+        "key_concepts": [
+          "DDL",
+          "DML",
+          "DCL"
+        ],
+        "memory_cues": [
+          "정의(DDL): CAD (Create, Alter, Drop), 제어(DCL): GR (Grant, Revoke)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "CREATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 REVOKE'인데 이 선택지는 'CREATE'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+          },
+          {
+            "label": "2",
+            "text": "REVOKE",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 REVOKE'와 일치합니다. REVOKE는 권한을 취소하는 제어어(DCL)이며, 나머지는 구조를 정의하는 정의어(DDL)입니다."
+          },
+          {
+            "label": "3",
+            "text": "ALTER",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 REVOKE'인데 이 선택지는 'ALTER'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+          },
+          {
+            "label": "4",
+            "text": "DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 REVOKE'인데 이 선택지는 'DROP'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. 다음에 제시된 SQL의 명령어 중 성격이 다른 하나는?",
+          "핵심 개념을 떠올립니다. DDL, DML, DCL",
+          "정답 판단 근거를 적용합니다. REVOKE는 권한을 취소하는 제어어(DCL)이며, 나머지는 구조를 정의하는 정의어(DDL)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "CREATE, ALTER, DROP은 모두 테이블이나 스키마의 구조를 다루는 DDL입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정의(DDL): CAD (Create, Alter, Drop), 제어(DCL): GR (Grant, Revoke)"
+        ],
+        "detailed_summary": "SQL 명령어의 분류(DDL, DML, DCL)를 묻는 문제입니다. 전문가의 조언 | CREATE, ALTER, DROP은 DDL(데이터 정의어)이고, REVOKE는 DCL(데이터 제어어)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. 다음에 제시된 SQL의 명령어 중 성격이 다른 하나는? 정답입니다. 이 선택지는 실제 정답인 '2번 REVOKE'와 일치합니다. REVOKE는 권한을 취소하는 제어어(DCL)이며, 나머지는 구조를 정의하는 정의어(DDL)입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "DCL",
+        "REVOKE"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_09147f46817e8477",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | SELECT는 DML(데이터 조작어)입니다. DDL(데이터 정의어)에는 CREATE, ALTER, DROP이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "43. 다음 중 SQL에서의 DDL문이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "CREATE"
+          },
+          {
+            "label": "2",
+            "text": "SELECT"
+          },
+          {
+            "label": "3",
+            "text": "ALTER"
+          },
+          {
+            "label": "4",
+            "text": "DROP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "SELECT"
+        ],
+        "answer_text": "SELECT"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | SELECT는 DML(데이터 조작어)입니다. DDL(데이터 정의어)에는 CREATE, ALTER, DROP이 있습니다.",
+        "summary": "SQL 명령어들을 기능별(정의, 조작, 제어)로 분류할 수 있는지 묻는 문제입니다.",
+        "why_correct": [
+          "SELECT는 데이터를 조회하는 명령어로, 데이터 조작어(DML)에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+        ],
+        "key_concepts": [
+          "DDL: CREATE, ALTER, DROP",
+          "DML: SELECT, INSERT, UPDATE, DELETE"
+        ],
+        "memory_cues": [
+          "CAD(캐드) = CREATE, ALTER, DROP -> DDL"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "CREATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'CREATE'이므로 일치하지 않습니다. CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 SELECT'와 일치합니다. SELECT는 데이터를 조회하는 명령어로, 데이터 조작어(DML)에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "ALTER",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'ALTER'이므로 일치하지 않습니다. CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+          },
+          {
+            "label": "4",
+            "text": "DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'DROP'이므로 일치하지 않습니다. CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 다음 중 SQL에서의 DDL문이 아닌 것은?",
+          "핵심 개념을 떠올립니다. DDL: CREATE, ALTER, DROP, DML: SELECT, INSERT, UPDATE, DELETE",
+          "정답 판단 근거를 적용합니다. SELECT는 데이터를 조회하는 명령어로, 데이터 조작어(DML)에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "CREATE(생성), ALTER(수정), DROP(삭제)은 데이터베이스 객체의 구조를 정의하는 DDL입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL: CREATE, ALTER, DROP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML: SELECT, INSERT, UPDATE, DELETE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CAD(캐드) = CREATE, ALTER, DROP -> DDL"
+        ],
+        "detailed_summary": "SQL 명령어들을 기능별(정의, 조작, 제어)로 분류할 수 있는지 묻는 문제입니다. 전문가의 조언 | SELECT는 DML(데이터 조작어)입니다. DDL(데이터 정의어)에는 CREATE, ALTER, DROP이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 다음 중 SQL에서의 DDL문이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 SELECT'와 일치합니다. SELECT는 데이터를 조회하는 명령어로, 데이터 조작어(DML)에 해당합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "SELECT",
+        "데이터 정의어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_467f73455977b07f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "41. SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DDL(Data Definition Language)"
+          },
+          {
+            "label": "2",
+            "text": "DML(Data Manipulation Language)"
+          },
+          {
+            "label": "3",
+            "text": "DCL(Data Control Language)"
+          },
+          {
+            "label": "4",
+            "text": "DUL(Data User Language)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "DCL(Data Control Language)"
+        ],
+        "answer_text": "DCL(Data Control Language)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다.",
+        "summary": "SQL의 세 가지 주요 분류(DDL, DML, DCL) 중 권한 제어와 관련된 언어를 찾는 문제입니다.",
+        "why_correct": [
+          "DCL(Data Control Language)은 데이터의 보안, 무결성, 회복, 병행 제어 등을 위해 사용되며 GRANT(권한 부여)와 REVOKE(권한 취소)가 대표적입니다."
+        ],
+        "why_others_wrong": [
+          "DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+        ],
+        "key_concepts": [
+          "DDL: 정의어",
+          "DML: 조작어",
+          "DCL: 제어어"
+        ],
+        "memory_cues": [
+          "Control(제어) = 권한을 주고 뺏는 것"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DDL(Data Definition Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DDL(Data Definition Language)'이므로 일치하지 않습니다. DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+          },
+          {
+            "label": "2",
+            "text": "DML(Data Manipulation Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DML(Data Manipulation Language)'이므로 일치하지 않습니다. DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+          },
+          {
+            "label": "3",
+            "text": "DCL(Data Control Language)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 DCL(Data Control Language)'와 일치합니다. DCL(Data Control Language)은 데이터의 보안, 무결성, 회복, 병행 제어 등을 위해 사용되며 GRANT(권한 부여)와 REVOKE(권한 취소)가 대표적입니다."
+          },
+          {
+            "label": "4",
+            "text": "DUL(Data User Language)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 DCL(Data Control Language)'인데 이 선택지는 'DUL(Data User Language)'이므로 일치하지 않습니다. DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는?",
+          "핵심 개념을 떠올립니다. DDL: 정의어, DML: 조작어, DCL: 제어어",
+          "정답 판단 근거를 적용합니다. DCL(Data Control Language)은 데이터의 보안, 무결성, 회복, 병행 제어 등을 위해 사용되며 GRANT(권한 부여)와 REVOKE(권한 취소)가 대표적입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "DDL은 구조 정의(CREATE, ALTER, DROP), DML은 데이터 조작(SELECT, INSERT, UPDATE, DELETE)을 담당합니다. DUL은 존재하지 않는 용어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL: 정의어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DML: 조작어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL: 제어어'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Control(제어) = 권한을 주고 뺏는 것"
+        ],
+        "detailed_summary": "SQL의 세 가지 주요 분류(DDL, DML, DCL) 중 권한 제어와 관련된 언어를 찾는 문제입니다. 전문가의 조언 | DCL(데이터 제어어)은 데이터 관리를 목적으로 사용하는 언어로, 명령에는 COMMIT, ROLLBACK, GRANT, REVOKE가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. SQL의 기능에 따른 분류 중에서 REVOKE문과 같이 데이터의 사용 권한을 관리하는데 사용하는 언어는? 정답입니다. 이 선택지는 실제 정답인 '3번 DCL(Data Control Language)'와 일치합니다. DCL(Data Control Language)은 데이터의 보안, 무결성, 회복, 병행 제어 등을 위해 사용되며 GRANT(권한 부여)와 REVOKE(권한 취소)가 대표적입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "DCL",
+        "REVOKE",
+        "권한 관리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2cc7599200dbb936",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          164
+        ],
+        "page_span": {
+          "start_page": 164,
+          "end_page": 164
+        },
+        "source_explanation": "CREATE TABLE문에서는 속성 타입을 변경할 수 없습니다. 테이블의 속성 타입 변경은 ALTER TABLE문으로 수행합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "SQL 응용",
+          "DDL"
+        ],
+        "chapter_label": "DDL",
+        "chapter_key": "3과목 데이터베이스 구축 > SQL 응용 > DDL",
+        "chapter_id": "chapter_116"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 235.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "41. CREATE TABLE문에 포함되지 않는 기능은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "속성 타입 변경"
+          },
+          {
+            "label": "2",
+            "text": "속성의 NOT NULL 여부 지정"
+          },
+          {
+            "label": "3",
+            "text": "기본키를 구성하는 속성 지정"
+          },
+          {
+            "label": "4",
+            "text": "CHECK 제약조건의 정의"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "속성 타입 변경"
+        ],
+        "answer_text": "속성 타입 변경"
+      },
+      "explanation": {
+        "source_text": "CREATE TABLE문에서는 속성 타입을 변경할 수 없습니다. 테이블의 속성 타입 변경은 ALTER TABLE문으로 수행합니다.",
+        "summary": "SQL DDL 문법 중 CREATE TABLE의 기능을 묻는 문제입니다.",
+        "why_correct": [
+          "속성 타입 변경은 이미 생성된 테이블의 구조를 바꾸는 것이므로 ALTER TABLE 명령어를 사용해야 합니다."
+        ],
+        "why_others_wrong": [
+          "NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+        ],
+        "key_concepts": [
+          "DDL (Data Definition Language)",
+          "CREATE TABLE",
+          "ALTER TABLE"
+        ],
+        "memory_cues": [
+          "생성은 CREATE, 변경은 ALTER"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "속성 타입 변경",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 속성 타입 변경'와 일치합니다. 속성 타입 변경은 이미 생성된 테이블의 구조를 바꾸는 것이므로 ALTER TABLE 명령어를 사용해야 합니다."
+          },
+          {
+            "label": "2",
+            "text": "속성의 NOT NULL 여부 지정",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 속성 타입 변경'인데 이 선택지는 '속성의 NOT NULL 여부 지정'이므로 일치하지 않습니다. NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "기본키를 구성하는 속성 지정",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 속성 타입 변경'인데 이 선택지는 '기본키를 구성하는 속성 지정'이므로 일치하지 않습니다. NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "CHECK 제약조건의 정의",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 속성 타입 변경'인데 이 선택지는 'CHECK 제약조건의 정의'이므로 일치하지 않습니다. NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. CREATE TABLE문에 포함되지 않는 기능은?",
+          "핵심 개념을 떠올립니다. DDL (Data Definition Language), CREATE TABLE, ALTER TABLE",
+          "정답 판단 근거를 적용합니다. 속성 타입 변경은 이미 생성된 테이블의 구조를 바꾸는 것이므로 ALTER TABLE 명령어를 사용해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "NOT NULL, PRIMARY KEY(기본키), CHECK 제약조건은 모두 테이블 생성 시 정의할 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DDL (Data Definition Language)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'CREATE TABLE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ALTER TABLE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생성은 CREATE, 변경은 ALTER"
+        ],
+        "detailed_summary": "SQL DDL 문법 중 CREATE TABLE의 기능을 묻는 문제입니다. CREATE TABLE문에서는 속성 타입을 변경할 수 없습니다. 테이블의 속성 타입 변경은 ALTER TABLE문으로 수행합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. CREATE TABLE문에 포함되지 않는 기능은? 정답입니다. 이 선택지는 실제 정답인 '1번 속성 타입 변경'와 일치합니다. 속성 타입 변경은 이미 생성된 테이블의 구조를 바꾸는 것이므로 ALTER TABLE 명령어를 사용해야 합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "CREATE TABLE",
+        "ALTER TABLE",
+        "DDL",
+        "제약 조건"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1b248e4184307187",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          186
+        ],
+        "page_span": {
+          "start_page": 186,
+          "end_page": 186
+        },
+        "source_explanation": "ALTER TABLE 학생 : 학생 테이블에 대한 정의를 변경합니다.\nDROP 학년 CASCADE : '학년' 속성을 제거하되, '학년' 속성을 참조하는 다른 테이블의 속성을 함께 제거합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은?\nALTER TABLE 학생 DROP 학년 CASCADE;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+          },
+          {
+            "label": "2",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다."
+          },
+          {
+            "label": "3",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+          },
+          {
+            "label": "4",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+        ],
+        "answer_text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+      },
+      "explanation": {
+        "source_text": "ALTER TABLE 학생 : 학생 테이블에 대한 정의를 변경합니다.\nDROP 학년 CASCADE : '학년' 속성을 제거하되, '학년' 속성을 참조하는 다른 테이블의 속성을 함께 제거합니다.",
+        "summary": "SQL DDL 문법 중 속성 삭제와 참조 무결성 옵션을 묻는 문제입니다.",
+        "why_correct": [
+          "'ALTER TABLE 학생'은 학생 테이블을 수정하겠다는 의미이고, 'DROP 학년 CASCADE'는 학년 컬럼을 지우면서 이를 참조하는 다른 데이터도 연쇄적으로 지우겠다는 의미입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "ALTER TABLE",
+          "DROP COLUMN",
+          "CASCADE vs RESTRICT"
+        ],
+        "memory_cues": [
+          "CASCADE = 폭포처럼 연쇄적으로"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'이므로 일치하지 않습니다. 1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.'이므로 일치하지 않습니다. 1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'와 일치합니다. 'ALTER TABLE 학생'은 학생 테이블을 수정하겠다는 의미이고, 'DROP 학년 CASCADE'는 학년 컬럼을 지우면서 이를 참조하는 다른 데이터도 연쇄적으로 지우겠다는 의미입니다."
+          },
+          {
+            "label": "4",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.'이므로 일치하지 않습니다. 1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은? ALTER TABLE 학생 DROP 학년 CASCADE;",
+          "핵심 개념을 떠올립니다. ALTER TABLE, DROP COLUMN, CASCADE vs RESTRICT",
+          "정답 판단 근거를 적용합니다. 'ALTER TABLE 학생'은 학생 테이블을 수정하겠다는 의미이고, 'DROP 학년 CASCADE'는 학년 컬럼을 지우면서 이를 참조하는 다른 데이터도 연쇄적으로 지우겠다는 의미입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 테이블과 속성을 혼동했고, 4번은 CASCADE가 아닌 RESTRICT 옵션에 대한 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ALTER TABLE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DROP COLUMN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'CASCADE vs RESTRICT'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CASCADE = 폭포처럼 연쇄적으로"
+        ],
+        "detailed_summary": "SQL DDL 문법 중 속성 삭제와 참조 무결성 옵션을 묻는 문제입니다. ALTER TABLE 학생 : 학생 테이블에 대한 정의를 변경합니다. DROP 학년 CASCADE : '학년' 속성을 제거하되, '학년' 속성을 참조하는 다른 테이블의 속성을 함께 제거합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은? ALTER TABLE 학생 DROP 학년 CASCADE; 정답입니다. 이 선택지는 실제 정답인 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'와 일치합니다. 'ALTER TABLE 학생'은 학생 테이블을 수정하겠다는 의미이고, 'DROP 학년 CASCADE'는 학년 컬럼을 지우면서 이를 참조하는 다른 데이터도 연쇄적으로 지우겠다는 의미입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "ALTER TABLE",
+        "CASCADE"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_61c1a1ddbb260b4d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          186
+        ],
+        "page_span": {
+          "start_page": 186,
+          "end_page": 186
+        },
+        "source_explanation": "CREATE, ALTER, DROP은 DDL(데이터 정의어)이며, SELECT는 DML(데이터 조작어)에 속하는 명령어입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_199"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_051",
+        "topic_title": "SQL 개요와 DDL·DML·DCL",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SQL 개요와 DDL·DML·DCL",
+        "match_score": 253.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "SQL의 명령어들을 DCL, DML, DDL로 구분할 경우, 다음 중 성격이 다른 하나는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "CREATE"
+          },
+          {
+            "label": "2",
+            "text": "SELECT"
+          },
+          {
+            "label": "3",
+            "text": "ALTER"
+          },
+          {
+            "label": "4",
+            "text": "DROP"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "SELECT"
+        ],
+        "answer_text": "SELECT"
+      },
+      "explanation": {
+        "source_text": "CREATE, ALTER, DROP은 DDL(데이터 정의어)이며, SELECT는 DML(데이터 조작어)에 속하는 명령어입니다.",
+        "summary": "SQL 명령어의 카테고리 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "SELECT는 데이터를 조회하는 DML(Data Manipulation Language)입니다."
+        ],
+        "why_others_wrong": [
+          "CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+        ],
+        "key_concepts": [
+          "SQL 명령어 분류 (DDL, DML, DCL)"
+        ],
+        "memory_cues": [
+          "CAD(Create, Alter, Drop)는 DDL"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "CREATE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'CREATE'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 SELECT'와 일치합니다. SELECT는 데이터를 조회하는 DML(Data Manipulation Language)입니다."
+          },
+          {
+            "label": "3",
+            "text": "ALTER",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'ALTER'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+          },
+          {
+            "label": "4",
+            "text": "DROP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT'인데 이 선택지는 'DROP'이므로 일치하지 않습니다. CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령어들을 DCL, DML, DDL로 구분할 경우, 다음 중 성격이 다른 하나는?",
+          "핵심 개념을 떠올립니다. SQL 명령어 분류 (DDL, DML, DCL)",
+          "정답 판단 근거를 적용합니다. SELECT는 데이터를 조회하는 DML(Data Manipulation Language)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "CREATE, ALTER, DROP은 스키마 구조를 정의하거나 변경하는 DDL(Data Definition Language)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SQL 명령어 분류 (DDL, DML, DCL)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CAD(Create, Alter, Drop)는 DDL"
+        ],
+        "detailed_summary": "SQL 명령어의 카테고리 분류를 묻는 문제입니다. CREATE, ALTER, DROP은 DDL(데이터 정의어)이며, SELECT는 DML(데이터 조작어)에 속하는 명령어입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL의 명령어들을 DCL, DML, DDL로 구분할 경우, 다음 중 성격이 다른 하나는? 정답입니다. 이 선택지는 실제 정답인 '2번 SELECT'와 일치합니다. SELECT는 데이터를 조회하는 DML(Data Manipulation Language)입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DDL",
+        "DML",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

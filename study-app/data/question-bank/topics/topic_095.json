@@ -1,0 +1,2984 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_095",
+    "sequence": 95,
+    "title": "보안 솔루션과 Secure OS",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 19,
+    "review_count": 7,
+    "source_chapter_ids": [
+      "chapter_329",
+      "chapter_301",
+      "chapter_172",
+      "chapter_145",
+      "chapter_152",
+      "chapter_299",
+      "chapter_175"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_f2a381d5ee7c0fe4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          24
+        ],
+        "page_span": {
+          "start_page": 24,
+          "end_page": 24
+        },
+        "source_explanation": "공격자를 유인하여 정보를 수집하기 위해 의도적으로 취약하게 만든 시스템을 허니팟(Honeypot)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "88. 다음 설명에 해당하는 시스템은?\n- 1990년대 David Clock이 처음 제안하였다.\n- 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다.\n- 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다.\n- 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Apache"
+          },
+          {
+            "label": "2",
+            "text": "Hadoop"
+          },
+          {
+            "label": "3",
+            "text": "Honeypot"
+          },
+          {
+            "label": "4",
+            "text": "MapReduce"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Honeypot"
+        ],
+        "answer_text": "Honeypot"
+      },
+      "explanation": {
+        "source_text": "공격자를 유인하여 정보를 수집하기 위해 의도적으로 취약하게 만든 시스템을 허니팟(Honeypot)이라고 합니다.",
+        "summary": "공격자를 유인하는 보안 시스템인 허니팟에 대한 문제입니다.",
+        "why_correct": [
+          "허니팟은 꿀단지처럼 공격자를 유혹하여 침입 수법을 분석하기 위해 만든 가짜 시스템입니다."
+        ],
+        "why_others_wrong": [
+          "1번 Apache는 웹 서버 소프트웨어입니다.",
+          "2번 Hadoop은 빅데이터 분산 처리 프레임워크입니다.",
+          "4번 MapReduce는 대용량 데이터 처리를 위한 프로그래밍 모델입니다."
+        ],
+        "key_concepts": [
+          "허니팟: 유인용 가짜 시스템"
+        ],
+        "memory_cues": [
+          "벌을 잡으려고 꿀단지(Honeypot)를 놓아두는 것과 같다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Apache",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'Apache'이므로 일치하지 않습니다. 1번 Apache는 웹 서버 소프트웨어입니다. 2번 Hadoop은 빅데이터 분산 처리 프레임워크입니다."
+          },
+          {
+            "label": "2",
+            "text": "Hadoop",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'Hadoop'이므로 일치하지 않습니다. 1번 Apache는 웹 서버 소프트웨어입니다. 2번 Hadoop은 빅데이터 분산 처리 프레임워크입니다."
+          },
+          {
+            "label": "3",
+            "text": "Honeypot",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Honeypot'와 일치합니다. 허니팟은 꿀단지처럼 공격자를 유혹하여 침입 수법을 분석하기 위해 만든 가짜 시스템입니다."
+          },
+          {
+            "label": "4",
+            "text": "MapReduce",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'MapReduce'이므로 일치하지 않습니다. 1번 Apache는 웹 서버 소프트웨어입니다. 2번 Hadoop은 빅데이터 분산 처리 프레임워크입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 다음 설명에 해당하는 시스템은? - 1990년대 David Clock이 처음 제안하였다. - 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. - 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. - 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+          "핵심 개념을 떠올립니다. 허니팟: 유인용 가짜 시스템",
+          "정답 판단 근거를 적용합니다. 허니팟은 꿀단지처럼 공격자를 유혹하여 침입 수법을 분석하기 위해 만든 가짜 시스템입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 Apache는 웹 서버 소프트웨어입니다."
+        ],
+        "exam_traps": [
+          "1번 Apache는 웹 서버 소프트웨어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '허니팟: 유인용 가짜 시스템'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 벌을 잡으려고 꿀단지(Honeypot)를 놓아두는 것과 같다."
+        ],
+        "detailed_summary": "공격자를 유인하는 보안 시스템인 허니팟에 대한 문제입니다. 공격자를 유인하여 정보를 수집하기 위해 의도적으로 취약하게 만든 시스템을 허니팟(Honeypot)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 다음 설명에 해당하는 시스템은? - 1990년대 David Clock이 처음 제안하였다. - 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. - 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. - 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다. 정답입니다. 이 선택지는 실제 정답인 '3번 Honeypot'와 일치합니다. 허니팟은 꿀단지처럼 공격자를 유혹하여 침입 수법을 분석하기 위해 만든 가짜 시스템입니다. 시험 포인트는 1번 Apache는 웹 서버 소프트웨어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "허니팟",
+        "Honeypot",
+        "침입 탐지",
+        "보안 유인 시스템"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2970adc08ede42c9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          25
+        ],
+        "page_span": {
+          "start_page": 25,
+          "end_page": 25
+        },
+        "source_explanation": "SSH의 기본 포트 번호는 22번입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "94. SSH(Secure Shell)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SSH의 기본 네트워크 포트는 220번을 사용한다."
+          },
+          {
+            "label": "2",
+            "text": "전송되는 데이터는 암호화 된다."
+          },
+          {
+            "label": "3",
+            "text": "키를 통한 인증은 클라이언트의 공개키를 서버에 등록해야 한다."
+          },
+          {
+            "label": "4",
+            "text": "서로 연결되어 있는 컴퓨터 간 원격 명령 실행이나 쉘 서비스 등을 수행한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SSH의 기본 네트워크 포트는 220번을 사용한다."
+        ],
+        "answer_text": "SSH의 기본 네트워크 포트는 220번을 사용한다."
+      },
+      "explanation": {
+        "source_text": "SSH의 기본 포트 번호는 22번입니다.",
+        "summary": "보안 원격 접속 프로토콜인 SSH의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "SSH의 표준 포트는 22번입니다. 220번이라는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "2번 데이터 암호화는 SSH의 핵심 기능입니다.",
+          "3번 공개키 인증 방식에 대한 올바른 설명입니다.",
+          "4번 SSH의 주된 용도입니다."
+        ],
+        "key_concepts": [
+          "SSH: 암호화된 원격 로그인 프로토콜"
+        ],
+        "memory_cues": [
+          "SSH 포트는 22! (쌍둥이 숫자 22로 외우세요)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SSH의 기본 네트워크 포트는 220번을 사용한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SSH의 기본 네트워크 포트는 220번을 사용한다.'와 일치합니다. SSH의 표준 포트는 22번입니다. 220번이라는 설명은 틀렸습니다."
+          },
+          {
+            "label": "2",
+            "text": "전송되는 데이터는 암호화 된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SSH의 기본 네트워크 포트는 220번을 사용한다.'인데 이 선택지는 '전송되는 데이터는 암호화 된다.'이므로 일치하지 않습니다. 2번 데이터 암호화는 SSH의 핵심 기능입니다. 3번 공개키 인증 방식에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "키를 통한 인증은 클라이언트의 공개키를 서버에 등록해야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SSH의 기본 네트워크 포트는 220번을 사용한다.'인데 이 선택지는 '키를 통한 인증은 클라이언트의 공개키를 서버에 등록해야 한다.'이므로 일치하지 않습니다. 2번 데이터 암호화는 SSH의 핵심 기능입니다. 3번 공개키 인증 방식에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "서로 연결되어 있는 컴퓨터 간 원격 명령 실행이나 쉘 서비스 등을 수행한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SSH의 기본 네트워크 포트는 220번을 사용한다.'인데 이 선택지는 '서로 연결되어 있는 컴퓨터 간 원격 명령 실행이나 쉘 서비스 등을 수행한다.'이므로 일치하지 않습니다. 2번 데이터 암호화는 SSH의 핵심 기능입니다. 3번 공개키 인증 방식에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 94. SSH(Secure Shell)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. SSH: 암호화된 원격 로그인 프로토콜",
+          "정답 판단 근거를 적용합니다. SSH의 표준 포트는 22번입니다. 220번이라는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번 데이터 암호화는 SSH의 핵심 기능입니다."
+        ],
+        "exam_traps": [
+          "2번 데이터 암호화는 SSH의 핵심 기능입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SSH: 암호화된 원격 로그인 프로토콜'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SSH 포트는 22! (쌍둥이 숫자 22로 외우세요)"
+        ],
+        "detailed_summary": "보안 원격 접속 프로토콜인 SSH의 특징을 묻는 문제입니다. SSH의 기본 포트 번호는 22번입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 94. SSH(Secure Shell)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 SSH의 기본 네트워크 포트는 220번을 사용한다.'와 일치합니다. SSH의 표준 포트는 22번입니다. 220번이라는 설명은 틀렸습니다. 시험 포인트는 2번 데이터 암호화는 SSH의 핵심 기능입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SSH",
+        "Secure Shell",
+        "포트 22",
+        "원격 접속"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_acb34d8b6c890e1e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          25
+        ],
+        "page_span": {
+          "start_page": 25,
+          "end_page": 25
+        },
+        "source_explanation": "tcp wrapper는 호스트 기반의 네트워크 접근 제어 도구로, 외부 접속의 인가 여부를 확인합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "96. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "tcp wrapper"
+          },
+          {
+            "label": "2",
+            "text": "trace checker"
+          },
+          {
+            "label": "3",
+            "text": "token finder"
+          },
+          {
+            "label": "4",
+            "text": "change detector"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "tcp wrapper"
+        ],
+        "answer_text": "tcp wrapper"
+      },
+      "explanation": {
+        "source_text": "tcp wrapper는 호스트 기반의 네트워크 접근 제어 도구로, 외부 접속의 인가 여부를 확인합니다.",
+        "summary": "네트워크 서비스에 대한 접근 제어 유틸리티를 찾는 문제입니다.",
+        "why_correct": [
+          "tcp wrapper는 외부에서 들어오는 연결 요청을 가로채서 허용된 IP인지 확인한 후 연결해주는 보안 도구입니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+        ],
+        "key_concepts": [
+          "tcp wrapper: /etc/hosts.allow 및 /etc/hosts.deny 파일을 사용"
+        ],
+        "memory_cues": [
+          "TCP 연결을 포장지(Wrapper)처럼 감싸서 검사한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "tcp wrapper",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 tcp wrapper'와 일치합니다. tcp wrapper는 외부에서 들어오는 연결 요청을 가로채서 허용된 IP인지 확인한 후 연결해주는 보안 도구입니다."
+          },
+          {
+            "label": "2",
+            "text": "trace checker",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'trace checker'이므로 일치하지 않습니다. 2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "token finder",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'token finder'이므로 일치하지 않습니다. 2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "change detector",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'change detector'이므로 일치하지 않습니다. 2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+          "핵심 개념을 떠올립니다. tcp wrapper: /etc/hosts.allow 및 /etc/hosts.deny 파일을 사용",
+          "정답 판단 근거를 적용합니다. tcp wrapper는 외부에서 들어오는 연결 요청을 가로채서 허용된 IP인지 확인한 후 연결해주는 보안 도구입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'tcp wrapper: /etc/hosts.allow 및 /etc/hosts.deny 파일을 사용'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TCP 연결을 포장지(Wrapper)처럼 감싸서 검사한다."
+        ],
+        "detailed_summary": "네트워크 서비스에 대한 접근 제어 유틸리티를 찾는 문제입니다. tcp wrapper는 호스트 기반의 네트워크 접근 제어 도구로, 외부 접속의 인가 여부를 확인합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 96. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는? 정답입니다. 이 선택지는 실제 정답인 '1번 tcp wrapper'와 일치합니다. tcp wrapper는 외부에서 들어오는 연결 요청을 가로채서 허용된 IP인지 확인한 후 연결해주는 보안 도구입니다. 시험 포인트는 2, 3, 4번은 일반적인 보안 접근 제어 유틸리티 명칭이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "tcp wrapper",
+        "접근 제어",
+        "네트워크 보안",
+        "호스트 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ad5115d005961ff8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          26
+        ],
+        "page_span": {
+          "start_page": 26,
+          "end_page": 26
+        },
+        "source_explanation": "wtmp 파일은 사용자의 로그인/로그아웃 정보와 시스템의 부팅/종료 기록을 담고 있는 리눅스의 대표적인 로그 파일입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "100. 다음 내용이 설명하는 로그 파일은?\n- 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록\n- 시스템의 종료/시작 시간 기록",
+        "choices": [
+          {
+            "label": "1",
+            "text": "tapping"
+          },
+          {
+            "label": "2",
+            "text": "xtslog"
+          },
+          {
+            "label": "3",
+            "text": "linuxer"
+          },
+          {
+            "label": "4",
+            "text": "wtmp"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "wtmp"
+        ],
+        "answer_text": "wtmp"
+      },
+      "explanation": {
+        "source_text": "wtmp 파일은 사용자의 로그인/로그아웃 정보와 시스템의 부팅/종료 기록을 담고 있는 리눅스의 대표적인 로그 파일입니다.",
+        "summary": "리눅스 시스템 로그 파일의 종류와 역할을 묻는 문제입니다.",
+        "why_correct": [
+          "wtmp는 전체 로그인/로그아웃 이력과 시스템 가동 시간을 기록하는 바이너리 로그 파일입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+        ],
+        "key_concepts": [
+          "wtmp: 전체 로그인 기록 (last 명령어로 확인)",
+          "utmp: 현재 로그인 사용자 정보",
+          "btmp: 로그인 실패 기록"
+        ],
+        "memory_cues": [
+          "wtmp = Who(누가) + Time(언제) + Map(기록)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "tapping",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'tapping'이므로 일치하지 않습니다. 1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "xtslog",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'xtslog'이므로 일치하지 않습니다. 1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "linuxer",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'linuxer'이므로 일치하지 않습니다. 1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "wtmp",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 wtmp'와 일치합니다. wtmp는 전체 로그인/로그아웃 이력과 시스템 가동 시간을 기록하는 바이너리 로그 파일입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 다음 내용이 설명하는 로그 파일은? - 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록 - 시스템의 종료/시작 시간 기록",
+          "핵심 개념을 떠올립니다. wtmp: 전체 로그인 기록 (last 명령어로 확인), utmp: 현재 로그인 사용자 정보, btmp: 로그인 실패 기록",
+          "정답 판단 근거를 적용합니다. wtmp는 전체 로그인/로그아웃 이력과 시스템 가동 시간을 기록하는 바이너리 로그 파일입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'wtmp: 전체 로그인 기록 (last 명령어로 확인)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'utmp: 현재 로그인 사용자 정보'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'btmp: 로그인 실패 기록'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. wtmp = Who(누가) + Time(언제) + Map(기록)"
+        ],
+        "detailed_summary": "리눅스 시스템 로그 파일의 종류와 역할을 묻는 문제입니다. wtmp 파일은 사용자의 로그인/로그아웃 정보와 시스템의 부팅/종료 기록을 담고 있는 리눅스의 대표적인 로그 파일입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 다음 내용이 설명하는 로그 파일은? - 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록 - 시스템의 종료/시작 시간 기록 정답입니다. 이 선택지는 실제 정답인 '4번 wtmp'와 일치합니다. wtmp는 전체 로그인/로그아웃 이력과 시스템 가동 시간을 기록하는 바이너리 로그 파일입니다. 시험 포인트는 1, 2, 3번은 리눅스의 표준 로그 파일 명칭이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "wtmp",
+        "리눅스 로그",
+        "로그인 기록",
+        "시스템 로그"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c0eb9df209142e5c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 46
+        },
+        "source_explanation": "문제에 제시된 P(S), V(S) 연산을 사용하는 임계 구역 접근 제어 기법은 세마포어(Semaphore)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_301"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음과 같은 형태로 임계 구역의 접근을 제어하는 상호배제 기법은?\nP(S) : while S <= 0 do skip;\nS := S - 1;\nV(S) : S := S + 1;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Dekker Algorithm"
+          },
+          {
+            "label": "2",
+            "text": "Lamport Algorithm"
+          },
+          {
+            "label": "3",
+            "text": "Peterson Algorithm"
+          },
+          {
+            "label": "4",
+            "text": "Semaphore"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Semaphore"
+        ],
+        "answer_text": "Semaphore"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 P(S), V(S) 연산을 사용하는 임계 구역 접근 제어 기법은 세마포어(Semaphore)입니다.",
+        "summary": "운영체제의 상호배제 기법 중 세마포어의 정의와 연산을 묻는 문제입니다.",
+        "why_correct": [
+          "세마포어는 정수 변수 S와 P(Wait), V(Signal) 연산을 통해 공유 자원에 대한 접근을 제어하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+        ],
+        "key_concepts": [
+          "세마포어(Semaphore)",
+          "P 연산 (Wait)",
+          "V 연산 (Signal)"
+        ],
+        "memory_cues": [
+          "P-V 연산 = 세마포어"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Dekker Algorithm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Semaphore'인데 이 선택지는 'Dekker Algorithm'이므로 일치하지 않습니다. 데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "Lamport Algorithm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Semaphore'인데 이 선택지는 'Lamport Algorithm'이므로 일치하지 않습니다. 데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "Peterson Algorithm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Semaphore'인데 이 선택지는 'Peterson Algorithm'이므로 일치하지 않습니다. 데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "Semaphore",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Semaphore'와 일치합니다. 세마포어는 정수 변수 S와 P(Wait), V(Signal) 연산을 통해 공유 자원에 대한 접근을 제어하는 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음과 같은 형태로 임계 구역의 접근을 제어하는 상호배제 기법은? P(S) : while S <= 0 do skip; S := S - 1; V(S) : S := S + 1;",
+          "핵심 개념을 떠올립니다. 세마포어(Semaphore), P 연산 (Wait), V 연산 (Signal)",
+          "정답 판단 근거를 적용합니다. 세마포어는 정수 변수 S와 P(Wait), V(Signal) 연산을 통해 공유 자원에 대한 접근을 제어하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+        ],
+        "exam_traps": [
+          "데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '세마포어(Semaphore)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'P 연산 (Wait)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'V 연산 (Signal)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. P-V 연산 = 세마포어"
+        ],
+        "detailed_summary": "운영체제의 상호배제 기법 중 세마포어의 정의와 연산을 묻는 문제입니다. 문제에 제시된 P(S), V(S) 연산을 사용하는 임계 구역 접근 제어 기법은 세마포어(Semaphore)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음과 같은 형태로 임계 구역의 접근을 제어하는 상호배제 기법은? P(S) : while S <= 0 do skip; S := S - 1; V(S) : S := S + 1; 정답입니다. 이 선택지는 실제 정답인 '4번 Semaphore'와 일치합니다. 세마포어는 정수 변수 S와 P(Wait), V(Signal) 연산을 통해 공유 자원에 대한 접근을 제어하는 기법입니다. 시험 포인트는 데커, 램포트, 피터슨 알고리즘은 소프트웨어적인 상호배제 해결 방법이지만, P/V 연산 구조를 직접적으로 사용하지는 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Semaphore",
+        "Mutual Exclusion",
+        "Critical Section",
+        "P/V operation"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f34eeaf3d6f73574",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          41
+        ],
+        "page_span": {
+          "start_page": 41,
+          "end_page": 41
+        },
+        "source_explanation": "컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는 백신(Vaccine)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_301"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "봇넷(Botnet)"
+          },
+          {
+            "label": "2",
+            "text": "백신(Vaccine)"
+          },
+          {
+            "label": "3",
+            "text": "애드웨어(Adware)"
+          },
+          {
+            "label": "4",
+            "text": "DPI(Deep Packet Inspection)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "백신(Vaccine)"
+        ],
+        "answer_text": "백신(Vaccine)"
+      },
+      "explanation": {
+        "source_text": "컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는 백신(Vaccine)입니다.",
+        "summary": "바이러스 치료 소프트웨어인 백신의 정의를 묻는 기초적인 문제입니다.",
+        "why_correct": [
+          "백신은 악성 코드를 탐지, 차단 및 제거하여 시스템을 보호하는 소프트웨어입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 감염된 컴퓨터들의 네트워크",
+          "3번: 광고를 보여주는 소프트웨어",
+          "4번: 패킷 내부를 정밀 분석하는 기술"
+        ],
+        "key_concepts": [
+          "백신 소프트웨어",
+          "바이러스 치료"
+        ],
+        "memory_cues": [
+          "바이러스엔 백신"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "봇넷(Botnet)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 백신(Vaccine)'인데 이 선택지는 '봇넷(Botnet)'이므로 일치하지 않습니다. 1번: 감염된 컴퓨터들의 네트워크 3번: 광고를 보여주는 소프트웨어"
+          },
+          {
+            "label": "2",
+            "text": "백신(Vaccine)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 백신(Vaccine)'와 일치합니다. 백신은 악성 코드를 탐지, 차단 및 제거하여 시스템을 보호하는 소프트웨어입니다."
+          },
+          {
+            "label": "3",
+            "text": "애드웨어(Adware)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 백신(Vaccine)'인데 이 선택지는 '애드웨어(Adware)'이므로 일치하지 않습니다. 1번: 감염된 컴퓨터들의 네트워크 3번: 광고를 보여주는 소프트웨어"
+          },
+          {
+            "label": "4",
+            "text": "DPI(Deep Packet Inspection)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 백신(Vaccine)'인데 이 선택지는 'DPI(Deep Packet Inspection)'이므로 일치하지 않습니다. 1번: 감염된 컴퓨터들의 네트워크 3번: 광고를 보여주는 소프트웨어"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는?",
+          "핵심 개념을 떠올립니다. 백신 소프트웨어, 바이러스 치료",
+          "정답 판단 근거를 적용합니다. 백신은 악성 코드를 탐지, 차단 및 제거하여 시스템을 보호하는 소프트웨어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 감염된 컴퓨터들의 네트워크"
+        ],
+        "exam_traps": [
+          "1번: 감염된 컴퓨터들의 네트워크"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '백신 소프트웨어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '바이러스 치료'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 바이러스엔 백신"
+        ],
+        "detailed_summary": "바이러스 치료 소프트웨어인 백신의 정의를 묻는 기초적인 문제입니다. 컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는 백신(Vaccine)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 컴퓨터 바이러스 프로그램을 찾아내고 손상된 파일을 치료하는 소프트웨어는? 정답입니다. 이 선택지는 실제 정답인 '2번 백신(Vaccine)'와 일치합니다. 백신은 악성 코드를 탐지, 차단 및 제거하여 시스템을 보호하는 소프트웨어입니다. 시험 포인트는 1번: 감염된 컴퓨터들의 네트워크"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "Vaccine",
+        "Antivirus",
+        "Malware",
+        "Security Software"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6feef3acaa2949be",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          61
+        ],
+        "page_span": {
+          "start_page": 61,
+          "end_page": 61
+        },
+        "source_explanation": "전문가의 조언 | 클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_172"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "98. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+        ],
+        "answer_text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다.",
+        "summary": "HSM(하드웨어 보안 모듈)의 물리적 보안 특성을 이해하는 문제입니다.",
+        "why_correct": [
+          "HSM은 이름 그대로 'Hardware' Security Module입니다. 소프트웨어가 아닌 전용 하드웨어 장치에서 키를 관리하므로 보안성이 매우 높습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "HSM",
+          "하드웨어 보안",
+          "키 관리"
+        ],
+        "memory_cues": [
+          "HSM = Hardware = 물리적 보안"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.'이므로 일치하지 않습니다. 1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.'이므로 일치하지 않습니다. 1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.'이므로 일치하지 않습니다. 1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'와 일치합니다. HSM은 이름 그대로 'Hardware' Security Module입니다. 소프트웨어가 아닌 전용 하드웨어 장치에서 키를 관리하므로 보안성이 매우 높습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. HSM, 하드웨어 보안, 키 관리",
+          "정답 판단 근거를 적용합니다. HSM은 이름 그대로 'Hardware' Security Module입니다. 소프트웨어가 아닌 전용 하드웨어 장치에서 키를 관리하므로 보안성이 매우 높습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HSM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '하드웨어 보안'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '키 관리'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HSM = Hardware = 물리적 보안"
+        ],
+        "detailed_summary": "HSM(하드웨어 보안 모듈)의 물리적 보안 특성을 이해하는 문제입니다. 전문가의 조언 | 클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 98. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'와 일치합니다. HSM은 이름 그대로 'Hardware' Security Module입니다. 소프트웨어가 아닌 전용 하드웨어 장치에서 키를 관리하므로 보안성이 매우 높습니다. 시험 포인트는 1, 2, 3번은 클라우드 환경에서 HSM이 제공하는 편의성과 보안 기능에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HSM",
+        "클라우드 HSM",
+        "암호화 키",
+        "하드웨어 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_25ad94e140952e94",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          77
+        ],
+        "page_span": {
+          "start_page": 77,
+          "end_page": 77
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리"
+        ],
+        "chapter_label": "5과목 정보시스템 구축 관리",
+        "chapter_key": "5과목 정보시스템 구축 관리",
+        "chapter_id": "chapter_145"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "83. 정보 시스템과 관련한 다음 설명에 해당하는 것은?\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다.\n• 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다.\n• 여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "고가용성 솔루션(HACMP)"
+          },
+          {
+            "label": "2",
+            "text": "점대점 연결 방식(Point-to-Point Mode)"
+          },
+          {
+            "label": "3",
+            "text": "스턱스넷(Stuxnet)"
+          },
+          {
+            "label": "4",
+            "text": "루팅(Rooting)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "고가용성 솔루션(HACMP)"
+        ],
+        "answer_text": "고가용성 솔루션(HACMP)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다.",
+        "summary": "서버의 가용성을 높이기 위한 클러스터링 솔루션에 대한 설명입니다.",
+        "why_correct": [
+          "HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로, 서버 장애 시 다른 서버가 업무를 즉시 승계하도록 합니다."
+        ],
+        "why_others_wrong": [
+          "점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+        ],
+        "key_concepts": [
+          "HACMP",
+          "High Availability"
+        ],
+        "memory_cues": [
+          "HACMP = 고가용성 클러스터"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "고가용성 솔루션(HACMP)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 고가용성 솔루션(HACMP)'와 일치합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로, 서버 장애 시 다른 서버가 업무를 즉시 승계하도록 합니다."
+          },
+          {
+            "label": "2",
+            "text": "점대점 연결 방식(Point-to-Point Mode)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '점대점 연결 방식(Point-to-Point Mode)'이므로 일치하지 않습니다. 점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+          },
+          {
+            "label": "3",
+            "text": "스턱스넷(Stuxnet)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '스턱스넷(Stuxnet)'이므로 일치하지 않습니다. 점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+          },
+          {
+            "label": "4",
+            "text": "루팅(Rooting)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '루팅(Rooting)'이므로 일치하지 않습니다. 점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보 시스템과 관련한 다음 설명에 해당하는 것은? • 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다. • 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. • 여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다.",
+          "핵심 개념을 떠올립니다. HACMP, High Availability",
+          "정답 판단 근거를 적용합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로, 서버 장애 시 다른 서버가 업무를 즉시 승계하도록 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+        ],
+        "exam_traps": [
+          "점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HACMP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'High Availability'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HACMP = 고가용성 클러스터"
+        ],
+        "detailed_summary": "서버의 가용성을 높이기 위한 클러스터링 솔루션에 대한 설명입니다. 전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 83. 정보 시스템과 관련한 다음 설명에 해당하는 것은? • 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다. • 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. • 여러 가지 방식으로 구현되며 2개의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다. 정답입니다. 이 선택지는 실제 정답인 '1번 고가용성 솔루션(HACMP)'와 일치합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로, 서버 장애 시 다른 서버가 업무를 즉시 승계하도록 합니다. 시험 포인트는 점대점은 통신 방식, 스턱스넷은 악성코드, 루팅은 권한 획득 행위로 지문의 설명과 무관합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "HACMP",
+        "고가용성",
+        "클러스터링",
+        "서버 이중화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_11f454b4d26cf59b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          98
+        ],
+        "page_span": {
+          "start_page": 98,
+          "end_page": 98
+        },
+        "source_explanation": "직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 접근 정책은 RBAC(Role Based Access Control)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "95. 접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "RBAC"
+          },
+          {
+            "label": "2",
+            "text": "DAC"
+          },
+          {
+            "label": "3",
+            "text": "MAC"
+          },
+          {
+            "label": "4",
+            "text": "QAC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "RBAC"
+        ],
+        "answer_text": "RBAC"
+      },
+      "explanation": {
+        "source_text": "직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 접근 정책은 RBAC(Role Based Access Control)입니다.",
+        "summary": "사용자의 역할에 기반한 접근 제어 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "RBAC은 사용자가 아닌 '역할(Role)'에 권한을 부여하고, 사용자에게 해당 역할을 할당하는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "DAC는 소유자 마음대로 권한을 주는 방식입니다.",
+          "MAC은 관리자가 보안 등급에 따라 강제로 제어하는 방식입니다."
+        ],
+        "key_concepts": [
+          "DAC",
+          "MAC",
+          "RBAC"
+        ],
+        "memory_cues": [
+          "Role(역할) = RBAC"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "RBAC",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 RBAC'와 일치합니다. RBAC은 사용자가 아닌 '역할(Role)'에 권한을 부여하고, 사용자에게 해당 역할을 할당하는 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "DAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'DAC'이므로 일치하지 않습니다. DAC는 소유자 마음대로 권한을 주는 방식입니다. MAC은 관리자가 보안 등급에 따라 강제로 제어하는 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "MAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'MAC'이므로 일치하지 않습니다. DAC는 소유자 마음대로 권한을 주는 방식입니다. MAC은 관리자가 보안 등급에 따라 강제로 제어하는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "QAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 RBAC'인데 이 선택지는 'QAC'이므로 일치하지 않습니다. DAC는 소유자 마음대로 권한을 주는 방식입니다. MAC은 관리자가 보안 등급에 따라 강제로 제어하는 방식입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 95. 접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은?",
+          "핵심 개념을 떠올립니다. DAC, MAC, RBAC",
+          "정답 판단 근거를 적용합니다. RBAC은 사용자가 아닌 '역할(Role)'에 권한을 부여하고, 사용자에게 해당 역할을 할당하는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. DAC는 소유자 마음대로 권한을 주는 방식입니다."
+        ],
+        "exam_traps": [
+          "DAC는 소유자 마음대로 권한을 주는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MAC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RBAC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Role(역할) = RBAC"
+        ],
+        "detailed_summary": "사용자의 역할에 기반한 접근 제어 방식을 묻는 문제입니다. 직무나 직책과 같이 개인의 역할에 따라 접근 권한을 부여하는 접근 정책은 RBAC(Role Based Access Control)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 95. 접근 통제 방법 중 조직 내에서 직무, 직책 등 개인의 역할에 따라 결정하여 부여하는 접근 정책은? 정답입니다. 이 선택지는 실제 정답인 '1번 RBAC'와 일치합니다. RBAC은 사용자가 아닌 '역할(Role)'에 권한을 부여하고, 사용자에게 해당 역할을 할당하는 방식입니다. 시험 포인트는 DAC는 소유자 마음대로 권한을 주는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "RBAC",
+        "접근 통제",
+        "역할 기반",
+        "보안 정책"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f95cd103c12492d8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          98
+        ],
+        "page_span": {
+          "start_page": 98,
+          "end_page": 98
+        },
+        "source_explanation": "문제의 지문에 제시된 내용은 허니팟(Honeypot)의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "94. 다음 설명에 해당하는 시스템은?\n- 1990년대 David Clock이 처음 제안하였다.\n- 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다.\n- 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다.\n- 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Apache"
+          },
+          {
+            "label": "2",
+            "text": "Hadoop"
+          },
+          {
+            "label": "3",
+            "text": "Honeypot"
+          },
+          {
+            "label": "4",
+            "text": "MapReduce"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Honeypot"
+        ],
+        "answer_text": "Honeypot"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에 제시된 내용은 허니팟(Honeypot)의 특징입니다.",
+        "summary": "해커를 유인하여 정보를 수집하는 보안 시스템을 묻는 문제입니다.",
+        "why_correct": [
+          "허니팟은 '꿀단지'라는 뜻으로, 해커를 유인하기 위해 일부러 취약하게 만든 시스템입니다."
+        ],
+        "why_others_wrong": [
+          "Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+        ],
+        "key_concepts": [
+          "Honeypot",
+          "Intrusion Detection"
+        ],
+        "memory_cues": [
+          "해커를 꼬시는 꿀단지 = 허니팟"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Apache",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'Apache'이므로 일치하지 않습니다. Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+          },
+          {
+            "label": "2",
+            "text": "Hadoop",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'Hadoop'이므로 일치하지 않습니다. Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+          },
+          {
+            "label": "3",
+            "text": "Honeypot",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Honeypot'와 일치합니다. 허니팟은 '꿀단지'라는 뜻으로, 해커를 유인하기 위해 일부러 취약하게 만든 시스템입니다."
+          },
+          {
+            "label": "4",
+            "text": "MapReduce",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Honeypot'인데 이 선택지는 'MapReduce'이므로 일치하지 않습니다. Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 94. 다음 설명에 해당하는 시스템은? - 1990년대 David Clock이 처음 제안하였다. - 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. - 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. - 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다.",
+          "핵심 개념을 떠올립니다. Honeypot, Intrusion Detection",
+          "정답 판단 근거를 적용합니다. 허니팟은 '꿀단지'라는 뜻으로, 해커를 유인하기 위해 일부러 취약하게 만든 시스템입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+        ],
+        "exam_traps": [
+          "Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Honeypot'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Intrusion Detection'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 해커를 꼬시는 꿀단지 = 허니팟"
+        ],
+        "detailed_summary": "해커를 유인하여 정보를 수집하는 보안 시스템을 묻는 문제입니다. 문제의 지문에 제시된 내용은 허니팟(Honeypot)의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 94. 다음 설명에 해당하는 시스템은? - 1990년대 David Clock이 처음 제안하였다. - 비정상적인 접근의 탐지를 위해 의도적으로 설치해 둔 시스템이다. - 침입자를 속여 실제 공격당하는 것처럼 보여줌으로써 크래커를 추적 및 공격기법의 정보를 수집하는 역할을 한다. - 쉽게 공격자에게 노출되어야 하며 쉽게 공격이 가능한 것처럼 취약해 보여야 한다. 정답입니다. 이 선택지는 실제 정답인 '3번 Honeypot'와 일치합니다. 허니팟은 '꿀단지'라는 뜻으로, 해커를 유인하기 위해 일부러 취약하게 만든 시스템입니다. 시험 포인트는 Apache는 웹 서버, Hadoop은 분산 처리 프레임워크, MapReduce는 데이터 처리 모델입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Honeypot",
+        "허니팟",
+        "침입 탐지",
+        "보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_48fc0c9dd3c76f0f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          118
+        ],
+        "page_span": {
+          "start_page": 118,
+          "end_page": 118
+        },
+        "source_explanation": "Tripwire는 파일의 무결성을 검사하여 변경 여부를 탐지하는 도구로, 백도어나 설정 파일 변경을 확인하는 데 사용됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_301"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경했을 때 분석하는 도구는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "tripwire"
+          },
+          {
+            "label": "2",
+            "text": "tcpdump"
+          },
+          {
+            "label": "3",
+            "text": "cron"
+          },
+          {
+            "label": "4",
+            "text": "netcat"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "tripwire"
+        ],
+        "answer_text": "tripwire"
+      },
+      "explanation": {
+        "source_text": "Tripwire는 파일의 무결성을 검사하여 변경 여부를 탐지하는 도구로, 백도어나 설정 파일 변경을 확인하는 데 사용됩니다.",
+        "summary": "시스템 파일의 변경 여부를 감시하는 무결성 검사 도구를 묻는 문제입니다.",
+        "why_correct": [
+          "Tripwire는 데이터베이스에 저장된 파일의 해시값과 현재 파일의 해시값을 비교하여 변경을 탐지합니다."
+        ],
+        "why_others_wrong": [
+          "tcpdump는 네트워크 패킷 스니핑 도구입니다.",
+          "cron은 주기적인 작업을 실행하는 스케줄러입니다.",
+          "netcat은 네트워크 연결을 읽고 쓰는 유틸리티입니다."
+        ],
+        "key_concepts": [
+          "Tripwire",
+          "Integrity Checking"
+        ],
+        "memory_cues": [
+          "Tripwire = 함정(변경되면 걸림)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "tripwire",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 tripwire'와 일치합니다. Tripwire는 데이터베이스에 저장된 파일의 해시값과 현재 파일의 해시값을 비교하여 변경을 탐지합니다."
+          },
+          {
+            "label": "2",
+            "text": "tcpdump",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tripwire'인데 이 선택지는 'tcpdump'이므로 일치하지 않습니다. tcpdump는 네트워크 패킷 스니핑 도구입니다. cron은 주기적인 작업을 실행하는 스케줄러입니다."
+          },
+          {
+            "label": "3",
+            "text": "cron",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tripwire'인데 이 선택지는 'cron'이므로 일치하지 않습니다. tcpdump는 네트워크 패킷 스니핑 도구입니다. cron은 주기적인 작업을 실행하는 스케줄러입니다."
+          },
+          {
+            "label": "4",
+            "text": "netcat",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tripwire'인데 이 선택지는 'netcat'이므로 일치하지 않습니다. tcpdump는 네트워크 패킷 스니핑 도구입니다. cron은 주기적인 작업을 실행하는 스케줄러입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경했을 때 분석하는 도구는?",
+          "핵심 개념을 떠올립니다. Tripwire, Integrity Checking",
+          "정답 판단 근거를 적용합니다. Tripwire는 데이터베이스에 저장된 파일의 해시값과 현재 파일의 해시값을 비교하여 변경을 탐지합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. tcpdump는 네트워크 패킷 스니핑 도구입니다."
+        ],
+        "exam_traps": [
+          "tcpdump는 네트워크 패킷 스니핑 도구입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Tripwire'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Integrity Checking'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Tripwire = 함정(변경되면 걸림)"
+        ],
+        "detailed_summary": "시스템 파일의 변경 여부를 감시하는 무결성 검사 도구를 묻는 문제입니다. Tripwire는 파일의 무결성을 검사하여 변경 여부를 탐지하는 도구로, 백도어나 설정 파일 변경을 확인하는 데 사용됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경했을 때 분석하는 도구는? 정답입니다. 이 선택지는 실제 정답인 '1번 tripwire'와 일치합니다. Tripwire는 데이터베이스에 저장된 파일의 해시값과 현재 파일의 해시값을 비교하여 변경을 탐지합니다. 시험 포인트는 tcpdump는 네트워크 패킷 스니핑 도구입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "tripwire",
+        "무결성 검사",
+        "백도어 탐지",
+        "보안 도구"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4a67b74965c60751",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          118
+        ],
+        "page_span": {
+          "start_page": 118,
+          "end_page": 118
+        },
+        "source_explanation": "DPI(Deep Packet Inspection)는 패킷의 헤더뿐만 아니라 데이터 부분(Payload)까지 상세히 분석하는 기술입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_301"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "PLCP(Packet Level Control Processor)"
+          },
+          {
+            "label": "2",
+            "text": "Traffic Distributor"
+          },
+          {
+            "label": "3",
+            "text": "Packet Tree"
+          },
+          {
+            "label": "4",
+            "text": "DPI(Deep Packet Inspection)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "DPI(Deep Packet Inspection)"
+        ],
+        "answer_text": "DPI(Deep Packet Inspection)"
+      },
+      "explanation": {
+        "source_text": "DPI(Deep Packet Inspection)는 패킷의 헤더뿐만 아니라 데이터 부분(Payload)까지 상세히 분석하는 기술입니다.",
+        "summary": "패킷의 내부 콘텐츠까지 깊게 분석하는 보안 기술을 묻는 문제입니다.",
+        "why_correct": [
+          "DPI는 패킷의 페이로드까지 검사하여 애플리케이션 계층의 정보를 파악하고 제어할 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다.",
+          "Traffic Distributor는 트래픽 분산 장치입니다.",
+          "Packet Tree는 일반적인 보안 분석 기술 용어가 아닙니다."
+        ],
+        "key_concepts": [
+          "DPI",
+          "Packet Analysis"
+        ],
+        "memory_cues": [
+          "Deep = 깊게(데이터까지) 분석"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "PLCP(Packet Level Control Processor)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DPI(Deep Packet Inspection)'인데 이 선택지는 'PLCP(Packet Level Control Processor)'이므로 일치하지 않습니다. PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다. Traffic Distributor는 트래픽 분산 장치입니다."
+          },
+          {
+            "label": "2",
+            "text": "Traffic Distributor",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DPI(Deep Packet Inspection)'인데 이 선택지는 'Traffic Distributor'이므로 일치하지 않습니다. PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다. Traffic Distributor는 트래픽 분산 장치입니다."
+          },
+          {
+            "label": "3",
+            "text": "Packet Tree",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 DPI(Deep Packet Inspection)'인데 이 선택지는 'Packet Tree'이므로 일치하지 않습니다. PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다. Traffic Distributor는 트래픽 분산 장치입니다."
+          },
+          {
+            "label": "4",
+            "text": "DPI(Deep Packet Inspection)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 DPI(Deep Packet Inspection)'와 일치합니다. DPI는 패킷의 페이로드까지 검사하여 애플리케이션 계층의 정보를 파악하고 제어할 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술은?",
+          "핵심 개념을 떠올립니다. DPI, Packet Analysis",
+          "정답 판단 근거를 적용합니다. DPI는 패킷의 페이로드까지 검사하여 애플리케이션 계층의 정보를 파악하고 제어할 수 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다."
+        ],
+        "exam_traps": [
+          "PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DPI'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Packet Analysis'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Deep = 깊게(데이터까지) 분석"
+        ],
+        "detailed_summary": "패킷의 내부 콘텐츠까지 깊게 분석하는 보안 기술을 묻는 문제입니다. DPI(Deep Packet Inspection)는 패킷의 헤더뿐만 아니라 데이터 부분(Payload)까지 상세히 분석하는 기술입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. OSI 7 Layer 전 계층의 프로토콜과 패킷 내부의 콘텐츠를 파악하여 침입 시도, 해킹 등을 탐지하고 트래픽을 조정하기 위한 패킷 분석 기술은? 정답입니다. 이 선택지는 실제 정답인 '4번 DPI(Deep Packet Inspection)'와 일치합니다. DPI는 패킷의 페이로드까지 검사하여 애플리케이션 계층의 정보를 파악하고 제어할 수 있습니다. 시험 포인트는 PLCP는 패킷 교환 서브시스템에서 경로 제어 등을 담당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DPI",
+        "Deep Packet Inspection",
+        "패킷 분석",
+        "네트워크 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5af6b383f12bb2ef",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0136_p0141"
+        ],
+        "source_pages": [
+          136,
+          137,
+          138,
+          139,
+          140,
+          141
+        ],
+        "page_span": {
+          "start_page": 136,
+          "end_page": 141
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "140섹션 1필드"
+        ],
+        "chapter_label": "140섹션 1필드",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 140섹션 1필드",
+        "chapter_id": "chapter_152"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 112.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "정보 시스템과 관련한 다음 설명에 해당하는 것은?\n• 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다.\n• 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다.\n• 여러 가지 방식으로 구현되며 2대의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "고가용성 솔루션(HACMP)"
+          },
+          {
+            "label": "2",
+            "text": "점대점 연결 방식(Point-to-Point Mode)"
+          },
+          {
+            "label": "3",
+            "text": "스턱스넷(Stuxnet)"
+          },
+          {
+            "label": "4",
+            "text": "루팅(Rooting)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "고가용성 솔루션(HACMP)"
+        ],
+        "answer_text": "고가용성 솔루션(HACMP)"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다.",
+        "summary": "서버의 가용성을 높이기 위한 클러스터링 솔루션인 HACMP에 대한 설명입니다.",
+        "why_correct": [
+          "HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로 공유 디스크 기반 클러스터링을 지원합니다."
+        ],
+        "why_others_wrong": [
+          "Point-to-Point는 1:1 연결 방식입니다.",
+          "Stuxnet은 산업시설 공격용 악성코드입니다.",
+          "Rooting은 관리자 권한 획득 행위입니다."
+        ],
+        "key_concepts": [
+          "HACMP",
+          "고가용성(HA)"
+        ],
+        "memory_cues": [
+          "공유 디스크 + 클러스터링 + 안정성 = HACMP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "고가용성 솔루션(HACMP)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 고가용성 솔루션(HACMP)'와 일치합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로 공유 디스크 기반 클러스터링을 지원합니다."
+          },
+          {
+            "label": "2",
+            "text": "점대점 연결 방식(Point-to-Point Mode)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '점대점 연결 방식(Point-to-Point Mode)'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결 방식입니다. Stuxnet은 산업시설 공격용 악성코드입니다."
+          },
+          {
+            "label": "3",
+            "text": "스턱스넷(Stuxnet)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '스턱스넷(Stuxnet)'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결 방식입니다. Stuxnet은 산업시설 공격용 악성코드입니다."
+          },
+          {
+            "label": "4",
+            "text": "루팅(Rooting)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 고가용성 솔루션(HACMP)'인데 이 선택지는 '루팅(Rooting)'이므로 일치하지 않습니다. Point-to-Point는 1:1 연결 방식입니다. Stuxnet은 산업시설 공격용 악성코드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정보 시스템과 관련한 다음 설명에 해당하는 것은? • 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다. • 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. • 여러 가지 방식으로 구현되며 2대의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다.",
+          "핵심 개념을 떠올립니다. HACMP, 고가용성(HA)",
+          "정답 판단 근거를 적용합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로 공유 디스크 기반 클러스터링을 지원합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Point-to-Point는 1:1 연결 방식입니다."
+        ],
+        "exam_traps": [
+          "Point-to-Point는 1:1 연결 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HACMP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '고가용성(HA)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 공유 디스크 + 클러스터링 + 안정성 = HACMP"
+        ],
+        "detailed_summary": "서버의 가용성을 높이기 위한 클러스터링 솔루션인 HACMP에 대한 설명입니다. 전문가의 조언 | 문제의 지문에 제시된 내용은 고가용성 솔루션(HACMP)의 특징입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 정보 시스템과 관련한 다음 설명에 해당하는 것은? • 각 시스템 간에 공유 디스크를 중심으로 클러스터링으로 엮어 다수의 시스템을 동시에 연결할 수 있다. • 조직, 기업의 기간 업무 서버 안정성을 높이기 위해 사용될 수 있다. • 여러 가지 방식으로 구현되며 2대의 서버를 연결하는 것으로 2개의 시스템이 각각 업무를 수행하도록 구현하는 방식이 널리 사용된다. 정답입니다. 이 선택지는 실제 정답인 '1번 고가용성 솔루션(HACMP)'와 일치합니다. HACMP(High Availability Cluster Multi-Processing)는 IBM의 고가용성 솔루션으로 공유 디스크 기반 클러스터링을 지원합니다. 시험 포인트는 Point-to-Point는 1:1 연결 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HACMP",
+        "고가용성",
+        "클러스터링",
+        "서버 안정성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3225a56d25ba4d11",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 161
+        },
+        "source_explanation": "클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "85. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다."
+        ],
+        "answer_text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다."
+      },
+      "explanation": {
+        "source_text": "클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다.",
+        "summary": "클라우드 환경에서 암호화 키를 안전하게 관리하는 하드웨어 보안 모듈(HSM)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "HSM은 이름 그대로 'Hardware' Security Module이므로 하드웨어 기반의 보안을 제공합니다. 소프트웨어적으로만 구현된다는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+        ],
+        "key_concepts": [
+          "HSM",
+          "Cloud Security",
+          "Key Management"
+        ],
+        "memory_cues": [
+          "HSM의 H는 Hardware!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.'인데 이 선택지는 '클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.'이므로 일치하지 않습니다. 클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.'인데 이 선택지는 '국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.'이므로 일치하지 않습니다. 클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.'인데 이 선택지는 '클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.'이므로 일치하지 않습니다. 클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.'와 일치합니다. HSM은 이름 그대로 'Hardware' Security Module이므로 하드웨어 기반의 보안을 제공합니다. 소프트웨어적으로만 구현된다는 설명은 틀렸습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. HSM, Cloud Security, Key Management",
+          "정답 판단 근거를 적용합니다. HSM은 이름 그대로 'Hardware' Security Module이므로 하드웨어 기반의 보안을 제공합니다. 소프트웨어적으로만 구현된다는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+        ],
+        "exam_traps": [
+          "클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HSM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Cloud Security'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Key Management'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HSM의 H는 Hardware!"
+        ],
+        "detailed_summary": "클라우드 환경에서 암호화 키를 안전하게 관리하는 하드웨어 보안 모듈(HSM)의 특징을 묻는 문제입니다. 클라우드 기반 HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 85. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어적 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 단점이다.'와 일치합니다. HSM은 이름 그대로 'Hardware' Security Module이므로 하드웨어 기반의 보안을 제공합니다. 소프트웨어적으로만 구현된다는 설명은 틀렸습니다. 시험 포인트는 클라우드 기반 키 관리, 인증서 저장의 편의성 등은 Cloud HSM의 주요 특징 및 도입 배경입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HSM",
+        "Cloud HSM",
+        "암호화 키",
+        "보안 기기"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a4e4f443ba14f4c1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "외부 컴퓨터의 접속 여부를 제어할 수 있는 접근제어 유틸리티는 TCP Wrapper입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "89. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "tcp wrapper"
+          },
+          {
+            "label": "2",
+            "text": "trace checker"
+          },
+          {
+            "label": "3",
+            "text": "token finder"
+          },
+          {
+            "label": "4",
+            "text": "change detector"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "tcp wrapper"
+        ],
+        "answer_text": "tcp wrapper"
+      },
+      "explanation": {
+        "source_text": "외부 컴퓨터의 접속 여부를 제어할 수 있는 접근제어 유틸리티는 TCP Wrapper입니다.",
+        "summary": "호스트 기반의 네트워크 접근 제어 도구를 찾는 문제입니다.",
+        "why_correct": [
+          "TCP Wrapper는 외부에서 들어오는 요청을 가로채서 허용된 호스트인지(hosts.allow, hosts.deny) 확인 후 연결을 넘겨주는 유틸리티입니다."
+        ],
+        "why_others_wrong": [
+          "나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+        ],
+        "key_concepts": [
+          "TCP Wrapper",
+          "Access Control"
+        ],
+        "memory_cues": [
+          "TCP를 감싸서(Wrap) 검사한다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "tcp wrapper",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 tcp wrapper'와 일치합니다. TCP Wrapper는 외부에서 들어오는 요청을 가로채서 허용된 호스트인지(hosts.allow, hosts.deny) 확인 후 연결을 넘겨주는 유틸리티입니다."
+          },
+          {
+            "label": "2",
+            "text": "trace checker",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'trace checker'이므로 일치하지 않습니다. 나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+          },
+          {
+            "label": "3",
+            "text": "token finder",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'token finder'이므로 일치하지 않습니다. 나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+          },
+          {
+            "label": "4",
+            "text": "change detector",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 tcp wrapper'인데 이 선택지는 'change detector'이므로 일치하지 않습니다. 나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 89. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는?",
+          "핵심 개념을 떠올립니다. TCP Wrapper, Access Control",
+          "정답 판단 근거를 적용합니다. TCP Wrapper는 외부에서 들어오는 요청을 가로채서 허용된 호스트인지(hosts.allow, hosts.deny) 확인 후 연결을 넘겨주는 유틸리티입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+        ],
+        "exam_traps": [
+          "나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TCP Wrapper'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Access Control'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TCP를 감싸서(Wrap) 검사한다"
+        ],
+        "detailed_summary": "호스트 기반의 네트워크 접근 제어 도구를 찾는 문제입니다. 외부 컴퓨터의 접속 여부를 제어할 수 있는 접근제어 유틸리티는 TCP Wrapper입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 89. 어떤 외부 컴퓨터가 접속되면 접속 인가 여부를 점검해서 인가된 경우에는 접속이 허용되고, 그 반대의 경우에는 거부할 수 있는 접근제어 유틸리티는? 정답입니다. 이 선택지는 실제 정답인 '1번 tcp wrapper'와 일치합니다. TCP Wrapper는 외부에서 들어오는 요청을 가로채서 허용된 호스트인지(hosts.allow, hosts.deny) 확인 후 연결을 넘겨주는 유틸리티입니다. 시험 포인트는 나머지 보기들은 접근 제어와 직접적인 관련이 없는 임의의 명칭들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "tcp wrapper",
+        "접근 제어",
+        "보안 유틸리티",
+        "호스트 기반 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b9418047c12f4a59",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 161
+        },
+        "source_explanation": "문제의 지문에 제시된 내용은 BitLocker의 특징입니다.\n- Blockchain: P2P 네트워크를 이용하여 온라인 금융 거래 정보를 온라인 네트워크 참여자(Peer)의 디지털 장비에 분산 저장하는 기술\n- DLT(Distributed Ledger Technology): 중앙 관리자나 중앙 데이터 저장소가 존재하지 않고 P2P 망내의 참여자들에게 모든 거래 목록이 분산 저장되어 거래가 발생할 때마다 지속적으로 갱신되는 디지털 원장임\n- BaaS(Blockchain as a Service): 블록체인(Blockchain) 앱의 개발 환경을 클라우드 기반으로 제공하는 서비스임"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안"
+        ],
+        "chapter_label": "보안",
+        "chapter_key": "정보시스템 구축 관리 > 보안",
+        "chapter_id": "chapter_299"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 118.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "88. 다음에서 설명하는 정보 보안 관련 용어는?\nWindows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능으로, TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용한다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "BitLocker"
+          },
+          {
+            "label": "2",
+            "text": "Blockchain"
+          },
+          {
+            "label": "3",
+            "text": "DLT"
+          },
+          {
+            "label": "4",
+            "text": "BaaS"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "BitLocker"
+        ],
+        "answer_text": "BitLocker"
+      },
+      "explanation": {
+        "source_text": "문제의 지문에 제시된 내용은 BitLocker의 특징입니다.\n- Blockchain: P2P 네트워크를 이용하여 온라인 금융 거래 정보를 온라인 네트워크 참여자(Peer)의 디지털 장비에 분산 저장하는 기술\n- DLT(Distributed Ledger Technology): 중앙 관리자나 중앙 데이터 저장소가 존재하지 않고 P2P 망내의 참여자들에게 모든 거래 목록이 분산 저장되어 거래가 발생할 때마다 지속적으로 갱신되는 디지털 원장임\n- BaaS(Blockchain as a Service): 블록체인(Blockchain) 앱의 개발 환경을 클라우드 기반으로 제공하는 서비스임",
+        "summary": "Windows 운영체제에서 제공하는 전체 디스크 암호화 기술을 묻는 문제입니다.",
+        "why_correct": [
+          "BitLocker는 Windows의 볼륨 암호화 기능으로 TPM 하드웨어와 결합하여 강력한 보안을 제공합니다."
+        ],
+        "why_others_wrong": [
+          "Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+        ],
+        "key_concepts": [
+          "BitLocker",
+          "TPM",
+          "AES"
+        ],
+        "memory_cues": [
+          "Windows 암호화 = BitLocker"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "BitLocker",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 BitLocker'와 일치합니다. BitLocker는 Windows의 볼륨 암호화 기능으로 TPM 하드웨어와 결합하여 강력한 보안을 제공합니다."
+          },
+          {
+            "label": "2",
+            "text": "Blockchain",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 BitLocker'인데 이 선택지는 'Blockchain'이므로 일치하지 않습니다. Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+          },
+          {
+            "label": "3",
+            "text": "DLT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 BitLocker'인데 이 선택지는 'DLT'이므로 일치하지 않습니다. Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+          },
+          {
+            "label": "4",
+            "text": "BaaS",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 BitLocker'인데 이 선택지는 'BaaS'이므로 일치하지 않습니다. Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 다음에서 설명하는 정보 보안 관련 용어는? Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능으로, TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용한다.",
+          "핵심 개념을 떠올립니다. BitLocker, TPM, AES",
+          "정답 판단 근거를 적용합니다. BitLocker는 Windows의 볼륨 암호화 기능으로 TPM 하드웨어와 결합하여 강력한 보안을 제공합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+        ],
+        "exam_traps": [
+          "Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'BitLocker'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'TPM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'AES'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Windows 암호화 = BitLocker"
+        ],
+        "detailed_summary": "Windows 운영체제에서 제공하는 전체 디스크 암호화 기술을 묻는 문제입니다. 문제의 지문에 제시된 내용은 BitLocker의 특징입니다. - Blockchain: P2P 네트워크를 이용하여 온라인 금융 거래 정보를 온라인 네트워크 참여자(Peer)의 디지털 장비에 분산 저장하는 기술 - DLT(Distributed Ledger Technology): 중앙 관리자나 중앙 데이터 저장소가 존재하지 않고 P2P 망내의 참여자들에게 모든 거래 목록이 분산 저장되어 거래가 발생할 때마다 지속적으로 갱신되는 디지털 원장임 - BaaS(Blockchain as a Service): 블록체인(Blockchain) 앱의 개발 환경을 클라우드 기반으로 제공하는 서비스임 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 다음에서 설명하는 정보 보안 관련 용어는? Windows 7부터 지원되기 시작한 Windows 전용의 볼륨 암호화 기능으로, TPM(Trusted Platform Module)과 AES-128 알고리즘을 사용한다. 정답입니다. 이 선택지는 실제 정답인 '1번 BitLocker'와 일치합니다. BitLocker는 Windows의 볼륨 암호화 기능으로 TPM 하드웨어와 결합하여 강력한 보안을 제공합니다. 시험 포인트는 Blockchain, DLT, BaaS는 모두 분산 원장 기술과 관련된 용어들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "BitLocker",
+        "볼륨 암호화",
+        "Windows 보안",
+        "TPM"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4ec407e083cd4c77",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          182
+        ],
+        "page_span": {
+          "start_page": 182,
+          "end_page": 182
+        },
+        "source_explanation": "IPsec는 암호화와 복호화가 모두 가능한 양방향 암호 방식입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_329"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "IPsec(IP Security)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "암호화 수행시 일방향 암호화만 지원한다."
+          },
+          {
+            "label": "2",
+            "text": "ESP는 발신지 인증, 데이터 무결성, 기밀성을 보장한다."
+          },
+          {
+            "label": "3",
+            "text": "운영 모드는 Tunnel 모드와 Transport 모드로 분류된다."
+          },
+          {
+            "label": "4",
+            "text": "AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "암호화 수행시 일방향 암호화만 지원한다."
+        ],
+        "answer_text": "암호화 수행시 일방향 암호화만 지원한다."
+      },
+      "explanation": {
+        "source_text": "IPsec는 암호화와 복호화가 모두 가능한 양방향 암호 방식입니다.",
+        "summary": "네트워크 계층 보안 프로토콜인 IPsec에 대한 문제입니다.",
+        "why_correct": [
+          "IPsec은 데이터를 암호화하여 보내고 다시 복호화하여 읽어야 하므로 양방향 암호화를 지원합니다. 일방향 암호화만 지원한다는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+        ],
+        "key_concepts": [
+          "IPsec 구성 요소 (AH, ESP)",
+          "IPsec 운영 모드"
+        ],
+        "memory_cues": [
+          "보안 통신은 주고받아야 하니 양방향"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "암호화 수행시 일방향 암호화만 지원한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 암호화 수행시 일방향 암호화만 지원한다.'와 일치합니다. IPsec은 데이터를 암호화하여 보내고 다시 복호화하여 읽어야 하므로 양방향 암호화를 지원합니다. 일방향 암호화만 지원한다는 설명은 틀렸습니다."
+          },
+          {
+            "label": "2",
+            "text": "ESP는 발신지 인증, 데이터 무결성, 기밀성을 보장한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 암호화 수행시 일방향 암호화만 지원한다.'인데 이 선택지는 'ESP는 발신지 인증, 데이터 무결성, 기밀성을 보장한다.'이므로 일치하지 않습니다. ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 암호화 수행시 일방향 암호화만 지원한다.'인데 이 선택지는 '운영 모드는 Tunnel 모드와 Transport 모드로 분류된다.'이므로 일치하지 않습니다. ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 암호화 수행시 일방향 암호화만 지원한다.'인데 이 선택지는 'AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한다.'이므로 일치하지 않습니다. ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPsec(IP Security)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. IPsec 구성 요소 (AH, ESP), IPsec 운영 모드",
+          "정답 판단 근거를 적용합니다. IPsec은 데이터를 암호화하여 보내고 다시 복호화하여 읽어야 하므로 양방향 암호화를 지원합니다. 일방향 암호화만 지원한다는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+        ],
+        "exam_traps": [
+          "ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'IPsec 구성 요소 (AH, ESP)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IPsec 운영 모드'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 보안 통신은 주고받아야 하니 양방향"
+        ],
+        "detailed_summary": "네트워크 계층 보안 프로토콜인 IPsec에 대한 문제입니다. IPsec는 암호화와 복호화가 모두 가능한 양방향 암호 방식입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. IPsec(IP Security)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 암호화 수행시 일방향 암호화만 지원한다.'와 일치합니다. IPsec은 데이터를 암호화하여 보내고 다시 복호화하여 읽어야 하므로 양방향 암호화를 지원합니다. 일방향 암호화만 지원한다는 설명은 틀렸습니다. 시험 포인트는 ESP와 AH의 역할, 그리고 터널/전송 모드에 대한 설명은 모두 IPsec의 표준 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "IPsec",
+        "AH",
+        "ESP",
+        "터널 모드",
+        "전송 모드"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b1c0ab882f762a16",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0191_p0196"
+        ],
+        "source_pages": [
+          191
+        ],
+        "page_span": {
+          "start_page": 191,
+          "end_page": 191
+        },
+        "source_explanation": "이상 탐지 기법(Anomaly Detection)은 평균적인 시스템의 상태를 기준으로 비정상적인 행위나 자원의 사용이 감지되면 이를 알려주는 시스템입니다. ①번은 오용 탐지 기법(Misuse Detection)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_175"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "90. 침입탐지 시스템(IDS; Intrusion Detection System)과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다."
+          },
+          {
+            "label": "2",
+            "text": "HIDS(Host-Based Intrusion Detection)는 운영체제에 설정된 사용자 계정에 따라 어떤 사용자가 어떤 접근을 시도하고 어떤 작업을 했는지에 대한 기록을 남기고 추적한다."
+          },
+          {
+            "label": "3",
+            "text": "NIDS(Network-Based Intrusion Detection System)로는 대표적으로 Snort가 있다."
+          },
+          {
+            "label": "4",
+            "text": "외부 인터넷에 서비스를 제공하는 서버가 위치하는 네트워크인 DMZ(Demilitarized Zone)에는 IDS가 설치될 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다."
+        ],
+        "answer_text": "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다."
+      },
+      "explanation": {
+        "source_text": "이상 탐지 기법(Anomaly Detection)은 평균적인 시스템의 상태를 기준으로 비정상적인 행위나 자원의 사용이 감지되면 이를 알려주는 시스템입니다. ①번은 오용 탐지 기법(Misuse Detection)에 대한 설명입니다.",
+        "summary": "침입탐지 시스템(IDS)의 탐지 기법과 종류에 대한 문제입니다.",
+        "why_correct": [
+          "이상 탐지(Anomaly Detection)는 비정상적인 행위를 탐지하는 방식이며, 지문에서 설명한 '이미 발견된 공격 패턴(Signature)을 이용하는 방식'은 오용 탐지(Misuse Detection)에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다.",
+          "Snort는 가장 대표적인 오픈소스 기반의 네트워크 침입 탐지 시스템(NIDS)입니다.",
+          "DMZ는 외부와 내부망 사이의 완충 지대로, 보안 강화를 위해 IDS를 설치할 수 있습니다."
+        ],
+        "key_concepts": [
+          "이상 탐지(Anomaly Detection)",
+          "오용 탐지(Misuse Detection)",
+          "HIDS",
+          "NIDS"
+        ],
+        "memory_cues": [
+          "오용(Misuse) = 이미 아는(Signature) 나쁜 짓 탐지",
+          "이상(Anomaly) = 평소와 다른(Behavior) 이상한 짓 탐지"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.'와 일치합니다. 이상 탐지(Anomaly Detection)는 비정상적인 행위를 탐지하는 방식이며, 지문에서 설명한 '이미 발견된 공격 패턴(Signature)을 이용하는 방식'은 오용 탐지(Misuse Detection)에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "HIDS(Host-Based Intrusion Detection)는 운영체제에 설정된 사용자 계정에 따라 어떤 사용자가 어떤 접근을 시도하고 어떤 작업을 했는지에 대한 기록을 남기고 추적한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.'인데 이 선택지는 'HIDS(Host-Based Intrusion Detection)는 운영체제에 설정된 사용자 계정에 따라 어떤 사용자가 어떤 접근을 시도하고 어떤 작업을 했는지에 대한 기록을 남기고 추적한다.'이므로 일치하지 않습니다. HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다. Snort는 가장 대표적인 오픈소스 기반의 네트워크 침입 탐지 시스템(NIDS)입니다."
+          },
+          {
+            "label": "3",
+            "text": "NIDS(Network-Based Intrusion Detection System)로는 대표적으로 Snort가 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.'인데 이 선택지는 'NIDS(Network-Based Intrusion Detection System)로는 대표적으로 Snort가 있다.'이므로 일치하지 않습니다. HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다. Snort는 가장 대표적인 오픈소스 기반의 네트워크 침입 탐지 시스템(NIDS)입니다."
+          },
+          {
+            "label": "4",
+            "text": "외부 인터넷에 서비스를 제공하는 서버가 위치하는 네트워크인 DMZ(Demilitarized Zone)에는 IDS가 설치될 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.'인데 이 선택지는 '외부 인터넷에 서비스를 제공하는 서버가 위치하는 네트워크인 DMZ(Demilitarized Zone)에는 IDS가 설치될 수 있다.'이므로 일치하지 않습니다. HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다. Snort는 가장 대표적인 오픈소스 기반의 네트워크 침입 탐지 시스템(NIDS)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. 침입탐지 시스템(IDS; Intrusion Detection System)과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 이상 탐지(Anomaly Detection), 오용 탐지(Misuse Detection), HIDS, NIDS",
+          "정답 판단 근거를 적용합니다. 이상 탐지(Anomaly Detection)는 비정상적인 행위를 탐지하는 방식이며, 지문에서 설명한 '이미 발견된 공격 패턴(Signature)을 이용하는 방식'은 오용 탐지(Misuse Detection)에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다."
+        ],
+        "exam_traps": [
+          "HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '이상 탐지(Anomaly Detection)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오용 탐지(Misuse Detection)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'HIDS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NIDS'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 오용(Misuse) = 이미 아는(Signature) 나쁜 짓 탐지",
+          "암기 포인트를 떠올립니다. 이상(Anomaly) = 평소와 다른(Behavior) 이상한 짓 탐지"
+        ],
+        "detailed_summary": "침입탐지 시스템(IDS)의 탐지 기법과 종류에 대한 문제입니다. 이상 탐지 기법(Anomaly Detection)은 평균적인 시스템의 상태를 기준으로 비정상적인 행위나 자원의 사용이 감지되면 이를 알려주는 시스템입니다. ①번은 오용 탐지 기법(Misuse Detection)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 90. 침입탐지 시스템(IDS; Intrusion Detection System)과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 이상 탐지 기법(Anomaly Detection)은 Signature Base나 Knowledge Base라고도 불리며 이미 발견되고 정립된 공격 패턴을 입력해두었다가 탐지 및 차단한다.'와 일치합니다. 이상 탐지(Anomaly Detection)는 비정상적인 행위를 탐지하는 방식이며, 지문에서 설명한 '이미 발견된 공격 패턴(Signature)을 이용하는 방식'은 오용 탐지(Misuse Detection)에 해당합니다. 시험 포인트는 HIDS는 개별 호스트의 로그를 분석하여 침입을 탐지하므로 맞는 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "IDS",
+        "침입탐지시스템",
+        "이상 탐지",
+        "오용 탐지",
+        "HIDS",
+        "NIDS"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e10800df7772fdcb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0191_p0196"
+        ],
+        "source_pages": [
+          192
+        ],
+        "page_span": {
+          "start_page": 192,
+          "end_page": 192
+        },
+        "source_explanation": "Cloud HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_175"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_095",
+        "topic_title": "보안 솔루션과 Secure OS",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "보안 솔루션과 Secure OS",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "100. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+        ],
+        "answer_text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다."
+      },
+      "explanation": {
+        "source_text": "Cloud HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다.",
+        "summary": "클라우드 환경에서 제공되는 하드웨어 보안 모듈(HSM)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "HSM(Hardware Security Module)은 이름 그대로 '하드웨어' 장치를 통해 암호 키를 관리합니다. 클라우드 HSM 역시 클라우드 사업자의 데이터센터에 있는 물리적 하드웨어를 사용하므로 소프트웨어 방식의 취약점을 극복할 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다.",
+          "전자서명법 개정 이후 인증서 보관의 편의성을 위해 도입이 활발해졌습니다.",
+          "사용자가 별도의 물리 장치를 소지할 필요 없이 클라우드에 안전하게 보관할 수 있습니다."
+        ],
+        "key_concepts": [
+          "HSM",
+          "Cloud HSM",
+          "하드웨어 기반 보안"
+        ],
+        "memory_cues": [
+          "HSM의 H는 Hardware(하드웨어)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '클라우드(데이터센터) 기반 암호화 키 생성, 처리, 저장 등을 하는 보안 기기이다.'이므로 일치하지 않습니다. 클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다. 전자서명법 개정 이후 인증서 보관의 편의성을 위해 도입이 활발해졌습니다."
+          },
+          {
+            "label": "2",
+            "text": "국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '국내에서는 공인인증제의 폐지와 전자서명법 개정을 추진하면서 클라우드 HSM 용어가 자주 등장하였다.'이므로 일치하지 않습니다. 클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다. 전자서명법 개정 이후 인증서 보관의 편의성을 위해 도입이 활발해졌습니다."
+          },
+          {
+            "label": "3",
+            "text": "클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'인데 이 선택지는 '클라우드에 인증서를 저장하므로 기존 HSM 기기나 휴대폰에 인증서를 저장해 다닐 필요가 없다.'이므로 일치하지 않습니다. 클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다. 전자서명법 개정 이후 인증서 보관의 편의성을 위해 도입이 활발해졌습니다."
+          },
+          {
+            "label": "4",
+            "text": "하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'와 일치합니다. HSM(Hardware Security Module)은 이름 그대로 '하드웨어' 장치를 통해 암호 키를 관리합니다. 클라우드 HSM 역시 클라우드 사업자의 데이터센터에 있는 물리적 하드웨어를 사용하므로 소프트웨어 방식의 취약점을 극복할 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. HSM, Cloud HSM, 하드웨어 기반 보안",
+          "정답 판단 근거를 적용합니다. HSM(Hardware Security Module)은 이름 그대로 '하드웨어' 장치를 통해 암호 키를 관리합니다. 클라우드 HSM 역시 클라우드 사업자의 데이터센터에 있는 물리적 하드웨어를 사용하므로 소프트웨어 방식의 취약점을 극복할 수 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다."
+        ],
+        "exam_traps": [
+          "클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HSM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Cloud HSM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '하드웨어 기반 보안'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HSM의 H는 Hardware(하드웨어)"
+        ],
+        "detailed_summary": "클라우드 환경에서 제공되는 하드웨어 보안 모듈(HSM)의 특징을 묻는 문제입니다. Cloud HSM은 암호화 키 생성이 하드웨어적으로 구현되므로 소프트웨어적으로 구현된 암호 기술이 가지는 보안 취약점을 무시할 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 100. 클라우드 기반 HSM(Cloud-based Hardware Security Module)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 하드웨어가 아닌 소프트웨어적으로만 구현되기 때문에 소프트웨어식 암호 기술에 내재된 보안 취약점을 해결할 수 없다는 것이 주요 단점이다.'와 일치합니다. HSM(Hardware Security Module)은 이름 그대로 '하드웨어' 장치를 통해 암호 키를 관리합니다. 클라우드 HSM 역시 클라우드 사업자의 데이터센터에 있는 물리적 하드웨어를 사용하므로 소프트웨어 방식의 취약점을 극복할 수 있습니다. 시험 포인트는 클라우드 상에서 키 생성 및 관리를 수행하는 보안 장비가 맞습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Cloud HSM",
+        "HSM",
+        "하드웨어 보안 모듈",
+        "클라우드 보안"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

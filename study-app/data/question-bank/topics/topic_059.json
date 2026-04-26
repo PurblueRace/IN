@@ -1,0 +1,2339 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_059",
+    "sequence": 59,
+    "title": "회복·병행제어·교착상태",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 15,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_214",
+      "chapter_129",
+      "chapter_226",
+      "chapter_166",
+      "chapter_101",
+      "chapter_342",
+      "chapter_128",
+      "chapter_368"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_28f99c56e7acb5ae",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          35
+        ],
+        "page_span": {
+          "start_page": 35,
+          "end_page": 35
+        },
+        "source_explanation": "로킹 단위가 크면 로크 수가 적어 오버헤드는 감소하지만, 병행성(공유도) 수준이 낮아집니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "병행 제어"
+        ],
+        "chapter_label": "병행 제어",
+        "chapter_key": "데이터베이스 구축 > 병행 제어",
+        "chapter_id": "chapter_214"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "로킹 단위가 큰 경우에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "로킹 오버헤드 증가, 데이터베이스 공유도 저하"
+          },
+          {
+            "label": "2",
+            "text": "로킹 오버헤드 감소, 데이터베이스 공유도 저하"
+          },
+          {
+            "label": "3",
+            "text": "로킹 오버헤드 감소, 데이터베이스 공유도 증가"
+          },
+          {
+            "label": "4",
+            "text": "로킹 오버헤드 증가, 데이터베이스 공유도 증가"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "로킹 오버헤드 감소, 데이터베이스 공유도 저하"
+        ],
+        "answer_text": "로킹 오버헤드 감소, 데이터베이스 공유도 저하"
+      },
+      "explanation": {
+        "source_text": "로킹 단위가 크면 로크 수가 적어 오버헤드는 감소하지만, 병행성(공유도) 수준이 낮아집니다.",
+        "summary": "로킹 단위(Locking Granularity)의 크기에 따른 트레이드오프를 묻는 문제입니다.",
+        "why_correct": [
+          "로킹 단위가 크면(예: 테이블 전체) 관리해야 할 잠금 개수가 적어 오버헤드는 줄어들지만, 다른 사용자가 접근하지 못하는 범위가 넓어져 공유도(병행성)는 떨어집니다."
+        ],
+        "why_others_wrong": [
+          "로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+        ],
+        "key_concepts": [
+          "로킹 단위",
+          "병행성",
+          "오버헤드"
+        ],
+        "memory_cues": [
+          "단위 크면 = 관리 편함(오버헤드↓), 같이 못 씀(공유도↓)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "로킹 오버헤드 증가, 데이터베이스 공유도 저하",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 로킹 오버헤드 감소, 데이터베이스 공유도 저하'인데 이 선택지는 '로킹 오버헤드 증가, 데이터베이스 공유도 저하'이므로 일치하지 않습니다. 로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "로킹 오버헤드 감소, 데이터베이스 공유도 저하",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 로킹 오버헤드 감소, 데이터베이스 공유도 저하'와 일치합니다. 로킹 단위가 크면(예: 테이블 전체) 관리해야 할 잠금 개수가 적어 오버헤드는 줄어들지만, 다른 사용자가 접근하지 못하는 범위가 넓어져 공유도(병행성)는 떨어집니다."
+          },
+          {
+            "label": "3",
+            "text": "로킹 오버헤드 감소, 데이터베이스 공유도 증가",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 로킹 오버헤드 감소, 데이터베이스 공유도 저하'인데 이 선택지는 '로킹 오버헤드 감소, 데이터베이스 공유도 증가'이므로 일치하지 않습니다. 로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "로킹 오버헤드 증가, 데이터베이스 공유도 증가",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 로킹 오버헤드 감소, 데이터베이스 공유도 저하'인데 이 선택지는 '로킹 오버헤드 증가, 데이터베이스 공유도 증가'이므로 일치하지 않습니다. 로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 로킹 단위가 큰 경우에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 로킹 단위, 병행성, 오버헤드",
+          "정답 판단 근거를 적용합니다. 로킹 단위가 크면(예: 테이블 전체) 관리해야 할 잠금 개수가 적어 오버헤드는 줄어들지만, 다른 사용자가 접근하지 못하는 범위가 넓어져 공유도(병행성)는 떨어집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+        ],
+        "exam_traps": [
+          "로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '로킹 단위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '병행성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오버헤드'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단위 크면 = 관리 편함(오버헤드↓), 같이 못 씀(공유도↓)"
+        ],
+        "detailed_summary": "로킹 단위(Locking Granularity)의 크기에 따른 트레이드오프를 묻는 문제입니다. 로킹 단위가 크면 로크 수가 적어 오버헤드는 감소하지만, 병행성(공유도) 수준이 낮아집니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 로킹 단위가 큰 경우에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 로킹 오버헤드 감소, 데이터베이스 공유도 저하'와 일치합니다. 로킹 단위가 크면(예: 테이블 전체) 관리해야 할 잠금 개수가 적어 오버헤드는 줄어들지만, 다른 사용자가 접근하지 못하는 범위가 넓어져 공유도(병행성)는 떨어집니다. 시험 포인트는 로킹 단위가 작으면 오버헤드는 증가하고 공유도는 증가합니다. 2번 외에는 관계가 반대로 설명되어 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "로킹 단위",
+        "오버헤드",
+        "공유도",
+        "병행 제어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_02096a3cc7caa506",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          37
+        ],
+        "page_span": {
+          "start_page": 37,
+          "end_page": 37
+        },
+        "source_explanation": "은행가 알고리즘은 교착상태가 발생할 가능성을 미리 조사하여 안전한 상태일 때만 자원을 할당하는 회피(Avoidance) 기법의 대표적인 예입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Avoidance"
+          },
+          {
+            "label": "2",
+            "text": "Detection"
+          },
+          {
+            "label": "3",
+            "text": "Prevention"
+          },
+          {
+            "label": "4",
+            "text": "Recovery"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Avoidance"
+        ],
+        "answer_text": "Avoidance"
+      },
+      "explanation": {
+        "source_text": "은행가 알고리즘은 교착상태가 발생할 가능성을 미리 조사하여 안전한 상태일 때만 자원을 할당하는 회피(Avoidance) 기법의 대표적인 예입니다.",
+        "summary": "교착상태 해결 방법의 분류",
+        "why_correct": [
+          "은행가 알고리즘은 자원 할당 시 안전 상태를 확인하여 교착상태를 피하는 '회피' 전략입니다."
+        ],
+        "why_others_wrong": [
+          "Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다.",
+          "Detection(발견)은 발생 후 찾아내는 것입니다.",
+          "Recovery(복구)는 발견 후 해결하는 것입니다."
+        ],
+        "key_concepts": [
+          "교착상태 (Deadlock)",
+          "은행가 알고리즘 (Banker's Algorithm)",
+          "회피 (Avoidance)"
+        ],
+        "memory_cues": [
+          "은행가는 위험을 피한다(Avoid)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Avoidance",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 확인하여 교착상태를 피하는 '회피' 전략입니다."
+          },
+          {
+            "label": "2",
+            "text": "Detection",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Detection'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "Prevention",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Prevention'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "Recovery",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Recovery'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+          "핵심 개념을 떠올립니다. 교착상태 (Deadlock), 은행가 알고리즘 (Banker's Algorithm), 회피 (Avoidance)",
+          "정답 판단 근거를 적용합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 확인하여 교착상태를 피하는 '회피' 전략입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다."
+        ],
+        "exam_traps": [
+          "Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '교착상태 (Deadlock)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '은행가 알고리즘 (Banker's Algorithm)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '회피 (Avoidance)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 은행가는 위험을 피한다(Avoid)."
+        ],
+        "detailed_summary": "교착상태 해결 방법의 분류 은행가 알고리즘은 교착상태가 발생할 가능성을 미리 조사하여 안전한 상태일 때만 자원을 할당하는 회피(Avoidance) 기법의 대표적인 예입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가? 정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 확인하여 교착상태를 피하는 '회피' 전략입니다. 시험 포인트는 Prevention(예방)은 교착상태 발생 조건 중 하나를 제거하는 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "은행가 알고리즘",
+        "교착상태",
+        "회피",
+        "운영체제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3b66873bf1754dd2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          53
+        ],
+        "page_span": {
+          "start_page": 53,
+          "end_page": 53
+        },
+        "source_explanation": "전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "51. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Recovery"
+          },
+          {
+            "label": "2",
+            "text": "Restart"
+          },
+          {
+            "label": "3",
+            "text": "Commit"
+          },
+          {
+            "label": "4",
+            "text": "Abort"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Recovery"
+        ],
+        "answer_text": "Recovery"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다.",
+        "summary": "데이터베이스 장애 발생 시 복구 작업의 명칭을 묻는 문제입니다.",
+        "why_correct": [
+          "회복(Recovery)은 데이터베이스에 장애가 발생했을 때 장애 발생 전의 일관된 상태로 되돌리는 제반 과정을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+        ],
+        "key_concepts": [
+          "회복(Recovery)",
+          "장애(Failure)"
+        ],
+        "memory_cues": [
+          "복구 = Recovery"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Recovery",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Recovery'와 일치합니다. 회복(Recovery)은 데이터베이스에 장애가 발생했을 때 장애 발생 전의 일관된 상태로 되돌리는 제반 과정을 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "Restart",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Restart'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "Commit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Commit'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Abort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Abort'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 51. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+          "핵심 개념을 떠올립니다. 회복(Recovery), 장애(Failure)",
+          "정답 판단 근거를 적용합니다. 회복(Recovery)은 데이터베이스에 장애가 발생했을 때 장애 발생 전의 일관된 상태로 되돌리는 제반 과정을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+        ],
+        "exam_traps": [
+          "Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '회복(Recovery)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '장애(Failure)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 복구 = Recovery"
+        ],
+        "detailed_summary": "데이터베이스 장애 발생 시 복구 작업의 명칭을 묻는 문제입니다. 전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 51. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은? 정답입니다. 이 선택지는 실제 정답인 '1번 Recovery'와 일치합니다. 회복(Recovery)은 데이터베이스에 장애가 발생했을 때 장애 발생 전의 일관된 상태로 되돌리는 제반 과정을 의미합니다. 시험 포인트는 Restart는 재시작, Commit은 정상 완료 확정, Abort는 비정상 종료를 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데이터베이스 회복",
+        "Recovery",
+        "장애 복구",
+        "트랜잭션"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_22a4c7d7a5bc8581",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          54
+        ],
+        "page_span": {
+          "start_page": 54,
+          "end_page": 54
+        },
+        "source_explanation": "전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "55. 데이터베이스에서 병행제어의 목적으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "시스템 활용도 최대화"
+          },
+          {
+            "label": "2",
+            "text": "사용자에 대한 응답시간 최소화"
+          },
+          {
+            "label": "3",
+            "text": "데이터베이스 공유 최소화"
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 일관성 유지"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "데이터베이스 공유 최소화"
+        ],
+        "answer_text": "데이터베이스 공유 최소화"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다.",
+        "summary": "다중 사용자 환경에서 트랜잭션을 동시에 실행할 때 필요한 병행 제어의 목적을 묻는 문제입니다.",
+        "why_correct": [
+          "병행 제어는 여러 사용자가 데이터베이스를 동시에 '최대한 공유'하면서도 일관성을 해치지 않도록 하는 것이 목적입니다. 공유 최소화는 목적에 어긋납니다."
+        ],
+        "why_others_wrong": [
+          "시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+        ],
+        "key_concepts": [
+          "병행 제어(Concurrency Control)",
+          "자원 공유"
+        ],
+        "memory_cues": [
+          "병행 제어 = 같이 잘 쓰기(공유 최대화)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "시스템 활용도 최대화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '시스템 활용도 최대화'이므로 일치하지 않습니다. 시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+          },
+          {
+            "label": "2",
+            "text": "사용자에 대한 응답시간 최소화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '사용자에 대한 응답시간 최소화'이므로 일치하지 않습니다. 시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+          },
+          {
+            "label": "3",
+            "text": "데이터베이스 공유 최소화",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 데이터베이스 공유 최소화'와 일치합니다. 병행 제어는 여러 사용자가 데이터베이스를 동시에 '최대한 공유'하면서도 일관성을 해치지 않도록 하는 것이 목적입니다. 공유 최소화는 목적에 어긋납니다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 일관성 유지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '데이터베이스 일관성 유지'이므로 일치하지 않습니다. 시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 데이터베이스에서 병행제어의 목적으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 병행 제어(Concurrency Control), 자원 공유",
+          "정답 판단 근거를 적용합니다. 병행 제어는 여러 사용자가 데이터베이스를 동시에 '최대한 공유'하면서도 일관성을 해치지 않도록 하는 것이 목적입니다. 공유 최소화는 목적에 어긋납니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+        ],
+        "exam_traps": [
+          "시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '병행 제어(Concurrency Control)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자원 공유'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 병행 제어 = 같이 잘 쓰기(공유 최대화)"
+        ],
+        "detailed_summary": "다중 사용자 환경에서 트랜잭션을 동시에 실행할 때 필요한 병행 제어의 목적을 묻는 문제입니다. 전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 데이터베이스에서 병행제어의 목적으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 데이터베이스 공유 최소화'와 일치합니다. 병행 제어는 여러 사용자가 데이터베이스를 동시에 '최대한 공유'하면서도 일관성을 해치지 않도록 하는 것이 목적입니다. 공유 최소화는 목적에 어긋납니다. 시험 포인트는 시스템 활용도 제고, 응답 시간 단축, 데이터 일관성 유지는 모두 병행 제어의 주요 목적입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "병행 제어",
+        "Concurrency Control",
+        "공유 최대화",
+        "일관성 유지"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_33ef63d51852a533",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          61
+        ],
+        "page_span": {
+          "start_page": 61,
+          "end_page": 61
+        },
+        "source_explanation": "전문가의 조언 | 교착 상태 발생의 필요 충분 조건 4가지 중 하나는 선점(Preemption)이 아니라 비선점(Non-preemption)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "교착상태"
+        ],
+        "chapter_label": "교착상태",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 교착상태",
+        "chapter_id": "chapter_166"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 169.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "93. 교착상태(Deadlock)의 필요조건에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Circular Wait"
+          },
+          {
+            "label": "2",
+            "text": "Preemption"
+          },
+          {
+            "label": "3",
+            "text": "Hold and Wait"
+          },
+          {
+            "label": "4",
+            "text": "Mutual Exclusion"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Preemption"
+        ],
+        "answer_text": "Preemption"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 교착 상태 발생의 필요 충분 조건 4가지 중 하나는 선점(Preemption)이 아니라 비선점(Non-preemption)입니다.",
+        "summary": "교착상태가 발생하기 위한 4가지 필수 조건 중 '비선점'에 대한 이해를 묻는 문제입니다.",
+        "why_correct": [
+          "교착상태의 4대 조건은 상호 배제(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선점(Non-preemption), 환형 대기(Circular Wait)입니다. '선점(Preemption)'은 자원을 강제로 뺏을 수 있는 상태이므로 교착상태를 방지하는 조건에 가깝습니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+        ],
+        "key_concepts": [
+          "교착상태 4대 조건",
+          "비선점 vs 선점"
+        ],
+        "memory_cues": [
+          "상점비환 (상호배제, 점유대기, 비선점, 환형대기)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Circular Wait",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Preemption'인데 이 선택지는 'Circular Wait'이므로 일치하지 않습니다. 1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+          },
+          {
+            "label": "2",
+            "text": "Preemption",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Preemption'와 일치합니다. 교착상태의 4대 조건은 상호 배제(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선점(Non-preemption), 환형 대기(Circular Wait)입니다. '선점(Preemption)'은 자원을 강제로 뺏을 수 있는 상태이므로 교착상태를 방지하는 조건에 가깝습니다."
+          },
+          {
+            "label": "3",
+            "text": "Hold and Wait",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Preemption'인데 이 선택지는 'Hold and Wait'이므로 일치하지 않습니다. 1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+          },
+          {
+            "label": "4",
+            "text": "Mutual Exclusion",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Preemption'인데 이 선택지는 'Mutual Exclusion'이므로 일치하지 않습니다. 1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 교착상태(Deadlock)의 필요조건에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 교착상태 4대 조건, 비선점 vs 선점",
+          "정답 판단 근거를 적용합니다. 교착상태의 4대 조건은 상호 배제(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선점(Non-preemption), 환형 대기(Circular Wait)입니다. '선점(Preemption)'은 자원을 강제로 뺏을 수 있는 상태이므로 교착상태를 방지하는 조건에 가깝습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '교착상태 4대 조건'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비선점 vs 선점'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 상점비환 (상호배제, 점유대기, 비선점, 환형대기)"
+        ],
+        "detailed_summary": "교착상태가 발생하기 위한 4가지 필수 조건 중 '비선점'에 대한 이해를 묻는 문제입니다. 전문가의 조언 | 교착 상태 발생의 필요 충분 조건 4가지 중 하나는 선점(Preemption)이 아니라 비선점(Non-preemption)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 93. 교착상태(Deadlock)의 필요조건에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 Preemption'와 일치합니다. 교착상태의 4대 조건은 상호 배제(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선점(Non-preemption), 환형 대기(Circular Wait)입니다. '선점(Preemption)'은 자원을 강제로 뺏을 수 있는 상태이므로 교착상태를 방지하는 조건에 가깝습니다. 시험 포인트는 1, 3, 4번은 모두 교착상태가 발생하기 위해 반드시 충족되어야 하는 필요조건들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "교착상태",
+        "Deadlock",
+        "필요조건",
+        "비선점",
+        "상호배제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fe60f9a5ae6f3a70",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          72
+        ],
+        "page_span": {
+          "start_page": 72,
+          "end_page": 72
+        },
+        "source_explanation": "로킹 단위가 크면 병행성 수준이 낮아집니다. 단위가 크면 제어 기법은 단순해지지만, 충돌 가능성이 높아져 병행성이 떨어집니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "로킹 단위(Locking Granularity)에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "로킹 단위가 크면 병행성 수준이 낮아진다."
+          },
+          {
+            "label": "2",
+            "text": "로킹 단위가 크면 병행 제어 기법이 복잡해진다."
+          },
+          {
+            "label": "3",
+            "text": "로킹 단위가 작으면 로크(lock)의 수가 적어진다."
+          },
+          {
+            "label": "4",
+            "text": "로킹은 파일 단위로 이루어지며, 레코드와 필드는 로킹 단위가 될 수 없다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "로킹 단위가 크면 병행성 수준이 낮아진다."
+        ],
+        "answer_text": "로킹 단위가 크면 병행성 수준이 낮아진다."
+      },
+      "explanation": {
+        "source_text": "로킹 단위가 크면 병행성 수준이 낮아집니다. 단위가 크면 제어 기법은 단순해지지만, 충돌 가능성이 높아져 병행성이 떨어집니다.",
+        "summary": "데이터베이스 병행 제어에서 로킹 단위의 크기에 따른 트레이드오프를 묻는 문제입니다.",
+        "why_correct": [
+          "로킹 단위가 크면 한 번에 잠그는 범위가 넓어지므로 다른 트랜잭션이 접근하기 어려워져 병행성 수준이 낮아집니다."
+        ],
+        "why_others_wrong": [
+          "2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다.",
+          "3: 로킹 단위가 작으면 세밀하게 잠가야 하므로 로크의 수가 많아집니다.",
+          "4: 로킹 단위는 데이터베이스, 파일, 페이지, 레코드, 필드 등 다양한 수준에서 가능합니다."
+        ],
+        "key_concepts": [
+          "로킹 단위",
+          "병행성",
+          "오버헤드"
+        ],
+        "memory_cues": [
+          "단위 크면 단순/병행성 낮음, 단위 작으면 복잡/병행성 높음"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "로킹 단위가 크면 병행성 수준이 낮아진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 로킹 단위가 크면 병행성 수준이 낮아진다.'와 일치합니다. 로킹 단위가 크면 한 번에 잠그는 범위가 넓어지므로 다른 트랜잭션이 접근하기 어려워져 병행성 수준이 낮아집니다."
+          },
+          {
+            "label": "2",
+            "text": "로킹 단위가 크면 병행 제어 기법이 복잡해진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 로킹 단위가 크면 병행성 수준이 낮아진다.'인데 이 선택지는 '로킹 단위가 크면 병행 제어 기법이 복잡해진다.'이므로 일치하지 않습니다. 2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다. 3: 로킹 단위가 작으면 세밀하게 잠가야 하므로 로크의 수가 많아집니다."
+          },
+          {
+            "label": "3",
+            "text": "로킹 단위가 작으면 로크(lock)의 수가 적어진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 로킹 단위가 크면 병행성 수준이 낮아진다.'인데 이 선택지는 '로킹 단위가 작으면 로크(lock)의 수가 적어진다.'이므로 일치하지 않습니다. 2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다. 3: 로킹 단위가 작으면 세밀하게 잠가야 하므로 로크의 수가 많아집니다."
+          },
+          {
+            "label": "4",
+            "text": "로킹은 파일 단위로 이루어지며, 레코드와 필드는 로킹 단위가 될 수 없다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 로킹 단위가 크면 병행성 수준이 낮아진다.'인데 이 선택지는 '로킹은 파일 단위로 이루어지며, 레코드와 필드는 로킹 단위가 될 수 없다.'이므로 일치하지 않습니다. 2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다. 3: 로킹 단위가 작으면 세밀하게 잠가야 하므로 로크의 수가 많아집니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 로킹 단위(Locking Granularity)에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 로킹 단위, 병행성, 오버헤드",
+          "정답 판단 근거를 적용합니다. 로킹 단위가 크면 한 번에 잠그는 범위가 넓어지므로 다른 트랜잭션이 접근하기 어려워져 병행성 수준이 낮아집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다."
+        ],
+        "exam_traps": [
+          "2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '로킹 단위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '병행성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오버헤드'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단위 크면 단순/병행성 낮음, 단위 작으면 복잡/병행성 높음"
+        ],
+        "detailed_summary": "데이터베이스 병행 제어에서 로킹 단위의 크기에 따른 트레이드오프를 묻는 문제입니다. 로킹 단위가 크면 병행성 수준이 낮아집니다. 단위가 크면 제어 기법은 단순해지지만, 충돌 가능성이 높아져 병행성이 떨어집니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 로킹 단위(Locking Granularity)에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 로킹 단위가 크면 병행성 수준이 낮아진다.'와 일치합니다. 로킹 단위가 크면 한 번에 잠그는 범위가 넓어지므로 다른 트랜잭션이 접근하기 어려워져 병행성 수준이 낮아집니다. 시험 포인트는 2: 로킹 단위가 크면 관리할 로크 수가 적어 제어 기법이 단순해집니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "로킹 단위",
+        "Locking Granularity",
+        "병행 제어",
+        "데이터베이스 잠금"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_da492cc7232cb859",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          74
+        ],
+        "page_span": {
+          "start_page": 74,
+          "end_page": 74
+        },
+        "source_explanation": "데이터베이스 로그를 이용해 회복 작업을 수행하는 것은 즉각 갱신 기법입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터베이스 로그(log)를 필요로 하는 회복 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "즉각 갱신 기법"
+          },
+          {
+            "label": "2",
+            "text": "대수적 코딩 방법"
+          },
+          {
+            "label": "3",
+            "text": "타임 스탬프 기법"
+          },
+          {
+            "label": "4",
+            "text": "폴딩 기법"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "즉각 갱신 기법"
+        ],
+        "answer_text": "즉각 갱신 기법"
+      },
+      "explanation": {
+        "source_text": "데이터베이스 로그를 이용해 회복 작업을 수행하는 것은 즉각 갱신 기법입니다.",
+        "summary": "데이터베이스 장애 발생 시 복구를 위한 회복 기법 중 로그를 사용하는 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "즉각 갱신 기법(Immediate Update)은 트랜잭션 수행 중 변경 내용을 즉시 DB에 반영하며, 장애 시 로그를 바탕으로 Undo/Redo를 수행합니다."
+        ],
+        "why_others_wrong": [
+          "2, 4: 회복 기법과 무관한 용어들입니다.",
+          "3: 타임 스탬프는 병행 제어 기법 중 하나입니다."
+        ],
+        "key_concepts": [
+          "로그 기반 회복",
+          "즉각 갱신",
+          "지연 갱신"
+        ],
+        "memory_cues": [
+          "로그 회복 = 갱신 기법(즉각/지연)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "즉각 갱신 기법",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 즉각 갱신 기법'와 일치합니다. 즉각 갱신 기법(Immediate Update)은 트랜잭션 수행 중 변경 내용을 즉시 DB에 반영하며, 장애 시 로그를 바탕으로 Undo/Redo를 수행합니다."
+          },
+          {
+            "label": "2",
+            "text": "대수적 코딩 방법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 즉각 갱신 기법'인데 이 선택지는 '대수적 코딩 방법'이므로 일치하지 않습니다. 2, 4: 회복 기법과 무관한 용어들입니다. 3: 타임 스탬프는 병행 제어 기법 중 하나입니다."
+          },
+          {
+            "label": "3",
+            "text": "타임 스탬프 기법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 즉각 갱신 기법'인데 이 선택지는 '타임 스탬프 기법'이므로 일치하지 않습니다. 2, 4: 회복 기법과 무관한 용어들입니다. 3: 타임 스탬프는 병행 제어 기법 중 하나입니다."
+          },
+          {
+            "label": "4",
+            "text": "폴딩 기법",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 즉각 갱신 기법'인데 이 선택지는 '폴딩 기법'이므로 일치하지 않습니다. 2, 4: 회복 기법과 무관한 용어들입니다. 3: 타임 스탬프는 병행 제어 기법 중 하나입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스 로그(log)를 필요로 하는 회복 기법은?",
+          "핵심 개념을 떠올립니다. 로그 기반 회복, 즉각 갱신, 지연 갱신",
+          "정답 판단 근거를 적용합니다. 즉각 갱신 기법(Immediate Update)은 트랜잭션 수행 중 변경 내용을 즉시 DB에 반영하며, 장애 시 로그를 바탕으로 Undo/Redo를 수행합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 4: 회복 기법과 무관한 용어들입니다."
+        ],
+        "exam_traps": [
+          "2, 4: 회복 기법과 무관한 용어들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '로그 기반 회복'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '즉각 갱신'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '지연 갱신'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 로그 회복 = 갱신 기법(즉각/지연)"
+        ],
+        "detailed_summary": "데이터베이스 장애 발생 시 복구를 위한 회복 기법 중 로그를 사용하는 방식을 묻는 문제입니다. 데이터베이스 로그를 이용해 회복 작업을 수행하는 것은 즉각 갱신 기법입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스 로그(log)를 필요로 하는 회복 기법은? 정답입니다. 이 선택지는 실제 정답인 '1번 즉각 갱신 기법'와 일치합니다. 즉각 갱신 기법(Immediate Update)은 트랜잭션 수행 중 변경 내용을 즉시 DB에 반영하며, 장애 시 로그를 바탕으로 Undo/Redo를 수행합니다. 시험 포인트는 2, 4: 회복 기법과 무관한 용어들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "회복 기법",
+        "로그",
+        "즉각 갱신",
+        "지연 갱신"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ad157a79a1b8f0bd",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "전문가의 조언 | 은행원 알고리즘은 교착상태의 해결 방법 중 회피 기법(Avoidance)에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 88.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "78. 교착상태의 해결 방법 중 은행원 알고리즘(Banker's Algorithm)이 해당되는 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Detection"
+          },
+          {
+            "label": "2",
+            "text": "Avoidance"
+          },
+          {
+            "label": "3",
+            "text": "Recovery"
+          },
+          {
+            "label": "4",
+            "text": "Prevention"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Avoidance"
+        ],
+        "answer_text": "Avoidance"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 은행원 알고리즘은 교착상태의 해결 방법 중 회피 기법(Avoidance)에 해당합니다.",
+        "summary": "교착상태 해결 방법 중 은행원 알고리즘의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "은행원 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 미리 확인하여 교착상태를 피하는 대표적인 회피(Avoidance) 기법입니다."
+        ],
+        "why_others_wrong": [
+          "Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+        ],
+        "key_concepts": [
+          "은행원 알고리즘",
+          "교착상태 회피"
+        ],
+        "memory_cues": [
+          "은행원은 위험을 회피한다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Detection",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Avoidance'인데 이 선택지는 'Detection'이므로 일치하지 않습니다. Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "Avoidance",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Avoidance'와 일치합니다. 은행원 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 미리 확인하여 교착상태를 피하는 대표적인 회피(Avoidance) 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Recovery",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Avoidance'인데 이 선택지는 'Recovery'이므로 일치하지 않습니다. Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "Prevention",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Avoidance'인데 이 선택지는 'Prevention'이므로 일치하지 않습니다. Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. 교착상태의 해결 방법 중 은행원 알고리즘(Banker's Algorithm)이 해당되는 기법은?",
+          "핵심 개념을 떠올립니다. 은행원 알고리즘, 교착상태 회피",
+          "정답 판단 근거를 적용합니다. 은행원 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 미리 확인하여 교착상태를 피하는 대표적인 회피(Avoidance) 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+        ],
+        "exam_traps": [
+          "Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '은행원 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '교착상태 회피'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 은행원은 위험을 회피한다"
+        ],
+        "detailed_summary": "교착상태 해결 방법 중 은행원 알고리즘의 분류를 묻는 문제입니다. 전문가의 조언 | 은행원 알고리즘은 교착상태의 해결 방법 중 회피 기법(Avoidance)에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 78. 교착상태의 해결 방법 중 은행원 알고리즘(Banker's Algorithm)이 해당되는 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 Avoidance'와 일치합니다. 은행원 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 미리 확인하여 교착상태를 피하는 대표적인 회피(Avoidance) 기법입니다. 시험 포인트는 Prevention(예방)은 발생 조건을 사전에 차단, Detection(발견)은 발생 여부 확인, Recovery(회복)은 발생 후 조치하는 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "은행원 알고리즘",
+        "교착상태 회피",
+        "Avoidance",
+        "Deadlock"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_83be498b7b0ef897",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          89
+        ],
+        "page_span": {
+          "start_page": 89,
+          "end_page": 89
+        },
+        "source_explanation": "전문가의 조언 | 로킹 단위가 작아지면 병행성 수준이 높아지고, 데이터베이스 공유도가 증가합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "143섹션 4빌드"
+        ],
+        "chapter_label": "143섹션 4빌드",
+        "chapter_key": "3과목 데이터베이스 구축 > 143섹션 4빌드",
+        "chapter_id": "chapter_101"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "52. 병행제어의 로킹(Locking) 단위에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "로킹 단위가 작아지면 로킹 오버헤드가 증가한다."
+          },
+          {
+            "label": "3",
+            "text": "한꺼번에 로킹할 수 있는 단위를 로킹 단위라고 한다."
+          },
+          {
+            "label": "4",
+            "text": "로킹 단위가 작아지면 병행성 수준이 낮아진다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "로킹 단위가 작아지면 병행성 수준이 낮아진다."
+        ],
+        "answer_text": "로킹 단위가 작아지면 병행성 수준이 낮아진다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 로킹 단위가 작아지면 병행성 수준이 높아지고, 데이터베이스 공유도가 증가합니다.",
+        "summary": "데이터베이스 병행제어 기법 중 로킹 단위의 크기에 따른 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "로킹 단위가 작아지면 더 세밀하게 잠글 수 있어 여러 사용자가 동시에 접근할 수 있는 병행성 수준이 높아집니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+        ],
+        "key_concepts": [
+          "로킹 단위",
+          "병행성",
+          "오버헤드"
+        ],
+        "memory_cues": [
+          "단위가 작으면 세밀해서(병행성↑) 관리하기 힘들다(오버헤드↑)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 로킹 단위가 작아지면 병행성 수준이 낮아진다.'인데 이 선택지는 '데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다.'이므로 일치하지 않습니다. 1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+          },
+          {
+            "label": "2",
+            "text": "로킹 단위가 작아지면 로킹 오버헤드가 증가한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 로킹 단위가 작아지면 병행성 수준이 낮아진다.'인데 이 선택지는 '로킹 단위가 작아지면 로킹 오버헤드가 증가한다.'이므로 일치하지 않습니다. 1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+          },
+          {
+            "label": "3",
+            "text": "한꺼번에 로킹할 수 있는 단위를 로킹 단위라고 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 로킹 단위가 작아지면 병행성 수준이 낮아진다.'인데 이 선택지는 '한꺼번에 로킹할 수 있는 단위를 로킹 단위라고 한다.'이므로 일치하지 않습니다. 1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+          },
+          {
+            "label": "4",
+            "text": "로킹 단위가 작아지면 병행성 수준이 낮아진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 로킹 단위가 작아지면 병행성 수준이 낮아진다.'와 일치합니다. 로킹 단위가 작아지면 더 세밀하게 잠글 수 있어 여러 사용자가 동시에 접근할 수 있는 병행성 수준이 높아집니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 병행제어의 로킹(Locking) 단위에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 로킹 단위, 병행성, 오버헤드",
+          "정답 판단 근거를 적용합니다. 로킹 단위가 작아지면 더 세밀하게 잠글 수 있어 여러 사용자가 동시에 접근할 수 있는 병행성 수준이 높아집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '로킹 단위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '병행성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '오버헤드'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단위가 작으면 세밀해서(병행성↑) 관리하기 힘들다(오버헤드↑)."
+        ],
+        "detailed_summary": "데이터베이스 병행제어 기법 중 로킹 단위의 크기에 따른 특징을 묻는 문제입니다. 전문가의 조언 | 로킹 단위가 작아지면 병행성 수준이 높아지고, 데이터베이스 공유도가 증가합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 병행제어의 로킹(Locking) 단위에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 로킹 단위가 작아지면 병행성 수준이 낮아진다.'와 일치합니다. 로킹 단위가 작아지면 더 세밀하게 잠글 수 있어 여러 사용자가 동시에 접근할 수 있는 병행성 수준이 높아집니다. 시험 포인트는 1, 2, 3번은 로킹 단위의 정의와 오버헤드 발생 원리를 정확히 설명합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "로킹",
+        "Locking",
+        "병행제어",
+        "로킹 단위"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_df11bda26fce5ebc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          109
+        ],
+        "page_span": {
+          "start_page": 109,
+          "end_page": 109
+        },
+        "source_explanation": "전문가의 조언 | 로킹 단위가 크면 병행 제어 기법이 단순해 집니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "43. 데이터베이스의 병행 제어(Concurrency Control)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처리하기 위함이다."
+          },
+          {
+            "label": "2",
+            "text": "처리 결과의 정확성 유지를 위해 데이터를 잠그거나 하는 등의 제어가 필요하다."
+          },
+          {
+            "label": "3",
+            "text": "로킹 단위가 크면 병행 제어 기법이 복잡해진다."
+          },
+          {
+            "label": "4",
+            "text": "로킹 단위가 크면 병행성 수준이 낮아진다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "로킹 단위가 크면 병행 제어 기법이 복잡해진다."
+        ],
+        "answer_text": "로킹 단위가 크면 병행 제어 기법이 복잡해진다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 로킹 단위가 크면 병행 제어 기법이 단순해 집니다.",
+        "summary": "병행 제어와 로킹(Locking) 단위의 관계를 묻는 문제입니다.",
+        "why_correct": [
+          "로킹 단위가 크면(예: 테이블 전체) 관리가 단순해지지만, 다른 사용자의 접근을 많이 막아 병행성 수준은 낮아집니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "병행 제어",
+          "로킹 단위",
+          "병행성 수준"
+        ],
+        "memory_cues": [
+          "단위 크면 단순/병행성 저하, 단위 작으면 복잡/병행성 향상"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처리하기 위함이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 로킹 단위가 크면 병행 제어 기법이 복잡해진다.'인데 이 선택지는 '여러 사용자가 데이터베이스를 동시에 접근하여 데이터를 처리하기 위함이다.'이므로 일치하지 않습니다. 1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "처리 결과의 정확성 유지를 위해 데이터를 잠그거나 하는 등의 제어가 필요하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 로킹 단위가 크면 병행 제어 기법이 복잡해진다.'인데 이 선택지는 '처리 결과의 정확성 유지를 위해 데이터를 잠그거나 하는 등의 제어가 필요하다.'이므로 일치하지 않습니다. 1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "로킹 단위가 크면 병행 제어 기법이 복잡해진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 로킹 단위가 크면 병행 제어 기법이 복잡해진다.'와 일치합니다. 로킹 단위가 크면(예: 테이블 전체) 관리가 단순해지지만, 다른 사용자의 접근을 많이 막아 병행성 수준은 낮아집니다."
+          },
+          {
+            "label": "4",
+            "text": "로킹 단위가 크면 병행성 수준이 낮아진다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 로킹 단위가 크면 병행 제어 기법이 복잡해진다.'인데 이 선택지는 '로킹 단위가 크면 병행성 수준이 낮아진다.'이므로 일치하지 않습니다. 1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 데이터베이스의 병행 제어(Concurrency Control)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 병행 제어, 로킹 단위, 병행성 수준",
+          "정답 판단 근거를 적용합니다. 로킹 단위가 크면(예: 테이블 전체) 관리가 단순해지지만, 다른 사용자의 접근을 많이 막아 병행성 수준은 낮아집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '병행 제어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '로킹 단위'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '병행성 수준'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 단위 크면 단순/병행성 저하, 단위 작으면 복잡/병행성 향상"
+        ],
+        "detailed_summary": "병행 제어와 로킹(Locking) 단위의 관계를 묻는 문제입니다. 전문가의 조언 | 로킹 단위가 크면 병행 제어 기법이 단순해 집니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 데이터베이스의 병행 제어(Concurrency Control)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 로킹 단위가 크면 병행 제어 기법이 복잡해진다.'와 일치합니다. 로킹 단위가 크면(예: 테이블 전체) 관리가 단순해지지만, 다른 사용자의 접근을 많이 막아 병행성 수준은 낮아집니다. 시험 포인트는 1, 2, 4번은 병행 제어와 로킹 단위의 특성을 올바르게 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "병행 제어",
+        "로킹 단위",
+        "Locking",
+        "데이터베이스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b3980e53d2caf473",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "은행가 알고리즘은 교착상태의 해결 방법 중 회피(Avoidance) 기법에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "정보시스템 구축관리 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_342"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Avoidance"
+          },
+          {
+            "label": "2",
+            "text": "Detection"
+          },
+          {
+            "label": "3",
+            "text": "Prevention"
+          },
+          {
+            "label": "4",
+            "text": "Recovery"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Avoidance"
+        ],
+        "answer_text": "Avoidance"
+      },
+      "explanation": {
+        "source_text": "은행가 알고리즘은 교착상태의 해결 방법 중 회피(Avoidance) 기법에 해당합니다.",
+        "summary": "교착상태 해결 방법 중 은행가 알고리즘의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "은행가 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 확인하여 교착상태를 피해가는 회피(Avoidance) 기법입니다."
+        ],
+        "why_others_wrong": [
+          "예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다.",
+          "발견(Detection)은 교착상태가 발생했는지 점검합니다.",
+          "회복(Recovery)은 발견 후 프로세스를 종료하거나 자원을 선점하여 해결합니다."
+        ],
+        "key_concepts": [
+          "교착상태 해결 4단계",
+          "은행가 알고리즘"
+        ],
+        "memory_cues": [
+          "은행가는 위험을 회피한다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Avoidance",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 확인하여 교착상태를 피해가는 회피(Avoidance) 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "Detection",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Detection'이므로 일치하지 않습니다. 예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다. 발견(Detection)은 교착상태가 발생했는지 점검합니다."
+          },
+          {
+            "label": "3",
+            "text": "Prevention",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Prevention'이므로 일치하지 않습니다. 예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다. 발견(Detection)은 교착상태가 발생했는지 점검합니다."
+          },
+          {
+            "label": "4",
+            "text": "Recovery",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Recovery'이므로 일치하지 않습니다. 예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다. 발견(Detection)은 교착상태가 발생했는지 점검합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+          "핵심 개념을 떠올립니다. 교착상태 해결 4단계, 은행가 알고리즘",
+          "정답 판단 근거를 적용합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 확인하여 교착상태를 피해가는 회피(Avoidance) 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다."
+        ],
+        "exam_traps": [
+          "예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '교착상태 해결 4단계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '은행가 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 은행가는 위험을 회피한다"
+        ],
+        "detailed_summary": "교착상태 해결 방법 중 은행가 알고리즘의 분류를 묻는 문제입니다. 은행가 알고리즘은 교착상태의 해결 방법 중 회피(Avoidance) 기법에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가? 정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 안전 상태를 유지할 수 있는지 확인하여 교착상태를 피해가는 회피(Avoidance) 기법입니다. 시험 포인트는 예방(Prevention)은 교착상태 발생 조건 중 하나를 사전에 차단합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "은행가 알고리즘",
+        "교착상태",
+        "회피",
+        "Avoidance"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c2ea93c858305815",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | 2단계 로킹 규약은 새로운 Lock은 수행할 수 있지만 Unlock은 수행할 수 없는 확장 단계와 새로운 Unlock은 수행할 수 있지만 Lock은 수행할 수 없는 축소 단계가 있습니다.\n- 또한 2단계 로킹 규약은 직렬성을 보장하는 장점은 있지만 교착상태를 예방할 수 없다는 단점이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_226"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "48. 로킹 기법에서 2단계 로킹 규약에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다."
+          },
+          {
+            "label": "2",
+            "text": "트랜잭션이 Unlock과 Lock을 동시에 수행할 수 있는 단계를 병렬 전환 단계라 한다."
+          },
+          {
+            "label": "3",
+            "text": "한 트랜잭션이 Unlock 후 다른 데이터 아이템을 Lock 할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "교착상태를 일으키지 않는다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다."
+        ],
+        "answer_text": "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 2단계 로킹 규약은 새로운 Lock은 수행할 수 있지만 Unlock은 수행할 수 없는 확장 단계와 새로운 Unlock은 수행할 수 있지만 Lock은 수행할 수 없는 축소 단계가 있습니다.\n- 또한 2단계 로킹 규약은 직렬성을 보장하는 장점은 있지만 교착상태를 예방할 수 없다는 단점이 있습니다.",
+        "summary": "병행 제어 기법 중 하나인 2단계 로킹 규약(2PL)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "2PL은 확장 단계(Lock만 가능)와 축소 단계(Unlock만 가능)로 나뉘어 트랜잭션의 직렬성을 보장합니다."
+        ],
+        "why_others_wrong": [
+          "2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+        ],
+        "key_concepts": [
+          "2단계 로킹 규약(2PL): 확장 단계(Growing), 축소 단계(Shrinking)"
+        ],
+        "memory_cues": [
+          "2단계 = 늘어날 때(Lock)와 줄어들 때(Unlock)가 구분됨"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.'와 일치합니다. 2PL은 확장 단계(Lock만 가능)와 축소 단계(Unlock만 가능)로 나뉘어 트랜잭션의 직렬성을 보장합니다."
+          },
+          {
+            "label": "2",
+            "text": "트랜잭션이 Unlock과 Lock을 동시에 수행할 수 있는 단계를 병렬 전환 단계라 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.'인데 이 선택지는 '트랜잭션이 Unlock과 Lock을 동시에 수행할 수 있는 단계를 병렬 전환 단계라 한다.'이므로 일치하지 않습니다. 2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+          },
+          {
+            "label": "3",
+            "text": "한 트랜잭션이 Unlock 후 다른 데이터 아이템을 Lock 할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.'인데 이 선택지는 '한 트랜잭션이 Unlock 후 다른 데이터 아이템을 Lock 할 수 있다.'이므로 일치하지 않습니다. 2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+          },
+          {
+            "label": "4",
+            "text": "교착상태를 일으키지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.'인데 이 선택지는 '교착상태를 일으키지 않는다.'이므로 일치하지 않습니다. 2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 48. 로킹 기법에서 2단계 로킹 규약에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 2단계 로킹 규약(2PL): 확장 단계(Growing), 축소 단계(Shrinking)",
+          "정답 판단 근거를 적용합니다. 2PL은 확장 단계(Lock만 가능)와 축소 단계(Unlock만 가능)로 나뉘어 트랜잭션의 직렬성을 보장합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+        ],
+        "exam_traps": [
+          "2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '2단계 로킹 규약(2PL): 확장 단계(Growing), 축소 단계(Shrinking)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 2단계 = 늘어날 때(Lock)와 줄어들 때(Unlock)가 구분됨"
+        ],
+        "detailed_summary": "병행 제어 기법 중 하나인 2단계 로킹 규약(2PL)의 특징을 묻는 문제입니다. 전문가의 조언 | 2단계 로킹 규약은 새로운 Lock은 수행할 수 있지만 Unlock은 수행할 수 없는 확장 단계와 새로운 Unlock은 수행할 수 있지만 Lock은 수행할 수 없는 축소 단계가 있습니다. - 또한 2단계 로킹 규약은 직렬성을 보장하는 장점은 있지만 교착상태를 예방할 수 없다는 단점이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 48. 로킹 기법에서 2단계 로킹 규약에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 트랜잭션은 Lock만 수행할 수 있고, Unlock은 수행할 수 없는 확장 단계가 있다.'와 일치합니다. 2PL은 확장 단계(Lock만 가능)와 축소 단계(Unlock만 가능)로 나뉘어 트랜잭션의 직렬성을 보장합니다. 시험 포인트는 2번은 틀린 용어 설명이며, 3번은 2PL 규약 위반(Unlock 후 Lock 불가)입니다. 4번은 2PL의 주요 단점이 교착상태 발생 가능성이라는 점에서 틀렸습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "2단계 로킹",
+        "2PL",
+        "확장 단계",
+        "축소 단계",
+        "병행 제어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b239e0b7076766ab",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "3과목 데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_128"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "47. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Recovery"
+          },
+          {
+            "label": "2",
+            "text": "Restart"
+          },
+          {
+            "label": "3",
+            "text": "Commit"
+          },
+          {
+            "label": "4",
+            "text": "Abort"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Recovery"
+        ],
+        "answer_text": "Recovery"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다.",
+        "summary": "데이터베이스 회복의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "회복(Recovery)은 장애 발생 시 데이터베이스를 일관성 있는 이전 상태로 되돌리는 기술적 과정을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+        ],
+        "key_concepts": [
+          "회복(Recovery)",
+          "로그",
+          "체크포인트"
+        ],
+        "memory_cues": [
+          "복구 = Recovery"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Recovery",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Recovery'와 일치합니다. 회복(Recovery)은 장애 발생 시 데이터베이스를 일관성 있는 이전 상태로 되돌리는 기술적 과정을 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "Restart",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Restart'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "Commit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Commit'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Abort",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Recovery'인데 이 선택지는 'Abort'이므로 일치하지 않습니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은?",
+          "핵심 개념을 떠올립니다. 회복(Recovery), 로그, 체크포인트",
+          "정답 판단 근거를 적용합니다. 회복(Recovery)은 장애 발생 시 데이터베이스를 일관성 있는 이전 상태로 되돌리는 기술적 과정을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+        ],
+        "exam_traps": [
+          "Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '회복(Recovery)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '로그'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '체크포인트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 복구 = Recovery"
+        ],
+        "detailed_summary": "데이터베이스 회복의 정의를 묻는 문제입니다. 전문가의 조언 | 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업을 회복(Recovery)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 47. 트랜잭션을 수행하는 도중 장애로 인해 손상된 데이터베이스를 손상되기 이전의 정상적인 상태로 복구시키는 작업은? 정답입니다. 이 선택지는 실제 정답인 '1번 Recovery'와 일치합니다. 회복(Recovery)은 장애 발생 시 데이터베이스를 일관성 있는 이전 상태로 되돌리는 기술적 과정을 의미합니다. 시험 포인트는 Restart는 재시작, Commit은 정상 완료 확정, Abort는 트랜잭션 중단/취소를 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "회복",
+        "Recovery",
+        "트랜잭션 장애",
+        "데이터베이스 복구"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_903d916dda1b6fd9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          147
+        ],
+        "page_span": {
+          "start_page": 147,
+          "end_page": 147
+        },
+        "source_explanation": "전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "3과목 데이터베이스 구축 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_128"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "55. 데이터베이스에서 병행제어의 목적으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "시스템 활용도 최대화"
+          },
+          {
+            "label": "2",
+            "text": "사용자에 대한 응답시간 최소화"
+          },
+          {
+            "label": "3",
+            "text": "데이터베이스 공유 최소화"
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 일관성 유지"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "데이터베이스 공유 최소화"
+        ],
+        "answer_text": "데이터베이스 공유 최소화"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다.",
+        "summary": "병행제어(Concurrency Control)의 목적을 묻는 문제입니다.",
+        "why_correct": [
+          "병행제어는 여러 사용자가 동시에 DB를 사용할 수 있게(공유 최대화) 하면서도 문제가 없도록 제어하는 것이 목적입니다. '최소화'는 틀린 설명입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+        ],
+        "key_concepts": [
+          "병행제어",
+          "공유 최대화",
+          "일관성 유지"
+        ],
+        "memory_cues": [
+          "병행 = 같이 쓰기 = 공유 최대화"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "시스템 활용도 최대화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '시스템 활용도 최대화'이므로 일치하지 않습니다. 1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+          },
+          {
+            "label": "2",
+            "text": "사용자에 대한 응답시간 최소화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '사용자에 대한 응답시간 최소화'이므로 일치하지 않습니다. 1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+          },
+          {
+            "label": "3",
+            "text": "데이터베이스 공유 최소화",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 데이터베이스 공유 최소화'와 일치합니다. 병행제어는 여러 사용자가 동시에 DB를 사용할 수 있게(공유 최대화) 하면서도 문제가 없도록 제어하는 것이 목적입니다. '최소화'는 틀린 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 일관성 유지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 데이터베이스 공유 최소화'인데 이 선택지는 '데이터베이스 일관성 유지'이므로 일치하지 않습니다. 1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 데이터베이스에서 병행제어의 목적으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 병행제어, 공유 최대화, 일관성 유지",
+          "정답 판단 근거를 적용합니다. 병행제어는 여러 사용자가 동시에 DB를 사용할 수 있게(공유 최대화) 하면서도 문제가 없도록 제어하는 것이 목적입니다. '최소화'는 틀린 설명입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '병행제어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '공유 최대화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '일관성 유지'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 병행 = 같이 쓰기 = 공유 최대화"
+        ],
+        "detailed_summary": "병행제어(Concurrency Control)의 목적을 묻는 문제입니다. 전문가의 조언 | 병행제어의 목적 중 하나는 데이터베이스 공유 최대화입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 데이터베이스에서 병행제어의 목적으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 데이터베이스 공유 최소화'와 일치합니다. 병행제어는 여러 사용자가 동시에 DB를 사용할 수 있게(공유 최대화) 하면서도 문제가 없도록 제어하는 것이 목적입니다. '최소화'는 틀린 설명입니다. 시험 포인트는 1, 2, 4번은 자원 활용, 성능 향상, 데이터 무결성 유지라는 병행제어의 긍정적 효과들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "병행제어",
+        "Concurrency Control",
+        "공유 최대화",
+        "일관성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_10664aa98626d5e4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          172
+        ],
+        "page_span": {
+          "start_page": 172,
+          "end_page": 172
+        },
+        "source_explanation": "은행가 알고리즘은 교착상태가 발생할 가능성이 있는 상태를 미리 감지하여 회피(Avoidance)하는 기법입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "회복·병행제어·교착상태"
+        ],
+        "chapter_label": "회복·병행제어·교착상태",
+        "chapter_key": "프로그래밍 언어 활용 > 회복·병행제어·교착상태",
+        "chapter_id": "chapter_368"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_059",
+        "topic_title": "회복·병행제어·교착상태",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "회복·병행제어·교착상태",
+        "match_score": 106.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Avoidance"
+          },
+          {
+            "label": "2",
+            "text": "Detection"
+          },
+          {
+            "label": "3",
+            "text": "Prevention"
+          },
+          {
+            "label": "4",
+            "text": "Recovery"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Avoidance"
+        ],
+        "answer_text": "Avoidance"
+      },
+      "explanation": {
+        "source_text": "은행가 알고리즘은 교착상태가 발생할 가능성이 있는 상태를 미리 감지하여 회피(Avoidance)하는 기법입니다.",
+        "summary": "교착상태(Deadlock) 해결 방법 중 하나인 은행가 알고리즘의 분류를 묻는 문제입니다.",
+        "why_correct": [
+          "은행가 알고리즘은 자원 할당 시 시스템이 안전 상태(Safe State)를 유지할 수 있는지 확인하여 교착상태를 '회피'합니다."
+        ],
+        "why_others_wrong": [
+          "Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다.",
+          "Detection(발견)은 발생 후 찾아내는 것입니다.",
+          "Recovery(회복)는 발견 후 해결하는 것입니다."
+        ],
+        "key_concepts": [
+          "교착상태 해결 4단계",
+          "안전 상태",
+          "Dijkstra"
+        ],
+        "memory_cues": [
+          "은행가는 위험을 '회피'한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Avoidance",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 시스템이 안전 상태(Safe State)를 유지할 수 있는지 확인하여 교착상태를 '회피'합니다."
+          },
+          {
+            "label": "2",
+            "text": "Detection",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Detection'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "Prevention",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Prevention'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "Recovery",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Avoidance'인데 이 선택지는 'Recovery'이므로 일치하지 않습니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다. Detection(발견)은 발생 후 찾아내는 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가?",
+          "핵심 개념을 떠올립니다. 교착상태 해결 4단계, 안전 상태, Dijkstra",
+          "정답 판단 근거를 적용합니다. 은행가 알고리즘은 자원 할당 시 시스템이 안전 상태(Safe State)를 유지할 수 있는지 확인하여 교착상태를 '회피'합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다."
+        ],
+        "exam_traps": [
+          "Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '교착상태 해결 4단계'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '안전 상태'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Dijkstra'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 은행가는 위험을 '회피'한다."
+        ],
+        "detailed_summary": "교착상태(Deadlock) 해결 방법 중 하나인 은행가 알고리즘의 분류를 묻는 문제입니다. 은행가 알고리즘은 교착상태가 발생할 가능성이 있는 상태를 미리 감지하여 회피(Avoidance)하는 기법입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 은행가 알고리즘(Banker's Algorithm)은 교착상태의 해결 방법 중 어떤 기법에 해당하는가? 정답입니다. 이 선택지는 실제 정답인 '1번 Avoidance'와 일치합니다. 은행가 알고리즘은 자원 할당 시 시스템이 안전 상태(Safe State)를 유지할 수 있는지 확인하여 교착상태를 '회피'합니다. 시험 포인트는 Prevention(예방)은 교착상태 발생 조건 중 하나를 사전에 제거하는 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "은행가 알고리즘",
+        "교착상태",
+        "회피",
+        "Avoidance"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

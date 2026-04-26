@@ -1,0 +1,324 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_040",
+    "sequence": 40,
+    "title": "DBMS와 스키마",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 2,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_055",
+      "chapter_120"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_896caf06209524e8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          48
+        ],
+        "page_span": {
+          "start_page": 48,
+          "end_page": 48
+        },
+        "source_explanation": "문제에 제시된 내용은 개념 스키마에 대한 설명입니다. 내부 스키마는 물리적 저장 구조, 외부 스키마는 개별 사용자 관점의 논리적 구조입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_040",
+        "topic_title": "DBMS와 스키마",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "DBMS와 스키마",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터베이스의 3층 스키마 중 모든 응용 시스템과 사용자들이 필요로 하는 데이터를 통합한 조직 전체의 데이터 베이스 구조를 논리적으로 정의하는 스키마는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "내부 스키마"
+          },
+          {
+            "label": "2",
+            "text": "개념 스키마"
+          },
+          {
+            "label": "3",
+            "text": "외부 스키마"
+          },
+          {
+            "label": "4",
+            "text": "동적 스키마"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "개념 스키마"
+        ],
+        "answer_text": "개념 스키마"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 개념 스키마에 대한 설명입니다. 내부 스키마는 물리적 저장 구조, 외부 스키마는 개별 사용자 관점의 논리적 구조입니다.",
+        "summary": "데이터베이스 독립성을 위한 3층 스키마 구조 중 개념 스키마를 묻는 문제입니다.",
+        "why_correct": [
+          "개념 스키마는 조직 전체의 관점에서 데이터베이스의 전체적인 논리 구조를 정의한 것입니다."
+        ],
+        "why_others_wrong": [
+          "내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+        ],
+        "key_concepts": [
+          "Conceptual Schema",
+          "Internal Schema",
+          "External Schema"
+        ],
+        "memory_cues": [
+          "전체 논리 = 개념"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "내부 스키마",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개념 스키마'인데 이 선택지는 '내부 스키마'이므로 일치하지 않습니다. 내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+          },
+          {
+            "label": "2",
+            "text": "개념 스키마",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 개념 스키마'와 일치합니다. 개념 스키마는 조직 전체의 관점에서 데이터베이스의 전체적인 논리 구조를 정의한 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "외부 스키마",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개념 스키마'인데 이 선택지는 '외부 스키마'이므로 일치하지 않습니다. 내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+          },
+          {
+            "label": "4",
+            "text": "동적 스키마",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개념 스키마'인데 이 선택지는 '동적 스키마'이므로 일치하지 않습니다. 내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스의 3층 스키마 중 모든 응용 시스템과 사용자들이 필요로 하는 데이터를 통합한 조직 전체의 데이터 베이스 구조를 논리적으로 정의하는 스키마는?",
+          "핵심 개념을 떠올립니다. Conceptual Schema, Internal Schema, External Schema",
+          "정답 판단 근거를 적용합니다. 개념 스키마는 조직 전체의 관점에서 데이터베이스의 전체적인 논리 구조를 정의한 것입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+        ],
+        "exam_traps": [
+          "내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Conceptual Schema'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Internal Schema'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'External Schema'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 전체 논리 = 개념"
+        ],
+        "detailed_summary": "데이터베이스 독립성을 위한 3층 스키마 구조 중 개념 스키마를 묻는 문제입니다. 문제에 제시된 내용은 개념 스키마에 대한 설명입니다. 내부 스키마는 물리적 저장 구조, 외부 스키마는 개별 사용자 관점의 논리적 구조입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스의 3층 스키마 중 모든 응용 시스템과 사용자들이 필요로 하는 데이터를 통합한 조직 전체의 데이터 베이스 구조를 논리적으로 정의하는 스키마는? 정답입니다. 이 선택지는 실제 정답인 '2번 개념 스키마'와 일치합니다. 개념 스키마는 조직 전체의 관점에서 데이터베이스의 전체적인 논리 구조를 정의한 것입니다. 시험 포인트는 내부는 물리적 저장, 외부는 사용자별 뷰를 담당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "3층 스키마",
+        "개념 스키마",
+        "내부 스키마",
+        "외부 스키마"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a634fab70aa6f112",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          163
+        ],
+        "page_span": {
+          "start_page": 163,
+          "end_page": 163
+        },
+        "source_explanation": "문제의 내용에 해당하는 DBMS 필수 기능은 정의 기능입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "데이터베이스 설계",
+          "DBMS"
+        ],
+        "chapter_label": "DBMS",
+        "chapter_key": "3과목 데이터베이스 구축 > 데이터베이스 설계 > DBMS",
+        "chapter_id": "chapter_120"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_040",
+        "topic_title": "DBMS와 스키마",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "DBMS와 스키마",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "35. DBMS의 필수 기능 중 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "정의 기능"
+          },
+          {
+            "label": "2",
+            "text": "조작 기능"
+          },
+          {
+            "label": "3",
+            "text": "제어 기능"
+          },
+          {
+            "label": "4",
+            "text": "절차 기능"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "정의 기능"
+        ],
+        "answer_text": "정의 기능"
+      },
+      "explanation": {
+        "source_text": "문제의 내용에 해당하는 DBMS 필수 기능은 정의 기능입니다.",
+        "summary": "DBMS의 3대 필수 기능 중 정의 기능을 묻는 문제입니다.",
+        "why_correct": [
+          "데이터의 구조, 타입, 제약 조건을 명시하는 것은 정의(Definition) 기능의 역할입니다."
+        ],
+        "why_others_wrong": [
+          "조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+        ],
+        "key_concepts": [
+          "DBMS 3대 기능 (정의, 조작, 제어)"
+        ],
+        "memory_cues": [
+          "구조 명시 = 정의"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "정의 기능",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 정의 기능'와 일치합니다. 데이터의 구조, 타입, 제약 조건을 명시하는 것은 정의(Definition) 기능의 역할입니다."
+          },
+          {
+            "label": "2",
+            "text": "조작 기능",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정의 기능'인데 이 선택지는 '조작 기능'이므로 일치하지 않습니다. 조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+          },
+          {
+            "label": "3",
+            "text": "제어 기능",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정의 기능'인데 이 선택지는 '제어 기능'이므로 일치하지 않습니다. 조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+          },
+          {
+            "label": "4",
+            "text": "절차 기능",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 정의 기능'인데 이 선택지는 '절차 기능'이므로 일치하지 않습니다. 조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. DBMS의 필수 기능 중 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능은?",
+          "핵심 개념을 떠올립니다. DBMS 3대 기능 (정의, 조작, 제어)",
+          "정답 판단 근거를 적용합니다. 데이터의 구조, 타입, 제약 조건을 명시하는 것은 정의(Definition) 기능의 역할입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+        ],
+        "exam_traps": [
+          "조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DBMS 3대 기능 (정의, 조작, 제어)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 구조 명시 = 정의"
+        ],
+        "detailed_summary": "DBMS의 3대 필수 기능 중 정의 기능을 묻는 문제입니다. 문제의 내용에 해당하는 DBMS 필수 기능은 정의 기능입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 35. DBMS의 필수 기능 중 모든 응용 프로그램들이 요구하는 데이터 구조를 지원하기 위해 데이터베이스에 저장될 데이터 타입과 구조에 대한 정의, 이용 방식, 제약 조건 등을 명시하는 기능은? 정답입니다. 이 선택지는 실제 정답인 '1번 정의 기능'와 일치합니다. 데이터의 구조, 타입, 제약 조건을 명시하는 것은 정의(Definition) 기능의 역할입니다. 시험 포인트는 조작은 데이터 검색/갱신, 제어는 무결성/보안/병행제어를 담당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DBMS 필수 기능",
+        "정의 기능",
+        "조작 기능",
+        "제어 기능"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_088",
+    "sequence": 88,
+    "title": "차세대 인프라 기술",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 4,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_183",
+      "chapter_315",
+      "chapter_339"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_32c06cbc7a79e1f9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          61
+        ],
+        "page_span": {
+          "start_page": 61,
+          "end_page": 61
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "5과목 정보시스템 구축 관리",
+          "인프라 기술"
+        ],
+        "chapter_label": "인프라 기술",
+        "chapter_key": "5과목 정보시스템 구축 관리 > 인프라 기술",
+        "chapter_id": "chapter_183"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_088",
+        "topic_title": "차세대 인프라 기술",
+        "draft_subject_name": "정보시스템 구축 관리",
+        "draft_topic_name": "차세대 인프라 기술",
+        "match_score": 100.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "95. 다음 내용이 설명하는 것은?\n• 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용\n• 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SAN"
+          },
+          {
+            "label": "2",
+            "text": "MBR"
+          },
+          {
+            "label": "3",
+            "text": "NAC"
+          },
+          {
+            "label": "4",
+            "text": "NIC"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SAN"
+        ],
+        "answer_text": "SAN"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다.",
+        "summary": "네트워크 기반 스토리지 기술인 SAN의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "SAN(Storage Area Network)은 광채널(Fiber Channel) 스위치를 사용하여 서버와 저장장치를 연결하며, 고속 전송과 데이터 공유를 가능하게 하는 전용 네트워크입니다."
+        ],
+        "why_others_wrong": [
+          "2번: MBR은 메모리 버퍼 레지스터입니다.",
+          "3번: NAC은 네트워크 접근 제어 보안 솔루션입니다.",
+          "4번: NIC은 네트워크 인터페이스 카드(랜카드)입니다."
+        ],
+        "key_concepts": [
+          "SAN",
+          "NAS",
+          "광채널"
+        ],
+        "memory_cues": [
+          "SAN = Storage Area Network = 광채널"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SAN",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SAN'와 일치합니다. SAN(Storage Area Network)은 광채널(Fiber Channel) 스위치를 사용하여 서버와 저장장치를 연결하며, 고속 전송과 데이터 공유를 가능하게 하는 전용 네트워크입니다."
+          },
+          {
+            "label": "2",
+            "text": "MBR",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'MBR'이므로 일치하지 않습니다. 2번: MBR은 메모리 버퍼 레지스터입니다. 3번: NAC은 네트워크 접근 제어 보안 솔루션입니다."
+          },
+          {
+            "label": "3",
+            "text": "NAC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'NAC'이므로 일치하지 않습니다. 2번: MBR은 메모리 버퍼 레지스터입니다. 3번: NAC은 네트워크 접근 제어 보안 솔루션입니다."
+          },
+          {
+            "label": "4",
+            "text": "NIC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SAN'인데 이 선택지는 'NIC'이므로 일치하지 않습니다. 2번: MBR은 메모리 버퍼 레지스터입니다. 3번: NAC은 네트워크 접근 제어 보안 솔루션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 95. 다음 내용이 설명하는 것은? • 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용 • 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+          "핵심 개념을 떠올립니다. SAN, NAS, 광채널",
+          "정답 판단 근거를 적용합니다. SAN(Storage Area Network)은 광채널(Fiber Channel) 스위치를 사용하여 서버와 저장장치를 연결하며, 고속 전송과 데이터 공유를 가능하게 하는 전용 네트워크입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: MBR은 메모리 버퍼 레지스터입니다."
+        ],
+        "exam_traps": [
+          "2번: MBR은 메모리 버퍼 레지스터입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SAN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '광채널'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. SAN = Storage Area Network = 광채널"
+        ],
+        "detailed_summary": "네트워크 기반 스토리지 기술인 SAN의 특징을 묻는 문제입니다. 전문가의 조언 | 문제의 지문은 SAN(Storage Area Network)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 95. 다음 내용이 설명하는 것은? • 네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용 • 각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템 정답입니다. 이 선택지는 실제 정답인 '1번 SAN'와 일치합니다. SAN(Storage Area Network)은 광채널(Fiber Channel) 스위치를 사용하여 서버와 저장장치를 연결하며, 고속 전송과 데이터 공유를 가능하게 하는 전용 네트워크입니다. 시험 포인트는 2번: MBR은 메모리 버퍼 레지스터입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "SAN",
+        "스토리지",
+        "광채널",
+        "네트워크"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d0e598847fd41d4a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          117,
+          118
+        ],
+        "page_span": {
+          "start_page": 117,
+          "end_page": 118
+        },
+        "source_explanation": "Zing(징)은 10cm 이내 거리에서 3.5Gbps 속도의 데이터 전송이 가능한 초고속 근접무선통신 기술입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "차세대 인프라 기술"
+        ],
+        "chapter_label": "차세대 인프라 기술",
+        "chapter_key": "정보시스템 구축 관리 > 차세대 인프라 기술",
+        "chapter_id": "chapter_315"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_088",
+        "topic_title": "차세대 인프라 기술",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "차세대 인프라 기술",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "기기를 키오스크에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10cm 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC; Near Field Communication) 기술은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "BcN(Broadband Convergence Network)"
+          },
+          {
+            "label": "2",
+            "text": "Zing"
+          },
+          {
+            "label": "3",
+            "text": "Marine Navi"
+          },
+          {
+            "label": "4",
+            "text": "C-V2X(Cellular Vehicle To Everything)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Zing"
+        ],
+        "answer_text": "Zing"
+      },
+      "explanation": {
+        "source_text": "Zing(징)은 10cm 이내 거리에서 3.5Gbps 속도의 데이터 전송이 가능한 초고속 근접무선통신 기술입니다.",
+        "summary": "초고속 근접 무선 통신 기술인 Zing에 관한 문제입니다.",
+        "why_correct": [
+          "Zing은 NFC의 일종으로 매우 가까운 거리에서 기가급 속도로 데이터를 주고받을 수 있는 기술입니다."
+        ],
+        "why_others_wrong": [
+          "BcN은 광대역 통합망입니다.",
+          "Marine Navi는 해상 교통 안전 솔루션입니다.",
+          "C-V2X는 차량-사물 통신 기술입니다."
+        ],
+        "key_concepts": [
+          "Zing",
+          "NFC"
+        ],
+        "memory_cues": [
+          "징(Zing) 하고 갖다 대면 기가급 전송"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "BcN(Broadband Convergence Network)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Zing'인데 이 선택지는 'BcN(Broadband Convergence Network)'이므로 일치하지 않습니다. BcN은 광대역 통합망입니다. Marine Navi는 해상 교통 안전 솔루션입니다."
+          },
+          {
+            "label": "2",
+            "text": "Zing",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Zing'와 일치합니다. Zing은 NFC의 일종으로 매우 가까운 거리에서 기가급 속도로 데이터를 주고받을 수 있는 기술입니다."
+          },
+          {
+            "label": "3",
+            "text": "Marine Navi",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Zing'인데 이 선택지는 'Marine Navi'이므로 일치하지 않습니다. BcN은 광대역 통합망입니다. Marine Navi는 해상 교통 안전 솔루션입니다."
+          },
+          {
+            "label": "4",
+            "text": "C-V2X(Cellular Vehicle To Everything)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Zing'인데 이 선택지는 'C-V2X(Cellular Vehicle To Everything)'이므로 일치하지 않습니다. BcN은 광대역 통합망입니다. Marine Navi는 해상 교통 안전 솔루션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기기를 키오스크에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10cm 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC; Near Field Communication) 기술은?",
+          "핵심 개념을 떠올립니다. Zing, NFC",
+          "정답 판단 근거를 적용합니다. Zing은 NFC의 일종으로 매우 가까운 거리에서 기가급 속도로 데이터를 주고받을 수 있는 기술입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. BcN은 광대역 통합망입니다."
+        ],
+        "exam_traps": [
+          "BcN은 광대역 통합망입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Zing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NFC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 징(Zing) 하고 갖다 대면 기가급 전송"
+        ],
+        "detailed_summary": "초고속 근접 무선 통신 기술인 Zing에 관한 문제입니다. Zing(징)은 10cm 이내 거리에서 3.5Gbps 속도의 데이터 전송이 가능한 초고속 근접무선통신 기술입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기기를 키오스크에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10cm 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC; Near Field Communication) 기술은? 정답입니다. 이 선택지는 실제 정답인 '2번 Zing'와 일치합니다. Zing은 NFC의 일종으로 매우 가까운 거리에서 기가급 속도로 데이터를 주고받을 수 있는 기술입니다. 시험 포인트는 BcN은 광대역 통합망입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Zing",
+        "징",
+        "근접무선통신",
+        "NFC",
+        "초고속 전송"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e79e0073132b40e6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          118
+        ],
+        "page_span": {
+          "start_page": 118,
+          "end_page": 118
+        },
+        "source_explanation": "SDN(Software Defined Networking)은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 네트워크를 관리하는 기술입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "차세대 인프라 기술"
+        ],
+        "chapter_label": "차세대 인프라 기술",
+        "chapter_key": "정보시스템 구축 관리 > 차세대 인프라 기술",
+        "chapter_id": "chapter_315"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_088",
+        "topic_title": "차세대 인프라 기술",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "차세대 인프라 기술",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음에서 설명하는 IT 기술은?\n- 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술\n- 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨\n- 네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발생하는 문제를 처리할 수 있음",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SDN(Software Defined Networking)"
+          },
+          {
+            "label": "2",
+            "text": "NFS(Network File System)"
+          },
+          {
+            "label": "3",
+            "text": "Network Mapper"
+          },
+          {
+            "label": "4",
+            "text": "AOE Network"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SDN(Software Defined Networking)"
+        ],
+        "answer_text": "SDN(Software Defined Networking)"
+      },
+      "explanation": {
+        "source_text": "SDN(Software Defined Networking)은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 네트워크를 관리하는 기술입니다.",
+        "summary": "네트워크 제어를 소프트웨어로 구현하는 SDN 기술에 관한 문제입니다.",
+        "why_correct": [
+          "SDN은 하드웨어 중심의 네트워크를 소프트웨어 기반으로 전환하여 유연한 제어를 가능하게 합니다."
+        ],
+        "why_others_wrong": [
+          "NFS는 네트워크를 통해 파일을 공유하는 시스템입니다.",
+          "Network Mapper(Nmap)는 네트워크 탐색 및 보안 감사 도구입니다.",
+          "AOE Network는 프로젝트 일정 관리 기법 중 하나입니다."
+        ],
+        "key_concepts": [
+          "SDN",
+          "Control Plane",
+          "Data Plane"
+        ],
+        "memory_cues": [
+          "Software Defined = 소프트웨어로 정의(제어)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SDN(Software Defined Networking)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SDN(Software Defined Networking)'와 일치합니다. SDN은 하드웨어 중심의 네트워크를 소프트웨어 기반으로 전환하여 유연한 제어를 가능하게 합니다."
+          },
+          {
+            "label": "2",
+            "text": "NFS(Network File System)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'NFS(Network File System)'이므로 일치하지 않습니다. NFS는 네트워크를 통해 파일을 공유하는 시스템입니다. Network Mapper(Nmap)는 네트워크 탐색 및 보안 감사 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "Network Mapper",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'Network Mapper'이므로 일치하지 않습니다. NFS는 네트워크를 통해 파일을 공유하는 시스템입니다. Network Mapper(Nmap)는 네트워크 탐색 및 보안 감사 도구입니다."
+          },
+          {
+            "label": "4",
+            "text": "AOE Network",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'AOE Network'이므로 일치하지 않습니다. NFS는 네트워크를 통해 파일을 공유하는 시스템입니다. Network Mapper(Nmap)는 네트워크 탐색 및 보안 감사 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음에서 설명하는 IT 기술은? - 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 - 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨 - 네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발생하는 문제를 처리할 수 있음",
+          "핵심 개념을 떠올립니다. SDN, Control Plane, Data Plane",
+          "정답 판단 근거를 적용합니다. SDN은 하드웨어 중심의 네트워크를 소프트웨어 기반으로 전환하여 유연한 제어를 가능하게 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. NFS는 네트워크를 통해 파일을 공유하는 시스템입니다."
+        ],
+        "exam_traps": [
+          "NFS는 네트워크를 통해 파일을 공유하는 시스템입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SDN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Control Plane'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Data Plane'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Software Defined = 소프트웨어로 정의(제어)"
+        ],
+        "detailed_summary": "네트워크 제어를 소프트웨어로 구현하는 SDN 기술에 관한 문제입니다. SDN(Software Defined Networking)은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 네트워크를 관리하는 기술입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음에서 설명하는 IT 기술은? - 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 - 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨 - 네트워크 장비의 펌웨어 업그레이드를 통해 사용자의 직접적인 데이터 전송 경로 관리가 가능하고, 기존 네트워크에는 영향을 주지 않으면서 특정 서비스의 전송 경로 수정을 통하여 인터넷상에서 발생하는 문제를 처리할 수 있음 정답입니다. 이 선택지는 실제 정답인 '1번 SDN(Software Defined Networking)'와 일치합니다. SDN은 하드웨어 중심의 네트워크를 소프트웨어 기반으로 전환하여 유연한 제어를 가능하게 합니다. 시험 포인트는 NFS는 네트워크를 통해 파일을 공유하는 시스템입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SDN",
+        "소프트웨어 정의 네트워킹",
+        "네트워크 가상화",
+        "제어부 분리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_27a4f652440d7e6f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          174
+        ],
+        "page_span": {
+          "start_page": 174,
+          "end_page": 174
+        },
+        "source_explanation": "제시된 설명은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 제어하는 SDN에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축관리",
+          "차세대 인프라 기술"
+        ],
+        "chapter_label": "차세대 인프라 기술",
+        "chapter_key": "정보시스템 구축관리 > 차세대 인프라 기술",
+        "chapter_id": "chapter_339"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_088",
+        "topic_title": "차세대 인프라 기술",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "차세대 인프라 기술",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음에서 설명하는 IT 기술은?\n- 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술\n- 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SDN(Software Defined Networking)"
+          },
+          {
+            "label": "2",
+            "text": "NFS(Network File System)"
+          },
+          {
+            "label": "3",
+            "text": "Network Mapper"
+          },
+          {
+            "label": "4",
+            "text": "AOE Network"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SDN(Software Defined Networking)"
+        ],
+        "answer_text": "SDN(Software Defined Networking)"
+      },
+      "explanation": {
+        "source_text": "제시된 설명은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 제어하는 SDN에 대한 설명입니다.",
+        "summary": "네트워크 인프라를 소프트웨어로 가상화하여 제어하는 기술인 SDN을 묻는 문제입니다.",
+        "why_correct": [
+          "설명에서 언급된 '제어부와 전달부 분리', '소프트웨어로 제어'는 SDN의 핵심 정의입니다."
+        ],
+        "why_others_wrong": [
+          "2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+        ],
+        "key_concepts": [
+          "SDN",
+          "OpenFlow"
+        ],
+        "memory_cues": [
+          "소프트웨어로 정의(Defined)하는 네트워크(Networking)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SDN(Software Defined Networking)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SDN(Software Defined Networking)'와 일치합니다. 설명에서 언급된 '제어부와 전달부 분리', '소프트웨어로 제어'는 SDN의 핵심 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "NFS(Network File System)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'NFS(Network File System)'이므로 일치하지 않습니다. 2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "Network Mapper",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'Network Mapper'이므로 일치하지 않습니다. 2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+          },
+          {
+            "label": "4",
+            "text": "AOE Network",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SDN(Software Defined Networking)'인데 이 선택지는 'AOE Network'이므로 일치하지 않습니다. 2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음에서 설명하는 IT 기술은? - 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 - 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨",
+          "핵심 개념을 떠올립니다. SDN, OpenFlow",
+          "정답 판단 근거를 적용합니다. 설명에서 언급된 '제어부와 전달부 분리', '소프트웨어로 제어'는 SDN의 핵심 정의입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+        ],
+        "exam_traps": [
+          "2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SDN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'OpenFlow'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 소프트웨어로 정의(Defined)하는 네트워크(Networking)"
+        ],
+        "detailed_summary": "네트워크 인프라를 소프트웨어로 가상화하여 제어하는 기술인 SDN을 묻는 문제입니다. 제시된 설명은 네트워크의 제어 평면과 데이터 평면을 분리하여 소프트웨어로 제어하는 SDN에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음에서 설명하는 IT 기술은? - 네트워크를 제어부, 데이터 전달부로 분리하여 네트워크 관리자가 보다 효율적으로 네트워크를 제어, 관리할 수 있는 기술 - 기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위해 개발됨 정답입니다. 이 선택지는 실제 정답인 '1번 SDN(Software Defined Networking)'와 일치합니다. 설명에서 언급된 '제어부와 전달부 분리', '소프트웨어로 제어'는 SDN의 핵심 정의입니다. 시험 포인트는 2번은 파일 공유 시스템, 3번은 네트워크 탐색 도구입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SDN",
+        "소프트웨어 정의 네트워크",
+        "제어부 분리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

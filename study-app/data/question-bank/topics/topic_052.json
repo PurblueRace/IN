@@ -1,0 +1,1115 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_052",
+    "sequence": 52,
+    "title": "테이블 정의와 권한 제어",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 7,
+    "review_count": 1,
+    "source_chapter_ids": [
+      "chapter_193",
+      "chapter_196",
+      "chapter_112",
+      "chapter_223",
+      "chapter_126",
+      "chapter_115"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_3dd276c7dbf68096",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          13
+        ],
+        "page_span": {
+          "start_page": 13,
+          "end_page": 13
+        },
+        "source_explanation": "참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "DDL"
+        ],
+        "chapter_label": "DDL",
+        "chapter_key": "데이터베이스 구축 > SQL > DDL",
+        "chapter_id": "chapter_193"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE"
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL"
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION"
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ON DELETE NO ACTION"
+        ],
+        "answer_text": "ON DELETE NO ACTION"
+      },
+      "explanation": {
+        "source_text": "참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다.",
+        "summary": "외래키 제약 조건에서 부모 테이블 데이터 삭제 시 자식 테이블의 대응 방안 옵션을 묻는 문제입니다.",
+        "why_correct": [
+          "NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않아 삭제를 방지하거나 그대로 두는 옵션입니다."
+        ],
+        "why_others_wrong": [
+          "CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "key_concepts": [
+          "참조 무결성 제약 조건",
+          "ON DELETE 옵션"
+        ],
+        "memory_cues": [
+          "아무것도 안 함 = NO ACTION"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE CASCADE'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET NULL'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않아 삭제를 방지하거나 그대로 두는 옵션입니다."
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET DEFAULT'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 참조 무결성 제약 조건, ON DELETE 옵션",
+          "정답 판단 근거를 적용합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않아 삭제를 방지하거나 그대로 두는 옵션입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "exam_traps": [
+          "CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '참조 무결성 제약 조건'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ON DELETE 옵션'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 아무것도 안 함 = NO ACTION"
+        ],
+        "detailed_summary": "외래키 제약 조건에서 부모 테이블 데이터 삭제 시 자식 테이블의 대응 방안 옵션을 묻는 문제입니다. 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않아 삭제를 방지하거나 그대로 두는 옵션입니다. 시험 포인트는 CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "CREATE TABLE",
+        "참조 무결성",
+        "NO ACTION",
+        "외래키 옵션"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_48a4a2d24bd51708",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          16
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 16
+        },
+        "source_explanation": "GRANT문의 기본 형식은 'GRANT 권한 ON 객체 TO 사용자'입니다. 데이터를 갱신하는 권한은 UPDATE입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "권한 제어"
+        ],
+        "chapter_label": "권한 제어",
+        "chapter_key": "데이터베이스 구축 > SQL > 권한 제어",
+        "chapter_id": "chapter_196"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 211.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "DBA가 사용자 PARK에게 테이블 [STUDENT]의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸을 알맞게 채운 것은?\nSQL> GRANT ( ㉠ ) ( ㉡ ) STUDENT TO PARK;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "㉠ INSERT, ㉡ INTO"
+          },
+          {
+            "label": "2",
+            "text": "㉠ ALTER, ㉡ TO"
+          },
+          {
+            "label": "3",
+            "text": "㉠ UPDATE, ㉡ ON"
+          },
+          {
+            "label": "4",
+            "text": "㉠ REPLACE, ㉡ IN"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "㉠ UPDATE, ㉡ ON"
+        ],
+        "answer_text": "㉠ UPDATE, ㉡ ON"
+      },
+      "explanation": {
+        "source_text": "GRANT문의 기본 형식은 'GRANT 권한 ON 객체 TO 사용자'입니다. 데이터를 갱신하는 권한은 UPDATE입니다.",
+        "summary": "사용자에게 특정 권한을 부여하는 DCL(데이터 제어어) 문법을 묻는 문제입니다.",
+        "why_correct": [
+          "데이터 갱신 권한은 UPDATE이며, 대상 객체를 지정할 때는 ON 키워드를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+        ],
+        "key_concepts": [
+          "GRANT 문법",
+          "DCL"
+        ],
+        "memory_cues": [
+          "GRANT [권한] ON [테이블] TO [사용자]"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "㉠ INSERT, ㉡ INTO",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉠ UPDATE, ㉡ ON'인데 이 선택지는 '㉠ INSERT, ㉡ INTO'이므로 일치하지 않습니다. INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+          },
+          {
+            "label": "2",
+            "text": "㉠ ALTER, ㉡ TO",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉠ UPDATE, ㉡ ON'인데 이 선택지는 '㉠ ALTER, ㉡ TO'이므로 일치하지 않습니다. INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+          },
+          {
+            "label": "3",
+            "text": "㉠ UPDATE, ㉡ ON",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ㉠ UPDATE, ㉡ ON'와 일치합니다. 데이터 갱신 권한은 UPDATE이며, 대상 객체를 지정할 때는 ON 키워드를 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "㉠ REPLACE, ㉡ IN",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉠ UPDATE, ㉡ ON'인데 이 선택지는 '㉠ REPLACE, ㉡ IN'이므로 일치하지 않습니다. INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DBA가 사용자 PARK에게 테이블 [STUDENT]의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸을 알맞게 채운 것은? SQL> GRANT ( ㉠ ) ( ㉡ ) STUDENT TO PARK;",
+          "핵심 개념을 떠올립니다. GRANT 문법, DCL",
+          "정답 판단 근거를 적용합니다. 데이터 갱신 권한은 UPDATE이며, 대상 객체를 지정할 때는 ON 키워드를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "INSERT INTO는 데이터 삽입 문법이며, GRANT 문법 구조와 맞지 않는 키워드들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GRANT 문법'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. GRANT [권한] ON [테이블] TO [사용자]"
+        ],
+        "detailed_summary": "사용자에게 특정 권한을 부여하는 DCL(데이터 제어어) 문법을 묻는 문제입니다. GRANT문의 기본 형식은 'GRANT 권한 ON 객체 TO 사용자'입니다. 데이터를 갱신하는 권한은 UPDATE입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. DBA가 사용자 PARK에게 테이블 [STUDENT]의 데이터를 갱신할 수 있는 시스템 권한을 부여하고자 하는 SQL문을 작성하고자 한다. 다음에 주어진 SQL문의 빈칸을 알맞게 채운 것은? SQL> GRANT ( ㉠ ) ( ㉡ ) STUDENT TO PARK; 정답입니다. 이 선택지는 실제 정답인 '3번 ㉠ UPDATE, ㉡ ON'와 일치합니다. 데이터 갱신 권한은 UPDATE이며, 대상 객체를 지정할 때는 ON 키워드를 사용합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GRANT",
+        "DCL",
+        "권한 부여",
+        "UPDATE"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9fb47b6f389c1b1a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          89
+        ],
+        "page_span": {
+          "start_page": 89,
+          "end_page": 89
+        },
+        "source_explanation": "전문가의 조언 | 사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다.\n❶ revoke select : 검색(select) 권한을 취소하라.\n❷ on department : department 테이블에 대한 권한을 취소하라.\n❸ from X1 : 사용자 'X1'에 대한 권한을 취소하라."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "81섹션 2빌드"
+        ],
+        "chapter_label": "81섹션 2빌드",
+        "chapter_key": "3과목 데이터베이스 구축 > 81섹션 2빌드",
+        "chapter_id": "chapter_112"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "49. 사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "delete select on department to X1;"
+          },
+          {
+            "label": "2",
+            "text": "remove select on department from X1;"
+          },
+          {
+            "label": "3",
+            "text": "revoke select on department from X1;"
+          },
+          {
+            "label": "4",
+            "text": "grant select on department from X1;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "revoke select on department from X1;"
+        ],
+        "answer_text": "revoke select on department from X1;"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다.\n❶ revoke select : 검색(select) 권한을 취소하라.\n❷ on department : department 테이블에 대한 권한을 취소하라.\n❸ from X1 : 사용자 'X1'에 대한 권한을 취소하라.",
+        "summary": "SQL의 제어어(DCL) 중 권한을 회수하는 명령문의 문법을 묻는 문제입니다.",
+        "why_correct": [
+          "권한 회수는 REVOKE 명령어를 사용하며, 'REVOKE 권한 ON 대상 FROM 사용자' 형식을 따릅니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+        ],
+        "key_concepts": [
+          "DCL",
+          "GRANT",
+          "REVOKE"
+        ],
+        "memory_cues": [
+          "부여는 GRANT, 뺏는 건 REVOKE"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "delete select on department to X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'delete select on department to X1;'이므로 일치하지 않습니다. 1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+          },
+          {
+            "label": "2",
+            "text": "remove select on department from X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'remove select on department from X1;'이므로 일치하지 않습니다. 1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "revoke select on department from X1;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 revoke select on department from X1;'와 일치합니다. 권한 회수는 REVOKE 명령어를 사용하며, 'REVOKE 권한 ON 대상 FROM 사용자' 형식을 따릅니다."
+          },
+          {
+            "label": "4",
+            "text": "grant select on department from X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'grant select on department from X1;'이므로 일치하지 않습니다. 1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은?",
+          "핵심 개념을 떠올립니다. DCL, GRANT, REVOKE",
+          "정답 판단 근거를 적용합니다. 권한 회수는 REVOKE 명령어를 사용하며, 'REVOKE 권한 ON 대상 FROM 사용자' 형식을 따릅니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 잘못된 명령어이며, 4번 GRANT는 권한을 부여할 때 사용합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'GRANT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'REVOKE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 부여는 GRANT, 뺏는 건 REVOKE"
+        ],
+        "detailed_summary": "SQL의 제어어(DCL) 중 권한을 회수하는 명령문의 문법을 묻는 문제입니다. 전문가의 조언 | 사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다. ❶ revoke select : 검색(select) 권한을 취소하라. ❷ on department : department 테이블에 대한 권한을 취소하라. ❸ from X1 : 사용자 'X1'에 대한 권한을 취소하라. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은? 정답입니다. 이 선택지는 실제 정답인 '3번 revoke select on department from X1;'와 일치합니다. 권한 회수는 REVOKE 명령어를 사용하며, 'REVOKE 권한 ON 대상 FROM 사용자' 형식을 따릅니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "REVOKE",
+        "DCL",
+        "권한 회수",
+        "SQL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_905cd34779584b28",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          112
+        ],
+        "page_span": {
+          "start_page": 112,
+          "end_page": 112
+        },
+        "source_explanation": "참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "테이블 정의와 권한 제어"
+        ],
+        "chapter_label": "테이블 정의와 권한 제어",
+        "chapter_key": "데이터베이스 구축 > 테이블 정의와 권한 제어",
+        "chapter_id": "chapter_223"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE"
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL"
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION"
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ON DELETE NO ACTION"
+        ],
+        "answer_text": "ON DELETE NO ACTION"
+      },
+      "explanation": {
+        "source_text": "참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다.",
+        "summary": "외래키 제약 조건 중 삭제 시 동작 옵션에 관한 문제입니다.",
+        "why_correct": [
+          "NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않는 옵션입니다."
+        ],
+        "why_others_wrong": [
+          "CASCADE는 함께 삭제합니다.",
+          "SET NULL은 NULL 값으로 변경합니다.",
+          "SET DEFAULT는 기본값으로 변경합니다."
+        ],
+        "key_concepts": [
+          "참조 무결성",
+          "외래키 옵션"
+        ],
+        "memory_cues": [
+          "NO ACTION = 아무것도 안 함"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE CASCADE'이므로 일치하지 않습니다. CASCADE는 함께 삭제합니다. SET NULL은 NULL 값으로 변경합니다."
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET NULL'이므로 일치하지 않습니다. CASCADE는 함께 삭제합니다. SET NULL은 NULL 값으로 변경합니다."
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않는 옵션입니다."
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET DEFAULT'이므로 일치하지 않습니다. CASCADE는 함께 삭제합니다. SET NULL은 NULL 값으로 변경합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 참조 무결성, 외래키 옵션",
+          "정답 판단 근거를 적용합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않는 옵션입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CASCADE는 함께 삭제합니다."
+        ],
+        "exam_traps": [
+          "CASCADE는 함께 삭제합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '참조 무결성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '외래키 옵션'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. NO ACTION = 아무것도 안 함"
+        ],
+        "detailed_summary": "외래키 제약 조건 중 삭제 시 동작 옵션에 관한 문제입니다. 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조하는 테이블에 변화가 있어도 아무런 조치를 취하지 않는 옵션입니다. 시험 포인트는 CASCADE는 함께 삭제합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "CREATE TABLE",
+        "참조 무결성",
+        "ON DELETE",
+        "NO ACTION"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_adad708fcfa2fed7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          112
+        ],
+        "page_span": {
+          "start_page": 112,
+          "end_page": 112
+        },
+        "source_explanation": "사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "테이블 정의와 권한 제어"
+        ],
+        "chapter_label": "테이블 정의와 권한 제어",
+        "chapter_key": "데이터베이스 구축 > 테이블 정의와 권한 제어",
+        "chapter_id": "chapter_223"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "delete select on department to X1;"
+          },
+          {
+            "label": "2",
+            "text": "remove select on department from X1;"
+          },
+          {
+            "label": "3",
+            "text": "revoke select on department from X1;"
+          },
+          {
+            "label": "4",
+            "text": "grant select on department from X1;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "revoke select on department from X1;"
+        ],
+        "answer_text": "revoke select on department from X1;"
+      },
+      "explanation": {
+        "source_text": "사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다.",
+        "summary": "SQL의 제어어(DCL) 중 권한 회수 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "REVOKE는 부여된 권한을 다시 뺏어올 때 사용하는 표준 SQL 명령어입니다."
+        ],
+        "why_others_wrong": [
+          "delete는 데이터를 삭제하는 DML입니다.",
+          "remove는 표준 SQL 권한 회수 명령어가 아닙니다.",
+          "grant는 권한을 부여할 때 사용합니다."
+        ],
+        "key_concepts": [
+          "DCL",
+          "GRANT",
+          "REVOKE"
+        ],
+        "memory_cues": [
+          "GRANT TO, REVOKE FROM"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "delete select on department to X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'delete select on department to X1;'이므로 일치하지 않습니다. delete는 데이터를 삭제하는 DML입니다. remove는 표준 SQL 권한 회수 명령어가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "remove select on department from X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'remove select on department from X1;'이므로 일치하지 않습니다. delete는 데이터를 삭제하는 DML입니다. remove는 표준 SQL 권한 회수 명령어가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "revoke select on department from X1;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 revoke select on department from X1;'와 일치합니다. REVOKE는 부여된 권한을 다시 뺏어올 때 사용하는 표준 SQL 명령어입니다."
+          },
+          {
+            "label": "4",
+            "text": "grant select on department from X1;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 revoke select on department from X1;'인데 이 선택지는 'grant select on department from X1;'이므로 일치하지 않습니다. delete는 데이터를 삭제하는 DML입니다. remove는 표준 SQL 권한 회수 명령어가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은?",
+          "핵심 개념을 떠올립니다. DCL, GRANT, REVOKE",
+          "정답 판단 근거를 적용합니다. REVOKE는 부여된 권한을 다시 뺏어올 때 사용하는 표준 SQL 명령어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. delete는 데이터를 삭제하는 DML입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "delete는 데이터를 삭제하는 DML입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DCL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'GRANT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'REVOKE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. GRANT TO, REVOKE FROM"
+        ],
+        "detailed_summary": "SQL의 제어어(DCL) 중 권한 회수 명령어를 묻는 문제입니다. 사용자로부터 권한을 취소(회수)하는 명령어는 revoke입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 사용자 X1에게 department 테이블에 대한 검색 연산을 회수하는 명령은? 정답입니다. 이 선택지는 실제 정답인 '3번 revoke select on department from X1;'와 일치합니다. REVOKE는 부여된 권한을 다시 뺏어올 때 사용하는 표준 SQL 명령어입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DCL",
+        "REVOKE",
+        "권한 회수",
+        "SQL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4355e742a29c3367",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          148
+        ],
+        "page_span": {
+          "start_page": 148,
+          "end_page": 148
+        },
+        "source_explanation": "전문가의 조언 | 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "테이블 정의와 권한 제어"
+        ],
+        "chapter_label": "테이블 정의와 권한 제어",
+        "chapter_key": "3과목 데이터베이스 구축 > 테이블 정의와 권한 제어",
+        "chapter_id": "chapter_126"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "59. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE"
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL"
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION"
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ON DELETE NO ACTION"
+        ],
+        "answer_text": "ON DELETE NO ACTION"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다.",
+        "summary": "외래키 제약 조건의 삭제 옵션을 묻는 문제입니다.",
+        "why_correct": [
+          "NO ACTION은 참조되는 행이 삭제될 때 참조하는 행에 아무런 조치를 취하지 않거나 삭제를 거부하여 원래 상태를 유지하게 합니다."
+        ],
+        "why_others_wrong": [
+          "CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "key_concepts": [
+          "CASCADE",
+          "SET NULL",
+          "NO ACTION"
+        ],
+        "memory_cues": [
+          "NO ACTION = 아무것도 안 함 (삭제 안 됨)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ON DELETE CASCADE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE CASCADE'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          },
+          {
+            "label": "2",
+            "text": "ON DELETE SET NULL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET NULL'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          },
+          {
+            "label": "3",
+            "text": "ON DELETE NO ACTION",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조되는 행이 삭제될 때 참조하는 행에 아무런 조치를 취하지 않거나 삭제를 거부하여 원래 상태를 유지하게 합니다."
+          },
+          {
+            "label": "4",
+            "text": "ON DELETE SET DEFAULT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ON DELETE NO ACTION'인데 이 선택지는 'ON DELETE SET DEFAULT'이므로 일치하지 않습니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 59. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. CASCADE, SET NULL, NO ACTION",
+          "정답 판단 근거를 적용합니다. NO ACTION은 참조되는 행이 삭제될 때 참조하는 행에 아무런 조치를 취하지 않거나 삭제를 거부하여 원래 상태를 유지하게 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "exam_traps": [
+          "CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CASCADE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'SET NULL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'NO ACTION'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. NO ACTION = 아무것도 안 함 (삭제 안 됨)"
+        ],
+        "detailed_summary": "외래키 제약 조건의 삭제 옵션을 묻는 문제입니다. 전문가의 조언 | 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션은 NO ACTION입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 59. CREATE TABLE 명령을 이용해 테이블을 정의할 때 참조 테이블의 튜플이 삭제되더라도 기본 테이블의 튜플은 삭제되지 않도록 지정하는 옵션으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 ON DELETE NO ACTION'와 일치합니다. NO ACTION은 참조되는 행이 삭제될 때 참조하는 행에 아무런 조치를 취하지 않거나 삭제를 거부하여 원래 상태를 유지하게 합니다. 시험 포인트는 CASCADE는 연쇄 삭제, SET NULL은 NULL로 변경, SET DEFAULT는 기본값으로 변경하는 옵션입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "CREATE TABLE",
+        "참조 무결성",
+        "ON DELETE",
+        "NO ACTION"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_248396993d9fe6f9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0186_p0191"
+        ],
+        "source_pages": [
+          186,
+          187,
+          188,
+          189,
+          190,
+          191
+        ],
+        "page_span": {
+          "start_page": 186,
+          "end_page": 191
+        },
+        "source_explanation": "ALTER TABLE 학생 DROP 학년 CASCADE;는 '학생' 테이블에서 '학년' 속성을 제거하며, 이를 참조하는 다른 테이블의 속성도 연쇄적으로 제거합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "SQL 개요와 DDL·DML·DCL"
+        ],
+        "chapter_label": "SQL 개요와 DDL·DML·DCL",
+        "chapter_key": "3과목 데이터베이스 구축 > SQL 개요와 DDL·DML·DCL",
+        "chapter_id": "chapter_115"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_052",
+        "topic_title": "테이블 정의와 권한 제어",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "테이블 정의와 권한 제어",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은?\nALTER TABLE 학생 DROP 학년 CASCADE;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+          },
+          {
+            "label": "2",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다."
+          },
+          {
+            "label": "3",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+          },
+          {
+            "label": "4",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+        ],
+        "answer_text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다."
+      },
+      "explanation": {
+        "source_text": "ALTER TABLE 학생 DROP 학년 CASCADE;는 '학생' 테이블에서 '학년' 속성을 제거하며, 이를 참조하는 다른 테이블의 속성도 연쇄적으로 제거합니다.",
+        "summary": "ALTER TABLE 문을 사용하여 테이블의 구조를 변경하고 속성을 삭제하는 문제입니다.",
+        "why_correct": [
+          "ALTER TABLE [테이블명] DROP [속성명] CASCADE 구문은 지정된 테이블에서 특정 속성을 삭제하며, 해당 속성을 참조하는 다른 객체들도 함께 삭제(CASCADE)함을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다.",
+          "4번은 CASCADE가 아닌 RESTRICT에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "ALTER TABLE",
+          "DROP COLUMN",
+          "CASCADE vs RESTRICT"
+        ],
+        "memory_cues": [
+          "CASCADE는 폭포처럼 연쇄적으로 영향을 준다는 뜻입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'이므로 일치하지 않습니다. 1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다. 4번은 CASCADE가 아닌 RESTRICT에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학년 테이블에서 학생 속성을 제거하되 학생 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.'이므로 일치하지 않습니다. 1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다. 4번은 CASCADE가 아닌 RESTRICT에 대한 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'와 일치합니다. ALTER TABLE [테이블명] DROP [속성명] CASCADE 구문은 지정된 테이블에서 특정 속성을 삭제하며, 해당 속성을 참조하는 다른 객체들도 함께 삭제(CASCADE)함을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'인데 이 선택지는 '학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성이 있는 경우 제거를 중단한다.'이므로 일치하지 않습니다. 1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다. 4번은 CASCADE가 아닌 RESTRICT에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은? ALTER TABLE 학생 DROP 학년 CASCADE;",
+          "핵심 개념을 떠올립니다. ALTER TABLE, DROP COLUMN, CASCADE vs RESTRICT",
+          "정답 판단 근거를 적용합니다. ALTER TABLE [테이블명] DROP [속성명] CASCADE 구문은 지정된 테이블에서 특정 속성을 삭제하며, 해당 속성을 참조하는 다른 객체들도 함께 삭제(CASCADE)함을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 대상 테이블이 '학년'이 아니므로 틀렸습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ALTER TABLE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DROP COLUMN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'CASCADE vs RESTRICT'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CASCADE는 폭포처럼 연쇄적으로 영향을 준다는 뜻입니다."
+        ],
+        "detailed_summary": "ALTER TABLE 문을 사용하여 테이블의 구조를 변경하고 속성을 삭제하는 문제입니다. ALTER TABLE 학생 DROP 학년 CASCADE;는 '학생' 테이블에서 '학년' 속성을 제거하며, 이를 참조하는 다른 테이블의 속성도 연쇄적으로 제거합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행 결과를 가장 올바르게 설명한 것은? ALTER TABLE 학생 DROP 학년 CASCADE; 정답입니다. 이 선택지는 실제 정답인 '3번 학생 테이블에서 학년 속성을 제거하되 학년 속성을 참조하는 다른 테이블의 속성도 함께 제거한다.'와 일치합니다. ALTER TABLE [테이블명] DROP [속성명] CASCADE 구문은 지정된 테이블에서 특정 속성을 삭제하며, 해당 속성을 참조하는 다른 객체들도 함께 삭제(CASCADE)함을 의미합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "ALTER TABLE",
+        "DROP",
+        "CASCADE",
+        "데이터베이스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

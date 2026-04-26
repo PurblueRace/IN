@@ -1,0 +1,1422 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_071",
+    "sequence": 71,
+    "title": "Java 예외 처리",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 9,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_346",
+      "chapter_345"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_4b3fa532547824bc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          19
+        ],
+        "page_span": {
+          "start_page": 19,
+          "end_page": 19
+        },
+        "source_explanation": "div(5,5) 호출 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch문은 건너뛰고, finally문은 항상 실행되므로 \"Done\"이 출력되어 최종 결과는 \"1 Done\"입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는?\npublic class Test {\nstatic void div(int a, int b) {\ntry {\nSystem.out.print(a / b + \" \");\n} catch(ArithmeticException e1) {\nSystem.out.print(\"DivideByZero \");\n} finally {\nSystem.out.print(\"Done\");\n}\n}\npublic static void main(String[ ] args) {\ndiv(5,5);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "1 DivideByZero"
+          },
+          {
+            "label": "3",
+            "text": "DivideByZero Done"
+          },
+          {
+            "label": "4",
+            "text": "1 Done"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "1 Done"
+        ],
+        "answer_text": "1 Done"
+      },
+      "explanation": {
+        "source_text": "div(5,5) 호출 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch문은 건너뛰고, finally문은 항상 실행되므로 \"Done\"이 출력되어 최종 결과는 \"1 Done\"입니다.",
+        "summary": "Java의 try-catch-finally 구문 실행 순서를 묻는 문제입니다.",
+        "why_correct": [
+          "5 나누기 5는 정수 1로 정상 계산되므로 try 블록의 '1 '이 출력됩니다. 이후 예외 여부와 상관없이 실행되는 finally 블록의 'Done'이 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다.",
+          "3번: 0으로 나누었을 때(예: div(5,0)) 나올 수 있는 결과입니다."
+        ],
+        "key_concepts": [
+          "try 블록 (정상 실행)",
+          "catch 블록 (예외 발생 시)",
+          "finally 블록 (항상 실행)"
+        ],
+        "memory_cues": [
+          "finally는 '마지막으로 무조건' 실행되는 블록입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 '1'이므로 일치하지 않습니다. 2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다. 3번: 0으로 나누었을 때(예: div(5,0)) 나올 수 있는 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "1 DivideByZero",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 '1 DivideByZero'이므로 일치하지 않습니다. 2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다. 3번: 0으로 나누었을 때(예: div(5,0)) 나올 수 있는 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "DivideByZero Done",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 'DivideByZero Done'이므로 일치하지 않습니다. 2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다. 3번: 0으로 나누었을 때(예: div(5,0)) 나올 수 있는 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "1 Done",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 1 Done'와 일치합니다. 5 나누기 5는 정수 1로 정상 계산되므로 try 블록의 '1 '이 출력됩니다. 이후 예외 여부와 상관없이 실행되는 finally 블록의 'Done'이 출력됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는? public class Test { static void div(int a, int b) { try { System.out.print(a / b + \" \"); } catch(ArithmeticException e1) { System.out.print(\"DivideByZero \"); } finally { System.out.print(\"Done\"); } } public static void main(String[ ] args) { div(5,5); } }",
+          "핵심 개념을 떠올립니다. try 블록 (정상 실행), catch 블록 (예외 발생 시), finally 블록 (항상 실행)",
+          "정답 판단 근거를 적용합니다. 5 나누기 5는 정수 1로 정상 계산되므로 try 블록의 '1 '이 출력됩니다. 이후 예외 여부와 상관없이 실행되는 finally 블록의 'Done'이 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다."
+        ],
+        "exam_traps": [
+          "2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'try 블록 (정상 실행)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'catch 블록 (예외 발생 시)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'finally 블록 (항상 실행)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. finally는 '마지막으로 무조건' 실행되는 블록입니다."
+        ],
+        "detailed_summary": "Java의 try-catch-finally 구문 실행 순서를 묻는 문제입니다. div(5,5) 호출 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch문은 건너뛰고, finally문은 항상 실행되므로 \"Done\"이 출력되어 최종 결과는 \"1 Done\"입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는? public class Test { static void div(int a, int b) { try { System.out.print(a / b + \" \"); } catch(ArithmeticException e1) { System.out.print(\"DivideByZero \"); } finally { System.out.print(\"Done\"); } } public static void main(String[ ] args) { div(5,5); } } 정답입니다. 이 선택지는 실제 정답인 '4번 1 Done'와 일치합니다. 5 나누기 5는 정수 1로 정상 계산되므로 try 블록의 '1 '이 출력됩니다. 이후 예외 여부와 상관없이 실행되는 finally 블록의 'Done'이 출력됩니다. 시험 포인트는 2번: 예외가 발생하지 않았으므로 catch 블록은 실행되지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "예외 처리",
+        "try-catch-finally",
+        "ArithmeticException"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fcc610e85e57d557",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0021_p0026"
+        ],
+        "source_pages": [
+          21
+        ],
+        "page_span": {
+          "start_page": 21,
+          "end_page": 21
+        },
+        "source_explanation": "div(5,5) 호출 시 5/5인 1이 출력되고, 예외가 발생하지 않아 catch문은 건너뛰며, finally문은 항상 실행되므로 Done이 출력됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "76. 다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는?\npublic class Test {\nstatic void div(int a, int b) {\ntry {\nSystem.out.print(a / b + \" \");\n} catch(ArithmeticException e1) {\nSystem.out.print(\"DivideByZero \");\n} finally {\nSystem.out.print(\"Done\");\n}\n}\npublic static void main(String[ ] args) {\ndiv(5,5);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "1 DivideByZero"
+          },
+          {
+            "label": "3",
+            "text": "DivideByZero Done"
+          },
+          {
+            "label": "4",
+            "text": "1 Done"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "1 Done"
+        ],
+        "answer_text": "1 Done"
+      },
+      "explanation": {
+        "source_text": "div(5,5) 호출 시 5/5인 1이 출력되고, 예외가 발생하지 않아 catch문은 건너뛰며, finally문은 항상 실행되므로 Done이 출력됩니다.",
+        "summary": "Java의 try-catch-finally 구문 실행 순서를 묻는 문제입니다.",
+        "why_correct": [
+          "div(5,5) 실행 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch 블록은 실행되지 않고, finally 블록인 Done이 출력되어 최종 결과는 '1 Done'이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1번은 finally 블록이 누락되었습니다.",
+          "2번과 3번은 발생하지 않은 예외 처리 문구가 포함되어 틀렸습니다."
+        ],
+        "key_concepts": [
+          "try: 예외 발생 가능 코드",
+          "catch: 예외 발생 시 처리",
+          "finally: 예외 발생 여부와 상관없이 항상 실행"
+        ],
+        "memory_cues": [
+          "finally는 '마지막으로 무조건' 실행된다고 외우세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 '1'이므로 일치하지 않습니다. 1번은 finally 블록이 누락되었습니다. 2번과 3번은 발생하지 않은 예외 처리 문구가 포함되어 틀렸습니다."
+          },
+          {
+            "label": "2",
+            "text": "1 DivideByZero",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 '1 DivideByZero'이므로 일치하지 않습니다. 1번은 finally 블록이 누락되었습니다. 2번과 3번은 발생하지 않은 예외 처리 문구가 포함되어 틀렸습니다."
+          },
+          {
+            "label": "3",
+            "text": "DivideByZero Done",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 1 Done'인데 이 선택지는 'DivideByZero Done'이므로 일치하지 않습니다. 1번은 finally 블록이 누락되었습니다. 2번과 3번은 발생하지 않은 예외 처리 문구가 포함되어 틀렸습니다."
+          },
+          {
+            "label": "4",
+            "text": "1 Done",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 1 Done'와 일치합니다. div(5,5) 실행 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch 블록은 실행되지 않고, finally 블록인 Done이 출력되어 최종 결과는 '1 Done'이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. 다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는? public class Test { static void div(int a, int b) { try { System.out.print(a / b + \" \"); } catch(ArithmeticException e1) { System.out.print(\"DivideByZero \"); } finally { System.out.print(\"Done\"); } } public static void main(String[ ] args) { div(5,5); } }",
+          "핵심 개념을 떠올립니다. try: 예외 발생 가능 코드, catch: 예외 발생 시 처리, finally: 예외 발생 여부와 상관없이 항상 실행",
+          "정답 판단 근거를 적용합니다. div(5,5) 실행 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch 블록은 실행되지 않고, finally 블록인 Done이 출력되어 최종 결과는 '1 Done'이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 finally 블록이 누락되었습니다."
+        ],
+        "exam_traps": [
+          "1번은 finally 블록이 누락되었습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'try: 예외 발생 가능 코드'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'catch: 예외 발생 시 처리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'finally: 예외 발생 여부와 상관없이 항상 실행'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. finally는 '마지막으로 무조건' 실행된다고 외우세요."
+        ],
+        "detailed_summary": "Java의 try-catch-finally 구문 실행 순서를 묻는 문제입니다. div(5,5) 호출 시 5/5인 1이 출력되고, 예외가 발생하지 않아 catch문은 건너뛰며, finally문은 항상 실행되므로 Done이 출력됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 76. 다음은 DivideByZero에 대한 예외처리 구문을 JAVA 프로그램으로 구현한 것이다. 프로그램이 실행되었을 때의 결과는? public class Test { static void div(int a, int b) { try { System.out.print(a / b + \" \"); } catch(ArithmeticException e1) { System.out.print(\"DivideByZero \"); } finally { System.out.print(\"Done\"); } } public static void main(String[ ] args) { div(5,5); } } 정답입니다. 이 선택지는 실제 정답인 '4번 1 Done'와 일치합니다. div(5,5) 실행 시 5/5=1이 출력됩니다. 예외가 발생하지 않았으므로 catch 블록은 실행되지 않고, finally 블록인 Done이 출력되어 최종 결과는 '1 Done'이 됩니다. 시험 포인트는 1번은 finally 블록이 누락되었습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "예외처리",
+        "try-catch-finally",
+        "ArithmeticException"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ccd8bdab13f579f0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          55
+        ],
+        "page_span": {
+          "start_page": 55,
+          "end_page": 55
+        },
+        "source_explanation": "전문가의 조언 | continue는 반복문의 실행을 제어하기 위해 사용되는 예약어로, continue 이후의 문장을 실행하지 않고 제어를 반복문의 처음으로 옮깁니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "65. 다음 중 JAVA에서 예외 처리를 위한 기본 형식에 사용되는 예약어가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "try"
+          },
+          {
+            "label": "2",
+            "text": "finally"
+          },
+          {
+            "label": "3",
+            "text": "catch"
+          },
+          {
+            "label": "4",
+            "text": "continue"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "continue"
+        ],
+        "answer_text": "continue"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | continue는 반복문의 실행을 제어하기 위해 사용되는 예약어로, continue 이후의 문장을 실행하지 않고 제어를 반복문의 처음으로 옮깁니다.",
+        "summary": "Java의 예외 처리(Exception Handling) 구문에 사용되는 키워드를 묻는 문제입니다.",
+        "why_correct": [
+          "continue는 반복문(for, while) 내에서 현재 반복을 건너뛰고 다음 반복으로 넘어갈 때 사용하는 제어문 키워드입니다."
+        ],
+        "why_others_wrong": [
+          "try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "예외 처리 구문",
+          "제어문"
+        ],
+        "memory_cues": [
+          "예외 처리는 트캐파 (try-catch-finally)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "try",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 continue'인데 이 선택지는 'try'이므로 일치하지 않습니다. try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "finally",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 continue'인데 이 선택지는 'finally'이므로 일치하지 않습니다. try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "catch",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 continue'인데 이 선택지는 'catch'이므로 일치하지 않습니다. try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "continue",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 continue'와 일치합니다. continue는 반복문(for, while) 내에서 현재 반복을 건너뛰고 다음 반복으로 넘어갈 때 사용하는 제어문 키워드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. 다음 중 JAVA에서 예외 처리를 위한 기본 형식에 사용되는 예약어가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 예외 처리 구문, 제어문",
+          "정답 판단 근거를 적용합니다. continue는 반복문(for, while) 내에서 현재 반복을 건너뛰고 다음 반복으로 넘어갈 때 사용하는 제어문 키워드입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '예외 처리 구문'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '제어문'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 예외 처리는 트캐파 (try-catch-finally)"
+        ],
+        "detailed_summary": "Java의 예외 처리(Exception Handling) 구문에 사용되는 키워드를 묻는 문제입니다. 전문가의 조언 | continue는 반복문의 실행을 제어하기 위해 사용되는 예약어로, continue 이후의 문장을 실행하지 않고 제어를 반복문의 처음으로 옮깁니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. 다음 중 JAVA에서 예외 처리를 위한 기본 형식에 사용되는 예약어가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 continue'와 일치합니다. continue는 반복문(for, while) 내에서 현재 반복을 건너뛰고 다음 반복으로 넘어갈 때 사용하는 제어문 키워드입니다. 시험 포인트는 try, catch, finally는 Java 예외 처리의 핵심 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "예외 처리",
+        "try-catch",
+        "finally",
+        "continue"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1513164a58e2bc3c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "page_span": {
+          "start_page": 96,
+          "end_page": 101
+        },
+        "source_explanation": "Java의 print() 또는 println() 사용 시 '문자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과로 출력합니다. 괄호가 있으면 괄호 안의 연산이 우선됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "73. 다음 JAVA 코드 출력문의 결과는?\nSystem.out.println(\"5 + 2 = \" + 3 + 4);\nSystem.out.println(\"5 + 2 = \" + (3 + 4));",
+        "choices": [
+          {
+            "label": "1",
+            "text": "5 + 2 = 34\n5 + 2 = 34"
+          },
+          {
+            "label": "2",
+            "text": "5 + 2 = 3 + 4\n5 + 2 = 7"
+          },
+          {
+            "label": "3",
+            "text": "7 = 7\n7 + 7"
+          },
+          {
+            "label": "4",
+            "text": "5 + 2 = 34\n5 + 2 = 7"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "5 + 2 = 34\n5 + 2 = 7"
+        ],
+        "answer_text": "5 + 2 = 34, 5 + 2 = 7"
+      },
+      "explanation": {
+        "source_text": "Java의 print() 또는 println() 사용 시 '문자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과로 출력합니다. 괄호가 있으면 괄호 안의 연산이 우선됩니다.",
+        "summary": "Java에서 문자열과 숫자의 결합 연산 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "첫 번째 줄: 왼쪽부터 연산되므로 \"5 + 2 = \" + 3이 먼저 수행되어 문자열 \"5 + 2 = 3\"이 되고, 여기에 4가 결합되어 \"5 + 2 = 34\"가 됩니다.",
+          "두 번째 줄: 괄호 (3 + 4)가 우선 계산되어 7이 되고, 문자열과 결합되어 \"5 + 2 = 7\"이 됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+        ],
+        "key_concepts": [
+          "문자열 결합 연산",
+          "연산자 우선순위"
+        ],
+        "memory_cues": [
+          "문자열이 앞에 나오면 뒤에 오는 숫자들도 문자열로 취급되어 붙는다. 괄호는 무조건 1등!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "5 + 2 = 34 5 + 2 = 34",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34 5 + 2 = 7'인데 이 선택지는 '5 + 2 = 34 5 + 2 = 34'이므로 일치하지 않습니다. 1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "5 + 2 = 3 + 4 5 + 2 = 7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34 5 + 2 = 7'인데 이 선택지는 '5 + 2 = 3 + 4 5 + 2 = 7'이므로 일치하지 않습니다. 1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "7 = 7 7 + 7",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5 + 2 = 34 5 + 2 = 7'인데 이 선택지는 '7 = 7 7 + 7'이므로 일치하지 않습니다. 1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+          },
+          {
+            "label": "4",
+            "text": "5 + 2 = 34 5 + 2 = 7",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 5 + 2 = 34 5 + 2 = 7'와 일치합니다. 첫 번째 줄: 왼쪽부터 연산되므로 \"5 + 2 = \" + 3이 먼저 수행되어 문자열 \"5 + 2 = 3\"이 되고, 여기에 4가 결합되어 \"5 + 2 = 34\"가 됩니다. 두 번째 줄: 괄호 (3 + 4)가 우선 계산되어 7이 되고, 문자열과 결합되어 \"5 + 2 = 7\"이 됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 JAVA 코드 출력문의 결과는? System.out.println(\"5 + 2 = \" + 3 + 4); System.out.println(\"5 + 2 = \" + (3 + 4));",
+          "핵심 개념을 떠올립니다. 문자열 결합 연산, 연산자 우선순위",
+          "정답 판단 근거를 적용합니다. 첫 번째 줄: 왼쪽부터 연산되므로 \"5 + 2 = \" + 3이 먼저 수행되어 문자열 \"5 + 2 = 3\"이 되고, 여기에 4가 결합되어 \"5 + 2 = 34\"가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '문자열 결합 연산'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '연산자 우선순위'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 문자열이 앞에 나오면 뒤에 오는 숫자들도 문자열로 취급되어 붙는다. 괄호는 무조건 1등!"
+        ],
+        "detailed_summary": "Java에서 문자열과 숫자의 결합 연산 방식을 묻는 문제입니다. Java의 print() 또는 println() 사용 시 '문자 + 숫자'는 연산 수행 후의 숫자 결과를, '문자 + 숫자'는 두 값을 이어서 문자 결과로 출력합니다. 괄호가 있으면 괄호 안의 연산이 우선됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 73. 다음 JAVA 코드 출력문의 결과는? System.out.println(\"5 + 2 = \" + 3 + 4); System.out.println(\"5 + 2 = \" + (3 + 4)); 정답입니다. 이 선택지는 실제 정답인 '4번 5 + 2 = 34 5 + 2 = 7'와 일치합니다. 첫 번째 줄: 왼쪽부터 연산되므로 \"5 + 2 = \" + 3이 먼저 수행되어 문자열 \"5 + 2 = 3\"이 되고, 여기에 4가 결합되어 \"5 + 2 = 34\"가 됩니다. 두 번째 줄: 괄호 (3 + 4)가 우선 계산되어 7이 되고, 문자열과 결합되어 \"5 + 2 = 7\"이 됩니다. 시험 포인트는 1, 2, 3번은 연산자 우선순위나 문자열 결합 규칙을 잘못 적용한 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "문자열 결합",
+        "연산자 우선순위",
+        "println"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1b13f24c37040b18",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          113
+        ],
+        "page_span": {
+          "start_page": 113,
+          "end_page": 113
+        },
+        "source_explanation": "JAVA의 접근 제한자에는 public, protected, private, default(키워드 없음)가 있습니다. package는 접근 제한자 키워드가 아닙니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "JAVA 언어에서 접근 제한자가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "public"
+          },
+          {
+            "label": "2",
+            "text": "protected"
+          },
+          {
+            "label": "3",
+            "text": "package"
+          },
+          {
+            "label": "4",
+            "text": "private"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "package"
+        ],
+        "answer_text": "package"
+      },
+      "explanation": {
+        "source_text": "JAVA의 접근 제한자에는 public, protected, private, default(키워드 없음)가 있습니다. package는 접근 제한자 키워드가 아닙니다.",
+        "summary": "Java의 접근 제어 지시어(Access Modifier) 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "Java에서 패키지 범위의 접근 제한은 키워드를 명시하지 않는 'default' 방식이며, 'package'라는 키워드는 존재하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+        ],
+        "key_concepts": [
+          "접근 제한자",
+          "캡슐화"
+        ],
+        "memory_cues": [
+          "푸프프디 (public, protected, private, default)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "public",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 package'인데 이 선택지는 'public'이므로 일치하지 않습니다. public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+          },
+          {
+            "label": "2",
+            "text": "protected",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 package'인데 이 선택지는 'protected'이므로 일치하지 않습니다. public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+          },
+          {
+            "label": "3",
+            "text": "package",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 package'와 일치합니다. Java에서 패키지 범위의 접근 제한은 키워드를 명시하지 않는 'default' 방식이며, 'package'라는 키워드는 존재하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "private",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 package'인데 이 선택지는 'private'이므로 일치하지 않습니다. public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. JAVA 언어에서 접근 제한자가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 접근 제한자, 캡슐화",
+          "정답 판단 근거를 적용합니다. Java에서 패키지 범위의 접근 제한은 키워드를 명시하지 않는 'default' 방식이며, 'package'라는 키워드는 존재하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+        ],
+        "exam_traps": [
+          "public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '접근 제한자'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '캡슐화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 푸프프디 (public, protected, private, default)"
+        ],
+        "detailed_summary": "Java의 접근 제어 지시어(Access Modifier) 종류를 묻는 문제입니다. JAVA의 접근 제한자에는 public, protected, private, default(키워드 없음)가 있습니다. package는 접근 제한자 키워드가 아닙니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. JAVA 언어에서 접근 제한자가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 package'와 일치합니다. Java에서 패키지 범위의 접근 제한은 키워드를 명시하지 않는 'default' 방식이며, 'package'라는 키워드는 존재하지 않습니다. 시험 포인트는 public, protected, private은 모두 Java의 유효한 접근 제한자 키워드입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "접근 제한자",
+        "public",
+        "private",
+        "protected"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f8058c797e4dc842",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          114,
+          115
+        ],
+        "page_span": {
+          "start_page": 114,
+          "end_page": 115
+        },
+        "source_explanation": "정수형 변수 a를 0인 b로 나누면 산술적 예외인 ArithmeticException이 발생합니다. 따라서 해당 catch 블록이 실행되어 'B'가 출력됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\npublic static void main(String[] args) {\ntry {\nint a = 32, b = 0;\ndouble c = a / b;\nSystem.out.print('A');\n}\ncatch (ArithmeticException e) {\nSystem.out.print('B');\n}\ncatch (NumberFormatException e) {\nSystem.out.print('C');\n}\ncatch (Exception e) {\nSystem.out.print('D');\n}\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "B"
+        ],
+        "answer_text": "B"
+      },
+      "explanation": {
+        "source_text": "정수형 변수 a를 0인 b로 나누면 산술적 예외인 ArithmeticException이 발생합니다. 따라서 해당 catch 블록이 실행되어 'B'가 출력됩니다.",
+        "summary": "Java의 예외 처리 메커니즘을 이해하는 문제입니다.",
+        "why_correct": [
+          "32 / 0 연산은 실행 시점에 ArithmeticException(0으로 나누기)을 유발하며, catch (ArithmeticException e) 블록에서 'B'를 출력합니다."
+        ],
+        "why_others_wrong": [
+          "예외가 발생했으므로 'A'는 출력되지 않습니다.",
+          "발생한 예외가 ArithmeticException이므로 다른 catch 블록은 무시됩니다."
+        ],
+        "key_concepts": [
+          "try-catch",
+          "ArithmeticException"
+        ],
+        "memory_cues": [
+          "0으로 나누면 ArithmeticException"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'A'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. 발생한 예외가 ArithmeticException이므로 다른 catch 블록은 무시됩니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 B'와 일치합니다. 32 / 0 연산은 실행 시점에 ArithmeticException(0으로 나누기)을 유발하며, catch (ArithmeticException e) 블록에서 'B'를 출력합니다."
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'C'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. 발생한 예외가 ArithmeticException이므로 다른 catch 블록은 무시됩니다."
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'D'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. 발생한 예외가 ArithmeticException이므로 다른 catch 블록은 무시됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { try { int a = 32, b = 0; double c = a / b; System.out.print('A'); } catch (ArithmeticException e) { System.out.print('B'); } catch (NumberFormatException e) { System.out.print('C'); } catch (Exception e) { System.out.print('D'); } } }",
+          "핵심 개념을 떠올립니다. try-catch, ArithmeticException",
+          "정답 판단 근거를 적용합니다. 32 / 0 연산은 실행 시점에 ArithmeticException(0으로 나누기)을 유발하며, catch (ArithmeticException e) 블록에서 'B'를 출력합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 예외가 발생했으므로 'A'는 출력되지 않습니다."
+        ],
+        "exam_traps": [
+          "예외가 발생했으므로 'A'는 출력되지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'try-catch'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ArithmeticException'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 0으로 나누면 ArithmeticException"
+        ],
+        "detailed_summary": "Java의 예외 처리 메커니즘을 이해하는 문제입니다. 정수형 변수 a를 0인 b로 나누면 산술적 예외인 ArithmeticException이 발생합니다. 따라서 해당 catch 블록이 실행되어 'B'가 출력됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { try { int a = 32, b = 0; double c = a / b; System.out.print('A'); } catch (ArithmeticException e) { System.out.print('B'); } catch (NumberFormatException e) { System.out.print('C'); } catch (Exception e) { System.out.print('D'); } } } 정답입니다. 이 선택지는 실제 정답인 '2번 B'와 일치합니다. 32 / 0 연산은 실행 시점에 ArithmeticException(0으로 나누기)을 유발하며, catch (ArithmeticException e) 블록에서 'B'를 출력합니다. 시험 포인트는 예외가 발생했으므로 'A'는 출력되지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "페이지 분할 위험"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "예외 처리",
+        "try-catch",
+        "ArithmeticException"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_21fcd7658a76b5b5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0131_p0136"
+        ],
+        "source_pages": [
+          132,
+          133
+        ],
+        "page_span": {
+          "start_page": 132,
+          "end_page": 133
+        },
+        "source_explanation": "정수 32를 0으로 나누는 연산은 산술적 오류를 유발하므로 ArithmeticException이 발생합니다. 따라서 해당 예외를 처리하는 catch 블록이 실행되어 'B'가 출력됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java 예외 처리"
+        ],
+        "chapter_label": "Java 예외 처리",
+        "chapter_key": "프로그래밍 언어 활용 > Java 예외 처리",
+        "chapter_id": "chapter_346"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램의 결과로 옳은 것은?\npublic class Test {\npublic static void main(String[] args) {\ntry {\nint a = 32, b = 0;\ndouble c = a / b;\nSystem.out.print('A');\n} catch (ArithmeticException e) {\nSystem.out.print('B');\n} catch (NumberFormatException e) {\nSystem.out.print('C');\n} catch (Exception e) {\nSystem.out.print('D');\n}\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "B"
+        ],
+        "answer_text": "B"
+      },
+      "explanation": {
+        "source_text": "정수 32를 0으로 나누는 연산은 산술적 오류를 유발하므로 ArithmeticException이 발생합니다. 따라서 해당 예외를 처리하는 catch 블록이 실행되어 'B'가 출력됩니다.",
+        "summary": "자바의 예외 처리 메커니즘을 이해하는 문제입니다.",
+        "why_correct": [
+          "0으로 나누기 연산은 ArithmeticException을 발생시키며, 가장 먼저 매칭되는 catch 블록인 'B' 출력문이 실행됩니다."
+        ],
+        "why_others_wrong": [
+          "예외가 발생했으므로 'A'는 출력되지 않습니다.",
+          "NumberFormatException은 숫자 형식 오류 시 발생합니다.",
+          "Exception은 모든 예외의 상위 클래스이나 이미 앞에서 처리되었습니다."
+        ],
+        "key_concepts": [
+          "try-catch",
+          "ArithmeticException",
+          "0으로 나누기"
+        ],
+        "memory_cues": [
+          "산술 오류는 Arithmetic"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'A'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. NumberFormatException은 숫자 형식 오류 시 발생합니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 B'와 일치합니다. 0으로 나누기 연산은 ArithmeticException을 발생시키며, 가장 먼저 매칭되는 catch 블록인 'B' 출력문이 실행됩니다."
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'C'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. NumberFormatException은 숫자 형식 오류 시 발생합니다."
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 B'인데 이 선택지는 'D'이므로 일치하지 않습니다. 예외가 발생했으므로 'A'는 출력되지 않습니다. NumberFormatException은 숫자 형식 오류 시 발생합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { try { int a = 32, b = 0; double c = a / b; System.out.print('A'); } catch (ArithmeticException e) { System.out.print('B'); } catch (NumberFormatException e) { System.out.print('C'); } catch (Exception e) { System.out.print('D'); } } }",
+          "핵심 개념을 떠올립니다. try-catch, ArithmeticException, 0으로 나누기",
+          "정답 판단 근거를 적용합니다. 0으로 나누기 연산은 ArithmeticException을 발생시키며, 가장 먼저 매칭되는 catch 블록인 'B' 출력문이 실행됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 예외가 발생했으므로 'A'는 출력되지 않습니다."
+        ],
+        "exam_traps": [
+          "예외가 발생했으므로 'A'는 출력되지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'try-catch'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ArithmeticException'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '0으로 나누기'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 산술 오류는 Arithmetic"
+        ],
+        "detailed_summary": "자바의 예외 처리 메커니즘을 이해하는 문제입니다. 정수 32를 0으로 나누는 연산은 산술적 오류를 유발하므로 ArithmeticException이 발생합니다. 따라서 해당 예외를 처리하는 catch 블록이 실행되어 'B'가 출력됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램의 결과로 옳은 것은? public class Test { public static void main(String[] args) { try { int a = 32, b = 0; double c = a / b; System.out.print('A'); } catch (ArithmeticException e) { System.out.print('B'); } catch (NumberFormatException e) { System.out.print('C'); } catch (Exception e) { System.out.print('D'); } } } 정답입니다. 이 선택지는 실제 정답인 '2번 B'와 일치합니다. 0으로 나누기 연산은 ArithmeticException을 발생시키며, 가장 먼저 매칭되는 catch 블록인 'B' 출력문이 실행됩니다. 시험 포인트는 예외가 발생했으므로 'A'는 출력되지 않습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "page split risk"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "예외 처리",
+        "ArithmeticException",
+        "try-catch"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_07132dc5ee70a19b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0156_p0161"
+        ],
+        "source_pages": [
+          156,
+          157,
+          158,
+          159,
+          160,
+          161
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 161
+        },
+        "source_explanation": "JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용하며, 선언된 패키지 안에 있는 클래스의 메소드를 사용할 때는 클래스와 메소드를 마침표(.)로 구분하여 'import execution.Sample;'과 같이 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "Java"
+        ],
+        "chapter_label": "Java",
+        "chapter_key": "프로그래밍 언어 활용 > Java",
+        "chapter_id": "chapter_345"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는?\n( ㉠ ) implement;\n( ㉡ ) execution.Smaple;\npublic class Test {\npublic static void main(String[ ] args) {\n...\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "package, import"
+          },
+          {
+            "label": "2",
+            "text": "import, package"
+          },
+          {
+            "label": "3",
+            "text": "include, insert"
+          },
+          {
+            "label": "4",
+            "text": "import, insert"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "package, import"
+        ],
+        "answer_text": "package, import"
+      },
+      "explanation": {
+        "source_text": "JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용하며, 선언된 패키지 안에 있는 클래스의 메소드를 사용할 때는 클래스와 메소드를 마침표(.)로 구분하여 'import execution.Sample;'과 같이 사용합니다.",
+        "summary": "Java 프로그램의 구조에서 패키지 선언과 외부 클래스 참조 방법을 묻는 문제입니다.",
+        "why_correct": [
+          "자신이 속한 패키지를 정의할 때는 package 키워드를, 다른 패키지의 클래스를 가져올 때는 import 키워드를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+        ],
+        "key_concepts": [
+          "package",
+          "import"
+        ],
+        "memory_cues": [
+          "내꺼는 package, 남의꺼는 import"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "package, import",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 package, import'와 일치합니다. 자신이 속한 패키지를 정의할 때는 package 키워드를, 다른 패키지의 클래스를 가져올 때는 import 키워드를 사용합니다."
+          },
+          {
+            "label": "2",
+            "text": "import, package",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'import, package'이므로 일치하지 않습니다. include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "include, insert",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'include, insert'이므로 일치하지 않습니다. include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "import, insert",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'import, insert'이므로 일치하지 않습니다. include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는? ( ㉠ ) implement; ( ㉡ ) execution.Smaple; public class Test { public static void main(String[ ] args) { ... } }",
+          "핵심 개념을 떠올립니다. package, import",
+          "정답 판단 근거를 적용합니다. 자신이 속한 패키지를 정의할 때는 package 키워드를, 다른 패키지의 클래스를 가져올 때는 import 키워드를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+        ],
+        "exam_traps": [
+          "include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'package'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'import'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내꺼는 package, 남의꺼는 import"
+        ],
+        "detailed_summary": "Java 프로그램의 구조에서 패키지 선언과 외부 클래스 참조 방법을 묻는 문제입니다. JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용하며, 선언된 패키지 안에 있는 클래스의 메소드를 사용할 때는 클래스와 메소드를 마침표(.)로 구분하여 'import execution.Sample;'과 같이 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는? ( ㉠ ) implement; ( ㉡ ) execution.Smaple; public class Test { public static void main(String[ ] args) { ... } } 정답입니다. 이 선택지는 실제 정답인 '1번 package, import'와 일치합니다. 자신이 속한 패키지를 정의할 때는 package 키워드를, 다른 패키지의 클래스를 가져올 때는 import 키워드를 사용합니다. 시험 포인트는 include나 insert는 Java에서 패키지 관리나 클래스 참조를 위해 사용하는 키워드가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty: 'Smaple' in the code snippet is likely a typo for 'Sample' in the original source.",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "package",
+        "import",
+        "패키지"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b4cc7306d33891ff",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          156
+        ],
+        "page_span": {
+          "start_page": 156,
+          "end_page": 156
+        },
+        "source_explanation": "JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_071",
+        "topic_title": "Java 예외 처리",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "Java 예외 처리",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는?\n```java\n( ㉠ ) implement;\n( ㉡ ) execution.Sample;\npublic class Test {\npublic static void main(String[ ] args) {\n...\n}\n}\n```",
+        "choices": [
+          {
+            "label": "1",
+            "text": "package, import"
+          },
+          {
+            "label": "2",
+            "text": "import, package"
+          },
+          {
+            "label": "3",
+            "text": "include, insert"
+          },
+          {
+            "label": "4",
+            "text": "import, insert"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "package, import"
+        ],
+        "answer_text": "package, import"
+      },
+      "explanation": {
+        "source_text": "JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용합니다.",
+        "summary": "자바 프로그램의 구조에서 패키지 선언과 외부 클래스 참조 방법을 묻는 문제입니다.",
+        "why_correct": [
+          "자신의 위치를 알리는 것은 package, 남의 것을 가져오는 것은 import입니다."
+        ],
+        "why_others_wrong": [
+          "include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+        ],
+        "key_concepts": [
+          "package",
+          "import"
+        ],
+        "memory_cues": [
+          "내 주소는 package, 남의 집은 import"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "package, import",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 package, import'와 일치합니다. 자신의 위치를 알리는 것은 package, 남의 것을 가져오는 것은 import입니다."
+          },
+          {
+            "label": "2",
+            "text": "import, package",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'import, package'이므로 일치하지 않습니다. include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+          },
+          {
+            "label": "3",
+            "text": "include, insert",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'include, insert'이므로 일치하지 않습니다. include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+          },
+          {
+            "label": "4",
+            "text": "import, insert",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 package, import'인데 이 선택지는 'import, insert'이므로 일치하지 않습니다. include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는? ```java ( ㉠ ) implement; ( ㉡ ) execution.Sample; public class Test { public static void main(String[ ] args) { ... } } ```",
+          "핵심 개념을 떠올립니다. package, import",
+          "정답 판단 근거를 적용합니다. 자신의 위치를 알리는 것은 package, 남의 것을 가져오는 것은 import입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+        ],
+        "exam_traps": [
+          "include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'package'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'import'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내 주소는 package, 남의 집은 import"
+        ],
+        "detailed_summary": "자바 프로그램의 구조에서 패키지 선언과 외부 클래스 참조 방법을 묻는 문제입니다. JAVA 코드의 상단에는 자신이 속한 패키지를 알리는 패키지명을 package [패키지명] 형식으로 입력합니다. 외부 라이브러리를 호출할 때는 import를 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 JAVA의 implement 패키지에서 execution 패키지의 Sample 클래스를 호출하는 코드를 구현한 것이다. 괄호(㉠~㉡)에 들어갈 알맞은 코드는? ```java ( ㉠ ) implement; ( ㉡ ) execution.Sample; public class Test { public static void main(String[ ] args) { ... } } ``` 정답입니다. 이 선택지는 실제 정답인 '1번 package, import'와 일치합니다. 자신의 위치를 알리는 것은 package, 남의 것을 가져오는 것은 import입니다. 시험 포인트는 include는 C/C++ 방식이며, insert는 SQL 등에서 사용되는 키워드입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "패키지",
+        "import",
+        "package"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

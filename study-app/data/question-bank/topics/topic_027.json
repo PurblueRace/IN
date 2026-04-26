@@ -1,0 +1,325 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_027",
+    "sequence": 27,
+    "title": "단위 모듈 구현과 테스트",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 2,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_236",
+      "chapter_232"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_a6afb52dcbd06872",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          12
+        ],
+        "page_span": {
+          "start_page": 12,
+          "end_page": 12
+        },
+        "source_explanation": "Static Block은 클래스가 메모리에 적재될 때 수행되는 코드 그룹을 의미하는 것으로, 설계 기법과는 무관합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "알고리즘"
+        ],
+        "chapter_label": "알고리즘",
+        "chapter_key": "소프트웨어 개발 > 알고리즘",
+        "chapter_id": "chapter_236"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_027",
+        "topic_title": "단위 모듈 구현과 테스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "단위 모듈 구현과 테스트",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "알고리즘 설계 기법으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Divide and Conquer"
+          },
+          {
+            "label": "2",
+            "text": "Greedy"
+          },
+          {
+            "label": "3",
+            "text": "Static Block"
+          },
+          {
+            "label": "4",
+            "text": "Backtracking"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Static Block"
+        ],
+        "answer_text": "Static Block"
+      },
+      "explanation": {
+        "source_text": "Static Block은 클래스가 메모리에 적재될 때 수행되는 코드 그룹을 의미하는 것으로, 설계 기법과는 무관합니다.",
+        "summary": "주요 알고리즘 설계 전략이 아닌 것을 찾는 문제입니다.",
+        "why_correct": [
+          "Static Block은 자바와 같은 프로그래밍 언어에서 클래스 초기화 시 사용되는 문법적 요소이지 알고리즘 설계 기법이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+        ],
+        "key_concepts": [
+          "알고리즘 설계 기법",
+          "분할 정복",
+          "탐욕 알고리즘",
+          "백트래킹"
+        ],
+        "memory_cues": [
+          "알고리즘 기법: 분할, 탐욕, 백트래킹, 동적 계획법 등"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Divide and Conquer",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Static Block'인데 이 선택지는 'Divide and Conquer'이므로 일치하지 않습니다. Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "Greedy",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Static Block'인데 이 선택지는 'Greedy'이므로 일치하지 않습니다. Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Static Block",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Static Block'와 일치합니다. Static Block은 자바와 같은 프로그래밍 언어에서 클래스 초기화 시 사용되는 문법적 요소이지 알고리즘 설계 기법이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "Backtracking",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Static Block'인데 이 선택지는 'Backtracking'이므로 일치하지 않습니다. Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 알고리즘 설계 기법으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 알고리즘 설계 기법, 분할 정복, 탐욕 알고리즘, 백트래킹",
+          "정답 판단 근거를 적용합니다. Static Block은 자바와 같은 프로그래밍 언어에서 클래스 초기화 시 사용되는 문법적 요소이지 알고리즘 설계 기법이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+        ],
+        "exam_traps": [
+          "Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '알고리즘 설계 기법'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분할 정복'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '탐욕 알고리즘'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '백트래킹'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 알고리즘 기법: 분할, 탐욕, 백트래킹, 동적 계획법 등"
+        ],
+        "detailed_summary": "주요 알고리즘 설계 전략이 아닌 것을 찾는 문제입니다. Static Block은 클래스가 메모리에 적재될 때 수행되는 코드 그룹을 의미하는 것으로, 설계 기법과는 무관합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 알고리즘 설계 기법으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Static Block'와 일치합니다. Static Block은 자바와 같은 프로그래밍 언어에서 클래스 초기화 시 사용되는 문법적 요소이지 알고리즘 설계 기법이 아닙니다. 시험 포인트는 Divide and Conquer(분할 정복), Greedy(탐욕법), Backtracking(백트래킹)은 모두 대표적인 알고리즘 설계 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "알고리즘 설계",
+        "분할 정복",
+        "탐욕 알고리즘",
+        "백트래킹"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a7f056fa04548b5a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          143
+        ],
+        "page_span": {
+          "start_page": 143,
+          "end_page": 143
+        },
+        "source_explanation": "전문가의 조언 | 소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은 디버깅(Debugging)입니다.\n• 코딩(Coding) : C, JAVA 등의 프로그래밍 언어로 프로그램을 작성하는 기능\n• 컴파일(Compile) : 개발자가 작성한 고급 언어로 된 프로그램을 컴퓨터가 이해할 수 있는 목적 프로그램으로 번역하여 컴퓨터에서 실행 가능한 형태로 변환하는 기능\n• 배포(Deployment) : 소프트웨어를 사용자에게 전달하는 기능"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "단위 모듈 구현과 테스트"
+        ],
+        "chapter_label": "단위 모듈 구현과 테스트",
+        "chapter_key": "소프트웨어 개발 > 단위 모듈 구현과 테스트",
+        "chapter_id": "chapter_232"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_027",
+        "topic_title": "단위 모듈 구현과 테스트",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "단위 모듈 구현과 테스트",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Coding"
+          },
+          {
+            "label": "2",
+            "text": "Compile"
+          },
+          {
+            "label": "3",
+            "text": "Debugging"
+          },
+          {
+            "label": "4",
+            "text": "Deployment"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Debugging"
+        ],
+        "answer_text": "Debugging"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은 디버깅(Debugging)입니다.\n• 코딩(Coding) : C, JAVA 등의 프로그래밍 언어로 프로그램을 작성하는 기능\n• 컴파일(Compile) : 개발자가 작성한 고급 언어로 된 프로그램을 컴퓨터가 이해할 수 있는 목적 프로그램으로 번역하여 컴퓨터에서 실행 가능한 형태로 변환하는 기능\n• 배포(Deployment) : 소프트웨어를 사용자에게 전달하는 기능",
+        "summary": "프로그램의 결함을 찾아 고치는 과정을 일컫는 용어를 묻는 문제입니다.",
+        "why_correct": [
+          "디버깅(Debugging)은 버그(Bug)를 제거(De-)하는 활동입니다."
+        ],
+        "why_others_wrong": [
+          "코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+        ],
+        "key_concepts": [
+          "Debugging"
+        ],
+        "memory_cues": [
+          "Bug(벌레)를 잡는 것 = Debugging"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Coding",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Debugging'인데 이 선택지는 'Coding'이므로 일치하지 않습니다. 코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+          },
+          {
+            "label": "2",
+            "text": "Compile",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Debugging'인데 이 선택지는 'Compile'이므로 일치하지 않습니다. 코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+          },
+          {
+            "label": "3",
+            "text": "Debugging",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Debugging'와 일치합니다. 디버깅(Debugging)은 버그(Bug)를 제거(De-)하는 활동입니다."
+          },
+          {
+            "label": "4",
+            "text": "Deployment",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Debugging'인데 이 선택지는 'Deployment'이므로 일치하지 않습니다. 코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은?",
+          "핵심 개념을 떠올립니다. Debugging",
+          "정답 판단 근거를 적용합니다. 디버깅(Debugging)은 버그(Bug)를 제거(De-)하는 활동입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+        ],
+        "exam_traps": [
+          "코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Debugging'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Bug(벌레)를 잡는 것 = Debugging"
+        ],
+        "detailed_summary": "프로그램의 결함을 찾아 고치는 과정을 일컫는 용어를 묻는 문제입니다. 전문가의 조언 | 소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은 디버깅(Debugging)입니다. • 코딩(Coding) : C, JAVA 등의 프로그래밍 언어로 프로그램을 작성하는 기능 • 컴파일(Compile) : 개발자가 작성한 고급 언어로 된 프로그램을 컴퓨터가 이해할 수 있는 목적 프로그램으로 번역하여 컴퓨터에서 실행 가능한 형태로 변환하는 기능 • 배포(Deployment) : 소프트웨어를 사용자에게 전달하는 기능 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어나 하드웨어의 오류나 잘못된 동작 등을 찾아 수정하는 기능은? 정답입니다. 이 선택지는 실제 정답인 '3번 Debugging'와 일치합니다. 디버깅(Debugging)은 버그(Bug)를 제거(De-)하는 활동입니다. 시험 포인트는 코딩은 작성, 컴파일은 번역, 배포는 전달입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "디버깅",
+        "오류 수정",
+        "소프트웨어 개발"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

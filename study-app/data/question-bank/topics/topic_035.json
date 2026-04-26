@@ -1,0 +1,2852 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_035",
+    "sequence": 35,
+    "title": "복잡도와 코드 품질",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 16,
+    "review_count": 6,
+    "source_chapter_ids": [
+      "chapter_088",
+      "chapter_248",
+      "chapter_055",
+      "chapter_071",
+      "chapter_082",
+      "chapter_061",
+      "chapter_233",
+      "chapter_084",
+      "chapter_081",
+      "chapter_090"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_3e292b90c8f17a06",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0026_p0031"
+        ],
+        "source_pages": [
+          30
+        ],
+        "page_span": {
+          "start_page": 30,
+          "end_page": 30
+        },
+        "source_explanation": "전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산\n내부 영역 3개 + 외부 영역 1개 = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수)\nV(G) = 6 - 4 + 2 = 4"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "2과목 소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_088"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "22. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3"
+          },
+          {
+            "label": "2",
+            "text": "4"
+          },
+          {
+            "label": "3",
+            "text": "5"
+          },
+          {
+            "label": "4",
+            "text": "6"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산\n내부 영역 3개 + 외부 영역 1개 = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수)\nV(G) = 6 - 4 + 2 = 4",
+        "summary": "제어 흐름 그래프를 바탕으로 McCabe의 순환 복잡도를 계산하는 문제입니다.",
+        "why_correct": [
+          "공식 V(G) = E - N + 2를 적용하면, 간선(E) 6개, 노드(N) 4개이므로 6 - 4 + 2 = 4가 됩니다.",
+          "또는 그래프에 의해 나누어지는 영역의 수(내부 3개 + 외부 1개)를 세어 4임을 알 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "계산 결과가 4이므로 3, 5, 6은 오답입니다."
+        ],
+        "key_concepts": [
+          "순환 복잡도 계산 공식: E - N + 2",
+          "영역 수 기반 계산: 닫힌 영역 수 + 1"
+        ],
+        "memory_cues": [
+          "복잡도는 '간선 빼기 노드 더하기 이' (E-N+2)로 외우세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '3'이므로 일치하지 않습니다. 계산 결과가 4이므로 3, 5, 6은 오답입니다."
+          },
+          {
+            "label": "2",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2를 적용하면, 간선(E) 6개, 노드(N) 4개이므로 6 - 4 + 2 = 4가 됩니다. 또는 그래프에 의해 나누어지는 영역의 수(내부 3개 + 외부 1개)를 세어 4임을 알 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 결과가 4이므로 3, 5, 6은 오답입니다."
+          },
+          {
+            "label": "4",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 결과가 4이므로 3, 5, 6은 오답입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가?",
+          "핵심 개념을 떠올립니다. 순환 복잡도 계산 공식: E - N + 2, 영역 수 기반 계산: 닫힌 영역 수 + 1",
+          "정답 판단 근거를 적용합니다. 공식 V(G) = E - N + 2를 적용하면, 간선(E) 6개, 노드(N) 4개이므로 6 - 4 + 2 = 4가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 결과가 4이므로 3, 5, 6은 오답입니다."
+        ],
+        "exam_traps": [
+          "계산 결과가 4이므로 3, 5, 6은 오답입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순환 복잡도 계산 공식: E - N + 2'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '영역 수 기반 계산: 닫힌 영역 수 + 1'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 복잡도는 '간선 빼기 노드 더하기 이' (E-N+2)로 외우세요."
+        ],
+        "detailed_summary": "제어 흐름 그래프를 바탕으로 McCabe의 순환 복잡도를 계산하는 문제입니다. 전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다. [방법 1] 영역 수 계산 내부 영역 3개 + 외부 영역 1개 = 4 [방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수) V(G) = 6 - 4 + 2 = 4 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2를 적용하면, 간선(E) 6개, 노드(N) 4개이므로 6 - 4 + 2 = 4가 됩니다. 또는 그래프에 의해 나누어지는 영역의 수(내부 3개 + 외부 1개)를 세어 4임을 알 수 있습니다. 시험 포인트는 계산 결과가 4이므로 3, 5, 6은 오답입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "McCabe",
+        "순환 복잡도",
+        "Cyclomatic Complexity",
+        "제어 흐름 그래프"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          30
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0030",
+            "page_number": 30,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0030.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 875937,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_3e292b90c8f17a06__figure_01",
+            "question_id": "qb_3e292b90c8f17a06",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_3e292b90c8f17a06/qb_3e292b90c8f17a06__figure_01.png",
+            "content_type": "image/png",
+            "width": 146,
+            "height": 137,
+            "file_size_bytes": 10786,
+            "source_page": 30,
+            "crop_rect_pdf_points": [
+              35.5,
+              119.5,
+              108.5,
+              188.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_3e292b90c8f17a06__figure_01",
+          "question_id": "qb_3e292b90c8f17a06",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_3e292b90c8f17a06/qb_3e292b90c8f17a06__figure_01.png",
+          "content_type": "image/png",
+          "width": 146,
+          "height": 137,
+          "file_size_bytes": 10786,
+          "source_page": 30,
+          "crop_rect_pdf_points": [
+            35.5,
+            119.5,
+            108.5,
+            188.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_3e292b90c8f17a06__figure_01",
+          "question_id": "qb_3e292b90c8f17a06",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_3e292b90c8f17a06/qb_3e292b90c8f17a06__figure_01.png",
+          "content_type": "image/png",
+          "width": 146,
+          "height": 137,
+          "file_size_bytes": 10786,
+          "source_page": 30,
+          "crop_rect_pdf_points": [
+            35.5,
+            119.5,
+            108.5,
+            188.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3e292b90c8f17a06_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_32600b25422f802c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "코드 품질",
+          "정적 분석"
+        ],
+        "chapter_label": "정적 분석",
+        "chapter_key": "소프트웨어 개발 > 코드 품질 > 정적 분석",
+        "chapter_id": "chapter_248"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "pmd"
+          },
+          {
+            "label": "2",
+            "text": "checkstyle"
+          },
+          {
+            "label": "3",
+            "text": "valMeter"
+          },
+          {
+            "label": "4",
+            "text": "cppcheck"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "valMeter"
+        ],
+        "answer_text": "valMeter"
+      },
+      "explanation": {
+        "source_text": "정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다.",
+        "summary": "프로그램을 실행하지 않고 코드를 분석하는 정적 분석 도구의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "valMeter는 동적 분석 도구의 예시로 자주 언급됩니다."
+        ],
+        "why_others_wrong": [
+          "pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+        ],
+        "key_concepts": [
+          "정적 분석",
+          "동적 분석",
+          "코드 분석 도구"
+        ],
+        "memory_cues": [
+          "정적(Static) = 실행 X",
+          "동적(Dynamic) = 실행 O"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "pmd",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'pmd'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+          },
+          {
+            "label": "2",
+            "text": "checkstyle",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'checkstyle'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "valMeter",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 valMeter'와 일치합니다. valMeter는 동적 분석 도구의 예시로 자주 언급됩니다."
+          },
+          {
+            "label": "4",
+            "text": "cppcheck",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'cppcheck'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 정적 분석, 동적 분석, 코드 분석 도구",
+          "정답 판단 근거를 적용합니다. valMeter는 동적 분석 도구의 예시로 자주 언급됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+        ],
+        "exam_traps": [
+          "pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '정적 분석'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '동적 분석'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '코드 분석 도구'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정적(Static) = 실행 X",
+          "암기 포인트를 떠올립니다. 동적(Dynamic) = 실행 O"
+        ],
+        "detailed_summary": "프로그램을 실행하지 않고 코드를 분석하는 정적 분석 도구의 종류를 묻는 문제입니다. 정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 valMeter'와 일치합니다. valMeter는 동적 분석 도구의 예시로 자주 언급됩니다. 시험 포인트는 pmd, checkstyle, cppcheck는 모두 소스 코드를 직접 실행하지 않고 결함이나 스타일을 체크하는 정적 분석 도구입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "정적 분석",
+        "코드 품질",
+        "pmd",
+        "checkstyle",
+        "cppcheck"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_afcb52c73e3a6278",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 86
+        },
+        "source_explanation": "전문가의 조언 | 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은 ②번입니다. 정형 기술 검토는 의제와 참가자의 수를 제한합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "30. 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은?\nㄱ. 의제를 제한한다.\nㄴ. 논쟁과 반박을 제한한다.\nㄷ. 문제 영역을 명확히 표현한다.\nㄹ. 참가자의 수를 제한하지 않는다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄹ"
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄴ, ㄷ"
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄷ, ㄹ"
+          },
+          {
+            "label": "4",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "ㄱ, ㄴ, ㄷ"
+        ],
+        "answer_text": "ㄱ, ㄴ, ㄷ"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은 ②번입니다. 정형 기술 검토는 의제와 참가자의 수를 제한합니다.",
+        "summary": "소프트웨어 산출물을 검토하는 정형 기술 검토(FTR)의 원칙을 묻는 문제입니다.",
+        "why_correct": [
+          "FTR은 효율적인 진행을 위해 의제를 제한하고, 논쟁을 지양하며, 문제 영역을 명확히 해야 합니다."
+        ],
+        "why_others_wrong": [
+          "ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+        ],
+        "key_concepts": [
+          "FTR",
+          "Walkthrough",
+          "Inspection"
+        ],
+        "memory_cues": [
+          "FTR은 '제한'이 미덕입니다 (의제 제한, 인원 제한, 시간 제한)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ㄱ, ㄴ, ㄷ'인데 이 선택지는 'ㄱ, ㄹ'이므로 일치하지 않습니다. ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄴ, ㄷ",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 ㄱ, ㄴ, ㄷ'와 일치합니다. FTR은 효율적인 진행을 위해 의제를 제한하고, 논쟁을 지양하며, 문제 영역을 명확히 해야 합니다."
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄷ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ㄱ, ㄴ, ㄷ'인데 이 선택지는 'ㄴ, ㄷ, ㄹ'이므로 일치하지 않습니다. ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+          },
+          {
+            "label": "4",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 ㄱ, ㄴ, ㄷ'인데 이 선택지는 'ㄱ, ㄴ, ㄷ, ㄹ'이므로 일치하지 않습니다. ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은? ㄱ. 의제를 제한한다. ㄴ. 논쟁과 반박을 제한한다. ㄷ. 문제 영역을 명확히 표현한다. ㄹ. 참가자의 수를 제한하지 않는다.",
+          "핵심 개념을 떠올립니다. FTR, Walkthrough, Inspection",
+          "정답 판단 근거를 적용합니다. FTR은 효율적인 진행을 위해 의제를 제한하고, 논쟁을 지양하며, 문제 영역을 명확히 해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+        ],
+        "exam_traps": [
+          "ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FTR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Walkthrough'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Inspection'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FTR은 '제한'이 미덕입니다 (의제 제한, 인원 제한, 시간 제한)."
+        ],
+        "detailed_summary": "소프트웨어 산출물을 검토하는 정형 기술 검토(FTR)의 원칙을 묻는 문제입니다. 전문가의 조언 | 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은 ②번입니다. 정형 기술 검토는 의제와 참가자의 수를 제한합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 정형 기술 검토(FTR)의 지침 사항으로 옳은 내용 모두를 나열한 것은? ㄱ. 의제를 제한한다. ㄴ. 논쟁과 반박을 제한한다. ㄷ. 문제 영역을 명확히 표현한다. ㄹ. 참가자의 수를 제한하지 않는다. 정답입니다. 이 선택지는 실제 정답인 '2번 ㄱ, ㄴ, ㄷ'와 일치합니다. FTR은 효율적인 진행을 위해 의제를 제한하고, 논쟁을 지양하며, 문제 영역을 명확히 해야 합니다. 시험 포인트는 ㄹ: 참가자의 수는 보통 3~5명 정도로 제한하는 것이 원칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "FTR",
+        "정형 기술 검토",
+        "검토 지침",
+        "소프트웨어 품질"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b809f646b51c1a5a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것을 리팩토링(Refactoring)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "3섹션 2빌드"
+        ],
+        "chapter_label": "3섹션 2빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 3섹션 2빌드",
+        "chapter_id": "chapter_071"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "27. 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Refactoring"
+          },
+          {
+            "label": "2",
+            "text": "Architecting"
+          },
+          {
+            "label": "3",
+            "text": "Specification"
+          },
+          {
+            "label": "4",
+            "text": "Renewal"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Refactoring"
+        ],
+        "answer_text": "Refactoring"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것을 리팩토링(Refactoring)이라고 합니다.",
+        "summary": "코드의 기능은 유지하면서 가독성과 유지보수성을 높이기 위해 구조를 개선하는 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "리팩토링은 외부 동작의 변화 없이 내부 구조를 개선하는 활동의 정의입니다."
+        ],
+        "why_others_wrong": [
+          "Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+        ],
+        "key_concepts": [
+          "리팩토링",
+          "클린 코드"
+        ],
+        "memory_cues": [
+          "기능은 그대로, 속은 깔끔하게!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Refactoring",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Refactoring'와 일치합니다. 리팩토링은 외부 동작의 변화 없이 내부 구조를 개선하는 활동의 정의입니다."
+          },
+          {
+            "label": "2",
+            "text": "Architecting",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Refactoring'인데 이 선택지는 'Architecting'이므로 일치하지 않습니다. Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+          },
+          {
+            "label": "3",
+            "text": "Specification",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Refactoring'인데 이 선택지는 'Specification'이므로 일치하지 않습니다. Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+          },
+          {
+            "label": "4",
+            "text": "Renewal",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Refactoring'인데 이 선택지는 'Renewal'이므로 일치하지 않습니다. Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 27. 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것은?",
+          "핵심 개념을 떠올립니다. 리팩토링, 클린 코드",
+          "정답 판단 근거를 적용합니다. 리팩토링은 외부 동작의 변화 없이 내부 구조를 개선하는 활동의 정의입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+        ],
+        "exam_traps": [
+          "Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '리팩토링'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '클린 코드'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 기능은 그대로, 속은 깔끔하게!"
+        ],
+        "detailed_summary": "코드의 기능은 유지하면서 가독성과 유지보수성을 높이기 위해 구조를 개선하는 기법을 묻는 문제입니다. 전문가의 조언 | 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것을 리팩토링(Refactoring)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 27. 소프트웨어를 보다 쉽게 이해할 수 있고 적은 비용으로 수정할 수 있도록 겉으로 보이는 동작의 변화 없이 내부 구조를 변경하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Refactoring'와 일치합니다. 리팩토링은 외부 동작의 변화 없이 내부 구조를 개선하는 활동의 정의입니다. 시험 포인트는 Architecting은 설계, Specification은 명세, Renewal은 갱신을 의미하며 문제의 정의와 다릅니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "리팩토링",
+        "Refactoring",
+        "코드 품질",
+        "유지보수"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c99f4894454bd27b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          87
+        ],
+        "page_span": {
+          "start_page": 87,
+          "end_page": 87
+        },
+        "source_explanation": "전문가의 조언 | 제어 흐름도에서 순환복잡도(Cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산: 내부 영역 3(①, ②, ③) + 외부 영역 1(④) = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "52섹션 4빌드"
+        ],
+        "chapter_label": "52섹션 4빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 52섹션 4빌드",
+        "chapter_id": "chapter_082"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "36. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3"
+          },
+          {
+            "label": "2",
+            "text": "4"
+          },
+          {
+            "label": "3",
+            "text": "5"
+          },
+          {
+            "label": "4",
+            "text": "6"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 제어 흐름도에서 순환복잡도(Cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산: 내부 영역 3(①, ②, ③) + 외부 영역 1(④) = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4",
+        "summary": "제어 흐름 그래프를 분석하여 McCabe의 순환 복잡도를 계산하는 문제입니다.",
+        "why_correct": [
+          "공식 V(G) = E - N + 2에 대입하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4가 됩니다. 또는 닫힌 영역 3개 + 외부 영역 1개로 계산해도 4입니다."
+        ],
+        "why_others_wrong": [
+          "계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+        ],
+        "key_concepts": [
+          "순환 복잡도",
+          "제어 흐름 그래프"
+        ],
+        "memory_cues": [
+          "영역 수 + 1 또는 E - N + 2"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '3'이므로 일치하지 않습니다. 계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+          },
+          {
+            "label": "2",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2에 대입하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4가 됩니다. 또는 닫힌 영역 3개 + 외부 영역 1개로 계산해도 4입니다."
+          },
+          {
+            "label": "3",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+          },
+          {
+            "label": "4",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 36. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가?",
+          "핵심 개념을 떠올립니다. 순환 복잡도, 제어 흐름 그래프",
+          "정답 판단 근거를 적용합니다. 공식 V(G) = E - N + 2에 대입하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4가 됩니다. 또는 닫힌 영역 3개 + 외부 영역 1개로 계산해도 4입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+        ],
+        "exam_traps": [
+          "계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순환 복잡도'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '제어 흐름 그래프'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 영역 수 + 1 또는 E - N + 2"
+        ],
+        "detailed_summary": "제어 흐름 그래프를 분석하여 McCabe의 순환 복잡도를 계산하는 문제입니다. 전문가의 조언 | 제어 흐름도에서 순환복잡도(Cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다. [방법 1] 영역 수 계산: 내부 영역 3(①, ②, ③) + 외부 영역 1(④) = 4 [방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 36. 제어 흐름 그래프가 다음과 같을 때 McCabe의 Cyclomatic 수는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2에 대입하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4가 됩니다. 또는 닫힌 영역 3개 + 외부 영역 1개로 계산해도 4입니다. 시험 포인트는 계산 실수로 인해 다른 값이 나올 수 있으나 공식에 따르면 4가 정확합니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "순환 복잡도",
+        "McCabe",
+        "Cyclomatic Complexity",
+        "제어 흐름 그래프"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          87
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0087",
+            "page_number": 87,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0087.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1059470,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_c99f4894454bd27b__figure_01",
+            "question_id": "qb_c99f4894454bd27b",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_c99f4894454bd27b/qb_c99f4894454bd27b__figure_01.png",
+            "content_type": "image/png",
+            "width": 438,
+            "height": 68,
+            "file_size_bytes": 11631,
+            "source_page": 87,
+            "crop_rect_pdf_points": [
+              31.5,
+              118.0,
+              250.5,
+              152.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_c99f4894454bd27b__figure_01",
+          "question_id": "qb_c99f4894454bd27b",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_c99f4894454bd27b/qb_c99f4894454bd27b__figure_01.png",
+          "content_type": "image/png",
+          "width": 438,
+          "height": 68,
+          "file_size_bytes": 11631,
+          "source_page": 87,
+          "crop_rect_pdf_points": [
+            31.5,
+            118.0,
+            250.5,
+            152.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_c99f4894454bd27b__figure_01",
+          "question_id": "qb_c99f4894454bd27b",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_c99f4894454bd27b/qb_c99f4894454bd27b__figure_01.png",
+          "content_type": "image/png",
+          "width": 438,
+          "height": 68,
+          "file_size_bytes": 11631,
+          "source_page": 87,
+          "crop_rect_pdf_points": [
+            31.5,
+            118.0,
+            250.5,
+            152.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_c99f4894454bd27b_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_ec859f1390076a32",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          87
+        ],
+        "page_span": {
+          "start_page": 87,
+          "end_page": 87
+        },
+        "source_explanation": "전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "25섹션 5빌드"
+        ],
+        "chapter_label": "25섹션 5빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 25섹션 5빌드",
+        "chapter_id": "chapter_061"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "37. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다."
+          },
+          {
+            "label": "3",
+            "text": "인스펙션(Inspection)과 동일한 의미를 가진다."
+          },
+          {
+            "label": "4",
+            "text": "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "인스펙션(Inspection)과 동일한 의미를 가진다."
+        ],
+        "answer_text": "인스펙션(Inspection)과 동일한 의미를 가진다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다.",
+        "summary": "소프트웨어 검토 기법 중 워크스루의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "워크스루와 인스펙션은 모두 정형 기술 검토의 일종이지만, 인스펙션은 더 공식적이고 엄격한 절차를 가진 별개의 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "워크스루",
+          "인스펙션",
+          "동료 검토"
+        ],
+        "memory_cues": [
+          "워크스루는 가볍게 훑어보기(Walk through), 인스펙션은 정밀 검사(Inspection)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.'이므로 일치하지 않습니다. 1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "인스펙션(Inspection)과 동일한 의미를 가진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'와 일치합니다. 워크스루와 인스펙션은 모두 정형 기술 검토의 일종이지만, 인스펙션은 더 공식적이고 엄격한 절차를 가진 별개의 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.'이므로 일치하지 않습니다. 1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 워크스루, 인스펙션, 동료 검토",
+          "정답 판단 근거를 적용합니다. 워크스루와 인스펙션은 모두 정형 기술 검토의 일종이지만, 인스펙션은 더 공식적이고 엄격한 절차를 가진 별개의 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '워크스루'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인스펙션'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '동료 검토'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 워크스루는 가볍게 훑어보기(Walk through), 인스펙션은 정밀 검사(Inspection)."
+        ],
+        "detailed_summary": "소프트웨어 검토 기법 중 워크스루의 특징을 묻는 문제입니다. 전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'와 일치합니다. 워크스루와 인스펙션은 모두 정형 기술 검토의 일종이지만, 인스펙션은 더 공식적이고 엄격한 절차를 가진 별개의 기법입니다. 시험 포인트는 1, 2, 4번은 워크스루의 일반적인 특징과 수행 방식을 잘 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "워크스루",
+        "Walkthrough",
+        "인스펙션",
+        "Inspection",
+        "정형 기술 검토"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_39cfaebde31c8fa7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          103
+        ],
+        "page_span": {
+          "start_page": 103,
+          "end_page": 103
+        },
+        "source_explanation": "프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "20. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "소스 코드 인스펙션"
+          },
+          {
+            "label": "2",
+            "text": "재공학"
+          },
+          {
+            "label": "3",
+            "text": "역공학"
+          },
+          {
+            "label": "4",
+            "text": "재사용"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "소스 코드 인스펙션"
+        ],
+        "answer_text": "소스 코드 인스펙션"
+      },
+      "explanation": {
+        "source_text": "프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다.",
+        "summary": "코드를 직접 읽고 검토하여 오류를 찾는 정적 분석 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "소스 코드 인스펙션(Inspection)은 전문가들이 모여 코드를 상세히 검토하며 결함을 찾아내는 공식적인 검토 기법입니다."
+        ],
+        "why_others_wrong": [
+          "재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+        ],
+        "key_concepts": [
+          "Code Inspection",
+          "Static Analysis",
+          "Peer Review"
+        ],
+        "memory_cues": [
+          "인스펙션(Inspection) = 정밀 검사"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "소스 코드 인스펙션",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 소스 코드 인스펙션'와 일치합니다. 소스 코드 인스펙션(Inspection)은 전문가들이 모여 코드를 상세히 검토하며 결함을 찾아내는 공식적인 검토 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "재공학",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '재공학'이므로 일치하지 않습니다. 재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "역공학",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '역공학'이므로 일치하지 않습니다. 재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "재사용",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '재사용'이므로 일치하지 않습니다. 재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 20. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. Code Inspection, Static Analysis, Peer Review",
+          "정답 판단 근거를 적용합니다. 소스 코드 인스펙션(Inspection)은 전문가들이 모여 코드를 상세히 검토하며 결함을 찾아내는 공식적인 검토 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+        ],
+        "exam_traps": [
+          "재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Code Inspection'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Static Analysis'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Peer Review'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인스펙션(Inspection) = 정밀 검사"
+        ],
+        "detailed_summary": "코드를 직접 읽고 검토하여 오류를 찾는 정적 분석 기법을 묻는 문제입니다. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 20. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 소스 코드 인스펙션'와 일치합니다. 소스 코드 인스펙션(Inspection)은 전문가들이 모여 코드를 상세히 검토하며 결함을 찾아내는 공식적인 검토 기법입니다. 시험 포인트는 재공학은 기존 시스템 개선, 역공학은 설계 정보 추출, 재사용은 기존 자산 활용을 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인스펙션",
+        "Inspection",
+        "정적 테스트",
+        "결함 검출"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3181de949c9eb488",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          107
+        ],
+        "page_span": {
+          "start_page": 107,
+          "end_page": 107
+        },
+        "source_explanation": "전문가의 조언 | 클린 코드(Clean Code)는 의존성 배제 원칙에 따라 코드가 다른 모듈에 미치는 영향을 최소화해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "36. 클린 코드 작성원칙에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "코드의 중복을 최소화한다."
+          },
+          {
+            "label": "2",
+            "text": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다."
+          },
+          {
+            "label": "3",
+            "text": "누구든지 코드를 쉽게 읽을 수 있도록 작성한다."
+          },
+          {
+            "label": "4",
+            "text": "간단하게 코드를 작성한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다."
+        ],
+        "answer_text": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 클린 코드(Clean Code)는 의존성 배제 원칙에 따라 코드가 다른 모듈에 미치는 영향을 최소화해야 합니다.",
+        "summary": "클린 코드의 기본 원칙을 묻는 문제입니다.",
+        "why_correct": [
+          "클린 코드는 모듈 간의 결합도를 낮추어 다른 모듈에 미치는 영향을 최소화해야 유지보수가 용이합니다."
+        ],
+        "why_others_wrong": [
+          "중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+        ],
+        "key_concepts": [
+          "가독성",
+          "단순성",
+          "의존성 최소화"
+        ],
+        "memory_cues": [
+          "클린 코드는 깔끔하고 독립적"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "코드의 중복을 최소화한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.'인데 이 선택지는 '코드의 중복을 최소화한다.'이므로 일치하지 않습니다. 중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.'와 일치합니다. 클린 코드는 모듈 간의 결합도를 낮추어 다른 모듈에 미치는 영향을 최소화해야 유지보수가 용이합니다."
+          },
+          {
+            "label": "3",
+            "text": "누구든지 코드를 쉽게 읽을 수 있도록 작성한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.'인데 이 선택지는 '누구든지 코드를 쉽게 읽을 수 있도록 작성한다.'이므로 일치하지 않습니다. 중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+          },
+          {
+            "label": "4",
+            "text": "간단하게 코드를 작성한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.'인데 이 선택지는 '간단하게 코드를 작성한다.'이므로 일치하지 않습니다. 중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 36. 클린 코드 작성원칙에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 가독성, 단순성, 의존성 최소화",
+          "정답 판단 근거를 적용합니다. 클린 코드는 모듈 간의 결합도를 낮추어 다른 모듈에 미치는 영향을 최소화해야 유지보수가 용이합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+        ],
+        "exam_traps": [
+          "중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '가독성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '단순성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '의존성 최소화'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 클린 코드는 깔끔하고 독립적"
+        ],
+        "detailed_summary": "클린 코드의 기본 원칙을 묻는 문제입니다. 전문가의 조언 | 클린 코드(Clean Code)는 의존성 배제 원칙에 따라 코드가 다른 모듈에 미치는 영향을 최소화해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 36. 클린 코드 작성원칙에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.'와 일치합니다. 클린 코드는 모듈 간의 결합도를 낮추어 다른 모듈에 미치는 영향을 최소화해야 유지보수가 용이합니다. 시험 포인트는 중복 최소화, 가독성 확보, 단순성 유지는 클린 코드의 핵심 원칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "클린 코드",
+        "Clean Code",
+        "의존성 배제",
+        "가독성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_925a739e42df10fc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          125
+        ],
+        "page_span": {
+          "start_page": 125,
+          "end_page": 125
+        },
+        "source_explanation": "전문가의 조언 | 정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "53섹션 3빌드"
+        ],
+        "chapter_label": "53섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 53섹션 3빌드",
+        "chapter_id": "chapter_084"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "29. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "pmd"
+          },
+          {
+            "label": "2",
+            "text": "cppcheck"
+          },
+          {
+            "label": "3",
+            "text": "valMeter"
+          },
+          {
+            "label": "4",
+            "text": "checkstyle"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "valMeter"
+        ],
+        "answer_text": "valMeter"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다.",
+        "summary": "프로그램을 실행하지 않고 소스 코드 자체를 분석하는 정적 분석 도구를 구분하는 문제입니다.",
+        "why_correct": [
+          "valMeter는 정적 분석 도구 목록에 포함되지 않는 명칭입니다. (유사한 이름의 동적 분석 도구인 Valgrind 등이 있을 수 있으나 지문의 valMeter는 오답으로 제시됨)"
+        ],
+        "why_others_wrong": [
+          "1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다.",
+          "2번: cppcheck는 C/C++ 정적 분석 도구입니다.",
+          "4번: checkstyle은 자바 코드 스타일을 점검하는 도구입니다."
+        ],
+        "key_concepts": [
+          "Static Analysis Tools",
+          "pmd",
+          "cppcheck",
+          "checkstyle"
+        ],
+        "memory_cues": [
+          "피씨체: pmd, cppcheck, checkstyle은 정적"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "pmd",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'pmd'이므로 일치하지 않습니다. 1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다. 2번: cppcheck는 C/C++ 정적 분석 도구입니다."
+          },
+          {
+            "label": "2",
+            "text": "cppcheck",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'cppcheck'이므로 일치하지 않습니다. 1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다. 2번: cppcheck는 C/C++ 정적 분석 도구입니다."
+          },
+          {
+            "label": "3",
+            "text": "valMeter",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 valMeter'와 일치합니다. valMeter는 정적 분석 도구 목록에 포함되지 않는 명칭입니다. (유사한 이름의 동적 분석 도구인 Valgrind 등이 있을 수 있으나 지문의 valMeter는 오답으로 제시됨)"
+          },
+          {
+            "label": "4",
+            "text": "checkstyle",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valMeter'인데 이 선택지는 'checkstyle'이므로 일치하지 않습니다. 1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다. 2번: cppcheck는 C/C++ 정적 분석 도구입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. Static Analysis Tools, pmd, cppcheck, checkstyle",
+          "정답 판단 근거를 적용합니다. valMeter는 정적 분석 도구 목록에 포함되지 않는 명칭입니다. (유사한 이름의 동적 분석 도구인 Valgrind 등이 있을 수 있으나 지문의 valMeter는 오답으로 제시됨)",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다."
+        ],
+        "exam_traps": [
+          "1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Static Analysis Tools'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'pmd'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'cppcheck'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'checkstyle'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 피씨체: pmd, cppcheck, checkstyle은 정적"
+        ],
+        "detailed_summary": "프로그램을 실행하지 않고 소스 코드 자체를 분석하는 정적 분석 도구를 구분하는 문제입니다. 전문가의 조언 | 정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 valMeter'와 일치합니다. valMeter는 정적 분석 도구 목록에 포함되지 않는 명칭입니다. (유사한 이름의 동적 분석 도구인 Valgrind 등이 있을 수 있으나 지문의 valMeter는 오답으로 제시됨) 시험 포인트는 1번: pmd는 자바 소스 코드의 결함을 찾는 정적 분석 도구입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty"
+        ]
+      },
+      "keywords": [
+        "정적 분석",
+        "Static Analysis",
+        "pmd",
+        "checkstyle",
+        "소스 코드 품질"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b58e84daec39255e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          125
+        ],
+        "page_span": {
+          "start_page": 125,
+          "end_page": 125
+        },
+        "source_explanation": "전문가의 조언 | O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계만을 거친다는 것을 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "52섹션 3빌드"
+        ],
+        "chapter_label": "52섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 52섹션 3빌드",
+        "chapter_id": "chapter_081"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "32. 알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "컴퓨터 처리가 불가"
+          },
+          {
+            "label": "2",
+            "text": "알고리즘 입력 데이터 수가 한 개"
+          },
+          {
+            "label": "3",
+            "text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+          },
+          {
+            "label": "4",
+            "text": "알고리즘 길이가 입력 데이터보다 작음"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+        ],
+        "answer_text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계만을 거친다는 것을 의미합니다.",
+        "summary": "알고리즘의 효율성을 나타내는 빅오(Big-O) 표기법 중 상수 시간을 묻는 문제입니다.",
+        "why_correct": [
+          "O(1)은 입력값(n)의 크기와 상관없이 항상 일정한 시간(상수 시간)이 걸리는 가장 효율적인 알고리즘을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+        ],
+        "key_concepts": [
+          "Time Complexity",
+          "Big-O Notation",
+          "Constant Time"
+        ],
+        "memory_cues": [
+          "O(1)은 1등(가장 빠름, 데이터 무관)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "컴퓨터 처리가 불가",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '컴퓨터 처리가 불가'이므로 일치하지 않습니다. 1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "알고리즘 입력 데이터 수가 한 개",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '알고리즘 입력 데이터 수가 한 개'이므로 일치하지 않습니다. 1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'와 일치합니다. O(1)은 입력값(n)의 크기와 상관없이 항상 일정한 시간(상수 시간)이 걸리는 가장 효율적인 알고리즘을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "알고리즘 길이가 입력 데이터보다 작음",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '알고리즘 길이가 입력 데이터보다 작음'이므로 일치하지 않습니다. 1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+          "핵심 개념을 떠올립니다. Time Complexity, Big-O Notation, Constant Time",
+          "정답 판단 근거를 적용합니다. O(1)은 입력값(n)의 크기와 상관없이 항상 일정한 시간(상수 시간)이 걸리는 가장 효율적인 알고리즘을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Time Complexity'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Big-O Notation'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Constant Time'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. O(1)은 1등(가장 빠름, 데이터 무관)"
+        ],
+        "detailed_summary": "알고리즘의 효율성을 나타내는 빅오(Big-O) 표기법 중 상수 시간을 묻는 문제입니다. 전문가의 조언 | O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계만을 거친다는 것을 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 32. 알고리즘 시간 복잡도 O(1)이 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'와 일치합니다. O(1)은 입력값(n)의 크기와 상관없이 항상 일정한 시간(상수 시간)이 걸리는 가장 효율적인 알고리즘을 의미합니다. 시험 포인트는 1, 2, 4번은 빅오 표기법의 정의와 맞지 않는 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "시간 복잡도",
+        "Big-O",
+        "O(1)",
+        "상수 시간"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a6b0ad8def26d064",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 141
+        },
+        "source_explanation": "전문가의 조언 | 코드 인스펙션은 정적 테스트 시에만 활용하는 기법입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "코드 인스펙션과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "프로그램을 수행시켜보는 것 대신에 읽어보고 눈으로 확인하는 방법으로 볼 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "코드 품질 향상 기법 중 하나이다."
+          },
+          {
+            "label": "3",
+            "text": "동적 테스트 시에만 활용하는 기법이다."
+          },
+          {
+            "label": "4",
+            "text": "결함과 함께 코딩 표준 준수 여부, 효율성 등의 다른 품질 이슈를 검사하기도 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "동적 테스트 시에만 활용하는 기법이다."
+        ],
+        "answer_text": "동적 테스트 시에만 활용하는 기법이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드 인스펙션은 정적 테스트 시에만 활용하는 기법입니다.",
+        "summary": "정적 테스트 기법인 코드 인스펙션의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "코드 인스펙션은 프로그램을 실행하지 않고 소스 코드를 분석하는 '정적 테스트' 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+        ],
+        "key_concepts": [
+          "Static Testing",
+          "Code Inspection"
+        ],
+        "memory_cues": [
+          "인스펙션 = 실행 안 함 = 정적"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "프로그램을 수행시켜보는 것 대신에 읽어보고 눈으로 확인하는 방법으로 볼 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 동적 테스트 시에만 활용하는 기법이다.'인데 이 선택지는 '프로그램을 수행시켜보는 것 대신에 읽어보고 눈으로 확인하는 방법으로 볼 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+          },
+          {
+            "label": "2",
+            "text": "코드 품질 향상 기법 중 하나이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 동적 테스트 시에만 활용하는 기법이다.'인데 이 선택지는 '코드 품질 향상 기법 중 하나이다.'이므로 일치하지 않습니다. 1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+          },
+          {
+            "label": "3",
+            "text": "동적 테스트 시에만 활용하는 기법이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 동적 테스트 시에만 활용하는 기법이다.'와 일치합니다. 코드 인스펙션은 프로그램을 실행하지 않고 소스 코드를 분석하는 '정적 테스트' 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "결함과 함께 코딩 표준 준수 여부, 효율성 등의 다른 품질 이슈를 검사하기도 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 동적 테스트 시에만 활용하는 기법이다.'인데 이 선택지는 '결함과 함께 코딩 표준 준수 여부, 효율성 등의 다른 품질 이슈를 검사하기도 한다.'이므로 일치하지 않습니다. 1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 코드 인스펙션과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Static Testing, Code Inspection",
+          "정답 판단 근거를 적용합니다. 코드 인스펙션은 프로그램을 실행하지 않고 소스 코드를 분석하는 '정적 테스트' 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Static Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Code Inspection'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인스펙션 = 실행 안 함 = 정적"
+        ],
+        "detailed_summary": "정적 테스트 기법인 코드 인스펙션의 특징을 묻는 문제입니다. 전문가의 조언 | 코드 인스펙션은 정적 테스트 시에만 활용하는 기법입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 코드 인스펙션과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 동적 테스트 시에만 활용하는 기법이다.'와 일치합니다. 코드 인스펙션은 프로그램을 실행하지 않고 소스 코드를 분석하는 '정적 테스트' 기법입니다. 시험 포인트는 1, 2, 4번은 인스펙션의 올바른 정의(눈으로 확인, 품질 향상, 표준 준수 검사)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "코드 인스펙션",
+        "정적 테스트",
+        "코드 리뷰"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d4efcda77af8ed44",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          164
+        ],
+        "page_span": {
+          "start_page": 164,
+          "end_page": 164
+        },
+        "source_explanation": "순환복잡도 계산 방법: 1) 내부 영역(3개) + 외부 영역(1개) = 4. 2) V(G) = E - N + 2 = 6 - 4 + 2 = 4. (E: 화살표 수, N: 노드 수)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "애플리케이션 테스트 관리",
+          "복잡도"
+        ],
+        "chapter_label": "복잡도",
+        "chapter_key": "2과목 소프트웨어 개발 > 애플리케이션 테스트 관리 > 복잡도",
+        "chapter_id": "chapter_090"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "40. 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3"
+          },
+          {
+            "label": "2",
+            "text": "4"
+          },
+          {
+            "label": "3",
+            "text": "5"
+          },
+          {
+            "label": "4",
+            "text": "6"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "순환복잡도 계산 방법: 1) 내부 영역(3개) + 외부 영역(1개) = 4. 2) V(G) = E - N + 2 = 6 - 4 + 2 = 4. (E: 화살표 수, N: 노드 수)",
+        "summary": "제어 흐름 그래프를 통해 순환 복잡도를 계산하는 문제입니다.",
+        "why_correct": [
+          "공식 V(G) = E - N + 2를 적용하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4입니다. 또는 닫힌 영역 수 + 1로 계산해도 3+1=4입니다."
+        ],
+        "why_others_wrong": [
+          "계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+        ],
+        "key_concepts": [
+          "순환 복잡도 (Cyclomatic Complexity)"
+        ],
+        "memory_cues": [
+          "E - N + 2",
+          "영역 + 1"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '3'이므로 일치하지 않습니다. 계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+          },
+          {
+            "label": "2",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2를 적용하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4입니다. 또는 닫힌 영역 수 + 1로 계산해도 3+1=4입니다."
+          },
+          {
+            "label": "3",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+          },
+          {
+            "label": "4",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가?",
+          "핵심 개념을 떠올립니다. 순환 복잡도 (Cyclomatic Complexity)",
+          "정답 판단 근거를 적용합니다. 공식 V(G) = E - N + 2를 적용하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4입니다. 또는 닫힌 영역 수 + 1로 계산해도 3+1=4입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+        ],
+        "exam_traps": [
+          "계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순환 복잡도 (Cyclomatic Complexity)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. E - N + 2",
+          "암기 포인트를 떠올립니다. 영역 + 1"
+        ],
+        "detailed_summary": "제어 흐름 그래프를 통해 순환 복잡도를 계산하는 문제입니다. 순환복잡도 계산 방법: 1) 내부 영역(3개) + 외부 영역(1개) = 4. 2) V(G) = E - N + 2 = 6 - 4 + 2 = 4. (E: 화살표 수, N: 노드 수) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 공식 V(G) = E - N + 2를 적용하면 간선(E) 6개, 노드(N) 4개이므로 6-4+2=4입니다. 또는 닫힌 영역 수 + 1로 계산해도 3+1=4입니다. 시험 포인트는 계산 결과가 4가 아닌 다른 수치들은 오답입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency"
+        ]
+      },
+      "keywords": [
+        "순환 복잡도",
+        "McCabe",
+        "제어 흐름 그래프",
+        "Cyclomatic Complexity"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          164
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0164",
+            "page_number": 164,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0164.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1001047,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_d4efcda77af8ed44__figure_01",
+            "question_id": "qb_d4efcda77af8ed44",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_d4efcda77af8ed44/qb_d4efcda77af8ed44__figure_01.png",
+            "content_type": "image/png",
+            "width": 211,
+            "height": 167,
+            "file_size_bytes": 16881,
+            "source_page": 164,
+            "crop_rect_pdf_points": [
+              278.0,
+              469.5,
+              383.5,
+              553.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_d4efcda77af8ed44__figure_01",
+          "question_id": "qb_d4efcda77af8ed44",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_d4efcda77af8ed44/qb_d4efcda77af8ed44__figure_01.png",
+          "content_type": "image/png",
+          "width": 211,
+          "height": 167,
+          "file_size_bytes": 16881,
+          "source_page": 164,
+          "crop_rect_pdf_points": [
+            278.0,
+            469.5,
+            383.5,
+            553.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_d4efcda77af8ed44__figure_01",
+          "question_id": "qb_d4efcda77af8ed44",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_d4efcda77af8ed44/qb_d4efcda77af8ed44__figure_01.png",
+          "content_type": "image/png",
+          "width": 211,
+          "height": 167,
+          "file_size_bytes": 16881,
+          "source_page": 164,
+          "crop_rect_pdf_points": [
+            278.0,
+            469.5,
+            383.5,
+            553.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_d4efcda77af8ed44_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_d5653892d2b2d89a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0166_p0171"
+        ],
+        "source_pages": [
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "page_span": {
+          "start_page": 166,
+          "end_page": 171
+        },
+        "source_explanation": "전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산: 내부 영역 3개 + 외부 영역 1개 = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3"
+          },
+          {
+            "label": "2",
+            "text": "4"
+          },
+          {
+            "label": "3",
+            "text": "5"
+          },
+          {
+            "label": "4",
+            "text": "6"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "4"
+        ],
+        "answer_text": "4"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다.\n[방법 1] 영역 수 계산: 내부 영역 3개 + 외부 영역 1개 = 4\n[방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4",
+        "summary": "제어 흐름 그래프를 바탕으로 맥케이브의 순환 복잡도를 구하는 문제입니다.",
+        "why_correct": [
+          "그래프의 면(Region)의 개수를 세면 내부 3개와 외부 1개를 합쳐 총 4개입니다. 또는 공식 E-N+2를 사용하여 6(간선)-4(노드)+2 = 4를 얻을 수 있습니다."
+        ],
+        "why_others_wrong": [
+          "계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+        ],
+        "key_concepts": [
+          "순환 복잡도",
+          "제어 흐름 그래프",
+          "V(G) = E - N + 2"
+        ],
+        "memory_cues": [
+          "영역의 개수(닫힌 공간 + 바깥쪽 1개)가 곧 복잡도다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '3'이므로 일치하지 않습니다. 계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "4",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 그래프의 면(Region)의 개수를 세면 내부 3개와 외부 1개를 합쳐 총 4개입니다. 또는 공식 E-N+2를 사용하여 6(간선)-4(노드)+2 = 4를 얻을 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "5",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '5'이므로 일치하지 않습니다. 계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "6",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 4'인데 이 선택지는 '6'이므로 일치하지 않습니다. 계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가?",
+          "핵심 개념을 떠올립니다. 순환 복잡도, 제어 흐름 그래프, V(G) = E - N + 2",
+          "정답 판단 근거를 적용합니다. 그래프의 면(Region)의 개수를 세면 내부 3개와 외부 1개를 합쳐 총 4개입니다. 또는 공식 E-N+2를 사용하여 6(간선)-4(노드)+2 = 4를 얻을 수 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+        ],
+        "exam_traps": [
+          "계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '순환 복잡도'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '제어 흐름 그래프'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'V(G) = E - N + 2'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 영역의 개수(닫힌 공간 + 바깥쪽 1개)가 곧 복잡도다."
+        ],
+        "detailed_summary": "제어 흐름 그래프를 바탕으로 맥케이브의 순환 복잡도를 구하는 문제입니다. 전문가의 조언 | 제어 흐름도에서 순환복잡도(cyclomatic)는 다음과 같이 2가지 방법으로 계산할 수 있습니다. [방법 1] 영역 수 계산: 내부 영역 3개 + 외부 영역 1개 = 4 [방법 2] V(G) = E - N + 2 (E는 화살표 수, N은 노드 수): V(G) = 6 - 4 + 2 = 4 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가? 정답입니다. 이 선택지는 실제 정답인 '2번 4'와 일치합니다. 그래프의 면(Region)의 개수를 세면 내부 3개와 외부 1개를 합쳐 총 4개입니다. 또는 공식 E-N+2를 사용하여 6(간선)-4(노드)+2 = 4를 얻을 수 있습니다. 시험 포인트는 계산 공식이나 영역 산정 방식에서 오류가 있을 경우 다른 숫자가 나올 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "순환 복잡도",
+        "McCabe",
+        "제어흐름 그래프",
+        "Cyclomatic Number"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0166",
+            "page_number": 166,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1000648,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0167",
+            "page_number": 167,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0167.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 785385,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0168",
+            "page_number": 168,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0168.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 862367,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0169",
+            "page_number": 169,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0169.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 913706,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0170",
+            "page_number": 170,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0170.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 914753,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0171",
+            "page_number": 171,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0171.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 1020016,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0166",
+          "page_number": 166,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1000648,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0166",
+          "page_number": 166,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0166.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1000648,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_c6671c785dbc5b3c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "클린 코드는 누구든지 쉽게 이해하고 수정할 수 있는 단순, 명료한 코드, 즉 잘 작성된 코드를 의미하는 것으로, 코드의 중복을 최소화해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 클린 코드 작성원칙으로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "누구든지 쉽게 이해하는 코드 작성"
+          },
+          {
+            "label": "2",
+            "text": "중복이 최대화된 코드 작성"
+          },
+          {
+            "label": "3",
+            "text": "다른 모듈에 미치는 영향 최소화"
+          },
+          {
+            "label": "4",
+            "text": "단순, 명료한 코드 작성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "중복이 최대화된 코드 작성"
+        ],
+        "answer_text": "중복이 최대화된 코드 작성"
+      },
+      "explanation": {
+        "source_text": "클린 코드는 누구든지 쉽게 이해하고 수정할 수 있는 단순, 명료한 코드, 즉 잘 작성된 코드를 의미하는 것으로, 코드의 중복을 최소화해야 합니다.",
+        "summary": "유지보수가 쉬운 클린 코드의 작성 원칙을 묻는 문제입니다.",
+        "why_correct": [
+          "클린 코드의 핵심 원칙 중 하나는 중복을 제거(DRY: Don't Repeat Yourself)하는 것입니다. 중복을 최대화하는 것은 원칙에 어긋납니다."
+        ],
+        "why_others_wrong": [
+          "가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+        ],
+        "key_concepts": [
+          "클린 코드 5대 원칙 (가독성, 단순성, 의존성 배제, 중복 최소화, 추상화)"
+        ],
+        "memory_cues": [
+          "클린 = 깨끗함 = 중복 없음"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "누구든지 쉽게 이해하는 코드 작성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 중복이 최대화된 코드 작성'인데 이 선택지는 '누구든지 쉽게 이해하는 코드 작성'이므로 일치하지 않습니다. 가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "중복이 최대화된 코드 작성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 중복이 최대화된 코드 작성'와 일치합니다. 클린 코드의 핵심 원칙 중 하나는 중복을 제거(DRY: Don't Repeat Yourself)하는 것입니다. 중복을 최대화하는 것은 원칙에 어긋납니다."
+          },
+          {
+            "label": "3",
+            "text": "다른 모듈에 미치는 영향 최소화",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 중복이 최대화된 코드 작성'인데 이 선택지는 '다른 모듈에 미치는 영향 최소화'이므로 일치하지 않습니다. 가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+          },
+          {
+            "label": "4",
+            "text": "단순, 명료한 코드 작성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 중복이 최대화된 코드 작성'인데 이 선택지는 '단순, 명료한 코드 작성'이므로 일치하지 않습니다. 가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 클린 코드 작성원칙으로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 클린 코드 5대 원칙 (가독성, 단순성, 의존성 배제, 중복 최소화, 추상화)",
+          "정답 판단 근거를 적용합니다. 클린 코드의 핵심 원칙 중 하나는 중복을 제거(DRY: Don't Repeat Yourself)하는 것입니다. 중복을 최대화하는 것은 원칙에 어긋납니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+        ],
+        "exam_traps": [
+          "가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '클린 코드 5대 원칙 (가독성, 단순성, 의존성 배제, 중복 최소화, 추상화)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 클린 = 깨끗함 = 중복 없음"
+        ],
+        "detailed_summary": "유지보수가 쉬운 클린 코드의 작성 원칙을 묻는 문제입니다. 클린 코드는 누구든지 쉽게 이해하고 수정할 수 있는 단순, 명료한 코드, 즉 잘 작성된 코드를 의미하는 것으로, 코드의 중복을 최소화해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 클린 코드 작성원칙으로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 중복이 최대화된 코드 작성'와 일치합니다. 클린 코드의 핵심 원칙 중 하나는 중복을 제거(DRY: Don't Repeat Yourself)하는 것입니다. 중복을 최대화하는 것은 원칙에 어긋납니다. 시험 포인트는 가독성(이해하기 쉬움), 의존성 최소화, 단순성(KISS: Keep It Simple, Stupid)은 모두 클린 코드의 주요 원칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "클린 코드",
+        "가독성",
+        "중복 최소화"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_173d051bc0deb0c2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          184
+        ],
+        "page_span": {
+          "start_page": 184,
+          "end_page": 184
+        },
+        "source_explanation": "O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계(상수 시간)를 거치는 것을 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "컴퓨터 처리가 불가"
+          },
+          {
+            "label": "2",
+            "text": "알고리즘 입력 데이터 수가 한 개"
+          },
+          {
+            "label": "3",
+            "text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+          },
+          {
+            "label": "4",
+            "text": "알고리즘 길이가 입력 데이터보다 작음"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+        ],
+        "answer_text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정"
+      },
+      "explanation": {
+        "source_text": "O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계(상수 시간)를 거치는 것을 의미합니다.",
+        "summary": "Big-O 표기법 중 가장 효율적인 O(1)의 의미를 묻는 문제입니다.",
+        "why_correct": [
+          "O(1)은 상수 시간 복잡도로, 입력값(n)이 아무리 커져도 실행 시간이 변하지 않고 일정함을 의미합니다."
+        ],
+        "why_others_wrong": [
+          "입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+        ],
+        "key_concepts": [
+          "시간 복잡도 (Time Complexity)"
+        ],
+        "memory_cues": [
+          "1은 항상 일정(상수)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "컴퓨터 처리가 불가",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '컴퓨터 처리가 불가'이므로 일치하지 않습니다. 입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+          },
+          {
+            "label": "2",
+            "text": "알고리즘 입력 데이터 수가 한 개",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '알고리즘 입력 데이터 수가 한 개'이므로 일치하지 않습니다. 입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+          },
+          {
+            "label": "3",
+            "text": "알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'와 일치합니다. O(1)은 상수 시간 복잡도로, 입력값(n)이 아무리 커져도 실행 시간이 변하지 않고 일정함을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "알고리즘 길이가 입력 데이터보다 작음",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'인데 이 선택지는 '알고리즘 길이가 입력 데이터보다 작음'이므로 일치하지 않습니다. 입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 알고리즘 시간 복잡도 O(1)이 의미하는 것은?",
+          "핵심 개념을 떠올립니다. 시간 복잡도 (Time Complexity)",
+          "정답 판단 근거를 적용합니다. O(1)은 상수 시간 복잡도로, 입력값(n)이 아무리 커져도 실행 시간이 변하지 않고 일정함을 의미합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+        ],
+        "exam_traps": [
+          "입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '시간 복잡도 (Time Complexity)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 1은 항상 일정(상수)"
+        ],
+        "detailed_summary": "Big-O 표기법 중 가장 효율적인 O(1)의 의미를 묻는 문제입니다. O(1)은 빅오 표기법의 시간 복잡도를 표기하는 방법의 하나로, 입력 데이터 수에 관계없이 문제 해결에 하나의 단계(상수 시간)를 거치는 것을 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 알고리즘 시간 복잡도 O(1)이 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 알고리즘 수행시간이 입력 데이터 수와 관계 없이 일정'와 일치합니다. O(1)은 상수 시간 복잡도로, 입력값(n)이 아무리 커져도 실행 시간이 변하지 않고 일정함을 의미합니다. 시험 포인트는 입력 데이터 수와 상관이 없는 것이지 데이터가 한 개인 것은 아니며, 처리 불가나 알고리즘 길이와는 무관합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "시간 복잡도",
+        "Big-O",
+        "상수 시간"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_45a9620546e41d3e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          184
+        ],
+        "page_span": {
+          "start_page": 184,
+          "end_page": 184
+        },
+        "source_explanation": "정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "복잡도와 코드 품질"
+        ],
+        "chapter_label": "복잡도와 코드 품질",
+        "chapter_key": "소프트웨어 개발 > 복잡도와 코드 품질",
+        "chapter_id": "chapter_233"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_035",
+        "topic_title": "복잡도와 코드 품질",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "복잡도와 코드 품질",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "pmd"
+          },
+          {
+            "label": "2",
+            "text": "checkstyle"
+          },
+          {
+            "label": "3",
+            "text": "valance"
+          },
+          {
+            "label": "4",
+            "text": "cppcheck"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "valance"
+        ],
+        "answer_text": "valance"
+      },
+      "explanation": {
+        "source_text": "정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다.",
+        "summary": "프로그램을 실행하지 않고 코드를 분석하는 정적 분석 도구를 구분하는 문제입니다.",
+        "why_correct": [
+          "valance는 일반적인 정적 분석 도구 목록에 포함되지 않습니다. (Valgrind와 같은 동적 분석 도구와 혼동을 유도하는 보기일 수 있음)"
+        ],
+        "why_others_wrong": [
+          "pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+        ],
+        "key_concepts": [
+          "정적 분석 vs 동적 분석"
+        ],
+        "memory_cues": [
+          "정적은 멈춰있는 코드 분석"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "pmd",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valance'인데 이 선택지는 'pmd'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+          },
+          {
+            "label": "2",
+            "text": "checkstyle",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valance'인데 이 선택지는 'checkstyle'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+          },
+          {
+            "label": "3",
+            "text": "valance",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 valance'와 일치합니다. valance는 일반적인 정적 분석 도구 목록에 포함되지 않습니다. (Valgrind와 같은 동적 분석 도구와 혼동을 유도하는 보기일 수 있음)"
+          },
+          {
+            "label": "4",
+            "text": "cppcheck",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 valance'인데 이 선택지는 'cppcheck'이므로 일치하지 않습니다. pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 정적 분석 vs 동적 분석",
+          "정답 판단 근거를 적용합니다. valance는 일반적인 정적 분석 도구 목록에 포함되지 않습니다. (Valgrind와 같은 동적 분석 도구와 혼동을 유도하는 보기일 수 있음)",
+          "나머지 보기와 비교해 오답을 제거합니다. pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+        ],
+        "exam_traps": [
+          "pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '정적 분석 vs 동적 분석'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 정적은 멈춰있는 코드 분석"
+        ],
+        "detailed_summary": "프로그램을 실행하지 않고 코드를 분석하는 정적 분석 도구를 구분하는 문제입니다. 정적 분석 도구에는 pmd, cppcheck, SonarQube, checkstyle, ccm, cobertura 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소스 코드 품질 분석 도구 중 정적 분석 도구가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 valance'와 일치합니다. valance는 일반적인 정적 분석 도구 목록에 포함되지 않습니다. (Valgrind와 같은 동적 분석 도구와 혼동을 유도하는 보기일 수 있음) 시험 포인트는 pmd, checkstyle, cppcheck는 널리 사용되는 대표적인 정적 코드 분석 도구들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "정적 분석",
+        "코드 품질",
+        "pmd",
+        "checkstyle"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_077",
+    "sequence": 77,
+    "title": "CPU 스케줄링",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 2,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_343",
+      "chapter_130"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_5aa7b977773e7aec",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / 서비스 시간'입니다. 계산된 숫자가 클수록 우선순위가 높습니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "CPU 스케줄링"
+        ],
+        "chapter_label": "CPU 스케줄링",
+        "chapter_key": "프로그래밍 언어 활용 > CPU 스케줄링",
+        "chapter_id": "chapter_343"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_077",
+        "topic_title": "CPU 스케줄링",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 76.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은?\n- 작업 A: 대기 시간 5, 서비스 시간 20\n- 작업 B: 대기 시간 40, 서비스 시간 20\n- 작업 C: 대기 시간 15, 서비스 시간 45\n- 작업 D: 대기 시간 20, 서비스 시간 2",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A"
+          },
+          {
+            "label": "2",
+            "text": "B"
+          },
+          {
+            "label": "3",
+            "text": "C"
+          },
+          {
+            "label": "4",
+            "text": "D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "D"
+        ],
+        "answer_text": "D"
+      },
+      "explanation": {
+        "source_text": "HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / 서비스 시간'입니다. 계산된 숫자가 클수록 우선순위가 높습니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다.",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 계산 문제입니다.",
+        "why_correct": [
+          "공식에 대입하면 D 작업의 응답률이 (20+2)/2 = 11로 가장 큽니다."
+        ],
+        "why_others_wrong": [
+          "A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "key_concepts": [
+          "HRN 공식",
+          "응답률"
+        ],
+        "memory_cues": [
+          "HRN = (대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'A'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "2",
+            "text": "B",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'B'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "3",
+            "text": "C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 D'인데 이 선택지는 'C'이므로 일치하지 않습니다. A, B, C는 계산 결과가 D보다 작습니다."
+          },
+          {
+            "label": "4",
+            "text": "D",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입하면 D 작업의 응답률이 (20+2)/2 = 11로 가장 큽니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? - 작업 A: 대기 시간 5, 서비스 시간 20 - 작업 B: 대기 시간 40, 서비스 시간 20 - 작업 C: 대기 시간 15, 서비스 시간 45 - 작업 D: 대기 시간 20, 서비스 시간 2",
+          "핵심 개념을 떠올립니다. HRN 공식, 응답률",
+          "정답 판단 근거를 적용합니다. 공식에 대입하면 D 작업의 응답률이 (20+2)/2 = 11로 가장 큽니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "exam_traps": [
+          "A, B, C는 계산 결과가 D보다 작습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN 공식'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '응답률'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. HRN = (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위 계산 문제입니다. HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / 서비스 시간'입니다. 계산된 숫자가 클수록 우선순위가 높습니다. A: 1.25, B: 3, C: 1.33, D: 11이므로 D가 가장 높습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. HRN 스케줄링 방식에서 입력된 작업이 다음과 같을 때 우선순위가 가장 높은 것은? - 작업 A: 대기 시간 5, 서비스 시간 20 - 작업 B: 대기 시간 40, 서비스 시간 20 - 작업 C: 대기 시간 15, 서비스 시간 45 - 작업 D: 대기 시간 20, 서비스 시간 2 정답입니다. 이 선택지는 실제 정답인 '4번 D'와 일치합니다. 공식에 대입하면 D 작업의 응답률이 (20+2)/2 = 11로 가장 큽니다. 시험 포인트는 A, B, C는 계산 결과가 D보다 작습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "시험 토픽 분류 후보가 서로 비슷함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "에이징"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6bbf119550d3f40e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          149
+        ],
+        "page_span": {
+          "start_page": 149,
+          "end_page": 149
+        },
+        "source_explanation": "전문가의 조언 | HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "CPU 스케줄링"
+        ],
+        "chapter_label": "CPU 스케줄링",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > CPU 스케줄링",
+        "chapter_id": "chapter_130"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_077",
+        "topic_title": "CPU 스케줄링",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "CPU 스케줄링",
+        "match_score": 76.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "65. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은?\n작업 | 대기 시간 | 서비스(실행)시간\nA | 5 | 20\nB | 40 | 20\nC | 15 | 45\nD | 20 | 2",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A → B → C → D"
+          },
+          {
+            "label": "2",
+            "text": "A → C → B → D"
+          },
+          {
+            "label": "3",
+            "text": "D → B → C → A"
+          },
+          {
+            "label": "4",
+            "text": "D → A → B → C"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "D → B → C → A"
+        ],
+        "answer_text": "D → B → C → A"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다.\n• A 작업 : (5 + 20) / 20 = 1.25\n• B 작업 : (40 + 20) / 20 = 3\n• C 작업 : (15 + 45) / 45 = 1.33\n• D 작업 : (20 + 2) / 2 = 11",
+        "summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위를 계산하는 문제입니다.",
+        "why_correct": [
+          "공식 (대기+서비스)/서비스에 대입하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+        ],
+        "key_concepts": [
+          "HRN",
+          "응답률",
+          "에이징"
+        ],
+        "memory_cues": [
+          "(대+서)/서"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A → B → C → D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'A → B → C → D'이므로 일치하지 않습니다. 다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "A → C → B → D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'A → C → B → D'이므로 일치하지 않습니다. 다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "D → B → C → A",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 D → B → C → A'와 일치합니다. 공식 (대기+서비스)/서비스에 대입하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다."
+          },
+          {
+            "label": "4",
+            "text": "D → A → B → C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 D → B → C → A'인데 이 선택지는 'D → A → B → C'이므로 일치하지 않습니다. 다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은? 작업 | 대기 시간 | 서비스(실행)시간 A | 5 | 20 B | 40 | 20 C | 15 | 45 D | 20 | 2",
+          "핵심 개념을 떠올립니다. HRN, 응답률, 에이징",
+          "정답 판단 근거를 적용합니다. 공식 (대기+서비스)/서비스에 대입하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'HRN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '응답률'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '에이징'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. (대+서)/서"
+        ],
+        "detailed_summary": "HRN(Highest Response-ratio Next) 스케줄링의 우선순위를 계산하는 문제입니다. 전문가의 조언 | HRN 기법의 우선순위 공식은 '(대기 시간 + 서비스 시간) / (서비스 시간)'이며, 계산된 숫자가 클수록 우선순위가 높습니다. • A 작업 : (5 + 20) / 20 = 1.25 • B 작업 : (40 + 20) / 20 = 3 • C 작업 : (15 + 45) / 45 = 1.33 • D 작업 : (20 + 2) / 2 = 11 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 65. HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은? 작업 | 대기 시간 | 서비스(실행)시간 A | 5 | 20 B | 40 | 20 C | 15 | 45 D | 20 | 2 정답입니다. 이 선택지는 실제 정답인 '3번 D → B → C → A'와 일치합니다. 공식 (대기+서비스)/서비스에 대입하면 D(11) > B(3) > C(1.33) > A(1.25) 순으로 우선순위가 결정됩니다. 시험 포인트는 다른 보기들은 계산 결과에 따른 내림차순 정렬이 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": [
+          "시험 토픽 분류 후보가 서로 비슷함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "HRN",
+        "스케줄링",
+        "우선순위",
+        "대기시간",
+        "서비스시간"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          149
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0149",
+            "page_number": 149,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0149.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1384,
+            "file_size_bytes": 976146,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_6bbf119550d3f40e__figure_01",
+            "question_id": "qb_6bbf119550d3f40e",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_6bbf119550d3f40e/qb_6bbf119550d3f40e__figure_01.png",
+            "content_type": "image/png",
+            "width": 437,
+            "height": 90,
+            "file_size_bytes": 21191,
+            "source_page": 149,
+            "crop_rect_pdf_points": [
+              271.0,
+              349.5,
+              489.5,
+              394.5
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_6bbf119550d3f40e__figure_01",
+          "question_id": "qb_6bbf119550d3f40e",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_6bbf119550d3f40e/qb_6bbf119550d3f40e__figure_01.png",
+          "content_type": "image/png",
+          "width": 437,
+          "height": 90,
+          "file_size_bytes": 21191,
+          "source_page": 149,
+          "crop_rect_pdf_points": [
+            271.0,
+            349.5,
+            489.5,
+            394.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_6bbf119550d3f40e__figure_01",
+          "question_id": "qb_6bbf119550d3f40e",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_6bbf119550d3f40e/qb_6bbf119550d3f40e__figure_01.png",
+          "content_type": "image/png",
+          "width": 437,
+          "height": 90,
+          "file_size_bytes": 21191,
+          "source_page": 149,
+          "crop_rect_pdf_points": [
+            271.0,
+            349.5,
+            489.5,
+            394.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_6bbf119550d3f40e_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    }
+  ]
+}

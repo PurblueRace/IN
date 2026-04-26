@@ -1,0 +1,173 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_048",
+    "sequence": 48,
+    "title": "CRUD 분석과 인덱스",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 1,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_190"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_d831ba008e8be7e3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          74
+        ],
+        "page_span": {
+          "start_page": 74,
+          "end_page": 74
+        },
+        "source_explanation": "인덱스를 추가하는 명령어는 CREATE, 삭제하는 명령어는 DROP입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "CRUD 분석과 인덱스"
+        ],
+        "chapter_label": "CRUD 분석과 인덱스",
+        "chapter_key": "데이터베이스 구축 > CRUD 분석과 인덱스",
+        "chapter_id": "chapter_190"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_048",
+        "topic_title": "CRUD 분석과 인덱스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "CRUD 분석과 인덱스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "데이터베이스의 인덱스와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "문헌의 색인, 사전과 같이 데이터를 쉽고 빠르게 찾을 수 있도록 만든 데이터 구조이다."
+          },
+          {
+            "label": "2",
+            "text": "테이블에 붙여진 색인으로 데이터 검색 시 처리속도 향상에 도움이 된다."
+          },
+          {
+            "label": "3",
+            "text": "인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다."
+          },
+          {
+            "label": "4",
+            "text": "대부분의 데이터베이스에서 테이블을 삭제하면 인덱스도 같이 삭제된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다."
+        ],
+        "answer_text": "인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다."
+      },
+      "explanation": {
+        "source_text": "인덱스를 추가하는 명령어는 CREATE, 삭제하는 명령어는 DROP입니다.",
+        "summary": "데이터베이스 인덱스의 개념과 관련 SQL 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "인덱스는 DDL을 통해 관리되므로 추가는 CREATE INDEX, 삭제는 DROP INDEX를 사용합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다.",
+          "4: 종속적인 객체이므로 기본 테이블 삭제 시 함께 제거되는 것이 일반적입니다."
+        ],
+        "key_concepts": [
+          "인덱스 관리",
+          "DDL"
+        ],
+        "memory_cues": [
+          "인덱스도 객체니까 CREATE/DROP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "문헌의 색인, 사전과 같이 데이터를 쉽고 빠르게 찾을 수 있도록 만든 데이터 구조이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.'인데 이 선택지는 '문헌의 색인, 사전과 같이 데이터를 쉽고 빠르게 찾을 수 있도록 만든 데이터 구조이다.'이므로 일치하지 않습니다. 1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다. 4: 종속적인 객체이므로 기본 테이블 삭제 시 함께 제거되는 것이 일반적입니다."
+          },
+          {
+            "label": "2",
+            "text": "테이블에 붙여진 색인으로 데이터 검색 시 처리속도 향상에 도움이 된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.'인데 이 선택지는 '테이블에 붙여진 색인으로 데이터 검색 시 처리속도 향상에 도움이 된다.'이므로 일치하지 않습니다. 1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다. 4: 종속적인 객체이므로 기본 테이블 삭제 시 함께 제거되는 것이 일반적입니다."
+          },
+          {
+            "label": "3",
+            "text": "인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.'와 일치합니다. 인덱스는 DDL을 통해 관리되므로 추가는 CREATE INDEX, 삭제는 DROP INDEX를 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "대부분의 데이터베이스에서 테이블을 삭제하면 인덱스도 같이 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.'인데 이 선택지는 '대부분의 데이터베이스에서 테이블을 삭제하면 인덱스도 같이 삭제된다.'이므로 일치하지 않습니다. 1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다. 4: 종속적인 객체이므로 기본 테이블 삭제 시 함께 제거되는 것이 일반적입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스의 인덱스와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 인덱스 관리, DDL",
+          "정답 판단 근거를 적용합니다. 인덱스는 DDL을 통해 관리되므로 추가는 CREATE INDEX, 삭제는 DROP INDEX를 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2: 인덱스의 정의와 목적에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '인덱스 관리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DDL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 인덱스도 객체니까 CREATE/DROP"
+        ],
+        "detailed_summary": "데이터베이스 인덱스의 개념과 관련 SQL 명령어를 묻는 문제입니다. 인덱스를 추가하는 명령어는 CREATE, 삭제하는 명령어는 DROP입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 데이터베이스의 인덱스와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 인덱스의 추가, 삭제 명령어는 각각 ADD, DELETE이다.'와 일치합니다. 인덱스는 DDL을 통해 관리되므로 추가는 CREATE INDEX, 삭제는 DROP INDEX를 사용합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인덱스",
+        "Index",
+        "CREATE INDEX",
+        "DROP INDEX"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

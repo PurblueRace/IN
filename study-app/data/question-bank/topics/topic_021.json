@@ -1,0 +1,2498 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_021",
+    "sequence": 21,
+    "title": "시스템 인터페이스와 미들웨어",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 16,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_277",
+      "chapter_043",
+      "chapter_046",
+      "chapter_259",
+      "chapter_023",
+      "chapter_048"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_0fc377f757bb9c36",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0001_p0006"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "미들웨어에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어"
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어"
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+        ],
+        "answer_text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다.",
+        "summary": "다양한 미들웨어의 종류와 그 정의가 올바르게 연결되었는지 확인하는 문제입니다.",
+        "why_correct": [
+          "MOM(Message-Oriented Middleware)은 메시지 기반의 비동기 통신을 지원하는 미들웨어입니다. 트랜잭션을 감시하고 제어하는 것은 TP-Monitor의 역할입니다."
+        ],
+        "why_others_wrong": [
+          "WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다.",
+          "ORB는 분산 객체 간 통신을 위한 코바(CORBA) 표준 구현체입니다.",
+          "DB 미들웨어는 애플리케이션과 데이터베이스 간의 연결을 돕습니다."
+        ],
+        "key_concepts": [
+          "MOM",
+          "TP-Monitor",
+          "WAS",
+          "ORB"
+        ],
+        "memory_cues": [
+          "MOM = 메시지(Message)",
+          "TP-Monitor = 트랜잭션(Transaction) 감시"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'WAS : 웹 콘텐츠를 처리하기 위한 미들웨어'이므로 일치하지 않습니다. WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다. ORB는 분산 객체 간 통신을 위한 코바(CORBA) 표준 구현체입니다."
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어'이므로 일치하지 않습니다. WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다. ORB는 분산 객체 간 통신을 위한 코바(CORBA) 표준 구현체입니다."
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. MOM(Message-Oriented Middleware)은 메시지 기반의 비동기 통신을 지원하는 미들웨어입니다. 트랜잭션을 감시하고 제어하는 것은 TP-Monitor의 역할입니다."
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어'이므로 일치하지 않습니다. WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다. ORB는 분산 객체 간 통신을 위한 코바(CORBA) 표준 구현체입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 미들웨어에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MOM, TP-Monitor, WAS, ORB",
+          "정답 판단 근거를 적용합니다. MOM(Message-Oriented Middleware)은 메시지 기반의 비동기 통신을 지원하는 미들웨어입니다. 트랜잭션을 감시하고 제어하는 것은 TP-Monitor의 역할입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다."
+        ],
+        "exam_traps": [
+          "WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MOM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'TP-Monitor'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'WAS'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ORB'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. MOM = 메시지(Message)",
+          "암기 포인트를 떠올립니다. TP-Monitor = 트랜잭션(Transaction) 감시"
+        ],
+        "detailed_summary": "다양한 미들웨어의 종류와 그 정의가 올바르게 연결되었는지 확인하는 문제입니다. 전문가의 조언 | MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 미들웨어에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. MOM(Message-Oriented Middleware)은 메시지 기반의 비동기 통신을 지원하는 미들웨어입니다. 트랜잭션을 감시하고 제어하는 것은 TP-Monitor의 역할입니다. 시험 포인트는 WAS는 웹 애플리케이션 서버로 동적 콘텐츠 처리를 담당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "WAS",
+        "ORB",
+        "MOM",
+        "TP-Monitor"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8b5d83edebe1657e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | • MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. • ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "5. 미들웨어에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어"
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어"
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+        ],
+        "answer_text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | • MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. • ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다.",
+        "summary": "미들웨어는 서로 다른 애플리케이션 간의 통신을 돕는 소프트웨어입니다. MOM은 메시지 기반 비동기 통신을 담당합니다.",
+        "why_correct": [
+          "트랜잭션을 처리하고 감시하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다. MOM은 Message Oriented Middleware의 약자입니다."
+        ],
+        "why_others_wrong": [
+          "WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+        ],
+        "key_concepts": [
+          "MOM",
+          "TP-Monitor",
+          "미들웨어 종류"
+        ],
+        "memory_cues": [
+          "MOM = Message(메시지)",
+          "TP = Transaction Processing(트랜잭션 처리)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'WAS : 웹 콘텐츠를 처리하기 위한 미들웨어'이므로 일치하지 않습니다. WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'ORB : 객체지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어'이므로 일치하지 않습니다. WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. 트랜잭션을 처리하고 감시하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다. MOM은 Message Oriented Middleware의 약자입니다."
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어'이므로 일치하지 않습니다. WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. 미들웨어에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MOM, TP-Monitor, 미들웨어 종류",
+          "정답 판단 근거를 적용합니다. 트랜잭션을 처리하고 감시하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다. MOM은 Message Oriented Middleware의 약자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+        ],
+        "exam_traps": [
+          "WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MOM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'TP-Monitor'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '미들웨어 종류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. MOM = Message(메시지)",
+          "암기 포인트를 떠올립니다. TP = Transaction Processing(트랜잭션 처리)"
+        ],
+        "detailed_summary": "미들웨어는 서로 다른 애플리케이션 간의 통신을 돕는 소프트웨어입니다. MOM은 메시지 기반 비동기 통신을 담당합니다. 전문가의 조언 | • MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. • ③번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 5. 미들웨어에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. 트랜잭션을 처리하고 감시하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다. MOM은 Message Oriented Middleware의 약자입니다. 시험 포인트는 WAS(Web Application Server), ORB(Object Request Broker), DB 미들웨어에 대한 설명은 모두 적절합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "WAS",
+        "ORB",
+        "MOM",
+        "TP-Monitor"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d46b213e85c781f3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          8
+        ],
+        "page_span": {
+          "start_page": 8,
+          "end_page": 8
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "EAI"
+          },
+          {
+            "label": "2",
+            "text": "FEP"
+          },
+          {
+            "label": "3",
+            "text": "GPL"
+          },
+          {
+            "label": "4",
+            "text": "Duplexing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "FEP"
+        ],
+        "answer_text": "FEP"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것",
+        "summary": "FEP는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 장치나 소프트웨어입니다.",
+        "why_correct": [
+          "FEP(Front End Processor)는 전처리기라는 뜻으로, 주 컴퓨터 앞단에서 데이터를 미리 처리합니다."
+        ],
+        "why_others_wrong": [
+          "EAI는 기업 내 시스템 통합 솔루션입니다.",
+          "GPL은 공개 소프트웨어 라이선스입니다.",
+          "Duplexing은 이중화 시스템을 의미합니다."
+        ],
+        "key_concepts": [
+          "FEP",
+          "전처리기"
+        ],
+        "memory_cues": [
+          "Front(앞)에서 미리 처리 = FEP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "EAI",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'EAI'이므로 일치하지 않습니다. EAI는 기업 내 시스템 통합 솔루션입니다. GPL은 공개 소프트웨어 라이선스입니다."
+          },
+          {
+            "label": "2",
+            "text": "FEP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 전처리기라는 뜻으로, 주 컴퓨터 앞단에서 데이터를 미리 처리합니다."
+          },
+          {
+            "label": "3",
+            "text": "GPL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'GPL'이므로 일치하지 않습니다. EAI는 기업 내 시스템 통합 솔루션입니다. GPL은 공개 소프트웨어 라이선스입니다."
+          },
+          {
+            "label": "4",
+            "text": "Duplexing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'Duplexing'이므로 일치하지 않습니다. EAI는 기업 내 시스템 통합 솔루션입니다. GPL은 공개 소프트웨어 라이선스입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+          "핵심 개념을 떠올립니다. FEP, 전처리기",
+          "정답 판단 근거를 적용합니다. FEP(Front End Processor)는 전처리기라는 뜻으로, 주 컴퓨터 앞단에서 데이터를 미리 처리합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. EAI는 기업 내 시스템 통합 솔루션입니다."
+        ],
+        "exam_traps": [
+          "EAI는 기업 내 시스템 통합 솔루션입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FEP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '전처리기'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Front(앞)에서 미리 처리 = FEP"
+        ],
+        "detailed_summary": "FEP는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 장치나 소프트웨어입니다. 전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 전처리기라는 뜻으로, 주 컴퓨터 앞단에서 데이터를 미리 처리합니다. 시험 포인트는 EAI는 기업 내 시스템 통합 솔루션입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "FEP",
+        "전처리기",
+        "Front End Processor",
+        "미들웨어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2229797b4f439fb3",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          44
+        ],
+        "page_span": {
+          "start_page": 44,
+          "end_page": 44
+        },
+        "source_explanation": "미들웨어는 복잡한 내부 동작을 사용자로부터 숨기고 투명성을 제공하는 것이 목적이므로 내부 동작을 쉽게 확인하기는 어렵습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "시스템 인터페이스와 미들웨어"
+        ],
+        "chapter_label": "시스템 인터페이스와 미들웨어",
+        "chapter_key": "소프트웨어 설계 > 시스템 인터페이스와 미들웨어",
+        "chapter_id": "chapter_277"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "4. 미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+        ],
+        "answer_text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+      },
+      "explanation": {
+        "source_text": "미들웨어는 복잡한 내부 동작을 사용자로부터 숨기고 투명성을 제공하는 것이 목적이므로 내부 동작을 쉽게 확인하기는 어렵습니다.",
+        "summary": "미들웨어의 정의와 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 이질적인 환경 간의 통신을 돕는 '중간 소프트웨어'로, 내부의 복잡함을 감추는 투명성(Transparency)이 중요합니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+        ],
+        "key_concepts": [
+          "미들웨어"
+        ],
+        "memory_cues": [
+          "미들웨어 = 중간 다리, 투명성"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.'이므로 일치하지 않습니다. 1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 이질적인 환경 간의 통신을 돕는 '중간 소프트웨어'로, 내부의 복잡함을 감추는 투명성(Transparency)이 중요합니다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.'이므로 일치하지 않습니다. 1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.'이므로 일치하지 않습니다. 1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 미들웨어",
+          "정답 판단 근거를 적용합니다. 미들웨어는 이질적인 환경 간의 통신을 돕는 '중간 소프트웨어'로, 내부의 복잡함을 감추는 투명성(Transparency)이 중요합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '미들웨어'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어 = 중간 다리, 투명성"
+        ],
+        "detailed_summary": "미들웨어의 정의와 특징을 묻는 문제입니다. 미들웨어는 복잡한 내부 동작을 사용자로부터 숨기고 투명성을 제공하는 것이 목적이므로 내부 동작을 쉽게 확인하기는 어렵습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 4. 미들웨어(Middleware)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 이질적인 환경 간의 통신을 돕는 '중간 소프트웨어'로, 내부의 복잡함을 감추는 투명성(Transparency)이 중요합니다. 시험 포인트는 1, 3, 4번은 미들웨어의 전형적인 역할과 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Middleware",
+        "Software Architecture",
+        "Transparency"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_348b9dee473c2eaa",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 51
+        },
+        "source_explanation": "사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야 하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+        ],
+        "answer_text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+      },
+      "explanation": {
+        "source_text": "사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야 하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다.",
+        "summary": "미들웨어의 정의와 특징에 대한 이해를 묻는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 복잡한 내부 동작을 추상화하여 제공하므로 사용자가 내부 동작을 쉽게 확인하기 어렵습니다."
+        ],
+        "why_others_wrong": [
+          "1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+        ],
+        "key_concepts": [
+          "미들웨어",
+          "추상화",
+          "인프라"
+        ],
+        "memory_cues": [
+          "미들웨어는 중간에서 숨어서 일한다(투명성)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.'이므로 일치하지 않습니다. 1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 복잡한 내부 동작을 추상화하여 제공하므로 사용자가 내부 동작을 쉽게 확인하기 어렵습니다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.'이므로 일치하지 않습니다. 1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.'이므로 일치하지 않습니다. 1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 미들웨어, 추상화, 인프라",
+          "정답 판단 근거를 적용합니다. 미들웨어는 복잡한 내부 동작을 추상화하여 제공하므로 사용자가 내부 동작을 쉽게 확인하기 어렵습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+        ],
+        "exam_traps": [
+          "1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '미들웨어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '추상화'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인프라'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어는 중간에서 숨어서 일한다(투명성)."
+        ],
+        "detailed_summary": "미들웨어의 정의와 특징에 대한 이해를 묻는 문제입니다. 사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야 하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 미들웨어(Middleware)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 복잡한 내부 동작을 추상화하여 제공하므로 사용자가 내부 동작을 쉽게 확인하기 어렵습니다. 시험 포인트는 1번은 위치적 정의, 3번은 역할적 정의, 4번은 연결 형태에 대한 옳은 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "미들웨어",
+        "Middleware",
+        "인프라",
+        "컴포넌트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e5eb6ef4371915b9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          64
+        ],
+        "page_span": {
+          "start_page": 64,
+          "end_page": 64
+        },
+        "source_explanation": "전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "미들웨어"
+        ],
+        "chapter_label": "미들웨어",
+        "chapter_key": "1과목 소프트웨어 설계 > 미들웨어",
+        "chapter_id": "chapter_043"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "7. 분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "위치 투명성(Location Transparency)을 제공한다."
+          },
+          {
+            "label": "3",
+            "text": "분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+        ],
+        "answer_text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다.",
+        "summary": "미들웨어의 정의와 분산 시스템에서의 역할을 묻는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 애플리케이션과 사용자 사이뿐만 아니라, 서로 다른 기종의 하드웨어나 프로토콜, 운영체제 사이에서 매개체 역할을 수행합니다."
+        ],
+        "why_others_wrong": [
+          "1번: 미들웨어의 기본 정의입니다.",
+          "2번: 사용자가 자원의 물리적 위치를 몰라도 접근할 수 있게 해줍니다.",
+          "3번: 공통적으로 필요한 기능을 서비스 형태로 제공하여 재사용성을 높입니다."
+        ],
+        "key_concepts": [
+          "미들웨어",
+          "위치 투명성"
+        ],
+        "memory_cues": [
+          "미들웨어 = 중간(Middle) 매개체"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다.'이므로 일치하지 않습니다. 1번: 미들웨어의 기본 정의입니다. 2번: 사용자가 자원의 물리적 위치를 몰라도 접근할 수 있게 해줍니다."
+          },
+          {
+            "label": "2",
+            "text": "위치 투명성(Location Transparency)을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '위치 투명성(Location Transparency)을 제공한다.'이므로 일치하지 않습니다. 1번: 미들웨어의 기본 정의입니다. 2번: 사용자가 자원의 물리적 위치를 몰라도 접근할 수 있게 해줍니다."
+          },
+          {
+            "label": "3",
+            "text": "분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다.'이므로 일치하지 않습니다. 1번: 미들웨어의 기본 정의입니다. 2번: 사용자가 자원의 물리적 위치를 몰라도 접근할 수 있게 해줍니다."
+          },
+          {
+            "label": "4",
+            "text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'와 일치합니다. 미들웨어는 애플리케이션과 사용자 사이뿐만 아니라, 서로 다른 기종의 하드웨어나 프로토콜, 운영체제 사이에서 매개체 역할을 수행합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 7. 분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 미들웨어, 위치 투명성",
+          "정답 판단 근거를 적용합니다. 미들웨어는 애플리케이션과 사용자 사이뿐만 아니라, 서로 다른 기종의 하드웨어나 프로토콜, 운영체제 사이에서 매개체 역할을 수행합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 미들웨어의 기본 정의입니다."
+        ],
+        "exam_traps": [
+          "1번: 미들웨어의 기본 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '미들웨어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어 = 중간(Middle) 매개체"
+        ],
+        "detailed_summary": "미들웨어의 정의와 분산 시스템에서의 역할을 묻는 문제입니다. 전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 7. 분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'와 일치합니다. 미들웨어는 애플리케이션과 사용자 사이뿐만 아니라, 서로 다른 기종의 하드웨어나 프로토콜, 운영체제 사이에서 매개체 역할을 수행합니다. 시험 포인트는 1번: 미들웨어의 기본 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "분산 시스템",
+        "위치 투명성",
+        "서비스 구현"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0d3ef696eedb1dde",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0066_p0071"
+        ],
+        "source_pages": [
+          66
+        ],
+        "page_span": {
+          "start_page": 66,
+          "end_page": 66
+        },
+        "source_explanation": "전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "시스템 인터페이스 설계"
+        ],
+        "chapter_label": "시스템 인터페이스 설계",
+        "chapter_key": "1과목 소프트웨어 설계 > 시스템 인터페이스 설계",
+        "chapter_id": "chapter_046"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "위치 투명성(Location Transparency)을 제공한다."
+          },
+          {
+            "label": "3",
+            "text": "분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+        ],
+        "answer_text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다.",
+        "summary": "미들웨어는 서로 다른 기종의 하드웨어나 네트워크 프로토콜, 애플리케이션 간의 통신을 돕는 중간 소프트웨어입니다.",
+        "why_correct": [
+          "미들웨어는 사용자-앱 사이뿐만 아니라 시스템-시스템, OS-앱 등 다양한 계층 간의 서비스를 제공하므로 '사이에서만'이라는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "1번은 미들웨어의 기본 정의입니다.",
+          "2번은 미들웨어의 주요 특징 중 하나인 위치 투명성에 대한 설명입니다.",
+          "3번은 미들웨어가 제공하는 서비스 재사용성에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "미들웨어",
+          "위치 투명성",
+          "분산 시스템"
+        ],
+        "memory_cues": [
+          "미들웨어는 '중간(Middle)'에서 '다리' 역할을 하는 소프트웨어다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '분산 시스템에서 다양한 부분을 관리하고 통신하며 데이터를 교환하게 해주는 소프트웨어로 볼 수 있다.'이므로 일치하지 않습니다. 1번은 미들웨어의 기본 정의입니다. 2번은 미들웨어의 주요 특징 중 하나인 위치 투명성에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "위치 투명성(Location Transparency)을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '위치 투명성(Location Transparency)을 제공한다.'이므로 일치하지 않습니다. 1번은 미들웨어의 기본 정의입니다. 2번은 미들웨어의 주요 특징 중 하나인 위치 투명성에 대한 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'인데 이 선택지는 '분산 시스템의 여러 컴포넌트가 요구하는 재사용 가능한 서비스의 구현을 제공한다.'이므로 일치하지 않습니다. 1번은 미들웨어의 기본 정의입니다. 2번은 미들웨어의 주요 특징 중 하나인 위치 투명성에 대한 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'와 일치합니다. 미들웨어는 사용자-앱 사이뿐만 아니라 시스템-시스템, OS-앱 등 다양한 계층 간의 서비스를 제공하므로 '사이에서만'이라는 설명은 틀렸습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 미들웨어, 위치 투명성, 분산 시스템",
+          "정답 판단 근거를 적용합니다. 미들웨어는 사용자-앱 사이뿐만 아니라 시스템-시스템, OS-앱 등 다양한 계층 간의 서비스를 제공하므로 '사이에서만'이라는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 미들웨어의 기본 정의입니다."
+        ],
+        "exam_traps": [
+          "1번은 미들웨어의 기본 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '미들웨어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분산 시스템'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어는 '중간(Middle)'에서 '다리' 역할을 하는 소프트웨어다."
+        ],
+        "detailed_summary": "미들웨어는 서로 다른 기종의 하드웨어나 네트워크 프로토콜, 애플리케이션 간의 통신을 돕는 중간 소프트웨어입니다. 전문가의 조언 | 애플리케이션과 사용자 사이뿐만 아니라 클라이언트와 서버, 운영체제와 응용 프로그램과 같이 두 시스템 사이에서 다양한 서비스를 제공하는 소프트웨어를 미들웨어(Middleware)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 시스템에서의 미들웨어(Middleware)와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 애플리케이션과 사용자 사이에서만 분산 서비스를 제공한다.'와 일치합니다. 미들웨어는 사용자-앱 사이뿐만 아니라 시스템-시스템, OS-앱 등 다양한 계층 간의 서비스를 제공하므로 '사이에서만'이라는 설명은 틀렸습니다. 시험 포인트는 1번은 미들웨어의 기본 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "분산 시스템",
+        "위치 투명성",
+        "소프트웨어 아키텍처"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_93c4feaf87d1f641",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          83
+        ],
+        "page_span": {
+          "start_page": 83,
+          "end_page": 83
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계"
+        ],
+        "chapter_label": "소프트웨어 설계",
+        "chapter_key": "소프트웨어 설계",
+        "chapter_id": "chapter_259"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "EAI"
+          },
+          {
+            "label": "2",
+            "text": "FEP"
+          },
+          {
+            "label": "3",
+            "text": "GPL"
+          },
+          {
+            "label": "4",
+            "text": "Duplexing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "FEP"
+        ],
+        "answer_text": "FEP"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것",
+        "summary": "데이터 처리 효율을 높이기 위한 전처리 장치/프로그램을 묻는 문제입니다.",
+        "why_correct": [
+          "FEP(Front End Processor)는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 전처리기입니다."
+        ],
+        "why_others_wrong": [
+          "EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+        ],
+        "key_concepts": [
+          "FEP",
+          "전처리기",
+          "부하 분산"
+        ],
+        "memory_cues": [
+          "앞에서 미리 처리 = Front End = FEP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "EAI",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'EAI'이므로 일치하지 않습니다. EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+          },
+          {
+            "label": "2",
+            "text": "FEP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 전처리기입니다."
+          },
+          {
+            "label": "3",
+            "text": "GPL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'GPL'이므로 일치하지 않습니다. EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+          },
+          {
+            "label": "4",
+            "text": "Duplexing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'Duplexing'이므로 일치하지 않습니다. EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+          "핵심 개념을 떠올립니다. FEP, 전처리기, 부하 분산",
+          "정답 판단 근거를 적용합니다. FEP(Front End Processor)는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 전처리기입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+        ],
+        "exam_traps": [
+          "EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FEP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '전처리기'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '부하 분산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 앞에서 미리 처리 = Front End = FEP"
+        ],
+        "detailed_summary": "데이터 처리 효율을 높이기 위한 전처리 장치/프로그램을 묻는 문제입니다. 전문가의 조언 | 문제에 제시된 내용은 전처리기(FEP; Front End Processor)의 개념입니다. • EAI(Enterprise Application Integration) : 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션 • GPL(General Public License) : 자유 소프트웨어 재단에서 만든 자유 소프트웨어 라이선스 • Duplexing : 서비스 중단에 대비하여 동일한 기능을 수행하는 예비 시스템을 동시에 운용하는 것 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 메인 프로세서의 부담을 줄이기 위해 통신 제어나 데이터 처리를 미리 수행하는 전처리기입니다. 시험 포인트는 EAI는 통합 솔루션, GPL은 라이선스, Duplexing은 이중화 기술입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "FEP",
+        "전처리기",
+        "EAI",
+        "데이터 처리"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f8e182554b473adb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0096_p0101"
+        ],
+        "source_pages": [
+          97
+        ],
+        "page_span": {
+          "start_page": 97,
+          "end_page": 97
+        },
+        "source_explanation": "미들웨어(Middleware)는 클라이언트가 서버 측에 어떠한 처리를 요구하고, 또 서버가 그 처리한 결과를 클라이언트에게 돌려주는 과정을 효율적으로 수행하도록 도와주는 소프트웨어입니다. 그러므로 미들웨어의 사용은 서버와 클라이언트 간의 작업량을 증가시킬 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "시스템 인터페이스와 미들웨어"
+        ],
+        "chapter_label": "시스템 인터페이스와 미들웨어",
+        "chapter_key": "소프트웨어 설계 > 시스템 인터페이스와 미들웨어",
+        "chapter_id": "chapter_277"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "88. 클라이언트/서버(Client/Server) 모델에서의 소프트웨어 개발에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "사용자의 요구사항은 서버의 데이터베이스 시스템에 영향을 미친다."
+          },
+          {
+            "label": "2",
+            "text": "병목 현상을 없애기 위해 비즈니스 로직을 분리하여 관리할 수 있다."
+          },
+          {
+            "label": "3",
+            "text": "미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다."
+          },
+          {
+            "label": "4",
+            "text": "대부분 네트워크로 연결되어 있고 인증 작업을 필요로 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다."
+        ],
+        "answer_text": "미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다."
+      },
+      "explanation": {
+        "source_text": "미들웨어(Middleware)는 클라이언트가 서버 측에 어떠한 처리를 요구하고, 또 서버가 그 처리한 결과를 클라이언트에게 돌려주는 과정을 효율적으로 수행하도록 도와주는 소프트웨어입니다. 그러므로 미들웨어의 사용은 서버와 클라이언트 간의 작업량을 증가시킬 수 없습니다.",
+        "summary": "클라이언트/서버 구조와 미들웨어의 역할을 묻는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 이질적인 환경 간의 통신을 돕고 부하를 분산시키는 등 효율성을 높이는 역할을 하지, 작업량 자체를 증가시키는 부정적인 요소가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "Client/Server Architecture",
+          "Middleware"
+        ],
+        "memory_cues": [
+          "미들웨어는 중간에서 도와주는 '도우미' 역할!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "사용자의 요구사항은 서버의 데이터베이스 시스템에 영향을 미친다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.'인데 이 선택지는 '사용자의 요구사항은 서버의 데이터베이스 시스템에 영향을 미친다.'이므로 일치하지 않습니다. 1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "병목 현상을 없애기 위해 비즈니스 로직을 분리하여 관리할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.'인데 이 선택지는 '병목 현상을 없애기 위해 비즈니스 로직을 분리하여 관리할 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.'와 일치합니다. 미들웨어는 이질적인 환경 간의 통신을 돕고 부하를 분산시키는 등 효율성을 높이는 역할을 하지, 작업량 자체를 증가시키는 부정적인 요소가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "대부분 네트워크로 연결되어 있고 인증 작업을 필요로 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.'인데 이 선택지는 '대부분 네트워크로 연결되어 있고 인증 작업을 필요로 한다.'이므로 일치하지 않습니다. 1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 클라이언트/서버(Client/Server) 모델에서의 소프트웨어 개발에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. Client/Server Architecture, Middleware",
+          "정답 판단 근거를 적용합니다. 미들웨어는 이질적인 환경 간의 통신을 돕고 부하를 분산시키는 등 효율성을 높이는 역할을 하지, 작업량 자체를 증가시키는 부정적인 요소가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Client/Server Architecture'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Middleware'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어는 중간에서 도와주는 '도우미' 역할!"
+        ],
+        "detailed_summary": "클라이언트/서버 구조와 미들웨어의 역할을 묻는 문제입니다. 미들웨어(Middleware)는 클라이언트가 서버 측에 어떠한 처리를 요구하고, 또 서버가 그 처리한 결과를 클라이언트에게 돌려주는 과정을 효율적으로 수행하도록 도와주는 소프트웨어입니다. 그러므로 미들웨어의 사용은 서버와 클라이언트 간의 작업량을 증가시킬 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 88. 클라이언트/서버(Client/Server) 모델에서의 소프트웨어 개발에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 미들웨어의 사용은 서버와 클라이언트의 작업량을 증가시켰다.'와 일치합니다. 미들웨어는 이질적인 환경 간의 통신을 돕고 부하를 분산시키는 등 효율성을 높이는 역할을 하지, 작업량 자체를 증가시키는 부정적인 요소가 아닙니다. 시험 포인트는 1, 2, 4번은 클라이언트/서버 모델의 일반적인 특징(DB 영향, 로직 분리, 네트워크 인증)을 잘 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "클라이언트 서버",
+        "미들웨어",
+        "분산 컴퓨팅"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_49efd02328a332e5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "page_span": {
+          "start_page": 101,
+          "end_page": 106
+        },
+        "source_explanation": "사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "6. 미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+        ],
+        "answer_text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다."
+      },
+      "explanation": {
+        "source_text": "사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다.",
+        "summary": "응용 프로그램과 운영체제 사이에서 가교 역할을 하는 미들웨어의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 복잡한 내부 동작을 사용자나 개발자로부터 숨겨주는 '투명성'을 제공하는 것이 목적입니다. 내부 동작을 쉽게 확인해야 한다는 설명은 미들웨어의 존재 이유와 상충됩니다."
+        ],
+        "why_others_wrong": [
+          "운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "Middleware",
+          "Transparency",
+          "Infrastructure"
+        ],
+        "memory_cues": [
+          "미들웨어는 '중간'에서 복잡한 일을 대신 해주므로 사용자는 내부를 알 필요가 없습니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 운영체제에서 응용 프로그램들 사이에 위치한 소프트웨어이다.'이므로 일치하지 않습니다. 운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 복잡한 내부 동작을 사용자나 개발자로부터 숨겨주는 '투명성'을 제공하는 것이 목적입니다. 내부 동작을 쉽게 확인해야 한다는 설명은 미들웨어의 존재 이유와 상충됩니다."
+          },
+          {
+            "label": "3",
+            "text": "소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.'이므로 일치하지 않습니다. 운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'인데 이 선택지는 '여러 컴포넌트를 1 대 1, 1 대 다, 다 대 다 등 여러 가지 형태로 연결이 가능하다.'이므로 일치하지 않습니다. 운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 6. 미들웨어(Middleware)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Middleware, Transparency, Infrastructure",
+          "정답 판단 근거를 적용합니다. 미들웨어는 복잡한 내부 동작을 사용자나 개발자로부터 숨겨주는 '투명성'을 제공하는 것이 목적입니다. 내부 동작을 쉽게 확인해야 한다는 설명은 미들웨어의 존재 이유와 상충됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Middleware'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Transparency'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Infrastructure'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 미들웨어는 '중간'에서 복잡한 일을 대신 해주므로 사용자는 내부를 알 필요가 없습니다."
+        ],
+        "detailed_summary": "응용 프로그램과 운영체제 사이에서 가교 역할을 하는 미들웨어의 특징을 묻는 문제입니다. 사용자가 미들웨어의 내부 동작을 확인하려면 별도의 응용 소프트웨어를 사용해야하므로, 사용자가 미들웨어의 내부 동작을 확인하기는 쉽지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 6. 미들웨어(Middleware)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 미들웨어의 서비스 이용을 위해 사용자가 정보 교환 방법 등의 내부 동작을 쉽게 확인할 수 있어야 한다.'와 일치합니다. 미들웨어는 복잡한 내부 동작을 사용자나 개발자로부터 숨겨주는 '투명성'을 제공하는 것이 목적입니다. 내부 동작을 쉽게 확인해야 한다는 설명은 미들웨어의 존재 이유와 상충됩니다. 시험 포인트는 운영체제와 응용 프로그램 사이의 위치, 인프라 구조 제공, 다양한 연결 형태 지원은 모두 미들웨어의 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "미들웨어",
+        "Middleware",
+        "투명성",
+        "인프라"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_da674d03a1cb57b7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          102
+        ],
+        "page_span": {
+          "start_page": 102,
+          "end_page": 102
+        },
+        "source_explanation": "입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 전처리기(FEP; Front End Processor)라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "EAI"
+          },
+          {
+            "label": "2",
+            "text": "FEP"
+          },
+          {
+            "label": "3",
+            "text": "GPL"
+          },
+          {
+            "label": "4",
+            "text": "Duplexing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "FEP"
+        ],
+        "answer_text": "FEP"
+      },
+      "explanation": {
+        "source_text": "입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 전처리기(FEP; Front End Processor)라고 합니다.",
+        "summary": "메인 프로세서의 부담을 덜어주기 위해 앞단에서 데이터를 미리 처리하는 장치를 묻는 문제입니다.",
+        "why_correct": [
+          "FEP(Front End Processor)는 통신 제어 등 부수적인 작업을 미리 처리하여 메인 CPU의 효율을 높여주는 전처리기입니다."
+        ],
+        "why_others_wrong": [
+          "EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+        ],
+        "key_concepts": [
+          "FEP",
+          "Front End Processor",
+          "Pre-processing"
+        ],
+        "memory_cues": [
+          "Front(앞)에서 미리 처리한다 = FEP"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "EAI",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'EAI'이므로 일치하지 않습니다. EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "FEP",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 통신 제어 등 부수적인 작업을 미리 처리하여 메인 CPU의 효율을 높여주는 전처리기입니다."
+          },
+          {
+            "label": "3",
+            "text": "GPL",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'GPL'이므로 일치하지 않습니다. EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Duplexing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 FEP'인데 이 선택지는 'Duplexing'이므로 일치하지 않습니다. EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은?",
+          "핵심 개념을 떠올립니다. FEP, Front End Processor, Pre-processing",
+          "정답 판단 근거를 적용합니다. FEP(Front End Processor)는 통신 제어 등 부수적인 작업을 미리 처리하여 메인 CPU의 효율을 높여주는 전처리기입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+        ],
+        "exam_traps": [
+          "EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FEP'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Front End Processor'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pre-processing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Front(앞)에서 미리 처리한다 = FEP"
+        ],
+        "detailed_summary": "메인 프로세서의 부담을 덜어주기 위해 앞단에서 데이터를 미리 처리하는 장치를 묻는 문제입니다. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 전처리기(FEP; Front End Processor)라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 입력되는 데이터를 컴퓨터의 프로세서가 처리하기 전에 미리 처리하여 프로세서가 처리하는 시간을 줄여주는 프로그램이나 하드웨어를 말하는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 FEP'와 일치합니다. FEP(Front End Processor)는 통신 제어 등 부수적인 작업을 미리 처리하여 메인 CPU의 효율을 높여주는 전처리기입니다. 시험 포인트는 EAI는 기업 애플리케이션 통합, GPL은 소프트웨어 라이선스, Duplexing은 이중화를 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "FEP",
+        "전처리기",
+        "프로세서 부하 경감",
+        "통신 제어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_12d815fdde73a679",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          123
+        ],
+        "page_span": {
+          "start_page": 123,
+          "end_page": 123
+        },
+        "source_explanation": "전문가의 조언 | RPC(Remote Procedure Call)는 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어입니다. • 4번은 ORB(Object Request Broker)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "27섹션 3빌드"
+        ],
+        "chapter_label": "27섹션 3빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 27섹션 3빌드",
+        "chapter_id": "chapter_023"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "18. 미들웨어에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "DB는 데이터베이스 벤더에서 제공하는 클라이언트에서 원격의 데이터베이스와 연결하기 위한 미들웨어이다."
+          },
+          {
+            "label": "2",
+            "text": "WAS는 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어이다."
+          },
+          {
+            "label": "3",
+            "text": "MOM은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어이다."
+          },
+          {
+            "label": "4",
+            "text": "RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다."
+        ],
+        "answer_text": "RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | RPC(Remote Procedure Call)는 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어입니다. • 4번은 ORB(Object Request Broker)에 대한 설명입니다.",
+        "summary": "다양한 미들웨어의 종류와 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "RPC는 원격 프로시저 호출 방식이며, CORBA 표준을 구현한 객체 지향 미들웨어는 ORB(Object Request Broker)입니다."
+        ],
+        "why_others_wrong": [
+          "1번: DB 미들웨어(ODBC 등)에 대한 설명입니다.",
+          "2번: WAS(Web Application Server)는 동적 콘텐츠 처리를 담당합니다.",
+          "3번: MOM(Message Oriented Middleware)은 비동기 메시지 전달 방식입니다."
+        ],
+        "key_concepts": [
+          "Middleware",
+          "RPC",
+          "MOM",
+          "WAS",
+          "ORB"
+        ],
+        "memory_cues": [
+          "RPC는 프로시저 호출, CORBA는 객체(ORB)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "DB는 데이터베이스 벤더에서 제공하는 클라이언트에서 원격의 데이터베이스와 연결하기 위한 미들웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.'인데 이 선택지는 'DB는 데이터베이스 벤더에서 제공하는 클라이언트에서 원격의 데이터베이스와 연결하기 위한 미들웨어이다.'이므로 일치하지 않습니다. 1번: DB 미들웨어(ODBC 등)에 대한 설명입니다. 2번: WAS(Web Application Server)는 동적 콘텐츠 처리를 담당합니다."
+          },
+          {
+            "label": "2",
+            "text": "WAS는 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.'인데 이 선택지는 'WAS는 사용자의 요구에 따라 변하는 동적인 콘텐츠를 처리하기 위해 사용되는 미들웨어이다.'이므로 일치하지 않습니다. 1번: DB 미들웨어(ODBC 등)에 대한 설명입니다. 2번: WAS(Web Application Server)는 동적 콘텐츠 처리를 담당합니다."
+          },
+          {
+            "label": "3",
+            "text": "MOM은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.'인데 이 선택지는 'MOM은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어이다.'이므로 일치하지 않습니다. 1번: DB 미들웨어(ODBC 등)에 대한 설명입니다. 2번: WAS(Web Application Server)는 동적 콘텐츠 처리를 담당합니다."
+          },
+          {
+            "label": "4",
+            "text": "RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.'와 일치합니다. RPC는 원격 프로시저 호출 방식이며, CORBA 표준을 구현한 객체 지향 미들웨어는 ORB(Object Request Broker)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 18. 미들웨어에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. Middleware, RPC, MOM, WAS",
+          "정답 판단 근거를 적용합니다. RPC는 원격 프로시저 호출 방식이며, CORBA 표준을 구현한 객체 지향 미들웨어는 ORB(Object Request Broker)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: DB 미들웨어(ODBC 등)에 대한 설명입니다."
+        ],
+        "exam_traps": [
+          "1번: DB 미들웨어(ODBC 등)에 대한 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Middleware'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RPC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'MOM'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'WAS'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. RPC는 프로시저 호출, CORBA는 객체(ORB)"
+        ],
+        "detailed_summary": "다양한 미들웨어의 종류와 특징을 묻는 문제입니다. 전문가의 조언 | RPC(Remote Procedure Call)는 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어입니다. • 4번은 ORB(Object Request Broker)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 18. 미들웨어에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 RPC는 코바(CORBA) 표준 스펙을 구현한 객체 지향 미들웨어이다.'와 일치합니다. RPC는 원격 프로시저 호출 방식이며, CORBA 표준을 구현한 객체 지향 미들웨어는 ORB(Object Request Broker)입니다. 시험 포인트는 1번: DB 미들웨어(ODBC 등)에 대한 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "RPC",
+        "WAS",
+        "MOM",
+        "CORBA"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ef5972ee4ca15033",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 141
+        },
+        "source_explanation": "전문가의 조언 | 트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다.\n• RPC(Remote Procedure Call) : 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어\n• ORB(Object Request Broker) : 객체 지향 미들웨어로 코바(CORBA) 표준 스펙을 구현한 미들웨어"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "시스템 인터페이스와 미들웨어"
+        ],
+        "chapter_label": "시스템 인터페이스와 미들웨어",
+        "chapter_key": "소프트웨어 설계 > 시스템 인터페이스와 미들웨어",
+        "chapter_id": "chapter_277"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "RPC"
+          },
+          {
+            "label": "2",
+            "text": "ORB"
+          },
+          {
+            "label": "3",
+            "text": "TP monitor"
+          },
+          {
+            "label": "4",
+            "text": "HUB"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "TP monitor"
+        ],
+        "answer_text": "TP monitor"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다.\n• RPC(Remote Procedure Call) : 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어\n• ORB(Object Request Broker) : 객체 지향 미들웨어로 코바(CORBA) 표준 스펙을 구현한 미들웨어",
+        "summary": "트랜잭션 처리를 감시하는 미들웨어의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "TP Monitor는 분산 환경에서 트랜잭션을 스케줄링하고 제어하여 무결성을 보장하는 미들웨어입니다."
+        ],
+        "why_others_wrong": [
+          "RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+        ],
+        "key_concepts": [
+          "TP Monitor",
+          "Middleware"
+        ],
+        "memory_cues": [
+          "TP = Transaction Processing"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "RPC",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 TP monitor'인데 이 선택지는 'RPC'이므로 일치하지 않습니다. RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+          },
+          {
+            "label": "2",
+            "text": "ORB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 TP monitor'인데 이 선택지는 'ORB'이므로 일치하지 않습니다. RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+          },
+          {
+            "label": "3",
+            "text": "TP monitor",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 TP monitor'와 일치합니다. TP Monitor는 분산 환경에서 트랜잭션을 스케줄링하고 제어하여 무결성을 보장하는 미들웨어입니다."
+          },
+          {
+            "label": "4",
+            "text": "HUB",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 TP monitor'인데 이 선택지는 'HUB'이므로 일치하지 않습니다. RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는?",
+          "핵심 개념을 떠올립니다. TP Monitor, Middleware",
+          "정답 판단 근거를 적용합니다. TP Monitor는 분산 환경에서 트랜잭션을 스케줄링하고 제어하여 무결성을 보장하는 미들웨어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+        ],
+        "exam_traps": [
+          "RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'TP Monitor'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Middleware'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. TP = Transaction Processing"
+        ],
+        "detailed_summary": "트랜잭션 처리를 감시하는 미들웨어의 종류를 묻는 문제입니다. 전문가의 조언 | 트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는 TP-Monitor(Transaction Processing Monitor)입니다. • RPC(Remote Procedure Call) : 응용 프로그램의 프로시저를 사용하여 원격 프로시저를 마치 로컬 프로시저처럼 호출하는 방식의 미들웨어 • ORB(Object Request Broker) : 객체 지향 미들웨어로 코바(CORBA) 표준 스펙을 구현한 미들웨어 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 트랜잭션이 올바르게 처리되고 있는지 데이터를 감시하고 제어하는 미들웨어는? 정답입니다. 이 선택지는 실제 정답인 '3번 TP monitor'와 일치합니다. TP Monitor는 분산 환경에서 트랜잭션을 스케줄링하고 제어하여 무결성을 보장하는 미들웨어입니다. 시험 포인트는 RPC는 원격 호출, ORB는 객체 간 통신, HUB는 네트워크 장비입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "TP 모니터",
+        "미들웨어",
+        "트랜잭션"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_30d4080d0e708c58",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          161
+        ],
+        "page_span": {
+          "start_page": 161,
+          "end_page": 161
+        },
+        "source_explanation": "MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. 3번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "시스템 인터페이스 설계",
+          "미들웨어"
+        ],
+        "chapter_label": "미들웨어",
+        "chapter_key": "1과목 소프트웨어 설계 > 시스템 인터페이스 설계 > 미들웨어",
+        "chapter_id": "chapter_048"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "19. 미들웨어에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어"
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체 지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어"
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+        ],
+        "answer_text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어"
+      },
+      "explanation": {
+        "source_text": "MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. 3번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다.",
+        "summary": "미들웨어의 종류와 특징을 구분하는 문제입니다.",
+        "why_correct": [
+          "MOM은 메시지 기반 비동기 전송 방식이며, 트랜잭션 처리 및 감시는 TP-Monitor의 역할입니다."
+        ],
+        "why_others_wrong": [
+          "1번 WAS는 웹 애플리케이션 서버입니다.",
+          "2번 ORB는 객체 요청 브로커입니다.",
+          "4번 DB 미들웨어는 DB 연결을 지원합니다."
+        ],
+        "key_concepts": [
+          "MOM (Message Oriented Middleware)",
+          "TP-Monitor"
+        ],
+        "memory_cues": [
+          "MOM = 메시지",
+          "TP = 트랜잭션 처리"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "WAS : 웹 콘텐츠를 처리하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'WAS : 웹 콘텐츠를 처리하기 위한 미들웨어'이므로 일치하지 않습니다. 1번 WAS는 웹 애플리케이션 서버입니다. 2번 ORB는 객체 요청 브로커입니다."
+          },
+          {
+            "label": "2",
+            "text": "ORB : 객체 지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'ORB : 객체 지향 미들웨어로 코바 표준 스펙을 구현한 미들웨어'이므로 일치하지 않습니다. 1번 WAS는 웹 애플리케이션 서버입니다. 2번 ORB는 객체 요청 브로커입니다."
+          },
+          {
+            "label": "3",
+            "text": "MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. MOM은 메시지 기반 비동기 전송 방식이며, 트랜잭션 처리 및 감시는 TP-Monitor의 역할입니다."
+          },
+          {
+            "label": "4",
+            "text": "DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'인데 이 선택지는 'DB : 데이터베이스와 데이터베이스 관리 시스템을 연결하기 위한 미들웨어'이므로 일치하지 않습니다. 1번 WAS는 웹 애플리케이션 서버입니다. 2번 ORB는 객체 요청 브로커입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 미들웨어에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. MOM (Message Oriented Middleware), TP-Monitor",
+          "정답 판단 근거를 적용합니다. MOM은 메시지 기반 비동기 전송 방식이며, 트랜잭션 처리 및 감시는 TP-Monitor의 역할입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 WAS는 웹 애플리케이션 서버입니다."
+        ],
+        "exam_traps": [
+          "1번 WAS는 웹 애플리케이션 서버입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'MOM (Message Oriented Middleware)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'TP-Monitor'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. MOM = 메시지",
+          "암기 포인트를 떠올립니다. TP = 트랜잭션 처리"
+        ],
+        "detailed_summary": "미들웨어의 종류와 특징을 구분하는 문제입니다. MOM(메시지 지향 미들웨어)은 메시지 기반의 비동기형 메시지를 전달하는 방식의 미들웨어입니다. 3번은 TP-Monitor(트랜잭션 처리 모니터)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 19. 미들웨어에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 MOM : 온라인 트랜잭션 업무에서 트랜잭션을 처리 및 감시하는 미들웨어'와 일치합니다. MOM은 메시지 기반 비동기 전송 방식이며, 트랜잭션 처리 및 감시는 TP-Monitor의 역할입니다. 시험 포인트는 1번 WAS는 웹 애플리케이션 서버입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "WAS",
+        "ORB",
+        "MOM",
+        "TP-Monitor"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b39d816f55383c5f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          181
+        ],
+        "page_span": {
+          "start_page": 181,
+          "end_page": 181
+        },
+        "source_explanation": "미들웨어(Middleware)는 미들(Middle)과 소프트웨어(Software)의 합성어로, 서로 다른 기종 간의 하드웨어나 프로토콜 등을 연결하여 원만한 통신이 이루어질 수 있게 서비스를 제공합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "시스템 인터페이스와 미들웨어"
+        ],
+        "chapter_label": "시스템 인터페이스와 미들웨어",
+        "chapter_key": "소프트웨어 설계 > 시스템 인터페이스와 미들웨어",
+        "chapter_id": "chapter_277"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "미들웨어"
+          },
+          {
+            "label": "2",
+            "text": "하드웨어"
+          },
+          {
+            "label": "3",
+            "text": "오픈허브웨어"
+          },
+          {
+            "label": "4",
+            "text": "그레이웨어"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "미들웨어"
+        ],
+        "answer_text": "미들웨어"
+      },
+      "explanation": {
+        "source_text": "미들웨어(Middleware)는 미들(Middle)과 소프트웨어(Software)의 합성어로, 서로 다른 기종 간의 하드웨어나 프로토콜 등을 연결하여 원만한 통신이 이루어질 수 있게 서비스를 제공합니다.",
+        "summary": "서로 다른 시스템 사이에서 통신을 돕는 소프트웨어를 찾는 문제입니다.",
+        "why_correct": [
+          "미들웨어는 양쪽을 연결하여 데이터를 주고받을 수 있도록 중간에서 매개 역할을 하는 소프트웨어입니다."
+        ],
+        "why_others_wrong": [
+          "하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+        ],
+        "key_concepts": [
+          "미들웨어의 역할"
+        ],
+        "memory_cues": [
+          "Middle(중간) + Software"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "미들웨어",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 미들웨어'와 일치합니다. 미들웨어는 양쪽을 연결하여 데이터를 주고받을 수 있도록 중간에서 매개 역할을 하는 소프트웨어입니다."
+          },
+          {
+            "label": "2",
+            "text": "하드웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 미들웨어'인데 이 선택지는 '하드웨어'이므로 일치하지 않습니다. 하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+          },
+          {
+            "label": "3",
+            "text": "오픈허브웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 미들웨어'인데 이 선택지는 '오픈허브웨어'이므로 일치하지 않습니다. 하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+          },
+          {
+            "label": "4",
+            "text": "그레이웨어",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 미들웨어'인데 이 선택지는 '그레이웨어'이므로 일치하지 않습니다. 하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는?",
+          "핵심 개념을 떠올립니다. 미들웨어의 역할",
+          "정답 판단 근거를 적용합니다. 미들웨어는 양쪽을 연결하여 데이터를 주고받을 수 있도록 중간에서 매개 역할을 하는 소프트웨어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+        ],
+        "exam_traps": [
+          "하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '미들웨어의 역할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Middle(중간) + Software"
+        ],
+        "detailed_summary": "서로 다른 시스템 사이에서 통신을 돕는 소프트웨어를 찾는 문제입니다. 미들웨어(Middleware)는 미들(Middle)과 소프트웨어(Software)의 합성어로, 서로 다른 기종 간의 하드웨어나 프로토콜 등을 연결하여 원만한 통신이 이루어질 수 있게 서비스를 제공합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 컴퓨팅 환경에서 서로 다른 기종 간의 하드웨어나 프로토콜, 통신환경 등을 연결하여 응용 프로그램과 운영환경 간에 원만한 통신이 이루어질 수 있게 서비스를 제공하는 소프트웨어는? 정답입니다. 이 선택지는 실제 정답인 '1번 미들웨어'와 일치합니다. 미들웨어는 양쪽을 연결하여 데이터를 주고받을 수 있도록 중간에서 매개 역할을 하는 소프트웨어입니다. 시험 포인트는 하드웨어는 물리적 장치, 오픈허브웨어나 그레이웨어는 해당 정의와 관련이 없는 용어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "미들웨어",
+        "분산 컴퓨팅",
+        "상호 운용성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0e5e14cc68936565",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          182
+        ],
+        "page_span": {
+          "start_page": 182,
+          "end_page": 182
+        },
+        "source_explanation": "EAI는 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션으로, 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus (ESB), Hybrid가 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "시스템 인터페이스와 미들웨어"
+        ],
+        "chapter_label": "시스템 인터페이스와 미들웨어",
+        "chapter_key": "소프트웨어 설계 > 시스템 인터페이스와 미들웨어",
+        "chapter_id": "chapter_277"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_021",
+        "topic_title": "시스템 인터페이스와 미들웨어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "시스템 인터페이스와 미들웨어",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "EA(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Tree"
+          },
+          {
+            "label": "2",
+            "text": "Hub & Spoke"
+          },
+          {
+            "label": "3",
+            "text": "Message Bus"
+          },
+          {
+            "label": "4",
+            "text": "Point-to-Point"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Tree"
+        ],
+        "answer_text": "Tree"
+      },
+      "explanation": {
+        "source_text": "EAI는 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션으로, 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus (ESB), Hybrid가 있습니다.",
+        "summary": "EAI(기업 애플리케이션 통합)의 구축 방식이 아닌 것을 찾는 문제입니다.",
+        "why_correct": [
+          "Tree 방식은 EAI의 표준 구축 유형에 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+        ],
+        "key_concepts": [
+          "EAI 구축 유형"
+        ],
+        "memory_cues": [
+          "포허메하 (Point, Hub, Message, Hybrid)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Tree",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Tree'와 일치합니다. Tree 방식은 EAI의 표준 구축 유형에 포함되지 않습니다."
+          },
+          {
+            "label": "2",
+            "text": "Hub & Spoke",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Hub & Spoke'이므로 일치하지 않습니다. Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+          },
+          {
+            "label": "3",
+            "text": "Message Bus",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Message Bus'이므로 일치하지 않습니다. Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+          },
+          {
+            "label": "4",
+            "text": "Point-to-Point",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Tree'인데 이 선택지는 'Point-to-Point'이므로 일치하지 않습니다. Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. EA(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. EAI 구축 유형",
+          "정답 판단 근거를 적용합니다. Tree 방식은 EAI의 표준 구축 유형에 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+        ],
+        "exam_traps": [
+          "Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'EAI 구축 유형'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 포허메하 (Point, Hub, Message, Hybrid)"
+        ],
+        "detailed_summary": "EAI(기업 애플리케이션 통합)의 구축 방식이 아닌 것을 찾는 문제입니다. EAI는 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션으로, 구축 유형에는 Point-to-Point, Hub & Spoke, Message Bus (ESB), Hybrid가 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. EA(Enterprise Application Integration)의 구축 유형으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Tree'와 일치합니다. Tree 방식은 EAI의 표준 구축 유형에 포함되지 않습니다. 시험 포인트는 Point-to-Point(1:1 연결), Hub & Spoke(중앙 집중), Message Bus(공통 버스 활용)는 대표적인 EAI 구축 유형입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "EAI",
+        "Hub & Spoke",
+        "Message Bus",
+        "Point-to-Point"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

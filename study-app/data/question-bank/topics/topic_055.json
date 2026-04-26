@@ -1,0 +1,1944 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_055",
+    "sequence": 55,
+    "title": "SELECT 기본 검색",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 11,
+    "review_count": 3,
+    "source_chapter_ids": [
+      "chapter_195",
+      "chapter_191",
+      "chapter_114"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_af43d36deeb51834",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          33
+        ],
+        "page_span": {
+          "start_page": 33,
+          "end_page": 33
+        },
+        "source_explanation": "검색 결과에서 레코드의 중복을 제거할 때 사용하는 옵션은 DISTINCT입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "SELECT"
+        ],
+        "chapter_label": "SELECT",
+        "chapter_key": "데이터베이스 구축 > SQL > SELECT",
+        "chapter_id": "chapter_195"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "SQL문에서 사용하는 옵션 중 검색 결과에서 레코드의 중복을 제거할 때 사용하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "CASCADE"
+          },
+          {
+            "label": "2",
+            "text": "DISTINCT"
+          },
+          {
+            "label": "3",
+            "text": "RESTRICT"
+          },
+          {
+            "label": "4",
+            "text": "UNION"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "DISTINCT"
+        ],
+        "answer_text": "DISTINCT"
+      },
+      "explanation": {
+        "source_text": "검색 결과에서 레코드의 중복을 제거할 때 사용하는 옵션은 DISTINCT입니다.",
+        "summary": "SELECT 문에서 중복된 행을 하나만 표시하도록 하는 키워드를 묻는 문제입니다.",
+        "why_correct": [
+          "DISTINCT 키워드는 조회된 결과 집합에서 중복된 값을 제거하고 유일한 값들만 보여줍니다."
+        ],
+        "why_others_wrong": [
+          "CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+        ],
+        "key_concepts": [
+          "DISTINCT",
+          "중복 제거"
+        ],
+        "memory_cues": [
+          "중복 제거 = DISTINCT"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "CASCADE",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 DISTINCT'인데 이 선택지는 'CASCADE'이므로 일치하지 않습니다. CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+          },
+          {
+            "label": "2",
+            "text": "DISTINCT",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 DISTINCT'와 일치합니다. DISTINCT 키워드는 조회된 결과 집합에서 중복된 값을 제거하고 유일한 값들만 보여줍니다."
+          },
+          {
+            "label": "3",
+            "text": "RESTRICT",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 DISTINCT'인데 이 선택지는 'RESTRICT'이므로 일치하지 않습니다. CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+          },
+          {
+            "label": "4",
+            "text": "UNION",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 DISTINCT'인데 이 선택지는 'UNION'이므로 일치하지 않습니다. CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL문에서 사용하는 옵션 중 검색 결과에서 레코드의 중복을 제거할 때 사용하는 것은?",
+          "핵심 개념을 떠올립니다. DISTINCT, 중복 제거",
+          "정답 판단 근거를 적용합니다. DISTINCT 키워드는 조회된 결과 집합에서 중복된 값을 제거하고 유일한 값들만 보여줍니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "CASCADE와 RESTRICT는 참조 무결성 관련 옵션이며, UNION은 집합 연산자입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DISTINCT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '중복 제거'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 중복 제거 = DISTINCT"
+        ],
+        "detailed_summary": "SELECT 문에서 중복된 행을 하나만 표시하도록 하는 키워드를 묻는 문제입니다. 검색 결과에서 레코드의 중복을 제거할 때 사용하는 옵션은 DISTINCT입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. SQL문에서 사용하는 옵션 중 검색 결과에서 레코드의 중복을 제거할 때 사용하는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 DISTINCT'와 일치합니다. DISTINCT 키워드는 조회된 결과 집합에서 중복된 값을 제거하고 유일한 값들만 보여줍니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DISTINCT",
+        "중복 제거",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_69dbf79929ae2760",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          35
+        ],
+        "page_span": {
+          "start_page": 35,
+          "end_page": 35
+        },
+        "source_explanation": "SELECT 급여 FROM 사원; 문장은 사원 테이블에서 '급여' 필드의 전체 레코드를 검색합니다. 테이블에 5개의 행이 있으므로 튜플 수는 5개입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "SELECT"
+        ],
+        "chapter_label": "SELECT",
+        "chapter_key": "데이터베이스 구축 > SQL > SELECT",
+        "chapter_id": "chapter_195"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 SQL문의 실행결과로 생성되는 튜플 수는?\nSELECT 급여 FROM 사원;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "3"
+          },
+          {
+            "label": "3",
+            "text": "4"
+          },
+          {
+            "label": "4",
+            "text": "5"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "5"
+        ],
+        "answer_text": "5"
+      },
+      "explanation": {
+        "source_text": "SELECT 급여 FROM 사원; 문장은 사원 테이블에서 '급여' 필드의 전체 레코드를 검색합니다. 테이블에 5개의 행이 있으므로 튜플 수는 5개입니다.",
+        "summary": "기본 SELECT 문 실행 시 반환되는 결과 행의 개수를 파악하는 문제입니다.",
+        "why_correct": [
+          "별도의 조건(WHERE)이나 중복 제거(DISTINCT)가 없으므로 테이블의 모든 행(5개)이 결과로 나옵니다."
+        ],
+        "why_others_wrong": [
+          "급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+        ],
+        "key_concepts": [
+          "SELECT",
+          "튜플(Tuple)"
+        ],
+        "memory_cues": [
+          "조건 없으면 전체 행 출력"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5'인데 이 선택지는 '1'이므로 일치하지 않습니다. 급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+          },
+          {
+            "label": "2",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5'인데 이 선택지는 '3'이므로 일치하지 않습니다. 급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+          },
+          {
+            "label": "3",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 5'인데 이 선택지는 '4'이므로 일치하지 않습니다. 급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+          },
+          {
+            "label": "4",
+            "text": "5",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 5'와 일치합니다. 별도의 조건(WHERE)이나 중복 제거(DISTINCT)가 없으므로 테이블의 모든 행(5개)이 결과로 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행결과로 생성되는 튜플 수는? SELECT 급여 FROM 사원;",
+          "핵심 개념을 떠올립니다. SELECT, 튜플(Tuple)",
+          "정답 판단 근거를 적용합니다. 별도의 조건(WHERE)이나 중복 제거(DISTINCT)가 없으므로 테이블의 모든 행(5개)이 결과로 나옵니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "급여 값 중 중복된 것이 있더라도 DISTINCT가 없으면 모두 출력됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SELECT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '튜플(Tuple)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 조건 없으면 전체 행 출력"
+        ],
+        "detailed_summary": "기본 SELECT 문 실행 시 반환되는 결과 행의 개수를 파악하는 문제입니다. SELECT 급여 FROM 사원; 문장은 사원 테이블에서 '급여' 필드의 전체 레코드를 검색합니다. 테이블에 5개의 행이 있으므로 튜플 수는 5개입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문의 실행결과로 생성되는 튜플 수는? SELECT 급여 FROM 사원; 정답입니다. 이 선택지는 실제 정답인 '4번 5'와 일치합니다. 별도의 조건(WHERE)이나 중복 제거(DISTINCT)가 없으므로 테이블의 모든 행(5개)이 결과로 나옵니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "튜플 수",
+        "레코드 검색"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          35
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0035",
+            "page_number": 35,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0035.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 943322,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_69dbf79929ae2760__figure_01",
+            "question_id": "qb_69dbf79929ae2760",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_69dbf79929ae2760/qb_69dbf79929ae2760__figure_01.png",
+            "content_type": "image/png",
+            "width": 431,
+            "height": 192,
+            "file_size_bytes": 65163,
+            "source_page": 35,
+            "crop_rect_pdf_points": [
+              30.5,
+              155.0,
+              246.0,
+              251.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_69dbf79929ae2760__figure_01",
+          "question_id": "qb_69dbf79929ae2760",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_69dbf79929ae2760/qb_69dbf79929ae2760__figure_01.png",
+          "content_type": "image/png",
+          "width": 431,
+          "height": 192,
+          "file_size_bytes": 65163,
+          "source_page": 35,
+          "crop_rect_pdf_points": [
+            30.5,
+            155.0,
+            246.0,
+            251.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_69dbf79929ae2760__figure_01",
+          "question_id": "qb_69dbf79929ae2760",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_69dbf79929ae2760/qb_69dbf79929ae2760__figure_01.png",
+          "content_type": "image/png",
+          "width": 431,
+          "height": 192,
+          "file_size_bytes": 65163,
+          "source_page": 35,
+          "crop_rect_pdf_points": [
+            30.5,
+            155.0,
+            246.0,
+            251.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_69dbf79929ae2760_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_fe6850d0fbf73e7d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          35
+        ],
+        "page_span": {
+          "start_page": 35,
+          "end_page": 35
+        },
+        "source_explanation": "NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SQL",
+          "SELECT"
+        ],
+        "chapter_label": "SELECT",
+        "chapter_key": "데이터베이스 구축 > SQL > SELECT",
+        "chapter_id": "chapter_195"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+        ],
+        "answer_text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+      },
+      "explanation": {
+        "source_text": "NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다.",
+        "summary": "SQL에서 NULL 값을 처리하는 비교 연산자를 묻는 문제입니다.",
+        "why_correct": [
+          "NULL은 일반적인 비교 연산자(=, !=)를 사용할 수 없으며 반드시 IS NULL 또는 IS NOT NULL을 사용해야 합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "key_concepts": [
+          "NULL 처리",
+          "IS NOT NULL"
+        ],
+        "memory_cues": [
+          "NULL 비교는 IS"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;'이므로 일치하지 않습니다. 1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;'이므로 일치하지 않습니다. 1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. NULL은 일반적인 비교 연산자(=, !=)를 사용할 수 없으며 반드시 IS NULL 또는 IS NOT NULL을 사용해야 합니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;'이므로 일치하지 않습니다. 1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. NULL 처리, IS NOT NULL",
+          "정답 판단 근거를 적용합니다. NULL은 일반적인 비교 연산자(=, !=)를 사용할 수 없으며 반드시 IS NULL 또는 IS NOT NULL을 사용해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 문법적으로 틀린 표현이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'NULL 처리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IS NOT NULL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. NULL 비교는 IS"
+        ],
+        "detailed_summary": "SQL에서 NULL 값을 처리하는 비교 연산자를 묻는 문제입니다. NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. NULL은 일반적인 비교 연산자(=, !=)를 사용할 수 없으며 반드시 IS NULL 또는 IS NOT NULL을 사용해야 합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "NULL",
+        "IS NOT NULL",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0b8bc0e52b590a53",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          53
+        ],
+        "page_span": {
+          "start_page": 53,
+          "end_page": 53
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에 제시된 질의에 대한 SQL문으로 옳은 것은 ③번입니다.\n• 주민등록번호(JUNO)를 검색하므로 SELECT JUNO입니다.\n• 사원(WORKS) 테이블을 대상으로 하므로 FROM WORKS입니다.\n• 프로젝트번호(PNO)가 1, 2, 3인 자료만을 대상으로 하므로 WHERE PNO IN (1, 2, 3)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "49. 다음 질의에 대한 SQL문은?\n프로젝트번호(PNO) 1, 2, 3에서 일하는 사원의 주민등록번호(JUNO)를 검색하라. (단, 사원 테이블(WORKS)은 프로젝트번호(PNO), 주민등록번호(JUNO) 필드로 구성된다.)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT WORKS FROM JUNO WHERE PNO IN 1, 2, 3;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT WORKS FROM JUNO WHERE PNO ON 1, 2, 3;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);"
+          },
+          {
+            "label": "4",
+            "text": "SELECT JUNO FROM WORKS WHERE PNO ON (1, 2, 3);"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);"
+        ],
+        "answer_text": "SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에 제시된 질의에 대한 SQL문으로 옳은 것은 ③번입니다.\n• 주민등록번호(JUNO)를 검색하므로 SELECT JUNO입니다.\n• 사원(WORKS) 테이블을 대상으로 하므로 FROM WORKS입니다.\n• 프로젝트번호(PNO)가 1, 2, 3인 자료만을 대상으로 하므로 WHERE PNO IN (1, 2, 3)입니다.",
+        "summary": "특정 조건에 맞는 데이터를 검색하는 SQL SELECT 문을 작성하는 문제입니다.",
+        "why_correct": [
+          "SELECT 뒤에는 검색할 필드명(JUNO), FROM 뒤에는 테이블명(WORKS), WHERE 뒤에는 조건(PNO IN (1, 2, 3))이 와야 합니다. IN 연산자는 괄호 안에 나열된 값 중 하나라도 일치하는 행을 찾습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+        ],
+        "key_concepts": [
+          "SELECT 문 구조",
+          "IN 연산자"
+        ],
+        "memory_cues": [
+          "셀프웨 (SELECT 필드 FROM 테이블 WHERE 조건)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT WORKS FROM JUNO WHERE PNO IN 1, 2, 3;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);'인데 이 선택지는 'SELECT WORKS FROM JUNO WHERE PNO IN 1, 2, 3;'이므로 일치하지 않습니다. 1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT WORKS FROM JUNO WHERE PNO ON 1, 2, 3;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);'인데 이 선택지는 'SELECT WORKS FROM JUNO WHERE PNO ON 1, 2, 3;'이므로 일치하지 않습니다. 1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);'와 일치합니다. SELECT 뒤에는 검색할 필드명(JUNO), FROM 뒤에는 테이블명(WORKS), WHERE 뒤에는 조건(PNO IN (1, 2, 3))이 와야 합니다. IN 연산자는 괄호 안에 나열된 값 중 하나라도 일치하는 행을 찾습니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT JUNO FROM WORKS WHERE PNO ON (1, 2, 3);",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);'인데 이 선택지는 'SELECT JUNO FROM WORKS WHERE PNO ON (1, 2, 3);'이므로 일치하지 않습니다. 1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 다음 질의에 대한 SQL문은? 프로젝트번호(PNO) 1, 2, 3에서 일하는 사원의 주민등록번호(JUNO)를 검색하라. (단, 사원 테이블(WORKS)은 프로젝트번호(PNO), 주민등록번호(JUNO) 필드로 구성된다.)",
+          "핵심 개념을 떠올립니다. SELECT 문 구조, IN 연산자",
+          "정답 판단 근거를 적용합니다. SELECT 뒤에는 검색할 필드명(JUNO), FROM 뒤에는 테이블명(WORKS), WHERE 뒤에는 조건(PNO IN (1, 2, 3))이 와야 합니다. IN 연산자는 괄호 안에 나열된 값 중 하나라도 일치하는 행을 찾습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 SELECT와 FROM의 대상이 바뀌었으며, 4번은 ON 연산자를 잘못 사용했습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SELECT 문 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IN 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 셀프웨 (SELECT 필드 FROM 테이블 WHERE 조건)"
+        ],
+        "detailed_summary": "특정 조건에 맞는 데이터를 검색하는 SQL SELECT 문을 작성하는 문제입니다. 전문가의 조언 | 문제의 지문에 제시된 질의에 대한 SQL문으로 옳은 것은 ③번입니다. • 주민등록번호(JUNO)를 검색하므로 SELECT JUNO입니다. • 사원(WORKS) 테이블을 대상으로 하므로 FROM WORKS입니다. • 프로젝트번호(PNO)가 1, 2, 3인 자료만을 대상으로 하므로 WHERE PNO IN (1, 2, 3)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 49. 다음 질의에 대한 SQL문은? 프로젝트번호(PNO) 1, 2, 3에서 일하는 사원의 주민등록번호(JUNO)를 검색하라. (단, 사원 테이블(WORKS)은 프로젝트번호(PNO), 주민등록번호(JUNO) 필드로 구성된다.) 정답입니다. 이 선택지는 실제 정답인 '3번 SELECT JUNO FROM WORKS WHERE PNO IN (1, 2, 3);'와 일치합니다. SELECT 뒤에는 검색할 필드명(JUNO), FROM 뒤에는 테이블명(WORKS), WHERE 뒤에는 조건(PNO IN (1, 2, 3))이 와야 합니다. IN 연산자는 괄호 안에 나열된 값 중 하나라도 일치하는 행을 찾습니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "IN 연산자",
+        "데이터 검색"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b74fccfae2554d60",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          53,
+          54
+        ],
+        "page_span": {
+          "start_page": 53,
+          "end_page": 54
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 질의에 대한 SQL문으로 옳은 것은 ①번입니다.\n• '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다.\n• (판매실적) 테이블을 대상으로 하므로 FROM 판매실적입니다.\n• '서울' 지역에 한하므로 WHERE 도시='서울'입니다.\n• '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "52. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은?\n[테이블명 : 판매실적]\n(표 생략: 도시, 지점명, 판매액 컬럼 포함)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ASC;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT * FROM 판매실적 WHEN 도시=\"서울\" ORDER BY 판매액 DESC;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;"
+        ],
+        "answer_text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 질의에 대한 SQL문으로 옳은 것은 ①번입니다.\n• '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다.\n• (판매실적) 테이블을 대상으로 하므로 FROM 판매실적입니다.\n• '서울' 지역에 한하므로 WHERE 도시='서울'입니다.\n• '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다.",
+        "summary": "조건부 데이터 검색 및 정렬을 위한 SQL 문을 작성하는 문제입니다.",
+        "why_correct": [
+          "특정 컬럼만 선택(SELECT 지점명, 판매액), 특정 지역 필터링(WHERE 도시='서울'), 내림차순 정렬(ORDER BY 판매액 DESC)이 모두 올바르게 조합되었습니다."
+        ],
+        "why_others_wrong": [
+          "2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+        ],
+        "key_concepts": [
+          "SELECT",
+          "WHERE",
+          "ORDER BY DESC"
+        ],
+        "memory_cues": [
+          "내림차순 = DESC (Descending)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;'와 일치합니다. 특정 컬럼만 선택(SELECT 지점명, 판매액), 특정 지역 필터링(WHERE 도시='서울'), 내림차순 정렬(ORDER BY 판매액 DESC)이 모두 올바르게 조합되었습니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ASC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ASC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT * FROM 판매실적 WHEN 도시=\"서울\" ORDER BY 판매액 DESC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT * FROM 판매실적 WHEN 도시=\"서울\" ORDER BY 판매액 DESC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은? [테이블명 : 판매실적] (표 생략: 도시, 지점명, 판매액 컬럼 포함)",
+          "핵심 개념을 떠올립니다. SELECT, WHERE, ORDER BY DESC",
+          "정답 판단 근거를 적용합니다. 특정 컬럼만 선택(SELECT 지점명, 판매액), 특정 지역 필터링(WHERE 도시='서울'), 내림차순 정렬(ORDER BY 판매액 DESC)이 모두 올바르게 조합되었습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "2번은 지역 조건이 없고, 3번은 정렬 기준 컬럼이 누락되었으며 ASC는 오름차순입니다. 4번은 모든 컬럼(*)을 선택했고 WHEN은 잘못된 키워드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SELECT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'WHERE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ORDER BY DESC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내림차순 = DESC (Descending)"
+        ],
+        "detailed_summary": "조건부 데이터 검색 및 정렬을 위한 SQL 문을 작성하는 문제입니다. 전문가의 조언 | 문제에 제시된 질의에 대한 SQL문으로 옳은 것은 ①번입니다. • '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다. • (판매실적) 테이블을 대상으로 하므로 FROM 판매실적입니다. • '서울' 지역에 한하므로 WHERE 도시='서울'입니다. • '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 52. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은? [테이블명 : 판매실적] (표 생략: 도시, 지점명, 판매액 컬럼 포함) 정답입니다. 이 선택지는 실제 정답인 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시=\"서울\" ORDER BY 판매액 DESC;'와 일치합니다. 특정 컬럼만 선택(SELECT 지점명, 판매액), 특정 지역 필터링(WHERE 도시='서울'), 내림차순 정렬(ORDER BY 판매액 DESC)이 모두 올바르게 조합되었습니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "ORDER BY",
+        "DESC",
+        "내림차순"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          53,
+          54
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0053",
+            "page_number": 53,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0053.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 955624,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0054",
+            "page_number": 54,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0054.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 941160,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0053",
+          "page_number": 53,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0053.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 955624,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0053",
+          "page_number": 53,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0053.png",
+          "content_type": "image/png",
+          "width": 1034,
+          "height": 1382,
+          "file_size_bytes": 955624,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_27e4862a9988ecf7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          71
+        ],
+        "page_span": {
+          "start_page": 71,
+          "end_page": 71
+        },
+        "source_explanation": "SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은 1번입니다. BETWEEN A AND B는 A 이상 B 이하의 범위를 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은?\nSELECT *\nFROM 성적\nWHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학과';",
+        "choices": [
+          {
+            "label": "1",
+            "text": "점수 >= 90 AND 점수 <= 95"
+          },
+          {
+            "label": "2",
+            "text": "점수 > 90 AND 점수 < 95"
+          },
+          {
+            "label": "3",
+            "text": "점수 > 90 AND 점수 <= 95"
+          },
+          {
+            "label": "4",
+            "text": "점수 >= 90 AND 점수 < 95"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "점수 >= 90 AND 점수 <= 95"
+        ],
+        "answer_text": "점수 >= 90 AND 점수 <= 95"
+      },
+      "explanation": {
+        "source_text": "SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은 1번입니다. BETWEEN A AND B는 A 이상 B 이하의 범위를 의미합니다.",
+        "summary": "SQL의 BETWEEN 연산자의 범위를 이해하는 문제입니다.",
+        "why_correct": [
+          "BETWEEN A AND B는 경계값 A와 B를 모두 포함하는 '이상'과 '이하'의 의미를 가집니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+        ],
+        "key_concepts": [
+          "BETWEEN",
+          "비교 연산자"
+        ],
+        "memory_cues": [
+          "BETWEEN은 양 끝값을 포함한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "점수 >= 90 AND 점수 <= 95",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 점수 >= 90 AND 점수 <= 95'와 일치합니다. BETWEEN A AND B는 경계값 A와 B를 모두 포함하는 '이상'과 '이하'의 의미를 가집니다."
+          },
+          {
+            "label": "2",
+            "text": "점수 > 90 AND 점수 < 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 > 90 AND 점수 < 95'이므로 일치하지 않습니다. 2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+          },
+          {
+            "label": "3",
+            "text": "점수 > 90 AND 점수 <= 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 > 90 AND 점수 <= 95'이므로 일치하지 않습니다. 2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+          },
+          {
+            "label": "4",
+            "text": "점수 >= 90 AND 점수 < 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 >= 90 AND 점수 < 95'이므로 일치하지 않습니다. 2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은? SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학과';",
+          "핵심 개념을 떠올립니다. BETWEEN, 비교 연산자",
+          "정답 판단 근거를 적용합니다. BETWEEN A AND B는 경계값 A와 B를 모두 포함하는 '이상'과 '이하'의 의미를 가집니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'BETWEEN'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '비교 연산자'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. BETWEEN은 양 끝값을 포함한다."
+        ],
+        "detailed_summary": "SQL의 BETWEEN 연산자의 범위를 이해하는 문제입니다. SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은 1번입니다. BETWEEN A AND B는 A 이상 B 이하의 범위를 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은? SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학과'; 정답입니다. 이 선택지는 실제 정답인 '1번 점수 >= 90 AND 점수 <= 95'와 일치합니다. BETWEEN A AND B는 경계값 A와 B를 모두 포함하는 '이상'과 '이하'의 의미를 가집니다. 시험 포인트는 2, 3, 4번은 경계값 포함 여부가 BETWEEN의 정의와 다릅니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL 연산자",
+        "BETWEEN",
+        "범위 검색"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_61c401d46de71a01",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          127,
+          128
+        ],
+        "page_span": {
+          "start_page": 127,
+          "end_page": 128
+        },
+        "source_explanation": "전문가의 조언 | π name, dept : 'name', 'dept' 필드를 표시하므로 SELECT name, dept입니다.\n- σ year=3 : 'year'가 3인 자료만을 대상으로 하므로 WHERE year=3입니다.\n- (student) : student 테이블의 자료를 검색하므로 FROM student입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "56. 다음의 관계대수 문장을 SQL로 표현한 것으로 옳은 것은?\nπ name, dept (σ year=3 (student))",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT name, dept FROM student HAVING year=3;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT name, dept FROM student WHERE year=3;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT student FROM name, dept WHERE year=3;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT student FROM name, dept HAVING year=3;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "SELECT name, dept FROM student WHERE year=3;"
+        ],
+        "answer_text": "SELECT name, dept FROM student WHERE year=3;"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | π name, dept : 'name', 'dept' 필드를 표시하므로 SELECT name, dept입니다.\n- σ year=3 : 'year'가 3인 자료만을 대상으로 하므로 WHERE year=3입니다.\n- (student) : student 테이블의 자료를 검색하므로 FROM student입니다.",
+        "summary": "관계 대수 기호(프로젝션, 셀렉션)를 SQL 문법으로 변환하는 문제입니다.",
+        "why_correct": [
+          "π(프로젝션)는 SELECT 절에 대응하고, σ(셀렉션)는 WHERE 절의 조건에 대응합니다."
+        ],
+        "why_others_wrong": [
+          "HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+        ],
+        "key_concepts": [
+          "π (Projection): 속성 추출 -> SELECT",
+          "σ (Selection): 튜플 추출 -> WHERE"
+        ],
+        "memory_cues": [
+          "파이(π)는 필드(SELECT), 시그마(σ)는 조건(WHERE)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT name, dept FROM student HAVING year=3;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT name, dept FROM student WHERE year=3;'인데 이 선택지는 'SELECT name, dept FROM student HAVING year=3;'이므로 일치하지 않습니다. HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT name, dept FROM student WHERE year=3;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 SELECT name, dept FROM student WHERE year=3;'와 일치합니다. π(프로젝션)는 SELECT 절에 대응하고, σ(셀렉션)는 WHERE 절의 조건에 대응합니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT student FROM name, dept WHERE year=3;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT name, dept FROM student WHERE year=3;'인데 이 선택지는 'SELECT student FROM name, dept WHERE year=3;'이므로 일치하지 않습니다. HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT student FROM name, dept HAVING year=3;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 SELECT name, dept FROM student WHERE year=3;'인데 이 선택지는 'SELECT student FROM name, dept HAVING year=3;'이므로 일치하지 않습니다. HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 56. 다음의 관계대수 문장을 SQL로 표현한 것으로 옳은 것은? π name, dept (σ year=3 (student))",
+          "핵심 개념을 떠올립니다. π (Projection): 속성 추출 -> SELECT, σ (Selection): 튜플 추출 -> WHERE",
+          "정답 판단 근거를 적용합니다. π(프로젝션)는 SELECT 절에 대응하고, σ(셀렉션)는 WHERE 절의 조건에 대응합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+        ],
+        "exam_traps": [
+          "HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'π (Projection): 속성 추출 -> SELECT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'σ (Selection): 튜플 추출 -> WHERE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파이(π)는 필드(SELECT), 시그마(σ)는 조건(WHERE)"
+        ],
+        "detailed_summary": "관계 대수 기호(프로젝션, 셀렉션)를 SQL 문법으로 변환하는 문제입니다. 전문가의 조언 | π name, dept : 'name', 'dept' 필드를 표시하므로 SELECT name, dept입니다. - σ year=3 : 'year'가 3인 자료만을 대상으로 하므로 WHERE year=3입니다. - (student) : student 테이블의 자료를 검색하므로 FROM student입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 56. 다음의 관계대수 문장을 SQL로 표현한 것으로 옳은 것은? π name, dept (σ year=3 (student)) 정답입니다. 이 선택지는 실제 정답인 '2번 SELECT name, dept FROM student WHERE year=3;'와 일치합니다. π(프로젝션)는 SELECT 절에 대응하고, σ(셀렉션)는 WHERE 절의 조건에 대응합니다. 시험 포인트는 HAVING은 GROUP BY와 함께 사용되는 조건절이며, 3, 4번은 SELECT와 FROM의 대상이 바뀌어 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "관계 대수",
+        "SQL 변환",
+        "SELECT",
+        "WHERE",
+        "프로젝션",
+        "셀렉션"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f792a0a22d519acf",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          127
+        ],
+        "page_span": {
+          "start_page": 127,
+          "end_page": 127
+        },
+        "source_explanation": "전문가의 조언 | WHERE (점수 BETWEEN 90 AND 95) : 점수가 90~95 사이이고, 이는 90 이상 95 이하를 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "55. 다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은?\nSELECT *\nFROM 성적\nWHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학';",
+        "choices": [
+          {
+            "label": "1",
+            "text": "점수 >= 90 AND 점수 <= 95"
+          },
+          {
+            "label": "2",
+            "text": "점수 > 90 AND 점수 < 95"
+          },
+          {
+            "label": "3",
+            "text": "점수 > 90 AND 점수 <= 95"
+          },
+          {
+            "label": "4",
+            "text": "점수 >= 90 AND 점수 < 95"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "점수 >= 90 AND 점수 <= 95"
+        ],
+        "answer_text": "점수 >= 90 AND 점수 <= 95"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | WHERE (점수 BETWEEN 90 AND 95) : 점수가 90~95 사이이고, 이는 90 이상 95 이하를 의미합니다.",
+        "summary": "SQL의 BETWEEN 연산자가 포함하는 범위(경계값 포함 여부)를 묻는 문제입니다.",
+        "why_correct": [
+          "BETWEEN A AND B는 A 이상 B 이하(A <= X <= B)를 의미하므로 경계값을 포함합니다."
+        ],
+        "why_others_wrong": [
+          "초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+        ],
+        "key_concepts": [
+          "BETWEEN A AND B: A와 B를 포함한 사이 값"
+        ],
+        "memory_cues": [
+          "BETWEEN은 양 끝값을 '포함'한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "점수 >= 90 AND 점수 <= 95",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 점수 >= 90 AND 점수 <= 95'와 일치합니다. BETWEEN A AND B는 A 이상 B 이하(A <= X <= B)를 의미하므로 경계값을 포함합니다."
+          },
+          {
+            "label": "2",
+            "text": "점수 > 90 AND 점수 < 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 > 90 AND 점수 < 95'이므로 일치하지 않습니다. 초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+          },
+          {
+            "label": "3",
+            "text": "점수 > 90 AND 점수 <= 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 > 90 AND 점수 <= 95'이므로 일치하지 않습니다. 초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "점수 >= 90 AND 점수 < 95",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 점수 >= 90 AND 점수 <= 95'인데 이 선택지는 '점수 >= 90 AND 점수 < 95'이므로 일치하지 않습니다. 초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은? SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학';",
+          "핵심 개념을 떠올립니다. BETWEEN A AND B: A와 B를 포함한 사이 값",
+          "정답 판단 근거를 적용합니다. BETWEEN A AND B는 A 이상 B 이하(A <= X <= B)를 의미하므로 경계값을 포함합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "초과/미만(>, <)을 사용하는 보기들은 BETWEEN의 정의와 일치하지 않습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'BETWEEN A AND B: A와 B를 포함한 사이 값'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. BETWEEN은 양 끝값을 '포함'한다."
+        ],
+        "detailed_summary": "SQL의 BETWEEN 연산자가 포함하는 범위(경계값 포함 여부)를 묻는 문제입니다. 전문가의 조언 | WHERE (점수 BETWEEN 90 AND 95) : 점수가 90~95 사이이고, 이는 90 이상 95 이하를 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 다음 SQL문에서 사용된 BETWEEN 연산의 의미와 동일한 것은? SELECT * FROM 성적 WHERE (점수 BETWEEN 90 AND 95) AND 학과 = '컴퓨터공학'; 정답입니다. 이 선택지는 실제 정답인 '1번 점수 >= 90 AND 점수 <= 95'와 일치합니다. BETWEEN A AND B는 A 이상 B 이하(A <= X <= B)를 의미하므로 경계값을 포함합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "BETWEEN",
+        "비교 연산자",
+        "SELECT"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_57e4291123571757",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          144
+        ],
+        "page_span": {
+          "start_page": 144,
+          "end_page": 144
+        },
+        "source_explanation": ""
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_191"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+        ],
+        "answer_text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+      },
+      "explanation": {
+        "source_text": "",
+        "summary": "SQL에서 NULL 값을 조건으로 검색하는 올바른 문법을 묻는 문제입니다.",
+        "why_correct": [
+          "SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 'IS NULL' 또는 'IS NOT NULL' 연산자를 사용해야 합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "key_concepts": [
+          "SQL NULL handling",
+          "IS NOT NULL"
+        ],
+        "memory_cues": [
+          "NULL은 'IS'로 물어본다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;'이므로 일치하지 않습니다. 1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 != NOT NULL;'이므로 일치하지 않습니다. 1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 'IS NULL' 또는 'IS NOT NULL' 연산자를 사용해야 합니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;'이므로 일치하지 않습니다. 1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. SQL NULL handling, IS NOT NULL",
+          "정답 판단 근거를 적용합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 'IS NULL' 또는 'IS NOT NULL' 연산자를 사용해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2번은 존재하지 않는 문법이며, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'SQL NULL handling'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IS NOT NULL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. NULL은 'IS'로 물어본다"
+        ],
+        "detailed_summary": "SQL에서 NULL 값을 조건으로 검색하는 올바른 문법을 묻는 문제입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 'IS NULL' 또는 'IS NOT NULL' 연산자를 사용해야 합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "NULL 처리",
+        "IS NOT NULL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_7bc1623a8f72bf20",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다. '서울' 지역에 한하므로 WHERE 도시='서울'입니다. '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "3과목 데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_114"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "46. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은?\n[테이블명 : 판매실적]\n(표 생략: 도시, 지점명, 판매액 데이터 포함)",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ASC;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT * FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;"
+        ],
+        "answer_text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다. '서울' 지역에 한하므로 WHERE 도시='서울'입니다. '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다.",
+        "summary": "조건 검색과 정렬이 포함된 SQL 문을 작성하는 문제입니다.",
+        "why_correct": [
+          "특정 컬럼 선택, 지역 조건(WHERE), 내림차순 정렬(ORDER BY ... DESC)이 모두 올바르게 적용된 구문은 1번입니다."
+        ],
+        "why_others_wrong": [
+          "2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+        ],
+        "key_concepts": [
+          "ORDER BY",
+          "DESC",
+          "ASC"
+        ],
+        "memory_cues": [
+          "내림차순 = DESC (Descending)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'와 일치합니다. 특정 컬럼 선택, 지역 조건(WHERE), 내림차순 정렬(ORDER BY ... DESC)이 모두 올바르게 적용된 구문은 1번입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT 지점명, 판매액 FROM 판매실적 ORDER BY 판매액 DESC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ASC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ASC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT * FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'인데 이 선택지는 'SELECT * FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'이므로 일치하지 않습니다. 2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은? [테이블명 : 판매실적] (표 생략: 도시, 지점명, 판매액 데이터 포함)",
+          "핵심 개념을 떠올립니다. ORDER BY, DESC, ASC",
+          "정답 판단 근거를 적용합니다. 특정 컬럼 선택, 지역 조건(WHERE), 내림차순 정렬(ORDER BY ... DESC)이 모두 올바르게 적용된 구문은 1번입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "2번은 지역 조건이 없고, 3번은 정렬 구문이 틀렸으며, 4번은 모든 컬럼(*)을 선택했습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ORDER BY'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'DESC'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ASC'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내림차순 = DESC (Descending)"
+        ],
+        "detailed_summary": "조건 검색과 정렬이 포함된 SQL 문을 작성하는 문제입니다. 전문가의 조언 | '지점명'과 '판매액'을 출력하므로 SELECT 지점명, 판매액입니다. '서울' 지역에 한하므로 WHERE 도시='서울'입니다. '판매액'을 기준으로 내림차순으로 출력하므로 ORDER BY 판매액 DESC입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. 다음 표와 같은 판매실적 테이블에서 서울지역에 한하여 판매액 내림차순으로 지점명과 판매액을 출력하고자 한다. 가장 적절한 SQL 구문은? [테이블명 : 판매실적] (표 생략: 도시, 지점명, 판매액 데이터 포함) 정답입니다. 이 선택지는 실제 정답인 '1번 SELECT 지점명, 판매액 FROM 판매실적 WHERE 도시 = \"서울\" ORDER BY 판매액 DESC;'와 일치합니다. 특정 컬럼 선택, 지역 조건(WHERE), 내림차순 정렬(ORDER BY ... DESC)이 모두 올바르게 적용된 구문은 1번입니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "WHERE",
+        "ORDER BY",
+        "DESC"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          146
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0146",
+            "page_number": 146,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0146.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 915005,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_7bc1623a8f72bf20__figure_01",
+            "question_id": "qb_7bc1623a8f72bf20",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_7bc1623a8f72bf20/qb_7bc1623a8f72bf20__figure_01.png",
+            "content_type": "image/png",
+            "width": 444,
+            "height": 149,
+            "file_size_bytes": 92357,
+            "source_page": 146,
+            "crop_rect_pdf_points": [
+              27.0,
+              555.0,
+              249.0,
+              629.5
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_7bc1623a8f72bf20__figure_01",
+          "question_id": "qb_7bc1623a8f72bf20",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_7bc1623a8f72bf20/qb_7bc1623a8f72bf20__figure_01.png",
+          "content_type": "image/png",
+          "width": 444,
+          "height": 149,
+          "file_size_bytes": 92357,
+          "source_page": 146,
+          "crop_rect_pdf_points": [
+            27.0,
+            555.0,
+            249.0,
+            629.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_7bc1623a8f72bf20__figure_01",
+          "question_id": "qb_7bc1623a8f72bf20",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_7bc1623a8f72bf20/qb_7bc1623a8f72bf20__figure_01.png",
+          "content_type": "image/png",
+          "width": 444,
+          "height": 149,
+          "file_size_bytes": 92357,
+          "source_page": 146,
+          "crop_rect_pdf_points": [
+            27.0,
+            555.0,
+            249.0,
+            629.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_7bc1623a8f72bf20_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_fe90f34e2d757dd9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 151
+        },
+        "source_explanation": "전문가의 조언 | NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "SELECT 기본 검색"
+        ],
+        "chapter_label": "SELECT 기본 검색",
+        "chapter_key": "3과목 데이터베이스 구축 > SELECT 기본 검색",
+        "chapter_id": "chapter_114"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_055",
+        "topic_title": "SELECT 기본 검색",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "SELECT 기본 검색",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "42. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;"
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NULL;"
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+        ],
+        "answer_text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다.",
+        "summary": "SQL에서 NULL 값을 체크하는 연산자를 묻는 문제입니다.",
+        "why_correct": [
+          "SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 IS NULL 또는 IS NOT NULL 키워드를 사용해야 합니다."
+        ],
+        "why_others_wrong": [
+          "1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "key_concepts": [
+          "NULL 처리",
+          "IS NOT NULL"
+        ],
+        "memory_cues": [
+          "NULL은 '='이 아니라 'IS'로 찾는다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 DON'T NULL;'이므로 일치하지 않습니다. 1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "2",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 != NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 != NULL;'이므로 일치하지 않습니다. 1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+          },
+          {
+            "label": "3",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 IS NULL 또는 IS NOT NULL 키워드를 사용해야 합니다."
+          },
+          {
+            "label": "4",
+            "text": "SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'인데 이 선택지는 'SELECT 학생명 FROM 학적 WHERE 전화번호 IS NULL;'이므로 일치하지 않습니다. 1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 42. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. NULL 처리, IS NOT NULL",
+          "정답 판단 근거를 적용합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 IS NULL 또는 IS NOT NULL 키워드를 사용해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1번은 잘못된 문법이며, 2번은 NULL 비교에 부적절한 연산자를 사용했고, 4번은 NULL인 경우를 찾는 구문입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'NULL 처리'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'IS NOT NULL'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. NULL은 '='이 아니라 'IS'로 찾는다"
+        ],
+        "detailed_summary": "SQL에서 NULL 값을 체크하는 연산자를 묻는 문제입니다. 전문가의 조언 | NULL 값을 질의할 때는 IS NULL, NULL 값이 아닐 경우는 IS NOT NULL을 사용합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 42. 학적 테이블에서 전화번호가 Null 값이 아닌 학생명을 모두 검색할 때, SQL 구문으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 SELECT 학생명 FROM 학적 WHERE 전화번호 IS NOT NULL;'와 일치합니다. SQL에서 NULL 여부를 확인할 때는 비교 연산자(=, !=)가 아닌 IS NULL 또는 IS NOT NULL 키워드를 사용해야 합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "SQL",
+        "SELECT",
+        "NULL",
+        "IS NOT NULL"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

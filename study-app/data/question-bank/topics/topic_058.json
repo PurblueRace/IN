@@ -1,0 +1,172 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_058",
+    "sequence": 58,
+    "title": "DB 접속과 데이터 전환",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 1,
+    "review_count": 0,
+    "source_chapter_ids": [
+      "chapter_203"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_828478a57c2f005a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          33
+        ],
+        "page_span": {
+          "start_page": 33,
+          "end_page": 33
+        },
+        "source_explanation": "추출(Extraction), 변환(Transformation), 올려놓기(Load)의 영문 약어는 ETL입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "데이터 전환"
+        ],
+        "chapter_label": "데이터 전환",
+        "chapter_key": "데이터베이스 구축 > 데이터 전환",
+        "chapter_id": "chapter_203"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_058",
+        "topic_title": "DB 접속과 데이터 전환",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "DB 접속과 데이터 전환",
+        "match_score": 211.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "시스템에서 시스템으로 데이터를 이동시키는 기능의 3가지 형태인 추출, 변환, 올려놓기의 영문 약어를 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "FTP"
+          },
+          {
+            "label": "2",
+            "text": "API"
+          },
+          {
+            "label": "3",
+            "text": "ETL"
+          },
+          {
+            "label": "4",
+            "text": "EAI"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ETL"
+        ],
+        "answer_text": "ETL"
+      },
+      "explanation": {
+        "source_text": "추출(Extraction), 변환(Transformation), 올려놓기(Load)의 영문 약어는 ETL입니다.",
+        "summary": "데이터 웨어하우스나 데이터 이동 시 사용되는 ETL 프로세스의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "ETL은 Extract(추출), Transform(변환), Load(적재/올려놓기)의 약자입니다."
+        ],
+        "why_others_wrong": [
+          "FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+        ],
+        "key_concepts": [
+          "ETL",
+          "데이터 전환"
+        ],
+        "memory_cues": [
+          "E(xtract) T(ransform) L(oad)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "FTP",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ETL'인데 이 선택지는 'FTP'이므로 일치하지 않습니다. FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+          },
+          {
+            "label": "2",
+            "text": "API",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ETL'인데 이 선택지는 'API'이므로 일치하지 않습니다. FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+          },
+          {
+            "label": "3",
+            "text": "ETL",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ETL'와 일치합니다. ETL은 Extract(추출), Transform(변환), Load(적재/올려놓기)의 약자입니다."
+          },
+          {
+            "label": "4",
+            "text": "EAI",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ETL'인데 이 선택지는 'EAI'이므로 일치하지 않습니다. FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시스템에서 시스템으로 데이터를 이동시키는 기능의 3가지 형태인 추출, 변환, 올려놓기의 영문 약어를 의미하는 것은?",
+          "핵심 개념을 떠올립니다. ETL, 데이터 전환",
+          "정답 판단 근거를 적용합니다. ETL은 Extract(추출), Transform(변환), Load(적재/올려놓기)의 약자입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+        ],
+        "exam_traps": [
+          "FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'ETL'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 전환'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. E(xtract) T(ransform) L(oad)"
+        ],
+        "detailed_summary": "데이터 웨어하우스나 데이터 이동 시 사용되는 ETL 프로세스의 정의를 묻는 문제입니다. 추출(Extraction), 변환(Transformation), 올려놓기(Load)의 영문 약어는 ETL입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 시스템에서 시스템으로 데이터를 이동시키는 기능의 3가지 형태인 추출, 변환, 올려놓기의 영문 약어를 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 ETL'와 일치합니다. ETL은 Extract(추출), Transform(변환), Load(적재/올려놓기)의 약자입니다. 시험 포인트는 FTP는 파일 전송, API는 인터페이스, EAI는 기업 애플리케이션 통합 솔루션입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "ETL",
+        "데이터 이동",
+        "추출",
+        "변환",
+        "적재"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

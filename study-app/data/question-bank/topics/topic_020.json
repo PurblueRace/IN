@@ -1,0 +1,2651 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_020",
+    "sequence": 20,
+    "title": "코드 체계와 디자인 패턴",
+    "subject_id": 1,
+    "subject_name": "소프트웨어 설계",
+    "subject_emoji": "📐",
+    "subject_color": "#3182F6",
+    "question_count": 17,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_001",
+      "chapter_287",
+      "chapter_041",
+      "chapter_052",
+      "chapter_259",
+      "chapter_022",
+      "chapter_021",
+      "chapter_020"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_04d8b6466567dbb5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "2. GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Composite"
+          },
+          {
+            "label": "2",
+            "text": "Observer"
+          },
+          {
+            "label": "3",
+            "text": "Adapter"
+          },
+          {
+            "label": "4",
+            "text": "Decorator"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Observer"
+        ],
+        "answer_text": "Observer"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다.",
+        "summary": "GoF 디자인 패턴은 생성, 구조, 행위 패턴으로 분류됩니다. Observer는 객체의 상태 변화를 관찰하는 행위 패턴에 속합니다.",
+        "why_correct": [
+          "Observer 패턴은 객체 간의 일대다 의존 관계를 정의하여 상태 변화 시 통보하는 행위 패턴입니다."
+        ],
+        "why_others_wrong": [
+          "Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴",
+          "구조 패턴",
+          "행위 패턴"
+        ],
+        "memory_cues": [
+          "옵서버는 행동(행위)을 관찰한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Composite",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Composite'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+          },
+          {
+            "label": "2",
+            "text": "Observer",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Observer'와 일치합니다. Observer 패턴은 객체 간의 일대다 의존 관계를 정의하여 상태 변화 시 통보하는 행위 패턴입니다."
+          },
+          {
+            "label": "3",
+            "text": "Adapter",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Adapter'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+          },
+          {
+            "label": "4",
+            "text": "Decorator",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Decorator'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 2. GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴, 구조 패턴, 행위 패턴",
+          "정답 판단 근거를 적용합니다. Observer 패턴은 객체 간의 일대다 의존 관계를 정의하여 상태 변화 시 통보하는 행위 패턴입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+        ],
+        "exam_traps": [
+          "Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '구조 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '행위 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 옵서버는 행동(행위)을 관찰한다."
+        ],
+        "detailed_summary": "GoF 디자인 패턴은 생성, 구조, 행위 패턴으로 분류됩니다. Observer는 객체의 상태 변화를 관찰하는 행위 패턴에 속합니다. 전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 2. GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 Observer'와 일치합니다. Observer 패턴은 객체 간의 일대다 의존 관계를 정의하여 상태 변화 시 통보하는 행위 패턴입니다. 시험 포인트는 Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조 패턴입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GoF",
+        "디자인 패턴",
+        "구조 패턴",
+        "행위 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e4d5712273bb3341",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0001_p0006"
+        ],
+        "source_pages": [
+          6
+        ],
+        "page_span": {
+          "start_page": 6,
+          "end_page": 6
+        },
+        "source_explanation": "전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Composite"
+          },
+          {
+            "label": "2",
+            "text": "Observer"
+          },
+          {
+            "label": "3",
+            "text": "Adapter"
+          },
+          {
+            "label": "4",
+            "text": "Decorator"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Observer"
+        ],
+        "answer_text": "Observer"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다.",
+        "summary": "GoF 디자인 패턴의 분류 중 구조 패턴에 해당하지 않는 것을 찾는 문제입니다.",
+        "why_correct": [
+          "Observer 패턴은 객체의 상태 변화를 관찰하는 객체들에게 통지하는 패턴으로, 행위(Behavioral) 패턴에 속합니다."
+        ],
+        "why_others_wrong": [
+          "Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴",
+          "구조 패턴",
+          "행위 패턴",
+          "생성 패턴"
+        ],
+        "memory_cues": [
+          "옵서버는 행동(행위)을 관찰한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Composite",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Composite'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+          },
+          {
+            "label": "2",
+            "text": "Observer",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Observer'와 일치합니다. Observer 패턴은 객체의 상태 변화를 관찰하는 객체들에게 통지하는 패턴으로, 행위(Behavioral) 패턴에 속합니다."
+          },
+          {
+            "label": "3",
+            "text": "Adapter",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Adapter'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+          },
+          {
+            "label": "4",
+            "text": "Decorator",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Observer'인데 이 선택지는 'Decorator'이므로 일치하지 않습니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴, 구조 패턴, 행위 패턴, 생성 패턴",
+          "정답 판단 근거를 적용합니다. Observer 패턴은 객체의 상태 변화를 관찰하는 객체들에게 통지하는 패턴으로, 행위(Behavioral) 패턴에 속합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+        ],
+        "exam_traps": [
+          "Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '구조 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '행위 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '생성 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 옵서버는 행동(행위)을 관찰한다."
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 분류 중 구조 패턴에 해당하지 않는 것을 찾는 문제입니다. 전문가의 조언 | 옵서버(Observer)는 행위 패턴입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴의 구조 패턴에 속하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 Observer'와 일치합니다. Observer 패턴은 객체의 상태 변화를 관찰하는 객체들에게 통지하는 패턴으로, 행위(Behavioral) 패턴에 속합니다. 시험 포인트는 Composite, Adapter, Decorator는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 구조(Structural) 패턴입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GoF 디자인 패턴",
+        "구조 패턴",
+        "행위 패턴",
+        "Observer"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e942736d81d34532",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          8
+        ],
+        "page_span": {
+          "start_page": 8,
+          "end_page": 8
+        },
+        "source_explanation": "전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "17. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는 데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Addition Error"
+          },
+          {
+            "label": "2",
+            "text": "Omission Error"
+          },
+          {
+            "label": "3",
+            "text": "Sequence Error"
+          },
+          {
+            "label": "4",
+            "text": "Transcription Error"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Transcription Error"
+        ],
+        "answer_text": "Transcription Error"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다.",
+        "summary": "데이터 입력 시 발생하는 코드 오류의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "Transcription Error(필사 오류)는 한 자리를 잘못 기입한 경우를 말합니다. (5 -> 9)"
+        ],
+        "why_others_wrong": [
+          "Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+        ],
+        "key_concepts": [
+          "코드 오류 유형",
+          "필사 오류"
+        ],
+        "memory_cues": [
+          "Transcribe(필사)하다 틀림 = Transcription Error"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Addition Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Addition Error'이므로 일치하지 않습니다. Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+          },
+          {
+            "label": "2",
+            "text": "Omission Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Omission Error'이므로 일치하지 않습니다. Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "Sequence Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Sequence Error'이므로 일치하지 않습니다. Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "Transcription Error",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Transcription Error'와 일치합니다. Transcription Error(필사 오류)는 한 자리를 잘못 기입한 경우를 말합니다. (5 -> 9)"
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 17. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는 데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+          "핵심 개념을 떠올립니다. 코드 오류 유형, 필사 오류",
+          "정답 판단 근거를 적용합니다. Transcription Error(필사 오류)는 한 자리를 잘못 기입한 경우를 말합니다. (5 -> 9)",
+          "나머지 보기와 비교해 오답을 제거합니다. Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+        ],
+        "exam_traps": [
+          "Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '코드 오류 유형'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '필사 오류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Transcribe(필사)하다 틀림 = Transcription Error"
+        ],
+        "detailed_summary": "데이터 입력 시 발생하는 코드 오류의 종류를 묻는 문제입니다. 전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 17. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는 데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가? 정답입니다. 이 선택지는 실제 정답인 '4번 Transcription Error'와 일치합니다. Transcription Error(필사 오류)는 한 자리를 잘못 기입한 경우를 말합니다. (5 -> 9) 시험 포인트는 Addition Error는 한 자리가 추가된 것, Omission Error는 한 자리가 누락된 것, Sequence Error(Transposition Error)는 자리가 바뀐 것을 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "코드 오류",
+        "필사 오류",
+        "Transcription Error",
+        "데이터 품질"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8e0eb6a200f82708",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0041_p0046"
+        ],
+        "source_pages": [
+          44
+        ],
+        "page_span": {
+          "start_page": 44,
+          "end_page": 44
+        },
+        "source_explanation": "GoF 디자인 패턴은 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 분류됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "코드 체계와 디자인 패턴"
+        ],
+        "chapter_label": "코드 체계와 디자인 패턴",
+        "chapter_key": "소프트웨어 설계 > 코드 체계와 디자인 패턴",
+        "chapter_id": "chapter_287"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "2. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "생성 패턴"
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴"
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴"
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "객체 패턴"
+        ],
+        "answer_text": "객체 패턴"
+      },
+      "explanation": {
+        "source_text": "GoF 디자인 패턴은 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 분류됩니다.",
+        "summary": "GoF 디자인 패턴의 3가지 대분류를 묻는 문제입니다.",
+        "why_correct": [
+          "GoF 패턴은 목적에 따라 생성, 구조, 행위 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 GoF의 공식 분류 체계입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴 분류"
+        ],
+        "memory_cues": [
+          "생구행 (생성, 구조, 행위)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "생성 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '생성 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식 분류 체계입니다."
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 패턴은 목적에 따라 생성, 구조, 행위 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '행위 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식 분류 체계입니다."
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '구조 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식 분류 체계입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 2. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴 분류",
+          "정답 판단 근거를 적용합니다. GoF 패턴은 목적에 따라 생성, 구조, 행위 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 GoF의 공식 분류 체계입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 GoF의 공식 분류 체계입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴 분류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생구행 (생성, 구조, 행위)"
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 3가지 대분류를 묻는 문제입니다. GoF 디자인 패턴은 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 분류됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 2. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 패턴은 목적에 따라 생성, 구조, 행위 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다. 시험 포인트는 1, 3, 4번은 GoF의 공식 분류 체계입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GoF",
+        "Design Pattern",
+        "Creational",
+        "Structural",
+        "Behavioral"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_29cb0de8386dca26",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 51
+        },
+        "source_explanation": "GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "생성 패턴"
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴"
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴"
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "객체 패턴"
+        ],
+        "answer_text": "객체 패턴"
+      },
+      "explanation": {
+        "source_text": "GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다.",
+        "summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 문제입니다.",
+        "why_correct": [
+          "객체 패턴은 GoF의 공식적인 대분류 명칭이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴",
+          "생성 패턴",
+          "구조 패턴",
+          "행위 패턴"
+        ],
+        "memory_cues": [
+          "생구행(생성, 구조, 행위)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "생성 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '생성 패턴'이므로 일치하지 않습니다. 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. 객체 패턴은 GoF의 공식적인 대분류 명칭이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '행위 패턴'이므로 일치하지 않습니다. 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '구조 패턴'이므로 일치하지 않습니다. 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴, 생성 패턴, 구조 패턴, 행위 패턴",
+          "정답 판단 근거를 적용합니다. 객체 패턴은 GoF의 공식적인 대분류 명칭이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+        ],
+        "exam_traps": [
+          "생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '생성 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '구조 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '행위 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생구행(생성, 구조, 행위)"
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 문제입니다. GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. 객체 패턴은 GoF의 공식적인 대분류 명칭이 아닙니다. 시험 포인트는 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴이 GoF의 3대 분류입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "GoF",
+        "디자인 패턴",
+        "생성 패턴",
+        "구조 패턴",
+        "행위 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_449dec569f8ad1ec",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 46
+        },
+        "source_explanation": "디자인 패턴을 이용한다고 하더라도 기존의 개발 프로세스를 무시할 수는 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "디자인 패턴을 이용한 소프트웨어 재사용으로 얻어지는 장점이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "소프트웨어 코드의 품질을 향상시킬 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "개발 프로세스를 무시할 수 있다."
+          },
+          {
+            "label": "3",
+            "text": "개발자들 사이의 의사소통을 원활하게 할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "소프트웨어의 품질과 생산성을 향상시킬 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "개발 프로세스를 무시할 수 있다."
+        ],
+        "answer_text": "개발 프로세스를 무시할 수 있다."
+      },
+      "explanation": {
+        "source_text": "디자인 패턴을 이용한다고 하더라도 기존의 개발 프로세스를 무시할 수는 없습니다.",
+        "summary": "디자인 패턴 도입의 기대 효과와 한계를 묻는 문제입니다.",
+        "why_correct": [
+          "디자인 패턴은 설계의 효율을 높이는 도구일 뿐, 정해진 개발 프로세스 자체를 생략하거나 무시하게 해주는 것은 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+        ],
+        "key_concepts": [
+          "디자인 패턴 장점",
+          "재사용성",
+          "생산성"
+        ],
+        "memory_cues": [
+          "패턴을 써도 절차(프로세스)는 지켜야 한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "소프트웨어 코드의 품질을 향상시킬 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개발 프로세스를 무시할 수 있다.'인데 이 선택지는 '소프트웨어 코드의 품질을 향상시킬 수 있다.'이므로 일치하지 않습니다. 1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+          },
+          {
+            "label": "2",
+            "text": "개발 프로세스를 무시할 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 개발 프로세스를 무시할 수 있다.'와 일치합니다. 디자인 패턴은 설계의 효율을 높이는 도구일 뿐, 정해진 개발 프로세스 자체를 생략하거나 무시하게 해주는 것은 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "개발자들 사이의 의사소통을 원활하게 할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개발 프로세스를 무시할 수 있다.'인데 이 선택지는 '개발자들 사이의 의사소통을 원활하게 할 수 있다.'이므로 일치하지 않습니다. 1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+          },
+          {
+            "label": "4",
+            "text": "소프트웨어의 품질과 생산성을 향상시킬 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 개발 프로세스를 무시할 수 있다.'인데 이 선택지는 '소프트웨어의 품질과 생산성을 향상시킬 수 있다.'이므로 일치하지 않습니다. 1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴을 이용한 소프트웨어 재사용으로 얻어지는 장점이 아닌 것은?",
+          "핵심 개념을 떠올립니다. 디자인 패턴 장점, 재사용성, 생산성",
+          "정답 판단 근거를 적용합니다. 디자인 패턴은 설계의 효율을 높이는 도구일 뿐, 정해진 개발 프로세스 자체를 생략하거나 무시하게 해주는 것은 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '디자인 패턴 장점'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '재사용성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '생산성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 패턴을 써도 절차(프로세스)는 지켜야 한다."
+        ],
+        "detailed_summary": "디자인 패턴 도입의 기대 효과와 한계를 묻는 문제입니다. 디자인 패턴을 이용한다고 하더라도 기존의 개발 프로세스를 무시할 수는 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴을 이용한 소프트웨어 재사용으로 얻어지는 장점이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 개발 프로세스를 무시할 수 있다.'와 일치합니다. 디자인 패턴은 설계의 효율을 높이는 도구일 뿐, 정해진 개발 프로세스 자체를 생략하거나 무시하게 해주는 것은 아닙니다. 시험 포인트는 1, 3, 4번은 검증된 구조를 재사용함으로써 얻는 전형적인 장점들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "디자인 패턴",
+        "재사용",
+        "품질 향상",
+        "의사소통"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d8d1159aca99be02",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          46
+        ],
+        "page_span": {
+          "start_page": 46,
+          "end_page": 46
+        },
+        "source_explanation": "Singleton 패턴에 대한 설명으로 옳은 것은 ①번입니다. ②번은 프로토타입, ③번은 컴포지트(Composite), ④번은 중재자(Mediator) 패턴에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계"
+        ],
+        "chapter_label": "1과목 소프트웨어 설계",
+        "chapter_key": "1과목 소프트웨어 설계",
+        "chapter_id": "chapter_001"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+          },
+          {
+            "label": "2",
+            "text": "원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다."
+          },
+          {
+            "label": "3",
+            "text": "여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다."
+          },
+          {
+            "label": "4",
+            "text": "수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+        ],
+        "answer_text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+      },
+      "explanation": {
+        "source_text": "Singleton 패턴에 대한 설명으로 옳은 것은 ①번입니다. ②번은 프로토타입, ③번은 컴포지트(Composite), ④번은 중재자(Mediator) 패턴에 대한 설명입니다.",
+        "summary": "디자인 패턴 중 싱글톤(Singleton) 패턴의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고 어디서든 접근 가능하게 하는 패턴입니다."
+        ],
+        "why_others_wrong": [
+          "2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+        ],
+        "key_concepts": [
+          "Singleton",
+          "Prototype",
+          "Composite",
+          "Mediator"
+        ],
+        "memory_cues": [
+          "싱글톤 = 단 하나(Single)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'와 일치합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고 어디서든 접근 가능하게 하는 패턴입니다."
+          },
+          {
+            "label": "2",
+            "text": "원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+          },
+          {
+            "label": "3",
+            "text": "여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+          },
+          {
+            "label": "4",
+            "text": "수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. Singleton, Prototype, Composite, Mediator",
+          "정답 판단 근거를 적용합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고 어디서든 접근 가능하게 하는 패턴입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+        ],
+        "exam_traps": [
+          "2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Singleton'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Prototype'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Composite'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Mediator'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 싱글톤 = 단 하나(Single)"
+        ],
+        "detailed_summary": "디자인 패턴 중 싱글톤(Singleton) 패턴의 특징을 묻는 문제입니다. Singleton 패턴에 대한 설명으로 옳은 것은 ①번입니다. ②번은 프로토타입, ③번은 컴포지트(Composite), ④번은 중재자(Mediator) 패턴에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'와 일치합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고 어디서든 접근 가능하게 하는 패턴입니다. 시험 포인트는 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴의 정의입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "디자인 패턴",
+        "Singleton",
+        "싱글톤",
+        "생성 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e840f9a4e3c095f7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          63
+        ],
+        "page_span": {
+          "start_page": 63,
+          "end_page": 63
+        },
+        "source_explanation": "전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "디자인 패턴"
+        ],
+        "chapter_label": "디자인 패턴",
+        "chapter_key": "1과목 소프트웨어 설계 > 디자인 패턴",
+        "chapter_id": "chapter_041"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 211.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "3. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "생성 패턴"
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴"
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴"
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "객체 패턴"
+        ],
+        "answer_text": "객체 패턴"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다.",
+        "summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 기초 문제입니다.",
+        "why_correct": [
+          "GoF 디자인 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴의 세 가지로 분류됩니다. '객체 패턴'은 분류 명칭이 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴 분류"
+        ],
+        "memory_cues": [
+          "생구행 (생성, 구조, 행위)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "생성 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '생성 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 디자인 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴의 세 가지로 분류됩니다. '객체 패턴'은 분류 명칭이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '행위 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '구조 패턴'이므로 일치하지 않습니다. 1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴 분류",
+          "정답 판단 근거를 적용합니다. GoF 디자인 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴의 세 가지로 분류됩니다. '객체 패턴'은 분류 명칭이 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴 분류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생구행 (생성, 구조, 행위)"
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 기초 문제입니다. 전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 3. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 디자인 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴의 세 가지로 분류됩니다. '객체 패턴'은 분류 명칭이 아닙니다. 시험 포인트는 1, 3, 4번은 GoF의 공식적인 3대 분류입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GoF",
+        "디자인 패턴",
+        "생성 패턴",
+        "구조 패턴",
+        "행위 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_04dd9d3d57eac4e5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          64
+        ],
+        "page_span": {
+          "start_page": 64,
+          "end_page": 64
+        },
+        "source_explanation": "전문가의 조언 | 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 디자인 패턴이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "디자인 패턴"
+        ],
+        "chapter_label": "디자인 패턴",
+        "chapter_key": "1과목 소프트웨어 설계 > 디자인 패턴",
+        "chapter_id": "chapter_041"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 211.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "9. 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 무엇이라고 하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "모듈 분해"
+          },
+          {
+            "label": "2",
+            "text": "디자인 패턴"
+          },
+          {
+            "label": "3",
+            "text": "연관 관계"
+          },
+          {
+            "label": "4",
+            "text": "클래스 도출"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "디자인 패턴"
+        ],
+        "answer_text": "디자인 패턴"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 디자인 패턴이라고 합니다.",
+        "summary": "디자인 패턴의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "디자인 패턴은 과거의 설계 경험을 토대로 자주 발생하는 문제들에 대해 검증된 해결책을 정리해 놓은 것입니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+        ],
+        "key_concepts": [
+          "디자인 패턴 정의"
+        ],
+        "memory_cues": [
+          "반복적 해결책 = 패턴"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "모듈 분해",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 디자인 패턴'인데 이 선택지는 '모듈 분해'이므로 일치하지 않습니다. 1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+          },
+          {
+            "label": "2",
+            "text": "디자인 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 디자인 패턴'와 일치합니다. 디자인 패턴은 과거의 설계 경험을 토대로 자주 발생하는 문제들에 대해 검증된 해결책을 정리해 놓은 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "연관 관계",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 디자인 패턴'인데 이 선택지는 '연관 관계'이므로 일치하지 않습니다. 1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+          },
+          {
+            "label": "4",
+            "text": "클래스 도출",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 디자인 패턴'인데 이 선택지는 '클래스 도출'이므로 일치하지 않습니다. 1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 9. 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 무엇이라고 하는가?",
+          "핵심 개념을 떠올립니다. 디자인 패턴 정의",
+          "정답 판단 근거를 적용합니다. 디자인 패턴은 과거의 설계 경험을 토대로 자주 발생하는 문제들에 대해 검증된 해결책을 정리해 놓은 것입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '디자인 패턴 정의'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 반복적 해결책 = 패턴"
+        ],
+        "detailed_summary": "디자인 패턴의 정의를 묻는 문제입니다. 전문가의 조언 | 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 디자인 패턴이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 9. 소프트웨어 설계에서 자주 발생하는 문제에 대한 일반적이고 반복적인 해결 방법을 무엇이라고 하는가? 정답입니다. 이 선택지는 실제 정답인 '2번 디자인 패턴'와 일치합니다. 디자인 패턴은 과거의 설계 경험을 토대로 자주 발생하는 문제들에 대해 검증된 해결책을 정리해 놓은 것입니다. 시험 포인트는 1, 3, 4번은 설계 과정에서 수행하는 일반적인 작업이나 개념들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "디자인 패턴",
+        "소프트웨어 설계",
+        "문제 해결"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4be5d800d220dcc6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0061_p0066"
+        ],
+        "source_pages": [
+          64
+        ],
+        "page_span": {
+          "start_page": 64,
+          "end_page": 64
+        },
+        "source_explanation": "전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다.\n• 추가 오류(Addition Error) : 입력 시 한 자리를 더 추가하여 기록한 경우 발생\n• 생략 오류(Omission Error) : 입력 시 한 자리를 빼놓고 기록한 경우 발생"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "코드 설계"
+        ],
+        "chapter_label": "코드 설계",
+        "chapter_key": "1과목 소프트웨어 설계 > 코드 설계",
+        "chapter_id": "chapter_052"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 205.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "8. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Addition Error"
+          },
+          {
+            "label": "2",
+            "text": "Omission Error"
+          },
+          {
+            "label": "3",
+            "text": "Sequence Error"
+          },
+          {
+            "label": "4",
+            "text": "Transcription Error"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Transcription Error"
+        ],
+        "answer_text": "Transcription Error"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다.\n• 추가 오류(Addition Error) : 입력 시 한 자리를 더 추가하여 기록한 경우 발생\n• 생략 오류(Omission Error) : 입력 시 한 자리를 빼놓고 기록한 경우 발생",
+        "summary": "데이터 입력 시 발생하는 코드 오류의 유형을 구분하는 문제입니다.",
+        "why_correct": [
+          "한 자리를 다른 숫자로 잘못 적은 것은 필사 오류(Transcription Error)입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 자릿수가 늘어나는 오류입니다.",
+          "2번: 자릿수가 줄어드는 오류입니다.",
+          "3번: 순서가 바뀌는 오류(Transposition)입니다."
+        ],
+        "key_concepts": [
+          "코드 오류 유형"
+        ],
+        "memory_cues": [
+          "필사(Transcription) = 잘못 씀"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Addition Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Addition Error'이므로 일치하지 않습니다. 1번: 자릿수가 늘어나는 오류입니다. 2번: 자릿수가 줄어드는 오류입니다."
+          },
+          {
+            "label": "2",
+            "text": "Omission Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Omission Error'이므로 일치하지 않습니다. 1번: 자릿수가 늘어나는 오류입니다. 2번: 자릿수가 줄어드는 오류입니다."
+          },
+          {
+            "label": "3",
+            "text": "Sequence Error",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Transcription Error'인데 이 선택지는 'Sequence Error'이므로 일치하지 않습니다. 1번: 자릿수가 늘어나는 오류입니다. 2번: 자릿수가 줄어드는 오류입니다."
+          },
+          {
+            "label": "4",
+            "text": "Transcription Error",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Transcription Error'와 일치합니다. 한 자리를 다른 숫자로 잘못 적은 것은 필사 오류(Transcription Error)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 8. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+          "핵심 개념을 떠올립니다. 코드 오류 유형",
+          "정답 판단 근거를 적용합니다. 한 자리를 다른 숫자로 잘못 적은 것은 필사 오류(Transcription Error)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 자릿수가 늘어나는 오류입니다."
+        ],
+        "exam_traps": [
+          "1번: 자릿수가 늘어나는 오류입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '코드 오류 유형'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 필사(Transcription) = 잘못 씀"
+        ],
+        "detailed_summary": "데이터 입력 시 발생하는 코드 오류의 유형을 구분하는 문제입니다. 전문가의 조언 | '12536'의 5 대신 9를 기입한 것, 즉 임의의 한 자리를 잘못 기입해서 발생한 오류이므로 필사 오류(Transcription Error)에 해당합니다. • 추가 오류(Addition Error) : 입력 시 한 자리를 더 추가하여 기록한 경우 발생 • 생략 오류(Omission Error) : 입력 시 한 자리를 빼놓고 기록한 경우 발생 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 8. 코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는데 '12936'으로 표기되었을 경우, 어떤 코드 오류에 해당하는가? 정답입니다. 이 선택지는 실제 정답인 '4번 Transcription Error'와 일치합니다. 한 자리를 다른 숫자로 잘못 적은 것은 필사 오류(Transcription Error)입니다. 시험 포인트는 1번: 자릿수가 늘어나는 오류입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "코드 오류",
+        "필사 오류",
+        "Transcription Error",
+        "데이터 입력"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_0b46a32b242000d9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          81
+        ],
+        "page_span": {
+          "start_page": 81,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 보기 중 생성 패턴은 추상 팩토리(Abstract Factory)입니다. • 브리지(Bridge), 컴포지트(Composite)는 구조 패턴, 옵저버(Observer)는 행위 패턴입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계"
+        ],
+        "chapter_label": "소프트웨어 설계",
+        "chapter_key": "소프트웨어 설계",
+        "chapter_id": "chapter_259"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Abstract Factory"
+          },
+          {
+            "label": "2",
+            "text": "Bridge"
+          },
+          {
+            "label": "3",
+            "text": "Observer"
+          },
+          {
+            "label": "4",
+            "text": "Composite"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Abstract Factory"
+        ],
+        "answer_text": "Abstract Factory"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 보기 중 생성 패턴은 추상 팩토리(Abstract Factory)입니다. • 브리지(Bridge), 컴포지트(Composite)는 구조 패턴, 옵저버(Observer)는 행위 패턴입니다.",
+        "summary": "GoF 디자인 패턴 중 객체 생성에 관련된 생성 패턴을 찾는 문제입니다.",
+        "why_correct": [
+          "Abstract Factory(추상 팩토리)는 구체적인 클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 생성 패턴입니다."
+        ],
+        "why_others_wrong": [
+          "Bridge와 Composite는 구조 패턴(Structural Patterns)입니다.",
+          "Observer는 행위 패턴(Behavioral Patterns)입니다."
+        ],
+        "key_concepts": [
+          "GoF 디자인 패턴",
+          "생성 패턴",
+          "구조 패턴",
+          "행위 패턴"
+        ],
+        "memory_cues": [
+          "생추빌팩프싱: 생성 패턴 - 추상 팩토리, 빌더, 팩토리 메서드, 프로토타입, 싱글톤"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Abstract Factory",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Abstract Factory'와 일치합니다. Abstract Factory(추상 팩토리)는 구체적인 클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 생성 패턴입니다."
+          },
+          {
+            "label": "2",
+            "text": "Bridge",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Abstract Factory'인데 이 선택지는 'Bridge'이므로 일치하지 않습니다. Bridge와 Composite는 구조 패턴(Structural Patterns)입니다. Observer는 행위 패턴(Behavioral Patterns)입니다."
+          },
+          {
+            "label": "3",
+            "text": "Observer",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Abstract Factory'인데 이 선택지는 'Observer'이므로 일치하지 않습니다. Bridge와 Composite는 구조 패턴(Structural Patterns)입니다. Observer는 행위 패턴(Behavioral Patterns)입니다."
+          },
+          {
+            "label": "4",
+            "text": "Composite",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Abstract Factory'인데 이 선택지는 'Composite'이므로 일치하지 않습니다. Bridge와 Composite는 구조 패턴(Structural Patterns)입니다. Observer는 행위 패턴(Behavioral Patterns)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. GoF 디자인 패턴, 생성 패턴, 구조 패턴, 행위 패턴",
+          "정답 판단 근거를 적용합니다. Abstract Factory(추상 팩토리)는 구체적인 클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 생성 패턴입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Bridge와 Composite는 구조 패턴(Structural Patterns)입니다."
+        ],
+        "exam_traps": [
+          "Bridge와 Composite는 구조 패턴(Structural Patterns)입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF 디자인 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '생성 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '구조 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '행위 패턴'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생추빌팩프싱: 생성 패턴 - 추상 팩토리, 빌더, 팩토리 메서드, 프로토타입, 싱글톤"
+        ],
+        "detailed_summary": "GoF 디자인 패턴 중 객체 생성에 관련된 생성 패턴을 찾는 문제입니다. 전문가의 조언 | 보기 중 생성 패턴은 추상 팩토리(Abstract Factory)입니다. • 브리지(Bridge), 컴포지트(Composite)는 구조 패턴, 옵저버(Observer)는 행위 패턴입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 중 생성 패턴으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Abstract Factory'와 일치합니다. Abstract Factory(추상 팩토리)는 구체적인 클래스에 의존하지 않고 서로 연관되거나 의존적인 객체들의 조합을 만드는 인터페이스를 제공하는 생성 패턴입니다. 시험 포인트는 Bridge와 Composite는 구조 패턴(Structural Patterns)입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "GoF",
+        "디자인 패턴",
+        "생성 패턴",
+        "Abstract Factory"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2199964de00c40c9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          123
+        ],
+        "page_span": {
+          "start_page": 123,
+          "end_page": 123
+        },
+        "source_explanation": "전문가의 조언 | Observer는 행위 패턴입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "23섹션 4빌드"
+        ],
+        "chapter_label": "23섹션 4빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 23섹션 4빌드",
+        "chapter_id": "chapter_022"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "17. 디자인 패턴 중 구조 패턴에 속하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Observer"
+          },
+          {
+            "label": "2",
+            "text": "Decorator"
+          },
+          {
+            "label": "3",
+            "text": "Adapter"
+          },
+          {
+            "label": "4",
+            "text": "Proxy"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Observer"
+        ],
+        "answer_text": "Observer"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | Observer는 행위 패턴입니다.",
+        "summary": "GoF 디자인 패턴의 분류(생성, 구조, 행위)를 묻는 문제입니다.",
+        "why_correct": [
+          "옵저버(Observer) 패턴은 객체의 상태 변화를 관찰하고 통지하는 '행위(Behavioral)' 패턴에 속합니다."
+        ],
+        "why_others_wrong": [
+          "Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+        ],
+        "key_concepts": [
+          "Structural Patterns",
+          "Behavioral Patterns",
+          "GoF Design Patterns"
+        ],
+        "memory_cues": [
+          "옵저버는 행동(행위)을 지켜본다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Observer",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Observer'와 일치합니다. 옵저버(Observer) 패턴은 객체의 상태 변화를 관찰하고 통지하는 '행위(Behavioral)' 패턴에 속합니다."
+          },
+          {
+            "label": "2",
+            "text": "Decorator",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Observer'인데 이 선택지는 'Decorator'이므로 일치하지 않습니다. Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+          },
+          {
+            "label": "3",
+            "text": "Adapter",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Observer'인데 이 선택지는 'Adapter'이므로 일치하지 않습니다. Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+          },
+          {
+            "label": "4",
+            "text": "Proxy",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Observer'인데 이 선택지는 'Proxy'이므로 일치하지 않습니다. Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 17. 디자인 패턴 중 구조 패턴에 속하지 않는 것은?",
+          "핵심 개념을 떠올립니다. Structural Patterns, Behavioral Patterns, GoF Design Patterns",
+          "정답 판단 근거를 적용합니다. 옵저버(Observer) 패턴은 객체의 상태 변화를 관찰하고 통지하는 '행위(Behavioral)' 패턴에 속합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+        ],
+        "exam_traps": [
+          "Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Structural Patterns'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Behavioral Patterns'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'GoF Design Patterns'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 옵저버는 행동(행위)을 지켜본다."
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 분류(생성, 구조, 행위)를 묻는 문제입니다. 전문가의 조언 | Observer는 행위 패턴입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 17. 디자인 패턴 중 구조 패턴에 속하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 Observer'와 일치합니다. 옵저버(Observer) 패턴은 객체의 상태 변화를 관찰하고 통지하는 '행위(Behavioral)' 패턴에 속합니다. 시험 포인트는 Decorator, Adapter, Proxy는 모두 클래스나 객체를 조합하여 더 큰 구조를 만드는 '구조(Structural)' 패턴입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "구조 패턴",
+        "행위 패턴",
+        "디자인 패턴",
+        "Observer"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3cd16261bef6bbad",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          123
+        ],
+        "page_span": {
+          "start_page": 123,
+          "end_page": 123
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에 제시된 내용은 팩토리 메소드(Factory Method) 패턴의 특징입니다. • 방문자(Visitor) : 각 클래스들의 데이터 구조에서 처리 기능을 분리하여 별도의 클래스로 구성하는 패턴 • 옵저버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴 • 브리지(Bridge) : 구현부에서 추상층을 분리하여, 서로가 독립적으로 확장할 수 있도록 구성한 패턴"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "23섹션 3빌드"
+        ],
+        "chapter_label": "23섹션 3빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 23섹션 3빌드",
+        "chapter_id": "chapter_021"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "16. 다음 내용이 설명하는 디자인 패턴은?\n• 객체를 생성하기 위한 인터페이스를 정의하여 어떤 클래스가 인스턴스화 될 것인지는 서브클래스가 결정하도록 하는 것\n• Virtual-Constructor 패턴이라고도 함",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Visitor 패턴"
+          },
+          {
+            "label": "2",
+            "text": "Observer 패턴"
+          },
+          {
+            "label": "3",
+            "text": "Factory Method 패턴"
+          },
+          {
+            "label": "4",
+            "text": "Bridge 패턴"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Factory Method 패턴"
+        ],
+        "answer_text": "Factory Method 패턴"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에 제시된 내용은 팩토리 메소드(Factory Method) 패턴의 특징입니다. • 방문자(Visitor) : 각 클래스들의 데이터 구조에서 처리 기능을 분리하여 별도의 클래스로 구성하는 패턴 • 옵저버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴 • 브리지(Bridge) : 구현부에서 추상층을 분리하여, 서로가 독립적으로 확장할 수 있도록 구성한 패턴",
+        "summary": "GoF 디자인 패턴 중 생성 패턴의 하나인 팩토리 메소드 패턴을 묻는 문제입니다.",
+        "why_correct": [
+          "팩토리 메소드 패턴은 객체 생성을 서브클래스에 위임하며, 'Virtual Constructor'라는 별칭을 가지고 있습니다."
+        ],
+        "why_others_wrong": [
+          "1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다.",
+          "2번: Observer는 행위 패턴으로, 상태 변화 통지에 쓰입니다.",
+          "4번: Bridge는 구조 패턴으로, 추상과 구현을 분리합니다."
+        ],
+        "key_concepts": [
+          "Factory Method",
+          "Creational Patterns",
+          "Virtual Constructor"
+        ],
+        "memory_cues": [
+          "서브클래스가 인스턴스 결정 = 공장(Factory) 메소드"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Visitor 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Factory Method 패턴'인데 이 선택지는 'Visitor 패턴'이므로 일치하지 않습니다. 1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다. 2번: Observer는 행위 패턴으로, 상태 변화 통지에 쓰입니다."
+          },
+          {
+            "label": "2",
+            "text": "Observer 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Factory Method 패턴'인데 이 선택지는 'Observer 패턴'이므로 일치하지 않습니다. 1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다. 2번: Observer는 행위 패턴으로, 상태 변화 통지에 쓰입니다."
+          },
+          {
+            "label": "3",
+            "text": "Factory Method 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Factory Method 패턴'와 일치합니다. 팩토리 메소드 패턴은 객체 생성을 서브클래스에 위임하며, 'Virtual Constructor'라는 별칭을 가지고 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "Bridge 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Factory Method 패턴'인데 이 선택지는 'Bridge 패턴'이므로 일치하지 않습니다. 1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다. 2번: Observer는 행위 패턴으로, 상태 변화 통지에 쓰입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 16. 다음 내용이 설명하는 디자인 패턴은? • 객체를 생성하기 위한 인터페이스를 정의하여 어떤 클래스가 인스턴스화 될 것인지는 서브클래스가 결정하도록 하는 것 • Virtual-Constructor 패턴이라고도 함",
+          "핵심 개념을 떠올립니다. Factory Method, Creational Patterns, Virtual Constructor",
+          "정답 판단 근거를 적용합니다. 팩토리 메소드 패턴은 객체 생성을 서브클래스에 위임하며, 'Virtual Constructor'라는 별칭을 가지고 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다."
+        ],
+        "exam_traps": [
+          "1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Factory Method'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Creational Patterns'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Virtual Constructor'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 서브클래스가 인스턴스 결정 = 공장(Factory) 메소드"
+        ],
+        "detailed_summary": "GoF 디자인 패턴 중 생성 패턴의 하나인 팩토리 메소드 패턴을 묻는 문제입니다. 전문가의 조언 | 문제의 지문에 제시된 내용은 팩토리 메소드(Factory Method) 패턴의 특징입니다. • 방문자(Visitor) : 각 클래스들의 데이터 구조에서 처리 기능을 분리하여 별도의 클래스로 구성하는 패턴 • 옵저버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴 • 브리지(Bridge) : 구현부에서 추상층을 분리하여, 서로가 독립적으로 확장할 수 있도록 구성한 패턴 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 16. 다음 내용이 설명하는 디자인 패턴은? • 객체를 생성하기 위한 인터페이스를 정의하여 어떤 클래스가 인스턴스화 될 것인지는 서브클래스가 결정하도록 하는 것 • Virtual-Constructor 패턴이라고도 함 정답입니다. 이 선택지는 실제 정답인 '3번 Factory Method 패턴'와 일치합니다. 팩토리 메소드 패턴은 객체 생성을 서브클래스에 위임하며, 'Virtual Constructor'라는 별칭을 가지고 있습니다. 시험 포인트는 1번: Visitor는 행위 패턴으로, 데이터와 처리를 분리합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "디자인 패턴",
+        "Factory Method",
+        "가상 생성자",
+        "생성 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_46320f49b0b4fe22",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          123
+        ],
+        "page_span": {
+          "start_page": 123,
+          "end_page": 123
+        },
+        "source_explanation": "전문가의 조언 | 순차 코드는 자료의 발생 순서, 크기 순서 등 일정 기준에 따라서 최초의 자료부터 차례로 일련번호를 부여하는 방법입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "1과목 소프트웨어 설계",
+          "22섹션 2빌드"
+        ],
+        "chapter_label": "22섹션 2빌드",
+        "chapter_key": "1과목 소프트웨어 설계 > 22섹션 2빌드",
+        "chapter_id": "chapter_020"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 199.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "15. 코드 설계에서 일정한 일련번호를 부여하는 방식의 코드는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "연상 코드"
+          },
+          {
+            "label": "2",
+            "text": "블록 코드"
+          },
+          {
+            "label": "3",
+            "text": "순차 코드"
+          },
+          {
+            "label": "4",
+            "text": "표의 숫자 코드"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "순차 코드"
+        ],
+        "answer_text": "순차 코드"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 순차 코드는 자료의 발생 순서, 크기 순서 등 일정 기준에 따라서 최초의 자료부터 차례로 일련번호를 부여하는 방법입니다.",
+        "summary": "소프트웨어 설계 시 사용하는 코드 부여 방식 중 하나를 묻는 문제입니다.",
+        "why_correct": [
+          "순차 코드(Sequence Code)는 발생 순서 등에 따라 1, 2, 3... 과 같이 차례대로 번호를 매기는 방식입니다."
+        ],
+        "why_others_wrong": [
+          "1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다.",
+          "2번: 블록 코드는 공통성이 있는 것끼리 블록으로 묶어 번호를 부여합니다.",
+          "4번: 표의 숫자 코드는 물리적 수치(길이, 무게 등)를 코드에 반영합니다."
+        ],
+        "key_concepts": [
+          "Sequence Code",
+          "Block Code",
+          "Mnemonic Code"
+        ],
+        "memory_cues": [
+          "순차 = 일련번호"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "연상 코드",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 순차 코드'인데 이 선택지는 '연상 코드'이므로 일치하지 않습니다. 1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다. 2번: 블록 코드는 공통성이 있는 것끼리 블록으로 묶어 번호를 부여합니다."
+          },
+          {
+            "label": "2",
+            "text": "블록 코드",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 순차 코드'인데 이 선택지는 '블록 코드'이므로 일치하지 않습니다. 1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다. 2번: 블록 코드는 공통성이 있는 것끼리 블록으로 묶어 번호를 부여합니다."
+          },
+          {
+            "label": "3",
+            "text": "순차 코드",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 순차 코드'와 일치합니다. 순차 코드(Sequence Code)는 발생 순서 등에 따라 1, 2, 3... 과 같이 차례대로 번호를 매기는 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "표의 숫자 코드",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 순차 코드'인데 이 선택지는 '표의 숫자 코드'이므로 일치하지 않습니다. 1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다. 2번: 블록 코드는 공통성이 있는 것끼리 블록으로 묶어 번호를 부여합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 15. 코드 설계에서 일정한 일련번호를 부여하는 방식의 코드는?",
+          "핵심 개념을 떠올립니다. Sequence Code, Block Code, Mnemonic Code",
+          "정답 판단 근거를 적용합니다. 순차 코드(Sequence Code)는 발생 순서 등에 따라 1, 2, 3... 과 같이 차례대로 번호를 매기는 방식입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다."
+        ],
+        "exam_traps": [
+          "1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Sequence Code'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Block Code'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Mnemonic Code'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 순차 = 일련번호"
+        ],
+        "detailed_summary": "소프트웨어 설계 시 사용하는 코드 부여 방식 중 하나를 묻는 문제입니다. 전문가의 조언 | 순차 코드는 자료의 발생 순서, 크기 순서 등 일정 기준에 따라서 최초의 자료부터 차례로 일련번호를 부여하는 방법입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 15. 코드 설계에서 일정한 일련번호를 부여하는 방식의 코드는? 정답입니다. 이 선택지는 실제 정답인 '3번 순차 코드'와 일치합니다. 순차 코드(Sequence Code)는 발생 순서 등에 따라 1, 2, 3... 과 같이 차례대로 번호를 매기는 방식입니다. 시험 포인트는 1번: 연상 코드는 명칭의 약어 등을 사용하여 의미를 연상시키는 코드입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "코드 설계",
+        "순차 코드",
+        "일련번호",
+        "Sequence Code"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2b309327478f3439",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 템플릿 메소드(Template Method)입니다.\n• 옵서버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴\n• 상태(State) : 객체의 상태에 따라 동일한 동작을 다르게 처리해야 할 때 사용하는 패턴\n• 컴포지트(Composite) : 여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "코드 체계와 디자인 패턴"
+        ],
+        "chapter_label": "코드 체계와 디자인 패턴",
+        "chapter_key": "소프트웨어 설계 > 코드 체계와 디자인 패턴",
+        "chapter_id": "chapter_287"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "디자인 패턴 중 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 무엇인가?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "옵서버"
+          },
+          {
+            "label": "2",
+            "text": "템플릿 메소드"
+          },
+          {
+            "label": "3",
+            "text": "상태"
+          },
+          {
+            "label": "4",
+            "text": "컴포지트"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "템플릿 메소드"
+        ],
+        "answer_text": "템플릿 메소드"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 템플릿 메소드(Template Method)입니다.\n• 옵서버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴\n• 상태(State) : 객체의 상태에 따라 동일한 동작을 다르게 처리해야 할 때 사용하는 패턴\n• 컴포지트(Composite) : 여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴",
+        "summary": "상속을 통해 알고리즘의 구조를 정의하는 디자인 패턴을 묻는 문제입니다.",
+        "why_correct": [
+          "템플릿 메소드 패턴은 상위 클래스에서 알고리즘의 골격을 정의하고, 구체적인 단계는 하위 클래스에서 구현하도록 합니다."
+        ],
+        "why_others_wrong": [
+          "옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+        ],
+        "key_concepts": [
+          "Template Method Pattern"
+        ],
+        "memory_cues": [
+          "템플릿 = 틀(상위)은 정해져 있고 내용은 하위에서 채움"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "옵서버",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 템플릿 메소드'인데 이 선택지는 '옵서버'이므로 일치하지 않습니다. 옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+          },
+          {
+            "label": "2",
+            "text": "템플릿 메소드",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 템플릿 메소드'와 일치합니다. 템플릿 메소드 패턴은 상위 클래스에서 알고리즘의 골격을 정의하고, 구체적인 단계는 하위 클래스에서 구현하도록 합니다."
+          },
+          {
+            "label": "3",
+            "text": "상태",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 템플릿 메소드'인데 이 선택지는 '상태'이므로 일치하지 않습니다. 옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+          },
+          {
+            "label": "4",
+            "text": "컴포지트",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 템플릿 메소드'인데 이 선택지는 '컴포지트'이므로 일치하지 않습니다. 옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 무엇인가?",
+          "핵심 개념을 떠올립니다. Template Method Pattern",
+          "정답 판단 근거를 적용합니다. 템플릿 메소드 패턴은 상위 클래스에서 알고리즘의 골격을 정의하고, 구체적인 단계는 하위 클래스에서 구현하도록 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+        ],
+        "exam_traps": [
+          "옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Template Method Pattern'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 템플릿 = 틀(상위)은 정해져 있고 내용은 하위에서 채움"
+        ],
+        "detailed_summary": "상속을 통해 알고리즘의 구조를 정의하는 디자인 패턴을 묻는 문제입니다. 전문가의 조언 | 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 템플릿 메소드(Template Method)입니다. • 옵서버(Observer) : 한 객체의 상태가 변화하면 객체에 상속되어 있는 다른 객체들에게 변화된 상태를 전달하는 패턴 • 상태(State) : 객체의 상태에 따라 동일한 동작을 다르게 처리해야 할 때 사용하는 패턴 • 컴포지트(Composite) : 여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 알고리즘은 상위 클래스에서 정의하고 나머지는 하위 클래스에서 구체화하는 패턴은 무엇인가? 정답입니다. 이 선택지는 실제 정답인 '2번 템플릿 메소드'와 일치합니다. 템플릿 메소드 패턴은 상위 클래스에서 알고리즘의 골격을 정의하고, 구체적인 단계는 하위 클래스에서 구현하도록 합니다. 시험 포인트는 옵서버는 상태 변화 통지, 상태 패턴은 상태별 동작 변경, 컴포지트는 트리 구조 처리에 쓰입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "템플릿 메소드",
+        "디자인 패턴",
+        "행위 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_869b9c3c9d7406c1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "코드 체계와 디자인 패턴"
+        ],
+        "chapter_label": "코드 체계와 디자인 패턴",
+        "chapter_key": "소프트웨어 설계 > 코드 체계와 디자인 패턴",
+        "chapter_id": "chapter_287"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "생성 패턴"
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴"
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴"
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "객체 패턴"
+        ],
+        "answer_text": "객체 패턴"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다.",
+        "summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 문제입니다.",
+        "why_correct": [
+          "GoF 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "생성, 구조, 행위는 공식적인 3대 분류입니다."
+        ],
+        "key_concepts": [
+          "GoF Design Patterns"
+        ],
+        "memory_cues": [
+          "생구행 (생성, 구조, 행위)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "생성 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '생성 패턴'이므로 일치하지 않습니다. 생성, 구조, 행위는 공식적인 3대 분류입니다."
+          },
+          {
+            "label": "2",
+            "text": "객체 패턴",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "행위 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '행위 패턴'이므로 일치하지 않습니다. 생성, 구조, 행위는 공식적인 3대 분류입니다."
+          },
+          {
+            "label": "4",
+            "text": "구조 패턴",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 객체 패턴'인데 이 선택지는 '구조 패턴'이므로 일치하지 않습니다. 생성, 구조, 행위는 공식적인 3대 분류입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은?",
+          "핵심 개념을 떠올립니다. GoF Design Patterns",
+          "정답 판단 근거를 적용합니다. GoF 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 생성, 구조, 행위는 공식적인 3대 분류입니다."
+        ],
+        "exam_traps": [
+          "생성, 구조, 행위는 공식적인 3대 분류입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'GoF Design Patterns'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 생구행 (생성, 구조, 행위)"
+        ],
+        "detailed_summary": "GoF 디자인 패턴의 3대 분류 체계를 묻는 문제입니다. 전문가의 조언 | GoF의 디자인 패턴은 생성 패턴, 구조 패턴, 행위 패턴으로 분류됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. GoF(Gangs of Four) 디자인 패턴 분류에 해당하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 객체 패턴'와 일치합니다. GoF 패턴은 목적에 따라 생성(Creational), 구조(Structural), 행위(Behavioral) 패턴으로 나뉩니다. '객체 패턴'은 별도의 대분류가 아닙니다. 시험 포인트는 생성, 구조, 행위는 공식적인 3대 분류입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "GoF 디자인 패턴",
+        "생성 패턴",
+        "구조 패턴",
+        "행위 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e50b5fd53a38e271",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146
+        ],
+        "page_span": {
+          "start_page": 141,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | Singleton 패턴에 대한 설명으로 옳은 것은 1번입니다.\n• 2번은 프로토타입(Prototype), 3번은 컴포지트(Composite), 4번은 중재자(Mediator) 패턴에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계",
+          "코드 체계와 디자인 패턴"
+        ],
+        "chapter_label": "코드 체계와 디자인 패턴",
+        "chapter_key": "소프트웨어 설계 > 코드 체계와 디자인 패턴",
+        "chapter_id": "chapter_287"
+      },
+      "exam_taxonomy": {
+        "subject_id": 1,
+        "subject_name": "소프트웨어 설계",
+        "topic_id": "topic_020",
+        "topic_title": "코드 체계와 디자인 패턴",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "코드 체계와 디자인 패턴",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+          },
+          {
+            "label": "2",
+            "text": "원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다."
+          },
+          {
+            "label": "3",
+            "text": "여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다."
+          },
+          {
+            "label": "4",
+            "text": "수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+        ],
+        "answer_text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | Singleton 패턴에 대한 설명으로 옳은 것은 1번입니다.\n• 2번은 프로토타입(Prototype), 3번은 컴포지트(Composite), 4번은 중재자(Mediator) 패턴에 대한 설명입니다.",
+        "summary": "싱글톤 패턴의 핵심 개념을 찾는 문제입니다.",
+        "why_correct": [
+          "싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고, 이에 대한 전역적인 접근점을 제공하는 패턴입니다."
+        ],
+        "why_others_wrong": [
+          "2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+        ],
+        "key_concepts": [
+          "Singleton Pattern"
+        ],
+        "memory_cues": [
+          "Single = 단 하나"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'와 일치합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고, 이에 대한 전역적인 접근점을 제공하는 패턴입니다."
+          },
+          {
+            "label": "2",
+            "text": "원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '원본 객체를 복제하는 방법으로 객체를 생성하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+          },
+          {
+            "label": "3",
+            "text": "여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '여러 객체를 가진 복합 객체와 단일 객체를 구분 없이 다루고자 할 때 사용하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+          },
+          {
+            "label": "4",
+            "text": "수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'인데 이 선택지는 '수많은 객체들 간의 복잡한 상호작용을 캡슐화하여 객체로 정의하는 패턴이다.'이므로 일치하지 않습니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. Singleton Pattern",
+          "정답 판단 근거를 적용합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고, 이에 대한 전역적인 접근점을 제공하는 패턴입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+        ],
+        "exam_traps": [
+          "2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Singleton Pattern'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. Single = 단 하나"
+        ],
+        "detailed_summary": "싱글톤 패턴의 핵심 개념을 찾는 문제입니다. 전문가의 조언 | Singleton 패턴에 대한 설명으로 옳은 것은 1번입니다. • 2번은 프로토타입(Prototype), 3번은 컴포지트(Composite), 4번은 중재자(Mediator) 패턴에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 디자인 패턴 중 Singleton에 대한 설명으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 하나의 객체를 생성하면 생성된 객체를 어디서든 참조할 수 있지만, 여러 프로세스가 동시에 참조할 수 없는 패턴이다.'와 일치합니다. 싱글톤은 클래스의 인스턴스가 단 하나만 생성되도록 보장하고, 이에 대한 전역적인 접근점을 제공하는 패턴입니다. 시험 포인트는 2번은 Prototype, 3번은 Composite, 4번은 Mediator 패턴입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "OCR uncertainty in choice 1: '여러 프로세스가 동시에 참조할 수 없는' is a bit ambiguous for Singleton definition, but it's the intended answer in this context.",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "싱글톤 패턴",
+        "디자인 패턴",
+        "생성 패턴"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

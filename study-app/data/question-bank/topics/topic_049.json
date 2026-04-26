@@ -1,0 +1,3419 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_049",
+    "sequence": 49,
+    "title": "뷰·파티션·분산 데이터베이스",
+    "subject_id": 3,
+    "subject_name": "데이터베이스 구축",
+    "subject_emoji": "🗄️",
+    "subject_color": "#FF9500",
+    "question_count": 22,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_217",
+      "chapter_218",
+      "chapter_216",
+      "chapter_215",
+      "chapter_123"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_893c11ca2eff71d4",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          14
+        ],
+        "page_span": {
+          "start_page": 14,
+          "end_page": 14
+        },
+        "source_explanation": "뷰는 가상 테이블로 물리적으로 존재하지 않으며(ㄱ 틀림), 기본 테이블 삭제 시 뷰도 자동 삭제됩니다(ㄴ 틀림)."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션"
+        ],
+        "chapter_label": "뷰·파티션",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션",
+        "chapter_id": "chapter_217"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "뷰(View)에 대한 설명 중 옳은 내용으로만 나열한 것은?\nㄱ. 뷰는 저장장치 내에 물리적으로 존재한다.\nㄴ. 뷰가 정의된 기본 테이블이 삭제되더라도 뷰는 자동으로 삭제되지 않는다.\nㄷ. DBA는 보안 측면에서 뷰를 활용할 수 있다.\nㄹ. 뷰로 구성된 내용에 대한 삽입, 삭제, 갱신 연산에는 제약이 따른다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ"
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄷ, ㄹ"
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄹ"
+          },
+          {
+            "label": "4",
+            "text": "ㄷ, ㄹ"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "ㄷ, ㄹ"
+        ],
+        "answer_text": "ㄷ, ㄹ"
+      },
+      "explanation": {
+        "source_text": "뷰는 가상 테이블로 물리적으로 존재하지 않으며(ㄱ 틀림), 기본 테이블 삭제 시 뷰도 자동 삭제됩니다(ㄴ 틀림).",
+        "summary": "데이터베이스 뷰의 특징 중 옳은 것을 고르는 문제입니다.",
+        "why_correct": [
+          "뷰는 특정 사용자에게 필요한 데이터만 보여주어 보안에 유리하며(ㄷ), 가상 테이블이기에 DML 연산에 많은 제약이 있습니다(ㄹ)."
+        ],
+        "why_others_wrong": [
+          "ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+        ],
+        "key_concepts": [
+          "뷰(View)",
+          "가상 테이블"
+        ],
+        "memory_cues": [
+          "뷰는 '가상'이고 '보안'용이다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ㄷ, ㄹ'인데 이 선택지는 'ㄱ, ㄴ, ㄷ, ㄹ'이므로 일치하지 않습니다. ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄷ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ㄷ, ㄹ'인데 이 선택지는 'ㄱ, ㄷ, ㄹ'이므로 일치하지 않습니다. ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 ㄷ, ㄹ'인데 이 선택지는 'ㄴ, ㄹ'이므로 일치하지 않습니다. ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+          },
+          {
+            "label": "4",
+            "text": "ㄷ, ㄹ",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 ㄷ, ㄹ'와 일치합니다. 뷰는 특정 사용자에게 필요한 데이터만 보여주어 보안에 유리하며(ㄷ), 가상 테이블이기에 DML 연산에 많은 제약이 있습니다(ㄹ)."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(View)에 대한 설명 중 옳은 내용으로만 나열한 것은? ㄱ. 뷰는 저장장치 내에 물리적으로 존재한다. ㄴ. 뷰가 정의된 기본 테이블이 삭제되더라도 뷰는 자동으로 삭제되지 않는다. ㄷ. DBA는 보안 측면에서 뷰를 활용할 수 있다. ㄹ. 뷰로 구성된 내용에 대한 삽입, 삭제, 갱신 연산에는 제약이 따른다.",
+          "핵심 개념을 떠올립니다. 뷰(View), 가상 테이블",
+          "정답 판단 근거를 적용합니다. 뷰는 특정 사용자에게 필요한 데이터만 보여주어 보안에 유리하며(ㄷ), 가상 테이블이기에 DML 연산에 많은 제약이 있습니다(ㄹ).",
+          "나머지 보기와 비교해 오답을 제거합니다. ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+        ],
+        "exam_traps": [
+          "ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰(View)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가상 테이블'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰는 '가상'이고 '보안'용이다."
+        ],
+        "detailed_summary": "데이터베이스 뷰의 특징 중 옳은 것을 고르는 문제입니다. 뷰는 가상 테이블로 물리적으로 존재하지 않으며(ㄱ 틀림), 기본 테이블 삭제 시 뷰도 자동 삭제됩니다(ㄴ 틀림). 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(View)에 대한 설명 중 옳은 내용으로만 나열한 것은? ㄱ. 뷰는 저장장치 내에 물리적으로 존재한다. ㄴ. 뷰가 정의된 기본 테이블이 삭제되더라도 뷰는 자동으로 삭제되지 않는다. ㄷ. DBA는 보안 측면에서 뷰를 활용할 수 있다. ㄹ. 뷰로 구성된 내용에 대한 삽입, 삭제, 갱신 연산에는 제약이 따른다. 정답입니다. 이 선택지는 실제 정답인 '4번 ㄷ, ㄹ'와 일치합니다. 뷰는 특정 사용자에게 필요한 데이터만 보여주어 보안에 유리하며(ㄷ), 가상 테이블이기에 DML 연산에 많은 제약이 있습니다(ㄹ). 시험 포인트는 ㄱ: 뷰는 논리적 가상 테이블이므로 물리적으로 존재하지 않습니다. ㄴ: 근간이 되는 기본 테이블이 사라지면 뷰도 정의를 잃고 삭제됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "가상 테이블",
+        "데이터 보안",
+        "조작 제약"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_dad315ebdadcb9b2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          14
+        ],
+        "page_span": {
+          "start_page": 14,
+          "end_page": 14
+        },
+        "source_explanation": "파티션의 종류에는 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할 등이 있습니다. 유닛 분할은 해당되지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션"
+        ],
+        "chapter_label": "뷰·파티션",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션",
+        "chapter_id": "chapter_217"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "범위 분할(Range Partitioning)"
+          },
+          {
+            "label": "2",
+            "text": "해시 분할(Hash Partitioning)"
+          },
+          {
+            "label": "3",
+            "text": "조합 분할(Composite Partitioning)"
+          },
+          {
+            "label": "4",
+            "text": "유닛 분할(Unit Partitioning)"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "유닛 분할(Unit Partitioning)"
+        ],
+        "answer_text": "유닛 분할(Unit Partitioning)"
+      },
+      "explanation": {
+        "source_text": "파티션의 종류에는 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할 등이 있습니다. 유닛 분할은 해당되지 않습니다.",
+        "summary": "대용량 테이블을 나누는 파티셔닝 기법의 종류가 아닌 것을 고르는 문제입니다.",
+        "why_correct": [
+          "'유닛 분할'이라는 용어는 표준적인 데이터베이스 파티셔닝 유형에 존재하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+        ],
+        "key_concepts": [
+          "파티셔닝(Partitioning)",
+          "범위 분할",
+          "해시 분할"
+        ],
+        "memory_cues": [
+          "범해조목라 (범위, 해시, 조합, 목록, 라운드로빈)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "범위 분할(Range Partitioning)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 유닛 분할(Unit Partitioning)'인데 이 선택지는 '범위 분할(Range Partitioning)'이므로 일치하지 않습니다. 범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+          },
+          {
+            "label": "2",
+            "text": "해시 분할(Hash Partitioning)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 유닛 분할(Unit Partitioning)'인데 이 선택지는 '해시 분할(Hash Partitioning)'이므로 일치하지 않습니다. 범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+          },
+          {
+            "label": "3",
+            "text": "조합 분할(Composite Partitioning)",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 유닛 분할(Unit Partitioning)'인데 이 선택지는 '조합 분할(Composite Partitioning)'이므로 일치하지 않습니다. 범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+          },
+          {
+            "label": "4",
+            "text": "유닛 분할(Unit Partitioning)",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 유닛 분할(Unit Partitioning)'와 일치합니다. '유닛 분할'이라는 용어는 표준적인 데이터베이스 파티셔닝 유형에 존재하지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 파티셔닝(Partitioning), 범위 분할, 해시 분할",
+          "정답 판단 근거를 적용합니다. '유닛 분할'이라는 용어는 표준적인 데이터베이스 파티셔닝 유형에 존재하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+        ],
+        "exam_traps": [
+          "범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파티셔닝(Partitioning)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '범위 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '해시 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 범해조목라 (범위, 해시, 조합, 목록, 라운드로빈)"
+        ],
+        "detailed_summary": "대용량 테이블을 나누는 파티셔닝 기법의 종류가 아닌 것을 고르는 문제입니다. 파티션의 종류에는 범위 분할, 해시 분할, 조합 분할, 목록 분할, 라운드 로빈 분할 등이 있습니다. 유닛 분할은 해당되지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 유닛 분할(Unit Partitioning)'와 일치합니다. '유닛 분할'이라는 용어는 표준적인 데이터베이스 파티셔닝 유형에 존재하지 않습니다. 시험 포인트는 범위(Range), 해시(Hash), 조합(Composite)은 실제 널리 쓰이는 파티션 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파티션",
+        "범위 분할",
+        "해시 분할",
+        "조합 분할"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b50a2b457ada8e2e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          15
+        ],
+        "page_span": {
+          "start_page": 15,
+          "end_page": 15
+        },
+        "source_explanation": "분산 데이터베이스의 핵심은 사용자가 데이터가 어디에 있는지 알 필요 없이 하나의 시스템처럼 느끼게 하는 '투명성'을 보장하는 것입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 데이터베이스 시스템과 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "물리적으로 분산된 데이터베이스 시스템을 논리적으로 하나의 데이터베이스 시스템처럼 사용할 수 있도록 한 것이다."
+          },
+          {
+            "label": "2",
+            "text": "물리적으로 분산되어 지역별로 필요한 데이터를 처리할 수 있는 지역 컴퓨터(Local Computer)를 분산 처리기(Distributed Processor)라고 한다."
+          },
+          {
+            "label": "3",
+            "text": "분산 데이터베이스 시스템을 위한 통신 네트워크 구조가 데이터 통신에 영향을 주므로 효율적으로 설계해야 한다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다."
+        ],
+        "answer_text": "데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다."
+      },
+      "explanation": {
+        "source_text": "분산 데이터베이스의 핵심은 사용자가 데이터가 어디에 있는지 알 필요 없이 하나의 시스템처럼 느끼게 하는 '투명성'을 보장하는 것입니다.",
+        "summary": "분산 데이터베이스의 개념과 투명성 원칙에 대한 오답을 찾는 문제입니다.",
+        "why_correct": [
+          "분산 투명성은 사용자가 데이터의 물리적 위치나 분산 여부를 몰라도 되게 하는 성질이므로, 이를 배제한다는 설명은 틀렸습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+        ],
+        "key_concepts": [
+          "분산 데이터베이스",
+          "분산 투명성(위치, 복제, 병행, 장애 투명성)"
+        ],
+        "memory_cues": [
+          "투명성 = 안 보여야 함 (분산된 게 안 보여야 함)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "물리적으로 분산된 데이터베이스 시스템을 논리적으로 하나의 데이터베이스 시스템처럼 사용할 수 있도록 한 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.'인데 이 선택지는 '물리적으로 분산된 데이터베이스 시스템을 논리적으로 하나의 데이터베이스 시스템처럼 사용할 수 있도록 한 것이다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+          },
+          {
+            "label": "2",
+            "text": "물리적으로 분산되어 지역별로 필요한 데이터를 처리할 수 있는 지역 컴퓨터(Local Computer)를 분산 처리기(Distributed Processor)라고 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.'인데 이 선택지는 '물리적으로 분산되어 지역별로 필요한 데이터를 처리할 수 있는 지역 컴퓨터(Local Computer)를 분산 처리기(Distributed Processor)라고 한다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+          },
+          {
+            "label": "3",
+            "text": "분산 데이터베이스 시스템을 위한 통신 네트워크 구조가 데이터 통신에 영향을 주므로 효율적으로 설계해야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.'인데 이 선택지는 '분산 데이터베이스 시스템을 위한 통신 네트워크 구조가 데이터 통신에 영향을 주므로 효율적으로 설계해야 한다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.'와 일치합니다. 분산 투명성은 사용자가 데이터의 물리적 위치나 분산 여부를 몰라도 되게 하는 성질이므로, 이를 배제한다는 설명은 틀렸습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스 시스템과 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 분산 데이터베이스, 분산 투명성(위치, 복제, 병행, 장애 투명성)",
+          "정답 판단 근거를 적용합니다. 분산 투명성은 사용자가 데이터의 물리적 위치나 분산 여부를 몰라도 되게 하는 성질이므로, 이를 배제한다는 설명은 틀렸습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 데이터베이스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분산 투명성(위치, 복제, 병행, 장애 투명성)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 투명성 = 안 보여야 함 (분산된 게 안 보여야 함)"
+        ],
+        "detailed_summary": "분산 데이터베이스의 개념과 투명성 원칙에 대한 오답을 찾는 문제입니다. 분산 데이터베이스의 핵심은 사용자가 데이터가 어디에 있는지 알 필요 없이 하나의 시스템처럼 느끼게 하는 '투명성'을 보장하는 것입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스 시스템과 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스가 분산되어 있음을 사용자가 인식할 수 있도록 분산 투명성(Distribution Transparency)을 배제해야 한다.'와 일치합니다. 분산 투명성은 사용자가 데이터의 물리적 위치나 분산 여부를 몰라도 되게 하는 성질이므로, 이를 배제한다는 설명은 틀렸습니다. 시험 포인트는 1, 2, 3번은 분산 DB의 정의와 구성 요소, 네트워크 설계의 중요성을 올바르게 설명합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "분산 투명성",
+        "지역 처리기"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_f54bdabb04a867ef",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          16
+        ],
+        "page_span": {
+          "start_page": 16,
+          "end_page": 16
+        },
+        "source_explanation": "삭제할 대상을 다른 곳(V2, V3)에서 참조하고 있으면 삭제를 취소하는 RESTRICT 옵션이 사용되었으므로, 삭제가 수행되지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은?\nDROP VIEW V1 RESTRICT;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "V1만 삭제된다."
+          },
+          {
+            "label": "2",
+            "text": "R, V1, V2, V3 모두 삭제된다."
+          },
+          {
+            "label": "3",
+            "text": "V1, V2, V3만 삭제된다."
+          },
+          {
+            "label": "4",
+            "text": "하나도 삭제되지 않는다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "하나도 삭제되지 않는다."
+        ],
+        "answer_text": "하나도 삭제되지 않는다."
+      },
+      "explanation": {
+        "source_text": "삭제할 대상을 다른 곳(V2, V3)에서 참조하고 있으면 삭제를 취소하는 RESTRICT 옵션이 사용되었으므로, 삭제가 수행되지 않습니다.",
+        "summary": "객체 삭제 시 참조 관계에 따른 RESTRICT 옵션의 동작 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "V1은 V2와 V3에 의해 참조되고 있습니다. RESTRICT 옵션은 다른 객체가 참조 중일 경우 삭제를 거부하므로 아무것도 삭제되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+        ],
+        "key_concepts": [
+          "DROP 문",
+          "RESTRICT",
+          "CASCADE"
+        ],
+        "memory_cues": [
+          "RESTRICT = 제한하다 (참조 중이면 삭제 제한)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "V1만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'V1만 삭제된다.'이므로 일치하지 않습니다. CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "R, V1, V2, V3 모두 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'R, V1, V2, V3 모두 삭제된다.'이므로 일치하지 않습니다. CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "V1, V2, V3만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'V1, V2, V3만 삭제된다.'이므로 일치하지 않습니다. CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "하나도 삭제되지 않는다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 하나도 삭제되지 않는다.'와 일치합니다. V1은 V2와 V3에 의해 참조되고 있습니다. RESTRICT 옵션은 다른 객체가 참조 중일 경우 삭제를 거부하므로 아무것도 삭제되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은? DROP VIEW V1 RESTRICT;",
+          "핵심 개념을 떠올립니다. DROP 문, RESTRICT, CASCADE",
+          "정답 판단 근거를 적용합니다. V1은 V2와 V3에 의해 참조되고 있습니다. RESTRICT 옵션은 다른 객체가 참조 중일 경우 삭제를 거부하므로 아무것도 삭제되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+        ],
+        "exam_traps": [
+          "CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'DROP 문'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RESTRICT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'CASCADE'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. RESTRICT = 제한하다 (참조 중이면 삭제 제한)"
+        ],
+        "detailed_summary": "객체 삭제 시 참조 관계에 따른 RESTRICT 옵션의 동작 방식을 묻는 문제입니다. 삭제할 대상을 다른 곳(V2, V3)에서 참조하고 있으면 삭제를 취소하는 RESTRICT 옵션이 사용되었으므로, 삭제가 수행되지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은? DROP VIEW V1 RESTRICT; 정답입니다. 이 선택지는 실제 정답인 '4번 하나도 삭제되지 않는다.'와 일치합니다. V1은 V2와 V3에 의해 참조되고 있습니다. RESTRICT 옵션은 다른 객체가 참조 중일 경우 삭제를 거부하므로 아무것도 삭제되지 않습니다. 시험 포인트는 CASCADE 옵션이었다면 V1과 이를 참조하는 V2, V3가 연쇄적으로 삭제되었을 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "DROP VIEW",
+        "RESTRICT",
+        "CASCADE",
+        "참조 무결성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_65d4a69cea7e95f2",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          34
+        ],
+        "page_span": {
+          "start_page": 34,
+          "end_page": 34
+        },
+        "source_explanation": "하나의 뷰를 삭제하면 그 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰"
+        ],
+        "chapter_label": "뷰",
+        "chapter_key": "데이터베이스 구축 > 뷰",
+        "chapter_id": "chapter_216"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "뷰(VIEW)에 관한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "뷰는 가상 테이블이므로 물리적으로 구현되어 있지 않다."
+          },
+          {
+            "label": "2",
+            "text": "하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다."
+          },
+          {
+            "label": "3",
+            "text": "필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이하다."
+          },
+          {
+            "label": "4",
+            "text": "SQL에서 뷰를 생성할 때는 CREATE문을 사용한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다."
+        ],
+        "answer_text": "하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다."
+      },
+      "explanation": {
+        "source_text": "하나의 뷰를 삭제하면 그 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됩니다.",
+        "summary": "가상 테이블인 뷰의 특징과 삭제 시의 연쇄 효과를 묻는 문제입니다.",
+        "why_correct": [
+          "뷰는 다른 테이블이나 뷰를 기반으로 정의되므로, 기반이 되는 뷰가 삭제되면 이를 참조하는 하위 뷰들도 더 이상 유효하지 않게 되어 삭제됩니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "뷰(View)",
+          "가상 테이블"
+        ],
+        "memory_cues": [
+          "뷰 삭제 -> 참조 뷰도 삭제"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "뷰는 가상 테이블이므로 물리적으로 구현되어 있지 않다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.'인데 이 선택지는 '뷰는 가상 테이블이므로 물리적으로 구현되어 있지 않다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.'와 일치합니다. 뷰는 다른 테이블이나 뷰를 기반으로 정의되므로, 기반이 되는 뷰가 삭제되면 이를 참조하는 하위 뷰들도 더 이상 유효하지 않게 되어 삭제됩니다."
+          },
+          {
+            "label": "3",
+            "text": "필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.'인데 이 선택지는 '필요한 데이터만 뷰로 정의해서 처리할 수 있기 때문에 관리가 용이하다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "SQL에서 뷰를 생성할 때는 CREATE문을 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.'인데 이 선택지는 'SQL에서 뷰를 생성할 때는 CREATE문을 사용한다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(VIEW)에 관한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 뷰(View), 가상 테이블",
+          "정답 판단 근거를 적용합니다. 뷰는 다른 테이블이나 뷰를 기반으로 정의되므로, 기반이 되는 뷰가 삭제되면 이를 참조하는 하위 뷰들도 더 이상 유효하지 않게 되어 삭제됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰(View)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가상 테이블'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰 삭제 -> 참조 뷰도 삭제"
+        ],
+        "detailed_summary": "가상 테이블인 뷰의 특징과 삭제 시의 연쇄 효과를 묻는 문제입니다. 하나의 뷰를 삭제하면 그 뷰를 기초로 정의된 다른 뷰도 자동으로 삭제됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(VIEW)에 관한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 하나의 뷰를 제거해도 그 뷰를 기초로 정의된 다른 뷰는 제거되지 않는다.'와 일치합니다. 뷰는 다른 테이블이나 뷰를 기반으로 정의되므로, 기반이 되는 뷰가 삭제되면 이를 참조하는 하위 뷰들도 더 이상 유효하지 않게 되어 삭제됩니다. 시험 포인트는 1, 3, 4번은 뷰의 물리적 실체 없음, 보안/편의성, 생성 구문에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "가상 테이블",
+        "CREATE VIEW",
+        "데이터 독립성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3b017b4910be1941",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          35
+        ],
+        "page_span": {
+          "start_page": 35,
+          "end_page": 35
+        },
+        "source_explanation": "문제에 제시된 내용은 위치 투명성(Location Transparency)의 개념입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "분산 데이터베이스"
+        ],
+        "chapter_label": "분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 분산 데이터베이스",
+        "chapter_id": "chapter_215"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 187.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 운영체제에서 사용자가 원하는 파일이나 데이터베이스, 프린터 등의 자원들이 지역 컴퓨터 또는 네트워크 내의 다른 원격지 컴퓨터에 존재하더라도 위치에 관계없이 그의 사용을 보장하는 개념은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "위치 투명성"
+          },
+          {
+            "label": "2",
+            "text": "접근 투명성"
+          },
+          {
+            "label": "3",
+            "text": "복사 투명성"
+          },
+          {
+            "label": "4",
+            "text": "접근 독립성"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "위치 투명성"
+        ],
+        "answer_text": "위치 투명성"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 위치 투명성(Location Transparency)의 개념입니다.",
+        "summary": "분산 시스템의 4대 투명성 중 하나인 위치 투명성을 묻는 문제입니다.",
+        "why_correct": [
+          "위치 투명성은 자원의 물리적 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해주는 성질입니다."
+        ],
+        "why_others_wrong": [
+          "접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+        ],
+        "key_concepts": [
+          "분산 데이터베이스 투명성",
+          "위치 투명성"
+        ],
+        "memory_cues": [
+          "위치 몰라도 됨 = 위치 투명성"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "위치 투명성",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 위치 투명성'와 일치합니다. 위치 투명성은 자원의 물리적 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해주는 성질입니다."
+          },
+          {
+            "label": "2",
+            "text": "접근 투명성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위치 투명성'인데 이 선택지는 '접근 투명성'이므로 일치하지 않습니다. 접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+          },
+          {
+            "label": "3",
+            "text": "복사 투명성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위치 투명성'인데 이 선택지는 '복사 투명성'이므로 일치하지 않습니다. 접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+          },
+          {
+            "label": "4",
+            "text": "접근 독립성",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 위치 투명성'인데 이 선택지는 '접근 독립성'이므로 일치하지 않습니다. 접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 운영체제에서 사용자가 원하는 파일이나 데이터베이스, 프린터 등의 자원들이 지역 컴퓨터 또는 네트워크 내의 다른 원격지 컴퓨터에 존재하더라도 위치에 관계없이 그의 사용을 보장하는 개념은?",
+          "핵심 개념을 떠올립니다. 분산 데이터베이스 투명성, 위치 투명성",
+          "정답 판단 근거를 적용합니다. 위치 투명성은 자원의 물리적 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해주는 성질입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+        ],
+        "exam_traps": [
+          "접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 데이터베이스 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 위치 몰라도 됨 = 위치 투명성"
+        ],
+        "detailed_summary": "분산 시스템의 4대 투명성 중 하나인 위치 투명성을 묻는 문제입니다. 문제에 제시된 내용은 위치 투명성(Location Transparency)의 개념입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 운영체제에서 사용자가 원하는 파일이나 데이터베이스, 프린터 등의 자원들이 지역 컴퓨터 또는 네트워크 내의 다른 원격지 컴퓨터에 존재하더라도 위치에 관계없이 그의 사용을 보장하는 개념은? 정답입니다. 이 선택지는 실제 정답인 '1번 위치 투명성'와 일치합니다. 위치 투명성은 자원의 물리적 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해주는 성질입니다. 시험 포인트는 접근 투명성은 동일한 방법으로 접근, 복사 투명성은 여러 곳에 복제되어도 하나처럼 사용함을 의미합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 운영체제",
+        "투명성",
+        "위치 투명성",
+        "자원 공유"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4faf36105f826494",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          52
+        ],
+        "page_span": {
+          "start_page": 52,
+          "end_page": 52
+        },
+        "source_explanation": "전문가의 조언 | • 수직 분할은 데이터 컬럼(속성) 단위로 분할하는 것입니다.\n• 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것은 수평 분할입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "41. 분산 데이터베이스에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "분산 데이터베이스는 논리적으로는 하나의 시스템에 속하지만 물리적으로는 여러 개의 컴퓨터 사이트에 분산되어 있다."
+          },
+          {
+            "label": "2",
+            "text": "분산 설계 방법에는 테이블 위치 분산, 분할, 할당이 있다."
+          },
+          {
+            "label": "3",
+            "text": "비중복 할당은 최적의 노드를 선택해서 분산 데이터베이스의 단일 노드에서만 분할이 존재하도록 하는 것이다."
+          },
+          {
+            "label": "4",
+            "text": "수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다."
+        ],
+        "answer_text": "수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | • 수직 분할은 데이터 컬럼(속성) 단위로 분할하는 것입니다.\n• 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것은 수평 분할입니다.",
+        "summary": "분산 데이터베이스의 설계 방식 중 분할(Fragmentation)에 대한 설명입니다.",
+        "why_correct": [
+          "수직 분할(Vertical Fragmentation)은 릴레이션의 속성(Attribute/Column)을 기준으로 분할하는 방식입니다. 행(Row) 단위 분할은 수평 분할(Horizontal Fragmentation)입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "분산 데이터베이스",
+          "수평 분할",
+          "수직 분할"
+        ],
+        "memory_cues": [
+          "수평 = 가로 = 행(Row)",
+          "수직 = 세로 = 열(Column/속성)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "분산 데이터베이스는 논리적으로는 하나의 시스템에 속하지만 물리적으로는 여러 개의 컴퓨터 사이트에 분산되어 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.'인데 이 선택지는 '분산 데이터베이스는 논리적으로는 하나의 시스템에 속하지만 물리적으로는 여러 개의 컴퓨터 사이트에 분산되어 있다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "분산 설계 방법에는 테이블 위치 분산, 분할, 할당이 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.'인데 이 선택지는 '분산 설계 방법에는 테이블 위치 분산, 분할, 할당이 있다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "비중복 할당은 최적의 노드를 선택해서 분산 데이터베이스의 단일 노드에서만 분할이 존재하도록 하는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.'인데 이 선택지는 '비중복 할당은 최적의 노드를 선택해서 분산 데이터베이스의 단일 노드에서만 분할이 존재하도록 하는 것이다.'이므로 일치하지 않습니다. 1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.'와 일치합니다. 수직 분할(Vertical Fragmentation)은 릴레이션의 속성(Attribute/Column)을 기준으로 분할하는 방식입니다. 행(Row) 단위 분할은 수평 분할(Horizontal Fragmentation)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. 분산 데이터베이스에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 분산 데이터베이스, 수평 분할, 수직 분할",
+          "정답 판단 근거를 적용합니다. 수직 분할(Vertical Fragmentation)은 릴레이션의 속성(Attribute/Column)을 기준으로 분할하는 방식입니다. 행(Row) 단위 분할은 수평 분할(Horizontal Fragmentation)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 데이터베이스'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '수평 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '수직 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 수평 = 가로 = 행(Row)",
+          "암기 포인트를 떠올립니다. 수직 = 세로 = 열(Column/속성)"
+        ],
+        "detailed_summary": "분산 데이터베이스의 설계 방식 중 분할(Fragmentation)에 대한 설명입니다. 전문가의 조언 | • 수직 분할은 데이터 컬럼(속성) 단위로 분할하는 것입니다. • 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것은 수평 분할입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 41. 분산 데이터베이스에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 수직 분할은 특정 속성의 값을 기준으로 행(Row) 단위로 분할하는 것이다.'와 일치합니다. 수직 분할(Vertical Fragmentation)은 릴레이션의 속성(Attribute/Column)을 기준으로 분할하는 방식입니다. 행(Row) 단위 분할은 수평 분할(Horizontal Fragmentation)입니다. 시험 포인트는 1, 2, 3번은 분산 데이터베이스의 정의 및 설계 방법에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "수직 분할",
+        "수평 분할",
+        "비중복 할당"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_90e26180fde48cbf",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          52
+        ],
+        "page_span": {
+          "start_page": 52,
+          "end_page": 52
+        },
+        "source_explanation": "전문가의 조언 | 문제에서 설명하는 분산 데이터베이스 목표는 위치 투명성(Location Transparency)입니다.\n• 중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함\n• 병행 투명성(Concurrency Transparency) : 분산 데이터베이스와 관련된 다수의 트랜잭션들이 동시에 실현되더라도 그 트랜잭션의 결과는 영향을 받지 않음\n• 장애 투명성(Failure Transparency) : 트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도 불구하고 트랜잭션을 정확하게 처리함"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "43. 데이터가 물리적으로 저장되어 있는 위치를 알 필요 없이 데이터베이스의 논리적인 명칭만으로 접근할 수 있는 것을 의미하는 분산 데이터베이스 목표는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Concurrency Transparency"
+          },
+          {
+            "label": "2",
+            "text": "Failure Transparency"
+          },
+          {
+            "label": "3",
+            "text": "Location Transparency"
+          },
+          {
+            "label": "4",
+            "text": "Replication Transparency"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Location Transparency"
+        ],
+        "answer_text": "Location Transparency"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에서 설명하는 분산 데이터베이스 목표는 위치 투명성(Location Transparency)입니다.\n• 중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함\n• 병행 투명성(Concurrency Transparency) : 분산 데이터베이스와 관련된 다수의 트랜잭션들이 동시에 실현되더라도 그 트랜잭션의 결과는 영향을 받지 않음\n• 장애 투명성(Failure Transparency) : 트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도 불구하고 트랜잭션을 정확하게 처리함",
+        "summary": "분산 데이터베이스의 4대 투명성 중 위치 투명성에 대한 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "위치 투명성(Location Transparency)은 사용자가 데이터의 물리적 저장 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해줍니다."
+        ],
+        "why_others_wrong": [
+          "Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+        ],
+        "key_concepts": [
+          "분산 데이터베이스 투명성",
+          "위치 투명성"
+        ],
+        "memory_cues": [
+          "위치 몰라도 됨 = 위치 투명성"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Concurrency Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Location Transparency'인데 이 선택지는 'Concurrency Transparency'이므로 일치하지 않습니다. Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+          },
+          {
+            "label": "2",
+            "text": "Failure Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Location Transparency'인데 이 선택지는 'Failure Transparency'이므로 일치하지 않습니다. Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+          },
+          {
+            "label": "3",
+            "text": "Location Transparency",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Location Transparency'와 일치합니다. 위치 투명성(Location Transparency)은 사용자가 데이터의 물리적 저장 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해줍니다."
+          },
+          {
+            "label": "4",
+            "text": "Replication Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Location Transparency'인데 이 선택지는 'Replication Transparency'이므로 일치하지 않습니다. Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 데이터가 물리적으로 저장되어 있는 위치를 알 필요 없이 데이터베이스의 논리적인 명칭만으로 접근할 수 있는 것을 의미하는 분산 데이터베이스 목표는?",
+          "핵심 개념을 떠올립니다. 분산 데이터베이스 투명성, 위치 투명성",
+          "정답 판단 근거를 적용합니다. 위치 투명성(Location Transparency)은 사용자가 데이터의 물리적 저장 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해줍니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+        ],
+        "exam_traps": [
+          "Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 데이터베이스 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 위치 몰라도 됨 = 위치 투명성"
+        ],
+        "detailed_summary": "분산 데이터베이스의 4대 투명성 중 위치 투명성에 대한 정의를 묻는 문제입니다. 전문가의 조언 | 문제에서 설명하는 분산 데이터베이스 목표는 위치 투명성(Location Transparency)입니다. • 중복 투명성(Replication Transparency) : 동일 데이터가 여러 곳에 중복되어 있더라도 사용자는 마치 하나의 데이터만 존재하는 것처럼 사용하고, 시스템은 자동으로 여러 자료에 대한 작업을 수행함 • 병행 투명성(Concurrency Transparency) : 분산 데이터베이스와 관련된 다수의 트랜잭션들이 동시에 실현되더라도 그 트랜잭션의 결과는 영향을 받지 않음 • 장애 투명성(Failure Transparency) : 트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도 불구하고 트랜잭션을 정확하게 처리함 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 43. 데이터가 물리적으로 저장되어 있는 위치를 알 필요 없이 데이터베이스의 논리적인 명칭만으로 접근할 수 있는 것을 의미하는 분산 데이터베이스 목표는? 정답입니다. 이 선택지는 실제 정답인 '3번 Location Transparency'와 일치합니다. 위치 투명성(Location Transparency)은 사용자가 데이터의 물리적 저장 위치를 몰라도 논리적 이름만으로 접근할 수 있게 해줍니다. 시험 포인트는 Concurrency는 동시 실행, Failure는 장애 극복, Replication은 중복 데이터 관리에 관한 투명성입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "투명성",
+        "위치 투명성",
+        "중복 투명성",
+        "병행 투명성",
+        "장애 투명성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9d0c8782ed7798ea",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          52
+        ],
+        "page_span": {
+          "start_page": 52,
+          "end_page": 52
+        },
+        "source_explanation": "전문가의 조언 | 한 번 생성한 뷰의 정의는 ALTER 문을 이용하여 변경할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "44. 뷰에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "뷰에 대한 사용자의 권한을 제한할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다."
+          },
+          {
+            "label": "3",
+            "text": "뷰는 다른 뷰를 대상으로 설정될 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "뷰 테이블은 물리적으로 구현된 것은 아니다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다."
+        ],
+        "answer_text": "뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 한 번 생성한 뷰의 정의는 ALTER 문을 이용하여 변경할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다.",
+        "summary": "데이터베이스 뷰(View)의 특징과 제약 사항에 대한 문제입니다.",
+        "why_correct": [
+          "뷰는 가상 테이블로서 ALTER 문을 통한 구조 변경이 불가능합니다. 변경이 필요한 경우 DROP 후 CREATE를 다시 수행해야 합니다."
+        ],
+        "why_others_wrong": [
+          "뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+        ],
+        "key_concepts": [
+          "뷰(View)",
+          "가상 테이블",
+          "데이터 독립성"
+        ],
+        "memory_cues": [
+          "뷰는 ALTER 안 됨! (다시 그려야 함)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "뷰에 대한 사용자의 권한을 제한할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.'인데 이 선택지는 '뷰에 대한 사용자의 권한을 제한할 수 있다.'이므로 일치하지 않습니다. 뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+          },
+          {
+            "label": "2",
+            "text": "뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.'와 일치합니다. 뷰는 가상 테이블로서 ALTER 문을 통한 구조 변경이 불가능합니다. 변경이 필요한 경우 DROP 후 CREATE를 다시 수행해야 합니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰는 다른 뷰를 대상으로 설정될 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.'인데 이 선택지는 '뷰는 다른 뷰를 대상으로 설정될 수 있다.'이므로 일치하지 않습니다. 뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+          },
+          {
+            "label": "4",
+            "text": "뷰 테이블은 물리적으로 구현된 것은 아니다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.'인데 이 선택지는 '뷰 테이블은 물리적으로 구현된 것은 아니다.'이므로 일치하지 않습니다. 뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 44. 뷰에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 뷰(View), 가상 테이블, 데이터 독립성",
+          "정답 판단 근거를 적용합니다. 뷰는 가상 테이블로서 ALTER 문을 통한 구조 변경이 불가능합니다. 변경이 필요한 경우 DROP 후 CREATE를 다시 수행해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+        ],
+        "exam_traps": [
+          "뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰(View)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가상 테이블'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 독립성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰는 ALTER 안 됨! (다시 그려야 함)"
+        ],
+        "detailed_summary": "데이터베이스 뷰(View)의 특징과 제약 사항에 대한 문제입니다. 전문가의 조언 | 한 번 생성한 뷰의 정의는 ALTER 문을 이용하여 변경할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 44. 뷰에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 뷰 테이블에 행이나 열을 추가할 때에는 ALTER 문을 사용하여야 한다.'와 일치합니다. 뷰는 가상 테이블로서 ALTER 문을 통한 구조 변경이 불가능합니다. 변경이 필요한 경우 DROP 후 CREATE를 다시 수행해야 합니다. 시험 포인트는 뷰는 보안을 위해 권한 제한이 가능하며, 다른 뷰를 기반으로 생성될 수 있고, 물리적 저장 공간을 차지하지 않는 가상 테이블입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "가상 테이블",
+        "ALTER",
+        "DROP",
+        "CREATE"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2e433e64d953c592",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          53
+        ],
+        "page_span": {
+          "start_page": 53,
+          "end_page": 53
+        },
+        "source_explanation": "전문가의 조언 | 문제의 지문에서 해시 분할(Hash Partitioning)에 대한 설명으로 옳은 것은 ㄴ, ㄷ, ㄹ입니다.\n• ㄱ은 범위 분할(Range Partitioning)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "48. 다음 중 Hash 파티셔닝에 대한 설명으로 옳은 것을 모두 고른 것은?\nㄱ. 지정한 열의 값을 기준으로 범위를 지정하여 분할\nㄴ. 데이터를 고르게 분산할 때 유용\nㄷ. 데이터가 고른 컬럼에 효과적\nㄹ. 해시 함수를 이용하여 데이터 분할",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ"
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄴ, ㄷ"
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄷ, ㄹ"
+          },
+          {
+            "label": "4",
+            "text": "ㄴ, ㄷ"
+          },
+          {
+            "label": "5",
+            "text": "ㄹ"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "ㄴ, ㄷ, ㄹ"
+        ],
+        "answer_text": "ㄴ, ㄷ, ㄹ"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제의 지문에서 해시 분할(Hash Partitioning)에 대한 설명으로 옳은 것은 ㄴ, ㄷ, ㄹ입니다.\n• ㄱ은 범위 분할(Range Partitioning)에 대한 설명입니다.",
+        "summary": "데이터베이스 파티셔닝 기법 중 해시 파티셔닝의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "해시 파티셔닝은 해시 함수를 사용하여 데이터를 균등하게 분산시키며, 데이터 분포가 고른 컬럼에 적용할 때 효과적입니다."
+        ],
+        "why_others_wrong": [
+          "ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+        ],
+        "key_concepts": [
+          "해시 파티셔닝",
+          "범위 파티셔닝",
+          "데이터 분산"
+        ],
+        "memory_cues": [
+          "해시 = 골고루 분산"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ㄱ, ㄴ, ㄷ, ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㄴ, ㄷ, ㄹ'인데 이 선택지는 'ㄱ, ㄴ, ㄷ, ㄹ'이므로 일치하지 않습니다. ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "ㄱ, ㄴ, ㄷ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㄴ, ㄷ, ㄹ'인데 이 선택지는 'ㄱ, ㄴ, ㄷ'이므로 일치하지 않습니다. ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "ㄴ, ㄷ, ㄹ",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ㄴ, ㄷ, ㄹ'와 일치합니다. 해시 파티셔닝은 해시 함수를 사용하여 데이터를 균등하게 분산시키며, 데이터 분포가 고른 컬럼에 적용할 때 효과적입니다."
+          },
+          {
+            "label": "4",
+            "text": "ㄴ, ㄷ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㄴ, ㄷ, ㄹ'인데 이 선택지는 'ㄴ, ㄷ'이므로 일치하지 않습니다. ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+          },
+          {
+            "label": "5",
+            "text": "ㄹ",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㄴ, ㄷ, ㄹ'인데 이 선택지는 'ㄹ'이므로 일치하지 않습니다. ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 48. 다음 중 Hash 파티셔닝에 대한 설명으로 옳은 것을 모두 고른 것은? ㄱ. 지정한 열의 값을 기준으로 범위를 지정하여 분할 ㄴ. 데이터를 고르게 분산할 때 유용 ㄷ. 데이터가 고른 컬럼에 효과적 ㄹ. 해시 함수를 이용하여 데이터 분할",
+          "핵심 개념을 떠올립니다. 해시 파티셔닝, 범위 파티셔닝, 데이터 분산",
+          "정답 판단 근거를 적용합니다. 해시 파티셔닝은 해시 함수를 사용하여 데이터를 균등하게 분산시키며, 데이터 분포가 고른 컬럼에 적용할 때 효과적입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+        ],
+        "exam_traps": [
+          "ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '해시 파티셔닝'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '범위 파티셔닝'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데이터 분산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 해시 = 골고루 분산"
+        ],
+        "detailed_summary": "데이터베이스 파티셔닝 기법 중 해시 파티셔닝의 특징을 묻는 문제입니다. 전문가의 조언 | 문제의 지문에서 해시 분할(Hash Partitioning)에 대한 설명으로 옳은 것은 ㄴ, ㄷ, ㄹ입니다. • ㄱ은 범위 분할(Range Partitioning)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 48. 다음 중 Hash 파티셔닝에 대한 설명으로 옳은 것을 모두 고른 것은? ㄱ. 지정한 열의 값을 기준으로 범위를 지정하여 분할 ㄴ. 데이터를 고르게 분산할 때 유용 ㄷ. 데이터가 고른 컬럼에 효과적 ㄹ. 해시 함수를 이용하여 데이터 분할 정답입니다. 이 선택지는 실제 정답인 '3번 ㄴ, ㄷ, ㄹ'와 일치합니다. 해시 파티셔닝은 해시 함수를 사용하여 데이터를 균등하게 분산시키며, 데이터 분포가 고른 컬럼에 적용할 때 효과적입니다. 시험 포인트는 ㄱ은 특정 값의 범위를 기준으로 나누는 범위 파티셔닝(Range Partitioning)에 대한 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "Choice labels in image are 1, 2, 3, 4 but content shows ㄱ, ㄴ, ㄷ, ㄹ. Corrected labels to match standard format."
+        ]
+      },
+      "keywords": [
+        "해시 파티셔닝",
+        "데이터 분산",
+        "해시 함수",
+        "파티셔닝"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a45c77ee2e8525b6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0066_p0071",
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          71
+        ],
+        "page_span": {
+          "start_page": 71,
+          "end_page": 71
+        },
+        "source_explanation": "전문가의 조언 | 삭제할 대상을 다른 곳에서 참조하고 있으면, 삭제를 취소하는 RESTRICT 옵션이 있기 때문에 하나도 삭제되지 않습니다. 참조하고 있는 다른 뷰나 제약사항까지 모두 삭제하려면 CASCADE 옵션을 명시해야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은?\nDROP VIEW V1 RESTRICT;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "V1만 삭제된다."
+          },
+          {
+            "label": "2",
+            "text": "R, V1, V2, V3 모두 삭제된다."
+          },
+          {
+            "label": "3",
+            "text": "V1, V2, V3만 삭제된다."
+          },
+          {
+            "label": "4",
+            "text": "하나도 삭제되지 않는다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "하나도 삭제되지 않는다."
+        ],
+        "answer_text": "하나도 삭제되지 않는다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 삭제할 대상을 다른 곳에서 참조하고 있으면, 삭제를 취소하는 RESTRICT 옵션이 있기 때문에 하나도 삭제되지 않습니다. 참조하고 있는 다른 뷰나 제약사항까지 모두 삭제하려면 CASCADE 옵션을 명시해야 합니다.",
+        "summary": "SQL의 DROP 명령에서 RESTRICT 옵션은 삭제하려는 객체가 다른 객체에 의해 참조되고 있을 경우 삭제를 방지합니다.",
+        "why_correct": [
+          "V1은 V2에 의해 참조되고 있고, V2는 다시 V3에 의해 참조되고 있으므로 RESTRICT 옵션 사용 시 삭제가 수행되지 않습니다.",
+          "V1은 V2와 V3에 의해 참조되고 있으므로, RESTRICT 옵션을 사용하면 삭제가 수행되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다.",
+          "CASCADE 옵션을 사용했다면 V1과 이를 참조하는 V2, V3가 모두 삭제되었을 것입니다.",
+          "RESTRICT는 참조 중인 객체가 있으면 삭제를 거부합니다."
+        ],
+        "key_concepts": [
+          "RESTRICT",
+          "CASCADE",
+          "참조 무결성"
+        ],
+        "memory_cues": [
+          "RESTRICT = 제한(참조 중이면 삭제 불가)",
+          "CASCADE = 폭포(연쇄 삭제)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "V1만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'V1만 삭제된다.'이므로 일치하지 않습니다. 1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다. CASCADE 옵션을 사용했다면 V1과 이를 참조하는 V2, V3가 모두 삭제되었을 것입니다."
+          },
+          {
+            "label": "2",
+            "text": "R, V1, V2, V3 모두 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'R, V1, V2, V3 모두 삭제된다.'이므로 일치하지 않습니다. 1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다. CASCADE 옵션을 사용했다면 V1과 이를 참조하는 V2, V3가 모두 삭제되었을 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "V1, V2, V3만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 하나도 삭제되지 않는다.'인데 이 선택지는 'V1, V2, V3만 삭제된다.'이므로 일치하지 않습니다. 1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다. CASCADE 옵션을 사용했다면 V1과 이를 참조하는 V2, V3가 모두 삭제되었을 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "하나도 삭제되지 않는다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 하나도 삭제되지 않는다.'와 일치합니다. V1은 V2에 의해 참조되고 있고, V2는 다시 V3에 의해 참조되고 있으므로 RESTRICT 옵션 사용 시 삭제가 수행되지 않습니다. V1은 V2와 V3에 의해 참조되고 있으므로, RESTRICT 옵션을 사용하면 삭제가 수행되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은? DROP VIEW V1 RESTRICT;",
+          "핵심 개념을 떠올립니다. RESTRICT, CASCADE, 참조 무결성",
+          "정답 판단 근거를 적용합니다. V1은 V2에 의해 참조되고 있고, V2는 다시 V3에 의해 참조되고 있으므로 RESTRICT 옵션 사용 시 삭제가 수행되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 2, 3번은 RESTRICT 옵션의 동작 방식과 맞지 않습니다. 연쇄 삭제를 원한다면 CASCADE를 사용해야 합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'RESTRICT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'CASCADE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '참조 무결성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. RESTRICT = 제한(참조 중이면 삭제 불가)",
+          "암기 포인트를 떠올립니다. CASCADE = 폭포(연쇄 삭제)"
+        ],
+        "detailed_summary": "SQL의 DROP 명령에서 RESTRICT 옵션은 삭제하려는 객체가 다른 객체에 의해 참조되고 있을 경우 삭제를 방지합니다. 전문가의 조언 | 삭제할 대상을 다른 곳에서 참조하고 있으면, 삭제를 취소하는 RESTRICT 옵션이 있기 때문에 하나도 삭제되지 않습니다. 참조하고 있는 다른 뷰나 제약사항까지 모두 삭제하려면 CASCADE 옵션을 명시해야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 기본 테이블 R을 이용하여 뷰 V1을 정의하고, 뷰 V1을 이용하여 다시 뷰 V2가 정의되었다. 그리고 기본 테이블 R과 뷰 V2를 조인하여 뷰 V3를 정의하였다. 이때 다음과 같은 SQL문이 실행되면 어떤 결과가 발생하는지 올바르게 설명한 것은? DROP VIEW V1 RESTRICT; 정답입니다. 이 선택지는 실제 정답인 '4번 하나도 삭제되지 않는다.'와 일치합니다. V1은 V2에 의해 참조되고 있고, V2는 다시 V3에 의해 참조되고 있으므로 RESTRICT 옵션 사용 시 삭제가 수행되지 않습니다. V1은 V2와 V3에 의해 참조되고 있으므로, RESTRICT 옵션을 사용하면 삭제가 수행되지 않습니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "SQL",
+        "DROP VIEW",
+        "RESTRICT",
+        "CASCADE",
+        "뷰 삭제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_c84fb35ec3123066",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          72
+        ],
+        "page_span": {
+          "start_page": 72,
+          "end_page": 72
+        },
+        "source_explanation": "분산 데이터베이스의 투명성에는 위치 투명성(Location Transparency), 중복 투명성(Replication Transparency), 병행 투명성(Concurrency Transparency), 장애 투명성(Failure Transparency)이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Location Transparency"
+          },
+          {
+            "label": "2",
+            "text": "Replication Transparency"
+          },
+          {
+            "label": "3",
+            "text": "Failure Transparency"
+          },
+          {
+            "label": "4",
+            "text": "Media Access Transparency"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Media Access Transparency"
+        ],
+        "answer_text": "Media Access Transparency"
+      },
+      "explanation": {
+        "source_text": "분산 데이터베이스의 투명성에는 위치 투명성(Location Transparency), 중복 투명성(Replication Transparency), 병행 투명성(Concurrency Transparency), 장애 투명성(Failure Transparency)이 있습니다.",
+        "summary": "분산 데이터베이스 시스템의 4대 투명성을 묻는 문제입니다.",
+        "why_correct": [
+          "Media Access Transparency는 분산 데이터베이스의 주요 투명성 정의에 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함",
+          "중복 투명성: 데이터가 여러 곳에 복제되어 있어도 하나의 데이터처럼 사용 가능해야 함",
+          "장애 투명성: 시스템 장애 시에도 무결성이 보장되어야 함"
+        ],
+        "key_concepts": [
+          "위치 투명성",
+          "중복 투명성",
+          "병행 투명성",
+          "장애 투명성"
+        ],
+        "memory_cues": [
+          "위중병장 (위치, 중복, 병행, 장애)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Location Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Location Transparency'이므로 일치하지 않습니다. 위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함 중복 투명성: 데이터가 여러 곳에 복제되어 있어도 하나의 데이터처럼 사용 가능해야 함"
+          },
+          {
+            "label": "2",
+            "text": "Replication Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Replication Transparency'이므로 일치하지 않습니다. 위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함 중복 투명성: 데이터가 여러 곳에 복제되어 있어도 하나의 데이터처럼 사용 가능해야 함"
+          },
+          {
+            "label": "3",
+            "text": "Failure Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Failure Transparency'이므로 일치하지 않습니다. 위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함 중복 투명성: 데이터가 여러 곳에 복제되어 있어도 하나의 데이터처럼 사용 가능해야 함"
+          },
+          {
+            "label": "4",
+            "text": "Media Access Transparency",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Media Access Transparency'와 일치합니다. Media Access Transparency는 분산 데이터베이스의 주요 투명성 정의에 포함되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성",
+          "정답 판단 근거를 적용합니다. Media Access Transparency는 분산 데이터베이스의 주요 투명성 정의에 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함"
+        ],
+        "exam_traps": [
+          "위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함"
+        ],
+        "answer_checklist": [
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '중복 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '병행 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '장애 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 위중병장 (위치, 중복, 병행, 장애)"
+        ],
+        "detailed_summary": "분산 데이터베이스 시스템의 4대 투명성을 묻는 문제입니다. 분산 데이터베이스의 투명성에는 위치 투명성(Location Transparency), 중복 투명성(Replication Transparency), 병행 투명성(Concurrency Transparency), 장애 투명성(Failure Transparency)이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Media Access Transparency'와 일치합니다. Media Access Transparency는 분산 데이터베이스의 주요 투명성 정의에 포함되지 않습니다. 시험 포인트는 위치 투명성: 데이터의 물리적 위치를 몰라도 접근 가능해야 함"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "투명성",
+        "Transparency"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_bffe370a4c7e2fac",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          73
+        ],
+        "page_span": {
+          "start_page": 73,
+          "end_page": 73
+        },
+        "source_explanation": "뷰는 기본 테이블이나 또 다른 뷰를 이용해서 만든 가상 테이블로서, 기본 테이블과 비교할 때 삽입, 삭제, 갱신 연산에 제약이 있으므로, ALTER문을 이용해 정의를 변경할 수 없습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "뷰(VIEW)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "뷰 위에 또 다른 뷰를 정의할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "뷰에 대한 조작에서 삽입, 갱신, 삭제 연산은 제약이 따른다."
+          },
+          {
+            "label": "3",
+            "text": "뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다."
+          },
+          {
+            "label": "4",
+            "text": "뷰가 정의된 기본 테이블이 제거되면 뷰도 자동적으로 제거된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다."
+        ],
+        "answer_text": "뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다."
+      },
+      "explanation": {
+        "source_text": "뷰는 기본 테이블이나 또 다른 뷰를 이용해서 만든 가상 테이블로서, 기본 테이블과 비교할 때 삽입, 삭제, 갱신 연산에 제약이 있으므로, ALTER문을 이용해 정의를 변경할 수 없습니다.",
+        "summary": "데이터베이스 뷰(View)의 특징과 제약 사항을 묻는 문제입니다.",
+        "why_correct": [
+          "뷰는 가상 테이블이므로 ALTER 명령어로 구조를 직접 변경할 수 없으며, 필요시 DROP 후 다시 CREATE 해야 합니다."
+        ],
+        "why_others_wrong": [
+          "1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다.",
+          "2: 조인된 뷰나 계산된 필드가 포함된 뷰 등은 DML 작업에 제한이 있습니다.",
+          "4: 뷰의 근간이 되는 테이블이 사라지면 뷰도 유효하지 않게 되어 삭제됩니다."
+        ],
+        "key_concepts": [
+          "뷰의 가상성",
+          "ALTER 불가"
+        ],
+        "memory_cues": [
+          "뷰는 ALTER가 안 된다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "뷰 위에 또 다른 뷰를 정의할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.'인데 이 선택지는 '뷰 위에 또 다른 뷰를 정의할 수 있다.'이므로 일치하지 않습니다. 1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다. 2: 조인된 뷰나 계산된 필드가 포함된 뷰 등은 DML 작업에 제한이 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "뷰에 대한 조작에서 삽입, 갱신, 삭제 연산은 제약이 따른다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.'인데 이 선택지는 '뷰에 대한 조작에서 삽입, 갱신, 삭제 연산은 제약이 따른다.'이므로 일치하지 않습니다. 1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다. 2: 조인된 뷰나 계산된 필드가 포함된 뷰 등은 DML 작업에 제한이 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.'와 일치합니다. 뷰는 가상 테이블이므로 ALTER 명령어로 구조를 직접 변경할 수 없으며, 필요시 DROP 후 다시 CREATE 해야 합니다."
+          },
+          {
+            "label": "4",
+            "text": "뷰가 정의된 기본 테이블이 제거되면 뷰도 자동적으로 제거된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.'인데 이 선택지는 '뷰가 정의된 기본 테이블이 제거되면 뷰도 자동적으로 제거된다.'이므로 일치하지 않습니다. 1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다. 2: 조인된 뷰나 계산된 필드가 포함된 뷰 등은 DML 작업에 제한이 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(VIEW)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 뷰의 가상성, ALTER 불가",
+          "정답 판단 근거를 적용합니다. 뷰는 가상 테이블이므로 ALTER 명령어로 구조를 직접 변경할 수 없으며, 필요시 DROP 후 다시 CREATE 해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다."
+        ],
+        "exam_traps": [
+          "1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰의 가상성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ALTER 불가'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰는 ALTER가 안 된다."
+        ],
+        "detailed_summary": "데이터베이스 뷰(View)의 특징과 제약 사항을 묻는 문제입니다. 뷰는 기본 테이블이나 또 다른 뷰를 이용해서 만든 가상 테이블로서, 기본 테이블과 비교할 때 삽입, 삭제, 갱신 연산에 제약이 있으므로, ALTER문을 이용해 정의를 변경할 수 없습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 뷰(VIEW)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 뷰의 정의는 기본 테이블과 같이 ALTER문을 이용하여 변경한다.'와 일치합니다. 뷰는 가상 테이블이므로 ALTER 명령어로 구조를 직접 변경할 수 없으며, 필요시 DROP 후 다시 CREATE 해야 합니다. 시험 포인트는 1: 뷰를 기반으로 새로운 뷰를 만드는 것이 가능합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "VIEW",
+        "가상 테이블",
+        "ALTER"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a206569664c91442",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          109
+        ],
+        "page_span": {
+          "start_page": 109,
+          "end_page": 109
+        },
+        "source_explanation": "전문가의 조언 | 뷰(View)는 저장장치 내에 물리적으로 존재하지 않는 가상 테이블입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "45. 뷰(View)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "뷰는 CREATE 문을 사용하여 정의한다."
+          },
+          {
+            "label": "2",
+            "text": "뷰는 데이터의 논리적 독립성을 제공한다."
+          },
+          {
+            "label": "3",
+            "text": "뷰를 제거할 때에는 DROP 문을 사용한다."
+          },
+          {
+            "label": "4",
+            "text": "뷰는 저장장치 내에 물리적으로 존재한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "뷰는 저장장치 내에 물리적으로 존재한다."
+        ],
+        "answer_text": "뷰는 저장장치 내에 물리적으로 존재한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 뷰(View)는 저장장치 내에 물리적으로 존재하지 않는 가상 테이블입니다.",
+        "summary": "데이터베이스 뷰(View)의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "뷰는 실제 데이터를 저장하지 않고 정의만 저장하는 가상 테이블이므로 물리적으로 존재하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+        ],
+        "key_concepts": [
+          "뷰",
+          "가상 테이블",
+          "논리적 독립성"
+        ],
+        "memory_cues": [
+          "뷰는 가짜(가상) 테이블"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "뷰는 CREATE 문을 사용하여 정의한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 뷰는 저장장치 내에 물리적으로 존재한다.'인데 이 선택지는 '뷰는 CREATE 문을 사용하여 정의한다.'이므로 일치하지 않습니다. CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "뷰는 데이터의 논리적 독립성을 제공한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 뷰는 저장장치 내에 물리적으로 존재한다.'인데 이 선택지는 '뷰는 데이터의 논리적 독립성을 제공한다.'이므로 일치하지 않습니다. CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰를 제거할 때에는 DROP 문을 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 뷰는 저장장치 내에 물리적으로 존재한다.'인데 이 선택지는 '뷰를 제거할 때에는 DROP 문을 사용한다.'이므로 일치하지 않습니다. CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "뷰는 저장장치 내에 물리적으로 존재한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 뷰는 저장장치 내에 물리적으로 존재한다.'와 일치합니다. 뷰는 실제 데이터를 저장하지 않고 정의만 저장하는 가상 테이블이므로 물리적으로 존재하지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. 뷰(View)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. 뷰, 가상 테이블, 논리적 독립성",
+          "정답 판단 근거를 적용합니다. 뷰는 실제 데이터를 저장하지 않고 정의만 저장하는 가상 테이블이므로 물리적으로 존재하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+        ],
+        "exam_traps": [
+          "CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '가상 테이블'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '논리적 독립성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰는 가짜(가상) 테이블"
+        ],
+        "detailed_summary": "데이터베이스 뷰(View)의 특징을 묻는 문제입니다. 전문가의 조언 | 뷰(View)는 저장장치 내에 물리적으로 존재하지 않는 가상 테이블입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 45. 뷰(View)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 뷰는 저장장치 내에 물리적으로 존재한다.'와 일치합니다. 뷰는 실제 데이터를 저장하지 않고 정의만 저장하는 가상 테이블이므로 물리적으로 존재하지 않습니다. 시험 포인트는 CREATE/DROP 사용 및 논리적 독립성 제공은 뷰의 주요 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "View",
+        "가상 테이블",
+        "논리적 독립성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3b38b34e98c99e1f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          111
+        ],
+        "page_span": {
+          "start_page": 111,
+          "end_page": 111
+        },
+        "source_explanation": "파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "라운드-로빈"
+          },
+          {
+            "label": "2",
+            "text": "범위 분할"
+          },
+          {
+            "label": "3",
+            "text": "예측 분할"
+          },
+          {
+            "label": "4",
+            "text": "해시 분할"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "예측 분할"
+        ],
+        "answer_text": "예측 분할"
+      },
+      "explanation": {
+        "source_text": "파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다.",
+        "summary": "데이터베이스 파티셔닝 기법의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "예측 분할은 표준적인 데이터베이스 파티셔닝 기법에 해당하지 않습니다."
+        ],
+        "why_others_wrong": [
+          "라운드-로빈은 순차적으로 할당하는 방식입니다.",
+          "범위 분할은 특정 값의 범위를 기준으로 나눕니다.",
+          "해시 분할은 해시 함수를 적용하여 데이터를 분산시킵니다."
+        ],
+        "key_concepts": [
+          "파티셔닝",
+          "수평 분할"
+        ],
+        "memory_cues": [
+          "범해라목 (범위, 해시, 라운드 로빈, 목록)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "라운드-로빈",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '라운드-로빈'이므로 일치하지 않습니다. 라운드-로빈은 순차적으로 할당하는 방식입니다. 범위 분할은 특정 값의 범위를 기준으로 나눕니다."
+          },
+          {
+            "label": "2",
+            "text": "범위 분할",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '범위 분할'이므로 일치하지 않습니다. 라운드-로빈은 순차적으로 할당하는 방식입니다. 범위 분할은 특정 값의 범위를 기준으로 나눕니다."
+          },
+          {
+            "label": "3",
+            "text": "예측 분할",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 예측 분할'와 일치합니다. 예측 분할은 표준적인 데이터베이스 파티셔닝 기법에 해당하지 않습니다."
+          },
+          {
+            "label": "4",
+            "text": "해시 분할",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '해시 분할'이므로 일치하지 않습니다. 라운드-로빈은 순차적으로 할당하는 방식입니다. 범위 분할은 특정 값의 범위를 기준으로 나눕니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은?",
+          "핵심 개념을 떠올립니다. 파티셔닝, 수평 분할",
+          "정답 판단 근거를 적용합니다. 예측 분할은 표준적인 데이터베이스 파티셔닝 기법에 해당하지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 라운드-로빈은 순차적으로 할당하는 방식입니다."
+        ],
+        "exam_traps": [
+          "라운드-로빈은 순차적으로 할당하는 방식입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파티셔닝'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '수평 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 범해라목 (범위, 해시, 라운드 로빈, 목록)"
+        ],
+        "detailed_summary": "데이터베이스 파티셔닝 기법의 종류를 묻는 문제입니다. 파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 예측 분할'와 일치합니다. 예측 분할은 표준적인 데이터베이스 파티셔닝 기법에 해당하지 않습니다. 시험 포인트는 라운드-로빈은 순차적으로 할당하는 방식입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "수평 분할",
+        "파티셔닝",
+        "라운드 로빈",
+        "범위 분할",
+        "해시 분할"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_87d427d0050a2eb8",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          111
+        ],
+        "page_span": {
+          "start_page": 111,
+          "end_page": 111
+        },
+        "source_explanation": "전문가의 조언 | 파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "55. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "라운드-로빈"
+          },
+          {
+            "label": "2",
+            "text": "범위 분할"
+          },
+          {
+            "label": "3",
+            "text": "예측 분할"
+          },
+          {
+            "label": "4",
+            "text": "해시 분할"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "예측 분할"
+        ],
+        "answer_text": "예측 분할"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다.",
+        "summary": "데이터베이스 파티셔닝(수평 분할) 기법의 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "'예측 분할'은 데이터베이스 분할 기법에서 사용되는 표준 용어가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+        ],
+        "key_concepts": [
+          "파티셔닝",
+          "수평 분할 기법"
+        ],
+        "memory_cues": [
+          "파티션: 라범해목 (라운드, 범위, 해시, 목록)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "라운드-로빈",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '라운드-로빈'이므로 일치하지 않습니다. 라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+          },
+          {
+            "label": "2",
+            "text": "범위 분할",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '범위 분할'이므로 일치하지 않습니다. 라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+          },
+          {
+            "label": "3",
+            "text": "예측 분할",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 예측 분할'와 일치합니다. '예측 분할'은 데이터베이스 분할 기법에서 사용되는 표준 용어가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "해시 분할",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 예측 분할'인데 이 선택지는 '해시 분할'이므로 일치하지 않습니다. 라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은?",
+          "핵심 개념을 떠올립니다. 파티셔닝, 수평 분할 기법",
+          "정답 판단 근거를 적용합니다. '예측 분할'은 데이터베이스 분할 기법에서 사용되는 표준 용어가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+        ],
+        "exam_traps": [
+          "라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파티셔닝'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '수평 분할 기법'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파티션: 라범해목 (라운드, 범위, 해시, 목록)"
+        ],
+        "detailed_summary": "데이터베이스 파티셔닝(수평 분할) 기법의 종류를 묻는 문제입니다. 전문가의 조언 | 파티셔닝(분할) 방식에는 범위 분할, 목록 분할, 해시 분할, 조합 분할, 라운드-로빈 분할이 있습니다. 예측 분할이라는 방식은 존재하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 55. 병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할 기법이 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 예측 분할'와 일치합니다. '예측 분할'은 데이터베이스 분할 기법에서 사용되는 표준 용어가 아닙니다. 시험 포인트는 라운드-로빈, 범위, 해시 분할은 데이터를 여러 노드에 나누어 저장하는 대표적인 기법들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "수평 분할",
+        "파티셔닝",
+        "라운드-로빈",
+        "해시 분할"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b8b94cbf3b05c9aa",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | 한 번 생성한 뷰는 정의를 변경할 수 없으므로 ALTER 문을 사용할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "46. SQL View(뷰)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "뷰(View)를 제거하고자 할 때는 DROP 문을 이용한다."
+          },
+          {
+            "label": "2",
+            "text": "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)를 생성하고자 할 때는 CREATE 문을 이용한다."
+          },
+          {
+            "label": "4",
+            "text": "뷰(View)의 내용을 검색하고자 할 때는 SELECT 문을 이용한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다."
+        ],
+        "answer_text": "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 한 번 생성한 뷰는 정의를 변경할 수 없으므로 ALTER 문을 사용할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다.",
+        "summary": "가상 테이블인 뷰(View)의 특징과 관련 SQL 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "뷰는 물리적으로 존재하지 않는 가상 테이블로, 정의 자체를 수정하는 ALTER 문을 지원하지 않는 경우가 많습니다. 보통 DROP 후 다시 CREATE 합니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+        ],
+        "key_concepts": [
+          "뷰(View): 가상 테이블, 논리적 독립성 제공, 보안성 향상"
+        ],
+        "memory_cues": [
+          "뷰는 ALTER가 안 된다 (수정하려면 다시 그리기)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "뷰(View)를 제거하고자 할 때는 DROP 문을 이용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.'인데 이 선택지는 '뷰(View)를 제거하고자 할 때는 DROP 문을 이용한다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.'와 일치합니다. 뷰는 물리적으로 존재하지 않는 가상 테이블로, 정의 자체를 수정하는 ALTER 문을 지원하지 않는 경우가 많습니다. 보통 DROP 후 다시 CREATE 합니다."
+          },
+          {
+            "label": "3",
+            "text": "뷰(View)를 생성하고자 할 때는 CREATE 문을 이용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.'인데 이 선택지는 '뷰(View)를 생성하고자 할 때는 CREATE 문을 이용한다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "뷰(View)의 내용을 검색하고자 할 때는 SELECT 문을 이용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.'인데 이 선택지는 '뷰(View)의 내용을 검색하고자 할 때는 SELECT 문을 이용한다.'이므로 일치하지 않습니다. 1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. SQL View(뷰)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 뷰(View): 가상 테이블, 논리적 독립성 제공, 보안성 향상",
+          "정답 판단 근거를 적용합니다. 뷰는 물리적으로 존재하지 않는 가상 테이블로, 정의 자체를 수정하는 ALTER 문을 지원하지 않는 경우가 많습니다. 보통 DROP 후 다시 CREATE 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+        ],
+        "exam_traps": [
+          "SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다.",
+          "1, 3, 4번은 뷰의 생성, 삭제, 조회를 위한 올바른 SQL 명령어 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '뷰(View): 가상 테이블, 논리적 독립성 제공, 보안성 향상'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 뷰는 ALTER가 안 된다 (수정하려면 다시 그리기)"
+        ],
+        "detailed_summary": "가상 테이블인 뷰(View)의 특징과 관련 SQL 명령어를 묻는 문제입니다. 전문가의 조언 | 한 번 생성한 뷰는 정의를 변경할 수 없으므로 ALTER 문을 사용할 수 없습니다. 뷰를 변경하려면 제거하고 다시 만들어야 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 46. SQL View(뷰)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 뷰(View)의 정의를 변경하고자 할 때는 ALTER 문을 이용한다.'와 일치합니다. 뷰는 물리적으로 존재하지 않는 가상 테이블로, 정의 자체를 수정하는 ALTER 문을 지원하지 않는 경우가 많습니다. 보통 DROP 후 다시 CREATE 합니다. 시험 포인트는 SQL 문제는 명령어의 목적이 정의인지 조작인지 제어인지부터 구분하면 실수가 줄어듭니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "뷰",
+        "View",
+        "SQL",
+        "ALTER",
+        "가상 테이블"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_43e251c21f6b26f0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          128
+        ],
+        "page_span": {
+          "start_page": 128,
+          "end_page": 128
+        },
+        "source_explanation": "전문가의 조언 | 분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "58. 분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다."
+          },
+          {
+            "label": "3",
+            "text": "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+        ],
+        "answer_text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다.",
+        "summary": "분산 데이터베이스 시스템의 장단점과 주요 목표(투명성)를 묻는 문제입니다.",
+        "why_correct": [
+          "분산 데이터베이스는 여러 곳에 데이터가 흩어져 있어 일관성 유지와 관리가 복잡하므로 설계와 개발이 매우 어렵습니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+        ],
+        "key_concepts": [
+          "분산 DB 4대 투명성: 위치, 복제(중복), 병행, 장애 투명성"
+        ],
+        "memory_cues": [
+          "분산되면 복잡해지니 설계는 어렵다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+          },
+          {
+            "label": "2",
+            "text": "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+          },
+          {
+            "label": "3",
+            "text": "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'와 일치합니다. 분산 데이터베이스는 여러 곳에 데이터가 흩어져 있어 일관성 유지와 관리가 복잡하므로 설계와 개발이 매우 어렵습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. 분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 분산 DB 4대 투명성: 위치, 복제(중복), 병행, 장애 투명성",
+          "정답 판단 근거를 적용합니다. 분산 데이터베이스는 여러 곳에 데이터가 흩어져 있어 일관성 유지와 관리가 복잡하므로 설계와 개발이 매우 어렵습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 DB 4대 투명성: 위치, 복제(중복), 병행, 장애 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 분산되면 복잡해지니 설계는 어렵다."
+        ],
+        "detailed_summary": "분산 데이터베이스 시스템의 장단점과 주요 목표(투명성)를 묻는 문제입니다. 전문가의 조언 | 분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 58. 분산 데이터베이스의 특징에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'와 일치합니다. 분산 데이터베이스는 여러 곳에 데이터가 흩어져 있어 일관성 유지와 관리가 복잡하므로 설계와 개발이 매우 어렵습니다. 시험 포인트는 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 제공해야 할 4대 투명성입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "투명성",
+        "데이터베이스 설계"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fecc7c2699148f3c",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          146
+        ],
+        "page_span": {
+          "start_page": 146,
+          "end_page": 146
+        },
+        "source_explanation": "전문가의 조언 | 분산 데이터베이스의 투명성에는 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "3과목 데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "3과목 데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_123"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "50. 분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Location Transparency"
+          },
+          {
+            "label": "2",
+            "text": "Replication Transparency"
+          },
+          {
+            "label": "3",
+            "text": "Failure Transparency"
+          },
+          {
+            "label": "4",
+            "text": "Media Access Transparency"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "Media Access Transparency"
+        ],
+        "answer_text": "Media Access Transparency"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 분산 데이터베이스의 투명성에는 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성이 있습니다.",
+        "summary": "분산 데이터베이스 시스템의 4대 투명성을 묻는 문제입니다.",
+        "why_correct": [
+          "Media Access Transparency는 분산 DB의 표준 투명성에 포함되지 않는 용어입니다."
+        ],
+        "why_others_wrong": [
+          "위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+        ],
+        "key_concepts": [
+          "분산 DB 투명성",
+          "위치 투명성",
+          "중복 투명성"
+        ],
+        "memory_cues": [
+          "위-중-병-장 (위중한 병장)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Location Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Location Transparency'이므로 일치하지 않습니다. 위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "Replication Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Replication Transparency'이므로 일치하지 않습니다. 위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "Failure Transparency",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 Media Access Transparency'인데 이 선택지는 'Failure Transparency'이므로 일치하지 않습니다. 위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "Media Access Transparency",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 Media Access Transparency'와 일치합니다. Media Access Transparency는 분산 DB의 표준 투명성에 포함되지 않는 용어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 50. 분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은?",
+          "핵심 개념을 떠올립니다. 분산 DB 투명성, 위치 투명성, 중복 투명성",
+          "정답 판단 근거를 적용합니다. Media Access Transparency는 분산 DB의 표준 투명성에 포함되지 않는 용어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+        ],
+        "exam_traps": [
+          "위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 DB 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '위치 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '중복 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 위-중-병-장 (위중한 병장)"
+        ],
+        "detailed_summary": "분산 데이터베이스 시스템의 4대 투명성을 묻는 문제입니다. 전문가의 조언 | 분산 데이터베이스의 투명성에는 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 50. 분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 Media Access Transparency'와 일치합니다. Media Access Transparency는 분산 DB의 표준 투명성에 포함되지 않는 용어입니다. 시험 포인트는 위치(Location), 중복(Replication), 장애(Failure), 병행(Concurrency) 투명성은 분산 DB의 핵심 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "투명성",
+        "위치 투명성",
+        "중복 투명성"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_63ab675fd1dfe707",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0166_p0171"
+        ],
+        "source_pages": [
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "page_span": {
+          "start_page": 166,
+          "end_page": 171
+        },
+        "source_explanation": "전문가의 조언 | CASCADE는 삭제할 요소를 참조하는 다른 모든 개체를 함께 삭제하므로 V_1을 삭제하면 V_2도 함께 삭제됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "테이블 두 개를 조인하여 뷰 V_1을 정의하고, V_1을 이용하여 뷰 V_2를 정의하였다. 다음 명령 수행 후 결과로 옳은 것은?\nDROP VIEW V_1 CASCADE;",
+        "choices": [
+          {
+            "label": "1",
+            "text": "V_1만 삭제된다."
+          },
+          {
+            "label": "2",
+            "text": "V_2만 삭제된다."
+          },
+          {
+            "label": "3",
+            "text": "V_1과 V_2 모두 삭제된다."
+          },
+          {
+            "label": "4",
+            "text": "V_1과 V_2 모두 삭제되지 않는다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "V_1과 V_2 모두 삭제된다."
+        ],
+        "answer_text": "V_1과 V_2 모두 삭제된다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | CASCADE는 삭제할 요소를 참조하는 다른 모든 개체를 함께 삭제하므로 V_1을 삭제하면 V_2도 함께 삭제됩니다.",
+        "summary": "SQL의 DROP 명령에서 CASCADE 옵션의 동작 방식을 묻는 문제입니다.",
+        "why_correct": [
+          "CASCADE 옵션은 삭제하려는 객체를 참조하고 있는 다른 객체들까지 연쇄적으로 삭제합니다. V_2가 V_1을 기반으로 생성되었으므로 V_1 삭제 시 V_2도 함께 삭제됩니다."
+        ],
+        "why_others_wrong": [
+          "RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+        ],
+        "key_concepts": [
+          "CASCADE",
+          "RESTRICT",
+          "참조 관계"
+        ],
+        "memory_cues": [
+          "CASCADE = 폭포처럼 연쇄적으로 쏟아져 내려가며 삭제한다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "V_1만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 V_1과 V_2 모두 삭제된다.'인데 이 선택지는 'V_1만 삭제된다.'이므로 일치하지 않습니다. RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+          },
+          {
+            "label": "2",
+            "text": "V_2만 삭제된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 V_1과 V_2 모두 삭제된다.'인데 이 선택지는 'V_2만 삭제된다.'이므로 일치하지 않습니다. RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+          },
+          {
+            "label": "3",
+            "text": "V_1과 V_2 모두 삭제된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 V_1과 V_2 모두 삭제된다.'와 일치합니다. CASCADE 옵션은 삭제하려는 객체를 참조하고 있는 다른 객체들까지 연쇄적으로 삭제합니다. V_2가 V_1을 기반으로 생성되었으므로 V_1 삭제 시 V_2도 함께 삭제됩니다."
+          },
+          {
+            "label": "4",
+            "text": "V_1과 V_2 모두 삭제되지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 V_1과 V_2 모두 삭제된다.'인데 이 선택지는 'V_1과 V_2 모두 삭제되지 않는다.'이므로 일치하지 않습니다. RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테이블 두 개를 조인하여 뷰 V_1을 정의하고, V_1을 이용하여 뷰 V_2를 정의하였다. 다음 명령 수행 후 결과로 옳은 것은? DROP VIEW V_1 CASCADE;",
+          "핵심 개념을 떠올립니다. CASCADE, RESTRICT, 참조 관계",
+          "정답 판단 근거를 적용합니다. CASCADE 옵션은 삭제하려는 객체를 참조하고 있는 다른 객체들까지 연쇄적으로 삭제합니다. V_2가 V_1을 기반으로 생성되었으므로 V_1 삭제 시 V_2도 함께 삭제됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+        ],
+        "exam_traps": [
+          "RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'CASCADE'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'RESTRICT'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '참조 관계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. CASCADE = 폭포처럼 연쇄적으로 쏟아져 내려가며 삭제한다."
+        ],
+        "detailed_summary": "SQL의 DROP 명령에서 CASCADE 옵션의 동작 방식을 묻는 문제입니다. 전문가의 조언 | CASCADE는 삭제할 요소를 참조하는 다른 모든 개체를 함께 삭제하므로 V_1을 삭제하면 V_2도 함께 삭제됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테이블 두 개를 조인하여 뷰 V_1을 정의하고, V_1을 이용하여 뷰 V_2를 정의하였다. 다음 명령 수행 후 결과로 옳은 것은? DROP VIEW V_1 CASCADE; 정답입니다. 이 선택지는 실제 정답인 '3번 V_1과 V_2 모두 삭제된다.'와 일치합니다. CASCADE 옵션은 삭제하려는 객체를 참조하고 있는 다른 객체들까지 연쇄적으로 삭제합니다. V_2가 V_1을 기반으로 생성되었으므로 V_1 삭제 시 V_2도 함께 삭제됩니다. 시험 포인트는 RESTRICT 옵션을 사용했다면 참조하는 객체가 있을 경우 삭제가 거부되지만, CASCADE는 모두 삭제합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "DROP VIEW",
+        "CASCADE",
+        "참조 무결성",
+        "뷰 삭제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1533a1c2125cf3f0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          185
+        ],
+        "page_span": {
+          "start_page": 185,
+          "end_page": 185
+        },
+        "source_explanation": "분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다."
+          },
+          {
+            "label": "3",
+            "text": "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+        ],
+        "answer_text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다."
+      },
+      "explanation": {
+        "source_text": "분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다.",
+        "summary": "분산 데이터베이스 시스템의 장단점을 묻는 문제입니다.",
+        "why_correct": [
+          "데이터가 여러 곳에 흩어져 있으므로 데이터베이스 설계가 매우 복잡하고 소프트웨어 개발 난이도가 높다는 것이 주요 단점입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+        ],
+        "key_concepts": [
+          "분산 데이터베이스의 투명성",
+          "분산 데이터베이스의 장단점"
+        ],
+        "memory_cues": [
+          "분산되면 관리가 어렵다(설계 어려움)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '지역 서버의 고유 데이터에 대한 작업은 중앙 서버의 통제 없이 자유롭게 수행할 수 있다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+          },
+          {
+            "label": "2",
+            "text": "새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '새로운 지역 서버를 추가하거나 장비를 추가하는 등의 작업이 용이하다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+          },
+          {
+            "label": "3",
+            "text": "위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'인데 이 선택지는 '위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성을 목표로 한다.'이므로 일치하지 않습니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+          },
+          {
+            "label": "4",
+            "text": "데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'와 일치합니다. 데이터가 여러 곳에 흩어져 있으므로 데이터베이스 설계가 매우 복잡하고 소프트웨어 개발 난이도가 높다는 것이 주요 단점입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스의 특징에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 분산 데이터베이스의 투명성, 분산 데이터베이스의 장단점",
+          "정답 판단 근거를 적용합니다. 데이터가 여러 곳에 흩어져 있으므로 데이터베이스 설계가 매우 복잡하고 소프트웨어 개발 난이도가 높다는 것이 주요 단점입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '분산 데이터베이스의 투명성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '분산 데이터베이스의 장단점'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 분산되면 관리가 어렵다(설계 어려움)"
+        ],
+        "detailed_summary": "분산 데이터베이스 시스템의 장단점을 묻는 문제입니다. 분산 데이터베이스는 데이터베이스 설계 및 소프트웨어 개발이 어렵습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 분산 데이터베이스의 특징에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 데이터베이스 설계 및 소프트웨어 개발이 쉽고, 전반적인 시스템의 성능이 향상된다.'와 일치합니다. 데이터가 여러 곳에 흩어져 있으므로 데이터베이스 설계가 매우 복잡하고 소프트웨어 개발 난이도가 높다는 것이 주요 단점입니다. 시험 포인트는 1, 2번은 분산 DB의 장점(지역 자치성, 확장성)이며, 3번은 분산 DB가 추구하는 4대 투명성 목표입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "분산 데이터베이스",
+        "투명성",
+        "설계 복잡도"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b7aec6df1f8b09b9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          185
+        ],
+        "page_span": {
+          "start_page": 185,
+          "end_page": 185
+        },
+        "source_explanation": "지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은 범위 분할(Range Partitioning)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "데이터베이스 구축",
+          "뷰·파티션·분산 데이터베이스"
+        ],
+        "chapter_label": "뷰·파티션·분산 데이터베이스",
+        "chapter_key": "데이터베이스 구축 > 뷰·파티션·분산 데이터베이스",
+        "chapter_id": "chapter_218"
+      },
+      "exam_taxonomy": {
+        "subject_id": 3,
+        "subject_name": "데이터베이스 구축",
+        "topic_id": "topic_049",
+        "topic_title": "뷰·파티션·분산 데이터베이스",
+        "draft_subject_name": "데이터베이스 구축",
+        "draft_topic_name": "뷰·파티션·분산 데이터베이스",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "파티셔닝 방식 중 '월별, 분기별'과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Range Partitioning"
+          },
+          {
+            "label": "2",
+            "text": "Hash Partitioning"
+          },
+          {
+            "label": "3",
+            "text": "Composite Partitioning"
+          },
+          {
+            "label": "4",
+            "text": "List Partitioning"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "Range Partitioning"
+        ],
+        "answer_text": "Range Partitioning"
+      },
+      "explanation": {
+        "source_text": "지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은 범위 분할(Range Partitioning)입니다.",
+        "summary": "데이터베이스 파티셔닝 전략 중 하나를 찾는 문제입니다.",
+        "why_correct": [
+          "날짜(월별, 분기별)나 숫자 범위처럼 연속된 값의 범위를 기준으로 데이터를 나누는 것은 '범위 분할(Range Partitioning)'입니다."
+        ],
+        "why_others_wrong": [
+          "Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+        ],
+        "key_concepts": [
+          "데이터베이스 파티셔닝 종류"
+        ],
+        "memory_cues": [
+          "범위(Range) = 월별, 분기별"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Range Partitioning",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 Range Partitioning'와 일치합니다. 날짜(월별, 분기별)나 숫자 범위처럼 연속된 값의 범위를 기준으로 데이터를 나누는 것은 '범위 분할(Range Partitioning)'입니다."
+          },
+          {
+            "label": "2",
+            "text": "Hash Partitioning",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Range Partitioning'인데 이 선택지는 'Hash Partitioning'이므로 일치하지 않습니다. Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "Composite Partitioning",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Range Partitioning'인데 이 선택지는 'Composite Partitioning'이므로 일치하지 않습니다. Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "List Partitioning",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 Range Partitioning'인데 이 선택지는 'List Partitioning'이므로 일치하지 않습니다. Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파티셔닝 방식 중 '월별, 분기별'과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은?",
+          "핵심 개념을 떠올립니다. 데이터베이스 파티셔닝 종류",
+          "정답 판단 근거를 적용합니다. 날짜(월별, 분기별)나 숫자 범위처럼 연속된 값의 범위를 기준으로 데이터를 나누는 것은 '범위 분할(Range Partitioning)'입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+        ],
+        "exam_traps": [
+          "Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '데이터베이스 파티셔닝 종류'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 범위(Range) = 월별, 분기별"
+        ],
+        "detailed_summary": "데이터베이스 파티셔닝 전략 중 하나를 찾는 문제입니다. 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은 범위 분할(Range Partitioning)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 파티셔닝 방식 중 '월별, 분기별'과 같이 지정한 열의 값을 기준으로 범위를 지정하여 분할하는 방식은? 정답입니다. 이 선택지는 실제 정답인 '1번 Range Partitioning'와 일치합니다. 날짜(월별, 분기별)나 숫자 범위처럼 연속된 값의 범위를 기준으로 데이터를 나누는 것은 '범위 분할(Range Partitioning)'입니다. 시험 포인트는 Hash는 해시 함수 기준, List는 특정 값 목록 기준, Composite는 두 방식을 혼합한 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파티셔닝",
+        "Range Partitioning",
+        "범위 분할"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

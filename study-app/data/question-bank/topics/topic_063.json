@@ -1,0 +1,2199 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_063",
+    "sequence": 63,
+    "title": "조건문과 반복문",
+    "subject_id": 4,
+    "subject_name": "프로그래밍 언어 활용",
+    "subject_emoji": "⌨️",
+    "subject_color": "#8B5CF6",
+    "question_count": 13,
+    "review_count": 4,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_366",
+      "chapter_143"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_9cd973400244d89d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          17,
+          18
+        ],
+        "page_span": {
+          "start_page": 17,
+          "end_page": 18
+        },
+        "source_explanation": "입력값이 'c'이므로 case 'c'로 이동하여 \"three \"를 출력합니다. 이후 break문을 만나 switch문을 종료하므로 결과는 three입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램 실행 후, 'c'를 입력하였을 때 출력 결과는?\n#include <stdio.h>\nmain() {\nchar ch;\nscanf(\"%c\", &ch);\nswitch (ch) {\ncase 'a':\nprintf(\"one \");\ncase 'b':\nprintf(\"two \");\ncase 'c':\nprintf(\"three \");\nbreak;\ncase 'd':\nprintf(\"four \");\nbreak;\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "one"
+          },
+          {
+            "label": "2",
+            "text": "one two"
+          },
+          {
+            "label": "3",
+            "text": "three"
+          },
+          {
+            "label": "4",
+            "text": "one two three four"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "three"
+        ],
+        "answer_text": "three"
+      },
+      "explanation": {
+        "source_text": "입력값이 'c'이므로 case 'c'로 이동하여 \"three \"를 출력합니다. 이후 break문을 만나 switch문을 종료하므로 결과는 three입니다.",
+        "summary": "C언어 switch-case문의 동작 원리와 break문의 역할을 이해하는 문제입니다.",
+        "why_correct": [
+          "입력 'c'는 case 'c'와 일치합니다. 해당 블록의 printf(\"three \")가 실행되고 바로 뒤의 break문에 의해 switch문을 빠져나갑니다."
+        ],
+        "why_others_wrong": [
+          "'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+        ],
+        "key_concepts": [
+          "switch-case 구조",
+          "break문의 역할 (제어 흐름 탈출)",
+          "Fall-through 현상 (break가 없을 때 아래 case까지 실행되는 현상)"
+        ],
+        "memory_cues": [
+          "switch문은 일치하는 case부터 시작해서 break를 만날 때까지 멈추지 않고 달립니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "one",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 three'인데 이 선택지는 'one'이므로 일치하지 않습니다. 'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+          },
+          {
+            "label": "2",
+            "text": "one two",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 three'인데 이 선택지는 'one two'이므로 일치하지 않습니다. 'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+          },
+          {
+            "label": "3",
+            "text": "three",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 three'와 일치합니다. 입력 'c'는 case 'c'와 일치합니다. 해당 블록의 printf(\"three \")가 실행되고 바로 뒤의 break문에 의해 switch문을 빠져나갑니다."
+          },
+          {
+            "label": "4",
+            "text": "one two three four",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 three'인데 이 선택지는 'one two three four'이므로 일치하지 않습니다. 'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램 실행 후, 'c'를 입력하였을 때 출력 결과는? #include <stdio.h> main() { char ch; scanf(\"%c\", &ch); switch (ch) { case 'a': printf(\"one \"); case 'b': printf(\"two \"); case 'c': printf(\"three \"); break; case 'd': printf(\"four \"); break; } }",
+          "핵심 개념을 떠올립니다. switch-case 구조, break문의 역할 (제어 흐름 탈출), Fall-through 현상 (break가 없을 때 아래 case까지 실행되는 현상)",
+          "정답 판단 근거를 적용합니다. 입력 'c'는 case 'c'와 일치합니다. 해당 블록의 printf(\"three \")가 실행되고 바로 뒤의 break문에 의해 switch문을 빠져나갑니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+        ],
+        "exam_traps": [
+          "'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'switch-case 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'break문의 역할 (제어 흐름 탈출)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Fall-through 현상 (break가 없을 때 아래 case까지 실행되는 현상)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. switch문은 일치하는 case부터 시작해서 break를 만날 때까지 멈추지 않고 달립니다."
+        ],
+        "detailed_summary": "C언어 switch-case문의 동작 원리와 break문의 역할을 이해하는 문제입니다. 입력값이 'c'이므로 case 'c'로 이동하여 \"three \"를 출력합니다. 이후 break문을 만나 switch문을 종료하므로 결과는 three입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램 실행 후, 'c'를 입력하였을 때 출력 결과는? #include <stdio.h> main() { char ch; scanf(\"%c\", &ch); switch (ch) { case 'a': printf(\"one \"); case 'b': printf(\"two \"); case 'c': printf(\"three \"); break; case 'd': printf(\"four \"); break; } } 정답입니다. 이 선택지는 실제 정답인 '3번 three'와 일치합니다. 입력 'c'는 case 'c'와 일치합니다. 해당 블록의 printf(\"three \")가 실행되고 바로 뒤의 break문에 의해 switch문을 빠져나갑니다. 시험 포인트는 'a'나 'b'를 입력했다면 break가 없는 구간을 지나 'three'까지 출력되었겠지만, 'c'부터 시작하므로 이전 case들은 무시됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "switch문",
+        "case문",
+        "break문",
+        "제어문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d28d897b30c59eb6",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0036_p0041"
+        ],
+        "source_pages": [
+          39
+        ],
+        "page_span": {
+          "start_page": 39,
+          "end_page": 39
+        },
+        "source_explanation": "1. mx = 1 < 2 ? 2 : 1 이므로 mx는 2가 됩니다.\n2. mx == 1 조건이 거짓이므로 else 문으로 이동합니다.\n3. mn = 2 < 2 ? 4 : 3 이므로 2 < 2는 거짓(false)이 되어 mn은 3이 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램이 실행되었을 때의 결과는?\npublic class ovr {\npublic static void main(String[] args) {\nint a = 1, b = 2, c = 3, d = 4;\nint mx, mn;\nmx = a < b ? b : a;\nif (mx == 1) {\nmn = a > mx ? b : a;\n} else {\nmn = b < mx ? d : c;\n}\nSystem.out.println(mn);\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "2"
+          },
+          {
+            "label": "3",
+            "text": "3"
+          },
+          {
+            "label": "4",
+            "text": "4"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "3"
+        ],
+        "answer_text": "3"
+      },
+      "explanation": {
+        "source_text": "1. mx = 1 < 2 ? 2 : 1 이므로 mx는 2가 됩니다.\n2. mx == 1 조건이 거짓이므로 else 문으로 이동합니다.\n3. mn = 2 < 2 ? 4 : 3 이므로 2 < 2는 거짓(false)이 되어 mn은 3이 됩니다.",
+        "summary": "Java의 삼항 연산자와 if-else 문 실행 흐름",
+        "why_correct": [
+          "mx가 2로 결정된 후, else 블록 내의 삼항 연산자에서 2 < 2가 거짓이므로 뒤의 값인 3이 선택됩니다."
+        ],
+        "why_others_wrong": [
+          "mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+        ],
+        "key_concepts": [
+          "삼항 연산자 (조건 ? 참 : 거짓)",
+          "if-else 구조"
+        ],
+        "memory_cues": [
+          "물음표 앞이 참이면 왼쪽, 거짓이면 오른쪽"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '1'이므로 일치하지 않습니다. mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+          },
+          {
+            "label": "2",
+            "text": "2",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '2'이므로 일치하지 않습니다. mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "3",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 3'와 일치합니다. mx가 2로 결정된 후, else 블록 내의 삼항 연산자에서 2 < 2가 거짓이므로 뒤의 값인 3이 선택됩니다."
+          },
+          {
+            "label": "4",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 3'인데 이 선택지는 '4'이므로 일치하지 않습니다. mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ? d : c; } System.out.println(mn); } }",
+          "핵심 개념을 떠올립니다. 삼항 연산자 (조건 ? 참 : 거짓), if-else 구조",
+          "정답 판단 근거를 적용합니다. mx가 2로 결정된 후, else 블록 내의 삼항 연산자에서 2 < 2가 거짓이므로 뒤의 값인 3이 선택됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+        ],
+        "exam_traps": [
+          "mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '삼항 연산자 (조건 ? 참 : 거짓)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'if-else 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 물음표 앞이 참이면 왼쪽, 거짓이면 오른쪽"
+        ],
+        "detailed_summary": "Java의 삼항 연산자와 if-else 문 실행 흐름 1. mx = 1 < 2 ? 2 : 1 이므로 mx는 2가 됩니다. 2. mx == 1 조건이 거짓이므로 else 문으로 이동합니다. 3. mn = 2 < 2 ? 4 : 3 이므로 2 < 2는 거짓(false)이 되어 mn은 3이 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때의 결과는? public class ovr { public static void main(String[] args) { int a = 1, b = 2, c = 3, d = 4; int mx, mn; mx = a < b ? b : a; if (mx == 1) { mn = a > mx ? b : a; } else { mn = b < mx ? d : c; } System.out.println(mn); } } 정답입니다. 이 선택지는 실제 정답인 '3번 3'와 일치합니다. mx가 2로 결정된 후, else 블록 내의 삼항 연산자에서 2 < 2가 거짓이므로 뒤의 값인 3이 선택됩니다. 시험 포인트는 mx가 1이라고 착각하거나, 2 < 2를 참으로 오해하면 다른 결과가 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "Java",
+        "삼항 연산자",
+        "조건문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8b5c3bd0d0999cab",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 코드의 실행 결과로 출력되는 sum의 값은 25입니다.\n반복 변수 i가 1에서 2씩 증가하면서 10보다 작거나 같은 동안 반복 수행합니다.\nsum에 i의 값을 누적합니다: 1 + 3 + 5 + 7 + 9 = 25."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "69. 다음 C 프로그램의 결과 값은?\nmain(void) {\nint i;\nint sum = 0;\nfor(i = 1; i <= 10; i = i + 2)\nsum = sum + i;\nprintf(\"%d\", sum);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "15"
+          },
+          {
+            "label": "2",
+            "text": "19"
+          },
+          {
+            "label": "3",
+            "text": "25"
+          },
+          {
+            "label": "4",
+            "text": "27"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "25"
+        ],
+        "answer_text": "25"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 코드의 실행 결과로 출력되는 sum의 값은 25입니다.\n반복 변수 i가 1에서 2씩 증가하면서 10보다 작거나 같은 동안 반복 수행합니다.\nsum에 i의 값을 누적합니다: 1 + 3 + 5 + 7 + 9 = 25.",
+        "summary": "C언어의 for 반복문을 이용한 홀수 합계 계산 문제입니다.",
+        "why_correct": [
+          "i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum은 1+3+5+7+9 = 25가 됩니다."
+        ],
+        "why_others_wrong": [
+          "i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+        ],
+        "key_concepts": [
+          "for 루프",
+          "증감식",
+          "누적 연산"
+        ],
+        "memory_cues": [
+          "1~10 사이 홀수 합 = 5^2 = 25"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "15",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '15'이므로 일치하지 않습니다. i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+          },
+          {
+            "label": "2",
+            "text": "19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '19'이므로 일치하지 않습니다. i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+          },
+          {
+            "label": "3",
+            "text": "25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum은 1+3+5+7+9 = 25가 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "27",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '27'이므로 일치하지 않습니다. i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); }",
+          "핵심 개념을 떠올립니다. for 루프, 증감식, 누적 연산",
+          "정답 판단 근거를 적용합니다. i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum은 1+3+5+7+9 = 25가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+        ],
+        "exam_traps": [
+          "i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'for 루프'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '증감식'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '누적 연산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 1~10 사이 홀수 합 = 5^2 = 25"
+        ],
+        "detailed_summary": "C언어의 for 반복문을 이용한 홀수 합계 계산 문제입니다. 전문가의 조언 | 코드의 실행 결과로 출력되는 sum의 값은 25입니다. 반복 변수 i가 1에서 2씩 증가하면서 10보다 작거나 같은 동안 반복 수행합니다. sum에 i의 값을 누적합니다: 1 + 3 + 5 + 7 + 9 = 25. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 69. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); } 정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum은 1+3+5+7+9 = 25가 됩니다. 시험 포인트는 i가 11이 되면 조건(i <= 10)을 만족하지 않아 반복이 종료됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "code block dependency",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "C언어",
+        "for 반복문",
+        "누적 합계"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0076",
+            "page_number": 76,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 921139,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0077",
+            "page_number": 77,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0077.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 917204,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0078",
+            "page_number": 78,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0078.png",
+            "content_type": "image/png",
+            "width": 1035,
+            "height": 1384,
+            "file_size_bytes": 955911,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0079",
+            "page_number": 79,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0079.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 1080141,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0080",
+            "page_number": 80,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0080.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1385,
+            "file_size_bytes": 930727,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0081",
+            "page_number": 81,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0081.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 936783,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0076",
+          "page_number": 76,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0076.png",
+          "content_type": "image/png",
+          "width": 1036,
+          "height": 1384,
+          "file_size_bytes": 921139,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_ea18b8d7e5e1ec93",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "for문에서 i가 1부터 10까지 2씩 증가하며 반복됩니다. i의 값은 1, 3, 5, 7, 9가 되며, sum은 1+3+5+7+9 = 25가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C 프로그램의 결과 값은?\nmain(void) {\nint i;\nint sum = 0;\nfor(i = 1; i <= 10; i = i + 2)\nsum = sum + i;\nprintf(\"%d\", sum);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "15"
+          },
+          {
+            "label": "2",
+            "text": "19"
+          },
+          {
+            "label": "3",
+            "text": "25"
+          },
+          {
+            "label": "4",
+            "text": "27"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "25"
+        ],
+        "answer_text": "25"
+      },
+      "explanation": {
+        "source_text": "for문에서 i가 1부터 10까지 2씩 증가하며 반복됩니다. i의 값은 1, 3, 5, 7, 9가 되며, sum은 1+3+5+7+9 = 25가 됩니다.",
+        "summary": "C언어의 for 반복문 실행 결과를 예측하는 문제입니다.",
+        "why_correct": [
+          "i가 1, 3, 5, 7, 9일 때 루프가 실행되어 sum에 더해지므로 결과는 25입니다."
+        ],
+        "why_others_wrong": [
+          "증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+        ],
+        "key_concepts": [
+          "for 루프",
+          "증감 연산"
+        ],
+        "memory_cues": [
+          "루프 변수의 변화를 하나씩 따라가기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "15",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '15'이므로 일치하지 않습니다. 증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+          },
+          {
+            "label": "2",
+            "text": "19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '19'이므로 일치하지 않습니다. 증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1, 3, 5, 7, 9일 때 루프가 실행되어 sum에 더해지므로 결과는 25입니다."
+          },
+          {
+            "label": "4",
+            "text": "27",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '27'이므로 일치하지 않습니다. 증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); }",
+          "핵심 개념을 떠올립니다. for 루프, 증감 연산",
+          "정답 판단 근거를 적용합니다. i가 1, 3, 5, 7, 9일 때 루프가 실행되어 sum에 더해지므로 결과는 25입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+        ],
+        "exam_traps": [
+          "증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'for 루프'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '증감 연산'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 루프 변수의 변화를 하나씩 따라가기"
+        ],
+        "detailed_summary": "C언어의 for 반복문 실행 결과를 예측하는 문제입니다. for문에서 i가 1부터 10까지 2씩 증가하며 반복됩니다. i의 값은 1, 3, 5, 7, 9가 되며, sum은 1+3+5+7+9 = 25가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); } 정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1, 3, 5, 7, 9일 때 루프가 실행되어 sum에 더해지므로 결과는 25입니다. 시험 포인트는 증감식 i=i+2를 간과하거나 반복 횟수를 잘못 계산하면 오답이 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "for문",
+        "반복문",
+        "누적 합계"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ce9d4668c0110a38",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0091_p0096"
+        ],
+        "source_pages": [
+          91,
+          92
+        ],
+        "page_span": {
+          "start_page": 91,
+          "end_page": 92
+        },
+        "source_explanation": "전문가의 조언 | 괄호(①, ②)에 순서대로 들어갈 내용은 %, else입니다. 사용된 코드의 의미는 다음과 같습니다.\n- 정수형 변수 num을 선언한다.\n- 키보드로 정수를 입력받아 변수 num에 저장한다.\n- num을 2로 나눈 나머지가 1이면 홀수입니다를 출력하고 아니면 else로 이동한다.\n- 홀수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다.\n- if 조건이 거짓일 경우 실행할 문장의 시작점이다.\n- 짝수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "64. 다음은 키보드로 숫자를 입력받아 홀수인지 짝수인지 판별하여 출력하는 코드를 C 언어로 구현한 것이다. 괄호(①, ②)에 순서대로 들어갈 내용으로 알맞은 것은?\n#include <stdio.h>\nint main() {\nint num;\nscanf(\"%d\", &num);\nif (num ( ① ) 2 == 1) {\nprintf(\"홀수입니다.\\n\");\n}\n( ② ) {\nprintf(\"짝수입니다.\\n\");\n}\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "%, else"
+          },
+          {
+            "label": "2",
+            "text": "%, else if"
+          },
+          {
+            "label": "3",
+            "text": "/, else"
+          },
+          {
+            "label": "4",
+            "text": "/, else if"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "%, else"
+        ],
+        "answer_text": "%, else"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 괄호(①, ②)에 순서대로 들어갈 내용은 %, else입니다. 사용된 코드의 의미는 다음과 같습니다.\n- 정수형 변수 num을 선언한다.\n- 키보드로 정수를 입력받아 변수 num에 저장한다.\n- num을 2로 나눈 나머지가 1이면 홀수입니다를 출력하고 아니면 else로 이동한다.\n- 홀수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다.\n- if 조건이 거짓일 경우 실행할 문장의 시작점이다.\n- 짝수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다.",
+        "summary": "C언어의 나머지 연산자와 조건문 구조를 묻는 문제입니다.",
+        "why_correct": [
+          "홀수/짝수 판별을 위해 2로 나눈 나머지를 구하는 '%' 연산자가 필요하며, if 조건이 아닐 때 실행되는 구문은 'else'입니다."
+        ],
+        "why_others_wrong": [
+          "'/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+        ],
+        "key_concepts": [
+          "나머지 연산자(%)",
+          "if-else 구조"
+        ],
+        "memory_cues": [
+          "나머지는 %, 아니면 else"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "%, else",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 %, else'와 일치합니다. 홀수/짝수 판별을 위해 2로 나눈 나머지를 구하는 '%' 연산자가 필요하며, if 조건이 아닐 때 실행되는 구문은 'else'입니다."
+          },
+          {
+            "label": "2",
+            "text": "%, else if",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %, else'인데 이 선택지는 '%, else if'이므로 일치하지 않습니다. '/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+          },
+          {
+            "label": "3",
+            "text": "/, else",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %, else'인데 이 선택지는 '/, else'이므로 일치하지 않습니다. '/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+          },
+          {
+            "label": "4",
+            "text": "/, else if",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 %, else'인데 이 선택지는 '/, else if'이므로 일치하지 않습니다. '/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. 다음은 키보드로 숫자를 입력받아 홀수인지 짝수인지 판별하여 출력하는 코드를 C 언어로 구현한 것이다. 괄호(①, ②)에 순서대로 들어갈 내용으로 알맞은 것은? #include <stdio.h> int main() { int num; scanf(\"%d\", &num); if (num ( ① ) 2 == 1) { printf(\"홀수입니다.\\n\"); } ( ② ) { printf(\"짝수입니다.\\n\"); } }",
+          "핵심 개념을 떠올립니다. 나머지 연산자(%), if-else 구조",
+          "정답 판단 근거를 적용합니다. 홀수/짝수 판별을 위해 2로 나눈 나머지를 구하는 '%' 연산자가 필요하며, if 조건이 아닐 때 실행되는 구문은 'else'입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. '/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+        ],
+        "exam_traps": [
+          "'/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '나머지 연산자(%)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'if-else 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 나머지는 %, 아니면 else"
+        ],
+        "detailed_summary": "C언어의 나머지 연산자와 조건문 구조를 묻는 문제입니다. 전문가의 조언 | 괄호(①, ②)에 순서대로 들어갈 내용은 %, else입니다. 사용된 코드의 의미는 다음과 같습니다. - 정수형 변수 num을 선언한다. - 키보드로 정수를 입력받아 변수 num에 저장한다. - num을 2로 나눈 나머지가 1이면 홀수입니다를 출력하고 아니면 else로 이동한다. - 홀수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다. - if 조건이 거짓일 경우 실행할 문장의 시작점이다. - 짝수입니다를 출력한 후 커서를 다음 줄의 처음으로 이동한다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 64. 다음은 키보드로 숫자를 입력받아 홀수인지 짝수인지 판별하여 출력하는 코드를 C 언어로 구현한 것이다. 괄호(①, ②)에 순서대로 들어갈 내용으로 알맞은 것은? #include <stdio.h> int main() { int num; scanf(\"%d\", &num); if (num ( ① ) 2 == 1) { printf(\"홀수입니다.\\n\"); } ( ② ) { printf(\"짝수입니다.\\n\"); } } 정답입니다. 이 선택지는 실제 정답인 '1번 %, else'와 일치합니다. 홀수/짝수 판별을 위해 2로 나눈 나머지를 구하는 '%' 연산자가 필요하며, if 조건이 아닐 때 실행되는 구문은 'else'입니다. 시험 포인트는 '/'는 몫을 구하는 연산자이며, 'else if'는 추가 조건이 필요할 때 사용합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "나머지 연산자",
+        "조건문",
+        "if-else"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d9c66635c0dfb536",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          113
+        ],
+        "page_span": {
+          "start_page": 113,
+          "end_page": 113
+        },
+        "source_explanation": "i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum에 누적됩니다. 1+3+5+7+9 = 25입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C 프로그램의 결과 값은?\nmain(void) {\nint i;\nint sum = 0;\nfor(i = 1; i <= 10; i = i + 2)\nsum = sum + i;\nprintf(\"%d\", sum);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "15"
+          },
+          {
+            "label": "2",
+            "text": "19"
+          },
+          {
+            "label": "3",
+            "text": "25"
+          },
+          {
+            "label": "4",
+            "text": "27"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "25"
+        ],
+        "answer_text": "25"
+      },
+      "explanation": {
+        "source_text": "i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum에 누적됩니다. 1+3+5+7+9 = 25입니다.",
+        "summary": "C언어의 for 반복문을 이용한 홀수 합계 계산 문제입니다.",
+        "why_correct": [
+          "i가 1부터 시작하여 2씩 증가하므로 1, 3, 5, 7, 9까지 반복됩니다. 이 값들을 모두 더하면 25가 됩니다."
+        ],
+        "why_others_wrong": [
+          "i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+        ],
+        "key_concepts": [
+          "for 루프",
+          "증감식"
+        ],
+        "memory_cues": [
+          "1+3+5+7+9 = 25"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "15",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '15'이므로 일치하지 않습니다. i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+          },
+          {
+            "label": "2",
+            "text": "19",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '19'이므로 일치하지 않습니다. i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+          },
+          {
+            "label": "3",
+            "text": "25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1부터 시작하여 2씩 증가하므로 1, 3, 5, 7, 9까지 반복됩니다. 이 값들을 모두 더하면 25가 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "27",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 25'인데 이 선택지는 '27'이므로 일치하지 않습니다. i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); }",
+          "핵심 개념을 떠올립니다. for 루프, 증감식",
+          "정답 판단 근거를 적용합니다. i가 1부터 시작하여 2씩 증가하므로 1, 3, 5, 7, 9까지 반복됩니다. 이 값들을 모두 더하면 25가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+        ],
+        "exam_traps": [
+          "i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'for 루프'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '증감식'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 1+3+5+7+9 = 25"
+        ],
+        "detailed_summary": "C언어의 for 반복문을 이용한 홀수 합계 계산 문제입니다. i가 1, 3, 5, 7, 9일 때 반복문이 실행되어 sum에 누적됩니다. 1+3+5+7+9 = 25입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 프로그램의 결과 값은? main(void) { int i; int sum = 0; for(i = 1; i <= 10; i = i + 2) sum = sum + i; printf(\"%d\", sum); } 정답입니다. 이 선택지는 실제 정답인 '3번 25'와 일치합니다. i가 1부터 시작하여 2씩 증가하므로 1, 3, 5, 7, 9까지 반복됩니다. 이 값들을 모두 더하면 25가 됩니다. 시험 포인트는 i가 10을 넘는 11이 되면 조건식이 거짓이 되어 반복이 종료됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "for문",
+        "반복문",
+        "누적 합계"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_67e393e47c21d6fc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          114
+        ],
+        "page_span": {
+          "start_page": 114,
+          "end_page": 114
+        },
+        "source_explanation": "C 언어나 JAVA에서 현재 반복문을 완전히 빠져나갈 때 사용하는 명령문은 break입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C 언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "continue"
+          },
+          {
+            "label": "2",
+            "text": "escape"
+          },
+          {
+            "label": "3",
+            "text": "break"
+          },
+          {
+            "label": "4",
+            "text": "exit"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "break"
+        ],
+        "answer_text": "break"
+      },
+      "explanation": {
+        "source_text": "C 언어나 JAVA에서 현재 반복문을 완전히 빠져나갈 때 사용하는 명령문은 break입니다.",
+        "summary": "반복문의 흐름을 제어하는 키워드에 관한 문제입니다.",
+        "why_correct": [
+          "break 문은 루프(for, while, do-while)나 switch 문을 즉시 종료하고 다음 코드로 넘어갑니다."
+        ],
+        "why_others_wrong": [
+          "continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다.",
+          "escape는 표준 C 반복문 제어 키워드가 아닙니다.",
+          "exit는 프로그램 전체를 종료하는 함수입니다."
+        ],
+        "key_concepts": [
+          "break",
+          "continue"
+        ],
+        "memory_cues": [
+          "break = 탈출, continue = 건너뛰기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "continue",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'continue'이므로 일치하지 않습니다. continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다. escape는 표준 C 반복문 제어 키워드가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "escape",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'escape'이므로 일치하지 않습니다. continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다. escape는 표준 C 반복문 제어 키워드가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "break",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 루프(for, while, do-while)나 switch 문을 즉시 종료하고 다음 코드로 넘어갑니다."
+          },
+          {
+            "label": "4",
+            "text": "exit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'exit'이므로 일치하지 않습니다. continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다. escape는 표준 C 반복문 제어 키워드가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C 언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+          "핵심 개념을 떠올립니다. break, continue",
+          "정답 판단 근거를 적용합니다. break 문은 루프(for, while, do-while)나 switch 문을 즉시 종료하고 다음 코드로 넘어갑니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다."
+        ],
+        "exam_traps": [
+          "continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'break'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'continue'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. break = 탈출, continue = 건너뛰기"
+        ],
+        "detailed_summary": "반복문의 흐름을 제어하는 키워드에 관한 문제입니다. C 언어나 JAVA에서 현재 반복문을 완전히 빠져나갈 때 사용하는 명령문은 break입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C 언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은? 정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 루프(for, while, do-while)나 switch 문을 즉시 종료하고 다음 코드로 넘어갑니다. 시험 포인트는 continue는 현재 반복의 남은 부분을 건너뛰고 다음 반복 회차로 넘어갑니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "break",
+        "반복문 제어",
+        "분기문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1f020f3d21c2c661",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0111_p0116"
+        ],
+        "source_pages": [
+          115,
+          116
+        ],
+        "page_span": {
+          "start_page": 115,
+          "end_page": 116
+        },
+        "source_explanation": "do-while 문은 조건을 나중에 검사하므로 r=1이 된 후 r<=0 조건을 검사하여 반복을 종료합니다. 이후 if(r==1) 조건이 참이 되어 r은 2가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C 언어 프로그램의 결과로 옳은 것은?\n#include <stdio.h>\nmain() {\nint r = 0;\ndo {\nr = r + 1;\n} while (r <= 0);\nif (r == 1)\nr++;\nelse\nr = r + 3;\nprintf(\"%d\", r);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "1"
+          },
+          {
+            "label": "2",
+            "text": "2"
+          },
+          {
+            "label": "3",
+            "text": "3"
+          },
+          {
+            "label": "4",
+            "text": "4"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "2"
+        ],
+        "answer_text": "2"
+      },
+      "explanation": {
+        "source_text": "do-while 문은 조건을 나중에 검사하므로 r=1이 된 후 r<=0 조건을 검사하여 반복을 종료합니다. 이후 if(r==1) 조건이 참이 되어 r은 2가 됩니다.",
+        "summary": "C언어의 do-while 반복문과 if 조건문의 실행 흐름을 파악하는 문제입니다.",
+        "why_correct": [
+          "do-while은 최소 한 번 실행되므로 r은 1이 됩니다. 조건 1 <= 0이 거짓이므로 루프를 빠져나오고, r이 1이므로 r++가 실행되어 최종값은 2가 됩니다."
+        ],
+        "why_others_wrong": [
+          "while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+        ],
+        "key_concepts": [
+          "do-while",
+          "if-else"
+        ],
+        "memory_cues": [
+          "do-while은 선실행 후검사"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 2'인데 이 선택지는 '1'이므로 일치하지 않습니다. while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+          },
+          {
+            "label": "2",
+            "text": "2",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 2'와 일치합니다. do-while은 최소 한 번 실행되므로 r은 1이 됩니다. 조건 1 <= 0이 거짓이므로 루프를 빠져나오고, r이 1이므로 r++가 실행되어 최종값은 2가 됩니다."
+          },
+          {
+            "label": "3",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 2'인데 이 선택지는 '3'이므로 일치하지 않습니다. while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+          },
+          {
+            "label": "4",
+            "text": "4",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 2'인데 이 선택지는 '4'이므로 일치하지 않습니다. while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { int r = 0; do { r = r + 1; } while (r <= 0); if (r == 1) r++; else r = r + 3; printf(\"%d\", r); }",
+          "핵심 개념을 떠올립니다. do-while, if-else",
+          "정답 판단 근거를 적용합니다. do-while은 최소 한 번 실행되므로 r은 1이 됩니다. 조건 1 <= 0이 거짓이므로 루프를 빠져나오고, r이 1이므로 r++가 실행되어 최종값은 2가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+        ],
+        "exam_traps": [
+          "while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'do-while'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'if-else'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. do-while은 선실행 후검사"
+        ],
+        "detailed_summary": "C언어의 do-while 반복문과 if 조건문의 실행 흐름을 파악하는 문제입니다. do-while 문은 조건을 나중에 검사하므로 r=1이 된 후 r<=0 조건을 검사하여 반복을 종료합니다. 이후 if(r==1) 조건이 참이 되어 r은 2가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C 언어 프로그램의 결과로 옳은 것은? #include <stdio.h> main() { int r = 0; do { r = r + 1; } while (r <= 0); if (r == 1) r++; else r = r + 3; printf(\"%d\", r); } 정답입니다. 이 선택지는 실제 정답인 '2번 2'와 일치합니다. do-while은 최소 한 번 실행되므로 r은 1이 됩니다. 조건 1 <= 0이 거짓이므로 루프를 빠져나오고, r이 1이므로 r++가 실행되어 최종값은 2가 됩니다. 시험 포인트는 while 문과 달리 do-while은 조건을 나중에 보므로 r=1 단계가 반드시 실행됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "페이지 분할 위험"
+        ]
+      },
+      "keywords": [
+        "C언어",
+        "do-while",
+        "조건문",
+        "반복문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_564be5c39a523a4e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          149
+        ],
+        "page_span": {
+          "start_page": 149,
+          "end_page": 149
+        },
+        "source_explanation": "전문가의 조언 | C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_143"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "63. C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "continue"
+          },
+          {
+            "label": "2",
+            "text": "escape"
+          },
+          {
+            "label": "3",
+            "text": "break"
+          },
+          {
+            "label": "4",
+            "text": "exit"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "break"
+        ],
+        "answer_text": "break"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다.",
+        "summary": "반복문 제어 키워드를 묻는 문제입니다.",
+        "why_correct": [
+          "break 문은 가장 가까운 반복문(for, while)이나 switch 문을 즉시 종료하고 빠져나오게 합니다."
+        ],
+        "why_others_wrong": [
+          "continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+        ],
+        "key_concepts": [
+          "break",
+          "continue"
+        ],
+        "memory_cues": [
+          "탈출 = break (부수고 나감)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "continue",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'continue'이므로 일치하지 않습니다. continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "escape",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'escape'이므로 일치하지 않습니다. continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "break",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 가장 가까운 반복문(for, while)이나 switch 문을 즉시 종료하고 빠져나오게 합니다."
+          },
+          {
+            "label": "4",
+            "text": "exit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'exit'이므로 일치하지 않습니다. continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+          "핵심 개념을 떠올립니다. break, continue",
+          "정답 판단 근거를 적용합니다. break 문은 가장 가까운 반복문(for, while)이나 switch 문을 즉시 종료하고 빠져나오게 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+        ],
+        "exam_traps": [
+          "continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'break'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'continue'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 탈출 = break (부수고 나감)"
+        ],
+        "detailed_summary": "반복문 제어 키워드를 묻는 문제입니다. 전문가의 조언 | C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 63. C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은? 정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 가장 가까운 반복문(for, while)이나 switch 문을 즉시 종료하고 빠져나오게 합니다. 시험 포인트는 continue는 다음 반복으로 건너뛰기, exit는 프로그램 전체 종료, escape는 표준 C 키워드가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "반복문",
+        "break",
+        "제어문"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_ff55b52170899bdc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          151
+        ],
+        "page_span": {
+          "start_page": 151,
+          "end_page": 151
+        },
+        "source_explanation": "C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "continue"
+          },
+          {
+            "label": "2",
+            "text": "escape"
+          },
+          {
+            "label": "3",
+            "text": "break"
+          },
+          {
+            "label": "4",
+            "text": "exit"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "break"
+        ],
+        "answer_text": "break"
+      },
+      "explanation": {
+        "source_text": "C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다.",
+        "summary": "반복문의 실행을 중단하고 탈출하는 키워드를 묻는 문제입니다.",
+        "why_correct": [
+          "break 문은 switch 문이나 반복문(for, while, do-while)의 실행을 즉시 중단하고 다음 코드로 넘어갑니다."
+        ],
+        "why_others_wrong": [
+          "continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+        ],
+        "key_concepts": [
+          "반복문 제어",
+          "break",
+          "continue"
+        ],
+        "memory_cues": [
+          "탈출(Break out) -> break"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "continue",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'continue'이므로 일치하지 않습니다. continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "escape",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'escape'이므로 일치하지 않습니다. continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "break",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 switch 문이나 반복문(for, while, do-while)의 실행을 즉시 중단하고 다음 코드로 넘어갑니다."
+          },
+          {
+            "label": "4",
+            "text": "exit",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 break'인데 이 선택지는 'exit'이므로 일치하지 않습니다. continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은?",
+          "핵심 개념을 떠올립니다. 반복문 제어, break, continue",
+          "정답 판단 근거를 적용합니다. break 문은 switch 문이나 반복문(for, while, do-while)의 실행을 즉시 중단하고 다음 코드로 넘어갑니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+        ],
+        "exam_traps": [
+          "continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '반복문 제어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'break'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'continue'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 탈출(Break out) -> break"
+        ],
+        "detailed_summary": "반복문의 실행을 중단하고 탈출하는 키워드를 묻는 문제입니다. C언어나 JAVA에서 현재 반복문을 빠져나갈 때 사용하는 명령문은 break입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. C언어에서 현재 수행중인 반복문을 빠져나갈 때 사용하는 명령문은? 정답입니다. 이 선택지는 실제 정답인 '3번 break'와 일치합니다. break 문은 switch 문이나 반복문(for, while, do-while)의 실행을 즉시 중단하고 다음 코드로 넘어갑니다. 시험 포인트는 continue는 현재 반복 회차만 건너뛰고 다음 회차를 진행하며, exit는 프로그램 자체를 종료합니다. escape는 표준 C 예약어가 아닙니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "반복문",
+        "제어문",
+        "break"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2d89ef35a017f452",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          153,
+          154
+        ],
+        "page_span": {
+          "start_page": 153,
+          "end_page": 154
+        },
+        "source_explanation": "func(b, c)는 func(1, 2)로 3을 반환합니다. func(a)는 배열 요소의 합인 -1+1+2=2를 반환합니다. 최종적으로 func(3, 3, 2)가 호출되어 3-3-2 = -2를 반환합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 JAVA 프로그램이 실행되었을 때, 실행 결과는?\n```java\npublic class Test {\npublic static void main(String[ ] args) {\nint a[ ] = { -1, 1, 2 };\nint b = 1, c = 2;\nint r = func(func(b, c), 3, func(a));\nSystem.out.print(r);\n}\nstatic int func(int x, int y) {\nreturn x + y;\n}\nstatic int func(int x, int y, int z) {\nreturn x - y - z;\n}\nstatic int func(int x[ ]) {\nint s = 0;\nfor (int i = 0; i < x.length; i++)\ns = s + x[i];\nreturn s;\n}\n}\n```",
+        "choices": [
+          {
+            "label": "1",
+            "text": "3"
+          },
+          {
+            "label": "2",
+            "text": "8"
+          },
+          {
+            "label": "3",
+            "text": "-2"
+          },
+          {
+            "label": "4",
+            "text": "-8"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "-2"
+        ],
+        "answer_text": "-2"
+      },
+      "explanation": {
+        "source_text": "func(b, c)는 func(1, 2)로 3을 반환합니다. func(a)는 배열 요소의 합인 -1+1+2=2를 반환합니다. 최종적으로 func(3, 3, 2)가 호출되어 3-3-2 = -2를 반환합니다.",
+        "summary": "자바의 메서드 오버로딩(Overloading)과 중첩된 메서드 호출 결과를 계산하는 문제입니다.",
+        "why_correct": [
+          "매개변수의 개수와 타입에 따라 적절한 func 메서드가 호출됩니다. func(1,2)=3, func(a)=2이므로 func(3,3,2)는 3-3-2=-2가 됩니다."
+        ],
+        "why_others_wrong": [
+          "메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+        ],
+        "key_concepts": [
+          "메서드 오버로딩",
+          "배열 순회",
+          "매개변수"
+        ],
+        "memory_cues": [
+          "이름은 같아도 매개변수가 다르면 다른 함수다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "3",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 -2'인데 이 선택지는 '3'이므로 일치하지 않습니다. 메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+          },
+          {
+            "label": "2",
+            "text": "8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 -2'인데 이 선택지는 '8'이므로 일치하지 않습니다. 메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+          },
+          {
+            "label": "3",
+            "text": "-2",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 -2'와 일치합니다. 매개변수의 개수와 타입에 따라 적절한 func 메서드가 호출됩니다. func(1,2)=3, func(a)=2이므로 func(3,3,2)는 3-3-2=-2가 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "-8",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 -2'인데 이 선택지는 '-8'이므로 일치하지 않습니다. 메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때, 실행 결과는? ```java public class Test { public static void main(String[ ] args) { int a[ ] = { -1, 1, 2 }; int b = 1, c = 2; int r = func(func(b, c), 3, func(a)); System.out.print(r); } static int func(int x, int y) { return x + y; } static int func(int x, int y, int z) { return x - y - z; } static int func(int x[ ]) { int s = 0; for (int i = 0; i < x.length; i++) s = s + x[i]; return s; } } ```",
+          "핵심 개념을 떠올립니다. 메서드 오버로딩, 배열 순회, 매개변수",
+          "정답 판단 근거를 적용합니다. 매개변수의 개수와 타입에 따라 적절한 func 메서드가 호출됩니다. func(1,2)=3, func(a)=2이므로 func(3,3,2)는 3-3-2=-2가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+        ],
+        "exam_traps": [
+          "메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '메서드 오버로딩'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '배열 순회'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '매개변수'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 이름은 같아도 매개변수가 다르면 다른 함수다."
+        ],
+        "detailed_summary": "자바의 메서드 오버로딩(Overloading)과 중첩된 메서드 호출 결과를 계산하는 문제입니다. func(b, c)는 func(1, 2)로 3을 반환합니다. func(a)는 배열 요소의 합인 -1+1+2=2를 반환합니다. 최종적으로 func(3, 3, 2)가 호출되어 3-3-2 = -2를 반환합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 JAVA 프로그램이 실행되었을 때, 실행 결과는? ```java public class Test { public static void main(String[ ] args) { int a[ ] = { -1, 1, 2 }; int b = 1, c = 2; int r = func(func(b, c), 3, func(a)); System.out.print(r); } static int func(int x, int y) { return x + y; } static int func(int x, int y, int z) { return x - y - z; } static int func(int x[ ]) { int s = 0; for (int i = 0; i < x.length; i++) s = s + x[i]; return s; } } ``` 정답입니다. 이 선택지는 실제 정답인 '3번 -2'와 일치합니다. 매개변수의 개수와 타입에 따라 적절한 func 메서드가 호출됩니다. func(1,2)=3, func(a)=2이므로 func(3,3,2)는 3-3-2=-2가 됩니다. 시험 포인트는 메서드 호출 순서나 오버로딩된 메서드 중 잘못된 것을 선택하면 오답이 나옵니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "page split risk"
+        ]
+      },
+      "keywords": [
+        "Java",
+        "메서드 오버로딩",
+        "배열",
+        "재귀적 호출"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_9ce9e8698ceefb52",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0166_p0171"
+        ],
+        "source_pages": [
+          169
+        ],
+        "page_span": {
+          "start_page": 169,
+          "end_page": 169
+        },
+        "source_explanation": "전문가의 조언 | i를 2로 나눈 나머지가 0이면(짝수이면) continue로 인해 sum에 더하지 않고 다음 반복으로 넘어갑니다. 따라서 홀수인 1, 3, 5, 7, 9만 더해져 결과는 25가 됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\n#include <stdio.h>\nmain() {\nint sum = 0;\nfor (int i = 0; i <= 10; i++) {\nif (i % 2 == 0)\ncontinue;\nsum = sum + i;\n}\nprintf(\"%d\", sum);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "20"
+          },
+          {
+            "label": "2",
+            "text": "25"
+          },
+          {
+            "label": "3",
+            "text": "30"
+          },
+          {
+            "label": "4",
+            "text": "55"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "25"
+        ],
+        "answer_text": "25"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | i를 2로 나눈 나머지가 0이면(짝수이면) continue로 인해 sum에 더하지 않고 다음 반복으로 넘어갑니다. 따라서 홀수인 1, 3, 5, 7, 9만 더해져 결과는 25가 됩니다.",
+        "summary": "C언어의 반복문과 제어문(continue)의 동작을 이해하는 문제입니다.",
+        "why_correct": [
+          "i가 0부터 10까지 변할 때, i % 2 == 0(짝수)인 경우 continue 문에 의해 아래의 sum += i 코드를 건너뜁니다. 따라서 홀수인 1, 3, 5, 7, 9의 합인 25가 출력됩니다."
+        ],
+        "why_others_wrong": [
+          "모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+        ],
+        "key_concepts": [
+          "continue",
+          "나머지 연산(%)",
+          "누적 합"
+        ],
+        "memory_cues": [
+          "continue는 '이번 턴은 쉬고 다음 턴으로' 가라는 뜻이다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "20",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 25'인데 이 선택지는 '20'이므로 일치하지 않습니다. 모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "25",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 25'와 일치합니다. i가 0부터 10까지 변할 때, i % 2 == 0(짝수)인 경우 continue 문에 의해 아래의 sum += i 코드를 건너뜁니다. 따라서 홀수인 1, 3, 5, 7, 9의 합인 25가 출력됩니다."
+          },
+          {
+            "label": "3",
+            "text": "30",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 25'인데 이 선택지는 '30'이므로 일치하지 않습니다. 모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "55",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 25'인데 이 선택지는 '55'이므로 일치하지 않습니다. 모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? #include <stdio.h> main() { int sum = 0; for (int i = 0; i <= 10; i++) { if (i % 2 == 0) continue; sum = sum + i; } printf(\"%d\", sum); }",
+          "핵심 개념을 떠올립니다. continue, 나머지 연산(%), 누적 합",
+          "정답 판단 근거를 적용합니다. i가 0부터 10까지 변할 때, i % 2 == 0(짝수)인 경우 continue 문에 의해 아래의 sum += i 코드를 건너뜁니다. 따라서 홀수인 1, 3, 5, 7, 9의 합인 25가 출력됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+        ],
+        "exam_traps": [
+          "모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'continue'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '나머지 연산(%)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '누적 합'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. continue는 '이번 턴은 쉬고 다음 턴으로' 가라는 뜻이다."
+        ],
+        "detailed_summary": "C언어의 반복문과 제어문(continue)의 동작을 이해하는 문제입니다. 전문가의 조언 | i를 2로 나눈 나머지가 0이면(짝수이면) continue로 인해 sum에 더하지 않고 다음 반복으로 넘어갑니다. 따라서 홀수인 1, 3, 5, 7, 9만 더해져 결과는 25가 됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? #include <stdio.h> main() { int sum = 0; for (int i = 0; i <= 10; i++) { if (i % 2 == 0) continue; sum = sum + i; } printf(\"%d\", sum); } 정답입니다. 이 선택지는 실제 정답인 '2번 25'와 일치합니다. i가 0부터 10까지 변할 때, i % 2 == 0(짝수)인 경우 continue 문에 의해 아래의 sum += i 코드를 건너뜁니다. 따라서 홀수인 1, 3, 5, 7, 9의 합인 25가 출력됩니다. 시험 포인트는 모두 더하면 55(4번), 짝수만 더하면 30(3번)이 나오지만 로직상 홀수만 더하게 되어 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "for문",
+        "continue",
+        "나머지 연산"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          169
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0169",
+            "page_number": 169,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0169.png",
+            "content_type": "image/png",
+            "width": 1036,
+            "height": 1384,
+            "file_size_bytes": 913706,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_9ce9e8698ceefb52__figure_01",
+            "question_id": "qb_9ce9e8698ceefb52",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_9ce9e8698ceefb52/qb_9ce9e8698ceefb52__figure_01.png",
+            "content_type": "image/png",
+            "width": 437,
+            "height": 68,
+            "file_size_bytes": 12614,
+            "source_page": 169,
+            "crop_rect_pdf_points": [
+              29.0,
+              515.0,
+              247.5,
+              549.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_9ce9e8698ceefb52__figure_01",
+          "question_id": "qb_9ce9e8698ceefb52",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_9ce9e8698ceefb52/qb_9ce9e8698ceefb52__figure_01.png",
+          "content_type": "image/png",
+          "width": 437,
+          "height": 68,
+          "file_size_bytes": 12614,
+          "source_page": 169,
+          "crop_rect_pdf_points": [
+            29.0,
+            515.0,
+            247.5,
+            549.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_9ce9e8698ceefb52__figure_01",
+          "question_id": "qb_9ce9e8698ceefb52",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_9ce9e8698ceefb52/qb_9ce9e8698ceefb52__figure_01.png",
+          "content_type": "image/png",
+          "width": 437,
+          "height": 68,
+          "file_size_bytes": 12614,
+          "source_page": 169,
+          "crop_rect_pdf_points": [
+            29.0,
+            515.0,
+            247.5,
+            549.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_9ce9e8698ceefb52_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_73b03e4850e6863f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0171_p0176"
+        ],
+        "source_pages": [
+          172
+        ],
+        "page_span": {
+          "start_page": 172,
+          "end_page": 172
+        },
+        "source_explanation": "이 코드는 정수 a의 각 자릿수를 추출하여 합산하는 알고리즘입니다. 4527의 각 자릿수 합은 4+5+2+7 = 18입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "조건문과 반복문"
+        ],
+        "chapter_label": "조건문과 반복문",
+        "chapter_key": "프로그래밍 언어 활용 > 조건문과 반복문",
+        "chapter_id": "chapter_366"
+      },
+      "exam_taxonomy": {
+        "subject_id": 4,
+        "subject_name": "프로그래밍 언어 활용",
+        "topic_id": "topic_063",
+        "topic_title": "조건문과 반복문",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "조건문과 반복문",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 C언어 프로그램이 실행되었을 때의 결과는?\nmain() {\nint a = 4527;\nint r = 0;\nwhile (a != 0) {\nr = r + (a % 10);\na = a / 10;\n}\nprintf(\"%d\", r);\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "18"
+          },
+          {
+            "label": "2",
+            "text": "17"
+          },
+          {
+            "label": "3",
+            "text": "4527"
+          },
+          {
+            "label": "4",
+            "text": "7254"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "18"
+        ],
+        "answer_text": "18"
+      },
+      "explanation": {
+        "source_text": "이 코드는 정수 a의 각 자릿수를 추출하여 합산하는 알고리즘입니다. 4527의 각 자릿수 합은 4+5+2+7 = 18입니다.",
+        "summary": "반복문과 산술 연산(%, /)을 사용하여 숫자의 각 자릿수 합을 구하는 전형적인 알고리즘 문제입니다.",
+        "why_correct": [
+          "a % 10은 마지막 자릿수를 구하고, a / 10은 마지막 자릿수를 제거합니다. 7, 2, 5, 4 순서로 r에 더해져 최종적으로 18이 됩니다."
+        ],
+        "why_others_wrong": [
+          "2번은 계산 실수입니다.",
+          "3번은 원래 숫자입니다.",
+          "4번은 숫자를 거꾸로 나열한 형태와 유사하나 계산 결과와는 무관합니다."
+        ],
+        "key_concepts": [
+          "나머지 연산(%)",
+          "정수 나눗셈(/)",
+          "자릿수 추출"
+        ],
+        "memory_cues": [
+          "% 10은 1의 자리를 가져오고, / 10은 1의 자리를 버린다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "18",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 18'와 일치합니다. a % 10은 마지막 자릿수를 구하고, a / 10은 마지막 자릿수를 제거합니다. 7, 2, 5, 4 순서로 r에 더해져 최종적으로 18이 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "17",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 18'인데 이 선택지는 '17'이므로 일치하지 않습니다. 2번은 계산 실수입니다. 3번은 원래 숫자입니다."
+          },
+          {
+            "label": "3",
+            "text": "4527",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 18'인데 이 선택지는 '4527'이므로 일치하지 않습니다. 2번은 계산 실수입니다. 3번은 원래 숫자입니다."
+          },
+          {
+            "label": "4",
+            "text": "7254",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 18'인데 이 선택지는 '7254'이므로 일치하지 않습니다. 2번은 계산 실수입니다. 3번은 원래 숫자입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? main() { int a = 4527; int r = 0; while (a != 0) { r = r + (a % 10); a = a / 10; } printf(\"%d\", r); }",
+          "핵심 개념을 떠올립니다. 나머지 연산(%), 정수 나눗셈(/), 자릿수 추출",
+          "정답 판단 근거를 적용합니다. a % 10은 마지막 자릿수를 구하고, a / 10은 마지막 자릿수를 제거합니다. 7, 2, 5, 4 순서로 r에 더해져 최종적으로 18이 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 계산 실수입니다."
+        ],
+        "exam_traps": [
+          "2번은 계산 실수입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '나머지 연산(%)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '정수 나눗셈(/)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '자릿수 추출'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. % 10은 1의 자리를 가져오고, / 10은 1의 자리를 버린다."
+        ],
+        "detailed_summary": "반복문과 산술 연산(%, /)을 사용하여 숫자의 각 자릿수 합을 구하는 전형적인 알고리즘 문제입니다. 이 코드는 정수 a의 각 자릿수를 추출하여 합산하는 알고리즘입니다. 4527의 각 자릿수 합은 4+5+2+7 = 18입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 C언어 프로그램이 실행되었을 때의 결과는? main() { int a = 4527; int r = 0; while (a != 0) { r = r + (a % 10); a = a / 10; } printf(\"%d\", r); } 정답입니다. 이 선택지는 실제 정답인 '1번 18'와 일치합니다. a % 10은 마지막 자릿수를 구하고, a / 10은 마지막 자릿수를 제거합니다. 7, 2, 5, 4 순서로 r에 더해져 최종적으로 18이 됩니다. 시험 포인트는 2번은 계산 실수입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "C언어",
+        "while문",
+        "나머지 연산",
+        "자릿수 합"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

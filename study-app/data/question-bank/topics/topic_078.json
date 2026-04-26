@@ -1,0 +1,1433 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_078",
+    "sequence": 78,
+    "title": "UNIX·LINUX 환경 변수와 명령어",
+    "subject_id": 5,
+    "subject_name": "정보시스템 구축관리",
+    "subject_emoji": "🔒",
+    "subject_color": "#F04452",
+    "question_count": 9,
+    "review_count": 8,
+    "source_chapter_ids": [
+      "chapter_129",
+      "chapter_353",
+      "chapter_259",
+      "chapter_301",
+      "chapter_136"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_ea3fe79ae2b50e26",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0016_p0021"
+        ],
+        "source_pages": [
+          18
+        ],
+        "page_span": {
+          "start_page": 18,
+          "end_page": 18
+        },
+        "source_explanation": "파일의 기본 권한인 666에서 umask 값을 뺀 결과가 현재 권한이 됩니다. 666 - 644 = 022이므로 umask 값은 022입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "리눅스에서 생성된 파일 권한이 644일 경우 umask 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "022"
+          },
+          {
+            "label": "2",
+            "text": "666"
+          },
+          {
+            "label": "3",
+            "text": "777"
+          },
+          {
+            "label": "4",
+            "text": "755"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "022"
+        ],
+        "answer_text": "022"
+      },
+      "explanation": {
+        "source_text": "파일의 기본 권한인 666에서 umask 값을 뺀 결과가 현재 권한이 됩니다. 666 - 644 = 022이므로 umask 값은 022입니다.",
+        "summary": "리눅스 파일 권한 설정 시 사용되는 umask 값을 계산하는 문제입니다.",
+        "why_correct": [
+          "파일의 최대 권한은 666입니다. umask는 이 최대 권한에서 뺄 마스크 값이므로, 666 - 644 = 022가 됩니다."
+        ],
+        "why_others_wrong": [
+          "666은 파일의 기본 최대 권한입니다.",
+          "777은 디렉토리의 기본 최대 권한입니다.",
+          "755는 일반적인 실행 파일이나 디렉토리 권한 예시입니다."
+        ],
+        "key_concepts": [
+          "umask",
+          "파일 권한 (Read, Write, Execute)",
+          "8진수 권한 표현"
+        ],
+        "memory_cues": [
+          "파일은 666, 디렉토리는 777에서 umask를 뺀다고 기억하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "022",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 022'와 일치합니다. 파일의 최대 권한은 666입니다. umask는 이 최대 권한에서 뺄 마스크 값이므로, 666 - 644 = 022가 됩니다."
+          },
+          {
+            "label": "2",
+            "text": "666",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '666'이므로 일치하지 않습니다. 666은 파일의 기본 최대 권한입니다. 777은 디렉토리의 기본 최대 권한입니다."
+          },
+          {
+            "label": "3",
+            "text": "777",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '777'이므로 일치하지 않습니다. 666은 파일의 기본 최대 권한입니다. 777은 디렉토리의 기본 최대 권한입니다."
+          },
+          {
+            "label": "4",
+            "text": "755",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '755'이므로 일치하지 않습니다. 666은 파일의 기본 최대 권한입니다. 777은 디렉토리의 기본 최대 권한입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 리눅스에서 생성된 파일 권한이 644일 경우 umask 값은?",
+          "핵심 개념을 떠올립니다. umask, 파일 권한 (Read, Write, Execute), 8진수 권한 표현",
+          "정답 판단 근거를 적용합니다. 파일의 최대 권한은 666입니다. umask는 이 최대 권한에서 뺄 마스크 값이므로, 666 - 644 = 022가 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 666은 파일의 기본 최대 권한입니다."
+        ],
+        "exam_traps": [
+          "666은 파일의 기본 최대 권한입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'umask'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '파일 권한 (Read, Write, Execute)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '8진수 권한 표현'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파일은 666, 디렉토리는 777에서 umask를 뺀다고 기억하세요."
+        ],
+        "detailed_summary": "리눅스 파일 권한 설정 시 사용되는 umask 값을 계산하는 문제입니다. 파일의 기본 권한인 666에서 umask 값을 뺀 결과가 현재 권한이 됩니다. 666 - 644 = 022이므로 umask 값은 022입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 리눅스에서 생성된 파일 권한이 644일 경우 umask 값은? 정답입니다. 이 선택지는 실제 정답인 '1번 022'와 일치합니다. 파일의 최대 권한은 666입니다. umask는 이 최대 권한에서 뺄 마스크 값이므로, 666 - 644 = 022가 됩니다. 시험 포인트는 666은 파일의 기본 최대 권한입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스",
+        "umask",
+        "파일 권한",
+        "644",
+        "022"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_077c1e70530dc112",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다.\n• ls: 현재 디렉터리 내의 파일 목록을 확인함\n• chmod: 파일의 보호 모드를 설정하여 파일의 사용 허가를 지정함\n• rm: 파일을 삭제함"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "66. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ls"
+          },
+          {
+            "label": "2",
+            "text": "chmod"
+          },
+          {
+            "label": "3",
+            "text": "rm"
+          },
+          {
+            "label": "4",
+            "text": "uname"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "uname"
+        ],
+        "answer_text": "uname"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다.\n• ls: 현재 디렉터리 내의 파일 목록을 확인함\n• chmod: 파일의 보호 모드를 설정하여 파일의 사용 허가를 지정함\n• rm: 파일을 삭제함",
+        "summary": "리눅스 시스템에서 커널 정보를 확인하는 명령어에 대한 문제입니다.",
+        "why_correct": [
+          "uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력하는 데 사용됩니다."
+        ],
+        "why_others_wrong": [
+          "ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "key_concepts": [
+          "uname",
+          "커널 버전 확인"
+        ],
+        "memory_cues": [
+          "u(Unix) name(이름/정보)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'ls'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "chmod",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'chmod'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "rm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'rm'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "4",
+            "text": "uname",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력하는 데 사용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+          "핵심 개념을 떠올립니다. uname, 커널 버전 확인",
+          "정답 판단 근거를 적용합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력하는 데 사용됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "exam_traps": [
+          "ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'uname'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '커널 버전 확인'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. u(Unix) name(이름/정보)"
+        ],
+        "detailed_summary": "리눅스 시스템에서 커널 정보를 확인하는 명령어에 대한 문제입니다. 전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다. • ls: 현재 디렉터리 내의 파일 목록을 확인함 • chmod: 파일의 보호 모드를 설정하여 파일의 사용 허가를 지정함 • rm: 파일을 삭제함 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는? 정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력하는 데 사용됩니다. 시험 포인트는 ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스 명령어",
+        "uname",
+        "커널 버전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_7c2471ab14aea52a",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0071_p0076"
+        ],
+        "source_pages": [
+          76
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 76
+        },
+        "source_explanation": "리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다. (보통 uname -a 사용)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "UNIX·LINUX 환경 변수와 명령어"
+        ],
+        "chapter_label": "UNIX·LINUX 환경 변수와 명령어",
+        "chapter_key": "프로그래밍 언어 활용 > UNIX·LINUX 환경 변수와 명령어",
+        "chapter_id": "chapter_353"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 166.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ls"
+          },
+          {
+            "label": "2",
+            "text": "chmod"
+          },
+          {
+            "label": "3",
+            "text": "rm"
+          },
+          {
+            "label": "4",
+            "text": "uname"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "uname"
+        ],
+        "answer_text": "uname"
+      },
+      "explanation": {
+        "source_text": "리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다. (보통 uname -a 사용)",
+        "summary": "리눅스 시스템 정보를 확인하는 기본 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다."
+        ],
+        "why_others_wrong": [
+          "ls: 파일 목록 확인",
+          "chmod: 파일 권한 변경",
+          "rm: 파일 삭제"
+        ],
+        "key_concepts": [
+          "uname",
+          "시스템 정보"
+        ],
+        "memory_cues": [
+          "uname = Unix Name (시스템 정보)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'ls'이므로 일치하지 않습니다. ls: 파일 목록 확인 chmod: 파일 권한 변경"
+          },
+          {
+            "label": "2",
+            "text": "chmod",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'chmod'이므로 일치하지 않습니다. ls: 파일 목록 확인 chmod: 파일 권한 변경"
+          },
+          {
+            "label": "3",
+            "text": "rm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'rm'이므로 일치하지 않습니다. ls: 파일 목록 확인 chmod: 파일 권한 변경"
+          },
+          {
+            "label": "4",
+            "text": "uname",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+          "핵심 개념을 떠올립니다. uname, 시스템 정보",
+          "정답 판단 근거를 적용합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ls: 파일 목록 확인"
+        ],
+        "exam_traps": [
+          "ls: 파일 목록 확인"
+        ],
+        "answer_checklist": [
+          "핵심 개념 'uname'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '시스템 정보'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. uname = Unix Name (시스템 정보)"
+        ],
+        "detailed_summary": "리눅스 시스템 정보를 확인하는 기본 명령어를 묻는 문제입니다. 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다. (보통 uname -a 사용) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는? 정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 시험 포인트는 ls: 파일 목록 확인"
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스 명령어",
+        "uname",
+        "커널 버전",
+        "UNIX"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d363aa12adda443e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0076_p0081"
+        ],
+        "source_pages": [
+          76,
+          77,
+          78,
+          79,
+          80,
+          81
+        ],
+        "page_span": {
+          "start_page": 76,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 파일 권한이 644일 경우 umask 값은 022입니다.\n• umask는 파일 생성 시 기본 권한(파일 666, 디렉터리 777)에서 뺄 값을 지정합니다.\n• 666 - umask = 644 이므로 umask = 666 - 644 = 022입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "75. 리눅스에서 생성된 파일 권한이 644일 경우 umask 값은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "022"
+          },
+          {
+            "label": "2",
+            "text": "666"
+          },
+          {
+            "label": "3",
+            "text": "777"
+          },
+          {
+            "label": "4",
+            "text": "755"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "022"
+        ],
+        "answer_text": "022"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 파일 권한이 644일 경우 umask 값은 022입니다.\n• umask는 파일 생성 시 기본 권한(파일 666, 디렉터리 777)에서 뺄 값을 지정합니다.\n• 666 - umask = 644 이므로 umask = 666 - 644 = 022입니다.",
+        "summary": "리눅스의 umask 설정과 최종 파일 권한 사이의 관계를 계산하는 문제입니다.",
+        "why_correct": [
+          "파일의 최대 권한인 666에서 umask 값을 뺀 결과가 실제 권한이 됩니다. 666 - 022 = 644가 성립합니다."
+        ],
+        "why_others_wrong": [
+          "666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+        ],
+        "key_concepts": [
+          "umask",
+          "기본 권한"
+        ],
+        "memory_cues": [
+          "파일 기본 666, umask는 뺄셈"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "022",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 022'와 일치합니다. 파일의 최대 권한인 666에서 umask 값을 뺀 결과가 실제 권한이 됩니다. 666 - 022 = 644가 성립합니다."
+          },
+          {
+            "label": "2",
+            "text": "666",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '666'이므로 일치하지 않습니다. 666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+          },
+          {
+            "label": "3",
+            "text": "777",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '777'이므로 일치하지 않습니다. 666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+          },
+          {
+            "label": "4",
+            "text": "755",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 022'인데 이 선택지는 '755'이므로 일치하지 않습니다. 666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 75. 리눅스에서 생성된 파일 권한이 644일 경우 umask 값은?",
+          "핵심 개념을 떠올립니다. umask, 기본 권한",
+          "정답 판단 근거를 적용합니다. 파일의 최대 권한인 666에서 umask 값을 뺀 결과가 실제 권한이 됩니다. 666 - 022 = 644가 성립합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+        ],
+        "exam_traps": [
+          "666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'umask'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '기본 권한'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 파일 기본 666, umask는 뺄셈"
+        ],
+        "detailed_summary": "리눅스의 umask 설정과 최종 파일 권한 사이의 관계를 계산하는 문제입니다. 전문가의 조언 | 파일 권한이 644일 경우 umask 값은 022입니다. • umask는 파일 생성 시 기본 권한(파일 666, 디렉터리 777)에서 뺄 값을 지정합니다. • 666 - umask = 644 이므로 umask = 666 - 644 = 022입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 75. 리눅스에서 생성된 파일 권한이 644일 경우 umask 값은? 정답입니다. 이 선택지는 실제 정답인 '1번 022'와 일치합니다. 파일의 최대 권한인 666에서 umask 값을 뺀 결과가 실제 권한이 됩니다. 666 - 022 = 644가 성립합니다. 시험 포인트는 666, 777, 755는 umask 값으로 적절하지 않거나 다른 결과를 낳습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함",
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스",
+        "umask",
+        "파일 권한",
+        "644"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fd1204042d684329",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          81
+        ],
+        "page_span": {
+          "start_page": 81,
+          "end_page": 81
+        },
+        "source_explanation": "전문가의 조언 | 리눅스에서 현재 사용중인 커널 버전을 확인하는 명령은 uname입니다. • ls : 현재 디렉터리 내의 파일 목록을 확인함 • pwd : 현재 작업중인 디렉터리 경로를 화면에 출력함 • mv : 파일을 이동시키거나 이름을 변경함"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 설계"
+        ],
+        "chapter_label": "소프트웨어 설계",
+        "chapter_key": "소프트웨어 설계",
+        "chapter_id": "chapter_259"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "소프트웨어 설계",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "요구사항 분석을 위해 리눅스에서 커널 버전을 확인하기 위한 명령어로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "pwd"
+          },
+          {
+            "label": "2",
+            "text": "ls"
+          },
+          {
+            "label": "3",
+            "text": "uname"
+          },
+          {
+            "label": "4",
+            "text": "mv"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "uname"
+        ],
+        "answer_text": "uname"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 리눅스에서 현재 사용중인 커널 버전을 확인하는 명령은 uname입니다. • ls : 현재 디렉터리 내의 파일 목록을 확인함 • pwd : 현재 작업중인 디렉터리 경로를 화면에 출력함 • mv : 파일을 이동시키거나 이름을 변경함",
+        "summary": "리눅스 시스템 정보를 확인하는 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "uname(Unix Name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다."
+        ],
+        "why_others_wrong": [
+          "pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+        ],
+        "key_concepts": [
+          "리눅스 명령어",
+          "uname",
+          "시스템 정보"
+        ],
+        "memory_cues": [
+          "uname = Unix Name = 시스템 정보"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "pwd",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 uname'인데 이 선택지는 'pwd'이므로 일치하지 않습니다. pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 uname'인데 이 선택지는 'ls'이므로 일치하지 않습니다. pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "uname",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 uname'와 일치합니다. uname(Unix Name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다."
+          },
+          {
+            "label": "4",
+            "text": "mv",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 uname'인데 이 선택지는 'mv'이므로 일치하지 않습니다. pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 요구사항 분석을 위해 리눅스에서 커널 버전을 확인하기 위한 명령어로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 리눅스 명령어, uname, 시스템 정보",
+          "정답 판단 근거를 적용합니다. uname(Unix Name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+        ],
+        "exam_traps": [
+          "pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '리눅스 명령어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'uname'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '시스템 정보'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. uname = Unix Name = 시스템 정보"
+        ],
+        "detailed_summary": "리눅스 시스템 정보를 확인하는 명령어를 묻는 문제입니다. 전문가의 조언 | 리눅스에서 현재 사용중인 커널 버전을 확인하는 명령은 uname입니다. • ls : 현재 디렉터리 내의 파일 목록을 확인함 • pwd : 현재 작업중인 디렉터리 경로를 화면에 출력함 • mv : 파일을 이동시키거나 이름을 변경함 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 요구사항 분석을 위해 리눅스에서 커널 버전을 확인하기 위한 명령어로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 uname'와 일치합니다. uname(Unix Name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 시험 포인트는 pwd는 현재 경로 출력, ls는 파일 목록 출력, mv는 파일 이동/이름 변경 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스",
+        "명령어",
+        "uname",
+        "커널 버전"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b62054ab180d6319",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0116_p0121"
+        ],
+        "source_pages": [
+          116
+        ],
+        "page_span": {
+          "start_page": 116,
+          "end_page": 116
+        },
+        "source_explanation": "wtmp는 리눅스 시스템에서 성공한 로그인/로그아웃 정보 및 시스템의 부팅 정보를 기록하는 로그 파일입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "정보시스템 구축 관리",
+          "보안 솔루션과 Secure OS"
+        ],
+        "chapter_label": "보안 솔루션과 Secure OS",
+        "chapter_key": "정보시스템 구축 관리 > 보안 솔루션과 Secure OS",
+        "chapter_id": "chapter_301"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "정보시스템 구축관리",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 223.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 내용이 설명하는 로그 파일은?\n- 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록\n- 시스템의 종료/시작 시간 기록",
+        "choices": [
+          {
+            "label": "1",
+            "text": "tapping"
+          },
+          {
+            "label": "2",
+            "text": "xtslog"
+          },
+          {
+            "label": "3",
+            "text": "linuxer"
+          },
+          {
+            "label": "4",
+            "text": "wtmp"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "wtmp"
+        ],
+        "answer_text": "wtmp"
+      },
+      "explanation": {
+        "source_text": "wtmp는 리눅스 시스템에서 성공한 로그인/로그아웃 정보 및 시스템의 부팅 정보를 기록하는 로그 파일입니다.",
+        "summary": "리눅스 시스템의 로그인/로그아웃 및 시스템 가동 정보를 기록하는 로그 파일을 묻는 문제입니다.",
+        "why_correct": [
+          "wtmp 파일은 사용자의 로그인/로그아웃 내역과 시스템 시작/종료 시간을 바이너리 형태로 기록합니다."
+        ],
+        "why_others_wrong": [
+          "xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다.",
+          "나머지 보기들은 표준적인 리눅스 로그 파일 이름이 아닙니다."
+        ],
+        "key_concepts": [
+          "wtmp",
+          "로그 파일",
+          "리눅스 보안"
+        ],
+        "memory_cues": [
+          "wtmp = Welcome/Wait (로그인/로그아웃) 기록"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "tapping",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'tapping'이므로 일치하지 않습니다. xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다. 나머지 보기들은 표준적인 리눅스 로그 파일 이름이 아닙니다."
+          },
+          {
+            "label": "2",
+            "text": "xtslog",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'xtslog'이므로 일치하지 않습니다. xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다. 나머지 보기들은 표준적인 리눅스 로그 파일 이름이 아닙니다."
+          },
+          {
+            "label": "3",
+            "text": "linuxer",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 wtmp'인데 이 선택지는 'linuxer'이므로 일치하지 않습니다. xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다. 나머지 보기들은 표준적인 리눅스 로그 파일 이름이 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "wtmp",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 wtmp'와 일치합니다. wtmp 파일은 사용자의 로그인/로그아웃 내역과 시스템 시작/종료 시간을 바이너리 형태로 기록합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 로그 파일은? - 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록 - 시스템의 종료/시작 시간 기록",
+          "핵심 개념을 떠올립니다. wtmp, 로그 파일, 리눅스 보안",
+          "정답 판단 근거를 적용합니다. wtmp 파일은 사용자의 로그인/로그아웃 내역과 시스템 시작/종료 시간을 바이너리 형태로 기록합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다."
+        ],
+        "exam_traps": [
+          "xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'wtmp'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '로그 파일'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '리눅스 보안'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. wtmp = Welcome/Wait (로그인/로그아웃) 기록"
+        ],
+        "detailed_summary": "리눅스 시스템의 로그인/로그아웃 및 시스템 가동 정보를 기록하는 로그 파일을 묻는 문제입니다. wtmp는 리눅스 시스템에서 성공한 로그인/로그아웃 정보 및 시스템의 부팅 정보를 기록하는 로그 파일입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 내용이 설명하는 로그 파일은? - 리눅스 시스템에서 사용자의 성공한 로그인/로그아웃 정보 기록 - 시스템의 종료/시작 시간 기록 정답입니다. 이 선택지는 실제 정답인 '4번 wtmp'와 일치합니다. wtmp 파일은 사용자의 로그인/로그아웃 내역과 시스템 시작/종료 시간을 바이너리 형태로 기록합니다. 시험 포인트는 xferlog는 FTP 접속 사용자에 대한 로그를 기록합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "wtmp",
+        "로그 파일",
+        "리눅스 보안",
+        "로그인 기록"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5c934f2fc42dafeb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          128
+        ],
+        "page_span": {
+          "start_page": 128,
+          "end_page": 128
+        },
+        "source_explanation": "전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "프로그래밍 언어 활용",
+          "UNIX·LINUX 환경 변수와 명령어"
+        ],
+        "chapter_label": "UNIX·LINUX 환경 변수와 명령어",
+        "chapter_key": "프로그래밍 언어 활용 > UNIX·LINUX 환경 변수와 명령어",
+        "chapter_id": "chapter_353"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 166.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "61. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ls"
+          },
+          {
+            "label": "2",
+            "text": "chmod"
+          },
+          {
+            "label": "3",
+            "text": "rm"
+          },
+          {
+            "label": "4",
+            "text": "uname"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "uname"
+        ],
+        "answer_text": "uname"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다.",
+        "summary": "리눅스 시스템 정보를 확인하는 기본 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "uname(unix name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 특히 'uname -a'로 상세 정보를 확인합니다."
+        ],
+        "why_others_wrong": [
+          "ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "key_concepts": [
+          "uname: 시스템 정보 확인",
+          "ls: 목록",
+          "chmod: 권한",
+          "rm: 삭제"
+        ],
+        "memory_cues": [
+          "u-name = 유닉스(시스템) 이름 알려줘"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'ls'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "chmod",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'chmod'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "rm",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 uname'인데 이 선택지는 'rm'이므로 일치하지 않습니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+          },
+          {
+            "label": "4",
+            "text": "uname",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname(unix name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 특히 'uname -a'로 상세 정보를 확인합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 61. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는?",
+          "핵심 개념을 떠올립니다. uname: 시스템 정보 확인, ls: 목록, chmod: 권한, rm: 삭제",
+          "정답 판단 근거를 적용합니다. uname(unix name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 특히 'uname -a'로 상세 정보를 확인합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "exam_traps": [
+          "ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'uname: 시스템 정보 확인'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'ls: 목록'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'chmod: 권한'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'rm: 삭제'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. u-name = 유닉스(시스템) 이름 알려줘"
+        ],
+        "detailed_summary": "리눅스 시스템 정보를 확인하는 기본 명령어를 묻는 문제입니다. 전문가의 조언 | 리눅스에서 커널의 버전을 확인할 때 사용하는 명령어는 uname입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 61. 커널의 버전을 확인할 때 사용하는 리눅스 명령어는? 정답입니다. 이 선택지는 실제 정답인 '4번 uname'와 일치합니다. uname(unix name) 명령어는 시스템의 이름, 커널 버전 등 시스템 정보를 출력합니다. 특히 'uname -a'로 상세 정보를 확인합니다. 시험 포인트는 ls는 파일 목록 조회, chmod는 권한 변경, rm은 파일 삭제 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "리눅스",
+        "커널 버전",
+        "uname",
+        "명령어"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_77e23ad3ef215149",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0146_p0151"
+        ],
+        "source_pages": [
+          149
+        ],
+        "page_span": {
+          "start_page": 149,
+          "end_page": 149
+        },
+        "source_explanation": "전문가의 조언 | UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용",
+          "UNIX·LINUX 환경 변수와 명령어"
+        ],
+        "chapter_label": "UNIX·LINUX 환경 변수와 명령어",
+        "chapter_key": "4과목 프로그래밍 언어 활용 > UNIX·LINUX 환경 변수와 명령어",
+        "chapter_id": "chapter_136"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 166.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "66. UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ls"
+          },
+          {
+            "label": "2",
+            "text": "cat"
+          },
+          {
+            "label": "3",
+            "text": "fork"
+          },
+          {
+            "label": "4",
+            "text": "chmod"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "fork"
+        ],
+        "answer_text": "fork"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다.",
+        "summary": "UNIX 시스템의 프로세스 관리 명령어를 묻는 문제입니다.",
+        "why_correct": [
+          "fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출 명령어입니다."
+        ],
+        "why_others_wrong": [
+          "ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+        ],
+        "key_concepts": [
+          "fork",
+          "exec",
+          "wait"
+        ],
+        "memory_cues": [
+          "포크(fork)로 찍어서 하나 더 만든다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'ls'이므로 일치하지 않습니다. ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "cat",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'cat'이므로 일치하지 않습니다. ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "fork",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 fork'와 일치합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출 명령어입니다."
+          },
+          {
+            "label": "4",
+            "text": "chmod",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'chmod'이므로 일치하지 않습니다. ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+          "핵심 개념을 떠올립니다. fork, exec, wait",
+          "정답 판단 근거를 적용합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출 명령어입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+        ],
+        "exam_traps": [
+          "ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'fork'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'exec'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'wait'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 포크(fork)로 찍어서 하나 더 만든다"
+        ],
+        "detailed_summary": "UNIX 시스템의 프로세스 관리 명령어를 묻는 문제입니다. 전문가의 조언 | UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 66. UNIX에서 새로운 프로세스를 생성하는 명령어는? 정답입니다. 이 선택지는 실제 정답인 '3번 fork'와 일치합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출 명령어입니다. 시험 포인트는 ls는 파일 목록, cat은 파일 내용 출력, chmod는 권한 변경 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "UNIX",
+        "프로세스 생성",
+        "fork",
+        "시스템 호출"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e66abbd09b1f051b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0151_p0156"
+        ],
+        "source_pages": [
+          151
+        ],
+        "page_span": {
+          "start_page": 151,
+          "end_page": 151
+        },
+        "source_explanation": "UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "4과목 프로그래밍 언어 활용"
+        ],
+        "chapter_label": "4과목 프로그래밍 언어 활용",
+        "chapter_key": "4과목 프로그래밍 언어 활용",
+        "chapter_id": "chapter_129"
+      },
+      "exam_taxonomy": {
+        "subject_id": 5,
+        "subject_name": "정보시스템 구축관리",
+        "topic_id": "topic_078",
+        "topic_title": "UNIX·LINUX 환경 변수와 명령어",
+        "draft_subject_name": "프로그래밍 언어 활용",
+        "draft_topic_name": "UNIX·LINUX 환경 변수와 명령어",
+        "match_score": 136.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "ls"
+          },
+          {
+            "label": "2",
+            "text": "cat"
+          },
+          {
+            "label": "3",
+            "text": "fork"
+          },
+          {
+            "label": "4",
+            "text": "chmod"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "fork"
+        ],
+        "answer_text": "fork"
+      },
+      "explanation": {
+        "source_text": "UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다.",
+        "summary": "UNIX 계열 운영체제에서 자식 프로세스를 생성하는 시스템 호출을 묻는 문제입니다.",
+        "why_correct": [
+          "fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출입니다."
+        ],
+        "why_others_wrong": [
+          "ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+        ],
+        "key_concepts": [
+          "UNIX 명령어",
+          "프로세스 생성",
+          "fork"
+        ],
+        "memory_cues": [
+          "포크(fork)로 찍어서 똑같은 걸 하나 더 만든다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "ls",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'ls'이므로 일치하지 않습니다. ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+          },
+          {
+            "label": "2",
+            "text": "cat",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'cat'이므로 일치하지 않습니다. ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+          },
+          {
+            "label": "3",
+            "text": "fork",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 fork'와 일치합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출입니다."
+          },
+          {
+            "label": "4",
+            "text": "chmod",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 fork'인데 이 선택지는 'chmod'이므로 일치하지 않습니다. ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+          "핵심 개념을 떠올립니다. UNIX 명령어, 프로세스 생성, fork",
+          "정답 판단 근거를 적용합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+        ],
+        "exam_traps": [
+          "ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'UNIX 명령어'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '프로세스 생성'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'fork'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 포크(fork)로 찍어서 똑같은 걸 하나 더 만든다."
+        ],
+        "detailed_summary": "UNIX 계열 운영체제에서 자식 프로세스를 생성하는 시스템 호출을 묻는 문제입니다. UNIX에서 새로운 프로세스를 생성하는 명령어는 fork입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. UNIX에서 새로운 프로세스를 생성하는 명령어는? 정답입니다. 이 선택지는 실제 정답인 '3번 fork'와 일치합니다. fork()는 현재 프로세스를 복제하여 새로운 자식 프로세스를 생성하는 시스템 호출입니다. 시험 포인트는 ls는 파일 목록 출력, cat은 파일 내용 출력, chmod는 파일 권한 변경 명령어입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "모델 초안 과목과 최종 과목 분류가 다름"
+        ]
+      },
+      "keywords": [
+        "UNIX",
+        "프로세스 생성",
+        "fork",
+        "시스템 호출"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

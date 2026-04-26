@@ -1,0 +1,4742 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_031",
+    "sequence": 31,
+    "title": "테스트 원리와 테스트 기법",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 30,
+    "review_count": 5,
+    "source_chapter_ids": [
+      "chapter_055",
+      "chapter_249",
+      "chapter_252",
+      "chapter_251",
+      "chapter_256",
+      "chapter_227",
+      "chapter_075",
+      "chapter_076",
+      "chapter_077",
+      "chapter_061",
+      "chapter_073",
+      "chapter_074",
+      "chapter_095",
+      "chapter_091"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_49eb6ccd8ba9baa1",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          10
+        ],
+        "page_span": {
+          "start_page": 10,
+          "end_page": 10
+        },
+        "source_explanation": "전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "30. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다."
+          },
+          {
+            "label": "3",
+            "text": "인스펙션(Inspection)과 동일한 의미를 가진다."
+          },
+          {
+            "label": "4",
+            "text": "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "인스펙션(Inspection)과 동일한 의미를 가진다."
+        ],
+        "answer_text": "인스펙션(Inspection)과 동일한 의미를 가진다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다.",
+        "summary": "워크스루와 인스펙션은 모두 코드를 실행하지 않고 검토하는 정적 테스트 기법이지만 엄연히 다릅니다.",
+        "why_correct": [
+          "워크스루는 개발자가 주도하여 동료들과 검토하는 비정식 회의인 반면, 인스펙션은 전문 팀이 참여하는 보다 정식적이고 엄격한 검토 과정입니다."
+        ],
+        "why_others_wrong": [
+          "워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+        ],
+        "key_concepts": [
+          "워크스루",
+          "인스펙션",
+          "정적 테스트"
+        ],
+        "memory_cues": [
+          "워크스루 = 비정식/동료, 인스펙션 = 정식/전문가"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '사용사례를 확장하여 명세하거나 설계 다이어그램, 원시 코드, 테스트 케이스 등에 적용할 수 있다.'이므로 일치하지 않습니다. 워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+          },
+          {
+            "label": "2",
+            "text": "복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '복잡한 알고리즘 또는 반복, 실시간 동작, 병행 처리와 같은 기능이나 동작을 이해하려고 할 때 유용하다.'이므로 일치하지 않습니다. 워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+          },
+          {
+            "label": "3",
+            "text": "인스펙션(Inspection)과 동일한 의미를 가진다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'와 일치합니다. 워크스루는 개발자가 주도하여 동료들과 검토하는 비정식 회의인 반면, 인스펙션은 전문 팀이 참여하는 보다 정식적이고 엄격한 검토 과정입니다."
+          },
+          {
+            "label": "4",
+            "text": "단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'인데 이 선택지는 '단순한 테스트 케이스를 이용하여 프로덕트를 수작업으로 수행해 보는 것이다.'이므로 일치하지 않습니다. 워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 워크스루, 인스펙션, 정적 테스트",
+          "정답 판단 근거를 적용합니다. 워크스루는 개발자가 주도하여 동료들과 검토하는 비정식 회의인 반면, 인스펙션은 전문 팀이 참여하는 보다 정식적이고 엄격한 검토 과정입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+        ],
+        "exam_traps": [
+          "워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '워크스루'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '인스펙션'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '정적 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 워크스루 = 비정식/동료, 인스펙션 = 정식/전문가"
+        ],
+        "detailed_summary": "워크스루와 인스펙션은 모두 코드를 실행하지 않고 검토하는 정적 테스트 기법이지만 엄연히 다릅니다. 전문가의 조언 | 인스펙션(Inspection)은 워크스루를 발전시킨 형태로, 소프트웨어 개발 단계에서 산출된 결과물의 품질을 평가하고 이를 개선하기 위한 방법 등을 제시합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 소프트웨어 공학에서 워크스루(Walkthrough)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 인스펙션(Inspection)과 동일한 의미를 가진다.'와 일치합니다. 워크스루는 개발자가 주도하여 동료들과 검토하는 비정식 회의인 반면, 인스펙션은 전문 팀이 참여하는 보다 정식적이고 엄격한 검토 과정입니다. 시험 포인트는 워크스루는 설계서, 코드 검토, 복잡한 로직 이해, 수작업 시뮬레이션 등에 활용됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "워크스루",
+        "Walkthrough",
+        "인스펙션",
+        "Inspection",
+        "정적 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e71a57ded534ffdc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          10
+        ],
+        "page_span": {
+          "start_page": 10,
+          "end_page": 10
+        },
+        "source_explanation": "전문가의 조언 | 경계값 분석(Boundary Value Analysis) 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다. (해설 오류 수정: 90은 경계값이 아니므로 90이 답이어야 하나, 문제 의도상 유효 범위를 벗어난 101을 찾는 것으로 보임)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "25. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은?\n[평가점수 : 성적]\n80~100 : A\n60~79 : B\n0~59 : C",
+        "choices": [
+          {
+            "label": "1",
+            "text": "59"
+          },
+          {
+            "label": "2",
+            "text": "80"
+          },
+          {
+            "label": "3",
+            "text": "90"
+          },
+          {
+            "label": "4",
+            "text": "101"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "101"
+        ],
+        "answer_text": "101"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 경계값 분석(Boundary Value Analysis) 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다. (해설 오류 수정: 90은 경계값이 아니므로 90이 답이어야 하나, 문제 의도상 유효 범위를 벗어난 101을 찾는 것으로 보임)",
+        "summary": "경계값 분석은 입력 조건의 경계 부분에서 오류가 발생할 확률이 높다는 점을 이용한 테스트 기법입니다.",
+        "why_correct": [
+          "101은 점수 범위(0~100)를 벗어난 값으로, 경계값 분석 시 상한선을 넘는 비정상 케이스로 사용될 수 있습니다. 하지만 90은 경계값이 아닌 중간값이므로 테스트 케이스로서의 가치가 낮습니다. 문제에서 '옳지 않은 것'은 경계값이 아닌 것을 묻는 경우가 많습니다."
+        ],
+        "why_others_wrong": [
+          "59, 80은 각 등급의 경계에 해당하는 값들입니다."
+        ],
+        "key_concepts": [
+          "경계값 분석",
+          "테스트 케이스 설계"
+        ],
+        "memory_cues": [
+          "경계값 = 끝값"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "59",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 101'인데 이 선택지는 '59'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계에 해당하는 값들입니다."
+          },
+          {
+            "label": "2",
+            "text": "80",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 101'인데 이 선택지는 '80'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계에 해당하는 값들입니다."
+          },
+          {
+            "label": "3",
+            "text": "90",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 101'인데 이 선택지는 '90'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계에 해당하는 값들입니다."
+          },
+          {
+            "label": "4",
+            "text": "101",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 101'와 일치합니다. 101은 점수 범위(0~100)를 벗어난 값으로, 경계값 분석 시 상한선을 넘는 비정상 케이스로 사용될 수 있습니다. 하지만 90은 경계값이 아닌 중간값이므로 테스트 케이스로서의 가치가 낮습니다. 문제에서 '옳지 않은 것'은 경계값이 아닌 것을 묻는 경우가 많습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? [평가점수 : 성적] 80~100 : A 60~79 : B 0~59 : C",
+          "핵심 개념을 떠올립니다. 경계값 분석, 테스트 케이스 설계",
+          "정답 판단 근거를 적용합니다. 101은 점수 범위(0~100)를 벗어난 값으로, 경계값 분석 시 상한선을 넘는 비정상 케이스로 사용될 수 있습니다. 하지만 90은 경계값이 아닌 중간값이므로 테스트 케이스로서의 가치가 낮습니다. 문제에서 '옳지 않은 것'은 경계값이 아닌 것을 묻는 경우가 많습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 59, 80은 각 등급의 경계에 해당하는 값들입니다."
+        ],
+        "exam_traps": [
+          "59, 80은 각 등급의 경계에 해당하는 값들입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '경계값 분석'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '테스트 케이스 설계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 경계값 = 끝값"
+        ],
+        "detailed_summary": "경계값 분석은 입력 조건의 경계 부분에서 오류가 발생할 확률이 높다는 점을 이용한 테스트 기법입니다. 전문가의 조언 | 경계값 분석(Boundary Value Analysis) 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다. (해설 오류 수정: 90은 경계값이 아니므로 90이 답이어야 하나, 문제 의도상 유효 범위를 벗어난 101을 찾는 것으로 보임) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? [평가점수 : 성적] 80~100 : A 60~79 : B 0~59 : C 정답입니다. 이 선택지는 실제 정답인 '4번 101'와 일치합니다. 101은 점수 범위(0~100)를 벗어난 값으로, 경계값 분석 시 상한선을 넘는 비정상 케이스로 사용될 수 있습니다. 하지만 90은 경계값이 아닌 중간값이므로 테스트 케이스로서의 가치가 낮습니다. 문제에서 '옳지 않은 것'은 경계값이 아닌 것을 묻는 경우가 많습니다. 시험 포인트는 59, 80은 각 등급의 경계에 해당하는 값들입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "ambiguous answer"
+        ]
+      },
+      "keywords": [
+        "경계값 분석",
+        "블랙박스 테스트",
+        "테스트 케이스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_774ba66a7ea234be",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          12
+        ],
+        "page_span": {
+          "start_page": 12,
+          "end_page": 12
+        },
+        "source_explanation": "문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트"
+        ],
+        "chapter_label": "테스트",
+        "chapter_key": "소프트웨어 개발 > 테스트",
+        "chapter_id": "chapter_249"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing"
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing"
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis"
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Equivalence Partitioning Testing"
+        ],
+        "answer_text": "Equivalence Partitioning Testing"
+      },
+      "explanation": {
+        "source_text": "문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다.",
+        "summary": "입력 조건의 유효한 값과 유효하지 않은 값을 그룹화하여 테스트하는 기법을 묻는 문제입니다.",
+        "why_correct": [
+          "동치 분할 검사는 입력 도메인을 여러 영역으로 나누고 각 영역에서 대표값을 선택하여 테스트하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+        ],
+        "key_concepts": [
+          "동치 분할 검사",
+          "블랙박스 테스트"
+        ],
+        "memory_cues": [
+          "타당한 값/그렇지 못한 값 = 동등하게 나누기 = 동치 분할"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Cause-Effect Graphing Testing'이므로 일치하지 않습니다. 1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할 검사는 입력 도메인을 여러 영역으로 나누고 각 영역에서 대표값을 선택하여 테스트하는 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Boundary Value Analysis'이므로 일치하지 않습니다. 1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Comparison Testing'이므로 일치하지 않습니다. 1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+          "핵심 개념을 떠올립니다. 동치 분할 검사, 블랙박스 테스트",
+          "정답 판단 근거를 적용합니다. 동치 분할 검사는 입력 도메인을 여러 영역으로 나누고 각 영역에서 대표값을 선택하여 테스트하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+        ],
+        "exam_traps": [
+          "1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '동치 분할 검사'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 타당한 값/그렇지 못한 값 = 동등하게 나누기 = 동치 분할"
+        ],
+        "detailed_summary": "입력 조건의 유효한 값과 유효하지 않은 값을 그룹화하여 테스트하는 기법을 묻는 문제입니다. 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할 검사는 입력 도메인을 여러 영역으로 나누고 각 영역에서 대표값을 선택하여 테스트하는 기법입니다. 시험 포인트는 1번은 입력 간의 논리적 관계 분석, 3번은 경계값 위주 분석, 4번은 여러 버전의 프로그램 비교 테스트입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "동치 분할 검사",
+        "명세 기반 테스트",
+        "블랙박스 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_89e736536b4045c0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          12
+        ],
+        "page_span": {
+          "start_page": 12,
+          "end_page": 12
+        },
+        "source_explanation": "테스트(Test)를 통해 오류를 발견한 후 디버깅(Debugging)을 통해 오류 코드를 추적하고 수정하는 작업을 수행합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트"
+        ],
+        "chapter_label": "테스트",
+        "chapter_key": "소프트웨어 개발 > 테스트",
+        "chapter_id": "chapter_249"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "테스트와 디버그의 목적으로 옳은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다."
+          },
+          {
+            "label": "2",
+            "text": "테스트는 오류를 수정하는 작업이고 디버깅은 오류를 찾는 작업이다."
+          },
+          {
+            "label": "3",
+            "text": "둘 다 소프트웨어의 오류를 찾는 작업으로 오류 수정은 하지 않는다."
+          },
+          {
+            "label": "4",
+            "text": "둘 다 소프트웨어 오류의 발견, 수정과 무관하다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다."
+        ],
+        "answer_text": "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다."
+      },
+      "explanation": {
+        "source_text": "테스트(Test)를 통해 오류를 발견한 후 디버깅(Debugging)을 통해 오류 코드를 추적하고 수정하는 작업을 수행합니다.",
+        "summary": "테스트와 디버깅의 근본적인 차이점을 묻는 문제입니다.",
+        "why_correct": [
+          "테스트는 결함의 존재를 확인(발견)하는 활동이며, 디버깅은 발견된 결함의 원인을 찾아 해결(수정)하는 활동입니다."
+        ],
+        "why_others_wrong": [
+          "2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+        ],
+        "key_concepts": [
+          "테스트",
+          "디버깅"
+        ],
+        "memory_cues": [
+          "테스트는 '찾기', 디버깅은 '고치기'"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.'와 일치합니다. 테스트는 결함의 존재를 확인(발견)하는 활동이며, 디버깅은 발견된 결함의 원인을 찾아 해결(수정)하는 활동입니다."
+          },
+          {
+            "label": "2",
+            "text": "테스트는 오류를 수정하는 작업이고 디버깅은 오류를 찾는 작업이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.'인데 이 선택지는 '테스트는 오류를 수정하는 작업이고 디버깅은 오류를 찾는 작업이다.'이므로 일치하지 않습니다. 2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "둘 다 소프트웨어의 오류를 찾는 작업으로 오류 수정은 하지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.'인데 이 선택지는 '둘 다 소프트웨어의 오류를 찾는 작업으로 오류 수정은 하지 않는다.'이므로 일치하지 않습니다. 2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "둘 다 소프트웨어 오류의 발견, 수정과 무관하다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.'인데 이 선택지는 '둘 다 소프트웨어 오류의 발견, 수정과 무관하다.'이므로 일치하지 않습니다. 2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테스트와 디버그의 목적으로 옳은 것은?",
+          "핵심 개념을 떠올립니다. 테스트, 디버깅",
+          "정답 판단 근거를 적용합니다. 테스트는 결함의 존재를 확인(발견)하는 활동이며, 디버깅은 발견된 결함의 원인을 찾아 해결(수정)하는 활동입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+        ],
+        "exam_traps": [
+          "2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '디버깅'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 테스트는 '찾기', 디버깅은 '고치기'"
+        ],
+        "detailed_summary": "테스트와 디버깅의 근본적인 차이점을 묻는 문제입니다. 테스트(Test)를 통해 오류를 발견한 후 디버깅(Debugging)을 통해 오류 코드를 추적하고 수정하는 작업을 수행합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 테스트와 디버그의 목적으로 옳은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.'와 일치합니다. 테스트는 결함의 존재를 확인(발견)하는 활동이며, 디버깅은 발견된 결함의 원인을 찾아 해결(수정)하는 활동입니다. 시험 포인트는 2번은 역할이 바뀌어 있고, 3번과 4번은 디버깅의 수정 목적을 간과하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트",
+        "디버깅",
+        "오류 발견",
+        "오류 수정"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_522b0646990d8318",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트",
+          "테스트 원리"
+        ],
+        "chapter_label": "테스트 원리",
+        "chapter_key": "소프트웨어 개발 > 테스트 > 테스트 원리",
+        "chapter_id": "chapter_252"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙"
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙"
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙"
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Pareto의 법칙"
+        ],
+        "answer_text": "Pareto의 법칙"
+      },
+      "explanation": {
+        "source_text": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다.",
+        "summary": "소프트웨어 테스트의 원리 중 하나인 결함 집중(Defect Clustering)과 관련된 법칙을 묻는 문제입니다.",
+        "why_correct": [
+          "파레토 법칙은 전체 결과의 80%가 전체 원인의 20%에서 일어난다는 현상을 말하며, 테스트에서는 특정 모듈에 결함이 집중되는 현상을 설명할 때 쓰입니다."
+        ],
+        "why_others_wrong": [
+          "Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+        ],
+        "key_concepts": [
+          "파레토 법칙",
+          "결함 집중"
+        ],
+        "memory_cues": [
+          "80:20 = 파레토"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Brooks의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Boehm의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 전체 결과의 80%가 전체 원인의 20%에서 일어난다는 현상을 말하며, 테스트에서는 특정 모듈에 결함이 집중되는 현상을 설명할 때 쓰입니다."
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Jackson의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+          "핵심 개념을 떠올립니다. 파레토 법칙, 결함 집중",
+          "정답 판단 근거를 적용합니다. 파레토 법칙은 전체 결과의 80%가 전체 원인의 20%에서 일어난다는 현상을 말하며, 테스트에서는 특정 모듈에 결함이 집중되는 현상을 설명할 때 쓰입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+        ],
+        "exam_traps": [
+          "Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '파레토 법칙'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '결함 집중'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 80:20 = 파레토"
+        ],
+        "detailed_summary": "소프트웨어 테스트의 원리 중 하나인 결함 집중(Defect Clustering)과 관련된 법칙을 묻는 문제입니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은? 정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 전체 결과의 80%가 전체 원인의 20%에서 일어난다는 현상을 말하며, 테스트에서는 특정 모듈에 결함이 집중되는 현상을 설명할 때 쓰입니다. 시험 포인트는 Brooks의 법칙은 인력 투입과 일정 지연에 관한 법칙이며, Boehm과 Jackson은 다른 소프트웨어 공학 이론과 관련이 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파레토 법칙",
+        "결함 집중",
+        "소프트웨어 테스트",
+        "80/20 법칙"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a4a3f0119a479fcc",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트",
+          "블랙박스 테스트"
+        ],
+        "chapter_label": "블랙박스 테스트",
+        "chapter_key": "소프트웨어 개발 > 테스트 > 블랙박스 테스트",
+        "chapter_id": "chapter_251"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우"
+          },
+          {
+            "label": "2",
+            "text": "정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우"
+          },
+          {
+            "label": "3",
+            "text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+          },
+          {
+            "label": "4",
+            "text": "경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+        ],
+        "answer_text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+      },
+      "explanation": {
+        "source_text": "화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다.",
+        "summary": "블랙박스 테스트와 화이트박스 테스트의 차이점을 묻는 문제입니다.",
+        "why_correct": [
+          "루프 구조나 내부 로직의 실행 여부를 확인하는 것은 코드 내부를 들여다보는 화이트박스 테스트의 영역입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+        ],
+        "key_concepts": [
+          "블랙박스 테스트",
+          "화이트박스 테스트",
+          "루프 테스트"
+        ],
+        "memory_cues": [
+          "내부 구조(루프, 조건) = 화이트박스",
+          "외부 기능(입출력) = 블랙박스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+          },
+          {
+            "label": "2",
+            "text": "정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+          },
+          {
+            "label": "3",
+            "text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'와 일치합니다. 루프 구조나 내부 로직의 실행 여부를 확인하는 것은 코드 내부를 들여다보는 화이트박스 테스트의 영역입니다."
+          },
+          {
+            "label": "4",
+            "text": "경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 블랙박스 테스트, 화이트박스 테스트, 루프 테스트",
+          "정답 판단 근거를 적용합니다. 루프 구조나 내부 로직의 실행 여부를 확인하는 것은 코드 내부를 들여다보는 화이트박스 테스트의 영역입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '루프 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내부 구조(루프, 조건) = 화이트박스",
+          "암기 포인트를 떠올립니다. 외부 기능(입출력) = 블랙박스"
+        ],
+        "detailed_summary": "블랙박스 테스트와 화이트박스 테스트의 차이점을 묻는 문제입니다. 화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'와 일치합니다. 루프 구조나 내부 로직의 실행 여부를 확인하는 것은 코드 내부를 들여다보는 화이트박스 테스트의 영역입니다. 시험 포인트는 1, 2, 4번은 입력과 출력 결과만을 가지고 판단할 수 있는 기능적 오류이므로 블랙박스 테스트로 발견 가능합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "블랙박스 테스트",
+        "화이트박스 테스트",
+        "루프 테스트",
+        "기능 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5edba66182ae8e5e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          47
+        ],
+        "page_span": {
+          "start_page": 47,
+          "end_page": 47
+        },
+        "source_explanation": "조건 검사, 루프 검사, 데이터 흐름 검사는 화이트박스 테스트의 유형입니다. 블랙박스 테스트에는 동치 분할, 경계값 분석 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "블랙박스 검사에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인터페이스 결함, 성능 결함, 초기화와 종료 이상 결함 등을 찾아낸다."
+          },
+          {
+            "label": "2",
+            "text": "각 기능별로 적절한 정보 영역을 정하여 적합한 입력에 대한 출력의 정확성을 점검한다."
+          },
+          {
+            "label": "3",
+            "text": "블랙박스 검사는 기능 검사라고도 한다."
+          },
+          {
+            "label": "4",
+            "text": "조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다."
+        ],
+        "answer_text": "조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다."
+      },
+      "explanation": {
+        "source_text": "조건 검사, 루프 검사, 데이터 흐름 검사는 화이트박스 테스트의 유형입니다. 블랙박스 테스트에는 동치 분할, 경계값 분석 등이 있습니다.",
+        "summary": "블랙박스 테스트와 화이트박스 테스트의 특징을 구분하는 문제입니다.",
+        "why_correct": [
+          "조건, 루프, 데이터 흐름 검사는 코드 내부 구조를 들여다보는 화이트박스 테스트 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "Black-box Testing",
+          "White-box Testing"
+        ],
+        "memory_cues": [
+          "내부 로직(조건, 루프)은 화이트박스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인터페이스 결함, 성능 결함, 초기화와 종료 이상 결함 등을 찾아낸다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.'인데 이 선택지는 '인터페이스 결함, 성능 결함, 초기화와 종료 이상 결함 등을 찾아낸다.'이므로 일치하지 않습니다. 1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "각 기능별로 적절한 정보 영역을 정하여 적합한 입력에 대한 출력의 정확성을 점검한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.'인데 이 선택지는 '각 기능별로 적절한 정보 영역을 정하여 적합한 입력에 대한 출력의 정확성을 점검한다.'이므로 일치하지 않습니다. 1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "3",
+            "text": "블랙박스 검사는 기능 검사라고도 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.'인데 이 선택지는 '블랙박스 검사는 기능 검사라고도 한다.'이므로 일치하지 않습니다. 1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.'와 일치합니다. 조건, 루프, 데이터 흐름 검사는 코드 내부 구조를 들여다보는 화이트박스 테스트 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블랙박스 검사에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. Black-box Testing, White-box Testing",
+          "정답 판단 근거를 적용합니다. 조건, 루프, 데이터 흐름 검사는 코드 내부 구조를 들여다보는 화이트박스 테스트 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Black-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'White-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 내부 로직(조건, 루프)은 화이트박스"
+        ],
+        "detailed_summary": "블랙박스 테스트와 화이트박스 테스트의 특징을 구분하는 문제입니다. 조건 검사, 루프 검사, 데이터 흐름 검사는 화이트박스 테스트의 유형입니다. 블랙박스 테스트에는 동치 분할, 경계값 분석 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 블랙박스 검사에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 조건 검사, 루프 검사, 데이터 흐름 검사 등의 유형이 있다.'와 일치합니다. 조건, 루프, 데이터 흐름 검사는 코드 내부 구조를 들여다보는 화이트박스 테스트 기법입니다. 시험 포인트는 1, 2, 3번은 외부 기능 중심의 블랙박스 테스트에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "블랙박스 테스트",
+        "화이트박스 테스트",
+        "기능 테스트",
+        "테스트 기법"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_daba4326f60fd725",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          49
+        ],
+        "page_span": {
+          "start_page": 49,
+          "end_page": 49
+        },
+        "source_explanation": "경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법입니다. 90은 성적이 분리되는 경계값이 아닌 중간값에 해당하므로 적절하지 않습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은?\n80~100 : A\n60~79 : B\n0~59 : C",
+        "choices": [
+          {
+            "label": "1",
+            "text": "59"
+          },
+          {
+            "label": "2",
+            "text": "80"
+          },
+          {
+            "label": "3",
+            "text": "90"
+          },
+          {
+            "label": "4",
+            "text": "101"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "90"
+        ],
+        "answer_text": "90"
+      },
+      "explanation": {
+        "source_text": "경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법입니다. 90은 성적이 분리되는 경계값이 아닌 중간값에 해당하므로 적절하지 않습니다.",
+        "summary": "블랙박스 테스트 기법 중 경계값 분석을 적용하는 문제입니다.",
+        "why_correct": [
+          "경계값 분석은 0, 59, 60, 79, 80, 100 등 범위의 경계에 있는 값을 선택합니다. 90은 범위 내부의 값입니다."
+        ],
+        "why_others_wrong": [
+          "59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+        ],
+        "key_concepts": [
+          "Boundary Value Analysis",
+          "Equivalence Partitioning"
+        ],
+        "memory_cues": [
+          "경계값은 끝단에 있는 값이다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "59",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '59'이므로 일치하지 않습니다. 59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+          },
+          {
+            "label": "2",
+            "text": "80",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '80'이므로 일치하지 않습니다. 59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+          },
+          {
+            "label": "3",
+            "text": "90",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 90'와 일치합니다. 경계값 분석은 0, 59, 60, 79, 80, 100 등 범위의 경계에 있는 값을 선택합니다. 90은 범위 내부의 값입니다."
+          },
+          {
+            "label": "4",
+            "text": "101",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '101'이므로 일치하지 않습니다. 59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? 80~100 : A 60~79 : B 0~59 : C",
+          "핵심 개념을 떠올립니다. Boundary Value Analysis, Equivalence Partitioning",
+          "정답 판단 근거를 적용합니다. 경계값 분석은 0, 59, 60, 79, 80, 100 등 범위의 경계에 있는 값을 선택합니다. 90은 범위 내부의 값입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+        ],
+        "exam_traps": [
+          "59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Boundary Value Analysis'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Equivalence Partitioning'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 경계값은 끝단에 있는 값이다."
+        ],
+        "detailed_summary": "블랙박스 테스트 기법 중 경계값 분석을 적용하는 문제입니다. 경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법입니다. 90은 성적이 분리되는 경계값이 아닌 중간값에 해당하므로 적절하지 않습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? 80~100 : A 60~79 : B 0~59 : C 정답입니다. 이 선택지는 실제 정답인 '3번 90'와 일치합니다. 경계값 분석은 0, 59, 60, 79, 80, 100 등 범위의 경계에 있는 값을 선택합니다. 90은 범위 내부의 값입니다. 시험 포인트는 59, 80은 유효 경계값이며, 101은 무효 경계값(에러 처리 확인용)으로 테스트 케이스에 포함됩니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "경계값 분석",
+        "블랙박스 테스트",
+        "테스트 케이스",
+        "Boundary Value Analysis"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_538418f8f3d6cee5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0051_p0056"
+        ],
+        "source_pages": [
+          51
+        ],
+        "page_span": {
+          "start_page": 51,
+          "end_page": 51
+        },
+        "source_explanation": "전문가의 조언 | 경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "40. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은?\n[ 평가 점수 | 성적 ]\n[ 80~100 | A ]\n[ 60~79 | B ]\n[ 0~59 | C ]",
+        "choices": [
+          {
+            "label": "1",
+            "text": "59"
+          },
+          {
+            "label": "2",
+            "text": "80"
+          },
+          {
+            "label": "3",
+            "text": "90"
+          },
+          {
+            "label": "4",
+            "text": "101"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "90"
+        ],
+        "answer_text": "90"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다.",
+        "summary": "블랙박스 테스트 기법 중 하나인 경계값 분석(Boundary Value Analysis)에 대한 문제입니다.",
+        "why_correct": [
+          "경계값 분석은 입력 범위의 최소값, 최대값 및 그 경계에 있는 값들을 테스트 케이스로 선정합니다. 90은 80~100 범위의 중간값이므로 경계값 분석에 적합한 테스트 케이스가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+        ],
+        "key_concepts": [
+          "경계값 분석",
+          "블랙박스 테스트",
+          "테스트 케이스 설계"
+        ],
+        "memory_cues": [
+          "경계값 분석 = 끝값과 그 바로 옆값!"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "59",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '59'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+          },
+          {
+            "label": "2",
+            "text": "80",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '80'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+          },
+          {
+            "label": "3",
+            "text": "90",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 90'와 일치합니다. 경계값 분석은 입력 범위의 최소값, 최대값 및 그 경계에 있는 값들을 테스트 케이스로 선정합니다. 90은 80~100 범위의 중간값이므로 경계값 분석에 적합한 테스트 케이스가 아닙니다."
+          },
+          {
+            "label": "4",
+            "text": "101",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 90'인데 이 선택지는 '101'이므로 일치하지 않습니다. 59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? [ 평가 점수 | 성적 ] [ 80~100 | A ] [ 60~79 | B ] [ 0~59 | C ]",
+          "핵심 개념을 떠올립니다. 경계값 분석, 블랙박스 테스트, 테스트 케이스 설계",
+          "정답 판단 근거를 적용합니다. 경계값 분석은 입력 범위의 최소값, 최대값 및 그 경계에 있는 값들을 테스트 케이스로 선정합니다. 90은 80~100 범위의 중간값이므로 경계값 분석에 적합한 테스트 케이스가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+        ],
+        "exam_traps": [
+          "59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '경계값 분석'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '테스트 케이스 설계'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 경계값 분석 = 끝값과 그 바로 옆값!"
+        ],
+        "detailed_summary": "블랙박스 테스트 기법 중 하나인 경계값 분석(Boundary Value Analysis)에 대한 문제입니다. 전문가의 조언 | 경계값 분석 기법은 입력 조건의 경계값을 테스트 케이스로 선정하여 검사하는 기법으로, 성적이 분리되는 평가 점수의 경계값인 101, 100, 80, 79, 60, 59, 0, -1이 적절한 입력값에 해당됩니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 평가 점수에 따른 성적부여는 다음 표와 같다. 이를 구현한 소프트웨어를 경계 값 분석 기법으로 테스트 하고자 할 때 다음 중 테스트 케이스의 입력 값으로 옳지 않은 것은? [ 평가 점수 | 성적 ] [ 80~100 | A ] [ 60~79 | B ] [ 0~59 | C ] 정답입니다. 이 선택지는 실제 정답인 '3번 90'와 일치합니다. 경계값 분석은 입력 범위의 최소값, 최대값 및 그 경계에 있는 값들을 테스트 케이스로 선정합니다. 90은 80~100 범위의 중간값이므로 경계값 분석에 적합한 테스트 케이스가 아닙니다. 시험 포인트는 59, 80은 각 등급의 경계값이며, 101은 유효 범위를 벗어난 경계값으로 모두 적절한 테스트 케이스입니다."
+      },
+      "quality": {
+        "diagram_dependency": "required",
+        "needs_review": true,
+        "review_reasons": []
+      },
+      "keywords": [
+        "경계값 분석",
+        "블랙박스 테스트",
+        "테스트 케이스",
+        "입력 조건"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "required",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          51
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0051",
+            "page_number": 51,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0051.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1382,
+            "file_size_bytes": 890478,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_538418f8f3d6cee5__figure_01",
+            "question_id": "qb_538418f8f3d6cee5",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_538418f8f3d6cee5/qb_538418f8f3d6cee5__figure_01.png",
+            "content_type": "image/png",
+            "width": 180,
+            "height": 117,
+            "file_size_bytes": 21809,
+            "source_page": 51,
+            "crop_rect_pdf_points": [
+              290.0,
+              526.0,
+              380.0,
+              584.5
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.png",
+            "notes": [
+              "???? ??? ??? ??? ???? ??? ????? ?? ??????."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_538418f8f3d6cee5__figure_01",
+          "question_id": "qb_538418f8f3d6cee5",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_538418f8f3d6cee5/qb_538418f8f3d6cee5__figure_01.png",
+          "content_type": "image/png",
+          "width": 180,
+          "height": 117,
+          "file_size_bytes": 21809,
+          "source_page": 51,
+          "crop_rect_pdf_points": [
+            290.0,
+            526.0,
+            380.0,
+            584.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.png",
+          "notes": [
+            "???? ??? ??? ??? ???? ??? ????? ?? ??????."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_538418f8f3d6cee5__figure_01",
+          "question_id": "qb_538418f8f3d6cee5",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_538418f8f3d6cee5/qb_538418f8f3d6cee5__figure_01.png",
+          "content_type": "image/png",
+          "width": 180,
+          "height": 117,
+          "file_size_bytes": 21809,
+          "source_page": 51,
+          "crop_rect_pdf_points": [
+            290.0,
+            526.0,
+            380.0,
+            584.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_538418f8f3d6cee5_diagram_only.png",
+          "notes": [
+            "???? ??? ??? ??? ???? ??? ????? ?? ??????."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_15292704cf4a49f7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0081_p0086"
+        ],
+        "source_pages": [
+          84
+        ],
+        "page_span": {
+          "start_page": 84,
+          "end_page": 84
+        },
+        "source_explanation": "전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. • 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발"
+        ],
+        "chapter_label": "소프트웨어 개발",
+        "chapter_key": "소프트웨어 개발",
+        "chapter_id": "chapter_227"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음 중 커버리지의 종류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "구문 커버리지"
+          },
+          {
+            "label": "2",
+            "text": "결정 커버리지"
+          },
+          {
+            "label": "3",
+            "text": "조건 커버리지"
+          },
+          {
+            "label": "4",
+            "text": "강도 커버리지"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "강도 커버리지"
+        ],
+        "answer_text": "강도 커버리지"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. • 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다.",
+        "summary": "화이트박스 테스트의 지표인 코드 커버리지 종류를 묻는 문제입니다.",
+        "why_correct": [
+          "'강도 커버리지'라는 용어는 표준적인 테스트 커버리지 분류에 포함되지 않습니다."
+        ],
+        "why_others_wrong": [
+          "구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+        ],
+        "key_concepts": [
+          "코드 커버리지",
+          "화이트박스 테스트",
+          "구문",
+          "결정",
+          "조건"
+        ],
+        "memory_cues": [
+          "구결조: 구문, 결정, 조건 커버리지"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "구문 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '구문 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "결정 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '결정 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "조건 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '조건 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "강도 커버리지",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 강도 커버리지'와 일치합니다. '강도 커버리지'라는 용어는 표준적인 테스트 커버리지 분류에 포함되지 않습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 커버리지의 종류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 코드 커버리지, 화이트박스 테스트, 구문, 결정",
+          "정답 판단 근거를 적용합니다. '강도 커버리지'라는 용어는 표준적인 테스트 커버리지 분류에 포함되지 않습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+        ],
+        "exam_traps": [
+          "구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '코드 커버리지'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '구문'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '결정'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 구결조: 구문, 결정, 조건 커버리지"
+        ],
+        "detailed_summary": "화이트박스 테스트의 지표인 코드 커버리지 종류를 묻는 문제입니다. 전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. • 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음 중 커버리지의 종류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 강도 커버리지'와 일치합니다. '강도 커버리지'라는 용어는 표준적인 테스트 커버리지 분류에 포함되지 않습니다. 시험 포인트는 구문, 결정, 조건 커버리지는 코드의 실행 경로를 확인하는 대표적인 화이트박스 테스트 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "테스트 커버리지",
+        "화이트박스 테스트",
+        "구문 커버리지",
+        "결정 커버리지"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_100be9933eab0894",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "46섹션 3빌드"
+        ],
+        "chapter_label": "46섹션 3빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 46섹션 3빌드",
+        "chapter_id": "chapter_075"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "21. 다음 중 커버리지의 종류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "구문 커버리지"
+          },
+          {
+            "label": "2",
+            "text": "결정 커버리지"
+          },
+          {
+            "label": "3",
+            "text": "조건 커버리지"
+          },
+          {
+            "label": "4",
+            "text": "강도 커버리지"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "강도 커버리지"
+        ],
+        "answer_text": "강도 커버리지"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다.",
+        "summary": "화이트박스 테스트에서 사용되는 코드 커버리지의 종류를 구분하는 문제입니다.",
+        "why_correct": [
+          "강도 커버리지는 표준적인 테스트 커버리지 용어가 아닙니다."
+        ],
+        "why_others_wrong": [
+          "구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+        ],
+        "key_concepts": [
+          "구문 커버리지",
+          "결정 커버리지",
+          "조건 커버리지"
+        ],
+        "memory_cues": [
+          "구결조(구문, 결정, 조건)는 세트입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "구문 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '구문 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+          },
+          {
+            "label": "2",
+            "text": "결정 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '결정 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+          },
+          {
+            "label": "3",
+            "text": "조건 커버리지",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 강도 커버리지'인데 이 선택지는 '조건 커버리지'이므로 일치하지 않습니다. 구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+          },
+          {
+            "label": "4",
+            "text": "강도 커버리지",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 강도 커버리지'와 일치합니다. 강도 커버리지는 표준적인 테스트 커버리지 용어가 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 다음 중 커버리지의 종류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 구문 커버리지, 결정 커버리지, 조건 커버리지",
+          "정답 판단 근거를 적용합니다. 강도 커버리지는 표준적인 테스트 커버리지 용어가 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+        ],
+        "exam_traps": [
+          "구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '구문 커버리지'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '결정 커버리지'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '조건 커버리지'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 구결조(구문, 결정, 조건)는 세트입니다."
+        ],
+        "detailed_summary": "화이트박스 테스트에서 사용되는 코드 커버리지의 종류를 구분하는 문제입니다. 전문가의 조언 | 강도 커버리지는 커버리지의 종류가 아닙니다. 커버리지의 종류에는 구문 커버리지(Statement Coverage), 결정 커버리지(Decision Coverage), 조건 커버리지(Condition Coverage), 조건/결정 커버리지(Condition/Decision Coverage) 등이 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 다음 중 커버리지의 종류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 강도 커버리지'와 일치합니다. 강도 커버리지는 표준적인 테스트 커버리지 용어가 아닙니다. 시험 포인트는 구문, 결정, 조건 커버리지는 모두 대표적인 화이트박스 테스트 커버리지 지표입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "테스트 커버리지",
+        "화이트박스 테스트",
+        "구문 커버리지",
+        "결정 커버리지"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6bef1ddcff9e3665",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 86
+        },
+        "source_explanation": "전문가의 조언 | N-S 차트를 이용하여 검정 기준을 작성할 수 있는 것은 화이트 박스 검사입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "46섹션 4빌드"
+        ],
+        "chapter_label": "46섹션 4빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 46섹션 4빌드",
+        "chapter_id": "chapter_076"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "31. 블랙 박스 검사에 관하여 기술한 것 중 잘못된 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "모듈의 구조보다 기능을 검사한다."
+          },
+          {
+            "label": "2",
+            "text": "동치 분할(Equivalence Partitioning)이라는 기법을 사용한다."
+          },
+          {
+            "label": "3",
+            "text": "Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다."
+          },
+          {
+            "label": "4",
+            "text": "원인-결과 그래프(Cause and Effect Graph)로 테스트 케이스를 작성할 수 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다."
+        ],
+        "answer_text": "Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | N-S 차트를 이용하여 검정 기준을 작성할 수 있는 것은 화이트 박스 검사입니다.",
+        "summary": "블랙박스 테스트의 특징과 기법을 화이트박스 테스트와 구분하는 문제입니다.",
+        "why_correct": [
+          "Nassi-Shneiderman(N-S) 도표는 프로그램의 내부 로직을 시각화하는 도구로, 내부 구조를 들여다보는 화이트박스 테스트에 적합합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+        ],
+        "key_concepts": [
+          "블랙박스 테스트",
+          "화이트박스 테스트",
+          "N-S 차트"
+        ],
+        "memory_cues": [
+          "블랙박스는 '기능', 화이트박스는 '구조'입니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "모듈의 구조보다 기능을 검사한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.'인데 이 선택지는 '모듈의 구조보다 기능을 검사한다.'이므로 일치하지 않습니다. 1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+          },
+          {
+            "label": "2",
+            "text": "동치 분할(Equivalence Partitioning)이라는 기법을 사용한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.'인데 이 선택지는 '동치 분할(Equivalence Partitioning)이라는 기법을 사용한다.'이므로 일치하지 않습니다. 1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.'와 일치합니다. Nassi-Shneiderman(N-S) 도표는 프로그램의 내부 로직을 시각화하는 도구로, 내부 구조를 들여다보는 화이트박스 테스트에 적합합니다."
+          },
+          {
+            "label": "4",
+            "text": "원인-결과 그래프(Cause and Effect Graph)로 테스트 케이스를 작성할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.'인데 이 선택지는 '원인-결과 그래프(Cause and Effect Graph)로 테스트 케이스를 작성할 수 있다.'이므로 일치하지 않습니다. 1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 블랙 박스 검사에 관하여 기술한 것 중 잘못된 것은?",
+          "핵심 개념을 떠올립니다. 블랙박스 테스트, 화이트박스 테스트, N-S 차트",
+          "정답 판단 근거를 적용합니다. Nassi-Shneiderman(N-S) 도표는 프로그램의 내부 로직을 시각화하는 도구로, 내부 구조를 들여다보는 화이트박스 테스트에 적합합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'N-S 차트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 블랙박스는 '기능', 화이트박스는 '구조'입니다."
+        ],
+        "detailed_summary": "블랙박스 테스트의 특징과 기법을 화이트박스 테스트와 구분하는 문제입니다. 전문가의 조언 | N-S 차트를 이용하여 검정 기준을 작성할 수 있는 것은 화이트 박스 검사입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 31. 블랙 박스 검사에 관하여 기술한 것 중 잘못된 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 Nassi-Shneiderman 도표를 사용하여 검정 기준을 작성할 수 있다.'와 일치합니다. Nassi-Shneiderman(N-S) 도표는 프로그램의 내부 로직을 시각화하는 도구로, 내부 구조를 들여다보는 화이트박스 테스트에 적합합니다. 시험 포인트는 1, 2, 4번은 모두 블랙박스 테스트의 정의 및 주요 기법에 해당합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "블랙박스 테스트",
+        "화이트박스 테스트",
+        "N-S 차트",
+        "동치 분할"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_e4d6aa725cba2f70",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0086_p0091"
+        ],
+        "source_pages": [
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "page_span": {
+          "start_page": 86,
+          "end_page": 91
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다.\n- 원인-효과 그래프 검사(Cause-Effect Graphing Testing): 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석한 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법\n- 경계값 분석(Boundary Value Analysis): 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함\n- 비교 검사(Comparison Testing): 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "46섹션 5빌드"
+        ],
+        "chapter_label": "46섹션 5빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 46섹션 5빌드",
+        "chapter_id": "chapter_077"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "25. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing"
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing"
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis"
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Equivalence Partitioning Testing"
+        ],
+        "answer_text": "Equivalence Partitioning Testing"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다.\n- 원인-효과 그래프 검사(Cause-Effect Graphing Testing): 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석한 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법\n- 경계값 분석(Boundary Value Analysis): 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함\n- 비교 검사(Comparison Testing): 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법",
+        "summary": "블랙박스 테스트 기법 중 동치 분할 검사의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "동치 분할은 입력 조건을 타당한 값(유효)과 타당하지 않은 값(무효)의 그룹으로 나누어 대표값을 테스트하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+        ],
+        "key_concepts": [
+          "동치 분할",
+          "블랙박스 테스트",
+          "테스트 케이스"
+        ],
+        "memory_cues": [
+          "동치(Equivalence) = 같은 가치를 가진 그룹으로 나누기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Cause-Effect Graphing Testing'이므로 일치하지 않습니다. 1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할은 입력 조건을 타당한 값(유효)과 타당하지 않은 값(무효)의 그룹으로 나누어 대표값을 테스트하는 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Boundary Value Analysis'이므로 일치하지 않습니다. 1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Comparison Testing'이므로 일치하지 않습니다. 1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+          "핵심 개념을 떠올립니다. 동치 분할, 블랙박스 테스트, 테스트 케이스",
+          "정답 판단 근거를 적용합니다. 동치 분할은 입력 조건을 타당한 값(유효)과 타당하지 않은 값(무효)의 그룹으로 나누어 대표값을 테스트하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+        ],
+        "exam_traps": [
+          "1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '동치 분할'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '테스트 케이스'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 동치(Equivalence) = 같은 가치를 가진 그룹으로 나누기"
+        ],
+        "detailed_summary": "블랙박스 테스트 기법 중 동치 분할 검사의 정의를 묻는 문제입니다. 전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다. - 원인-효과 그래프 검사(Cause-Effect Graphing Testing): 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석한 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법 - 경계값 분석(Boundary Value Analysis): 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함 - 비교 검사(Comparison Testing): 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할은 입력 조건을 타당한 값(유효)과 타당하지 않은 값(무효)의 그룹으로 나누어 대표값을 테스트하는 기법입니다. 시험 포인트는 1번은 입력 간 논리적 관계 분석, 3번은 경계값 집중, 4번은 여러 버전 비교에 중점을 둡니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "동치 분할",
+        "블랙박스 테스트",
+        "명세 기반 테스트",
+        "Equivalence Partitioning"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6969de4a53d7779d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          103
+        ],
+        "page_span": {
+          "start_page": 103,
+          "end_page": 103
+        },
+        "source_explanation": "파레토 법칙과 같이 대부분의 결함이 소수의 특정 모듈에 집중해서 발생하는 현상을 결함 집중(Defect Clustering)이라고 합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "22. 다음 설명의 소프트웨어 테스트의 기본 원칙은?\n- 파레토 법칙이 좌우한다.\n- 애플리케이션 결함의 대부분은 소수의 특정한 모듈에 집중되어 존재한다.\n- 결함은 발생한 모듈에서 계속 추가로 발생할 가능성이 높다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "살충제 패러독스"
+          },
+          {
+            "label": "2",
+            "text": "결함 집중"
+          },
+          {
+            "label": "3",
+            "text": "오류 부재의 궤변"
+          },
+          {
+            "label": "4",
+            "text": "완벽한 테스팅은 불가능"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "결함 집중"
+        ],
+        "answer_text": "결함 집중"
+      },
+      "explanation": {
+        "source_text": "파레토 법칙과 같이 대부분의 결함이 소수의 특정 모듈에 집중해서 발생하는 현상을 결함 집중(Defect Clustering)이라고 합니다.",
+        "summary": "결함이 특정 부분에 몰려 있다는 소프트웨어 테스트의 원칙을 묻는 문제입니다.",
+        "why_correct": [
+          "결함 집중(Defect Clustering)은 20%의 모듈에서 80%의 결함이 발견된다는 파레토 법칙을 테스트에 적용한 원칙입니다."
+        ],
+        "why_others_wrong": [
+          "살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+        ],
+        "key_concepts": [
+          "Defect Clustering",
+          "Pareto Principle",
+          "Testing Principles"
+        ],
+        "memory_cues": [
+          "결함이 '집중'되어 있다 = 결함 집중"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "살충제 패러독스",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 결함 집중'인데 이 선택지는 '살충제 패러독스'이므로 일치하지 않습니다. 살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+          },
+          {
+            "label": "2",
+            "text": "결함 집중",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 결함 집중'와 일치합니다. 결함 집중(Defect Clustering)은 20%의 모듈에서 80%의 결함이 발견된다는 파레토 법칙을 테스트에 적용한 원칙입니다."
+          },
+          {
+            "label": "3",
+            "text": "오류 부재의 궤변",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 결함 집중'인데 이 선택지는 '오류 부재의 궤변'이므로 일치하지 않습니다. 살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+          },
+          {
+            "label": "4",
+            "text": "완벽한 테스팅은 불가능",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 결함 집중'인데 이 선택지는 '완벽한 테스팅은 불가능'이므로 일치하지 않습니다. 살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 다음 설명의 소프트웨어 테스트의 기본 원칙은? - 파레토 법칙이 좌우한다. - 애플리케이션 결함의 대부분은 소수의 특정한 모듈에 집중되어 존재한다. - 결함은 발생한 모듈에서 계속 추가로 발생할 가능성이 높다.",
+          "핵심 개념을 떠올립니다. Defect Clustering, Pareto Principle, Testing Principles",
+          "정답 판단 근거를 적용합니다. 결함 집중(Defect Clustering)은 20%의 모듈에서 80%의 결함이 발견된다는 파레토 법칙을 테스트에 적용한 원칙입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+        ],
+        "exam_traps": [
+          "살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Defect Clustering'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Pareto Principle'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Testing Principles'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 결함이 '집중'되어 있다 = 결함 집중"
+        ],
+        "detailed_summary": "결함이 특정 부분에 몰려 있다는 소프트웨어 테스트의 원칙을 묻는 문제입니다. 파레토 법칙과 같이 대부분의 결함이 소수의 특정 모듈에 집중해서 발생하는 현상을 결함 집중(Defect Clustering)이라고 합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 다음 설명의 소프트웨어 테스트의 기본 원칙은? - 파레토 법칙이 좌우한다. - 애플리케이션 결함의 대부분은 소수의 특정한 모듈에 집중되어 존재한다. - 결함은 발생한 모듈에서 계속 추가로 발생할 가능성이 높다. 정답입니다. 이 선택지는 실제 정답인 '2번 결함 집중'와 일치합니다. 결함 집중(Defect Clustering)은 20%의 모듈에서 80%의 결함이 발견된다는 파레토 법칙을 테스트에 적용한 원칙입니다. 시험 포인트는 살충제 패러독스는 동일 테스트 반복 시 결함 미발견, 오류 부재의 궤변은 요구사항 미충족 시 무의미함, 완벽한 테스팅 불가능은 모든 경로 테스트의 한계를 말합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "결함 집중",
+        "Defect Clustering",
+        "파레토 법칙",
+        "테스트 원칙"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fc9e15be5eaf2eab",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0101_p0106"
+        ],
+        "source_pages": [
+          104
+        ],
+        "page_span": {
+          "start_page": 104,
+          "end_page": 104
+        },
+        "source_explanation": "검증(Verification)은 개발자의 입장에서 개발한 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "소프트웨어 테스트에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다."
+          },
+          {
+            "label": "2",
+            "text": "검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트 것이다."
+          },
+          {
+            "label": "3",
+            "text": "검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다."
+          },
+          {
+            "label": "4",
+            "text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+        ],
+        "answer_text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+      },
+      "explanation": {
+        "source_text": "검증(Verification)은 개발자의 입장에서 개발한 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다.",
+        "summary": "테스트의 두 축인 검증과 확인의 정의를 올바르게 구분하는 문제입니다.",
+        "why_correct": [
+          "4번은 정의가 서로 바뀌었습니다. 검증은 '명세서(개발자 기대)'대로 되었는지, 확인은 '사용자 요구'에 적합한지를 보는 것입니다."
+        ],
+        "why_others_wrong": [
+          "검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+        ],
+        "key_concepts": [
+          "Verification",
+          "Validation",
+          "Software Testing"
+        ],
+        "memory_cues": [
+          "검증(V-tion) = 명세서(Specification) 확인, 확인(V-tion) = 가치(Value/User) 확인"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "소프트웨어 테스트에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '소프트웨어 테스트에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다.'이므로 일치하지 않습니다. 검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+          },
+          {
+            "label": "2",
+            "text": "검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트 것이다.'이므로 일치하지 않습니다. 검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+          },
+          {
+            "label": "3",
+            "text": "검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다.'이므로 일치하지 않습니다. 검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+          },
+          {
+            "label": "4",
+            "text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'와 일치합니다. 4번은 정의가 서로 바뀌었습니다. 검증은 '명세서(개발자 기대)'대로 되었는지, 확인은 '사용자 요구'에 적합한지를 보는 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Verification, Validation, Software Testing",
+          "정답 판단 근거를 적용합니다. 4번은 정의가 서로 바뀌었습니다. 검증은 '명세서(개발자 기대)'대로 되었는지, 확인은 '사용자 요구'에 적합한지를 보는 것입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+        ],
+        "exam_traps": [
+          "검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Verification'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Validation'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Software Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 검증(V-tion) = 명세서(Specification) 확인, 확인(V-tion) = 가치(Value/User) 확인"
+        ],
+        "detailed_summary": "테스트의 두 축인 검증과 확인의 정의를 올바르게 구분하는 문제입니다. 검증(Verification)은 개발자의 입장에서 개발한 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'와 일치합니다. 4번은 정의가 서로 바뀌었습니다. 검증은 '명세서(개발자 기대)'대로 되었는지, 확인은 '사용자 요구'에 적합한지를 보는 것입니다. 시험 포인트는 검증은 과정(How)에, 확인은 결과(What)에 초점을 맞춘다는 설명은 모두 옳습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "검증",
+        "확인",
+        "Verification",
+        "Validation"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_86bc575ac55dd8a9",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          106
+        ],
+        "page_span": {
+          "start_page": 106,
+          "end_page": 106
+        },
+        "source_explanation": "전문가의 조언 | 검증(Verification)은 개발자의 입장에서 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "소프트웨어 개발 과정에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다."
+          },
+          {
+            "label": "2",
+            "text": "검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트하는 것이다."
+          },
+          {
+            "label": "3",
+            "text": "검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다."
+          },
+          {
+            "label": "4",
+            "text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+        ],
+        "answer_text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 검증(Verification)은 개발자의 입장에서 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다.",
+        "summary": "검증(Verification)과 확인(Validation)의 정의를 구분하는 문제입니다.",
+        "why_correct": [
+          "4번은 검증과 확인의 주체가 서로 바뀌어 설명되었습니다. 검증은 개발자 관점(명세 준수), 확인은 사용자 관점(요구 적합)입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "Verification (Are we building the product right?)",
+          "Validation (Are we building the right product?)"
+        ],
+        "memory_cues": [
+          "검개확사: 검증은 개발자, 확인은 사용자"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "소프트웨어 개발 과정에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '소프트웨어 개발 과정에서 검증과 확인을 구별하면 찾고자 하는 결함 유형을 명확하게 하는 데 도움이 된다.'이므로 일치하지 않습니다. 1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트하는 것이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '검증은 소프트웨어 개발 과정을 테스트하는 것이고, 확인은 소프트웨어 결과를 테스트하는 것이다.'이므로 일치하지 않습니다. 1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'인데 이 선택지는 '검증은 작업 제품이 요구 명세의 기능, 비기능 요구사항을 얼마나 잘 준수하는지 측정하는 작업이다.'이므로 일치하지 않습니다. 1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'와 일치합니다. 4번은 검증과 확인의 주체가 서로 바뀌어 설명되었습니다. 검증은 개발자 관점(명세 준수), 확인은 사용자 관점(요구 적합)입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Verification (Are we building the product right?), Validation (Are we building the right product?)",
+          "정답 판단 근거를 적용합니다. 4번은 검증과 확인의 주체가 서로 바뀌어 설명되었습니다. 검증은 개발자 관점(명세 준수), 확인은 사용자 관점(요구 적합)입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Verification (Are we building the product right?)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Validation (Are we building the right product?)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 검개확사: 검증은 개발자, 확인은 사용자"
+        ],
+        "detailed_summary": "검증(Verification)과 확인(Validation)의 정의를 구분하는 문제입니다. 전문가의 조언 | 검증(Verification)은 개발자의 입장에서 소프트웨어가 명세서에 맞게 만들어졌는지를 점검하는 것이고, 확인(Validation)은 사용자의 입장에서 개발한 소프트웨어가 고객의 요구사항에 맞게 구현되었는지를 확인하는 것입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 26. 소프트웨어 테스트에서 검증(Verification)과 확인(Validation)에 대한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 검증은 작업 제품이 사용자의 요구에 적합한지 측정하며, 확인은 작업 제품이 개발자의 기대를 충족시키는지를 측정한다.'와 일치합니다. 4번은 검증과 확인의 주체가 서로 바뀌어 설명되었습니다. 검증은 개발자 관점(명세 준수), 확인은 사용자 관점(요구 적합)입니다. 시험 포인트는 1, 2, 3번은 검증과 확인의 일반적인 특징을 올바르게 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "검증",
+        "확인",
+        "Verification",
+        "Validation"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_4ca8994e1369c396",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          108
+        ],
+        "page_span": {
+          "start_page": 108,
+          "end_page": 108
+        },
+        "source_explanation": "전문가의 조언 | 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "38. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙"
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙"
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙"
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Pareto의 법칙"
+        ],
+        "answer_text": "Pareto의 법칙"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다.",
+        "summary": "소프트웨어 테스트의 원리 중 결함 집중(Defect Clustering)과 관련된 법칙을 묻는 문제입니다.",
+        "why_correct": [
+          "파레토 법칙은 결과의 80%가 원인의 20%에서 발생한다는 원리로, 테스트에서는 특정 모듈에 결함이 집중된다는 의미로 쓰입니다."
+        ],
+        "why_others_wrong": [
+          "Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+        ],
+        "key_concepts": [
+          "결함 집중",
+          "파레토 법칙"
+        ],
+        "memory_cues": [
+          "80:20 = 파레토"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Brooks의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Boehm의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 결과의 80%가 원인의 20%에서 발생한다는 원리로, 테스트에서는 특정 모듈에 결함이 집중된다는 의미로 쓰입니다."
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Jackson의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+          "핵심 개념을 떠올립니다. 결함 집중, 파레토 법칙",
+          "정답 판단 근거를 적용합니다. 파레토 법칙은 결과의 80%가 원인의 20%에서 발생한다는 원리로, 테스트에서는 특정 모듈에 결함이 집중된다는 의미로 쓰입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+        ],
+        "exam_traps": [
+          "Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '결함 집중'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '파레토 법칙'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 80:20 = 파레토"
+        ],
+        "detailed_summary": "소프트웨어 테스트의 원리 중 결함 집중(Defect Clustering)과 관련된 법칙을 묻는 문제입니다. 전문가의 조언 | 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 38. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은? 정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 결과의 80%가 원인의 20%에서 발생한다는 원리로, 테스트에서는 특정 모듈에 결함이 집중된다는 의미로 쓰입니다. 시험 포인트는 Brooks의 법칙은 인력 투입에 관한 법칙이며, Boehm은 비용 산정 등과 관련이 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파레토 법칙",
+        "결함 집중",
+        "80/20 법칙"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b0a320d364ebd298",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0106_p0111"
+        ],
+        "source_pages": [
+          108
+        ],
+        "page_span": {
+          "start_page": 108,
+          "end_page": 108
+        },
+        "source_explanation": "전문가의 조언 | 기초 경로(Base Path=Basis Path)는 수행 가능한 모든 경로를 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "37. 소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+        ],
+        "answer_text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 기초 경로(Base Path=Basis Path)는 수행 가능한 모든 경로를 의미합니다.",
+        "summary": "소프트웨어 테스트 기법 및 기본 경로 테스트에 관한 문제입니다.",
+        "why_correct": [
+          "기본 경로 테스트에서 기본 경로는 선형적으로 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 배제하는 개념은 아닙니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+        ],
+        "key_concepts": [
+          "화이트박스 테스트",
+          "블랙박스 테스트",
+          "기본 경로 테스팅"
+        ],
+        "memory_cues": [
+          "화이트박스는 내부 구조, 블랙박스는 외부 기능"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.'이므로 일치하지 않습니다. 1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.'이므로 일치하지 않습니다. 1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.'이므로 일치하지 않습니다. 1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로 테스트에서 기본 경로는 선형적으로 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 배제하는 개념은 아닙니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 화이트박스 테스트, 블랙박스 테스트, 기본 경로 테스팅",
+          "정답 판단 근거를 적용합니다. 기본 경로 테스트에서 기본 경로는 선형적으로 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 배제하는 개념은 아닙니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '기본 경로 테스팅'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 화이트박스는 내부 구조, 블랙박스는 외부 기능"
+        ],
+        "detailed_summary": "소프트웨어 테스트 기법 및 기본 경로 테스트에 관한 문제입니다. 전문가의 조언 | 기초 경로(Base Path=Basis Path)는 수행 가능한 모든 경로를 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 37. 소프트웨어 테스트와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로 테스트에서 기본 경로는 선형적으로 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 배제하는 개념은 아닙니다. 시험 포인트는 1, 2, 3번은 화이트박스/블랙박스 테스트 및 테스트 케이스의 정의를 정확히 설명하고 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "블랙박스 테스트",
+        "기본 경로",
+        "테스트 케이스"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2b6e577a5a50751b",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          124
+        ],
+        "page_span": {
+          "start_page": 124,
+          "end_page": 124
+        },
+        "source_explanation": "전문가의 조언 | 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다. • 재공학(Reengineering) : 새로운 요구에 맞도록 기존 시스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상시키는 것 • 역공학(Reverse Engineering) : 기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어 내는 활동 • 소프트웨어 재사용(Software Reuse) : 이미 개발되어 인정받은 소프트웨어의 전체 혹은 일부분을 다른 소프트웨어 개발이나 유지에 사용하는 것"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "25섹션 5빌드"
+        ],
+        "chapter_label": "25섹션 5빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 25섹션 5빌드",
+        "chapter_id": "chapter_061"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "21. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하는 작업을 의미하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "소스 코드 인스펙션"
+          },
+          {
+            "label": "2",
+            "text": "재공학"
+          },
+          {
+            "label": "3",
+            "text": "역공학"
+          },
+          {
+            "label": "4",
+            "text": "재사용"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "소스 코드 인스펙션"
+        ],
+        "answer_text": "소스 코드 인스펙션"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다. • 재공학(Reengineering) : 새로운 요구에 맞도록 기존 시스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상시키는 것 • 역공학(Reverse Engineering) : 기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어 내는 활동 • 소프트웨어 재사용(Software Reuse) : 이미 개발되어 인정받은 소프트웨어의 전체 혹은 일부분을 다른 소프트웨어 개발이나 유지에 사용하는 것",
+        "summary": "소프트웨어 개발 단계에서 코드를 검토하여 결함을 찾는 활동을 묻는 문제입니다.",
+        "why_correct": [
+          "인스펙션(Inspection)은 개발자가 작성한 코드를 전문가나 동료가 검토하여 결함을 찾아내는 정적 테스트 기법입니다."
+        ],
+        "why_others_wrong": [
+          "2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다.",
+          "3번: 역공학은 결과물로부터 설계 정보를 추출하는 것입니다.",
+          "4번: 재사용은 기존 자산을 다시 활용하는 것입니다."
+        ],
+        "key_concepts": [
+          "Inspection",
+          "Static Testing",
+          "Code Review"
+        ],
+        "memory_cues": [
+          "검사(Inspection)해서 결함 찾기"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "소스 코드 인스펙션",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 소스 코드 인스펙션'와 일치합니다. 인스펙션(Inspection)은 개발자가 작성한 코드를 전문가나 동료가 검토하여 결함을 찾아내는 정적 테스트 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "재공학",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '재공학'이므로 일치하지 않습니다. 2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다. 3번: 역공학은 결과물로부터 설계 정보를 추출하는 것입니다."
+          },
+          {
+            "label": "3",
+            "text": "역공학",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '역공학'이므로 일치하지 않습니다. 2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다. 3번: 역공학은 결과물로부터 설계 정보를 추출하는 것입니다."
+          },
+          {
+            "label": "4",
+            "text": "재사용",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 소스 코드 인스펙션'인데 이 선택지는 '재사용'이므로 일치하지 않습니다. 2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다. 3번: 역공학은 결과물로부터 설계 정보를 추출하는 것입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하는 작업을 의미하는 것은?",
+          "핵심 개념을 떠올립니다. Inspection, Static Testing, Code Review",
+          "정답 판단 근거를 적용합니다. 인스펙션(Inspection)은 개발자가 작성한 코드를 전문가나 동료가 검토하여 결함을 찾아내는 정적 테스트 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다."
+        ],
+        "exam_traps": [
+          "2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Inspection'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Static Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Code Review'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 검사(Inspection)해서 결함 찾기"
+        ],
+        "detailed_summary": "소프트웨어 개발 단계에서 코드를 검토하여 결함을 찾는 활동을 묻는 문제입니다. 전문가의 조언 | 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하려는 작업을 소스 코드 인스펙션이라고 합니다. • 재공학(Reengineering) : 새로운 요구에 맞도록 기존 시스템을 이용하여 보다 나은 시스템을 구축하고, 새로운 기능을 추가하여 소프트웨어 성능을 향상시키는 것 • 역공학(Reverse Engineering) : 기존 소프트웨어를 분석하여 소프트웨어 개발 과정과 데이터 처리 과정을 설명하는 분석 및 설계 정보를 재발견하거나 다시 만들어 내는 활동 • 소프트웨어 재사용(Software Reuse) : 이미 개발되어 인정받은 소프트웨어의 전체 혹은 일부분을 다른 소프트웨어 개발이나 유지에 사용하는 것 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 프로그램의 소스나 코드에서 결함을 찾아내고 이를 확인하는 작업을 의미하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 소스 코드 인스펙션'와 일치합니다. 인스펙션(Inspection)은 개발자가 작성한 코드를 전문가나 동료가 검토하여 결함을 찾아내는 정적 테스트 기법입니다. 시험 포인트는 2번: 재공학은 기존 시스템을 개선하여 새로운 시스템을 만드는 것입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "인스펙션",
+        "Inspection",
+        "정적 테스트",
+        "코드 검토"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_700c17cb65a75f51",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          124
+        ],
+        "page_span": {
+          "start_page": 124,
+          "end_page": 124
+        },
+        "source_explanation": "전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할과 경계값 분석은 블랙박스 테스트 기법에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "46섹션 1빌드"
+        ],
+        "chapter_label": "46섹션 1빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 46섹션 1빌드",
+        "chapter_id": "chapter_073"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "24. 화이트박스 테스트에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "제품의 내부 요소들이 명세서에 따라 충분히 실행되는가를 보장하기 위한 검사이다."
+          },
+          {
+            "label": "2",
+            "text": "모듈 안의 작동을 직접 관찰한다."
+          },
+          {
+            "label": "3",
+            "text": "프로그램 원시 코드의 논리적인 구조를 커버하도록 테스트 케이스를 설계한다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다."
+        ],
+        "answer_text": "화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할과 경계값 분석은 블랙박스 테스트 기법에 해당합니다.",
+        "summary": "화이트박스 테스트와 블랙박스 테스트 기법을 구분하는 문제입니다.",
+        "why_correct": [
+          "동치 분할(Equivalence Partitioning)과 경계값 분석(Boundary Value Analysis)은 내부 구조를 보지 않고 입력값에 기반하는 '블랙박스 테스트' 기법입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+        ],
+        "key_concepts": [
+          "White-box Testing",
+          "Black-box Testing",
+          "Boundary Value Analysis"
+        ],
+        "memory_cues": [
+          "동경블: 동치분할, 경계값은 블랙박스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "제품의 내부 요소들이 명세서에 따라 충분히 실행되는가를 보장하기 위한 검사이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.'인데 이 선택지는 '제품의 내부 요소들이 명세서에 따라 충분히 실행되는가를 보장하기 위한 검사이다.'이므로 일치하지 않습니다. 1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "모듈 안의 작동을 직접 관찰한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.'인데 이 선택지는 '모듈 안의 작동을 직접 관찰한다.'이므로 일치하지 않습니다. 1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "프로그램 원시 코드의 논리적인 구조를 커버하도록 테스트 케이스를 설계한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.'인데 이 선택지는 '프로그램 원시 코드의 논리적인 구조를 커버하도록 테스트 케이스를 설계한다.'이므로 일치하지 않습니다. 1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.'와 일치합니다. 동치 분할(Equivalence Partitioning)과 경계값 분석(Boundary Value Analysis)은 내부 구조를 보지 않고 입력값에 기반하는 '블랙박스 테스트' 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 화이트박스 테스트에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. White-box Testing, Black-box Testing, Boundary Value Analysis",
+          "정답 판단 근거를 적용합니다. 동치 분할(Equivalence Partitioning)과 경계값 분석(Boundary Value Analysis)은 내부 구조를 보지 않고 입력값에 기반하는 '블랙박스 테스트' 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'White-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Black-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Boundary Value Analysis'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 동경블: 동치분할, 경계값은 블랙박스"
+        ],
+        "detailed_summary": "화이트박스 테스트와 블랙박스 테스트 기법을 구분하는 문제입니다. 전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할과 경계값 분석은 블랙박스 테스트 기법에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 24. 화이트박스 테스트에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트 기법에는 기초 경로 검사, 동치 분할, 경계값 분석 등이 있다.'와 일치합니다. 동치 분할(Equivalence Partitioning)과 경계값 분석(Boundary Value Analysis)은 내부 구조를 보지 않고 입력값에 기반하는 '블랙박스 테스트' 기법입니다. 시험 포인트는 1, 2, 3번은 모두 소스 코드의 내부 로직과 구조를 확인하는 화이트박스 테스트의 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "블랙박스 테스트",
+        "동치 분할",
+        "경계값 분석",
+        "기초 경로 검사"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_b12bc3006d6925cd",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          124
+        ],
+        "page_span": {
+          "start_page": 124,
+          "end_page": 124
+        },
+        "source_explanation": "전문가의 조언 | 정형 기술 검토(FTR)는 논쟁과 반박을 제한합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "25. 정형 기술 검토(FTR)에 대한 설명으로 옳지 않은 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "논쟁과 반박을 제한하지 않는다."
+          },
+          {
+            "label": "2",
+            "text": "문제 영역을 명확히 표현한다."
+          },
+          {
+            "label": "3",
+            "text": "참가자의 수를 제한한다."
+          },
+          {
+            "label": "4",
+            "text": "의제를 제한한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "논쟁과 반박을 제한하지 않는다."
+        ],
+        "answer_text": "논쟁과 반박을 제한하지 않는다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 정형 기술 검토(FTR)는 논쟁과 반박을 제한합니다.",
+        "summary": "정형 기술 검토(FTR)의 효율적인 진행을 위한 가이드라인을 묻는 문제입니다.",
+        "why_correct": [
+          "FTR은 정해진 시간 내에 효율적으로 검토를 마쳐야 하므로, 소모적인 논쟁이나 반박은 제한해야 합니다."
+        ],
+        "why_others_wrong": [
+          "2번: 발견된 문제는 명확히 기록해야 합니다.",
+          "3번: 너무 많은 인원은 집중력을 흐트러뜨리므로 제한이 필요합니다.",
+          "4번: 정해진 의제(Agenda)에 집중해야 합니다."
+        ],
+        "key_concepts": [
+          "FTR",
+          "Formal Technical Review",
+          "Review Guidelines"
+        ],
+        "memory_cues": [
+          "FTR은 논쟁 금지, 제품 검토에 집중"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "논쟁과 반박을 제한하지 않는다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 논쟁과 반박을 제한하지 않는다.'와 일치합니다. FTR은 정해진 시간 내에 효율적으로 검토를 마쳐야 하므로, 소모적인 논쟁이나 반박은 제한해야 합니다."
+          },
+          {
+            "label": "2",
+            "text": "문제 영역을 명확히 표현한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 논쟁과 반박을 제한하지 않는다.'인데 이 선택지는 '문제 영역을 명확히 표현한다.'이므로 일치하지 않습니다. 2번: 발견된 문제는 명확히 기록해야 합니다. 3번: 너무 많은 인원은 집중력을 흐트러뜨리므로 제한이 필요합니다."
+          },
+          {
+            "label": "3",
+            "text": "참가자의 수를 제한한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 논쟁과 반박을 제한하지 않는다.'인데 이 선택지는 '참가자의 수를 제한한다.'이므로 일치하지 않습니다. 2번: 발견된 문제는 명확히 기록해야 합니다. 3번: 너무 많은 인원은 집중력을 흐트러뜨리므로 제한이 필요합니다."
+          },
+          {
+            "label": "4",
+            "text": "의제를 제한한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 논쟁과 반박을 제한하지 않는다.'인데 이 선택지는 '의제를 제한한다.'이므로 일치하지 않습니다. 2번: 발견된 문제는 명확히 기록해야 합니다. 3번: 너무 많은 인원은 집중력을 흐트러뜨리므로 제한이 필요합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 정형 기술 검토(FTR)에 대한 설명으로 옳지 않은 것은?",
+          "핵심 개념을 떠올립니다. FTR, Formal Technical Review, Review Guidelines",
+          "정답 판단 근거를 적용합니다. FTR은 정해진 시간 내에 효율적으로 검토를 마쳐야 하므로, 소모적인 논쟁이나 반박은 제한해야 합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2번: 발견된 문제는 명확히 기록해야 합니다."
+        ],
+        "exam_traps": [
+          "2번: 발견된 문제는 명확히 기록해야 합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'FTR'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Formal Technical Review'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Review Guidelines'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. FTR은 논쟁 금지, 제품 검토에 집중"
+        ],
+        "detailed_summary": "정형 기술 검토(FTR)의 효율적인 진행을 위한 가이드라인을 묻는 문제입니다. 전문가의 조언 | 정형 기술 검토(FTR)는 논쟁과 반박을 제한합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 25. 정형 기술 검토(FTR)에 대한 설명으로 옳지 않은 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 논쟁과 반박을 제한하지 않는다.'와 일치합니다. FTR은 정해진 시간 내에 효율적으로 검토를 마쳐야 하므로, 소모적인 논쟁이나 반박은 제한해야 합니다. 시험 포인트는 2번: 발견된 문제는 명확히 기록해야 합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "FTR",
+        "정형 기술 검토",
+        "검토 가이드라인",
+        "워크스루",
+        "인스펙션"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fd590a2c47df2fc0",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          124
+        ],
+        "page_span": {
+          "start_page": 124,
+          "end_page": 124
+        },
+        "source_explanation": "전문가의 조언 | 기능 오류는 서브루틴이나 블록이 잘못된 것(What)을 수행하는 오류입니다. • 2번은 논리 오류(LO: Logic Error)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "22. 코드 검사 수행 시 발견된 오류와 그 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "데이터 오류(DA: Data Error)는 데이터 유형 정의, 변수 선언, 매개 변수 등에서 나타나는 오류이다."
+          },
+          {
+            "label": "2",
+            "text": "기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다."
+          },
+          {
+            "label": "3",
+            "text": "성능 오류(PF: Performance Error)는 프로그램을 수행하며 요구되는 성능을 만족시키지 못하는 오류이다."
+          },
+          {
+            "label": "4",
+            "text": "문서 오류(DC: Documentation Error)는 프로그램 구성 요소인 선언 부분, 잘못되거나 불필요한 주석 등을 의미한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다."
+        ],
+        "answer_text": "기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 기능 오류는 서브루틴이나 블록이 잘못된 것(What)을 수행하는 오류입니다. • 2번은 논리 오류(LO: Logic Error)에 대한 설명입니다.",
+        "summary": "코드 검토 시 분류되는 오류 유형의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "기능 오류(Function Error)는 요구된 기능과 다른 것(What)을 수행할 때 발생합니다. 수행 방법(How)이 틀린 것은 논리 오류(Logic Error)에 해당합니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+        ],
+        "key_concepts": [
+          "Function Error",
+          "Logic Error",
+          "Code Inspection Errors"
+        ],
+        "memory_cues": [
+          "기능은 What, 논리는 How"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "데이터 오류(DA: Data Error)는 데이터 유형 정의, 변수 선언, 매개 변수 등에서 나타나는 오류이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.'인데 이 선택지는 '데이터 오류(DA: Data Error)는 데이터 유형 정의, 변수 선언, 매개 변수 등에서 나타나는 오류이다.'이므로 일치하지 않습니다. 1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "2",
+            "text": "기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.'와 일치합니다. 기능 오류(Function Error)는 요구된 기능과 다른 것(What)을 수행할 때 발생합니다. 수행 방법(How)이 틀린 것은 논리 오류(Logic Error)에 해당합니다."
+          },
+          {
+            "label": "3",
+            "text": "성능 오류(PF: Performance Error)는 프로그램을 수행하며 요구되는 성능을 만족시키지 못하는 오류이다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.'인데 이 선택지는 '성능 오류(PF: Performance Error)는 프로그램을 수행하며 요구되는 성능을 만족시키지 못하는 오류이다.'이므로 일치하지 않습니다. 1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+          },
+          {
+            "label": "4",
+            "text": "문서 오류(DC: Documentation Error)는 프로그램 구성 요소인 선언 부분, 잘못되거나 불필요한 주석 등을 의미한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.'인데 이 선택지는 '문서 오류(DC: Documentation Error)는 프로그램 구성 요소인 선언 부분, 잘못되거나 불필요한 주석 등을 의미한다.'이므로 일치하지 않습니다. 1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 코드 검사 수행 시 발견된 오류와 그 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. Function Error, Logic Error, Code Inspection Errors",
+          "정답 판단 근거를 적용합니다. 기능 오류(Function Error)는 요구된 기능과 다른 것(What)을 수행할 때 발생합니다. 수행 방법(How)이 틀린 것은 논리 오류(Logic Error)에 해당합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Function Error'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Logic Error'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Code Inspection Errors'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 기능은 What, 논리는 How"
+        ],
+        "detailed_summary": "코드 검토 시 분류되는 오류 유형의 정의를 묻는 문제입니다. 전문가의 조언 | 기능 오류는 서브루틴이나 블록이 잘못된 것(What)을 수행하는 오류입니다. • 2번은 논리 오류(LO: Logic Error)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 22. 코드 검사 수행 시 발견된 오류와 그 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 기능 오류(FN: Function Error)는 서브루틴이나 블록이 수행하는 방법(How)이 잘못되어 있는 오류이다.'와 일치합니다. 기능 오류(Function Error)는 요구된 기능과 다른 것(What)을 수행할 때 발생합니다. 수행 방법(How)이 틀린 것은 논리 오류(Logic Error)에 해당합니다. 시험 포인트는 1, 3, 4번은 각각 데이터, 성능, 문서 오류에 대한 올바른 설명입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "코드 검사",
+        "기능 오류",
+        "논리 오류",
+        "오류 유형"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2bb852901d56632f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          126
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 126
+        },
+        "source_explanation": "전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할 검사, 경계값 분석, 원인 효과 그래프 검사는 블랙박스 테스트 기법에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "46섹션 2빌드"
+        ],
+        "chapter_label": "46섹션 2빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 46섹션 2빌드",
+        "chapter_id": "chapter_074"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 175.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "34. 화이트박스 테스트 기법에 해당하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기초 경로 검사"
+          },
+          {
+            "label": "2",
+            "text": "동치 분할 검사"
+          },
+          {
+            "label": "3",
+            "text": "경계값 분석"
+          },
+          {
+            "label": "4",
+            "text": "원인 효과 그래프 검사"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "기초 경로 검사"
+        ],
+        "answer_text": "기초 경로 검사"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할 검사, 경계값 분석, 원인 효과 그래프 검사는 블랙박스 테스트 기법에 해당합니다.",
+        "summary": "화이트박스 테스트 기법의 종류를 찾는 문제입니다.",
+        "why_correct": [
+          "기초 경로 검사(Base Path Testing)는 프로그램의 제어 흐름 그래프를 바탕으로 독립적인 경로를 테스트하는 대표적인 화이트박스 기법입니다."
+        ],
+        "why_others_wrong": [
+          "2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+        ],
+        "key_concepts": [
+          "White-box Testing",
+          "Base Path Testing",
+          "Black-box Testing"
+        ],
+        "memory_cues": [
+          "경로(Path)를 보는 것은 화이트박스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기초 경로 검사",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 기초 경로 검사'와 일치합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 흐름 그래프를 바탕으로 독립적인 경로를 테스트하는 대표적인 화이트박스 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "동치 분할 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '동치 분할 검사'이므로 일치하지 않습니다. 2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "경계값 분석",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '경계값 분석'이므로 일치하지 않습니다. 2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "원인 효과 그래프 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '원인 효과 그래프 검사'이므로 일치하지 않습니다. 2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 화이트박스 테스트 기법에 해당하는 것은?",
+          "핵심 개념을 떠올립니다. White-box Testing, Base Path Testing, Black-box Testing",
+          "정답 판단 근거를 적용합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 흐름 그래프를 바탕으로 독립적인 경로를 테스트하는 대표적인 화이트박스 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+        ],
+        "exam_traps": [
+          "2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'White-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Base Path Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Black-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 경로(Path)를 보는 것은 화이트박스"
+        ],
+        "detailed_summary": "화이트박스 테스트 기법의 종류를 찾는 문제입니다. 전문가의 조언 | 화이트박스 테스트 기법에는 기초 경로 검사, 제어 구조 검사 등이 있습니다. • 동치 분할 검사, 경계값 분석, 원인 효과 그래프 검사는 블랙박스 테스트 기법에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 화이트박스 테스트 기법에 해당하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 기초 경로 검사'와 일치합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 흐름 그래프를 바탕으로 독립적인 경로를 테스트하는 대표적인 화이트박스 기법입니다. 시험 포인트는 2, 3, 4번은 모두 입력과 출력의 관계를 이용하는 블랙박스 테스트 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "기초 경로 검사",
+        "블랙박스 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_3229d1e7f7b24750",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | 기초 경로 검사는 화이트박스 테스트 기법이고, 나머지는 블랙박스 테스트 기법에 해당합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "34. 화이트박스 테스트 기법에 해당하는 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "기초 경로 검사"
+          },
+          {
+            "label": "2",
+            "text": "동치 분할 검사"
+          },
+          {
+            "label": "3",
+            "text": "경계값 분석"
+          },
+          {
+            "label": "4",
+            "text": "원인 효과 그래프 검사"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "1"
+        ],
+        "correct_choice_texts": [
+          "기초 경로 검사"
+        ],
+        "answer_text": "기초 경로 검사"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 기초 경로 검사는 화이트박스 테스트 기법이고, 나머지는 블랙박스 테스트 기법에 해당합니다.",
+        "summary": "소프트웨어 테스트 기법 중 내부 구조를 들여다보는 화이트박스 테스트 기법을 찾는 문제입니다.",
+        "why_correct": [
+          "기초 경로 검사(Base Path Testing)는 프로그램의 제어 구조를 분석하여 테스트 케이스를 설계하는 대표적인 화이트박스 테스트 기법입니다."
+        ],
+        "why_others_wrong": [
+          "동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+        ],
+        "key_concepts": [
+          "화이트박스 테스트: 기초 경로 검사, 제어 구조 검사(조건, 루프, 데이터 흐름)",
+          "블랙박스 테스트: 동치 분할, 경계값 분석, 원인-효과 그래프, 오류 예측, 비교 검사"
+        ],
+        "memory_cues": [
+          "화이트박스 = 내부 경로(Path) 보임, 블랙박스 = 밖에서 입력(Input)만 넣음"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "기초 경로 검사",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '1번 기초 경로 검사'와 일치합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 구조를 분석하여 테스트 케이스를 설계하는 대표적인 화이트박스 테스트 기법입니다."
+          },
+          {
+            "label": "2",
+            "text": "동치 분할 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '동치 분할 검사'이므로 일치하지 않습니다. 동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "경계값 분석",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '경계값 분석'이므로 일치하지 않습니다. 동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+          },
+          {
+            "label": "4",
+            "text": "원인 효과 그래프 검사",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '1번 기초 경로 검사'인데 이 선택지는 '원인 효과 그래프 검사'이므로 일치하지 않습니다. 동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 화이트박스 테스트 기법에 해당하는 것은?",
+          "핵심 개념을 떠올립니다. 화이트박스 테스트: 기초 경로 검사, 제어 구조 검사(조건, 루프, 데이터 흐름), 블랙박스 테스트: 동치 분할, 경계값 분석, 원인-효과 그래프, 오류 예측, 비교 검사",
+          "정답 판단 근거를 적용합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 구조를 분석하여 테스트 케이스를 설계하는 대표적인 화이트박스 테스트 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+        ],
+        "exam_traps": [
+          "동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '화이트박스 테스트: 기초 경로 검사, 제어 구조 검사(조건, 루프, 데이터 흐름)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트: 동치 분할, 경계값 분석, 원인-효과 그래프, 오류 예측, 비교 검사'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 화이트박스 = 내부 경로(Path) 보임, 블랙박스 = 밖에서 입력(Input)만 넣음"
+        ],
+        "detailed_summary": "소프트웨어 테스트 기법 중 내부 구조를 들여다보는 화이트박스 테스트 기법을 찾는 문제입니다. 전문가의 조언 | 기초 경로 검사는 화이트박스 테스트 기법이고, 나머지는 블랙박스 테스트 기법에 해당합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 화이트박스 테스트 기법에 해당하는 것은? 정답입니다. 이 선택지는 실제 정답인 '1번 기초 경로 검사'와 일치합니다. 기초 경로 검사(Base Path Testing)는 프로그램의 제어 구조를 분석하여 테스트 케이스를 설계하는 대표적인 화이트박스 테스트 기법입니다. 시험 포인트는 동치 분할, 경계값 분석, 원인 효과 그래프 검사는 모두 프로그램 내부 구조를 보지 않고 입력값과 출력값만 확인하는 블랙박스 테스트 기법입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": true,
+        "review_reasons": [
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "블랙박스 테스트",
+        "기초 경로 검사"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_a518ffb356b3dcbb",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0141_p0146"
+        ],
+        "source_pages": [
+          143
+        ],
+        "page_span": {
+          "start_page": 143,
+          "end_page": 143
+        },
+        "source_explanation": "전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다.\n• 원인-효과 그래프 검사(Cause-Effect Graphing Testing) : 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석하여 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법\n• 경계값 분석(Boundary Value Analysis) : 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함\n• 비교 검사(Comparison Testing) : 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing"
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing"
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis"
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "Equivalence Partitioning Testing"
+        ],
+        "answer_text": "Equivalence Partitioning Testing"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다.\n• 원인-효과 그래프 검사(Cause-Effect Graphing Testing) : 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석하여 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법\n• 경계값 분석(Boundary Value Analysis) : 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함\n• 비교 검사(Comparison Testing) : 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법",
+        "summary": "블랙박스 테스트 기법 중 동치 분할 검사의 정의를 묻는 문제입니다.",
+        "why_correct": [
+          "동치 분할(Equivalence Partitioning)은 입력값을 유효한 값과 유효하지 않은 값의 그룹으로 나누어 대표값을 테스트하는 기법입니다."
+        ],
+        "why_others_wrong": [
+          "경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+        ],
+        "key_concepts": [
+          "Equivalence Partitioning",
+          "Black-box Testing"
+        ],
+        "memory_cues": [
+          "끼리끼리 묶어서 하나만 테스트 = 동치 분할"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Cause-Effect Graphing Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Cause-Effect Graphing Testing'이므로 일치하지 않습니다. 경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+          },
+          {
+            "label": "2",
+            "text": "Equivalence Partitioning Testing",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할(Equivalence Partitioning)은 입력값을 유효한 값과 유효하지 않은 값의 그룹으로 나누어 대표값을 테스트하는 기법입니다."
+          },
+          {
+            "label": "3",
+            "text": "Boundary Value Analysis",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Boundary Value Analysis'이므로 일치하지 않습니다. 경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+          },
+          {
+            "label": "4",
+            "text": "Comparison Testing",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 Equivalence Partitioning Testing'인데 이 선택지는 'Comparison Testing'이므로 일치하지 않습니다. 경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은?",
+          "핵심 개념을 떠올립니다. Equivalence Partitioning, Black-box Testing",
+          "정답 판단 근거를 적용합니다. 동치 분할(Equivalence Partitioning)은 입력값을 유효한 값과 유효하지 않은 값의 그룹으로 나누어 대표값을 테스트하는 기법입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+        ],
+        "exam_traps": [
+          "경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Equivalence Partitioning'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Black-box Testing'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 끼리끼리 묶어서 하나만 테스트 = 동치 분할"
+        ],
+        "detailed_summary": "블랙박스 테스트 기법 중 동치 분할 검사의 정의를 묻는 문제입니다. 전문가의 조언 | 문제에 제시된 내용은 동치 분할 검사(Equivalence Partitioning Testing)에 대한 설명입니다. • 원인-효과 그래프 검사(Cause-Effect Graphing Testing) : 입력 데이터 간의 관계와 출력에 영향을 미치는 상황을 체계적으로 분석하여 다음 효용성이 높은 테스트 케이스를 선정하여 검사하는 기법 • 경계값 분석(Boundary Value Analysis) : 입력 자료에만 치중한 동치 분할 기법을 보완하기 위한 기법으로, 입력 조건의 중간값보다 경계값에서 오류가 발생할 확률이 높다는 점을 이용하여 입력 조건의 경계값을 테스트 케이스로 선정하여 검사함 • 비교 검사(Comparison Testing) : 여러 버전의 프로그램에 동일한 테스트 자료를 제공하여 동일한 결과가 출력되는지 테스트하는 기법 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 명세 기반 테스트 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대하여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법은? 정답입니다. 이 선택지는 실제 정답인 '2번 Equivalence Partitioning Testing'와 일치합니다. 동치 분할(Equivalence Partitioning)은 입력값을 유효한 값과 유효하지 않은 값의 그룹으로 나누어 대표값을 테스트하는 기법입니다. 시험 포인트는 경계값 분석은 경계에 집중하며, 원인-효과는 논리적 관계를, 비교 검사는 여러 버전 비교를 수행합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "동치 분할",
+        "블랙박스 테스트",
+        "명세 기반 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_48249ee28d29a245",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          161
+        ],
+        "page_span": {
+          "start_page": 161,
+          "end_page": 161
+        },
+        "source_explanation": "화이트박스 테스트는 프로그램의 제어 구조에 따라 선택, 반복 등의 분기점 부분들을 수행함으로써 논리적 경로를 제어합니다. 3번은 블랙박스 테스트에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "애플리케이션 테스트 관리",
+          "화이트박스 테스트"
+        ],
+        "chapter_label": "화이트박스 테스트",
+        "chapter_key": "2과목 소프트웨어 개발 > 애플리케이션 테스트 관리 > 화이트박스 테스트",
+        "chapter_id": "chapter_095"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "23. 화이트박스 테스트와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트의 이해를 위해 논리 흐름도(Logic-Flow Diagram)를 이용할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "테스트 데이터를 이용해 실제 프로그램을 실행함으로써 오류를 찾는 동적 테스트(Dynamic Test)에 해당한다."
+          },
+          {
+            "label": "3",
+            "text": "프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터를 선택하기 위하여 검증 기준(Test Coverage)을 정한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다."
+        ],
+        "answer_text": "프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다."
+      },
+      "explanation": {
+        "source_text": "화이트박스 테스트는 프로그램의 제어 구조에 따라 선택, 반복 등의 분기점 부분들을 수행함으로써 논리적 경로를 제어합니다. 3번은 블랙박스 테스트에 대한 설명입니다.",
+        "summary": "화이트박스 테스트의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "요구사항 명세를 기초로 구조를 무시하고 테스트하는 것은 블랙박스 테스트의 특징입니다."
+        ],
+        "why_others_wrong": [
+          "화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+        ],
+        "key_concepts": [
+          "화이트박스 테스트",
+          "블랙박스 테스트"
+        ],
+        "memory_cues": [
+          "화이트박스 = 내부 구조(Logic) 중심",
+          "블랙박스 = 외부 기능(Spec) 중심"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트의 이해를 위해 논리 흐름도(Logic-Flow Diagram)를 이용할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.'인데 이 선택지는 '화이트박스 테스트의 이해를 위해 논리 흐름도(Logic-Flow Diagram)를 이용할 수 있다.'이므로 일치하지 않습니다. 화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+          },
+          {
+            "label": "2",
+            "text": "테스트 데이터를 이용해 실제 프로그램을 실행함으로써 오류를 찾는 동적 테스트(Dynamic Test)에 해당한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.'인데 이 선택지는 '테스트 데이터를 이용해 실제 프로그램을 실행함으로써 오류를 찾는 동적 테스트(Dynamic Test)에 해당한다.'이므로 일치하지 않습니다. 화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+          },
+          {
+            "label": "3",
+            "text": "프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.'와 일치합니다. 요구사항 명세를 기초로 구조를 무시하고 테스트하는 것은 블랙박스 테스트의 특징입니다."
+          },
+          {
+            "label": "4",
+            "text": "테스트 데이터를 선택하기 위하여 검증 기준(Test Coverage)을 정한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.'인데 이 선택지는 '테스트 데이터를 선택하기 위하여 검증 기준(Test Coverage)을 정한다.'이므로 일치하지 않습니다. 화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 화이트박스 테스트와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 화이트박스 테스트, 블랙박스 테스트",
+          "정답 판단 근거를 적용합니다. 요구사항 명세를 기초로 구조를 무시하고 테스트하는 것은 블랙박스 테스트의 특징입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+        ],
+        "exam_traps": [
+          "화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 화이트박스 = 내부 구조(Logic) 중심",
+          "암기 포인트를 떠올립니다. 블랙박스 = 외부 기능(Spec) 중심"
+        ],
+        "detailed_summary": "화이트박스 테스트의 특징을 묻는 문제입니다. 화이트박스 테스트는 프로그램의 제어 구조에 따라 선택, 반복 등의 분기점 부분들을 수행함으로써 논리적 경로를 제어합니다. 3번은 블랙박스 테스트에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 23. 화이트박스 테스트와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 프로그램의 구조를 고려하지 않기 때문에 테스트 케이스는 프로그램 또는 모듈의 요구사항 명세를 기초로 결정한다.'와 일치합니다. 요구사항 명세를 기초로 구조를 무시하고 테스트하는 것은 블랙박스 테스트의 특징입니다. 시험 포인트는 화이트박스 테스트는 내부 로직(논리 흐름)을 보며 실행하는 동적 테스트이며 커버리지를 측정합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "동적 테스트",
+        "테스트 커버리지",
+        "블랙박스 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_6778e825e4abdc8f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0161_p0166"
+        ],
+        "source_pages": [
+          162
+        ],
+        "page_span": {
+          "start_page": 162,
+          "end_page": 162
+        },
+        "source_explanation": "화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "애플리케이션 테스트 관리",
+          "블랙박스 테스트"
+        ],
+        "chapter_label": "블랙박스 테스트",
+        "chapter_key": "2과목 소프트웨어 개발 > 애플리케이션 테스트 관리 > 블랙박스 테스트",
+        "chapter_id": "chapter_091"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 181.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "28. 블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우"
+          },
+          {
+            "label": "2",
+            "text": "정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우"
+          },
+          {
+            "label": "3",
+            "text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+          },
+          {
+            "label": "4",
+            "text": "경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+        ],
+        "answer_text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우"
+      },
+      "explanation": {
+        "source_text": "화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다.",
+        "summary": "블랙박스 테스트의 한계를 묻는 문제입니다.",
+        "why_correct": [
+          "루프 내부의 실행 여부는 코드의 구조를 들여다보는 화이트박스 테스트의 영역입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+        ],
+        "key_concepts": [
+          "블랙박스 테스트",
+          "화이트박스 테스트"
+        ],
+        "memory_cues": [
+          "루프/조건문 내부 = 화이트박스"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+          },
+          {
+            "label": "2",
+            "text": "정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+          },
+          {
+            "label": "3",
+            "text": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'와 일치합니다. 루프 내부의 실행 여부는 코드의 구조를 들여다보는 화이트박스 테스트의 영역입니다."
+          },
+          {
+            "label": "4",
+            "text": "경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'인데 이 선택지는 '경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우'이므로 일치하지 않습니다. 1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 28. 블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 블랙박스 테스트, 화이트박스 테스트",
+          "정답 판단 근거를 적용합니다. 루프 내부의 실행 여부는 코드의 구조를 들여다보는 화이트박스 테스트의 영역입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 루프/조건문 내부 = 화이트박스"
+        ],
+        "detailed_summary": "블랙박스 테스트의 한계를 묻는 문제입니다. 화이트박스 테스트를 통해서만 루프 내 문장의 수행 여부를 확인할 수 있습니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 28. 블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '3번 반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우'와 일치합니다. 루프 내부의 실행 여부는 코드의 구조를 들여다보는 화이트박스 테스트의 영역입니다. 시험 포인트는 1, 2, 4번은 입력값에 따른 출력 결과(기능)를 확인하는 블랙박스 테스트의 전형적인 오류 발견 사례입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "블랙박스 테스트",
+        "화이트박스 테스트",
+        "루프 테스트",
+        "기능 테스트"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_91ae0bc754765481",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0176_p0181"
+        ],
+        "source_pages": [
+          179
+        ],
+        "page_span": {
+          "start_page": 179,
+          "end_page": 179
+        },
+        "source_explanation": "전문가의 조언 | 기초 경로(Basis Path)는 수행 가능한 모든 경로를 의미합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "21. 소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+        ],
+        "answer_text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 기초 경로(Basis Path)는 수행 가능한 모든 경로를 의미합니다.",
+        "summary": "소프트웨어 테스트 기법인 화이트박스 테스트와 블랙박스 테스트의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "기본 경로(Basis Path)는 프로그램의 제어 흐름 그래프에서 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 허용하지 않는다는 제약은 없습니다. 모든 실행 가능한 경로를 포함하는 개념입니다."
+        ],
+        "why_others_wrong": [
+          "1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다.",
+          "2번 블랙박스 테스트는 내부 구조를 보지 않고 입력 대비 출력(기능)만 확인합니다.",
+          "3번 테스트 케이스의 구성 요소로 시험 조건, 데이터, 예상 결과는 필수적입니다."
+        ],
+        "key_concepts": [
+          "화이트박스 테스트",
+          "블랙박스 테스트",
+          "기본 경로 테스팅"
+        ],
+        "memory_cues": [
+          "화이트 = 내부 보임",
+          "블랙 = 내부 안 보임"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.'이므로 일치하지 않습니다. 1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다. 2번 블랙박스 테스트는 내부 구조를 보지 않고 입력 대비 출력(기능)만 확인합니다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.'이므로 일치하지 않습니다. 1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다. 2번 블랙박스 테스트는 내부 구조를 보지 않고 입력 대비 출력(기능)만 확인합니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.'이므로 일치하지 않습니다. 1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다. 2번 블랙박스 테스트는 내부 구조를 보지 않고 입력 대비 출력(기능)만 확인합니다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로(Basis Path)는 프로그램의 제어 흐름 그래프에서 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 허용하지 않는다는 제약은 없습니다. 모든 실행 가능한 경로를 포함하는 개념입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 화이트박스 테스트, 블랙박스 테스트, 기본 경로 테스팅",
+          "정답 판단 근거를 적용합니다. 기본 경로(Basis Path)는 프로그램의 제어 흐름 그래프에서 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 허용하지 않는다는 제약은 없습니다. 모든 실행 가능한 경로를 포함하는 개념입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다."
+        ],
+        "exam_traps": [
+          "1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '기본 경로 테스팅'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 화이트 = 내부 보임",
+          "암기 포인트를 떠올립니다. 블랙 = 내부 안 보임"
+        ],
+        "detailed_summary": "소프트웨어 테스트 기법인 화이트박스 테스트와 블랙박스 테스트의 특징을 묻는 문제입니다. 전문가의 조언 | 기초 경로(Basis Path)는 수행 가능한 모든 경로를 의미합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 21. 소프트웨어 테스트와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로(Basis Path)는 프로그램의 제어 흐름 그래프에서 독립적인 경로들의 집합을 의미하며, 반드시 싸이클을 허용하지 않는다는 제약은 없습니다. 모든 실행 가능한 경로를 포함하는 개념입니다. 시험 포인트는 1번 화이트박스 테스트는 내부 소스 코드를 보며 논리 구조를 테스트합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "블랙박스 테스트",
+        "테스트 케이스",
+        "기본 경로"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_5ae4cd36a1cd3f7d",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          181
+        ],
+        "page_span": {
+          "start_page": 181,
+          "end_page": 181
+        },
+        "source_explanation": "기초 경로(Base Path = Basis Path)는 수행 가능한 모든 경로를 의미합니다. (해설 보충: 기본 경로 테스팅은 싸이클을 포함할 수 있으며, 독립적인 경로의 집합을 의미함)"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+        ],
+        "answer_text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다."
+      },
+      "explanation": {
+        "source_text": "기초 경로(Base Path = Basis Path)는 수행 가능한 모든 경로를 의미합니다. (해설 보충: 기본 경로 테스팅은 싸이클을 포함할 수 있으며, 독립적인 경로의 집합을 의미함)",
+        "summary": "소프트웨어 테스트 기법 및 용어에 대한 설명 중 틀린 것을 찾는 문제입니다.",
+        "why_correct": [
+          "기본 경로(Basis Path)는 제어 흐름 그래프에서 독립적인 경로를 의미하며, 반드시 싸이클을 허용하지 않는 것은 아닙니다. 모든 실행 가능한 경로를 포괄하는 개념입니다."
+        ],
+        "why_others_wrong": [
+          "1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+        ],
+        "key_concepts": [
+          "화이트박스 테스트",
+          "블랙박스 테스트",
+          "기본 경로 테스팅"
+        ],
+        "memory_cues": [
+          "화이트박스는 내부 구조, 블랙박스는 외부 기능"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '화이트박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.'이므로 일치하지 않습니다. 1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+          },
+          {
+            "label": "2",
+            "text": "블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.'이므로 일치하지 않습니다. 1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+          },
+          {
+            "label": "3",
+            "text": "테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'인데 이 선택지는 '테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야 한다.'이므로 일치하지 않습니다. 1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+          },
+          {
+            "label": "4",
+            "text": "화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로(Basis Path)는 제어 흐름 그래프에서 독립적인 경로를 의미하며, 반드시 싸이클을 허용하지 않는 것은 아닙니다. 모든 실행 가능한 경로를 포괄하는 개념입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트와 관련한 설명으로 틀린 것은?",
+          "핵심 개념을 떠올립니다. 화이트박스 테스트, 블랙박스 테스트, 기본 경로 테스팅",
+          "정답 판단 근거를 적용합니다. 기본 경로(Basis Path)는 제어 흐름 그래프에서 독립적인 경로를 의미하며, 반드시 싸이클을 허용하지 않는 것은 아닙니다. 모든 실행 가능한 경로를 포괄하는 개념입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+        ],
+        "exam_traps": [
+          "1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '화이트박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '블랙박스 테스트'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '기본 경로 테스팅'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 화이트박스는 내부 구조, 블랙박스는 외부 기능"
+        ],
+        "detailed_summary": "소프트웨어 테스트 기법 및 용어에 대한 설명 중 틀린 것을 찾는 문제입니다. 기초 경로(Base Path = Basis Path)는 수행 가능한 모든 경로를 의미합니다. (해설 보충: 기본 경로 테스팅은 싸이클을 포함할 수 있으며, 독립적인 경로의 집합을 의미함) 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트와 관련한 설명으로 틀린 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 화이트박스 테스트에서 기본 경로(Basis Path)란 흐름 그래프의 시작 노드에서 종료 노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.'와 일치합니다. 기본 경로(Basis Path)는 제어 흐름 그래프에서 독립적인 경로를 의미하며, 반드시 싸이클을 허용하지 않는 것은 아닙니다. 모든 실행 가능한 경로를 포괄하는 개념입니다. 시험 포인트는 1, 2번은 화이트박스와 블랙박스 테스트의 핵심 정의이며, 3번은 테스트 케이스의 필수 구성 요소입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "화이트박스 테스트",
+        "블랙박스 테스트",
+        "테스트 케이스",
+        "기본 경로"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8e2e9bca5238c65f",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          182
+        ],
+        "page_span": {
+          "start_page": 182,
+          "end_page": 182
+        },
+        "source_explanation": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "테스트 원리와 테스트 기법"
+        ],
+        "chapter_label": "테스트 원리와 테스트 기법",
+        "chapter_key": "소프트웨어 개발 > 테스트 원리와 테스트 기법",
+        "chapter_id": "chapter_256"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_031",
+        "topic_title": "테스트 원리와 테스트 기법",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "테스트 원리와 테스트 기법",
+        "match_score": 193.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙"
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙"
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙"
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Pareto의 법칙"
+        ],
+        "answer_text": "Pareto의 법칙"
+      },
+      "explanation": {
+        "source_text": "소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다.",
+        "summary": "특정 부분에 결함이 집중된다는 테스트 원리를 묻는 문제입니다.",
+        "why_correct": [
+          "파레토 법칙은 '결함 집중' 원리를 설명하며, 20%의 모듈에서 80%의 결함이 발견된다는 통계적 법칙입니다."
+        ],
+        "why_others_wrong": [
+          "Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+        ],
+        "key_concepts": [
+          "결함 집중 (Defect Clustering)",
+          "파레토 법칙"
+        ],
+        "memory_cues": [
+          "80:20 = 파레토"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Brooks의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Brooks의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+          },
+          {
+            "label": "2",
+            "text": "Boehm의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Boehm의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+          },
+          {
+            "label": "3",
+            "text": "Pareto의 법칙",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 '결함 집중' 원리를 설명하며, 20%의 모듈에서 80%의 결함이 발견된다는 통계적 법칙입니다."
+          },
+          {
+            "label": "4",
+            "text": "Jackson의 법칙",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Pareto의 법칙'인데 이 선택지는 'Jackson의 법칙'이므로 일치하지 않습니다. Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은?",
+          "핵심 개념을 떠올립니다. 결함 집중 (Defect Clustering), 파레토 법칙",
+          "정답 판단 근거를 적용합니다. 파레토 법칙은 '결함 집중' 원리를 설명하며, 20%의 모듈에서 80%의 결함이 발견된다는 통계적 법칙입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+        ],
+        "exam_traps": [
+          "Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '결함 집중 (Defect Clustering)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '파레토 법칙'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 80:20 = 파레토"
+        ],
+        "detailed_summary": "특정 부분에 결함이 집중된다는 테스트 원리를 묻는 문제입니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은 파레토 법칙(Pareto Principle)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 소프트웨어 테스트에서 오류의 80%는 전체 모듈의 20% 내에서 발견된다는 법칙은? 정답입니다. 이 선택지는 실제 정답인 '3번 Pareto의 법칙'와 일치합니다. 파레토 법칙은 '결함 집중' 원리를 설명하며, 20%의 모듈에서 80%의 결함이 발견된다는 통계적 법칙입니다. 시험 포인트는 Brooks의 법칙은 인력 투입 관련, Boehm은 비용 관련 법칙입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "파레토 법칙",
+        "결함 집중",
+        "80/20 법칙"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}

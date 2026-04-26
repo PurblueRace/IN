@@ -1,0 +1,1854 @@
+{
+  "schema_version": "question-bank-topic.v1",
+  "topic": {
+    "topic_id": "topic_023",
+    "sequence": 23,
+    "title": "스택과 큐·데크",
+    "subject_id": 2,
+    "subject_name": "소프트웨어 개발",
+    "subject_emoji": "💻",
+    "subject_color": "#30C85E",
+    "question_count": 10,
+    "review_count": 2,
+    "source_chapter_ids": [
+      "chapter_055",
+      "chapter_242",
+      "chapter_089",
+      "chapter_063",
+      "chapter_235"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "qb_17a42db10ab4ce26",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0006_p0011"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "전문가의 조언 | 스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로우(Underflow)가 발생하고, 아니면 현재 스택포인터의 위치에 있는 자료가 삭제되면서 스택포인터의 값이 1 감소합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "34. 다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름)\nif Top = 0 Then\n( ⓐ )\nElse {\nremove S(Top)\nTop = Top - 1\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Overflow"
+          },
+          {
+            "label": "2",
+            "text": "Top = Top + 1"
+          },
+          {
+            "label": "3",
+            "text": "Underflow"
+          },
+          {
+            "label": "4",
+            "text": "Top = Top"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Underflow"
+        ],
+        "answer_text": "Underflow"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로우(Underflow)가 발생하고, 아니면 현재 스택포인터의 위치에 있는 자료가 삭제되면서 스택포인터의 값이 1 감소합니다.",
+        "summary": "스택에서 데이터를 삭제(Pop)할 때 비어있는 상태를 체크하는 로직입니다.",
+        "why_correct": [
+          "Top이 0이라는 것은 스택이 비어있음을 의미하며, 이 상태에서 삭제를 시도하면 'Underflow' 오류가 발생합니다."
+        ],
+        "why_others_wrong": [
+          "Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다.",
+          "Top+1은 삽입(Push) 시의 동작입니다."
+        ],
+        "key_concepts": [
+          "스택",
+          "Underflow",
+          "Overflow"
+        ],
+        "memory_cues": [
+          "비었는데 빼면 언더(Under)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Overflow",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Overflow'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. Top+1은 삽입(Push) 시의 동작입니다."
+          },
+          {
+            "label": "2",
+            "text": "Top = Top + 1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Top = Top + 1'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. Top+1은 삽입(Push) 시의 동작입니다."
+          },
+          {
+            "label": "3",
+            "text": "Underflow",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Underflow'와 일치합니다. Top이 0이라는 것은 스택이 비어있음을 의미하며, 이 상태에서 삭제를 시도하면 'Underflow' 오류가 발생합니다."
+          },
+          {
+            "label": "4",
+            "text": "Top = Top",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Top = Top'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. Top+1은 삽입(Push) 시의 동작입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름) if Top = 0 Then ( ⓐ ) Else { remove S(Top) Top = Top - 1 }",
+          "핵심 개념을 떠올립니다. 스택, Underflow, Overflow",
+          "정답 판단 근거를 적용합니다. Top이 0이라는 것은 스택이 비어있음을 의미하며, 이 상태에서 삭제를 시도하면 'Underflow' 오류가 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다."
+        ],
+        "exam_traps": [
+          "Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Underflow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Overflow'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 비었는데 빼면 언더(Under)"
+        ],
+        "detailed_summary": "스택에서 데이터를 삭제(Pop)할 때 비어있는 상태를 체크하는 로직입니다. 전문가의 조언 | 스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로우(Underflow)가 발생하고, 아니면 현재 스택포인터의 위치에 있는 자료가 삭제되면서 스택포인터의 값이 1 감소합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 34. 다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름) if Top = 0 Then ( ⓐ ) Else { remove S(Top) Top = Top - 1 } 정답입니다. 이 선택지는 실제 정답인 '3번 Underflow'와 일치합니다. Top이 0이라는 것은 스택이 비어있음을 의미하며, 이 상태에서 삭제를 시도하면 'Underflow' 오류가 발생합니다. 시험 포인트는 Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "자료구조",
+        "언더플로우",
+        "Underflow",
+        "삭제 알고리즘"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_8819d5d56d391ed7",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0011_p0016"
+        ],
+        "source_pages": [
+          11
+        ],
+        "page_span": {
+          "start_page": 11,
+          "end_page": 11
+        },
+        "source_explanation": "스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로(Underflow)가 발생합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "스택"
+        ],
+        "chapter_label": "스택",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 스택",
+        "chapter_id": "chapter_242"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름)\nif Top = 0 Then\n( ⓐ )\nElse {\nremove S(Top)\nTop = Top - 1\n}",
+        "choices": [
+          {
+            "label": "1",
+            "text": "Overflow"
+          },
+          {
+            "label": "2",
+            "text": "Top = Top + 1"
+          },
+          {
+            "label": "3",
+            "text": "Underflow"
+          },
+          {
+            "label": "4",
+            "text": "Top = Top"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "Underflow"
+        ],
+        "answer_text": "Underflow"
+      },
+      "explanation": {
+        "source_text": "스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로(Underflow)가 발생합니다.",
+        "summary": "스택에서 데이터를 삭제할 때 비어있는 상태를 체크하는 조건문에 들어갈 용어를 묻는 문제입니다.",
+        "why_correct": [
+          "스택 포인터(Top)가 0이라는 것은 스택이 비어있음을 의미하며, 비어있는 스택에서 삭제를 시도하면 Underflow 에러가 발생합니다."
+        ],
+        "why_others_wrong": [
+          "Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+        ],
+        "key_concepts": [
+          "스택(Stack)",
+          "Underflow",
+          "Overflow"
+        ],
+        "memory_cues": [
+          "비어있는데 빼려고 하면 'Under'(아래로) 흘러넘침."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "Overflow",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Overflow'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+          },
+          {
+            "label": "2",
+            "text": "Top = Top + 1",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Top = Top + 1'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+          },
+          {
+            "label": "3",
+            "text": "Underflow",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 Underflow'와 일치합니다. 스택 포인터(Top)가 0이라는 것은 스택이 비어있음을 의미하며, 비어있는 스택에서 삭제를 시도하면 Underflow 에러가 발생합니다."
+          },
+          {
+            "label": "4",
+            "text": "Top = Top",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 Underflow'인데 이 선택지는 'Top = Top'이므로 일치하지 않습니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름) if Top = 0 Then ( ⓐ ) Else { remove S(Top) Top = Top - 1 }",
+          "핵심 개념을 떠올립니다. 스택(Stack), Underflow, Overflow",
+          "정답 판단 근거를 적용합니다. 스택 포인터(Top)가 0이라는 것은 스택이 비어있음을 의미하며, 비어있는 스택에서 삭제를 시도하면 Underflow 에러가 발생합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+        ],
+        "exam_traps": [
+          "Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택(Stack)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Underflow'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Overflow'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 비어있는데 빼려고 하면 'Under'(아래로) 흘러넘침."
+        ],
+        "detailed_summary": "스택에서 데이터를 삭제할 때 비어있는 상태를 체크하는 조건문에 들어갈 용어를 묻는 문제입니다. 스택에서 자료의 삭제가 발생했을 때 자료의 가장 위쪽을 가리키는 스택포인터가 0이면 자료가 없는 것이므로 언더플로(Underflow)가 발생합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 다음은 스택의 자료 삭제 알고리즘이다. ⓐ에 들어갈 내용으로 옳은 것은? (단, Top : 스택포인터, S : 스택의 이름) if Top = 0 Then ( ⓐ ) Else { remove S(Top) Top = Top - 1 } 정답입니다. 이 선택지는 실제 정답인 '3번 Underflow'와 일치합니다. 스택 포인터(Top)가 0이라는 것은 스택이 비어있음을 의미하며, 비어있는 스택에서 삭제를 시도하면 Underflow 에러가 발생합니다. 시험 포인트는 Overflow는 스택이 가득 찼을 때 삽입을 시도할 경우 발생합니다. 2번과 4번은 잘못된 포인터 조작입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "Underflow",
+        "Top",
+        "자료 삭제"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_1310633597f1f02e",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 B, D, C, A 순서로 입출력이 발생합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "스택"
+        ],
+        "chapter_label": "스택",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 스택",
+        "chapter_id": "chapter_242"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "C, B, D, A"
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A"
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A"
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "B, D, C, A"
+        ],
+        "answer_text": "B, D, C, A"
+      },
+      "explanation": {
+        "source_text": "PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 B, D, C, A 순서로 입출력이 발생합니다.",
+        "summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 순서에 따른 출력 결과를 찾는 문제입니다.",
+        "why_correct": [
+          "A, B를 push한 후 pop하면 B가 나옵니다. 이후 C, D를 push하고 pop하면 D가 나오고, 이어서 pop하면 C, 마지막으로 pop하면 A가 나옵니다. 따라서 B, D, C, A 순입니다."
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+        ],
+        "key_concepts": [
+          "스택(Stack)",
+          "LIFO",
+          "PUSH/POP"
+        ],
+        "memory_cues": [
+          "스택은 나중에 들어간 것이 먼저 나온다(Last-In First-Out)."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "C, B, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, D, A'이므로 일치하지 않습니다. 다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'B, C, D, A'이므로 일치하지 않습니다. 다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. A, B를 push한 후 pop하면 B가 나옵니다. 이후 C, D를 push하고 pop하면 D가 나오고, 이어서 pop하면 C, 마지막으로 pop하면 A가 나옵니다. 따라서 B, D, C, A 순입니다."
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, A, D'이므로 일치하지 않습니다. 다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+          "핵심 개념을 떠올립니다. 스택(Stack), LIFO, PUSH/POP",
+          "정답 판단 근거를 적용합니다. A, B를 push한 후 pop하면 B가 나옵니다. 이후 C, D를 push하고 pop하면 D가 나오고, 이어서 pop하면 C, 마지막으로 pop하면 A가 나옵니다. 따라서 B, D, C, A 순입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택(Stack)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'LIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'PUSH/POP'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택은 나중에 들어간 것이 먼저 나온다(Last-In First-Out)."
+        ],
+        "detailed_summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 순서에 따른 출력 결과를 찾는 문제입니다. PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 B, D, C, A 순서로 입출력이 발생합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은? 정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. A, B를 push한 후 pop하면 B가 나옵니다. 이후 C, D를 push하고 pop하면 D가 나오고, 이어서 pop하면 C, 마지막으로 pop하면 A가 나옵니다. 따라서 B, D, C, A 순입니다. 시험 포인트는 다른 보기들은 스택의 후입선출 원리에 어긋나는 순서입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "push",
+        "pop",
+        "LIFO",
+        "자료구조"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          31
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0031",
+            "page_number": 31,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0031.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1383,
+            "file_size_bytes": 961207,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_1310633597f1f02e__figure_01",
+            "question_id": "qb_1310633597f1f02e",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_1310633597f1f02e/qb_1310633597f1f02e__figure_01.png",
+            "content_type": "image/png",
+            "width": 443,
+            "height": 145,
+            "file_size_bytes": 79162,
+            "source_page": 31,
+            "crop_rect_pdf_points": [
+              22.0,
+              157.0,
+              243.5,
+              229.5
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_1310633597f1f02e__figure_01",
+          "question_id": "qb_1310633597f1f02e",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_1310633597f1f02e/qb_1310633597f1f02e__figure_01.png",
+          "content_type": "image/png",
+          "width": 443,
+          "height": 145,
+          "file_size_bytes": 79162,
+          "source_page": 31,
+          "crop_rect_pdf_points": [
+            22.0,
+            157.0,
+            243.5,
+            229.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_1310633597f1f02e__figure_01",
+          "question_id": "qb_1310633597f1f02e",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_1310633597f1f02e/qb_1310633597f1f02e__figure_01.png",
+          "content_type": "image/png",
+          "width": 443,
+          "height": 145,
+          "file_size_bytes": 79162,
+          "source_page": 31,
+          "crop_rect_pdf_points": [
+            22.0,
+            157.0,
+            243.5,
+            229.5
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_1310633597f1f02e_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_57cf44040f7e3eac",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0031_p0036"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "스택은 후입선출(LIFO) 방식으로 자료를 처리합니다. ㉠, ㉡은 큐(Queue)에 대한 설명이고, ㉢은 데크(Deque)에 대한 설명입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "자료구조",
+          "스택"
+        ],
+        "chapter_label": "스택",
+        "chapter_key": "소프트웨어 개발 > 자료구조 > 스택",
+        "chapter_id": "chapter_242"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "스택(Stack)에 대한 옳은 내용으로만 나열된 것은?\n㉠ FIFO 방식으로 처리된다.\n㉡ 순서 리스트의 뒤(Rear)에서 노드가 삽입되며, 앞(Front)에서 노드가 제거된다.\n㉢ 선형 리스트의 양쪽 끝에서 삽입과 삭제가 모두 가능한 자료 구조이다.\n㉣ 인터럽트 처리, 서브루틴 호출 작업 등에 응용된다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "㉠, ㉡"
+          },
+          {
+            "label": "2",
+            "text": "㉡, ㉢"
+          },
+          {
+            "label": "3",
+            "text": "㉣"
+          },
+          {
+            "label": "4",
+            "text": "㉠, ㉡, ㉢, ㉣"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "㉣"
+        ],
+        "answer_text": "㉣"
+      },
+      "explanation": {
+        "source_text": "스택은 후입선출(LIFO) 방식으로 자료를 처리합니다. ㉠, ㉡은 큐(Queue)에 대한 설명이고, ㉢은 데크(Deque)에 대한 설명입니다.",
+        "summary": "스택의 특징과 응용 분야를 구분하는 문제입니다.",
+        "why_correct": [
+          "스택은 복귀 주소 저장(서브루틴 호출), 인터럽트 처리, 수식 계산 등에 사용되는 대표적인 자료구조입니다."
+        ],
+        "why_others_wrong": [
+          "㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+        ],
+        "key_concepts": [
+          "스택(Stack)",
+          "LIFO",
+          "큐(Queue)",
+          "데크(Deque)"
+        ],
+        "memory_cues": [
+          "스택-LIFO-서브루틴",
+          "큐-FIFO-대기열"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "㉠, ㉡",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉣'인데 이 선택지는 '㉠, ㉡'이므로 일치하지 않습니다. ㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+          },
+          {
+            "label": "2",
+            "text": "㉡, ㉢",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉣'인데 이 선택지는 '㉡, ㉢'이므로 일치하지 않습니다. ㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+          },
+          {
+            "label": "3",
+            "text": "㉣",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 ㉣'와 일치합니다. 스택은 복귀 주소 저장(서브루틴 호출), 인터럽트 처리, 수식 계산 등에 사용되는 대표적인 자료구조입니다."
+          },
+          {
+            "label": "4",
+            "text": "㉠, ㉡, ㉢, ㉣",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 ㉣'인데 이 선택지는 '㉠, ㉡, ㉢, ㉣'이므로 일치하지 않습니다. ㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(Stack)에 대한 옳은 내용으로만 나열된 것은? ㉠ FIFO 방식으로 처리된다. ㉡ 순서 리스트의 뒤(Rear)에서 노드가 삽입되며, 앞(Front)에서 노드가 제거된다. ㉢ 선형 리스트의 양쪽 끝에서 삽입과 삭제가 모두 가능한 자료 구조이다. ㉣ 인터럽트 처리, 서브루틴 호출 작업 등에 응용된다.",
+          "핵심 개념을 떠올립니다. 스택(Stack), LIFO, 큐(Queue), 데크(Deque)",
+          "정답 판단 근거를 적용합니다. 스택은 복귀 주소 저장(서브루틴 호출), 인터럽트 처리, 수식 계산 등에 사용되는 대표적인 자료구조입니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. ㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+        ],
+        "exam_traps": [
+          "㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택(Stack)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'LIFO'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '큐(Queue)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '데크(Deque)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택-LIFO-서브루틴",
+          "암기 포인트를 떠올립니다. 큐-FIFO-대기열"
+        ],
+        "detailed_summary": "스택의 특징과 응용 분야를 구분하는 문제입니다. 스택은 후입선출(LIFO) 방식으로 자료를 처리합니다. ㉠, ㉡은 큐(Queue)에 대한 설명이고, ㉢은 데크(Deque)에 대한 설명입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(Stack)에 대한 옳은 내용으로만 나열된 것은? ㉠ FIFO 방식으로 처리된다. ㉡ 순서 리스트의 뒤(Rear)에서 노드가 삽입되며, 앞(Front)에서 노드가 제거된다. ㉢ 선형 리스트의 양쪽 끝에서 삽입과 삭제가 모두 가능한 자료 구조이다. ㉣ 인터럽트 처리, 서브루틴 호출 작업 등에 응용된다. 정답입니다. 이 선택지는 실제 정답인 '3번 ㉣'와 일치합니다. 스택은 복귀 주소 저장(서브루틴 호출), 인터럽트 처리, 수식 계산 등에 사용되는 대표적인 자료구조입니다. 시험 포인트는 ㉠, ㉡은 큐(Queue)의 특징(FIFO, Front/Rear)이며, ㉢은 데크(Deque)의 특징입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "LIFO",
+        "인터럽트",
+        "서브루틴",
+        "자료구조"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_fb80fdac28e5c880",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0026_p0031"
+        ],
+        "source_pages": [
+          31
+        ],
+        "page_span": {
+          "start_page": 31,
+          "end_page": 31
+        },
+        "source_explanation": "전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "스택과 큐·데크"
+        ],
+        "chapter_label": "스택과 큐·데크",
+        "chapter_key": "2과목 소프트웨어 개발 > 스택과 큐·데크",
+        "chapter_id": "chapter_089"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "29. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "C, B, D, A"
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A"
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A"
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "B, D, C, A"
+        ],
+        "answer_text": "B, D, C, A"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다.",
+        "summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 결과 출력 순서를 찾는 문제입니다.",
+        "why_correct": [
+          "1. push(A), push(B) -> 스택: [A, B]",
+          "2. pop() -> 출력: B, 스택: [A]",
+          "3. push(C), push(D) -> 스택: [A, C, D]",
+          "4. pop() -> 출력: D, 스택: [A, C]",
+          "5. pop() -> 출력: C, 스택: [A]",
+          "6. pop() -> 출력: A, 스택: []"
+        ],
+        "why_others_wrong": [
+          "다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+        ],
+        "key_concepts": [
+          "스택(Stack): 후입선출(LIFO) 자료구조",
+          "PUSH: 데이터 삽입",
+          "POP: 데이터 삭제 및 출력"
+        ],
+        "memory_cues": [
+          "스택은 프링글스 통처럼 나중에 넣은 게 먼저 나온다고 생각하세요."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "C, B, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, D, A'이므로 일치하지 않습니다. 다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'B, C, D, A'이므로 일치하지 않습니다. 다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. 1. push(A), push(B) -> 스택: [A, B] 2. pop() -> 출력: B, 스택: [A]"
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, A, D'이므로 일치하지 않습니다. 다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+          "핵심 개념을 떠올립니다. 스택(Stack): 후입선출(LIFO) 자료구조, PUSH: 데이터 삽입, POP: 데이터 삭제 및 출력",
+          "정답 판단 근거를 적용합니다. 1. push(A), push(B) -> 스택: [A, B]",
+          "나머지 보기와 비교해 오답을 제거합니다. 다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+        ],
+        "exam_traps": [
+          "다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택(Stack): 후입선출(LIFO) 자료구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'PUSH: 데이터 삽입'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'POP: 데이터 삭제 및 출력'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택은 프링글스 통처럼 나중에 넣은 게 먼저 나온다고 생각하세요."
+        ],
+        "detailed_summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 결과 출력 순서를 찾는 문제입니다. 전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 29. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은? 정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. 1. push(A), push(B) -> 스택: [A, B] 2. pop() -> 출력: B, 스택: [A] 시험 포인트는 다른 보기들은 연산 순서를 잘못 적용하거나 스택의 원리를 무시한 결과입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "Stack",
+        "PUSH",
+        "POP",
+        "LIFO"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_441a650828297b55",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0046_p0051"
+        ],
+        "source_pages": [
+          48
+        ],
+        "page_span": {
+          "start_page": 48,
+          "end_page": 48
+        },
+        "source_explanation": "작업 스케줄링에 사용되는 것은 큐(Queue)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발"
+        ],
+        "chapter_label": "2과목 소프트웨어 개발",
+        "chapter_key": "2과목 소프트웨어 개발",
+        "chapter_id": "chapter_055"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "스택(STACK)의 응용 분야로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인터럽트의 처리"
+          },
+          {
+            "label": "2",
+            "text": "수식의 계산"
+          },
+          {
+            "label": "3",
+            "text": "서브루틴의 복귀 번지 저장"
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 작업 스케줄링"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "운영체제의 작업 스케줄링"
+        ],
+        "answer_text": "운영체제의 작업 스케줄링"
+      },
+      "explanation": {
+        "source_text": "작업 스케줄링에 사용되는 것은 큐(Queue)입니다.",
+        "summary": "LIFO 구조인 스택의 주요 활용 사례를 구분하는 문제입니다.",
+        "why_correct": [
+          "작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다."
+        ],
+        "why_others_wrong": [
+          "1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+        ],
+        "key_concepts": [
+          "Stack (LIFO)",
+          "Queue (FIFO)"
+        ],
+        "memory_cues": [
+          "스케줄링은 줄서기(Queue)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인터럽트의 처리",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '인터럽트의 처리'이므로 일치하지 않습니다. 1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "2",
+            "text": "수식의 계산",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '수식의 계산'이므로 일치하지 않습니다. 1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "3",
+            "text": "서브루틴의 복귀 번지 저장",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '서브루틴의 복귀 번지 저장'이므로 일치하지 않습니다. 1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 작업 스케줄링",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 운영체제의 작업 스케줄링'와 일치합니다. 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(STACK)의 응용 분야로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. Stack (LIFO), Queue (FIFO)",
+          "정답 판단 근거를 적용합니다. 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+        ],
+        "exam_traps": [
+          "1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Stack (LIFO)'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Queue (FIFO)'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스케줄링은 줄서기(Queue)"
+        ],
+        "detailed_summary": "LIFO 구조인 스택의 주요 활용 사례를 구분하는 문제입니다. 작업 스케줄링에 사용되는 것은 큐(Queue)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(STACK)의 응용 분야로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 운영체제의 작업 스케줄링'와 일치합니다. 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다. 시험 포인트는 1, 2, 3번은 역순 처리가 필요한 스택의 대표적인 응용 분야입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "STACK",
+        "큐",
+        "Queue",
+        "작업 스케줄링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_d6122999bd4c35d5",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0121_p0126"
+        ],
+        "source_pages": [
+          125
+        ],
+        "page_span": {
+          "start_page": 125,
+          "end_page": 125
+        },
+        "source_explanation": "전문가의 조언 | 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료 구조는 데크(Deque)입니다. • 스택(Stack) : 리스트의 한쪽 끝으로만 자료의 삽입, 삭제 작업이 이루어지는 자료 구조 • 큐(Queue) : 리스트의 한쪽에서는 삽입 작업이 이루어지고 다른 한쪽에서는 삭제 작업이 이루어지도록 구성한 자료 구조"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "2과목 소프트웨어 개발",
+          "28섹션 6빌드"
+        ],
+        "chapter_label": "28섹션 6빌드",
+        "chapter_key": "2과목 소프트웨어 개발 > 28섹션 6빌드",
+        "chapter_id": "chapter_063"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 151.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "30. 다음 설명이 의미하는 것은?\n• 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 형태이다.\n• 입력이 한쪽에서만 발생하고 출력은 양쪽에서 일어날 수 있는 입력 제한과, 입력은 양쪽에서 일어나고 출력은 한 곳에서만 이루어지는 출력 제한이 있다.",
+        "choices": [
+          {
+            "label": "1",
+            "text": "스택"
+          },
+          {
+            "label": "2",
+            "text": "큐"
+          },
+          {
+            "label": "3",
+            "text": "다중 스택"
+          },
+          {
+            "label": "4",
+            "text": "데크"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "데크"
+        ],
+        "answer_text": "데크"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료 구조는 데크(Deque)입니다. • 스택(Stack) : 리스트의 한쪽 끝으로만 자료의 삽입, 삭제 작업이 이루어지는 자료 구조 • 큐(Queue) : 리스트의 한쪽에서는 삽입 작업이 이루어지고 다른 한쪽에서는 삭제 작업이 이루어지도록 구성한 자료 구조",
+        "summary": "양방향에서 입출력이 가능한 자료구조인 데크의 특징을 묻는 문제입니다.",
+        "why_correct": [
+          "데크(Deque, Double-Ended Queue)는 양쪽 끝에서 삽입과 삭제가 모두 가능한 구조이며, 스크롤(Scroll, 입력 제한)과 셸프(Shelf, 출력 제한) 변형이 있습니다."
+        ],
+        "why_others_wrong": [
+          "1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다.",
+          "2번: 큐는 한쪽으로 넣고 반대쪽으로 빼는 FIFO 구조입니다.",
+          "3번: 다중 스택은 여러 개의 스택을 관리하는 형태입니다."
+        ],
+        "key_concepts": [
+          "Deque",
+          "Stack",
+          "Queue",
+          "Scroll",
+          "Shelf"
+        ],
+        "memory_cues": [
+          "데크는 더블(Double) 엔디드 큐"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데크'인데 이 선택지는 '스택'이므로 일치하지 않습니다. 1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다. 2번: 큐는 한쪽으로 넣고 반대쪽으로 빼는 FIFO 구조입니다."
+          },
+          {
+            "label": "2",
+            "text": "큐",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데크'인데 이 선택지는 '큐'이므로 일치하지 않습니다. 1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다. 2번: 큐는 한쪽으로 넣고 반대쪽으로 빼는 FIFO 구조입니다."
+          },
+          {
+            "label": "3",
+            "text": "다중 스택",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 데크'인데 이 선택지는 '다중 스택'이므로 일치하지 않습니다. 1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다. 2번: 큐는 한쪽으로 넣고 반대쪽으로 빼는 FIFO 구조입니다."
+          },
+          {
+            "label": "4",
+            "text": "데크",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 데크'와 일치합니다. 데크(Deque, Double-Ended Queue)는 양쪽 끝에서 삽입과 삭제가 모두 가능한 구조이며, 스크롤(Scroll, 입력 제한)과 셸프(Shelf, 출력 제한) 변형이 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 다음 설명이 의미하는 것은? • 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 형태이다. • 입력이 한쪽에서만 발생하고 출력은 양쪽에서 일어날 수 있는 입력 제한과, 입력은 양쪽에서 일어나고 출력은 한 곳에서만 이루어지는 출력 제한이 있다.",
+          "핵심 개념을 떠올립니다. Deque, Stack, Queue, Scroll",
+          "정답 판단 근거를 적용합니다. 데크(Deque, Double-Ended Queue)는 양쪽 끝에서 삽입과 삭제가 모두 가능한 구조이며, 스크롤(Scroll, 입력 제한)과 셸프(Shelf, 출력 제한) 변형이 있습니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다."
+        ],
+        "exam_traps": [
+          "1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 'Deque'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Stack'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Queue'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'Scroll'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 데크는 더블(Double) 엔디드 큐"
+        ],
+        "detailed_summary": "양방향에서 입출력이 가능한 자료구조인 데크의 특징을 묻는 문제입니다. 전문가의 조언 | 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 자료 구조는 데크(Deque)입니다. • 스택(Stack) : 리스트의 한쪽 끝으로만 자료의 삽입, 삭제 작업이 이루어지는 자료 구조 • 큐(Queue) : 리스트의 한쪽에서는 삽입 작업이 이루어지고 다른 한쪽에서는 삭제 작업이 이루어지도록 구성한 자료 구조 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 30. 다음 설명이 의미하는 것은? • 삽입과 삭제가 리스트의 양쪽 끝에서 발생할 수 있는 형태이다. • 입력이 한쪽에서만 발생하고 출력은 양쪽에서 일어날 수 있는 입력 제한과, 입력은 양쪽에서 일어나고 출력은 한 곳에서만 이루어지는 출력 제한이 있다. 정답입니다. 이 선택지는 실제 정답인 '4번 데크'와 일치합니다. 데크(Deque, Double-Ended Queue)는 양쪽 끝에서 삽입과 삭제가 모두 가능한 구조이며, 스크롤(Scroll, 입력 제한)과 셸프(Shelf, 출력 제한) 변형이 있습니다. 시험 포인트는 1번: 스택은 한쪽 끝에서만 입출력이 일어나는 LIFO 구조입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "데크",
+        "Deque",
+        "자료구조",
+        "입력 제한",
+        "출력 제한"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    },
+    {
+      "question_id": "qb_2de525be50b4f7da",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0126_p0131"
+        ],
+        "source_pages": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_span": {
+          "start_page": 126,
+          "end_page": 131
+        },
+        "source_explanation": "전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다.\n- push A, push B -> pop (B 출력)\n- push C, push D -> pop (D 출력)\n- pop (C 출력)\n- pop (A 출력)\n결과: B, D, C, A"
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "스택과 큐·데크"
+        ],
+        "chapter_label": "스택과 큐·데크",
+        "chapter_key": "소프트웨어 개발 > 스택과 큐·데크",
+        "chapter_id": "chapter_235"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "40. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "C, B, D, A"
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A"
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A"
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "3"
+        ],
+        "correct_choice_texts": [
+          "B, D, C, A"
+        ],
+        "answer_text": "B, D, C, A"
+      },
+      "explanation": {
+        "source_text": "전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다.\n- push A, push B -> pop (B 출력)\n- push C, push D -> pop (D 출력)\n- pop (C 출력)\n- pop (A 출력)\n결과: B, D, C, A",
+        "summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 결과(출력 순서)를 추적하는 문제입니다.",
+        "why_correct": [
+          "주어진 연산 순서대로 스택에 넣고 빼는 과정을 따라가면 B, D, C, A 순서로 데이터가 나오게 됩니다."
+        ],
+        "why_others_wrong": [
+          "스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+        ],
+        "key_concepts": [
+          "스택(Stack): 후입선출(LIFO) 구조",
+          "push: 데이터 삽입",
+          "pop: 데이터 추출"
+        ],
+        "memory_cues": [
+          "스택은 쌓아 올린 접시와 같습니다. 마지막에 놓은 것을 가장 먼저 집습니다."
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "C, B, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, D, A'이므로 일치하지 않습니다. 스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+          },
+          {
+            "label": "2",
+            "text": "B, C, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'B, C, D, A'이므로 일치하지 않습니다. 스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+          },
+          {
+            "label": "3",
+            "text": "B, D, C, A",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. 주어진 연산 순서대로 스택에 넣고 빼는 과정을 따라가면 B, D, C, A 순서로 데이터가 나오게 됩니다."
+          },
+          {
+            "label": "4",
+            "text": "C, B, A, D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '3번 B, D, C, A'인데 이 선택지는 'C, B, A, D'이므로 일치하지 않습니다. 스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은?",
+          "핵심 개념을 떠올립니다. 스택(Stack): 후입선출(LIFO) 구조, push: 데이터 삽입, pop: 데이터 추출",
+          "정답 판단 근거를 적용합니다. 주어진 연산 순서대로 스택에 넣고 빼는 과정을 따라가면 B, D, C, A 순서로 데이터가 나오게 됩니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+        ],
+        "exam_traps": [
+          "스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택(Stack): 후입선출(LIFO) 구조'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'push: 데이터 삽입'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 'pop: 데이터 추출'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택은 쌓아 올린 접시와 같습니다. 마지막에 놓은 것을 가장 먼저 집습니다."
+        ],
+        "detailed_summary": "스택의 LIFO(Last-In First-Out) 원리를 이용하여 연산 결과(출력 순서)를 추적하는 문제입니다. 전문가의 조언 | PUSH는 스택에 자료를 입력하는 명령이고, POP은 스택에서 자료를 출력하는 명령입니다. 문제에 제시된 대로 PUSH와 POP을 수행하면 다음과 같은 순서로 입출력이 발생합니다. - push A, push B -> pop (B 출력) - push C, push D -> pop (D 출력) - pop (C 출력) - pop (A 출력) 결과: B, D, C, A 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 40. 스택에서 순서가 A, B, C, D로 정해진 입력 자료를, push → push → pop → push → push → pop → pop → pop으로 연산 했을 때 출력은? 정답입니다. 이 선택지는 실제 정답인 '3번 B, D, C, A'와 일치합니다. 주어진 연산 순서대로 스택에 넣고 빼는 과정을 따라가면 B, D, C, A 순서로 데이터가 나오게 됩니다. 시험 포인트는 스택의 원리를 잘못 적용하거나 연산 순서를 놓치면 다른 결과가 나올 수 있습니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency",
+          "source_pages를 청크 전체 페이지로 보정함"
+        ]
+      },
+      "keywords": [
+        "스택",
+        "LIFO",
+        "push",
+        "pop",
+        "자료구조"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "shared_page_png",
+        "page_numbers": [
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0126",
+            "page_number": 126,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1065366,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0127",
+            "page_number": 127,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0127.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 967033,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0128",
+            "page_number": 128,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0128.png",
+            "content_type": "image/png",
+            "width": 1037,
+            "height": 1384,
+            "file_size_bytes": 984311,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0129",
+            "page_number": 129,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0129.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1383,
+            "file_size_bytes": 938186,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0130",
+            "page_number": 130,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0130.png",
+            "content_type": "image/png",
+            "width": 1034,
+            "height": 1383,
+            "file_size_bytes": 849449,
+            "render_scale": 2.0
+          },
+          {
+            "asset_id": "page_0131",
+            "page_number": 131,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0131.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1382,
+            "file_size_bytes": 1116036,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [],
+        "preferred_display_asset": {
+          "asset_id": "page_0126",
+          "page_number": 126,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1065366,
+          "render_scale": 2.0,
+          "kind": "page_image"
+        },
+        "primary_image": {
+          "asset_id": "page_0126",
+          "page_number": 126,
+          "relative_path": "images/pages/978555445c5c/x2_0/page_0126.png",
+          "content_type": "image/png",
+          "width": 1033,
+          "height": 1382,
+          "file_size_bytes": 1065366,
+          "render_scale": 2.0
+        }
+      }
+    },
+    {
+      "question_id": "qb_3c40ca1439532856",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "D를 출력하려면 A, B, C가 스택에 먼저 들어가 있어야 합니다. D를 출력한 후에는 스택의 상단에 있는 C, B, A 순서로만 출력이 가능하므로 D, A, B, C는 불가능합니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "스택과 큐·데크"
+        ],
+        "chapter_label": "스택과 큐·데크",
+        "chapter_key": "소프트웨어 개발 > 스택과 큐·데크",
+        "chapter_id": "chapter_235"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과가 아닌 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "A, B, C, D"
+          },
+          {
+            "label": "2",
+            "text": "D, A, B, C"
+          },
+          {
+            "label": "3",
+            "text": "A, B, D, C"
+          },
+          {
+            "label": "4",
+            "text": "B, C, D, A"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "2"
+        ],
+        "correct_choice_texts": [
+          "D, A, B, C"
+        ],
+        "answer_text": "D, A, B, C"
+      },
+      "explanation": {
+        "source_text": "D를 출력하려면 A, B, C가 스택에 먼저 들어가 있어야 합니다. D를 출력한 후에는 스택의 상단에 있는 C, B, A 순서로만 출력이 가능하므로 D, A, B, C는 불가능합니다.",
+        "summary": "스택의 LIFO(Last-In First-Out) 특성에 따른 출력 가능 순서를 묻는 문제입니다.",
+        "why_correct": [
+          "D가 가장 먼저 출력되려면 A, B, C가 이미 스택에 쌓여 있어야 합니다. 이 경우 다음에 나올 수 있는 값은 스택 맨 위의 C, 그 다음 B, 마지막 A 순서여야 합니다. 따라서 D 다음에 A가 바로 나오는 것은 불가능합니다."
+        ],
+        "why_others_wrong": [
+          "1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+        ],
+        "key_concepts": [
+          "스택의 LIFO 원리"
+        ],
+        "memory_cues": [
+          "나중에 들어간 게 먼저 나온다"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "A, B, C, D",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 D, A, B, C'인데 이 선택지는 'A, B, C, D'이므로 일치하지 않습니다. 1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+          },
+          {
+            "label": "2",
+            "text": "D, A, B, C",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '2번 D, A, B, C'와 일치합니다. D가 가장 먼저 출력되려면 A, B, C가 이미 스택에 쌓여 있어야 합니다. 이 경우 다음에 나올 수 있는 값은 스택 맨 위의 C, 그 다음 B, 마지막 A 순서여야 합니다. 따라서 D 다음에 A가 바로 나오는 것은 불가능합니다."
+          },
+          {
+            "label": "3",
+            "text": "A, B, D, C",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 D, A, B, C'인데 이 선택지는 'A, B, D, C'이므로 일치하지 않습니다. 1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+          },
+          {
+            "label": "4",
+            "text": "B, C, D, A",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '2번 D, A, B, C'인데 이 선택지는 'B, C, D, A'이므로 일치하지 않습니다. 1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과가 아닌 것은?",
+          "핵심 개념을 떠올립니다. 스택의 LIFO 원리",
+          "정답 판단 근거를 적용합니다. D가 가장 먼저 출력되려면 A, B, C가 이미 스택에 쌓여 있어야 합니다. 이 경우 다음에 나올 수 있는 값은 스택 맨 위의 C, 그 다음 B, 마지막 A 순서여야 합니다. 따라서 D 다음에 A가 바로 나오는 것은 불가능합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+        ],
+        "exam_traps": [
+          "1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택의 LIFO 원리'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 나중에 들어간 게 먼저 나온다"
+        ],
+        "detailed_summary": "스택의 LIFO(Last-In First-Out) 특성에 따른 출력 가능 순서를 묻는 문제입니다. D를 출력하려면 A, B, C가 스택에 먼저 들어가 있어야 합니다. D를 출력한 후에는 스택의 상단에 있는 C, B, A 순서로만 출력이 가능하므로 D, A, B, C는 불가능합니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 순서가 A, B, C, D로 정해진 입력 자료를 스택에 입력하였다가 출력할 때, 가능한 출력 순서의 결과가 아닌 것은? 정답입니다. 이 선택지는 실제 정답인 '2번 D, A, B, C'와 일치합니다. D가 가장 먼저 출력되려면 A, B, C가 이미 스택에 쌓여 있어야 합니다. 이 경우 다음에 나올 수 있는 값은 스택 맨 위의 C, 그 다음 B, 마지막 A 순서여야 합니다. 따라서 D 다음에 A가 바로 나오는 것은 불가능합니다. 시험 포인트는 1, 3, 4번은 적절한 Push와 Pop 조합을 통해 만들어낼 수 있는 순서입니다."
+      },
+      "quality": {
+        "diagram_dependency": "helpful",
+        "needs_review": true,
+        "review_reasons": [
+          "diagram dependency"
+        ]
+      },
+      "keywords": [
+        "스택",
+        "LIFO",
+        "입출력 순서"
+      ],
+      "visual_assets": {
+        "enabled": true,
+        "visual_dependency": "helpful",
+        "usage_mode": "question_figure_crop",
+        "page_numbers": [
+          183
+        ],
+        "page_images": [
+          {
+            "asset_id": "page_0183",
+            "page_number": 183,
+            "relative_path": "images/pages/978555445c5c/x2_0/page_0183.png",
+            "content_type": "image/png",
+            "width": 1033,
+            "height": 1383,
+            "file_size_bytes": 1093612,
+            "render_scale": 2.0
+          }
+        ],
+        "question_figure_crops": [
+          {
+            "asset_id": "qb_3c40ca1439532856__figure_01",
+            "question_id": "qb_3c40ca1439532856",
+            "kind": "question_figure_crop",
+            "asset_role": "diagram_only",
+            "fidelity": "exact",
+            "relative_path": "images/question-figures/qb_3c40ca1439532856/qb_3c40ca1439532856__figure_01.png",
+            "content_type": "image/png",
+            "width": 438,
+            "height": 68,
+            "file_size_bytes": 8775,
+            "source_page": 183,
+            "crop_rect_pdf_points": [
+              31.5,
+              249.0,
+              250.5,
+              283.0
+            ],
+            "render_scale": 2.0,
+            "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.json",
+            "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.png",
+            "notes": [
+              "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+              "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+            ]
+          }
+        ],
+        "preferred_display_asset": {
+          "asset_id": "qb_3c40ca1439532856__figure_01",
+          "question_id": "qb_3c40ca1439532856",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_3c40ca1439532856/qb_3c40ca1439532856__figure_01.png",
+          "content_type": "image/png",
+          "width": 438,
+          "height": 68,
+          "file_size_bytes": 8775,
+          "source_page": 183,
+          "crop_rect_pdf_points": [
+            31.5,
+            249.0,
+            250.5,
+            283.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        },
+        "primary_image": {
+          "asset_id": "qb_3c40ca1439532856__figure_01",
+          "question_id": "qb_3c40ca1439532856",
+          "kind": "question_figure_crop",
+          "asset_role": "diagram_only",
+          "fidelity": "exact",
+          "relative_path": "images/question-figures/qb_3c40ca1439532856/qb_3c40ca1439532856__figure_01.png",
+          "content_type": "image/png",
+          "width": 438,
+          "height": 68,
+          "file_size_bytes": 8775,
+          "source_page": 183,
+          "crop_rect_pdf_points": [
+            31.5,
+            249.0,
+            250.5,
+            283.0
+          ],
+          "render_scale": 2.0,
+          "sample_metadata_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.json",
+          "sample_image_relative_path": "artifacts_pdf/crop_samples/qb_3c40ca1439532856_diagram_only.png",
+          "notes": [
+            "질문 블록 상단의 시각 요소를 페이지 렌더 이미지에서 직접 크롭했습니다.",
+            "문제 풀이용 해설 그림보다 문제 자체에 필요한 도형/표/코드 영역을 우선합니다."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "qb_bf5d958fda3b0927",
+      "source": {
+        "pdf_path": "G:\\내 드라이브\\정통\\정처기\\정보처리기사_필기기본서기출문제집.pdf",
+        "chunk_ids": [
+          "chunk_p0181_p0186"
+        ],
+        "source_pages": [
+          183
+        ],
+        "page_span": {
+          "start_page": 183,
+          "end_page": 183
+        },
+        "source_explanation": "운영체제의 작업 스케줄링에 사용되는 것은 큐(Queue)입니다."
+      },
+      "source_taxonomy": {
+        "source_chapter_path": [
+          "소프트웨어 개발",
+          "스택과 큐·데크"
+        ],
+        "chapter_label": "스택과 큐·데크",
+        "chapter_key": "소프트웨어 개발 > 스택과 큐·데크",
+        "chapter_id": "chapter_235"
+      },
+      "exam_taxonomy": {
+        "subject_id": 2,
+        "subject_name": "소프트웨어 개발",
+        "topic_id": "topic_023",
+        "topic_title": "스택과 큐·데크",
+        "draft_subject_name": "소프트웨어 개발",
+        "draft_topic_name": "스택과 큐·데크",
+        "match_score": 163.0,
+        "match_confidence": "high"
+      },
+      "question": {
+        "question_type": "single_choice",
+        "stem": "스택(STACK)의 응용 분야로 거리가 먼 것은?",
+        "choices": [
+          {
+            "label": "1",
+            "text": "인터럽트의 처리"
+          },
+          {
+            "label": "2",
+            "text": "수식의 계산"
+          },
+          {
+            "label": "3",
+            "text": "서브루틴의 복귀 번지 저장"
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 작업 스케줄링"
+          }
+        ],
+        "interaction": {
+          "selection_mode": "single_select",
+          "selection_min": 1,
+          "selection_max": 1,
+          "submit_mode": "explicit_submit"
+        }
+      },
+      "answer": {
+        "correct_labels": [
+          "4"
+        ],
+        "correct_choice_texts": [
+          "운영체제의 작업 스케줄링"
+        ],
+        "answer_text": "운영체제의 작업 스케줄링"
+      },
+      "explanation": {
+        "source_text": "운영체제의 작업 스케줄링에 사용되는 것은 큐(Queue)입니다.",
+        "summary": "자료구조 스택의 활용 사례를 묻는 문제입니다.",
+        "why_correct": [
+          "운영체제의 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다."
+        ],
+        "why_others_wrong": [
+          "인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+        ],
+        "key_concepts": [
+          "스택의 응용",
+          "큐의 응용"
+        ],
+        "memory_cues": [
+          "스택은 되돌아올 때(LIFO), 큐는 줄 설 때(FIFO)"
+        ],
+        "choice_analysis": [
+          {
+            "label": "1",
+            "text": "인터럽트의 처리",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '인터럽트의 처리'이므로 일치하지 않습니다. 인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "2",
+            "text": "수식의 계산",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '수식의 계산'이므로 일치하지 않습니다. 인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "3",
+            "text": "서브루틴의 복귀 번지 저장",
+            "is_correct": false,
+            "analysis": "오답입니다. 정답은 '4번 운영체제의 작업 스케줄링'인데 이 선택지는 '서브루틴의 복귀 번지 저장'이므로 일치하지 않습니다. 인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+          },
+          {
+            "label": "4",
+            "text": "운영체제의 작업 스케줄링",
+            "is_correct": true,
+            "analysis": "정답입니다. 이 선택지는 실제 정답인 '4번 운영체제의 작업 스케줄링'와 일치합니다. 운영체제의 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다."
+          }
+        ],
+        "solving_steps": [
+          "문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(STACK)의 응용 분야로 거리가 먼 것은?",
+          "핵심 개념을 떠올립니다. 스택의 응용, 큐의 응용",
+          "정답 판단 근거를 적용합니다. 운영체제의 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다.",
+          "나머지 보기와 비교해 오답을 제거합니다. 인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+        ],
+        "exam_traps": [
+          "인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+        ],
+        "answer_checklist": [
+          "핵심 개념 '스택의 응용'을(를) 설명할 수 있는지 확인합니다.",
+          "핵심 개념 '큐의 응용'을(를) 설명할 수 있는지 확인합니다.",
+          "암기 포인트를 떠올립니다. 스택은 되돌아올 때(LIFO), 큐는 줄 설 때(FIFO)"
+        ],
+        "detailed_summary": "자료구조 스택의 활용 사례를 묻는 문제입니다. 운영체제의 작업 스케줄링에 사용되는 것은 큐(Queue)입니다. 풀이 순서는 문제에서 묻는 대상이 무엇인지 먼저 확인합니다. 스택(STACK)의 응용 분야로 거리가 먼 것은? 정답입니다. 이 선택지는 실제 정답인 '4번 운영체제의 작업 스케줄링'와 일치합니다. 운영체제의 작업 스케줄링은 먼저 들어온 작업을 먼저 처리하는 FIFO 방식인 큐(Queue)를 주로 사용합니다. 시험 포인트는 인터럽트 처리, 수식 계산(후위 표기법), 서브루틴 복귀 주소 저장은 모두 LIFO 방식인 스택의 대표적인 응용 분야입니다."
+      },
+      "quality": {
+        "diagram_dependency": "none",
+        "needs_review": false,
+        "review_reasons": []
+      },
+      "keywords": [
+        "스택",
+        "응용 분야",
+        "큐",
+        "스케줄링"
+      ],
+      "visual_assets": {
+        "enabled": false,
+        "visual_dependency": "none",
+        "usage_mode": "none",
+        "page_numbers": [],
+        "page_images": [],
+        "question_figure_crops": [],
+        "preferred_display_asset": null,
+        "primary_image": null
+      }
+    }
+  ]
+}
