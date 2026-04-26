@@ -1801,14 +1801,48 @@ body {
    ============================================================ */
 .practical-quiz-page {
   background: var(--bg);
+  min-height: 100dvh;
+  height: auto;
   min-width: 0;
   overflow-x: hidden;
+  padding-bottom: calc(76px + var(--safe-bottom));
 }
 
 .practical-quiz-header {
   gap: 10px;
   min-width: 0;
   overflow: hidden;
+}
+
+.practical-back-btn {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(49, 130, 246, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.practical-back-btn:active {
+  transform: scale(0.94);
+}
+
+.practical-progress-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .practical-quiz-mode-toggle {
@@ -1841,7 +1875,7 @@ body {
 
 .practical-quiz-body {
   justify-content: center;
-  padding: 28px 20px calc(28px + var(--safe-bottom));
+  padding: 28px 20px calc(104px + var(--safe-bottom));
   width: 100%;
   min-width: 0;
   overflow-x: hidden;

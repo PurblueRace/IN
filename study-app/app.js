@@ -3038,9 +3038,12 @@ function renderPracticalSummary() {
   app.innerHTML = `
     <div class="quiz-page practical-quiz-page" id="page-practical">
       <div class="quiz-header practical-quiz-header">
-        <div class="quiz-progress-text">${visibleCount > 0 ? currentIndex + 1 : 0} / ${visibleCount}</div>
-        <div class="quiz-progress-bar">
-          <div class="fill" style="width: ${progress}%"></div>
+        <button class="practical-back-btn" id="btn-practical-back" type="button" aria-label="홈으로 돌아가기">←</button>
+        <div class="practical-progress-wrap">
+          <div class="quiz-progress-text">${visibleCount > 0 ? currentIndex + 1 : 0} / ${visibleCount}</div>
+          <div class="quiz-progress-bar">
+            <div class="fill" style="width: ${progress}%"></div>
+          </div>
         </div>
         ${renderPracticalQuizModeControls()}
       </div>
@@ -3050,7 +3053,15 @@ function renderPracticalSummary() {
       ${emptyHtml}
       ${questionHtml}
     </div>
+
+    ${renderBottomNav('practical')}
   `;
+
+  document.getElementById('btn-practical-back')?.addEventListener('click', () => {
+    state.practicalRevealed = false;
+    state.practicalRevealedBlanks = {};
+    navigate('home');
+  });
 
   document.querySelectorAll('[data-practical-unit]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -3119,6 +3130,8 @@ function renderPracticalSummary() {
       submitPracticalQuizResult(currentQuestion, button.dataset.practicalQuizResult, visibleCount);
     });
   });
+
+  bindNavEvents();
 }
 
 function getCoreSummarySubjectOptions(sections = []) {
