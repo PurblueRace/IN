@@ -2497,6 +2497,222 @@ body {
 }
 
 /* ============================================================
+   CORE SUMMARY PAGE
+   ============================================================ */
+.core-summary-hero {
+  padding: 28px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.core-summary-sub {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.core-summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.core-summary-metrics span {
+  padding: 10px 8px;
+  border-radius: 12px;
+  background: var(--gray-50);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.core-summary-toolbar {
+  padding: 0 20px 14px;
+}
+
+.core-summary-search {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.core-summary-chip-row {
+  padding-bottom: 2px;
+}
+
+.core-summary-layout {
+  padding: 0 20px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.core-summary-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.core-summary-list::-webkit-scrollbar {
+  display: none;
+}
+
+.core-section-button {
+  min-width: 236px;
+  border: 1px solid var(--gray-100);
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.core-section-button.active {
+  border-color: rgba(49, 130, 246, 0.34);
+  background: rgba(49, 130, 246, 0.06);
+}
+
+.core-section-number {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--blue-500);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.core-section-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.core-section-copy strong {
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.core-section-copy em {
+  color: var(--text-tertiary);
+  font-size: 11px;
+  line-height: 1.35;
+  font-style: normal;
+}
+
+.core-summary-detail {
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: var(--shadow-card);
+}
+
+.core-detail-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.core-detail-kicker {
+  color: var(--blue-500);
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.core-detail-head h2 {
+  color: var(--text-primary);
+  font-size: 20px;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.core-detail-meta {
+  flex: 0 0 auto;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 7px 9px;
+  border-radius: 999px;
+  background: var(--gray-50);
+}
+
+.core-item-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.core-item-pill {
+  max-width: 100%;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--gray-50);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.core-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.core-page-card {
+  border: 1px solid var(--gray-100);
+  border-radius: 16px;
+  padding: 14px;
+  background: #fbfcfe;
+}
+
+.core-page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.core-page-head span {
+  color: var(--blue-500);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.core-page-text {
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.8;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.core-summary-state,
+.core-summary-empty {
+  margin: 0 20px 16px;
+}
+
+/* ============================================================
    STATS PAGE
    ============================================================ */
 .stats-content {

@@ -9,6 +9,7 @@ const PRACTICE_BUNDLE = './data/subtopic-practice-bundle.json';
 const EMBEDDED_PRACTICE_BUNDLE_KEY = '__STUDY_SUBTOPIC_PRACTICE_BUNDLE__';
 const OBJECTIVE_SET_BUNDLE = './data/objective-sets.json';
 const PRACTICAL_SUMMARY_BUNDLE = './data/practical-summary.json';
+const CORE_SUMMARY_BUNDLE = './data/written-core-summaries.json';
 const QUESTION_BANK_ROOT = './data/question-bank/';
 const AUTH_STORAGE_KEY = 'study_auth_v1';
 const AUTH_SESSION_KEY = 'study_auth_session_v1';
@@ -67,6 +68,14 @@ const state = {
   practicalStudyMode: 'sequential',
   practicalStudyIndex: 0,
   practicalRevealed: false,
+  coreSummary: null,
+  coreSummaryReady: false,
+  coreSummaryLoading: false,
+  coreSummaryError: '',
+  coreSummarySubjectFilter: 'all',
+  coreSummarySearchQuery: '',
+  coreSummarySearchTimer: null,
+  coreSummaryOpenSectionId: null,
   practicalProgress: { by_item_id: {} },
   questionBankTopicCache: {},
   quizContext: null,
@@ -413,6 +422,15 @@ async function fetchPracticalSummary() {
   return resp.json();
 }
 
+async function fetchCoreSummary() {
+  const resp = await fetch(CORE_SUMMARY_BUNDLE);
+  if (!resp.ok) {
+    if (resp.status === 404) return { source: { section_count: 0, item_count: 0, page_count: 0 }, sections: [] };
+    throw new Error('요약본 데이터를 불러오지 못했어요.');
+  }
+  return resp.json();
+}
+
 async function loadObjectiveSets(forceReload = false) {
   if (state.objectiveSetsReady && !forceReload) return;
   if (state.objectiveSetsLoading) return;
@@ -457,6 +475,31 @@ async function loadPracticalSummary(forceReload = false) {
   } finally {
     state.practicalSummaryLoading = false;
     if (state.currentPage === 'practical') renderPracticalSummary();
+  }
+}
+
+async function loadCoreSummary(forceReload = false) {
+  if (state.coreSummaryReady && !forceReload) return;
+  if (state.coreSummaryLoading) return;
+
+  state.coreSummaryLoading = true;
+  state.coreSummaryError = '';
+  if (state.currentPage === 'summaries') renderCoreSummary();
+
+  try {
+    const data = await fetchCoreSummary();
+    state.coreSummary = {
+      source: data?.source || { section_count: 0, item_count: 0, page_count: 0 },
+      sections: Array.isArray(data?.sections) ? data.sections : [],
+    };
+    state.coreSummaryReady = true;
+  } catch (err) {
+    state.coreSummary = null;
+    state.coreSummaryReady = false;
+    state.coreSummaryError = err?.message || '요약본 데이터를 불러오지 못했어요.';
+  } finally {
+    state.coreSummaryLoading = false;
+    if (state.currentPage === 'summaries') renderCoreSummary();
   }
 }
 
@@ -1550,6 +1593,7 @@ function bindQuizActionEvents(q) {
 // ??? ROUTER ?????????????????????????????????????????????????
 function navigate(page, params = {}) {
   clearAutoPlayTimer();
+  clearTimeout(state.coreSummarySearchTimer);
   state.currentPage = page;
   Object.assign(state, params);
   render();
@@ -1593,6 +1637,7 @@ function render() {
     case 'lectures': renderLectures(); break;
     case 'objective': renderObjectiveHub(); break;
     case 'practical': renderPracticalSummary(); break;
+    case 'summaries': renderCoreSummary(); break;
     case 'theory':   renderTheory(); break;
     case 'quiz':     renderQuiz(); break;
     case 'stats':    renderStats(); break;
@@ -2941,6 +2986,191 @@ function renderPracticalSummary() {
   });
 }
 
+function getCoreSummarySubjectOptions(sections = []) {
+  const subjectMap = new Map();
+  sections.forEach((section) => {
+    if (!section?.subject_id) return;
+    subjectMap.set(String(section.subject_id), section.subject || `${section.subject_id}과목`);
+  });
+  return [...subjectMap.entries()]
+    .sort((a, b) => Number(a[0]) - Number(b[0]))
+    .map(([id, name]) => ({ id, name }));
+}
+
+function getFilteredCoreSummarySections() {
+  const sections = state.coreSummary?.sections || [];
+  const query = state.coreSummarySearchQuery.trim().toLowerCase();
+  const subjectFilter = String(state.coreSummarySubjectFilter || 'all');
+
+  return sections.filter((section) => {
+    const subjectMatch = subjectFilter === 'all' || String(section.subject_id) === subjectFilter;
+    if (!subjectMatch) return false;
+    if (!query) return true;
+
+    const haystack = [
+      section.subject,
+      section.chapter,
+      section.title,
+      ...(section.pdf_pages || []),
+      ...((section.items || []).flatMap(item => [item.title, item.body])),
+      ...((section.pages || []).map(page => page.text)),
+    ].join(' ').toLowerCase();
+
+    return haystack.includes(query);
+  });
+}
+
+function renderCoreSummaryPage(page) {
+  const text = String(page?.text || '').trim();
+  const html = escapeHtml(text).replace(/\n/g, '<br>');
+  return `
+    <article class="core-page-card">
+      <div class="core-page-head">
+        <span>PDF p.${escapeHtml(String(page?.page || ''))}</span>
+      </div>
+      <div class="core-page-text">${html || 'OCR 텍스트 없음'}</div>
+    </article>
+  `;
+}
+
+function renderCoreSummaryDetail(section) {
+  if (!section) {
+    return `<div class="empty-state core-summary-empty"><div class="empty-emoji">📚</div><div class="empty-text">요약 섹션을 선택해 주세요</div></div>`;
+  }
+
+  const pages = section.pages || [];
+  const itemPreview = (section.items || []).slice(0, 8).map(item => `
+    <span class="core-item-pill">${escapeHtml(item.number || '')} ${escapeHtml(item.title || '핵심')}</span>
+  `).join('');
+
+  return `
+    <section class="core-summary-detail">
+      <div class="core-detail-head">
+        <div>
+          <div class="core-detail-kicker">${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''}</div>
+          <h2>${escapeHtml(section.title || '핵심요약')}</h2>
+        </div>
+        <div class="core-detail-meta">${pages.length}쪽</div>
+      </div>
+      ${itemPreview ? `<div class="core-item-pills">${itemPreview}</div>` : ''}
+      <div class="core-page-list">
+        ${pages.map(renderCoreSummaryPage).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderCoreSummary() {
+  if (!state.coreSummaryReady && !state.coreSummaryLoading && !state.coreSummaryError) {
+    loadCoreSummary();
+  }
+
+  const summary = state.coreSummary || { source: { section_count: 0, item_count: 0, page_count: 0 }, sections: [] };
+  const sections = summary.sections || [];
+  const filteredSections = getFilteredCoreSummarySections();
+  const subjects = getCoreSummarySubjectOptions(sections);
+
+  if (!state.coreSummaryOpenSectionId && filteredSections.length > 0) {
+    state.coreSummaryOpenSectionId = filteredSections[0].id;
+  }
+  if (filteredSections.length > 0 && !filteredSections.some(section => section.id === state.coreSummaryOpenSectionId)) {
+    state.coreSummaryOpenSectionId = filteredSections[0].id;
+  }
+
+  const openSection = filteredSections.find(section => section.id === state.coreSummaryOpenSectionId) || filteredSections[0] || null;
+  const loadingHtml = state.coreSummaryLoading
+    ? `<div class="auth-note core-summary-state">요약본 데이터를 불러오는 중이에요.</div>`
+    : '';
+  const errorHtml = state.coreSummaryError
+    ? `<div class="auth-error core-summary-state">${escapeHtml(state.coreSummaryError)}</div>`
+    : '';
+  const emptyHtml = !state.coreSummaryLoading && !state.coreSummaryError && filteredSections.length === 0
+    ? `<div class="empty-state core-summary-empty"><div class="empty-emoji">🔎</div><div class="empty-text">조건에 맞는 요약본이 없어요</div></div>`
+    : '';
+
+  app.innerHTML = `
+    <div class="page" id="page-core-summary">
+      <div class="core-summary-hero">
+        <div>
+          <div class="home-kicker">필기 기본서</div>
+          <h1 class="home-title">📚 요약본</h1>
+          <p class="core-summary-sub">${escapeHtml(summary.source?.ocr_warning || '')}</p>
+        </div>
+        <div class="core-summary-metrics">
+          <span>${summary.source?.section_count || sections.length}섹션</span>
+          <span>${summary.source?.page_count || 0}쪽</span>
+          <span>${summary.source?.item_count || 0}항목</span>
+        </div>
+      </div>
+
+      <div class="core-summary-toolbar">
+        <input
+          type="search"
+          class="practical-search core-summary-search"
+          id="core-summary-search"
+          placeholder="요약 검색"
+          value="${escapeHtml(state.coreSummarySearchQuery)}"
+        />
+        <div class="practical-chip-row core-summary-chip-row">
+          <button class="practical-chip ${state.coreSummarySubjectFilter === 'all' ? 'active' : ''}" data-core-summary-subject="all">전체</button>
+          ${subjects.map(subject => `
+            <button class="practical-chip ${String(state.coreSummarySubjectFilter) === subject.id ? 'active' : ''}" data-core-summary-subject="${subject.id}">
+              ${escapeHtml(subject.name)}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      ${loadingHtml}
+      ${errorHtml}
+      ${emptyHtml}
+
+      <div class="core-summary-layout">
+        <aside class="core-summary-list">
+          ${filteredSections.map(section => `
+            <button class="core-section-button ${section.id === openSection?.id ? 'active' : ''}" data-core-summary-section="${escapeHtml(section.id)}">
+              <span class="core-section-number">${String(section.number).padStart(2, '0')}</span>
+              <span class="core-section-copy">
+                <strong>${escapeHtml(section.title || '핵심요약')}</strong>
+                <em>${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''} · p.${(section.pdf_pages || []).join(', ')}</em>
+              </span>
+            </button>
+          `).join('')}
+        </aside>
+        ${renderCoreSummaryDetail(openSection)}
+      </div>
+
+      ${renderBottomNav('summaries')}
+    </div>
+  `;
+
+  document.querySelectorAll('[data-core-summary-subject]').forEach((button) => {
+    button.addEventListener('click', () => {
+      state.coreSummarySubjectFilter = button.dataset.coreSummarySubject || 'all';
+      state.coreSummaryOpenSectionId = null;
+      renderCoreSummary();
+    });
+  });
+
+  document.getElementById('core-summary-search')?.addEventListener('input', (event) => {
+    state.coreSummarySearchQuery = event.target.value || '';
+    clearTimeout(state.coreSummarySearchTimer);
+    state.coreSummarySearchTimer = setTimeout(() => {
+      state.coreSummaryOpenSectionId = null;
+      renderCoreSummary();
+    }, 300);
+  });
+
+  document.querySelectorAll('[data-core-summary-section]').forEach((button) => {
+    button.addEventListener('click', () => {
+      state.coreSummaryOpenSectionId = button.dataset.coreSummarySection;
+      renderCoreSummary();
+    });
+  });
+
+  bindNavEvents();
+}
+
 function renderStats() {
   const prog = getTotalProgress();
 
@@ -2996,6 +3226,7 @@ function renderBottomNav(current) {
     { id: 'home', icon: '🏠', label: '홈' },
     { id: 'objective', icon: '📝', label: '객관식' },
     { id: 'practical', icon: '📒', label: '실기' },
+    { id: 'summaries', icon: '📚', label: '요약본' },
   ];
 
   return `
