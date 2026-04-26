@@ -78,6 +78,7 @@ const state = {
   coreSummarySearchQuery: '',
   coreSummarySearchTimer: null,
   coreSummaryOpenSectionId: null,
+  coreSummaryRevealedBlanks: {},
   practicalProgress: { by_item_id: {} },
   questionBankTopicCache: {},
   quizContext: null,
@@ -719,7 +720,12 @@ function normalizeClozeAnswers(source = {}) {
       ? source.answer
       : [source.answer];
   const answers = rawAnswers
-    .map(answer => cleanPracticalText(answer))
+    .map((answer) => {
+      if (answer && typeof answer === 'object') {
+        return cleanPracticalText(answer.answer || answer.acceptableAnswers?.[0] || '');
+      }
+      return cleanPracticalText(answer);
+    })
     .filter(Boolean);
 
   if (answers.length) return answers;
@@ -3139,9 +3145,19 @@ function getFilteredCoreSummarySections() {
     const haystack = [
       section.subject,
       section.chapter,
+      section.chapter_title,
       section.title,
+      section.importance,
+      ...(section.keywords || []),
       ...(section.pdf_pages || []),
+      ...(section.book_pages || []),
       ...((section.items || []).flatMap(item => [item.title, item.body])),
+      ...((section.clozeItems || []).flatMap((item) => [
+        item.displayText,
+        item.sourceSummary,
+        ...(item.answers || []).map(answer => answer?.answer || answer),
+        ...(item.hint?.keywords || []),
+      ])),
       ...((section.pages || []).map(page => page.text)),
     ].join(' ').toLowerCase();
 
@@ -3162,29 +3178,109 @@ function renderCoreSummaryPage(page) {
   `;
 }
 
+function formatPageRange(values = []) {
+  const pages = (values || []).filter(value => value !== null && value !== undefined && value !== '');
+  if (!pages.length) return '';
+  if (pages.length === 1) return String(pages[0]);
+  return `${pages[0]}-${pages[pages.length - 1]}`;
+}
+
+function getCoreClozeRevealedMap(clozeId) {
+  return state.coreSummaryRevealedBlanks?.[clozeId] || {};
+}
+
+function renderCoreKeywordRow(section) {
+  const keywords = (section.keywords || []).slice(0, 10);
+  if (!keywords.length) return '';
+  return `
+    <div class="core-keyword-row">
+      ${keywords.map(keyword => `<span>${escapeHtml(keyword)}</span>`).join('')}
+    </div>
+  `;
+}
+
+function renderCoreVisualRefs(visualRefs = []) {
+  const refs = (visualRefs || []).filter(Boolean);
+  if (!refs.length) return '';
+  return `
+    <div class="core-visual-row">
+      ${refs.map(ref => `
+        <span class="core-visual-pill" title="${escapeHtml(ref.fileName || ref.imageId || '')}">
+          그림참조 ${escapeHtml(ref.imageId || ref.priority || '')}
+        </span>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCoreClozeCard(cloze, index) {
+  const answers = normalizeClozeAnswers(cloze);
+  const revealedMap = getCoreClozeRevealedMap(cloze.id);
+  const prompt = cloze.displayText || cloze.prompt || '';
+  const fullyRevealed = isEveryBlankRevealed(prompt, answers, revealedMap);
+  return `
+    <article class="core-cloze-card" data-core-cloze-id="${escapeHtml(cloze.id || `core-cloze-${index}`)}">
+      <div class="core-cloze-head">
+        <span>${String(index + 1).padStart(2, '0')}</span>
+        <em>${escapeHtml(cloze.answerMode === 'multi' ? `${answers.length}개 빈칸` : '단일 빈칸')}</em>
+      </div>
+      <div class="core-cloze-prompt">
+        ${renderInteractiveClozePrompt(prompt, answers, revealedMap, 'data-core-cloze-blank')}
+      </div>
+      ${fullyRevealed && cloze.sourceSummary ? `<div class="core-cloze-source">${escapeHtml(cloze.sourceSummary)}</div>` : ''}
+      ${renderCoreVisualRefs(cloze.visualRefs)}
+    </article>
+  `;
+}
+
+function renderCoreClozeSection(section) {
+  const clozes = section.clozeItems || [];
+  const bookRange = formatPageRange(section.book_pages || []);
+  const pdfRange = formatPageRange(section.pdf_pages || []);
+  return `
+    <div class="core-detail-tags">
+      ${section.importance ? `<span class="importance-${escapeHtml(section.importance).toLowerCase()}">중요도 ${escapeHtml(section.importance)}</span>` : ''}
+      ${bookRange ? `<span>교재 p.${escapeHtml(bookRange)}</span>` : ''}
+      ${pdfRange ? `<span>PDF p.${escapeHtml(pdfRange)}</span>` : ''}
+      <span>${clozes.length}문항</span>
+    </div>
+    ${renderCoreKeywordRow(section)}
+    ${renderCoreVisualRefs(section.visualRefs)}
+    <div class="core-cloze-list">
+      ${clozes.map(renderCoreClozeCard).join('')}
+    </div>
+  `;
+}
+
 function renderCoreSummaryDetail(section) {
   if (!section) {
     return `<div class="empty-state core-summary-empty"><div class="empty-emoji">📚</div><div class="empty-text">요약 섹션을 선택해 주세요</div></div>`;
   }
 
   const pages = section.pages || [];
+  const clozes = section.clozeItems || [];
   const itemPreview = (section.items || []).slice(0, 8).map(item => `
     <span class="core-item-pill">${escapeHtml(item.number || '')} ${escapeHtml(item.title || '핵심')}</span>
   `).join('');
+  const detailMeta = clozes.length
+    ? `${clozes.length}문항`
+    : `${pages.length}쪽`;
 
   return `
     <section class="core-summary-detail">
       <div class="core-detail-head">
         <div>
-          <div class="core-detail-kicker">${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''}</div>
+          <div class="core-detail-kicker">${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''}${section.chapter_title ? ` · ${escapeHtml(section.chapter_title)}` : ''}</div>
           <h2>${escapeHtml(section.title || '핵심요약')}</h2>
         </div>
-        <div class="core-detail-meta">${pages.length}쪽</div>
+        <div class="core-detail-meta">${detailMeta}</div>
       </div>
       ${itemPreview ? `<div class="core-item-pills">${itemPreview}</div>` : ''}
-      <div class="core-page-list">
-        ${pages.map(renderCoreSummaryPage).join('')}
-      </div>
+      ${clozes.length ? renderCoreClozeSection(section) : `
+        <div class="core-page-list">
+          ${pages.map(renderCoreSummaryPage).join('')}
+        </div>
+      `}
     </section>
   `;
 }
@@ -3227,8 +3323,8 @@ function renderCoreSummary() {
         </div>
         <div class="core-summary-metrics">
           <span>${summary.source?.section_count || sections.length}섹션</span>
-          <span>${summary.source?.page_count || 0}쪽</span>
-          <span>${summary.source?.item_count || 0}항목</span>
+          <span>${summary.source?.item_count || 0}문항</span>
+          <span>${summary.source?.blank_count || 0}빈칸</span>
         </div>
       </div>
 
@@ -3261,7 +3357,7 @@ function renderCoreSummary() {
               <span class="core-section-number">${String(section.number).padStart(2, '0')}</span>
               <span class="core-section-copy">
                 <strong>${escapeHtml(section.title || '핵심요약')}</strong>
-                <em>${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''} · p.${(section.pdf_pages || []).join(', ')}</em>
+                <em>${escapeHtml(section.subject || '')} ${section.chapter ? `· ${escapeHtml(section.chapter)}` : ''}${section.chapter_title ? ` · ${escapeHtml(section.chapter_title)}` : ''} ${section.book_pages?.length ? `· p.${escapeHtml(formatPageRange(section.book_pages))}` : ''}</em>
               </span>
             </button>
           `).join('')}
@@ -3293,6 +3389,23 @@ function renderCoreSummary() {
   document.querySelectorAll('[data-core-summary-section]').forEach((button) => {
     button.addEventListener('click', () => {
       state.coreSummaryOpenSectionId = button.dataset.coreSummarySection;
+      renderCoreSummary();
+    });
+  });
+
+  document.querySelectorAll('[data-core-cloze-blank]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = button.closest('[data-core-cloze-id]');
+      const clozeId = card?.dataset.coreClozeId;
+      if (!clozeId) return;
+      const blankIndex = Number(button.dataset.coreClozeBlank || 0);
+      state.coreSummaryRevealedBlanks = {
+        ...state.coreSummaryRevealedBlanks,
+        [clozeId]: {
+          ...(state.coreSummaryRevealedBlanks?.[clozeId] || {}),
+          [blankIndex]: true,
+        },
+      };
       renderCoreSummary();
     });
   });

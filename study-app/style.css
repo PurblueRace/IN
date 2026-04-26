@@ -2727,6 +2727,126 @@ body {
   line-height: 1.35;
 }
 
+.core-detail-tags,
+.core-keyword-row,
+.core-visual-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.core-detail-tags span,
+.core-keyword-row span,
+.core-visual-pill {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.core-detail-tags span {
+  background: rgba(49, 130, 246, 0.08);
+  color: var(--blue-500);
+}
+
+.core-detail-tags .importance-a {
+  background: rgba(255, 59, 48, 0.1);
+  color: #c0261d;
+}
+
+.core-detail-tags .importance-b {
+  background: rgba(255, 149, 0, 0.12);
+  color: #9a5a00;
+}
+
+.core-detail-tags .importance-c,
+.core-detail-tags .importance-d {
+  background: var(--gray-50);
+  color: var(--text-secondary);
+}
+
+.core-keyword-row span {
+  background: var(--gray-50);
+  color: var(--text-secondary);
+}
+
+.core-visual-pill {
+  border: 1px dashed rgba(10, 132, 255, 0.26);
+  background: #f7fbff;
+  color: var(--blue-500);
+}
+
+.core-cloze-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.core-cloze-card {
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+}
+
+.core-cloze-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.core-cloze-head span,
+.core-cloze-head em {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.core-cloze-head span {
+  background: var(--blue-50);
+  color: var(--blue-600);
+}
+
+.core-cloze-head em {
+  background: var(--gray-50);
+  color: var(--text-tertiary);
+}
+
+.core-cloze-prompt {
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.core-cloze-source {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--gray-50);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
 .core-page-list {
   display: flex;
   flex-direction: column;
