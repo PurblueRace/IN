@@ -66,6 +66,7 @@ const state = {
   practicalSearchQuery: '',
   practicalStudyMode: 'sequential',
   practicalStudyIndex: 0,
+  practicalRevealed: false,
   practicalProgress: { by_item_id: {} },
   questionBankTopicCache: {},
   quizContext: null,
@@ -2449,10 +2450,13 @@ function getPracticalClozes(item) {
 
 function getPracticalTitleCloze(item) {
   const title = cleanPracticalText(item.title || '');
+  const sourcePrompt = cleanPracticalText(item.cloze?.prompt || '');
+  const summary = cleanPracticalText(item.summary || getPracticalDetails(item)[0] || '');
+  const prompt = sourcePrompt || ['____', summary ? `: ${summary}` : ''].join('');
   return {
     id: `${item.id}-title`,
     label: '제목',
-    prompt: '____',
+    prompt,
     answer: title,
     fullText: `제목: ${title}`,
   };
@@ -2521,8 +2525,9 @@ function getPracticalMemoryStats() {
   };
 }
 
-function recordPracticalResult(itemId, result) {
+function recordPracticalResult(itemId, result, options = {}) {
   if (!itemId || !state.currentUser?.user_id) return;
+  const shouldRender = options.render !== false;
 
   const byItemId = {
     ...(state.practicalProgress?.by_item_id || {}),
@@ -2542,7 +2547,9 @@ function recordPracticalResult(itemId, result) {
     updatedAt: new Date().toISOString(),
   };
   savePracticalProgress();
-  renderPracticalSummary();
+  if (shouldRender) {
+    renderPracticalSummary();
+  }
 }
 
 function filterPracticalSections() {
@@ -2579,6 +2586,21 @@ function getPracticalStudyItems(filteredSections = filterPracticalSections()) {
     sectionUnit: section.unit,
     sectionTitle: section.title,
   })));
+}
+
+function getPracticalStudyQuestions(filteredSections = filterPracticalSections()) {
+  return filteredSections.flatMap(section => (section.items || []).flatMap((item) => {
+    const clozes = [getPracticalTitleCloze(item), ...getPracticalClozes(item)];
+    return clozes.map((cloze, clozeIndex) => ({
+      id: `${item.id}::${cloze.id}`,
+      item,
+      cloze,
+      clozeIndex,
+      clozeCount: clozes.length,
+      sectionUnit: section.unit,
+      sectionTitle: section.title,
+    }));
+  }));
 }
 
 function normalizePracticalStudyIndex(count) {
@@ -2624,6 +2646,41 @@ function renderPracticalStudyControls(count) {
       </div>
     </div>
   `;
+}
+
+function renderPracticalQuizModeControls() {
+  const mode = state.practicalStudyMode === 'random' ? 'random' : 'sequential';
+  return `
+    <div class="practical-quiz-mode-toggle" role="group" aria-label="실기 빈칸 학습 방식">
+      <button class="${mode === 'sequential' ? 'active' : ''}" data-practical-study-mode="sequential">순차</button>
+      <button class="${mode === 'random' ? 'active' : ''}" data-practical-study-mode="random">랜덤</button>
+    </div>
+  `;
+}
+
+function movePracticalQuestion(direction, questionCount) {
+  if (questionCount <= 0) {
+    state.practicalStudyIndex = 0;
+    state.practicalRevealed = false;
+    renderPracticalSummary();
+    return;
+  }
+
+  if (direction === 'prev') {
+    state.practicalStudyIndex = (state.practicalStudyIndex - 1 + questionCount) % questionCount;
+  } else if (state.practicalStudyMode === 'random') {
+    state.practicalStudyIndex = pickRandomPracticalIndex(questionCount);
+  } else {
+    state.practicalStudyIndex = (state.practicalStudyIndex + 1) % questionCount;
+  }
+  state.practicalRevealed = false;
+  renderPracticalSummary();
+}
+
+function submitPracticalQuizResult(question, result, questionCount) {
+  if (!question?.item?.id) return;
+  recordPracticalResult(question.item.id, result, { render: false });
+  movePracticalQuestion('next', questionCount);
 }
 
 function renderPracticalUnitChips(sections) {
@@ -2760,12 +2817,12 @@ function renderPracticalSummary() {
 
   const summary = state.practicalSummary || { source: { section_count: 0, item_count: 0 }, sections: [] };
   const sections = summary.sections || [];
-  const memoryStats = getPracticalMemoryStats();
   const filteredSections = filterPracticalSections();
-  const studyItems = getPracticalStudyItems(filteredSections);
-  const visibleCount = studyItems.length;
+  const studyQuestions = getPracticalStudyQuestions(filteredSections);
+  const visibleCount = studyQuestions.length;
   const currentIndex = normalizePracticalStudyIndex(visibleCount);
-  const currentItem = studyItems[currentIndex] || null;
+  const currentQuestion = studyQuestions[currentIndex] || null;
+  const progress = visibleCount > 0 ? Math.round((currentIndex / visibleCount) * 100) : 0;
 
   const loadingHtml = state.practicalSummaryLoading
     ? `<div class="auth-note practical-state-note">실기 정리 데이터를 불러오는 중이에요.</div>`
@@ -2776,68 +2833,64 @@ function renderPracticalSummary() {
   const emptyHtml = !state.practicalSummaryLoading && !state.practicalSummaryError && visibleCount === 0
     ? `<div class="empty-state practical-empty"><div class="empty-emoji">🔎</div><div class="empty-text">조건에 맞는 실기 정리가 없어요</div></div>`
     : '';
-  const studyHtml = currentItem ? `
-    <div class="practical-study-shell">
-      <section class="practical-section">
-        <div class="practical-section-head practical-study-head">
-          <div>
-            <div class="practical-section-kicker">${String(currentItem.sectionUnit).padStart(2, '0')}단원</div>
-            <h2>${escapeHtml(currentItem.sectionTitle || '')}</h2>
-          </div>
-          <span>${currentIndex + 1}/${visibleCount}</span>
+  const questionHtml = currentQuestion ? `
+    <div class="quiz-body practical-quiz-body">
+      <div class="quiz-card practical-quiz-card" id="practical-card-${escapeHtml(currentQuestion.item.id)}">
+        <div class="quiz-type">📚 ${String(currentQuestion.sectionUnit).padStart(2, '0')}단원 ${escapeHtml(currentQuestion.sectionTitle || '')}</div>
+        <div class="practical-quiz-mini-label">
+          <span>${String(currentQuestion.item.global_number).padStart(3, '0')}</span>
+          <span>${escapeHtml(currentQuestion.cloze.label)}</span>
+        </div>
+        <div class="quiz-question practical-quiz-question">
+          ${escapeHtml(currentQuestion.cloze.prompt)}
         </div>
 
-        ${renderPracticalStudyControls(visibleCount)}
-        ${renderPracticalItemCard(currentItem)}
-      </section>
+        ${!state.practicalRevealed ? `
+          <div class="quiz-actions">
+            <button class="btn-quiz-action reveal" id="btn-practical-reveal">정답 확인하기</button>
+          </div>
+        ` : `
+          <div class="quiz-answer-card">
+            <div class="quiz-answer-label">정답</div>
+            <div class="quiz-answer-text">${escapeHtml(currentQuestion.cloze.answer)}</div>
+            <div class="quiz-answer-explanation">${escapeHtml(currentQuestion.cloze.fullText)}</div>
+          </div>
+          <div class="quiz-actions">
+            <button class="btn-quiz-action knew" data-practical-quiz-result="correct">외웠어요</button>
+            <button class="btn-quiz-action didnt-know" data-practical-quiz-result="incorrect">틀렸어요</button>
+          </div>
+        `}
+
+        <div class="practical-quiz-nav-row">
+          <button data-practical-study-action="prev" ${visibleCount <= 1 ? 'disabled' : ''}>이전</button>
+          <button data-practical-study-action="next" ${visibleCount <= 1 ? 'disabled' : ''}>건너뛰기</button>
+        </div>
+      </div>
     </div>
   ` : '';
 
   app.innerHTML = `
-    <div class="page" id="page-practical">
-      <div class="home-hero practical-hero">
-        <div class="home-greeting">정보처리기사 실기</div>
-        <h1 class="home-title">
-          PDF 정리본을<br/><span class="highlight">빈칸 카드</span>로 외워요
-        </h1>
-        <div class="practical-hero-sub">
-          ${summary.source?.section_count || sections.length}개 단원 · ${summary.source?.item_count || 0}개 항목
+    <div class="quiz-page practical-quiz-page" id="page-practical">
+      <div class="quiz-header practical-quiz-header">
+        <div class="quiz-progress-text">${visibleCount > 0 ? currentIndex + 1 : 0} / ${visibleCount}</div>
+        <div class="quiz-progress-bar">
+          <div class="fill" style="width: ${progress}%"></div>
         </div>
-      </div>
-
-      ${renderPracticalMemoryPanel(memoryStats)}
-
-      <div class="practical-toolbar">
-        <input
-          class="search-input practical-search"
-          id="practical-search"
-          type="text"
-          placeholder="실기 키워드 검색"
-          value="${escapeHtml(state.practicalSearchQuery)}"
-        />
-        ${renderPracticalUnitChips(sections)}
+        ${renderPracticalQuizModeControls()}
       </div>
 
       ${loadingHtml}
       ${errorHtml}
       ${emptyHtml}
-      ${studyHtml}
+      ${questionHtml}
     </div>
-
-    ${renderBottomNav('practical')}
   `;
-
-  document.getElementById('practical-search')?.addEventListener('input', (event) => {
-    state.practicalSearchQuery = event.target.value;
-    state.practicalStudyIndex = 0;
-    renderPracticalSummary();
-    document.getElementById('practical-search')?.focus();
-  });
 
   document.querySelectorAll('[data-practical-unit]').forEach((button) => {
     button.addEventListener('click', () => {
       state.practicalUnitFilter = button.dataset.practicalUnit || 'all';
       state.practicalStudyIndex = 0;
+      state.practicalRevealed = false;
       renderPracticalSummary();
     });
   });
@@ -2847,9 +2900,10 @@ function renderPracticalSummary() {
       state.practicalUnitFilter = 'weak';
       state.practicalSearchQuery = '';
       const targetId = button.dataset.practicalFocus;
-      const focusedItems = getPracticalStudyItems(filterPracticalSections());
-      const focusedIndex = focusedItems.findIndex(item => item.id === targetId);
+      const focusedItems = getPracticalStudyQuestions(filterPracticalSections());
+      const focusedIndex = focusedItems.findIndex(entry => entry.id === targetId || entry.item.id === targetId);
       state.practicalStudyIndex = focusedIndex >= 0 ? focusedIndex : 0;
+      state.practicalRevealed = false;
       renderPracticalSummary();
       setTimeout(() => {
         document.getElementById(`practical-card-${targetId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -2861,43 +2915,30 @@ function renderPracticalSummary() {
     button.addEventListener('click', () => {
       state.practicalStudyMode = button.dataset.practicalStudyMode === 'random' ? 'random' : 'sequential';
       if (state.practicalStudyMode === 'random') {
-        const items = getPracticalStudyItems();
+        const items = getPracticalStudyQuestions();
         state.practicalStudyIndex = pickRandomPracticalIndex(items.length);
       }
+      state.practicalRevealed = false;
       renderPracticalSummary();
     });
   });
 
   document.querySelectorAll('[data-practical-study-action]').forEach((button) => {
     button.addEventListener('click', () => {
-      const items = getPracticalStudyItems();
-      const count = items.length;
-      if (button.dataset.practicalStudyAction === 'prev') {
-        state.practicalStudyIndex = count > 0 ? (state.practicalStudyIndex - 1 + count) % count : 0;
-      } else if (state.practicalStudyMode === 'random') {
-        state.practicalStudyIndex = pickRandomPracticalIndex(count);
-      } else {
-        state.practicalStudyIndex = count > 0 ? (state.practicalStudyIndex + 1) % count : 0;
-      }
-      renderPracticalSummary();
+      movePracticalQuestion(button.dataset.practicalStudyAction, visibleCount);
     });
   });
 
-  document.querySelectorAll('[data-practical-answer]').forEach((button) => {
+  document.getElementById('btn-practical-reveal')?.addEventListener('click', () => {
+    state.practicalRevealed = true;
+    renderPracticalSummary();
+  });
+
+  document.querySelectorAll('[data-practical-quiz-result]').forEach((button) => {
     button.addEventListener('click', () => {
-      const cloze = button.closest('.practical-cloze');
-      cloze?.classList.toggle('show-answer');
-      button.textContent = cloze?.classList.contains('show-answer') ? '정답 숨기기' : '정답 보기';
+      submitPracticalQuizResult(currentQuestion, button.dataset.practicalQuizResult, visibleCount);
     });
   });
-
-  document.querySelectorAll('[data-practical-result]').forEach((button) => {
-    button.addEventListener('click', () => {
-      recordPracticalResult(button.dataset.practicalResult, button.dataset.result);
-    });
-  });
-
-  bindNavEvents();
 }
 
 function renderStats() {
