@@ -1307,6 +1307,60 @@ body {
   color: var(--green-500);
 }
 
+.inline-blank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  min-height: 34px;
+  margin: 0 5px;
+  padding: 0 14px;
+  border: 1px solid rgba(10, 132, 255, 0.24);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f7fbff 0%, #edf6ff 100%);
+  color: var(--blue-600);
+  font: inherit;
+  font-weight: 900;
+  line-height: 1.15;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: -0.28em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.72), 0 6px 16px rgba(10, 132, 255, 0.08);
+  transition: transform var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.inline-blank::before {
+  content: '';
+  width: 38px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(10, 132, 255, 0.65);
+}
+
+.inline-blank span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-blank:hover {
+  transform: translateY(-1px);
+  border-color: rgba(10, 132, 255, 0.42);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.82), 0 10px 22px rgba(10, 132, 255, 0.12);
+}
+
+.inline-blank.revealed {
+  min-width: 0;
+  border-color: rgba(52, 199, 89, 0.28);
+  background: linear-gradient(180deg, #f2fff7 0%, #e5f8ed 100%);
+  color: #078b47;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.76), 0 8px 18px rgba(52, 199, 89, 0.13);
+}
+
+.inline-blank.revealed::before {
+  display: none;
+}
+
 .quiz-objective-prompt {
   margin-bottom: 18px;
 }
@@ -1823,7 +1877,7 @@ body {
 
 .practical-quiz-question {
   min-height: 96px;
-  white-space: pre-wrap;
+  white-space: normal;
   word-break: normal;
   overflow-wrap: anywhere;
 }

@@ -43,6 +43,7 @@ const state = {
   quizQuestions: [],
   quizIndex: 0,
   quizRevealed: false,
+  quizRevealedBlanks: {},
   quizScore: { correct: 0, incorrect: 0 },
   quizSelectedChoiceLabel: null,
   quizSubmission: null,
@@ -68,6 +69,7 @@ const state = {
   practicalStudyMode: 'sequential',
   practicalStudyIndex: 0,
   practicalRevealed: false,
+  practicalRevealedBlanks: {},
   coreSummary: null,
   coreSummaryReady: false,
   coreSummaryLoading: false,
@@ -371,6 +373,7 @@ function logoutCurrentUser() {
   state.quizQuestions = [];
   state.quizIndex = 0;
   state.quizRevealed = false;
+  state.quizRevealedBlanks = {};
   state.quizSelectedChoiceLabel = null;
   state.quizSubmission = null;
   navigate('auth');
@@ -701,6 +704,68 @@ function renderHighlightedText(text, highlightKeywords = []) {
       : 'keyword-mark keyword-mark-secondary';
     return `<span class="${toneClass}">${escapeHtml(fragment)}</span>`;
   }).join('');
+}
+
+const CLOZE_BLANK_PATTERN = /(\{\{blank\}\}|_{2,})/gi;
+
+function getClozeBlankCount(prompt) {
+  return (String(prompt || '').match(CLOZE_BLANK_PATTERN) || []).length;
+}
+
+function normalizeClozeAnswers(source = {}) {
+  const rawAnswers = Array.isArray(source.answers)
+    ? source.answers
+    : Array.isArray(source.answer)
+      ? source.answer
+      : [source.answer];
+  const answers = rawAnswers
+    .map(answer => cleanPracticalText(answer))
+    .filter(Boolean);
+
+  if (answers.length) return answers;
+
+  const fallback = cleanPracticalText(source.correct_answer || source.title || '');
+  return fallback ? [fallback] : [];
+}
+
+function getRequiredBlankCount(prompt, answers = []) {
+  return Math.max(getClozeBlankCount(prompt), answers.length, 1);
+}
+
+function isEveryBlankRevealed(prompt, answers, revealedBlanks = {}) {
+  const blankCount = getRequiredBlankCount(prompt, answers);
+  return Array.from({ length: blankCount }).every((_, index) => !!revealedBlanks[index]);
+}
+
+function renderBlankButton(index, answer, isRevealed, dataAttribute) {
+  return `<button type="button" class="inline-blank ${isRevealed ? 'revealed' : ''}" ${dataAttribute}="${index}" aria-label="${isRevealed ? '공개된 빈칸' : '빈칸 답 보기'}"><span>${isRevealed ? escapeHtml(answer) : ''}</span></button>`;
+}
+
+function renderInteractiveClozePrompt(prompt, answers, revealedBlanks = {}, dataAttribute = 'data-cloze-blank') {
+  const rawPrompt = String(prompt || '').trim();
+  const normalizedAnswers = (answers || []).map(answer => cleanPracticalText(answer)).filter(Boolean);
+  const matches = [...rawPrompt.matchAll(CLOZE_BLANK_PATTERN)];
+
+  if (!matches.length) {
+    const fallbackAnswer = normalizedAnswers[0] || '';
+    return `${escapeHtml(rawPrompt)} ${renderBlankButton(0, fallbackAnswer, !!revealedBlanks[0], dataAttribute)}`;
+  }
+
+  let html = '';
+  let lastIndex = 0;
+  matches.forEach((match, index) => {
+    const answer = normalizedAnswers[index] || normalizedAnswers[normalizedAnswers.length - 1] || '';
+    html += escapeHtml(rawPrompt.slice(lastIndex, match.index));
+    html += renderBlankButton(index, answer, !!revealedBlanks[index], dataAttribute);
+    lastIndex = match.index + match[0].length;
+  });
+  html += escapeHtml(rawPrompt.slice(lastIndex));
+  return html;
+}
+
+function getAllRevealedBlankMap(prompt, answers = []) {
+  const blankCount = getRequiredBlankCount(prompt, answers);
+  return Object.fromEntries(Array.from({ length: blankCount }, (_, index) => [index, true]));
 }
 
 function getSubtopicHighlightKeywords(subtopic) {
@@ -1043,6 +1108,7 @@ function beginQuizSession(questions, quizContext = null) {
   state.quizQuestions = questions;
   state.quizIndex = 0;
   state.quizRevealed = false;
+  state.quizRevealedBlanks = {};
   state.quizScore = { correct: 0, incorrect: 0 };
   state.quizSelectedChoiceLabel = null;
   state.quizSubmission = null;
@@ -1261,6 +1327,7 @@ function showSubtopicCheckpoint(context, practice) {
       state.quizQuestions = questions;
       state.quizIndex = 0;
       state.quizRevealed = false;
+      state.quizRevealedBlanks = {};
       state.quizScore = { correct: 0, incorrect: 0 };
       state.quizSelectedChoiceLabel = null;
       state.quizSubmission = null;
@@ -1374,10 +1441,12 @@ function showSubtopicCheckpoint(context, practice) {
 
 function renderQuizPrompt(q) {
   if (q.kind !== 'objective') {
-    const emphasisKeywords = q.highlightKeyword ? [{ keyword: q.highlightKeyword, emphasis: 'primary' }] : [];
-    return state.quizRevealed
-      ? formatQuizRevealed(q)
-      : renderHighlightedText(q.question, emphasisKeywords);
+    return renderInteractiveClozePrompt(
+      q.question,
+      normalizeClozeAnswers(q),
+      state.quizRevealedBlanks,
+      'data-quiz-blank'
+    );
   }
 
   const figureHtml = q.figure ? `
@@ -1448,14 +1517,7 @@ function renderChoiceAnalysisList(choiceAnalysis = []) {
 
 function renderQuizRevealPanel(q) {
   if (q.kind !== 'objective') {
-    const explanation = q.explanation || q.explanationSource || q.original || '';
-    return `
-      <div class="quiz-answer-card">
-        <div class="quiz-answer-label">정답</div>
-        <div class="quiz-answer-text">${escapeHtml(q.answer)}</div>
-        ${explanation ? `<div class="quiz-answer-explanation">${escapeHtml(explanation)}</div>` : ''}
-      </div>
-    `;
+    return '';
   }
 
   const selectedLabel = state.quizSubmission?.selectedLabel || state.quizSelectedChoiceLabel || '';
@@ -1536,7 +1598,23 @@ function getQuizPostRevealActions(q) {
 }
 
 function bindQuizPromptEvents(q) {
-  if (q.kind !== 'objective' || state.quizRevealed) return;
+  if (q.kind !== 'objective') {
+    document.querySelectorAll('[data-quiz-blank]').forEach(button => {
+      button.addEventListener('click', () => {
+        const index = Number(button.dataset.quizBlank || 0);
+        state.quizRevealedBlanks = {
+          ...state.quizRevealedBlanks,
+          [index]: true,
+        };
+        const answers = normalizeClozeAnswers(q);
+        state.quizRevealed = isEveryBlankRevealed(q.question, answers, state.quizRevealedBlanks);
+        renderQuiz();
+      });
+    });
+    return;
+  }
+
+  if (state.quizRevealed) return;
   document.querySelectorAll('.quiz-choice-item[data-choice]').forEach(button => {
     button.addEventListener('click', () => {
       handleObjectiveChoiceSelect(button.dataset.choice);
@@ -1558,10 +1636,6 @@ function bindQuizActionEvents(q) {
       return;
     }
 
-    document.getElementById('btn-reveal').addEventListener('click', () => {
-      state.quizRevealed = true;
-      renderQuiz();
-    });
     return;
   }
 
@@ -2190,6 +2264,7 @@ function showTheoryComplete() {
     state.quizQuestions = questions;
     state.quizIndex = 0;
     state.quizRevealed = false;
+    state.quizRevealedBlanks = {};
     state.quizScore = { correct: 0, incorrect: 0 };
     state.quizSelectedChoiceLabel = null;
     state.quizSubmission = null;
@@ -2246,17 +2321,17 @@ function renderQuiz() {
             ${renderQuizPrompt(q)}
           </div>
 
-          ${!state.quizRevealed ? `
+          ${!state.quizRevealed && q.kind === 'objective' ? `
             <div class="quiz-actions">
               <button class="btn-quiz-action reveal" id="btn-reveal">정답 확인하기</button>
             </div>
-          ` : `
+          ` : state.quizRevealed ? `
             ${renderQuizRevealPanel(q)}
             <div class="quiz-actions">
-              <button class="btn-quiz-action knew" id="btn-knew">알고 있었어요</button>
-              <button class="btn-quiz-action didnt-know" id="btn-didnt">몰랐어요</button>
+              <button class="btn-quiz-action knew" id="btn-knew">${q.kind === 'objective' ? '알고 있었어요' : '맞혔어요'}</button>
+              <button class="btn-quiz-action didnt-know" id="btn-didnt">${q.kind === 'objective' ? '몰랐어요' : '틀렸어요'}</button>
             </div>
-          `}
+          ` : ''}
         </div>
       </div>
     </div>
@@ -2267,15 +2342,14 @@ function renderQuiz() {
 }
 
 function formatQuizRevealed(q) {
-  return escapeHtml(q.question).replace(
-    /_{4,}/g,
-    `<span class="blank revealed">${escapeHtml(q.answer)}</span>`
-  );
+  const answers = normalizeClozeAnswers(q);
+  return renderInteractiveClozePrompt(q.question, answers, getAllRevealedBlankMap(q.question, answers), 'data-quiz-blank');
 }
 
 function nextQuizQuestion() {
   state.quizIndex++;
   state.quizRevealed = false;
+  state.quizRevealedBlanks = {};
   state.quizSelectedChoiceLabel = null;
   state.quizSubmission = null;
   renderQuiz();
@@ -2420,6 +2494,24 @@ function cleanPracticalText(value) {
   return String(value || '').replace(/\s+/g, ' ').trim();
 }
 
+function normalizePracticalCloze(item, cloze, index) {
+  const prompt = cleanPracticalText(cloze?.prompt || '');
+  const answers = normalizeClozeAnswers(cloze);
+  if (!prompt || !answers.length) return null;
+  const details = getPracticalDetails(item);
+  const sourceText = cloze?.source === 'detail'
+    ? details.join(' ')
+    : (item.summary || details.join(' '));
+  return {
+    id: `${item.id}-reviewed-${index + 1}`,
+    label: cleanPracticalText(cloze.label || `검수 ${index + 1}`),
+    prompt,
+    answers,
+    answer: answers.join(' / '),
+    fullText: cleanPracticalText(sourceText || item.title || prompt),
+  };
+}
+
 function buildPracticalDetailCloze(detail, index, item) {
   const text = cleanPracticalText(detail);
   if (!text) return null;
@@ -2472,12 +2564,21 @@ function buildPracticalDetailCloze(detail, index, item) {
     id: `${item.id}-detail-${index + 1}`,
     label,
     prompt,
+    answers: aliasTerm ? [mainTerm, aliasTerm] : [mainTerm],
     answer,
     fullText: text,
   };
 }
 
 function getPracticalClozes(item) {
+  const reviewedClozes = Array.isArray(item?.reviewed_clozes)
+    ? item.reviewed_clozes
+      .map((cloze, index) => normalizePracticalCloze(item, cloze, index))
+      .filter(Boolean)
+    : [];
+
+  if (reviewedClozes.length) return reviewedClozes;
+
   const detailClozes = getPracticalDetails(item)
     .map((detail, index) => buildPracticalDetailCloze(detail, index, item))
     .filter(Boolean);
@@ -2488,6 +2589,7 @@ function getPracticalClozes(item) {
     id: `${item.id}-main`,
     label: '핵심',
     prompt: cleanPracticalText(item.cloze?.prompt || item.summary || ''),
+    answers: normalizeClozeAnswers({ answers: item.cloze?.answers, answer: item.cloze?.answer || item.title }),
     answer: cleanPracticalText(item.cloze?.answer || item.title || ''),
     fullText: cleanPracticalText(item.summary || ''),
   }];
@@ -2498,13 +2600,31 @@ function getPracticalTitleCloze(item) {
   const sourcePrompt = cleanPracticalText(item.cloze?.prompt || '');
   const summary = cleanPracticalText(item.summary || getPracticalDetails(item)[0] || '');
   const prompt = sourcePrompt || ['____', summary ? `: ${summary}` : ''].join('');
+  const leadingBlankMatch = sourcePrompt.match(/^(?:\{\{blank\}\}|_{2,})\s*([^:：]+)/i);
+  const visibleTitleSuffix = cleanPracticalText(leadingBlankMatch?.[1] || '');
+  const titleAnswer = visibleTitleSuffix && title.endsWith(visibleTitleSuffix)
+    ? cleanPracticalText(title.slice(0, -visibleTitleSuffix.length))
+    : title;
   return {
     id: `${item.id}-title`,
     label: '제목',
     prompt,
-    answer: title,
+    answers: [titleAnswer || title],
+    answer: titleAnswer || title,
     fullText: `제목: ${title}`,
   };
+}
+
+function getPracticalQuestionClozes(item) {
+  const seenPrompts = new Set();
+  return [getPracticalTitleCloze(item), ...getPracticalClozes(item)]
+    .filter(Boolean)
+    .filter((cloze) => {
+      const key = cleanPracticalText(cloze.prompt);
+      if (!key || seenPrompts.has(key)) return false;
+      seenPrompts.add(key);
+      return true;
+    });
 }
 
 function getPracticalCardSummary(item, clozes) {
@@ -2635,7 +2755,7 @@ function getPracticalStudyItems(filteredSections = filterPracticalSections()) {
 
 function getPracticalStudyQuestions(filteredSections = filterPracticalSections()) {
   return filteredSections.flatMap(section => (section.items || []).flatMap((item) => {
-    const clozes = [getPracticalTitleCloze(item), ...getPracticalClozes(item)];
+    const clozes = getPracticalQuestionClozes(item);
     return clozes.map((cloze, clozeIndex) => ({
       id: `${item.id}::${cloze.id}`,
       item,
@@ -2707,6 +2827,7 @@ function movePracticalQuestion(direction, questionCount) {
   if (questionCount <= 0) {
     state.practicalStudyIndex = 0;
     state.practicalRevealed = false;
+    state.practicalRevealedBlanks = {};
     renderPracticalSummary();
     return;
   }
@@ -2719,6 +2840,7 @@ function movePracticalQuestion(direction, questionCount) {
     state.practicalStudyIndex = (state.practicalStudyIndex + 1) % questionCount;
   }
   state.practicalRevealed = false;
+  state.practicalRevealedBlanks = {};
   renderPracticalSummary();
 }
 
@@ -2802,16 +2924,12 @@ function renderPracticalDetails(item) {
 }
 
 function renderPracticalClozeBlock(cloze) {
+  const answers = normalizeClozeAnswers(cloze);
+  const revealedBlanks = getAllRevealedBlankMap(cloze.prompt, answers);
   return `
     <div class="practical-cloze">
       <div class="practical-cloze-label">빈칸 암기 ${escapeHtml(cloze.label)}</div>
-      <p>${escapeHtml(cloze.prompt)}</p>
-      <button class="practical-answer-toggle" data-practical-answer>정답 보기</button>
-      <div class="practical-answer">
-        <span>정답</span>
-        <strong>${escapeHtml(cloze.answer)}</strong>
-      </div>
-      <div class="practical-answer-full">${escapeHtml(cloze.fullText)}</div>
+      <p>${renderInteractiveClozePrompt(cloze.prompt, answers, revealedBlanks, 'data-static-practical-blank')}</p>
     </div>
   `;
 }
@@ -2825,7 +2943,7 @@ function renderPracticalItemCard(item) {
       : '';
   const itemAccuracy = progress.attempts > 0 ? Math.round((progress.correct / progress.attempts) * 100) : 0;
   const detailClozes = getPracticalClozes(item);
-  const clozes = [getPracticalTitleCloze(item), ...detailClozes];
+  const clozes = getPracticalQuestionClozes(item);
 
   return `
     <article class="practical-card ${statusClass}" id="practical-card-${escapeHtml(item.id)}">
@@ -2867,6 +2985,7 @@ function renderPracticalSummary() {
   const visibleCount = studyQuestions.length;
   const currentIndex = normalizePracticalStudyIndex(visibleCount);
   const currentQuestion = studyQuestions[currentIndex] || null;
+  const currentAnswers = currentQuestion ? normalizeClozeAnswers(currentQuestion.cloze) : [];
   const progress = visibleCount > 0 ? Math.round((currentIndex / visibleCount) * 100) : 0;
 
   const loadingHtml = state.practicalSummaryLoading
@@ -2887,24 +3006,20 @@ function renderPracticalSummary() {
           <span>${escapeHtml(currentQuestion.cloze.label)}</span>
         </div>
         <div class="quiz-question practical-quiz-question">
-          ${escapeHtml(currentQuestion.cloze.prompt)}
+          ${renderInteractiveClozePrompt(
+            currentQuestion.cloze.prompt,
+            currentAnswers,
+            state.practicalRevealedBlanks,
+            'data-practical-blank'
+          )}
         </div>
 
-        ${!state.practicalRevealed ? `
-          <div class="quiz-actions">
-            <button class="btn-quiz-action reveal" id="btn-practical-reveal">정답 확인하기</button>
-          </div>
-        ` : `
-          <div class="quiz-answer-card">
-            <div class="quiz-answer-label">정답</div>
-            <div class="quiz-answer-text">${escapeHtml(currentQuestion.cloze.answer)}</div>
-            <div class="quiz-answer-explanation">${escapeHtml(currentQuestion.cloze.fullText)}</div>
-          </div>
+        ${state.practicalRevealed ? `
           <div class="quiz-actions">
             <button class="btn-quiz-action knew" data-practical-quiz-result="correct">외웠어요</button>
             <button class="btn-quiz-action didnt-know" data-practical-quiz-result="incorrect">틀렸어요</button>
           </div>
-        `}
+        ` : ''}
 
         <div class="practical-quiz-nav-row">
           <button data-practical-study-action="prev" ${visibleCount <= 1 ? 'disabled' : ''}>이전</button>
@@ -2936,6 +3051,7 @@ function renderPracticalSummary() {
       state.practicalUnitFilter = button.dataset.practicalUnit || 'all';
       state.practicalStudyIndex = 0;
       state.practicalRevealed = false;
+      state.practicalRevealedBlanks = {};
       renderPracticalSummary();
     });
   });
@@ -2949,6 +3065,7 @@ function renderPracticalSummary() {
       const focusedIndex = focusedItems.findIndex(entry => entry.id === targetId || entry.item.id === targetId);
       state.practicalStudyIndex = focusedIndex >= 0 ? focusedIndex : 0;
       state.practicalRevealed = false;
+      state.practicalRevealedBlanks = {};
       renderPracticalSummary();
       setTimeout(() => {
         document.getElementById(`practical-card-${targetId}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -2964,6 +3081,7 @@ function renderPracticalSummary() {
         state.practicalStudyIndex = pickRandomPracticalIndex(items.length);
       }
       state.practicalRevealed = false;
+      state.practicalRevealedBlanks = {};
       renderPracticalSummary();
     });
   });
@@ -2974,9 +3092,20 @@ function renderPracticalSummary() {
     });
   });
 
-  document.getElementById('btn-practical-reveal')?.addEventListener('click', () => {
-    state.practicalRevealed = true;
-    renderPracticalSummary();
+  document.querySelectorAll('[data-practical-blank]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const blankIndex = Number(button.dataset.practicalBlank || 0);
+      state.practicalRevealedBlanks = {
+        ...state.practicalRevealedBlanks,
+        [blankIndex]: true,
+      };
+      state.practicalRevealed = isEveryBlankRevealed(
+        currentQuestion?.cloze?.prompt || '',
+        currentAnswers,
+        state.practicalRevealedBlanks
+      );
+      renderPracticalSummary();
+    });
   });
 
   document.querySelectorAll('[data-practical-quiz-result]').forEach((button) => {
