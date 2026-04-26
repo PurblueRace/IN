@@ -3199,51 +3199,8 @@ function renderCoreKeywordRow(section) {
   `;
 }
 
-function getCoreVisualSrc(ref) {
-  if (!ref) return '';
-  if (ref.src) return ref.src;
-  if (ref.path) return ref.path;
-  if (ref.recommendedPath) return ref.recommendedPath.replace(/^\/+/, '');
-  if (ref.fileName) return `assets/infoproc/visuals/${ref.fileName}`;
+function renderCoreVisualRefs(visualRefs = []) {
   return '';
-}
-
-function renderCoreVisualRefs(visualRefs = [], mode = 'full') {
-  const refs = (visualRefs || []).filter(Boolean);
-  if (!refs.length) return '';
-  if (mode === 'compact') {
-    return `
-      <div class="core-visual-row core-visual-row--compact">
-        ${refs.map(ref => {
-          const src = getCoreVisualSrc(ref);
-          const label = ref.imageId || ref.priority || 'visual';
-          return `
-            <a class="core-visual-pill" href="${escapeHtml(src)}" target="_blank" rel="noopener"
-              title="${escapeHtml(ref.fileName || label)}">
-              그림 보기 ${escapeHtml(label)}
-            </a>
-          `;
-        }).join('')}
-      </div>
-    `;
-  }
-  return `
-    <div class="core-visual-gallery">
-      ${refs.map(ref => {
-        const src = getCoreVisualSrc(ref);
-        const label = ref.imageId || ref.priority || 'visual';
-        const alt = `${label} ${ref.fileName || ''}`.trim();
-        return `
-          <a class="core-visual-card" href="${escapeHtml(src)}" target="_blank" rel="noopener"
-            title="${escapeHtml(ref.fileName || label)}">
-            <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy">
-            <span>그림으로 보기</span>
-            <strong>${escapeHtml(label)}</strong>
-          </a>
-        `;
-      }).join('')}
-    </div>
-  `;
 }
 
 function renderCoreClozeCard(cloze, index) {
@@ -3261,7 +3218,7 @@ function renderCoreClozeCard(cloze, index) {
         ${renderInteractiveClozePrompt(prompt, answers, revealedMap, 'data-core-cloze-blank')}
       </div>
       ${fullyRevealed && cloze.sourceSummary ? `<div class="core-cloze-source">${escapeHtml(cloze.sourceSummary)}</div>` : ''}
-      ${renderCoreVisualRefs(cloze.visualRefs, 'compact')}
+      ${renderCoreVisualRefs(cloze.visualRefs)}
     </article>
   `;
 }
@@ -3278,7 +3235,7 @@ function renderCoreClozeSection(section) {
       <span>${clozes.length}문항</span>
     </div>
     ${renderCoreKeywordRow(section)}
-    ${renderCoreVisualRefs(section.visualRefs, 'full')}
+    ${renderCoreVisualRefs(section.visualRefs)}
     <div class="core-cloze-list">
       ${clozes.map(renderCoreClozeCard).join('')}
     </div>
