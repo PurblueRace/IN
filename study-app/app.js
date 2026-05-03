@@ -1142,6 +1142,14 @@ function getObjectiveTheoryTarget(question) {
   return null;
 }
 
+function getObjectivePeriodJumpIndex(period) {
+  const targetPeriod = Number(period);
+  if (!targetPeriod) return -1;
+  return state.quizQuestions.findIndex((question, index) =>
+    getObjectivePeriodNumber(question, index) === targetPeriod
+  );
+}
+
 function renderObjectivePeriodStrip(question) {
   if (
     state.quizContext?.mode !== 'objective_set'
@@ -1151,11 +1159,22 @@ function renderObjectivePeriodStrip(question) {
   const currentPeriod = getObjectivePeriodNumber(question, state.quizIndex);
   return `
     <div class="quiz-period-strip" aria-label="객관식 교시">
-      ${[1, 2, 3, 4, 5].map(period => `
-        <span class="quiz-period-chip ${period === currentPeriod ? 'active' : ''}">
-          ${period}교시
-        </span>
-      `).join('')}
+      ${[1, 2, 3, 4, 5].map((period) => {
+        const targetIndex = getObjectivePeriodJumpIndex(period);
+        const isAvailable = targetIndex >= 0;
+        const isActive = period === currentPeriod;
+        return `
+          <button
+            class="quiz-period-chip ${isActive ? 'active' : ''}"
+            type="button"
+            data-objective-period-jump="${period}"
+            ${isActive ? 'aria-current="true"' : ''}
+            ${isAvailable ? '' : 'disabled'}
+          >
+            ${period}교시
+          </button>
+        `;
+      }).join('')}
     </div>
   `;
 }
@@ -2399,6 +2418,15 @@ function getQuizPostRevealActions(q) {
 }
 
 function bindQuizPromptEvents(q) {
+  document.querySelectorAll('[data-objective-period-jump]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const targetIndex = getObjectivePeriodJumpIndex(button.dataset.objectivePeriodJump);
+      if (targetIndex < 0 || targetIndex === state.quizIndex) return;
+      goToObjectiveExamQuestion(targetIndex);
+      window.scrollTo(0, 0);
+    });
+  });
+
   if (q.kind !== 'objective') {
     document.querySelectorAll('[data-quiz-blank]').forEach(button => {
       button.addEventListener('click', () => {
