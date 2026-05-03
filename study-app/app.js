@@ -70,6 +70,13 @@ const state = {
   practicalStudyIndex: 0,
   practicalRevealed: false,
   practicalRevealedBlanks: {},
+  objectiveProgress: { by_set_id: {} },
+  aiChatOpen: false,
+  aiChatMessages: [
+    { role: 'assistant', text: '궁금한 개념이나 지금 문제를 물어보세요.' },
+  ],
+  aiChatLoading: false,
+  aiChatError: '',
   coreSummary: null,
   coreSummaryReady: false,
   coreSummaryLoading: false,
@@ -112,6 +119,7 @@ function createEmptyProgress() {
   return {
     completedLectures: [],
     lastLectureId: null,
+    objectiveProgress: { by_set_id: {}, updatedAt: null },
     updatedAt: null,
   };
 }
@@ -127,6 +135,17 @@ function applyProgressState(progress) {
   const safeProgress = progress || createEmptyProgress();
   state.completedLectures = new Set(safeProgress.completedLectures || []);
   state.lastLectureId = safeProgress.lastLectureId || null;
+  state.objectiveProgress = normalizeObjectiveProgress(safeProgress.objectiveProgress || {
+    by_set_id: safeProgress.objectiveSets || {},
+  });
+}
+
+function normalizeObjectiveProgress(progress = {}) {
+  const bySetId = progress.by_set_id || progress.bySetId || {};
+  return {
+    by_set_id: bySetId && typeof bySetId === 'object' ? bySetId : {},
+    updatedAt: progress.updatedAt || null,
+  };
 }
 
 function applyPracticalProgressState(progress) {
@@ -240,7 +259,12 @@ function loadStorage() {
   }
 
   const progress = getStoredProgressForUser(state.currentUser.user_id);
-  const hasUserProgress = (progress.completedLectures || []).length > 0 || !!progress.lastLectureId;
+  const objectiveProgress = normalizeObjectiveProgress(progress.objectiveProgress || {
+    by_set_id: progress.objectiveSets || {},
+  });
+  const hasUserProgress = (progress.completedLectures || []).length > 0
+    || !!progress.lastLectureId
+    || Object.keys(objectiveProgress.by_set_id).length > 0;
   if (!hasUserProgress) {
     const legacyProgress = readJsonStorage(STORAGE_KEY, null);
     if (legacyProgress?.completedLectures || legacyProgress?.lastLectureId) {
@@ -275,6 +299,7 @@ function saveStorage() {
   const payload = {
     completedLectures: [...state.completedLectures],
     lastLectureId: state.lastLectureId,
+    objectiveProgress: normalizeObjectiveProgress(state.objectiveProgress),
     updatedAt: new Date().toISOString(),
   };
   const store = readProgressStore();
@@ -968,8 +993,256 @@ function buildObjectiveSetQuestionPayload(set, question, index) {
   };
 }
 
+function buildObjectiveSetQuestions(set) {
+  return (set?.questions || [])
+    .map((question, index) => buildObjectiveSetQuestionPayload(set, question, index))
+    .filter(question => question.question && question.choices.length && question.correctLabels.length);
+}
+
 function getObjectiveSetQuestionCount(set) {
   return Array.isArray(set?.questions) ? set.questions.length : 0;
+}
+
+function getObjectiveProgressMap() {
+  if (!state.objectiveProgress || typeof state.objectiveProgress !== 'object') {
+    state.objectiveProgress = { by_set_id: {} };
+  }
+  if (!state.objectiveProgress.by_set_id || typeof state.objectiveProgress.by_set_id !== 'object') {
+    state.objectiveProgress.by_set_id = {};
+  }
+  return state.objectiveProgress.by_set_id;
+}
+
+function getObjectiveSetProgress(setId) {
+  if (!setId) return null;
+  return getObjectiveProgressMap()[setId] || null;
+}
+
+function getObjectiveWrongMap(setId) {
+  const progress = getObjectiveSetProgress(setId);
+  const wrongMap = progress?.wrongByQuestionId || {};
+  return wrongMap && typeof wrongMap === 'object' ? wrongMap : {};
+}
+
+function saveObjectiveSetProgress(setId, patch = {}) {
+  if (!setId) return;
+  const now = new Date().toISOString();
+  const bySetId = {
+    ...getObjectiveProgressMap(),
+  };
+  bySetId[setId] = {
+    ...(bySetId[setId] || {}),
+    ...patch,
+    updatedAt: now,
+  };
+  state.objectiveProgress = {
+    by_set_id: bySetId,
+    updatedAt: now,
+  };
+  saveStorage();
+}
+
+function getObjectiveSetResumeState(setId, totalQuestions) {
+  const progress = getObjectiveSetProgress(setId);
+  if (!progress || progress.completed) return null;
+  if (Number(progress.totalQuestions || totalQuestions) !== Number(totalQuestions)) return null;
+
+  const currentIndex = Math.max(0, Math.min(Number(progress.currentIndex || 0), totalQuestions));
+  if (currentIndex <= 0 || currentIndex >= totalQuestions) return null;
+
+  const score = progress.score || {};
+  return {
+    currentIndex,
+    score: {
+      correct: Math.max(0, Number(score.correct || 0)),
+      incorrect: Math.max(0, Number(score.incorrect || 0)),
+    },
+  };
+}
+
+function getObjectiveQuestionNumber(question, fallbackNumber = 0) {
+  return Number(question?.sourceRef?.question_number || question?.number || fallbackNumber || 0);
+}
+
+function getObjectiveQuestionKey(question) {
+  return String(question?.id || question?.sourceRef?.question_id || getObjectiveQuestionNumber(question) || '');
+}
+
+function getObjectivePeriodNumber(question, fallbackIndex = 0) {
+  const questionNumber = getObjectiveQuestionNumber(question, fallbackIndex + 1);
+  if (!questionNumber) return null;
+  return Math.max(1, Math.min(5, Math.ceil(questionNumber / 20)));
+}
+
+function renderObjectivePeriodStrip(question) {
+  if (
+    state.quizContext?.mode !== 'objective_set'
+    && state.quizContext?.mode !== 'objective_wrong_set'
+  ) return '';
+
+  const currentPeriod = getObjectivePeriodNumber(question, state.quizIndex);
+  return `
+    <div class="quiz-period-strip" aria-label="객관식 교시">
+      ${[1, 2, 3, 4, 5].map(period => `
+        <span class="quiz-period-chip ${period === currentPeriod ? 'active' : ''}">
+          ${period}교시
+        </span>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderObjectiveSetProgress(set) {
+  const progress = getObjectiveSetProgress(set.id);
+  if (!progress) return '';
+
+  const total = getObjectiveSetQuestionCount(set);
+  const currentIndex = Math.max(0, Math.min(Number(progress.currentIndex || 0), total));
+  if (currentIndex <= 0 && !progress.completed) return '';
+  const pct = total > 0 ? Math.round((currentIndex / total) * 100) : 0;
+  const score = progress.score || {};
+  const label = progress.completed
+    ? `완료 · 정답 ${Number(score.correct || 0)}/${total}`
+    : `진행 ${currentIndex}/${total}`;
+  const lastQuestionText = String(progress.lastQuestionText || '').trim();
+  const lastQuestionNumber = Number(progress.lastQuestionNumber || 0);
+  const lastQuestionHtml = lastQuestionNumber || lastQuestionText ? `
+    <div class="objective-last-question">
+      <span>마지막 풀이</span>
+      <strong>${lastQuestionNumber ? `${lastQuestionNumber}번` : '최근 문제'}</strong>
+      ${lastQuestionText ? `<p>${escapeHtml(lastQuestionText)}</p>` : ''}
+    </div>
+  ` : '';
+
+  return `
+    <div class="objective-item-progress">
+      <div class="objective-item-progress-head">
+        <span>${escapeHtml(label)}</span>
+        ${progress.completed ? '<strong>다시 풀기</strong>' : '<strong>이어 풀기</strong>'}
+      </div>
+      <div class="objective-item-progress-bar">
+        <div style="width:${pct}%"></div>
+      </div>
+      ${lastQuestionHtml}
+    </div>
+  `;
+}
+
+function getObjectiveResumeEntries(objectiveSets = state.objectiveSets || []) {
+  return objectiveSets.map((set) => {
+    const progress = getObjectiveSetProgress(set.id);
+    const total = getObjectiveSetQuestionCount(set);
+    const currentIndex = Math.max(0, Math.min(Number(progress?.currentIndex || 0), total));
+    if (!progress || progress.completed || currentIndex <= 0 || currentIndex >= total) {
+      return null;
+    }
+
+    const nextQuestion = set.questions?.[currentIndex] || null;
+    const nextQuestionNumber = Number(nextQuestion?.number || currentIndex + 1);
+    return {
+      set,
+      progress,
+      total,
+      currentIndex,
+      nextQuestion,
+      nextQuestionNumber,
+      updatedAt: progress.updatedAt || '',
+    };
+  }).filter(Boolean)
+    .sort((left, right) => String(right.updatedAt).localeCompare(String(left.updatedAt)));
+}
+
+function getLatestObjectiveResumeEntry(objectiveSets = state.objectiveSets || []) {
+  return getObjectiveResumeEntries(objectiveSets)[0] || null;
+}
+
+function renderObjectiveResumeCard(entry) {
+  if (!entry) return '';
+
+  const nextQuestionTitle = String(entry.nextQuestion?.question || '').trim();
+  const lastQuestionNumber = Number(entry.progress.lastQuestionNumber || entry.currentIndex);
+  const period = getObjectivePeriodNumber(entry.nextQuestion, entry.currentIndex);
+
+  return `
+    <button class="objective-resume-card" type="button" data-objective-resume="${escapeHtml(entry.set.id)}">
+      <div class="objective-resume-top">
+        <span>마지막 객관식 이어풀기</span>
+        <strong>${period ? `${period}교시` : '객관식'}</strong>
+      </div>
+      <div class="objective-resume-title">${escapeHtml(entry.set.title || '객관식 문제 세트')}</div>
+      <div class="objective-resume-meta">
+        마지막 풀이 ${lastQuestionNumber}번 · 이어서 ${entry.nextQuestionNumber}번부터
+      </div>
+      ${nextQuestionTitle ? `<div class="objective-resume-question">${escapeHtml(nextQuestionTitle)}</div>` : ''}
+    </button>
+  `;
+}
+
+function getObjectiveWrongEntries(objectiveSets = state.objectiveSets || []) {
+  const entries = [];
+  for (const set of objectiveSets) {
+    const wrongMap = getObjectiveWrongMap(set.id);
+    const questions = set.questions || [];
+    for (const [questionId, record] of Object.entries(wrongMap)) {
+      const question = questions.find(item => String(item.id || item.question_id || item.number) === String(questionId));
+      if (!question) continue;
+      entries.push({
+        set,
+        question,
+        record,
+        updatedAt: record.updatedAt || '',
+      });
+    }
+  }
+  return entries.sort((left, right) => String(right.updatedAt).localeCompare(String(left.updatedAt)));
+}
+
+function renderObjectiveWrongReviewCard(entries) {
+  if (!entries.length) return '';
+  const latest = entries[0];
+  const latestNumber = Number(latest.question.number || latest.record.questionNumber || 0);
+  return `
+    <button class="objective-wrong-card" type="button" data-objective-wrong-review="all">
+      <div class="objective-wrong-top">
+        <span>틀린 문제 다시 보기</span>
+        <strong>${entries.length}문제</strong>
+      </div>
+      <div class="objective-wrong-title">오답만 모아서 다시 풀기</div>
+      <div class="objective-wrong-meta">
+        최근 오답 ${latestNumber ? `${latestNumber}번` : '문제'} · 맞히면 오답 목록에서 빠져요
+      </div>
+      <div class="objective-wrong-question">${escapeHtml(latest.question.question || latest.record.questionText || '')}</div>
+    </button>
+  `;
+}
+
+function updateObjectiveWrongRecord(question, isCorrect, selectedLabel) {
+  const setId = state.quizContext?.setId || question?.sourceRef?.objective_set_id;
+  if (!setId) return;
+
+  const questionKey = getObjectiveQuestionKey(question);
+  if (!questionKey) return;
+
+  const wrongByQuestionId = {
+    ...getObjectiveWrongMap(setId),
+  };
+
+  if (isCorrect) {
+    delete wrongByQuestionId[questionKey];
+  } else {
+    wrongByQuestionId[questionKey] = {
+      questionId: questionKey,
+      questionNumber: getObjectiveQuestionNumber(question),
+      questionText: question.question || '',
+      selectedLabel,
+      correctLabels: question.correctLabels || [],
+      answer: question.answer || '',
+      explanation: question.detailedSummary || question.explanation || '',
+      updatedAt: new Date().toISOString(),
+    };
+  }
+
+  saveObjectiveSetProgress(setId, { wrongByQuestionId });
 }
 
 function getObjectiveQuestionType(set, question) {
@@ -1110,12 +1383,17 @@ async function resolvePracticeActivities(practice, allowedKinds = null) {
   return resolved;
 }
 
-function beginQuizSession(questions, quizContext = null) {
+function beginQuizSession(questions, quizContext = null, resumeState = null) {
+  const resumeIndex = Math.max(0, Math.min(Number(resumeState?.currentIndex || 0), questions.length));
+  const resumeScore = resumeState?.score || {};
   state.quizQuestions = questions;
-  state.quizIndex = 0;
+  state.quizIndex = resumeIndex;
   state.quizRevealed = false;
   state.quizRevealedBlanks = {};
-  state.quizScore = { correct: 0, incorrect: 0 };
+  state.quizScore = {
+    correct: Math.max(0, Number(resumeScore.correct || 0)),
+    incorrect: Math.max(0, Number(resumeScore.incorrect || 0)),
+  };
   state.quizSelectedChoiceLabel = null;
   state.quizSubmission = null;
   state.quizContext = quizContext;
@@ -1176,9 +1454,7 @@ function startObjectiveSetSession(setId) {
   const set = state.objectiveSets.find(item => item.id === setId);
   if (!set) return;
 
-  const questions = (set.questions || [])
-    .map((question, index) => buildObjectiveSetQuestionPayload(set, question, index))
-    .filter(question => question.question && question.choices.length && question.correctLabels.length);
+  const questions = buildObjectiveSetQuestions(set);
 
   if (!questions.length) {
     state.objectiveSetsError = '풀 수 있는 문제가 없는 세트입니다.';
@@ -1186,10 +1462,35 @@ function startObjectiveSetSession(setId) {
     return;
   }
 
+  const resumeState = getObjectiveSetResumeState(set.id, questions.length);
   beginQuizSession(questions, {
     mode: 'objective_set',
     setId: set.id,
     setTitle: set.title,
+  }, resumeState);
+}
+
+function startObjectiveWrongReviewSession() {
+  const entries = getObjectiveWrongEntries(state.objectiveSets);
+  if (!entries.length) {
+    state.objectiveSetsError = '아직 저장된 오답이 없습니다.';
+    renderObjectiveHub();
+    return;
+  }
+
+  const questions = entries
+    .map((entry, index) => buildObjectiveSetQuestionPayload(entry.set, entry.question, index))
+    .filter(question => question.question && question.choices.length && question.correctLabels.length);
+
+  if (!questions.length) {
+    state.objectiveSetsError = '오답 문제를 불러오지 못했어요.';
+    renderObjectiveHub();
+    return;
+  }
+
+  beginQuizSession(questions, {
+    mode: 'objective_wrong_set',
+    setTitle: '오답 다시 풀기',
   });
 }
 
@@ -1217,7 +1518,11 @@ function getQuizPrimaryActionLabel() {
     const objectiveCount = state.quizContext.objectiveCount || 0;
     return objectiveCount > 0 ? `객관식 ${objectiveCount}문제 풀러 가기` : '객관식 풀러 가기';
   }
-  if (state.quizContext?.mode === 'objective_hub' || state.quizContext?.mode === 'objective_set') {
+  if (
+    state.quizContext?.mode === 'objective_hub'
+    || state.quizContext?.mode === 'objective_set'
+    || state.quizContext?.mode === 'objective_wrong_set'
+  ) {
     return '객관식 목록으로';
   }
   if (state.quizContext?.mode === 'subtopic_fill_blank' || state.quizContext?.mode === 'subtopic_objective') {
@@ -1280,7 +1585,11 @@ async function handleQuizPrimaryAction() {
     return;
   }
 
-  if (state.quizContext?.mode === 'objective_hub' || state.quizContext?.mode === 'objective_set') {
+  if (
+    state.quizContext?.mode === 'objective_hub'
+    || state.quizContext?.mode === 'objective_set'
+    || state.quizContext?.mode === 'objective_wrong_set'
+  ) {
     state.quizContext = null;
     navigate('objective');
     return;
@@ -1548,6 +1857,70 @@ function renderQuizRevealPanel(q) {
   `;
 }
 
+function isObjectiveQuizShell(question = null) {
+  return question?.kind === 'objective'
+    || state.quizContext?.mode === 'objective_hub'
+    || state.quizContext?.mode === 'objective_set'
+    || state.quizContext?.mode === 'objective_wrong_set'
+    || state.quizContext?.mode === 'subtopic_objective';
+}
+
+function isObjectiveSetQuizContext() {
+  return state.quizContext?.mode === 'objective_set' && !!state.quizContext?.setId;
+}
+
+function persistCurrentObjectiveSetProgress(patch = {}) {
+  if (!isObjectiveSetQuizContext()) return;
+
+  const totalQuestions = state.quizQuestions.length;
+  const defaultCurrentIndex = state.quizIndex + (state.quizRevealed && state.quizSubmission ? 1 : 0);
+  const currentIndex = Math.max(0, Math.min(
+    Number(patch.currentIndex ?? defaultCurrentIndex),
+    totalQuestions
+  ));
+  const completed = !!patch.completed || currentIndex >= totalQuestions;
+  const lastQuestionIndex = Math.max(0, Math.min(currentIndex, totalQuestions) - 1);
+  const lastQuestion = currentIndex > 0 ? state.quizQuestions[lastQuestionIndex] : null;
+  const lastQuestionNumber = getObjectiveQuestionNumber(lastQuestion, currentIndex);
+
+  saveObjectiveSetProgress(state.quizContext.setId, {
+    setId: state.quizContext.setId,
+    setTitle: state.quizContext.setTitle || '',
+    totalQuestions,
+    currentIndex,
+    completed,
+    score: {
+      correct: Math.max(0, Number(state.quizScore.correct || 0)),
+      incorrect: Math.max(0, Number(state.quizScore.incorrect || 0)),
+    },
+    lastQuestionId: lastQuestion?.id || null,
+    lastQuestionNumber: lastQuestionNumber || null,
+    lastQuestionText: lastQuestion?.question || '',
+    lastQuestionType: lastQuestion?.type || '',
+    lastWasCorrect: state.quizSubmission?.isCorrect ?? null,
+    ...patch,
+  });
+}
+
+function handleQuizBack() {
+  if (
+    state.quizContext?.mode === 'objective_hub'
+    || state.quizContext?.mode === 'objective_set'
+    || state.quizContext?.mode === 'objective_wrong_set'
+  ) {
+    persistCurrentObjectiveSetProgress();
+    navigate('objective');
+    return;
+  }
+
+  if (state.quizContext?.mode === 'subtopic_objective') {
+    handleQuizSecondaryAction();
+    return;
+  }
+
+  navigate('home');
+}
+
 function handleObjectiveChoiceSelect(choiceLabel) {
   state.quizSelectedChoiceLabel = choiceLabel;
   renderQuiz();
@@ -1566,6 +1939,13 @@ function submitObjectiveAnswer(question) {
     state.quizScore.incorrect++;
   }
   state.quizRevealed = true;
+  updateObjectiveWrongRecord(question, isCorrect, state.quizSelectedChoiceLabel);
+  persistCurrentObjectiveSetProgress({
+    currentIndex: Math.min(state.quizIndex + 1, state.quizQuestions.length),
+    lastSelectedLabel: state.quizSelectedChoiceLabel,
+    lastWasCorrect: isCorrect,
+    completed: state.quizIndex + 1 >= state.quizQuestions.length,
+  });
   renderQuiz();
 }
 
@@ -1723,6 +2103,7 @@ function render() {
     case 'stats':    renderStats(); break;
     default:         state.currentUser ? renderHome() : renderSimpleAuth();
   }
+  mountAiChatWidget();
 }
 
 // ??? HOME PAGE ??????????????????????????????????????????????
@@ -2310,13 +2691,22 @@ function renderQuiz() {
 
   const q = questions[state.quizIndex];
   const progress = Math.round((state.quizIndex / questions.length) * 100);
+  const showObjectiveShell = isObjectiveQuizShell(q);
+  const periodStripHtml = showObjectiveShell ? renderObjectivePeriodStrip(q) : '';
 
   app.innerHTML = `
-    <div class="quiz-page" id="page-quiz">
+    <div class="quiz-page ${showObjectiveShell ? 'has-bottom-nav' : ''} ${state.quizRevealed ? 'is-revealed' : ''}" id="page-quiz">
       <div class="quiz-header">
-        <div class="quiz-progress-text">${state.quizIndex + 1} / ${questions.length}</div>
-        <div class="quiz-progress-bar">
-          <div class="fill" style="width: ${progress}%"></div>
+        ${showObjectiveShell ? '<button class="quiz-back-btn" id="btn-quiz-back" type="button" aria-label="뒤로가기">←</button>' : ''}
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-row">
+            <div class="quiz-progress-text">${state.quizIndex + 1} / ${questions.length}</div>
+            ${periodStripHtml ? `<div class="quiz-current-period">${getObjectivePeriodNumber(q, state.quizIndex)}교시</div>` : ''}
+          </div>
+          ${periodStripHtml}
+          <div class="quiz-progress-bar">
+            <div class="fill" style="width: ${progress}%"></div>
+          </div>
         </div>
       </div>
 
@@ -2341,10 +2731,15 @@ function renderQuiz() {
         </div>
       </div>
     </div>
+
+    ${showObjectiveShell ? renderBottomNav('objective') : ''}
   `;
 
+  document.getElementById('btn-quiz-back')?.addEventListener('click', handleQuizBack);
   bindQuizPromptEvents(q);
   bindQuizActionEvents(q);
+  if (showObjectiveShell) bindNavEvents();
+  mountAiChatWidget();
 }
 
 function formatQuizRevealed(q) {
@@ -2358,11 +2753,20 @@ function nextQuizQuestion() {
   state.quizRevealedBlanks = {};
   state.quizSelectedChoiceLabel = null;
   state.quizSubmission = null;
+  persistCurrentObjectiveSetProgress({
+    currentIndex: Math.min(state.quizIndex, state.quizQuestions.length),
+    completed: state.quizIndex >= state.quizQuestions.length,
+  });
   renderQuiz();
 }
 
 // ??? STATS PAGE ?????????????????????????????????????????????
 function renderQuizResult() {
+  persistCurrentObjectiveSetProgress({
+    currentIndex: state.quizQuestions.length,
+    completed: true,
+  });
+
   const total = state.quizScore.correct + state.quizScore.incorrect;
   const pct = total > 0 ? Math.round((state.quizScore.correct / total) * 100) : 0;
 
@@ -2383,9 +2787,10 @@ function renderQuizResult() {
   }
 
   const secondaryActionLabel = getQuizSecondaryActionLabel();
+  const showObjectiveShell = isObjectiveQuizShell(state.quizQuestions[state.quizQuestions.length - 1]);
 
   app.innerHTML = `
-    <div class="quiz-result">
+    <div class="quiz-result ${showObjectiveShell ? 'has-bottom-nav' : ''}">
       <div class="result-emoji">${emoji}</div>
       <div class="result-title">${message}</div>
       <div class="result-score">${pct}%</div>
@@ -2394,6 +2799,7 @@ function renderQuizResult() {
       ${secondaryActionLabel ? `<button class="btn-skip-quiz" id="btn-quiz-secondary" style="margin-top:8px">${secondaryActionLabel}</button>` : ''}
       <button class="btn-skip-quiz" id="btn-quiz-home" style="margin-top:8px">홈으로</button>
     </div>
+    ${showObjectiveShell ? renderBottomNav('objective') : ''}
   `;
 
   document.getElementById('btn-next-lecture').addEventListener('click', async () => {
@@ -2408,6 +2814,9 @@ function renderQuizResult() {
     state.quizContext = null;
     navigate('home');
   });
+
+  if (showObjectiveShell) bindNavEvents();
+  mountAiChatWidget();
 }
 
 function renderObjectiveHub() {
@@ -2420,6 +2829,8 @@ function renderObjectiveHub() {
   const linkedQuestionCount = Object.values(state.subtopicPracticeMap || {})
     .reduce((sum, practice) => sum + countPracticeActivitiesByKind(practice, 'question_bank_ref'), 0);
   const totalQuestions = customQuestionCount || linkedQuestionCount;
+  const resumeEntry = getLatestObjectiveResumeEntry(objectiveSets);
+  const wrongEntries = getObjectiveWrongEntries(objectiveSets);
 
   const loadingHtml = state.objectiveSetsLoading
     ? `<div class="auth-note" style="padding:0 20px 16px">객관식 문제 세트를 불러오는 중이에요.</div>`
@@ -2437,6 +2848,7 @@ function renderObjectiveHub() {
             </div>
             <div class="objective-item-title">${escapeHtml(set.title || '객관식 문제 세트')}</div>
             <div class="objective-item-meta">${escapeHtml(getObjectiveSetSectionSummary(set) || set.description || '문제를 풀고 바로 정답과 해설을 확인할 수 있어요.')}</div>
+            ${renderObjectiveSetProgress(set)}
           </button>
         `).join('')}
       </div>
@@ -2475,6 +2887,8 @@ function renderObjectiveHub() {
 
       ${loadingHtml}
       ${errorHtml}
+      ${renderObjectiveResumeCard(resumeEntry)}
+      ${renderObjectiveWrongReviewCard(wrongEntries)}
       ${setListHtml}
     </div>
 
@@ -2487,7 +2901,20 @@ function renderObjectiveHub() {
     });
   });
 
+  document.querySelectorAll('[data-objective-resume]').forEach((button) => {
+    button.addEventListener('click', () => {
+      startObjectiveSetSession(button.dataset.objectiveResume);
+    });
+  });
+
+  document.querySelectorAll('[data-objective-wrong-review]').forEach((button) => {
+    button.addEventListener('click', () => {
+      startObjectiveWrongReviewSession();
+    });
+  });
+
   bindNavEvents();
+  mountAiChatWidget();
 }
 
 function getPracticalDetails(item) {
@@ -3501,6 +3928,132 @@ function bindNavEvents() {
       navigate(target);
     });
   });
+}
+
+function shouldShowAiChatWidget() {
+  return !!state.currentUser && state.dataReady && state.currentPage !== 'auth';
+}
+
+function getAiChatContext() {
+  const parts = [
+    `현재 화면: ${state.currentPage}`,
+  ];
+
+  if (state.currentPage === 'quiz' && state.quizQuestions[state.quizIndex]) {
+    const q = state.quizQuestions[state.quizIndex];
+    parts.push(`문제: ${q.question}`);
+    parts.push(`보기: ${(q.choices || []).map(choice => `${choice.label}. ${choice.text}`).join(' / ')}`);
+    if (state.quizSelectedChoiceLabel) parts.push(`사용자 선택: ${state.quizSelectedChoiceLabel}`);
+    if (state.quizRevealed) parts.push(`정답: ${q.answer}`);
+  }
+
+  if (state.currentPage === 'objective') {
+    const wrongCount = getObjectiveWrongEntries(state.objectiveSets || []).length;
+    const resume = getLatestObjectiveResumeEntry(state.objectiveSets || []);
+    parts.push(`객관식 오답 수: ${wrongCount}`);
+    if (resume) parts.push(`이어풀기 위치: ${resume.currentIndex + 1}/${resume.total}`);
+  }
+
+  return parts.join('\n');
+}
+
+function formatAiMessageText(text) {
+  return escapeHtml(text).replace(/\n/g, '<br/>');
+}
+
+function mountAiChatWidget() {
+  document.getElementById('ai-chat-widget')?.remove();
+  if (!shouldShowAiChatWidget()) return;
+
+  const widget = document.createElement('div');
+  widget.id = 'ai-chat-widget';
+  widget.className = `ai-chat-widget ${state.aiChatOpen ? 'open' : ''}`;
+  const messagesHtml = state.aiChatMessages.map(message => `
+    <div class="ai-chat-message ${message.role}">
+      ${formatAiMessageText(message.text)}
+    </div>
+  `).join('');
+
+  widget.innerHTML = state.aiChatOpen ? `
+    <section class="ai-chat-panel" aria-label="AI 질문창">
+      <div class="ai-chat-head">
+        <div>
+          <strong>AI 질문</strong>
+          <span>Vertex AI · gemini-3-flash-preview</span>
+        </div>
+        <button type="button" id="btn-ai-chat-close" aria-label="AI 질문창 닫기">×</button>
+      </div>
+      <div class="ai-chat-messages" id="ai-chat-messages">
+        ${messagesHtml}
+        ${state.aiChatLoading ? '<div class="ai-chat-message assistant">생각하는 중...</div>' : ''}
+        ${state.aiChatError ? `<div class="ai-chat-error">${escapeHtml(state.aiChatError)}</div>` : ''}
+      </div>
+      <form class="ai-chat-form" id="ai-chat-form">
+        <input id="ai-chat-input" type="text" placeholder="이 문제 왜 틀렸는지 물어보기" autocomplete="off" ${state.aiChatLoading ? 'disabled' : ''} />
+        <button type="submit" ${state.aiChatLoading ? 'disabled' : ''}>전송</button>
+      </form>
+    </section>
+  ` : `
+    <button class="ai-chat-fab" type="button" id="btn-ai-chat-open" aria-label="AI 질문창 열기">
+      AI
+    </button>
+  `;
+
+  app.appendChild(widget);
+
+  document.getElementById('btn-ai-chat-open')?.addEventListener('click', () => {
+    state.aiChatOpen = true;
+    state.aiChatError = '';
+    mountAiChatWidget();
+  });
+
+  document.getElementById('btn-ai-chat-close')?.addEventListener('click', () => {
+    state.aiChatOpen = false;
+    mountAiChatWidget();
+  });
+
+  document.getElementById('ai-chat-form')?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const input = document.getElementById('ai-chat-input');
+    const message = input?.value?.trim();
+    if (!message || state.aiChatLoading) return;
+    input.value = '';
+    await sendAiChatMessage(message);
+  });
+
+  const messageBox = document.getElementById('ai-chat-messages');
+  if (messageBox) messageBox.scrollTop = messageBox.scrollHeight;
+}
+
+async function sendAiChatMessage(message) {
+  state.aiChatMessages.push({ role: 'user', text: message });
+  state.aiChatLoading = true;
+  state.aiChatError = '';
+  mountAiChatWidget();
+
+  try {
+    const response = await fetch('/api/ai-chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message,
+        context: getAiChatContext(),
+      }),
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(data.error || 'AI 응답을 받지 못했어요.');
+    }
+    state.aiChatMessages.push({
+      role: 'assistant',
+      text: data.answer || '응답이 비어 있어요.',
+    });
+  } catch (err) {
+    state.aiChatError = err.message || 'AI 연결에 실패했어요.';
+  } finally {
+    state.aiChatLoading = false;
+    mountAiChatWidget();
+  }
 }
 
 function escapeHtml(str) {
