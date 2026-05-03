@@ -15,6 +15,7 @@ const AUTH_STORAGE_KEY = 'study_auth_v1';
 const AUTH_SESSION_KEY = 'study_auth_session_v1';
 const USER_PROGRESS_STORAGE_KEY = 'study_user_progress_v1';
 const PRACTICAL_PROGRESS_STORAGE_KEY = 'study_practical_progress_v1';
+const LEGACY_PROGRESS_MIGRATION_KEY = 'study_topics_v2_migration_v1';
 
 const SUBJECTS = [
   { id: 1, name: '소프트웨어 설계', emoji: '📐', color: '#3182F6' },
@@ -136,6 +137,16 @@ function createEmptyPracticalProgress() {
   };
 }
 
+function hasProgressPayload(progress) {
+  if (!progress) return false;
+  const objectiveProgress = normalizeObjectiveProgress(progress.objectiveProgress || {
+    by_set_id: progress.objectiveSets || {},
+  });
+  return (progress.completedLectures || []).length > 0
+    || !!progress.lastLectureId
+    || Object.keys(objectiveProgress.by_set_id).length > 0;
+}
+
 function applyProgressState(progress) {
   const safeProgress = progress || createEmptyProgress();
   state.completedLectures = new Set(safeProgress.completedLectures || []);
@@ -177,12 +188,17 @@ function buildUserLookupKey(value) {
   return normalizeUsername(value).toLocaleLowerCase();
 }
 
+function buildStableUserId(lookupKey) {
+  return `name:${encodeURIComponent(lookupKey)}`;
+}
+
 function sanitizeUser(user) {
   if (!user) return null;
   return {
     user_id: user.user_id,
     username: user.username,
     display_name: user.display_name || user.username,
+    lookup_key: user.lookup_key || buildUserLookupKey(user.display_name || user.username),
   };
 }
 
@@ -237,16 +253,128 @@ function getStoredPracticalProgressForUser(userId) {
   return store.by_user_id[userId] || createEmptyPracticalProgress();
 }
 
+function mergeProgressPayload(primaryProgress, secondaryProgress) {
+  const primary = primaryProgress || createEmptyProgress();
+  const secondary = secondaryProgress || createEmptyProgress();
+  const primaryObjective = normalizeObjectiveProgress(primary.objectiveProgress || {
+    by_set_id: primary.objectiveSets || {},
+  });
+  const secondaryObjective = normalizeObjectiveProgress(secondary.objectiveProgress || {
+    by_set_id: secondary.objectiveSets || {},
+  });
+
+  return {
+    completedLectures: [...new Set([
+      ...(secondary.completedLectures || []),
+      ...(primary.completedLectures || []),
+    ])],
+    lastLectureId: primary.lastLectureId || secondary.lastLectureId || null,
+    objectiveProgress: {
+      by_set_id: {
+        ...secondaryObjective.by_set_id,
+        ...primaryObjective.by_set_id,
+      },
+      updatedAt: primaryObjective.updatedAt || secondaryObjective.updatedAt || null,
+    },
+    updatedAt: primary.updatedAt || secondary.updatedAt || new Date().toISOString(),
+  };
+}
+
+function mergePracticalProgressPayload(primaryProgress, secondaryProgress) {
+  const primary = primaryProgress || createEmptyPracticalProgress();
+  const secondary = secondaryProgress || createEmptyPracticalProgress();
+  return {
+    by_item_id: {
+      ...(secondary.by_item_id || {}),
+      ...(primary.by_item_id || {}),
+    },
+    updatedAt: primary.updatedAt || secondary.updatedAt || new Date().toISOString(),
+  };
+}
+
+function migrateUserStores(oldUserId, nextUserId) {
+  if (!oldUserId || !nextUserId || oldUserId === nextUserId) return;
+
+  const progressStore = readProgressStore();
+  const oldProgress = progressStore.by_user_id[oldUserId];
+  if (oldProgress) {
+    const nextProgress = progressStore.by_user_id[nextUserId] || createEmptyProgress();
+    progressStore.by_user_id[nextUserId] = mergeProgressPayload(nextProgress, oldProgress);
+    delete progressStore.by_user_id[oldUserId];
+    writeProgressStore(progressStore);
+  }
+
+  const practicalStore = readPracticalProgressStore();
+  const oldPracticalProgress = practicalStore.by_user_id[oldUserId];
+  if (oldPracticalProgress) {
+    const nextPracticalProgress = practicalStore.by_user_id[nextUserId] || createEmptyPracticalProgress();
+    practicalStore.by_user_id[nextUserId] = mergePracticalProgressPayload(nextPracticalProgress, oldPracticalProgress);
+    delete practicalStore.by_user_id[oldUserId];
+    writePracticalProgressStore(practicalStore);
+  }
+}
+
+function normalizeAuthUserRecord(user, displayName = '') {
+  if (!user) return false;
+  const normalizedDisplayName = normalizeDisplayName(displayName || user.display_name || user.username);
+  const lookupKey = buildUserLookupKey(normalizedDisplayName);
+  const stableUserId = buildStableUserId(lookupKey);
+  const previousUserId = user.user_id;
+  let didChange = false;
+
+  if (!user.user_id || user.user_id !== stableUserId) {
+    user.previous_user_ids = [...new Set([
+      ...(user.previous_user_ids || []),
+      previousUserId,
+    ].filter(Boolean))];
+    user.user_id = stableUserId;
+    migrateUserStores(previousUserId, stableUserId);
+    didChange = true;
+  }
+  (user.previous_user_ids || [])
+    .filter(previousId => previousId && previousId !== stableUserId)
+    .forEach(previousId => migrateUserStores(previousId, stableUserId));
+  if (user.lookup_key !== lookupKey) {
+    user.lookup_key = lookupKey;
+    didChange = true;
+  }
+  if (user.username !== lookupKey) {
+    user.username = lookupKey;
+    didChange = true;
+  }
+  if (user.display_name !== normalizedDisplayName) {
+    user.display_name = normalizedDisplayName;
+    didChange = true;
+  }
+
+  return didChange;
+}
+
 function loadSessionUser() {
   const session = readJsonStorage(AUTH_SESSION_KEY, null);
   if (!session?.user_id) return null;
   const authStore = readAuthStore();
-  return sanitizeUser(authStore.users.find(user => user.user_id === session.user_id));
+  const user = authStore.users.find(user => user.user_id === session.user_id)
+    || (session.lookup_key ? findUserByLookupKey(authStore, session.lookup_key) : null);
+  if (!user) return null;
+
+  const didChange = normalizeAuthUserRecord(user);
+  if (didChange) {
+    writeAuthStore(authStore);
+  }
+
+  const sanitizedUser = sanitizeUser(user);
+  persistSessionUser(sanitizedUser);
+  return sanitizedUser;
 }
 
 function persistSessionUser(user) {
   if (!user?.user_id) return;
-  writeJsonStorage(AUTH_SESSION_KEY, { user_id: user.user_id });
+  writeJsonStorage(AUTH_SESSION_KEY, {
+    user_id: user.user_id,
+    lookup_key: user.lookup_key || buildUserLookupKey(user.display_name || user.username),
+    display_name: user.display_name || user.username,
+  });
 }
 
 function clearSessionUser() {
@@ -264,23 +392,30 @@ function loadStorage() {
   }
 
   const progress = getStoredProgressForUser(state.currentUser.user_id);
-  const objectiveProgress = normalizeObjectiveProgress(progress.objectiveProgress || {
-    by_set_id: progress.objectiveSets || {},
-  });
-  const hasUserProgress = (progress.completedLectures || []).length > 0
-    || !!progress.lastLectureId
-    || Object.keys(objectiveProgress.by_set_id).length > 0;
+  const hasUserProgress = hasProgressPayload(progress);
   if (!hasUserProgress) {
     const legacyProgress = readJsonStorage(STORAGE_KEY, null);
-    if (legacyProgress?.completedLectures || legacyProgress?.lastLectureId) {
+    const migrationRecord = readJsonStorage(LEGACY_PROGRESS_MIGRATION_KEY, null);
+    const progressStore = readProgressStore();
+    const canUseLegacyProgress = !migrationRecord
+      && Object.keys(progressStore.by_user_id || {}).length === 0
+      && hasProgressPayload(legacyProgress);
+    if (canUseLegacyProgress) {
       const migrated = {
         completedLectures: legacyProgress.completedLectures || [],
         lastLectureId: legacyProgress.lastLectureId || null,
-        updatedAt: new Date().toISOString(),
+        objectiveProgress: normalizeObjectiveProgress(legacyProgress.objectiveProgress || {
+          by_set_id: legacyProgress.objectiveSets || {},
+        }),
+        updatedAt: legacyProgress.updatedAt || new Date().toISOString(),
       };
       const store = readProgressStore();
       store.by_user_id[state.currentUser.user_id] = migrated;
       writeProgressStore(store);
+      writeJsonStorage(LEGACY_PROGRESS_MIGRATION_KEY, {
+        user_id: state.currentUser.user_id,
+        migrated_at: new Date().toISOString(),
+      });
       applyProgressState(migrated);
       return;
     }
@@ -310,7 +445,6 @@ function saveStorage() {
   const store = readProgressStore();
   store.by_user_id[state.currentUser.user_id] = payload;
   writeProgressStore(store);
-  writeJsonStorage(STORAGE_KEY, payload);
 }
 
 function savePracticalProgress() {
@@ -345,12 +479,14 @@ function signInOrCreateUser(name) {
 
   const authStore = readAuthStore();
   const lookupKey = buildUserLookupKey(normalizedName);
-  let user = findUserByLookupKey(authStore, lookupKey);
+  const stableUserId = buildStableUserId(lookupKey);
+  let user = findUserByLookupKey(authStore, lookupKey)
+    || authStore.users.find(item => item.user_id === stableUserId);
   let didChangeStore = false;
 
   if (!user) {
     user = {
-      user_id: `user_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
+      user_id: stableUserId,
       username: lookupKey,
       lookup_key: lookupKey,
       display_name: normalizedName,
@@ -359,18 +495,7 @@ function signInOrCreateUser(name) {
     authStore.users.push(user);
     didChangeStore = true;
   } else {
-    if (!user.lookup_key) {
-      user.lookup_key = lookupKey;
-      didChangeStore = true;
-    }
-    if (!user.username) {
-      user.username = lookupKey;
-      didChangeStore = true;
-    }
-    if (!user.display_name) {
-      user.display_name = normalizedName;
-      didChangeStore = true;
-    }
+    didChangeStore = normalizeAuthUserRecord(user, normalizedName) || didChangeStore;
   }
 
   if (didChangeStore) {
