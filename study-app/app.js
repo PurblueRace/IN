@@ -4168,31 +4168,20 @@ function renderObjectiveWrongNotePage() {
   const groups = objectiveSets
     .map(set => ({ set, count: countBySetId.get(String(set.id || '')) || 0 }))
     .filter(group => group.count > 0);
+  const firstGroupSetId = groups.length ? String(groups[0].set.id || '') : 'all';
   const availableSetIds = new Set(groups.map(group => String(group.set.id || '')));
-  const requestedSetId = String(state.objectiveWrongNoteSetFilter || 'all');
-  const activeSetId = requestedSetId === 'all' || availableSetIds.has(requestedSetId)
+  const requestedSetId = String(state.objectiveWrongNoteSetFilter || firstGroupSetId);
+  const activeSetId = availableSetIds.has(requestedSetId)
     ? requestedSetId
-    : 'all';
+    : firstGroupSetId;
   if (state.objectiveWrongNoteSetFilter !== activeSetId) {
     state.objectiveWrongNoteSetFilter = activeSetId;
   }
   const activeGroup = groups.find(group => String(group.set.id || '') === activeSetId);
-  const activeLabel = activeSetId === 'all'
-    ? '전체'
-    : getObjectiveSetRoundLabel(activeGroup?.set);
-  const entries = activeSetId === 'all'
-    ? allEntries
-    : allEntries.filter(entry => String(entry.set.id || '') === activeSetId);
+  const activeLabel = getObjectiveSetRoundLabel(activeGroup?.set);
+  const entries = allEntries.filter(entry => String(entry.set.id || '') === activeSetId);
   const filterHtml = allEntries.length ? `
     <div class="wrong-note-filter-row" aria-label="오답노트 회차 필터">
-      <button
-        class="wrong-note-filter-chip ${activeSetId === 'all' ? 'active' : ''}"
-        type="button"
-        data-wrong-note-set="all"
-        aria-pressed="${activeSetId === 'all'}"
-      >
-        전체 <em>${allEntries.length}</em>
-      </button>
       ${groups.map(({ set, count }) => {
         const setId = String(set.id || '');
         const isActive = activeSetId === setId;
@@ -4220,43 +4209,12 @@ function renderObjectiveWrongNotePage() {
       <div class="empty-state wrong-note-empty">
         <div class="empty-emoji">🧾</div>
         <div class="empty-text">
-          ${allEntries.length ? '이 회차에 저장된 오답이 없어요.' : '저장된 오답이 없어요.'}<br/>
-          ${allEntries.length ? '다른 회차를 선택해서 확인해보세요.' : '과목 채점 화면에서 오답노트에 저장하면 이곳에 모입니다.'}
+          저장된 오답이 없어요.<br/>
+          과목 채점 화면에서 오답노트에 저장하면 이곳에 모입니다.
         </div>
       </div>
     `
     : '';
-  const listHtml = entries.length ? `
-    <section class="objective-notebook wrong-note-list">
-      <div class="objective-notebook-head">
-        <span>${activeSetId === 'all' ? '저장된 오답' : `${escapeHtml(activeLabel)} 저장 오답`}</span>
-        <strong>${entries.length}문제</strong>
-      </div>
-      <div class="objective-notebook-list">
-        ${entries.map((entry) => {
-          const question = buildObjectiveSetQuestionPayload(entry.set, entry.question, 0);
-          const target = getObjectiveTheoryTarget(question);
-          const questionKey = getObjectiveQuestionKey(question);
-          return `
-            <article class="objective-note-item">
-              <div class="objective-note-meta">
-                ${escapeHtml(entry.set.title || '객관식 세트')} · ${escapeHtml(String(entry.record.questionNumber || entry.question.number || ''))}번
-              </div>
-              <p>${escapeHtml(entry.question.question || entry.record.questionText || '')}</p>
-              <div class="objective-note-answer">
-                선택 ${escapeHtml(entry.record.selectedLabel || '-')} · 정답 ${escapeHtml(entry.record.answer || '')}
-              </div>
-              ${entry.record.explanation ? `<div class="wrong-note-explanation">${escapeHtml(entry.record.explanation)}</div>` : ''}
-              <div class="objective-note-actions">
-                <button type="button" data-objective-wrong-review="${escapeHtml(entry.set.id)}">오답 다시 풀기</button>
-                ${target ? `<button type="button" data-objective-theory-set="${escapeHtml(entry.set.id)}" data-objective-theory-question="${escapeHtml(questionKey)}">${escapeHtml(target.label)}</button>` : ''}
-              </div>
-            </article>
-          `;
-        }).join('')}
-      </div>
-    </section>
-  ` : '';
 
   app.innerHTML = `
     <div class="page wrong-note-page" id="page-wrong-note">
@@ -4280,15 +4238,14 @@ function renderObjectiveWrongNotePage() {
             <span>오답 다시 풀기</span>
             <strong>${entries.length}문제</strong>
           </div>
-          <div class="objective-wrong-title">${activeSetId === 'all' ? '저장된 오답 전체 재도전' : `${escapeHtml(activeLabel)} 오답 재도전`}</div>
-          <div class="objective-wrong-meta">${activeSetId === 'all' ? '맞히면 오답노트에서 자동으로 빠져요' : '선택한 회차 오답만 다시 풀어요'}</div>
+          <div class="objective-wrong-title">${escapeHtml(activeLabel)} 오답 재도전</div>
+          <div class="objective-wrong-meta">선택한 회차 오답만 다시 풀어요</div>
         </button>
       ` : ''}
 
       ${loadingHtml}
       ${errorHtml}
       ${emptyHtml}
-      ${listHtml}
     </div>
     ${renderBottomNav('wrong-note')}
   `;
@@ -4303,18 +4260,6 @@ function renderObjectiveWrongNotePage() {
   document.querySelectorAll('[data-objective-wrong-review]').forEach((button) => {
     button.addEventListener('click', () => {
       startObjectiveWrongReviewSession(button.dataset.objectiveWrongReview || 'all');
-    });
-  });
-
-  document.querySelectorAll('[data-objective-theory-set][data-objective-theory-question]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const set = state.objectiveSets.find(item => item.id === button.dataset.objectiveTheorySet);
-      const sourceQuestion = (set?.questions || []).find(item =>
-        String(item.id || item.question_id || item.number) === String(button.dataset.objectiveTheoryQuestion)
-      );
-      if (!set || !sourceQuestion) return;
-      const question = buildObjectiveSetQuestionPayload(set, sourceQuestion, 0);
-      openObjectiveTheoryTarget(getObjectiveTheoryTarget(question));
     });
   });
 
