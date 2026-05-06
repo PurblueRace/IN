@@ -54,6 +54,7 @@ const state = {
   quizElapsedSeconds: 0,
   quizTimerId: null,
   objectiveSubjectResult: null,
+  objectiveSubjectReview: null,
   objectiveSubjectTimerBaselines: {},
 
   completedLectures: new Set(),
@@ -538,6 +539,7 @@ function logoutCurrentUser() {
   state.quizAnswers = {};
   state.quizResults = [];
   state.objectiveSubjectResult = null;
+  state.objectiveSubjectReview = null;
   state.objectiveSubjectTimerBaselines = {};
   clearQuizTimer();
   navigate('auth');
@@ -1408,6 +1410,26 @@ function getObjectiveAnsweredCount() {
     count + (getObjectiveSelectedLabel(question, index) ? 1 : 0), 0);
 }
 
+function isObjectiveSubjectReviewMode() {
+  return !!state.objectiveSubjectReview
+    && !!state.objectiveSubjectResult
+    && isObjectiveExamSession();
+}
+
+function getObjectiveSubjectReviewRecord(question, index = state.quizIndex) {
+  const result = state.objectiveSubjectResult;
+  if (!result || !Array.isArray(result.records)) return null;
+
+  const resultKey = getObjectiveAnswerKey(question, index);
+  const questionKey = getObjectiveQuestionKey(question);
+  const questionNumber = getObjectiveQuestionNumber(question, index + 1);
+  return result.records.find(record =>
+    String(record.resultKey || '') === resultKey
+    || (questionKey && String(record.questionId || '') === questionKey)
+    || (questionNumber && Number(record.questionNumber || 0) === Number(questionNumber))
+  ) || null;
+}
+
 function getObjectiveSubjectId(question) {
   const period = getObjectivePeriodNumber(question, state.quizIndex);
   if (period) return period;
@@ -1457,6 +1479,7 @@ function renderObjectivePeriodStrip(question) {
   ) return '';
 
   const currentPeriod = getObjectivePeriodNumber(question, state.quizIndex);
+  const disableJump = isObjectiveSubjectReviewMode();
   return `
     <div class="quiz-period-strip" aria-label="객관식 과목">
       ${[1, 2, 3, 4, 5].map((period) => {
@@ -1469,7 +1492,7 @@ function renderObjectivePeriodStrip(question) {
             type="button"
             data-objective-period-jump="${period}"
             ${isActive ? 'aria-current="true"' : ''}
-            ${isAvailable ? '' : 'disabled'}
+            ${isAvailable && !disableJump ? '' : 'disabled'}
           >
             ${period}과목
           </button>
@@ -1647,6 +1670,7 @@ function showObjectiveSubjectResultForCurrentQuestion() {
 
   pauseObjectiveExamTimer();
   state.objectiveSubjectResult = result;
+  state.objectiveSubjectReview = null;
   persistCurrentObjectiveSetProgress({
     currentIndex: result.nextIndex,
     answers: state.quizAnswers,
@@ -2138,6 +2162,7 @@ function beginQuizSession(questions, quizContext = null, resumeState = null) {
   state.quizStartedAt = Date.now() - (state.quizElapsedSeconds * 1000);
   state.quizContext = quizContext;
   state.objectiveSubjectResult = null;
+  state.objectiveSubjectReview = null;
   state.objectiveSubjectTimerBaselines = {};
   if (questions[resumeIndex]?.kind === 'objective') {
     state.quizSelectedChoiceLabel = getObjectiveSelectedLabel(questions[resumeIndex], resumeIndex);
@@ -2668,13 +2693,33 @@ function persistCurrentObjectiveSetProgress(patch = {}) {
   });
 }
 
+function getObjectiveExamPersistIndex() {
+  if (state.objectiveSubjectResult && !isObjectiveSubjectReviewMode()) {
+    return Math.max(0, Math.min(
+      Number(state.objectiveSubjectResult.nextIndex || 0),
+      state.quizQuestions.length
+    ));
+  }
+
+  return state.quizIndex;
+}
+
 function handleQuizBack() {
+  if (isObjectiveSubjectReviewMode()) {
+    endObjectiveSubjectReview();
+    return;
+  }
+
   if (
     state.quizContext?.mode === 'objective_hub'
     || state.quizContext?.mode === 'objective_set'
     || state.quizContext?.mode === 'objective_wrong_set'
   ) {
-    persistCurrentObjectiveSetProgress();
+    persistCurrentObjectiveSetProgress({
+      currentIndex: getObjectiveExamPersistIndex(),
+      answers: state.quizAnswers,
+      elapsedSeconds: getQuizElapsedSeconds(),
+    });
     navigate('objective');
     return;
   }
@@ -2747,6 +2792,19 @@ function recordObjectiveResult(question, selectedLabel, isCorrect) {
 function renderQuizScoreStrip() {
   const total = state.quizQuestions.length;
   if (!total) return '';
+
+  if (isObjectiveSubjectReviewMode()) {
+    const review = state.objectiveSubjectReview;
+    const result = state.objectiveSubjectResult;
+    const reviewPosition = Math.max(1, state.quizIndex - Number(review.startIndex || 0) + 1);
+    return `
+      <div class="quiz-score-strip quiz-review-strip" aria-label="과목 복기 현황">
+        <span>${escapeHtml(result.shortTitle || `${result.subjectNumber || ''}과목`)} 복기</span>
+        <strong>정답 ${Math.max(0, Number(result.correct || 0))}/${Math.max(0, Number(result.total || 0))}</strong>
+        <em>${reviewPosition}/${Math.max(0, Number(result.total || 0))}</em>
+      </div>
+    `;
+  }
 
   if (isObjectiveExamSession()) {
     const answered = getObjectiveAnsweredCount();
@@ -2898,6 +2956,8 @@ function finishObjectiveExam() {
   };
   state.quizElapsedSeconds = elapsedSeconds;
   state.quizStartedAt = null;
+  state.objectiveSubjectReview = null;
+  state.objectiveSubjectResult = null;
   clearQuizTimer();
   applyObjectiveExamResults(results, elapsedSeconds);
   state.quizIndex = state.quizQuestions.length;
@@ -2997,6 +3057,19 @@ function bindQuizPromptEvents(q) {
 }
 
 function bindQuizActionEvents(q) {
+  if (isObjectiveSubjectReviewMode()) {
+    document.getElementById('btn-subject-review-prev')?.addEventListener('click', () => {
+      goToObjectiveSubjectReviewQuestion(state.quizIndex - 1);
+    });
+    document.getElementById('btn-subject-review-next')?.addEventListener('click', () => {
+      goToObjectiveSubjectReviewQuestion(state.quizIndex + 1);
+    });
+    document.getElementById('btn-subject-review-done')?.addEventListener('click', () => {
+      endObjectiveSubjectReview();
+    });
+    return;
+  }
+
   if (isObjectiveExamSession()) {
     document.getElementById('btn-prev-question')?.addEventListener('click', () => {
       goToObjectiveExamQuestion(state.quizIndex - 1);
@@ -3752,13 +3825,14 @@ function renderQuiz() {
     return;
   }
 
-  if (state.objectiveSubjectResult) {
+  const isSubjectReview = isObjectiveSubjectReviewMode();
+  if (state.objectiveSubjectResult && !isSubjectReview) {
     renderObjectiveSubjectCheckpoint();
     return;
   }
 
   const q = questions[state.quizIndex];
-  if (isObjectiveExamSession()) ensureObjectiveSubjectTimer(q, state.quizIndex);
+  if (isObjectiveExamSession() && !isSubjectReview) ensureObjectiveSubjectTimer(q, state.quizIndex);
   const progress = Math.round((state.quizIndex / questions.length) * 100);
   const showObjectiveShell = isObjectiveQuizShell(q);
   const isObjectiveExam = isObjectiveExamSession();
@@ -3789,7 +3863,10 @@ function renderQuiz() {
             ${renderQuizPrompt(q)}
           </div>
 
-          ${isObjectiveExam ? renderObjectiveExamActions() : !state.quizRevealed && q.kind === 'objective' ? `
+          ${isSubjectReview ? `
+            ${renderQuizRevealPanel(q)}
+            ${renderObjectiveSubjectReviewActions()}
+          ` : isObjectiveExam ? renderObjectiveExamActions() : !state.quizRevealed && q.kind === 'objective' ? `
             <div class="quiz-actions">
               <button class="btn-quiz-action reveal" id="btn-reveal" ${getQuizSubmitDisabled(q) ? 'disabled' : ''}>${getQuizSubmitLabel(q)}</button>
             </div>
@@ -3807,7 +3884,7 @@ function renderQuiz() {
   document.getElementById('btn-quiz-back')?.addEventListener('click', handleQuizBack);
   bindQuizPromptEvents(q);
   bindQuizActionEvents(q);
-  if (isObjectiveExam) startQuizTimer();
+  if (isObjectiveExam && !isSubjectReview) startQuizTimer();
   if (showObjectiveShell) bindNavEvents();
   mountAiChatWidget();
 }
@@ -3817,8 +3894,89 @@ function formatQuizRevealed(q) {
   return renderInteractiveClozePrompt(q.question, answers, getAllRevealedBlankMap(q.question, answers), 'data-quiz-blank');
 }
 
+function applyObjectiveSubjectReviewQuestion(targetIndex) {
+  const review = state.objectiveSubjectReview;
+  if (!review) return;
+
+  const startIndex = Math.max(0, Number(review.startIndex || 0));
+  const endIndex = Math.max(startIndex, Math.min(Number(review.endIndex || startIndex), state.quizQuestions.length - 1));
+  const nextIndex = Math.max(startIndex, Math.min(Number(targetIndex || startIndex), endIndex));
+  const question = state.quizQuestions[nextIndex];
+  const record = getObjectiveSubjectReviewRecord(question, nextIndex);
+  const selectedLabel = record?.selectedLabel || getObjectiveSelectedLabel(question, nextIndex);
+  const isCorrect = record
+    ? !!record.isCorrect
+    : !!selectedLabel && (question.correctLabels || []).includes(selectedLabel);
+
+  state.quizIndex = nextIndex;
+  state.quizRevealed = true;
+  state.quizRevealedBlanks = {};
+  state.quizSelectedChoiceLabel = selectedLabel;
+  state.quizSubmission = {
+    selectedLabel,
+    isCorrect,
+  };
+}
+
+function startObjectiveSubjectReview() {
+  const result = state.objectiveSubjectResult;
+  if (!result) return;
+
+  state.objectiveSubjectReview = {
+    subjectNumber: result.subjectNumber,
+    startIndex: result.startIndex,
+    endIndex: result.endIndex,
+    returnIndex: result.nextIndex,
+  };
+  applyObjectiveSubjectReviewQuestion(result.startIndex);
+  renderQuiz();
+  window.scrollTo(0, 0);
+}
+
+function goToObjectiveSubjectReviewQuestion(targetIndex) {
+  if (!isObjectiveSubjectReviewMode()) return;
+  applyObjectiveSubjectReviewQuestion(targetIndex);
+  renderQuiz();
+  window.scrollTo(0, 0);
+}
+
+function endObjectiveSubjectReview() {
+  const result = state.objectiveSubjectResult;
+  state.objectiveSubjectReview = null;
+  state.quizRevealed = false;
+  state.quizRevealedBlanks = {};
+  state.quizSubmission = null;
+  if (result) {
+    state.quizIndex = Math.max(0, Math.min(Number(result.endIndex || 0), state.quizQuestions.length - 1));
+    state.quizSelectedChoiceLabel = getObjectiveSelectedLabel(state.quizQuestions[state.quizIndex], state.quizIndex);
+    renderObjectiveSubjectCheckpoint();
+  } else {
+    renderQuiz();
+  }
+  window.scrollTo(0, 0);
+}
+
+function renderObjectiveSubjectReviewActions() {
+  const review = state.objectiveSubjectReview;
+  if (!review) return '';
+
+  const startIndex = Math.max(0, Number(review.startIndex || 0));
+  const endIndex = Math.max(startIndex, Number(review.endIndex || startIndex));
+  const isFirst = state.quizIndex <= startIndex;
+  const isLast = state.quizIndex >= endIndex;
+  return `
+    <div class="quiz-actions quiz-exam-actions">
+      <button class="btn-quiz-action secondary" id="btn-subject-review-prev" ${isFirst ? 'disabled' : ''}>이전</button>
+      <button class="btn-quiz-action next" id="${isLast ? 'btn-subject-review-done' : 'btn-subject-review-next'}">
+        ${isLast ? '채점 결과로' : '다음 문제'}
+      </button>
+    </div>
+  `;
+}
+
 function goToObjectiveExamQuestion(targetIndex) {
   if (!isObjectiveExamSession()) return;
+  state.objectiveSubjectReview = null;
   state.objectiveSubjectResult = null;
   state.quizIndex = Math.max(0, Math.min(Number(targetIndex || 0), state.quizQuestions.length - 1));
   state.quizRevealed = false;
@@ -3915,6 +4073,7 @@ function renderObjectiveSubjectCheckpoint() {
         <button class="btn-quiz-action knew" id="btn-subject-save-note" ${wrongCount && !result.savedToNotebook ? '' : 'disabled'}>
           ${wrongCount ? savedLabel : '저장할 오답 없음'}
         </button>
+        <button class="btn-quiz-action review" id="btn-subject-review">복기하기</button>
         <button class="btn-quiz-action next" id="btn-subject-continue">${escapeHtml(nextLabel)}</button>
       </div>
       ${wrongListHtml}
@@ -3935,6 +4094,10 @@ function renderObjectiveSubjectCheckpoint() {
     renderObjectiveSubjectCheckpoint();
   });
 
+  document.getElementById('btn-subject-review')?.addEventListener('click', () => {
+    startObjectiveSubjectReview();
+  });
+
   document.getElementById('btn-subject-continue')?.addEventListener('click', () => {
     continueObjectiveExamAfterSubjectResult();
   });
@@ -3951,6 +4114,7 @@ function continueObjectiveExamAfterSubjectResult() {
   }
 
   state.objectiveSubjectResult = null;
+  state.objectiveSubjectReview = null;
   if (result.nextIndex >= state.quizQuestions.length) {
     finishObjectiveExam();
     return;
@@ -5272,9 +5436,9 @@ function bindNavEvents() {
   document.querySelectorAll('.nav-item').forEach((button) => {
     button.addEventListener('click', () => {
       const target = button.dataset.nav;
-      if (state.currentPage === 'quiz' && isObjectiveExamSession()) {
+      if (state.currentPage === 'quiz' && isObjectiveExamSession() && !isObjectiveSubjectReviewMode()) {
         persistCurrentObjectiveSetProgress({
-          currentIndex: state.quizIndex,
+          currentIndex: getObjectiveExamPersistIndex(),
           answers: state.quizAnswers,
           elapsedSeconds: getQuizElapsedSeconds(),
         });

@@ -1325,6 +1325,14 @@ body {
   color: var(--red-500);
 }
 
+.quiz-review-strip strong {
+  color: var(--blue-600);
+}
+
+.quiz-review-strip em {
+  color: var(--blue-500);
+}
+
 .quiz-subject-score-strip {
   display: flex;
   align-items: center;
@@ -1814,6 +1822,12 @@ body {
   color: white;
 }
 
+.btn-quiz-action.review {
+  background: var(--blue-50);
+  color: var(--blue-600);
+  border: 2px solid rgba(49, 130, 246, 0.26);
+}
+
 .quiz-exam-actions {
   align-items: stretch;
 }
@@ -1915,6 +1929,10 @@ body {
 }
 
 .quiz-subject-actions .btn-quiz-action.next {
+  grid-column: 1 / -1;
+}
+
+.quiz-subject-actions .btn-quiz-action.review {
   grid-column: 1 / -1;
 }
 
