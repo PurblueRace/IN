@@ -1117,6 +1117,33 @@ function normalizeObjectiveSetFigure(question) {
   };
 }
 
+function normalizeObjectiveSetSupportMaterial(question) {
+  const material = question?.supportMaterial || question?.support_material || null;
+  if (!material) return null;
+
+  if (typeof material === 'string') {
+    const lines = material.split(/\r?\n/);
+    return lines.length ? { title: '', lines } : null;
+  }
+
+  if (Array.isArray(material)) {
+    const lines = material.map(line => String(line ?? ''));
+    return lines.length ? { title: '', lines } : null;
+  }
+
+  if (typeof material !== 'object') return null;
+  const rawLines = Array.isArray(material.lines)
+    ? material.lines
+    : String(material.text || material.code || '').split(/\r?\n/);
+  const lines = rawLines.map(line => String(line ?? ''));
+
+  if (!lines.length && !material.title) return null;
+  return {
+    title: String(material.title || '보조자료'),
+    lines,
+  };
+}
+
 function buildObjectiveSetQuestionPayload(set, question, index) {
   const choices = (question.choices || []).map(choice => {
     const source = Array.isArray(choice)
@@ -1145,6 +1172,7 @@ function buildObjectiveSetQuestionPayload(set, question, index) {
     correctLabels: correctLabels.length ? correctLabels : [answerLabel].filter(Boolean),
     detailedSummary: question.explanation || '',
     explanation: question.explanation || '',
+    supportMaterial: normalizeObjectiveSetSupportMaterial(question),
     figure: normalizeObjectiveSetFigure(question),
     sourceRef: {
       objective_set_id: set.id,
@@ -2549,6 +2577,14 @@ function renderQuizPrompt(q) {
     );
   }
 
+  const supportMaterial = q.supportMaterial;
+  const supportHtml = supportMaterial ? `
+    <div class="quiz-support-card" aria-label="${escapeHtml(supportMaterial.title || '문제 보조자료')}">
+      ${supportMaterial.title ? `<div class="quiz-support-title">${escapeHtml(supportMaterial.title)}</div>` : ''}
+      <pre class="quiz-support-text"><code>${escapeHtml((supportMaterial.lines || []).join('\n'))}</code></pre>
+    </div>
+  ` : '';
+
   const figureHtml = q.figure ? `
     <div class="quiz-figure-wrap">
       <img class="quiz-figure-image" src="${q.figure.src}" alt="${escapeHtml(q.figure.alt || '문제 그림')}" />
@@ -2580,6 +2616,7 @@ function renderQuizPrompt(q) {
 
   return `
     <div class="quiz-objective-prompt">${escapeHtml(q.question)}</div>
+    ${supportHtml}
     ${figureHtml}
     ${choicesHtml}
   `;
